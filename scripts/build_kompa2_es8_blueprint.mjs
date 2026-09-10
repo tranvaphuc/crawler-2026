@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { deepClone } from './lib/node_compat.mjs';
 
 const [sourceMappingPath, samplesPath, statsPath, outputDir, workbookPath, previewDir, facebookSamplesPath, channelTypesPath] = process.argv.slice(2);
 if (!sourceMappingPath || !samplesPath || !statsPath || !outputDir || !workbookPath || !previewDir) {
@@ -227,8 +228,8 @@ function mergeObjects(target, source) {
 const resolvedSettings = {};
 const resolvedMappings = {};
 for (const [, body] of components) {
-  mergeObjects(resolvedSettings, structuredClone(body.template?.settings ?? {}));
-  mergeObjects(resolvedMappings, structuredClone(body.template?.mappings ?? {}));
+  mergeObjects(resolvedSettings, deepClone(body.template?.settings ?? {}));
+  mergeObjects(resolvedMappings, deepClone(body.template?.mappings ?? {}));
 }
 
 const indexTemplate = {

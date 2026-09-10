@@ -4,6 +4,7 @@
   "description": "Starter Node.js project with Babel, Nodemon, ESLint",
   "main": "dist/index.js",
   "type": "module",
+  "packageManager": "npm@8.19.4",
   "scripts": {
     "dev": "nodemon src/index.js",
     "build": "babel src -d dist",
@@ -34,10 +35,18 @@
     "es7:profiles": "node scripts/update-es7-profiles.mjs",
     "es7:gender": "node scripts/normalize-es7-gender.mjs",
     "time": "node test/time.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node test/normalize-es7-gender.test.mjs"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.20.2"
+  },
+  "overrides": {
+    "@bull-board/express": {
+      "express": "4.22.2"
+    },
+    "browserslist": "4.27.0",
+    "node-releases": "2.0.27"
   },
   "keywords": [],
   "author": "",
@@ -46,29 +55,29 @@
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
-    "eslint": "^9.36.0",
-    "globals": "^16.4.0",
-    "nodemon": "^3.1.10",
+    "eslint": "^8.57.1",
+    "globals": "^13.24.0",
+    "nodemon": "3.1.10",
     "pm2": "^5.4.3"
   },
   "dependencies": {
-    "@bull-board/api": "^6.20.0",
-    "@bull-board/express": "^6.20.0",
+    "@bull-board/api": "6.12.0",
+    "@bull-board/express": "6.12.0",
     "@opensearch-project/opensearch": "^3.5.1",
     "axios": "^1.13.6",
-    "bullmq": "^5.67.0",
-    "cheerio": "^1.2.0",
+    "bullmq": "5.70.4",
+    "cheerio": "1.0.0-rc.12",
     "dayjs": "^1.11.19",
     "dotenv": "^17.3.1",
     "elasticsearch": "^16.7.3",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "fast-xml-parser": "^5.5.6",
     "https-proxy-agent": "^8.0.0",
     "ioredis": "^5.10.0",
-    "mongoose": "^9.2.4",
+    "mongoose": "^8.19.1",
     "path": "^0.12.7",
-    "puppeteer": "^24.38.0",
+    "puppeteer": "21.11.0",
     "qs": "^6.15.0",
-    "redis": "^5.11.0"
+    "redis": "^4.7.1"
   }
 }

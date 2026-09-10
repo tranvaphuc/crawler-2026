@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { deepClone } from '../scripts/lib/node_compat.mjs';
 import { INDEXES, QUERY, GENDER_MAP, SCRIPT, parseArgs, normalizeGenders } from '../scripts/normalize-es7-gender.mjs';
 
 function fixture({ badMapping = false, conflict = false, partial = false, taskError = false } = {}) {
@@ -35,7 +36,7 @@ function fixture({ badMapping = false, conflict = false, partial = false, taskEr
       return { body: { completed: true, response: { updated: 2, version_conflicts: conflict ? 1 : 0, failures: [] } } };
     } },
   };
-  return { client, calls, save: async (report) => calls.saved.push(structuredClone(report)) };
+  return { client, calls, save: async (report) => calls.saved.push(deepClone(report)) };
 }
 
 test('default dry-run and explicit write confirmation required', () => {

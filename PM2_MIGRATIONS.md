@@ -2,6 +2,18 @@
 
 Configuration: `ecosystem.migrations.config.cjs`
 
+## Runtime
+
+The migration processes target Node.js `16.20.2` and npm `8.19.4`.
+
+```bash
+nvm use
+node --version
+npm ci
+```
+
+The version command must print `v16.20.2` before PM2 is started.
+
 ## Processes
 
 | PM2 name | Mode | Schedule |

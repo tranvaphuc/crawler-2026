@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { deepClone } from './lib/node_compat.mjs';
 
 const [mappingPath, settingsPath, outputPath] = process.argv.slice(2);
 if (!mappingPath || !settingsPath || !outputPath) {
@@ -22,7 +23,7 @@ const normalizeFieldMappings = (properties = {}) => {
 };
 normalizeFieldMappings(mapping.properties);
 
-const analysis = structuredClone(sourceSettings.analysis ?? {});
+const analysis = deepClone(sourceSettings.analysis ?? {});
 const phoneAnalyzer = analysis?.analyzer?.phone_number;
 if (phoneAnalyzer && typeof phoneAnalyzer.char_filter === 'string') {
   phoneAnalyzer.char_filter = [phoneAnalyzer.char_filter];

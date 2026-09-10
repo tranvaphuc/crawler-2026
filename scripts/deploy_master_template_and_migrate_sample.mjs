@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import https from 'node:https';
 import { Client } from '@opensearch-project/opensearch';
+import { deepClone } from './lib/node_compat.mjs';
 
 const [sourceIndex = 'topic56fc9bc282ea19d067e5d8a1', requestedLimit = '1000', blueprintDir = 'outputs/01a07164-8064-7313-962f-0d73887aa809/es8-blueprint-v1', reportDir = 'outputs/01a07164-8064-7313-962f-0d73887aa809/master-migration'] = process.argv.slice(2);
 if (!/^topic[a-f0-9]+$/.test(sourceIndex)) throw new Error(`Unexpected source index: ${sourceIndex}`);
@@ -85,13 +86,13 @@ for (const [name, filename] of componentFiles) {
     body.template.settings.number_of_shards = 1;
     body.template.settings.number_of_replicas = 0;
     body.template.settings.refresh_interval = '30s';
-    sharedAnalysis = structuredClone(body.template.settings.analysis);
+    sharedAnalysis = deepClone(body.template.settings.analysis);
   }
   componentBodies.push([name, body]);
 }
 for (const [name, body] of componentBodies) {
   if (name !== 'master-ct-content-settings-v1' && body.template?.mappings) {
-    body.template.settings = { ...(body.template.settings ?? {}), analysis: structuredClone(sharedAnalysis) };
+    body.template.settings = { ...(body.template.settings ?? {}), analysis: deepClone(sharedAnalysis) };
   }
 }
 

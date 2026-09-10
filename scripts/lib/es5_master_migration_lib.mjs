@@ -10,6 +10,7 @@ import {
   requireSuccess,
   toIsoDate,
 } from './master_migration_lib.mjs';
+import { deepClone } from './node_compat.mjs';
 
 export const ES5_FULL_START = '2026-07-31T17:00:00.000Z'; // 2026-08-01 00:00:00 Asia/Ho_Chi_Minh
 export const ES5_RECENT_LOOKBACK = 'now-6h';
@@ -221,7 +222,7 @@ export function transformEs5Hit(hit, projectionVersion = 'content-projector-es5-
   });
   if (!document.published_at) throw new Error(`Invalid publishedDate for ${hit._index}/${legacyType}/${hit._id}`);
 
-  const partial = structuredClone(document);
+  const partial = deepClone(document);
   delete partial.schema_version;
   delete partial.projection_version;
   delete partial.source_document_version;
