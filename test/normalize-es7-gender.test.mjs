@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deepClone } from '../scripts/lib/node_compat.mjs';
-import { searchSlice } from '../scripts/lib/master_migration_lib.mjs';
+import { ensureIndex, searchSlice } from '../scripts/lib/master_migration_lib.mjs';
+import { ensureEs5TargetIndex } from '../scripts/lib/es5_master_migration_lib.mjs';
 import { INDEXES, QUERY, GENDER_MAP, SCRIPT, parseArgs, normalizeGenders } from '../scripts/normalize-es7-gender.mjs';
 
 function fixture({ badMapping = false, conflict = false, partial = false, taskError = false } = {}) {
@@ -45,6 +46,42 @@ test('single-worker searches omit slice.max=1', () => {
   assert.deepEqual(searchSlice(0, 2), { slice: { id: 0, max: 2 } });
   assert.throws(() => searchSlice(1, 1), /Invalid slice id/);
   assert.throws(() => searchSlice(0, 0), /Invalid slice count/);
+});
+
+test('concurrent index creation treats already-exists as success', async () => {
+  const calls = [];
+  const request = async (method, requestPath) => {
+    calls.push([method, requestPath]);
+    if (method === 'HEAD') return { status: 404 };
+    return {
+      status: 400,
+      body: {
+        error: {
+          type: 'resource_already_exists_exception',
+          root_cause: [{ type: 'resource_already_exists_exception' }],
+        },
+      },
+    };
+  };
+  assert.equal(await ensureIndex(request, 'master20240304'), false);
+  assert.deepEqual(calls, [
+    ['HEAD', '/master20240304'],
+    ['PUT', '/master20240304'],
+  ]);
+});
+
+test('ES5 target preparation is shared by concurrent slices', async () => {
+  const calls = [];
+  const request = async (method, requestPath) => {
+    calls.push([method, requestPath]);
+    await Promise.resolve();
+    if (method === 'HEAD') return { status: 404 };
+    return { status: 200, body: { acknowledged: true } };
+  };
+  await Promise.all(Array.from({ length: 4 }, () => ensureEs5TargetIndex(request, 'master20990101')));
+  assert.equal(calls.filter(([method]) => method === 'HEAD').length, 1);
+  assert.equal(calls.filter(([, requestPath]) => requestPath === '/master20990101').length, 2);
+  assert.equal(calls.filter(([, requestPath]) => requestPath.endsWith('/_mapping')).length, 1);
 });
 
 test('default dry-run and explicit write confirmation required', () => {

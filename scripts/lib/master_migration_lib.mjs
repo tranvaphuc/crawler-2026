@@ -298,7 +298,11 @@ export async function ensureIndex(es8Request, index) {
   const exists = await es8Request('HEAD', `/${encodeURIComponent(index)}`);
   if (exists.status === 200) return false;
   if (exists.status !== 404) requireSuccess(`check index ${index}`, exists);
-  requireSuccess(`create index ${index}`, await es8Request('PUT', `/${encodeURIComponent(index)}`));
+  const creation = await es8Request('PUT', `/${encodeURIComponent(index)}`);
+  const error = creation.body?.error;
+  const errorTypes = [error?.type, ...(error?.root_cause ?? []).map((item) => item?.type)];
+  if (creation.status === 400 && errorTypes.includes('resource_already_exists_exception')) return false;
+  requireSuccess(`create index ${index}`, creation);
   return true;
 }
 

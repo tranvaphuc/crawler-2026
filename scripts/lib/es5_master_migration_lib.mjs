@@ -231,12 +231,20 @@ export function transformEs5Hit(hit, projectionVersion = 'content-projector-es5-
   return { index: indexNameFromPublishedDate(source.publishedDate), id: contentId, partial, upsert: document };
 }
 
-const preparedIndices = new Set();
+const preparedIndices = new Map();
 export async function ensureEs5TargetIndex(es8Request, index) {
-  if (preparedIndices.has(index)) return;
-  await ensureIndex(es8Request, index);
-  requireSuccess(`apply ES5 compatibility mapping to ${index}`, await es8Request('PUT', `/${encodeURIComponent(index)}/_mapping`, { properties: compatibilityProperties }));
-  preparedIndices.add(index);
+  let preparation = preparedIndices.get(index);
+  if (!preparation) {
+    preparation = (async () => {
+      await ensureIndex(es8Request, index);
+      requireSuccess(`apply ES5 compatibility mapping to ${index}`, await es8Request('PUT', `/${encodeURIComponent(index)}/_mapping`, { properties: compatibilityProperties }));
+    })();
+    preparedIndices.set(index, preparation);
+    preparation.catch(() => {
+      if (preparedIndices.get(index) === preparation) preparedIndices.delete(index);
+    });
+  }
+  await preparation;
 }
 
 function delay(milliseconds) { return new Promise((resolve) => setTimeout(resolve, milliseconds)); }
