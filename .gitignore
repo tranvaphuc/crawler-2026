@@ -1,0 +1,25 @@
+node_modules/
+scripts/node_modules
+dist/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.credentials.txt
+token*.txt
+pageFB.txt
+
+# Generated/runtime data
+.cache/
+output/
+outputs/
+*.log
+*.pid
+*.xlsx
+*.ndjson
+demo.json
+test/page-posts-2026-no-api.json
+
+# OS/editor files
+.DS_Store
