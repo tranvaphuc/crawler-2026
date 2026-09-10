@@ -8,6 +8,7 @@ import {
   ensureIndex,
   loadMigrationContext,
   requireSuccess,
+  searchSlice,
   transformDocument,
   utcBoundsForVietnamDay,
 } from './lib/master_migration_lib.mjs';
@@ -115,7 +116,7 @@ try {
             version: true,
             body: {
               size: 2000,
-              slice: { id: sliceId, max: sliceCount },
+              ...searchSlice(sliceId, sliceCount),
               sort: [{ _doc: 'asc' }],
               query: {
                 bool: {

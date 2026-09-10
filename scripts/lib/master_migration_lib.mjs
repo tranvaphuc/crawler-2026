@@ -99,6 +99,16 @@ export function utcBoundsForVietnamDay(day) {
   return { gte: start.toISOString(), lt: end.toISOString() };
 }
 
+export function searchSlice(sliceId, sliceCount) {
+  const id = Number(sliceId);
+  const max = Number(sliceCount);
+  if (!Number.isInteger(max) || max < 1) throw new Error(`Invalid slice count: ${String(sliceCount)}`);
+  if (!Number.isInteger(id) || id < 0 || id >= max) throw new Error(`Invalid slice id ${String(sliceId)} for max ${max}`);
+  // Elasticsearch/OpenSearch rejects slice.max=1. A single worker must use an
+  // ordinary unsliced search instead.
+  return max === 1 ? {} : { slice: { id, max } };
+}
+
 function platformFrom(source) {
   const type = String(source.type ?? '').toLowerCase();
   const url = String(source.url ?? '').toLowerCase();

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deepClone } from '../scripts/lib/node_compat.mjs';
+import { searchSlice } from '../scripts/lib/master_migration_lib.mjs';
 import { INDEXES, QUERY, GENDER_MAP, SCRIPT, parseArgs, normalizeGenders } from '../scripts/normalize-es7-gender.mjs';
 
 function fixture({ badMapping = false, conflict = false, partial = false, taskError = false } = {}) {
@@ -38,6 +39,13 @@ function fixture({ badMapping = false, conflict = false, partial = false, taskEr
   };
   return { client, calls, save: async (report) => calls.saved.push(deepClone(report)) };
 }
+
+test('single-worker searches omit slice.max=1', () => {
+  assert.deepEqual(searchSlice(0, 1), {});
+  assert.deepEqual(searchSlice(0, 2), { slice: { id: 0, max: 2 } });
+  assert.throws(() => searchSlice(1, 1), /Invalid slice id/);
+  assert.throws(() => searchSlice(0, 0), /Invalid slice count/);
+});
 
 test('default dry-run and explicit write confirmation required', () => {
   assert.equal(parseArgs([]).execute, false);

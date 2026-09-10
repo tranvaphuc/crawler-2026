@@ -8,6 +8,7 @@ import {
   indexNameFromPublishedDate,
   loadMigrationContext,
   requireSuccess,
+  searchSlice,
   toIsoDate,
 } from './master_migration_lib.mjs';
 import { deepClone } from './node_compat.mjs';
@@ -293,7 +294,7 @@ export async function migrateEs5InsertedRange({ es5, es8Request, sourceIndices, 
         version: true,
         body: {
           size: 1000,
-          slice: { id: sliceId, max: slices },
+          ...searchSlice(sliceId, slices),
           sort: ['_doc'],
           query: {
             bool: {
