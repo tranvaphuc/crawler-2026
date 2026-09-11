@@ -15,6 +15,12 @@ import { deepClone } from './node_compat.mjs';
 
 export const ES5_FULL_START = '2026-07-31T17:00:00.000Z'; // 2026-08-01 00:00:00 Asia/Ho_Chi_Minh
 export const ES5_RECENT_LOOKBACK = 'now-6h';
+export const ES5_SOURCE_INDEX_SELECTION_VERSION = 'weekly-v1';
+const ES5_SOURCE_INDEX_CACHE_VERSION = 3;
+const currentVietnamYear = Number(new Intl.DateTimeFormat('en-US', {
+  timeZone: 'Asia/Ho_Chi_Minh',
+  year: 'numeric',
+}).format(new Date()));
 export { acquireLock };
 
 const compatibilityProperties = {
@@ -70,12 +76,19 @@ export async function loadEs5MigrationContext() {
   return { ...context, es5 };
 }
 
-function validCalendarMonth(name) {
+export function isValidEs5WeeklyIndex(name) {
   const match = /^master(\d{4})(\d{2})$/.exec(name);
   if (!match) return false;
   const year = Number(match[1]);
-  const month = Number(match[2]);
-  return year >= 2000 && month >= 1 && month <= 12;
+  const week = Number(match[2]);
+  return year >= 2000 && year <= currentVietnamYear && week >= 1 && week <= 53;
+}
+
+export function selectEs5SourceIndices(rows) {
+  return rows
+    .filter((row) => row.status === 'open' && isValidEs5WeeklyIndex(row.index))
+    .map((row) => row.index)
+    .sort((a, b) => b.localeCompare(a));
 }
 
 export async function listEs5SourceIndices(es5) {
@@ -86,24 +99,23 @@ export async function listEs5SourceIndices(es5) {
   } catch (error) {
     try {
       const cached = JSON.parse(await fs.readFile(cachePath, 'utf8'));
-      if (Array.isArray(cached.indices) && cached.indices.length) return cached.indices;
-    } catch {}
-    try {
-      const plan = JSON.parse(await fs.readFile(path.join(path.dirname(cachePath), 'es5-aug2026-migration-plan.json'), 'utf8'));
-      if (Array.isArray(plan.source_indices) && plan.source_indices.length) return plan.source_indices;
+      if (
+        cached.selection_version === ES5_SOURCE_INDEX_CACHE_VERSION
+        && Array.isArray(cached.indices)
+        && cached.indices.length
+        && cached.indices.every(isValidEs5WeeklyIndex)
+      ) return cached.indices;
     } catch {}
     throw error;
   }
-  const currentMonth = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit' }).replace('-', '');
-  const selected = rows.filter((row) => {
-    if (!validCalendarMonth(row.index) || row.status !== 'open') return false;
-    const suffix = row.index.slice(6);
-    const docs = Number(String(row['docs.count'] ?? '0').replace(/,/g, '')) || 0;
-    return suffix <= currentMonth || docs >= 1000;
-  }).sort((a, b) => b.index.localeCompare(a.index));
-  const indices = selected.map((row) => row.index);
+  const indices = selectEs5SourceIndices(rows);
   await fs.mkdir(path.dirname(cachePath), { recursive: true });
-  await fs.writeFile(cachePath, `${JSON.stringify({ captured_at: new Date().toISOString(), indices }, null, 2)}\n`, 'utf8');
+  await fs.writeFile(cachePath, `${JSON.stringify({
+    selection_version: ES5_SOURCE_INDEX_CACHE_VERSION,
+    naming: 'masterYYYYWW',
+    captured_at: new Date().toISOString(),
+    indices,
+  }, null, 2)}\n`, 'utf8');
   return indices;
 }
 

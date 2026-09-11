@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {
   ES5_FULL_START,
+  ES5_SOURCE_INDEX_SELECTION_VERSION,
   acquireLock,
   listEs5SourceIndices,
   loadEs5MigrationContext,
@@ -39,7 +40,8 @@ const gte = new Date(lowerBound).toISOString();
 const lt = endedAt.toISOString();
 const report = {
   status: 'running',
-  source: 'ES5 master monthly indices',
+  source: 'ES5 master weekly indices',
+  source_index_selection_version: ES5_SOURCE_INDEX_SELECTION_VERSION,
   query: { field: 'insertedDate', gte, lt, maximum_lookback_hours: 6 },
   started_at: new Date().toISOString(),
 };

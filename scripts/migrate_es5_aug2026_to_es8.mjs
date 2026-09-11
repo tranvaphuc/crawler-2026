@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {
   ES5_FULL_START,
+  ES5_SOURCE_INDEX_SELECTION_VERSION,
   acquireLock,
   listEs5SourceIndices,
   loadEs5MigrationContext,
@@ -42,18 +43,27 @@ const releaseLock = await acquireLock(lockPath);
 const { es5, es8Request } = await loadEs5MigrationContext();
 try {
   const prior = await readState();
-  if (prior?.status === 'complete') {
+  const canResumePrior = prior?.source_index_selection_version === ES5_SOURCE_INDEX_SELECTION_VERSION;
+  if (prior?.status === 'complete' && canResumePrior) {
     log('already_complete', { state_path: statePath, upserted: prior.total_upserted, completed_windows: prior.completed_windows?.length });
     process.exitCode = 0;
   } else {
-    const snapshotEnd = prior?.snapshot_end ?? new Date().toISOString();
+    const snapshotEnd = canResumePrior && prior?.snapshot_end ? prior.snapshot_end : new Date().toISOString();
     const sourceIndices = await listEs5SourceIndices(es5);
-    if (!sourceIndices.length) throw new Error('No active ES5 monthly source indices found');
+    if (!sourceIndices.length) throw new Error('No active ES5 weekly source indices found');
     const windows = makeWindows(ES5_FULL_START, snapshotEnd);
-    const completed = new Set(prior?.completed_windows ?? []);
+    const completed = new Set(canResumePrior ? (prior?.completed_windows ?? []) : []);
+    if (prior && !canResumePrior) {
+      log('checkpoint_reset', {
+        reason: 'source index selection changed to weekly shards',
+        previous_version: prior.source_index_selection_version ?? null,
+        current_version: ES5_SOURCE_INDEX_SELECTION_VERSION,
+      });
+    }
     const state = {
       status: 'running',
-      source: 'ES5 master monthly indices',
+      source: 'ES5 master weekly indices',
+      source_index_selection_version: ES5_SOURCE_INDEX_SELECTION_VERSION,
       query_field: 'insertedDate',
       start: ES5_FULL_START,
       start_vietnam: '2026-08-01T00:00:00+07:00',
@@ -62,12 +72,13 @@ try {
       source_index_count: sourceIndices.length,
       windows_total: windows.length,
       completed_windows: [...completed],
-      per_window: prior?.per_window ?? {},
-      total_scanned: prior?.total_scanned ?? 0,
-      total_upserted: prior?.total_upserted ?? 0,
-      total_invalid_published_date: prior?.total_invalid_published_date ?? 0,
-      started_at: prior?.started_at ?? new Date().toISOString(),
-      resumed_at: prior ? new Date().toISOString() : undefined,
+      per_window: canResumePrior ? (prior?.per_window ?? {}) : {},
+      total_scanned: canResumePrior ? (prior?.total_scanned ?? 0) : 0,
+      total_upserted: canResumePrior ? (prior?.total_upserted ?? 0) : 0,
+      total_invalid_published_date: canResumePrior ? (prior?.total_invalid_published_date ?? 0) : 0,
+      started_at: canResumePrior ? prior.started_at : new Date().toISOString(),
+      resumed_at: canResumePrior ? new Date().toISOString() : undefined,
+      restarted_at: prior && !canResumePrior ? new Date().toISOString() : undefined,
     };
     await writeJsonAtomic(statePath, state);
     log('full_started', { start: ES5_FULL_START, snapshot_end: snapshotEnd, source_indices: sourceIndices.length, windows_total: windows.length, completed_windows: completed.size });
