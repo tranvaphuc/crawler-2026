@@ -16,7 +16,9 @@ export const MASTER_COMPONENT_FILES = [
 ];
 
 export async function loadProjectEnv() {
-  return dotenv.parse(await fs.readFile(path.resolve('.env')));
+  const fileEnv = dotenv.parse(await fs.readFile(path.resolve('.env')));
+  // Values supplied by PM2/systemd/the shell must win over repository defaults.
+  return { ...fileEnv, ...process.env };
 }
 
 export function requireSuccess(label, response) {

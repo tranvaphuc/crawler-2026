@@ -303,13 +303,29 @@ export async function bulkMergeEs5(es8Request, items, { chunkSize = 500, concurr
   return { processed: items.length, succeeded };
 }
 
-export async function migrateEs5InsertedRange({ es5, es8Request, sourceIndices, gte, lt, slices = 4, projectionVersion, onProgress }) {
+export async function migrateEs5InsertedRange({
+  es5,
+  es8Request,
+  sourceIndices,
+  gte,
+  lt,
+  slices = 4,
+  sourceIndexBatchSize = 32,
+  projectionVersion,
+  onProgress,
+  onSourceBatch,
+}) {
   const stats = { scanned: 0, upserted: 0, ignored_events: 0, invalid_published_date: 0, affected_indices: new Set() };
-  async function migrateSlice(sliceId) {
+  const batchSize = Math.max(1, Number(sourceIndexBatchSize) || 32);
+  const sourceBatches = [];
+  for (let offset = 0; offset < sourceIndices.length; offset += batchSize) {
+    sourceBatches.push(sourceIndices.slice(offset, offset + batchSize));
+  }
+  async function migrateSlice(indices, sliceId) {
     let scrollId;
     try {
       let response = await es5.search({
-        index: sourceIndices.join(','),
+        index: indices.join(','),
         scroll: '10m',
         version: true,
         body: {
@@ -355,7 +371,19 @@ export async function migrateEs5InsertedRange({ es5, es8Request, sourceIndices, 
       if (scrollId) await es5.clearScroll({ scrollId }).catch(() => {});
     }
   }
-  await Promise.all(Array.from({ length: slices }, (_, sliceId) => migrateSlice(sliceId)));
+  for (let batchIndex = 0; batchIndex < sourceBatches.length; batchIndex += 1) {
+    const indices = sourceBatches[batchIndex];
+    await Promise.all(Array.from({ length: slices }, (_, sliceId) => migrateSlice(indices, sliceId)));
+    if (onSourceBatch) {
+      onSourceBatch({
+        batch: batchIndex + 1,
+        batches: sourceBatches.length,
+        indices: indices.length,
+        scanned: stats.scanned,
+        upserted: stats.upserted,
+      });
+    }
+  }
   return { ...stats, affected_indices: [...stats.affected_indices].sort() };
 }
 

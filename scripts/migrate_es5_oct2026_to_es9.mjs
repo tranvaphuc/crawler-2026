@@ -69,12 +69,25 @@ async function listSourceIndices(es5, reportRoot) {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const env = await loadProjectEnv();
   if (!env.ES5_HOST) throw new Error('Missing ES5_HOST in .env');
+  const start = env.ES5_TO_ES9_START || DEFAULT_START;
+  const planOnly = hasFlag('--plan');
+  const es5RequestTimeout = Number(env.ES5_REQUEST_TIMEOUT_MS || 300_000);
+  const es5MaxRetries = Number(env.ES5_MAX_RETRIES || 3);
+  log('startup', {
+    mode: planOnly ? 'plan' : 'migrate',
+    start,
+    pid: process.pid,
+    es5_host: new URL(env.ES5_HOST).host,
+    es9_target: `${env.ES9_HOST}:${env.ES9_PORT}`,
+    es5_request_timeout_ms: es5RequestTimeout,
+    es5_max_retries: es5MaxRetries,
+  });
   const ES5Client = ES5ClientPkg.Client || ES5ClientPkg;
   const es5 = new ES5Client({
     host: env.ES5_HOST,
     log: 'error',
-    requestTimeout: 300_000,
-    maxRetries: 3,
+    requestTimeout: es5RequestTimeout,
+    maxRetries: es5MaxRetries,
     keepAlive: true,
   });
   const es9Request = createEs9Request(env);
@@ -82,12 +95,14 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const reportRoot = path.resolve(outputArg || 'outputs/01a07164-8064-7313-962f-0d73887aa809/es5-to-es9/oct-2026-migration');
   const statePath = path.join(reportRoot, 'full-state.json');
   const lockPath = path.join(reportRoot, 'es5-to-es9.lock');
-  const start = env.ES5_TO_ES9_START || DEFAULT_START;
-  const planOnly = hasFlag('--plan');
 
   await fs.mkdir(reportRoot, { recursive: true });
+  log('template_deploy_started');
   const template = await deployMasterTemplateEs9({ env, es9Request });
+  log('template_deploy_completed', { cluster_name: template.cluster_name, version: template.version });
+  log('source_indices_started');
   const sourceIndices = await listSourceIndices(es5, reportRoot);
+  log('source_indices_completed', { source_indices: sourceIndices.length });
   if (!sourceIndices.length) throw new Error('No active ES5 weekly master indices found');
 
   if (planOnly) {
@@ -180,6 +195,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
           gte: window.gte,
           lt: window.lt,
           slices: Number(env.ES5_TO_ES9_SLICES || 4),
+          sourceIndexBatchSize: Number(env.ES5_SOURCE_INDEX_BATCH_SIZE || 32),
           projectionVersion: MIGRATION_VERSION,
           onProgress: (progress) => {
             if (progress.scanned >= nextProgress) {
@@ -192,6 +208,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
               while (progress.scanned >= nextProgress) nextProgress += 20_000;
             }
           },
+          onSourceBatch: (progress) => log('source_batch_completed', {
+            window: window.id,
+            ...progress,
+          }),
         });
         for (const index of stats.affected_indices) {
           requireSuccess(`refresh ${index}`, await es9Request('POST', `/${encodeURIComponent(index)}/_refresh`));
