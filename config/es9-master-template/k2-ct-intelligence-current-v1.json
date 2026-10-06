@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "_meta": {
+    "purpose": "Latest bounded intelligence projection; versioned outputs remain in k2-enrichment-event"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "intelligence_current": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "entity_ids": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "topic_ids": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "entities": {
+              "type": "nested",
+              "dynamic": "strict",
+              "properties": {
+                "type": {
+                  "type": "keyword",
+                  "ignore_above": 512
+                },
+                "value": {
+                  "type": "keyword",
+                  "ignore_above": 1024
+                }
+              }
+            },
+            "context": {
+              "type": "nested",
+              "dynamic": "strict",
+              "properties": {
+                "value": {
+                  "type": "keyword",
+                  "ignore_above": 1024
+                },
+                "sentiment": {
+                  "type": "keyword",
+                  "ignore_above": 512
+                }
+              }
+            },
+            "sentiment": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "sentiment_score": {
+              "type": "float"
+            },
+            "sentiment_model_version": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "advertisement": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "angle": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "audience": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "category": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "emotion": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "industry": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "intensity": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "intent": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "product_type": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "purpose": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "severity": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "spam": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "subject": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "subtopic": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "topic": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "tone": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "explanation": {
+              "type": "text",
+              "index": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

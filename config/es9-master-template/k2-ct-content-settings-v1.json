@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "_meta": {
+    "owner": "Kompa Data Platform",
+    "purpose": "Shared ES8 settings for content current projections"
+  },
+  "template": {
+    "settings": {
+      "number_of_shards": 6,
+      "number_of_replicas": 1,
+      "refresh_interval": "30s",
+      "mapping.total_fields.limit": 1500,
+      "analysis": {
+        "filter": {
+          "folded_ascii": {
+            "type": "asciifolding",
+            "preserve_original": true
+          }
+        },
+        "analyzer": {
+          "folded_text": {
+            "type": "custom",
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "folded_ascii"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

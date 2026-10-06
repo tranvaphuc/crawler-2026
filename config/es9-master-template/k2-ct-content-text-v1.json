@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "_meta": {
+    "purpose": "Searchable user-visible text only; operational logs are excluded"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "text": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "original": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "normalized": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "title": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "description": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "caption": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "story": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "share_name": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "summary": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "_meta": {
+    "source": "Kompa 2.0 canonical content projection"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "platform": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "content_type": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "external_id": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "url": {
+          "type": "keyword",
+          "ignore_above": 2048
+        },
+        "origin_url": {
+          "type": "keyword",
+          "ignore_above": 2048,
+          "index": false
+        },
+        "author": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "id": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "canonical_id": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "name": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "username": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "actor_id": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "platform": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "hostname": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "url": {
+              "type": "keyword",
+              "ignore_above": 2048
+            }
+          }
+        },
+        "conversation_id": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "parent_content_id": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "relations": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "parent_published_at": {
+              "type": "date",
+              "format": "strict_date_time"
+            },
+            "comment_parent_content_id": {
+              "type": "keyword",
+              "ignore_above": 512
+            }
+          }
+        },
+        "language": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "code": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "confidence": {
+              "type": "half_float"
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "id": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "name": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "username": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "type": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "platform": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "hostname": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "url": {
+              "type": "keyword",
+              "ignore_above": 2048
+            }
+          }
+        },
+        "locale": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "region": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "country_code": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "language_code": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "timezone": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "location_name": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "address": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "geographic": {
+              "type": "geo_point",
+              "ignore_malformed": true
+            }
+          }
+        },
+        "engagement_current": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "likes": {
+              "type": "long"
+            },
+            "shares": {
+              "type": "long"
+            },
+            "comments": {
+              "type": "long"
+            },
+            "interactions": {
+              "type": "long"
+            },
+            "views": {
+              "type": "long"
+            },
+            "reactions": {
+              "type": "object",
+              "dynamic": "strict",
+              "properties": {
+                "total": {
+                  "type": "long"
+                },
+                "like": {
+                  "type": "long"
+                },
+                "love": {
+                  "type": "long"
+                },
+                "care": {
+                  "type": "long"
+                },
+                "haha": {
+                  "type": "long"
+                },
+                "wow": {
+                  "type": "long"
+                },
+                "sad": {
+                  "type": "long"
+                },
+                "angry": {
+                  "type": "long"
+                },
+                "reposts": {
+                  "type": "long"
+                },
+                "saved": {
+                  "type": "long"
+                }
+              }
+            }
+          }
+        },
+        "match_context_ids": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "flags": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "is_deleted": {
+              "type": "boolean"
+            },
+            "has_translation": {
+              "type": "boolean"
+            },
+            "was_updated": {
+              "type": "boolean"
+            },
+            "mentions_main_brand": {
+              "type": "boolean"
+            }
+          }
+        },
+        "lifecycle": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "content_status": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "privacy": {
+              "type": "keyword",
+              "ignore_above": 512
+            }
+          }
+        },
+        "tags": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "labels": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "campaigns": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "crises": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "processing": {
+              "type": "keyword",
+              "ignore_above": 512
+            }
+          }
+        },
+        "content_spans": {
+          "type": "nested",
+          "dynamic": "strict",
+          "properties": {
+            "type": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "value": {
+              "type": "keyword",
+              "ignore_above": 1024
+            },
+            "offset": {
+              "type": "integer"
+            },
+            "length": {
+              "type": "integer"
+            }
+          }
+        },
+        "translations": {
+          "type": "nested",
+          "dynamic": "strict",
+          "properties": {
+            "language_code": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "content": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "title": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "description": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "summary": {
+              "type": "text",
+              "analyzer": "folded_text",
+              "fields": {
+                "raw": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "media": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "preview_url": {
+              "type": "keyword",
+              "ignore_above": 2048,
+              "index": false
+            },
+            "shared_value": {
+              "type": "keyword",
+              "ignore_above": 2048,
+              "index": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

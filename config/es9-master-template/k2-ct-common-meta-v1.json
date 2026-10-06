@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "_meta": {
+    "source": "Kompa 2.0 Master Blueprint v1.2, mapping rules and lineage requirements"
+  },
+  "template": {
+    "mappings": {
+      "dynamic": "strict",
+      "_meta": {
+        "schema": "k2-content-current",
+        "schema_version": "1.0.0",
+        "projection_role": "near-real-time search and serving",
+        "source_model": "topic56fc9bc282ea19d067e5d8a1"
+      },
+      "properties": {
+        "content_id": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "schema_version": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "projection_version": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "source_document_version": {
+          "type": "long"
+        },
+        "published_at": {
+          "type": "date",
+          "format": "strict_date_time"
+        },
+        "collected_at": {
+          "type": "date",
+          "format": "strict_date_time"
+        },
+        "updated_at": {
+          "type": "date",
+          "format": "strict_date_time"
+        },
+        "last_seen_at": {
+          "type": "date",
+          "format": "strict_date_time"
+        },
+        "raw_ref": {
+          "type": "keyword",
+          "ignore_above": 2048,
+          "index": false
+        },
+        "raw_checksum": {
+          "type": "keyword",
+          "ignore_above": 512
+        },
+        "lineage": {
+          "type": "object",
+          "dynamic": "strict",
+          "properties": {
+            "source_index": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "source_document_id": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "collector": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "source_pipeline": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "input_hash": {
+              "type": "keyword",
+              "ignore_above": 512
+            },
+            "migrated_at": {
+              "type": "date",
+              "format": "strict_date_time"
+            }
+          }
+        }
+      }
+    }
+  }
+}

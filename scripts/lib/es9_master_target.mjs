@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import http from 'node:http';
 import https from 'node:https';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import zlib from 'node:zlib';
 import dotenv from 'dotenv';
 import { deepClone } from './node_compat.mjs';
@@ -14,6 +15,9 @@ export const MASTER_COMPONENT_FILES = [
   ['master-ct-content-text-v1', 'k2-ct-content-text-v1.json'],
   ['master-ct-intelligence-current-v1', 'k2-ct-intelligence-current-v1.json'],
 ];
+const DEFAULT_BLUEPRINT_DIR = fileURLToPath(
+  new URL('../../config/es9-master-template/', import.meta.url),
+);
 
 export async function loadProjectEnv() {
   const fileEnv = dotenv.parse(await fs.readFile(path.resolve('.env')));
@@ -86,7 +90,7 @@ function collectDateFormats(value, formats = []) {
 export async function deployMasterTemplateEs9({
   env,
   es9Request,
-  blueprintDir = 'outputs/01a07164-8064-7313-962f-0d73887aa809/es8-blueprint-v1',
+  blueprintDir = DEFAULT_BLUEPRINT_DIR,
 } = {}) {
   const resolvedEnv = env ?? await loadProjectEnv();
   const request = es9Request ?? createEs9Request(resolvedEnv);
