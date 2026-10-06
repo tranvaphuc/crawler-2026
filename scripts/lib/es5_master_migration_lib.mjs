@@ -314,7 +314,9 @@ export async function migrateEs5InsertedRange({
   maxDocuments,
   projectionVersion,
   onProgress,
+  onSourceBatchStarted,
   onSourceBatch,
+  onSourceBatchError,
 }) {
   const stats = { scanned: 0, upserted: 0, ignored_events: 0, invalid_published_date: 0, affected_indices: new Set() };
   const documentLimit = maxDocuments === undefined ? undefined : Number(maxDocuments);
@@ -387,12 +389,29 @@ export async function migrateEs5InsertedRange({
   for (let batchIndex = 0; batchIndex < sourceBatches.length; batchIndex += 1) {
     if (documentLimit !== undefined && stats.scanned >= documentLimit) break;
     const indices = sourceBatches[batchIndex];
-    await Promise.all(Array.from({ length: slices }, (_, sliceId) => migrateSlice(indices, sliceId)));
+    const batchDetails = {
+      batch: batchIndex + 1,
+      batches: sourceBatches.length,
+      indices: indices.length,
+      first_index: indices[0],
+      last_index: indices.at(-1),
+      scanned: stats.scanned,
+      upserted: stats.upserted,
+    };
+    if (onSourceBatchStarted) onSourceBatchStarted(batchDetails);
+    try {
+      await Promise.all(Array.from({ length: slices }, (_, sliceId) => migrateSlice(indices, sliceId)));
+    } catch (error) {
+      if (onSourceBatchError) onSourceBatchError({
+        ...batchDetails,
+        error_name: error?.name,
+        error_message: error?.message ?? String(error),
+      });
+      throw error;
+    }
     if (onSourceBatch) {
       onSourceBatch({
-        batch: batchIndex + 1,
-        batches: sourceBatches.length,
-        indices: indices.length,
+        ...batchDetails,
         scanned: stats.scanned,
         upserted: stats.upserted,
       });

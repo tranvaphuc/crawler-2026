@@ -67,6 +67,8 @@ async function listSourceIndices(es5, reportRoot) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  let stage = 'load_environment';
+  try {
   const env = await loadProjectEnv();
   if (!env.ES5_HOST) throw new Error('Missing ES5_HOST in .env');
   const start = env.ES5_TO_ES9_START || DEFAULT_START;
@@ -95,18 +97,33 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const reportRoot = path.resolve(outputArg || 'outputs/01a07164-8064-7313-962f-0d73887aa809/es5-to-es9/oct-2026-migration');
   const statePath = path.join(reportRoot, 'full-state.json');
   const lockPath = path.join(reportRoot, 'es5-to-es9.lock');
+  log('runtime_config', {
+    cwd: process.cwd(),
+    node_version: process.version,
+    state_path: statePath,
+    slices: Number(env.ES5_TO_ES9_SLICES || 4),
+    source_index_batch_size: Number(env.ES5_SOURCE_INDEX_BATCH_SIZE || 32),
+    max_docs_per_day: env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW
+      ? Number(env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW)
+      : null,
+  });
 
+  stage = 'create_output_directory';
   await fs.mkdir(reportRoot, { recursive: true });
+  stage = 'deploy_es9_template';
   log('template_deploy_started');
   const template = await deployMasterTemplateEs9({ env, es9Request });
   log('template_deploy_completed', { cluster_name: template.cluster_name, version: template.version });
+  stage = 'list_es5_source_indices';
   log('source_indices_started');
   const sourceIndices = await listSourceIndices(es5, reportRoot);
   log('source_indices_completed', { source_indices: sourceIndices.length });
   if (!sourceIndices.length) throw new Error('No active ES5 weekly master indices found');
 
   if (planOnly) {
+    stage = 'count_es5_plan';
     const snapshotEnd = new Date().toISOString();
+    log('plan_count_started', { start, snapshot_end: snapshotEnd, source_indices: sourceIndices.length });
     const count = await es5.count({
       index: sourceIndices.join(','),
       body: {
@@ -134,8 +151,12 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     process.exit(0);
   }
 
+  stage = 'acquire_migration_lock';
+  log('lock_acquire_started', { lock_path: lockPath });
   const releaseLock = await acquireLock(lockPath);
+  log('lock_acquired', { lock_path: lockPath });
   try {
+    stage = 'read_checkpoint';
     const prior = await readState(statePath);
     const canResume = prior?.migration_version === MIGRATION_VERSION
       && prior?.source_index_selection_version === ES5_SOURCE_INDEX_SELECTION_VERSION
@@ -187,6 +208,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         if (completed.has(window.id)) continue;
         const startedAt = new Date().toISOString();
         let nextProgress = 20_000;
+        stage = `migrate_window:${window.id}`;
         log('window_started', { ...window, ordinal: ordinal + 1, windows_total: windows.length });
         const stats = await migrateEs5InsertedRange({
           es5,
@@ -211,14 +233,25 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
               while (progress.scanned >= nextProgress) nextProgress += 20_000;
             }
           },
+          onSourceBatchStarted: (progress) => log('source_batch_started', {
+            window: window.id,
+            ...progress,
+          }),
           onSourceBatch: (progress) => log('source_batch_completed', {
             window: window.id,
             ...progress,
           }),
+          onSourceBatchError: (progress) => log('source_batch_failed', {
+            window: window.id,
+            ...progress,
+          }),
         });
+        stage = `refresh_target_indices:${window.id}`;
+        log('target_refresh_started', { window: window.id, indices: stats.affected_indices.length });
         for (const index of stats.affected_indices) {
           requireSuccess(`refresh ${index}`, await es9Request('POST', `/${encodeURIComponent(index)}/_refresh`));
         }
+        log('target_refresh_completed', { window: window.id, indices: stats.affected_indices.length });
         completed.add(window.id);
         state.completed_windows = [...completed];
         state.per_window[window.id] = { ...window, ...stats, started_at: startedAt, completed_at: new Date().toISOString() };
@@ -226,7 +259,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         state.total_upserted += stats.upserted;
         state.total_invalid_published_date += stats.invalid_published_date;
         state.updated_at = new Date().toISOString();
+        stage = `write_checkpoint:${window.id}`;
         await writeJsonAtomic(statePath, state);
+        log('checkpoint_written', { window: window.id, state_path: statePath });
         log('window_completed', {
           window: window.id,
           scanned: stats.scanned,
@@ -240,7 +275,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       state.status = 'complete';
       state.completed_at = new Date().toISOString();
       state.updated_at = state.completed_at;
+      stage = 'read_es9_cluster_health';
       state.cluster_health = requireSuccess('ES9 cluster health', await es9Request('GET', '/_cluster/health'));
+      stage = 'write_final_checkpoint';
       await writeJsonAtomic(statePath, state);
       log('migration_completed', {
         total_scanned: state.total_scanned,
@@ -260,5 +297,19 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     throw error;
   } finally {
     await releaseLock();
+    log('lock_released', { lock_path: lockPath });
+  }
+  } catch (error) {
+    log('migration_failed', {
+      stage,
+      error_name: error?.name,
+      error_message: error?.message ?? String(error),
+      status_code: error?.statusCode ?? error?.status,
+      stack: error?.stack,
+    });
+    // Flush the structured error before exiting. Keep-alive HTTP agents can
+    // otherwise keep a failed PM2 process alive indefinitely.
+    await new Promise((resolve) => process.stdout.write('', resolve));
+    process.exit(1);
   }
 }
