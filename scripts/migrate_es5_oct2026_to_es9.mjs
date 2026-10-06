@@ -16,6 +16,17 @@ import {
   requireSuccess,
 } from './lib/es9_master_target.mjs';
 
+function debugStep(step, message, values = {}) {
+  console.log(`[ES5-TO-ES9][STEP ${step}] ${message} ${JSON.stringify(values)}`);
+}
+
+debugStep('00', 'migration module loaded', {
+  pid: process.pid,
+  argv1: process.argv[1],
+  cwd: process.cwd(),
+  node: process.version,
+});
+
 export const DEFAULT_START = '2026-09-30T17:00:00.000Z'; // 2026-10-01 00:00:00 Asia/Ho_Chi_Minh
 export const MIGRATION_VERSION = 'es5-to-es9-oct-2026-v1';
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -69,12 +80,25 @@ async function listSourceIndices(es5, reportRoot) {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   let stage = 'load_environment';
   try {
+  debugStep('01', 'entrypoint matched; loading .env');
   const env = await loadProjectEnv();
+  debugStep('02', '.env loaded', {
+    has_es5_host: Boolean(env.ES5_HOST),
+    has_es9_host: Boolean(env.ES9_HOST),
+    has_es9_user: Boolean(env.ES9_USER),
+    has_es9_pass: Boolean(env.ES9_PASS),
+  });
   if (!env.ES5_HOST) throw new Error('Missing ES5_HOST in .env');
   const start = env.ES5_TO_ES9_START || DEFAULT_START;
   const planOnly = hasFlag('--plan');
   const es5RequestTimeout = Number(env.ES5_REQUEST_TIMEOUT_MS || 300_000);
   const es5MaxRetries = Number(env.ES5_MAX_RETRIES || 3);
+  debugStep('03', 'runtime options resolved', {
+    mode: planOnly ? 'plan' : 'migrate',
+    start,
+    es5_request_timeout_ms: es5RequestTimeout,
+    es5_max_retries: es5MaxRetries,
+  });
   log('startup', {
     mode: planOnly ? 'plan' : 'migrate',
     start,
@@ -85,6 +109,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     es5_max_retries: es5MaxRetries,
   });
   const ES5Client = ES5ClientPkg.Client || ES5ClientPkg;
+  debugStep('04', 'creating ES5 and ES9 clients');
   const es5 = new ES5Client({
     host: env.ES5_HOST,
     log: 'error',
@@ -97,6 +122,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const reportRoot = path.resolve(outputArg || 'outputs/01a07164-8064-7313-962f-0d73887aa809/es5-to-es9/oct-2026-migration');
   const statePath = path.join(reportRoot, 'full-state.json');
   const lockPath = path.join(reportRoot, 'es5-to-es9.lock');
+  debugStep('05', 'output paths resolved', { report_root: reportRoot, state_path: statePath });
   log('runtime_config', {
     cwd: process.cwd(),
     node_version: process.version,
@@ -109,19 +135,25 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   });
 
   stage = 'create_output_directory';
+  debugStep('06', 'creating output directory');
   await fs.mkdir(reportRoot, { recursive: true });
   stage = 'deploy_es9_template';
+  debugStep('07', 'deploying ES9 templates');
   log('template_deploy_started');
   const template = await deployMasterTemplateEs9({ env, es9Request });
+  debugStep('08', 'ES9 templates deployed', { cluster_name: template.cluster_name, version: template.version });
   log('template_deploy_completed', { cluster_name: template.cluster_name, version: template.version });
   stage = 'list_es5_source_indices';
+  debugStep('09', 'listing ES5 source indices');
   log('source_indices_started');
   const sourceIndices = await listSourceIndices(es5, reportRoot);
+  debugStep('10', 'ES5 source indices listed', { count: sourceIndices.length });
   log('source_indices_completed', { source_indices: sourceIndices.length });
   if (!sourceIndices.length) throw new Error('No active ES5 weekly master indices found');
 
   if (planOnly) {
     stage = 'count_es5_plan';
+    debugStep('11P', 'counting ES5 documents for plan');
     const snapshotEnd = new Date().toISOString();
     log('plan_count_started', { start, snapshot_end: snapshotEnd, source_indices: sourceIndices.length });
     const count = await es5.count({
@@ -148,15 +180,19 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       target: `${env.ES9_HOST}:${env.ES9_PORT}`,
       template,
     });
+    debugStep('12P', 'plan completed', { matching_documents: count.count });
     process.exit(0);
   }
 
   stage = 'acquire_migration_lock';
+  debugStep('11', 'acquiring migration lock', { lock_path: lockPath });
   log('lock_acquire_started', { lock_path: lockPath });
   const releaseLock = await acquireLock(lockPath);
+  debugStep('12', 'migration lock acquired');
   log('lock_acquired', { lock_path: lockPath });
   try {
     stage = 'read_checkpoint';
+    debugStep('13', 'reading checkpoint', { state_path: statePath });
     const prior = await readState(statePath);
     const canResume = prior?.migration_version === MIGRATION_VERSION
       && prior?.source_index_selection_version === ES5_SOURCE_INDEX_SELECTION_VERSION
@@ -194,6 +230,11 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         resumed_at: canResume ? new Date().toISOString() : undefined,
         template,
       };
+      debugStep('14', 'migration windows prepared', {
+        windows_total: windows.length,
+        completed_windows: completed.size,
+        snapshot_end: snapshotEnd,
+      });
       await writeJsonAtomic(statePath, state);
       log('migration_started', {
         start,
@@ -209,6 +250,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         const startedAt = new Date().toISOString();
         let nextProgress = 20_000;
         stage = `migrate_window:${window.id}`;
+        debugStep('15', 'starting daily window', { ordinal: ordinal + 1, windows_total: windows.length, ...window });
         log('window_started', { ...window, ordinal: ordinal + 1, windows_total: windows.length });
         const stats = await migrateEs5InsertedRange({
           es5,
@@ -233,20 +275,21 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
               while (progress.scanned >= nextProgress) nextProgress += 20_000;
             }
           },
-          onSourceBatchStarted: (progress) => log('source_batch_started', {
-            window: window.id,
-            ...progress,
-          }),
-          onSourceBatch: (progress) => log('source_batch_completed', {
-            window: window.id,
-            ...progress,
-          }),
-          onSourceBatchError: (progress) => log('source_batch_failed', {
-            window: window.id,
-            ...progress,
-          }),
+          onSourceBatchStarted: (progress) => {
+            debugStep('15A', 'ES5 source batch started', { window: window.id, ...progress });
+            log('source_batch_started', { window: window.id, ...progress });
+          },
+          onSourceBatch: (progress) => {
+            debugStep('15B', 'ES5 source batch completed', { window: window.id, ...progress });
+            log('source_batch_completed', { window: window.id, ...progress });
+          },
+          onSourceBatchError: (progress) => {
+            console.error(`[ES5-TO-ES9][STEP 15X] ES5 source batch failed ${JSON.stringify({ window: window.id, ...progress })}`);
+            log('source_batch_failed', { window: window.id, ...progress });
+          },
         });
         stage = `refresh_target_indices:${window.id}`;
+        debugStep('16', 'refreshing affected ES9 indices', { window: window.id, indices: stats.affected_indices.length });
         log('target_refresh_started', { window: window.id, indices: stats.affected_indices.length });
         for (const index of stats.affected_indices) {
           requireSuccess(`refresh ${index}`, await es9Request('POST', `/${encodeURIComponent(index)}/_refresh`));
@@ -260,6 +303,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         state.total_invalid_published_date += stats.invalid_published_date;
         state.updated_at = new Date().toISOString();
         stage = `write_checkpoint:${window.id}`;
+        debugStep('17', 'writing daily checkpoint', { window: window.id });
         await writeJsonAtomic(statePath, state);
         log('checkpoint_written', { window: window.id, state_path: statePath });
         log('window_completed', {
@@ -276,8 +320,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       state.completed_at = new Date().toISOString();
       state.updated_at = state.completed_at;
       stage = 'read_es9_cluster_health';
+      debugStep('18', 'reading ES9 cluster health');
       state.cluster_health = requireSuccess('ES9 cluster health', await es9Request('GET', '/_cluster/health'));
       stage = 'write_final_checkpoint';
+      debugStep('19', 'writing final checkpoint');
       await writeJsonAtomic(statePath, state);
       log('migration_completed', {
         total_scanned: state.total_scanned,
@@ -307,6 +353,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       status_code: error?.statusCode ?? error?.status,
       stack: error?.stack,
     });
+    console.error(`[ES5-TO-ES9][FAILED] stage=${stage} name=${error?.name ?? 'Error'} message=${String(error?.message ?? error)}`);
     // Flush the structured error before exiting. Keep-alive HTTP agents can
     // otherwise keep a failed PM2 process alive indefinitely.
     await new Promise((resolve) => process.stdout.write('', resolve));

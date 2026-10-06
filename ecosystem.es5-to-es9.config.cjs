@@ -14,7 +14,7 @@ module.exports = {
     {
       name: 'migration-es5-to-es9-oct-2026',
       cwd,
-      script: 'scripts/migrate_es5_oct2026_to_es9.mjs',
+      script: 'scripts/run_es5_to_es9_migration.cjs',
       args: [stateDir],
       interpreter: 'node',
       exec_mode: 'fork',
