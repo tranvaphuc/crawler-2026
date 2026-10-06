@@ -311,11 +311,19 @@ export async function migrateEs5InsertedRange({
   lt,
   slices = 4,
   sourceIndexBatchSize = 32,
+  maxDocuments,
   projectionVersion,
   onProgress,
   onSourceBatch,
 }) {
   const stats = { scanned: 0, upserted: 0, ignored_events: 0, invalid_published_date: 0, affected_indices: new Set() };
+  const documentLimit = maxDocuments === undefined ? undefined : Number(maxDocuments);
+  if (documentLimit !== undefined && (!Number.isInteger(documentLimit) || documentLimit < 1)) {
+    throw new Error(`Invalid maxDocuments: ${String(maxDocuments)}`);
+  }
+  if (documentLimit !== undefined && Number(slices) !== 1) {
+    throw new Error('maxDocuments requires slices=1 so the limit is deterministic');
+  }
   const batchSize = Math.max(1, Number(sourceIndexBatchSize) || 32);
   const sourceBatches = [];
   for (let offset = 0; offset < sourceIndices.length; offset += batchSize) {
@@ -342,7 +350,8 @@ export async function migrateEs5InsertedRange({
       });
       while (true) {
         scrollId = response._scroll_id;
-        const hits = response.hits?.hits ?? [];
+        const remaining = documentLimit === undefined ? Infinity : documentLimit - stats.scanned;
+        const hits = (response.hits?.hits ?? []).slice(0, Math.max(0, remaining));
         if (!hits.length) break;
         stats.scanned += hits.length;
         const items = [];
@@ -365,6 +374,10 @@ export async function migrateEs5InsertedRange({
           stats.upserted += items.length;
         }
         if (onProgress) onProgress(stats);
+        if (documentLimit !== undefined && stats.scanned >= documentLimit) {
+          nextResponsePromise.catch(() => {});
+          break;
+        }
         response = await nextResponsePromise;
       }
     } finally {
@@ -372,6 +385,7 @@ export async function migrateEs5InsertedRange({
     }
   }
   for (let batchIndex = 0; batchIndex < sourceBatches.length; batchIndex += 1) {
+    if (documentLimit !== undefined && stats.scanned >= documentLimit) break;
     const indices = sourceBatches[batchIndex];
     await Promise.all(Array.from({ length: slices }, (_, sliceId) => migrateSlice(indices, sliceId)));
     if (onSourceBatch) {

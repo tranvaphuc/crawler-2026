@@ -196,6 +196,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
           lt: window.lt,
           slices: Number(env.ES5_TO_ES9_SLICES || 4),
           sourceIndexBatchSize: Number(env.ES5_SOURCE_INDEX_BATCH_SIZE || 32),
+          maxDocuments: env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW
+            ? Number(env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW)
+            : undefined,
           projectionVersion: MIGRATION_VERSION,
           onProgress: (progress) => {
             if (progress.scanned >= nextProgress) {
