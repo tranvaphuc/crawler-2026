@@ -117,6 +117,11 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       const es9Request = createEs9Request(env);
       debugStep('08', 'deploying ES9 templates');
       const template = await deployMasterTemplateEs9({ env, es9Request });
+      debugStep('08B', 'ES9 templates deployed', {
+        cluster_name: template.cluster_name,
+        version: template.version,
+        max_shards_per_node: template.max_shards_per_node,
+      });
       debugStep('09', 'listing ES5 source indices');
       const sourceIndices = await listSourceIndices(es5, path.join(recentDir, 'source-indices.json'));
       debugStep('10', 'ES5 source indices listed', { count: sourceIndices.length });

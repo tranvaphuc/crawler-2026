@@ -99,6 +99,20 @@ export async function deployMasterTemplateEs9({
   if (!String(info.version?.number || '').startsWith('9.')) {
     throw new Error(`Expected Elasticsearch 9.x, received ${info.version?.number ?? 'unknown'}`);
   }
+  const maxShardsPerNode = resolvedEnv.ES9_MAX_SHARDS_PER_NODE
+    ? Number(resolvedEnv.ES9_MAX_SHARDS_PER_NODE)
+    : undefined;
+  if (maxShardsPerNode !== undefined) {
+    if (!Number.isInteger(maxShardsPerNode) || maxShardsPerNode < 1000) {
+      throw new Error(`Invalid ES9_MAX_SHARDS_PER_NODE: ${resolvedEnv.ES9_MAX_SHARDS_PER_NODE}`);
+    }
+    requireSuccess(
+      'set ES9 maximum shards per node',
+      await request('PUT', '/_cluster/settings', {
+        persistent: { 'cluster.max_shards_per_node': maxShardsPerNode },
+      }),
+    );
+  }
 
   const components = [];
   let sharedAnalysis;
@@ -164,5 +178,6 @@ export async function deployMasterTemplateEs9({
     shards: Number(resolvedEnv.ES9_MASTER_SHARDS || 1),
     replicas: Number(resolvedEnv.ES9_MASTER_REPLICAS || 0),
     date_fields_checked: dateFormats.length,
+    max_shards_per_node: maxShardsPerNode,
   };
 }

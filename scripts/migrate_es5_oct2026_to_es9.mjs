@@ -162,7 +162,11 @@ if (isDirectExecution) {
   debugStep('07', 'deploying ES9 templates');
   log('template_deploy_started');
   const template = await deployMasterTemplateEs9({ env, es9Request });
-  debugStep('08', 'ES9 templates deployed', { cluster_name: template.cluster_name, version: template.version });
+  debugStep('08', 'ES9 templates deployed', {
+    cluster_name: template.cluster_name,
+    version: template.version,
+    max_shards_per_node: template.max_shards_per_node,
+  });
   log('template_deploy_completed', { cluster_name: template.cluster_name, version: template.version });
   stage = 'list_es5_source_indices';
   debugStep('09', 'listing ES5 source indices');

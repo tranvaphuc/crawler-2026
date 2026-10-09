@@ -38,6 +38,7 @@ module.exports = {
         ES5_MAX_RETRIES: '2',
         ES5_SOURCE_INDEX_BATCH_SIZE: '32',
         ES5_TO_ES9_BACKFILL_LAG_HOURS: '24',
+        ES9_MAX_SHARDS_PER_NODE: '3000',
       },
     },
     {
@@ -65,6 +66,7 @@ module.exports = {
         ES5_SOURCE_INDEX_BATCH_SIZE: '32',
         ES5_TO_ES9_RECENT_LOOKBACK_HOURS: '24',
         ES5_TO_ES9_RECENT_INTERVAL_MS: '300000',
+        ES9_MAX_SHARDS_PER_NODE: '3000',
       },
     },
   ],
