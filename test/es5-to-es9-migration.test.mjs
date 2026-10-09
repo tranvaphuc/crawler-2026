@@ -4,7 +4,7 @@ import { computeRecentRange } from '../scripts/sync_es5_recent_to_es9.mjs';
 
 const windows = makeWindows(DEFAULT_START, '2026-10-03T05:30:00.000Z');
 assert.equal(windows.length, 3);
-assert.deepEqual(windows.at(-1), {
+assert.deepEqual(windows[windows.length - 1], {
   id: '2026-09-30T17:00:00.000Z__2026-10-01T17:00:00.000Z',
   gte: '2026-09-30T17:00:00.000Z',
   lt: '2026-10-01T17:00:00.000Z',

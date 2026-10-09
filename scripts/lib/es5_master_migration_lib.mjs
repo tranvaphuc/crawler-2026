@@ -394,7 +394,7 @@ export async function migrateEs5InsertedRange({
       batches: sourceBatches.length,
       indices: indices.length,
       first_index: indices[0],
-      last_index: indices.at(-1),
+      last_index: indices[indices.length - 1],
       scanned: stats.scanned,
       upserted: stats.upserted,
     };
