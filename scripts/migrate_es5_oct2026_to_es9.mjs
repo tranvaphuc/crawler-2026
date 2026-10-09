@@ -20,12 +20,15 @@ function debugStep(step, message, values = {}) {
   console.log(`[ES5-TO-ES9][STEP ${step}] ${message} ${JSON.stringify(values)}`);
 }
 
-debugStep('00', 'migration module loaded', {
-  pid: process.pid,
-  argv1: process.argv[1],
-  cwd: process.cwd(),
-  node: process.version,
-});
+const isDirectExecution = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectExecution) {
+  debugStep('00', 'migration module loaded', {
+    pid: process.pid,
+    argv1: process.argv[1],
+    cwd: process.cwd(),
+    node: process.version,
+  });
+}
 
 export const DEFAULT_START = '2026-09-30T17:00:00.000Z'; // 2026-10-01 00:00:00 Asia/Ho_Chi_Minh
 export const MIGRATION_VERSION = 'es5-to-es9-oct-2026-v1';
@@ -77,7 +80,7 @@ async function listSourceIndices(es5, reportRoot) {
   return indices;
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectExecution) {
   let stage = 'load_environment';
   try {
   debugStep('01', 'entrypoint matched; loading .env');

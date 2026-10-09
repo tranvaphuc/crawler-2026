@@ -42,7 +42,7 @@ module.exports = {
     {
       name: 'sync-es5-to-es9-recent',
       cwd,
-      script: 'scripts/sync_es5_recent_to_es9.mjs',
+      script: 'scripts/run_es5_to_es9_recent_sync.cjs',
       args: [stateDir],
       interpreter: 'node',
       exec_mode: 'fork',
@@ -61,6 +61,9 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
         TZ: 'Asia/Ho_Chi_Minh',
+        ES5_REQUEST_TIMEOUT_MS: '120000',
+        ES5_MAX_RETRIES: '2',
+        ES5_SOURCE_INDEX_BATCH_SIZE: '32',
       },
     },
   ],
