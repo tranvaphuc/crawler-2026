@@ -31,6 +31,16 @@ export function computeRecentRange({ start, fullSnapshotEnd, lastSuccessfulEnd, 
   };
 }
 
+export function canStartRecentSync(fullState, start) {
+  return Boolean(
+    fullState
+    && ['running', 'failed', 'complete'].includes(fullState.status)
+    && fullState.migration_version === MIGRATION_VERSION
+    && fullState.start === start
+    && Number.isFinite(new Date(fullState.snapshot_end).getTime()),
+  );
+}
+
 function log(event, values = {}) {
   process.stdout.write(`${JSON.stringify({ at: new Date().toISOString(), event, ...values })}\n`);
 }
@@ -80,7 +90,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const fullStatePath = path.join(reportRoot, 'full-state.json');
   const cursorPath = path.join(recentDir, 'cursor.json');
   const latestPath = path.join(recentDir, 'latest.json');
-  const lockPath = path.join(reportRoot, 'es5-to-es9.lock');
+  // Incremental sync is safe to run beside the frozen full snapshot because
+  // both paths upsert deterministic document IDs. Its own lock prevents two
+  // scheduled incremental runs from overlapping each other.
+  const lockPath = path.join(recentDir, 'recent-sync.lock');
   const start = env.ES5_TO_ES9_START || DEFAULT_START;
   const overlapHours = Number(env.ES5_TO_ES9_RECENT_OVERLAP_HOURS || 2);
   const slices = Number(env.ES5_TO_ES9_RECENT_SLICES || env.ES5_TO_ES9_SLICES || 4);
@@ -89,12 +102,12 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   await fs.mkdir(recentDir, { recursive: true });
   let releaseLock;
   try {
-    debugStep('04', 'acquiring shared migration lock', { lock_path: lockPath });
+    debugStep('04', 'acquiring incremental sync lock', { lock_path: lockPath });
     releaseLock = await acquireLock(lockPath);
-    debugStep('05', 'shared migration lock acquired');
+    debugStep('05', 'incremental sync lock acquired');
   } catch (error) {
     if (!String(error.message).startsWith('Migration already running with PID')) throw error;
-    const skipped = { status: 'skipped', reason: 'full or incremental migration currently owns the shared lock', detail: error.message, at: new Date().toISOString() };
+    const skipped = { status: 'skipped', reason: 'another incremental sync currently owns the lock', detail: error.message, at: new Date().toISOString() };
     await writeJsonAtomic(latestPath, skipped);
     log('recent_sync_skipped', skipped);
     process.exit(0);
@@ -104,13 +117,12 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   try {
     const fullState = await readJson(fullStatePath);
     debugStep('06', 'full migration checkpoint read', { status: fullState?.status ?? 'missing' });
-    if (fullState?.status !== 'complete'
-      || fullState?.migration_version !== MIGRATION_VERSION
-      || fullState?.start !== start) {
+    if (!canStartRecentSync(fullState, start)) {
       const skipped = {
         status: 'skipped',
-        reason: 'full ES5 to ES9 migration is not complete',
+        reason: 'full migration checkpoint is missing or incompatible',
         full_status: fullState?.status ?? 'missing',
+        has_snapshot_end: Boolean(fullState?.snapshot_end),
         at: new Date().toISOString(),
       };
       await writeJsonAtomic(latestPath, skipped);
@@ -149,6 +161,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         migration_version: MIGRATION_VERSION,
         query: { field: 'insertedDate', ...range, overlap_hours: overlapHours },
         source_index_count: sourceIndices.length,
+        full_migration_status: fullState.status,
+        full_snapshot_end: fullState.snapshot_end,
         template,
       });
       await writeJsonAtomic(latestPath, report);
