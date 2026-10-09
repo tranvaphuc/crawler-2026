@@ -17,28 +17,17 @@ import {
 } from './lib/es9_master_target.mjs';
 import { DEFAULT_START, MIGRATION_VERSION } from './migrate_es5_oct2026_to_es9.mjs';
 
-export function computeRecentRange({ start, fullSnapshotEnd, lastSuccessfulEnd, now, overlapHours }) {
+export function computeRecentRange({ start, now, lookbackHours = 24 }) {
   const minimum = new Date(start).getTime();
-  const cursor = new Date(lastSuccessfulEnd || fullSnapshotEnd).getTime();
   const end = new Date(now).getTime();
-  const overlapMs = Number(overlapHours) * 60 * 60 * 1000;
-  if (![minimum, cursor, end, overlapMs].every(Number.isFinite) || overlapMs < 0 || end <= minimum) {
+  const lookbackMs = Number(lookbackHours) * 60 * 60 * 1000;
+  if (![minimum, end, lookbackMs].every(Number.isFinite) || lookbackMs <= 0 || end <= minimum) {
     throw new Error('Invalid incremental migration range inputs');
   }
   return {
-    gte: new Date(Math.max(minimum, cursor - overlapMs)).toISOString(),
+    gte: new Date(Math.max(minimum, end - lookbackMs)).toISOString(),
     lt: new Date(end).toISOString(),
   };
-}
-
-export function canStartRecentSync(fullState, start) {
-  return Boolean(
-    fullState
-    && ['running', 'failed', 'complete'].includes(fullState.status)
-    && fullState.migration_version === MIGRATION_VERSION
-    && fullState.start === start
-    && Number.isFinite(new Date(fullState.snapshot_end).getTime()),
-  );
 }
 
 function log(event, values = {}) {
@@ -87,7 +76,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     process.argv[2] || 'outputs/01a07164-8064-7313-962f-0d73887aa809/es5-to-es9/oct-2026-migration',
   );
   const recentDir = path.join(reportRoot, 'recent-sync');
-  const fullStatePath = path.join(reportRoot, 'full-state.json');
   const cursorPath = path.join(recentDir, 'cursor.json');
   const latestPath = path.join(recentDir, 'latest.json');
   // Incremental sync is safe to run beside the frozen full snapshot because
@@ -95,10 +83,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   // scheduled incremental runs from overlapping each other.
   const lockPath = path.join(recentDir, 'recent-sync.lock');
   const start = env.ES5_TO_ES9_START || DEFAULT_START;
-  const overlapHours = Number(env.ES5_TO_ES9_RECENT_OVERLAP_HOURS || 2);
+  const lookbackHours = Number(env.ES5_TO_ES9_RECENT_LOOKBACK_HOURS || 24);
   const slices = Number(env.ES5_TO_ES9_RECENT_SLICES || env.ES5_TO_ES9_SLICES || 4);
 
-  debugStep('03', 'runtime paths resolved', { report_root: reportRoot, full_state_path: fullStatePath, latest_path: latestPath });
+  debugStep('03', 'runtime paths resolved', { report_root: reportRoot, latest_path: latestPath, lookback_hours: lookbackHours });
   await fs.mkdir(recentDir, { recursive: true });
   let releaseLock;
   try {
@@ -115,28 +103,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 
   const report = { status: 'running', started_at: new Date().toISOString() };
   try {
-    const fullState = await readJson(fullStatePath);
-    debugStep('06', 'full migration checkpoint read', { status: fullState?.status ?? 'missing' });
-    if (!canStartRecentSync(fullState, start)) {
-      const skipped = {
-        status: 'skipped',
-        reason: 'full migration checkpoint is missing or incompatible',
-        full_status: fullState?.status ?? 'missing',
-        has_snapshot_end: Boolean(fullState?.snapshot_end),
-        at: new Date().toISOString(),
-      };
-      await writeJsonAtomic(latestPath, skipped);
-      log('recent_sync_skipped', skipped);
-      process.exitCode = 0;
-    } else {
-      const cursor = await readJson(cursorPath);
-      const range = computeRecentRange({
-        start,
-        fullSnapshotEnd: fullState.snapshot_end,
-        lastSuccessfulEnd: cursor?.last_successful_end,
-        now: new Date().toISOString(),
-        overlapHours,
-      });
+      const range = computeRecentRange({ start, now: new Date().toISOString(), lookbackHours });
+      debugStep('06', 'recent 24h range computed', { ...range, lookback_hours: lookbackHours });
       const ES5Client = ES5ClientPkg.Client || ES5ClientPkg;
       debugStep('07', 'creating ES5 and ES9 clients', { gte: range.gte, lt: range.lt, slices });
       const es5 = new ES5Client({
@@ -159,14 +127,12 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         target: 'Elasticsearch 9 masterYYYYMMDD',
         source_index_selection_version: ES5_SOURCE_INDEX_SELECTION_VERSION,
         migration_version: MIGRATION_VERSION,
-        query: { field: 'insertedDate', ...range, overlap_hours: overlapHours },
+        query: { field: 'insertedDate', ...range, lookback_hours: lookbackHours },
         source_index_count: sourceIndices.length,
-        full_migration_status: fullState.status,
-        full_snapshot_end: fullState.snapshot_end,
         template,
       });
       await writeJsonAtomic(latestPath, report);
-      log('recent_sync_started', { ...range, overlap_hours: overlapHours, source_indices: sourceIndices.length });
+      log('recent_sync_started', { ...range, lookback_hours: lookbackHours, source_indices: sourceIndices.length });
 
       let nextProgress = 20_000;
       const stats = await migrateEs5InsertedRange({
@@ -202,7 +168,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       await writeJsonAtomic(cursorPath, {
         migration_version: MIGRATION_VERSION,
         last_successful_end: range.lt,
-        overlap_hours: overlapHours,
+        lookback_hours: lookbackHours,
         last_run_completed_at: report.completed_at,
       });
       log('recent_sync_completed', {
@@ -211,7 +177,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         affected_indices: stats.affected_indices,
         cursor: range.lt,
       });
-    }
   } catch (error) {
     Object.assign(report, { status: 'failed', failed_at: new Date().toISOString(), error: error.stack ?? String(error) });
     await writeJsonAtomic(latestPath, report).catch(() => {});

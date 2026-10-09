@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
-import { DEFAULT_START, makeWindows } from '../scripts/migrate_es5_oct2026_to_es9.mjs';
-import { canStartRecentSync, computeRecentRange } from '../scripts/sync_es5_recent_to_es9.mjs';
+import { computeBackfillCutoff, DEFAULT_START, makeWindows } from '../scripts/migrate_es5_oct2026_to_es9.mjs';
+import { computeRecentRange } from '../scripts/sync_es5_recent_to_es9.mjs';
 
 const windows = makeWindows(DEFAULT_START, '2026-10-03T05:30:00.000Z');
 assert.equal(windows.length, 3);
@@ -15,39 +15,25 @@ assert.deepEqual(windows[0], {
   lt: '2026-10-03T05:30:00.000Z',
 });
 assert.throws(() => makeWindows(DEFAULT_START, DEFAULT_START), /Invalid migration range/);
+assert.equal(computeBackfillCutoff({
+  now: '2026-10-09T06:30:00.000Z',
+  lagHours: 24,
+}), '2026-10-08T06:30:00.000Z');
 
 assert.deepEqual(computeRecentRange({
   start: DEFAULT_START,
-  fullSnapshotEnd: '2026-10-02T00:00:00.000Z',
   now: '2026-10-03T00:00:00.000Z',
-  overlapHours: 2,
+  lookbackHours: 24,
 }), {
-  gte: '2026-10-01T22:00:00.000Z',
+  gte: '2026-10-02T00:00:00.000Z',
   lt: '2026-10-03T00:00:00.000Z',
 });
 assert.deepEqual(computeRecentRange({
   start: DEFAULT_START,
-  fullSnapshotEnd: '2026-10-01T00:00:00.000Z',
-  lastSuccessfulEnd: '2026-10-02T18:00:00.000Z',
-  now: '2026-10-03T00:00:00.000Z',
-  overlapHours: 2,
+  now: '2026-10-01T05:00:00.000Z',
+  lookbackHours: 24,
 }), {
-  gte: '2026-10-02T16:00:00.000Z',
-  lt: '2026-10-03T00:00:00.000Z',
+  gte: DEFAULT_START,
+  lt: '2026-10-01T05:00:00.000Z',
 });
-for (const status of ['running', 'failed', 'complete']) {
-  assert.equal(canStartRecentSync({
-    status,
-    migration_version: 'es5-to-es9-oct-2026-v1',
-    start: DEFAULT_START,
-    snapshot_end: '2026-10-06T00:00:00.000Z',
-  }, DEFAULT_START), true, `recent sync should start from a ${status} full checkpoint`);
-}
-assert.equal(canStartRecentSync(undefined, DEFAULT_START), false);
-assert.equal(canStartRecentSync({
-  status: 'running',
-  migration_version: 'wrong-version',
-  start: DEFAULT_START,
-  snapshot_end: '2026-10-06T00:00:00.000Z',
-}, DEFAULT_START), false);
 console.log('ES5 to ES9 migration window tests passed');

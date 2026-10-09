@@ -34,6 +34,15 @@ export const DEFAULT_START = '2026-09-30T17:00:00.000Z'; // 2026-10-01 00:00:00 
 export const MIGRATION_VERSION = 'es5-to-es9-oct-2026-v1';
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+export function computeBackfillCutoff({ now, lagHours = 24 }) {
+  const end = new Date(now).getTime();
+  const lagMs = Number(lagHours) * 60 * 60 * 1000;
+  if (!Number.isFinite(end) || !Number.isFinite(lagMs) || lagMs <= 0) {
+    throw new Error('Invalid backfill cutoff inputs');
+  }
+  return new Date(end - lagMs).toISOString();
+}
+
 export function makeWindows(startIso, endIso) {
   const start = new Date(startIso).getTime();
   const end = new Date(endIso).getTime();
@@ -96,11 +105,18 @@ if (isDirectExecution) {
   const planOnly = hasFlag('--plan');
   const es5RequestTimeout = Number(env.ES5_REQUEST_TIMEOUT_MS || 300_000);
   const es5MaxRetries = Number(env.ES5_MAX_RETRIES || 3);
+  const backfillLagHours = Number(env.ES5_TO_ES9_BACKFILL_LAG_HOURS || 24);
+  if (!Number.isFinite(backfillLagHours) || backfillLagHours <= 0) {
+    throw new Error(`Invalid ES5_TO_ES9_BACKFILL_LAG_HOURS: ${env.ES5_TO_ES9_BACKFILL_LAG_HOURS}`);
+  }
+  const backfillCutoff = computeBackfillCutoff({ now: new Date().toISOString(), lagHours: backfillLagHours });
   debugStep('03', 'runtime options resolved', {
     mode: planOnly ? 'plan' : 'migrate',
     start,
     es5_request_timeout_ms: es5RequestTimeout,
     es5_max_retries: es5MaxRetries,
+    backfill_lag_hours: backfillLagHours,
+    backfill_cutoff: backfillCutoff,
   });
   log('startup', {
     mode: planOnly ? 'plan' : 'migrate',
@@ -135,6 +151,8 @@ if (isDirectExecution) {
     max_docs_per_day: env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW
       ? Number(env.ES5_TO_ES9_MAX_DOCS_PER_WINDOW)
       : null,
+    backfill_lag_hours: backfillLagHours,
+    backfill_cutoff: backfillCutoff,
   });
 
   stage = 'create_output_directory';
@@ -157,7 +175,7 @@ if (isDirectExecution) {
   if (planOnly) {
     stage = 'count_es5_plan';
     debugStep('11P', 'counting ES5 documents for plan');
-    const snapshotEnd = new Date().toISOString();
+    const snapshotEnd = backfillCutoff;
     log('plan_count_started', { start, snapshot_end: snapshotEnd, source_indices: sourceIndices.length });
     const count = await es5.count({
       index: sourceIndices.join(','),
@@ -200,7 +218,10 @@ if (isDirectExecution) {
     const canResume = prior?.migration_version === MIGRATION_VERSION
       && prior?.source_index_selection_version === ES5_SOURCE_INDEX_SELECTION_VERSION
       && prior?.start === start;
-    if (prior?.status === 'complete' && canResume) {
+    const priorSnapshotTime = new Date(prior?.snapshot_end ?? 0).getTime();
+    const desiredSnapshotTime = new Date(backfillCutoff).getTime();
+    const priorCoversCutoff = Number.isFinite(priorSnapshotTime) && priorSnapshotTime >= desiredSnapshotTime;
+    if (prior?.status === 'complete' && canResume && priorCoversCutoff) {
       log('already_complete', {
         state_path: statePath,
         total_upserted: prior.total_upserted,
@@ -208,7 +229,9 @@ if (isDirectExecution) {
       });
       process.exitCode = 0;
     } else {
-      const snapshotEnd = canResume && prior?.snapshot_end ? prior.snapshot_end : new Date().toISOString();
+      const snapshotEnd = canResume && Number.isFinite(priorSnapshotTime)
+        ? new Date(Math.max(priorSnapshotTime, desiredSnapshotTime)).toISOString()
+        : backfillCutoff;
       const windows = makeWindows(start, snapshotEnd);
       const completed = new Set(canResume ? (prior?.completed_windows ?? []) : []);
       const state = {
@@ -221,6 +244,7 @@ if (isDirectExecution) {
         start,
         start_vietnam: '2026-10-01T00:00:00+07:00',
         snapshot_end: snapshotEnd,
+        backfill_lag_hours: backfillLagHours,
         source_indices: sourceIndices,
         source_index_count: sourceIndices.length,
         windows_total: windows.length,

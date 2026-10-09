@@ -37,6 +37,7 @@ module.exports = {
         ES5_REQUEST_TIMEOUT_MS: '120000',
         ES5_MAX_RETRIES: '2',
         ES5_SOURCE_INDEX_BATCH_SIZE: '32',
+        ES5_TO_ES9_BACKFILL_LAG_HOURS: '24',
       },
     },
     {
@@ -52,10 +53,8 @@ module.exports = {
       out_file: path.join(logDir, 'recent-sync.out.log'),
       error_file: path.join(logDir, 'recent-sync.error.log'),
       time: true,
-      // Run at minute 20 every six hours in Asia/Ho_Chi_Minh.
-      cron_restart: '20 */6 * * *',
-      autorestart: false,
-      stop_exit_codes: [0],
+      autorestart: true,
+      restart_delay: 30_000,
       max_memory_restart: '4G',
       kill_timeout: 300_000,
       env: {
@@ -64,6 +63,8 @@ module.exports = {
         ES5_REQUEST_TIMEOUT_MS: '120000',
         ES5_MAX_RETRIES: '2',
         ES5_SOURCE_INDEX_BATCH_SIZE: '32',
+        ES5_TO_ES9_RECENT_LOOKBACK_HOURS: '24',
+        ES5_TO_ES9_RECENT_INTERVAL_MS: '300000',
       },
     },
   ],

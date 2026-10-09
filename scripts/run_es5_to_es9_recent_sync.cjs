@@ -11,27 +11,41 @@ console.log(`[ES5-TO-ES9][RECENT RUNNER 02] cwd=${projectRoot}`);
 console.log(`[ES5-TO-ES9][RECENT RUNNER 03] script=${syncScript}`);
 console.log(`[ES5-TO-ES9][RECENT RUNNER 04] args=${JSON.stringify(syncArgs)}`);
 
-const child = spawn(process.execPath, [syncScript, ...syncArgs], {
-  cwd: projectRoot,
-  env: process.env,
-  stdio: 'inherit',
-});
+const intervalMs = Math.max(10_000, Number(process.env.ES5_TO_ES9_RECENT_INTERVAL_MS || 300_000));
+let child;
+let timer;
+let stopping = false;
+let cycle = 0;
 
-console.log(`[ES5-TO-ES9][RECENT RUNNER 05] child spawned pid=${child.pid ?? 'pending'}`);
-
-for (const signal of ['SIGINT', 'SIGTERM']) {
-  process.on(signal, () => {
-    console.log(`[ES5-TO-ES9][RECENT RUNNER SIGNAL] forwarding ${signal} to child pid=${child.pid ?? 'unknown'}`);
-    if (child.pid) child.kill(signal);
+function runCycle() {
+  cycle += 1;
+  console.log(`[ES5-TO-ES9][RECENT RUNNER 05] starting cycle=${cycle}`);
+  child = spawn(process.execPath, [syncScript, ...syncArgs], {
+    cwd: projectRoot,
+    env: process.env,
+    stdio: 'inherit',
+  });
+  console.log(`[ES5-TO-ES9][RECENT RUNNER 06] child spawned pid=${child.pid ?? 'pending'} cycle=${cycle}`);
+  child.on('error', (error) => {
+    console.error(`[ES5-TO-ES9][RECENT RUNNER ERROR] cycle=${cycle} ${error.stack || error}`);
+  });
+  child.on('exit', (code, signal) => {
+    console.log(`[ES5-TO-ES9][RECENT RUNNER EXIT] cycle=${cycle} child code=${code} signal=${signal ?? 'none'}`);
+    child = undefined;
+    if (stopping) return process.exit(code ?? 0);
+    console.log(`[ES5-TO-ES9][RECENT RUNNER WAIT] next cycle in ${intervalMs}ms`);
+    timer = setTimeout(runCycle, intervalMs);
   });
 }
 
-child.on('error', (error) => {
-  console.error(`[ES5-TO-ES9][RECENT RUNNER ERROR] ${error.stack || error}`);
-  process.exit(1);
-});
+for (const signal of ['SIGINT', 'SIGTERM']) {
+  process.on(signal, () => {
+    stopping = true;
+    if (timer) clearTimeout(timer);
+    console.log(`[ES5-TO-ES9][RECENT RUNNER SIGNAL] forwarding ${signal} to child pid=${child?.pid ?? 'none'}`);
+    if (child?.pid) child.kill(signal);
+    else process.exit(0);
+  });
+}
 
-child.on('exit', (code, signal) => {
-  console.log(`[ES5-TO-ES9][RECENT RUNNER EXIT] child code=${code} signal=${signal ?? 'none'}`);
-  process.exit(code ?? 1);
-});
+runCycle();
