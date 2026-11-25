@@ -28,7 +28,7 @@ export function summarizeSourceRound(round,results,finishedAt=new Date()){
  summary.settledSources=bySource.size;summary.unaccountedSources=Math.max(0,summary.expectedSources-summary.settledSources);
  return summary;
 }
-export function createSourceRoundCoordinator({db,queues,enqueueSources,shouldStop=()=>false,log=()=>{},minimumRefillIntervalMs=0,sourceRescanMs=0,idleRefillIntervalMs=0,reconcileIntervalMs=0,onMetric=()=>{},now=Date.now}){
+export function createSourceRoundCoordinator({db,queues,enqueueSources,shouldStop=()=>false,log=()=>{},minimumRefillIntervalMs=0,sourceRescanMs=0,rescanWhileWaiting=()=>true,idleRefillIntervalMs=0,reconcileIntervalMs=0,onMetric=()=>{},now=Date.now}){
  const lastRefill=new Map(),lastDeadlineScan=new Map(),lastReconcile=new Map(),idleUntil=new Map();
  const rounds=db.collection('flow_source_rounds'),jobs=db.collection('flow_jobs'),results=db.collection('flow_source_round_results'),sources=db.collection('sources');
  return async function refillSourceRound(spec,filter){
@@ -37,7 +37,12 @@ export function createSourceRoundCoordinator({db,queues,enqueueSources,shouldSto
   // Older rounds can finish while the next round is already being processed.
   if(!lastReconcile.has(spec.name)||now()-lastReconcile.get(spec.name)>=reconcileIntervalMs){
   onMetric('roundReconciles',spec.name);
-  for(const round of await rounds.find({queue:spec.name,state:'running'}).toArray()){
+  // Thousands of long-running rounds can remain open behind saved cursors.
+  // One indexed pending-set read replaces a count query per active round.
+  // Recheck each completion candidate below, so a newly queued retry cannot
+  // be mistaken for a drained round between the two reads.
+  const pendingRounds=await jobs.distinct('sourceRoundId',{queue:spec.name,state:{$in:['queued','running']}});
+  for(const round of await rounds.find({queue:spec.name,state:'running',_id:{$nin:pendingRounds}},{projection:{_id:1,queue:1,sourceIds:1,startedAt:1}}).toArray()){
    const pending=await jobs.countDocuments({queue:spec.name,sourceRoundId:round._id,state:{$in:['queued','running']}});
    if(pending)continue;
    // Failed tickets stay visible but do not prevent the next independent round.
@@ -67,10 +72,26 @@ export function createSourceRoundCoordinator({db,queues,enqueueSources,shouldSto
    if(!normal)lastDeadlineScan.set(spec.name,now());
    const inFlight=await jobs.find({queue:spec.name,sourceRoundId:{$exists:true},state:{$in:['queued','running']}},{projection:{entityKey:1,state:1,originDeferred:1,'data.originWaitUntil':1}}).toArray();
    const busy=new Set(inFlight.map(job=>job.entityKey));
-   const dueFilter=normal?filter:{$and:[filter,{_id:{$nin:[...busy].filter(k=>typeof k==='string'&&k.startsWith('source:')).map(k=>k.slice(7))}},{$or:[{flowLastScheduledAt:null},{flowLastScheduledAt:{$lte:new Date(now()-sourceRescanMs)}}]}]};
+   let dueFilter=filter;
+   if(!normal){
+    // Keep newly added sources eligible while a congested queue drains.
+    const unscheduled={flowLastScheduledAt:null};
+    const due=rescanWhileWaiting(spec)?{$or:[unscheduled,{flowLastScheduledAt:{$lte:new Date(now()-sourceRescanMs)}}]}:unscheduled;
+    const busyIds=[...busy].filter(k=>typeof k==='string'&&k.startsWith('source:')).map(k=>k.slice(7));
+    dueFilter={$and:[filter,{_id:{$nin:busyIds}},due]};
+   }
    const cursor=sources.find(dueFilter);
    onMetric('inventoryQueries',spec.name);
-   const eligible=(await(normal?cursor:cursor.sort({flowLastScheduledAt:1}).limit(1000)).toArray()).filter(s=>detectedSource(s)&&!busy.has('source:'+s._id)).slice(0,normal?Infinity:500),startedAt=new Date(now());
+   let eligible=(await(normal?cursor:cursor.sort({flowLastScheduledAt:1}).limit(1000)).toArray()).filter(s=>detectedSource(s)&&!busy.has('source:'+s._id)).slice(0,normal?Infinity:500);
+   if(spec.name==='facebook-group-source'&&eligible.length){
+    // The broad scan can miss a ticket moving between queued and running
+    // while traversing the state index. Recheck candidates by their stable key.
+    const keys=eligible.map(source=>'source:'+source._id);
+    const pending=await jobs.find({queue:spec.name,sourceRoundId:{$exists:true},state:{$in:['queued','running']},entityKey:{$in:keys}},{projection:{entityKey:1},hint:{entityKey:1}}).toArray();
+    const pendingKeys=new Set(pending.map(job=>job.entityKey));
+    eligible=eligible.filter(source=>!pendingKeys.has('source:'+source._id));
+   }
+   const startedAt=new Date(now());
    if(!eligible.length){
     const blocked=inFlight.every(job=>job.state==='queued'&&job.originDeferred===true&&+new Date(job.data?.originWaitUntil)>now());
     if(normal&&idleRefillIntervalMs>0&&blocked)idleUntil.set(spec.name,inFlight.reduce((until,job)=>Math.min(until,+new Date(job.data.originWaitUntil)),now()+idleRefillIntervalMs));

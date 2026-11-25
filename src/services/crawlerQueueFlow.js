@@ -6,6 +6,8 @@ import {encodeBackfillState,decodeBackfillState} from './crawlerV8Backfill.js';
 import {setTimeout as sleep} from 'node:timers/promises';
 export const FLOW_POLICY='independent-rounds-operator-error-policy-v12-facebook-proxy-rotation';
 export const FLOW_RETRY_LIMIT=100;
+export const FLOW_JOB_RETRY_LIMIT=5;
+export const FLOW_JOB_RETRY_DELAY_MS=15000;
 export const FLOW_READ_TIMEOUT_MS=60000;
 export const FLOW_READ_ATTEMPT_TIMEOUT_MS=3*FLOW_READ_TIMEOUT_MS;
 export const FLOW_QUEUES=[
@@ -19,7 +21,7 @@ export const FLOW_QUEUES=[
  {name:'facebook-reply',kind:'reply',platform:'facebook',workers:70},
  {name:'instagram-comment',kind:'comments',platform:'instagram',workers:5},
  {name:'youtube-comment',kind:'comments',platform:'youtube',workers:30},
- {name:'threads-comment',kind:'comments',platform:'threads',workers:5},
+ {name:'threads-comment',kind:'comments',platform:'threads',workers:8},
  {name:'es5-import',kind:'import',workers:80},
  {name:'find-uid',kind:'uid',platform:'facebook',workers:3}
 ];
@@ -85,7 +87,44 @@ export function flowCommentPaginationDone(result){
  const c=result?.coverage;
  return result?.pagination?.hasMore===false&&!(c?.orphanReplies>0)&&(c?.complete===true||c?.exhausted===true&&['PUBLIC_COMMENT_COUNT_MISMATCH','COMMENT_COUNT_UNVERIFIED','PUBLIC_REPLY_COUNT_UNVERIFIED','PUBLIC_REPLY_COUNT_MISMATCH','PUBLIC_CONTINUATIONS_EXHAUSTED'].includes(c.reason));
 }
-export async function boundedProxyRead({read,rotate,onRetry=async()=>{},onWait=async()=>{},onOriginWait=async()=>{},originScope,onFailure=async()=>{},initialRetries=0,shouldStop=()=>false,verifyAuthGates=false,publicBefore=false,onGate=async()=>{},proxyAttemptLimit=Infinity,initialProxyEndpoints=[],onProxyAttempt=async()=>{},stopOnProxyError=false,retryAnonymousBootstrap=false}){
+
+// Run one read per turn so the ticket can release its worker while waiting.
+export async function readWithJobRetries({read,retries:recordedRetries,originScope,shouldStop,onGate,onFailure,onRetry,now=Date.now}){
+ if(shouldStop())throw Error('WORKER_STOPPED');
+ const retries=Number.isSafeInteger(recordedRetries)&&recordedRetries>0?recordedRetries:0;
+ if(retries>FLOW_JOB_RETRY_LIMIT)return {exhausted:true};
+ const outcome=await read();
+ if(outcome.good||outcome.done||outcome.deferred)return outcome;
+
+ const {result}=outcome;
+ const action=flowReadAction(result,{originScope});
+ const authGate=result.reason!=='ORIGIN_SECURITY_CHALLENGE'&&isAuthGate(result);
+ const restricted=authGate&&result.authGate?.classification==='source_restriction'&&result.authGate.confirmed===true;
+ if(authGate)await onGate(result);
+ if(action==='done'&&!authGate&&result.status!=='error'){
+  await onFailure(result);
+  return {...outcome,done:true,lastResult:result};
+ }
+ if(retries>=FLOW_JOB_RETRY_LIMIT){
+  await onFailure(result);
+  return {...outcome,exhausted:true,lastResult:result};
+ }
+ if(restricted){
+  await onFailure(result);
+  return {...outcome,done:true,lastResult:result};
+ }
+ if(result.reason==='ORIGIN_SECURITY_CHALLENGE'){
+  await onFailure(result);
+  return {...outcome,failed:true,lastResult:result};
+ }
+
+ const retryAt=now()+FLOW_JOB_RETRY_DELAY_MS;
+ const rotate=authGate||action==='rotate'||['PROXY_ENDPOINTS_UNAVAILABLE','PROXY_POOL_BUSY','PROXY_PROVIDER_COOLDOWN'].includes(result.reason);
+ await onRetry(retries+1,result,{retryAt,rotate});
+ return {...outcome,retryAt};
+}
+
+export async function boundedProxyRead({read,rotate,onRetry=async()=>{},onWait=async()=>{},onOriginWait=async()=>{},originScope,onFailure=async()=>{},initialRetries=0,shouldStop=()=>false,verifyAuthGates=false,authGateAttemptLimit=3,publicBefore=false,onGate=async()=>{},proxyAttemptLimit=Infinity,initialProxyEndpoints=[],onProxyAttempt=async()=>{},stopOnProxyError=false,retryAnonymousBootstrap=false,waitForProxyCapacity=false}){
  let gateAttempts=0;const gateEndpoints=new Set(),failedProxyEndpoints=new Set(initialProxyEndpoints.filter(validEndpoint));
  const retryLimit=Number.isInteger(proxyAttemptLimit)&&proxyAttemptLimit>0?Infinity:FLOW_RETRY_LIMIT;
  const readAction=result=>(Number.isFinite(proxyAttemptLimit)||retryAnonymousBootstrap)&&result?.reason==='ANONYMOUS_BOOTSTRAP_UNAVAILABLE'?'rotate':flowReadAction(result,{originScope});
@@ -109,7 +148,7 @@ export async function boundedProxyRead({read,rotate,onRetry=async()=>{},onWait=a
   // Pool availability is a scheduling wait, even after an earlier native read.
   // It never spends another proxy attempt or discards the native checkpoint.
   if(outcome.result?.reason==='PROXY_PACING_WAIT'){await onWait(outcome.result);return {...outcome,deferred:true,retryAfterMs:outcome.result.retryAfterMs};}
-  if(outcome.result?.reason==='PROXY_ENDPOINTS_UNAVAILABLE'||Number.isFinite(proxyAttemptLimit)&&['PROXY_POOL_BUSY','PROXY_PROVIDER_COOLDOWN','PROXY_MANAGER_UNAVAILABLE'].includes(outcome.result?.reason)){
+  if(outcome.result?.reason==='PROXY_ENDPOINTS_UNAVAILABLE'||(Number.isFinite(proxyAttemptLimit)||waitForProxyCapacity)&&['PROXY_POOL_BUSY','PROXY_PROVIDER_COOLDOWN','PROXY_MANAGER_UNAVAILABLE'].includes(outcome.result?.reason)){
    await rotate();await onWait(outcome.result);return {...outcome,deferred:true,retryAfterMs:outcome.result.retryAfterMs};
   }
   if(Number.isFinite(proxyAttemptLimit)&&outcome.result?.transport?.proxyUsed!==false&&validEndpoint(endpoint)){
@@ -127,7 +166,7 @@ export async function boundedProxyRead({read,rotate,onRetry=async()=>{},onWait=a
   if(verifyAuthGates&&isAuthGate(outcome.result)){
    gateAttempts++;if(endpoint)gateEndpoints.add(endpoint);
    const fixed=outcome.result.authGate?.classification==='source_restriction'&&outcome.result.authGate?.confirmed===true;
-   const compare=!fixed&&endpoint&&gateAttempts<3&&gateEndpoints.size===gateAttempts&&retries<retryLimit;
+   const compare=!fixed&&endpoint&&gateAttempts<Math.max(1,Math.min(3,authGateAttemptLimit))&&gateEndpoints.size===gateAttempts&&retries<retryLimit;
    outcome.result.authGate=gateSummary({result:outcome.result,endpoints:[...gateEndpoints],publicBefore,classification:fixed?'source_restriction':publicBefore?'login_after_public_data':'unverified',confirmed:fixed});
    await onGate(outcome.result);
    if(compare){await rotate();await onRetry(++retries,outcome.result);continue;}

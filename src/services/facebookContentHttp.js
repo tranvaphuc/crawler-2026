@@ -1,3 +1,4 @@
+import {createGroupAnonymousContextCache} from './facebookGroupAnonymousContext.js';
 import {facebookSourceBootstrapUrl} from './facebookEmptySource.js';
 import {facebookSessionRequest} from './facebookSessionContexts.js';
 import fs from 'node:fs/promises';
@@ -15,7 +16,9 @@ const paths={group:process.env.FACEBOOK_FEED_HAR_GROUP||'/Users/phuctran/Downloa
 const mapError=e=>({status:/^PROXY_/.test(e.code)?'proxy_error':/AUTH|ACCESS_DENIED|^FACEBOOK_SESSION_/.test(e.code)?'auth_required':/SECURITY/.test(e.code)?'security_checkpoint':/RATE_LIMIT/.test(e.code)?'rate_limited':/SORT/.test(e.code)?'sort_unavailable':/TARGET_UNAVAILABLE|POST_DELETED/.test(e.code)?'unavailable':'error',reason:e.code||'FACEBOOK_READ_FAILED',retryAfterMs:e.retryAfterMs||null,...(e.context?.graphql?{upstreamContext:{graphql:e.context.graphql}}:{}),...(e.sourceCode?{upstreamCode:String(e.sourceCode)}:{}),...(e.httpStatus?{upstreamHttpStatus:e.httpStatus}:{}),...(e.stage?{upstreamQuery:e.stage}:{})});
 export function createFacebookContentHttpReader(options={}){
  const commentSessionFile=options.facebookCommentSessionFile??process.env.FACEBOOK_COMMENT_SESSION_FILE;
- const execute=createHttpExecutor({...options,anonymous:target=>!(target.operation==='comments'&&commentSessionFile)}),maxPages=options.maxPages||8,maxItems=options.maxItems||20000;
+ const execute=createHttpExecutor({...options,maxProxyPacingWaitMs:target=>target.operation==='source'&&target.sourceType==='group'&&Number.isFinite(options.facebookGroupPacingWaitMs)?options.facebookGroupPacingWaitMs:typeof options.maxProxyPacingWaitMs==='function'?options.maxProxyPacingWaitMs(target):options.maxProxyPacingWaitMs??0,anonymous:target=>!(target.operation==='comments'&&commentSessionFile)}),maxPages=options.maxPages||8,maxItems=options.maxItems||20000;
+ const groupPageSize=options.facebookGroupSourcePageSize??100;
+ if(!Number.isInteger(groupPageSize)||groupPageSize<1||groupPageSize>100)throw Object.assign(Error('FACEBOOK_GROUP_PAGE_SIZE_INVALID'),{code:'FACEBOOK_GROUP_PAGE_SIZE_INVALID'});
  const authorCache=new Map();let cacheReadAt=0;
  async function resolveAuthors(comments,request,session,deadline){
   const file=options.authorCacheFile||process.env.FACEBOOK_AUTHOR_UID_CACHE_FILE;
@@ -34,14 +37,17 @@ export function createFacebookContentHttpReader(options={}){
  return async target=>{
   const commentSourceType=target.sourceType||(/^https:\/\/www\.facebook\.com\/groups\//.test(target.url||'')?'group':undefined);
   let state=target[READ_STATE];if(state?.items.length&&(!state.collecting||options.streamComments))return deliver(state,target,cacheTransport(state.transport));
-  let keep=state;const binding=state?.[HTTP_BINDING]||{};
+  let keep=state,groupContextCache=null,sharedGroupContext=false;const binding=state?.[HTTP_BINDING]||{};
   const result=await execute({...target,pool:target.operation==='comments'?'facebook_api_comments':`facebook_${target.sourceType}_posts`},async(session,_deadline,meta)=>{
-   if(meta?.sessionChanged&&state){state.recoveries=(state.recoveries||0)+1;} // Native cursors remain bound to the same source/post; only anonymous CSRF/session is refreshed.
+   if(meta?.sessionChanged&&state){state.recoveries=(state.recoveries||0)+1;}
+   if(options.reuseFacebookGroupAnonymousContext&&target.operation==='source'&&target.sourceType==='group')groupContextCache=createGroupAnonymousContextCache(binding,session); // Native cursors remain bound to the same source/post; only anonymous CSRF/session is refreshed.
    // Anonymous context belongs to this live session; reuse it across native pages.
    const createRequest=onBootstrap=>{
+    const anonymousContextSeed=groupContextCache?.read();sharedGroupContext=!!anonymousContextSeed;
+    if(sharedGroupContext)options.onFacebookSessionEvent?.('group_context_shared');
     const bootstrapUrl=facebookSourceBootstrapUrl(target),boundSession=onBootstrap?{seedFacebookCookies:header=>session.seedFacebookCookies(header),request:async(...args)=>{const snapshot=await session.request(...args);if(String(args[0])===bootstrapUrl&&(!args[1]?.method||args[1].method==='GET'))onBootstrap();return snapshot;}}:session;
     if(target.operation==='comments'&&commentSessionFile)return createAuthenticatedFacebookGraphqlRequest(boundSession,{bootstrapUrl,sessionFile:commentSessionFile});
-    return createAnonymousFacebookGraphqlRequest(boundSession,{bootstrapUrl,bootstrap:options.bootstrapFacebook!==false,sourceContextFallback:target.operation==='source',missingContextFallback:true,sourceTarget:target.operation==='source'&&!state?.nativeCursor&&!state?.seen?.size?target:undefined});
+    return createAnonymousFacebookGraphqlRequest(boundSession,{bootstrapUrl,anonymousContextSeed,onAnonymousContext:context=>groupContextCache?.observe(context),bootstrap:options.bootstrapFacebook!==false,sourceContextFallback:target.operation==='source',missingContextFallback:true,sourceTarget:target.operation==='source'&&!state?.nativeCursor&&!state?.seen?.size?target:undefined});
    };
    let request;
    if(options.reuseFacebookCommentSessions&&target.operation==='comments')request=facebookSessionRequest(binding,session,target,createRequest,{onEvent:action=>options.onFacebookSessionEvent?.(action)});
@@ -49,7 +55,7 @@ export function createFacebookContentHttpReader(options={}){
    try{
     if(target.operation==='source'){
      state ||= {kind:'facebook',items:[],seen:new Set(),nativeCursor:null,pending:true,collecting:false};keep=state;
-     const fetch=(options.createPostFetcher||createFacebookPostFetcher)({harPaths:paths,request,delayMs:0,maxPages:1,pageSize:100});
+     const fetch=(options.createPostFetcher||createFacebookPostFetcher)({harPaths:paths,request,delayMs:0,maxPages:1,pageSize:target.sourceType==='group'?groupPageSize:100});
      const r=await fetch({groupId:target.profileId||target.id,type:target.sourceType,numberPosts:target.limit,cursor:state.nativeCursor});
      state.nativeCursor=r.cursor;state.pending=r.hasNextPage;
      for(const p of r.posts)if(!state.seen.has(p._id)){state.seen.add(p._id);state.items.push({id:`${target.id}_${p._id}`,systemId:`${target.id}_${p._id}`,sourceId:target.id,postId:String(p._id),url:`https://www.facebook.com/${target.id}_${p._id}`,originalUrl:p.originalUrl||p.url||null,mediaId:p.mediaId||null,mediaType:p.mediaType||null,type:'post',platform:'facebook',text:p.content,author:{id:target.sourceType==='page'&&p.authorId===target.profileId?target.id:p.authorId,profileId:p.authorId,name:p.author},createdAt:p.created_time?new Date(p.created_time*1000).toISOString():null,pinned:p.pinned,pinEvidence:p.pinEvidence,metrics:{likes:p.like,shares:p.shares,comment:p.comment}});}
@@ -86,6 +92,7 @@ export function createFacebookContentHttpReader(options={}){
     const fail={...contentBase(target),...mapError(e),...(empty?{status:'unavailable',identityVerified:true,source:{id:target.id,type:target.sourceType,profileId:empty.profileId,url:target.url},emptySourceProof:empty,coverage:{complete:true,exhausted:true,scope:'anonymous_public_response'},pagination:{nextCursor:null,hasMore:false,complete:true,reason:'PUBLIC_CONTINUATIONS_EXHAUSTED'}}:{}),...(e.code==='COMMENT_TARGET_MISMATCH'?{upstreamContext:e.context}:{}),upstreamOperation:e.stage==='bootstrap'?'bootstrap':target.operation==='source'?'source':e.context?.mode||(/Depth\d|Repl/.test(e.stage||'')?'replies':'comments')};if(state)attachReadState(fail,state);return fail;}
   },binding);
   const keepGroupSession=options.reuseFacebookGroupSessions&&target.operation==='source'&&target.sourceType==='group'&&result.identityVerified===true&&['ok','partial'].includes(result.status);
+  if(groupContextCache){if(keepGroupSession){const confirmed=groupContextCache.confirm();if(sharedGroupContext&&confirmed)options.onFacebookSessionEvent?.('group_context_shared_confirmed');}else if(result.reason!=='PROXY_PACING_WAIT')groupContextCache.clear();}
   if(state)bindHttpState(state,binding);if(!keepGroupSession&&!state?.pending&&!(options.reuseFacebookCommentSessions&&target.operation==='comments'&&result.identityVerified===true))await binding.dispose?.();
   if(state)state.transport=result.transport;
   const final={...contentBase(target),...result};if(state&&(state.items.length||state.pending||keepGroupSession||options.reuseFacebookCommentSessions&&target.operation==='comments'))attachReadState(final,state);else if(keep&&!['ok','partial','unavailable'].includes(result.status))attachReadState(final,keep);return final;

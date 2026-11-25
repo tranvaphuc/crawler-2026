@@ -44,3 +44,16 @@ test('Instagram source page restores committed dates without opening every post 
  const read=createMetaSourceHttpReader({restoreSourcePublicationDates:restore,maxPages:1,streamSourceItems:true,respectPlatformCooldown:false,getProxy:async()=>({server:'http://proxy.test:8888'}),makeSession:()=>({requests:0,close(){},async request(u){this.requests++;calls.push(u);assert.equal(u,url);return{httpStatus:200,finalUrl:url,html:'<script type="application/json">'+JSON.stringify({data:{xdt_api__v1__feed__user_timeline_graphql_connection:{edges:[{node:{pk:'1',code:'POST1',user:{pk:'9',username:'sample'},caption:{text:'fresh'},comment_count:42}}],page_info:{has_next_page:false,end_cursor:null}}}})+'</script>'};}})});
  const r=await read(normalizeContentInput('source',{url,reference:{id:'9'},limit:100}));assert.equal(r.items[0].createdAt,date);assert.equal(r.items[0].text,'fresh');assert.equal(r.items[0].metrics.comment,42);assert.equal(r.pagination.hasMore,false);assert.equal(calls.length,1);
 });
+test('verified Instagram detail dates survive restart even when the post has no interaction target',async()=>{
+ const rows=new Map(),metadataCollection={bulkWrite:async ops=>{for(const op of ops){const r=op.updateOne.update.$setOnInsert;rows.set(r._id,r);}},find:()=>({toArray:async()=>[...rows.values()]})},collection={find:()=>({toArray:async()=>[]})};
+ const first=createSourcePublicationCache({collection,metadataCollection});
+ assert.equal(await first.remember(target,[{...item(),createdAt:date,dateEvidence:'matched_post_detail',dateIsEstimated:false}]),1);
+ const second=createSourcePublicationCache({collection,metadataCollection}),fresh=item();
+ assert.equal(await second(target,[fresh]),1);assert.equal(fresh.createdAt,date);assert.equal(fresh.dateIsEstimated,false);assert.equal(fresh.metrics.comment,42);
+ const foreign=item();assert.equal(await second({...target,expectedNativeId:'10'},[foreign]),0);assert.equal(foreign.createdAt,null);
+});
+test('persistent metadata rejects estimated, unknown and conflicting dates and tolerates write outages',async()=>{
+ let writes=0;const restore=createSourcePublicationCache({collection:{find:()=>({toArray:async()=>[]})},metadataCollection:{async bulkWrite(){writes++;throw Error('offline')},find:()=>({toArray:async()=>[]})}});
+ for(const extra of [{dateEvidence:'relative'},{dateEvidence:'matched_post_detail',dateIsEstimated:true},{dateEvidence:'matched_post_detail',author:{id:'10'}}])assert.equal(await restore.remember(target,[{...item(),createdAt:date,...extra}]),0);
+ assert.equal(writes,0);assert.equal(await restore.remember(target,[{...item(),createdAt:date,dateEvidence:'matched_post_detail'}]),1);assert.equal(writes,1);const fresh=item();assert.equal(await restore(target,[fresh]),1);
+});

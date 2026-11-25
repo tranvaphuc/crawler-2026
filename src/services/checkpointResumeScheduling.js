@@ -19,6 +19,14 @@ function hasContinuation(data,cache=new Map()){
  if(checkpoint.length<=4096&&cache.size<32)cache.set(checkpoint,cursor);
  return cursor;
 }
+function isFirstPage(data,cache){
+ if(data?.kind!=='source'||hasContinuation(data,cache))return false;
+ if(!data.checkpoint)return true;
+ const key='first:'+data.checkpoint;if(cache.has(key))return cache.get(key);
+ let first=false;try{const state=unpackState(data.checkpoint);first=!!state&&typeof state==='object'&&!state.nativeCursor&&!state.seen?.size&&!state.seenIds?.size&&!state.sourceEmittedIds?.size&&!state.items?.length;}catch{}
+ if(data.checkpoint.length<=4096&&cache.size<64)cache.set(key,first);
+ return first;
+}
 // New delayed continuations join a due-time FIFO ahead of the older cold
 // checkpoint backlog. Otherwise thousands of old checkpoints hide new resumes.
 export async function registerCheckpointResume({job,readyAt}){
@@ -42,25 +50,51 @@ local resumes={}
 local selected={}
 -- The refresh may also prove legacy native cursors whose page counter is absent.
 local proven={}
-for i=5,#ARGV do proven[ARGV[i]]=true end
+for i=8,#ARGV do proven[ARGV[i]]=true end
+local fifoBurst=tonumber(ARGV[5])
+local firstBurst=tonumber(ARGV[6])
+local firstCandidates=cjson.decode(ARGV[7])
+local firstPages={}
+local sources={}
+local function sourceKey(data)
+ local id=type(data.source)=='table' and data.source._id or nil
+ if type(id)=='string' or type(id)=='number' then return tostring(id) end
+ return nil
+end
+if firstBurst>0 then
+ for _,id in ipairs(redis.call('LRANGE',KEYS[5],0,-1)) do
+  local ok,data=pcall(cjson.decode,redis.call('HGET',ARGV[1]..id,'data') or '')
+  if ok and type(data)=='table' then local key=sourceKey(data);if key then sources[key]=true end end
+ end
+end
+local function availableSource(data)
+ if firstBurst==0 then return true end
+ local key=sourceKey(data)
+ return not key or not sources[key]
+end
+local function selectSource(data)
+ if firstBurst>0 then local key=sourceKey(data);if key then sources[key]=true end end
+end
 local function offer(id)
  -- Old workers and existing registrations may still publish empty initial
  -- checkpoints. Validate only bounded candidates, leaving their FIFO tickets
  -- and payloads untouched. A fresh cursor with page>0 needs no refresh wait.
- if not proven[id] then
-  local ok,data=pcall(cjson.decode,redis.call('HGET',ARGV[1]..id,'data') or '')
+ local data
+ if not proven[id] or firstBurst>0 then
+  local ok;ok,data=pcall(cjson.decode,redis.call('HGET',ARGV[1]..id,'data') or '')
   local cursor=ok and type(data)=='table' and
    (tonumber(data.page or 0) and tonumber(data.page or 0)>0 or
     tonumber(data.groupCursorProxyBudgetStartedAt or 0) and tonumber(data.groupCursorProxyBudgetStartedAt or 0)>0 or
     tonumber(data.groupCursorProxyWaitStartedAt or 0) and tonumber(data.groupCursorProxyWaitStartedAt or 0)>0)
-  if not cursor then
+  if not cursor and not proven[id] then
    redis.call('ZREM',KEYS[4],id);redis.call('ZREM',KEYS[7],id)
    return false
   end
+  if not ok or type(data)~='table' or not availableSource(data) then return false end
  end
  if not selected[id] and redis.call('EXISTS',ARGV[1]..id)==1 and
   tonumber(redis.call('HGET',ARGV[1]..id,'priority') or '0')==0 and redis.call('LPOS',wait,id) then
-  resumes[#resumes+1]=id;selected[id]=true
+  resumes[#resumes+1]=id;selected[id]=true;if data then selectSource(data) end
   redis.call('ZREM',KEYS[4],id)
   redis.call('ZREM',KEYS[7],id)
   return true
@@ -81,58 +115,78 @@ for _,id in ipairs(redis.call('ZRANGEBYSCORE',KEYS[4],'-inf',ARGV[4],'LIMIT',0,5
  if not offer(id) and not redis.call('LPOS',KEYS[5],id) and not redis.call('ZSCORE',KEYS[6],id) then redis.call('ZREM',KEYS[4],id) end
  if #resumes>=burst*batches then break end
 end
-for i=5,#ARGV do
+for i=8,#ARGV do
  if #resumes>=burst*batches then break end
  offer(ARGV[i])
 end
-if #resumes==0 then return {{},{},'no_ready_checkpoint'} end
+for _,id in ipairs(firstCandidates) do
+ if #firstPages>=firstBurst*batches then break end
+ if not selected[id] and redis.call('LPOS',wait,id) and tonumber(redis.call('HGET',ARGV[1]..id,'priority') or '0')==0 then
+  local ok,data=pcall(cjson.decode,redis.call('HGET',ARGV[1]..id,'data') or '')
+  if ok and type(data)=='table' and data.kind=='source' and (tonumber(data.page) or 0)==0 and availableSource(data) and
+   math.max(tonumber(data.proxyWaitUntil) or 0,tonumber(data.sourceYieldUntil) or 0,tonumber(data.originWaitUntil) or 0)<=tonumber(ARGV[4]) then
+   firstPages[#firstPages+1]=id;selected[id]=true;selectSource(data)
+  end
+ end
+end
+if #resumes==0 and #firstPages==0 then return {{},{},'no_ready_checkpoint',{}} end
 local fifo={}
 -- At most burst*batches exclusions: this window always contains enough of the
 -- oldest remaining FIFO tickets, without scanning the full list or job payloads.
-local head=redis.call('LRANGE',wait,-(burst+1)*batches,-1)
+local head=redis.call('LRANGE',wait,-(burst+firstBurst+fifoBurst)*batches,-1)
 for i=#head,1,-1 do
- if not selected[head[i]] then fifo[#fifo+1]=head[i];selected[head[i]]=true;if #fifo>=batches then break end end
+ if #fifo>=fifoBurst*batches then break end
+ if not selected[head[i]] then
+  local allowed=true;local data
+  if firstBurst>0 then local ok;ok,data=pcall(cjson.decode,redis.call('HGET',ARGV[1]..head[i],'data') or '');allowed=ok and type(data)=='table' and availableSource(data) and math.max(tonumber(data.proxyWaitUntil) or 0,tonumber(data.sourceYieldUntil) or 0,tonumber(data.originWaitUntil) or 0)<=tonumber(ARGV[4]) end
+  if allowed then fifo[#fifo+1]=head[i];selected[head[i]]=true;if data then selectSource(data) end end
+ end
 end
 local order={}
-local j=1
-for i=1,#resumes do
- order[#order+1]=resumes[i]
- if i%burst==0 and fifo[j] then order[#order+1]=fifo[j];j=j+1 end
+local r=1;local f=1;local j=1
+for batch=1,batches do
+ for n=1,burst do if resumes[r] then order[#order+1]=resumes[r];r=r+1 end end
+ for n=1,firstBurst do if firstPages[f] then order[#order+1]=firstPages[f];f=f+1 end end
+ for n=1,fifoBurst do if fifo[j] then order[#order+1]=fifo[j];j=j+1 end end
 end
-while fifo[j] do order[#order+1]=fifo[j];j=j+1 end
 for _,id in ipairs(order) do redis.call('LREM',wait,1,id) end
 for i=#order,1,-1 do redis.call('RPUSH',wait,order[i]) end
 redis.call('RPUSH',KEYS[3],unpack(order))
 redis.call('EXPIRE',KEYS[3],300)
-return {resumes,fifo,'scheduled'}
+return {resumes,fifo,'scheduled',firstPages}
 `;
 
-export function createCheckpointResumeScheduler({redis,jobs,queue=CHECKPOINT_RESUME_QUEUE,now=Date.now,log=()=>{},pollMs=250,refreshMs=5000}={}){
- const prefix='bull:crawler-flow-'+queue+':';let lastPoll=-Infinity,lastRefresh=-Infinity,candidates=[];
+export function createCheckpointResumeScheduler({redis,jobs,queue=CHECKPOINT_RESUME_QUEUE,now=Date.now,log=()=>{},pollMs=250,refreshMs=5000,resumeBurst=CHECKPOINT_RESUME_BURST,fifoBurst=1,firstPageBurst=0}={}){
+ for(const value of [resumeBurst,fifoBurst])if(!Number.isInteger(value)||value<1||value>8)throw Error('CHECKPOINT_SCHEDULING_INVALID');
+ if(!Number.isInteger(firstPageBurst)||firstPageBurst<0||firstPageBurst>8)throw Error('CHECKPOINT_SCHEDULING_INVALID');
+ const prefix='bull:crawler-flow-'+queue+':';let lastPoll=-Infinity,lastRefresh=-Infinity,candidates=[],firstCandidates=[];
  return async function schedule(){
   const at=now();if(at-lastPoll<pollMs)return;lastPoll=at;
   if(at-lastRefresh>=refreshMs){
-   const rows=await jobs.find({queue,state:'queued','data.checkpoint':{$type:'string',$ne:''},$or:[{proxyDeferred:true},{sourceDeferred:true},{originDeferred:true},{'data.proxyWaitReason':'PROXY_ENDPOINTS_UNAVAILABLE'},{'data.sourceSlices':{$gt:0}}]},
-    {projection:{_id:1,createdAt:1,'data.page':1,'data.checkpoint':1,'data.proxyWaitUntil':1,'data.sourceYieldUntil':1,'data.originWaitUntil':1,'data.groupCursorProxyBudgetStartedAt':1,'data.groupCursorProxyWaitStartedAt':1,'data.groupCursorProxyWaitMs':1}}).maxTimeMS(2000).toArray();
-   const cache=new Map(),continuations=rows.filter(row=>hasContinuation(row.data,cache));
+   const filter=firstPageBurst?{queue,state:'queued'}:{queue,state:'queued','data.checkpoint':{$type:'string',$ne:''},$or:[{proxyDeferred:true},{sourceDeferred:true},{originDeferred:true},{'data.proxyWaitReason':'PROXY_ENDPOINTS_UNAVAILABLE'},{'data.sourceSlices':{$gt:0}}]};
+   const proven={$or:['page','groupCursorProxyBudgetStartedAt','groupCursorProxyWaitStartedAt'].map(key=>({$gt:[{$ifNull:['$data.'+key,0]},0]}))};
+   const rows=await jobs.find(filter,
+    {projection:{_id:1,createdAt:1,'data.kind':1,'data.source._id':1,'data.page':1,'data.checkpoint':{$cond:[proven,'$$REMOVE','$data.checkpoint']},'data.proxyWaitUntil':1,'data.sourceYieldUntil':1,'data.originWaitUntil':1,'data.groupCursorProxyBudgetStartedAt':1,'data.groupCursorProxyWaitStartedAt':1,'data.groupCursorProxyWaitMs':1}}).maxTimeMS(2000).toArray();
+   const cache=new Map(),classified=rows.map(row=>({row,continuation:hasContinuation(row.data,cache)})),continuations=classified.filter(x=>x.continuation).map(x=>x.row);
    const deadlines=continuations.map(row=>[groupCursorProxyWaitDeadline(row.data),row._id]).filter(([deadline])=>deadline);
    if(deadlines.length)await redis.zadd(prefix+'checkpoint-resume-expiring',...deadlines.flat());
-   candidates=continuations.map(row=>({id:row._id,ready:Math.max(row.data?.proxyWaitUntil||0,row.data?.sourceYieldUntil||0,row.data?.originWaitUntil||0)||+new Date(row.createdAt)}))
-    .filter(row=>row.ready<=at).sort((a,b)=>a.ready-b.ready||a.id.localeCompare(b.id)).map(row=>row.id);
+   const ready=rows=>rows.map(row=>({id:row._id,ready:Math.max(row.data?.proxyWaitUntil||0,row.data?.sourceYieldUntil||0,row.data?.originWaitUntil||0)||+new Date(row.createdAt)})).filter(row=>row.ready<=at).sort((a,b)=>a.ready-b.ready||a.id.localeCompare(b.id)).map(row=>row.id);
+   candidates=ready(continuations);
+   firstCandidates=firstPageBurst?ready(classified.filter(x=>!x.continuation&&isFirstPage(x.row.data,cache)).map(x=>x.row)):[];
    lastRefresh=at;
   }
-  const [resumeIds,fifoIds,state]=await redis.eval(checkpointResumeBatchScript,7,prefix+'wait',prefix+'meta',prefix+'checkpoint-resume-batch',prefix+'checkpoint-resume-ready',prefix+'active',prefix+'delayed',prefix+'checkpoint-resume-expiring',prefix,CHECKPOINT_RESUME_BURST,CHECKPOINT_RESUME_BATCHES,at,...candidates.slice(0,128));
+  const [resumeIds,fifoIds,state,firstPageIds=[]]=await redis.eval(checkpointResumeBatchScript,7,prefix+'wait',prefix+'meta',prefix+'checkpoint-resume-batch',prefix+'checkpoint-resume-ready',prefix+'active',prefix+'delayed',prefix+'checkpoint-resume-expiring',prefix,resumeBurst,CHECKPOINT_RESUME_BATCHES,at,fifoBurst,firstPageBurst,JSON.stringify(firstCandidates.slice(0,128)),...candidates.slice(0,128));
   if(state==='scheduled'){
-   const dispatched=new Set([...resumeIds,...fifoIds]);candidates=candidates.filter(id=>!dispatched.has(id));
-   log('checkpoint_resume_scheduled',{queue,policy:'checkpoint-resume-4-to-1-v2-due-lane',resumeIds,fifoIds});
+   const dispatched=new Set([...resumeIds,...fifoIds,...firstPageIds]);candidates=candidates.filter(id=>!dispatched.has(id));firstCandidates=firstCandidates.filter(id=>!dispatched.has(id));
+   log('checkpoint_resume_scheduled',{queue,policy:firstPageBurst?'first-page-resume-fifo-v1':`checkpoint-resume-${resumeBurst}-to-${fifoBurst}-v2-due-lane`,resumeIds,fifoIds,...(firstPageBurst?{firstPageIds}:{})});
   }
-  return {resumeIds,fifoIds,state};
+  return {resumeIds,fifoIds,state,firstPageIds};
  };
 }
 // Run independently of coordinator outbox/retention I/O; never overlap polls.
 export function startCheckpointResumeScheduler({shouldStop=()=>false,onError=()=>{},...options}={}){
  const schedule=createCheckpointResumeScheduler(options);let pending=null,closed=false,last=null;
- const tick=()=>{if(closed||pending||shouldStop())return;pending=Promise.resolve().then(schedule).then(result=>{if(result)last={at:new Date(),state:result.state,resumes:result.resumeIds.length,fifo:result.fifoIds.length};}).catch(onError).finally(()=>{pending=null;});};
+ const tick=()=>{if(closed||pending||shouldStop())return;pending=Promise.resolve().then(schedule).then(result=>{if(result)last={at:new Date(),state:result.state,resumes:result.resumeIds.length,fifo:result.fifoIds.length,firstPages:result.firstPageIds?.length||0};}).catch(onError).finally(()=>{pending=null;});};
  const timer=setInterval(tick,options.pollMs||250);timer.unref?.();tick();
  return{status:()=>last,async close(){closed=true;clearInterval(timer);if(pending)await pending;}};
 }

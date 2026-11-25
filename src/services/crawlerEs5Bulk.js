@@ -1,6 +1,6 @@
 // Only the validated write callback in commitCrawlDocument submits documents.
 // Each caller keeps its Bull ticket active until its own ES item is confirmed.
-export function createEs5BulkWriter({es,maxItems=80,maxBytes=5*1024*1024,flushMs=10,maxConcurrent=2,retryLimit=3,retryDelayMs=250,wait=ms=>new Promise(r=>setTimeout(r,ms)),onBatch=()=>{}}){
+export function createEs5BulkWriter({es,maxItems=80,maxBytes=5*1024*1024,flushMs=10,maxConcurrent=2,checkExisting=false,existingReadTimeoutMs=1500,retryLimit=3,retryDelayMs=250,wait=ms=>new Promise(r=>setTimeout(r,ms)),onBatch=()=>{}}){
  let pending=[],bytes=0,timer=null,inFlight=0;
  const failure=(code,extra={})=>Object.assign(new Error(code),{code,...extra});
  function flush(){
@@ -15,7 +15,19 @@ export function createEs5BulkWriter({es,maxItems=80,maxBytes=5*1024*1024,flushMs
   }
  }
  async function send(batch,batchBytes){
-  const started=Date.now();let failed=0,created=0,duplicates=0,retries=0,remaining=batch;
+  const started=Date.now();let failed=0,created=0,duplicates=0,retries=0,remaining=batch,readExisting=0,readFallback=0;
+  if(checkExisting&&typeof es.mget==='function'){
+   try{
+    const response=await es.mget({realtime:true,requestTimeout:existingReadTimeoutMs,body:{docs:batch.map(({doc})=>({_index:doc._index,_type:doc._type,_id:doc._id,_source:false}))}});
+    if(response?.error||!Array.isArray(response?.docs)||response.docs.length!==batch.length)throw failure('ES5_PRESENCE_RESPONSE_INVALID');
+    remaining=[];
+    for(const [i,row]of batch.entries()){const value=response.docs[i],doc=row.doc;
+     if(value?.found===true&&!value.error&&(value.status===undefined||value.status===200)&&value._index===doc._index&&value._type===doc._type&&value._id===doc._id&&Number.isSafeInteger(value._version)&&value._version>0){
+      duplicates++;readExisting++;row.resolve({_index:value._index,_type:value._type,_id:value._id,_version:value._version,found:true,skipped:true,reason:'ES5_DOCUMENT_EXISTS',evidence:'realtime_mget'});
+     }else remaining.push(row);
+    }
+   }catch{readFallback++;remaining=batch;}
+  }
   while(remaining.length){
    let again=[];
    try{
@@ -43,7 +55,7 @@ export function createEs5BulkWriter({es,maxItems=80,maxBytes=5*1024*1024,flushMs
    retries++;await wait(retryDelayMs*2**(retries-1));remaining=again;
   }
   // Telemetry must never turn a confirmed write into a failed job.
-  try{onBatch({items:batch.length,bytes:batchBytes,created,duplicates,failed,retries,durationMs:Date.now()-started,inFlight});}catch{}
+  try{onBatch({items:batch.length,bytes:batchBytes,created,duplicates,failed,retries,readExisting,readFallback,durationMs:Date.now()-started,inFlight});}catch{}
  }
  return{
   write(doc){

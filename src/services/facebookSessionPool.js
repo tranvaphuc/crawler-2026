@@ -8,10 +8,10 @@ export function createFacebookSessionPool({maxEntries=70,idleMs=30000,now=Date.n
  const usable=b=>b?.session&&b.lease?.managed&&!b.busy&&!b.terminal&&!b.disposeAfterUse&&(!b.lease.expiresAt||b.lease.expiresAt>now()+30000);
  async function drop(key,event){const e=entries.get(key);if(!e)return;entries.delete(key);clearTimeout(e.timer);await e.binding.dispose?.();onEvent(event);}
  return{
-  async take(key,state,{excludeProxyEndpoint,excludeProxyEndpoints=[],transportScope,contextKey,resetRequestContext=false,minRemainingMs=30000}={}){
+  async take(key,state,{excludeProxyEndpoint,excludeProxyEndpoints=[],transportScope,contextKey,resetRequestContext=false,minRemainingMs=30000,sameSourceOnly=false}={}){
    const disposals=[];
    for(const [id,e]of entries)if(e.until<=now()||!usable(e.binding))disposals.push(drop(id,'expired'));
-   const candidates=[...entries].reverse().filter(([,e])=>e.binding.lease.queue===crawlerQueue()&&(e.key===key||!(e.sameSourceUntil>now()))&&(!e.binding.lease.expiresAt||e.binding.lease.expiresAt>now()+minRemainingMs)&&(e.key===key||transportScope&&e.binding.lease.scope===transportScope)&&(!excludeProxyEndpoint||e.binding.endpoint!==excludeProxyEndpoint)&&!excludeProxyEndpoints.includes(e.binding.endpoint)&&!(e.binding.lease.queueEndpointAliases||[]).some(endpoint=>endpoint===excludeProxyEndpoint||excludeProxyEndpoints.includes(endpoint)));
+   const candidates=[...entries].reverse().filter(([,e])=>e.binding.lease.queue===crawlerQueue()&&(!sameSourceOnly||e.key===key)&&(e.key===key||!(e.sameSourceUntil>now()))&&(!e.binding.lease.expiresAt||e.binding.lease.expiresAt>now()+minRemainingMs)&&(e.key===key||transportScope&&e.binding.lease.scope===transportScope)&&(!excludeProxyEndpoint||e.binding.endpoint!==excludeProxyEndpoint)&&!excludeProxyEndpoints.includes(e.binding.endpoint)&&!(e.binding.lease.queueEndpointAliases||[]).some(endpoint=>endpoint===excludeProxyEndpoint||excludeProxyEndpoints.includes(endpoint)));
    const warm=e=>{const cached=contextKey&&e.binding.facebookContexts?.entries?.get(contextKey),version=Number.isSafeInteger(e.binding.session.cookieVersion)?e.binding.session.cookieVersion:0;return cached?.until>now()&&cached.cookieVersion===version;};
    const selected=candidates.find(([,e])=>e.key===key&&(!contextKey||warm(e)))||candidates.find(([,e])=>warm(e))||candidates[0];
    if(closed||!selected){await Promise.all(disposals);onEvent('miss');return false;}

@@ -1,0 +1,10 @@
+{
+  "name": "crawler-anonymous-header-refresh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "21.11.0",
+    "ssh2": "1.17.0"
+  }
+}

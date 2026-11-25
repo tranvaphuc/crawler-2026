@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+const {createProxyManager}=await import(process.env.PROXY_MANAGER_RUNTIME_MODULE||'../src/services/proxyManager.js');
+test('Group switches completely to Page/User proxy admission, identity and permits without a manager restart',async t=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'exact-source-parity-')),keysFile=dir+'/keys.json',settingsFile=dir+'/settings.json',group='crawler-flow-facebook-group-source';
+ const settings={unrestrictedSharing:true,backgroundActiveKeyCount:1,apiPolicies:{'facebook.source_group':{minIntervalMs:0},'facebook.source_page':{minIntervalMs:0},'facebook.source_user':{minIntervalMs:0}},backgroundQueueColdProbe:{[group]:true},backgroundQueueVerifyEgress:{[group]:true},backgroundQueueVerifyMainEgress:{[group]:true},backgroundQueueRepairMainTransport:{[group]:true},backgroundQueueRequireVerifiedEgress:{},backgroundQueueMaxLeasesPerEndpoint:{},backgroundQueueMinIntervalMs:{},backgroundQueueStandbyKeys:{}};
+ fs.writeFileSync(keysFile,JSON.stringify(['fixture-exact-source-parity']));fs.writeFileSync(settingsFile,JSON.stringify(settings));
+ const manager=createProxyManager({keysFile,settingsFile,makeRotator:()=>async()=>({host:'mock-no-network',port:8080,expiresAt:Date.now()+1800000}),verifyEgress:async()=> '203.0.113.44',verifyTransportRecovery:async()=> '203.0.113.44'});
+ t.after(()=>{manager.close();fs.rmSync(dir,{recursive:true,force:true});});await manager.tick();await manager.settleEgressVerification?.();
+ const next=structuredClone(settings);for(const [key,value]of Object.entries(next))if(key.startsWith('backgroundQueue'))delete value[group];manager.setSettings(next);
+ const status=manager.status();for(const [key,value]of Object.entries(status))if(key.startsWith('backgroundQueue')&&value&&typeof value==='object')for(const other of ['crawler-flow-facebook-page-source','crawler-flow-facebook-user-source'])assert.deepEqual(value[group],value[other],key);
+ for(const type of ['group','page','user'])for(let i=0;i<3;i++){const lease=await manager.acquire({scope:'facebook.source_'+type,queue:'crawler-flow-facebook-'+type+'-source',clientClass:'background'});assert.equal(lease.proxy.queueEndpoint,undefined);assert.deepEqual(lease.proxy.queueEndpointAliases||[],[]);assert.equal(manager.permit(lease.leaseId).permitted,true);}
+ assert.equal(manager.status().coldRecoveryProbes.length,0);assert.equal(manager.status().activeLeases,9);assert.deepEqual(JSON.parse(fs.readFileSync(settingsFile)),next);
+});

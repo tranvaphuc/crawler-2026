@@ -4,6 +4,7 @@ import {createNewsResearchTransport} from '../web/newsResearchTransport.mjs';
 import {publicationHistoryUnconfirmed} from '../web/newsOriginalPublicationContract.mjs';
 import {discoverNewsLinks} from '../web/configurableNewsParser.mjs';
 import {parsePublicPublicationFeed} from '../web/newsDateContext.mjs';
+import {publicationFeedDiscovery} from '../web/newsPublicationListing.mjs';
 import {originalSkydoorUrl,verifiedLandingPublisherUrl,verifiedCanonicalPublisherUrl} from '../web/newsPublisherDispatch.mjs';
 import {verifyNewsFields} from '../web/newsFieldVerification.mjs';
 import {classifyNewsDocument} from '../web/newsDocumentKind.mjs';
@@ -58,7 +59,7 @@ export class NewsProcessor{
   if(task.role==='seed'){
    if(page.publicationContext&&this.state.rememberPublicationFeed)await this.state.rememberPublicationFeed(page.publicationContext);
    if(page.publicationFeedXml&&this.state.rememberFullPublicationFeed)await this.state.rememberFullPublicationFeed({xml:page.publicationFeedXml,feedUrl:page.publicationContext.feedUrl});
-   const found=this.prepared(page,owner,false)||(this.expand&&this.seedDiscovery?await this.seedDiscovery.run({html:page.html,url:page.finalUrl||url,domain:owner.domain,seeds:owner.seeds,config:owner.config,freshness:true,legacy:{legacyArticlePattern:owner.config.discovery?.legacyArticlePattern}}):null);
+   const found=publicationFeedDiscovery(page)||this.prepared(page,owner,false)||(this.expand&&this.seedDiscovery?await this.seedDiscovery.run({html:page.html,url:page.finalUrl||url,domain:owner.domain,seeds:owner.seeds,config:owner.config,freshness:true,legacy:{legacyArticlePattern:owner.config.discovery?.legacyArticlePattern}}):null);
    if(found?.error)throw fail(found.error);const links=await this.links(task,page.html,page.finalUrl||url,owner,80,found);const record={cycle:task.cycle,url:task.url,site:task.site,links,normalization:page.normalization,finalUrl:page.finalUrl||url,seedWorkerMs:found?.elapsedMs},reason=links?'links_found':'no_article_links';if(this.state.writeBatch)await this.state.completeSeedWrite(task,reason,record);else if(this.state.completeSeed)this.state.completeSeed(task,reason,record);else{this.state.event('seed',record);this.finishTask(task,'done',reason);}return;
   }
   if(owner.config.parserType==='publisher_dispatch'){

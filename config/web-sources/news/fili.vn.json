@@ -11,10 +11,8 @@
   "timezone": "Asia/Ho_Chi_Minh",
   "identityEncoding": "latin1",
   "title": {
-    "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
     "strategy": "selector",
-    "selector": "meta[property=\"og:title\"]",
-    "attribute": "content"
+    "selector": "h1"
   },
   "publishedDate": {
     "precision": "second",
@@ -204,10 +202,8 @@
       "timezone": "Asia/Ho_Chi_Minh",
       "identityEncoding": "latin1",
       "title": {
-        "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
         "strategy": "selector",
-        "selector": "meta[property=\"og:title\"]",
-        "attribute": "content"
+        "selector": "h1"
       },
       "publishedDate": {
         "precision": "second",
@@ -237,5 +233,14 @@
         ]
       }
     }
-  ]
+  ],
+  "nativePublicationAdapter": "fili_public_print_clock",
+  "publicationArticleScope": ".fili-article-wrapper",
+  "requested7Validation": {
+    "checkedAt": "2026-11-19T10:53:13.605Z",
+    "evidenceDirectory": "test/fixtures/news-requested-7",
+    "independentHoldoutUrls": [],
+    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
+    "fullSiteCycleVerified": false
+  }
 }

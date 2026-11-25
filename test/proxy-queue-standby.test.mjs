@@ -10,7 +10,7 @@ test('a busy standby is never rotated; after the last lease ends its blocked ass
 test('provider cooldown and per-job endpoint exclusions are retained for standby assignments',async t=>{const f=fixture(t,{limit:1}),m=f.manager;await blockMain(f);const a=await acquire(m);m.release(a.leaseId);const oldKey=a.proxy.host.replace(/-g\d+$/,''),oldCalls=f.rotations.get(oldKey);const b=await acquire(m,group,{excludeProxyEndpoints:[proxyEndpoint(a.proxy)]});assert.equal(f.rotations.get(oldKey),oldCalls);assert.notEqual(proxyEndpoint(a.proxy),proxyEndpoint(b.proxy));m.release(b.leaseId);});
 test('concurrent acquisitions respect the queue standby key limit and every lease survives manager restart',async t=>{const f=fixture(t),m=f.manager;await blockMain(f);const initial=await Promise.allSettled(Array.from({length:30},()=>acquire(m)));for(const wait of initial.filter(x=>x.status==='rejected'))assert.equal(wait.reason.code,'PROXY_ENDPOINTS_UNAVAILABLE');const leases=initial.filter(x=>x.status==='fulfilled').map(x=>x.value);assert.ok(leases.length>0);while(leases.length<8)leases.push(await acquire(m));await assert.rejects(acquire(m),{code:'PROXY_ENDPOINTS_UNAVAILABLE'});assert.ok(leases.every(l=>l.maxLeasesPerKey===4));const state=m.status();assert.ok(state.queueStandby[0].keyIds.length<=2);assert.ok(new Set(leases.map(l=>proxyEndpoint(l.proxy))).size<=2);m.close();const restored=createProxyManager(f.options);t.after(()=>restored.close());assert.equal(restored.status().queueStandby[0].keyIds.length,state.queueStandby[0].keyIds.length);for(const l of leases){assert.equal(restored.permit(l.leaseId).permitted,true);restored.release(l.leaseId);}});
 test('healthy main endpoints are preferred and do not claim any queue spares',async t=>{const f=fixture(t),m=f.manager;await m.tick();const a=await acquire(m);assert.equal(m.status().queueStandby[0].keyIds.length,0);m.release(a.leaseId);});
-test('invalid queue standby settings are rejected',t=>{const f=fixture(t);for(const value of [null,[],{unknown:1},{[group]:-1},{[group]:1.5},{[group]:9}])assert.throws(()=>f.manager.setSettings({...f.settings,backgroundQueueStandbyKeys:value}),{code:'PROXY_SETTINGS_INVALID'});});
+test('invalid queue standby settings are rejected',t=>{const f=fixture(t);for(const value of [null,[],{unknown:1},{[group]:-1},{[group]:1.5},{[group]:15},{[group]:8,[page]:7}])assert.throws(()=>f.manager.setSettings({...f.settings,backgroundQueueStandbyKeys:value}),{code:'PROXY_SETTINGS_INVALID'});});
 
 test('configured standby remains available while main ring is cold, without claiming an API key',async t=>{const f=fixture(t),m=f.manager;await blockMain(f);const a=await acquire(m);m.release(a.leaseId);m.close();const saved=JSON.parse(fs.readFileSync(f.options.stateFile));saved.backgroundRing.coldKeyIds=[...saved.backgroundRing.activeKeyIds];fs.writeFileSync(f.options.stateFile,JSON.stringify(saved));const restored=createProxyManager(f.options);t.after(()=>restored.close());const b=await acquire(restored);assert.equal(b.apiReserved,false);assert.ok(restored.status().queueStandby[0].keyIds.length<=2);restored.release(b.leaseId);});
 
@@ -22,4 +22,16 @@ test('ownership cannot be recycled while an idle blocked standby is still rotati
 
 test('four queue-private spares permit at most sixteen leases and still leave normal replacement spares',async t=>{const f=fixture(t,{count:12,limit:4}),m=f.manager;await blockMain(f);const leases=[];for(let i=0;i<16;i++)leases.push(await acquire(m));await assert.rejects(acquire(m),{code:'PROXY_ENDPOINTS_UNAVAILABLE'});const status=m.status();assert.equal(status.queueStandby[0].keyIds.length,4);assert.equal(new Set(leases.map(x=>proxyEndpoint(x.proxy))).size,4);assert.ok(status.keys.filter(x=>x.standbyQueue===group).every(x=>x.leaseCount===4&&!x.apiReserved));assert.ok(status.backgroundRing.waitingKeys-4>=2);for(const x of leases)m.release(x.leaseId);});
 
-test('eight private group keys are bounded to thirty-two leases and leave at least two replacement spares',async t=>{const f=fixture(t,{count:16,limit:8}),m=f.manager;await blockMain(f);const leases=[];for(let i=0;i<32;i++)leases.push(await acquire(m));await assert.rejects(acquire(m),{code:'PROXY_ENDPOINTS_UNAVAILABLE'});const p=m.status();assert.equal(p.queueStandby[0].keyIds.length,8);assert.equal(new Set(leases.map(x=>proxyEndpoint(x.proxy))).size,8);assert.ok(p.keys.filter(x=>x.standbyQueue===group).every(x=>x.leaseCount===4&&!x.apiReserved));assert.ok(p.backgroundRing.waitingKeys-8>=2);for(const lease of leases)m.release(lease.leaseId);});
+test('fourteen private group keys are bounded to fifty-six leases and leave at least two replacement spares',async t=>{
+ const f=fixture(t,{count:22,limit:14}),m=f.manager;
+ await blockMain(f);
+ const leases=[];
+ for(let i=0;i<56;i++)leases.push(await acquire(m));
+ await assert.rejects(acquire(m),{code:'PROXY_ENDPOINTS_UNAVAILABLE'});
+ const status=m.status();
+ assert.equal(status.queueStandby[0].keyIds.length,14);
+ assert.equal(new Set(leases.map(lease=>proxyEndpoint(lease.proxy))).size,14);
+ assert.ok(status.keys.filter(key=>key.standbyQueue===group).every(key=>key.leaseCount===4&&!key.apiReserved));
+ assert.ok(status.backgroundRing.waitingKeys-14>=2);
+ for(const lease of leases)m.release(lease.leaseId);
+});

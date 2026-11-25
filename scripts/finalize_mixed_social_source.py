@@ -64,7 +64,12 @@ for source in rows:
     target = mapping.get(source, source)
     failed = target.startswith('__ERROR__') or 'error=invalid_post' in target
     final = source if failed else canonicalize(target)
-    still_short = any(marker in final for marker in ('/share/', 'www.tt.site/t/'))
+    final_parts = urlsplit(final)
+    missing_threads_post_id = (
+        (final_parts.netloc == 'threads.com' or final_parts.netloc.endswith('.threads.com'))
+        and re.match(r'^/@[^/]+/post/?$', final_parts.path) is not None
+    )
+    still_short = any(marker in final for marker in ('/share/', 'www.tt.site/t/')) or missing_threads_post_id
     results.append(final)
     if failed or still_short:
         unresolved.append(source)

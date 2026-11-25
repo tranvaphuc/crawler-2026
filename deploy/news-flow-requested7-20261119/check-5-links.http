@@ -1,0 +1,22 @@
+GET master202647/newsTopic/_search
+{
+  "size": 10,
+  "_source": [
+    "siteName",
+    "title",
+    "url",
+    "publishedDate",
+    "insertedDate"
+  ],
+  "query": {
+    "terms": {
+      "url": [
+        "https://viettimes.vn/thuoc-la-tiep-can-gioi-tre-viet-tinh-vi-the-nao-post208567.html",
+        "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/41-nam-cung-ttc-nang-buoc-thanh-cong-4220261118131849707.htm",
+        "https://fili.vn/2026/11/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-cua-nhnn-757-1515990.htm",
+        "https://taichinhcongnghe.vn/bai-viet/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-c11b23",
+        "https://banker.vn/bai-viet/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-c11b23"
+      ]
+    }
+  }
+}

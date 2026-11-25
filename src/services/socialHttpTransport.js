@@ -120,7 +120,7 @@ export function createProxiedSession({proxy,platform,deadline=Date.now()+60000,m
 export function createHttpExecutor({getProxy=createConfiguredProxyProvider(),timeoutMs=60000,connectTimeoutMs=Infinity,tlsHandshakeTimeoutMs=Infinity,makeSession=createProxiedSession,respectPlatformCooldown=makeSession===createProxiedSession,idleMs=120000,failFastProxy=false,attemptTimeoutMs=timeoutMs,maxProxyPacingWaitMs=0,anonymous=true}={}){
  const observations=new WeakMap();
  return async(target,work,sticky)=>{
-  const context=apiRequestContext(),requestQueue=crawlerQueue();throwIfApiAborted();
+  const context=apiRequestContext(),requestQueue=crawlerQueue(),pacingWaitLimit=typeof maxProxyPacingWaitMs==='function'?maxProxyPacingWaitMs(target):maxProxyPacingWaitMs;throwIfApiAborted();
   const binding=sticky||{},retryContext=target.proxyRetryContext||binding,deadline=Math.min(Date.now()+attemptTimeoutMs,context?.deadline||Infinity,failFastProxy&&crawlerQueue()==='crawler-flow-facebook-group-source'&&Number.isFinite(target.proxyRecoveryDeadlineAt)?target.proxyRecoveryDeadlineAt:Infinity);let startRequests=binding.session?.requests||0,startRetries=binding.session?.networkRetries||0,used=false,locked=false,apiScope=null,proxyLimitEvidence=null,executionPhase='proxy_acquire',failurePhase=null,failureNative=null,managerRpc=null;
   const abort=()=>{binding.disposeAfterUse=true;binding.session?.close();};
   const managerOptions=()=>failFastProxy?{timeoutMs:Math.max(1,Math.min(timeoutMs,deadline-Date.now()))}:undefined;
@@ -134,7 +134,7 @@ export function createHttpExecutor({getProxy=createConfiguredProxyProvider(),tim
    // Keep the tunnel; a rejected bootstrap promise must be recreated on resume.
    failurePhase='proxy_permit';failureNative='PROXY_PACING_WAIT';binding.disposeAfterUse=false;
    if((binding.session?.requests||0)===startRequests)used=false;
-   delete binding.facebookRequest;delete binding.facebookRequestSession;
+   if(binding.facebookRequest?.bootstrapReady!==true){delete binding.facebookRequest;delete binding.facebookRequestSession;}
    return{...result,status:'proxy_error',reason:'PROXY_PACING_WAIT',retryAfterMs:Math.max(1,Math.min(30000,Number(result.retryAfterMs)||500)),transport:transport()};
   }
   async function close(){clearTimeout(binding.idleTimer);binding.session?.close();binding.session=null;const lease=binding.lease;binding.lease=null;try{if(context)await boundedApiCleanup(()=>lease?.release?.({timeoutMs:1000}));else await lease?.release?.(finalizationOptions());}catch{}}
@@ -158,7 +158,7 @@ export function createHttpExecutor({getProxy=createConfiguredProxyProvider(),tim
      if(proxyExclusions(retryContext).includes(proxyEndpoint(binding.lease)))throw fail('PROXY_RETRY_ENDPOINT_UNAVAILABLE');
      binding.endpoint=proxyEndpoint(binding.lease);binding.changedThisCall=binding.started===true&&binding.lease.managed===true;binding.started=binding.lease.managed===true;createdThisAttempt=true;binding.epoch=(binding.epoch||0)+1;
      const lease=binding.lease;
-     const beforeRequest=async({reuseTransport=false}={})=>{if(!lease.managed)return;const control=binding.requestControl,{deadline}=control;let waited=0;while(Date.now()<deadline){try{control.setPhase('proxy_permit');const permit=await lease.permit({...control.managerOptions(),reuseTransport});control.setPhase('read_work');return permit;}catch(e){control.recordRpc(e);if(failFastProxy){if(e.code==='PROXY_PACING_WAIT'&&e.retryAfterMs>0&&e.retryAfterMs+waited<=maxProxyPacingWaitMs&&Date.now()+e.retryAfterMs<deadline-1000){waited+=e.retryAfterMs;await new Promise(r=>setTimeout(r,e.retryAfterMs));continue;}throw e;}if(e.code==='PROXY_PACING_WAIT'&&e.retryAfterMs>0&&Date.now()+e.retryAfterMs<deadline-1000){waited+=e.retryAfterMs;await new Promise(r=>setTimeout(r,e.retryAfterMs));continue;}throw e;}}throw fail('UPSTREAM_TIMEOUT');};
+     const beforeRequest=async({reuseTransport=false}={})=>{if(!lease.managed)return;const control=binding.requestControl,{deadline}=control;let waited=0;while(Date.now()<deadline){try{control.setPhase('proxy_permit');const permit=await lease.permit({...control.managerOptions(),reuseTransport});control.setPhase('read_work');return permit;}catch(e){control.recordRpc(e);if(failFastProxy){if(e.code==='PROXY_PACING_WAIT'&&e.retryAfterMs>0&&e.retryAfterMs+waited<=pacingWaitLimit&&Date.now()+e.retryAfterMs<deadline-1000){waited+=e.retryAfterMs;await new Promise(r=>setTimeout(r,e.retryAfterMs));continue;}throw e;}if(e.code==='PROXY_PACING_WAIT'&&e.retryAfterMs>0&&Date.now()+e.retryAfterMs<deadline-1000){waited+=e.retryAfterMs;await new Promise(r=>setTimeout(r,e.retryAfterMs));continue;}throw e;}}throw fail('UPSTREAM_TIMEOUT');};
      binding.session=makeSession({proxy:{...lease,beforeRequest},platform:target.platform,deadline,requestTimeoutMs:timeoutMs,connectTimeoutMs,tlsHandshakeTimeoutMs,onProxyLimit:e=>{proxyLimitEvidence={...e,endpoint:binding.endpoint};}});
     }
     binding.session.setDeadline?.(deadline);used=true;startRequests=createdThisAttempt?0:binding.session.requests||0;startRetries=createdThisAttempt?0:binding.session.networkRetries||0;

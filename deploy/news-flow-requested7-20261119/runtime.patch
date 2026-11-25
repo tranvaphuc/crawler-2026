@@ -1,0 +1,452 @@
+--- /dev/null
++++ b/src/web/filiNews.mjs
+@@ -0,0 +1,48 @@
++import * as cheerio from 'cheerio';
++
++const clean=value=>String(value||'').normalize('NFC').replace(/\s+/g,' ').trim();
++const fail=error=>({error});
++function pageKey(raw,base){try{const u=new URL(raw,base);if(!/^https?:$/.test(u.protocol)||u.username||u.password)return null;return u.hostname.replace(/^www\./,'')+u.pathname;}catch{return null;}}
++
++// The public print action supplies publishTime, independently of the page's
++// relative age label. Keep the explicit offset from original publication metadata.
++export function filiPrintRequest(html,url){
++  const u=new URL(url),match=u.pathname.match(/^\/\d{4}\/\d{2}\/.+-(\d+)-(\d+)\.htm$/);
++  if(u.hostname.replace(/^www\./,'')!=='fili.vn'||!match)return null;
++  const $=cheerio.load(html),id=Number(match[2]);
++  if(!Number.isSafeInteger(id)||id<=0)return null;
++  const controls=$('button[onclick]').toArray().map(n=>$(n).attr('onclick').match(/^openPrintPage\((\d+)\)$/)?.[1]).filter(Boolean);
++  if(!controls.length||controls.some(value=>Number(value)!==id))return null;
++  return {id,url:'https://fili.vn/_Partials/ContentGetArticle?articleId='+id};
++}
++
++export function normalizeFiliPrintClock(html,url,raw){
++  const request=filiPrintRequest(html,url);if(!request)return fail('fili_print_identity_missing');
++  const $=cheerio.load(html),heading=$('h1.fili-shortform-title'),metadata=$('head meta[property="article:published_time"]');
++  const canonical=$('head link[rel="canonical"]'),ogUrl=$('head meta[property="og:url"]');
++  if(heading.length!==1||metadata.length!==1||canonical.length!==1||ogUrl.length!==1||
++    pageKey(canonical.attr('href'),url)!==pageKey(url)||pageKey(ogUrl.attr('content'),url)!==pageKey(url)||
++    raw?.articleID!==request.id||typeof raw.url!=='string'||pageKey(raw.url,url)!==pageKey(url)||
++    clean(raw.title)!==clean(heading.text()))return fail('fili_print_identity_mismatch');
++  const original=metadata.attr('content'),clock=raw.publishTime;
++  if(!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?(?:Z|[+-]\d\d:\d\d)$/.test(original||'')||
++    !Number.isFinite(Date.parse(original))||!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?$/.test(clock||'')||
++    clock.slice(0,19)!==original.slice(0,19))return fail('fili_original_publication_conflict');
++  const root=heading.closest('.fili-shortform-body[itemprop="articleBody"]'),header=heading.parent();
++  if(root.length!==1||root.closest('main').attr('id')!=='article-'+request.id||root.find('h1').length!==1||header.find('.fili-shortform-meta').length!==1)return fail('fili_print_article_scope_missing');
++  header.find('[data-crawler-fili-print-clock]').remove();
++  header.find('.fili-shortform-meta').prepend($('<time class="publish-date" data-crawler-fili-print-clock="original">').text(clock));
++  $('head').append($('<meta>').attr({name:'crawler:source-api',content:request.url}));
++  return {html:$.html(),evidence:{kind:'fili_public_print_original_clock',articleId:request.id,publishTime:clock,originalPublication:original,apiUrl:request.url}};
++}
++
++export async function fetchFiliPrintClock(page,url,get){
++  if(page.error||!page.html)return page;
++  const request=filiPrintRequest(page.html,url);if(!request)return {...page,error:'fili_print_identity_missing'};
++  const api=await get(request.url,{method:'POST',data:{articleId:request.id},headers:{'Content-Type':'application/json;charset=utf-8'},reviewFailed:true,taskRole:'publisher_dependency'});
++  if(api.error||!api.html)return {...page,error:'fili_print_unavailable'};
++  if(api.finalUrl&&api.finalUrl!==request.url)return {...page,error:'fili_print_redirect_unconfirmed'};
++  let raw;try{raw=JSON.parse(api.html);}catch{return {...page,error:'fili_print_invalid_json'};}
++  const normalized=normalizeFiliPrintClock(page.html,url,raw);
++  return normalized.error?{...page,error:normalized.error}:{...page,html:normalized.html,normalization:'fili_public_print_original_clock',publicationAdapterEvidence:normalized.evidence};
++}
+--- a/src/web/newsResearchTransport.mjs
++++ b/src/web/newsResearchTransport.mjs
+@@ -1,3 +1,4 @@
++import {fetchFiliPrintClock} from './filiNews.mjs';
+ import {fetchVnexpressQuiz} from './newsVnexpressQuiz.mjs';
+ import {normalizePublisherVideoCaption} from './newsPublisherVideoCaption.mjs';
+ import {normalizeBbwPublicVideo} from './newsBbwPublicVideo.mjs';
+@@ -34,7 +35,7 @@
+ }
+ 
+ // Static public HTTP dependencies only; never evaluate downloaded JavaScript.
+-export function createNewsResearchTransport(options={}){const base=options.baseTransport||createResearchTransport(options);return {async get(url,dir,label,requestOptions){if(options.nativePublicationAdapter==='owned_wordpress_full_rss'&&options.taskRole!=='seed'&&requestOptions?.taskRole!=='publication_feed'){const feed=options.publicationFeedUrl;if(!feed)return {requestedUrl:url,error:'FULL_RSS_FEED_NOT_CONFIGURED'};const cached=options.recalledPublicationArticle?.(feed,url);if(cached){const normalized=normalizeWordpressFullRss(cached.xml,feed,url);if(normalized)return {...normalized,sourceFeedSha256:cached.sourceFeedSha256,fromPersistedPublisherFeed:true,requestedUrl:url,finalUrl:url,statusCode:200,error:null,contentType:'text/html'};}const page=await base.get(feed,dir,label+'-publisher-full-feed',{...requestOptions,taskRole:'publication_feed'});if(page.error||!page.html)return {...page,requestedUrl:url};const normalized=normalizeWordpressFullRss(page.html,page.finalUrl||feed,url);if(normalized&&options.rememberFullPublicationFeed)await options.rememberFullPublicationFeed({xml:page.html,feedUrl:page.finalUrl||feed});return normalized?{...page,...normalized,requestedUrl:url,finalUrl:url,error:null,contentType:'text/html'}:{...page,requestedUrl:url,error:'FULL_RSS_ARTICLE_NOT_VERIFIED'};}const msn=await fetchMsnPublicPage(url,(api,opts)=>base.get(api,dir,label+'-msn-public',opts));if(msn)return msn;const page=await base.get(url,dir,label,requestOptions);const u=new URL(url),host=u.hostname.replace(/^www\./,'');if(options.taskRole==='seed'&&page.statusCode===200&&(!page.error||page.error==='empty_page')){const feed=normalizePublicationFeedListing(page.html,page.finalUrl||url);if(feed)return {...page,...feed,...(options.fullPublicationFeed?{publicationFeedXml:page.html}:{}),error:null};}const tuyengiao=await fetchTuyengiaoPublicPage(page,url,(api,opts)=>base.get(api,dir,label+'-tuyengiao-public',opts));if(tuyengiao)return tuyengiao;const government=await fetchGovernmentPublicPage(page,url,(api,opts)=>base.get(api,dir,label+'-government-api',opts));if(government)return government;const publicQuiz=options.taskRole!=='seed'&&options.nativePublicationAdapter==='vnexpress_public_quiz'?await fetchVnexpressQuiz(page,url,(api,opts)=>base.get(api,dir,label+'-quiz-public',opts)):null;if(publicQuiz)return publicQuiz;const cryptoPublicPost=host==='cryptonews.com'&&/^\/news\/[^/]+\/?$/.test(u.pathname)&&['access_blocked','not_found'].includes(page.error);if((page.error||!page.html)&&!(host==='goodstock.vn'&&page.error==='not_found')&&!cryptoPublicPost)return page;let apiUrl,normalize;
++export function createNewsResearchTransport(options={}){const base=options.baseTransport||createResearchTransport(options);return {async get(url,dir,label,requestOptions){if(options.nativePublicationAdapter==='owned_wordpress_full_rss'&&options.taskRole!=='seed'&&requestOptions?.taskRole!=='publication_feed'){const feed=options.publicationFeedUrl;if(!feed)return {requestedUrl:url,error:'FULL_RSS_FEED_NOT_CONFIGURED'};const cached=options.recalledPublicationArticle?.(feed,url);if(cached){const normalized=normalizeWordpressFullRss(cached.xml,feed,url);if(normalized)return {...normalized,sourceFeedSha256:cached.sourceFeedSha256,fromPersistedPublisherFeed:true,requestedUrl:url,finalUrl:url,statusCode:200,error:null,contentType:'text/html'};}const page=await base.get(feed,dir,label+'-publisher-full-feed',{...requestOptions,taskRole:'publication_feed'});if(page.error||!page.html)return {...page,requestedUrl:url};const normalized=normalizeWordpressFullRss(page.html,page.finalUrl||feed,url);if(normalized&&options.rememberFullPublicationFeed)await options.rememberFullPublicationFeed({xml:page.html,feedUrl:page.finalUrl||feed});return normalized?{...page,...normalized,requestedUrl:url,finalUrl:url,error:null,contentType:'text/html'}:{...page,requestedUrl:url,error:'FULL_RSS_ARTICLE_NOT_VERIFIED'};}const msn=await fetchMsnPublicPage(url,(api,opts)=>base.get(api,dir,label+'-msn-public',opts));if(msn)return msn;const page=await base.get(url,dir,label,requestOptions);const u=new URL(url),host=u.hostname.replace(/^www\./,'');if(options.taskRole!=='seed'&&options.nativePublicationAdapter==='fili_public_print_clock'&&host==='fili.vn')return fetchFiliPrintClock(page,url,(api,opts)=>base.get(api,dir,label+'-fili-public-print',opts));if(options.taskRole==='seed'&&page.statusCode===200&&(!page.error||page.error==='empty_page')){const feed=normalizePublicationFeedListing(page.html,page.finalUrl||url);if(feed)return {...page,...feed,...(options.fullPublicationFeed?{publicationFeedXml:page.html}:{}),error:null};}const tuyengiao=await fetchTuyengiaoPublicPage(page,url,(api,opts)=>base.get(api,dir,label+'-tuyengiao-public',opts));if(tuyengiao)return tuyengiao;const government=await fetchGovernmentPublicPage(page,url,(api,opts)=>base.get(api,dir,label+'-government-api',opts));if(government)return government;const publicQuiz=options.taskRole!=='seed'&&options.nativePublicationAdapter==='vnexpress_public_quiz'?await fetchVnexpressQuiz(page,url,(api,opts)=>base.get(api,dir,label+'-quiz-public',opts)):null;if(publicQuiz)return publicQuiz;const cryptoPublicPost=host==='cryptonews.com'&&/^\/news\/[^/]+\/?$/.test(u.pathname)&&['access_blocked','not_found'].includes(page.error);if((page.error||!page.html)&&!(host==='goodstock.vn'&&page.error==='not_found')&&!cryptoPublicPost)return page;let apiUrl,normalize;
+  const staticArticle=options.taskRole!=='seed'&&['sggp.org.vn','baotintuc.vn','en.vietnamplus.vn'].includes(host)&&options.nativePublicationAdapter==='publisher_native_video_caption'?normalizePublisherVideoCaption(page.html,url):options.taskRole!=='seed'&&host==='bbw.vn'&&options.nativePublicationAdapter==='url_bound_bbw_public_video'?normalizeBbwPublicVideo(page.html,url):options.taskRole!=='seed'&&options.nativePublicationAdapter==='url_bound_ninhbinh_next_schema'?normalizeNinhbinhNextArticle(page.html,url):options.taskRole!=='seed'&&options.nativePublicationAdapter==='url_bound_tcdn_native_photo'?normalizeTcdnNativePhotoArticle(page.html,url):options.taskRole!=='seed'&&options.nativePublicationAdapter==='url_bound_thepaypers_nuxt'?normalizeThePaypersArticle(page.html,url):host==='congan.camau.gov.vn'?normalizeCamauPoliceArticle(page.html,url):host==='baodienbienphu.vn'?normalizeDienbienNextArticle(page.html,url):host==='botruong.bocongan.gov.vn'?normalizeGovernmentNuxtArticle(page.html,url):host==='vtv.vn'?normalizeVtvVideo(page.html,url):host==='baodautu.vn'?normalizeBaodautuLongform(page.html,url):host==='antoanthongtin.vn'?normalizeAntoanEncodedArticle(page.html,url):host==='langsontv.vn'?normalizeLangsonVideo(page.html,url):host==='vietcetera.com'?normalizeVietceteraVideo(page.html,url):host==='lecourrier.vn'?normalizeLecourrierVideo(page.html,url):['kenh14.vn','video.kenh14.vn'].includes(host)?normalizeKenh14Video(page.html,url):host==='phunuvagiadinh.vn'?normalizePhunuvagiadinhVideo(page.html,url):host==='baohatinh.vn'?normalizeHatinhVideo(page.html,url):null;
+  if(staticArticle){if(staticArticle.error)return {...page,error:staticArticle.error};const result={...page,html:staticArticle.html,normalization:'public_static_html_fields',method:'HTTP/axios+static-html',sourceHtmlFile:page.htmlFile,htmlFile:options.persistEvidence===false?null:label+'-normalized.html'};if(options.persistEvidence!==false){await fs.writeFile(path.join(dir,result.htmlFile),result.html);await fs.writeFile(path.join(dir,label+'-normalized.json'),JSON.stringify({...result,html:undefined},null,2));}return result;}
+  if(host==='otopro.com.vn'){const state=extractWeb30State(page.html);if(!state)return {...page,error:'web30_public_state_missing'};let normalized,dependency=null;if(state.type_page===7)normalized=normalizeWeb30Article(state,url);else if(state.type_page===6)normalized=normalizeWeb30NewsListing(state);else if(state.type_page===1&&u.pathname==='/'){const categoryUrl='https://www.otopro.com.vn/tin-tuc',category=await base.get(categoryUrl,dir,label+'-news-category',requestOptions);if(category.error||!category.html)return {...page,error:category.error||'missing_news_category'};normalized=normalizeWeb30NewsListing(extractWeb30State(category.html)||{});dependency={url:categoryUrl,evidence:label+'-news-category.json',htmlFile:category.htmlFile};}else return {...page,error:'web30_article_state_is_not_news'};if(normalized.error)return {...page,error:normalized.error};const result={...page,html:normalized.html,htmlFile:label+'-normalized.html',evidenceFile:label+'-normalized.json',sourceHtmlFile:page.htmlFile,sourceStateType:state.type_page,sourceDependency:dependency,createdEpoch:normalized.createdEpoch,updatedEpoch:normalized.updatedEpoch,normalization:'public_web30_state',method:'HTTP/axios+public-state'};if(options.persistEvidence!==false){await fs.writeFile(path.join(dir,result.htmlFile),result.html);await fs.writeFile(path.join(dir,result.evidenceFile),JSON.stringify({...result,html:undefined},null,2));}else{result.htmlFile=null;result.evidenceFile=null;result.evidencePersisted=false;}return result;}
+--- /dev/null
++++ b/src/web/newsSeedTransientFailures.mjs
+@@ -0,0 +1,18 @@
++const supportedStatuses=new Set([502,503,504]);
++
++// Retry only explicitly configured publishers, on the next seed cycle.
++// Article failures and permanent/access failures retain their review requirement.
++export function seedTransientFailurePolicies(sources){
++  const policies=new Map();
++  for(const source of sources){
++    const statuses=source.config?.discovery?.retryTransientHttpStatuses;
++    if(!Array.isArray(statuses))continue;
++    const reasons=new Set(statuses.filter(status=>supportedStatuses.has(status)).map(status=>'http_'+status));
++    if(reasons.size)policies.set(source.domain,reasons);
++  }
++  return policies;
++}
++
++export function isConfiguredTransientSeedFailure(policies,site,reason){
++  return policies?.get(site)?.has(reason)===true;
++}
+--- a/src/web/newsUserConfirmedTimezone.mjs
++++ b/src/web/newsUserConfirmedTimezone.mjs
+@@ -3,6 +3,7 @@
+ export const confirmedVietnamClockSites = new Set(['2sao.vn','baodienbienphu.vn','baoquangtri.vn','congan.lamdong.gov.vn','danang24h.vn','dnvn247.com.vn','dongvon.doanhnhanvn.vn','giaoducvaxahoi.vn','golfviet.vn','hangthat.thuonghieucongluan.com.vn','hatinh24h.com.vn','htcc.vn','infonet.vietnamnet.vn','investglobal.vn','kinhtechungkhoan.vn','nghean24h.vn','nguoidothi.net.vn','nhaquanly.vn','nhipsonghanoi.hanoimoi.vn','thanhhoa24h.net.vn','thegioidisan.vn','thuonghieusanpham.vn','thuongtruong24h.vn','tintuconline.com.vn','video.afamily.vn','vietq.vn','xethitruong.vn']);
+ const confirmationDates = new Map([...confirmedVietnamClockSites].map(site=>[site,'2026-11-16']));
+ for(const site of ['vn.stockproxx.com','vietnamnews.vn','nghenhinvietnam.vn','baoninhbinh.org.vn','hungyentv.vn','vccinews.com','doisongvanhoa.com','xecongnghe.vn','nhipcaudautu.vn','dientungaynay.vn','taichinhdoanhnghiep.net.vn','tinxe.vn','dzogame.vn','kinhtexahoi.vn','kenhtinxe.com','truyenhinh.baobinhduong.vn']){confirmedVietnamClockSites.add(site);confirmationDates.set(site,'2026-11-17');}
++confirmedVietnamClockSites.add('doanhnghiepkinhdoanh.doanhnhanvn.vn');confirmationDates.set('doanhnghiepkinhdoanh.doanhnhanvn.vn','2026-11-19');
+ const confirmedAliases=new Map([['baodansinh.vn',new Set(['baodansinh.vn','dansinh.dantri.com.vn'])],['kinhtetrunguong.vn',new Set(['kinhtetrunguong.vn','cscltw.dcs.vn'])]]);
+ for(const site of ['bbw.vn','baodaklak.vn','moit.gov.vn','baodansinh.vn','kinhtetrunguong.vn','sbv.gov.vn']){confirmedVietnamClockSites.add(site);confirmationDates.set(site,'2026-11-17');}
+ const host = url => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return null; } };
+--- a/src/newsFlow/threeFlowState.mjs
++++ b/src/newsFlow/threeFlowState.mjs
+@@ -1,3 +1,4 @@
++import {seedTransientFailurePolicies,isConfiguredTransientSeedFailure} from '../web/newsSeedTransientFailures.mjs';
+ import {randomUUID,createHash} from 'node:crypto';
+ import {gzipSync,gunzipSync} from 'node:zlib';
+ import fs from 'node:fs/promises';
+@@ -73,24 +74,29 @@
+    const key=articleKey(t.url);insert.run(key,t.url,t.site,'queued',t.seen_at||t.created,t.created,null,t.id);
+   }
+   const source=this.db.prepare('INSERT OR IGNORE INTO seed_sources(url_key,url,site,status,reason) VALUES(?,?,?,?,?)');
+-  for(const s of registry.sources.values())for(const url of s.seeds){const key=requestKey(url),failed=this.db.prepare('SELECT reason FROM url_failures WHERE url_key=?').get(key);source.run(key,url,s.domain,failed?'fail':null,failed?.reason||null);}
++  for(const s of registry.sources.values())for(const url of s.seeds){const key=requestKey(url),failed=this.db.prepare('SELECT reason,site FROM url_failures WHERE url_key=?').get(key);source.run(key,url,s.domain,failed?'fail':null,failed?.reason||null);}
+   this.db.prepare("INSERT INTO flow_meta VALUES('three_flows_v1',?)").run(new Date().toISOString());
+   return {migrated:true,articles:this.db.prepare('SELECT count(*) n FROM article_links').get().n,seeds:this.db.prepare('SELECT count(*) n FROM seed_sources').get().n};
+  });}
+  syncSeeds(registry){
++  this.seedTransientFailurePolicies=seedTransientFailurePolicies(registry.sources.values());
+   const existing=new Set(this.db.prepare('SELECT url_key FROM seed_sources').all().map(r=>r.url_key)),missing=new Map();
+   for(const source of registry.sources.values())for(const url of source.seeds){const key=requestKey(url);if(!existing.has(key)&&!missing.has(key))missing.set(key,[key,url,source.domain]);}
+   const rows=[...missing.values()],insert=this.db.prepare('INSERT OR IGNORE INTO seed_sources(url_key,url,site) VALUES(?,?,?)');let added=0;
+   for(let i=0;i<rows.length;i+=100)this.tx(()=>{for(const row of rows.slice(i,i+100))added+=insert.run(...row).changes;},'sync_seeds');return {added,candidates:rows.length};
+  }
+- reopenSeedTimeouts(){return this.tx(()=>this.db.prepare("UPDATE seed_sources SET status='timeout' WHERE status='fail' AND reason IN (?,?,?)").run(...seedNextRoundReasons).changes);}
++ reopenSeedTimeouts(){return this.tx(()=>{
++  let reopened=this.db.prepare("UPDATE seed_sources SET status='timeout' WHERE status='fail' AND reason IN (?,?,?)").run(...seedNextRoundReasons).changes;
++  for(const [site,reasons] of this.seedTransientFailurePolicies||[]){const values=[...reasons];reopened+=this.db.prepare("UPDATE seed_sources SET status='timeout' WHERE site=? AND status='fail' AND reason IN ("+values.map(()=>'?').join(',')+")").run(site,...values).changes;}
++  return reopened;
++ });}
+  failedUrl(key,{role,cycle}={}){
+   if(role!=='seed')return super.failedUrl(key);
+-  const failure=this.db.prepare('SELECT reason FROM url_failures WHERE url_key=?').get(key);
++  const failure=this.db.prepare('SELECT reason,site FROM url_failures WHERE url_key=?').get(key);
+   if(!failure)return false;
+   // Only an admitted seed job may pass an earlier timeout or interruption. The per-cycle request
+   // record still prevents a second wire request; article failures stay blocked.
+-  if(!seedNextRoundReasons.has(failure.reason))return true;
++  if(!seedNextRoundReasons.has(failure.reason)&&!isConfiguredTransientSeedFailure(this.seedTransientFailurePolicies,failure.site,failure.reason))return true;
+   return !this.db.prepare("SELECT 1 FROM tasks WHERE cycle=? AND role='seed' AND state='running' LIMIT 1").get(cycle||'');
+  }
+  discover(url,site,now=Date.now()){
+@@ -224,7 +230,7 @@
+   // content API is read. A successful logical job supersedes that shell error.
+   if(status==='done'&&['mof.gov.vn','vietnamtourism.gov.vn'].includes(task.site)&&(reason==='verified_outbox'||task.role==='seed'&&reason==='links_found'))for(const url of urlAliases(task.url))this.db.prepare("DELETE FROM url_failures WHERE url_key=? AND reason='empty_page'").run(requestKey(url));
+   const key=task.cycle+'|'+task.url_key,stats=this.linkStats.get(task.cycle+'|'+task.url)||{found:0,added:0};
+-  if(task.role==='seed')this.db.prepare('UPDATE seed_sources SET status=?,reason=?,last_at=?,links_found=?,new_links=? WHERE url_key=?').run(status==='held'?(seedNextRoundReasons.has(reason)?'timeout':'fail'):'ok',reason,Date.now(),stats.found,stats.added,task.url_key);
++  if(task.role==='seed')this.db.prepare('UPDATE seed_sources SET status=?,reason=?,last_at=?,links_found=?,new_links=? WHERE url_key=?').run(status==='held'?(seedNextRoundReasons.has(reason)||isConfiguredTransientSeedFailure(this.seedTransientFailurePolicies,task.site,reason)?'timeout':'fail'):'ok',reason,Date.now(),stats.found,stats.added,task.url_key);
+   else this.db.prepare("UPDATE article_links SET parse_status=?,error=?,config_version=? WHERE parse_key=?").run((reason?.startsWith('non_article:')||status==='done'&&['outside_new_article_window','outside_new_article_window_fast'].includes(reason))?'skipped':status==='done'&&reason==='verified_outbox'?'done':'fail',reason==='verified_outbox'?null:reason,this.configVersions.get(task.site)||'',articleKey(task.url));
+   if(!reason?.startsWith('non_article:'))this.storePreparedSample(task.site,task.url,sample,status==='held'?'fail':'good',reason);
+   this.capture.delete(key);this.preparedReviewSamples.delete(key);this.linkStats.delete(task.cycle+'|'+task.url);
+--- a/config/web-sources/news/banker.vn.json
++++ b/config/web-sources/news/banker.vn.json
+@@ -24,6 +24,11 @@
+       "https://banker.vn/danh-muc/tin-dung",
+       "https://banker.vn/danh-muc/fintech",
+       "https://banker.vn/danh-muc/blockchain"
++    ],
++    "retryTransientHttpStatuses": [
++      502,
++      503,
++      504
+     ]
+   },
+   "publicationValidationPolicy": "strict_native_publication_v1",
+@@ -74,5 +79,22 @@
+       "https://banker.vn/bai-viet/thanh-toan-so-gan-ket-cac-dich-vu-thiet-yeu-fcf5ea"
+     ],
+     "fullSiteCycleVerified": false
++  },
++  "requested7Validation": {
++    "checkedAt": "2026-11-19T10:53:13.603Z",
++    "evidenceDirectory": "test/fixtures/news-requested-7",
++    "independentHoldoutUrls": [
++      "https://banker.vn/bai-viet/visa-mo-rong-chuong-trinh-agentic-ready-de-thuc-day-mo-rong-quy-mo-thuong-mai-ung-dung-ai-tai-chau-a-thai-13508a",
++      "https://banker.vn/bai-viet/quan-tri-cong-ty-va-xep-hang-tin-nhiem-mo-duong-cho-von-dai-han-d17a0c"
++    ],
++    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
++    "fullSiteCycleVerified": false
++  },
++  "http": {
++    "proxyIds": [
++      "news-p01",
++      "news-p02",
++      "news-p03"
++    ]
+   }
+-}+}
+--- /dev/null
++++ b/config/web-sources/news/doanhnghiepkinhdoanh.doanhnhanvn.vn.json
+@@ -0,0 +1,97 @@
++{
++  "schemaVersion": 1,
++  "siteName": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
++  "siteId": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
++  "registrableDomain": "doanhnhanvn.vn",
++  "homepage": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/",
++  "allowedHosts": [
++    "doanhnghiepkinhdoanh.doanhnhanvn.vn"
++  ],
++  "timezone": "Asia/Ho_Chi_Minh",
++  "timezoneProvenance": {
++    "authority": "explicit_user_confirmation",
++    "scope": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
++    "confirmation": "displayed_clock_is_vietnam_time_2026-11-19"
++  },
++  "identityEncoding": "latin1",
++  "nativeIdPattern": "-(\\d+)\\.htm$",
++  "title": {
++    "strategy": "selector",
++    "selector": ".body-content h2.title"
++  },
++  "publishedDate": {
++    "strategy": "selector",
++    "selector": ".body-content .bg-white > .mb-3:first-child",
++    "precision": "minute",
++    "timezone": "Asia/Ho_Chi_Minh"
++  },
++  "body": {
++    "strategy": "selector",
++    "selector": ".entry-body"
++  },
++  "authorStrategy": "jsonld_or_visible_or_site_fallback",
++  "enabled": false,
++  "stage": "parser_samples_passed",
++  "transport": "HTTP/axios",
++  "http": {
++    "timeoutMs": 15000,
++    "maxSockets": 8,
++    "maxBytes": 4000000,
++    "browserFallback": false,
++    "tlsVerification": "strict",
++    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
++  },
++  "parserModule": "src/web/configurableNewsParser.mjs",
++  "httpTransportModule": "src/web/newsResearchTransport.mjs",
++  "identityReconciliationRequired": true,
++  "fullSiteCycleVerified": false,
++  "validation": {
++    "checkedAt": "2026-11-19T10:34:52.914Z",
++    "state": "frozen_independent_http_holdouts_passed",
++    "sampleCount": 3,
++    "passedSamples": 3,
++    "independentSampleCount": 2,
++    "sampleUrls": [
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/41-nam-cung-ttc-nang-buoc-thanh-cong-4220261118131849707.htm"
++    ],
++    "holdoutUrls": [
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/seabank-nhan-cu-dup-giai-thuong-khang-dinh-vi-the-noi-lam-viec-hang-dau-va-nang-luc-phat-trien-ben-vung-4220261119171740598.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/chu-tich-cong-doan-pou-sung-viet-nam-mot-so-cong-ty-tai-chinh-duoc-cap-phep-nhung-cach-thuc-doi-no-nhu-tin-dung-den-4220261119154855794.htm"
++    ],
++    "evidenceDirectory": "outputs/news-requested-7-2026-11-19/doanhnghiepkinhdoanh.doanhnhanvn.vn",
++    "scope": "Requested article and two independent articles; not full-source coverage",
++    "fullSiteCycleVerified": false
++  },
++  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
++  "publicationDatePolicy": "original_only",
++  "publicationValidationPolicy": "strict_native_publication_v1",
++  "publicationArticleScope": ".body-content",
++  "description": {
++    "strategy": "selector",
++    "scope": ".body-content",
++    "selector": ".sapo"
++  },
++  "discovery": {
++    "homepage": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/",
++    "categories": [
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/vi-mo.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/du-bao-trien-vong.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/kinh-te-quoc-te.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/tai-chinh-doanh-nghiep.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/nguyen-nhien-vat-lieu.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/quan-tri-doanh-nghiep.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/kinh-doanh-thi-truong.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/khoi-nghiep-sang-tao.htm"
++    ]
++  },
++  "requested7Validation": {
++    "checkedAt": "2026-11-19T10:53:13.604Z",
++    "evidenceDirectory": "test/fixtures/news-requested-7",
++    "independentHoldoutUrls": [
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/seabank-nhan-cu-dup-giai-thuong-khang-dinh-vi-the-noi-lam-viec-hang-dau-va-nang-luc-phat-trien-ben-vung-4220261119171740598.htm",
++      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/chu-tich-cong-doan-pou-sung-viet-nam-mot-so-cong-ty-tai-chinh-duoc-cap-phep-nhung-cach-thuc-doi-no-nhu-tin-dung-den-4220261119154855794.htm"
++    ],
++    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
++    "fullSiteCycleVerified": false
++  }
++}
+--- a/config/web-sources/news/fili.vn.json
++++ b/config/web-sources/news/fili.vn.json
+@@ -11,10 +11,8 @@
+   "timezone": "Asia/Ho_Chi_Minh",
+   "identityEncoding": "latin1",
+   "title": {
+-    "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
+     "strategy": "selector",
+-    "selector": "meta[property=\"og:title\"]",
+-    "attribute": "content"
++    "selector": "h1"
+   },
+   "publishedDate": {
+     "precision": "second",
+@@ -204,10 +202,8 @@
+       "timezone": "Asia/Ho_Chi_Minh",
+       "identityEncoding": "latin1",
+       "title": {
+-        "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
+         "strategy": "selector",
+-        "selector": "meta[property=\"og:title\"]",
+-        "attribute": "content"
++        "selector": "h1"
+       },
+       "publishedDate": {
+         "precision": "second",
+@@ -237,5 +233,14 @@
+         ]
+       }
+     }
+-  ]
+-}+  ],
++  "nativePublicationAdapter": "fili_public_print_clock",
++  "publicationArticleScope": ".fili-article-wrapper",
++  "requested7Validation": {
++    "checkedAt": "2026-11-19T10:53:13.605Z",
++    "evidenceDirectory": "test/fixtures/news-requested-7",
++    "independentHoldoutUrls": [],
++    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
++    "fullSiteCycleVerified": false
++  }
++}
+--- a/config/web-sources/news/taichinhcongnghe.vn.json
++++ b/config/web-sources/news/taichinhcongnghe.vn.json
+@@ -16,9 +16,10 @@
+     "selector": "h1"
+   },
+   "publishedDate": {
+-    "strategy": "public_feed",
+-    "feedUrl": "https://taichinhcongnghe.vn/rss.xml",
+-    "sourceKind": "public_publication_feed"
++    "strategy": "jsonld",
++    "key": "datePublished",
++    "precision": "second",
++    "timezone": "explicit_offset"
+   },
+   "body": {
+     "strategy": "selector",
+@@ -103,7 +104,12 @@
+       "https://taichinhcongnghe.vn/cookies"
+     ],
+     "legacyArticlePattern": null,
+-    "reclassifiedArticleUrls": []
++    "reclassifiedArticleUrls": [],
++    "retryTransientHttpStatuses": [
++      502,
++      503,
++      504
++    ]
+   },
+   "parserModule": "src/web/configurableNewsParser.mjs",
+   "identityReconciliationRequired": true,
+@@ -117,7 +123,12 @@
+     "maxBytes": 4000000,
+     "browserFallback": false,
+     "tlsVerification": "strict",
+-    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
++    "hostProfilesFile": "config/web-sources/news-http-profiles.json",
++    "proxyIds": [
++      "news-p01",
++      "news-p02",
++      "news-p03"
++    ]
+   },
+   "historicalValidation": {
+     "status": "parser_samples_passed",
+@@ -183,7 +194,15 @@
+     "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+     "fullSiteCycleVerified": false
+   },
+-  "variants": [],
++  "variants": [
++    {
++      "publishedDate": {
++        "strategy": "public_feed",
++        "feedUrl": "https://taichinhcongnghe.vn/rss.xml",
++        "sourceKind": "public_publication_feed"
++      }
++    }
++  ],
+   "publicationValidationPolicy": "strict_native_publication_v1",
+   "strictTimeRepairEvidence": {
+     "frozenAt": "2026-11-16T03:40:59.304Z",
+@@ -278,5 +297,12 @@
+     ],
+     "strictValidatorUnchanged": true,
+     "paidAiCalls": 0
++  },
++  "requested7Validation": {
++    "checkedAt": "2026-11-19T10:53:13.606Z",
++    "evidenceDirectory": "test/fixtures/news-requested-7",
++    "independentHoldoutUrls": [],
++    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
++    "fullSiteCycleVerified": false
+   }
+-}+}
+--- a/src/newsFlow/transport.mjs
++++ b/src/newsFlow/transport.mjs
+@@ -10,7 +10,14 @@
+ export class NewsProxyPool{
+  static async load(file,options){return new NewsProxyPool(JSON.parse(await fs.readFile(file,'utf8')),options);}
+  constructor(values,{rotation='site'}={}){if(!Array.isArray(values)||!values.length)throw fail('NEWS_PROXY_LIST_EMPTY');if(!['site','request'].includes(rotation))throw fail('NEWS_PROXY_ROTATION_INVALID');this.rotation=rotation;this.cursor=0;this.lastSiteProxy=new Map();this.proxies=values.map((p,i)=>{if(!p.host||!Number.isInteger(p.port)||p.port<1||p.port>65535||!p.username||!p.password)throw fail('NEWS_PROXY_CONFIG_INVALID');return {...p,id:p.id||'news-p'+String(i+1).padStart(2,'0')};});if(new Set(this.proxies.map(p=>p.id)).size!==values.length)throw fail('NEWS_PROXY_ID_DUPLICATE');this.bad=new Map();this.bindings=new Map();}
+- choose(scope){
++ choose(scope,{proxyIds}={}){
++  if(proxyIds!==undefined){
++   const allowed=new Set(proxyIds);if(!Array.isArray(proxyIds)||!allowed.size)throw fail('NEWS_PROXY_CONFIG_SCOPE_EMPTY');
++   const now=Date.now(),site=String(scope||'').split('|').at(-1),last=this.lastSiteProxy.get(site),available=this.proxies.filter(p=>allowed.has(p.id)&&(this.bad.get(p.id)||0)<=now);
++   if(!available.length)throw fail('NEWS_PROXY_POOL_UNAVAILABLE');
++   const candidates=available.filter(p=>p.id!==last),choices=candidates.length?candidates:available,p=choices[this.cursor%choices.length];
++   this.cursor=(this.cursor+1)%this.proxies.length;this.lastSiteProxy.set(site,p.id);return p;
++  }
+   if(this.rotation==='request'){
+    const now=Date.now(),site=String(scope||'').split('|').at(-1),last=this.lastSiteProxy.get(site);let fallback;
+    for(let i=0;i<this.proxies.length;i++){const p=this.proxies[this.cursor];this.cursor=(this.cursor+1)%this.proxies.length;if((this.bad.get(p.id)||0)>now)continue;if(p.id===last){fallback=p;continue;}this.lastSiteProxy.set(site,p.id);return p;}
+@@ -19,12 +26,12 @@
+   }
+   const bound=this.bindings.get(scope);if(bound)return bound;const available=this.proxies.filter(p=>(this.bad.get(p.id)||0)<=Date.now());if(!available.length)throw fail('NEWS_PROXY_POOL_UNAVAILABLE');const p=available[parseInt(sha(scope.split('|').at(-1)).slice(0,8),16)%available.length];this.bindings.set(scope,p);return p;
+  }
+- alternate(scope,previousId){
++ alternate(scope,previousId,{proxyIds}={}){
+   const now=Date.now();
+   for(let i=0;i<this.proxies.length;i++){
+    const proxy=this.proxies[this.cursor];
+    this.cursor=(this.cursor+1)%this.proxies.length;
+-   if(proxy.id===previousId||(this.bad.get(proxy.id)||0)>now)continue;
++   if(proxy.id===previousId||(this.bad.get(proxy.id)||0)>now||proxyIds!==undefined&&!proxyIds.includes(proxy.id))continue;
+    if(this.rotation==='request')this.lastSiteProxy.set(scope.split('|').at(-1),proxy.id);
+    return proxy;
+   }
+@@ -47,7 +54,7 @@
+   if(!options.reviewFailed&&this.state.failedUrl(requestKey(url),{role:options.taskRole,cycle}))return {requestedUrl:url,error:'URL_AWAITING_SEPARATE_REVIEW'};
+   const prior=this.state.request(cycle,url);if(prior){if(prior.state==='fetching')return {requestedUrl:url,error:'request_in_progress'};const body=this.state.body(prior.response);return {...JSON.parse(prior.metadata||'{}'),html:body?gunzipSync(body).toString():null,reusedCycleResponse:true};}
+   const host=new URL(url).hostname.replace(/^www\./,''),scope=cycle+'|'+(site.registrableDomain||site.siteName),profile=this.profiles[host]||{};
+-  let proxy=this.pool.choose(scope);
++  let proxy=this.pool.choose(scope,{proxyIds:site.http?.proxyIds});
+   let prepared=null,result=await this.pace(host,async()=>{
+    const again=this.state.request(cycle,url);if(again){const body=this.state.body(again.response);return {...JSON.parse(again.metadata||'{}'),html:body?gunzipSync(body).toString():null,reusedCycleResponse:true};}
+    if(this.maxWireRequests&&this.wireRequests>=this.maxWireRequests)throw fail('NEWS_HTTP_REQUEST_BUDGET');
+@@ -63,7 +70,7 @@
+     raw=await send(input);
+     const timedOut=raw.error==='request_deadline_exceeded'||!raw.error&&raw.networkElapsedMs>=this.timeoutMs;
+     if(timedOut&&this.retryArticleTimeout&&options.taskRole==='article'&&input.method==='GET'&&!options.articleTimeoutRetried&&(!this.maxWireRequests||this.wireRequests<this.maxWireRequests)){
+-     const alternate=this.pool.alternate(scope,proxy.id);
++     const alternate=this.pool.alternate(scope,proxy.id,{proxyIds:site.http?.proxyIds});
+      if(alternate){
+       options.articleTimeoutRetried=articleTimeoutRetried=true;
+       proxy=alternate;

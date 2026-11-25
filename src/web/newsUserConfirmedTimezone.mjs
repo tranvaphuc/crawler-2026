@@ -6,6 +6,8 @@ for(const site of ['vn.stockproxx.com','vietnamnews.vn','nghenhinvietnam.vn','ba
 const confirmedAliases=new Map([['baodansinh.vn',new Set(['baodansinh.vn','dansinh.dantri.com.vn'])],['kinhtetrunguong.vn',new Set(['kinhtetrunguong.vn','cscltw.dcs.vn'])]]);
 const host = url => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return null; } };
 for(const site of ['bbw.vn','baodaklak.vn','moit.gov.vn','baodansinh.vn','kinhtetrunguong.vn','sbv.gov.vn']){confirmedVietnamClockSites.add(site);confirmationDates.set(site,'2026-11-17');}
+confirmedVietnamClockSites.add('doanhnghiepkinhdoanh.doanhnhanvn.vn');
+confirmationDates.set('doanhnghiepkinhdoanh.doanhnhanvn.vn','2026-11-19');
 export function userConfirmedPublicationTimezone(config, url) {
  const p = config.timezoneProvenance;
  return config.publicationTimePolicy === USER_CONFIRMED_VIETNAM_CLOCK && config.timezone === 'Asia/Ho_Chi_Minh'

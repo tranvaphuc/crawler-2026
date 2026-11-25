@@ -16,6 +16,7 @@ import {extractContentSnapshot,contentBase,walkContent,walkContentValues,hasYout
 import {extractPostInfo} from './socialPostInfo.js';
 import {youtubeJsonPostMetadata} from './youtubeJsonMetadata.js';
 import {createYoutubeSourceBootstrap,youtubeChannelRestriction} from './youtubeSourceBootstrap.js';
+import {createYoutubeCommentBootstrap} from './youtubeCommentBootstrap.js';
 import {normalizeMetricsInput} from './socialMetrics.js';
 const nativeText=v=>typeof v==='string'?v:v?.simpleText||v?.runs?.map(x=>x.text||'').join('')||v?.content||'';
 function gate(snapshot,platform){const title=readOnlyHtml(snapshot.html||'',{platform})('title').text();return {securityBlocked:/^(?:security check|just a moment|verify you are human|challenge)/i.test(title)};}
@@ -152,6 +153,7 @@ export function createSocialHttpMetricsReader(options={}){
 /** Stateful HTTP pagination. Returned Symbols are consumed only by the router cursor store. */
 export function createSocialHttpContentReader(options={}){
  const youtubeBootstrap=options.preferYoutubeJsonSourceBootstrap?createYoutubeSourceBootstrap():null;
+ const youtubeComments=(options.preferYoutubeJsonCommentBootstrap??(process.env.CRAWL_YOUTUBE_COMMENT_JSON_BOOTSTRAP==='1'))?createYoutubeCommentBootstrap():null;
  const metaComments=createMetaCommentHttpReader(options),metaSources=options.nativeSourcePages?createMetaSourceHttpReader(options):null;
  const execute=createHttpExecutor({...options,timeoutMs:options.timeoutMs||60000}),maxPages=options.maxPages||8;
  const maxItems=options.maxItems||20000;
@@ -233,11 +235,14 @@ export function createSocialHttpContentReader(options={}){
    if(meta?.sessionChanged&&state&&(state.collecting||state.streamMore)){const fresh=await session.request(target.url);if(fresh.httpStatus!==200||/\/(login|checkpoint|challenge)(?:\/|[?]|$)/.test(fresh.finalUrl||''))return extractContentSnapshot(target,fresh,gate(fresh,target.platform));const context=ytContext(fresh.html);if(!context)return{...contentBase(target),status:'error',reason:'NATIVE_CONTEXT_UNAVAILABLE'};state.context=context;state.recoveries=(state.recoveries||0)+1;}
    if(state&&!state.collecting)return sourceDelivery();
    if(!state){
-    const bootstrapStarted=Date.now(),sourceNative=await youtubeBootstrap?.read(session,target);
-    if(sourceNative)options.onNativeJsonRequest?.({platform:'youtube',operation:'source_bootstrap',mode:'json',reason:sourceNative.failure?.reason||sourceNative.reason||null,elapsedMs:Date.now()-bootstrapStarted});
+    const bootstrapStarted=Date.now(),commentNative=await youtubeComments?.read(session,target);
+    if(commentNative?.failure)return{...contentBase(target),...commentNative.failure};
+    const sourceNative=commentNative?.snapshot?commentNative:await youtubeBootstrap?.read(session,target);
+    if(sourceNative&&target.operation==='source')options.onNativeJsonRequest?.({platform:'youtube',operation:'source_bootstrap',mode:'json',reason:sourceNative.failure?.reason||sourceNative.reason||null,elapsedMs:Date.now()-bootstrapStarted});
     if(sourceNative?.failure)return{...contentBase(target),...sourceNative.failure};
     const htmlStarted=Date.now(),raw=sourceNative?.snapshot||await session.request(target.url);
     if(!sourceNative?.snapshot&&youtubeBootstrap){youtubeBootstrap.observe(target,raw);if(target.platform==='youtube'&&target.operation==='source')options.onNativeJsonRequest?.({platform:'youtube',operation:'source_bootstrap',mode:sourceNative?'html_fallback':'html_bootstrap',reason:sourceNative?.reason||null,elapsedMs:Date.now()-htmlStarted});}
+    if(youtubeComments&&target.platform==='youtube'&&target.operation==='comments'){if(!commentNative?.snapshot)youtubeComments.observe(target,raw);options.onNativeJsonRequest?.({platform:'youtube',operation:'comment_bootstrap',mode:commentNative?.snapshot?'json':commentNative?'html_fallback':'html_bootstrap',reason:commentNative?.reason||null,elapsedMs:Date.now()-bootstrapStarted});}
     const snapshot={...raw,jsonResponses:[],observedAt:new Date().toISOString()};
     if(!acceptWork)return {...contentBase(target),status:'error',reason:'UPSTREAM_TIMEOUT'};
     if(snapshot.httpStatus===200&&target.platform==='youtube'&&target.operation==='source'){const restriction=youtubeChannelRestriction(assignedJson(snapshot.html||'','ytInitialData'),target.expectedNativeId);if(restriction)return {...contentBase(target),...restriction};}

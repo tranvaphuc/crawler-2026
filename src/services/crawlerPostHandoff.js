@@ -26,10 +26,13 @@ export function postCommentTarget({doc,item,source,sourceRoundId}){
 export async function commitCrawlDocument({doc,item,source,parent=null,sourceRoundId,write,upsertTarget,now=Date.now}){
  const target=parent?null:postCommentTarget({doc,item,source,sourceRoundId});
  const result=await write(doc);
- // A create conflict proves existence, not that this payload was written.
+ // A native create conflict or real-time existence read proves presence,
+ // not that this fresh payload was written.
  // Finish without publishing new parent metadata or an ES acknowledgement.
  if(result?.skipped===true){
-  if(result.reason!=='ES5_DOCUMENT_EXISTS'||result.status!==409||result.error?.type!=='version_conflict_engine_exception'||result._index!==doc._index||result._type!==doc._type||result._id!==doc._id)fail('ES5_IMPORT_UNCONFIRMED');
+  const conflict=result.status===409&&result.error?.type==='version_conflict_engine_exception';
+  const present=result.evidence==='realtime_mget'&&result.found===true&&!result.error&&(result.status===undefined||result.status===200)&&Number.isSafeInteger(result._version)&&result._version>0;
+  if(result.reason!=='ES5_DOCUMENT_EXISTS'||!conflict&&!present||result._index!==doc._index||result._type!==doc._type||result._id!==doc._id)fail('ES5_IMPORT_UNCONFIRMED');
   return{index:doc._index,type:doc._type,id:doc._id,skipped:true,reason:'ES5_DOCUMENT_EXISTS'};
  }
  const acknowledged=['created','updated'].includes(result?.result)||result?.created===true||Number.isSafeInteger(result?._version)&&result._version>0;

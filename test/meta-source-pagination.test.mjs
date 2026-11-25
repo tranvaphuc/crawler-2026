@@ -7,7 +7,7 @@ import {packState,unpackState} from '../src/services/crawlerQueueFlow.js';
 const post=id=>({pk:id,code:'CODE'+id,caption:{text:'hello'},taken_at:1792900000,user:{pk:'9',username:'public'},text_post_app_info:{direct_reply_count:1}});
 const conn=(ids,next,cursor)=>({edges:ids.map(id=>({node:{thread_items:[{post:post(id)}]}})),page_info:{has_next_page:next,end_cursor:cursor}});
 const initial={httpStatus:200,finalUrl:'https://www.threads.com/@public',html:'<script type="application/json">'+JSON.stringify({lsd:['LSD',[],{token:'secret-lsd'}],query:{queryID:'123',queryName:'BarcelonaProfileTimelineQuery',variables:{userID:'9',after:null,first:10}},mediaData:conn(['1'],true,'PAGE2')})+'</script>'};
-function fixture(responses){const calls=[];return{calls,read:createMetaSourceHttpReader({respectPlatformCooldown:false,getProxy:async()=>({server:'http://proxy.test:8888'}),makeSession:()=>({requests:0,close(){},async request(url,opts){this.requests++;if(!opts)return initial;const body=new URLSearchParams(opts.body);calls.push(JSON.parse(body.get('variables')));const response=responses.shift();return{httpStatus:response.httpStatus||200,retryAfterMs:response.retryAfterMs,finalUrl:url,html:JSON.stringify(response.body||response)};}})})};}
+function fixture(responses){const calls=[];return{calls,read:createMetaSourceHttpReader({respectPlatformCooldown:false,getProxy:async()=>({server:'http://proxy.test:8888'}),makeSession:()=>({requests:0,close(){},async request(url,opts){this.requests++;if(!opts)return initial;const body=new URLSearchParams(opts.body);calls.push(JSON.parse(body.get('variables')));const response=responses.shift();return{httpStatus:response.httpStatus||200,retryAfterMs:response.retryAfterMs,finalUrl:url,html:response.raw??JSON.stringify(response.body||response)};}})})};}
 const target=()=>normalizeContentInput('source',{url:'https://www.threads.com/@public',reference:{id:'9'},limit:100});
 test('native source cursor survives a new anonymous worker without persisting proxy or LSD',async()=>{
  const f=fixture([{data:{mediaData:conn(['2'],true,'PAGE3')}},{data:{mediaData:conn([],false,null)}}]);
@@ -25,16 +25,27 @@ test('source query must come from the matching native manifest',()=>{
 });
 
 test('Threads bootstrap direct query switches to its verified refetch operation for pagination',()=>{
- const q=sourceQuery({queries:[{name:'BarcelonaProfileThreadsTabDirectQuery',docId:'bootstrap-id',variables:{userID:'9',first:4,allow_page_info_for_lox_user:true}}]},'threads');
- assert.equal(q.name,'BarcelonaProfileThreadsTabRefetchableDirectQuery');assert.equal(q.docId,'40155197760760366');assert.equal(q.variables.userID,'9');assert.equal(q.variables.before,null);
+ const q=sourceQuery({queries:[{name:'BarcelonaProfileThreadsTabDirectQuery',docId:'bootstrap-id',variables:{userID:'9',first:4,allow_page_info_for_lox_user:true,__relay_internal__pv__BarcelonaHasProfileInlineGhostPostsrelayprovider:false}}]},'threads');
+ assert.equal(q.name,'BarcelonaProfileThreadsTabRefetchableDirectQuery');assert.equal(q.docId,'39884065714574204');assert.equal(q.variables.userID,'9');assert.equal(q.variables.before,null);
+});
+
+test('Threads matches the Middlemist bootstrap cohort to its current native pagination operation',()=>{
+ const variables={userID:'9',first:4,__relay_internal__pv__BarcelonaHasProfileInlineGhostPostsrelayprovider:false,__relay_internal__pv__BarcelonaHasMiddlemistConsumptionrelayprovider:false,__relay_internal__pv__BarcelonaIsDesktoprelayprovider:true};
+ const q=sourceQuery({queries:[{name:'BarcelonaProfileThreadsTabDirectQuery',docId:'current-bootstrap',variables}]},'threads');
+ assert.equal(q.docId,'29427891256864466');assert.equal(q.name,'BarcelonaProfileThreadsTabRefetchableDirectQuery');
+ assert.equal(q.variables.__relay_internal__pv__BarcelonaHasMiddlemistConsumptionrelayprovider,false);
+ assert.equal(q.variables.__relay_internal__pv__BarcelonaIsDesktoprelayprovider,true);
+ assert.equal(q.variables.has_profile_inline_ghost_posts,false);
+ assert.equal(Object.hasOwn(q.variables,'__relay_internal__pv__BarcelonaHasLocationBadgerelayprovider'),false);
+ assert.deepEqual(variables,{userID:'9',first:4,__relay_internal__pv__BarcelonaHasProfileInlineGhostPostsrelayprovider:false,__relay_internal__pv__BarcelonaHasMiddlemistConsumptionrelayprovider:false,__relay_internal__pv__BarcelonaIsDesktoprelayprovider:true});
 });
 
 test('Instagram hydrates publication dates before advancing native cursor, including across a new worker',async()=>{
- const url='https://www.instagram.com/sample/',target=()=>normalizeContentInput('source',{url,reference:{id:'9'},limit:100});const calls=[];
+ const url='https://www.instagram.com/sample/',target=()=>normalizeContentInput('source',{url,reference:{id:'9'},limit:100});const calls=[],remembered=[];
  const feed={httpStatus:200,finalUrl:url,html:'<script type="application/json">'+JSON.stringify({query:{queryID:'123',queryName:'PolarisProfilePostsQuery',variables:{username:'sample'}},data:{xdt_api__v1__feed__user_timeline_graphql_connection:{edges:[1,2].map(n=>({node:{pk:String(n),code:'POST'+n,user:{pk:'9',username:'sample'},caption:{text:'post'}}})),page_info:{has_next_page:true,end_cursor:'PAGE2'}}}})+'</script>'};
- const read=createMetaSourceHttpReader({maxPages:1,respectPlatformCooldown:false,getProxy:async()=>({server:'http://proxy.test:8888'}),makeSession:()=>({requests:0,close(){},async request(u,opts){this.requests++;calls.push(u);assert.equal(opts,undefined,'must not fetch next page before all dates are hydrated');if(u===url)return feed;const n=Number(/POST(\d)/.exec(u)[1]);return{httpStatus:200,finalUrl:u,html:'<script type="application/json">'+JSON.stringify({pk:String(n),code:'POST'+n,user:{pk:'9',username:'sample'},taken_at:1700000000+n,comment_count:n})+'</script>'};}})});
- const first=await read(target());assert.equal(first.phase,'collecting');assert.equal(first.items.length,0);assert.equal(first[READ_STATE].nativeCursor,null);
- const second=await read({...target(),[READ_STATE]:unpackState(packState(first[READ_STATE]))});assert.equal(second.items.length,2);assert.deepEqual(second.items.map(x=>x.createdAt),['2023-11-14T22:13:21.000Z','2023-11-14T22:13:22.000Z']);assert.deepEqual(second.items.map(x=>x.metrics.comment),[1,2]);assert.equal(second[READ_STATE].nativeCursor,'PAGE2');assert.equal(calls.filter(u=>u.includes('POST1')).length,1);
+ const read=createMetaSourceHttpReader({rememberSourcePublicationDates:async(target,items)=>{assert.equal(target.expectedNativeId,'9');for(const item of items){assert.equal(item.dateEvidence,'matched_post_detail');assert.equal(item.dateIsEstimated,false);remembered.push(structuredClone(item));}},maxPages:1,respectPlatformCooldown:false,getProxy:async()=>({server:'http://proxy.test:8888'}),makeSession:()=>({requests:0,close(){},async request(u,opts){this.requests++;calls.push(u);assert.equal(opts,undefined,'must not fetch next page before all dates are hydrated');if(u===url)return feed;const n=Number(/POST(\d)/.exec(u)[1]);return{httpStatus:200,finalUrl:u,html:'<script type="application/json">'+JSON.stringify({pk:String(n),code:'POST'+n,user:{pk:'9',username:'sample'},taken_at:1700000000+n,comment_count:n})+'</script>'};}})});
+ const first=await read(target());assert.equal(first.phase,'collecting');assert.equal(first.items.length,0);assert.equal(first[READ_STATE].nativeCursor,null);assert.deepEqual(remembered.map(x=>x.id),['1']);
+ const second=await read({...target(),[READ_STATE]:unpackState(packState(first[READ_STATE]))});assert.equal(second.items.length,2);assert.deepEqual(second.items.map(x=>x.createdAt),['2023-11-14T22:13:21.000Z','2023-11-14T22:13:22.000Z']);assert.deepEqual(second.items.map(x=>x.metrics.comment),[1,2]);assert.equal(second[READ_STATE].nativeCursor,'PAGE2');assert.equal(calls.filter(u=>u.includes('POST1')).length,1);assert.deepEqual(remembered.map(x=>x.id),['1','2']);
 });
 
 test('a successful empty profile completes with native identity proof and does not request another page',async()=>{
@@ -116,3 +127,17 @@ test('an unavailable optional quoted post does not discard its verified source p
   else{assert.equal(r.reason,'UPSTREAM_API_ERROR',mode);assert.equal(r[READ_STATE].nativeCursor,'PAGE2');assert.notEqual(r.pagination.complete,true);}
  }
 });
+
+test('deferred quote errors bind only to the exact post in the current streamed source response',async()=>{
+ const path=['mediaData','edges',0,'node','thread_items',0,'post','text_post_app_info','share_info','quoted_post','taken_at'];
+ for(const mode of ['quote','missing_post','other_index','root_author','mixed']){
+  const c=conn(['2'],true,'PAGE3');c.edges[0].node.thread_items[0].post.text_post_app_info.share_info={quoted_post:null};if(mode==='missing_post')delete c.edges[0].node.thread_items[0].post.pk;
+  const error={code:4686025,path:mode==='other_index'?path.map((v,i)=>i===2?1:v):mode==='root_author'?path.slice(0,7).concat('user'):path};
+  const errors=[error,...(mode==='mixed'?[{code:1675012,message:'missing required variable'}]:[])];
+  const f=fixture([{raw:JSON.stringify({data:{mediaData:c}})+'\n'+JSON.stringify({errors})}]),first=await f.read(target()),result=await f.read({...target(),[READ_STATE]:unpackState(packState(first[READ_STATE]))});
+  if(mode==='quote'){assert.equal(result.status,'ok');assert.deepEqual(result.items.map(x=>x.id),['2']);assert.equal(result[READ_STATE].nativeCursor,'PAGE3');}
+  else{assert.equal(result.reason,'UPSTREAM_API_ERROR',mode);assert.equal(result[READ_STATE].nativeCursor,'PAGE2');}
+ }
+});
+
+test('Threads refetch derives its new required boolean from fresh anonymous bootstrap without inventing login flags',()=>{for(const enabled of [true,false]){const variables={userID:'9',first:4,__relay_internal__pv__BarcelonaHasProfileInlineGhostPostsrelayprovider:enabled,__relay_internal__pv__BarcelonaIsLoggedInrelayprovider:false},q=sourceQuery({queries:[{name:'BarcelonaProfileThreadsTabDirectQuery',docId:'fresh-bootstrap',variables}]},'threads');assert.equal(q.variables.has_profile_inline_ghost_posts,enabled);assert.equal(q.variables.__relay_internal__pv__BarcelonaIsLoggedInrelayprovider,false);assert.equal(q.variables.userID,'9');assert.equal(variables.has_profile_inline_ghost_posts,undefined);}assert.throws(()=>sourceQuery({queries:[{name:'BarcelonaProfileThreadsTabDirectQuery',variables:{userID:'9',first:4}}]},'threads'),{code:'THREADS_SOURCE_PAGINATION_CONTEXT_MISSING'});});

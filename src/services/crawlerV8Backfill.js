@@ -2,12 +2,16 @@ import {serialize,deserialize} from 'node:v8';
 import {deflateSync,inflateSync} from 'node:zlib';
 // Persist public reader progress only. HTTP_BINDING, leases, cookies and transport never enter Mongo.
 const stateKeys=['sourceEmittedIds','kind','items','seen','nativeCursor','pending','collecting','queue','queued','expectedReplies','observedReplies','unfiltered','recoveries','budgetStopped','estimatedBytes','offset','base','visited','context','bootstrap','ui','nativeNewest','nativeNewestConfirmed','nativeLatest','expected','totalRequests','seenIds','knownRootIds','policyReturned','streamMore','dateObservedAt','dateAttempts','dateHydrationPending','repeatedSearchPages','paginationStalled','commentCoverageVersion','rootCommentIds','replyParents','rootPagesVerified','rootPagesObserved','commentFieldErrors','expectedCommentCount','commentHeaderAttempted','crawlManifest'];
+const encodedStates=new WeakMap();
 export function encodeBackfillState(state){
  if(!state)return null;
  const clean=Object.fromEntries(stateKeys.filter(k=>Object.hasOwn(state,k)).map(k=>[k,state[k]]));
  if(clean.base){clean.base={...clean.base};delete clean.base.transport;}
  const raw=serialize(clean);if(raw.length>128*1024*1024)throw Object.assign(Error('CHECKPOINT_TOO_LARGE'),{code:'CHECKPOINT_TOO_LARGE'});
- const payload=deflateSync(raw);if(payload.length>12*1024*1024)throw Object.assign(Error('CHECKPOINT_TOO_LARGE'),{code:'CHECKPOINT_TOO_LARGE'});return payload;
+ // Compare the exact public serialization, not cursor/size heuristics: buffered
+ // rows and Set/Map mutations must always produce a new durable checkpoint.
+ const previous=encodedStates.get(state);if(previous?.raw.equals(raw))return Buffer.from(previous.payload);
+ const payload=deflateSync(raw);if(payload.length>12*1024*1024)throw Object.assign(Error('CHECKPOINT_TOO_LARGE'),{code:'CHECKPOINT_TOO_LARGE'});if(raw.length<=256*1024)encodedStates.set(state,{raw,payload:Buffer.from(payload)});else encodedStates.delete(state);return payload;
 }
 export function decodeBackfillState(payload){return deserialize(inflateSync(payload,{maxOutputLength:128*1024*1024}));}
 export const CRAWL_RETRY_POLICY='short_retry_preserve_cooldown_v1';

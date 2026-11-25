@@ -14,15 +14,15 @@ before(async()=>{
  connection=new Redis(socket,{maxRetriesPerRequest:null});
 });
 after(async()=>{await connection?.quit();if(redisProcess?.exitCode===null){redisProcess.kill('SIGTERM');await once(redisProcess,'exit');}fs.rmSync(dir,{recursive:true,force:true});});
-async function fixture(t,queueOverride){
+async function fixture(t,queueOverride,settings={}){
  const queueName=queueOverride||'test-resume-'+(++sequence),queue=new Queue('crawler-flow-'+queueName,{connection}),prefix='bull:'+queue.name+':',rows=[];let clock=Date.now();
- const jobs={find(filter,options){assert.equal(filter.queue,queueName);assert.equal(filter.state,'queued');assert.equal(filter['data.checkpoint'].$type,'string');assert.equal(options.projection._id,1);return{maxTimeMS:()=>({toArray:async()=>rows.map(x=>structuredClone(x))})};}};
- const makeScheduler=()=>createCheckpointResumeScheduler({redis:connection,jobs,queue:queueName,now:()=>clock,pollMs:0,refreshMs:0});
+ const jobs={find(filter,options){assert.equal(filter.queue,queueName);assert.equal(filter.state,'queued');if(filter['data.checkpoint'])assert.equal(filter['data.checkpoint'].$type,'string');assert.equal(options.projection._id,1);return{maxTimeMS:()=>({toArray:async()=>rows.map(x=>structuredClone(x))})};}};
+ const makeScheduler=()=>createCheckpointResumeScheduler({redis:connection,jobs,queue:queueName,now:()=>clock,pollMs:0,refreshMs:0,...settings});
  const scheduler=makeScheduler();
- async function addFresh(n,tag='fresh'){for(let i=0;i<n;i++)await queue.add('source',{kind:'source',source:{platform:'facebook',type:'group'},sourceRoundId:'new-round'},{jobId:tag+i,removeOnComplete:false});}
+ async function addFresh(n,tag='fresh'){for(let i=0;i<n;i++){const data={kind:'source',source:{_id:'source-'+tag+i,platform:'facebook',type:'group'},sourceRoundId:'new-round'};await queue.add('source',data,{jobId:tag+i,removeOnComplete:false});rows.push({_id:tag+i,createdAt:new Date(clock-20000),data:structuredClone(data)});}}
  async function addResume(n,tag='resume',extra={}){for(let i=0;i<n;i++){
-  const data={kind:'source',source:{platform:'facebook',type:'group'},checkpoint:packState({nativeCursor:'NEXT-'+i,seen:new Set(['seen']),items:[{id:'buffered'}]}),pendingPage:{items:[{id:'pending'}]},sourceRoundId:'original-round',page:4,proxyRetries:17,proxyWaitReason:'PROXY_ENDPOINTS_UNAVAILABLE',proxyWaitUntil:clock-1000+i,...extra};
-  await queue.add('source',data,{jobId:tag+i,removeOnComplete:false});rows.push({_id:tag+i,createdAt:new Date(clock-10000),data:{page:data.page,checkpoint:data.checkpoint,groupCursorProxyBudgetStartedAt:data.groupCursorProxyBudgetStartedAt,proxyWaitUntil:data.proxyWaitUntil,sourceYieldUntil:data.sourceYieldUntil,originWaitUntil:data.originWaitUntil,groupCursorProxyWaitStartedAt:data.groupCursorProxyWaitStartedAt,groupCursorProxyWaitMs:data.groupCursorProxyWaitMs}});
+  const data={kind:'source',source:{_id:'source-'+tag+i,platform:'facebook',type:'group'},checkpoint:packState({nativeCursor:'NEXT-'+i,seen:new Set(['seen']),items:[{id:'buffered'}]}),pendingPage:{items:[{id:'pending'}]},sourceRoundId:'original-round',page:4,proxyRetries:17,proxyWaitReason:'PROXY_ENDPOINTS_UNAVAILABLE',proxyWaitUntil:clock-1000+i,...extra};
+  await queue.add('source',data,{jobId:tag+i,removeOnComplete:false});rows.push({_id:tag+i,createdAt:new Date(clock-10000),data:structuredClone(data)});
  }}
  const workers=[];const worker=(processor=null,opts={})=>{const w=new CheckpointWorker(queue.name,processor,{connection,autorun:false,concurrency:1,...opts});workers.push(w);w.on('error',()=>{});return w;};
  t.after(async()=>{for(const w of workers)await w.close();await queue.obliterate({force:true});await connection.del(prefix+'checkpoint-resume-batch',prefix+'checkpoint-resume-ready',prefix+'checkpoint-resume-expiring');await queue.close();});
@@ -41,6 +41,19 @@ test('checkpoint resumes bypass a long FIFO in bounded 4:1 batches without chang
  assert.deepEqual(await f.queue.getJobCounts('waiting','active','delayed','failed','paused','prioritized'),before);
  assert.equal(new Set(await f.order()).size,116);
  assert.deepEqual(await Promise.all(Array.from({length:16},(_,i)=>connection.hgetall(f.prefix+'resume'+i))),hashes);
+});
+
+test('one ready continuation and three older FIFO tickets get turns under the Group schedule',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:1,fifoBurst:3});
+ await f.addFresh(40);
+ await f.addResume(30);
+ const before=await connection.hgetall(f.prefix+'resume0');
+ const result=await f.scheduler();
+ assert.equal(result.state,'scheduled');
+ assert.deepEqual((await f.order()).slice(0,8),['resume0','fresh0','fresh1','fresh2','resume1','fresh3','fresh4','fresh5']);
+ assert.equal(result.resumeIds.length,4);
+ assert.equal(result.fifoIds.length,12);
+ assert.deepEqual(await connection.hgetall(f.prefix+'resume0'),before);
 });
 test('expired cursor proxy budgets precede a large ready retry backlog without changing tickets',async t=>{
  const f=await fixture(t);await f.addFresh(30);await f.addResume(600,'cold');await f.addResume(1,'expired',{groupCursorProxyWaitStartedAt:Date.now()-130000,groupCursorProxyWaitMs:0});
@@ -176,4 +189,42 @@ test('only a real continuation registers; legacy native cursors remain eligible 
  for(const checkpoint of [empty,'invalid-checkpoint'])await registerCheckpointResume({job:{id:'initial',queueName:'crawler-flow-facebook-group-source',queue,data:{kind:'source',page:0,checkpoint}},readyAt:1000});assert.equal(writes,0);
  await registerCheckpointResume({job:{id:'legacy',queueName:'crawler-flow-facebook-group-source',queue,data:{kind:'source',checkpoint:packState({nativeCursor:'NEXT',seen:new Set()})}},readyAt:1000});assert.equal(writes,1);
  const f=await fixture(t);await f.addFresh(20);await f.addResume(1,'legacy',{page:0,checkpoint:packState({nativeCursor:'NEXT',seen:new Set()})});assert.deepEqual((await f.scheduler()).resumeIds,['legacy0']);
+});
+
+test('first-page lane reserves cold reads while old cursors and FIFO retain bounded shares, without changing any ticket data',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:1,firstPageBurst:4,fifoBurst:1});await f.addResume(40,'old');await f.addFresh(40);
+ const ids=await f.order(),before=new Map(await Promise.all(ids.map(async id=>[id,await connection.hget(f.prefix+id,'data')]))),counts=await f.queue.getJobCounts('waiting','active','delayed','failed');
+ const result=await f.scheduler();assert.equal(result.firstPageIds.length,16);assert.equal(result.resumeIds.length,4);assert.equal(result.fifoIds.length,4);
+ const freshOrder=Array.from({length:40},(_,i)=>'fresh'+i).sort((a,b)=>a.localeCompare(b));const order=await f.order();for(let batch=0;batch<4;batch++){const group=order.slice(batch*6,batch*6+6);assert.equal(group[0],'old'+batch);assert.deepEqual(group.slice(1,5),freshOrder.slice(batch*4,batch*4+4));assert.equal(group[5],'old'+(batch+4));}
+ assert.equal(new Set(order).size,80);assert.deepEqual(await f.queue.getJobCounts('waiting','active','delayed','failed'),counts);for(const id of ids)assert.equal(await connection.hget(f.prefix+id,'data'),before.get(id));
+});
+test('cold reads cannot bypass native delay, pause, priority, future persisted deadlines or an active read of the same source',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:1,firstPageBurst:4,fifoBurst:1});await f.addResume(1,'active');const w=f.worker(),active=await w.getNextJob('t');await f.addFresh(5);
+ const first=await f.queue.getJob('fresh0');first.data.source._id=active.data.source._id;await first.updateData(first.data);f.rows.find(r=>r._id==='fresh0').data=structuredClone(first.data);
+ const future=await f.queue.getJob('fresh1');future.data.proxyWaitUntil=Date.now()+60000;await future.updateData(future.data);f.rows.find(r=>r._id==='fresh1').data=structuredClone(future.data);
+ const delayed=await f.queue.add('source',{kind:'source',source:{_id:'delayed'}},{jobId:'cold-delayed-ticket',delay:60000});f.rows.push({_id:'cold-delayed-ticket',createdAt:new Date(0),data:structuredClone(delayed.data)});
+ const prioritized=await f.queue.add('source',{kind:'source',source:{_id:'priority'}},{jobId:'cold-priority-ticket',priority:1});f.rows.push({_id:'cold-priority-ticket',createdAt:new Date(0),data:structuredClone(prioritized.data)});
+ const activeBefore=await connection.hget(f.prefix+active.id,'data'),score=await connection.zscore(f.prefix+'delayed','cold-delayed-ticket');
+ await f.queue.pause();assert.equal((await f.scheduler()).state,'paused');await f.queue.resume();f.advance(1);const result=await f.scheduler();assert(!result.firstPageIds.includes('fresh0'));assert(!result.firstPageIds.includes('fresh1'));assert(!result.firstPageIds.includes('cold-delayed-ticket'));assert(!result.firstPageIds.includes('cold-priority-ticket'));assert(result.firstPageIds.includes('fresh2'));
+ assert.equal(await connection.hget(f.prefix+active.id,'data'),activeBefore);assert.equal(await connection.zscore(f.prefix+'delayed','cold-delayed-ticket'),score);assert.equal(await active.getState(),'active');
+});
+test('legacy native cursors, buffered rows and corrupt checkpoints cannot be classified as first-page reads',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:1,firstPageBurst:4,fifoBurst:1});await f.addFresh(4);const checkpoints=[packState({nativeCursor:'legacy',seen:new Set()}),packState({nativeCursor:null,seen:new Set(['already-read']),items:[]}),packState({nativeCursor:null,seen:new Set(),items:[{id:'buffered'}]}),'corrupt'];
+ for(let i=0;i<4;i++){const job=await f.queue.getJob('fresh'+i);job.data.checkpoint=checkpoints[i];await job.updateData(job.data);f.rows.find(r=>r._id===job.id).data=structuredClone(job.data);}
+ const result=await f.scheduler();assert.equal(result.firstPageIds.length,0);assert(result.resumeIds.includes('fresh0'));for(let i=0;i<4;i++)assert.equal((await f.queue.getJob('fresh'+i)).data.checkpoint,checkpoints[i]);
+});
+test('a bounded selected batch preserves both first-page and legacy progress across scheduler restarts',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:1,firstPageBurst:4,fifoBurst:1});await f.addResume(50,'old');await f.addFresh(50);await f.scheduler();const w=f.worker();
+ for(let i=0;i<6;i++){const job=await w.getNextJob('t');await job.moveToCompleted('ok','t',false);}
+ const reserved=(await f.order()).slice(0,18);await f.addFresh(20,'new');assert.equal((await f.makeScheduler()()).state,'pending_batch');assert.deepEqual((await f.order()).slice(0,18),reserved);
+ for(let i=0;i<18;i++){const job=await w.getNextJob('t');await job.moveToCompleted('ok','t',false);}assert.equal((await f.makeScheduler()()).state,'scheduled');
+});
+
+test('resume-heavy production shares preserve all checkpoint data and a first-page and FIFO slot',async t=>{
+ const f=await fixture(t,undefined,{resumeBurst:4,firstPageBurst:1,fifoBurst:1});await f.addResume(40,'old');await f.addFresh(40);
+ const ids=await f.order(),before=new Map(await Promise.all(ids.map(async id=>[id,await connection.hget(f.prefix+id,'data')])));
+ const result=await f.scheduler();assert.equal(result.resumeIds.length,16);assert.equal(result.firstPageIds.length,4);assert.equal(result.fifoIds.length,4);
+ const freshOrder=Array.from({length:40},(_,i)=>'fresh'+i).sort((a,b)=>a.localeCompare(b)),order=await f.order();
+ for(let b=0;b<4;b++){assert.deepEqual(order.slice(b*6,b*6+4),Array.from({length:4},(_,j)=>'old'+(b*4+j)));assert.equal(order[b*6+4],freshOrder[b]);assert.equal(order[b*6+5],'old'+(16+b));}
+ assert.equal(new Set(order).size,80);for(const id of ids)assert.equal(await connection.hget(f.prefix+id,'data'),before.get(id));
 });

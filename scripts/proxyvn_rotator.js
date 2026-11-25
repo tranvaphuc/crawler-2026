@@ -32,13 +32,15 @@ export function createProxyVnRotator(key, {request = callProxyApi, whitelistIpv4
   if(whitelistIpv4!==undefined&&whitelistIpv4!==''&&(typeof whitelistIpv4!=='string'||isIP(whitelistIpv4)!==4||whitelistIpv4==='0.0.0.0'))throw fail('PROXY_CONFIG_INVALID','Proxy whitelist must be one explicit IPv4 address');
   let rotationKey = key, resolved = false, lastNetwork=null, lastRequestedNetwork=null;
   const networks=['viettel','vnpt','fpt'];
-  return async function acquire({rotateNetwork=false,previousNetwork}={}) {
+  return async function acquire({rotateNetwork=false,previousNetwork,requestedNetwork}={}) {
+    if(requestedNetwork!==undefined&&!networks.includes(requestedNetwork))throw fail('PROXY_CONFIG_INVALID','Unsupported proxy network');
     const known=networks.includes(previousNetwork)?previousNetwork:lastNetwork;
     let index=networks.indexOf(lastRequestedNetwork||known);
     let nextNetwork=networks[(index+1)%networks.length];
     if(nextNetwork===known)nextNetwork=networks[(index+2)%networks.length];
     if(rotateNetwork)lastRequestedNetwork=nextNetwork;
-    const values=()=>({key:rotationKey,...(whitelistIpv4?{whitelist:whitelistIpv4}:{}),...(rotateNetwork?{nhamang:nextNetwork,tinhthanh:'0'}:{})});
+    const networkRequest=requestedNetwork||(rotateNetwork?nextNetwork:null);
+    const values=()=>({key:rotationKey,...(whitelistIpv4?{whitelist:whitelistIpv4}:{}),...(networkRequest?{nhamang:networkRequest,tinhthanh:'0'}:{})});
     let result = await request('https://proxyxoay.shop/api/get.php', values());
     const invalidKey = value => /key.{0,40}(?:not exist|invalid|wrong|khong ton tai|không tồn tại|khong dung|không đúng)/i.test(String(value.message ?? value.comen ?? ''));
     if (Number(result.status) === 101 && invalidKey(result) && !resolved) {
@@ -69,6 +71,11 @@ export function createProxyVnRotator(key, {request = callProxyApi, whitelistIpv4
     }
     const proxy=parseProxy(result.proxyhttp);
     const network=String(result['Nha Mang']??result.nhamang??'').trim().toLowerCase();
+    if(requestedNetwork&&network!==requestedNetwork){
+      const error=fail('PROXY_API_NETWORK_MISMATCH','Proxy provider returned a different network');
+      error.retryAfterMs=60000;
+      throw error;
+    }
     if(networks.includes(network)){lastNetwork=network;proxy.providerNetwork=network;}
     const ttl=String(result.message??result.comen??'').match(/(?:die\s+sau|expires?\s+in|live\s+for)\s*(\d+)\s*(?:s\b|seconds?)/i);
     if(ttl&&Number(ttl[1])>0){proxy.expiresAt=Date.now()+Number(ttl[1])*1000;proxy.validForMs=Number(ttl[1])*1000;}

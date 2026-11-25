@@ -8,10 +8,11 @@ import {extractPostInfo} from './socialPostInfo.js';
 import {publicApiIssue,unavailableThreadsSourceQuote} from './socialApiErrors.js';
 import {READ_STATE,attachReadState} from './socialReadState.js';
 import {HTTP_BINDING,bindHttpState} from './socialLeaseState.js';
-// Verified 2026-11-09 from Threads Bootloader module and a native cursor replay.
+// Verified 2026-11-15 from the anonymous Relay artifact and cursor replay.
 // BarcelonaProfileThreadsTabRefetchableDirectQuery_threadsRelayOperation
-// The old 28493213377048182 operation requires flags absent in today's bootstrap.
-export const THREADS_SOURCE_PAGINATION_QUERY={name:'BarcelonaProfileThreadsTabRefetchableDirectQuery',docId:'40155197760760366'};
+// The previous operation requires provider variables absent from the current bootstrap.
+export const THREADS_SOURCE_PAGINATION_QUERY={name:'BarcelonaProfileThreadsTabRefetchableDirectQuery',docId:'29427891256864466'};
+const previousThreadsSourceQuery={...THREADS_SOURCE_PAGINATION_QUERY,docId:'39884065714574204'};
 export const THREADS_DUPLICATE_PAGE_LIMIT=3;
 const fail=code=>{throw Object.assign(Error(code),{code});};
 export function sourceConnection(snapshot,platform){
@@ -25,7 +26,15 @@ export function sourceQuery(config,platform){
  const queries=config.queries.filter(q=>(platform==='threads'?/Profile.*(?:Timeline|Posts|ThreadsTab)|(?:Timeline|Posts).*Profile/:/Timeline|ProfilePosts|User.*Posts/).test(q.name)&&!/(?:Replies|Reposts|Liked|Highlights)/.test(q.name));
  const query=queries.find(q=>Object.hasOwn(q.variables,'after'))||queries[0];
  if(!query)fail('META_SOURCE_QUERY_MANIFEST_MISSING');
- if(platform==='threads'&&query.name==='BarcelonaProfileThreadsTabDirectQuery')return {...THREADS_SOURCE_PAGINATION_QUERY,variables:{...query.variables,before:null,last:null}};
+ if(platform==='threads'&&query.name==='BarcelonaProfileThreadsTabDirectQuery'){
+  const ghost=query.variables.has_profile_inline_ghost_posts??query.variables.__relay_internal__pv__BarcelonaHasProfileInlineGhostPostsrelayprovider;
+  if(typeof ghost!=='boolean')fail('THREADS_SOURCE_PAGINATION_CONTEXT_MISSING');
+  // Anonymous bootstrap cohorts roll independently. Pair the operation with
+  // its native provider schema; an older operation requires flags removed by
+  // the Middlemist rollout. Never invent missing provider values.
+  const operation=Object.hasOwn(query.variables,'__relay_internal__pv__BarcelonaHasMiddlemistConsumptionrelayprovider')?THREADS_SOURCE_PAGINATION_QUERY:previousThreadsSourceQuery;
+  return {...operation,variables:{...query.variables,before:null,last:null,has_profile_inline_ghost_posts:ghost}};
+ }
  return query;
 }
 export function createMetaSourceHttpReader(options={}){
@@ -43,7 +52,7 @@ export function createMetaSourceHttpReader(options={}){
       const postTarget=normalizeMetricsInput({url:item.url}),snapshot=await session.request(postTarget.url),info=extractPostInfo(postTarget,snapshot);
       if(['auth_required','security_checkpoint','rate_limited','error','proxy_error'].includes(info.status))return {...contentBase(target),status:info.status,reason:info.reason,retryAfterMs:snapshot.retryAfterMs||info.retryAfterMs};
       if(info.identityVerified&&info.post?.id===item.id){
-       if(Number.isFinite(Date.parse(info.post.createdAt))){item.createdAt=new Date(info.post.createdAt).toISOString();item.dateEvidence='matched_post_detail';}
+       if(Number.isFinite(Date.parse(info.post.createdAt))){item.createdAt=new Date(info.post.createdAt).toISOString();item.dateEvidence='matched_post_detail';item.dateIsEstimated=false;await options.rememberSourcePublicationDates?.(target,[item]);}
        const count=extractSocialMetrics(postTarget,snapshot).metrics?.comment;if(Number.isSafeInteger(count)&&count>=0)item.metrics={...item.metrics,comment:count};
       }
       if(options.requireSourcePublicationTime&&!Number.isFinite(Date.parse(item.createdAt)))return {...state.base,status:'error',reason:'SOURCE_POST_PUBLICATION_UNVERIFIED',items:[],count:0};
@@ -71,10 +80,15 @@ export function createMetaSourceHttpReader(options={}){
      const query=sourceQuery(binding.sourceConfig,target.platform),variables={...query.variables,after:state.nativeCursor};
      const response=await requestMetaQuery(session,target,binding.sourceConfig,query,variables);
      if(response.httpStatus!==200)return{...contentBase(target),status:response.httpStatus===429?'rate_limited':'error',reason:'UPSTREAM_HTTP_'+response.httpStatus,retryAfterMs:response.retryAfterMs||null};
-     const issue=publicApiIssue([response.html],target.platform==='threads'?{ignoreError:unavailableThreadsSourceQuote}:{});if(issue)return{...contentBase(target),...issue,retryAfterMs:response.retryAfterMs||issue.retryAfterMs||null};
      snapshot={html:'',jsonResponses:[response.html]};
+     // Relay can put optional quote errors in a later packet with no data of
+     // its own. Bind their exact paths to the one native connection in this
+     // response; identity, cursor and all non-quote errors retain their guards.
+     let quoteContext;
+     if(target.platform==='threads')try{conn=sourceConnection(snapshot,target.platform);quoteContext={data:{mediaData:conn}};}catch{}
+     const issue=publicApiIssue([response.html],target.platform==='threads'?{ignoreError:(error,body)=>unavailableThreadsSourceQuote(error,body)||!!quoteContext&&unavailableThreadsSourceQuote(error,quoteContext)}:{});if(issue)return{...contentBase(target),...issue,retryAfterMs:response.retryAfterMs||issue.retryAfterMs||null};
     }
-    conn=sourceConnection(snapshot,target.platform);
+    conn ||=sourceConnection(snapshot,target.platform);
     const rows=[];let nativeRows=0,foreignRows=0,foreignIds=[],unverifiedEdge=false,verifiedRows=0;
     for(const edge of conn.edges){
      const native=target.platform==='threads'?(edge.node?.thread_items||[]).map(x=>x.post):[edge.node];

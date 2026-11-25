@@ -1,0 +1,101 @@
+[
+  {
+    "domain": "dantri.com.vn",
+    "url": "https://dantri.com.vn/suc-khoe/duy-tri-cap-phep-kinh-doanh-thuoc-la-de-bao-ve-tre-em-20261117220611193.htm",
+    "fixture": "dantri.com.vn-requested.html.gz",
+    "title": "Duy trì cấp phép kinh doanh thuốc lá để bảo vệ trẻ em",
+    "publishedDate": "2026-11-18T07:51:24.000Z",
+    "bodyLength": 5740,
+    "contentSha256": "956d13ad3eaea1436231f21fddc62fd63863597b7fb072d79b682dc0c32741f1"
+  },
+  {
+    "domain": "viettimes.vn",
+    "url": "https://viettimes.vn/thuoc-la-tiep-can-gioi-tre-viet-tinh-vi-the-nao-post208567.html?",
+    "fixture": "viettimes.vn-requested.html.gz",
+    "title": "Thuốc lá tiếp cận giới trẻ Việt tinh vi thế nào?",
+    "publishedDate": "2026-11-18T06:15:28.000Z",
+    "bodyLength": 5373,
+    "contentSha256": "57b588281957f98210417c582ca8eb6d2592bed644d00f6284a96b6aa183c4eb"
+  },
+  {
+    "domain": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+    "url": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/41-nam-cung-ttc-nang-buoc-thanh-cong-4220261118131849707.htm",
+    "fixture": "doanhnghiepkinhdoanh.doanhnhanvn.vn-requested.html.gz",
+    "title": "41 năm cùng 'TTC - Nâng bước thành công'",
+    "publishedDate": "2026-11-18T06:20:00.000Z",
+    "bodyLength": 4869,
+    "contentSha256": "3dfd2adbb4e5f2f76d220ab7689cebb111e4ba3d1c894de9b3e45cd426048027"
+  },
+  {
+    "domain": "fili.vn",
+    "url": "https://fili.vn/2026/11/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-cua-nhnn-757-1515990.htm",
+    "fixture": "fili.vn-requested.html.gz",
+    "title": "VIB chủ động đón cơ hội tối ưu thanh khoản từ giải pháp hoán đổi ngoại tệ của NHNN",
+    "publishedDate": "2026-11-18T11:29:02.000Z",
+    "bodyLength": 5951,
+    "contentSha256": "8242870a70bb984bc86156bd41ef3e3c7e50571d17bc76c4b26cf9dc81142360"
+  },
+  {
+    "domain": "taichinhcongnghe.vn",
+    "url": "https://taichinhcongnghe.vn/bai-viet/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-c11b23",
+    "fixture": "taichinhcongnghe.vn-requested.html.gz",
+    "title": "VIB chủ động đón cơ hội tối ưu thanh khoản từ giải pháp hoán đổi ngoại tệ",
+    "publishedDate": "2026-11-18T12:48:18.000Z",
+    "bodyLength": 5352,
+    "contentSha256": "55f8d39213e703de2068c97952efaf15a2fe1cf304ec1a88aac8b7a65db4145a"
+  },
+  {
+    "domain": "banker.vn",
+    "url": "https://banker.vn/bai-viet/vib-chu-dong-don-co-hoi-toi-uu-thanh-khoan-tu-giai-phap-hoan-doi-ngoai-te-c11b23",
+    "fixture": "banker.vn-requested.html.gz",
+    "title": "VIB chủ động đón cơ hội tối ưu thanh khoản từ giải pháp hoán đổi ngoại tệ",
+    "publishedDate": "2026-11-18T12:48:18.000Z",
+    "bodyLength": 5362,
+    "contentSha256": "547287ef1250c2ea7021d2ae091615826cbff259cf79d57aa901ad8fee9f03b9"
+  },
+  {
+    "domain": "laodong.vn",
+    "url": "https://laodong.vn/kinh-doanh/mo-rong-kha-nang-tiep-can-cac-dich-vu-tai-chinh-tin-dung-chinh-thuc-cho-cong-nhan-nguoi-lao-dong-1802795.ldo",
+    "fixture": "laodong.vn-requested.html.gz",
+    "title": "Mở rộng khả năng tiếp cận các dịch vụ tài chính, tín dụng chính thức cho công nhân, người lao động",
+    "publishedDate": "2026-11-19T00:16:42.000Z",
+    "bodyLength": 100058,
+    "contentSha256": "51871707378c0ae03bb7eba75519dd653b6783931c256d8eca837cd15107c680"
+  },
+  {
+    "domain": "banker.vn",
+    "url": "https://banker.vn/bai-viet/visa-mo-rong-chuong-trinh-agentic-ready-de-thuc-day-mo-rong-quy-mo-thuong-mai-ung-dung-ai-tai-chau-a-thai-13508a",
+    "fixture": "banker.vn-holdout-0.html.gz",
+    "title": "Visa mở rộng chương trình Agentic Ready để thúc đẩy mở rộng quy mô thương mại ứng dụng AI tại châu Á - Thái Bình Dương",
+    "publishedDate": "2026-11-19T08:15:01.000Z",
+    "bodyLength": 6496,
+    "contentSha256": "3a146cacc7714b894fc9073655103ac669ceef0176109376a61cfe27a28ddabe"
+  },
+  {
+    "domain": "banker.vn",
+    "url": "https://banker.vn/bai-viet/quan-tri-cong-ty-va-xep-hang-tin-nhiem-mo-duong-cho-von-dai-han-d17a0c",
+    "fixture": "banker.vn-holdout-1.html.gz",
+    "title": "Quản trị công ty và xếp hạng tín nhiệm mở đường cho vốn dài hạn",
+    "publishedDate": "2026-11-19T00:19:01.000Z",
+    "bodyLength": 2793,
+    "contentSha256": "2e042281fae1d4f65d78f630653c3c6b8d99958e832a8b98b759ab28f51efd59"
+  },
+  {
+    "domain": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+    "url": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/seabank-nhan-cu-dup-giai-thuong-khang-dinh-vi-the-noi-lam-viec-hang-dau-va-nang-luc-phat-trien-ben-vung-4220261119171740598.htm",
+    "fixture": "doanhnghiepkinhdoanh.doanhnhanvn.vn-holdout-2.html.gz",
+    "title": "SeABank nhận 'cú đúp' giải thưởng, khẳng định vị thế nơi làm việc hàng đầu và năng lực phát triển bền vững",
+    "publishedDate": "2026-11-19T10:13:00.000Z",
+    "bodyLength": 3381,
+    "contentSha256": "7d74b7a14d80b89a78815f7b90f73f142f0c0762732abadfef00d05e88257108"
+  },
+  {
+    "domain": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+    "url": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/chu-tich-cong-doan-pou-sung-viet-nam-mot-so-cong-ty-tai-chinh-duoc-cap-phep-nhung-cach-thuc-doi-no-nhu-tin-dung-den-4220261119154855794.htm",
+    "fixture": "doanhnghiepkinhdoanh.doanhnhanvn.vn-holdout-3.html.gz",
+    "title": "Chủ tịch công đoàn Pou Sung Việt Nam: Một số công ty tài chính được cấp phép nhưng cách thức đòi nợ như tín dụng đen",
+    "publishedDate": "2026-11-19T09:58:00.000Z",
+    "bodyLength": 4545,
+    "contentSha256": "ae2fc47799d542918bf16feaffcfdb9490435960253b7d8c3265fa7ddf85e953"
+  }
+]

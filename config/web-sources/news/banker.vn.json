@@ -74,5 +74,15 @@
       "https://banker.vn/bai-viet/thanh-toan-so-gan-ket-cac-dich-vu-thiet-yeu-fcf5ea"
     ],
     "fullSiteCycleVerified": false
+  },
+  "requested7Validation": {
+    "checkedAt": "2026-11-19T10:53:13.603Z",
+    "evidenceDirectory": "test/fixtures/news-requested-7",
+    "independentHoldoutUrls": [
+      "https://banker.vn/bai-viet/visa-mo-rong-chuong-trinh-agentic-ready-de-thuc-day-mo-rong-quy-mo-thuong-mai-ung-dung-ai-tai-chau-a-thai-13508a",
+      "https://banker.vn/bai-viet/quan-tri-cong-ty-va-xep-hang-tin-nhiem-mo-duong-cho-von-dai-han-d17a0c"
+    ],
+    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
+    "fullSiteCycleVerified": false
   }
 }

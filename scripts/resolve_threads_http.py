@@ -16,7 +16,7 @@ rows = [line.strip() for line in Path(args.source).read_text(encoding='utf-8').s
 def resolve(url: str) -> tuple[str, str]:
     for _ in range(2):
         process = subprocess.run(
-            ['curl', '-L', '-sS', '--max-time', '25', '-o', '/dev/null', '-w', '%{url_effective}', url],
+            ['curl', '--globoff', '-L', '-sS', '--max-time', '25', '-o', '/dev/null', '-w', '%{url_effective}', url],
             capture_output=True,
             text=True,
         )

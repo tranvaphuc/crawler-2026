@@ -1,0 +1,55 @@
+{
+  "sourceRelease": "/opt/news-flow/releases/20261117-held-article-fixes-11",
+  "files": [
+    {
+      "file": "src/web/filiNews.mjs",
+      "before": null,
+      "after": "8786c4fb89bbfd8437f37388ef9070ec1f495b15959a9892830042f2b7872833"
+    },
+    {
+      "file": "src/web/newsResearchTransport.mjs",
+      "before": "aa05e4998deaf72bee1b2ba4d3028b3fcd614d256a59f74e17de7d357809bc29",
+      "after": "9be9bd9fe439d51a9482109430e12d5398d09e2754fd22905bcf667ac74f2310"
+    },
+    {
+      "file": "src/web/newsSeedTransientFailures.mjs",
+      "before": null,
+      "after": "609ef4628a68cc4c615c5692ae4d9b1980f2dd67f5ec63d8e04b04e4218fe04d"
+    },
+    {
+      "file": "src/web/newsUserConfirmedTimezone.mjs",
+      "before": "cd562a970aeb4efa131e37523e1388c7a053b69c1f0eb4e191195bf88bb3d2e7",
+      "after": "3f45cd42e9049e0d02450dd022f885d5c0ed44004d61cde7adadde64bc7624a2"
+    },
+    {
+      "file": "src/newsFlow/threeFlowState.mjs",
+      "before": "691b5ffadac08e3be434b26d28eaf7d06a84365a021a0c591a251f3ed008aec2",
+      "after": "deebb05842b581ec0690ce878651dc64cb7eea6646f883e71d727cf1fbc52264"
+    },
+    {
+      "file": "config/web-sources/news/banker.vn.json",
+      "before": "b8364ca76132fd757188a43828620a96ca3af58f3978e4c9f1f7e75f8679332d",
+      "after": "83c30988f2ae44f571ba057dd7707591d9914f6e74a8d105bd7c4d84ea89488b"
+    },
+    {
+      "file": "config/web-sources/news/doanhnghiepkinhdoanh.doanhnhanvn.vn.json",
+      "before": null,
+      "after": "458558893c37b93bd46c535deadfbdfa73be715d86b7d9cedc0d02f693618c8c"
+    },
+    {
+      "file": "config/web-sources/news/fili.vn.json",
+      "before": "1d07c27006943460b698e03b5a2fadbf22332571e120a01ae58e7b133aecf63b",
+      "after": "87269400b03c2ab4a31500e1b6b93540b4b88f3bdc100823fbfa3ffbd77c02ef"
+    },
+    {
+      "file": "config/web-sources/news/taichinhcongnghe.vn.json",
+      "before": "d7492a08f24c03c95d7bb95fa688075cfeeab7191aea1c5d52b8c1a459a13643",
+      "after": "0e4af77a1b86859d5871b7baf77dfec7b610b43b5f55bb02d9651cc247fde7db"
+    },
+    {
+      "file": "src/newsFlow/transport.mjs",
+      "before": "c7cc1cc504aa3a35ab014ea5e6738c77e5546d1c4f278da6d6e3b532c886ef56",
+      "after": "308c8b5a5de7720539284faa49ba4f730899b8f0b00682c92a198a1b3254f724"
+    }
+  ]
+}

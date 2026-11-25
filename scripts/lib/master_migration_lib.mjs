@@ -7,7 +7,7 @@ import { Client } from '@opensearch-project/opensearch';
 export const ROUTING_TIMEZONE = 'Asia/Ho_Chi_Minh';
 export const IGNORED_TYPES = ['fbEventTopic', 'fbEventComment'];
 
-export async function loadMigrationContext() {
+export async function loadMigrationContext({ es7Only = false } = {}) {
   const envText = await fs.readFile('.env', 'utf8');
   const env = {};
   for (const rawLine of envText.split(/\r?\n/)) {
@@ -20,8 +20,10 @@ export async function loadMigrationContext() {
     if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) value = value.slice(1, -1);
     env[key] = value;
   }
-  if (!env.ES7_HOST || !env.ES8_HOST || !env.ES8_USER || !env.ES8_PASS) throw new Error('Missing ES7/ES8 connection variables');
+  if (!env.ES7_HOST) throw new Error('Missing ES7 connection variables');
+  if (!es7Only && (!env.ES8_HOST || !env.ES8_USER || !env.ES8_PASS)) throw new Error('Missing ES8 connection variables');
   const es7 = new Client({ node: env.ES7_HOST, maxRetries: 3, requestTimeout: 180_000, compression: 'gzip', suggestCompression: true });
+  if (es7Only) return { env, es7, es8Request: null };
   const adminAuth = Buffer.from(`${env.ES8_USER}:${env.ES8_PASS}`).toString('base64');
   const es8Agent = new https.Agent({ keepAlive: true, maxSockets: 8, maxFreeSockets: 8, rejectUnauthorized: false });
 

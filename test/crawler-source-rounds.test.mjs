@@ -7,20 +7,21 @@ function memoryDb(seed={}){
  const get=(row,key)=>key.split('.').reduce((v,k)=>v?.[k],row);
  const match=(row,filter)=>Object.entries(filter).every(([key,value])=>{if(key==='$and')return value.every(f=>match(row,f));if(key==='$or')return value.some(f=>match(row,f));const actual=get(row,key);if(value===null)return actual==null;if(value&&typeof value==='object'&&!Array.isArray(value)){if('$in'in value)return value.$in.includes(actual);if('$nin'in value)return !value.$nin.includes(actual);if('$lte'in value)return actual!=null&&+actual<=+value.$lte;if('$exists'in value)return (actual!==undefined)===value.$exists;if('$ne'in value)return actual!==value.$ne;}return actual===value;});
  function apply(row,update,inserted){for(const [key,value]of Object.entries({...inserted?update.$setOnInsert:{},...update.$set})){const keys=key.split('.');let at=row;for(const k of keys.slice(0,-1))at=at[k]??={};at[keys.at(-1)]=value;}}
- const db={collection(name){if(collections.has(name))return collections.get(name);const data=structuredClone(seed[name]||[]),collection={data,
+ const db={collection(name){if(collections.has(name))return collections.get(name);const data=structuredClone(seed[name]||[]),collection={data,countFilters:[],distinctCalls:0,
   find(filter={}){let sort=null,limit=Infinity;const cursor={sort(value){sort=value;return cursor;},limit(value){limit=value;return cursor;},async toArray(){let rows=data.filter(row=>match(row,filter));if(sort)rows.sort((a,b)=>{const k=Object.keys(sort)[0];return((+get(a,k)||0)-(+get(b,k)||0))*sort[k];});return rows.slice(0,limit);}};return cursor;},
   async findOne(filter){return data.find(row=>match(row,filter))||null;},
   async insertOne(row){data.push(structuredClone(row));},
   async updateOne(filter,update,options={}){let row=data.find(r=>match(r,filter)),inserted=false;if(!row&&options.upsert){row={...filter};data.push(row);inserted=true;}if(row)apply(row,update,inserted);},
   async updateMany(filter,update){for(const row of data.filter(r=>match(r,filter)))apply(row,update,false);},
-  async countDocuments(filter){return data.filter(row=>match(row,filter)).length;},
+  async distinct(field,filter){collection.distinctCalls++;return [...new Set(data.filter(row=>match(row,filter)).map(row=>get(row,field)).filter(value=>value!==undefined))];},
+  async countDocuments(filter){collection.countFilters.push(structuredClone(filter));return data.filter(row=>match(row,filter)).length;},
   async bulkWrite(ops){for(const {updateOne:op}of ops)await collection.updateOne(op.filter,op.update,{upsert:op.upsert});},
   aggregate(){return{toArray:async()=>[]};}
  };collections.set(name,collection);return collection;}};return db;
 }
 function fixture(seed,options={}){
  const db=memoryDb(seed),counts=new Map(),queues=new Map(),loads=[];
- for(const name of ['a','b']){counts.set(name,{waiting:0,active:0,failed:0});queues.set(name,{getJobCounts:async()=>counts.get(name)});}
+ for(const name of ['a','b','facebook-group-source']){counts.set(name,{waiting:0,active:0,failed:0});queues.set(name,{getJobCounts:async()=>counts.get(name)});}
  const coordinator=createSourceRoundCoordinator({db,queues,...options,enqueueSources:async(spec,round,rows,existingEntityKeys)=>{
   loads.push({queue:spec.name,roundId:round._id});
   await enqueueAllEligibleSources({rows,existingEntityKeys,enqueueBatch:async batch=>{for(const {source,entityKey}of batch)await db.collection('flow_jobs').insertOne({_id:round._id+':'+source._id,queue:spec.name,entityKey,sourceRoundId:round._id,state:'queued',data:{source,sourceRoundId:round._id}});},markScheduledBatch:async()=>{}});
@@ -116,6 +117,42 @@ test('two-hour admission includes new and overdue sources while existing waiting
  await f.coordinator(spec,{});assert.equal(f.loads.length,1);
 });
 
+test('a congested Group queue admits new sources without repeating overdue sources',async()=>{
+ const now=10000000,spec={name:'a',kind:'source'};
+ const busy=source('1'),overdue={...source('2'),flowLastScheduledAt:new Date(1)},newSource=source('3');
+ const f=fixture({
+  sources:[busy,overdue,newSource],
+  flow_jobs:[{_id:'waiting',queue:'a',state:'queued',sourceRoundId:'prior',entityKey:'source:1',proxyDeferred:true,data:{source:busy,checkpoint:'keep-native',page:5}}],
+ },{sourceRescanMs:7200000,rescanWhileWaiting:queue=>queue.name!=='a',now:()=>now});
+ f.counts.set('a',{waiting:10,active:1});
+ await f.coordinator(spec,{});
+ const rounds=f.db.collection('flow_source_rounds').data;
+ assert.deepEqual(rounds.map(round=>round.sourceIds),[['3']]);
+ const jobs=f.db.collection('flow_jobs').data;
+ assert.equal(jobs.find(job=>job._id==='waiting').data.checkpoint,'keep-native');
+ jobs.length=0;
+ f.counts.set('a',{waiting:0,active:0});
+ await f.coordinator(spec,{});
+ assert.deepEqual(rounds.at(-1).sourceIds,['1','2','3']);
+});
+
+test('Group admission rechecks sources missed while their tickets change state',async()=>{
+ const queue='facebook-group-source',busy=source('1'),fresh=source('2');
+ const f=fixture({sources:[busy,fresh],flow_jobs:[
+  {_id:'busy',queue,sourceRoundId:'prior',entityKey:'source:1',state:'running',data:{source:busy,checkpoint:'native-cursor',page:5}},
+ ]});
+ const jobs=f.db.collection('flow_jobs'),find=jobs.find.bind(jobs);
+ jobs.find=(filter,options)=>{
+  if(filter.queue===queue&&filter.state?.$in&&!filter.entityKey)return find({_id:'missed-by-state-scan'});
+  if(filter.entityKey?.$in)assert.deepEqual(options.hint,{entityKey:1});
+  return find(filter);
+ };
+ await f.coordinator({name:queue,kind:'source'},{});
+ assert.deepEqual(f.db.collection('flow_source_rounds').data[0].sourceIds,['2']);
+ assert.equal(jobs.data.filter(job=>job.entityKey==='source:1').length,1);
+ assert.equal(jobs.data[0].data.checkpoint,'native-cursor');
+});
+
 function originIdleSeed(until=100000){return{sources:[source('1')],flow_source_rounds:[{_id:'old',queue:'a',state:'running',sourceIds:['1'],startedAt:new Date(0)}],flow_jobs:[{_id:'held',queue:'a',state:'queued',sourceRoundId:'old',entityKey:'source:1',originDeferred:true,data:{source:source('1'),originWaitUntil:until,checkpoint:'opaque-native',proxyRetries:7}}]};}
 test('origin-idle polling reduces inventory reads10x and reconciliation15x without changing checkpoints',async()=>{
  async function run(options){let clock=1000;const metrics={};const f=fixture(originIdleSeed(),{...options,now:()=>clock,onMetric:name=>metrics[name]=(metrics[name]||0)+1});for(clock=1000;clock<=60000;clock+=1000)await f.coordinator({name:'a'},{});assert.equal(f.loads.length,0);assert.equal(f.db.collection('flow_jobs').data[0].data.checkpoint,'opaque-native');assert.equal(f.db.collection('flow_jobs').data[0].data.proxyRetries,7);return metrics;}
@@ -140,4 +177,14 @@ test('round reconciliation throttle cannot prevent admission of new sources',asy
  const job=f.db.collection('flow_jobs').data[0];job.state='completed';await f.db.collection('flow_source_round_results').insertOne({_id:'ok',roundId:'old',sourceId:'1',outcome:'success'});await f.db.collection('sources').insertOne(source('2'));
  clock=2000;await f.coordinator(spec,{});assert.equal(f.loads.length,1);assert.deepEqual(f.db.collection('flow_source_rounds').data.at(-1).sourceIds,['1','2']);assert.equal(f.db.collection('flow_source_rounds').data[0].state,'running');
  clock=16000;await f.coordinator(spec,{});assert.equal(f.db.collection('flow_source_rounds').data[0].state,'completed');
+});
+
+test('thousands of open rounds with pending cursors use one pending-set read and preserve every checkpoint',async()=>{
+ const rounds=Array.from({length:2600},(_,i)=>({_id:'round-'+i,queue:'a',state:'running',sourceIds:['source-'+i],startedAt:new Date(0)})),jobs=rounds.map((r,i)=>({_id:'job-'+i,queue:'a',sourceRoundId:r._id,entityKey:'source:source-'+i,state:'queued',proxyDeferred:true,data:{source:{_id:'source-'+i},checkpoint:'exact-'+i,page:12,proxyRetries:19}}));
+ const f=fixture({flow_source_rounds:rounds,flow_jobs:jobs});f.counts.set('a',{waiting:2600,active:0,delayed:0});const before=structuredClone(f.db.collection('flow_jobs').data);await f.coordinator({name:'a',kind:'source'},{});
+ const collection=f.db.collection('flow_jobs');assert.equal(collection.distinctCalls,1);assert.equal(collection.countFilters.filter(q=>typeof q.sourceRoundId==='string').length,0);assert.deepEqual(collection.data,before);assert(f.db.collection('flow_source_rounds').data.every(r=>r.state==='running'));
+});
+test('a retry queued after the pending-set snapshot still prevents closing its source round',async()=>{
+ const f=fixture({flow_source_rounds:[{_id:'old',queue:'a',state:'running',sourceIds:['1'],startedAt:new Date(0)}],flow_source_round_results:[{_id:'done',roundId:'old',sourceId:'1',outcome:'success'}]});f.counts.set('a',{waiting:1,active:0});const jobs=f.db.collection('flow_jobs'),distinct=jobs.distinct.bind(jobs);jobs.distinct=async(...args)=>{const ids=await distinct(...args);await jobs.insertOne({_id:'retry',queue:'a',sourceRoundId:'old',state:'queued',entityKey:'source:1',data:{checkpoint:'exact',page:7}});return ids;};
+ await f.coordinator({name:'a',kind:'source'},{});assert.equal(f.db.collection('flow_source_rounds').data[0].state,'running');assert.equal(jobs.data[0].data.checkpoint,'exact');assert.equal(jobs.countFilters.filter(q=>q.sourceRoundId==='old').length,1);
 });

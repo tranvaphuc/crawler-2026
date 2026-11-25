@@ -46,11 +46,15 @@ export function facebookAnonymousContext(snapshot,{sourceTarget,contextOnly=fals
  if(site.hsi!=null)dynamic.__hsi=String(site.hsi);
  if(site.haste_session)dynamic.__hs=String(site.haste_session);
  const j=$('input[name="jazoest"]').attr('value');if(j)dynamic.jazoest=j;
- return{dynamic,referer:snapshot.finalUrl,feedbackIds:collectFacebookFeedbackIds(roots),actorAliases:collectFacebookActorAliases(roots),commentAuthors:collectFacebookCommentAuthorIdentities([],{roots})};
+ return{dynamic,anonymousActorVerified:actor==='0',referer:snapshot.finalUrl,feedbackIds:collectFacebookFeedbackIds(roots),actorAliases:collectFacebookActorAliases(roots),commentAuthors:collectFacebookCommentAuthorIdentities([],{roots})};
 }
-export function createAnonymousFacebookGraphqlRequest(session,{bootstrapUrl,bootstrap=true,bootstrapSnapshot,sourceTarget,sourceContextFallback=false,missingContextFallback=false}={}){
- let context;
+export function createAnonymousFacebookGraphqlRequest(session,{bootstrapUrl,bootstrap=true,bootstrapSnapshot,sourceTarget,sourceContextFallback=false,missingContextFallback=false,anonymousContextSeed,onAnonymousContext}={}){
+ let context,seeded=false,bootstrapReady=!bootstrap;
  const getContext=(headers={})=>context ||= (async()=>{
+  if(anonymousContextSeed?.anonymousActorVerified===true&&anonymousContextSeed.dynamic?.__user==='0'&&anonymousContextSeed.dynamic?.av==='0'&&typeof anonymousContextSeed.dynamic.lsd==='string'&&anonymousContextSeed.dynamic.lsd){
+   seeded=true;const dynamic=Object.fromEntries(Object.entries(anonymousContextSeed.dynamic).filter(([key,value])=>['lsd','__user','av','__spin_r','__spin_b','__spin_t','__rev','__hsi','__hs','jazoest'].includes(key)&&typeof value==='string'));
+   return {dynamic,anonymousActorVerified:true,referer:bootstrapUrl,feedbackIds:new Map(),actorAliases:new Map(),commentAuthors:new Map()};
+  }
   const options={headers:{'user-agent':'Mozilla/5.0','accept-language':headers['accept-language']||'en-US,en;q=0.9'}};
   const snapshot=bootstrapSnapshot||await session.request(bootstrapUrl,options);
   try{return facebookAnonymousContext(snapshot,{sourceTarget});}catch(error){
@@ -65,7 +69,7 @@ export function createAnonymousFacebookGraphqlRequest(session,{bootstrapUrl,boot
    const ctx=facebookAnonymousContext(root,{contextOnly:true});
    return {...ctx,referer:bootstrapUrl};
   }
- })().catch(bootstrapFailure);
+ })().then(value=>{bootstrapReady=true;if(!seeded)try{onAnonymousContext?.(value)}catch{}return value}).catch(bootstrapFailure);
  const request=async(form,headers)=>{
   const ctx=bootstrap?await getContext(headers):null;
   const body={...form,...ctx?.dynamic};delete body.fb_dtsg;delete body.access_token;body.__user='0';body.av='0';
@@ -86,6 +90,7 @@ export function createAnonymousFacebookGraphqlRequest(session,{bootstrapUrl,boot
   }
   return{status:r.httpStatus,text:r.html,location:r.finalUrl,retryAfter:r.retryAfter};
  };
+ Object.defineProperty(request,'bootstrapReady',{get:()=>bootstrapReady});
  request.resolveResponseAuthors=async comments=>{
   if(!bootstrap)return comments;
   const ctx=await getContext();

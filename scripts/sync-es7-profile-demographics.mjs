@@ -129,6 +129,7 @@ export function parseArgs(args) {
     limit: null,
     report: null,
     indexes: TARGET_INDEXES,
+    es7Only: false,
     help: false,
   };
   for (const arg of args) {
@@ -144,6 +145,7 @@ export function parseArgs(args) {
     else if (arg.startsWith('--indexes=')) {
       options.indexes = [...new Set(arg.slice('--indexes='.length).split(',').map((index) => index.trim()).filter(Boolean))];
     }
+    else if (arg === '--es7-only') options.es7Only = true;
     else throw new Error(`Unknown argument: ${arg}`);
   }
   validateDateExpression(options.from, '--from');
@@ -184,15 +186,19 @@ function verifyTargetProperties(properties, label) {
   if (properties.insertedDate?.type !== 'date') throw new Error(`${label}: insertedDate must be date`);
 }
 
-async function verifyMappings(es7, es8Request, targetIndexes) {
+async function verifyMappings(es7, es8Request, targetIndexes, es7Only) {
   const templateResponse = unwrap(await es7.indices.getTemplate({ name: 'topic-template' }));
   verifyTargetProperties(mappingProperties(templateResponse['topic-template']), 'template topic-template');
   const targetMappings = unwrap(await es7.indices.getMapping({ index: targetIndexes }));
   for (const index of targetIndexes) verifyTargetProperties(mappingProperties(targetMappings[index]), `index ${index}`);
 
   const es7Source = unwrap(await es7.indices.getMapping({ index: SOURCE_PROFILE_INDEX }));
-  const es8Source = requireSuccess('ES8 source profile mapping', await es8Request('GET', `/${SOURCE_PROFILE_INDEX}/_mapping`));
-  for (const [label, mapping] of [['ES7', es7Source], ['ES8', es8Source]]) {
+  const mappings = [['ES7', es7Source]];
+  if (!es7Only) {
+    const es8Source = requireSuccess('ES8 source profile mapping', await es8Request('GET', `/${SOURCE_PROFILE_INDEX}/_mapping`));
+    mappings.push(['ES8', es8Source]);
+  }
+  for (const [label, mapping] of mappings) {
     const properties = mappingProperties(mapping[SOURCE_PROFILE_INDEX]);
     for (const field of ['sex', 'birthyear', 'birthday', 'location']) {
       if (!properties[field]) throw new Error(`${label} ${SOURCE_PROFILE_INDEX}: missing ${field} mapping`);
@@ -200,22 +206,20 @@ async function verifyMappings(es7, es8Request, targetIndexes) {
   }
 }
 
-async function fetchProfiles(es7, es8Request, ids, cache, stats, batchSize) {
+async function fetchProfiles(es7, es8Request, ids, cache, stats, batchSize, es7Only) {
   const missing = ids.filter((id) => !cache.has(id));
   for (const batch of chunks(missing, batchSize)) {
-    const [es7Response, es8Response] = await Promise.all([
-      es7.mget({ index: SOURCE_PROFILE_INDEX, body: { ids: batch }, _source: PROFILE_SOURCE_FIELDS }),
-      es8Request('POST', `/${SOURCE_PROFILE_INDEX}/_mget?_source_includes=${PROFILE_SOURCE_FIELDS.join(',')}`, { ids: batch }),
-    ]);
+    const es7Response = await es7.mget({ index: SOURCE_PROFILE_INDEX, body: { ids: batch }, _source: PROFILE_SOURCE_FIELDS });
+    const es8Response = es7Only ? null : await es8Request('POST', `/${SOURCE_PROFILE_INDEX}/_mget?_source_includes=${PROFILE_SOURCE_FIELDS.join(',')}`, { ids: batch });
     const es7Docs = unwrap(es7Response).docs;
-    const es8Docs = requireSuccess('ES8 profile mget', es8Response).docs;
+    const es8Docs = es7Only ? [] : requireSuccess('ES8 profile mget', es8Response).docs;
     const es7ById = new Map(es7Docs.filter((doc) => doc.found).map((doc) => [String(doc._id), doc._source]));
     const es8ById = new Map(es8Docs.filter((doc) => doc.found).map((doc) => [String(doc._id), doc._source]));
     stats.sourceLookups += batch.length;
     stats.sourceFoundEs7 += es7ById.size;
     stats.sourceFoundEs8 += es8ById.size;
     for (const id of batch) {
-      const patch = mergeProfileSources(es8ById.get(id), es7ById.get(id));
+      const patch = es7Only ? extractProfilePatch(es7ById.get(id)) : mergeProfileSources(es8ById.get(id), es7ById.get(id));
       cache.set(id, Object.keys(patch).length > 0 ? patch : null);
       if (Object.keys(patch).length > 0) stats.sourceProfilesWithValues += 1;
     }
@@ -274,7 +278,7 @@ async function scanAndSync(es7, es8Request, options, report, save) {
       if (options.limit !== null) hits = hits.slice(0, Math.max(0, options.limit - report.stats.scannedDocuments));
       if (hits.length === 0) break;
       const ids = [...new Set(hits.map((hit) => String(hit._source?.profile?.id ?? '').trim()).filter(Boolean))];
-      await fetchProfiles(es7, es8Request, ids, cache, report.stats, options.profileBatchSize);
+      await fetchProfiles(es7, es8Request, ids, cache, report.stats, options.profileBatchSize, options.es7Only);
       const updates = [];
       for (const hit of hits) {
         report.stats.scannedDocuments += 1;
@@ -335,7 +339,7 @@ Initial backfill dry-run:
 Write mode:
   npm run es7:profile-sync -- --from=2026-08-15T00:00:00+07:00 --execute --confirm=${EXECUTION_CONFIRMATION}
 
-Options: --to=DATE --indexes=INDEX1,INDEX2 --page-size=N --profile-batch-size=N --limit=N --report=PATH
+Options: --to=DATE --indexes=INDEX1,INDEX2 --es7-only --page-size=N --profile-batch-size=N --limit=N --report=PATH
 Birthday uses February 2 00:00:00 UTC of birthyear. ES8 values take precedence per field, with ES7 fallback. Empty source fields never clear target data.`);
 }
 
@@ -357,7 +361,7 @@ async function main() {
     window: { field: 'insertedDate', from: options.from, to: options.to },
     typeFilter: 'type prefix fb',
     targetIndexes: options.indexes,
-    profileSources: { precedence: ['ES8/profile2021', 'ES7/profile2021'], match: 'topic profile.id -> source _id' },
+    profileSources: { precedence: options.es7Only ? ['ES7/profile2021'] : ['ES8/profile2021', 'ES7/profile2021'], match: 'topic profile.id -> source _id' },
     fieldRules: {
       gender: 'sex nam/nữ/male/female -> male/female',
       birthday: 'birthyear, then year parsed from birthdayDate/birthday -> February 2 00:00:00 UTC epoch milliseconds',
@@ -374,13 +378,13 @@ async function main() {
   let es7;
   try {
     await save();
-    const context = await loadMigrationContext();
+    const context = await loadMigrationContext({ es7Only: options.es7Only });
     es7 = context.es7;
     await es7.ping();
-    await verifyMappings(es7, context.es8Request, options.indexes);
+    await verifyMappings(es7, context.es8Request, options.indexes, options.es7Only);
     report.status = 'running';
     await save();
-    console.log(`Mappings verified. Mode=${report.mode}; insertedDate=${options.from}..${options.to}`);
+    console.log(`Mappings verified. Mode=${report.mode}; source=${options.es7Only ? 'ES7 only' : 'ES8 + ES7'}; insertedDate=${options.from}..${options.to}`);
     await scanAndSync(es7, context.es8Request, options, report, save);
     report.status = 'complete';
     report.finishedAt = new Date().toISOString();

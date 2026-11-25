@@ -7,7 +7,8 @@ import Redis from 'ioredis';
 import {Queue,Worker,UnrecoverableError} from 'bullmq';
 import {uidLookupUrl} from '../src/services/facebookFindUid.js';
 import {readFacebookProfileWithProof} from '../src/services/facebookProfileDiagnostics.js';
-import {facebookAuthorProfileKey} from '../src/services/facebookAuthorIdentity.js';
+import {facebookAuthorProfileKey,facebookAuthorRoute} from '../src/services/facebookAuthorIdentity.js';
+import {createFacebookLocalUidRoutes} from '../src/services/facebookLocalUidRoutes.js';
 import {createFacebookAuthorResolver,createMongoAuthorStore} from '../src/services/facebookAuthorResolution.js';
 import {enqueueUidResolvedImport} from '../src/services/uidQueueHandoff.js';
 import {JOB_OPTIONS,queueName} from '../src/services/crawlerQueueFlow.js';
@@ -44,13 +45,28 @@ async function enqueue(name,data,entityKey,id){
  await jobs.updateOne({_id:id},{$setOnInsert:{_id:id,queue:name,entityKey,data,state:'queued',createdAt:new Date()}},{upsert:true});
  await imports.add(name,{...data,mongoJobId:id,entityKey},{...JOB_OPTIONS,jobId:id});return id;
 }
-async function requestProfileSnapshot(url){
+async function requestProfileSnapshot(url,options={}){
  stats.httpRequests++;
- const snapshot=await trackedUidRequest({dir,configFile:curlConfig,url,usage,concurrency:worker?.concurrency,onTelemetryError:error=>recordLocalRuntimeError('uid_usage_log_error',error)});
+ const snapshot=await trackedUidRequest({dir,configFile:curlConfig,url,...options,usage,concurrency:worker?.concurrency,onTelemetryError:error=>recordLocalRuntimeError('uid_usage_log_error',error)});
  if(snapshot.httpStatus===429){recordUsage(()=>usage.observe(snapshot));await worker.rateLimit(60000);const error=Worker.RateLimitError();error.httpStatus=429;throw error;}
  return snapshot;
 }
+const routeActor=fs.readFileSync(curlConfig,'utf8').match(/c_user=(\d+)/)?.[1];
+const lookupProfileRoutes=createFacebookLocalUidRoutes({expectedActorId:routeActor,request:requestProfileSnapshot});
+let uidRequestsBlocked=null;
 async function requestProfile(url,job){
+ if(uidRequestsBlocked)throw Object.assign(Error(uidRequestsBlocked),{code:uidRequestsBlocked});
+ let routed;
+ try{routed=await lookupProfileRoutes([url]);}catch(error){
+  const code=error.code||error.message;
+  if(/FACEBOOK_RATE_LIMITED|AUTH_REQUIRED|LOCAL_UID_AUTH_|REQUEST_TOKEN_INVALID/.test(code)){
+   uidRequestsBlocked=code;await worker.pause(true);log('local_uid_paused',{reason:'ACCOUNT_CHECK_REQUIRED'});
+  }
+  throw error;
+ }
+ const routedProof=routed.proofs.get(facebookAuthorRoute(url));
+ if(routedProof)return {...routedProof,url,usageRef:usage.context(fs.readFileSync(curlConfig,'utf8')),usageSource:'network'};
+
  let usageRef;
  const proof=await readFacebookProfileWithProof({url,request:requestProfileSnapshot,onResult:async result=>{usageRef=result.snapshot.uidUsageRef;recordUsage(()=>usage.observe(result.snapshot,result));},onFailure:async diagnostic=>{
   const detail=crawlerErrorDetails({reason:diagnostic.reason,httpStatus:diagnostic.httpStatus},{queue:'find-uid',platform:'facebook',operation:'local_curl_profile',phase:diagnostic.httpStatus===200?'uid_profile_route':'http_response'});

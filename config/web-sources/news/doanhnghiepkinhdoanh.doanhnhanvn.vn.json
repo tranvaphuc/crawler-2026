@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+  "siteId": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+  "registrableDomain": "doanhnhanvn.vn",
+  "homepage": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/",
+  "allowedHosts": [
+    "doanhnghiepkinhdoanh.doanhnhanvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "doanhnghiepkinhdoanh.doanhnhanvn.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-19"
+  },
+  "identityEncoding": "latin1",
+  "nativeIdPattern": "-(\\d+)\\.htm$",
+  "title": {
+    "strategy": "selector",
+    "selector": ".body-content h2.title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".body-content .bg-white > .mb-3:first-child",
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-body"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "validation": {
+    "checkedAt": "2026-11-19T10:34:52.914Z",
+    "state": "frozen_independent_http_holdouts_passed",
+    "sampleCount": 3,
+    "passedSamples": 3,
+    "independentSampleCount": 2,
+    "sampleUrls": [
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/41-nam-cung-ttc-nang-buoc-thanh-cong-4220261118131849707.htm"
+    ],
+    "holdoutUrls": [
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/seabank-nhan-cu-dup-giai-thuong-khang-dinh-vi-the-noi-lam-viec-hang-dau-va-nang-luc-phat-trien-ben-vung-4220261119171740598.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/chu-tich-cong-doan-pou-sung-viet-nam-mot-so-cong-ty-tai-chinh-duoc-cap-phep-nhung-cach-thuc-doi-no-nhu-tin-dung-den-4220261119154855794.htm"
+    ],
+    "evidenceDirectory": "outputs/news-requested-7-2026-11-19/doanhnghiepkinhdoanh.doanhnhanvn.vn",
+    "scope": "Requested article and two independent articles; not full-source coverage",
+    "fullSiteCycleVerified": false
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationArticleScope": ".body-content",
+  "description": {
+    "strategy": "selector",
+    "scope": ".body-content",
+    "selector": ".sapo"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/",
+    "categories": [
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/vi-mo.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/du-bao-trien-vong.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/kinh-te-quoc-te.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/tai-chinh-doanh-nghiep.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/nguyen-nhien-vat-lieu.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/quan-tri-doanh-nghiep.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/kinh-doanh-thi-truong.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/khoi-nghiep-sang-tao.htm"
+    ]
+  },
+  "requested7Validation": {
+    "checkedAt": "2026-11-19T10:53:13.604Z",
+    "evidenceDirectory": "test/fixtures/news-requested-7",
+    "independentHoldoutUrls": [
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/seabank-nhan-cu-dup-giai-thuong-khang-dinh-vi-the-noi-lam-viec-hang-dau-va-nang-luc-phat-trien-ben-vung-4220261119171740598.htm",
+      "https://doanhnghiepkinhdoanh.doanhnhanvn.vn/chu-tich-cong-doan-pou-sung-viet-nam-mot-so-cong-ty-tai-chinh-duoc-cap-phep-nhung-cach-thuc-doi-no-nhu-tin-dung-den-4220261119154855794.htm"
+    ],
+    "strictRuntimeValidation": "original_publication_and_native_fields_verified",
+    "fullSiteCycleVerified": false
+  }
+}

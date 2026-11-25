@@ -4,8 +4,8 @@ import {FLOW_QUEUES,FLOW_RETRY_LIMIT,JOB_OPTIONS,detectedSource,sourcePageDecisi
 const limited=()=>({status:'proxy_error',reason:'PROXY_CONNECT_RATE_LIMITED',transport:{manager:true,proxyEndpoint:'a'.repeat(64),proxyLimitEvidence:{source:'proxy_connect',httpStatus:429,scope:'proxy',confirmed:true,endpoint:'a'.repeat(64)}}});
 const source={_id:'facebook:page:1',platform:'facebook',type:'page',nativeId:'1',url:'https://www.facebook.com/1',eligible:true,identityStatus:'verified',identityProof:{nativeId:'1',type:'page'}};
 test('crawl queues retain fixed budgets with separate import and three-worker UID queues',()=>{
- assert.deepEqual(FLOW_QUEUES.map(q=>q.workers),[30,60,10,5,5,5,150,70,5,30,5,80,3]);
- assert.equal(FLOW_QUEUES.filter(q=>['source','comments','reply'].includes(q.kind)).reduce((n,q)=>n+q.workers,0),375);
+ assert.deepEqual(FLOW_QUEUES.map(q=>q.workers),[30,60,10,5,5,5,150,70,5,30,8,80,3]);
+ assert.equal(FLOW_QUEUES.filter(q=>['source','comments','reply'].includes(q.kind)).reduce((n,q)=>n+q.workers,0),378);
  assert.deepEqual(JOB_OPTIONS,{removeOnComplete:true,removeOnFail:false,attempts:1});
 });
 test('admission excludes unverified, redirected and incorrectly detected sources',()=>{
@@ -93,6 +93,17 @@ test('proxy-limit attribution must match the actual managed endpoint',async()=>{
 test('execution uses every declared worker without a second cap',async()=>{
  const{flowWorkerConcurrency}=await import('../src/services/crawlerQueueFlow.js');
  for(const q of FLOW_QUEUES)assert.equal(flowWorkerConcurrency(q),q.workers,q.name);
- assert.equal(FLOW_QUEUES.reduce((n,q)=>n+flowWorkerConcurrency(q),0),458);
+ assert.equal(FLOW_QUEUES.reduce((n,q)=>n+flowWorkerConcurrency(q),0),461);
 });
 
+test('interaction auth comparisons can stop after two distinct endpoints without asserting privacy',async()=>{
+ const {boundedProxyRead}=await import('../src/services/crawlerQueueFlow.js');let reads=0,retries=0;const gates=[];
+ const result=await boundedProxyRead({verifyAuthGates:true,authGateAttemptLimit:2,read:async()=>({good:false,result:{status:'auth_required',reason:'AUTH_REQUIRED',transport:{manager:true,proxyUsed:true,proxyEndpoint:String(++reads).repeat(64)}}}),rotate:async()=>{},onRetry:async()=>retries++,onGate:async r=>gates.push(r.authGate)});
+ assert.equal(reads,2);assert.equal(retries,1);assert.equal(result.done,true);assert.equal(gates.at(-1).confirmed,false);assert.equal(gates.at(-1).classification,'unverified');
+});
+
+test('Group capacity limits defer the same checkpoint without spending retries or recording read failure',async()=>{
+ const {boundedProxyRead}=await import('../src/services/crawlerQueueFlow.js');let waits=0,rotations=0;const state={nativeCursor:'exact',seen:new Set(['seen'])};
+ const out=await boundedProxyRead({waitForProxyCapacity:true,initialRetries:17,read:async()=>({good:false,state,result:{status:'proxy_error',reason:'PROXY_POOL_BUSY',retryAfterMs:1000,transport:{proxyUsed:false}}}),rotate:async()=>rotations++,onWait:async()=>waits++,onRetry:async()=>{throw Error('must not consume retry')},onFailure:async()=>{throw Error('must not fail')}});
+ assert.equal(out.deferred,true);assert.equal(out.state,state);assert.equal(out.state.nativeCursor,'exact');assert.equal(waits,1);assert.equal(rotations,1);
+});
