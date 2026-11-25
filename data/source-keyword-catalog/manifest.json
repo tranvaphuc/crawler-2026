@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "database_relative_path": "outputs/source-keyword-catalog-2026-11-19/source-keyword-catalog.sqlite",
+  "archive": "catalog.sqlite.gz",
+  "archive_sha256": "7ab33165bca3c747216545556e3ceb9eb62858bd59ef6d18e590b5c3dc2582ff",
+  "archive_bytes": 26482253,
+  "database_sha256": "8af75b76000ae8a5b7885dc2d3e6d12eca17d40061e4516090b325163cc0d73f",
+  "database_bytes": 199241728,
+  "counts": {
+    "projects": 227,
+    "sources": 32752,
+    "source_projects": 24318,
+    "people": 13802,
+    "keywords": 7524,
+    "source_exclusions": 21,
+    "keyword_exclusions": 36
+  },
+  "updates": [
+    "updates/2026-11-25.json"
+  ],
+  "created_at": "2026-11-25T16:41:47.856689+00:00"
+}

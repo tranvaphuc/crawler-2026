@@ -1,0 +1,717 @@
+{
+  "migration_id": "catalog-plan-update-2026-11-25",
+  "keywords": [
+    {
+      "project": "ShopeeFood",
+      "keyword": "Hải Phòng Đại Tiệc Vạn Năng",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "Đại Tiệc Vạn Năng",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "MegaFest Hải Phòng",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "Mega Fest Hải Phòng",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "MegaFest HP",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "Concert ShopeeFood",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "#HaiPhongDaiTiecVanNang",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B7",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "#ShopeeFoodMegaFest",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B7",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "ShopeeFood",
+      "keyword": "#ShopeeFoodSaoMoQuan",
+      "sheet": "MEGAFEST 12.2026",
+      "cell": "B7",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1GmVVqLUxWDGCKaViURgbxRpJVn2w-IV_wlpbZxAT4Q8",
+      "level": 1,
+      "subject": "ShopeeFood MegaFest Hải Phòng"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "12.12 Siêu Sale Sinh Nhật",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "Cơ hội Trúng 200 Chuyến Du Lịch Singapore",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "Voucher ShopeeVIP Giảm Đến 12 Triệu Đồng Mỗi Ngày",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "Shocking Deals sale up to 90%",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "#1212SieuSaleSinhNhat",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "#Shopee1212trung200chuyendulichsingapore",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C2",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "#TiecVuiBatTan",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C4",
+      "kind": "hashtag",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    },
+    {
+      "project": "Shopee",
+      "keyword": "B.O.F",
+      "sheet": "Keyword Campaign Tag",
+      "cell": "C5",
+      "kind": "campaign_keyword",
+      "plan_url": "https://docs.google.com/spreadsheets/d/1uTOprtd1sNS6AwomoUua9CkMwLwqps_kOKn2WzO6RdI",
+      "level": 1,
+      "subject": "Shopee"
+    }
+  ],
+  "source_updates": [
+    {
+      "old_url": "https://www.youtube.com/@mbbank1926",
+      "url": "https://www.youtube.com/@VietnamMBBank",
+      "name": "MBBank",
+      "channel": "youtube",
+      "native_id": "UCYVmBDUk-7_QsOpqTMjzrBg",
+      "plan_project": "HDBank",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16kOOa0VfsmI8_xu3GzTkfZ8_8TA4m4XCDsOMpLPEpaY",
+      "sheet": "Kênh sở hữu",
+      "cell": "D23",
+      "verification": {
+        "url": "https://www.youtube.com/@VietnamMBBank",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@VietnamMBBank",
+        "channel_id": "UCYVmBDUk-7_QsOpqTMjzrBg",
+        "title": "MBBank",
+        "channel_url": "https://www.youtube.com/channel/UCYVmBDUk-7_QsOpqTMjzrBg",
+        "vanity_url": "http://www.youtube.com/@VietnamMBBank",
+        "response_sha256": "ea286d34eacd27d7fffec5c5fd9d1fe47628155d0ef0960fe3ebae488f7b117c",
+        "checked_at": "2026-11-25T16:20:53.429Z"
+      }
+    }
+  ],
+  "source_exclusions": [
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "CHỢ ĐIỀU HÒA NHẬT BÃI , PANA -DAIKIN -FUJITSU",
+      "url": "https://www.facebook.com/groups/1041678860385526/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D3",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Chuyên Máy Giặt Tủ Lạnh Nhật Bãi",
+      "url": "https://www.facebook.com/groups/839079210275453/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D4",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "CHUYÊN TỦ LẠNH- MÁY GIẶT NHẬT BÃI",
+      "url": "https://www.facebook.com/groups/2948957155116679/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D5",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "CHỢ CƠ KHÍ , ĐỒ NGHỀ NHẬT BÃI",
+      "url": "https://www.facebook.com/groups/579870882905082/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D6",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Chuyên Máy Giặt Tủ Lạnh Nhật Bãi",
+      "url": "https://www.facebook.com/groups/839079210275453/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D7",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Sửa Chữa máy giặt nhật bãi",
+      "url": "https://www.facebook.com/groups/177053736276766/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D8",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Hội đồ nghề bãi Nhật TP HCM",
+      "url": "https://www.facebook.com/groups/714258289294977/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D9",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "CHỢ NHẬT BÃI",
+      "url": "https://www.facebook.com/groups/138954780264673/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D10",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Kho Hàng Nhật Bãi",
+      "url": "https://www.facebook.com/kho.hang.nhat.bai.2025",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D11",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Chợ bãi Nhật chất lượng",
+      "url": "https://www.facebook.com/groups/765473021953301/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D12",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "NỒI CƠM NHẬT BÃI HCM - HN",
+      "url": "https://www.facebook.com/groups/232827061664073/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D13",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Chợ điều hoà nhật bãi NA - PA NA hà nội",
+      "url": "https://www.facebook.com/groups/234848519011860/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D14",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "HỘI MUA BÁN THANH LÝ ĐIỀU HOÀ CŨ HÀ NỘI",
+      "url": "https://www.facebook.com/groups/494134166035047/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D15",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "THANH LÝ ĐỒ CŨ Ở HÀ NỘI",
+      "url": "https://www.facebook.com/groups/1075854446205899/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D16",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Điện Máy Giá Rẻ Hòa Tiến - Đà Nẵng",
+      "url": "https://www.facebook.com/profile.php?id=61559881739675",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D17",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Hội Mua Bán Thanh Lý - Đồ Cũ Mới Hà Nội",
+      "url": "https://www.facebook.com/groups/476528980110327/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D18",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "CHỢ MUA BÁN HUYỆN THỌ XUÂN",
+      "url": "https://www.facebook.com/groups/915530745915913/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D19",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "HỘI THANH LÝ ĐỒ CŨ DĨ AN - BÌNH DƯƠNG",
+      "url": "https://www.facebook.com/groups/379038720022912/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D20",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Tìm Nhà Cho Thuê - Việt Trì Phú Thọ",
+      "url": "https://www.facebook.com/groups/598707090299576/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D21",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Chợ Bếp Từ Nhật",
+      "url": "https://www.facebook.com/groups/2859534490984037/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D22",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Nội Địa Nhật",
+      "url": "https://www.facebook.com/noi.ia.nhat.873514/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D23",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    },
+    {
+      "project": "Panasonic",
+      "channel": "facebook",
+      "name": "Gia Dụng Nhât",
+      "url": "https://www.facebook.com/giadung.nhat.73/",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Source Spam",
+      "cell": "D24",
+      "reason": "Plan ghi: DANH SÁCH SOURCE KHÔNG CẦN THU THẬP DATA VÌ NHIỀU SPAM"
+    }
+  ],
+  "keyword_exclusions": [
+    {
+      "project": "Panasonic",
+      "keyword": "nhật bãi",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E7"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "nhật bãi",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H7"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "nhật bãi",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M7"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "nhật bãi",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P7"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "máy sấy tóc",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E8"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bán căn hộ",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H8"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bán căn hộ",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M8"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bán căn hộ",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P8"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bán căn hộ",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E9"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "cho thuê căn hộ",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H9"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "cho thuê căn hộ",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M9"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "cho thuê căn hộ",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P9"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "cho thuê căn hộ",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E10"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "căn hộ cao cấp",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H10"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "căn hộ cao cấp",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M10"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "căn hộ cao cấp",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P10"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "căn hộ cao cấp",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E11"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "hàng bãi",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H11"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "hàng bãi",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M11"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "hàng bãi",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P11"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "hàng bãi",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E12"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nhật",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H12"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nhật",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M12"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nhật",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P12"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nhật",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E13"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nội địa",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H13"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nội địa",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M13"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nội địa",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P13"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "bãi nội địa",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E14"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "Nhật cũ",
+      "scope": "Panasonic Fridge",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "H14"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "Tăm nước",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M14"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "Nhật cũ",
+      "scope": "Panasonic Air-conditioner",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "P14"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "sấy tóc",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E15"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "máy hút bụi",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M15"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "Nhật cũ",
+      "scope": "Panasonic Washing Machine",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "E16"
+    },
+    {
+      "project": "Panasonic",
+      "keyword": "Nhật cũ",
+      "scope": "Panasonic Kitchenware / Others",
+      "plan_url": "https://docs.google.com/spreadsheets/d/16TxfaiBTC_Any2fh7waSigAKTIw0QXlT2e0TQEWMwtc",
+      "sheet": "Pana Keywords",
+      "cell": "M16"
+    }
+  ],
+  "new_scoped_exclusion_cells": [
+    "E16",
+    "H14",
+    "M16",
+    "P14"
+  ]
+}
