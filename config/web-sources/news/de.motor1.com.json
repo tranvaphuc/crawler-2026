@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "de.motor1.com",
+  "siteId": "de.motor1.com",
+  "registrableDomain": "de.motor1.com",
+  "homepage": "https://de.motor1.com/",
+  "allowedHosts": [
+    "de.motor1.com",
+    "www.de.motor1.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://de.motor1.com/",
+    "categories": [
+      "https://de.motor1.com/news/",
+      "https://de.motor1.com/news/category/auto-news/",
+      "https://de.motor1.com/news/category/supercars/",
+      "https://de.motor1.com/news/category/historie-oldtimer/",
+      "https://de.motor1.com/news/category/campingmobile/",
+      "https://de.motor1.com/news/category/markkt/"
+    ]
+  },
+  "title": {
+    "value": "Unterwegs im Audi 100 C2 (1976-1982): Der Fünfzylinder wird 50 - wir fahren ihn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:33.004Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:23.567Z",
+    "independentHoldouts": [
+      "https://de.motor1.com/news/815430/volkswagen-neuheiten-2027-uebersicht/",
+      "https://de.motor1.com/news/815365/annex-ricorso8-fiat-ducato-japan-campervan/",
+      "https://de.motor1.com/reviews/815288/ford-nugget-40-jahre-edition-2026-test/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://de.motor1.com/news/815010/audi-100-c2-fuenfzylinder-fahrbericht/",
+      "https://de.motor1.com/news/815430/volkswagen-neuheiten-2027-uebersicht/",
+      "https://de.motor1.com/news/815365/annex-ricorso8-fiat-ducato-japan-campervan/",
+      "https://de.motor1.com/reviews/815288/ford-nugget-40-jahre-edition-2026-test/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

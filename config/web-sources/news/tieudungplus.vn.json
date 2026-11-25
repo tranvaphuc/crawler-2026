@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tieudungplus.vn",
+  "siteId": "tieudungplus.vn",
+  "registrableDomain": "tieudungplus.vn",
+  "homepage": "https://tieudungplus.vn/",
+  "allowedHosts": [
+    "tieudungplus.vn",
+    "www.tieudungplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": ".post > h1.post_title"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://tieudungplus.vn/rss/moi-nhat.rss"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.post_main_content[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:43.505Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tieudungplus.vn/mung-1-nam-cat-canh-sun-phuquoc-airways-tang-ve-bay-va-ve-cau-hon-1793319230319.html",
+      "https://tieudungplus.vn/chon-thuc-pham-an-toan-xu-huong-tat-yeu-trong-tieu-dung-hien-dai-1757468311658.html",
+      "https://tieudungplus.vn/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-danh-cho-khach-hang-cao-cap-1793609556371.html",
+      "https://tieudungplus.vn/lien-chi-hoi-bds-cong-nghiep-vn-tang-cuong-ket-noi-hop-tac-pt-ben-vung-1793759497942.html",
+      "https://tieudungplus.vn/mua-vinfast-vf-2-uu-dai-3-vay-toi-100-gia-tri-xe-trong-thang-10-1793320207672.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles",
+    "remaining28Qc": {
+      "checkedAt": "2026-11-22T04:47:23.118Z",
+      "report": "/var/lib/news-flow/qc-remaining28-20261122/mobile-qualified.json",
+      "verifiedUrls": [
+        "https://tieudungplus.vn/570000-diem-ban-mot-bai-toan-lon-masan-lam-gi-de-phuc-vu-thi-truong-tot-hon-1794816290354.html",
+        "https://tieudungplus.vn/nghia-trang-va-an-tang-thong-minh-sang-kien-khong-gian-tuong-niem-da-tang-1794150507740.html",
+        "https://tieudungplus.vn/thi-truong-dat-dau-gia-ha-noi-thang-11-co-gi-dang-chu-y-1794198911142.html",
+        "https://tieudungplus.vn/opes-va-vpbank-dua-bao-hiem-suc-khoe-den-gan-cong-dong-tai-ngay-hoi-non-hong-1793935901225.html",
+        "https://tieudungplus.vn/elite-island-nha-trang-chuan-song-nghi-duong-giua-dao-le-hoi-va-khoang-nong-1793704160139.html"
+      ],
+      "training": 3,
+      "independentHoldouts": 2,
+      "originalUrlIdentityPreserved": true,
+      "originalPublicationSource": "https://tieudungplus.vn/rss/moi-nhat.rss",
+      "bodySource": "publisher-declared mobile HTML"
+    }
+  },
+  "discovery": {
+    "homepage": "https://tieudungplus.vn/rss/moi-nhat.rss",
+    "categories": [],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json",
+    "maxConcurrentArticles": 1
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tieudungplus.vn",
+    "checkedAt": "2026-11-09T04:01:19.338Z",
+    "url": "https://tieudungplus.vn/mung-1-nam-cat-canh-sun-phuquoc-airways-tang-ve-bay-va-ve-cau-hon-1793319230319.html",
+    "finalUrl": "https://tieudungplus.vn/mung-1-nam-cat-canh-sun-phuquoc-airways-tang-ve-bay-va-ve-cau-hon-1793319230319.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4144,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tieudungplus.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 130,
+        "passed": 20,
+        "distinctHashes": 20
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tieudungplus.vn/doanh-nghiep-noi-ngoai-tang-ket-noi-mo-rong-du-dia-dau-tu-bat-dong-san-1794198788861.html",
+      "https://tieudungplus.vn/gpbank-giam-lai-suat-khoan-vay-len-toi-2-nam-1794194647891.html",
+      "https://tieudungplus.vn/masan-consumer-dung-ai-giam-khoang-30-doanh-so-that-thoat-do-thieu-hang-1794194040997.html",
+      "https://tieudungplus.vn/thi-truong-dat-dau-gia-ha-noi-thang-11-co-gi-dang-chu-y-1794198911142.html",
+      "https://tieudungplus.vn/opes-va-vpbank-dua-bao-hiem-suc-khoe-den-gan-cong-dong-tai-ngay-hoi-non-hong-1793935901225.html",
+      "https://tieudungplus.vn/nghia-trang-va-an-tang-thong-minh-sang-kien-khong-gian-tuong-niem-da-tang-1794150507740.html",
+      "https://tieudungplus.vn/elite-island-nha-trang-chuan-song-nghi-duong-giua-dao-le-hoi-va-khoang-nong-1793704160139.html",
+      "https://tieudungplus.vn/buc-tranh-loi-nhuan-bds-quy-iii-2026-phan-hoa-ky-vong-gi-o-quy-iv-1793757399952.html",
+      "https://tieudungplus.vn/vinspeed-tang-toc-thi-cong-tuyen-duong-sat-toc-do-cao-ben-thanh-can-gio-1793703671074.html",
+      "https://tieudungplus.vn/vinhomes-royal-island-mo-ra-muon-lua-chon-hop-gu-1793703832467.html",
+      "https://tieudungplus.vn/san-may-5h-sang-an-sang-may-ngan-combo-fansipan-tai-xuat-co-gi-hot-1793703951239.html",
+      "https://tieudungplus.vn/don-gian-hoa-thu-tuc-tao-thuan-loi-trong-dang-ky-xac-lap-quyen-so-huu-tri-tue-1793757714467.html",
+      "https://tieudungplus.vn/the-vpbank-kim-bai-giup-fan-viet-den-gan-than-tuong-hon-1793703417261.html",
+      "https://tieudungplus.vn/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-danh-cho-khach-hang-cao-cap-1793609556371.html",
+      "https://tieudungplus.vn/lien-chi-hoi-bds-cong-nghiep-vn-tang-cuong-ket-noi-hop-tac-pt-ben-vung-1793759497942.html",
+      "https://tieudungplus.vn/chon-thuc-pham-an-toan-xu-huong-tat-yeu-trong-tieu-dung-hien-dai-1757468311658.html",
+      "https://tieudungplus.vn/thuong-hieu-chin-su-chinh-phuc-thuc-khach-tai-hcmc-export-2024-1715239639842.html",
+      "https://tieudungplus.vn/ha-noi-thang-khuyen-mai-tap-trung-hang-hoa-giam-gia-den-100-1710298454728.html",
+      "https://tieudungplus.vn/uu-dai-ngap-tran-dip-cuoi-nam-tren-toan-he-thong-sieu-thi-winmart-1704263824307.html",
+      "https://tieudungplus.vn/wincommerce-khoi-dong-chuoi-su-kien-mung-sinh-nhat-9-tuoi-20201231000010702.html",
+      "https://tieudungplus.vn/sieu-uu-dai-cung-the-quoc-te-shb-mastercard-tai-grab-20201231000006809.html",
+      "https://tieudungplus.vn/nghe-an-canh-bao-mua-to-nguy-co-sat-lo-dat-ngap-lut-va-lu-quet-o-vung-nui-20201231000010474.html",
+      "https://tieudungplus.vn/bao-doksuri-giat-tren-cap-17-kha-nang-tro-thanh-sieu-bao-tien-gan-bien-dong-20201231000010086.html",
+      "https://tieudungplus.vn/thoi-tiet-hom-nay-20-7-dong-loc-mua-da-va-lu-quet-xay-ra-o-nhieu-noi-20201231000010055.html",
+      "https://tieudungplus.vn/anh-huong-cua-bao-so-1-nhieu-dia-phuong-mua-to-co-noi-mua-rat-to-20201231000010050.html",
+      "https://tieudungplus.vn/tin-bao-khan-cap-bao-so-1-giat-cap-15-tien-nhanh-vao-ven-bien-quang-ninh-hai-phong-20201231000010023.html",
+      "https://tieudungplus.vn/chung-khoan-dsc-to-chuc-thanh-cong-hoi-nghi-ndt-loi-nhuan-tang-truong-an-tuong-1712906895352.html",
+      "https://tieudungplus.vn/fe-credit-lay-lai-da-tang-truong-dat-muc-tieu-loi-nhuan-1200-ty-dong-nam-2024-1712635595675.html",
+      "https://tieudungplus.vn/trai-nghiem-le-hoi-van-hoa-tieu-dung-phong-cach-nhat-tai-japan-festa-2023-20201231000010753.html",
+      "https://tieudungplus.vn/sunshine-homes-co-ket-qua-kinh-doanh-tich-cuc-quy-iii-2023-20201231000010726.html",
+      "https://tieudungplus.vn/san-pham-tivi-dat-chat-luong-chiu-duoc-va-dap-gia-re-hut-nguoi-tieu-dung-20201231000008252.html",
+      "https://tieudungplus.vn/gia-gas-hom-nay-13-11-thi-truong-the-gioi-tang-242-20201231000010754.html",
+      "https://tieudungplus.vn/gia-ca-phe-hom-nay-3-11-thi-truong-trong-nuoc-cao-nhat-la-58300-dong-kg-20201231000010758.html",
+      "https://tieudungplus.vn/gia-ban-le-dien-tang-co-phieu-doanh-nghiep-nao-tren-san-huong-loi-20201231000010755.html",
+      "https://tieudungplus.vn/gia-ca-phe-hom-nay-6-11-cao-nhat-la-57900-dong-kg-20201231000010721.html",
+      "https://tieudungplus.vn/gia-cao-su-hom-nay-6-11-giam-hon-05-20201231000010720.html",
+      "https://tieudungplus.vn/mua-sam-hien-dai-lan-toa-khap-vung-que-ban-le-viet-nam-buoc-vao-giai-doan-moi-1757299329974.html",
+      "https://tieudungplus.vn/wineco-mang-khu-vuon-cong-nghe-cao-vietfood-beverage-propack-vietnam-2025-1754879308892.html",
+      "https://tieudungplus.vn/mua-vinfast-vf-2-uu-dai-3-vay-toi-100-gia-tri-xe-trong-thang-10-1793320207672.html",
+      "https://tieudungplus.vn/vifon-luon-vi-hom-nay-tu-1963-e58.html",
+      "https://tieudungplus.vn/bao-ve-nguoi-tieu-dung-e63.html",
+      "https://tieudungplus.vn/bao-gio-via-he-moi-thuoc-ve-nguoi-di-bo-e60.html",
+      "https://tieudungplus.vn/vo-mong-chung-cu-e62.html",
+      "https://tieudungplus.vn/meo-vat-cuoc-song-e61.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:27.607Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tieudungplus.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "nativePublicationAdapter": "declared_tieudungplus_mobile",
+  "description": {
+    "strategy": "selector",
+    "scope": "article.post_content",
+    "selector": "h2.post_sapo"
+  },
+  "httpDependencyHosts": [
+    "m.tieudungplus.vn"
+  ]
+}

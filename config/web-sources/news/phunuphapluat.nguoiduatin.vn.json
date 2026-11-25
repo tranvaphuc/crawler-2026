@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunuphapluat.nguoiduatin.vn",
+  "siteId": "phunuphapluat.nguoiduatin.vn",
+  "registrableDomain": "nguoiduatin.vn",
+  "homepage": "https://phunuphapluat.nguoiduatin.vn/",
+  "allowedHosts": [
+    "phunuphapluat.nguoiduatin.vn",
+    "www.phunuphapluat.nguoiduatin.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Xu hướng thế hệ trẻ ưu tiên đầu tư bền vững và cá nhân hóa sâu sắc",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:02.437Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://phunuphapluat.nguoiduatin.vn/xu-huong-the-he-tre-uu-tien-dau-tu-ben-vung-va-ca-nhan-hoa-sau-sac-a639887.html",
+      "https://phunuphapluat.nguoiduatin.vn/cam-ket-tien-phong-kien-tao-suc-bat-dong-nam-bo-a639673.html",
+      "https://phunuphapluat.nguoiduatin.vn/loai-qua-dac-san-co-o-thai-nguyen-gia-170000-dongkg-trong-trong-san-nha-an-suot-nhieu-nam-con-chieu-tai-hut-loc-a638085.html",
+      "https://phunuphapluat.nguoiduatin.vn/chinh-thuc-nguoi-lao-dong-duoc-nghi-lam-viec-them-1-ngay-huong-nguyen-luong-tu-0172026-a638304.html",
+      "https://phunuphapluat.nguoiduatin.vn/chinh-thuc-tu-172026-cbccvc-lanh-them-5000000-dongthang-theo-nghi-quyet-17-a638303.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phunuphapluat.nguoiduatin.vn/",
+    "categories": [
+      "https://phunuphapluat.nguoiduatin.vn/c/tieng-noi-phu-nu",
+      "https://phunuphapluat.nguoiduatin.vn/c/toan-canh",
+      "https://phunuphapluat.nguoiduatin.vn/c/phu-nu-4-0",
+      "https://phunuphapluat.nguoiduatin.vn/c/phu-nu-va-tieu-dung",
+      "https://phunuphapluat.nguoiduatin.vn/c/an-toan-thuc-pham",
+      "https://phunuphapluat.nguoiduatin.vn/c/tham-my",
+      "https://phunuphapluat.nguoiduatin.vn/c/my-pham",
+      "https://phunuphapluat.nguoiduatin.vn/c/thong-tin-doanh-nghiep",
+      "https://phunuphapluat.nguoiduatin.vn/c/san-pham-dich-vu-phu-nu-tin-dung",
+      "https://phunuphapluat.nguoiduatin.vn/c/doi-song",
+      "https://phunuphapluat.nguoiduatin.vn/c/hon-nhan-gia-dinh",
+      "https://phunuphapluat.nguoiduatin.vn/c/giai-tri",
+      "https://phunuphapluat.nguoiduatin.vn/c/suc-khoe",
+      "https://phunuphapluat.nguoiduatin.vn/c/mang-xa-hoi",
+      "https://phunuphapluat.nguoiduatin.vn/c/du-lich-am-thuc",
+      "https://phunuphapluat.nguoiduatin.vn/c/cham-con",
+      "https://phunuphapluat.nguoiduatin.vn/c/chuyen-la",
+      "https://phunuphapluat.nguoiduatin.vn/c/phap-luat",
+      "https://phunuphapluat.nguoiduatin.vn/c/tu-van-phap-luat2",
+      "https://phunuphapluat.nguoiduatin.vn/c/goc-nhin-phap-ly",
+      "https://phunuphapluat.nguoiduatin.vn/c/video",
+      "https://phunuphapluat.nguoiduatin.vn/video",
+      "https://phunuphapluat.nguoiduatin.vn/photo",
+      "https://phunuphapluat.nguoiduatin.vn/podcast",
+      "https://phunuphapluat.nguoiduatin.vn/infographic",
+      "https://phunuphapluat.nguoiduatin.vn/emagazine",
+      "https://phunuphapluat.nguoiduatin.vn/co-quan-chu-quan",
+      "https://phunuphapluat.nguoiduatin.vn/thong-tin-toa-soan",
+      "https://phunuphapluat.nguoiduatin.vn/bang-gia-quang-cao"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunuphapluat.nguoiduatin.vn",
+    "checkedAt": "2026-11-09T03:57:22.566Z",
+    "url": "https://phunuphapluat.nguoiduatin.vn/xu-huong-the-he-tre-uu-tien-dau-tu-ben-vung-va-ca-nhan-hoa-sau-sac-a639887.html",
+    "finalUrl": "https://phunuphapluat.nguoiduatin.vn/xu-huong-the-he-tre-uu-tien-dau-tu-ben-vung-va-ca-nhan-hoa-sau-sac-a639887.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12542,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "phunuphapluat.nguoiduatin.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 43,
+    "checkedArticleUrls": 47,
+    "freshArticleChecks": 14,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 43,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 29,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 443,
+        "passed": 38,
+        "distinctHashes": 38
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "photo",
+        "discovered": 6,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phunuphapluat.nguoiduatin.vn/loai-qua-dac-san-co-o-thai-nguyen-gia-170000-dongkg-trong-trong-san-nha-an-suot-nhieu-nam-con-chieu-tai-hut-loc-a638085.html",
+      "https://phunuphapluat.nguoiduatin.vn/chinh-thuc-nguoi-lao-dong-duoc-nghi-lam-viec-them-1-ngay-huong-nguyen-luong-tu-0172026-a638304.html",
+      "https://phunuphapluat.nguoiduatin.vn/chinh-thuc-tu-172026-cbccvc-lanh-them-5000000-dongthang-theo-nghi-quyet-17-a638303.html",
+      "https://phunuphapluat.nguoiduatin.vn/luu-y-tu-1092026-doanh-nghiep-khong-tra-luong-lam-them-gio-lam-viec-ban-dem-cho-nguoi-lao-dong-co-the-bi-phat-den-100000000-dong-a638301.html",
+      "https://phunuphapluat.nguoiduatin.vn/kieu-chan-vay-dai-chan-ai-giup-nang-cong-so-nam-lun-hack-chieu-cao-dien-quanh-nam-ngay-nao-cung-dep-a639940.html",
+      "https://phunuphapluat.nguoiduatin.vn/tieu-thu-ha-thanh-u44-du-nep-du-te-cung-thay-giao-tay-con-gai-qua-xinh-duoc-vi-nhu-happer-beckham-viet-nam-a639991.html",
+      "https://phunuphapluat.nguoiduatin.vn/tung-duong-lan-dau-dong-canh-tinh-cam-voi-nu-dien-vien-tu-chien-tren-khong-a639990.html",
+      "https://phunuphapluat.nguoiduatin.vn/nhieu-hoa-hau-thu-vai-nam-phuong-hoang-hau-vi-sao-lai-chon-ngoc-nu-3-con-nhu-tang-thanh-ha-a639989.html",
+      "https://phunuphapluat.nguoiduatin.vn/nu-than-waterbomb-kwon-eun-bi-tiet-lo-bi-quyet-lam-dep-chi-can-ket-hop-4-loai-thuc-pham-nay-a639988.html",
+      "https://phunuphapluat.nguoiduatin.vn/tai-sao-nhieu-nguoi-cho-may-lau-san-vao-danh-sach-den-sau-6-thang-trai-nghiem-toi-quay-lai-dung-cay-lau-nha-truyen-thong-a639987.html",
+      "https://phunuphapluat.nguoiduatin.vn/bo-chong-lay-giam-doc-giau-co-dem-tan-hon-nhan-duoc-tin-nhan-cua-chong-cu-toi-khoc-uot-goi-vi-kho-tam-a639986.html",
+      "https://phunuphapluat.nguoiduatin.vn/moi-ban-than-xinh-dep-den-nha-dung-bua-thay-co-ay-xoi-com-toi-dau-don-quyet-dinh-ly-hon-chong-a639985.html",
+      "https://phunuphapluat.nguoiduatin.vn/ong-noi-dat-ten-cho-chau-gai-la-thi-vien-bo-dat-la-thi-mui-sau-di-hoc-duoc-co-giao-doi-thanh-ten-khac-hay-hon-a639984.html",
+      "https://phunuphapluat.nguoiduatin.vn/den-nha-chong-sap-cuoi-an-com-toi-toi-bun-run-khi-biet-than-phan-that-cua-anh-voi-vang-huy-hon-a639941.html",
+      "https://phunuphapluat.nguoiduatin.vn/5-thuc-uong-hack-tuoi-vua-dep-da-vua-giu-dang-cho-phai-dep-a639923.html",
+      "https://phunuphapluat.nguoiduatin.vn/ba-noi-u60-tre-dep-nhu-gai-18-cham-chau-bi-hieu-lam-la-me-bim-nhin-anh-gia-dinh-ma-giat-minh-a639801.html",
+      "https://phunuphapluat.nguoiduatin.vn/tuan-hung-mung-tuoi-48-tren-dat-my-loi-nhan-gui-xuc-dong-cua-huong-baby-sau-15-nam-gan-bo-a639215.html",
+      "https://phunuphapluat.nguoiduatin.vn/du-hoc-ve-nuoc-toi-o-nho-nha-ban-than-va-khong-the-chop-mat-sau-khi-chung-kien-kieu-day-con-cua-co-ay-a638081.html",
+      "https://phunuphapluat.nguoiduatin.vn/duoc-tra-50-trieuthang-lam-bao-mau-nhung-toi-xin-nghi-viec-gap-vi-nhung-yeu-cau-qua-dang-cua-ong-chu-a638089.html",
+      "https://phunuphapluat.nguoiduatin.vn/trot-co-bau-voi-tinh-mot-dem-duoc-anh-chuyen-tang-500-trieu-toi-dang-lang-lang-thi-chet-lang-boi-tin-nhan-sau-do-a638090.html",
+      "https://phunuphapluat.nguoiduatin.vn/dot-kich-quan-karaoke-bat-qua-tang-5-doi-tuong-dang-phe-ma-tuy-a631761.html",
+      "https://phunuphapluat.nguoiduatin.vn/pho-vien-truong-tphcm-dep-bong-mat-khien-dai-gia-mien-tay-si-me-u50-lam-me-don-than-co-bang-tien-si-dai-hoc-my-a631760.html",
+      "https://phunuphapluat.nguoiduatin.vn/lua-bao-trum-nha-xuong-gan-benh-vien-k-canh-sat-cang-minh-dap-chay-suot-dem-a631758.html",
+      "https://phunuphapluat.nguoiduatin.vn/tan-hoa-hau-miss-world-vietnam-2025-bat-khoc-giay-phut-dang-quang-nhan-sac-khien-dan-mang-tram-tro-a631748.html",
+      "https://phunuphapluat.nguoiduatin.vn/nu-mc-vtv-xinh-nhu-hoa-song-cung-chong-tien-si-trong-co-ngoi-9-tang-nhin-can-bep-gon-tung-centimet-ma-me-a631755.html",
+      "https://phunuphapluat.nguoiduatin.vn/giai-bai-toan-ap-luc-on-thi-tot-nghiep-thpt-tranh-kiet-suc-vi-cay-de-dan-trai-a628826.html",
+      "https://phunuphapluat.nguoiduatin.vn/xu-huong-the-he-tre-uu-tien-dau-tu-ben-vung-va-ca-nhan-hoa-sau-sac-a639887.html",
+      "https://phunuphapluat.nguoiduatin.vn/cam-ket-tien-phong-kien-tao-suc-bat-dong-nam-bo-a639673.html",
+      "https://phunuphapluat.nguoiduatin.vn/nen-tang-bai-tap-so-chia-khoa-vang-cho-ky-thi-tot-nghiep-thpt-2027-a628341.html",
+      "https://phunuphapluat.nguoiduatin.vn/dau-bep-viet-dua-huong-vi-que-nha-vao-cuoc-thi-am-thuc-quoc-te-a639384.html",
+      "https://phunuphapluat.nguoiduatin.vn/da-kho-bong-troc-mai-khong-het-day-la-nhung-tieu-chi-can-biet-khi-chon-serum-phuc-hoi-a638892.html",
+      "https://phunuphapluat.nguoiduatin.vn/long-mi-thua-de-gay-rung-4-bi-quyet-giup-hang-mi-trong-day-va-khoe-hon-a638876.html",
+      "https://phunuphapluat.nguoiduatin.vn/mun-dau-den-mai-khong-het-co-the-ban-van-dang-mac-5-thoi-quen-nay-moi-ngay-a638652.html",
+      "https://phunuphapluat.nguoiduatin.vn/dung-chi-cham-da-mat-day-la-nhung-thoi-quen-giup-da-co-min-mang-hon-a638637.html",
+      "https://phunuphapluat.nguoiduatin.vn/tat-tan-tat-ve-iphone-duo-smartphone-gap-mong-nhat-lich-su-apple-vua-ra-mat-gia-len-toi-104-trieu-dong-a638554.html",
+      "https://phunuphapluat.nguoiduatin.vn/bai-tap-so-giai-phap-giup-hoc-sinh-lop-12-chu-dong-on-thi-tot-nghiep-thpt-2027-a639951.html",
+      "https://phunuphapluat.nguoiduatin.vn/chan-gio-luoc-bao-lau-thi-ngon-meo-che-bien-giup-thit-mem-ngot-khong-bi-kho-a639926.html",
+      "https://phunuphapluat.nguoiduatin.vn/mach-ba-noi-tro-bi-quyet-giup-luoi-heo-sach-va-het-mui-hoi-bang-nhung-nguyen-lieu-san-co-a639892.html",
+      "https://phunuphapluat.nguoiduatin.vn/ra-mat-nen-tang-hoc-lieu-so-chuan-hoa-bo-de-on-thi-thpt-2027-a627533.html",
+      "https://phunuphapluat.nguoiduatin.vn/khuong-le-chat-van-nhat-kim-anh-sao-ngay-do-me-khong-bo-di-trong-me-min-a639538.html",
+      "https://phunuphapluat.nguoiduatin.vn/moi-nhat-5-nhom-doi-tuong-duoc-de-xuat-tang-manh-muc-ho-tro-dong-bhyt-tu-nam-2027-a638666.html",
+      "https://phunuphapluat.nguoiduatin.vn/video-thot-tim-cha-lay-than-che-con-giua-luc-tau-lan-banh-a633775.html",
+      "https://phunuphapluat.nguoiduatin.vn/clip-cai-va-voi-ban-gai-tren-taxi-nguoi-dan-ong-nuoc-ngoai-lao-khoi-xe-dang-chay-a633691.html",
+      "https://phunuphapluat.nguoiduatin.vn/cong-van-so-noi-vu-phai-hoan-tra-toan-bo-so-tien-tro-cap-tinh-gian-bien-che-da-nhan-theo-nghi-dinh-154-khi-duoc-tuyen-dung-lai-la-noi-dung-duoc-quan-triet-tai-cong-van-4214-chi-tiet-the-nao-a633569.html",
+      "https://phunuphapluat.nguoiduatin.vn/tuot-day-ao-giua-runway-va-man-ung-bien-dinh-cao-cua-nguoi-mau-tre-a633382.html",
+      "https://phunuphapluat.nguoiduatin.vn/hdbank-tang-140-bac-qua-ba-ky-xep-hang-fortune-southeast-asia-500-a639884.html",
+      "https://phunuphapluat.nguoiduatin.vn/apea-2026-vinh-danh-hdbank-ve-quan-tri-ben-vung-va-minh-bach-a639444.html",
+      "https://phunuphapluat.nguoiduatin.vn/hdbank-danh-2000-ty-dong-cho-doanh-nghiep-do-phu-nu-lam-chu-lai-suat-chi-tu-78nam-den-het-quy-i2027-a639408.html",
+      "https://phunuphapluat.nguoiduatin.vn/vpbank-khai-truong-phong-giao-dich-hiep-binh-a639407.html",
+      "https://phunuphapluat.nguoiduatin.vn/herbalife-viet-nam-tiep-tuc-phoi-hop-voi-vnexpress-de-khuyen-khich-loi-song-lanh-manh-voi-tu-cach-la-nha-tai-tro-kim-cuong-cho-giai-vnexpress-marathon-grand-tour-nghe-an-2026-a639031.html",
+      "https://phunuphapluat.nguoiduatin.vn/tsttourist-nhan-giai-tai-world-travel-awards-2026-a639029.html",
+      "https://phunuphapluat.nguoiduatin.vn/tuoi-40-va-bai-toan-chia-tien-bao-nhieu-cho-mai-am-cua-con-bao-nhieu-cho-tuoi-gia-cua-cha-me-a638928.html",
+      "https://phunuphapluat.nguoiduatin.vn/ngan-hang-thu-phi-the-dau-la-can-cu-tinh-a638901.html",
+      "https://phunuphapluat.nguoiduatin.vn/dau-tu-tu-khoan-nho-2-trieu-moi-thang-van-co-cach-de-tien-sinh-loi-a638849.html",
+      "https://phunuphapluat.nguoiduatin.vn/dung-voi-mua-quan-ao-neu-chua-biet-nhung-nguyen-tac-nay-a638795.html",
+      "https://phunuphapluat.nguoiduatin.vn/bac-si-pham-quang-hoach-khi-biet-dung-dung-luc-cung-la-ban-linh-cua-nguoi-lam-nghe-a638723.html",
+      "https://phunuphapluat.nguoiduatin.vn/quet-the-abbank-nhan-hoan-tien-toi-5-nhan-qua-van-gogh-phien-ban-gioi-han-a638693.html",
+      "https://phunuphapluat.nguoiduatin.vn/bao-minh-heritage-ra-mat-bo-suu-tap-trung-thu-ngu-linh-bach-nghe-trong-mua-trang-a638684.html",
+      "https://phunuphapluat.nguoiduatin.vn/tich-luy-an-gia-chi-tu-2-trieu-dong-moi-thang-vua-tich-luy-vua-dau-tu-a638659.html",
+      "https://phunuphapluat.nguoiduatin.vn/mua-sam-truc-tuyen-mua-cao-diem-nguoi-tieu-dung-can-luu-y-gi-de-tranh-rui-ro-a638597.html",
+      "https://phunuphapluat.nguoiduatin.vn/cay-canh-ngan-vang-cho-hoa-thom-qua-ngot-10-nha-trong-thi-9-nha-giau-co-tai-loc-day-san-cham-lai-cuc-de-a639983.html",
+      "https://phunuphapluat.nguoiduatin.vn/thoa-suc-san-voucher-lac-sieu-xu-va-mua-sam-dip-1111-cung-chuoi-chuong-trinh-tren-shopee-a639982.html",
+      "https://phunuphapluat.nguoiduatin.vn/cong-an-ha-noi-tim-chu-xe-may-va-nhan-chung-trong-2-vu-viec-a639018.html",
+      "https://phunuphapluat.nguoiduatin.vn/talkshow-bac-si-ck1-nguyen-dinh-duong-ca-mui-dep-duoc-quyet-dinh-tu-dau-a634609.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 4
+    },
+    "checkedAt": "2026-11-10T09:16:29.625Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phunuphapluat.nguoiduatin.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "phunuphapluat.nguoiduatin.vn",
+      "siteId": "phunuphapluat.nguoiduatin.vn",
+      "registrableDomain": "nguoiduatin.vn",
+      "homepage": "https://phunuphapluat.nguoiduatin.vn/",
+      "allowedHosts": [
+        "phunuphapluat.nguoiduatin.vn",
+        "www.phunuphapluat.nguoiduatin.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Xu hướng thế hệ trẻ ưu tiên đầu tư bền vững và cá nhân hóa sâu sắc",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:23.989Z",
+        "trainingUrls": [
+          "https://phunuphapluat.nguoiduatin.vn/chum-anh-ngam-tuyet-roi-trang-dinh-fasipan-nhu-noi-troi-au-nhung-ngay-giap-tet-a619930.html",
+          "https://phunuphapluat.nguoiduatin.vn/photo-hang-ngan-nguoi-hoa-minh-trong-le-hoi-hoa-nhac-anh-sang-chao-nam-moi-2025-a619447.html",
+          "https://phunuphapluat.nguoiduatin.vn/photo-nhung-hinh-anh-dau-tien-cua-le-hoi-hoa-nhac-anh-sang-chao-nam-moi-2025-a619305.html",
+          "https://phunuphapluat.nguoiduatin.vn/photo-the-gioi-don-chao-nam-moi-2025-a618345.html"
+        ],
+        "holdoutUrls": [
+          "https://phunuphapluat.nguoiduatin.vn/photo-bien-nguoi-han-hoan-cung-nhau-don-khoanh-khac-giao-thua-2025-a618346.html",
+          "https://phunuphapluat.nguoiduatin.vn/cu-hanh-trong-the-le-tang-dong-chi-dai-tuong-nguyen-quyet-a618048.html"
+        ]
+      }
+    }
+  ]
+}

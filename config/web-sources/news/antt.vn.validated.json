@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "siteName": "antt.vn",
+  "siteId": "antt.vn",
+  "registrableDomain": "antt.vn",
+  "homepage": "http://antt.vn/",
+  "allowedHosts": [
+    "antt.vn",
+    "www.antt.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bộ trưởng Bộ Y tế giải trình quy định hiến mô, tạng với người dưới 18 tuổi",
+    "strategy": "selector",
+    "selector": ".title_detail"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time_home",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#main-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:48.637Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "http://antt.vn/bo-truong-bo-y-te-giai-trinh-quy-dinh-hien-mo-tang-voi-nguoi-duoi-18-tuoi-404334.htm",
+      "http://antt.vn/nghe-an-mot-xa-thong-bao-tam-dung-giet-mo-buon-ban-san-pham-ve-lon-do-dich-benh-404333.htm",
+      "http://antt.vn/cii-chuyen-300-ty-dong-von-dau-tu-du-an-cao-toc-sang-tra-no-trai-phieu-den-han-404326.htm",
+      "http://antt.vn/ba-nguyen-thi-nhu-loan-tro-lai-ghe-tong-giam-doc-quoc-cuong-gia-lai-404324.htm",
+      "http://antt.vn/van-tai-va-xep-do-hai-an-gelex-roi-di-vietinbank-capital-nang-so-huu-404318.htm"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "http://antt.vn/",
+    "categories": [
+      "http://antt.vn/thoi-su.htm",
+      "http://antt.vn/chinh-tri.htm",
+      "http://antt.vn/xa-hoi.htm",
+      "http://antt.vn/the-gioi.htm",
+      "http://antt.vn/binh-luan.htm",
+      "http://antt.vn/tai-chinh-ngan-hang.htm",
+      "http://antt.vn/tai-chinh.htm",
+      "http://antt.vn/ngan-hang.htm",
+      "http://antt.vn/tien-te.htm",
+      "http://antt.vn/chung-khoan.htm",
+      "http://antt.vn/phap-luat.htm",
+      "http://antt.vn/nhat-ky-an-ninh.htm",
+      "http://antt.vn/dieu-tra.htm",
+      "http://antt.vn/luat-gia-tu-van.htm",
+      "http://antt.vn/ban-doc.htm",
+      "http://antt.vn/an-ninh-truyen-thong.htm",
+      "http://antt.vn/kinh-te-dau-tu.htm",
+      "http://antt.vn/dau-tu.htm",
+      "http://antt.vn/kinh-te.htm",
+      "http://antt.vn/ho-so-du-an.htm",
+      "http://antt.vn/dong-hanh-cung-dn.htm",
+      "http://antt.vn/ban-tin-media.htm",
+      "http://antt.vn/hinh-anh-trong-ngay.htm",
+      "http://antt.vn/inforgrafic.htm",
+      "http://antt.vn/24-gio-qua.htm",
+      "http://antt.vn/can-biet.htm",
+      "http://antt.vn/chuyen-khoa-hoc.htm",
+      "http://antt.vn/cam-nang-cuoc-song.htm",
+      "http://antt.vn/san-pham-moi.htm",
+      "http://antt.vn/quang-cao.htm",
+      "http://antt.vn/bat-dong-san.htm",
+      "http://antt.vn/thi-truong-nha-dat.htm",
+      "http://antt.vn/phap-luat-dat-dai.htm",
+      "http://antt.vn/goc-tu-van.htm",
+      "http://antt.vn/nha-o-xa-hoi.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "antt.vn",
+    "checkedAt": "2026-11-09T03:56:47.636Z",
+    "url": "http://antt.vn/bo-truong-bo-y-te-giai-trinh-quy-dinh-hien-mo-tang-voi-nguoi-duoi-18-tuoi-404334.htm",
+    "finalUrl": "http://antt.vn/bo-truong-bo-y-te-giai-trinh-quy-dinh-hien-mo-tang-voi-nguoi-duoi-18-tuoi-404334.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5430,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:29.463Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/antt.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "antt.vn",
+    "parsedArticles": 33,
+    "distinctHashes": 33,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesAttempted": 35,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 318,
+    "checkedArticleUrls": 36,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 318,
+        "attempted": 36,
+        "passed": 33,
+        "distinctContents": 33,
+        "distinctHashes": 33
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "isocial.vn",
+  "siteId": "isocial.vn",
+  "registrableDomain": "isocial.vn",
+  "homepage": "https://isocial.vn/",
+  "allowedHosts": [
+    "isocial.vn",
+    "www.isocial.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://isocial.vn/",
+    "categories": [
+      "https://isocial.vn/tin-tuc-24h/",
+      "https://isocial.vn/chuyen-muc/thoi-su/",
+      "https://isocial.vn/chuyen-muc/thoi-su/doi-song-dan-sinh/",
+      "https://isocial.vn/chuyen-muc/thoi-su/do-thi/",
+      "https://isocial.vn/chuyen-muc/thoi-su/cong-dong/",
+      "https://isocial.vn/chuyen-muc/thoi-su/nong-tren-mang/"
+    ]
+  },
+  "title": {
+    "value": "Vinamilk gia nhập Liên minh Niềm tin số, chung tay bảo vệ trẻ em trên môi trường mạng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:58.129Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:48.715Z",
+    "independentHoldouts": [
+      "https://isocial.vn/kinh-doanh/vib-lai-truoc-thue-gan-7-600-ty-dong-trong-9-thang",
+      "https://isocial.vn/thoi-su/nhieu-duong-o-dong-nai-ngap-gan-nua-met-do-mua-lon/",
+      "https://isocial.vn/thoi-su/khong-mua-gi-them-nhung-tien-van-hao-hut-co-the-ban-dang-mac-6-sai-lam-nay/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://isocial.vn/kinh-doanh/vinamilk-gia-nhap-lien-minh-niem-tin-so-chung-tay-bao-ve-tre-em-tren-moi-truong-mang",
+      "https://isocial.vn/kinh-doanh/vib-lai-truoc-thue-gan-7-600-ty-dong-trong-9-thang",
+      "https://isocial.vn/thoi-su/nhieu-duong-o-dong-nai-ngap-gan-nua-met-do-mua-lon/",
+      "https://isocial.vn/thoi-su/khong-mua-gi-them-nhung-tien-van-hao-hut-co-the-ban-dang-mac-6-sai-lam-nay/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

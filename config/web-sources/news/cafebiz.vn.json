@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafebiz.vn",
+  "siteId": "cafebiz.vn",
+  "registrableDomain": "cafebiz.vn",
+  "homepage": "https://cafebiz.vn/",
+  "allowedHosts": [
+    "cafebiz.vn",
+    "www.cafebiz.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Phát hiện 14 người nước ngoài nghi lừa đảo qua sàn chứng khoán ảo",
+    "strategy": "selector",
+    "selector": ".content h1.title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content .detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:11.572Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cafebiz.vn/phat-hien-14-nguoi-nuoc-ngoai-nghi-lua-dao-qua-san-chung-khoan-ao-176261108210740223.chn",
+      "https://cafebiz.vn/binh-yen-tro-lai-o-vung-nui-khanh-hoa-sau-17-ngay-thap-thom-lo-au-176261108212745825.chn",
+      "https://cafebiz.vn/doanh-nghiep-muon-co-che-3-uu-dai-lam-nha-xa-hoi-cho-thue-o-tphcm-176261108193240467.chn",
+      "https://cafebiz.vn/choang-voi-muc-tra-gia-dat-gan-15-ty-dong-m-o-ninh-binh-176261108160939915.chn",
+      "https://cafebiz.vn/shark-binh-vu-an-cong-ty-ngan-luong-la-bai-hoc-voi-cac-doanh-nghiep-cong-nghe-176261108224251325.chn"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafebiz.vn/",
+    "categories": [
+      "https://cafebiz.vn/xa-hoi.chn",
+      "https://cafebiz.vn/vi-mo.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh.chn",
+      "https://cafebiz.vn/cong-nghe.chn",
+      "https://cafebiz.vn/song.chn",
+      "https://cafebiz.vn/xa-hoi/phap-luat.chn",
+      "https://cafebiz.vn/xa-hoi/trong-nuoc.chn",
+      "https://cafebiz.vn/xa-hoi/the-gioi.chn",
+      "https://cafebiz.vn/vi-mo/dia-phuong.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/special.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/bat-dong-san.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/ngan-hang-tai-chinh.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/chung-khoan.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/san-xuat.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/ban-le.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/dich-vu.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/cong-nghe.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/startup.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/quoc-te.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/quan-tri.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/nghe-nghiep.chn",
+      "https://cafebiz.vn/cau-chuyen-kinh-doanh/marketing.chn",
+      "https://cafebiz.vn/cong-nghe/san-pham-cong-nghe.chn",
+      "https://cafebiz.vn/cong-nghe/o-to-xe-may.chn",
+      "https://cafebiz.vn/cong-nghe/cong-nghe-moi.chn",
+      "https://cafebiz.vn/cong-nghe/khoa-hoc.chn",
+      "https://cafebiz.vn/song/du-lich.chn",
+      "https://cafebiz.vn/song/giao-duc.chn",
+      "https://cafebiz.vn/song/gia-dinh.chn",
+      "https://cafebiz.vn/song/suc-khoe.chn",
+      "https://cafebiz.vn/song/phong-cach-song.chn",
+      "https://cafebiz.vn/song/giai-tri.chn",
+      "https://cafebiz.vn/song/bai-hoc-cuoc-song.chn",
+      "https://cafebiz.vn/danh-sach-chu-de.chn"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?cafebiz.vn/.*?(\\d{6,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafebiz.vn",
+    "checkedAt": "2026-11-09T03:56:53.770Z",
+    "url": "https://cafebiz.vn/phat-hien-14-nguoi-nuoc-ngoai-nghi-lua-dao-qua-san-chung-khoan-ao-176261108210740223.chn",
+    "finalUrl": "https://cafebiz.vn/phat-hien-14-nguoi-nuoc-ngoai-nghi-lua-dao-qua-san-chung-khoan-ao-176261108210740223.chn",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1584,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafebiz.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 53,
+    "checkedArticleUrls": 57,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 53,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 798,
+        "passed": 53,
+        "distinctHashes": 53
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cafebiz.vn/nhung-sieu-du-an-dia-oc-cua-ty-phu-pham-nhat-vuong-lien-tuc-nang-von-dau-tu-176261110144339142.chn",
+      "https://cafebiz.vn/pho-chu-tich-hiep-hoi-ngan-hang-khong-nha-bang-nao-muon-lai-suat-cho-vay-o-muc-cao-176261110150839041.chn",
+      "https://cafebiz.vn/ong-gian-tu-trung-lam-an-tu-te-de-kinh-doanh-thanh-cong-la-mot-quan-niem-con-nong-176261110143737901.chn",
+      "https://cafebiz.vn/mixue-dong-hang-loat-cua-hang-17626111015103466.chn",
+      "https://cafebiz.vn/chu-tich-fedex-chau-a-thai-binh-duong-o-singapore-toi-tu-san-bay-ve-toi-nha-mat-45-phut-nhung-o-tphcm-toi-mat-45-phut-chi-de-xep-hang-176261110094839624.chn",
+      "https://cafebiz.vn/hang-xe-dien-do-ong-pham-nhat-minh-hoang-dieu-hanh-co-dong-thai-moi-tai-lao-176261110112829348.chn",
+      "https://cafebiz.vn/sep-dragon-capital-dau-tu-o-viet-nam-thuc-su-len-voi-xuong-cho-tiet-lo-ly-do-gan-bo-voi-dien-may-xanh-176261110110840235.chn",
+      "https://cafebiz.vn/bat-ngo-ty-phu-tran-dinh-long-shark-phu-chu-tich-sacombank-va-loat-ceo-lon-cung-hoc-tai-ngoi-truong-duoc-vi-nhu-stanford-viet-nam-176261109203726649.chn",
+      "https://cafebiz.vn/chinh-thuc-cong-ty-cua-ty-phu-pham-nhat-vuong-dung-dau-lien-danh-lam-sieu-to-hop-cang-gan-8-ty-usd-cua-vn-176261110154614621.chn",
+      "https://cafebiz.vn/hai-nguoi-tiep-xuc-voi-ca-nao-mo-cau-o-tay-ninh-xuat-hien-trieu-chung-sot-176261110143203794.chn",
+      "https://cafebiz.vn/giao-su-ho-xuan-nang-ra-mat-robot-quet-duong-chay-hoan-toan-bang-dien-biet-tranh-xe-may-o-to-dinh-vi-chinh-xac-toi-10-cm-176261110142332168.chn",
+      "https://cafebiz.vn/thanh-pho-giau-nhat-mien-bac-sap-co-cong-vien-rong-gan-93ha-lon-gan-gap-doi-cong-vien-thong-nhat-va-gap-5-cong-vien-hoa-binh-17626111015232873.chn",
+      "https://cafebiz.vn/hoc-mba-ca-nhan-hoa-xu-huong-phat-trien-trong-thoi-dai-40-176261110144330299.chn",
+      "https://cafebiz.vn/vietcap-lan-toa-gia-tri-thinh-vuong-qua-chuong-trinh-nang-tam-cuoc-song-kien-tao-tuong-lai-176261110140951963.chn",
+      "https://cafebiz.vn/mien-bac-chuyen-ret-bac-si-chi-ro-nhung-bien-co-co-the-cuop-di-tinh-mang-176261110143022648.chn",
+      "https://cafebiz.vn/chi-nho-claude-sua-so-trang-roi-di-an-trua-giao-su-dai-hoc-mat-toan-bo-giao-an-va-ghi-chu-suot-mot-nam-qua-176261110144911861.chn",
+      "https://cafebiz.vn/bat-ngo-danh-tinh-nhom-nguoi-dung-sau-phim-ai-12-ty-luot-xem-o-trung-quoc-176261110142151666.chn",
+      "https://cafebiz.vn/de-nghi-dieu-tra-vu-cong-ty-cp-tap-doan-duong-dong-hach-toan-am-123-trieu-lit-xang-dau-17626111015193168.chn",
+      "https://cafebiz.vn/nha-dau-tu-san-bds-khi-dong-tien-chuyen-dich-nhung-tieu-chi-giup-tranh-sut-ho-176261110141959702.chn",
+      "https://cafebiz.vn/dang-lan-truyen-hinh-anh-ceo-nvidia-jensen-huang-san-so-om-cham-1-my-nhan-ngay-truoc-vu-ngoai-tinh-chan-dong-176261110151625182.chn",
+      "https://cafebiz.vn/4-loai-qua-ung-thu-phoi-ghet-nhat-tren-doi-176261110142508723.chn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 4
+    },
+    "checkedAt": "2026-11-10T09:14:40.117Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafebiz.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "cafebiz.vn",
+      "siteId": "cafebiz.vn",
+      "registrableDomain": "cafebiz.vn",
+      "homepage": "https://cafebiz.vn/",
+      "allowedHosts": [
+        "cafebiz.vn",
+        "www.cafebiz.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "GS Đặng Hùng Võ tuổi 80, 3 lần ly hôn đều để lại nhà, tay trắng làm lại: “Kỳ kèo với nhau để làm gì?”",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:15.719Z",
+        "trainingUrls": [
+          "https://cafebiz.vn/gs-dang-hung-vo-tuoi-80-3-lan-ly-hon-deu-de-lai-nha-tay-trang-lam-lai-ky-keo-voi-nhau-de-lam-gi-176260922110101789.chn",
+          "https://cafebiz.vn/chu-tich-nam-long-group-nguyen-xuan-quang-nguyen-tac-lut-thi-lut-ca-lang-nhung-dn-phai-biet-chia-se-rui-ro-voi-khach-hangneu-suc-chua-du-chung-toi-thang-than-khuyen-khach-hang-chua-nen-mua-nha-voi-176261013082534652.chn"
+        ],
+        "holdoutUrls": [
+          "https://cafebiz.vn/hang-xe-dien-do-ong-pham-nhat-minh-hoang-dieu-hanh-co-dong-thai-moi-tai-lao-176261110112829348.chn",
+          "https://cafebiz.vn/don-tin-vui-vietnam-airlines-bat-ngo-co-them-hon-4500-ty-dong-chi-sau-vai-gio-176261110113016188.chn"
+        ]
+      }
+    }
+  ]
+}

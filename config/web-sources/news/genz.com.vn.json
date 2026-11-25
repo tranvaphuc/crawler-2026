@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "genz.com.vn",
+  "siteId": "genz.com.vn",
+  "registrableDomain": "genz.com.vn",
+  "homepage": "https://genz.com.vn/",
+  "allowedHosts": [
+    "genz.com.vn",
+    "www.genz.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://genz.com.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "MacBook Pro M6 ra mắt: Đồ họa nhanh hơn 30%, pin đến 24 giờ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:30.282Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:16.954Z",
+    "independentHoldouts": [
+      "https://genz.com.vn/macbook-pro-m6-co-gi-moi-so-voi-the-he-m5",
+      "https://genz.com.vn/macbook-pro-m5-pro-ra-mat-gia-tu-80-trieu-dong",
+      "https://genz.com.vn/imac-m6-hieu-nang-manh-hon-kha-nang-ai-vuot-troi"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://genz.com.vn/macbook-pro-m6-do-hoa-nhanh-hon-30-pin-den-24-gio",
+      "https://genz.com.vn/macbook-pro-m6-co-gi-moi-so-voi-the-he-m5",
+      "https://genz.com.vn/macbook-pro-m5-pro-ra-mat-gia-tu-80-trieu-dong",
+      "https://genz.com.vn/imac-m6-hieu-nang-manh-hon-kha-nang-ai-vuot-troi"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

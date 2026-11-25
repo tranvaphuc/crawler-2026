@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "siteName": "genk.vn",
+  "siteId": "genk.vn",
+  "registrableDomain": "genk.vn",
+  "homepage": "https://genk.vn/",
+  "allowedHosts": [
+    "genk.vn",
+    "www.genk.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Apple bảo có hơn 100.000 ứng dụng được tối ưu cho iPhone Duo, ấy thế mà Google vẫn... \"làm ngơ\"",
+    "strategy": "selector",
+    "selector": ".kbwc-header h1.kbwc-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:08.492Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://genk.vn/apple-bao-co-hon-100000-ung-dung-duoc-toi-uu-cho-iphone-duo-ay-the-ma-google-van-lam-ngo-165261108162841385.chn",
+      "https://genk.vn/canh-giac-voi-cac-chieu-tro-cai-ios-len-dien-thoai-android-165261108153613866.chn",
+      "https://genk.vn/smartwatch-cho-hoi-vot-thu-honor-watch-6-co-che-do-choi-cau-long-cuc-xin-pin-trau-2-tuan-ma-gia-chi-39-trieu-dong-165261108132017655.chn",
+      "https://genk.vn/ai-hack-mien-phi-dang-nham-vao-cac-ngan-hang-o-dong-nam-a-165261108155642289.chn",
+      "https://genk.vn/tren-san-xiaomi-robot-vacuum-6-pro-gia-khoang-25-trieu-biet-quan-sat-lau-bang-con-lan-va-tu-cham-soc-sau-moi-luot-don-165261108134321064.chn"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://genk.vn/",
+    "categories": [
+      "https://genk.vn/mobile.chn",
+      "https://genk.vn/ai.chn",
+      "https://genk.vn/tin-ict.chn",
+      "https://genk.vn/internet.chn",
+      "https://genk.vn/kham-pha.chn",
+      "https://genk.vn/xem-mua-luon.chn",
+      "https://genk.vn/xe.chn",
+      "https://genk.vn/apps-games.chn",
+      "https://genk.vn/do-choi-so.chn",
+      "https://genk.vn/mobile/dien-thoai.chn",
+      "https://genk.vn/mobile/may-tinh-bang.chn",
+      "https://genk.vn/internet/digital-marketing.chn",
+      "https://genk.vn/internet/media.chn",
+      "https://genk.vn/kham-pha/lich-su.chn",
+      "https://genk.vn/kham-pha/tri-thuc.chn",
+      "https://genk.vn/tra-da-cong-nghe.chn",
+      "https://genk.vn/tra-da-cong-nghe/tan-man.chn",
+      "https://genk.vn/tra-da-cong-nghe/y-tuong-sang-tao.chn",
+      "https://genk.vn/blockchain.chn",
+      "https://genk.vn/blockchain/xu-huong.chn",
+      "https://genk.vn/blockchain/cong-nghe.chn",
+      "https://genk.vn/blockchain/nhan-vat.chn",
+      "https://genk.vn/thu-thuat.chn",
+      "https://genk.vn/song.chn",
+      "https://genk.vn/nhom-chu-de/emagazine.chn",
+      "https://genk.vn/gia-dung.chn"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?genk.vn/.*?(\\d{9,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "genk.vn",
+    "checkedAt": "2026-11-09T03:57:05.017Z",
+    "url": "https://genk.vn/apple-bao-co-hon-100000-ung-dung-duoc-toi-uu-cho-iphone-duo-ay-the-ma-google-van-lam-ngo-165261108162841385.chn",
+    "finalUrl": "https://genk.vn/apple-bao-co-hon-100000-ung-dung-duoc-toi-uu-cho-iphone-duo-ay-the-ma-google-van-lam-ngo-165261108162841385.chn",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2816,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "genk.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 43,
+    "checkedArticleUrls": 45,
+    "freshArticleChecks": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 43,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 26,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 635,
+        "passed": 43,
+        "distinctHashes": 43
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://genk.vn/the-gioi-dao-dien-android-chay-ios-con-iphone-lai-chay-android-16526111010592281.chn",
+      "https://genk.vn/hang-trung-quoc-ra-mat-dien-thoai-man-hinh-rong-nhu-huawei-pura-x-view-gia-chua-toi-4-trieu-nhung-nhin-anh-thuc-te-ma-hoang-luon-165261110025153927.chn",
+      "https://genk.vn/pin-du-phong-gio-co-ca-tan-nhiet-nuoc-hieu-qua-toi-dau-165261110115641903.chn",
+      "https://genk.vn/nam-gioi-an-uong-kieu-nay-testosterone-am-tham-suy-giam-nghien-cuu-chi-ra-su-that-dang-chu-y-165261110145141327.chn",
+      "https://genk.vn/xe-dien-trung-quoc-mat-gia-gan-mot-nua-sau-3-nam-165261110140012631.chn",
+      "https://genk.vn/lam-the-nao-de-di-doi-ca-mot-toa-nha-ma-khong-lam-no-vo-vun-165261110113015017.chn",
+      "https://genk.vn/man-thoat-chet-khong-tuong-duoi-long-song-sau-nho-hoc-theo-tuyet-chieu-trong-tham-tu-lung-danh-conan-165261110120855188.chn",
+      "https://genk.vn/nhieu-mau-xe-trung-quoc-gap-su-co-dan-toi-gay-banh-165261110135540046.chn",
+      "https://genk.vn/tren-tay-op-lung-nomad-danh-cho-iphone-18-pro-va-pro-max-da-cao-cap-cam-em-cang-xai-lau-cang-len-nuoc-mau-dep-165261110134608862.chn",
+      "https://genk.vn/tram-vu-tru-cua-trung-quoc-da-tao-ra-vat-lieu-cham-toi-nguong-vat-chat-nhan-tao-lanh-nhat-lich-su-nhan-loai-bang-cach-nao-165261110112930636.chn",
+      "https://genk.vn/kymco-x-town-s-350-trinh-lang-xe-ga-duong-truong-cop-khung-lieu-co-cua-dau-xe-nhat-165261110112820226.chn",
+      "https://genk.vn/muon-nhan-du-160-trieu-dong-dam-bao-thu-nhap-khi-chay-grab-tai-xe-xe-dien-phai-chay-khoang-27-chuyen-moi-ngay-165261110114028939.chn",
+      "https://genk.vn/bieu-tuong-xe-ga-y-lambretta-tung-ban-gioi-han-80-nam-co-lam-chao-dao-thi-truong-viet-165261110112522756.chn",
+      "https://genk.vn/yamaha-nmax-e-lo-dien-xe-ga-dien-suc-keo-khung-lieu-co-cua-canh-tranh-tai-viet-nam-165261110112346268.chn",
+      "https://genk.vn/5-smartphone-tam-gia-duoi-8-trieu-dong-dang-mua-nhat-hien-nay-camera-200mp-pin-8000mah-man-hinh-144hz-165261109164042714.chn",
+      "https://genk.vn/dinh-vi-thuong-hieu-chua-ro-truyen-thong-kho-tao-dau-an-165261110110034343.chn",
+      "https://genk.vn/chi-nho-claude-sua-so-trang-roi-di-an-trua-giao-su-dai-hoc-mat-toan-bo-giao-an-va-ghi-chu-suot-mot-nam-qua-165261110105114242.chn",
+      "https://genk.vn/lithium-va-cu-soc-66-ty-usd-cuoc-doi-ngoi-lich-su-khi-vang-trang-khong-con-la-phu-pham-cua-ev-165261110111930024.chn",
+      "https://genk.vn/mark-zuckerberg-nguoi-chong-liem-cuoi-cung-cua-internet-165261110081632155.chn",
+      "https://genk.vn/tren-tay-lenovo-loq-15iph11-core-ultra-7-rtx-5060-va-ram-32gb-chien-tot-game-aaa-mang-di-hoc-hay-di-lam-van-tien-165261110024033083.chn",
+      "https://genk.vn/nguoi-phu-nu-khien-ceo-jensen-huang-thua-nhan-ngoai-tinh-sau-41-nam-hon-nhan-so-huu-ly-lich-gay-choang-lien-quan-thuong-vu-chip-48-ty-usd-165261110081324251.chn",
+      "https://genk.vn/fpt-mang-bai-toan-ai-chu-quyen-toi-tokyo-muon-viet-nam-va-nhat-ban-cung-xay-ha-tang-nhung-moi-ben-giu-du-lieu-cua-minh-165261110085001988.chn",
+      "https://genk.vn/bac-si-xem-web-nguoi-lon-lam-may-benh-vien-nhiem-ma-doc-sep-cap-may-rieng-165261110081129848.chn",
+      "https://genk.vn/mua-de-nho-tro-gia-150000-baht-gio-chu-xe-dien-trung-quoc-o-thai-phai-tu-hoc-thay-loc-gio-vi-trung-tam-dich-vu-da-dong-cua-165261109221438943.chn",
+      "https://genk.vn/vi-sao-nvidia-la-bach-nguyet-quang-voi-nganh-cong-nghe-trung-quoc-165261110080752258.chn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:31.573Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/genk.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "genk.vn",
+      "siteId": "genk.vn",
+      "registrableDomain": "genk.vn",
+      "homepage": "https://genk.vn/",
+      "allowedHosts": [
+        "genk.vn",
+        "www.genk.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Người trẻ, muốn thành công, không chỉ cần tài năng mà còn cần có một thái độ tốt",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".sp-detail-maincontent",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:43.458Z",
+        "trainingUrls": [
+          "https://genk.vn/nguoi-tre-muon-thanh-cong-khong-chi-can-tai-nang-ma-con-can-co-mot-thai-do-tot-20180302185327324.chn",
+          "https://genk.vn/taiwan-excellence-khi-nhung-giac-mo-lon-khoi-nguon-tu-dot-pha-cong-nghe-20190124180819366.chn",
+          "https://genk.vn/danh-gia-lg-gram-sieu-nhe-ma-van-cuc-ky-huu-dung-20171005182003898.chn",
+          "https://genk.vn/hay-lam-quen-voi-2027-khi-dien-thoai-co-hinh-dang-nhu-cuon-ho-chieu-165261107190838126.chn"
+        ],
+        "holdoutUrls": [
+          "https://genk.vn/dongle-nghe-nhac-dat-gap-doi-co-nghe-hay-hon-cau-tra-loi-khong-don-gian-nhu-moi-nguoi-nghi-165261109172434499.chn",
+          "https://genk.vn/ceo-nvidia-jensen-huang-thua-nhan-ngoai-tinh-gui-loi-xin-loi-den-vo-va-cac-con-165261109063700563.chn"
+        ]
+      }
+    }
+  ]
+}

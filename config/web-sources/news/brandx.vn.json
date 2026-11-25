@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "siteName": "brandx.vn",
+  "siteId": "brandx.vn",
+  "registrableDomain": "brandx.vn",
+  "homepage": "https://brandx.vn/",
+  "allowedHosts": [
+    "brandx.vn",
+    "www.brandx.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Phú Quốc khởi công xây dựng Trụ sở Trung tâm Hành chính đặc khu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:05.963Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://brandx.vn/diem-tin/phu-quoc-khoi-cong-xay-dung-tru-so-trung-tam-hanh-chinh-dac-khu.html?categoryId=1675486",
+      "https://brandx.vn/diem-tin/chuyen-gia-canh-bao-dau-hieu-lom-nguc-o-tre-khuyen-cao-can-thiep-som.html?categoryId=1675486",
+      "https://brandx.vn/diem-tin/phu-quoc-khoi-cong-xay-dung-tru-so-trung-tam-hanh-chinh-dac-khu.html",
+      "https://brandx.vn/chien-luoc/de-xuat-bo-gioi-han-12-thang-uy-quyen-nhan-luong-huu-nguoi-cao-tuoi-thuan-tien-hon.html",
+      "https://brandx.vn/diem-tin/phat-trien-can-gio-thanh-khong-gian-do-thi-bien-xanh-thong-minh.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://brandx.vn/",
+    "categories": [
+      "https://brandx.vn/diem-tin",
+      "https://brandx.vn/marketing2",
+      "https://brandx.vn/chien-luoc",
+      "https://brandx.vn/kien-thuc",
+      "https://brandx.vn/thi-truong",
+      "https://brandx.vn/thuong-hieu",
+      "https://brandx.vn/cau-chuyen-kinh-doanh",
+      "https://brandx.vn/video",
+      "https://brandx.vn/giai-tri",
+      "https://brandx.vn/diem-tin/thuong-mai",
+      "https://brandx.vn/diem-tin/doi-song",
+      "https://brandx.vn/diem-tin/y-te",
+      "https://brandx.vn/diem-tin/xay-dung",
+      "https://brandx.vn/emagazine",
+      "https://brandx.vn/thuong-hieu/thuong-hieu-uy-tin",
+      "https://brandx.vn/thuong-hieu/thuong-hieu-xanh",
+      "https://brandx.vn/thuong-hieu/ocop"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "brandx.vn",
+    "checkedAt": "2026-11-09T03:56:52.940Z",
+    "url": "https://brandx.vn/diem-tin/phu-quoc-khoi-cong-xay-dung-tru-so-trung-tam-hanh-chinh-dac-khu.html?categoryId=1675486",
+    "finalUrl": "https://brandx.vn/diem-tin/phu-quoc-khoi-cong-xay-dung-tru-so-trung-tam-hanh-chinh-dac-khu.html?categoryId=1675486",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2453,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "brandx.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 29,
+    "checkedArticleUrls": 47,
+    "freshArticleChecks": 25,
+    "parserIssues": 18,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 21,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 108,
+        "passed": 29,
+        "distinctHashes": 21
+      },
+      {
+        "name": "video",
+        "discovered": 24,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://brandx.vn/diem-tin/ha-noi-rao-chan-duong-nguyen-trai-ban-dem-de-thi-cong-vanh-dai-2-5.html",
+      "https://brandx.vn/diem-tin/xuat-khau-nong-lam-thuy-san-dat-hon-63-ty-usd-trong-10-thang-nam-2026.html",
+      "https://brandx.vn/diem-tin/tphcm-yeu-cau-khan-truong-hoan-thien-ho-so-dua-29-xa-len-phuong.html",
+      "https://brandx.vn/diem-tin/mua-lon-gay-ngap-mot-so-doan-duong-ho-chi-minh-dat-da-tran-xuong-quoc-lo-49-o-hue.html",
+      "https://brandx.vn/diem-tin/nga-neu-cao-buoc-moi-ve-the-luc-chi-dao-vu-no-duong-ong-nord-stream.html",
+      "https://brandx.vn/diem-tin/noi-bo-dang-cong-hoa-my-bat-dong-quanh-de-xuat-luan-toi-bo-truong-bo-chien-tranh.html",
+      "https://brandx.vn/thi-truong/gia-xang-dau-hom-nay-10-11-gia-dau-the-gioi-giam-hon-7-usd.html?categoryId=1675494",
+      "https://brandx.vn/diem-tin/ha-noi-rao-chan-duong-nguyen-trai-ban-dem-de-thi-cong-vanh-dai-2-5.html?categoryId=1675486",
+      "https://brandx.vn/thi-truong/ban-tin-nong-san-hom-nay-10-11-gia-ca-phe-tang-nhe.html?categoryId=1675494",
+      "https://brandx.vn/thi-truong/gia-vang-hom-nay-chieu-9-11-bat-tang.html?categoryId=1675494",
+      "https://brandx.vn/diem-tin/xuat-khau-nong-lam-thuy-san-dat-hon-63-ty-usd-trong-10-thang-nam-2026.html?categoryId=1675486",
+      "https://brandx.vn/diem-tin/tphcm-yeu-cau-khan-truong-hoan-thien-ho-so-dua-29-xa-len-phuong.html?categoryId=1675486",
+      "https://brandx.vn/cau-chuyen-kinh-doanh/sang-kien-tu-nguoi-lao-dong-gop-phan-nang-cao-nang-suat.html?categoryId=1675500",
+      "https://brandx.vn/cau-chuyen-kinh-doanh/mo-rong-kenh-tieu-thu-nong-san-nho-cong-nghe.html?categoryId=1675500",
+      "https://brandx.vn/cau-chuyen-kinh-doanh/lam-muoi-o-ninh-diem.html?categoryId=1675500"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 15,
+      "original_publication_not_yet_confirmed": 3
+    },
+    "checkedAt": "2026-11-10T09:14:34.798Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/brandx.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tieudungvietonline.net",
+  "siteId": "tieudungvietonline.net",
+  "registrableDomain": "tieudungvietonline.net",
+  "homepage": "https://tieudungvietonline.net/",
+  "allowedHosts": [
+    "tieudungvietonline.net",
+    "www.tieudungvietonline.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tieudungvietonline.net/",
+    "categories": [
+      "https://tieudungvietonline.net/c/tin-tuc",
+      "https://tieudungvietonline.net/c/tieu-dung",
+      "https://tieudungvietonline.net/c/kinh-te",
+      "https://tieudungvietonline.net/c/doanh-nghiep-doanh-nhan",
+      "https://tieudungvietonline.net/c/suc-khoe-doi-song",
+      "https://tieudungvietonline.net/c/cong-nghe-va-xe",
+      "https://tieudungvietonline.net/c/quoc-te"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Kao Việt Nam kỷ niệm 30 năm hoạt động tại Việt Nam và công bố Chương trình “Tăng cường chăm sóc y tế” (Care within Reach)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:25.852Z",
+    "frozenAt": "2026-11-16T02:01:17.387Z",
+    "trainingUrl": "https://tieudungvietonline.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a414993.html",
+    "independentHoldouts": [
+      "https://tieudungvietonline.net/apple-bao-co-hon-100000-ung-dung-duoc-toi-uu-cho-iphone-duo-ay-the-ma-google-van-lam-ngo-a416861.html",
+      "https://tieudungvietonline.net/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-a416852.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tieudungvietonline.net/apple-bao-co-hon-100000-ung-dung-duoc-toi-uu-cho-iphone-duo-ay-the-ma-google-van-lam-ngo-a416861.html",
+      "https://tieudungvietonline.net/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-a416852.html",
+      "https://tieudungvietonline.net/tong-bi-thu-chu-tich-nuoc-to-lam-tham-tinh-kanagawa-cua-nhat-ban-a416988.html",
+      "https://tieudungvietonline.net/tong-bi-thu-chu-tich-nuoc-to-lam-gap-thong-doc-cac-dia-phuong-cua-nhat-ban-a416989.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

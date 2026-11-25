@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "siteName": "biztek.vn",
+  "siteId": "biztek.vn",
+  "registrableDomain": "biztek.vn",
+  "homepage": "https://biztek.vn/",
+  "allowedHosts": [
+    "biztek.vn",
+    "www.biztek.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Airbus hợp tác triển khai chương trình hàng không số và hợp tác với trường đại học",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:03.959Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://biztek.vn/airbus-hop-tac-trien-khai-chuong-trinh-hang-khong-so-va-hop-tac-voi-truong-dai-hoc-3056.htm",
+      "https://biztek.vn/dien-dan-3dexperience-vietnam-2026--thuc-day-ai-cong-nghiep-va-san-xuat-thong-minh-3055.htm",
+      "https://biztek.vn/motorola-ra-mat-the-he-may-tinh-bang-moto-pad-60-va-pad-70-series-dau-tien-tai-viet-nam-3054.htm",
+      "https://biztek.vn/tu-phong-thi-nghiem-dung-chung-den-toi-uu-hoa-nguon-luc-cho-nghien-cuu-3051.htm",
+      "https://biztek.vn/lenovo-thuc-day-chien-luoc-hybrid-ai-voi-loat-cong-nghe-the-he-moi-3016.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://biztek.vn/",
+    "categories": [
+      "https://biztek.vn/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "biztek.vn",
+    "checkedAt": "2026-11-09T03:56:52.410Z",
+    "url": "https://biztek.vn/airbus-hop-tac-trien-khai-chuong-trinh-hang-khong-so-va-hop-tac-voi-truong-dai-hoc-3056.htm",
+    "finalUrl": "https://biztek.vn/airbus-hop-tac-trien-khai-chuong-trinh-hang-khong-so-va-hop-tac-voi-truong-dai-hoc-3056.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2250,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "biztek.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 12,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 37,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://biztek.vn/motorola-ra-mat-the-he-may-tinh-bang-moto-pad-60-va-pad-70-series-dau-tien-tai-viet-nam-3054.htm",
+      "https://biztek.vn/ericsson-thiet-lap-nang-luc-r-d-tai-viet-nam--khang-dinh-cam-ket-dai-han-voi-doi-moi-sang-tao-va-chuyen-doi-so-3057.htm",
+      "https://biztek.vn/tu-phong-thi-nghiem-dung-chung-den-toi-uu-hoa-nguon-luc-cho-nghien-cuu-3051.htm",
+      "https://biztek.vn/lenovo-thuc-day-chien-luoc-hybrid-ai-voi-loat-cong-nghe-the-he-moi-3016.htm",
+      "https://biztek.vn/xay-dung-nguon-nhan-luc-bao-ve-ha-tang-so-truoc-lan-song-ai-3036.htm",
+      "https://biztek.vn/nhung-ap-luc-khong-ten-cua-nguoi-lam-sep-1713.htm",
+      "https://biztek.vn/apple-tung-ra-ipad-mini-moi-voi-gia-tu-19-49-trieu-dong-3053.htm",
+      "https://biztek.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-3052.htm",
+      "https://biztek.vn/sony-ra-mat-bo-ba-loa-karaoke-ult-tower-cong-suat-toi-2-150w-3049.htm",
+      "https://biztek.vn/galaxy-f70-5g-duoc-ban-voi-gia-khoi-diem-duoi-5-5-trieu-dong-3048.htm",
+      "https://biztek.vn/samsung-electronics-trinh-dien-cong-nghe-6g-tich-hop-ai-tai-my-3047.htm",
+      "https://biztek.vn/vnpt-ilis-ung-dung-dot-pha-lam-sach-co-so-du-lieu-dat-dai-3046.htm",
+      "https://biztek.vn/apple-bat-tay-lg-phat-trien-thiet-bi-nha-thong-minh-3045.htm",
+      "https://biztek.vn/airbus-hop-tac-trien-khai-chuong-trinh-hang-khong-so-va-hop-tac-voi-truong-dai-hoc-3056.htm",
+      "https://biztek.vn/dien-dan-3dexperience-vietnam-2026--thuc-day-ai-cong-nghiep-va-san-xuat-thong-minh-3055.htm",
+      "https://biztek.vn/apple-siet-ung-dung-ai-tao-anh-khoa-than-3050.htm",
+      "https://biztek.vn/ai-bien-y-tuong-den-doanh-thu-voi-toc-do-khoi-nghiep-3003.htm",
+      "https://biztek.vn/lan-song-sa-thai-trong-nganh-cong-nghe-tang-cao-giua-con-sot-ai-2923.htm",
+      "https://biztek.vn/hoat-dong-thu-hoi-no--huong-toi-quy-chuan-va-minh-bach-2914.htm",
+      "https://biztek.vn/apple-tim-kiem-nha-cung-cap-chip-du-phong-ngoai-tsmc-2909.htm",
+      "https://biztek.vn/lenovo-cong-bo-chien-dich-toan-cau-cung-david-beckham-2931.htm",
+      "https://biztek.vn/xiaomi-ra-mat-redmi-a7-va-a7-pro--gia-tu-2-95-trieu-dong-2901.htm",
+      "https://biztek.vn/gia-bo-nho-tang--cac-hang-dien-thoai-trung-quoc-chiu-suc-ep-lon-2893.htm",
+      "https://biztek.vn/lenovo-chao-don-fifa-world-cup-2026-voi-cac-phien-ban-laptop-dac-biet-2852.htm",
+      "https://biztek.vn/khi-cong-nghe-tro-thanh--ha-tang-mem--cho-du-lich-hue-phat-trien-2964.htm",
+      "https://biztek.vn/da-nang-ra-mat-hai-he-thong-so-trong-quan-tri-tai-san-cong-va-do-thi-2957.htm",
+      "https://biztek.vn/thanh-pho-ho-chi-minh-chuyen-doi-so-toan-dien-ha-tang-xay-dung-2933.htm",
+      "https://biztek.vn/chuyen-doi-so-nganh-noi-vu--huong-toi-quan-tri-thong-minh-bang-du-lieu-2890.htm",
+      "https://biztek.vn/lenovo-mang-tech-world-tro-lai-ces-2027--dinh-hinh-ky-nguyen--hybrid-ai-tiep-theo-3044.htm",
+      "https://biztek.vn/tai-cau-truc-chuong-trinh-khoa-hoc--cong-nghe-va-doi-moi-sang-tao-quoc-gia-den-nam-2035-3043.htm",
+      "https://biztek.vn/netapp-trao-quyen-cho-doanh-nghiep-xay-dung-bat-ky-dieu-gi--bat-cu-noi-dau-3041.htm",
+      "https://biztek.vn/netapp-xoa-bo-diem-nghen-luu-tru-cho-cac-ai-factory-3039.htm",
+      "https://biztek.vn/vtv-digital-giai-bai-toan-nghen-duong-truyen-truc-tuyen-tai-viet-nam-nho-aws-3038.htm",
+      "https://biztek.vn/gotyme-nang-cao-chat-luong-dich-vu-khach-hang-voi-giai-phap-van-hanh-ung-dung-ai-tren-aws-3037.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:31.144Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/biztek.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

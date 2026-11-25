@@ -1,0 +1,5 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {createRequire} from 'node:module';const require=createRequire('/opt/news-flow/current/package.json'),ch=require('cheerio'),r=JSON.parse(fs.readFileSync('/var/lib/news-flow/qc-remaining28-20261122/routes.json'));for(const site of r.sites.filter(s=>['edition.cnn.com','tieudungplus.vn'].includes(s.site)))for(const p of site.checks.filter(p=>p.file)){const text=gunzipSync(fs.readFileSync(p.file)).toString(),$=ch.load(text),xml=ch.load(text,{xmlMode:true});console.log(JSON.stringify({site:site.site,url:p.url,finalUrl:p.finalUrl,title:$('title').first().text(),canonical:$('link[rel=canonical]').attr('href'),items:xml('item').length,firstItem:xml('item').first().text().slice(0,1800),articleHosts:[...new Set($('a[href]').map((i,e)=>{try{return new URL($(e).attr('href'),p.url).hostname;}catch{return null;}}).get())].slice(0,8),articleUrls:p.articles?.slice(0,4)}));}
+NODE

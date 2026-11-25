@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tieudungthoinay.vn",
+  "siteId": "tieudungthoinay.vn",
+  "registrableDomain": "tieudungthoinay.vn",
+  "homepage": "https://tieudungthoinay.vn/",
+  "allowedHosts": [
+    "tieudungthoinay.vn",
+    "www.tieudungthoinay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Quy định mới về thẻ Căn cước cho trẻ dưới 6 tuổi chính thức có hiệu lực",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time",
+    "attribute": null,
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Giá xăng dầu đồng loạt đi xuống, xăng E10 còn hơn 21.000 đồng/lít",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:43.671Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tieudungthoinay.vn/quy-dinh-moi-ve-the-can-cuoc-cho-tre-duoi-6-tuoi-chinh-thuc-co-hieu-luc-60278.html",
+      "https://tieudungthoinay.vn/tu-172026-nguoi-lao-dong-can-luu-y-quy-dinh-moi-ve-giam-tru-thue-tncn-60105.html",
+      "https://tieudungthoinay.vn/gia-xang-dau-dong-loat-di-xuong-xang-e10-con-hon-21000-donglit-60326.html",
+      "https://tieudungthoinay.vn/bau-cu-giua-nhiem-ky-my-dang-cong-hoa-doi-mat-nguy-co-mat-quyen-kiem-soat-quoc-hoi-60321.html",
+      "https://tieudungthoinay.vn/9-ngan-hang-viet-muon-lap-ngan-hang-con-tai-trung-tam-tai-chinh-quoc-te-60322.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tieudungthoinay.vn/",
+    "categories": [
+      "https://tieudungthoinay.vn/tien-ich-gia-vang/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tieudungthoinay.vn",
+    "checkedAt": "2026-11-09T03:57:33.503Z",
+    "url": "https://tieudungthoinay.vn/quy-dinh-moi-ve-the-can-cuoc-cho-tre-duoi-6-tuoi-chinh-thuc-co-hieu-luc-60278.html",
+    "finalUrl": "https://tieudungthoinay.vn/quy-dinh-moi-ve-the-can-cuoc-cho-tre-duoi-6-tuoi-chinh-thuc-co-hieu-luc-60278.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2217,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tieudungthoinay.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 5,
+    "freshArticleChecks": 5,
+    "parserIssues": 0,
+    "transportUnconfirmed": 5,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": "not_found",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:26.304Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tieudungthoinay.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

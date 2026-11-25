@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xuctiendoanhnghiep.vn",
+  "siteId": "xuctiendoanhnghiep.vn",
+  "registrableDomain": "xuctiendoanhnghiep.vn",
+  "homepage": "https://xuctiendoanhnghiep.vn/",
+  "allowedHosts": [
+    "xuctiendoanhnghiep.vn",
+    "www.xuctiendoanhnghiep.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cao tốc Hữu Nghị - Chi Lăng thiếu đá, vướng mặt bằng đường gom",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:07.571Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/cao-toc-huu-nghi-chi-lang-thieu-da-vuong-mat-bang-duong-gom.html",
+      "https://xuctiendoanhnghiep.vn/phap-luat/cuu-thu-truong-nguyen-ba-hoan-xin-giam-nhe-hinh-phat.html",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/eurowindow-holding-day-manh-mo-rong-quy-dat-o-nghe-an.html?categoryId=1612394",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/cac-ong-lon-dang-nam-giu-thi-phan-nganh-thep-ra-sao-.html?categoryId=1612394",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/gan-6-ty-usd-nhap-khau-linh-kien-o-to-co-hoi-nao-cho-doanh-nghiep-viet-.html?categoryId=1612394"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://xuctiendoanhnghiep.vn/",
+    "categories": [
+      "https://xuctiendoanhnghiep.vn/chuong-trinh",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep",
+      "https://xuctiendoanhnghiep.vn/tin-kinh-te",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich",
+      "https://xuctiendoanhnghiep.vn/phap-luat",
+      "https://xuctiendoanhnghiep.vn/song",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/dien-gia",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/thong-tin-bao-chi2",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/tin-tuc",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/guong-mat-tieu-bieu",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/doanh-nghiep-tieu-bieu",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/thuong-hieu",
+      "https://xuctiendoanhnghiep.vn/emagazine",
+      "https://xuctiendoanhnghiep.vn/tin-kinh-te/ocop",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/tu-van",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/ngan-hang",
+      "https://xuctiendoanhnghiep.vn/song/giai-tri",
+      "https://xuctiendoanhnghiep.vn/song/du-lich",
+      "https://xuctiendoanhnghiep.vn/hop-tac-quoc-te/anh",
+      "https://xuctiendoanhnghiep.vn/media/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "xuctiendoanhnghiep.vn",
+    "checkedAt": "2026-11-09T03:57:40.644Z",
+    "url": "https://xuctiendoanhnghiep.vn/chuong-trinh/cao-toc-huu-nghi-chi-lang-thieu-da-vuong-mat-bang-duong-gom.html",
+    "finalUrl": "https://xuctiendoanhnghiep.vn/chuong-trinh/cao-toc-huu-nghi-chi-lang-thieu-da-vuong-mat-bang-duong-gom.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3416,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "xuctiendoanhnghiep.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 20,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 239,
+        "passed": 15,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/5-rau-qua-giup-ho-tro-ha-duong-huyet-an-toan.html",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu.html?categoryId=1612394",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html?categoryId=1612394",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/doanh-nghiep-phia-bac-tphcm-tuyen-gap-hang-nghin-lao-dong.html?categoryId=1612394",
+      "https://xuctiendoanhnghiep.vn/tin-kinh-te/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html?categoryId=1612422",
+      "https://xuctiendoanhnghiep.vn/tin-kinh-te/xuat-khau-go-minh-bach-nguyen-lieu-de-dap-ung-quy-tac-xuat-xu.html?categoryId=1612422",
+      "https://xuctiendoanhnghiep.vn/tin-kinh-te/ngay-9-11-ty-gia-trung-tam-giam-5-dong.html",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/mua-lon-gay-sat-lo-ngap-cuc-bo-o-xa-mien-nui-ha-tinh.html?categoryId=1612391",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/dua-quan-he-doi-tac-chien-luoc-toan-dien-viet-nam-nhat-ban-len-tam-cao-moi.html?categoryId=1612391",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/quoc-hoi-thao-luan-ve-chu-truong-dau-tu-3-du-an-duong-bo-cao-toc.html?categoryId=1612391",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/5-rau-qua-giup-ho-tro-ha-duong-huyet-an-toan.html?categoryId=1612398",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/thuc-pham-ho-tro-kiem-soat-men-gan-cao.html?categoryId=1612398",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/thuc-pham-giau-chat-xo-ho-tro-kiem-soat-luong-duong-trong-mau.html?categoryId=1612398",
+      "https://xuctiendoanhnghiep.vn/phap-luat/khoi-to-nhom-doi-tuong-thue-oto-tu-lai-roi-mang-di-cam-co-o-phu-tho.html?categoryId=5185920",
+      "https://xuctiendoanhnghiep.vn/phap-luat/cong-an-cao-bang-ngan-chan-3-vu-lua-dao-gia-danh-can-bo-cong-an.html?categoryId=5185920",
+      "https://xuctiendoanhnghiep.vn/phap-luat/phat-hien-nhieu-doanh-nghiep-co-dau-hieu-vi-pham-hinh-su-trong-mua-ban-xang-dau.html?categoryId=5185920",
+      "https://xuctiendoanhnghiep.vn/song/ro-tin-dao-dien-mc-diep-chi-nghi-viec-o-vtv-sau-20-nam-gan-bo.html?categoryId=5184836",
+      "https://xuctiendoanhnghiep.vn/song/suc-hut-lon-cua-trieu-le-dinh-vo-tinh-tao-tranh-luan.html?categoryId=5184836",
+      "https://xuctiendoanhnghiep.vn/song/bigbang-huy-show-o-thai-lan-do-mua-lon-cam-ket-hoan-tien-ve-cho-khan-gia.html?categoryId=5184836",
+      "https://xuctiendoanhnghiep.vn/phap-luat/khoi-to-nhom-doi-tuong-thue-oto-tu-lai-roi-mang-di-cam-co-o-phu-tho.html",
+      "https://xuctiendoanhnghiep.vn/phap-luat/cong-an-cao-bang-ngan-chan-3-vu-lua-dao-gia-danh-can-bo-cong-an.html",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu.html",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html",
+      "https://xuctiendoanhnghiep.vn/tin-doanh-nghiep/doanh-nghiep-phia-bac-tphcm-tuyen-gap-hang-nghin-lao-dong.html",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/thuc-pham-ho-tro-kiem-soat-men-gan-cao.html",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/thuc-pham-giau-chat-xo-ho-tro-kiem-soat-luong-duong-trong-mau.html",
+      "https://xuctiendoanhnghiep.vn/thong-tin-huu-ich/5-sai-lam-khi-an-uong-khien-huyet-ap-kho-kiem-soat-du-da-kieng-muoi.html",
+      "https://xuctiendoanhnghiep.vn/chuong-trinh/quoc-hoi-thao-luan-ve-chu-truong-dau-tu-3-du-an-duong-bo-cao-toc.html",
+      "https://xuctiendoanhnghiep.vn/bao-gia-quang-cao/bao-gia-quang-cao-2026.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:18:33.773Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/xuctiendoanhnghiep.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

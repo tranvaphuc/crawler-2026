@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtevadoisong.vn",
+  "siteId": "kinhtevadoisong.vn",
+  "registrableDomain": "kinhtevadoisong.vn",
+  "homepage": "https://kinhtevadoisong.vn/",
+  "allowedHosts": [
+    "kinhtevadoisong.vn",
+    "www.kinhtevadoisong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ngân hàng NCB hoàn thành tăng vốn điều lệ lên 19.280 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Lãi suất ngân hàng Agribank tháng 11/2025: Mức cao nhất dành cho kỳ hạn 24 tháng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "kinhtevadoisong.vn",
+      "siteId": "kinhtevadoisong.vn",
+      "registrableDomain": "kinhtevadoisong.vn",
+      "homepage": "https://kinhtevadoisong.vn/",
+      "allowedHosts": [
+        "kinhtevadoisong.vn",
+        "www.kinhtevadoisong.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Ngân hàng NCB hoàn thành tăng vốn điều lệ lên 19.280 tỷ đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:59.124Z",
+        "trainingUrls": [
+          "https://kinhtevadoisong.vn/hoi-doanh-nhan-tre-dong-nai-dong-hanh-cung-sinh-vien-trong-hanh-trinh-khoi-nghiep-doi-moi-sang-tao-voi-chu-de-ung-dung-ky-nang-so-a226036.html",
+          "https://kinhtevadoisong.vn/ngoi-dau-xuong-ten-nhung-cap-doi-xuat-sac-tai-giai-pickleball-doanh-nhan-tre-dong-nai-2025-a225482.html",
+          "https://kinhtevadoisong.vn/trung-thu-nghia-tinh-cua-clb-nu-doanh-nhan-dong-nai-tai-co-nhi-vien-thien-binh-a224837.html"
+        ],
+        "holdoutUrls": [
+          "https://kinhtevadoisong.vn/nguyen-pho-tong-cuc-truong-tong-cuc-thue-rat-bat-cap-khi-mot-nguoi-chi-cham-khai-thue-thu-nhap-ca-nhan-300000-dong-nhung-bi-phat-den-8-trieu-dong-a227998.html",
+          "https://kinhtevadoisong.vn/lien-minh-hop-tac-xa-dong-nai-nang-cao-nang-luc-can-bo-huong-den-quan-tri-hien-dai-bang-ai-va-kpi-a247117.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:34.585Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://kinhtevadoisong.vn/index%2ephp/lai-suat-ngan-hang-agribank-thang-112025-muc-cao-nhat-danh-cho-ky-han-24-thang-a228851.html",
+      "https://kinhtevadoisong.vn/index%2ephp/9-thang-2025-tpbank-duy-tri-tang-truong-hai-chu-so-tong-tai-san-vuot-moc-450000-ty-dong-a228108.html",
+      "https://kinhtevadoisong.vn/index%2ephp/ngan-hang-ncb-hoan-thanh-tang-von-dieu-le-len-19280-ty-dong-a228079.html",
+      "https://kinhtevadoisong.vn/index%2ephp/nguyen-pho-tong-cuc-truong-tong-cuc-thue-rat-bat-cap-khi-mot-nguoi-chi-cham-khai-thue-thu-nhap-ca-nhan-300000-dong-nhung-bi-phat-den-8-trieu-dong-a227998.html",
+      "https://kinhtevadoisong.vn/index%2ephp/doan-tham-dinh-so-07-khao-sat-thuc-te-5-doanh-nghiep-tai-tphcm-trong-khuon-kho-giai-thuong-sao-vang-dat-viet-2026-a247113.html",
+      "https://kinhtevadoisong.vn/index%2ephp/doan-tham-dinh-sao-vang-dat-viet-2026-khao-sat-3-doanh-nghiep-tai-tphcm-a247112.html",
+      "https://kinhtevadoisong.vn/lien-minh-hop-tac-xa-dong-nai-nang-cao-nang-luc-can-bo-huong-den-quan-tri-hien-dai-bang-ai-va-kpi-a247117.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtevadoisong.vn/",
+    "categories": [
+      "https://kinhtevadoisong.vn/tin-moi",
+      "https://kinhtevadoisong.vn/video",
+      "https://kinhtevadoisong.vn/c/tieu-diem-1",
+      "https://kinhtevadoisong.vn/c/kinh-te",
+      "https://kinhtevadoisong.vn/c/doanh-nghiep",
+      "https://kinhtevadoisong.vn/c/doi-song",
+      "https://kinhtevadoisong.vn/c/y-te",
+      "https://kinhtevadoisong.vn/c/phap-luat",
+      "https://kinhtevadoisong.vn/photo",
+      "https://kinhtevadoisong.vn/podcasts",
+      "https://kinhtevadoisong.vn/infographic",
+      "https://kinhtevadoisong.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtevadoisong.vn",
+    "checkedAt": "2026-11-09T03:57:12.031Z",
+    "url": "https://kinhtevadoisong.vn/index%2ephp/lai-suat-ngan-hang-agribank-thang-112025-muc-cao-nhat-danh-cho-ky-han-24-thang-a228851.html",
+    "finalUrl": "https://kinhtevadoisong.vn/index%2ephp/lai-suat-ngan-hang-agribank-thang-112025-muc-cao-nhat-danh-cho-ky-han-24-thang-a228851.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4288,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:37.779Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhtevadoisong.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhtevadoisong.vn",
+    "parsedArticles": 19,
+    "distinctHashes": 16,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesAttempted": 12,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 193,
+    "checkedArticleUrls": 19,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 193,
+        "attempted": 17,
+        "passed": 19,
+        "distinctContents": 11,
+        "distinctHashes": 16
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietq.vn",
+  "siteId": "vietq.vn",
+  "registrableDomain": "vietq.vn",
+  "homepage": "https://vietq.vn/",
+  "allowedHosts": [
+    "vietq.vn",
+    "www.vietq.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "QCVN 104:2025/BNNMT về chất lượng hạt giống ngô lai",
+    "strategy": "selector",
+    "selector": "article h1.detail-title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article.detail-art > .datetimeup",
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "detail #main-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:58.228Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://vietq.vn/qcvn-1042025bnnmt-ve-chat-luong-hat-giong-ngo-lai-d245120.html",
+      "https://vietq.vn/tcvn-63132025-huong-dan-bao-dam-an-toan-cho-tre-em-d245102.html",
+      "https://vietq.vn/isoiec-270902026--khi-an-ninh-tri-tue-nhan-tao-tro-thanh-trach-nhiem-cua-lanh-dao-doanh-nghiep-d245200.html",
+      "https://vietq.vn/gan-29000-may-tiet-trung-binh-sua-baby-brezza-bi-thu-hoi-do-nguy-co-qua-nhiet-gay-bong-d245197.html",
+      "https://vietq.vn/iso-140922026-huong-dan-thich-ung-voi-bien-doi-khi-hau-tai-dia-phuong-d244993.html",
+      "https://vietq.vn/giam-thue-tieu-thu-dac-biet-ve-0-gia-xang-trong-nuoc-dong-loat-giam-tu-0h-ngay-1112026-d245096.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietq.vn/",
+    "categories": [
+      "https://vietq.vn/dien-dan-chinh-sach-c1/",
+      "https://vietq.vn/tieu-chuan-chat-luong-c86/",
+      "https://vietq.vn/canh-bao-chat-luong-c2/",
+      "https://vietq.vn/nguoi-tieu-dung-sub28/",
+      "https://vietq.vn/nang-suat-chat-luong-c4/",
+      "https://vietq.vn/thuong-hieu-hoi-nhap-c18/",
+      "https://vietq.vn/video/",
+      "https://vietq.vn/doi-thoai-c8/",
+      "https://vietq.vn/photo/",
+      "https://vietq.vn/dssukien/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?vietq.vn/.*?\\-d(\\d{4,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietq.vn",
+    "checkedAt": "2026-11-09T03:57:38.133Z",
+    "url": "https://vietq.vn/qcvn-1042025bnnmt-ve-chat-luong-hat-giong-ngo-lai-d245120.html",
+    "finalUrl": "https://vietq.vn/qcvn-1042025bnnmt-ve-chat-luong-hat-giong-ngo-lai-d245120.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4864,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vietq.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 25,
+    "checkedArticleUrls": 53,
+    "freshArticleChecks": 38,
+    "parserIssues": 28,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 25,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 291,
+        "passed": 22,
+        "distinctHashes": 22
+      },
+      {
+        "name": "video",
+        "discovered": 11,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "photo",
+        "discovered": 37,
+        "passed": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietq.vn/quan-tri-du-lieu-an-toan-hon-voi-tieu-chuan-isoiec-51812026-d245238.html",
+      "https://vietq.vn/iso-20121-tieu-chuan-thuc-day-quan-ly-su-kien-theo-huong-ben-vung-d245229.html",
+      "https://vietq.vn/qcvn-1042025bnnmt-ve-chat-luong-hat-giong-ngo-lai-d245120.html",
+      "https://vietq.vn/quan-ly-moi-truong-theo-iso-14001-loi-ich-kep-cho-doanh-nghiep-d245252.html",
+      "https://vietq.vn/isoiec-270902026--khi-an-ninh-tri-tue-nhan-tao-tro-thanh-trach-nhiem-cua-lanh-dao-doanh-nghiep-d245200.html",
+      "https://vietq.vn/gan-29000-may-tiet-trung-binh-sua-baby-brezza-bi-thu-hoi-do-nguy-co-qua-nhiet-gay-bong-d245197.html",
+      "https://vietq.vn/tu-buoc-tien-qi4sd-2026-den-loi-ich-thiet-thuc-cho-doanh-nghiep-d245228.html",
+      "https://vietq.vn/tieu-chuan-gop-phan-minh-bach-chat-luong-thuc-pham-chay-d245160.html",
+      "https://vietq.vn/tieu-chuan-astm-thuc-day-doi-moi-ha-tang-the-thao-d245133.html",
+      "https://vietq.vn/sau-gan-2-nam-thuc-hien-nghi-quyet-57-vi-the-doi-moi-sang-tao-cai-thien-chuyen-doi-so-di-vao-thuc-chat-d245248.html",
+      "https://vietq.vn/ha-tang-chat-luong-viet-nam-truoc-nhung-yeu-cau-moi-ve-phat-trien-ben-vung-d245222.html",
+      "https://vietq.vn/viet-nam-thuoc-nhom-quoc-gia-co-tien-bo-dang-ke-ve-ha-tang-chat-luong-d245221.html",
+      "https://vietq.vn/ha-tang-chat-luong-thuc-day-chuoi-cung-ung-toan-cau-phat-trien-minh-bach-va-ben-vung-d245220.html",
+      "https://vietq.vn/chi-so-qi4sd-thuoc-do-nang-luc-ha-tang-chat-luong-quoc-gia-gan-voi-phat-trien-ben-vung-d245212.html",
+      "https://vietq.vn/xay-dung-he-thong-quan-ly-ai-hieu-qua-theo-tieu-chuan-quoc-te-d245206.html",
+      "https://vietq.vn/vuot-rao-can-tieu-chuan-doanh-nghiep-viet-khang-dinh-nang-luc-cong-nghe-d245237.html",
+      "https://vietq.vn/iso-7101-tieu-chuan-thuc-day-chat-luong-va-an-toan-trong-cham-soc-suc-khoe-d245223.html",
+      "https://vietq.vn/tu-tieu-chuan-den-thi-truong-vai-tro-cua-danh-gia-su-phu-hop-d245199.html",
+      "https://vietq.vn/tieu-chuan-hoa--nen-tang-dua-cac-dot-pha-cong-nghe-vao-ung-dung-thuc-tien-d245184.html",
+      "https://vietq.vn/dua-tieu-chuan-quoc-te-vao-dao-tao-ky-su-hvac-tuong-lai-d245186.html",
+      "https://vietq.vn/hung-yen-hien-thuc-hoa-nghi-quyet-57-nqtw-nhieu-nhiem-vu-da-thanh-cong-d244249.html",
+      "https://vietq.vn/dua-nghi-quyet-57-vao-thuc-tien-quang-ninh-thuc-day-nang-suat-va-doi-moi-sang-tao-d242434.html",
+      "https://vietq.vn/bo-truong-bo-tu-phap-hoang-thanh-tung-dua-tinh-than-thuong-ton-hien-phap-phap-luat-vao-doi-song-d245247.html",
+      "https://vietq.vn/thuong-ton-hien-phap-va-phap-luat---dong-luc-kien-tao-phat-trien-dat-nuoc-d245242.html",
+      "https://vietq.vn/tu-nam-2027-ap-dung-tieu-chuan-gmp-rieng-doi-voi-thuoc-nghien-cuu-va-thuoc-thu-lam-sang-d245219.html",
+      "https://vietq.vn/le-huong-ung-ngay-phap-luat-viet-nam-nam-2026-se-duoc-to-chuc-vao-luc-9h00-ngay-0811-d245246.html",
+      "https://vietq.vn/nang-cao-chat-luong-san-pham-hang-hoa-tu-nang-luc-ky-thuat-d245254.html",
+      "https://vietq.vn/bao-dam-chat-luong-xang-dau-khi-thong-qua-hoat-dong-thu-nghiem-d245253.html",
+      "https://vietq.vn/thu-nghiem-co-khi-vat-lieu-xay-dung-nen-tang-bao-dam-chat-luong-va-an-toan-d245232.html",
+      "https://vietq.vn/hang-hoa-quang-cao-tiet-kiem-dien-can-can-cu-vao-tieu-chuan-thu-nghiem-d245198.html",
+      "https://vietq.vn/thu-nghiem-vi-sinh---gmo-gop-phan-nang-cao-chat-luong-hang-hoa-d245189.html",
+      "https://vietq.vn/lo-hong-an-ninh-mang-phia-sau-thiet-bi-ket-noi-co-the-gay-thiet-hai-lon-d245240.html",
+      "https://vietq.vn/thuc-pham-bo-sung-het-thoi-quang-cao-cong-dung-phai-chung-minh-bang-khoa-hoc-d245239.html",
+      "https://vietq.vn/can-siet-chat-h%C6%A1n-truy-xuat-nguon-goc-tang-kiem-nghiem-dot-xuat-thuc-pham-d245175.html",
+      "https://vietq.vn/tieu-thu-qua-nhieu-muoi-nguy-co-anh-huong-nghiem-trong-toi-suc-khoe-d245142.html",
+      "https://vietq.vn/nang-cao-hieu-qua-quan-ly-chat-luong-phan-bon-tren-thi-truong-d245156.html",
+      "https://vietq.vn/thu-hoi-hang-nghin-o-to-xe-may-do-nguy-co-mat-an-toan-d245109.html",
+      "https://vietq.vn/my-thu-hoi-59-trieu-binh-pha-ca-phe-bodum-do-nguy-co-vo-thuy-tinh-gay-bong-d245107.html",
+      "https://vietq.vn/hang-loat-san-pham-bi-thu-hoi-o-nuoc-ngoai-nguoi-tieu-dung-viet-nam-can-luu-y-d245103.html",
+      "https://vietq.vn/quang-ninh-day-manh-so-hoa-truy-xuat-nguon-goc-nang-cao-chat-luong-san-pham-ocop-d245196.html",
+      "https://vietq.vn/ca-mau-tim-loi-giai-nang-nang-suat-chat-luong-cho-doanh-nghiep-d245143.html",
+      "https://vietq.vn/quan-ly-chat-luong-va-ap-dung-tieu-chuan-doi-voi-san-pham-ca-phe-viet-nam-d245079.html",
+      "https://vietq.vn/vinamilk-tiep-tuc-tang-truong-doanh-thu-va-dat-nhieu-vinh-danh-trong-nuoc-lan-quoc-te-d245236.html",
+      "https://vietq.vn/vinamilk-dua-kien-thuc-an-toan-so-den-gan-hon-voi-cac-gia-dinh-viet-d245209.html",
+      "https://vietq.vn/vinamilk-dong-hanh-cung-ngay-hoi-tri-an-nguoi-tieu-dung-2026-d245127.html",
+      "https://vietq.vn/kinh-nghiem-van-hanh---nen-tang-de-ai-phat-huy-hieu-qua-trong-bao-dam-an-ninh-kcn-d245201.html",
+      "https://vietq.vn/ba-mai-kieu-lien-cung-vinamilk-ba-nam-lien-gop-mat-trong-hai-bang-xep-hang-danh-gia-cua-fortune-d245173.html",
+      "https://vietq.vn/thu-nghiem-thuc-pham-co-so-kiem-soat-chat-luong-va-an-toan-thuc-pham-emagazine245076.html",
+      "https://vietq.vn/viet-nam-nam-trong-nhom-quoc-gia-cai-thien-dang-ke-ve-ha-tang-chat-luong-video245225.html",
+      "https://vietq.vn/tieu-chuan-dan-dat---kien-tao-tuong-lai-video244755.html",
+      "https://vietq.vn/kinh-te-tam-thap---dong-luc-tang-truong-moi-video244689.html",
+      "https://vietq.vn/tieu-chuan--nen-tang-cho-nang-luong-sach-video245082.html",
+      "https://vietq.vn/doi-moi-tu-duy-tieu-chuan-hoa-kien-tao-dong-luc-phat-trien-video244793.html",
+      "https://vietq.vn/ky-niem-ngay-tieu-chuan-the-gioi-1410-su-kien-366/",
+      "https://vietq.vn/hay-la-nguoi-dung-sua-thong-thai-su-kien-17/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 28
+    },
+    "checkedAt": "2026-11-10T09:18:07.078Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietq.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "dateCorrectionEvidence": {
+    "reason": "Broad selector selected a recommendation timestamp; scoped to original article clock",
+    "requiresHistoricalIndexReconciliation": true,
+    "checkedAt": "2026-11-16T02:28:16.218Z",
+    "verifiedUrls": [
+      "https://vietq.vn/qcvn-1042025bnnmt-ve-chat-luong-hat-giong-ngo-lai-d245120.html",
+      "https://vietq.vn/tcvn-63132025-huong-dan-bao-dam-an-toan-cho-tre-em-d245102.html"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "vietq.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

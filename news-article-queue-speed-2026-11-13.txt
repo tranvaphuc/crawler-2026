@@ -1,0 +1,22 @@
+QUEUE BAI NEWS - CHECK 12:18:09 13/11/2026 UTC+7
+Release12; chi do va doc metadata, khong doi worker/config, khong retry URL loi.
+
+Mau truc tiep 2.23 phut: xu ly 357 URL (160.11/phut), enqueue moi 1106 (496.02/phut), queue tang 749 (335.91/phut).
+
+5 phut gan nhat:
+- Pending: 363,871 URL; 525 site co pending.
+- Xu ly xong: 832 URL = 166.4 URL/phut (bao gom thanh cong, qua han, nonarticle, loi).
+- Link moi vao queue: 2535 = 507.0 URL/phut.
+- Tang rong: 340.6 URL/phut; hien queue khong giam.
+- 547/832 (65.7%) la bai qua 24h, chi bi loai sau parse/verification.
+- 213 URL loi duoc giu check rieng; khong tu retry.
+- ES tao moi: 60 bai = 12.0/phut. Bai da ton tai: 10. Outbox pending hien3, khong co sending.
+- Article HTTP timeout 10.29%; HTTP mean 1.21s.
+- HTTP hoan tat den task finish mean 5.39s, median 4.61s. Bao gom trich link, doi pool, feed, parse, verification va SQL; chua tach rieng CPU parser.
+- Main event-loop p95 1501.56ms; batch selection 33.3ms; network worker queue0, failures0.
+- Budget16 article task/2 parser, seed80; CPU tong 3.13/4 core. RAM 2.15/4 GiB. Service active/running, restarts0.
+- Pending age median 268.5min, oldest 711.9min. Day la tuoi queue, khong phai tuoi bai.
+- Khoang 2042 URL pending nam o site cooldown hon30s; phan lon backlog khong do cooldown nay.
+
+Neu dung toan bo link moi, uoc tinh tho 36.4h de xu ly backlog o toc do5min. Thuc te link van vao nhanh hon3lan nen khong co thoi diem drain on dinh theo toc do nay; cung chua dam bao SLA20min tu luc publication.
+Dau hieu nghen o xu ly sauHTTP/main thread, budget article va admission bai cu. ES outbox hien rat nho nen chua thay writer ES la diem u chinh. Khong du du lieu de ket luan rieng2 parser la bottleneck duy nhat.

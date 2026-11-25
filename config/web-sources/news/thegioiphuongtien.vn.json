@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioiphuongtien.vn",
+  "siteId": "thegioiphuongtien.vn",
+  "registrableDomain": "thegioiphuongtien.vn",
+  "homepage": "https://thegioiphuongtien.vn/",
+  "allowedHosts": [
+    "thegioiphuongtien.vn",
+    "www.thegioiphuongtien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thegioiphuongtien.vn/",
+    "categories": [
+      "https://thegioiphuongtien.vn/signup/",
+      "https://thegioiphuongtien.vn/dau-dau-vi-xe/",
+      "https://thegioiphuongtien.vn/tai-nan-giao-thong/",
+      "https://thegioiphuongtien.vn/muc-phat-giao-thong/",
+      "https://thegioiphuongtien.vn/cac-muc-xu-phat-giao-thong/oto/",
+      "https://thegioiphuongtien.vn/cac-muc-xu-phat-giao-thong/xe-may/",
+      "https://thegioiphuongtien.vn/xe-nao-trieu-hoi/",
+      "https://thegioiphuongtien.vn/xe-nao-trieu-hoi/oto/",
+      "https://thegioiphuongtien.vn/xe-nao-trieu-hoi/xe-may/",
+      "https://thegioiphuongtien.vn/on-thi-gplx/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Ý thức Giao thông: Dứt khoát anh tài xế xe gắn cam là đẹp trai, dứt khoát phải vậy...",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://thegioiphuongtien.vn/rss/all.xml",
+    "sourceKind": "public_feed"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:28.795Z",
+    "frozenAt": "2026-11-16T02:00:16.482Z",
+    "trainingUrl": "https://thegioiphuongtien.vn/y-thuc-giao-thong/y-thuc-giao-thong-dut-khoat-anh-tai-xe-xe-gan-cam-la-dep-trai-dut-khoat-phai-vay.html",
+    "independentHoldouts": [
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/no-ro-hang-loat-nen-tang-mua-ban-o-to-cu-kieu-moi-tai-viet-nam.html",
+      "https://thegioiphuongtien.vn/tu-van/honda-crv-ehev-rs-va-subaru-forester-eboxer-hybrid-chon-crossover-hybrid-nao-cua-nhat-ban.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/no-ro-hang-loat-nen-tang-mua-ban-o-to-cu-kieu-moi-tai-viet-nam.html",
+      "https://thegioiphuongtien.vn/tin-tuc/quoc-te/tu-dai-gia-nganh-o-to-trung-quoc-duong-dai-la-nhung-cai-ten-nao.html",
+      "https://thegioiphuongtien.vn/tu-van/honda-crv-ehev-rs-va-subaru-forester-eboxer-hybrid-chon-crossover-hybrid-nao-cua-nhat-ban.html",
+      "https://thegioiphuongtien.vn/tin-tuc/quoc-te/the-gioi-2-banh-italjet-roadster-400-chinh-thuc-ra-mat-khoi-diem-tuong-duong-218-trieu-dong.html",
+      "https://thegioiphuongtien.vn/xe-nao-trieu-hoi/oto/chery-trieu-hoi-gan-54000-chiec-omoda-5-sau-su-co-bung-truc-sau-tai-malaysia.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-thang-112026-quyet-giu-doanh-so-ford-viet-nam-bo-sung-uu-dai-cho-tat-ca-cac-phien-ban-ranger-moi.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-thang-112026-hyundai-thanh-cong-xa-hang-uu-dai-220-trieu-dong-cho-santa-fe.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-viet-nam-top-10-mau-xe-ban-it-nhat-thang-102026-kia-chua-tu-bo-xe-gam-thap.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-viet-nam-top-10-thuong-hieu-ban-nhieu-xe-nhat-thang-102026.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-viet-nam-top-10-mau-xe-ban-nhieu-nhat-thang-102026-vinfast-thong-tri-voi-7-mau-xe.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/thi-truong-o-to-viet-nam-top-10-mau-xe-ban-nhieu-nhat-thang-102026-khong-vinfast-mau-xe-nao-giu-vi-tri-so-1.html",
+      "https://thegioiphuongtien.vn/tin-tuc/trong-nuoc/gia-xang-dau-ban-le-den-nguoi-dan-dieu-chinh-ngay-1211-diesel-giam-gan-1900-donglit-xang-xuong-duoi-20000-donglit.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

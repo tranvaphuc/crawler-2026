@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.oto-hui.com",
+  "siteId": "news.oto-hui.com",
+  "registrableDomain": "oto-hui.com",
+  "homepage": "https://news.oto-hui.com/",
+  "allowedHosts": [
+    "news.oto-hui.com",
+    "www.news.oto-hui.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Công nghệ Hybrid – Từ Giải Pháp Tình Thế Trở Thành Tùy Chọn Xe Không Thể Bị Loại Bỏ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:49.457Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://news.oto-hui.com/cong-nghe-hybrid-tu-giai-phap-tinh-the-tro-thanh-tuy-chon-xe-khong-the-bi-loai-bo/",
+      "https://news.oto-hui.com/toan-bo-ve-dong-co-toyota-dynamic-force-trai-tim-cua-xe-toyota/",
+      "https://news.oto-hui.com/hop-so-tu-dong-chuyen-so-thang-hang-va-zig-zag/",
+      "https://news.oto-hui.com/danh-gia-mazda-cx-50-hybrid-2025-so-huu-trai-tim-cua-toyota/",
+      "https://news.oto-hui.com/boc-cach-nhiet-binh-acquy-giai-phap-keo-dai-tuoi-tho-binh-acquy-trong-dieu-kien-thoi-tiet-khac-nghiet/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://news.oto-hui.com/",
+    "categories": [
+      "https://news.oto-hui.com/category/tin-tuc/",
+      "https://news.oto-hui.com/category/ky-thuat-o-to/",
+      "https://news.oto-hui.com/category/ky-thuat-o-to/kien-thuc-ve-xe/",
+      "https://news.oto-hui.com/category/ky-thuat-o-to/kinh-nghiem-sua-chua-o-to/",
+      "https://news.oto-hui.com/category/ky-thuat-o-to/cham-soc-va-bao-duong/",
+      "https://news.oto-hui.com/category/cong-nghe-o-to/",
+      "https://news.oto-hui.com/category/xe-do/",
+      "https://news.oto-hui.com/category/xe-do/do-xe-o-to/",
+      "https://news.oto-hui.com/category/xe-do/xe-moi/",
+      "https://news.oto-hui.com/category/xe-do/kham-pha/",
+      "https://news.oto-hui.com/category/xe-do/quan-tri-garage/",
+      "https://news.oto-hui.com/category/xe-do/kinh-nghiem-lai-xe/",
+      "https://news.oto-hui.com/category/xe-do/nganh-o-to-viet-nam/",
+      "https://news.oto-hui.com/category/video/",
+      "https://news.oto-hui.com/category/tin-trong-nuoc/",
+      "https://news.oto-hui.com/category/tin-tuc/quoc-te/",
+      "https://news.oto-hui.com/category/viec-lam-nganh-o-to/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "news.oto-hui.com",
+    "checkedAt": "2026-11-09T03:57:16.252Z",
+    "url": "https://news.oto-hui.com/cong-nghe-hybrid-tu-giai-phap-tinh-the-tro-thanh-tuy-chon-xe-khong-the-bi-loai-bo/",
+    "finalUrl": "https://news.oto-hui.com/cong-nghe-hybrid-tu-giai-phap-tinh-the-tro-thanh-tuy-chon-xe-khong-the-bi-loai-bo/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5587,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "news.oto-hui.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 16,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 17,
+    "categoriesUnconfirmed": 17,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 190,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://news.oto-hui.com/vatc-ky-ket-hop-tac-chien-luoc-voi-vf-xanh-ve-dao-tao-xe-dien/",
+      "https://news.oto-hui.com/vinfast-limo-green-va-cau-chuyen-dung-chung-khung-gam-hieu-dung-thay-vi-che-bai/",
+      "https://news.oto-hui.com/cong-nghe-hybrid-tu-giai-phap-tinh-the-tro-thanh-tuy-chon-xe-khong-the-bi-loai-bo/",
+      "https://news.oto-hui.com/su-troi-day-cua-nhung-hang-xe-trung-quoc-khien-nhat-ban-dan-khon-don/",
+      "https://news.oto-hui.com/hop-so-tu-dong-chuyen-so-thang-hang-va-zig-zag/",
+      "https://news.oto-hui.com/ceo-ford-xe-dien-con-lau-moi-co-lai/",
+      "https://news.oto-hui.com/nhung-dong-thai-thuc-day-hop-tac-cua-hyundai-voi-an-do-trong-nam-2024/",
+      "https://news.oto-hui.com/tinh-hinh-chinh-tri-bat-on-anh-huong-the-nao-den-nganh-cong-nghiep-o-to-han-quoc/",
+      "https://news.oto-hui.com/xe-dien-trung-quoc-dan-tien-vao-thi-truong-chau-au/",
+      "https://news.oto-hui.com/sac-khong-day-ev-giai-phap-tuong-lai-cua-xe-dien/",
+      "https://news.oto-hui.com/phanh-tu-dong-khan-cap-co-hoat-dong-trong-moi-tinh-huong/",
+      "https://news.oto-hui.com/dong-co-tang-ap-mat-dan-vi-the-truoc-xe-xanh/",
+      "https://news.oto-hui.com/robot-hinh-nguoi-thay-the-cong-nhan-nha-may/",
+      "https://news.oto-hui.com/mercedes-benz-dau-tu-manh-vao-dong-co-dot-trong/",
+      "https://news.oto-hui.com/toan-bo-ve-dong-co-toyota-dynamic-force-trai-tim-cua-xe-toyota/",
+      "https://news.oto-hui.com/limp-mode-la-gi-cac-trieu-chung-nguyen-nhan-va-3-cach-xu-ly-tuc-thi/",
+      "https://news.oto-hui.com/danh-gia-mazda-cx-50-hybrid-2025-so-huu-trai-tim-cua-toyota/",
+      "https://news.oto-hui.com/boc-cach-nhiet-binh-acquy-giai-phap-keo-dai-tuoi-tho-binh-acquy-trong-dieu-kien-thoi-tiet-khac-nghiet/",
+      "https://news.oto-hui.com/5-viec-can-lam-ngay-sau-khi-bi-va-cham-tu-phia-duoi-xe/",
+      "https://news.oto-hui.com/muc-phat-cua-viec-lai-xe-mat-tap-trung-vao-nam-2024/",
+      "https://news.oto-hui.com/lamborghini-he-lo-temerario-gt3-mau-xe-dua-se-thay-the-huracan-gt3-evo2/",
+      "https://news.oto-hui.com/15-tin-tuyen-dung-o-to-moi-nhat-mien-bac-cap-nhat-ngay-26-10-2021/",
+      "https://news.oto-hui.com/kinh-nghiem-xin-thuc-tap-o-garage-cho-sinh-vien-o-to-nen-va-khong-nen-lam-nhung-gi/",
+      "https://news.oto-hui.com/tong-hop-19-tin-tuyen-dung-o-to-moi-nhat-tai-ho-chi-minh-trong-tuan-qua/",
+      "https://news.oto-hui.com/tong-hop-19-tin-tuyen-dung-o-to-moi-nhat-tai-ha-noi-trong-tuan-qua/",
+      "https://news.oto-hui.com/tong-hop-40-tin-tuyen-dung-nganh-o-to-tuan-1-thang-10-2021/",
+      "https://news.oto-hui.com/nghe-cham-soc-lam-dep-o-to-bao-gom-nhung-mang-nao/",
+      "https://news.oto-hui.com/tong-hop-36-tin-tuyen-dung-nganh-o-to-tuan-4-thang-9-2021/",
+      "https://news.oto-hui.com/tong-hop-40-tin-tuyen-dung-nganh-o-to-tuan-3-thang-9-2021/",
+      "https://news.oto-hui.com/tong-hop-40-tin-tuyen-dung-nganh-o-to-tuan-2-thang-9-2021/",
+      "https://news.oto-hui.com/tong-hop-34-tin-tuyen-dung-nganh-o-to-tuan-1-thang-9-2021/",
+      "https://news.oto-hui.com/tong-hop-23-tin-tuyen-dung-nganh-o-to-tuan-4-thang-8-2021/",
+      "https://news.oto-hui.com/tong-hop-27-tin-tuyen-dung-nganh-o-to-tuan-4-thang-6-2021/",
+      "https://news.oto-hui.com/lop-xe-va-ap-suat-lop-xe-dien/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3,
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:16:08.006Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/news.oto-hui.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

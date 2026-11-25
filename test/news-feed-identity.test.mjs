@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {publicationFeedDate} from '../src/web/newsFeedIdentity.mjs';
+const d={iso:'2026-11-16T01:30:00.000Z',raw:'Mon, 16 Nov 2026 10:30:00 +0900'},url='https://publisher.test/news_view.htm?Seq_Code=123&lang=e';
+test('RSS clock follows HTTPS/www/query-order aliases without losing article or language identity',()=>{const c={publicationDates:{'http://www.publisher.test/news_view.htm?lang=e&Seq_Code=123':d}};assert.equal(publicationFeedDate(c,url),d);assert.equal(publicationFeedDate(c,url.replace('123','124')),null);assert.equal(publicationFeedDate(c,url.replace('lang=e','lang=k')),null);});
+test('conflicting RSS alias clocks are rejected even when one URL matches exactly',()=>{const c={publicationDates:{[url]:d,'http://publisher.test/news_view.htm?lang=e&Seq_Code=123':{...d,iso:'2026-11-16T02:30:00.000Z'}}};assert.equal(publicationFeedDate(c,url),null);});

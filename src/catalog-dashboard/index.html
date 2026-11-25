@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kho Source &amp; Keyword</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="top"><div class="frame top-inner">
+    <a class="brand" href="/"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65"><path d="M4 7h7l2 2h7v10H4z"/><path d="M4 7V5h8l2 2h6v2M8 13h8m-8 3h5"/></svg></span>Kho dữ liệu</a>
+    <button class="secondary" id="copy-lan" type="button" hidden>Sao chép link LAN</button>
+  </div></header>
+  <main class="frame">
+    <section class="hero"><h1>Source &amp; Keyword</h1><p>Tra cứu từ khóa, nguồn theo dõi và bằng chứng theo từng project.</p></section>
+    <section class="workspace" aria-label="Tra cứu dữ liệu">
+      <nav class="tabs" aria-label="Danh mục">
+        <button type="button" data-tab="keywords" aria-current="page">Keyword</button>
+        <button type="button" data-tab="sources">Source</button>
+        <button type="button" data-tab="plans">Độ phủ plan</button>
+      </nav>
+      <div class="filters" id="filters"></div>
+      <div id="metrics" class="metrics" aria-label="Số liệu theo bộ lọc" hidden></div>
+      <div id="coverage" hidden></div>
+      <div class="result-bar"><p id="result-count" role="status">Đang tải kho…</p><button id="clear" type="button" class="quiet">Xóa bộ lọc</button></div>
+      <div class="table-scroll" tabindex="0" aria-label="Bảng kết quả"><table><thead id="columns"></thead><tbody id="rows"></tbody></table></div>
+      <footer class="pager"><span id="page-label"></span><div><button class="secondary" id="prev" type="button">Trước</button><button class="secondary" id="next" type="button">Sau</button></div></footer>
+    </section>
+  </main>
+  <dialog id="detail"><article><div class="dialog-top"><h2 id="detail-title"></h2><button class="secondary" id="close" type="button">Đóng</button></div><div id="detail-body"></div></article></dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+</body>
+</html>

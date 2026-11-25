@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "siteName": "div.gov.vn",
+  "siteId": "div.gov.vn",
+  "registrableDomain": "div.gov.vn",
+  "homepage": "https://div.gov.vn/",
+  "allowedHosts": [
+    "div.gov.vn",
+    "www.div.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://div.gov.vn/",
+    "categories": [
+      "https://div.gov.vn/danh-cho-nguoi-gui-tien"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Thúc đẩy tài chính toàn diện từ thanh toán không dùng tiền mặt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date_post_core",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:14.220Z",
+    "frozenAt": "2026-11-16T01:57:11.559Z",
+    "trainingUrl": "https://div.gov.vn/thuc-day-tai-chinh-toan-dien-tu-thanh-toan-khong-dung-tien-mt",
+    "independentHoldouts": [
+      "https://div.gov.vn/bao-hiem-tien-gui-viet-nam-tham-du-hoi-nghi-thuong-nien-va-hoi-thao-quoc-te-iadi-2026-tai-berlin-duc",
+      "https://div.gov.vn/hoan-thien-hanh-lang-phap-ly-tang-cuong-bao-ve-nguoi-gui-tien"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://div.gov.vn/thuc-day-tai-chinh-toan-dien-tu-thanh-toan-khong-dung-tien-mt",
+      "https://div.gov.vn/bao-hiem-tien-gui-viet-nam-tham-du-hoi-nghi-thuong-nien-va-hoi-thao-quoc-te-iadi-2026-tai-berlin-duc",
+      "https://div.gov.vn/hoan-thien-hanh-lang-phap-ly-tang-cuong-bao-ve-nguoi-gui-tien",
+      "https://div.gov.vn/27-nam-dong-hanh-cung-nguoi-gui-tien-tu-chinh-sach-den-niem-tin",
+      "https://div.gov.vn/cap-nhat-kien-thuc-luat-bao-chi-2025-va-xu-huong-truyen-thong-ngan-hang-tren-nen-tang-so",
+      "https://div.gov.vn/chuan-hoa-viec-cung-cap-thong-tin-bao-hiem-tien-gui-co-hoi-va-thach-thuc-doi-voi-quy-tin-dung-nhan-dan",
+      "https://div.gov.vn/hiep-hoi-bao-hiem-tien-gui-quoc-te-xac-dinh-cac-hoat-dong-uu-tien-nam-2027",
+      "https://div.gov.vn/nang-cao-kha-nang-chong-chiu-cua-he-thong-bao-hiem-tien-gui-truoc-rui-ro-so",
+      "https://div.gov.vn/co-quan-ngan-hang-chau-au-de-xuat-quy-dinh-moi-tang-cuong-bao-ve-nguoi-gui-tien",
+      "https://div.gov.vn/doi-moi-tai-chinh-va-so-hoa-nhung-van-de-dt-ra-doi-voi-he-thong-bao-hiem-tien-gui",
+      "https://div.gov.vn/dau-an-cong-doan-trong-hanh-trinh-27-nam-xay-dung-va-phat-trien-cua-bao-hiem-tien-gui-viet-nam",
+      "https://div.gov.vn/chi-bo-chi-nhanh-bao-hiem-tien-gui-viet-nam-tai-thanh-pho-da-nang-sinh-hoat-chuyen-de-quy-iv-2026",
+      "https://div.gov.vn/soi-noi-giao-luu-pickleball-chao-mung-ky-niem-27-nam-thanh-lap-bao-hiem-tien-gui-viet-nam",
+      "https://div.gov.vn/chi-nhanh-bao-hiem-tien-gui-viet-nam-tai-thanh-pho-ho-chi-minh-nang-cao-ky-nang-phong-chay-chua-chay-va-cuu-nan-cuu-ho-cho-nguoi-lao-dong",
+      "https://div.gov.vn/luat-tiet-kiem-chong-lang-phi-nam-2025-hoan-thien-co-che-phong-ngua-xu-ly-lang-phi-lan-toa-van-hoa-tiet-kiem",
+      "https://div.gov.vn/chi-nhanh-bhtgvn-tai-tp-ho-chi-minh-to-chuc-hoi-nghi-bao-cao-mo-phong-kich-ban-chi-tra-tien-bao-hiem",
+      "https://div.gov.vn/cong-bo-lenh-cua-chu-tich-nuoc-ve-luat-bao-hiem-tien-gui",
+      "https://div.gov.vn/bao-ve-nguoi-gui-tien-trong-ky-nguyen-so-tu-hoan-thien-the-che-den-nang-cao-hieu-qua-thuc-thi-chinh-sach-bao-hiem-tien-gui",
+      "https://div.gov.vn/bao-hiem-tien-gui-viet-nam-su-menh-bao-ve-nguoi-gui-tien-va-thuc-day-phat-trien-ben-vung-he-thong-quy-tin-dung-nhan-dan",
+      "https://div.gov.vn/chi-nhanh-bao-hiem-tien-gui-viet-nam-khu-vuc-dong-bac-bo-tuyen-truyen-luat-bao-hiem-tien-gui-nam-2025-toi-quy-tin-dung-nhan-dan",
+      "https://div.gov.vn/lan-toa-luat-bao-hiem-tien-gui-nam-2025-den-nguoi-dan-va-cac-to-chuc-tin-dung-tai-tinh-dak-lak",
+      "https://div.gov.vn/tac-pham-cua-bao-hiem-tien-gui-viet-nam-doat-giai-khuyen-khich-giai-bao-chi-vi-su-nghiep-dai-doan-ket-toan-dan-toc-lan-thu-xvii",
+      "https://div.gov.vn/chi-nhanh-bao-hiem-tien-gui-viet-nam-tai-thanh-pho-da-nang-tuyen-truyen-chinh-sach-bao-hiem-tien-gui-den-hoi-vien-phu-nu-xa-nui-thanh",
+      "https://div.gov.vn/tuyen-truyen-chinh-sach-bao-hiem-tien-gui-toi-giang-vien-hoc-vien-truong-chinh-tri-tinh-khanh-hoa",
+      "https://div.gov.vn/ngan-hang-giam-lai-suat-tien-gui-niem-yet-ky-han-tu-6-thang-tro-len",
+      "https://div.gov.vn/quy-dinh-moi-ve-chia-se-thong-tin-voi-bao-hiem-tien-gui-viet-nam-va-tra-cuu-tien-gui-tai-quy-tin-dung-nhan-dan",
+      "https://div.gov.vn/ngan-hang-nha-nuoc-hop-bao-ve-ket-qua-dieu-hanh-chinh-sach-tien-te-va-hoat-dong-ngan-hang-9-thang-thuc-day-ngan-hang-so-bao-dam-quyen-loi-hop-phap-cua-nguoi-gui-tien",
+      "https://div.gov.vn/mua-ban-cho-thue-cho-muon-tai-khoan-thanh-toan-canh-bao-rui-ro-va-che-tai-xu-ly"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

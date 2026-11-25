@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "chaongaymoi.net",
+  "siteId": "chaongaymoi.net",
+  "registrableDomain": "chaongaymoi.net",
+  "homepage": "https://chaongaymoi.net/",
+  "allowedHosts": [
+    "chaongaymoi.net",
+    "www.chaongaymoi.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nữ nghệ sĩ là giảng viên Học viện, được chồng xây tặng biệt phủ 25.000m2 ở Gia Lâm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:30.221Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://chaongaymoi.net/nu-nghe-si-la-giang-vien-hoc-vien-duoc-chong-xay-tang-biet-phu-25000m2-o-gia-lam-1474.html",
+      "https://chaongaymoi.net/phat-hien-mot-khach-hang-vua-mua-gan-20-tan-vang-1480.html",
+      "https://chaongaymoi.net/nu-co-truong-dep-nhat-lich-su-hang-khong-gio-ra-sao-1481.html",
+      "https://chaongaymoi.net/bac-si-canh-bao-4-dau-hieu-cua-suy-tim-chi-can-nhin-chan-co-the-thay-nhung-nhieu-nguoi-coi-nhe-1479.html",
+      "https://chaongaymoi.net/ke-thu-sieu-nho-duoi-dat-gay-thiet-hai-157-ty-usdnam-nghien-cuu-viet-nam-tim-cach-bao-ve-cay-lua-1478.html",
+      "https://chaongaymoi.net/nu-nghe-si-la-giang-vien-hoc-vien-duoc-chong-xay-tang-biet-phu-25000m2-o-gia-lam-1474.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://chaongaymoi.net/",
+    "categories": [
+      "https://chaongaymoi.net/sao/",
+      "https://chaongaymoi.net/nhac-phim/",
+      "https://chaongaymoi.net/dep-khoe/",
+      "https://chaongaymoi.net/suc-khoe/",
+      "https://chaongaymoi.net/tam-su/",
+      "https://chaongaymoi.net/du-lich/",
+      "https://chaongaymoi.net/giao-duc/",
+      "https://chaongaymoi.net/thu-gian/",
+      "https://chaongaymoi.net/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "chaongaymoi.net",
+    "checkedAt": "2026-11-09T03:56:54.729Z",
+    "url": "https://chaongaymoi.net/nu-nghe-si-la-giang-vien-hoc-vien-duoc-chong-xay-tang-biet-phu-25000m2-o-gia-lam-1474.html",
+    "finalUrl": "https://chaongaymoi.net/nu-nghe-si-la-giang-vien-hoc-vien-duoc-chong-xay-tang-biet-phu-25000m2-o-gia-lam-1474.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4377,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "chaongaymoi.net",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 5,
+    "checkedArticleUrls": 5,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 5,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 3,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:10:15.273Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/chaongaymoi.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/chaongaymoi.net.json",
+    "configBeforeSha256": "7435b081a37c6e72751cf67c44ccbefb6f849e68dc771c84d2f2d7fd40f9cf24",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  }
+}

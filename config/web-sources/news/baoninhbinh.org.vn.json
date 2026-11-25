@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baoninhbinh.org.vn",
+  "siteId": "baoninhbinh.org.vn",
+  "registrableDomain": "baoninhbinh.org.vn",
+  "homepage": "https://baoninhbinh.org.vn/",
+  "allowedHosts": [
+    "baoninhbinh.org.vn",
+    "www.baoninhbinh.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Kế hoạch tổ chức Giải Bóng bàn các Câu lạc bộ - Cúp Liên đoàn tỉnh Ninh Bình năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:59.392Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baoninhbinh.org.vn/ke-hoach-to-chuc-giai-bong-ban-cac-cau-lac-bo-cup-lien-doan-tinh-ninh-binh-nam--261105200342103.html",
+      "https://baoninhbinh.org.vn/giai-quyet-tranh-chap-tai-san-chung-cua-vo-chong-khi-ly-hon-261103080631319.html",
+      "https://baoninhbinh.org.vn/doi-dieu-ve-tieu-thuyet-mien-dat-hua-cua-nha-van-le-thanh-ky-261106085544461.html",
+      "https://baoninhbinh.org.vn/hoa-hau-viet-nam-2026-nguyen-yen-trang-dang-quang-cung-ve-dep-hoa-binh-261108095200459.html",
+      "https://baoninhbinh.org.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-261108093752108.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baoninhbinh.org.vn/",
+    "categories": [
+      "https://baoninhbinh.org.vn/da-phuong-tien-multimedia",
+      "https://baoninhbinh.org.vn/bao-in",
+      "https://baoninhbinh.org.vn/chinh-tri",
+      "https://baoninhbinh.org.vn/thoi-su",
+      "https://baoninhbinh.org.vn/xay-dung-dang",
+      "https://baoninhbinh.org.vn/quoc-hoi-va-hdnd-cac-cap",
+      "https://baoninhbinh.org.vn/cai-cach-hanh-chinh",
+      "https://baoninhbinh.org.vn/phong-chong-tham-nhung-tieu-cuc",
+      "https://baoninhbinh.org.vn/kinh-te",
+      "https://baoninhbinh.org.vn/nong-nghiep",
+      "https://baoninhbinh.org.vn/nong-thon-moi",
+      "https://baoninhbinh.org.vn/cong-nghiep",
+      "https://baoninhbinh.org.vn/dich-vu-tai-chinh-ngan-hang",
+      "https://baoninhbinh.org.vn/gia-ca-thi-truong",
+      "https://baoninhbinh.org.vn/ocop-ninh-binh",
+      "https://baoninhbinh.org.vn/du-lich",
+      "https://baoninhbinh.org.vn/tin-tuc-du-lich",
+      "https://baoninhbinh.org.vn/diem-den",
+      "https://baoninhbinh.org.vn/am-thuc",
+      "https://baoninhbinh.org.vn/luu-tru",
+      "https://baoninhbinh.org.vn/van-hoa",
+      "https://baoninhbinh.org.vn/xa-hoi",
+      "https://baoninhbinh.org.vn/cac-van-de-xa-hoi",
+      "https://baoninhbinh.org.vn/lao-dong-va-viec-lam",
+      "https://baoninhbinh.org.vn/an-sinh-xa-hoi",
+      "https://baoninhbinh.org.vn/y-te-va-suc-khoe",
+      "https://baoninhbinh.org.vn/y-te",
+      "https://baoninhbinh.org.vn/suc-khoe-va-doi-song",
+      "https://baoninhbinh.org.vn/giao-duc-va-dao-tao",
+      "https://baoninhbinh.org.vn/an-ninh-quoc-phong",
+      "https://baoninhbinh.org.vn/an-ninh",
+      "https://baoninhbinh.org.vn/quoc-phong",
+      "https://baoninhbinh.org.vn/bien-va-hai-dao",
+      "https://baoninhbinh.org.vn/phap-luat",
+      "https://baoninhbinh.org.vn/pho-bien-phap-luat",
+      "https://baoninhbinh.org.vn/gop-y-xay-dung-chinh-sach-phap-luat",
+      "https://baoninhbinh.org.vn/an-toan-giao-thong",
+      "https://baoninhbinh.org.vn/vu-an",
+      "https://baoninhbinh.org.vn/tu-lieu-van-kien",
+      "https://baoninhbinh.org.vn/nghi-quyet",
+      "https://baoninhbinh.org.vn/quy-hoach",
+      "https://baoninhbinh.org.vn/Chinh-sach-phat-trien",
+      "https://baoninhbinh.org.vn/dat-va-nguoi-ninh-binh",
+      "https://baoninhbinh.org.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?baoninhbinh.org.vn/.*?(.htm)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.252Z",
+      "verifiedSeeds": [
+        "https://baoninhbinh.org.vn/",
+        "https://baoninhbinh.org.vn/da-phuong-tien-multimedia",
+        "https://baoninhbinh.org.vn/bao-in",
+        "https://baoninhbinh.org.vn/chinh-tri",
+        "https://baoninhbinh.org.vn/thoi-su",
+        "https://baoninhbinh.org.vn/xay-dung-dang",
+        "https://baoninhbinh.org.vn/quoc-hoi-va-hdnd-cac-cap",
+        "https://baoninhbinh.org.vn/cai-cach-hanh-chinh",
+        "https://baoninhbinh.org.vn/phong-chong-tham-nhung-tieu-cuc",
+        "https://baoninhbinh.org.vn/kinh-te",
+        "https://baoninhbinh.org.vn/nong-nghiep"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baoninhbinh.org.vn",
+    "checkedAt": "2026-11-09T03:56:51.093Z",
+    "url": "https://baoninhbinh.org.vn/ke-hoach-to-chuc-giai-bong-ban-cac-cau-lac-bo-cup-lien-doan-tinh-ninh-binh-nam--261105200342103.html",
+    "finalUrl": "https://baoninhbinh.org.vn/ke-hoach-to-chuc-giai-bong-ban-cac-cau-lac-bo-cup-lien-doan-tinh-ninh-binh-nam--261105200342103.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 223,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baoninhbinh.org.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 48,
+    "checkedArticleUrls": 61,
+    "freshArticleChecks": 19,
+    "parserIssues": 12,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 48,
+    "listingResponsesAtArticleUrls": 1,
+    "categoriesPlanned": 43,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 780,
+        "passed": 48,
+        "distinctHashes": 48
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baoninhbinh.org.vn/xa-yen-mo-ve-dich-som-cong-tac-so-hoa-ho-so-dang-vien-261110085000654.html",
+      "https://baoninhbinh.org.vn/ninh-binh-tang-toc-don-mua-vang-khach-quoc-te-261108005723574.html",
+      "https://baoninhbinh.org.vn/hoa-sung-vao-mua-no-tuyet-dep-tai-cac-khu-du-lich-261109102659038.html",
+      "https://baoninhbinh.org.vn/ldld-tinh-tap-huan-dieu-le-cong-doan-viet-nam-khoa-xiv-261110101658871.html",
+      "https://baoninhbinh.org.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-doi-tac-dong-hanh-dong-kien-tao-cung--261110082048151.html",
+      "https://baoninhbinh.org.vn/hoan-thien-luat-phat-trien-cong-nghiep-van-hoa-bao-dam-tu-do-sang-tao-ngan-chan-261110134704988.html",
+      "https://baoninhbinh.org.vn/hoi-nghi-truc-tuyen-toan-quoc-tong-ket-viec-thuc-hien-luat-quoc-phong-261110115748094.html",
+      "https://baoninhbinh.org.vn/dien-tap-dieu-tra-xu-ly-ngo-doc-thuc-pham-tinh-huong-gia-dinh-tai-truong-tieu-h-261110101618457.html",
+      "https://baoninhbinh.org.vn/de-cuong-tuyen-truyen-80-nam-hoi-nghi-van-hoa-toan-quoc-lan-thu-nhat-24111946-2-261110135405329.html",
+      "https://baoninhbinh.org.vn/dong-chi-bi-thu-tinh-uy-tran-huy-tuan-trao-huy-hieu-80-nam-tuoi-dang-cho-dang-v-261109163946857.html",
+      "https://baoninhbinh.org.vn/dong-chi-tran-dang-quynh-uy-vien-du-khuyet-trung-uong-dang-pho-bi-thu-thuong-tr-261109164720047.html",
+      "https://baoninhbinh.org.vn/dong-chi-pho-bi-thu-tinh-uy-chu-tich-hdnd-tinh-le-quoc-chinh-trao-tang-huy-hieu-261109155343354.html",
+      "https://baoninhbinh.org.vn/dong-chi-chu-tich-ubnd-tinh-trao-tang-huy-hieu-80-nam-tuoi-dang-cho-dang-vien-t-261109164035782.html",
+      "https://baoninhbinh.org.vn/dai-bieu-quoc-hoi-tinh-ninh-binh-de-nghi-kiem-soat-hinh-anh-thuoc-la-tren-moi-t-261109174437068.html",
+      "https://baoninhbinh.org.vn/tin-dong-chi-pho-bi-thu-tinh-uy-chu-tich-uy-ban-mttq-viet-nam-tinh-dinh-thi-lua-261109164557334.html",
+      "https://baoninhbinh.org.vn/tin-tuc-24h-ngay-09112026-261109202309928.html",
+      "https://baoninhbinh.org.vn/tin-tuc-24h-ngay-06112026-261106204326939.html",
+      "https://baoninhbinh.org.vn/tin-tuc-24h-ngay-04112026-261104191306451.html",
+      "https://baoninhbinh.org.vn/chien-sy-hai-quan-thuc-hanh-tiet-kiem-theo-loi-bac-261104104039946.html",
+      "https://baoninhbinh.org.vn/ninh-binh-asan-gan-ket-tinh-huu-nghi-thuc-day-hop-tac-phat-trien-261103152045446.html",
+      "https://baoninhbinh.org.vn/gia-vang-trong-nuoc-hom-nay-1011-vang-sjc-tiep-tuc-tang-300000-dongluong-261110092524624.html",
+      "https://baoninhbinh.org.vn/gia-ca-phe-hom-nay-1011-quay-dau-giam-arabica-cham-day-7-tuan-261110053603848.html",
+      "https://baoninhbinh.org.vn/gia-dau-hom-nay-1011-giam-manh-brent-thap-nhat-tu-cuoi-thang-8-261110051931553.html",
+      "https://baoninhbinh.org.vn/gia-vang-hom-nay-1011-tang-gan-2-khi-usd-suy-yeu-lo-ngai-lam-phat-lang-diu-261110051559512.html",
+      "https://baoninhbinh.org.vn/vung-chuyen-canh-hoa-ninh-phuc-cang-minh-cuu-vu-hoa-tet-sau-tran-mua-lon-bat-th-261109182236595.html",
+      "https://baoninhbinh.org.vn/trailer-chao-mung-96-nam-ngay-truyen-thong-mat-tran-to-quoc-viet-nam-18111930-1-261109180742911.html",
+      "https://baoninhbinh.org.vn/phan-bo-hon-885-ty-dong-von-ngan-sach-trung-uong-nam-2027-cho-tuyen-cao-toc-nin-261107151031320.html",
+      "https://baoninhbinh.org.vn/quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-cong-nghiep-cong-nghe-so-261107104106794.html",
+      "https://baoninhbinh.org.vn/ninh-binh-dieu-chinh-ke-hoach-dau-tu-cong-trung-han-giai-doan-2026-2030-hon-216-261107085729897.html",
+      "https://baoninhbinh.org.vn/ket-noi-san-pham-du-lich-keo-dai-thoi-gian-luu-tru-261106085152598.html",
+      "https://baoninhbinh.org.vn/huong-toi-muc-tieu-don-3-trieu-luot-khach-quoc-te-261106085406901.html",
+      "https://baoninhbinh.org.vn/trao-chung-nhan-va-cong-bo-tuyen-bo-ninh-binh-2026-261029182126363.html",
+      "https://baoninhbinh.org.vn/hoi-thao-quoc-te-du-lich-co-trach-nhiem-ninh-binh-2026-261028120841634.html",
+      "https://baoninhbinh.org.vn/cap-nhat-kien-thuc-cho-huong-dan-vien-du-lich-nam-2026-261027101951264.html",
+      "https://baoninhbinh.org.vn/khai-truong-khach-san-muong-thanh-luxury-ninh-binh-261025203259858.html",
+      "https://baoninhbinh.org.vn/dai-hoi-chi-hoi-lu-hanh-va-huong-dan-vien-chi-hoi-nha-hang-va-dau-bep-261025180957037.html",
+      "https://baoninhbinh.org.vn/kham-pha-hang-dong-noi-nguoi-tien-su-cu-tru-hon-12-nghin-nam-o-trang-an-261016155549093.html",
+      "https://baoninhbinh.org.vn/ninh-binh-phat-trien-du-lich-van-hoa-trong-khong-gian-moi-261018112954747.html",
+      "https://baoninhbinh.org.vn/thi-diem-mien-thi-thuc-cho-khach-du-lich-trung-quoc-di-theo-doan-den-khanh-hoa-261013214317181.html",
+      "https://baoninhbinh.org.vn/du-lich-ninh-binh-vuot-ke-hoach-nam-tao-nen-tang-phat-trien-dai-han-261014052548438.html",
+      "https://baoninhbinh.org.vn/nga-mien-thi-thuc-cho-khach-du-lich-viet-nam-261013094503498.html",
+      "https://baoninhbinh.org.vn/phap-dung-dau-the-gioi-ve-cac-diem-luu-tru-doc-dao-261007110103364.html",
+      "https://baoninhbinh.org.vn/khai-giang-lop-so-cap-nghiep-vu-che-bien-mon-an-rd0578-261006184401839.html",
+      "https://baoninhbinh.org.vn/phat-trien-bien-giao-ninh-thanh-trung-tam-kinh-te-bien-cua-ninh-binh-260928014626373.html",
+      "https://baoninhbinh.org.vn/hoi-cuu-chien-binh-phat-huy-hieu-qua-lan-toa-mo-hinh-chi-hoi-so-261108095949855.html",
+      "https://baoninhbinh.org.vn/hoi-nghi-nghe-bao-cao-tien-do-thuc-hien-nhiem-vu-linh-vuc-khoa-hoc-cong-nghe-ch-261106162825216.html",
+      "https://baoninhbinh.org.vn/de-chuyen-doi-so-den-gan-hon-voi-dong-bao-mien-nui-261105071640898.html",
+      "https://baoninhbinh.org.vn/day-manh-ung-dung-nen-tang-so-trong-hoat-dong-cua-chinh-quyen-co-so-261030090336314.html",
+      "https://baoninhbinh.org.vn/ban-linh-can-bo-truoc-hoi-chung-dam-dong-261105085723409.html",
+      "https://baoninhbinh.org.vn/dang-bo-tinh-ninh-binh-duoc-tang-bang-khen-tap-the-xuat-sac-1-giai-b-va-1-giai--261019085104721.html",
+      "https://baoninhbinh.org.vn/canh-bao-suy-thoai-dao-duc-gia-phong-tu-hoi-nhom-tren-mang-xa-hoi-261012161502513.html",
+      "https://baoninhbinh.org.vn/ghi-nhan-nhung-tac-pham-chinh-luan-co-tinh-phat-hien-cao-260925210351000.html",
+      "https://baoninhbinh.org.vn/hoi-nghi-trien-khai-ke-hoach-to-chuc-lien-hoan-van-nghe-quan-chung-tinh-ninh-bi-261110105959215.html",
+      "https://baoninhbinh.org.vn/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-261110091553008.html",
+      "https://baoninhbinh.org.vn/am-vang-tieng-trong-doi-tam-rd4075-261108172213266.html",
+      "https://baoninhbinh.org.vn/danh-thuc-mach-nguon-dao-hoc-950-nam-quoc-tu-giam-261109095545662.html",
+      "https://baoninhbinh.org.vn/hoa-hau-viet-nam-2026-nguyen-yen-trang-dang-quang-cung-ve-dep-hoa-binh-261108095200459.html",
+      "https://baoninhbinh.org.vn/tu-van-phap-luat-ve-cac-linh-vuc-phap-ly-lien-quan-den-doanh-nghiep-nho-va-vua--261109113056109.html",
+      "https://baoninhbinh.org.vn/tuyen-truyen-pho-bien-kien-thuc-phap-luat-cho-hoc-sinh-truong-thpt-chuyen-luong-261109095100607.html",
+      "https://baoninhbinh.org.vn/trao-luu-di-chua-online-can-trong-bay-lua-dao-loi-dung-niem-tin-tam-linh-261109090446747.html",
+      "https://baoninhbinh.org.vn/trao-xe-lan-qua-cho-nguoi-khuyet-tat-nguoi-co-hoan-canh-kho-khan-xa-binh-son-261110112514481.html",
+      "https://baoninhbinh.org.vn/tap-trung-hoan-thien-ho-so-trinh-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hi-261110090949639.html",
+      "https://baoninhbinh.org.vn/phat-trien-kinh-te-bao-dam-an-sinh-xa-hoi-vung-dong-bao-dan-toc-thieu-so-261110072952489.html",
+      "https://baoninhbinh.org.vn/so-y-te-tong-duyet-dien-tap-dieu-tra-xu-ly-ngo-doc-thuc-pham-tinh-huong-gia-din-261109112129233.html",
+      "https://baoninhbinh.org.vn/nga-hoan-tat-thu-nghiem-tien-lam-sang-vaccine-dieu-tri-nhieu-loai-ung-thu-261109080833738.html",
+      "https://baoninhbinh.org.vn/10-cach-giup-thuc-day-tinh-tao-vui-ve-va-tran-day-nang-luong-trong-mua-dong-261107130812028.html",
+      "https://baoninhbinh.org.vn/kiem-tra-kiem-diem-tien-do-thuc-hien-ke-hoach-kham-suc-khoe-dinh-ky-kham-sang-l-261106115017719.html",
+      "https://baoninhbinh.org.vn/hoi-nghi-tap-huan-pho-bien-cac-quy-dinh-cua-phap-luat-nghiem-cam-lua-chon-gioi--261106111948553.html",
+      "https://baoninhbinh.org.vn/ubnd-tinh-nghe-bao-cao-tien-do-thuc-hien-nhiem-vu-linh-vuc-khoa-hoc-cong-nghe-c-261106103618790.html",
+      "https://baoninhbinh.org.vn/ubnd-tinh-nghe-bao-cao-tien-do-thuc-hien-nhiem-vu-linh-vuc-khoa-hoc-cong-nghe-c-261104164417299.html",
+      "https://baoninhbinh.org.vn/bo-gd-dt-ra-soat-quy-che-thi-kiem-tra-danh-gia-o-tat-ca-cac-cap-hoc-261109085522673.html",
+      "https://baoninhbinh.org.vn/hoi-thao-khoa-hoc-bao-dam-suc-khoe-tam-than-hoc-duong-nen-tang-nang-cao-chat-lu-261107102843096.html",
+      "https://baoninhbinh.org.vn/cong-ty-co-phan-binh-dien-ninh-binh-trao-tang-150-bo-ban-ghe-cho-truong-thcs-ly-261106121005192.html",
+      "https://baoninhbinh.org.vn/ninh-binh-tich-cuc-chuan-bi-cho-giai-bong-da-giao-huu-quoc-te-casper-cup-2026-261109103747035.html",
+      "https://baoninhbinh.org.vn/vong-7-vleague-20262027-ninh-binhfc-bac-ninh-fc-chu-nha-gianh-chien-thang-261107203524474.html",
+      "https://baoninhbinh.org.vn/vong-7-vleague-2026-2027-noi-dai-mach-thang-clb-thep-xanh-nam-dinh-giu-vung-ngo-261106214748844.html",
+      "https://baoninhbinh.org.vn/doi-dieu-ve-tieu-thuyet-mien-dat-hua-cua-nha-van-le-thanh-ky-261106085544461.html",
+      "https://baoninhbinh.org.vn/nho-khoi-bep-chieu-dong-261106085611664.html",
+      "https://baoninhbinh.org.vn/xay-dung-xa-phuong-khong-ma-tuy-dam-bao-cuoc-song-binh-yen-cho-nhan-dan-261108094810093.html",
+      "https://baoninhbinh.org.vn/tong-duyet-phuong-an-chua-chay-va-cuu-ho-cuu-nan-tai-benh-vien-da-khoa-nam-dinh-261105164803943.html",
+      "https://baoninhbinh.org.vn/gan-100-can-bo-phong-vien-bao-va-phat-thanh-truyen-hinh-ninh-binh-duoc-huan-luy-261105114240848.html",
+      "https://baoninhbinh.org.vn/le-khoi-dong-phat-song-thu-nghiem-kenh-am-nhac-vov-sonata-fm89-261021113758219.html",
+      "https://baoninhbinh.org.vn/tieng-hat-ha-noi-2026-bat-dau-hanh-trinh-tim-kiem-tai-nang-261019135353246.html",
+      "https://baoninhbinh.org.vn/cuc-dien-anh-ra-yeu-cau-rieng-doi-voi-phim-viet-du-thi-quoc-te-261013094515983.html",
+      "https://baoninhbinh.org.vn/dich-vu-chuyen-phat-261020173616819.html",
+      "https://baoninhbinh.org.vn/dich-vu-in-bao-261020172851758.html",
+      "https://baoninhbinh.org.vn/sla-academy-chap-canh-hoi-nhap-cho-the-he-tre-ninh-binh-261012005719000.html",
+      "https://baoninhbinh.org.vn/ngan-hang-tmcp-cong-thuong-viet-nam-chi-nhanh-ninh-binh-thong-bao-tuyen-dung-rd-261010073411309.html",
+      "https://baoninhbinh.org.vn/thong-bao-ve-viec-thay-doi-dia-diem-van-phong-luat-su-nguyen-soi-261002202131182.html",
+      "https://baoninhbinh.org.vn/trung-tam-xuc-tien-dau-tu-va-thuong-mai-tinh-ninh-binh-cung-cap-dich-vu-tu-van--261001151600107.html",
+      "https://baoninhbinh.org.vn/thong-bao-ve-viec-cham-dut-hoat-dong-cho-thue-lai-lao-dong-rd9553-260930091106515.html",
+      "https://baoninhbinh.org.vn/thong-bao-ve-viec-thu-hoi-dat-va-thuc-hien-nghia-vu-quyen-loi-trong-qua-trinh-t-260925184902730.html",
+      "https://baoninhbinh.org.vn/dong-chi-nguyen-duy-ngoc-uy-vien-bo-chinh-tri-bi-thu-trung-uong-dang-truong-ban-261106172226305.html",
+      "https://baoninhbinh.org.vn/ninh-binh-long-trong-to-chuc-le-ky-niem-60-nam-ngay-hy-sinh-cua-muoi-nu-dan-qua-261001214925508.html",
+      "https://baoninhbinh.org.vn/thi-sinh-do-thi-thao-doat-danh-hieu-nguoi-dep-hoa-lu-nam-2026-260906233303402.html",
+      "https://baoninhbinh.org.vn/phe-duyet-du-an-xay-dung-tuyen-duong-truc-dong-luc-phat-trien-kinh-te-xa-hoi-ti-260824113954957.html",
+      "https://baoninhbinh.org.vn/ban-giao-chuc-nang-nhiem-vu-tham-muu-ve-cong-tac-dan-van-sang-uy-ban-mttq-viet--260824154953415.html",
+      "https://baoninhbinh.org.vn/so-khao-cuoc-thi-nguoi-dep-hoa-lu-nam-2026-260815215941906.html",
+      "https://baoninhbinh.org.vn/lanh-dao-dang-nha-nuoc-du-cau-truyen-hinh-sao-sang-dan-duong-tri-an-cac-anh-hun-260726233959137.html",
+      "https://baoninhbinh.org.vn/cong-bo-quyet-dinh-bo-nhiem-giam-doc-so-tai-chinh-rdd1e0-260728162009706.html",
+      "https://baoninhbinh.org.vn/benh-vien-bach-mai-huu-nghi-viet-duc-co-so-2-tai-ninh-binh-hien-thuc-hoa-chu-tr-260723082042596.html",
+      "https://baoninhbinh.org.vn/3-chi-em-sinh-ba-cung-do-vao-truong-thpt-chuyen-luong-van-tuy-260613103748861.html",
+      "https://baoninhbinh.org.vn/khan-truong-trien-khai-cac-giai-phap-ung-pho-mua-lon-ngap-lut-tren-dia-ban-tinh-260723164257608.html",
+      "https://baoninhbinh.org.vn/ebola-co-the-bi-nham-voi-sot-xuat-huyet-cum-chuyen-gia-canh-bao-dau-hieu-can-lu-260608150126170.html",
+      "https://baoninhbinh.org.vn/bao-va-phat-thanh-truyen-hinh-ninh-binh-cong-bo-khung-gia-va-chinh-sach-uu-dai--260109155338137.html",
+      "https://baoninhbinh.org.vn/ban-tin-thoi-su-podcast-bao-ninh-binh-dien-tu-tu-ngay-2112026-9112026-261108203033571.html",
+      "https://baoninhbinh.org.vn/truyen-ke-bac-ho-xuat-xu-cua-5-dieu-bac-ho-day-thieu-nien-nhi-dong-261023225909263.html",
+      "https://baoninhbinh.org.vn/mua-cua-nhung-khoang-lang-rdeba2-261106191431554.html",
+      "https://baoninhbinh.org.vn/iran-len-ke-hoach-xay-dung-duong-ong-dan-khi-dot-110-ty-m3-voi-nga-261108154817297.html",
+      "https://baoninhbinh.org.vn/cac-tieu-vuong-quoc-arap-thong-nhat-dan-dau-the-gioi-ve-dien-mat-troi-binh-quan-261108085532163.html",
+      "https://baoninhbinh.org.vn/canada-mo-quy-che-cap-thuong-tru-cho-200000-cu-dan-tam-thoi-261107103220848.html",
+      "https://baoninhbinh.org.vn/dang-dan-chu-my-dinh-hinh-chuong-trinh-nghi-su-sau-chien-thang-bau-cu-giua-nhie-261105083740374.html",
+      "https://baoninhbinh.org.vn/iea-canh-bao-nguy-co-thieu-hut-khi-dot-keo-dai-sang-nam-2027-261104082003067.html",
+      "https://baoninhbinh.org.vn/nga-xay-dung-trung-tam-du-lieu-duoi-long-dat-de-dam-bao-an-toan-261103081316779.html",
+      "https://baoninhbinh.org.vn/thong-tin-tim-cha-me-de-va-nguoi-than-cua-02-tre-em-dang-duoc-bao-ve-khan-cap-260928014125929.html",
+      "https://baoninhbinh.org.vn/xem-du-bao-thoi-tiet-ninh-binh-hom-nay-dung-chuan-xac-tai-kenh-thoi-tiet-223333.html",
+      "https://baoninhbinh.org.vn/huong-dan-do-va-chon-size-giay-bong-da-chuan-xac-nhat-482376.html",
+      "https://baoninhbinh.org.vn/huong-dan-lua-chon-don-vi-thiet-ke-thi-cong-canh-quan-ninh-binh-649553.html",
+      "https://baoninhbinh.org.vn/nha-pho-soho-the-global-city-vi-sao-duoc-khach-hang-san-don-199904.html",
+      "https://baoninhbinh.org.vn/chuyen-dam-cuoi-chia-se-nhung-thong-tin-cuoi-hoi-huu-ich-cho-cac-cap-doi-362469.html",
+      "https://baoninhbinh.org.vn/vu-lan-am-ap-tai-co-so-dieu-tri-phong-260830215725713.html",
+      "https://baoninhbinh.org.vn/khoi-cong-xay-dung-nha-o-cho-ho-co-hoan-canh-kho-khan-o-phuong-yen-thang-260623174330575.html",
+      "https://baoninhbinh.org.vn/khoi-cong-xay-dung-nha-dai-doan-ket-cho-ho-co-hoan-canh-dac-biet-kho-khan-tai-p-260622170547310.html",
+      "https://baoninhbinh.org.vn/khoi-cong-xay-dung-nha-dai-doan-ket-cho-ho-ngheo-co-hoan-canh-dac-biet-kho-khan-260619190330529.html",
+      "https://baoninhbinh.org.vn/trao-qua-va-xe-lan-cho-cac-gia-dinh-co-hoan-canh-kho-khan-nguoi-khuyet-tat-tai--260615152716957.html",
+      "https://baoninhbinh.org.vn/hoi-doanh-nhan-tre-tinh-ninh-binh-khoi-cong-xay-dung-nha-nhan-ai-cho-gia-dinh-c-260614172154883.html",
+      "https://baoninhbinh.org.vn/trang-soi-day-nuoc-261103093440743.html",
+      "https://baoninhbinh.org.vn/trang-soi-day-nuoc-rdabf4-261106221333798.html",
+      "https://baoninhbinh.org.vn/bao-ve-nen-tang-tu-tuong-cua-dang"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 6,
+      "unresolved_extraction": 6
+    },
+    "checkedAt": "2026-11-10T09:14:22.641Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baoninhbinh.org.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1.header-title"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "h1.header-title + div"
+      },
+      "publicationClockPolicy": "ninhbinh_native_visible_header_v1",
+      "description": {
+        "strategy": "native_lead",
+        "scope": "body",
+        "selector": ".content-detail p",
+        "onlyIfMissing": true
+      }
+    }
+  ],
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baoninhbinh.org.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "nativePublicationAdapter": "url_bound_ninhbinh_next_schema",
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T06:59:01.266Z",
+    "method": "url_bound_original_next_schema_user_confirmed_gmt7",
+    "proofs": [
+      {
+        "url": "https://baoninhbinh.org.vn/ke-hoach-to-chuc-giai-bong-ban-cac-cau-lac-bo-cup-lien-doan-tinh-ninh-binh-nam--261105200342103.html",
+        "contentHash": "566915c53a8bcd7a3cde00b530dd150095f23c4bf1324b48441c1371a1e279dd",
+        "description": "Theo kế hoạch, Giải Bóng bàn các Câu lạc bộ - Cúp Liên đoàn tỉnh Ninh Bình năm 2026 sẽ diễn ra tại Nhà thi đấu TDTT tỉnh từ ngày 4-6/12, với 20 nội dung thi đấu, chia thành 4 nhóm: Lãnh đạo, đồng đội, đơn, đơn nâng cao.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/ke-hoach-to-chuc-giai-bong-ban-cac-cau-lac-bo-cup-lien-doan-tinh-ninh-binh-nam--261105200342103.html",
+          "publishedDate": "2026-11-06T02:23:08.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/chu-tich-ubnd-tinh-yeu-cau-tap-trung-cao-do-kiem-soat-khong-che-benh-dich-ta-lo-261116185457460.html",
+        "contentHash": "17bcfd8df67c13a7353f369a09da873b2427c5c1faf53bbba4eaf25858542639",
+        "description": "Ngày 16/11, UBND tỉnh ban hành Văn bản số 8151 về việc tập trung cao độ triển khai quyết liệt, đồng bộ, hiệu quả các biện pháp kiểm soát, khống chế bệnh Dịch tả lợn Châu Phi.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/chu-tich-ubnd-tinh-yeu-cau-tap-trung-cao-do-kiem-soat-khong-che-benh-dich-ta-lo-261116185457460.html",
+          "publishedDate": "2026-11-16T16:04:18.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/chung-mot-dai-duong-chung-mot-tuong-lai-261116211951771.html",
+        "contentHash": "1131d8ee43de1a93f147bbf69ca45e36773e2b93bf93383b632adc1583ceb9ed",
+        "description": "Báo Ninh Bình điện tử trân trọng giới thiệu bài viết \"Chung một đại dương - Chung một tương lai\" của Tổng Bí thư, Chủ tịch nước Tô Lâm nhân dịp tham dự Tuần lễ Cấp cao APEC lần thứ 33 tại thành phố Thâm Quyến, Trung Quốc.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/chung-mot-dai-duong-chung-mot-tuong-lai-261116211951771.html",
+          "publishedDate": "2026-11-16T23:00:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "originalPublicationBlockedReason": null,
+  "warning44NativeHeaderRepair": {
+    "checkedAt": "2026-11-17T15:17:00.065Z",
+    "proofs": [
+      {
+        "url": "https://baoninhbinh.org.vn/thuc-day-lang-vu-dai-tren-khong-gian-so-261111190614479.html",
+        "publishedDate": "2026-11-13T02:56:00.000Z",
+        "contentHash": "3395083b17e70d024b1d53e93c8419a577be3a95f6515b40dae475b3d81989df",
+        "description": "Làng Vũ Đại trong tác phẩm “Chí Phèo” của nhà văn Nam Cao có nguyên mẫu từ làng Đại Hoàng, nay là thôn Nhân Hậu, xã Nam Lý (tỉnh Ninh Bình). \"Làng Vũ Đại” đã trở thành dấu ấn văn học gắn liền với tên tuổi nhà văn Nam Cao. Trải qua biến thiên của lịch sử, xã Nam Lý - quê hương nhà văn - đang ngày càng đổi thay, trù phú. Phát huy tiềm năng, lợi thế, địa phương đang đẩy mạnh ứng dụng công nghệ số trong quảng bá di tích, làng nghề, phát triển du lịch; đồng thời khuyến khích người dân ứng dụng công nghệ vào sản xuất, kinh doanh, mở rộng thị trường và nâng cao giá trị sản phẩm nghề truyền thống.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/thuc-day-lang-vu-dai-tren-khong-gian-so-261111190614479.html",
+          "publishedDate": "2026-11-13T02:56:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/danh-sach-phuong-tien-vi-pham-giao-thong-duoc-phat-hien-qua-he-thong-giam-sat-v-261112150007851.html",
+        "publishedDate": "2026-11-12T08:43:00.000Z",
+        "contentHash": "a3e8dcd41e03fc27b7e74fb9ea3becb401ca47c460d85397dbb4617684b95430",
+        "description": "Từ ngày 1 - 10/11/2026, đã có 168 phương tiện vi phạm giao thông được phát hiện qua hệ thống giám sát và thiết bị nghiệp vụ của Công an tỉnh Ninh Bình. Sau đây là danh sách các phương tiện vi phạm giao thông.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/danh-sach-phuong-tien-vi-pham-giao-thong-duoc-phat-hien-qua-he-thong-giam-sat-v-261112150007851.html",
+          "publishedDate": "2026-11-12T08:43:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/muc-tieu-tang-truong-grdp-nam-2027-cua-34-tinh-thanh-pho-261111075519956.html",
+        "publishedDate": "2026-11-11T03:22:00.000Z",
+        "contentHash": "c429093cc5a4bd1c8f6445fe2c45e8347a8414e79509214358c5f46dd104195f",
+        "description": "Theo Nghị quyết về kế hoạch phát triển kinh tế-xã hội năm 2027 vừa được thông qua tại Kỳ họp thứ 2, Quốc hội khóa XVI, ngày 7/11/2026, Hải Phòng là địa phương có mục tiêu tăng trưởng năm 2027 cao nhất là 13%.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/muc-tieu-tang-truong-grdp-nam-2027-cua-34-tinh-thanh-pho-261111075519956.html",
+          "publishedDate": "2026-11-11T03:22:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "kind": "original_header_clock_and_native_intro_when_metadata_missing",
+    "paidAiCalls": 0
+  },
+  "warning44AdditionalRepair": {
+    "checkedAt": "2026-11-17T15:00:32.965Z",
+    "kind": "native_visible_original_clock_when_schema_absent",
+    "proofs": [
+      {
+        "url": "https://baoninhbinh.org.vn/danh-sach-phuong-tien-vi-pham-giao-thong-duoc-phat-hien-qua-he-thong-giam-sat-v-261112150007851.html",
+        "publishedDate": "2026-11-12T08:43:00.000Z",
+        "contentHash": "a3e8dcd41e03fc27b7e74fb9ea3becb401ca47c460d85397dbb4617684b95430",
+        "description": "Từ ngày 1 - 10/11/2026, đã có 168 phương tiện vi phạm giao thông được phát hiện qua hệ thống giám sát và thiết bị nghiệp vụ của Công an tỉnh Ninh Bình. Sau đây là danh sách các phương tiện vi phạm giao thông.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/danh-sach-phuong-tien-vi-pham-giao-thong-duoc-phat-hien-qua-he-thong-giam-sat-v-261112150007851.html",
+          "publishedDate": "2026-11-12T08:43:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/muc-tieu-tang-truong-grdp-nam-2027-cua-34-tinh-thanh-pho-261111075519956.html",
+        "publishedDate": "2026-11-11T03:22:00.000Z",
+        "contentHash": "c429093cc5a4bd1c8f6445fe2c45e8347a8414e79509214358c5f46dd104195f",
+        "description": "Theo Nghị quyết về kế hoạch phát triển kinh tế-xã hội năm 2027 vừa được thông qua tại Kỳ họp thứ 2, Quốc hội khóa XVI, ngày 7/11/2026, Hải Phòng là địa phương có mục tiêu tăng trưởng năm 2027 cao nhất là 13%.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/muc-tieu-tang-truong-grdp-nam-2027-cua-34-tinh-thanh-pho-261111075519956.html",
+          "publishedDate": "2026-11-11T03:22:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/doan-le-anh-duc-vo-dich-duong-len-dinh-olympia-2026-261102100752437.html",
+        "publishedDate": "2026-11-02T04:03:00.000Z",
+        "contentHash": "8eb38e201f968ed98c601b0b6f7cc76a55c3c546dc9f9d75aaa1f23fdc2369c3",
+        "description": "Đoàn Lê Anh Đức, học sinh Trường THPT chuyên Hà Nội-Amsterdam, giành vòng nguyệt quế chung kết Đường lên đỉnh Olympia 2026 sáng 1/11.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/doan-le-anh-duc-vo-dich-duong-len-dinh-olympia-2026-261102100752437.html",
+          "publishedDate": "2026-11-02T04:03:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".content-detail p",
+    "onlyIfMissing": true
+  },
+  "pageIdentityPolicy": "ninhbinh_legacy_canonical_alias_v1",
+  "warning44LegacyCanonicalRepair": {
+    "checkedAt": "2026-11-17T16:10:27.108Z",
+    "proofs": [
+      {
+        "url": "https://baoninhbinh.org.vn/thanh-lap-ban-quan-ly-khu-dai-hoc-nam-cao-va-khu-cong-nghe-cao-tinh-ninh-binh-542807.html",
+        "title": "Thành lập Ban Quản lý Khu Đại học Nam Cao và Khu công nghệ cao tỉnh Ninh Bình",
+        "publishedDate": "2025-08-21T08:46:16.000Z",
+        "canonical": "https://baoninhbinh.org.vn/thanh-lap-ban-quan-ly-khu-dai-hoc-nam-cao-va-khu-cong-nghe-542807.htm",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/thanh-lap-ban-quan-ly-khu-dai-hoc-nam-cao-va-khu-cong-nghe-542807.htm",
+          "publishedDate": "2025-08-21T08:46:16.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/dan-mach-tiep-tuc-duoc-xep-hang-quoc-gia-it-tham-nhung-nhat-the-gioi-935974.html",
+        "title": "Đan Mạch tiếp tục được xếp hạng quốc gia ít tham nhũng nhất thế giới",
+        "publishedDate": "2025-02-17T08:46:57.000Z",
+        "canonical": "https://baoninhbinh.org.vn/dan-mach-tiep-tuc-duoc-xep-hang-quoc-gia-it-tham-nhung-nhat-935974.htm",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/dan-mach-tiep-tuc-duoc-xep-hang-quoc-gia-it-tham-nhung-nhat-935974.htm",
+          "publishedDate": "2025-02-17T08:46:57.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/quy-hoach-phat-trien-khong-gian-xanh-de-thanh-pho-hoa-lu-xung-dang-la-hinh-mau--145657.html",
+        "title": "Quy hoạch phát triển không gian xanh để thành phố Hoa Lư xứng đáng là hình mẫu của Đô thị di sản",
+        "publishedDate": "2025-02-07T23:40:00.000Z",
+        "canonical": "https://baoninhbinh.org.vn/quy-hoach-phat-trien-khong-gian-xanh-de-thanh-pho-hoa-lu-145657.htm",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/quy-hoach-phat-trien-khong-gian-xanh-de-thanh-pho-hoa-lu-145657.htm",
+          "publishedDate": "2025-02-07T23:40:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://baoninhbinh.org.vn/ky-iii-phat-trien-cac-cum-cong-nghiep-theo-dung-quy-hoach-657762.html",
+        "title": "Kỳ III: Phát triển các cụm công nghiệp theo đúng Quy hoạch",
+        "publishedDate": "2024-12-19T00:31:00.000Z",
+        "canonical": "https://baoninhbinh.org.vn/ky-iii-phat-trien-cac-cum-cong-nghiep-theo-dung-quy-hoach-657762.htm",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baoninhbinh.org.vn/ky-iii-phat-trien-cac-cum-cong-nghiep-theo-dung-quy-hoach-657762.htm",
+          "publishedDate": "2024-12-19T00:31:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "baoninhbinh.org.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  }
+}

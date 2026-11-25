@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nongsanviet.nongnghiepmoitruong.vn",
+  "siteId": "nongsanviet.nongnghiepmoitruong.vn",
+  "registrableDomain": "nongnghiepmoitruong.vn",
+  "homepage": "https://nongsanviet.nongnghiepmoitruong.vn/",
+  "allowedHosts": [
+    "nongsanviet.nongnghiepmoitruong.vn",
+    "www.nongsanviet.nongnghiepmoitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khởi nghiệp từ căn bếp, livestream thu hút triệu view",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:59.243Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nongsanviet.nongnghiepmoitruong.vn/khoi-nghiep-tu-can-bep-livestream-thu-hut-trieu-view-d792320.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nang-tam-nong-san-viet-bang-tri-tue-nhan-tao-d759679.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/tuyen-quang-gianh-5-giai-vang-tai-bup-che-vang-viet-nam-2026-d840305.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/le-hoi-den-dong-cuong-ngap-tran-san-vat-d837351.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/tim-ra-quan-quan-festival-tra-quoc-te--thai-nguyen-2026-d839943.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nongsanviet.nongnghiepmoitruong.vn/",
+    "categories": [
+      "https://nongsanviet.nongnghiepmoitruong.vn/nong-san-viet-nong-nghiep-40/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/san-vat-dia-phuong/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/organic/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/tai-chinh/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nong-san-the-gioi/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/thi-truong/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/doanh-nghiep/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/am-thuc-truyen-thong/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/video/",
+      "https://nongsanviet.nongnghiepmoitruong.vn/thong-tin-toa-soan"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nongsanviet.nongnghiepmoitruong.vn",
+    "checkedAt": "2026-11-09T03:57:21.084Z",
+    "url": "https://nongsanviet.nongnghiepmoitruong.vn/khoi-nghiep-tu-can-bep-livestream-thu-hut-trieu-view-d792320.html",
+    "finalUrl": "https://nongsanviet.nongnghiepmoitruong.vn/khoi-nghiep-tu-can-bep-livestream-thu-hut-trieu-view-d792320.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6200,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nongsanviet.nongnghiepmoitruong.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 125,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nongsanviet.nongnghiepmoitruong.vn/tuyen-quang-gianh-5-giai-vang-tai-bup-che-vang-viet-nam-2026-d840305.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/le-hoi-den-dong-cuong-ngap-tran-san-vat-d837351.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/tim-ra-quan-quan-festival-tra-quoc-te--thai-nguyen-2026-d839943.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/ngat-thom-huong-com-hop-thanh-d836946.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/san-vat-thai-nguyen-la-ocop-5-sao-bai-3-soi-mien-dong-ke-chuyen-d835054.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/san-vat-thai-nguyen-la-ocop-5-sao-bai-2-hanh-trinh-cu-nghe-vang-d833626.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/san-vat-thai-nguyen-la-ocop-5-sao-bai-1-chu-the-dau-tien-d833617.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/aolc-2026-tiep-suc-cho-nhung-hat-nhan-nong-nghiep-huu-co-d833851.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/com-ha-noi-qua-ban-tay-the-he-d831898.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/san-pham-ocop-5-sao-vuon-ra-the-gioi-d825471.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/organic-foods-festival-2026-cau-noi-giua-nha-san-xuat-va-nguoi-tieu-dung-d823043.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/hop-tac-xa-bao-cay-chuoi-ra-chuoi-gia-tri-d821023.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/lang-nghe-son-mai-tram-tuoi-loay-hoay-tim-dau-ra-cho-san-pham-d277433.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/eu-siet-yeu-cau-an-toan-thuc-pham-voi-doanh-nghiep-viet-d826115.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/van-tai-xanh-toi-uu-hoa-chuoi-cung-ung-trung--viet-d822105.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/doanh-nghiep-luong-thuc-thuc-pham-buoc-vao-cuoc-dua-gia-tri-d805520.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nong-san-tay-bac-hoi-tu-tai-le-hoi-muong-lo-d836719.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nong-nghiep-huu-co-lam-dong-dinh-hinh-huong-di-d802228.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/da-nang-mo-rong-san-xuat-rau-an-toan-d795283.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/mit-thai-sieu-som-cho-trai-on-dinh-d277111.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/vuon-mang-cau-rong-3000ha-cho-trai-nang-hon-1kg-d276689.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/thanh-long-ruot-do-lap-thach--cay-lam-giau-d274218.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/thu-tuong-nguyen-xuan-phuc-doi-thoai-voi-nong-dan-viet-nam-lan-thu-ba-d274031.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/lo-vai-thieu-hai-duong-di-my-singapore-d265084.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/dien-bien-xuc-tien-thuong-mai-nong-san-theo-huong-da-kenh-d802042.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/kiem-soat-chat-che-nguon-thuc-pham-dip-cuoi-nam-d795475.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/quang-ngai-thuc-day-tieu-thu-nong-san-qua-thuong-mai-dien-tu-d833757.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/ban-nong-san-ke-cau-chuyen-qua-dien-thoai-thong-minh-d830204.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/khoi-nghiep-tu-can-bep-livestream-thu-hut-trieu-view-d792320.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/dien-bien-ung-dung-cong-nghe-so-thuc-day-phat-trien-san-pham-ocop-d779326.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/quang-ngai-xay-dung-nhan-hieu-chung-nhan-che-loc-thanh-d838124.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/gao-nep-tan-muong-phang-tinh-hoa-nong-san-vung-cao-d833136.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/dua-vi-nuoc-mam-que-nha-vuon-xa-d827100.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/vien-sup-bun-nuoc-leo-ke-chuyen-van-hoa-dong-bao-khmer-nam-bo-d823227.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/sap-dien-ra-hoi-thi-san-pham-thu-cong-my-nghe-viet-nam-nam-2026-d821821.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/thi-truong-nghin-ty-do-goi-ten-nong-nghiep-huu-co-viet-nam-d790556.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/trung-ga-phu-quy-dat-ocop-3-sao-mo-rong-chuoi-chan-nuoi-d795079.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/ra-mat-phien-ban-tet-dac-biet-gao-st25-lua--tom-d794828.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/xay-dung-san-pham-ocop-5-sao-nang-cao-gia-tri-que-van-yen-d790579.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/agribank--ngan-hang-xanh-hanh-trinh-chuyen-doi-so-d746083.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nhieu-chinh-sach-ho-tro-lai-suat-phat-trien-nong-nghiep-nong-thon-o-tphcm-d405102.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/agribank-san-sang-dong-hanh-cung-de-an-1-trieu-ha-lua-chat-luong-cao-d405001.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nganh-nuoi-lon-chau-au-tim-cach-lay-niem-tin-nguoi-tieu-dung-d372498.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/chinh-phu-han-quoc-tinh-tro-cap-tien-tuoi-cho-nguoi-chan-nuoi-d324099.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/phan-tich-nhung-yeu-to-thuc-day-gia-gao-tren-the-gioi-thoi-gian-toi-d318679.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/nho-nieu-bong-kho-cua-ngoai-d823979.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/bun-moc-kim-son-vi-xua-tu-vung-dat-mo-d806360.html",
+      "https://nongsanviet.nongnghiepmoitruong.vn/banh-cuon-tom-do-son--an-mot-lan-nho-mai-d803654.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:20.759Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nongsanviet.nongnghiepmoitruong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "nongsanviet.nongnghiepmoitruong.vn",
+      "siteId": "nongsanviet.nongnghiepmoitruong.vn",
+      "registrableDomain": "nongnghiepmoitruong.vn",
+      "homepage": "https://nongsanviet.nongnghiepmoitruong.vn/",
+      "allowedHosts": [
+        "nongsanviet.nongnghiepmoitruong.vn",
+        "www.nongsanviet.nongnghiepmoitruong.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Khởi nghiệp từ căn bếp, livestream thu hút triệu view",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content_detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "additionalMediaStrategy": "jsonld",
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:18.482Z",
+        "trainingUrls": [
+          "https://nongsanviet.nongnghiepmoitruong.vn/lang-nghe-son-mai-tram-tuoi-loay-hoay-tim-dau-ra-cho-san-pham-d277433.html",
+          "https://nongsanviet.nongnghiepmoitruong.vn/mit-thai-sieu-som-cho-trai-on-dinh-d277111.html",
+          "https://nongsanviet.nongnghiepmoitruong.vn/vuon-mang-cau-rong-3000ha-cho-trai-nang-hon-1kg-d276689.html"
+        ],
+        "holdoutUrls": [
+          "https://nongsanviet.nongnghiepmoitruong.vn/ngat-thom-huong-com-hop-thanh-d836946.html",
+          "https://nongsanviet.nongnghiepmoitruong.vn/san-vat-thai-nguyen-la-ocop-5-sao-bai-3-soi-mien-dong-ke-chuyen-d835054.html"
+        ]
+      }
+    }
+  ]
+}

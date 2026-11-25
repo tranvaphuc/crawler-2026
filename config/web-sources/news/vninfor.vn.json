@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vninfor.vn",
+  "siteId": "vninfor.vn",
+  "registrableDomain": "vninfor.vn",
+  "homepage": "https://vninfor.vn/",
+  "allowedHosts": [
+    "vninfor.vn",
+    "www.vninfor.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vninfor.vn/",
+    "categories": [
+      "https://vninfor.vn/tieu-diem",
+      "https://vninfor.vn/kinh-te-tai-chinh",
+      "https://vninfor.vn/kinh-te-tai-chinh/kinh-te",
+      "https://vninfor.vn/kinh-te-tai-chinh/tai-chinh",
+      "https://vninfor.vn/kinh-te-tai-chinh/chung-khoan",
+      "https://vninfor.vn/kinh-te-tai-chinh/thi-truong"
+    ]
+  },
+  "title": {
+    "value": "Hành trình phát triển bền vững tại Vinamilk: Từ những thay đổi nhỏ đến tác động lớn hơn cho cộng đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".__MASTERCMS_CONTENT",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:31.241Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:25.198Z",
+    "independentHoldouts": [
+      "https://vninfor.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-23530.html",
+      "https://vninfor.vn/phai-doan-xuc-tien-thuong-mai-cua-bo-nong-nghiep-hoa-ki-tham-quan-nha-may-sua-cua-vinamilk-23714.html",
+      "https://vninfor.vn/tu-vi-hom-nay-xem-tu-vi-12-con-giap-hom-nay-ngay-16112026-tuoi-suu-thu-nhap-du-chi-tieu-23705.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vninfor.vn/hanh-trinh-phat-trien-ben-vung-tai-vinamilk-tu-nhung-thay-doi-nho-den-tac-dong-lon-hon-cho-cong-dong-23480.html",
+      "https://vninfor.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-23530.html",
+      "https://vninfor.vn/phai-doan-xuc-tien-thuong-mai-cua-bo-nong-nghiep-hoa-ki-tham-quan-nha-may-sua-cua-vinamilk-23714.html",
+      "https://vninfor.vn/tu-vi-hom-nay-xem-tu-vi-12-con-giap-hom-nay-ngay-16112026-tuoi-suu-thu-nhap-du-chi-tieu-23705.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

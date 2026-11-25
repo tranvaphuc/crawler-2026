@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tcnnld.vn",
+  "siteId": "tcnnld.vn",
+  "registrableDomain": "tcnnld.vn",
+  "homepage": "https://tcnnld.vn/",
+  "allowedHosts": [
+    "tcnnld.vn",
+    "www.tcnnld.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tcnnld.vn/",
+    "categories": [
+      "https://tcnnld.vn/pages/5020/Cai-cach-hanh-chinh.html",
+      "https://tcnnld.vn/pages/9/Ban-doc-viet.html",
+      "https://tcnnld.vn/video/detail/1.html",
+      "https://tcnnld.vn/pages/gallery.html",
+      "https://tcnnld.vn/pages/podcast.html",
+      "https://tcnnld.vn/pages/audio.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Đề xuất bổ sung một số hành vi bị nghiêm cấm vào Luật sửa đổi, bổ sung một số điều của Luật Phòng, chống tác hại của thuốc lá",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".noidung",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:09.454Z",
+    "frozenAt": "2026-11-16T01:59:53.815Z",
+    "trainingUrl": "https://tcnnld.vn/news/detail/73767/De-xuat-bo-sung-mot-so-hanh-vi-bi-nghiem-cam-vao-Luat-sua-doi-bo-sung-mot-so-dieu-cua-Luat-Phong-chong-tac-hai-cua-thuoc-la.html",
+    "independentHoldouts": [
+      "https://tcnnld.vn/pages/1010182/Chuc-nang-nhiem-vu-quyen-han-co-cau-to-chuc-cua-Tap-chi-To-chuc-nha-nuoc-va-Lao-Dong.html",
+      "https://tcnnld.vn/news/detail/73966/Bo-truong-Nguyen-Tien-Hai-giai-trinh-mot-so-van-de-dai-bieu-Quoc-hoi-quan-tam-doi-voi-03-du-an-Luat-do-Bo-Noi-vu-chu-tri-soan-thao.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tcnnld.vn/news/detail/73767/De-xuat-bo-sung-mot-so-hanh-vi-bi-nghiem-cam-vao-Luat-sua-doi-bo-sung-mot-so-dieu-cua-Luat-Phong-chong-tac-hai-cua-thuoc-la.html",
+      "https://tcnnld.vn/pages/1010182/Chuc-nang-nhiem-vu-quyen-han-co-cau-to-chuc-cua-Tap-chi-To-chuc-nha-nuoc-va-Lao-Dong.html",
+      "https://tcnnld.vn/news/detail/73966/Bo-truong-Nguyen-Tien-Hai-giai-trinh-mot-so-van-de-dai-bieu-Quoc-hoi-quan-tam-doi-voi-03-du-an-Luat-do-Bo-Noi-vu-chu-tri-soan-thao.html",
+      "https://tcnnld.vn/news/detail/73960/THUONG-TON-HIEN-PHAP-VA-PHAP-LUAT---DONG-LUC-KIEN-TAO-PHAT-TRIEN-DAT-NUOC.html",
+      "https://tcnnld.vn/news/detail/73922/Quan-triet-va-van-dung-nguyen-tac-tu-phe-binh-va-phe-binh-trong-danh-gia-can-bo-theo-tinh-than-Dai-hoi-XIV-cua-Dang.html",
+      "https://tcnnld.vn/news/detail/73902/Kiem-soat-xung-dot-loi-ich-trong-thuc-thi-cong-vu-o-Viet-Nam-trong-giai-doan-hien-nay.html",
+      "https://tcnnld.vn/news/detail/73820/Tu-chinh-sach-tri-an-nguoi-co-cong-den-niem-tin-Nhan-dan-Boi-dap--the-tran-long-dan.html",
+      "https://tcnnld.vn/news/detail/73810/Truong-Ban-To-chuc-Trung-uong-Cac-bo-nganh-dia-phuong-phai-coi-viec-xac-dinh-dung-day-du-vi-tri-viec-lam-la-nhiem-vu-trong-tam.html",
+      "https://tcnnld.vn/news/detail/73786/Quoc-hoi-nghe-To-trinh-du-an-Luat-sua-doi-bo-sung-mot-so-dieu-cua-Luat-Bao-hiem-xa-hoi-va-du-an-Luat-Thuc-hien-dan-chu-o-co-so-sua-doi.html",
+      "https://tcnnld.vn/news/detail/73780/Ket-luan-cua-Bo-Chinh-tri-ve-hoan-thien-he-thong-vi-tri-viec-lam-trong-he-thong-chinh-tri-gan-voi-xay-dung-doi-ngu-can-bo-va-quan-ly-bien-che.html",
+      "https://tcnnld.vn/news/detail/73735/Hoi-nghi-toan-quoc-quan-triet-trien-khai-thuc-hien-Nghi-quyet-Hoi-nghi-lan-thu-tu-Ban-Chap-hanh-Trung-uong-Dang-khoa-XIV.html",
+      "https://tcnnld.vn/news/detail/74006/Bo-Noi-vu-va-KOSHA-tang-cuong-hop-tac-trong-linh-vuc-an-toan-ve-sinh-lao-dong.html",
+      "https://tcnnld.vn/news/detail/73916/Long-ghep-van-de-gioi-trong-cac-chinh-sach-ve-lao-dong-viec-lam-an-sinh-xa-hoi-thuc-day-dao-tao-nghe-va-ho-tro-phu-nu-khoi-nghiep.html",
+      "https://tcnnld.vn/news/detail/73884/Thanh-pho-Ho-Chi-Minh-tiep-tuc-day-nhanh-viec-tim-kiem-quy-tap-va-xac-dinh-danh-tinh-hai-cot-liet-si.html",
+      "https://tcnnld.vn/news/detail/74021/De-nghi-Quoc-hoi-xem-xet-thong-qua-Nghi-quyet-ve-viec-dieu-chinh-dia-gioi-don-vi-hanh-chinh-giua-thanh-pho-Ha-Noi-va-tinh-Phu-Tho-ngay-tai-Ky-hop-thu-Hai.html",
+      "https://tcnnld.vn/news/detail/73961/Ban-Bi-thu-ban-hanh-quy-dinh-ve-sinh-hoat-dang-truc-tuyen.html",
+      "https://tcnnld.vn/news/detail/73957/Nam-diem-moi-noi-bat-cua-Ngay-Phap-luat-Viet-Nam-nam-2026.html",
+      "https://tcnnld.vn/news/detail/73955/Hoi-Doanh-nghiep-Nghe-Tinh-tai-Thanh-pho-Ho-Chi-Minh-Phat-huy-suc-manh-ket-noi-mo-rong-hop-tac-va-dong-hanh-cung-que-huong.html",
+      "https://tcnnld.vn/news/detail/74052/Ha-Noi-dua-dich-vu-hanh-chinh-cong-den-gan-hon-voi-nguoi-co-cong.html",
+      "https://tcnnld.vn/news/detail/74057/Thanh-pho-Hue-day-manh-Chien-dich-500-ngay-dem-giai-doan-II.html",
+      "https://tcnnld.vn/news/detail/74011/Tuyen-Quang-Tan-tam-ho-tro-than-nhan-liet-si-tim-kiem-thong-tin-phan-mo.html",
+      "https://tcnnld.vn/news/detail/74002/Tinh-An-Giang-quyet-liet-trien-khai-chien-dich-500-ngay-dem-tim-kiem-quy-tap-va-xac-dinh-danh-tinh-hai-cot-liet-sy.html",
+      "https://tcnnld.vn/news/detail/74058/Chinh-phu-ban-hanh-Nghi-dinh-ve-quan-ly-su-dung-bien-che-cong-chuc.html",
+      "https://tcnnld.vn/news/detail/74049/Bao-ve-can-bo-dam-nghi-dam-lam-Tu-chu-truong-den-co-che-thuc-chat.html",
+      "https://tcnnld.vn/news/detail/74043/Tap-huan-tang-cuong-nang-luc-thuc-hien-cong-tac-cai-cach-hanh-chinh-cho-hon-150-can-bo-cong-chuc-cua-29-tinh-thanh-pho.html",
+      "https://tcnnld.vn/news/detail/73878/Triet-ly-lay-dan-lam-goc---tu-tu-tuong-Ho-Chi-Minh-den-quan-diem-cua-Dang-ta-trong-Van-kien-Dai-hoi-lan-thu-XIV.html",
+      "https://tcnnld.vn/news/detail/73431/Ban-Bi-thu-ban-hanh-Ke-hoach-thuc-hien-Chi-thi-so-07-CTTW-ve-Day-manh-hoc-tap-thuc-hanh-tu-tuong-dao-duc-phuong-phap-phong-cach-Ho-Chi-Minh-trong-giai-doan-phat-trien-moi.html",
+      "https://tcnnld.vn/news/detail/73377/Day-manh-hoc-tap-va-thuc-hanh-phong-cach-Ho-Chi-Minh-trong-xay-dung-doi-ngu-can-bo-quan-doi-hien-nay.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

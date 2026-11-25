@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruongnews.net",
+  "siteId": "thitruongnews.net",
+  "registrableDomain": "thitruongnews.net",
+  "homepage": "https://thitruongnews.net/",
+  "allowedHosts": [
+    "thitruongnews.net",
+    "www.thitruongnews.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thitruongnews.net/",
+    "categories": [
+      "https://thitruongnews.net/c/tieu-diem",
+      "https://thitruongnews.net/c/thi-truong",
+      "https://thitruongnews.net/c/kinh-te",
+      "https://thitruongnews.net/c/doi-song",
+      "https://thitruongnews.net/c/xa-hoi",
+      "https://thitruongnews.net/c/cong-nghe"
+    ]
+  },
+  "title": {
+    "value": "Kao Việt Nam kỷ niệm 30 năm hoạt động tại Việt Nam và công bố Chương trình “Tăng cường chăm sóc y tế” (Care within Reach)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:36.773Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:28.303Z",
+    "independentHoldouts": [
+      "https://thitruongnews.net/toyota-viet-nam-tiep-tuc-uu-dai-lon-kich-cau-thi-truong-o-to-thang-102026-a42766.html",
+      "https://thitruongnews.net/du-bao-thoi-tiet-11112026-chuyen-gia-ly-giai-su-bat-thuong-ve-dot-khong-khi-lanh-gay-mua-du-doi-o-mien-trung-a43952.html",
+      "https://thitruongnews.net/du-bao-thoi-tiet-9112026-mien-bac-ret-nhat-vao-ngay-nao-dot-khong-khi-lanh-lan-nay-keo-dai-bao-lau-a43830.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thitruongnews.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a42103.html",
+      "https://thitruongnews.net/toyota-viet-nam-tiep-tuc-uu-dai-lon-kich-cau-thi-truong-o-to-thang-102026-a42766.html",
+      "https://thitruongnews.net/du-bao-thoi-tiet-11112026-chuyen-gia-ly-giai-su-bat-thuong-ve-dot-khong-khi-lanh-gay-mua-du-doi-o-mien-trung-a43952.html",
+      "https://thitruongnews.net/du-bao-thoi-tiet-9112026-mien-bac-ret-nhat-vao-ngay-nao-dot-khong-khi-lanh-lan-nay-keo-dai-bao-lau-a43830.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

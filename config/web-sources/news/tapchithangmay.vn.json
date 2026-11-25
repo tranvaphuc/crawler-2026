@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchithangmay.vn",
+  "siteId": "tapchithangmay.vn",
+  "registrableDomain": "tapchithangmay.vn",
+  "homepage": "https://tapchithangmay.vn/",
+  "allowedHosts": [
+    "tapchithangmay.vn",
+    "www.tapchithangmay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "EN ISO 8100 thay thế EN 81-20/50: Hơn 300 thay đổi về an toàn thang máy",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Tạp chí Thang máy điểm tin ngày 6/11/2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content.news-roundup",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:41:50.721Z",
+    "sampleCount": 13,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 7,
+    "sampleUrls": [
+      "https://tapchithangmay.vn/tap-chi-thang-may-diem-tin-ngay-6112026-p20261106082404907.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-diem-tin-ngay-29102026-p20261029092216359.html",
+      "https://tapchithangmay.vn/en-iso-8100-thay-the-en-812050-hon-300-thay-doi-ve-an-toan-thang-may-p20261031082629262.html",
+      "https://tapchithangmay.vn/tu-112027-hang-made-in-vietnam-phai-co-it-nhat-30-ham-luong-gia-tri-viet-nam-p20261012105619631.html",
+      "https://tapchithangmay.vn/eu-85-mau-giam-chan-thang-may-pu-khong-dat-thu-nghiem-an-toan-p20261104082704713.html",
+      "https://tapchithangmay.vn/tu-duy-den-thi-danh-chiu-chu-do-thi-quen-di-p20261031095826471.html",
+      "https://tapchithangmay.vn/tieu-chuan-ngon-ngu-chung-cua-niem-tin-trong-ky-nguyen-so-p20261014165509124.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tapchithangmay.vn/",
+    "categories": [
+      "https://tapchithangmay.vn/tin-tuc.html",
+      "https://tapchithangmay.vn/thi-truong.html",
+      "https://tapchithangmay.vn/thang-may-cuoc-song.html",
+      "https://tapchithangmay.vn/chuyen-gia-cong-nghe.html",
+      "https://tapchithangmay.vn/vnea-hoi-vien.html",
+      "https://tapchithangmay.vn/thoi-su.html",
+      "https://tapchithangmay.vn/phap-luat.html",
+      "https://tapchithangmay.vn/doanh-nghiep.html",
+      "https://tapchithangmay.vn/tieu-dung.html",
+      "https://tapchithangmay.vn/cuoc-song.html",
+      "https://tapchithangmay.vn/cham.html",
+      "https://tapchithangmay.vn/goc-nhin.html",
+      "https://tapchithangmay.vn/cam-nang-tu-van.html",
+      "https://tapchithangmay.vn/cong-nghe.html",
+      "https://tapchithangmay.vn/multimedia.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tapchithangmay.vn",
+    "checkedAt": "2026-11-09T03:57:27.552Z",
+    "url": "https://tapchithangmay.vn/tap-chi-thang-may-diem-tin-ngay-6112026-p20261106082404907.html",
+    "finalUrl": "https://tapchithangmay.vn/tap-chi-thang-may-diem-tin-ngay-6112026-p20261106082404907.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2507,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tapchithangmay.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 11,
+    "freshArticleChecks": 8,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 15,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 15,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 8,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tapchithangmay.vn/tccs-012023vnea-yeu-cau-an-toan-chung-trong-quan-ly-su-dung-bao-tri-sua-chua-thang-may-a25.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-14-a26.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-13-a23.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-11-a10.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-10-a11.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-08-a9.html",
+      "https://tapchithangmay.vn/tap-chi-thang-may-so-07-a7.html",
+      "https://tapchithangmay.vn/policy.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1,
+      "selector_or_layout_mismatch": 7
+    },
+    "checkedAt": "2026-11-10T09:17:02.435Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tapchithangmay.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

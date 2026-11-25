@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ngoisaovietnam.vn",
+  "siteId": "ngoisaovietnam.vn",
+  "registrableDomain": "ngoisaovietnam.vn",
+  "homepage": "https://ngoisaovietnam.vn/",
+  "allowedHosts": [
+    "ngoisaovietnam.vn",
+    "www.ngoisaovietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "domain": "ngoisaovietnam.vn",
+  "enabled": false,
+  "stage": "parser_failed",
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:35.292Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSampleCount": 0,
+    "categoryVerified": false,
+    "fullSiteCycleVerified": false,
+    "reason": "not_found",
+    "stage": "parser_failed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/ngoisaovietnam.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ngoisaovietnam.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 15,
+    "freshArticleChecks": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 15,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 16,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ngoisaovietnam.vn/nguoi-mau-nhi-viet-nam-----model-kid-vietnam-2019-toi-tham-nha-hat-tuoi-tre-viet-nam_i475.html",
+      "https://ngoisaovietnam.vn/guong-mat-dep-nhat-cuoc-thi-nguoi-mau-nhi-2018-thuoc-ve-nguyen-ngoc-ha-anh_i472.html",
+      "https://ngoisaovietnam.vn/pham-nhu-ngoc-xuat-sac-gianh-giai-tai-nang-tu-bgk-dem-chung-ket-cuoc-thi-nguoi-mau-nhi-viet-nam-2018_i460.html",
+      "https://ngoisaovietnam.vn/xuat-hien-hinh-anh-dan-mau-nhi-2018-dep-lung-linh-nhu-thien-than_i459.html",
+      "https://ngoisaovietnam.vn/ngoi-sao-bao-han-duoc-dat-cach-vao-vong-chung-ket--cuoc-thi-nguoi-mau-nhi--2018_i458.html",
+      "https://ngoisaovietnam.vn/hoa-hau-truc-vu-tham-gia-cuoc-thi-nguoi-mau-nhi-viet-nam-2018-trong-vai-tro-huan-luyen-vien_i457.html",
+      "https://ngoisaovietnam.vn/dien-vien-kim-thanh-thao-bi-to-toi-vu-khong--lua-dao--an-cap-ban-quyen-chuong-trinh----ngoi-sao-dien-anh-2015---_i434.html",
+      "https://ngoisaovietnam.vn/nguoi-mau-nhi-viet-nam-2018-mua-dau-tien--tim-ra-quan-quan-va-2-a-quan_i470.html",
+      "https://ngoisaovietnam.vn/nhung-mau-nhi-xuat-sac-tai-cuoc-thi-nguoi-mau-nhi-viet-nam-2018_i469.html",
+      "https://ngoisaovietnam.vn/nhung-mau-nhi-xuat-sac-tai-cuoc-thi-nguoi-mau-nhi-viet-nam-2018_i468.html",
+      "https://ngoisaovietnam.vn/da-tim-ra-quan-quan-nguoi-mau-nhi-viet-nam-nam-2018_i467.html",
+      "https://ngoisaovietnam.vn/cuoc-thi--nguoi-mau-thoi-trang-viet-nam-2018--lay-cap--ban-quyen_i453.html",
+      "https://ngoisaovietnam.vn/vtv-pho--i-ho--p-ban-to---chu--c-va---nguye--n-thi---phuong-dung-lo--ng-ha--nh-cuo--p--ngoi-sao-vie--t--lie--u-cu--c-nghe---thua--t-bie--u-die--n--bo---vhtt---dl---ca--c-nha---la--nh-da--o-co---khoanh-tay-du--ng-nhi--n----_i424.html",
+      "https://ngoisaovietnam.vn/-btc-chuong-trinh-ngoi-sao-viet-khong-chung-minh-duoc-ban-quyen_i423.html",
+      "https://ngoisaovietnam.vn/nhac/voi-anh--em-van-la-co-be_m1518.html",
+      "https://ngoisaovietnam.vn/ngoi-sao-viet-nam_giai-tri_ngoi-sao-viet.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:10.202Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ngoisaovietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "discovery": {
+    "homepage": "https://ngoisaovietnam.vn/",
+    "categories": [
+      "https://ngoisaovietnam.vn/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.316Z",
+      "verifiedSeeds": [
+        "https://ngoisaovietnam.vn/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  }
+}

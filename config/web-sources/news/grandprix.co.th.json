@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "grandprix.co.th",
+  "siteId": "grandprix.co.th",
+  "registrableDomain": "grandprix.co.th",
+  "homepage": "https://www.grandprix.co.th/",
+  "allowedHosts": [
+    "www.grandprix.co.th",
+    "grandprix.co.th"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.grandprix.co.th/",
+    "categories": [
+      "https://www.grandprix.co.th/category/auto-news/",
+      "https://www.grandprix.co.th/category/auto-news/bizz-news/",
+      "https://www.grandprix.co.th/category/auto-news/new-comer/",
+      "https://www.grandprix.co.th/category/auto-news/modelminorchange/",
+      "https://www.grandprix.co.th/category/auto-news/world-movement/",
+      "https://www.grandprix.co.th/category/auto-news/corporate-news/"
+    ]
+  },
+  "title": {
+    "value": "จ่อปรับสูตรน้ำมันไทย ดัน E20 แทน 91-95 ใครได้ใครเสีย?",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:09.395Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:56.312Z",
+    "independentHoldouts": [
+      "https://www.grandprix.co.th/test-drive-mazda-6e-in-the-city/",
+      "https://www.grandprix.co.th/test-drive-hyundai-staria-hybrid/",
+      "https://www.grandprix.co.th/hyundai-ioniq-5-n-line-when-an-ev-doesnt-have-to-look-like-a-typical-ev/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.grandprix.co.th/thailand-set-to-adjust-fuel-formula-pushing-e20-to-replace-91-and-95-who-stands-to-gain-or-lose/",
+      "https://www.grandprix.co.th/test-drive-mazda-6e-in-the-city/",
+      "https://www.grandprix.co.th/test-drive-hyundai-staria-hybrid/",
+      "https://www.grandprix.co.th/hyundai-ioniq-5-n-line-when-an-ev-doesnt-have-to-look-like-a-typical-ev/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

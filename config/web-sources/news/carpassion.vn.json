@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "carpassion.vn",
+  "siteId": "carpassion.vn",
+  "registrableDomain": "carpassion.vn",
+  "homepage": "https://carpassion.vn/",
+  "allowedHosts": [
+    "carpassion.vn",
+    "www.carpassion.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://carpassion.vn/",
+    "categories": [
+      "https://carpassion.vn/ewr-porta/categories/tin-xe.1/",
+      "https://carpassion.vn/ewr-porta/categories/ev.10/",
+      "https://carpassion.vn/ewr-porta/categories/danh-gia-xe.3/",
+      "https://carpassion.vn/ewr-porta/categories/tu-van-cong-nghe.2/",
+      "https://carpassion.vn/ewr-porta/categories/sieu-xe.4/",
+      "https://carpassion.vn/ewr-porta/categories/so-sanh-xe.11/",
+      "https://carpassion.vn/ewr-porta/categories/the-gioi-mo-to.8/",
+      "https://carpassion.vn/ewr-porta/categories/xe-do.7/",
+      "https://carpassion.vn/ewr-porta/categories/du-lich.5/",
+      "https://carpassion.vn/forums/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "3 mẫu xe Mitsubishi lọt top 10 xe bán chạy nửa đầu năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:06.010Z",
+    "frozenAt": "2026-11-16T01:58:02.100Z",
+    "trainingUrl": "https://carpassion.vn/threads/3-mau-xe-mitsubishi-lot-top-10-xe-ban-chay-nua-dau-nam-2026.22989",
+    "independentHoldouts": [
+      "https://carpassion.vn/threads/do-den-vinfast-vf3-kinh-nghiem-chay-dem-di-mua-va-ve-que-bang-xe-dien-co-nho.24283/post-25147",
+      "https://carpassion.vn/threads/vinfast-chinh-thuc-nhan-dat-coc-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong.24282/post-25146"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://carpassion.vn/threads/3-mau-xe-mitsubishi-lot-top-10-xe-ban-chay-nua-dau-nam-2026.22989",
+      "https://carpassion.vn/threads/do-den-vinfast-vf3-kinh-nghiem-chay-dem-di-mua-va-ve-que-bang-xe-dien-co-nho.24283/post-25147",
+      "https://carpassion.vn/threads/vinfast-chinh-thuc-nhan-dat-coc-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong.24282/post-25146",
+      "https://carpassion.vn/threads/den-bi-gam-sang-nhat-khi-chay-deo-mua-dem-kinh-nghiem-thuc-te-tu-tay-lai.24281/post-25145",
+      "https://carpassion.vn/threads/dia-chi-mua-cau-nang-2-tru-uy-tin.24280/post-25144",
+      "https://carpassion.vn/threads/hon-3-400-xe-hyundai-den-tay-khach-hang-trong-thang-10-2026.24279/post-25143",
+      "https://carpassion.vn/threads/bo-doi-xe-dien-volvo-es90-va-ex90-ra-mat-khach-hang-viet.24244/",
+      "https://carpassion.vn/threads/hyundai-thanh-cong-ra-mat-chuoi-su-kien-trung-bay-va-ban-giao-palisade-hybrid-tren-toan-quoc.24173/",
+      "https://carpassion.vn/threads/suv-dau-bang-hyundai-palisade-hybrid-hoan-toan-moi-chot-gia-tu-1-49-ty-dong.24048/",
+      "https://carpassion.vn/threads/everest-rally-ky-5-doan-xe-viet-den-lhasa-sau-hanh-trinh-3-600-km.24207/",
+      "https://carpassion.vn/threads/polestar-ra-mat-concept-formula-2030-dinh-hinh-ky-nguyen-moi-cua-xe-the-thao-4-cua-thuan-dien.24274/",
+      "https://carpassion.vn/threads/honda-sh350i-2027-phien-ban-moi-nang-cap-cong-nghe-va-them-mau-sac-moi.24257/",
+      "https://carpassion.vn/threads/100-nam-lich-su-bentley-goi-gon-trong-12-chiec-olympia-collection.24260/",
+      "https://carpassion.vn/threads/xe-dien-li-auto-gia-nhap-thi-truong-viet-nam-bat-tay-cung-neera-motors.24278/",
+      "https://carpassion.vn/threads/byd-tiep-tuc-khien-the-gioi-ngo-ngang-voi-sieu-xe-dien-u9-xtreme-dat-toc-do-502-km-h.24266/",
+      "https://carpassion.vn/threads/lexus-pha-le-san-xuat-suv-thuan-dien-tai-trung-quoc.24255/",
+      "https://carpassion.vn/threads/hon-3-400-xe-hyundai-den-tay-khach-hang-trong-thang-10-2026.24279/",
+      "https://carpassion.vn/threads/vinfast-chinh-thuc-nhan-dat-coc-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong.24282/",
+      "https://carpassion.vn/threads/mg-tung-uu-dai-lon-mua-zs-nhan-1-000-lit-xang-sam-gt-tiet-kiem-29-trieu-dong.24277/",
+      "https://carpassion.vn/threads/vinfast-lap-ky-luc-doanh-so-ban-hon-200-000-o-to-dien-trong-10-thang-tai-viet-nam.24276/",
+      "https://carpassion.vn/threads/audi-ngung-san-xuat-a8-sau-32-nam-dau-cham-het-cho-sedan-dau-bang.24236/",
+      "https://carpassion.vn/threads/ram-rampage-do-bo-chau-au-xe-ban-tai-co-bap-my-nhung-kich-thuoc-nho-gon-nhu-suv.24268/",
+      "https://carpassion.vn/threads/luce-chua-kip-lan-banh-tren-duong-pho-nhung-so-dat-mua-sieu-xe-dien-ferrari-da-kin-het-nam-2027.24270/",
+      "https://carpassion.vn/threads/co-gi-tren-xe-dien-volvo-es90-gia-2-6-ty-dong.24265/",
+      "https://carpassion.vn/threads/chi-tiet-volvo-ex90-suv-dien-manh-680-ma-luc-di-hon-600-km-moi-lan-sac-gia-3-5-ty-dong.24264/",
+      "https://carpassion.vn/threads/sedan-sieu-sang-den-tu-trung-quoc-duoc-san-xuat-gioi-han-399-chiec-gia-gan-8-ty-dong.24263/",
+      "https://carpassion.vn/threads/green-sm-trien-khai-chuong-trinh-mua-dong-xanh-vi-tuong-lai-xanh-ho-tro-dac-biet-cho-khach-hang-va-tai-xe.24261/",
+      "https://carpassion.vn/threads/everest-rally-ky-4-tren-g318-nhung-cung-duong-khien-nguoi-lai-muon-di-cham-lai.24206/",
+      "https://carpassion.vn/threads/tu-ho-tro-truc-tuyen-den-cuu-ho-24-7-vinfast-luon-sat-canh-cung-chu-xe.24259/",
+      "https://carpassion.vn/threads/defender-trophy-vinh-danh-nhung-tay-lai-toan-cau-buoc-vao-hanh-trinh-chinh-phuc-dinh-cao.24254/",
+      "https://carpassion.vn/threads/buc-tranh-kinh-doanh-trai-nguoc-cua-honda-viet-nam-xe-may-ganh-team-o-to-gap-kho.24245/",
+      "https://carpassion.vn/threads/hrc-honda-racing-ra-mat-xe-dua-passport-baja-spec-trophy-truck-dong-co-hybrid-cong-suat-hon-1-300-ma-luc.24189/",
+      "https://carpassion.vn/threads/uu-dai-hon-tram-trieu-dong-doi-voi-honda-hr-v-va-br-v-trong-thang-11-2026.24224/",
+      "https://carpassion.vn/threads/toyota-land-cruiser-75th-anniversary-gioi-han-chi-75-chiec-den-pha-tron-co-dien-va-trang-bi-off-road-dinh-cao.24072/",
+      "https://carpassion.vn/threads/jeep-gladiator-2027-ra-mat-phien-ban-gioi-han-35-inch-tire-launch-edition-bo-sung-nang-cap-dac-biet-duoc-trang-bi-tu-nha-may.24126/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

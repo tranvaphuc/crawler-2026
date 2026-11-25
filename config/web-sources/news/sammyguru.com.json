@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sammyguru.com",
+  "siteId": "sammyguru.com",
+  "registrableDomain": "sammyguru.com",
+  "homepage": "https://sammyguru.com/",
+  "allowedHosts": [
+    "sammyguru.com",
+    "www.sammyguru.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://sammyguru.com/",
+    "categories": [
+      "https://sammyguru.com/galaxy-s27-mystery-box/?src=announce&pt=home",
+      "https://sammyguru.com/news/",
+      "https://sammyguru.com/news/announcements/",
+      "https://sammyguru.com/news/one-ui/",
+      "https://sammyguru.com/news/updates/",
+      "https://sammyguru.com/news/releases/",
+      "https://sammyguru.com/deals/",
+      "https://sammyguru.com/deals/black-friday/",
+      "https://sammyguru.com/deals/phones/",
+      "https://sammyguru.com/deals/tablets/"
+    ]
+  },
+  "title": {
+    "value": "Samsung and ShopeePay Team Up to Simplify Payments in Singapore and Vietnam",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:47:45.282Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:47:28.747Z",
+    "independentHoldouts": [
+      "https://sammyguru.com/new-us-chip-rule-means-samsungs-foundry-has-to-check-its-chinese-customers-more-closely/",
+      "https://sammyguru.com/one-ui-9-5-travel-sim-esim-management/",
+      "https://sammyguru.com/galaxy-s26-ultra-350-off-best-buy-deal/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://sammyguru.com/samsung-and-shopeepay-team-up-to-simplify-payments-in-singapore-and-vietnam",
+      "https://sammyguru.com/new-us-chip-rule-means-samsungs-foundry-has-to-check-its-chinese-customers-more-closely/",
+      "https://sammyguru.com/one-ui-9-5-travel-sim-esim-management/",
+      "https://sammyguru.com/galaxy-s26-ultra-350-off-best-buy-deal/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

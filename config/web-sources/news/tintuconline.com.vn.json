@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintuconline.com.vn",
+  "siteId": "tintuconline.com.vn",
+  "registrableDomain": "tintuconline.com.vn",
+  "homepage": "https://tintuconline.com.vn/",
+  "allowedHosts": [
+    "tintuconline.com.vn",
+    "www.tintuconline.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tintuconline.com.vn/",
+    "categories": [
+      "https://tintuconline.com.vn/xa-hoi",
+      "https://tintuconline.com.vn/doi-song",
+      "https://tintuconline.com.vn/giai-tri",
+      "https://tintuconline.com.vn/dep",
+      "https://tintuconline.com.vn/tam-su",
+      "https://tintuconline.com.vn/mua-sam",
+      "https://tintuconline.com.vn/the-gioi",
+      "https://tintuconline.com.vn/suc-khoe",
+      "https://tintuconline.com.vn/giao-duc",
+      "https://tintuconline.com.vn/quiz"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "tintuconline.com.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "value": "Phụ huynh phát hiện thịt lợn bở, nhũn bất thường tại trường mầm non ở Hà Nội",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".bread-crumb-detail__time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:16.896Z",
+    "frozenAt": "2026-11-16T02:00:15.076Z",
+    "trainingUrl": "https://tintuconline.com.vn/phu-huynh-phat-hien-thit-lon-bo-nhun-bat-thuong-tai-truong-mam-non-o-ha-noi-5137320.html",
+    "independentHoldouts": [
+      "https://tintuconline.com.vn/thit-nhun-bo-vao-truong-hoc-cong-ty-cung-cap-noi-do-lon-bi-stress-5137447.html",
+      "https://tintuconline.com.vn/kha-ngan-bung-bau-vuot-mat-ben-nhan-phuc-vinh-5138776.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tintuconline.com.vn/phu-huynh-phat-hien-thit-lon-bo-nhun-bat-thuong-tai-truong-mam-non-o-ha-noi-5137320.html",
+      "https://tintuconline.com.vn/thit-nhun-bo-vao-truong-hoc-cong-ty-cung-cap-noi-do-lon-bi-stress-5137447.html",
+      "https://tintuconline.com.vn/kha-ngan-bung-bau-vuot-mat-ben-nhan-phuc-vinh-5138776.html",
+      "https://tintuconline.com.vn/ba-giao-74-tuoi-lay-ban-go-lam-bang-o-goc-bep-day-toan-hut-47-trieu-luot-xem-5138779.html",
+      "https://tintuconline.com.vn/con-gai-ut-quyen-linh-khoe-nhan-sac-tuoi-18-5138777.html",
+      "https://tintuconline.com.vn/hu-tuc-xung-hy-trung-quoc-ep-thieu-nu-cuoi-chong-dau-om-de-chua-benh-5138785.html",
+      "https://tintuconline.com.vn/dong-nghiep-nhan-chong-chi-vang-nha-em-sang-giup-5138787.html",
+      "https://tintuconline.com.vn/hien-tuong-mang-thanh-lac-troi-tham-gia-phim-giang-ho-huy-ben-xe-la-ai-5138782.html",
+      "https://tintuconline.com.vn/vo-duoc-thang-chuc-lien-de-nghi-ly-hon-5138757.html",
+      "https://tintuconline.com.vn/toi-da-khoc-hoang-loan-khi-suy-than-giai-doan-cuoi-o-tuoi-29-5138778.html",
+      "https://tintuconline.com.vn/tu-vu-tan-bo-hoang-meo-bi-bat-5138788.html",
+      "https://tintuconline.com.vn/ong-trinh-van-quyet-bi-xoa-ten-khoi-doan-luat-su-thanh-pho-ha-noi-5138763.html",
+      "https://tintuconline.com.vn/xe-tai-lat-nghieng-nhieu-tang-da-khung-do-ap-khien-nguoi-di-duong-hot-hoang-5138759.html",
+      "https://tintuconline.com.vn/nu-hieu-truong-truong-mam-non-tai-hue-xin-thoi-chuc-5138758.html",
+      "https://tintuconline.com.vn/hai-nu-sinh-o-tuyen-quang-danh-nhau-nhom-ban-dung-ngoai-ho-reo-quay-clip-5138755.html",
+      "https://tintuconline.com.vn/tu-hh-linh-dam-den-thanh-ha-bai-toan-an-cu-sau-nhung-sai-pham-xay-dung-5138754.html",
+      "https://tintuconline.com.vn/tong-nguoi-phu-nu-di-xe-may-nga-xuong-duong-tai-xe-o-to-roi-khoi-hien-truong-5138750.html",
+      "https://tintuconline.com.vn/cong-an-xac-minh-thong-tin-vu-nguoi-dan-ong-bi-danh-chay-mau-mat-o-san-bong-5138742.html",
+      "https://tintuconline.com.vn/chay-ban-cong-chung-cu-o-ha-noi-khoi-den-cuon-cuon-5138740.html",
+      "https://tintuconline.com.vn/truy-to-ke-xam-hai-con-gai-ruot-duoi-13-tuoi-5138711.html",
+      "https://tintuconline.com.vn/khanh-hoa-khoi-to-bat-tam-giam-doi-tuong-hiep-dam-phu-nu-lon-tuoi-5138706.html",
+      "https://tintuconline.com.vn/xu-ly-sai-pham-hh-linh-dam-khong-hop-thuc-hoa-cung-khong-the-gay-lang-phi-5138705.html",
+      "https://tintuconline.com.vn/tai-xe-xe-tai-o-lao-cai-co-con-trong-nguoi-tang-ga-bo-chay-khi-gap-csgt-5138703.html",
+      "https://tintuconline.com.vn/chu-quan-nhau-ke-thoi-diem-truoc-khi-nam-sinh-o-nghe-an-bi-ban-tha-xuong-song-5138686.html",
+      "https://tintuconline.com.vn/phim-huy-ben-xe-dang-tai-da-lau-vi-sao-hoang-meo-tan-bo-van-bi-khoi-to-5138685.html",
+      "https://tintuconline.com.vn/bat-giam-tiktoker-a-ty-tiktok-dang-video-huong-dan-mua-ban-su-dung-ma-tuy-5138684.html",
+      "https://tintuconline.com.vn/bat-tam-giam-2-nguoi-sang-campuchia-rua-tien-hon-200-ty-dong-5138676.html",
+      "https://tintuconline.com.vn/nguoi-phu-nu-day-me-chong-nga-xuong-san-o-ha-noi-noi-gi-5138670.html",
+      "https://tintuconline.com.vn/khoanh-khac-dat-da-roi-trung-nguoi-phu-nu-di-xe-may-o-lao-cai-5138635.html",
+      "https://tintuconline.com.vn/bac-tin-don-mot-nguoi-di-danh-pickleball-lam-lay-lan-hiv-5138634.html",
+      "https://tintuconline.com.vn/xe-thiet-giap-bi-chim-khi-dang-huan-luyen-6-chien-si-hy-sinh-5138632.html",
+      "https://tintuconline.com.vn/giay-phut-kinh-hoang-cua-chang-trai-bi-vui-lap-trong-vu-no-sap-nha-o-tphcm-5138625.html",
+      "https://tintuconline.com.vn/bat-nguoi-dan-ong-dam-lien-tiep-vao-mat-tai-xe-taxi-o-ha-noi-5138624.html",
+      "https://tintuconline.com.vn/video-vi-pham-tren-mang-tu-nhieu-nam-truoc-vi-sao-van-bi-truy-cuu-5138619.html",
+      "https://tintuconline.com.vn/thuc-hu-loi-don-lay-nhiem-hiv-o-dak-lak-5138606.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

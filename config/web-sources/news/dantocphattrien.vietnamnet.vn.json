@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dantocphattrien.vietnamnet.vn",
+  "siteId": "dantocphattrien.vietnamnet.vn",
+  "registrableDomain": "vietnamnet.vn",
+  "homepage": "https://dantocphattrien.vietnamnet.vn/",
+  "allowedHosts": [
+    "dantocphattrien.vietnamnet.vn",
+    "www.dantocphattrien.vietnamnet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thúc đẩy đào tạo nghề và giải quyết việc làm từ vốn Chương trình MTQG 1719",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:41:43.861Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://dantocphattrien.vietnamnet.vn/thuc-day-dao-tao-nghe-va-giai-quyet-viec-lam-tu-von-chuong-trinh-mtqg-1719-80040.html",
+      "https://dantocphattrien.vietnamnet.vn/hon-800-ty-dau-tu-vung-dtts-o-lao-cai-giai-doan-2026-2030-80039.html",
+      "https://dantocphattrien.vietnamnet.vn/phu-nu-vung-cao-quang-ninh-lam-moi-cach-gin-giu-di-san-80036.html",
+      "https://dantocphattrien.vietnamnet.vn/quy-hoach-khu-dich-vu-tac-say-dap-ung-nhu-cau-hanh-huong-va-sinh-hoat-ton-giao-80041.html",
+      "https://dantocphattrien.vietnamnet.vn/ngoi-chua-viet-giua-long-tokyo-noi-nguoi-xa-xu-tim-ve-coi-nguon-80030.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dantocphattrien.vietnamnet.vn/",
+    "categories": [
+      "https://dantocphattrien.vietnamnet.vn/cong-tac-dan-toc",
+      "https://dantocphattrien.vietnamnet.vn/tin-nguong-ton-giao",
+      "https://dantocphattrien.vietnamnet.vn/ban-lang-hom-nay",
+      "https://dantocphattrien.vietnamnet.vn/sac-mau-54",
+      "https://dantocphattrien.vietnamnet.vn/nguoi-giu-lua",
+      "https://dantocphattrien.vietnamnet.vn/giao-duc-dan-toc",
+      "https://dantocphattrien.vietnamnet.vn/media",
+      "https://dantocphattrien.vietnamnet.vn/thanh-tuu-va-phat-trien"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dantocphattrien.vietnamnet.vn",
+    "checkedAt": "2026-11-09T03:56:57.884Z",
+    "url": "https://dantocphattrien.vietnamnet.vn/thuc-day-dao-tao-nghe-va-giai-quyet-viec-lam-tu-von-chuong-trinh-mtqg-1719-80040.html",
+    "finalUrl": "https://dantocphattrien.vietnamnet.vn/thuc-day-dao-tao-nghe-va-giai-quyet-viec-lam-tu-von-chuong-trinh-mtqg-1719-80040.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1991,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dantocphattrien.vietnamnet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 58,
+    "checkedArticleUrls": 66,
+    "freshArticleChecks": 27,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 58,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 204,
+        "passed": 56,
+        "distinctHashes": 56
+      },
+      {
+        "name": "video",
+        "discovered": 13,
+        "passed": 2,
+        "distinctHashes": 2
+      },
+      {
+        "name": "audio",
+        "discovered": 7,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dantocphattrien.vietnamnet.vn/khoi-dong-chay-thuong-mai-o-vung-dong-bao-dan-toc-thieu-so-80101.html",
+      "https://dantocphattrien.vietnamnet.vn/nghe-an-no-luc-dua-cong-nghe-so-vuot-nui-ve-ban-cong-nghe-so-phai-tao-ra-thay-doi-thuc-chat-o-ban-lang-bai-cuoi-80096.html",
+      "https://dantocphattrien.vietnamnet.vn/hoan-thien-the-che-thao-go-diem-nghen-trong-cong-tac-dan-toc-80083.html",
+      "https://dantocphattrien.vietnamnet.vn/mua-lon-gay-sat-lo-quoc-lo-9c-nhieu-ban-o-quang-tri-bi-co-lap-80090.html",
+      "https://dantocphattrien.vietnamnet.vn/mua-lon-keo-dai-xa-mien-nui-so-tan-dan-truoc-nguy-co-sat-lo-80099.html",
+      "https://dantocphattrien.vietnamnet.vn/mua-lu-dien-bien-phuc-tap-cac-tinh-mien-trung-cang-minh-ung-pho-80092.html",
+      "https://dantocphattrien.vietnamnet.vn/nguoi-co-uy-tin-them-dong-luc-de-gan-bo-voi-buon-lang-80102.html",
+      "https://dantocphattrien.vietnamnet.vn/gop-y-nghien-cuu-lich-su-cong-tac-dan-toc-tinh-quang-nam-giai-doan-1945-2020-80098.html",
+      "https://dantocphattrien.vietnamnet.vn/boi-duong-kien-thuc-nang-cao-nang-luc-cho-nguoi-co-uy-tin-o-lang-son-80089.html",
+      "https://dantocphattrien.vietnamnet.vn/tin-dung-chinh-sach-mo-loi-hoan-luong-o-ca-mau-80094.html",
+      "https://dantocphattrien.vietnamnet.vn/lam-dong-tiep-suc-cho-nguoi-co-uy-tin-cung-co-niem-tin-tu-co-so-80093.html",
+      "https://dantocphattrien.vietnamnet.vn/trang-phuc-nguoi-thu-lao-gan-voi-cac-dau-moc-quan-trong-cua-vong-doi-80084.html",
+      "https://dantocphattrien.vietnamnet.vn/trao-tang-5-000-con-ga-giong-cho-nguoi-dan-vung-lu-lang-nu-80095.html",
+      "https://dantocphattrien.vietnamnet.vn/video-nhung-duong-kim-tim-sinh-ke-moi-80069.html",
+      "https://dantocphattrien.vietnamnet.vn/tang-cuong-quang-ba-hinh-anh-54-dan-toc-viet-nam-thong-nhat-trong-da-dang-80076.html",
+      "https://dantocphattrien.vietnamnet.vn/lao-cai-quan-tam-cham-lo-cho-doi-ngu-nguoi-co-uy-tin-80068.html",
+      "https://dantocphattrien.vietnamnet.vn/son-la-tap-huan-trien-khai-chuong-trinh-muc-tieu-quoc-gia-giai-doan-2026-2035-80088.html",
+      "https://dantocphattrien.vietnamnet.vn/mai-chua-o-tp-hcm-hon-30-nam-lan-toa-long-tu-bi-cuu-mang-nguoi-gia-neo-don-80100.html",
+      "https://dantocphattrien.vietnamnet.vn/de-nhung-lan-dieu-dan-ca-cua-nguoi-muong-vang-mai-80091.html",
+      "https://dantocphattrien.vietnamnet.vn/ngoi-chua-voi-can-bep-dac-biet-moi-ngay-phuc-vu-hang-tram-nguoi-ngheo-80087.html",
+      "https://dantocphattrien.vietnamnet.vn/ngoi-den-gan-200-nam-luu-giu-noi-so-cua-nguoi-thang-long-xua-80086.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 8
+    },
+    "checkedAt": "2026-11-10T09:14:52.019Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dantocphattrien.vietnamnet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 95
+      },
+      "body": {
+        "strategy": "jsonld_media"
+      },
+      "additionalMediaStrategy": "jsonld"
+    }
+  ]
+}

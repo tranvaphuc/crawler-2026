@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congluan.vn",
+  "siteId": "congluan.vn",
+  "registrableDomain": "congluan.vn",
+  "homepage": "https://congluan.vn/",
+  "allowedHosts": [
+    "congluan.vn",
+    "www.congluan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hơn 400 hoạt động hướng tới Ngày Văn hóa Việt Nam năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".cms-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Hải Phòng: Cháy gara ô tô tại xã Vĩnh Bảo, thiêu rụi 7 phương tiện",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".main-col.content-col",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:19.668Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://congluan.vn/hon-400-hoat-dong-huong-toi-ngay-van-hoa-viet-nam-nam-2026-post366411.html",
+      "https://congluan.vn/duong-lao-thoi-hien-dai-de-nguoi-gia-song-vui-moi-ngay-post366410.html",
+      "https://congluan.vn/hai-phong-chay-gara-o-to-tai-xa-vinh-bao-thieu-rui-7-phuong-tien-post366741.html",
+      "https://congluan.vn/dieu-gi-xay-ra-neu-ban-khong-cap-nhat-phan-mem-xe-hoi-post366683.html",
+      "https://congluan.vn/honda-va-toyota-tim-ra-cach-thong-minh-de-lam-dong-co-hybrid-hieu-qua-hon-post366601.html",
+      "https://congluan.vn/bang-gia-xe-ford-thang-112026-loat-mau-xe-giam-gia-sau-khach-mua-co-the-duoc-tang-vang-post366710.html",
+      "https://congluan.vn/thay-gi-tu-cau-chuyen-bac-si-tre-ban-ngay-mac-ao-blouse-toi-chay-xe-om-cong-nghe-post366678.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congluan.vn/",
+    "categories": [
+      "https://congluan.vn/media/",
+      "https://congluan.vn/an-pham/",
+      "https://congluan.vn/thoi-su/",
+      "https://congluan.vn/thoi-su/goc-nhin/",
+      "https://congluan.vn/thoi-su/tin-tuc/",
+      "https://congluan.vn/thoi-su/mat-tran/",
+      "https://congluan.vn/quoc-te/",
+      "https://congluan.vn/quoc-te/tieu-diem-quoc-te/",
+      "https://congluan.vn/quoc-te/the-gioi-24h/",
+      "https://congluan.vn/quoc-te/cong-nghe/",
+      "https://congluan.vn/bao-chi-truyen-thong/nghe-bao/",
+      "https://congluan.vn/bao-chi-truyen-thong/cong-tac-hoi/",
+      "https://congluan.vn/kinh-te/",
+      "https://congluan.vn/kinh-te/bat-dong-san/",
+      "https://congluan.vn/kinh-te/kinh-te-vi-mo/",
+      "https://congluan.vn/kinh-te/dau-tu-tai-chinh/",
+      "https://congluan.vn/phap-luat/",
+      "https://congluan.vn/phap-luat/dieu-tra/",
+      "https://congluan.vn/phap-luat/vu-an/",
+      "https://congluan.vn/xa-hoi/",
+      "https://congluan.vn/xa-hoi/giao-duc/",
+      "https://congluan.vn/xa-hoi/giao-thong/",
+      "https://congluan.vn/xa-hoi/suc-khoe/",
+      "https://congluan.vn/xa-hoi/doi-song/",
+      "https://congluan.vn/xa-hoi/moi-truong/",
+      "https://congluan.vn/van-hoa/",
+      "https://congluan.vn/van-hoa/giai-tri/",
+      "https://congluan.vn/van-hoa/the-thao/",
+      "https://congluan.vn/van-hoa/doi-song-van-hoa/",
+      "https://congluan.vn/van-hoa/du-lich/",
+      "https://congluan.vn/xe/",
+      "https://congluan.vn/media/cong-luan-24h/",
+      "https://congluan.vn/media/rubik-360/",
+      "https://congluan.vn/multimedia/photo/",
+      "https://congluan.vn/multimedia/video/",
+      "https://congluan.vn/multimedia/infographic/",
+      "https://congluan.vn/multimedia/emagazine/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?congluan.vn(?!/cat/|/wp-content|/video|.+/email-protection$|/ban-bien-tap$|/lien-he|/javascript:void|$|/#|/rss|/$|$).*?/?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congluan.vn",
+    "checkedAt": "2026-11-09T03:56:56.258Z",
+    "url": "https://congluan.vn/hon-400-hoat-dong-huong-toi-ngay-van-hoa-viet-nam-nam-2026-post366411.html",
+    "finalUrl": "https://congluan.vn/hon-400-hoat-dong-huong-toi-ngay-van-hoa-viet-nam-nam-2026-post366411.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congluan.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 47,
+    "checkedArticleUrls": 50,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 47,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 40,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 916,
+        "passed": 47,
+        "distinctHashes": 47
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://congluan.vn/nguoi-dan-ha-noi-mac-ao-mua-chan-gio-co-ro-trong-cai-ret-dau-mua-post366932.html",
+      "https://congluan.vn/bo-giao-duc-va-dao-tao-du-kien-dieu-chinh-dinh-muc-tiet-day-che-do-cho-giao-vien-tong-phu-trach-doi-post366941.html",
+      "https://congluan.vn/chieu-tro-thue-xe-tu-lai-dem-di-cam-do-tom-gon-ga-chu-muu-sau-chuoi-ngay-lan-tron-post366951.html",
+      "https://congluan.vn/sieu-tau-du-lich-vong-quanh-the-gioi-bi-siet-no-o-singapore-post366926.html",
+      "https://congluan.vn/no-nha-may-thep-o-tho-nhi-ky-17-nguoi-thiet-mang-tong-thong-erdogan-chi-dao-dieu-tra-post366908.html",
+      "https://congluan.vn/dai-bieu-le-thi-thuy-sen-tu-harry-potter-den-bai-toan-dau-tu-y-tuong-sang-tao-post366955.html",
+      "https://congluan.vn/de-xuat-dung-tien-thue-ruou-bia-thuoc-la-de-kham-sang-loc-benh-cho-nguoi-dan-post366902.html",
+      "https://congluan.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-post366901.html",
+      "https://congluan.vn/102-quoc-gia-chat-vat-vi-khung-hoang-nang-luong-viet-nam-khong-phai-cat-dien-post366934.html",
+      "https://congluan.vn/cong-nghiep-van-hoa-khong-dau-tu-dan-trai-tap-trung-vao-linh-vuc-co-suc-canh-tranh-post366950.html",
+      "https://congluan.vn/thuc-pham-nhap-khau-sap-thoat-canh-nam-cho-o-cua-khau-doanh-nghiep-nao-duoc-uu-tien-post366904.html",
+      "https://congluan.vn/mua-lon-o-mien-trung-keo-dai-them-2-ngay-canh-bao-lu-tu-quang-tri-den-dak-lak-post366915.html",
+      "https://congluan.vn/de-xuat-cam-ban-nha-o-xa-hoi-theo-gia-thi-truong-nhieu-nguoi-voi-va-rut-dang-ky-post366898.html",
+      "https://congluan.vn/bo-truong-chien-tranh-my-pete-hegseth-sap-bi-luan-toi-post366905.html",
+      "https://congluan.vn/ong-trump-noi-chien-tranh-voi-iran-co-ban-da-ket-thuc-post366907.html",
+      "https://congluan.vn/dien-mat-troi-co-khung-gia-phat-dien-moi-post366893.html",
+      "https://congluan.vn/trien-khai-hieu-qua-trao-doi-ly-luan-thuong-xuyen-giua-dang-cong-san-viet-nam-va-dang-cong-san-nhat-ban-post366942.html",
+      "https://congluan.vn/giu-nguyen-phuong-an-hoi-dong-nhan-dan-cap-tinh-ban-hanh-sua-doi-bang-gia-dat-post366946.html",
+      "https://congluan.vn/vinh-long-bau-3-tan-pho-chu-tich-ubnd-tinh-nhiem-ky-2026-2031-post366952.html",
+      "https://congluan.vn/nhua-binh-minh-bmp-sap-chi-hon-532-ty-dong-tra-co-tuc-loi-nhuan-quy-iii-giam-9-post366940.html",
+      "https://congluan.vn/cach-eu-cai-nghien-khi-dot-qua-tung-dot-khung-hoang-nang-luong-post366885.html",
+      "https://congluan.vn/trung-quoc-gia-han-dinh-chien-thuong-mai-voi-my-them-hai-thang-post366887.html",
+      "https://congluan.vn/ban-nhau-cua-bo-va-kich-ban-de-hen-ham-hai-be-gai-14-tuoi-trong-can-nha-hoang-o-dak-lak-post366564.html",
+      "https://congluan.vn/uu-tien-nguon-von-lam-duong-sat-do-thi-ket-noi-san-bay-gia-binh-noi-bai-voi-trung-tam-ha-noi-post366673.html",
+      "https://congluan.vn/vo-hieu-hoa-sung-quan-dung-chan-dung-hon-100kg-ma-tuy-cua-trum-truy-na-hiep-den-post366732.html",
+      "https://congluan.vn/dau-tu-cong-tang-toc-kinh-te-viet-nam-co-the-but-pha-manh-trong-quy-cuoi-nam-post366727.html",
+      "https://congluan.vn/lao-cai-canh-bao-nguy-co-lu-quet-sat-lo-dat-tai-45-xa-phuong-post366782.html",
+      "https://congluan.vn/cao-toc-moc-chau-son-la-dien-bien-dai-gan-180-km-tong-von-hon-63000-ty-dong-post366624.html",
+      "https://congluan.vn/chinh-phu-de-xuat-dau-tu-3-tuyen-cao-toc-tao-dong-luc-phat-trien-kinh-te-post366628.html",
+      "https://congluan.vn/thanh-nien-2k2-nuong-6-ty-dong-vao-co-bac-tren-mang-khoi-to-them-5-dong-mon-post366881.html",
+      "https://congluan.vn/anthropic-cho-ra-mat-hai-mo-hinh-ai-moi-giua-lo-ngai-ve-kha-nang-tu-cai-tien-post366919.html",
+      "https://congluan.vn/toa-soan-can-tuyen-nha-bao-co-nang-luc-gi-trong-thoi-dai-ai-post366847.html",
+      "https://congluan.vn/cac-toa-soan-chau-au-dung-ai-tao-cong-cu-ho-tro-doc-gia-post366440.html",
+      "https://congluan.vn/gan-dan-sat-co-so-nen-tang-de-bao-chi-dia-phuong-chu-dong-tren-mat-tran-tu-tuong-post366328.html",
+      "https://congluan.vn/tong-giam-doc-tass-canh-bao-rui-ro-khi-ung-dung-ai-trong-bao-chi-post366660.html",
+      "https://congluan.vn/dung-bot-ai-de-phat-hien-xu-huong-va-tim-kiem-de-tai-bao-chi-post366526.html",
+      "https://congluan.vn/hiem-hoa-tu-do-choi-squishy-bac-si-khuyen-cao-nen-dung-su-dung-post366851.html",
+      "https://congluan.vn/hon-400-hoat-dong-huong-toi-ngay-van-hoa-viet-nam-nam-2026-post366411.html",
+      "https://congluan.vn/duong-lao-thoi-hien-dai-de-nguoi-gia-song-vui-moi-ngay-post366410.html",
+      "https://congluan.vn/viet-nam-eu-thuc-day-hop-tac-thuong-mai-ket-noi-chuoi-cung-ung-post366302.html",
+      "https://congluan.vn/tinh-hoa-hoi-tu-hanh-trinh-cham-den-di-san-lang-nghe-post366134.html",
+      "https://congluan.vn/1555-tac-pham-tham-du-giai-bao-chi-toan-quoc-vi-su-nghiep-phat-trien-van-hoa-viet-nam-post366052.html",
+      "https://congluan.vn/suc-hut-bien-quang-cao-ai-khi-toc-do-lam-lu-mo-su-chan-thuc-post365811.html",
+      "https://congluan.vn/thu-vien-hoa-trang-nguyen-bac-nhip-cau-sach-ve-lang-post365807.html",
+      "https://congluan.vn/ha-noi-xe-dien-thu-gom-rac-sau-4-thang-thi-diem-hieu-qua-den-dau-post365782.html",
+      "https://congluan.vn/doc-la-cong-vien-0-dong-danh-rieng-cho-thu-cung-tai-ha-noi-post365785.html",
+      "https://congluan.vn/gia-lai-khan-truong-hoan-thien-7-truong-hoc-bien-gioi-som-to-chuc-noi-tru-cho-hoc-sinh-post366944.html",
+      "https://congluan.vn/truong-chuyen-sap-bo-tuyen-sinh-theo-tung-mon-hoc-sinh-duoc-chon-mon-chuyen-sau-sau-mot-hoc-ky-post366938.html",
+      "https://congluan.vn/tau-hang-mac-can-tren-vung-bien-hue-khan-truong-tim-phuong-an-giai-cuu-post366939.html",
+      "https://congluan.vn/tung-thu-an-giet-nguoi-ga-bo-trut-mua-don-len-hai-con-gai-chi-vi-mai-bam-dien-thoai-post366836.html",
+      "https://congluan.vn/bi-kich-cua-vo-chong-mang-vang-di-cam-co-de-cuu-mang-nham-con-nghien-tien-ao-post366826.html",
+      "https://congluan.vn/nhieu-nghe-si-va-tiktoker-gui-don-to-giac-cau-tuan-tu-vi-lien-quan-den-hoat-dong-xem-boi-cung-bai-post366822.html",
+      "https://congluan.vn/trien-lam-quoc-tu-giam-thang-long-lan-toa-gia-tri-dao-hoc-trong-cong-dong-post366935.html",
+      "https://congluan.vn/tung-duong-lan-dau-lam-chang-trai-si-tinh-ru-bo-ve-gai-goc-quen-thuoc-post366936.html",
+      "https://congluan.vn/viet-nam-lan-thu-10-lien-tiep-la-diem-den-golf-tot-nhat-chau-a-post366906.html",
+      "https://congluan.vn/du-lich-ninh-binh-tang-toc-don-khach-quoc-te-nhung-thang-cuoi-nam-post366956.html",
+      "https://congluan.vn/ton-vinh-nhung-nha-khoa-bang-co-cong-phat-trien-nghe-thu-cong-viet-nam-post366856.html",
+      "https://congluan.vn/loat-o-to-hyundai-giam-gia-den-220-trieu-khach-mua-xe-duoc-uu-dai-lai-suat-post366928.html",
+      "https://congluan.vn/3-dau-hieu-nhan-biet-xe-bi-no-cau-chi-dien-cua-kinh-do-cung-den-tat-ngam-va-mui-khet-boc-len-post366890.html",
+      "https://congluan.vn/mg-urban-tiep-tuc-nha-hang-tai-viet-nam-du-kien-ra-mat-cuoi-thang-11-post366839.html",
+      "https://congluan.vn/nhung-moi-nguy-hiem-chet-nguoi-tu-binh-ac-quy-o-to-bong-nhiet-do-deo-trang-suc-va-nguy-co-no-khi-hydro-post366891.html",
+      "https://congluan.vn/quy-tac-5-nam-cho-lop-xe-con-dung-khong-post366752.html",
+      "https://congluan.vn/nha-bao-va-cong-luan-so-45-2026-post366366.html",
+      "https://congluan.vn/nha-bao-va-cong-luan-so-44-2026-post365628.html",
+      "https://congluan.vn/nha-bao-va-cong-luan-so-43-2026-post364820.html",
+      "https://congluan.vn/nha-bao-va-cong-luan-so-42-2026-post364006.html",
+      "https://congluan.vn/nha-bao-va-cong-luan-so-41-2026-post363243.html",
+      "https://congluan.vn/ha-noi-se-kiem-tra-an-toan-dien-pccc-toan-bo-nha-va-cong-trinh-post366911.html",
+      "https://congluan.vn/gia-vang-sang-nay-10112026-bat-tang-tham-do-post366913.html",
+      "https://congluan.vn/horea-de-xuat-siet-dieu-kien-mua-nha-o-xa-hoi-manh-tay-thu-hoi-nha-neu-phat-hien-truc-loi-post366895.html",
+      "https://congluan.vn/bao-chi-truyen-thong/",
+      "https://congluan.vn/danh-sach-su-kien.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 3
+    },
+    "checkedAt": "2026-11-10T09:14:42.384Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congluan.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

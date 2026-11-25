@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "siteName": "robbreport.com",
+  "siteId": "robbreport.com",
+  "registrableDomain": "robbreport.com",
+  "homepage": "https://robbreport.com/",
+  "allowedHosts": [
+    "robbreport.com",
+    "www.robbreport.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "How Pianist Arsha Kaviani Turns Original Compositions Into Musical Portraits",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:08.379Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://robbreport.com/lifestyle/sports-leisure/arsha-kaviani-maison-musique-kaviani-products-1236353799/",
+      "https://robbreport.com/shelter/art-collectibles/gallery/alexandra-llewellyn-games-set-1235866352/",
+      "https://robbreport.com/style/watch-collector/jean-arnault-louis-vuitton-watches-interview-1238779762/",
+      "https://robbreport.com/food-drink/spirits/whiskey-review-beverly-cafe-bourbon-rye-whiskey-1238816864/",
+      "https://robbreport.com/style/watch-collector/lists/chefs-luxury-watches-1238779757/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://robbreport.com/",
+    "categories": [
+      "https://robbreport.com/thevault/",
+      "https://robbreport.com/motors/cars/",
+      "https://robbreport.com/motors/aviation/",
+      "https://robbreport.com/motors/marine/",
+      "https://robbreport.com/motors/motorcycles/",
+      "https://robbreport.com/editorial/f1-series/",
+      "https://robbreport.com/travel/",
+      "https://robbreport.com/travel/destinations/",
+      "https://robbreport.com/travel/hotels/",
+      "https://robbreport.com/travel/resorts/",
+      "https://robbreport.com/travel/spas/",
+      "https://robbreport.com/style/",
+      "https://robbreport.com/style/fashion/",
+      "https://robbreport.com/style/footwear/",
+      "https://robbreport.com/style/jewelry/",
+      "https://robbreport.com/style/watch-collector/",
+      "https://robbreport.com/style/grooming/",
+      "https://robbreport.com/real-estate/",
+      "https://robbreport.com/shelter/art-collectibles/",
+      "https://robbreport.com/shelter/vacation-homes/",
+      "https://robbreport.com/shelter/celebrity-homes/",
+      "https://robbreport.com/shelter/new-construction/",
+      "https://robbreport.com/shelter/spaces/",
+      "https://robbreport.com/shelter/home-design/",
+      "https://robbreport.com/gear/",
+      "https://robbreport.com/gear/audio/",
+      "https://robbreport.com/gear/phones/",
+      "https://robbreport.com/gear/cameras/",
+      "https://robbreport.com/gear/tvs/",
+      "https://robbreport.com/gear/gadgets/",
+      "https://robbreport.com/gear/apps/",
+      "https://robbreport.com/gear/electronics/",
+      "https://robbreport.com/food-drink/",
+      "https://robbreport.com/food-drink/dining/",
+      "https://robbreport.com/food-drink/wine/",
+      "https://robbreport.com/food-drink/spirits/",
+      "https://robbreport.com/food-drink/cigars/",
+      "https://robbreport.com/partners",
+      "https://robbreport.com/p/hilton-mindset/",
+      "https://robbreport.com/lifestyle/",
+      "https://robbreport.com/editorial/2026-best-of-the-best/",
+      "https://robbreport.com/lifestyle/finance/",
+      "https://robbreport.com/lifestyle/health-wellness/",
+      "https://robbreport.com/lifestyle/sports-leisure/",
+      "https://robbreport.com/p/robb-report-masters-of-luxury/",
+      "https://robbreport.com/rr1",
+      "https://robbreport.com/videos/",
+      "https://robbreport.com/company-profile/",
+      "https://robbreport.com/accessibility/",
+      "https://robbreport.com/international-partners/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "robbreport.com",
+    "checkedAt": "2026-11-09T03:57:23.956Z",
+    "url": "https://robbreport.com/lifestyle/sports-leisure/arsha-kaviani-maison-musique-kaviani-products-1236353799/",
+    "finalUrl": "https://robbreport.com/lifestyle/sports-leisure/arsha-kaviani-maison-musique-kaviani-products-1236353799/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 14161,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "robbreport.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 8,
+    "checkedArticleUrls": 173,
+    "freshArticleChecks": 169,
+    "parserIssues": 164,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 8,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 51,
+    "categoriesFreshChecked": 47,
+    "categoriesUnconfirmed": 47,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 408,
+        "passed": 5,
+        "distinctHashes": 5
+      },
+      {
+        "name": "photo",
+        "discovered": 41,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "audio",
+        "discovered": 9,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 13,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://robbreport.com/motors/cars/yangwang-u9-xtreme-new-record-312-66-mph-1238829240/",
+      "https://robbreport.com/food-drink/spirits/bowmore-captivo-collection-oak-voyage-single-malt-whisky-1238830797/",
+      "https://robbreport.com/shelter/homes-for-sale/venice-beach-house-historic-1238817610/",
+      "https://robbreport.com/style/watch-collector/gallery/best-watches-2026-lacma-art-film-gala-1238829230/",
+      "https://robbreport.com/shelter/celebrity-homes/former-london-home-composer-sir-hubert-parry-1238811911/",
+      "https://robbreport.com/shelter/celebrity-homes/richard-simmons-house-hollywood-hills-1238795302/",
+      "https://robbreport.com/shelter/homes-for-sale/allington-castle-visited-by-henry-viii-lists-6-7-million-1238796737/",
+      "https://robbreport.com/shelter/celebrity-homes/michael-susan-dell-penthouse-boston-1238754220/",
+      "https://robbreport.com/motors/marine/lionel-messi-sunreef-ultima-88-catamaran-1238754910/",
+      "https://robbreport.com/shelter/celebrity-homes/norman-jaffe-fallout-house-old-westbury-long-island-1238811717/",
+      "https://robbreport.com/shelter/celebrity-homes/lamelo-ball-condo-north-carolina-charlotte-1238779814/",
+      "https://robbreport.com/shelter/celebrity-homes/john-legend-chrissy-teigen-former-penthouses-new-york-1238759225/",
+      "https://robbreport.com/shelter/celebrity-homes/mcenroe-smyth-house-malibu-1238741516/",
+      "https://robbreport.com/shelter/homes-for-sale/hurst-grove-english-country-estate-1238760578/",
+      "https://robbreport.com/gear/gadgets/narwal-flow-2-robot-vacuum-1238494683/",
+      "https://robbreport.com/lifestyle/news/who-will-be-the-next-james-bond-1238668770/",
+      "https://robbreport.com/shelter/art-collectibles/romes-galleria-borghese-extension-1238829245/",
+      "https://robbreport.com/style/watch-collector/chasing-time-vintage-watch-dealers-documentary-1238813241/",
+      "https://robbreport.com/shelter/celebrity-homes/paris-hilton-rental-house-los-angeles-beverly-park-1238820087/",
+      "https://robbreport.com/motors/cars/mercedes-slr-mclaren-stirling-moss-rm-sothebys-1238819901/",
+      "https://robbreport.com/motors/cars/fords-frostwarden-bronco-megazilla-engine-1238819782/",
+      "https://robbreport.com/motors/cars/barrett-jackson-c-e-o-hypercars-digital-auction-1238814264/",
+      "https://robbreport.com/style/menswear/best-red-menswear-fall-1238644411/",
+      "https://robbreport.com/style/menswear/turnbull-asser-james-bond-casino-royale-collection-1238723508/",
+      "https://robbreport.com/style/watch-collector/phillips-highest-grossing-watch-auction-in-history-1238829215/",
+      "https://robbreport.com/style/watch-collector/behind-the-scenes-of-2026-gphg-the-oscars-of-watchmaking-1238827706/",
+      "https://robbreport.com/style/watch-collector/charlie-barron-interview-1238779773/",
+      "https://robbreport.com/motors/aviation/singapore-airlines-new-first-class-1238820810/",
+      "https://robbreport.com/motors/aviation/united-airlines-chefs-table-menu-1238801386/",
+      "https://robbreport.com/motors/aviation/private-jet-makeover-trend-1238754424/",
+      "https://robbreport.com/travel/hotels/hotel-review-casa-mani-napa-valley-1238534066/",
+      "https://robbreport.com/travel/resorts/sundance-mountain-resort-second-act-1238812382/",
+      "https://robbreport.com/travel/spas/clinique-la-prairie-phuket-opening-1238811765/",
+      "https://robbreport.com/food-drink/spirits/whiskey-review-beverly-cafe-bourbon-rye-whiskey-1238816864/",
+      "https://robbreport.com/food-drink/spirits/elijah-craig-barrel-proof-bourbon-rye-new-label-1238821107/",
+      "https://robbreport.com/food-drink/spirits/michael-jordan-cincoro-tequila-reserva-anejo-1238818208/",
+      "https://robbreport.com/motors/marine/mercedes-maybach-ocean-club-1238779747/",
+      "https://robbreport.com/motors/marine/antonini-navi-launches-custom-steel-superaycht-evo-31-hanaa-1238820795/",
+      "https://robbreport.com/motors/marine/invictus-st550-deep-horizon-1238814812/",
+      "https://robbreport.com/shelter/home-design/rodrigo-bazan-french-riviera-home-tour-1238779777/",
+      "https://robbreport.com/shelter/homes-for-sale/patrick-mcinerney-house-san-diego-mission-hills-1238817511/",
+      "https://robbreport.com/shelter/homes-for-sale/verdier-mansion-san-francisco-1238802155/",
+      "https://robbreport.com/gear/audio/lists/best-over-ear-headphones-1238678382/",
+      "https://robbreport.com/gear/tvs/c-seed-bugatti-n1-television-1238644386/",
+      "https://robbreport.com/gear/audio/thom-browne-bose-quietcomfort-ultra-headphones-1238672419/",
+      "https://robbreport.com/style/accessories/lists/best-briefcases-1238689083/"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "publisher_restricted": 158,
+      "selector_or_layout_mismatch": 4,
+      "public_inline_state_requires_adapter": 2
+    },
+    "checkedAt": "2026-11-10T09:16:56.094Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/robbreport.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "robbreport.com",
+      "siteId": "robbreport.com",
+      "registrableDomain": "robbreport.com",
+      "homepage": "https://robbreport.com/",
+      "allowedHosts": [
+        "robbreport.com",
+        "www.robbreport.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "How Pianist Arsha Kaviani Turns Original Compositions Into Musical Portraits",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".vault-product-content.rr-vault-font-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:40.364Z",
+        "trainingUrls": [
+          "https://robbreport.com/thevault/specht-espresso-machine-and-grinder/",
+          "https://robbreport.com/thevault/oil-portrait-by-claudia-munro-kerr/",
+          "https://robbreport.com/thevault/vip-access-ysl-weekend-in-marrakesh/"
+        ],
+        "holdoutUrls": [
+          "https://robbreport.com/thevault/bespoke-menswear-tokyo-mark-cho/",
+          "https://robbreport.com/thevault/ammortal-custom-red-light-therapy-chamber/"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "How Pianist Arsha Kaviani Turns Original Compositions Into Musical Portraits",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "jsonld",
+        "key": "articleBody",
+        "length": 387
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:15.345Z",
+        "trainingUrls": [
+          "https://robbreport.com/listing/a-private-world-above-the-pacific-natural-beauty-timeless-luxury/",
+          "https://robbreport.com/listing/luxury-lease-in-the-hollywood-hills/",
+          "https://robbreport.com/listing/custom-charleston-estate-with-rare-golf-club-membership/"
+        ],
+        "holdoutUrls": [
+          "https://robbreport.com/thevault/chateau-montelena-chardonnay-visit/",
+          "https://robbreport.com/thevault/africa-diamond-journey-thelma-west/"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:31.891Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://robbreport.com/thevault/chateau-montelena-chardonnay-visit/",
+      "https://robbreport.com/thevault/africa-diamond-journey-thelma-west/"
+    ],
+    "improvedUrls": [
+      "https://robbreport.com/listing/a-private-world-above-the-pacific-natural-beauty-timeless-luxury/",
+      "https://robbreport.com/listing/luxury-lease-in-the-hollywood-hills/",
+      "https://robbreport.com/listing/custom-charleston-estate-with-rare-golf-club-membership/"
+    ],
+    "regressions": 0
+  }
+}

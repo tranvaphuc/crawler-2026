@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dulichgiaitri.com",
+  "siteId": "dulichgiaitri.com",
+  "registrableDomain": "dulichgiaitri.com",
+  "homepage": "https://dulichgiaitri.com/",
+  "allowedHosts": [
+    "dulichgiaitri.com",
+    "www.dulichgiaitri.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "kind": "configured_publisher_local_time",
+    "offsetExplicitInArticle": false,
+    "evidenceFile": "outputs/news-parser-rollout-2026-11-09/round3/publisher-evidence.json",
+    "reason": "Publisher declares an editorial address in Vietnam. Treat displayed local publication date/time as Vietnam time; this remains a configuration assumption until offset/UTC data is obtained."
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hành trình trở về với những giá trị thực: Chạm vào hồn Sài Gòn giữa lòng khách sạn 5 sao",
+    "strategy": "selector",
+    "selector": ".td-post-title h1.entry-title"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".td-post-title .td-post-date time",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:29:06.854Z",
+    "sampleCount": 9,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://dulichgiaitri.com/hanh-trinh-tro-ve-voi-nhung-gia-tri-thuc-cham-vao-hon-sai-gon-giua-long-khach-san-5-sao-431055629100.html",
+      "https://dulichgiaitri.com/kham-pha-tinh-hoa-am-thuc-va-chieu-sau-di-san-viet-nam-tai-ngay-van-hoa-viet-nam-o-radisson-blu-resort-cam-ranh-300474085654.html",
+      "https://dulichgiaitri.com/garrya-mu-cang-chai-duoc-vinh-danh-one-michelin-key-dau-moc-moi-cho-hanh-trinh-nghi-duong-an-nhien-giua-tay-bac-496741022773.html",
+      "https://dulichgiaitri.com/dinh-vi-diem-den-hang-dau-mang-trai-nghiem-vuot-troi-cho-du-khach-nga-tai-cam-ranh-531899837915.html",
+      "https://dulichgiaitri.com/trung-thu-2026-khi-mon-qua-khong-chi-de-trao-tang-do-la-ly-do-de-nguoi-ta-ngoi-lai-ben-nhau-728456296554.html",
+      "https://dulichgiaitri.com/nguyet-cam-moonlit-brocade-tinh-hoa-di-san-viet-trong-bo-suu-tap-banh-trung-thu-tu-mia-luxury-collection-938892384633.html",
+      "https://dulichgiaitri.com/hanh-trinh-tro-ve-voi-nhung-gia-tri-thuc-cham-vao-hon-sai-gon-giua-long-khach-san-5-sao-431055629100.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dulichgiaitri.com/",
+    "categories": [
+      "https://dulichgiaitri.com/du-lich-2/",
+      "https://dulichgiaitri.com/resort-hotel/",
+      "https://dulichgiaitri.com/hang-khong-du-thuyen/",
+      "https://dulichgiaitri.com/du-lich-trong-nuoc/",
+      "https://dulichgiaitri.com/du-lich-nuoc-ngoai/",
+      "https://dulichgiaitri.com/am-thuc-2/",
+      "https://dulichgiaitri.com/monngonvuabep/",
+      "https://dulichgiaitri.com/su-kien-am-thuc/",
+      "https://dulichgiaitri.com/nha-hang-bar-cafe/",
+      "https://dulichgiaitri.com/kinh-te-1/",
+      "https://dulichgiaitri.com/bat-dong-san/",
+      "https://dulichgiaitri.com/doanh-nhan-2/",
+      "https://dulichgiaitri.com/doanh-nghiep-1/",
+      "https://dulichgiaitri.com/trien-lam-hoi-thao/",
+      "https://dulichgiaitri.com/cuoc-song/",
+      "https://dulichgiaitri.com/van-hoa-giao-duc/",
+      "https://dulichgiaitri.com/lamdep-thoitrang/",
+      "https://dulichgiaitri.com/y-te-suc-khoe/",
+      "https://dulichgiaitri.com/mua-sam/",
+      "https://dulichgiaitri.com/cong-nghe/",
+      "https://dulichgiaitri.com/cong-nghe-moi/",
+      "https://dulichgiaitri.com/xe-dong-ho/",
+      "https://dulichgiaitri.com/dien-tu-gia-dung/",
+      "https://dulichgiaitri.com/giai-tri-5/",
+      "https://dulichgiaitri.com/thu-choi-dam-me/",
+      "https://dulichgiaitri.com/su-kien-giai-tri/",
+      "https://dulichgiaitri.com/phim-anh-show-dien-mv/",
+      "https://dulichgiaitri.com/sao-viet/",
+      "https://dulichgiaitri.com/video/",
+      "https://dulichgiaitri.com/videokhoedep/",
+      "https://dulichgiaitri.com/videoamthuc/",
+      "https://dulichgiaitri.com/videohotelresort/",
+      "https://dulichgiaitri.com/videodulich/",
+      "https://dulichgiaitri.com/videogiaitri/",
+      "https://dulichgiaitri.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.279Z",
+      "verifiedSeeds": [
+        "https://dulichgiaitri.com/",
+        "https://dulichgiaitri.com/du-lich-2/",
+        "https://dulichgiaitri.com/resort-hotel/",
+        "https://dulichgiaitri.com/hang-khong-du-thuyen/",
+        "https://dulichgiaitri.com/du-lich-trong-nuoc/",
+        "https://dulichgiaitri.com/du-lich-nuoc-ngoai/",
+        "https://dulichgiaitri.com/am-thuc-2/",
+        "https://dulichgiaitri.com/monngonvuabep/",
+        "https://dulichgiaitri.com/su-kien-am-thuc/",
+        "https://dulichgiaitri.com/nha-hang-bar-cafe/",
+        "https://dulichgiaitri.com/kinh-te-1/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dulichgiaitri.com",
+    "checkedAt": "2026-11-09T03:57:03.162Z",
+    "url": "https://dulichgiaitri.com/hanh-trinh-tro-ve-voi-nhung-gia-tri-thuc-cham-vao-hon-sai-gon-giua-long-khach-san-5-sao-431055629100.html",
+    "finalUrl": "https://dulichgiaitri.com/hanh-trinh-tro-ve-voi-nhung-gia-tri-thuc-cham-vao-hon-sai-gon-giua-long-khach-san-5-sao-431055629100.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1800,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "parserRepairValidation": {
+    "domain": "dulichgiaitri.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 37,
+    "checkedArticleUrls": 41,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 37,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 629,
+        "passed": 37,
+        "distinctHashes": 37
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dulichgiaitri.com/tour-kham-pha-rung-cung-kiem-lam-vuon-quoc-gia-cat-tien-lot-top-tot-nhat-the-gioi-096031731799.html",
+      "https://dulichgiaitri.com/phat-trien-du-lich-tinh-vinh-long-trong-boi-canh-moi-690434915446.html",
+      "https://dulichgiaitri.com/duong-sat-ben-thanh-can-giotang-toc-thi-cong-nha-pho-vinh-tien-chuan-bi-cat-canh-794552004638.html",
+      "https://dulichgiaitri.com/hanh-trinh-tro-ve-voi-nhung-gia-tri-thuc-cham-vao-hon-sai-gon-giua-long-khach-san-5-sao-431055629100.html",
+      "https://dulichgiaitri.com/vinhomes-green-paradise-chinh-thuc-buoc-vao-vong-binh-chon-toan-cau-7-ky-quan-do-thi-tuong-lai-019185338771.html",
+      "https://dulichgiaitri.com/fv-run-2026-3-300-van-dong-vien-chung-buoc-1-ty-dong-tiep-suc-cho-tre-em-co-hoan-canh-kho-khan-743231675714.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:15:19.298Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dulichgiaitri.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,4 @@
+import 'dotenv/config';import fs from 'node:fs/promises';import {createHash}from'node:crypto';import {createProxyManagerClient}from'../src/services/proxyManagerClient.js';
+const dir='outputs/search-facebook-parity-2026-10-25',provider=createProxyManagerClient(),lease=await provider({platform:'facebook',apiOperation:'comments',minProxyRemainingMs:1200000}),file=dir+'/fixed-proxy.credentials.json';const p={...lease};delete p.rateCooldownMs;
+await fs.writeFile(file,JSON.stringify(p),{mode:0o600});console.log(JSON.stringify({held:true,proxyFingerprint:createHash('sha256').update(JSON.stringify([p.server,p.host,p.port])).digest('hex'),expiresAt:new Date(p.expiresAt).toISOString()}));
+try{for(let n=0;n<55;n++){try{await fs.access(dir+'/release-proxy.signal');break;}catch{}await lease.heartbeat();await new Promise(r=>setTimeout(r,30000));}}finally{await lease.release();console.log('DIAGNOSTIC_PROXY_RELEASED');}

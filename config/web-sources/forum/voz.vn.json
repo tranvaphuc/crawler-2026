@@ -1,0 +1,74 @@
+{
+  "siteName": "voz.vn",
+  "homepage": "https://voz.vn/",
+  "findNewsUrl": "https://voz.vn/whats-new/posts/",
+  "parser": "src/web/forumParser.mjs",
+  "strategy": "xenforo2",
+  "transport": "normal_chrome_when_http_blocked",
+  "browserResourcePolicy": {
+    "images": false,
+    "fonts": false,
+    "media": false,
+    "scripts": true
+  },
+  "threadPattern": "/t/.*\\.(\\d+)/?$",
+  "selectors": {
+    "title": "h1.p-title-value",
+    "posts": "article.message--post",
+    "body": ".message-body",
+    "author": ".message-name a.username",
+    "publishedDate": ".message-attribution-main time[datetime]",
+    "nextPage": ".pageNav-jump--next"
+  },
+  "idEncoding": "latin1",
+  "nativeIds": [
+    "topic ID from URL",
+    "post ID from DOM"
+  ],
+  "sampleStatus": "blocked_by_site",
+  "observedSamples": [
+    {
+      "url": "https://voz.vn/whats-new/posts/",
+      "stage": "feed",
+      "blocked": true,
+      "error": "Public feed remains behind site verification in headless mode",
+      "completeRequiredFields": false,
+      "parsedPosts": 0
+    }
+  ],
+  "enabled": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "paginationScope": "Only posts embedded in the first page of each sampled topic; full history not verified",
+  "identityReconciliationRequired": true,
+  "browserMode": "headless-new",
+  "previousVisibleBrowserSamples": [
+    {
+      "url": "https://voz.vn/t/manchester-united-26-27-born-to-fight-red-devil-for-life.1246016/",
+      "title": "Manchester United 26/27 - Born to Fight, Red Devil for Life - thảo luận | VOZ",
+      "error": null,
+      "blocked": false,
+      "completeRequiredFields": true,
+      "parsedPosts": 20,
+      "htmlFile": "voz.vn-recheck-1.html"
+    },
+    {
+      "url": "https://voz.vn/t/lap-hoi-chuot-bach-voz.1290648/",
+      "title": "Lập hội chuột bạch VOZ | VOZ",
+      "error": null,
+      "blocked": false,
+      "completeRequiredFields": true,
+      "parsedPosts": 20,
+      "htmlFile": "voz.vn-recheck-2.html"
+    },
+    {
+      "url": "https://voz.vn/t/phi-san-vuot-34-gia-tri-don-hang-cach-nao-giam-ganh-nang-cho-nguoi-ban.1296491/",
+      "title": "Phí sàn vượt 34% giá trị đơn hàng, cách nào giảm gánh nặng cho người bán? | VOZ",
+      "error": null,
+      "blocked": false,
+      "completeRequiredFields": true,
+      "parsedPosts": 20,
+      "htmlFile": "voz.vn-recheck-3.html"
+    }
+  ]
+}

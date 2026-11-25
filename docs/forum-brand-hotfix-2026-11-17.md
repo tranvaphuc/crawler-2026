@@ -1,0 +1,15 @@
+# Forum brand backfill — 17/11/2026
+
+Tác vụ một lần được yêu cầu để tìm link OPPO, Samsung, Apple và Huawei (bao gồm cách viết `huwei`), thu thập và nhập ES. Chỉ nhận hostname trong `config/forum-flow/sites.json`. Nguồn link: kết quả tìm kiếm web đã lưu và các anchor quan sát trực tiếp trên trang forum/chuyên mục. Xác nhận từ khóa trong tiêu đề/nội dung bài gốc, không chỉ dựa vào kết quả tìm kiếm hoặc chữ ký reply.
+
+Giữ cửa sổ reply từ `2026-10-01T00:00:00+07:00`. Bài cha trước cửa sổ chỉ nhập khi có reply trong cửa sổ. Giữ timestamp gốc của bài cha; không thay bằng ngày crawl hoặc ngày reply. Parser, pagination và evidence dùng lại các module forum đang chạy.
+
+Code riêng ở `/opt/forum-brand-hotfix-20261117`, state/evidence riêng ở `/var/lib/forum-brand-hotfix-20261117/run` trên VPS `148.113.144.41`. Hai tác vụ transient `forum-brand-hotfix-collect-20261117` và `forum-brand-hotfix-import-20261117` không bật chạy định kỳ. Mỗi tác vụ giới hạn CPU 20%, RAM 512 MiB, Nice 10. Không mở SQLite runtime của collector chính để ghi; không thay unit, cấu hình, concurrency hay queue của hệ thống. Không gọi API AI.
+
+Importer riêng dùng bulk tối đa 50 bản ghi, role topic trước comment. Đối chiếu alias/native identity trên `master*`, giữ ID/index/time của bản ghi cũ. Chỉ create bản ghi mới; duplicate, sai time/parent, lookup thiếu hoặc phản hồi ghi không xác nhận được đều held. Kiểm tra lại identity sau refresh; nếu phát hiện race, chỉ rollback bản ghi mới do chính hotfix tạo khi version và provenance vẫn khớp.
+
+Kiểm tra: `node --test --test-reporter=dot test/forum-brand-hotfix.test.mjs test/forum-flow.test.mjs test/forum-es5.test.mjs` (28 test). `forum_brand_hotfix_verify_20261117.mjs` replay timestamp từ bằng chứng gốc, kiểm tra tuần index/file HTML và đọc lại toàn bộ bản ghi created/existing trên ES, đối chiếu thời gian và parent đã reconcile. Receipt, manifest, audit và verification lưu trong `outputs/forum-brand-hotfix-2026-11-17`.
+
+Coverage được ghi rõ theo từng URL: collected, partial, failed, irrelevant. `collected` không đồng nghĩa ES create mới; bản ghi cũ ngoài cửa sổ không có reply được đánh dấu context_only. Trang chặn truy cập hoặc thiếu comment không được báo là quét đầy đủ.
+
+Lượt xử lý 98 bản ghi held: tải lại hai bài gốc VOZ 1035490 và 1039348, xác nhận native post ID và timestamp giây không đổi. Config eastdata `voz.vn.json` đọc `time.title` bằng `DD/MM/YYYY HH:mm A`, SHA256 `5717be255649a1eefec606cafab973c6c7c47c94df16e22a4577c48ceac5c92d`. Chỉ hai parent đã đối chiếu này được ghi nhận precision phút trong metadata riêng của hotfix. Giữ nguyên ID/index/publishedDate, hash toàn bộ source và version ES của parent; bind reply tới đúng ID/ngày ES đó. Không cắt giây của timestamp reply hay sửa timestamp gốc trong evidence. Tạo mới đủ 96 reply; hai parent chuyển existing; không còn pending/held trong state hotfix. Replay 1.892 timestamp, 3.243 đối chiếu clock và đọc lại 1.774 bản ghi ES: không lỗi. Tổng mới sau lượt này 1.770, existing 4. Receipt: `outputs/forum-brand-hotfix-2026-11-17/resolution-completed.json`. Bộ kiểm tra mở rộng 31 test đã qua; không đổi code/config/queue/service của hệ thống.

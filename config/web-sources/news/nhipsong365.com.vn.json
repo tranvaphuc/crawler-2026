@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipsong365.com.vn",
+  "siteId": "nhipsong365.com.vn",
+  "registrableDomain": "nhipsong365.com.vn",
+  "homepage": "https://nhipsong365.com.vn/",
+  "allowedHosts": [
+    "nhipsong365.com.vn",
+    "www.nhipsong365.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nhipsong365.com.vn/",
+    "categories": [
+      "https://nhipsong365.com.vn/tin-tuc-24h",
+      "https://nhipsong365.com.vn/tin-tuc-kinh-te",
+      "https://nhipsong365.com.vn/the-thao-bong-da",
+      "https://nhipsong365.com.vn/sao-viet",
+      "https://nhipsong365.com.vn/community-network"
+    ]
+  },
+  "title": {
+    "value": "Thịt lợn bở, nhũn ở trường mầm non Hà Nội: Nhà cung cấp nói gì?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:06.396Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:59.903Z",
+    "independentHoldouts": [
+      "https://nhipsong365.com.vn/ruou-bia-khong-the-hien-ban-linh-tinh-tao-moi-dang-tu-hao-58157913.lco",
+      "https://nhipsong365.com.vn/facebook-se-xoa-trang-ca-nhan-phu-tu-ngay-14-12-2026-58157889.lco",
+      "https://nhipsong365.com.vn/ap-luc-cong-viec-keo-dai-de-doa-suc-khoe-tam-than-nguoi-lao-dong-58157868.lco"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nhipsong365.com.vn/thit-lon-bo-nhun-o-truong-mam-non-ha-noi-nha-cung-cap-noi-gi-58157362.lco",
+      "https://nhipsong365.com.vn/ruou-bia-khong-the-hien-ban-linh-tinh-tao-moi-dang-tu-hao-58157913.lco",
+      "https://nhipsong365.com.vn/facebook-se-xoa-trang-ca-nhan-phu-tu-ngay-14-12-2026-58157889.lco",
+      "https://nhipsong365.com.vn/ap-luc-cong-viec-keo-dai-de-doa-suc-khoe-tam-than-nguoi-lao-dong-58157868.lco"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

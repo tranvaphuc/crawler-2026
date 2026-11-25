@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepkinhtexanh.vn",
+  "siteId": "doanhnghiepkinhtexanh.vn",
+  "registrableDomain": "doanhnghiepkinhtexanh.vn",
+  "homepage": "https://doanhnghiepkinhtexanh.vn/",
+  "allowedHosts": [
+    "doanhnghiepkinhtexanh.vn",
+    "www.doanhnghiepkinhtexanh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnghiepkinhtexanh.vn/",
+    "categories": [
+      "https://doanhnghiepkinhtexanh.vn/tien-ich/gia-vang-hom-nay",
+      "https://doanhnghiepkinhtexanh.vn/c/tin-tuc",
+      "https://doanhnghiepkinhtexanh.vn/c/dai-hoi-dang-cac-cap",
+      "https://doanhnghiepkinhtexanh.vn/c/trong-nuoc"
+    ]
+  },
+  "title": {
+    "value": "SHB quý III/2026: Lợi nhuận tăng 57%, tổng tài sản tiến sát 1 triệu tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:17:05.991Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://doanhnghiepkinhtexanh.vn/quang-tri-mo-luong-xanh-cho-de-xuat-du-an-logistics-lao-bao-cua-viettel-post-a55795.html",
+      "https://doanhnghiepkinhtexanh.vn/khat-vong-dua-huong-tra-viet-bay-that-xa-a55628.html"
+    ],
+    "improvedUrls": [
+      "https://doanhnghiepkinhtexanh.vn/emagazine-thoat-bay-gia-re-giu-lai-gia-tri-cho-nong-san-viet-a55648.html",
+      "https://doanhnghiepkinhtexanh.vn/phat-trien-nong-nghiep-huu-co-chuyen-doi-dong-bo-de-mo-rong-thi-truong-a55731.html",
+      "https://doanhnghiepkinhtexanh.vn/emagazine-phu-pham-nong-nghiep-va-bai-toan-gia-tang-gia-tri-sau-thu-hoach-a55815.html"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnghiepkinhtexanh.vn/shb-quy-iii2026-loi-nhuan-tang-57-tong-tai-san-tien-sat-1-trieu-ty-dong-a55380.html",
+      "https://doanhnghiepkinhtexanh.vn/chu-tich-ttc-energy-dang-huynh-anh-tuan-duoc-vinh-danh-cup-thanh-giong-2026-a54532.html",
+      "https://doanhnghiepkinhtexanh.vn/ttc-land-chuyen-sang-giai-doan-tao-dong-tien-nghia-vu-trai-phieu-duoc-thuc-hien-dung-han-a54525.html",
+      "https://doanhnghiepkinhtexanh.vn/loi-nhuan-sau-thue-quy-iii2026-cua-cc1-bat-ngo-giam-sau-hon-mot-nua-a55388.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "SHB quý III/2026: Lợi nhuận tăng 57%, tổng tài sản tiến sát 1 triệu tỷ đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:57.381Z",
+        "trainingUrls": [
+          "https://doanhnghiepkinhtexanh.vn/emagazine-thoat-bay-gia-re-giu-lai-gia-tri-cho-nong-san-viet-a55648.html",
+          "https://doanhnghiepkinhtexanh.vn/phat-trien-nong-nghiep-huu-co-chuyen-doi-dong-bo-de-mo-rong-thi-truong-a55731.html",
+          "https://doanhnghiepkinhtexanh.vn/emagazine-phu-pham-nong-nghiep-va-bai-toan-gia-tang-gia-tri-sau-thu-hoach-a55815.html"
+        ],
+        "holdoutUrls": [
+          "https://doanhnghiepkinhtexanh.vn/quang-tri-mo-luong-xanh-cho-de-xuat-du-an-logistics-lao-bao-cua-viettel-post-a55795.html",
+          "https://doanhnghiepkinhtexanh.vn/khat-vong-dua-huong-tra-viet-bay-that-xa-a55628.html"
+        ]
+      }
+    }
+  ]
+}

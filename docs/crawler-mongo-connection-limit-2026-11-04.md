@@ -1,0 +1,11 @@
+# Mongo connection admission repair — 2026-11-04
+
+Mongo container `crawler-v8-mongo` logged `Connection refused because there are too many open connections` at a connection count of 409. Its soft open-file limit was 1024. This explains intermittent new-client handshake failures on both server port 27017 and the local SSH forward at 17017 while established worker connections continued operating.
+
+Recreated only the Mongo container from its exact existing image/configuration, with `nofile` soft/hard 65536 and explicit `--maxConns 1536`. Preserved environment, authentication, loopback-only published port, resource limits, restart policy and both data mounts. No database records were deleted. The old container is stopped and retained as `crawler-v8-mongo-before-nofile-20261104-010259`; private original inspection and repair evidence are under `/var/lib/crawler-v8/mongo-connection-repair-20261104-010259`. Never start both containers against the shared data directory. Any future replacement must retain these ulimits and the connection cap.
+
+After replacement: Mongo accepted fresh authenticated connections, showed 263 current / 1273 available / 0 rejected, resident memory 887 MiB. Local UID worker retained PID 16963 and concurrency 3. Native public profile proof for Phúc 3 succeeded; reconciliation updated both the origin marker to recovered/Phúc 3 and its Mongo audit to completed. The health script now caps its short-lived Mongo pool at 2 connections and records successful reconciliation in the filtered local status.
+
+All 643 failed UID jobs were backed up and requeued exactly once under operation `uid-failed-retry-2026-11-04T01-03-32-311Z`. Dispatch had zero errors; queue was unpaused with 3 active jobs and no failed jobs at verification. Backup tickets and Mongo rows remain private in the operation directory. Initial failures comprised 461 profile-route errors and 182 Mongo connection/pool/write errors.
+
+Rollback requires stopping the replacement before renaming and starting the retained old container. This restores the old low connection ceiling, so use only if replacement health fails. The repair script automatically performs this rollback on unsuccessful startup validation.

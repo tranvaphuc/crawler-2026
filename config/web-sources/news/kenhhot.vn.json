@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kenhhot.vn",
+  "siteId": "kenhhot.vn",
+  "registrableDomain": "kenhhot.vn",
+  "homepage": "https://kenhhot.vn/",
+  "allowedHosts": [
+    "kenhhot.vn",
+    "www.kenhhot.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Đoàn Lê Anh Đức vô địch Đường lên đỉnh Olympia năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:25.001Z",
+    "sampleCount": 13,
+    "passedSamples": 4,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 7,
+    "sampleUrls": [
+      "http://kenhhot.vn/doan-le-anh-duc-vo-dich-duong-len-dinh-olympia-nam-2026-67818.html",
+      "http://kenhhot.vn/arsenal-bo-xa-man-city-6-diem-o-ngoai-hang-anh-67961.html",
+      "http://kenhhot.vn/clb-thanh-hoa-tiep-tuc-nhan-an-phat-tu-fifa-67960.html",
+      "http://kenhhot.vn/hoa-hau-thanh-thuy-mang-nuoc-sach-den-nguoi-dan-vinh-long-67947.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kenhhot.vn/",
+    "categories": [
+      "https://kenhhot.vn/tieu-diem",
+      "https://kenhhot.vn/tieu-diem/chinh-tri",
+      "https://kenhhot.vn/tieu-diem/xa-hoi",
+      "https://kenhhot.vn/giai-tri-sao",
+      "https://kenhhot.vn/the-thao",
+      "https://kenhhot.vn/goc-nhin-cuoc-song",
+      "https://kenhhot.vn/tin-khong-tin",
+      "https://kenhhot.vn/du-lich",
+      "https://kenhhot.vn/xe-cong-nghe",
+      "https://kenhhot.vn/xe-cong-nghe/xe",
+      "https://kenhhot.vn/xe-cong-nghe/cong-nghe-so",
+      "https://kenhhot.vn/tai-chinh",
+      "https://kenhhot.vn/tai-chinh/chung-khoan",
+      "https://kenhhot.vn/tai-chinh/ngan-hang",
+      "https://kenhhot.vn/tai-chinh/bat-dong-san",
+      "https://kenhhot.vn/tai-chinh/thuong-mai",
+      "https://kenhhot.vn/doanh-nghiep",
+      "https://kenhhot.vn/nang-luong",
+      "https://kenhhot.vn/trang-dia-phuong"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kenhhot.vn",
+    "checkedAt": "2026-11-09T03:57:07.888Z",
+    "url": "http://kenhhot.vn/doan-le-anh-duc-vo-dich-duong-len-dinh-olympia-nam-2026-67818.html",
+    "finalUrl": "https://kenhhot.vn/doan-le-anh-duc-vo-dich-duong-len-dinh-olympia-nam-2026-67818.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 139,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:30.943Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kenhhot.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kenhhot.vn",
+    "parsedArticles": 23,
+    "distinctHashes": 23,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 19,
+    "categoriesAttempted": 19,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 369,
+    "checkedArticleUrls": 23,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 369,
+        "attempted": 23,
+        "passed": 23,
+        "distinctContents": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".__MASTERCMS_CONTENT",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

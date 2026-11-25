@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepkinhte.vn",
+  "siteId": "doanhnghiepkinhte.vn",
+  "registrableDomain": "doanhnghiepkinhte.vn",
+  "homepage": "https://doanhnghiepkinhte.vn/",
+  "allowedHosts": [
+    "doanhnghiepkinhte.vn",
+    "www.doanhnghiepkinhte.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "GELEX vượt 8,8% kế hoạch lợi nhuận năm 2026 sau 9 tháng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "#Div2 > div:nth-of-type(2)",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#t3-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:13:51.602Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiepkinhte.vn/tieu-diem/pho-mai-asiago-pdo-va-cac-san-pham-thit-nguoi-phap-duoc-gioi-thieu-tai-ha-noi-dau-an-moi-cua-tinh-hoa-am-thuc-chau-au-tai-viet-nam-465082.html",
+      "https://doanhnghiepkinhte.vn/doanh-nghiep/ieae-hanoi-2026-quy-tu-hon-300-doanh-nghiep-trong-linh-vuc-dien-tu-thiet-bi-thong-minh-465072.html",
+      "https://doanhnghiepkinhte.vn/tieu-diem/ieae-hanoi-2026-ket-noi-chuoi-cung-ung-toan-cau-kham-pha-nguon-hang-dien-tu--nguon-hang-dien-tu--thiet-bi-thong-minh-465062.html",
+      "https://doanhnghiepkinhte.vn/tieu-diem/herbalife-viet-nam-duoc-xep-hang-%E2%80%9Ctop-30doanh-nghiep-van-hoa-uy-tin%E2%80%9D-boi-lien-doan-thuong-mai-va-cong-nghiep-viet-nam-nam-thu-hai-lien-tiep-465052.html",
+      "https://doanhnghiepkinhte.vn/doanh-nhan/ceo-pham-nhat-quan-anh-vinfast-se-ra-mat-them-nhieu-xe-moi-dau-tu-cong-nghe-tu-lai-mo-rong-thi-truong-465042.html",
+      "https://doanhnghiepkinhte.vn/bat-dong-san/gelex-vuot-8-8-ke-hoach-loi-nhuan-nam-2026-sau-9-thang-465032.html",
+      "https://doanhnghiepkinhte.vn/dau-tu/tap-doan-son-ha-ghi-nhan-doanh-thu-9-thang-cao-nhat-lich-su-dat-hon-8-288-ty-dong-465022.html",
+      "https://doanhnghiepkinhte.vn/tieu-diem/vinh-danh-cac-tai-nang-tre-xuat-sac-tai-cuoc-thi-samsung-solve-for-tomorrow-2026-464982.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepkinhte.vn/",
+    "categories": [
+      "https://doanhnghiepkinhte.vn/tieu-diem-11.html",
+      "https://doanhnghiepkinhte.vn/bat-dong-san-21.html",
+      "https://doanhnghiepkinhte.vn/doanh-nhan-261.html",
+      "https://doanhnghiepkinhte.vn/doanh-nghiep-271.html",
+      "https://doanhnghiepkinhte.vn/goc-nhin-371.html",
+      "https://doanhnghiepkinhte.vn/kinh-te-391.html",
+      "https://doanhnghiepkinhte.vn/dau-tu-51.html",
+      "https://doanhnghiepkinhte.vn/phap-luat-381.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepkinhte.vn",
+    "checkedAt": "2026-11-09T03:57:00.469Z",
+    "url": "https://doanhnghiepkinhte.vn/tieu-diem/pho-mai-asiago-pdo-va-cac-san-pham-thit-nguoi-phap-duoc-gioi-thieu-tai-ha-noi-dau-an-moi-cua-tinh-hoa-am-thuc-chau-au-tai-viet-nam-465082.html",
+    "finalUrl": "https://doanhnghiepkinhte.vn/tieu-diem/pho-mai-asiago-pdo-va-cac-san-pham-thit-nguoi-phap-duoc-gioi-thieu-tai-ha-noi-dau-an-moi-cua-tinh-hoa-am-thuc-chau-au-tai-viet-nam-465082.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11275,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:04.121Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnghiepkinhte.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnghiepkinhte.vn",
+    "parsedArticles": 9,
+    "distinctHashes": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 105,
+    "checkedArticleUrls": 9,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 105,
+        "attempted": 9,
+        "passed": 9,
+        "distinctContents": 9,
+        "distinctHashes": 9
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

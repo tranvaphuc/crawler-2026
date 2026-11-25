@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "siteName": "suckhoecong.vn",
+  "siteId": "suckhoecong.vn",
+  "registrableDomain": "suckhoecong.vn",
+  "homepage": "https://suckhoecong.vn/",
+  "allowedHosts": [
+    "suckhoecong.vn",
+    "www.suckhoecong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nguy cơ thiếu hụt iod, calci khi thay thế sữa bò bằng sữa hạt?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "section.box-author .info-author > ul > li:first-child",
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "publicationEvidencePolicy": {
+    "kind": "suckhoecong_owned_local_clock_v1"
+  },
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:14.338Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://suckhoecong.vn/thay-sua-bo-bang-sua-thuc-vat-co-the-gay-thieu-vi-chat-nghiem-trong-d104688.html",
+      "https://suckhoecong.vn/vi-sao-ban-de-bi-dau-dau-khi-chat-luong-khong-khi-kem-d104686.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-hai-9112026-voi-cu-giai-bach-duong-su-tu-d104683.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-chu-nhat-8112026-voi-song-tu-song-ngu-xu-nu-d104673.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-bay-7112026-voi-kim-nguu-bao-binh-ma-ket-d104662.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://suckhoecong.vn/",
+    "categories": [
+      "https://suckhoecong.vn/kien-thuc-song-khoe-d1/",
+      "https://suckhoecong.vn/thuc-pham-chuc-nang-d2/",
+      "https://suckhoecong.vn/hoi-dap-d8/",
+      "https://suckhoecong.vn/an-pham/",
+      "https://suckhoecong.vn/emagazine/",
+      "https://suckhoecong.vn/longform/",
+      "https://suckhoecong.vn/goc-nhin-quan-ly-d5/",
+      "https://suckhoecong.vn/tro-chuyen-d6/",
+      "https://suckhoecong.vn/ban-doc-viet-d7/",
+      "https://suckhoecong.vn/van-hoa-xa-hoi-d3/",
+      "https://suckhoecong.vn/phong-benh-chu-dong-d4/",
+      "https://suckhoecong.vn/cong-dong-len-tieng-d11/",
+      "https://suckhoecong.vn/tin-tuc-thoi-su-d12/",
+      "https://suckhoecong.vn/suc-khoe-moi-truong-d51/",
+      "https://suckhoecong.vn/Podcast-d55/",
+      "https://suckhoecong.vn/toa-dam-d57/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "suckhoecong.vn",
+    "checkedAt": "2026-11-09T03:57:25.860Z",
+    "url": "https://suckhoecong.vn/thay-sua-bo-bang-sua-thuc-vat-co-the-gay-thieu-vi-chat-nghiem-trong-d104688.html",
+    "finalUrl": "https://suckhoecong.vn/thay-sua-bo-bang-sua-thuc-vat-co-the-gay-thieu-vi-chat-nghiem-trong-d104688.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3814,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "suckhoecong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 37,
+    "checkedArticleUrls": 46,
+    "freshArticleChecks": 21,
+    "parserIssues": 9,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 22,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 455,
+        "passed": 22,
+        "distinctHashes": 22
+      },
+      {
+        "name": "audio",
+        "discovered": 27,
+        "passed": 15,
+        "distinctHashes": 1
+      },
+      {
+        "name": "longform",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-tu-11112026-voi-xu-nu-song-ngu-bao-binh-d104721.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-ba-10112026-voi-su-tu-bach-duong-song-tu-d104697.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-hai-9112026-voi-cu-giai-bach-duong-su-tu-d104683.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-chu-nhat-8112026-voi-song-tu-song-ngu-xu-nu-d104673.html",
+      "https://suckhoecong.vn/tu-vi-cung-hoang-dao-thu-bay-7112026-voi-kim-nguu-bao-binh-ma-ket-d104662.html",
+      "https://suckhoecong.vn/podcast-bien-chung-va-cach-phong-ngua-viem-xoang-khi-troi-lanh-d104717.html",
+      "https://suckhoecong.vn/cham-dut-quan-ly-phan-tan-bo-y-te-lam-dau-moi-ve-an-toan-thuc-pham-d104713.html",
+      "https://suckhoecong.vn/benh-co-don-nam-gioi-d104719.html",
+      "https://suckhoecong.vn/lien-tiep-xay-ra-cac-vu-nghi-ngo-doc-thuc-pham-bo-y-te-vao-cuoc-d104702.html",
+      "https://suckhoecong.vn/podcast-phong-ngua-cam-lanh-cum-the-nao-khi-troi-tro-lanh-d104700.html",
+      "https://suckhoecong.vn/roi-loan-cam-xuc-theo-mua-khien-nhieu-nguoi-u-dot-lam-sao-cai-thien-d104715.html",
+      "https://suckhoecong.vn/bo-sung-chat-xo-co-loi-ich-gi-lam-sao-de-tang-chat-xo-trong-che-do-an-d104720.html",
+      "https://suckhoecong.vn/bac-si-chi-3-cach-ngua-cam-lanh-va-cum-khi-troi-lanh-d104709.html",
+      "https://suckhoecong.vn/hay-dap-xe-cuong-do-cao-co-can-lo-lang-ve-nhip-tim-khong-deu-d104711.html",
+      "https://suckhoecong.vn/bv-nhi-ha-noi-phau-thuat-thanh-cong-cho-tre-so-sinh-suy-tim-suy-ho-hap-d104707.html",
+      "https://suckhoecong.vn/truoc-khi-tham-tre-so-sinh-nguoi-than-can-luu-y-dieu-gi-d104692.html",
+      "https://suckhoecong.vn/3-dieu-cac-cap-doi-can-chuan-bi-truoc-khi-kham-suc-khoe-tien-hon-nhan-v104705.html",
+      "https://suckhoecong.vn/infographic-4-luu-y-quan-trong-khi-su-dung-thuc-pham-dong-hop-d104699.html",
+      "https://suckhoecong.vn/giat-va-bao-quan-khan-tam-the-nao-de-bao-dam-ve-sinh-hieu-qua-d104680.html",
+      "https://suckhoecong.vn/infographic-7-mon-an-vat-hap-dan-khi-gio-mua-ve-tai-ha-noi-d104652.html",
+      "https://suckhoecong.vn/dong-chay-suc-khoe-moi-lien-he-giua-van-dong-va-suc-khoe-sinh-ly-v104676.html",
+      "https://suckhoecong.vn/dau-khop-keo-dai-khi-nao-can-di-kham-v104653.html",
+      "https://suckhoecong.vn/phu-nu-sau-40-tuoi-nen-an-uong-the-nao-de-bao-ve-suc-khoe-v104637.html",
+      "https://suckhoecong.vn/pantethine-va-trien-vong-moi-trong-ho-tro-dieu-tri-benh-vay-nen-d104710.html",
+      "https://suckhoecong.vn/an-phai-thuc-pham-bi-moc-co-sao-khong-xu-tri-thuc-pham-bi-moc-the-nao-d104658.html",
+      "https://suckhoecong.vn/doanh-nghiep-tu-nhan-se-khong-dung-ngoai-cuoc-d104152.html",
+      "https://suckhoecong.vn/crete--nhung-dieu-bi-an-d104690.html",
+      "https://suckhoecong.vn/them-lua-chon-dieu-tri-cho-nguoi-benh-ung-thu-vu-di-can-tai-viet-nam-d104708.html",
+      "https://suckhoecong.vn/du-bao-thoi-tiet-ngay-1011-bac-bo-ret-trung-bo-mua-lon-dien-rong-d104704.html",
+      "https://suckhoecong.vn/du-bao-thoi-tiet-ngay-911-bac-bo-mua-nhieu-noi-troi-chuyen-lanh-d104689.html",
+      "https://suckhoecong.vn/vai-tro-cua-kem-doi-voi-co-the-lieu-dung-tac-dung-phu-va-luu-y-d104641.html",
+      "https://suckhoecong.vn/podcast-co-nen-bo-sung-vitamin-nhom-b-de-ngan-toc-bac-nhanh-d104603.html",
+      "https://suckhoecong.vn/dung-thuc-pham-bo-sung-vitamin-d-dung-cach-de-hap-thu-hieu-qua-d104520.html",
+      "https://suckhoecong.vn/podcast-vitamin-tong-hop-co-tot-cho-nguoi-thuong-xuyen-uong-ruou-bia-d104512.html",
+      "https://suckhoecong.vn/luu-y-cac-duong-chat-khong-nen-ket-hop-khi-uong-thuc-pham-bo-sung-d104486.html",
+      "https://suckhoecong.vn/magne-co-giup-kiem-soat-duong-huyet-o-nguoi-mac-dai-thao-duong-d104445.html",
+      "https://suckhoecong.vn/khi-nao-men-vi-sinh-probiotic-giup-phong-va-giam-tieu-chay-hieu-qua-d104414.html",
+      "https://suckhoecong.vn/suy-than-cap-sau-nhiem-trung-lieu-co-hoi-phuc-d104685.html",
+      "https://suckhoecong.vn/tre-bi-soi-mat-6mm-dung-tpbvsk-kim-dom-khang-duoc-khong-d104573.html",
+      "https://suckhoecong.vn/run-dau-cam-va-moi-co-dung-tpbvsk-vuong-lao-kien-duoc-khong-d104442.html",
+      "https://suckhoecong.vn/co-soi-ong-mat-chu-36x12mm-dung-tpbvsk-kim-dom-khang-duoc-khong-d99658.html",
+      "https://suckhoecong.vn/dai-thao-duong-tiem-insulin-co-dung-tpbvsk-ho-tang-duong-duoc-khong-d95662.html",
+      "https://suckhoecong.vn/dung-tpbvsk-ich-tam-khang-hieu-qua-gio-giam-lieu-duoc-khong-d90513.html",
+      "https://suckhoecong.vn/roi-loan-he-than-kinh-thuc-vat-co-gay-tinh-trang-run-tay-chan-khong-d101805.html",
+      "https://suckhoecong.vn/dai-thao-duong-bi-ngua-da-cang-gai-cang-ngua-co-nguy-hiem-khong-d97430.html",
+      "https://suckhoecong.vn/che-do-dinh-duong-cho-nguoi-u-xo-tu-cung-d100372.html",
+      "https://suckhoecong.vn/bi-viem-phe-quan-nen-tranh-thuc-pham-nao-d102777.html",
+      "https://suckhoecong.vn/tre-bi-khan-tieng-4-thoi-quen-hang-ngay-cua-be-me-can-sua-ngay-d102773.html",
+      "https://suckhoecong.vn/cuc-quan-ly-duoc-thu-hoi-227-so-cong-bo-my-pham-cua-herbalife-bigen-d104542.html",
+      "https://suckhoecong.vn/bo-y-te-cong-bo-co-so-san-xuat-thuoc-nuoc-ngoai-dat-chuan-gmp-dot-53-d103292.html",
+      "https://suckhoecong.vn/danh-sach-cac-san-pham-duoc-cap-giay-xac-nhan-quang-cao-tpbvsk-d96110.html",
+      "https://suckhoecong.vn/tat-tan-tat-ve-el-nio-d104619.html",
+      "https://suckhoecong.vn/thuc-pham-ho-tro-co-the-ung-pho-voi-o-nhiem-khong-khi-nhu-the-nao-d104517.html",
+      "https://suckhoecong.vn/lam-the-nao-de-giup-cun-con-giam-can-an-toan-khoe-manh-d104706.html",
+      "https://suckhoecong.vn/meo-co-nam-mo-khi-ngu-nhung-dau-hieu-sen-can-biet-d104617.html",
+      "https://suckhoecong.vn/i-sao-meo-keu-nhieu-vao-ban-dem-nguyen-nhan-dau-hieu-va-cach-xu-ly-d104576.html",
+      "https://suckhoecong.vn/canh-bao-nguy-co-ngo-doc-o-cho-meo-khi-tiep-xuc-voi-minoxidil-d104541.html",
+      "https://suckhoecong.vn/vinalink-group--ra-mat-thuong-hieu-my-pham-vxebra-d90713.html",
+      "https://suckhoecong.vn/kinh-doanh-tieu-dung-c18/",
+      "https://suckhoecong.vn/hoi-dap-thuc-pham-chuc-nang-c46/",
+      "https://suckhoecong.vn/hoi-dap-phong-benh-dieu-tri-c47/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "original_publication_not_yet_confirmed": 3,
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:16:55.718Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/suckhoecong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "section.box-author .info-author > ul > li:first-child",
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#boxBmiBody",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "dateCorrectionEvidence": {
+    "reason": "Broad .date selected recommendation clocks; original publication is in .info-author > ul > li:first-child",
+    "regressionUrl": "https://suckhoecong.vn/ly-giai-vi-sao-vinamilk-4-lan-dat-thuong-hieu-manh-viet-nam-2015-d39473.html",
+    "expectedLocal": "2016-04-08T11:19:00+07:00",
+    "requiresHistoricalIndexReconciliation": true,
+    "checkedAt": "2026-11-16T02:25:19.676Z",
+    "holdoutUrls": [
+      "https://suckhoecong.vn/thay-sua-bo-bang-sua-thuc-vat-co-the-gay-thieu-vi-chat-nghiem-trong-d104688.html",
+      "https://suckhoecong.vn/vi-sao-ban-de-bi-dau-dau-khi-chat-luong-khong-khi-kem-d104686.html"
+    ],
+    "verifiedLocalClocks": [
+      "08/11/2026 15:17",
+      "08/11/2026 10:44"
+    ],
+    "savedReplay": {
+      "samples": 24,
+      "parsed": 18,
+      "remainingLayoutErrors": 6
+    }
+  },
+  "publicationTimePolicy": "user_confirmed_suckhoecong_utc_plus_7",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "date": "2026-11-16",
+    "utcOffset": "+07:00",
+    "scope": "suckhoecong.vn"
+  }
+}

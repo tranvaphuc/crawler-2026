@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepplus.vn",
+  "siteId": "doanhnghiepplus.vn",
+  "registrableDomain": "doanhnghiepplus.vn",
+  "homepage": "https://doanhnghiepplus.vn/",
+  "allowedHosts": [
+    "doanhnghiepplus.vn",
+    "www.doanhnghiepplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnghiepplus.vn/",
+    "categories": [
+      "https://doanhnghiepplus.vn/c/chuyen-dong",
+      "https://doanhnghiepplus.vn/c/chuyen-nghe-hanh-trinh-cam-xuc",
+      "https://doanhnghiepplus.vn/c/thuong-hieu-hoi-nhap",
+      "https://doanhnghiepplus.vn/c/sac-mau-van-hoa",
+      "https://doanhnghiepplus.vn/c/khung-hinh-dieu-ky",
+      "https://doanhnghiepplus.vn/c/megastory"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "'Miếng bánh' cửa hàng tiện lợi 11.100 tỷ đồng tại Việt Nam: Chuỗi ngoại Circle K và GS25 đua sát nút, chờ 'địa chấn' từ gã khổng lồ Masan",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:14.872Z",
+    "frozenAt": "2026-11-16T01:58:10.014Z",
+    "trainingUrl": "https://doanhnghiepplus.vn/mieng-banh-cua-hang-tien-loi-11100-ty-dong-tai-viet-nam-chuoi-ngoai-circle-k-va-gs25-dua-sat-nut-cho-dia-chan-tu-ga-khong-lo-masan-a22953.html",
+    "independentHoldouts": [
+      "https://doanhnghiepplus.vn/shopeepay-va-cic-mo-rong-hop-tac-dua-tinh-nang-kiem-tra-diem-tin-dung-len-vi-dien-tu-a22395.html",
+      "https://doanhnghiepplus.vn/trung-quoc-thai-lan-lao-campuchia-dong-loat-bao-tin-vui-cho-viet-nam-a21905.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnghiepplus.vn/mieng-banh-cua-hang-tien-loi-11100-ty-dong-tai-viet-nam-chuoi-ngoai-circle-k-va-gs25-dua-sat-nut-cho-dia-chan-tu-ga-khong-lo-masan-a22953.html",
+      "https://doanhnghiepplus.vn/shopeepay-va-cic-mo-rong-hop-tac-dua-tinh-nang-kiem-tra-diem-tin-dung-len-vi-dien-tu-a22395.html",
+      "https://doanhnghiepplus.vn/trung-quoc-thai-lan-lao-campuchia-dong-loat-bao-tin-vui-cho-viet-nam-a21905.html",
+      "https://doanhnghiepplus.vn/sang-lao-campuchia-trong-chuoi-mot-ty-phu-viet-vua-chot-deal-680000-tan-duoc-my-nhat-ban-trung-quoc-bat-tay-mua-hang-doanh-thu-xuat-khau-du-kien-gan-500-trieu-usd-a23705.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

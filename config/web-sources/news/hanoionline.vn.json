@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hanoionline.vn",
+  "siteId": "hanoionline.vn",
+  "registrableDomain": "hanoionline.vn",
+  "homepage": "https://hanoionline.vn/",
+  "allowedHosts": [
+    "hanoionline.vn",
+    "www.hanoionline.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://hanoionline.vn/",
+    "categories": [
+      "https://hanoionline.vn/thoi-su.htm",
+      "https://hanoionline.vn/thoi-su/ha-noi.htm",
+      "https://hanoionline.vn/thoi-su/chinh-tri.htm",
+      "https://hanoionline.vn/thoi-su/xa-hoi.htm",
+      "https://hanoionline.vn/thoi-su/an-ninh-trat-tu.htm",
+      "https://hanoionline.vn/thoi-su/cong-nghe.htm",
+      "https://hanoionline.vn/ha-noi.htm",
+      "https://hanoionline.vn/ha-noi/nhip-song-ha-noi.htm",
+      "https://hanoionline.vn/ha-noi/nguoi-ha-noi.htm",
+      "https://hanoionline.vn/ha-noi/khoanh-khac-ha-noi.htm"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Thúc đẩy thanh toán xuyên biên giới qua mã QR",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".videodetail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:38.082Z",
+    "frozenAt": "2026-11-16T01:58:36.151Z",
+    "trainingUrl": "https://hanoionline.vn/thuc-day-thanh-toan-xuyen-bien-gioi-qua-ma-qr-246419473.htm",
+    "independentHoldouts": [
+      "https://hanoionline.vn/ho-tro-doanh-nghiep-nho-va-vua-tien-vao-kenh-phan-phoi-hien-dai-246261109121905396.htm",
+      "https://hanoionline.vn/thanh-toan-bang-ma-qr-mo-rong-tien-ich-2462610161217412.htm"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://hanoionline.vn/ho-tro-doanh-nghiep-nho-va-vua-tien-vao-kenh-phan-phoi-hien-dai-246261109121905396.htm",
+      "https://hanoionline.vn/thanh-toan-bang-ma-qr-mo-rong-tien-ich-2462610161217412.htm",
+      "https://hanoionline.vn/thuc-day-thanh-toan-xuyen-bien-gioi-qua-ma-qr-246419473.htm",
+      "https://hanoionline.vn/ha-noi-dau-tuan-nang-am-giua-tuan-tro-lanh-246261115234809387.htm",
+      "https://hanoionline.vn/hon-2000-lanh-dao-va-doanh-nghiep-du-ceo-apec-2026-246261115215252217.htm",
+      "https://hanoionline.vn/ke-cau-chuyen-cua-lua-tu-hoa-lu-den-thang-long-246261116000027283.htm",
+      "https://hanoionline.vn/nhung-ngoi-dinh-co-ke-chuyen-pho-nghe-ha-noi-246261115235138268.htm",
+      "https://hanoionline.vn/tang-trach-nhiem-cua-nguoi-kinh-doanh-thuc-an-duong-pho-246261115214138872.htm",
+      "https://hanoionline.vn/ha-noi-kien-tao-san-pham-du-lich-mua-thu-dac-sac-246261115183231816.htm",
+      "https://hanoionline.vn/hoc-vien-tai-chinh-tri-an-cac-the-he-nha-giao-246261115213603063.htm",
+      "https://hanoionline.vn/thieu-nhi-thu-do-toa-sang-cung-san-choi-tai-nang-anh-ngu-246261115213235656.htm",
+      "https://hanoionline.vn/hanh-trinh-tim-ve-nguon-coi-qua-dien-anh-24626111521293296.htm",
+      "https://hanoionline.vn/du-bao-thoi-tiet-sang-16-11-2026-246261116000809747.htm",
+      "https://hanoionline.vn/chuong-trinh-ha-noi-buoi-sang-16-11-2026-246261116000609703.htm",
+      "https://hanoionline.vn/dua-san-pham-thu-do-vuon-xa-tren-khong-gian-so-goc-nhin-ha-noi-13-11-2026-246261112165932801.htm",
+      "https://hanoionline.vn/de-sang-kien-ve-chuyen-doi-so-di-vao-cuoc-song-goc-nhin-ha-noi-11-09-2026-246416947.htm",
+      "https://hanoionline.vn/suc-song-cua-nghe-thuat-truyen-thong-giua-long-ha-noi-goc-nhin-ha-noi-29-09-2026-246420001.htm",
+      "https://hanoionline.vn/kien-tao-ha-noi-da-cuc-hien-dai-va-ben-vung-goc-nhin-ha-noi-22-09-2026-246418899.htm",
+      "https://hanoionline.vn/duc-va-ha-lan-san-sang-cho-man-dai-chien-246261115220536881.htm",
+      "https://hanoionline.vn/chu-tich-vff-tiep-tuc-duoc-tin-nhiem-bau-vao-hoi-dong-aff-246261115220236813.htm",
+      "https://hanoionline.vn/nato-cat-giam-cac-cuoc-hop-cap-cao-246261115215542839.htm",
+      "https://hanoionline.vn/doan-dai-bieu-trieu-tien-tham-nga-24626111521481127.htm",
+      "https://hanoionline.vn/phuong-yen-hoa-to-chuc-ngay-hoi-van-hoa-the-thao-nam-2026-246261115093120569.htm",
+      "https://hanoionline.vn/tu-giay-do-den-giay-hanji-cuoc-gap-go-van-hoa-viet-han-246261115200749062.htm",
+      "https://hanoionline.vn/ban-tin-141-15-11-2026-24626111518081616.htm",
+      "https://hanoionline.vn/khai-mac-hoi-nghi-cap-cao-phap-ngu-lan-thu-20-246261115184636311.htm",
+      "https://hanoionline.vn/am-ap-ngay-hoi-dai-doan-ket-toan-dan-toc-246261115223019399.htm",
+      "https://hanoionline.vn/giu-gin-khong-gian-do-thi-van-minh-246261115211132016.htm",
+      "https://hanoionline.vn/tu-phat-ngon-tren-mang-ao-den-trach-nhiem-phap-ly-that-246261115180442519.htm",
+      "https://hanoionline.vn/khoi-day-khat-vong-xay-dung-thu-do-van-hien-van-minh-hien-dai-246261115190208236.htm",
+      "https://hanoionline.vn/phat-huy-suc-manh-doan-ket-xay-dung-khu-dan-cu-van-minh-24626111519191298.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

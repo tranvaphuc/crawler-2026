@@ -1,0 +1,33 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createFacebookContentHttpReader} from '../src/services/facebookContentHttp.js';import {facebookCommentCoverage} from '../src/services/facebookCommentCoverage.js';import {normalizeContentInput} from '../src/services/socialContent.js';import {READ_STATE} from '../src/services/socialReadState.js';import {encodeBackfillState,decodeBackfillState,backfillOutcome} from '../src/services/crawlerV8Backfill.js';import {rotateReadStateProxy} from '../src/services/socialLeaseState.js';
+const target=()=>normalizeContentInput('comments',{url:'https://www.facebook.com/123_100',includeReplies:true,count:'all',limit:1});
+const comment=(id,repliesCount=0)=>({_id:id,authorId:'123',author:'Actor',content:'fixture',time:'2026-10-25T10:00:00Z',repliesCount});
+function reader(fetch,extra={}){return createFacebookContentHttpReader({getProxy:async()=>({server:'http://proxy.test:80'}),makeSession:()=>({requests:0,close(){},setDeadline(){}}),createCommentFetcher:()=>fetch,maxPages:1,streamComments:true,...extra});}
+const page=(comments,totalCount,extra={})=>({comments,totalCount,hasNextPage:false,cursor:null,ordering:{unfilteredVerified:true},...extra});
+test('exhausts forward and backward root cursors plus multi-page replies, then completes only after every buffered item is delivered',async()=>{
+ const calls=[],t=target(),read=reader(async j=>{calls.push([j.idGetComment,j.cursor]);if(j.idGetComment==='100'&&j.cursor===null)return page([comment('1',2)],4,{hasNextPage:true,cursor:'forward',alternateCursor:'backward'});if(j.cursor==='forward')return page([comment('2')],4);if(j.cursor==='backward')return page([comment('1',2)],4);if(j.idGetComment==='1'&&j.cursor===null)return page([comment('3')],2,{hasNextPage:true,cursor:'reply-next'});if(j.cursor==='reply-next')return page([comment('4')],2);assert.fail(JSON.stringify(j));});let state=null,last,ids=[];for(let i=0;i<15;i++){last=await read(state?Object.defineProperty({...t},READ_STATE,{value:state}):t);ids.push(...(last.items||[]).map(x=>x.id));state=last[READ_STATE];if(!state)break;state=decodeBackfillState(encodeBackfillState(state));}
+ assert.deepEqual(ids,['1','2','3','4']);assert.deepEqual(calls,[['100',null],['100','forward'],['100','backward'],['1',null],['1','reply-next']]);assert.equal(last.coverage.complete,true);assert.equal(last.coverage.observedRootComments,2);assert.equal(last.coverage.observedReplies,2);assert.equal(last.pagination.complete,true);assert.equal(backfillOutcome({kind:'comments',result:last,state:null}).state,'done');
+});
+test('unknown roots, unknown replies, missing replies, field errors, filtered mode and item budget never claim complete',()=>{
+ const base=()=>({commentCoverageVersion:2,queue:[],seen:new Set(['1']),rootCommentIds:new Set(['1']),replyParents:new Map(),expectedReplies:new Map([['1',0]]),observedReplies:new Map(),rootPagesObserved:1,rootPagesVerified:true,expectedCommentCount:1});
+ for(const patch of [{expectedCommentCount:null},{expectedCommentCount:2},{expectedReplies:new Map([['1',null]])},{expectedReplies:new Map([['1',1]])},{commentFieldErrors:true},{rootPagesVerified:false},{budgetStopped:true},{paginationStalled:true},{queue:[{cursor:'next'}]}])assert.equal(facebookCommentCoverage({...base(),...patch},{includeReplies:true}).complete,false);
+ assert.equal(facebookCommentCoverage(base(),{includeReplies:true}).complete,true);
+});
+test('unknown root reply count is resolved by explicit zero from its reply connection',async()=>{
+ const read=reader(async j=>j.idGetComment==='100'?page([comment('1',null)],1):page([],0)),t=target();let a=await read(t);assert.equal(a.coverage.complete,false);const b=await read(Object.defineProperty({...t},READ_STATE,{value:a[READ_STATE]}));assert.equal(b.coverage.complete,true);assert.equal(b.coverage.unknownReplyCounts,0);
+});
+test('rotating a managed proxy preserves the exact next root and reply cursors',async()=>{
+ let leases=0;const proxy=async()=>({managed:true,server:'http://proxy.test:80',expiresAt:Date.now()+600000,heartbeat:async()=>{},permit:async()=>{},release:async()=>{},report:async()=>({})});proxy.managed=true;const calls=[],read=reader(async j=>{calls.push(j.cursor);return j.cursor===null?page([comment('1')],2,{hasNextPage:true,cursor:'keep-next'}):page([comment('2')],2);},{getProxy:async t=>{leases++;return proxy(t);}}),t=target();const a=await read(t);await rotateReadStateProxy(a[READ_STATE]);const b=await read(Object.defineProperty({...t},READ_STATE,{value:a[READ_STATE]}));assert.deepEqual(calls,[null,'keep-next']);assert.equal(leases,2);assert.equal(b.coverage.complete,true);
+});
+test('an already consumed cursor cycle is reported rather than silently dropping continuation',async()=>{
+ const read=reader(async j=>j.cursor===null?page([comment('1')],3,{hasNextPage:true,cursor:'a'}):j.cursor==='a'?page([comment('2')],3,{hasNextPage:true,cursor:'b'}):page([comment('3')],3,{hasNextPage:true,cursor:'a'})),t=target();const a=await read(t),b=await read(Object.defineProperty({...t},READ_STATE,{value:a[READ_STATE]})),c=await read(Object.defineProperty({...t},READ_STATE,{value:b[READ_STATE]}));assert.equal(c.reason,'NATIVE_PAGINATION_STALLED');assert.equal(c[READ_STATE].queue[0].cursor,'b');
+});
+test('Threads/Instagram close only with matched native count scope, exhausted pagination, known reply counts and parent linkage',async()=>{
+ const {describeMetaWindow}=await import('../src/services/socialOrdering.js');const html=node=>({httpStatus:200,finalUrl:'https://www.instagram.com/p/ABC/',html:'<script type="application/json">'+JSON.stringify(node)+'</script>'});
+ const t={operation:'comments',platform:'instagram',id:'ABC',order:'oldest',includeReplies:true},rows=[{id:'1',type:'comment',parentId:null,replyCount:0,createdAt:'2026-10-25T00:00:00Z'}],base=()=>({identityVerified:true,items:structuredClone(rows),pagination:{hasMore:false}});
+ const valid=describeMetaWindow(t,html({pk:'10',code:'ABC',comment_count:1}),base());assert.equal(valid.coverage.complete,true);
+ for(const change of [b=>b.pagination.hasMore=true,b=>b.items[0].replyCount=null,b=>b.items[0].replyCount=1,b=>b.identityVerified=false]){const b=base();change(b);assert.equal(describeMetaWindow(t,html({pk:'10',code:'ABC',comment_count:1}),b).coverage.complete,false);}
+ assert.equal(describeMetaWindow(t,html({pk:'10',code:'ABC',comment_count:2}),base()).coverage.complete,false);
+ assert.equal(describeMetaWindow(t,html({pk:'10',code:'ABC',edge_media_to_parent_comment:{count:1}}),base()).coverage.complete,false);
+ const th={...t,platform:'threads'};assert.equal(describeMetaWindow(th,html({pk:'10',code:'ABC',text_post_app_info:{direct_reply_count:1}}),base()).coverage.complete,true);
+});
+

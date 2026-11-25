@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.bitcoin.com",
+  "siteId": "news.bitcoin.com",
+  "registrableDomain": "bitcoin.com",
+  "homepage": "https://news.bitcoin.com/",
+  "allowedHosts": [
+    "news.bitcoin.com",
+    "www.news.bitcoin.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bitcoin Packs 11,255 Transactions Into a Single Block, Nears Record",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article__body.overflow-x-hidden"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:49.114Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://news.bitcoin.com/featured/bitcoin-packs-11255-transactions-into-a-single-block-nears-record/",
+      "https://news.bitcoin.com/press-releases/btcc-copy-trading-surpasses-680000-users-with-cumulative-copy-trading-earnings-exceeding-530-million/",
+      "https://news.bitcoin.com/featured/michael-saylor-reveals-400-year-history-behind-bitcoin-income/",
+      "https://news.bitcoin.com/featured/xrp-is-ripples-north-star-ceo-centers-strategy-on-things-that-are-good-for-xrp/",
+      "https://news.bitcoin.com/featured/binance-hack-takes-another-twist-as-hackers-amass-2300-more-bitcoin/",
+      "https://news.bitcoin.com/market-updates/bitcoin-price-tumbles-below-77000-in-tech-stock-selloff/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://news.bitcoin.com/",
+    "categories": [
+      "https://news.bitcoin.com/market-updates/",
+      "https://news.bitcoin.com/finance/",
+      "https://news.bitcoin.com/regulation-and-legal/",
+      "https://news.bitcoin.com/mining/",
+      "https://news.bitcoin.com/blockchain/",
+      "https://news.bitcoin.com/crypto-news/",
+      "https://news.bitcoin.com/branded-spotlight/",
+      "https://news.bitcoin.com/submit-press-release/",
+      "https://news.bitcoin.com/vi/market-updates/",
+      "https://news.bitcoin.com/vi/finance/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "news.bitcoin.com",
+    "checkedAt": "2026-11-09T03:57:16.076Z",
+    "url": "https://news.bitcoin.com/featured/bitcoin-packs-11255-transactions-into-a-single-block-nears-record/",
+    "finalUrl": "https://news.bitcoin.com/featured/bitcoin-packs-11255-transactions-into-a-single-block-nears-record/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 280,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "news.bitcoin.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 54,
+    "checkedArticleUrls": 54,
+    "freshArticleChecks": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 54,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 446,
+        "passed": 54,
+        "distinctHashes": 54
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://news.bitcoin.com/vi/market-updates/bitcoin-chat-vat-duoi-75000-usd-12-ty-usd-tien-dien-tu-boc-hoi/",
+      "https://news.bitcoin.com/vi/crypto-news/strategy-mua-vao-1036-btc-nang-tong-so-bitcoin-nam-giu-len-850364/",
+      "https://news.bitcoin.com/vi/featured/quy-xrp-ledger-tang-40000-usd-to-chuc-khoa-hoc-ve-xrpl-nang-cap-moi/",
+      "https://news.bitcoin.com/vi/market-updates/bitcoin-xuong-duoi-74000-usd-thanh-ly-vuot-1-ty-usd/",
+      "https://news.bitcoin.com/vi/market-updates/gia-bitcoin-lan-dau-tu-thang-8-xuong-duoi-75000-usd-ban-thao-cong-nghe-tang/",
+      "https://news.bitcoin.com/vi/market-updates/bitcoin-giu-75000-usd-thi-truong-chau-a-mat-hon-1-nghin-ty-usd/",
+      "https://news.bitcoin.com/vi/regulation-and-legal/tin-phap-ly-tien-dien-tu-tuan-nay-8-11-2026/",
+      "https://news.bitcoin.com/vi/regulation-and-legal/quy-ethereum-va-vitalik-buterin-bi-kien-vi-sa-thai-nhan-vien-sau-loi-the-tu-tu/",
+      "https://news.bitcoin.com/vi/exchanges/loi-nhuan-quy-3-cua-ether-treasury-sharplink-tang-vot-620-phan-tram-nhung/",
+      "https://news.bitcoin.com/vi/featured/fitch-bitcoin-giam-6-sau-vu-tan-cong-binance-6-3-ty-usd-la-dau-hieu-truong-thanh/",
+      "https://news.bitcoin.com/vi/featured/nha-phat-trien-bitcoin-de-xuat-min-luong-tu-bay-ke-trom-btc-tuong-lai/",
+      "https://news.bitcoin.com/vi/finance/coinbase-duoc-occ-chap-thuan-mo-rong-thoa-thuan-stablecoin-voi-pnc/",
+      "https://news.bitcoin.com/vi/crypto-news/bitmine-mua-20-trieu-usd-eth-tom-lee-ca-ngoi-vitalik-buterin-doi-vai-tro/",
+      "https://news.bitcoin.com/vi/regulation-and-legal/ong-trump-noi-khong-biet-gi-ve-lien-he-world-liberty-financial-voi-uae/",
+      "https://news.bitcoin.com/vi/featured/charles-schwab-mo-rong-giao-dich-tien-dien-tu-ngoai-bitcoin-va-ether/",
+      "https://news.bitcoin.com/vi/finance/nyse-chon-avalanche-ho-tro-giao-dich-co-phieu-token-hoa-24-7/",
+      "https://news.bitcoin.com/vi/crypto-news/strive-chung-mua-bitcoin-sau-giao-dich-moi-nhat-22-trieu-usd/",
+      "https://news.bitcoin.com/vi/regulation-and-legal/ngan-hang-trung-uong-trung-quoc-dieu-tra-solana-ve-dich-vu-trai-phep/",
+      "https://news.bitcoin.com/vi/crypto-news/ripple-nhan-manh-dich-vu-luu-ky-khi-37-ngan-hang-sap-ra-stablecoin-euro/",
+      "https://news.bitcoin.com/vi/crypto-news/irs-gui-thu-thong-bao-thue-cho-nguoi-dung-tien-dien-tu-can-biet-gi/",
+      "https://news.bitcoin.com/vi/security/tan-cong-binance-63-ty-usd-trieu-tien-lien-quan-tien-meme-bat-ngo/",
+      "https://news.bitcoin.com/vi/market-updates/nha-giao-dich-bitcoin-gio-cung-phai-theo-doi-vu-ngoai-tinh-ceo-nvidia/",
+      "https://news.bitcoin.com/vi/market-updates/tien-dien-tu-mat-da-tang-100-ty-usd-khi-bitcoin-va-xrp-sut-giam/",
+      "https://news.bitcoin.com/vi/market-updates/quyen-chon-mua-xrp-gia-0-99-usd-gay-chu-y-santiment-short-tang/",
+      "https://news.bitcoin.com/vi/market-updates/7-co-phieu-huyen-thoai-mat-1-nghin-ty-usd-ceo-devere-chuyen-huong-moi-bat-dau/",
+      "https://news.bitcoin.com/vi/market-updates/hop-dong-tuong-lai-bitcoin-giam-con-52-ty-usd-khi-trader-rut-lui/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:17.073Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/news.bitcoin.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "news.bitcoin.com",
+      "siteId": "news.bitcoin.com",
+      "registrableDomain": "bitcoin.com",
+      "homepage": "https://news.bitcoin.com/",
+      "allowedHosts": [
+        "news.bitcoin.com",
+        "www.news.bitcoin.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Bitcoin Packs 11,255 Transactions Into a Single Block, Nears Record",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:13.494Z",
+        "trainingUrls": [
+          "https://news.bitcoin.com/vi/changenow-x-guarda-minh-chung-thuc-te-vi-tien-dien-tu-khong-nhat-thiet-phai-tro-thanh-san-giao-dich/",
+          "https://news.bitcoin.com/changenow-x-guarda-case-proof-a-wallet-doesnt-need-to-become-an-exchange/",
+          "https://news.bitcoin.com/bitget-expands-agent-hub-ecosystem-through-mulerun-partnership-to-advance-agentic-trading/"
+        ],
+        "holdoutUrls": [
+          "https://news.bitcoin.com/vi/market-updates/bitcoin-xuong-duoi-74000-usd-thanh-ly-vuot-1-ty-usd/",
+          "https://news.bitcoin.com/vi/market-updates/gia-bitcoin-lan-dau-tu-thang-8-xuong-duoi-75000-usd-ban-thao-cong-nghe-tang/"
+        ]
+      }
+    }
+  ]
+}

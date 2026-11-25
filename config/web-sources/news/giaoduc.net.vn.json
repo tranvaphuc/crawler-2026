@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaoduc.net.vn",
+  "siteId": "giaoduc.net.vn",
+  "registrableDomain": "giaoduc.net.vn",
+  "homepage": "https://giaoduc.net.vn/",
+  "allowedHosts": [
+    "giaoduc.net.vn",
+    "www.giaoduc.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ứng dụng AI trong giảng dạy và quản trị tại các trường đại học, cao đẳng miền Đông Nam Bộ",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:10.273Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://giaoduc.net.vn/nhieu-chuyen-nganh-thac-si-tien-si-quy-ve-nganh-rong-hon-buoc-csgddh-phai-ra-soat-tai-cau-truc-post263791.gd",
+      "https://giaoduc.net.vn/bang-luong-phu-cap-uu-dai-giao-vien-mam-non-pho-thong-theo-vi-tri-viec-lam-cua-nghi-dinh-232-post263202.gd",
+      "https://giaoduc.net.vn/la-giao-vien-toi-de-xuat-giam-them-dinh-muc-tiet-day-cho-giao-vien-chu-nhiem-post263824.gd",
+      "https://giaoduc.net.vn/du-thao-quy-dinh-ro-nhan-su-ho-tro-giao-duc-giup-truong-hoc-thuc-hien-che-do-uu-dai-thuan-loi-hon-post263872.gd",
+      "https://giaoduc.net.vn/ncs-nganh-san-xuat-va-che-bien-phai-co-cong-bo-wosscopus-yeu-cau-kho-nhung-nang-chat-luong-post263687.gd"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://giaoduc.net.vn/",
+    "categories": [
+      "https://giaoduc.net.vn/giao-duc-24h/",
+      "https://giaoduc.net.vn/tin-hiep-hoi/",
+      "https://giaoduc.net.vn/tuyen-sinh/",
+      "https://giaoduc.net.vn/song-dep/",
+      "https://giaoduc.net.vn/chuyen-doi-so/",
+      "https://giaoduc.net.vn/tieu-diem/",
+      "https://giaoduc.net.vn/dai-hoi-dang-khoa-xiv/",
+      "https://giaoduc.net.vn/goc-nhin/",
+      "https://giaoduc.net.vn/trach-nhiem-neu-guong/",
+      "https://giaoduc.net.vn/du-hoc/",
+      "https://giaoduc.net.vn/suc-khoe-hoc-duong/",
+      "https://giaoduc.net.vn/the-thao-hoc-duong/",
+      "https://giaoduc.net.vn/van-hoa/",
+      "https://giaoduc.net.vn/kinh-te/",
+      "https://giaoduc.net.vn/thong-tin-can-biet/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?giaoduc.net.vn/.*?(-post\\d{4,})(.html|.htm|.chn|.gd)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "giaoduc.net.vn",
+    "checkedAt": "2026-11-09T03:57:05.340Z",
+    "url": "https://giaoduc.net.vn/nhieu-chuyen-nganh-thac-si-tien-si-quy-ve-nganh-rong-hon-buoc-csgddh-phai-ra-soat-tai-cau-truc-post263791.gd",
+    "finalUrl": "https://giaoduc.net.vn/nhieu-chuyen-nganh-thac-si-tien-si-quy-ve-nganh-rong-hon-buoc-csgddh-phai-ra-soat-tai-cau-truc-post263791.gd",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 10131,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "giaoduc.net.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 27,
+    "checkedArticleUrls": 33,
+    "freshArticleChecks": 13,
+    "parserIssues": 6,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 463,
+        "passed": 27,
+        "distinctHashes": 27
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://giaoduc.net.vn/kinh-nghiem-quoc-te-va-yeu-cau-doi-moi-khi-xet-gs-pgs-cua-viet-nam-trong-giai-doan-moi-post263913.gd",
+      "https://giaoduc.net.vn/de-xuat-tuyen-sinh-theo-khoi-chuyen-hoc-sinh-duoc-chon-mon-chuyen-sau-sau-hoc-ky-i-cua-lop-10-post263944.gd",
+      "https://giaoduc.net.vn/de-dat-c1-nguoi-hoc-van-bang-2-ngon-ngu-anh-can-dap-ung-yeu-cau-gi-post263904.gd",
+      "https://giaoduc.net.vn/tron-thi-sinh-thi-tot-nghiep-thpt-lanh-dao-truong-o-khu-vuc-dac-thu-neu-mot-so-tran-tro-post263890.gd",
+      "https://giaoduc.net.vn/cham-nop-bao-cao-ke-khai-nha-dat-tap-chi-hoi-cao-dang-su-pham-trung-uong-tphcm-khong-phan-hoi-post263867.gd",
+      "https://giaoduc.net.vn/can-lam-ro-nhieu-khai-niem-khi-xac-dinh-nganh-nghe-kho-tuyen-sinh-nhung-xa-hoi-can-post263907.gd",
+      "https://giaoduc.net.vn/lo-ap-luc-tai-chinh-cho-nguoi-hoc-truong-dai-hoc-than-trong-khi-tang-hoc-phi-post263876.gd",
+      "https://giaoduc.net.vn/thong-tu-93-thao-go-vuong-mac-bo-nhiem-va-xep-luong-khong-phai-thang-hang-thay-co-can-hieu-dung-post263875.gd",
+      "https://giaoduc.net.vn/nha-truong-kiem-tra-noi-bo-yeu-cau-giao-vien-day-thao-giang-2-tiet-co-dung-quy-dinh-post263898.gd",
+      "https://giaoduc.net.vn/quy-dinh-3-muc-do-danh-gia-khi-trien-khai-de-an-dua-tieng-anh-thanh-ngon-ngu-thu-2-trong-truong-hoc-post263937.gd",
+      "https://giaoduc.net.vn/truong-vung-cao-quang-ninh-lam-gi-de-dam-bao-an-toan-thuc-pham-cho-bua-an-ban-tru-post263863.gd",
+      "https://giaoduc.net.vn/sau-vu-chay-o-truong-thcs-kim-lien-chuyen-gia-cho-rang-moi-truong-can-co-quy-trinh-thoat-nan-rieng-post263903.gd",
+      "https://giaoduc.net.vn/dbqh-danh-gia-cao-nhieu-diem-moi-tien-bo-cua-du-thao-luat-an-toan-thuc-pham-sua-doi-post263931.gd",
+      "https://giaoduc.net.vn/hoc-sinh-tan-truong-bo-me-chua-tan-lam-khong-the-day-het-trach-nhiem-cho-giao-vien-post263751.gd",
+      "https://giaoduc.net.vn/sap-nhap-truong-cao-dang-du-lich-vung-tau-vao-truong-cao-dang-du-lich-can-tho-post263926.gd",
+      "https://giaoduc.net.vn/hoc-sinh-truong-quoc-te-a-chau-ghi-dau-voi-thanh-tich-an-tuong-tai-ky-thi-ap-post263932.gd",
+      "https://giaoduc.net.vn/truong-dh-kien-truc-ha-noi-thuc-day-doi-moi-sang-tao-thong-qua-hoi-nghi-nckh-sinh-vien-nam-2026-post263894.gd",
+      "https://giaoduc.net.vn/dai-hoc-quoc-gia-thanh-pho-ho-chi-minh-co-2-truong-thanh-vien-dao-tao-trung-ca-ten-nganh-va-ctdt-post263783.gd",
+      "https://giaoduc.net.vn/gv-co-bang-duoc-ly-nhung-duoc-ke-giang-day-mon-tieng-anh-cd-cong-nghe-va-thuong-mai-hn-noi-gi-post263840.gd",
+      "https://giaoduc.net.vn/so-giao-duc-va-dao-tao-tphcm-neu-de-xuat-kien-nghi-lien-quan-den-trien-khai-chuong-trinh-gdpt-post263917.gd",
+      "https://giaoduc.net.vn/nhin-lai-hanh-trinh-hinh-thanh-va-phat-trien-danh-xung-giao-su-pho-giao-su-o-viet-nam-post263899.gd",
+      "https://giaoduc.net.vn/tron-thi-sinh-trong-ky-thi-tot-nghiep-thpt-hieu-truong-truong-chuyen-chia-se-gop-y-post263818.gd",
+      "https://giaoduc.net.vn/thu-tuong-nhat-ban-chu-tri-le-don-trong-the-tong-bi-thu-chu-tich-nuoc-to-lam-post263929.gd",
+      "https://giaoduc.net.vn/truong-dai-hoc-day-manh-dau-tu-de-ncs-nganh-san-xuat-va-che-bien-dat-chuan-cong-bo-khoa-hoc-post263726.gd",
+      "https://giaoduc.net.vn/sap-nhap-truong-cao-dang-thong-tin-va-truyen-thong-vao-hoc-vien-cong-nghe-buu-chinh-vien-thong-post263927.gd",
+      "https://giaoduc.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-toa-dam-voi-cac-doanh-nghiep-lon-cua-nhat-ban-post263923.gd",
+      "https://giaoduc.net.vn/ket-luan-so-114-kltw-thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong-post263928.gd",
+      "https://giaoduc.net.vn/truong-nghe-gop-y-cach-xac-dinh-tieu-chi-nganh-nghe-kho-tuyen-sinh-nhung-xa-hoi-co-nhu-cau-post263839.gd",
+      "https://giaoduc.net.vn/bo-gddt-co-cong-dien-ve-viec-chu-dong-ung-pho-mua-lon-lu-ngap-lut-tai-khu-vuc-trung-bo-post263925.gd",
+      "https://giaoduc.net.vn/ha-noi-ngay-1111-hoc-sinh-lop-4-7-lam-bai-khao-sat-chat-luong-2-mon-toan-va-ngu-van-post263910.gd",
+      "https://giaoduc.net.vn/luat-attp-sua-doi-quan-ly-kiem-soat-nguy-co-trong-toan-bo-chuoi-cung-ung-la-thay-doi-can-thiet-post263906.gd",
+      "https://giaoduc.net.vn/truong-thanh-tu-chien-dich-tinh-nguyen-sinh-vien-truong-dh-mo-ha-noi-vun-dap-uoc-mo-nghe-nghiep-post263893.gd",
+      "https://giaoduc.net.vn/la-giao-vien-toi-de-xuat-giam-them-dinh-muc-tiet-day-cho-giao-vien-chu-nhiem-post263824.gd",
+      "https://giaoduc.net.vn/du-thao-quy-dinh-ro-nhan-su-ho-tro-giao-duc-giup-truong-hoc-thuc-hien-che-do-uu-dai-thuan-loi-hon-post263872.gd",
+      "https://giaoduc.net.vn/ncs-nganh-san-xuat-va-che-bien-phai-co-cong-bo-wosscopus-yeu-cau-kho-nhung-nang-chat-luong-post263687.gd",
+      "https://giaoduc.net.vn/milan-jakarta-tang-toc-chuyen-doi-giao-thong-cong-cong-sang-xe-dien-day-manh-muc-tieu-nam-2030-post263900.gd",
+      "https://giaoduc.net.vn/ban-khoan-ve-dao-tao-tu-xa-cao-dang-viet-my-ha-noi-chi-tra-loi-chung-chung-khong-neu-so-lieu-post263873.gd",
+      "https://giaoduc.net.vn/2-nganh-ky-thuat-y-hoc-vao-danh-muc-nganh-dao-tao-nang-nhoc-doc-hai-nguy-hiem-truong-nghe-ung-ho-post263861.gd",
+      "https://giaoduc.net.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-post263897.gd",
+      "https://giaoduc.net.vn/man-nhan-bo-suu-tap-hang-tram-nghin-cay-sen-da-khoe-sac-tai-le-hoi-sen-da-fansipan-post263949.gd",
+      "https://giaoduc.net.vn/khach-nhat-tang-manh-vietnam-airlines-bay-ha-noi-osaka-moi-ngay-hai-chuyen-post263947.gd",
+      "https://giaoduc.net.vn/chua-het-han-nhan-bai-cuoc-thi-gui-tuong-lai-xanh-2050-mua-3-da-nhan-hon-10500-bai-du-thi-post263946.gd",
+      "https://giaoduc.net.vn/dien-thoai-van-dung-tot-vi-sao-ngan-hang-khuyen-nghi-cap-nhat-ios-post263935.gd",
+      "https://giaoduc.net.vn/bidv-cau-noi-tai-chinh-gop-phan-thuc-day-hop-tac-chien-luoc-viet-nam-nhat-ban-post263942.gd",
+      "https://giaoduc.net.vn/he-lo-quy-trinh-tuyen-bac-si-noi-tru-khat-khe-tai-vinuni-post263936.gd"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "content_integrity_review": 6
+    },
+    "checkedAt": "2026-11-10T09:15:34.033Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/giaoduc.net.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:59:09.213Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://giaoduc.net.vn/de-xuat-bai-bao-thuoc-nhom-01-xuat-sac-the-gioi-duoc-tinh-20-diem-nhom-nghien-cuu-manh-noi-gi-post264001.gd",
+      "https://giaoduc.net.vn/truong-dai-hoc-phuong-dong-dang-cai-to-chuc-hoi-thao-khoa-hoc-quoc-te-asiacall-lan-thu-23-post264059.gd"
+    ],
+    "improvedUrls": [
+      "https://giaoduc.net.vn/ung-dung-ai-trong-giang-day-va-quan-tri-tai-cac-truong-dai-hoc-cao-dang-mien-dong-nam-bo-post263650.gd",
+      "https://giaoduc.net.vn/chuyen-doi-so-trong-nganh-luat-can-co-che-ho-tro-phu-hop-voi-dac-thu-doanh-nghiep-post261937.gd",
+      "https://giaoduc.net.vn/gmb-league-doi-u23-nu-mvp-thang-dam-65-25-truoc-doi-hust-gianh-ve-vao-chung-ket-post254209.gd",
+      "https://giaoduc.net.vn/doi-isme-thang-hust-chinh-thuc-gop-mat-o-chung-ket-u23-nam-gmb-league-2025-post254166.gd",
+      "https://giaoduc.net.vn/loi-nguoc-dong-ngoan-muc-ueb-gianh-tam-ve-vao-chung-ket-u23-nam-gmb-league-2025-post253070.gd"
+    ],
+    "regressions": 0
+  }
+}

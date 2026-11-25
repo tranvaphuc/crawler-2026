@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoiduatin.vn",
+  "siteId": "nguoiduatin.vn",
+  "registrableDomain": "nguoiduatin.vn",
+  "homepage": "https://www.nguoiduatin.vn/",
+  "allowedHosts": [
+    "www.nguoiduatin.vn",
+    "nguoiduatin.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "[E]: “Cởi trói” cơ chế, khai phóng sức sáng tạo của nhà khoa học",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Thượng tôn hiến pháp và pháp luật - động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h2.title, h1.title"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "nguoiduatin.vn",
+      "siteId": "nguoiduatin.vn",
+      "registrableDomain": "nguoiduatin.vn",
+      "homepage": "https://www.nguoiduatin.vn/",
+      "allowedHosts": [
+        "www.nguoiduatin.vn",
+        "nguoiduatin.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "[E]: “Cởi trói” cơ chế, khai phóng sức sáng tạo của nhà khoa học",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".magz-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:15.294Z",
+        "trainingUrls": [
+          "https://www.nguoiduatin.vn/e-chu-tich-brg-hay-dam-nhan-nhung-bai-toan-kho-ma-dat-nuoc-dang-can-loi-giai-204261013174105167.htm",
+          "https://www.nguoiduatin.vn/e-bi-thu-thanh-uy-quang-ninh-muon-dai-bang-o-lai-phai-tao-he-sinh-thai-du-tot-204261013152034744.htm",
+          "https://www.nguoiduatin.vn/e-chu-tich-dang-thanh-tam-hon-60-tuoi-thay-minh-van-con-thanh-nien-chan-204261013085257684.htm"
+        ],
+        "holdoutUrls": [
+          "https://www.nguoiduatin.vn/e-chu-tich-fpt-retail-bo-tu-duy-tu-lam-cho-nhanh-de-doanh-nghiep-di-xa-hon-20426101617185024.htm",
+          "https://www.nguoiduatin.vn/ha-tang-lon-dang-lam-thay-doi-khong-gian-kinh-te-204261017121037381.htm"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:52.638Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.nguoiduatin.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-204261108112335842.htm",
+      "https://www.nguoiduatin.vn/nang-chat-hoa-giai-o-co-so-vun-dap-tinh-lang-nghia-xom-204261108104939498.htm",
+      "https://www.nguoiduatin.vn/e-coi-troi-co-che-khai-phong-suc-sang-tao-cua-nha-khoa-hoc-204261106235011015.htm",
+      "https://www.nguoiduatin.vn/mr-pips-xin-duoc-ket-hon-trong-tu-phap-luat-quy-dinh-the-nao-204261108161121953.htm",
+      "https://www.nguoiduatin.vn/buc-tranh-nganh-sua-doi-sac-sau-9-thang-kinh-doanh-204250426155240461.htm",
+      "https://www.nguoiduatin.vn/hancorp-khong-con-dap-ung-dieu-kien-cong-ty-dai-chung-204261108140052897.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.nguoiduatin.vn/",
+    "categories": [
+      "https://www.nguoiduatin.vn/toan-canh.htm",
+      "https://www.nguoiduatin.vn/phap-luat.htm",
+      "https://www.nguoiduatin.vn/kinh-te.htm",
+      "https://www.nguoiduatin.vn/xa-hoi.htm",
+      "https://www.nguoiduatin.vn/doi-song.htm",
+      "https://www.nguoiduatin.vn/da-chieu.htm",
+      "https://www.nguoiduatin.vn/infocus.htm",
+      "https://www.nguoiduatin.vn/toan-canh/tieu-diem.htm",
+      "https://www.nguoiduatin.vn/toan-canh/doi-thoai.htm",
+      "https://www.nguoiduatin.vn/toan-canh/the-gioi.htm",
+      "https://www.nguoiduatin.vn/phap-luat/dong-chay-phap-luat.htm",
+      "https://www.nguoiduatin.vn/phap-luat/goc-nhin-luat-gia.htm",
+      "https://www.nguoiduatin.vn/phap-luat/ho-so-dieu-tra.htm",
+      "https://www.nguoiduatin.vn/phap-luat/tieng-noi-cong-dan.htm",
+      "https://www.nguoiduatin.vn/phap-luat/an-ninh-hinh-su.htm",
+      "https://www.nguoiduatin.vn/kinh-te/bat-dong-san.htm",
+      "https://www.nguoiduatin.vn/kinh-te/tai-chinh-ngan-hang.htm",
+      "https://www.nguoiduatin.vn/kinh-te/kinh-te-vi-mo.htm",
+      "https://www.nguoiduatin.vn/kinh-te/ho-so-doanh-nghiep.htm",
+      "https://www.nguoiduatin.vn/kinh-te/xu-huong-thi-truong.htm",
+      "https://www.nguoiduatin.vn/kinh-te/tieu-dung-du-luan.htm",
+      "https://www.nguoiduatin.vn/kinh-te/cong-nghe.htm",
+      "https://www.nguoiduatin.vn/xa-hoi/dan-sinh.htm",
+      "https://www.nguoiduatin.vn/xa-hoi/giao-duc.htm",
+      "https://www.nguoiduatin.vn/xa-hoi/van-hoa.htm",
+      "https://www.nguoiduatin.vn/xa-hoi/moi-truong.htm",
+      "https://www.nguoiduatin.vn/xa-hoi/giao-thong-do-thi.htm",
+      "https://www.nguoiduatin.vn/doi-song/gia-dinh.htm",
+      "https://www.nguoiduatin.vn/doi-song/suc-khoe.htm",
+      "https://www.nguoiduatin.vn/doi-song/can-biet.htm",
+      "https://www.nguoiduatin.vn/doi-song/cong-dong-mang.htm",
+      "https://www.nguoiduatin.vn/da-chieu/quan-diem.htm",
+      "https://www.nguoiduatin.vn/da-chieu/xi-nhan-trai-phai.htm",
+      "https://www.nguoiduatin.vn/da-chieu/ban-doc-viet.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?nguoiduatin.vn/.*?(\\d{4,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nguoiduatin.vn",
+    "checkedAt": "2026-11-09T03:57:18.366Z",
+    "url": "https://www.nguoiduatin.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-204261108112335842.htm",
+    "finalUrl": "https://www.nguoiduatin.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-204261108112335842.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11563,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:53.063Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/nguoiduatin.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "nguoiduatin.vn",
+    "parsedArticles": 36,
+    "distinctHashes": 36,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesAttempted": 34,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 523,
+    "checkedArticleUrls": 38,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 523,
+        "attempted": 36,
+        "passed": 36,
+        "distinctContents": 31,
+        "distinctHashes": 36
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

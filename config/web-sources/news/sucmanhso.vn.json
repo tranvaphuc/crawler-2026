@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sucmanhso.vn",
+  "siteId": "sucmanhso.vn",
+  "registrableDomain": "sucmanhso.vn",
+  "homepage": "https://www.sucmanhso.vn/",
+  "allowedHosts": [
+    "sucmanhso.vn",
+    "www.sucmanhso.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.sucmanhso.vn/",
+    "categories": [
+      "https://www.sucmanhso.vn/cuoc-song-so",
+      "https://www.sucmanhso.vn/review",
+      "https://www.sucmanhso.vn/suc-manh-so",
+      "https://www.sucmanhso.vn/ket-noi-so",
+      "https://www.sucmanhso.vn/giai-tri-so",
+      "https://www.sucmanhso.vn/du-hanh-so",
+      "https://www.sucmanhso.vn/tien-nghi-so",
+      "https://www.sucmanhso.vn/blog"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Green SM hợp tác với 10 đối tác chiến lược, mở rộng hệ sinh thái di chuyển xanh tại Lào",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:57.338Z",
+    "frozenAt": "2026-11-16T01:59:51.458Z",
+    "trainingUrl": "https://www.sucmanhso.vn/post/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-di-chuyen-xanh-tai-lao",
+    "independentHoldouts": [
+      "https://www.sucmanhso.vn/post/samsung-hop-tac-kin-hotel-group-dua-ai-home-vao-khong-gian-luu-tru-tai-kin-wander",
+      "https://www.sucmanhso.vn/post/meta-mo-rong-cong-nghe-uoc-tinh-do-tuoi-de-tang-cuong-bao-ve-thanh-thieu-nien-tren-instagram"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.sucmanhso.vn/post/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-di-chuyen-xanh-tai-lao",
+      "https://www.sucmanhso.vn/post/samsung-hop-tac-kin-hotel-group-dua-ai-home-vao-khong-gian-luu-tru-tai-kin-wander",
+      "https://www.sucmanhso.vn/post/meta-mo-rong-cong-nghe-uoc-tinh-do-tuoi-de-tang-cuong-bao-ve-thanh-thieu-nien-tren-instagram",
+      "https://www.sucmanhso.vn/post/cu-2-laptop-windows-cao-cap-ban-ra-tai-viet-nam-co-mot-chiec-la-zenbook",
+      "https://www.sucmanhso.vn/post/tiep-noi-he-sinh-thai-galaxy-tro-ly-ai-tv-hieu-tieng-viet-chinh-thuc-co-mat-tren-tv-samsung",
+      "https://www.sucmanhso.vn/post/lg-electronics-cong-bo-ket-qua-kinh-doanh-quy-iii-2026-loi-nhuan-hoat-dong-luy-ke-tang-55-9",
+      "https://www.sucmanhso.vn/post/vivo-v80-lite-5g-pin-10000mah-dat-ky-luc-guinness-the-gioi-den-voi-nguoi-dung-viet",
+      "https://www.sucmanhso.vn/post/vinfast-nhan-dat-coc-xe-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

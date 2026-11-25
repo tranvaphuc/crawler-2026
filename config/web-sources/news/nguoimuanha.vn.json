@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoimuanha.vn",
+  "siteId": "nguoimuanha.vn",
+  "registrableDomain": "nguoimuanha.vn",
+  "homepage": "https://nguoimuanha.vn/",
+  "allowedHosts": [
+    "nguoimuanha.vn",
+    "www.nguoimuanha.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "TÌNH HÌNH THỊ TRƯỜNG BẤT ĐỘNG SẢN HÀ NỘI ĐẦU THÁNG 5/2024",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:52.969Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nguoimuanha.vn/tinh-hinh-thi-truong-bat-dong-san-ha-noi-dau-thang-52024-a104478.html",
+      "https://nguoimuanha.vn/kieu-thiet-ke-de-nha-vuon-hai-tang-co-ve-ngoai-an-tuong-a115618.html",
+      "https://nguoimuanha.vn/trung-sinh-ve-10-nam-truoc-toi-tang-gia-nha-gap-5-6-lan-a123420.html",
+      "https://nguoimuanha.vn/tu-158-nguoi-dan-co-the-tra-phi-de-su-dung-thong-tin-ve-thi-truong-bat-dong-san-a60341.html",
+      "https://nguoimuanha.vn/ai-dang-la-chu-cua-5-toa-nha-cao-nhat-tp-ho-chi-minh-a115754.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nguoimuanha.vn/",
+    "categories": [
+      "https://nguoimuanha.vn/c/dien-dan",
+      "https://nguoimuanha.vn/c/nguoi-mua-nha-review",
+      "https://nguoimuanha.vn/c/goc-nhin-chuyen-gia",
+      "https://nguoimuanha.vn/c/mua-ban-nha-dat",
+      "https://nguoimuanha.vn/discuss",
+      "https://nguoimuanha.vn/cong-dong"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nguoimuanha.vn",
+    "checkedAt": "2026-11-09T03:57:18.629Z",
+    "url": "https://nguoimuanha.vn/tinh-hinh-thi-truong-bat-dong-san-ha-noi-dau-thang-52024-a104478.html",
+    "finalUrl": "https://nguoimuanha.vn/tinh-hinh-thi-truong-bat-dong-san-ha-noi-dau-thang-52024-a104478.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1951,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nguoimuanha.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 25,
+    "checkedArticleUrls": 25,
+    "freshArticleChecks": 16,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 25,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 5,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 45,
+        "passed": 25,
+        "distinctHashes": 25
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nguoimuanha.vn/dam-me-lam-giau-thi-chua-biet-chu-dam-me-loc-la-trao-tay-thi-bat-dong-san-chua-bao-gio-lam-anh-em-that-vong-a123447.html",
+      "https://nguoimuanha.vn/theo-nghe-moi-gioi-tu-vung-day-ceo-ky-cuu-duc-ket-dung-doi-thi-truong-sot-dung-dung-moi-chay-a123446.html",
+      "https://nguoimuanha.vn/neu-duoc-trung-sinh-ban-khong-can-quay-ve-thoi-co-dai-chi-can-quay-ve-7-nam-truoc-om-lay-vai-can-chung-cu-la-du-a123441.html",
+      "https://nguoimuanha.vn/co-nen-chan-cua-doanh-nghiep-dau-tu-du-an-khac-khi-khong-cap-so-hong-cho-nguoi-dan-a123428.html",
+      "https://nguoimuanha.vn/mua-nha-tien-ty-lam-sao-biet-chung-cu-da-du-dieu-kien-ban-giao-a123421.html",
+      "https://nguoimuanha.vn/nguoi-ta-lang-man-voi-mua-thu-ha-noi-con-toi-phai-ban-nha-thao-chay-vi-hoa-sua-a123250.html",
+      "https://nguoimuanha.vn/vi-sao-canh-bao-rat-nhieu-nhung-nguoi-dan-van-la-cuu-non-sap-bay-ngoai-giao-nha-o-xa-hoi-a122970.html",
+      "https://nguoimuanha.vn/chi-10-phut-tu-dong-hoi-bat-dong-san-ven-bien-gan-2000-ha-duoc-huong-loi-gi-tu-cung-duong-moi-a122932.html",
+      "https://nguoimuanha.vn/symphony-5-ban-hoa-ca-cua-thien-nhien-va-nhip-song-pho-thi-giua-trung-tam-da-nang-a122890.html",
+      "https://nguoimuanha.vn/cenhomesvn-trien-khai-chuong-trinh-1001-cho-o-mien-phi-ho-tro-nguoi-dan-thu-do-thuoc-dien-giai-toa-a122200.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:13.531Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nguoimuanha.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodanang.vn",
+  "siteId": "baodanang.vn",
+  "registrableDomain": "baodanang.vn",
+  "homepage": "https://baodanang.vn/",
+  "allowedHosts": [
+    "baodanang.vn",
+    "www.baodanang.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thướt tha tà áo dài xứ Quảng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:54.009Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baodanang.vn/thuot-tha-ta-ao-dai-xu-quang-3357903.html",
+      "https://baodanang.vn/phuong-lien-chieu-tap-huan-phong-chong-bao-luc-va-ung-dung-ai-3357902.html",
+      "https://baodanang.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-3357869.html",
+      "https://baodanang.vn/duy-tan-va-nang-luc-kien-tao-3357843.html",
+      "https://baodanang.vn/con-ca-com-noi-tam-nhin-xa-tren-6-hai-ly-3357840.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baodanang.vn/",
+    "categories": [
+      "https://baodanang.vn/tin-moi-nhat",
+      "https://baodanang.vn/chinh-tri",
+      "https://baodanang.vn/chinh-tri/xay-dung-dang",
+      "https://baodanang.vn/chinh-tri/theo-guong-bac",
+      "https://baodanang.vn/chinh-tri/chinh-quyen-doan-the",
+      "https://baodanang.vn/chinh-tri/nha-nuoc-va-cu-tri",
+      "https://baodanang.vn/chinh-tri/nhan-su-moi",
+      "https://baodanang.vn/xa-hoi",
+      "https://baodanang.vn/xa-hoi/giao-duc-viec-lam",
+      "https://baodanang.vn/xa-hoi/y-te",
+      "https://baodanang.vn/xa-hoi/giam-ngheo-an-sinh",
+      "https://baodanang.vn/xa-hoi/thanh-thieu-nien",
+      "https://baodanang.vn/kinh-te",
+      "https://baodanang.vn/kinh-te/quy-hoach-dau-tu",
+      "https://baodanang.vn/kinh-te/khoi-nghiep-ocop",
+      "https://baodanang.vn/kinh-te/cong-nghiep",
+      "https://baodanang.vn/kinh-te/tai-chinh-thi-truong",
+      "https://baodanang.vn/du-lich",
+      "https://baodanang.vn/du-lich/am-thuc",
+      "https://baodanang.vn/du-lich/diem-den",
+      "https://baodanang.vn/van-hoa-van-nghe",
+      "https://baodanang.vn/van-hoa-van-nghe/tho",
+      "https://baodanang.vn/van-hoa-van-nghe/truyen-ngan",
+      "https://baodanang.vn/van-hoa-van-nghe/tac-pham-tac-gia",
+      "https://baodanang.vn/van-hoa-van-nghe/tap-van",
+      "https://baodanang.vn/van-hoa-van-nghe/van-hoa",
+      "https://baodanang.vn/doi-song",
+      "https://baodanang.vn/doi-song/moi-truong",
+      "https://baodanang.vn/doi-song/song-khoe",
+      "https://baodanang.vn/doi-song/dia-chi-tu-thien",
+      "https://baodanang.vn/doi-song/cuoc-song-thuong-ngay",
+      "https://baodanang.vn/the-thao",
+      "https://baodanang.vn/the-gioi",
+      "https://baodanang.vn/khoa-hoc-cong-nghe",
+      "https://baodanang.vn/khoa-hoc-cong-nghe/cong-nghe",
+      "https://baodanang.vn/theo-buoc-chan-nguoi-quang",
+      "https://baodanang.vn/theo-buoc-chan-nguoi-quang/ho-so-tu-lieu",
+      "https://baodanang.vn/theo-buoc-chan-nguoi-quang/nguoi-xu-quang",
+      "https://baodanang.vn/quoc-phong-an-ninh",
+      "https://baodanang.vn/toa-soan-ban-doc",
+      "https://baodanang.vn/thong-tin-doanh-nghiep",
+      "https://baodanang.vn/quang-cao-rao-vat",
+      "https://baodanang.vn/truyen-hinh",
+      "https://baodanang.vn/nong-nghiep-nong-thon",
+      "https://baodanang.vn/co-hoi-dau-tu",
+      "https://baodanang.vn/su-kien-binh-luan",
+      "https://baodanang.vn/podcast",
+      "https://baodanang.vn/shorts-video",
+      "https://baodanang.vn/media"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?baodanang.vn/channel/(\\d+)/.*?(\\d{6,})$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baodanang.vn",
+    "checkedAt": "2026-11-09T03:56:49.485Z",
+    "url": "https://baodanang.vn/thuot-tha-ta-ao-dai-xu-quang-3357903.html",
+    "finalUrl": "https://baodanang.vn/thuot-tha-ta-ao-dai-xu-quang-3357903.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4481,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:35.814Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/baodanang.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "baodanang.vn",
+    "parsedArticles": 70,
+    "distinctHashes": 70,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 49,
+    "categoriesAttempted": 49,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 2,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 1116,
+    "checkedArticleUrls": 70,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1091,
+        "attempted": 49,
+        "passed": 51,
+        "distinctContents": 48,
+        "distinctHashes": 51
+      },
+      {
+        "name": "video",
+        "discovered": 17,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      },
+      {
+        "name": "longform",
+        "discovered": 3,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "audio",
+        "discovered": 5,
+        "attempted": 3,
+        "passed": 5,
+        "distinctContents": 0,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-video-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "baodanang.vn",
+      "siteId": "baodanang.vn",
+      "registrableDomain": "baodanang.vn",
+      "homepage": "https://baodanang.vn/",
+      "allowedHosts": [
+        "baodanang.vn",
+        "www.baodanang.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thướt tha tà áo dài xứ Quảng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:51:57.931Z",
+        "trainingUrls": [
+          "https://baodanang.vn/podcast-my-son-xanh-giu-hon-di-san-kien-tao-tuong-lai-3357859.html",
+          "https://baodanang.vn/podcast-nang-cao-vi-the-da-nang-tren-ban-do-khoi-nghiep-toan-cau-3356678.html",
+          "https://baodanang.vn/podcast-da-nang-khoi-thong-nguon-luc-tiep-suc-cho-doanh-nghiep-cong-nghe-3357520.html"
+        ],
+        "holdoutUrls": [
+          "https://baodanang.vn/podcast-da-nang-trong-mien-vi-nho-3357344.html",
+          "https://baodanang.vn/podcast-trao-suc-khoe-gui-yeu-thuong-3357166.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "baodanang.vn",
+      "siteId": "baodanang.vn",
+      "registrableDomain": "baodanang.vn",
+      "homepage": "https://baodanang.vn/",
+      "allowedHosts": [
+        "baodanang.vn",
+        "www.baodanang.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thướt tha tà áo dài xứ Quảng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:51:57.931Z",
+        "trainingUrls": [
+          "https://baodanang.vn/huong-dan-an-toan-dien-khi-troi-mua-bao-ngap-nuoc-3352748.html"
+        ],
+        "holdoutUrls": [
+          "https://baodanang.vn/el-nino-cuong-do-rat-manh-canh-bao-thieu-hut-mua-tai-trung-bo-va-nguy-co-mua-dong-am-3349243.html",
+          "https://baodanang.vn/khong-yeu-cau-nop-giay-to-khi-da-co-du-lieu-tich-hop-tren-ung-dung-dinh-danh-quoc-gia-3349042.html"
+        ]
+      }
+    }
+  ]
+}

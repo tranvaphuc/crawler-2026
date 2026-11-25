@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "siteName": "theleader.vn",
+  "siteId": "theleader.vn",
+  "registrableDomain": "theleader.vn",
+  "homepage": "https://theleader.vn/",
+  "allowedHosts": [
+    "theleader.vn",
+    "www.theleader.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Doanh nghiệp địa ốc trước 'vòng xoáy' dòng tiền âm và 167.000 tỷ đồng trái phiếu đáo hạn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:35.178Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://theleader.vn/doanh-nghiep-dia-oc-truoc-ap-luc-kep-tu-dong-tien-am-va-167000-ty-dong-trai-phieu-dao-han-d48421.html",
+      "https://theleader.vn/tcbs-tham-gia-dot-tang-von-cua-tcex-len-10000-ty-dong-d48443.html",
+      "https://theleader.vn/di-18000-km-chu-xe-may-dien-vinfast-hai-long-vi-xe-van-ben-dep-d48437.html",
+      "https://theleader.vn/msb-duoc-chap-thuan-tang-von-dieu-le-len-toi-da-46800-ty-dong-d48392.html",
+      "https://theleader.vn/seabank-hoan-tat-tang-von-dieu-le-len-34688-ty-dong-d48389.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://theleader.vn/",
+    "categories": [
+      "https://theleader.vn/leader-talk/",
+      "https://theleader.vn/tieu-diem-247/",
+      "https://theleader.vn/quoc-te/",
+      "https://theleader.vn/thi-truong/",
+      "https://theleader.vn/dau-tu/",
+      "https://theleader.vn/tai-chinh/",
+      "https://theleader.vn/vang/",
+      "https://theleader.vn/ngan-hang/",
+      "https://theleader.vn/chung-khoan/",
+      "https://theleader.vn/bao-hiem/",
+      "https://theleader.vn/doanh-nghiep/",
+      "https://theleader.vn/thuong-truong/",
+      "https://theleader.vn/doanh-nhan/",
+      "https://theleader.vn/ho-so-kinh-doanh/",
+      "https://theleader.vn/khoi-nghiep/",
+      "https://theleader.vn/dien-dan-quan-tri/",
+      "https://theleader.vn/cafe-quan-tri/",
+      "https://theleader.vn/doanh-nhan-viet/",
+      "https://theleader.vn/chuyen-thuong-truong/",
+      "https://theleader.vn/so-huu-tri-tue/",
+      "https://theleader.vn/bat-dong-san/",
+      "https://theleader.vn/toan-canh-thi-truong/",
+      "https://theleader.vn/doanh-nghiep--du-an/",
+      "https://theleader.vn/san-giao-dich/",
+      "https://theleader.vn/cuoc-song-muon-mau/",
+      "https://theleader.vn/cafe-nha-dat/",
+      "https://theleader.vn/phat-trien-ben-vung/",
+      "https://theleader.vn/ho-so-quan-tri/",
+      "https://theleader.vn/ong-kinh/",
+      "https://theleader.vn/chuyen-dong/",
+      "https://theleader.vn/kham-pha/",
+      "https://theleader.vn/trai-nghiem/",
+      "https://theleader.vn/so-tay-quan-tri/",
+      "https://theleader.vn/nhip-cau-kinh-doanh/",
+      "https://theleader.vn/tu-sach-quan-tri/",
+      "https://theleader.vn/media/",
+      "https://theleader.vn/media-video/",
+      "https://theleader.vn/emagazine/",
+      "https://theleader.vn/mo-loi-tang-truong-channel396/",
+      "https://theleader.vn/dong-chay-so-channel395/",
+      "https://theleader.vn/dai-phau-thue-ho-kinh-doanh-channel384/",
+      "https://theleader.vn/doanh-nghiep-but-pha-2026-channel389/",
+      "https://theleader.vn/chong-lang-phi-channel390/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "theleader.vn",
+    "checkedAt": "2026-11-09T03:57:30.685Z",
+    "url": "https://theleader.vn/doanh-nghiep-dia-oc-truoc-ap-luc-kep-tu-dong-tien-am-va-167000-ty-dong-trai-phieu-dao-han-d48421.html",
+    "finalUrl": "https://theleader.vn/doanh-nghiep-dia-oc-truoc-ap-luc-kep-tu-dong-tien-am-va-167000-ty-dong-trai-phieu-dao-han-d48421.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6866,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "theleader.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 122,
+    "freshArticleChecks": 122,
+    "parserIssues": 0,
+    "transportUnconfirmed": 122,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 43,
+    "categoriesFreshChecked": 33,
+    "categoriesUnconfirmed": 11,
+    "categoriesWithoutParsedArticle": 32,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 850,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://theleader.vn/di-18000-km-chu-xe-may-dien-vinfast-hai-long-vi-xe-van-ben-dep-d48437.html",
+      "https://theleader.vn/vpbank-cung-hon-11000-nguoi-chay-danh-thuc-nhip-song-thu-do-d48138.html",
+      "https://theleader.vn/can-canh-dai-cong-truong-20000-nguoi-xay-san-van-dong-lon-nhat-the-gioi-d48327.html",
+      "https://theleader.vn/toc-do-co-dieu-kien-trong-quan-tri-bai-hoc-tu-bmw-bosch-vinfast-d48497.html",
+      "https://theleader.vn/moi-gioi-bat-dong-san-truoc-cuoc-chuyen-doi-song-con-d48470.html",
+      "https://theleader.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-d48468.html",
+      "https://theleader.vn/nhieu-tai-khoan-ngan-hang-bi-khoa-sau-khi-giao-dich-tai-san-so-d48507.html",
+      "https://theleader.vn/tu-cu-soc-pnj-den-song-lon-ho-vin-lam-sao-de-buoc-ra-khoi-bay-doan-dinh-bat-day-d48500.html",
+      "https://theleader.vn/khoi-thong-nguon-luc-tang-truong-tu-nhung-du-an-mac-ket-d48502.html",
+      "https://theleader.vn/cuoc-dua-so-hoa-giao-dich-bat-dong-san-d48499.html",
+      "https://theleader.vn/4-tru-cot-hop-tac-kinh-te-viet-nam-va-nhat-ban-giai-doan-moi-d48496.html",
+      "https://theleader.vn/nghi-quyet-171-khoi-thong-quy-dat-gia-nha-se-the-nao-d48498.html",
+      "https://theleader.vn/du-dia-moi-cho-bat-dong-san-da-nang-d48368.html",
+      "https://theleader.vn/rui-ro-tu-mot-cu-nhap-chuot-co-the-cuon-bay-hang-chuc-ty-usd-khoi-ngan-hang-d48474.html",
+      "https://theleader.vn/tong-giam-doc-green-sm-sau-moi-tay-lai-la-mot-con-nguoi-mot-gia-dinh-d48317.html",
+      "https://theleader.vn/hon-mot-thap-ky-grab-viet-nam-mang-kinh-te-so-den-cho-moi-nha-d48289.html",
+      "https://theleader.vn/ceo-tcex-chi-cac-san-tai-san-so-co-nang-luc-moi-hut-duoc-dong-tien-ve-nuoc-d48090.html",
+      "https://theleader.vn/doanh-nghiep-nha-nuoc-la-hang-hoa-tiem-nang-thu-hut-von-ngoai-d48458.html",
+      "https://theleader.vn/chot-muc-tieu-tang-truong-kinh-te-2027-tu-10-d48456.html",
+      "https://theleader.vn/novaland-dat-cuoc-20-ty-usd-doanh-thu-vao-2-du-an-d48467.html",
+      "https://theleader.vn/de-xuat-uu-dai-cho-du-lich-ket-hop-cham-soc-suc-khoe-d48466.html",
+      "https://theleader.vn/y-nghia-chien-luoc-cua-chuyen-tham-nhat-ban-cua-tong-bi-thu-chu-tich-nuoc-to-lam-d48469.html",
+      "https://theleader.vn/tap-doan-pan-mo-rong-hop-tac-nong-nghiep-voi-nhat-ban-tu-nghien-cuu-den-phat-trien-thi-truong-d48488.html",
+      "https://theleader.vn/sieu-san-van-dong-vinfast-va-bai-toan-tao-gia-tri-vuot-xa-nhung-khan-dai-d48461.html",
+      "https://theleader.vn/khi-phu-nu-khong-chi-thanh-cong-cho-rieng-minh-ma-con-tao-co-hoi-de-nhung-nguoi-khac-cung-vuon-xa-d48465.html",
+      "https://theleader.vn/von-ngoai-mo-rong-cuoc-choi-bat-dong-san-viet-nam-d48423.html",
+      "https://theleader.vn/gieo-y-thuc-bao-ve-moi-truong-cho-the-he-tre-d48463.html",
+      "https://theleader.vn/chien-luoc-tre-hoa-va-cao-cap-hoa-mang-ve-doanh-thu-ky-luc-cho-vinamilk-d48489.html",
+      "https://theleader.vn/podcast-y-te-toan-dien-trong-ky-nguyen-moi-d47988.html",
+      "https://theleader.vn/video-nha-sang-lap-luong-tri-thin-noi-ve-buoc-ngoat-lich-su-doi-thuong-hieu-dat-xanh-thanh-bluemarq-d46099.html",
+      "https://theleader.vn/chu-tich-ceo-group-ke-ve-khoanh-khac-bo-tu-chi-o-nam-cuc-d45861.html",
+      "https://theleader.vn/tu-noi-dau-mat-khu-vuon-tram-tuoi-den-tran-tro-ve-di-san-de-lai-cho-the-he-sau-d48441.html",
+      "https://theleader.vn/von-ty-do-cho-ha-tang-quoc-gia-tien-tu-dau-lam-gi-truoc-d48379.html",
+      "https://theleader.vn/nang-luc-phap-ly-phan-dinh-thang-thua-cua-doanh-nghiep-bat-dong-san-chu-ky-moi-d48349.html",
+      "https://theleader.vn/tong-giam-doc-vinacapital-viet-nam-thieu-mot-he-thong-dan-von-du-sau-d47087.html",
+      "https://theleader.vn/chu-tich-fiingroup-loi-ich-nang-hang-tin-nhiem-quoc-gia-lon-gap-tram-nghin-lan-nang-hang-chung-khoan-d47019.html",
+      "https://theleader.vn/chuong-tiep-theo-cua-fdi-han-quoc-tai-viet-nam-d46819.html",
+      "https://theleader.vn/keppel-dau-tu-vao-viet-nam-khong-phai-cho-mot-chu-ky-thi-truong-ma-cho-nhieu-thap-ky-phat-trien-d48325.html",
+      "https://theleader.vn/keppel-mo-rong-dau-an-tai-ha-noi-d48326.html",
+      "https://theleader.vn/deep-c-va-dong-fdi-the-he-moi-d48155.html",
+      "https://theleader.vn/dai-quang-minh-duoc-giao-4-lo-dat-thu-thiem-d48453.html",
+      "https://theleader.vn/tong-giam-doc-kafi-noi-ve-nghe-thuat-tieu-tien-cua-co-dong-d48460.html",
+      "https://theleader.vn/nhu-cau-trieu-ty-lam-ha-tang-tim-toi-dong-von-tu-nhan-d48454.html",
+      "https://theleader.vn/vietjet-mo-rong-cau-noi-viet-nam-nhat-ban-voi-duong-bay-moi-da-nang-osaka-d48505.html",
+      "https://theleader.vn/cii-chao-ban-6720-ty-dong-trai-phieu-chuyen-doi-xay-cao-toc-huyet-mach-mien-tay-d48504.html",
+      "https://theleader.vn/gia-heo-giam-sau-vi-sao-chan-nuoi-heo-van-la-dong-luc-chinh-cua-nong-nghiep-hoa-phat-d48494.html",
+      "https://theleader.vn/stavian-bat-tay-midas-capital-huong-toi-lien-minh-ha-tang-so-1-ty-usd-d48492.html",
+      "https://theleader.vn/sap-dien-ra-hoi-thao-khoa-hoc-quoc-gia-thi-truong-chung-khoan-viet-nam-2026-d48506.html",
+      "https://theleader.vn/thoat-canh-phi-tien-khi-dau-tu-vao-nhan-su-d48501.html",
+      "https://theleader.vn/tu-y-tuong-ket-noi-ngan-hang-den-giao-dich-tai-san-ma-hoa-minh-bach-d48490.html",
+      "https://theleader.vn/imperia-sensa-park-dinh-hinh-chuan-song-da-nhip-giua-tam-diem-ket-noi-khu-dong-d48487.html",
+      "https://theleader.vn/abbank-va-bai-toan-chuyen-hoa-cong-nghe-thanh-nang-luc-van-hanh-d48485.html",
+      "https://theleader.vn/green-sm-trien-khai-chuong-trinh-mua-dong-xanh--vi-tuong-lai-xanh-d48484.html",
+      "https://theleader.vn/cac-nha-khoa-hoc-cua-vinuni-nghien-cuu-giai-ma-gene-1000-giong-lua-viet-nam-d48483.html",
+      "https://theleader.vn/swanbay-hop-tac-cung-best-western-hotels-resorts-nang-tam-quan-ly-van-han-tai-oasia-swanbay-d48462.html",
+      "https://theleader.vn/khai-truong-vinmec-tuyen-quang-hoan-thien-he-sinh-thai-cham-soc-suc-khoe-tai-vinhomes-my-lam-d48459.html",
+      "https://theleader.vn/sacombank-phoi-hop-trung-uong-hoi-sinh-vien-viet-nam-khoi-dong-chuoi-hoat-dong-tai-chinh-so-s-finfest-2026-d48449.html",
+      "https://theleader.vn/firebeat-2026-va-tham-vong-tao-thuong-hieu-le-hoi-am-thuc-quoc-te-cho-ha-noi-d48440.html",
+      "https://theleader.vn/stavian-hoa-chat-hai-nam-lien-tiep-lot-fortune-southeast-asia-500-d48447.html",
+      "https://theleader.vn/essensia-sky-and-parkway-saigon-worldhotels-residences-chinh-thuc-ban-giao-d48444.html",
+      "https://theleader.vn/vpbank-gianh-cu-dup-giai-thuong-ve-quan-ly-dong-tien-tai-the-euromoney-transaction-banking-awards-d48442.html",
+      "https://theleader.vn/vib-one-card-duoc-vinh-danh-la-sang-tao-noi-bat-trong-linh-vuc-the-tin-dung-ca-nhan-hoa-d48439.html",
+      "https://theleader.vn/vpbank-cung-co-nen-tang-ban-le-don-buoc-chuyen-ve-quan-tri-thanh-khoan-d48438.html",
+      "https://theleader.vn/shb-hop-tac-cung-benh-vien-bach-mai-ket-noi-nguon-luc-tai-chinh-va-y-te-d48428.html",
+      "https://theleader.vn/hung-thinh-phat-group-quy-tu-doi-tac-chien-luoc-cho-du-an-treville-d48422.html",
+      "https://theleader.vn/du-an-dien-gio-tai-lao-cua-bau-hien-bao-lai-gan-1100-ty-dong-sau-9-thang-d48417.html",
+      "https://theleader.vn/mik-group-phat-trien-thanh-pho-cao-tang-tren-dao-dau-tien-tai-hai-phong-d48413.html",
+      "https://theleader.vn/vinhomes-nuoi-quan-cho-dai-ly-ruot-moi-gioi-co-diem-tua-tai-chinh-thi-truong-giu-mach-luc-kho-khan-d48409.html",
+      "https://theleader.vn/no-thue-dat-phi-nong-nghiep-bat-ngo-hien-tren-etax-mobile-nguoi-dan-can-lam-gi-d48234.html",
+      "https://theleader.vn/10-diem-dang-chu-y-trong-du-thao-luat-kinh-doanh-bat-dong-san-sua-doi-d47413.html",
+      "https://theleader.vn/cham-truyen-du-lieu-hoa-don-dien-tu-ho-kinh-doanh-can-lam-gi-d47153.html",
+      "https://theleader.vn/co-quan-thue-go-vuong-cho-ho-kinh-doanh-ban-da-kenh-d47094.html",
+      "https://theleader.vn/tien-ban-hang-de-cung-tien-ca-nhan-trong-tai-khoan-ho-kinh-doanh-xu-ly-ra-sao-d47008.html",
+      "https://theleader.vn/nguoi-kiem-tien-online-se-duoc-phan-loai-thu-nhap-de-tinh-thue-d47004.html",
+      "https://theleader.vn/luat-choi-moi-cho-kol-koc-va-san-thuong-mai-dien-tu-d47006.html",
+      "https://theleader.vn/ho-kinh-doanh-can-luu-y-gi-ve-hoa-don-dien-tu-tu-1-7-2026-d46984.html",
+      "https://theleader.vn/tach-thua-dat-can-dieu-kien-gi-trinh-tu-thu-tuc-can-biet-d46873.html",
+      "https://theleader.vn/nhung-ap-luc-khong-ten-cua-nguoi-dung-dau-doanh-nghiep-d48434.html",
+      "https://theleader.vn/bai-toan-chuyen-giao-tai-san-khi-nguoi-thua-ke-khong-muon-dieu-hanh-d48431.html",
+      "https://theleader.vn/nhan-vien-tang-dung-ai-doanh-nghiep-lieu-da-san-sang-d48356.html",
+      "https://theleader.vn/nguyen-tac-mot-gio-nam-phut-cua-chu-tich-abbank-vu-van-tien-d48318.html",
+      "https://theleader.vn/hai-phong-dau-gia-dat-bac-song-cam-gia-gan-2000-ty-dong-d48220.html",
+      "https://theleader.vn/hai-phong-tim-suc-bat-tang-truong-tu-khoa-hoc-cong-nghe-d48010.html",
+      "https://theleader.vn/hai-phong-cong-bo-166-du-an-uu-tien-thu-hut-dau-tu-giai-doan-2026--2030-d47903.html",
+      "https://theleader.vn/gia-can-ho-binh-quan-giam-nha-vua-tui-tien-van-hiem-d48445.html",
+      "https://theleader.vn/chu-tich-vars-he-so-k-keo-chi-phi-su-dung-dat-len-2-26-lan-nhung-nen-kinh-te-va-nguoi-dan-duoc-loi-d48430.html",
+      "https://theleader.vn/nguoi-phu-nu-18-nam-lam-nghe-sua-dien-tu-tao-sinh-ke-trao-co-hoi-cho-nguoi-cung-canh-ngo-d48416.html",
+      "https://theleader.vn/tps-bo-nhiem-quyen-tong-giam-doc-d48457.html",
+      "https://theleader.vn/sacombank-bo-nhiem-quyen-tong-giam-doc-moi-d48377.html",
+      "https://theleader.vn/giam-doc-benh-vien-bach-mai-lam-thu-truong-bo-y-te-d48362.html",
+      "https://theleader.vn/tong-giam-doc-vimico-bi-khoi-to-d48345.html",
+      "https://theleader.vn/su-ky-ceo-group-25-nam-25-cau-chuyen-va-nhung-bai-hoc-quan-tri-ca-thang-lan-thua-d48365.html",
+      "https://theleader.vn/chu-tich-ceo-group-viet-sach-ve-hang-dong-lon-nhat-the-gioi-va-bay-bai-hoc-quan-tri-rut-ra-tu-long-dat-d48075.html",
+      "https://theleader.vn/bon-cau-hoi-tu-van-thay-doi-tu-duy-quan-tri-trong-ky-nguyen-bien-dong-d47463.html",
+      "https://theleader.vn/kinh-te-tu-nhan-khi-niem-tin-tro-thanh-dong-luc-vuon-minh-d46807.html",
+      "https://theleader.vn/dung-tin-nhung-ke-noi-suong-va-trach-nhiem-trong-quan-tri-d46225.html",
+      "https://theleader.vn/tu-90-do-nam-nhin-ve-nhung-khong-gian-phat-trien-con-bo-ngo-cua-viet-nam-d45817.html",
+      "https://theleader.vn/nhin-lai-40-nam-doi-moi-qua-lang-kinh-con-nguoi-d45349.html",
+      "https://theleader.vn/giai-thuong-sach-quoc-gia-lan-thu-viii-lan-dau-dung-du-lieu-truyen-thong-xet-giai-d44624.html",
+      "https://theleader.vn/quan-tri-mot-cuoc-doi-di-nguoc-gio-qua-tac-pham-gio-nguoc-d43945.html",
+      "https://theleader.vn/dua-dieu-quy-gia-buoc-ra-doi-thuc-d48197.html",
+      "https://theleader.vn/ha-tang-moi-cho-thi-truong-von-channel397/",
+      "https://theleader.vn/kien-tao-nen-y-te-cho-tuong-lai-channel394/",
+      "https://theleader.vn/toan-canh-thi-truong-bat-dong-san-hai-phong-channel393/"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:12.908Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/theleader.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Người phụ nữ đằng sau mô hình thời trang - nhà hàng đầu tiên tại Việt Nam",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#explus-editor",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:30.242Z",
+        "trainingUrls": [
+          "https://theleader.vn/nguoi-phu-nu-dang-sau-mo-hinh-thoi-trang--nha-hang-dau-tien-tai-viet-nam-d4489.html"
+        ],
+        "holdoutUrls": [
+          "https://theleader.vn/hoang-huy-lai-lon-nho-ban-giao-nha-von-tiep-tuc-don-vao-du-an-moi-d48560.html",
+          "https://theleader.vn/pgbank-tu-cai-bong-xang-dau-den-cuoc-tai-dinh-vi-sme-d46944.html"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Doanh nghiệp địa ốc trước 'vòng xoáy' dòng tiền âm và 167.000 tỷ đồng trái phiếu đáo hạn",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:30.242Z",
+        "trainingUrls": [
+          "https://theleader.vn/dang-sau-670000-ty-dong-von-hoa-tang-them-cua-vingroup-d47575.html"
+        ],
+        "holdoutUrls": [
+          "https://theleader.vn/buoc-ngoat-cua-futa-land-d48361.html",
+          "https://theleader.vn/be-group-ban-linh-cong-nghe-viet-va-su-menh-ket-noi-ha-tang-do-thi-d47323.html"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:36.995Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://theleader.vn/hoang-huy-lai-lon-nho-ban-giao-nha-von-tiep-tuc-don-vao-du-an-moi-d48560.html",
+      "https://theleader.vn/pgbank-tu-cai-bong-xang-dau-den-cuoc-tai-dinh-vi-sme-d46944.html",
+      "https://theleader.vn/buoc-ngoat-cua-futa-land-d48361.html",
+      "https://theleader.vn/be-group-ban-linh-cong-nghe-viet-va-su-menh-ket-noi-ha-tang-do-thi-d47323.html"
+    ],
+    "improvedUrls": [
+      "https://theleader.vn/nguoi-phu-nu-dang-sau-mo-hinh-thoi-trang--nha-hang-dau-tien-tai-viet-nam-d4489.html",
+      "https://theleader.vn/giai-ma-direct-indexing-buoc-chuyen-moi-trong-cach-dau-tu-theo-chi-so-d48255.html",
+      "https://theleader.vn/dang-sau-670000-ty-dong-von-hoa-tang-them-cua-vingroup-d47575.html",
+      "https://theleader.vn/buoc-ngoat-cua-futa-land-d48361.html",
+      "https://theleader.vn/be-group-ban-linh-cong-nghe-viet-va-su-menh-ket-noi-ha-tang-do-thi-d47323.html"
+    ],
+    "regressions": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phapluatmedia.vn",
+  "siteId": "phapluatmedia.vn",
+  "registrableDomain": "phapluatmedia.vn",
+  "homepage": "https://phapluatmedia.vn/",
+  "allowedHosts": [
+    "phapluatmedia.vn",
+    "www.phapluatmedia.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://phapluatmedia.vn/",
+    "categories": [
+      "https://phapluatmedia.vn/noi-chinh-tu-phap",
+      "https://phapluatmedia.vn/kinh-te-xa-hoi",
+      "https://phapluatmedia.vn/phap-luat-ban-doc",
+      "https://phapluatmedia.vn/van-hoa-giai-tri",
+      "https://phapluatmedia.vn/video",
+      "https://phapluatmedia.vn/video/tin-tuc",
+      "https://phapluatmedia.vn/video/ong-kinh-phap-luat",
+      "https://phapluatmedia.vn/video/toa-dam",
+      "https://phapluatmedia.vn/video/bat-dong-san",
+      "https://phapluatmedia.vn/video/van-hoa"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Gỡ vướng đất đai tại Phổ Yên: Hài hòa lợi ích quốc gia và vấn đề an sinh của người dân cần được đảm bảo",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".__MASTERCMS_CONTENT",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:12.777Z",
+    "frozenAt": "2026-11-16T01:59:10.606Z",
+    "trainingUrl": "https://phapluatmedia.vn/go-vuong-dat-dai-tai-pho-yen-hai-hoa-loi-ich-quoc-gia-va-van-de-an-sinh-cua-nguoi-dan-can-duoc-dam-bao-39711.html",
+    "independentHoldouts": [
+      "https://phapluatmedia.vn/khoi-to-tiktoker-dang-video-huong-dan-su-dung-ma-tuy-39712.html",
+      "https://phapluatmedia.vn/doi-tuong-tron-na-bi-bat-giu-khi-di-chuyen-qua-hai-phong-39713.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://phapluatmedia.vn/go-vuong-dat-dai-tai-pho-yen-hai-hoa-loi-ich-quoc-gia-va-van-de-an-sinh-cua-nguoi-dan-can-duoc-dam-bao-39711.html",
+      "https://phapluatmedia.vn/khoi-to-tiktoker-dang-video-huong-dan-su-dung-ma-tuy-39712.html",
+      "https://phapluatmedia.vn/doi-tuong-tron-na-bi-bat-giu-khi-di-chuyen-qua-hai-phong-39713.html",
+      "https://phapluatmedia.vn/de-thanh-toan-xuyen-bien-gioi-thuc-day-phat-trien-du-lich-38800.html",
+      "https://phapluatmedia.vn/bao-phap-luat-viet-nam-trao-tang-mai-am-tu-phap-cho-ho-gia-dinh-kho-khan-tai-phu-tho-39716.html",
+      "https://phapluatmedia.vn/toa-dam-quoc-te-ve-cong-chung-thuc-day-an-toan-phap-ly-trong-ky-nguyen-so-va-moi-truong-dau-tu-nuoc-ngoai-39715.html",
+      "https://phapluatmedia.vn/phat-hien-doanh-nghiep-o-hai-phong-tron-chat-cam-vao-thuc-an-nuoi-lon-39714.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

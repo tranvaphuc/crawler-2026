@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "congan.gialai.gov.vn",
+  "siteId": "congan.gialai.gov.vn",
+  "registrableDomain": "congan.gialai.gov.vn",
+  "homepage": "https://congan.gialai.gov.vn/",
+  "allowedHosts": [
+    "congan.gialai.gov.vn",
+    "www.congan.gialai.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congan.gialai.gov.vn/",
+    "categories": [
+      "https://congan.gialai.gov.vn/vi/news/hoat-dong-cua-ca-tinh/",
+      "https://congan.gialai.gov.vn/vi/news/hoat-dong-ca-cac-don-vi-dia-phuong/",
+      "https://congan.gialai.gov.vn/vi/news/trien-khai-cong-tac/",
+      "https://congan.gialai.gov.vn/vi/news/cai-cach-hanh-chinh/",
+      "https://congan.gialai.gov.vn/vi/news/xay-dung-dang/",
+      "https://congan.gialai.gov.vn/vi/news/thu-cam-on/",
+      "https://congan.gialai.gov.vn/vi/news/binh-dan-hoc-vu-so/",
+      "https://congan.gialai.gov.vn/vi/news/antt-trong-tinh-50/",
+      "https://congan.gialai.gov.vn/vi/news/antt-trong-tinh/"
+    ]
+  },
+  "title": {
+    "value": "Cảnh báo: Ma túy núp bóng tinh dầu thuốc lá điện tử, tinh dầu - Hiểm họa không thể xem thường",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".row.bg-body-new",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:41.302Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:01:37.119Z",
+    "independentHoldouts": [
+      "https://congan.gialai.gov.vn/vi/news/thong-bao/cong-khai-so-dien-thoai-truc-ban-phong-canh-sat-kinh-te-tiep-nhan-tin-bao-to-giac-toi-pham-24-24-gio-15970.html",
+      "https://congan.gialai.gov.vn/vi/news/hoat-dong-ca-cac-don-vi-dia-phuong/tich-hop-05-loai-thong-tin-tren-vneid-de-duoc-mien-phi-cap-phieu-ly-lich-tu-phap-15799.html",
+      "https://congan.gialai.gov.vn/vi/news/lay-y-kien-vb-du-thao/hien-dai-hoa-quy-trinh-xu-phat-tren-moi-truong-dien-tu-va-nang-cao-tinh-ran-de-kinh-te-trong-du-thao-luat-xu-ly-vi-pham-hanh-chinh-sua-doi-trinh-quoc-hoi-khoa-xvi-tai-ky-hop-thu-2-15778.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congan.gialai.gov.vn/vi/news/canh-giac-canh-bao/canh-bao-ma-tuy-nup-bong-tinh-dau-thuoc-la-dien-tu-tinh-dau-hiem-hoa-khong-the-xem-thuong-15883.html",
+      "https://congan.gialai.gov.vn/vi/news/thong-bao/cong-khai-so-dien-thoai-truc-ban-phong-canh-sat-kinh-te-tiep-nhan-tin-bao-to-giac-toi-pham-24-24-gio-15970.html",
+      "https://congan.gialai.gov.vn/vi/news/hoat-dong-ca-cac-don-vi-dia-phuong/tich-hop-05-loai-thong-tin-tren-vneid-de-duoc-mien-phi-cap-phieu-ly-lich-tu-phap-15799.html",
+      "https://congan.gialai.gov.vn/vi/news/lay-y-kien-vb-du-thao/hien-dai-hoa-quy-trinh-xu-phat-tren-moi-truong-dien-tu-va-nang-cao-tinh-ran-de-kinh-te-trong-du-thao-luat-xu-ly-vi-pham-hanh-chinh-sua-doi-trinh-quoc-hoi-khoa-xvi-tai-ky-hop-thu-2-15778.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhdoanhnet.vn",
+  "siteId": "kinhdoanhnet.vn",
+  "registrableDomain": "kinhdoanhnet.vn",
+  "homepage": "https://kinhdoanhnet.vn/",
+  "allowedHosts": [
+    "kinhdoanhnet.vn",
+    "www.kinhdoanhnet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá vàng sáng nay 6/11/2026: Tiếp tục giảm sâu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:28.730Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhdoanhnet.vn/gia-vang-sang-nay-6112026-tiep-tuc-giam-sau-a80974.html",
+      "https://kinhdoanhnet.vn/bidv-sap-chi-hon-8000-ty-dong-mua-lai-truoc-han-3-lo-trai-phieu-loi-nhuan-9-thang-vuot-29000-ty-a80980.html",
+      "https://kinhdoanhnet.vn/tu-112027-viet-nam-cam-nhap-khau-dien-thoai-may-tinh-cu-a80958.html",
+      "https://kinhdoanhnet.vn/sun-group-khoi-cong-to-hop-du-lich-cao-cap-16234-ty-tai-quang-tri-a80914.html",
+      "https://kinhdoanhnet.vn/ha-noi-trien-khai-5-tuyen-metro-tong-von-dau-tu-khoang-900000-ty-dong-a80952.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhdoanhnet.vn/",
+    "categories": [
+      "https://kinhdoanhnet.vn/c/thi-truong",
+      "https://kinhdoanhnet.vn/c/bat-dong-san",
+      "https://kinhdoanhnet.vn/c/tai-chinh-dau-tu",
+      "https://kinhdoanhnet.vn/c/tiep-thi",
+      "https://kinhdoanhnet.vn/c/xa-hoi"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?kinhdoanhnet.vn/.*?/.*?t(\\d+)c(\\d+)n(\\d{4,})$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhdoanhnet.vn",
+    "checkedAt": "2026-11-09T03:57:09.704Z",
+    "url": "https://kinhdoanhnet.vn/gia-vang-sang-nay-6112026-tiep-tuc-giam-sau-a80974.html",
+    "finalUrl": "https://kinhdoanhnet.vn/gia-vang-sang-nay-6112026-tiep-tuc-giam-sau-a80974.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1795,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kinhdoanhnet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 39,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 38,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 99,
+        "passed": 38,
+        "distinctHashes": 38
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kinhdoanhnet.vn/tu-112027-viet-nam-cam-nhap-khau-dien-thoai-may-tinh-cu-a80958.html",
+      "https://kinhdoanhnet.vn/taseco-land-giai-the-cong-ty-con-co-von-dieu-le-400-ty-dong-a81001.html",
+      "https://kinhdoanhnet.vn/bi-hose-ngat-ket-noi-buc-tranh-tai-chinh-cua-chung-khoan-hoa-binh-hien-ra-sao-a81005.html",
+      "https://kinhdoanhnet.vn/nha-pho-50-m-dat-vinhomes-sai-gon-park-dung-hoa-dien-tich-su-dung-moi-truong-song-va-bai-toan-tai-chinh-a80999.html",
+      "https://kinhdoanhnet.vn/gia-bitcoin-hom-nay-1011-suc-ben-cua-thi-truong-truoc-ap-luc-lon-a81004.html",
+      "https://kinhdoanhnet.vn/gia-vang-hom-nay-1011-vang-the-gioi-but-toc-keo-trong-nuoc-di-len-a81003.html",
+      "https://kinhdoanhnet.vn/loi-nhuan-nganh-thep-khoi-sac-thach-thuc-van-bua-vay-a81002.html",
+      "https://kinhdoanhnet.vn/xuat-hien-chieu-lua-dao-moi-duoi-danh-nghia-cap-nhat-ho-khau-dien-tu-a80998.html",
+      "https://kinhdoanhnet.vn/nam-a-bank-du-kien-chao-ban-rieng-le-100-trieu-co-phieu-a81000.html",
+      "https://kinhdoanhnet.vn/gia-vang-hom-nay-911-bam-day-cho-tin-hieu-moi-a80990.html",
+      "https://kinhdoanhnet.vn/vinamilk-tiep-tuc-tang-truong-doanh-thu-va-dat-nhieu-vinh-danh-trong-nuoc-lan-quoc-te-a80995.html",
+      "https://kinhdoanhnet.vn/my-chot-thue-chong-ban-pha-gia-tom-viet-nam-muc-cao-nhat-1071-a80984.html",
+      "https://kinhdoanhnet.vn/tpbank-kien-tao-gan-ket-ben-vung-voi-tung-the-he-khach-hang-a81007.html",
+      "https://kinhdoanhnet.vn/vn-index-mat-hon-11-diem-co-phieu-chung-khoan-lao-doc-a80997.html",
+      "https://kinhdoanhnet.vn/gia-bitcoin-hom-nay-911-bitcoin-chua-xuat-hien-tin-hieu-tao-day-ro-rang-a80993.html",
+      "https://kinhdoanhnet.vn/imperia-sensa-park-dinh-hinh-chuan-song-da-nhip-giua-tam-diem-ket-noi-khu-dong-a80996.html",
+      "https://kinhdoanhnet.vn/mik-group-chinh-thuc-phat-trien-thanh-pho-cao-tang-tren-dao-dau-tien-tai-hai-phong-a80954.html",
+      "https://kinhdoanhnet.vn/van-phong-tai-gia-giua-pho-bien-nha-trang-can-ho-the-fest-don-dau-lan-song-workation-a80949.html",
+      "https://kinhdoanhnet.vn/chau-au-thu-nho-giua-xu-thanh-khai-mo-khong-gian-song-dang-cap-a80936.html",
+      "https://kinhdoanhnet.vn/buc-tranh-nganh-sua-doi-sac-sau-9-thang-kinh-doanh-a80985.html",
+      "https://kinhdoanhnet.vn/green-sm-trien-khai-chuong-trinh-mua-dong-xanh-vi-tuong-lai-xanh-ho-tro-dac-biet-cho-khach-hang-va-tai-xe-a80991.html",
+      "https://kinhdoanhnet.vn/techcombank-ket-noi-giai-phap-tai-chinh-dong-hanh-cung-doanh-nghiep-bien-mau-viet-trung-a80977.html",
+      "https://kinhdoanhnet.vn/vinamilk-khang-dinh-vi-the-voi-ba-nam-lien-gop-mat-trong-top-500-doanh-nghiep-lon-nhat-dong-nam-a-cua-fortune-a80967.html",
+      "https://kinhdoanhnet.vn/ngan-hang-co-no-xau-tu-3-tro-len-se-bi-thanh-tra-neu-khong-ban-lai-cho-vamc-a80976.html",
+      "https://kinhdoanhnet.vn/luat-choi-moi-voi-cac-san-tai-san-ma-hoa-tai-viet-nam-tu-ngay-1812-a80973.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:15:51.212Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kinhdoanhnet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Giá vàng sáng nay 6/11/2026: Tiếp tục giảm sâu",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".post-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:50:31.725Z",
+        "trainingUrls": [
+          "https://kinhdoanhnet.vn/mxh/techcombank-thang-hang-tin-nhiem-quoc-te-cung-co-vi-the-ngan-hang-hang-dau-viet-nam-edit-a1317.html",
+          "https://kinhdoanhnet.vn/mxh/dung-chi-do-loi-cho-chu-dau-tu-ngan-hang-khi-khoan-dau-tu-cua-minh-thua-lo-a1289.html",
+          "https://kinhdoanhnet.vn/mxh/bat-dong-san-ben-song-vi-sao-ngay-cang-duoc-nguoi-mua-nha-de-y-a1287.html"
+        ],
+        "holdoutUrls": [
+          "https://kinhdoanhnet.vn/mxh/novaland-don-tin-hieu-tich-cuc-tai-aqua-city-7-phan-khu-khong-phai-nop-them-tien-su-dung-dat-a1285.html",
+          "https://kinhdoanhnet.vn/mxh/vinhomes-green-paradise-tai-san-bien-ngay-trong-thanh-pho-de-nhung-ky-nghi-khong-can-phai-len-lich-a1279.html"
+        ]
+      }
+    }
+  ]
+}

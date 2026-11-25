@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thanhnienviet.vn",
+  "siteId": "thanhnienviet.vn",
+  "registrableDomain": "thanhnienviet.vn",
+  "homepage": "https://thanhnienviet.vn/",
+  "allowedHosts": [
+    "thanhnienviet.vn",
+    "www.thanhnienviet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước: Phải đổi mới công tác quy hoạch và tổ chức phát triển hạ tầng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:31.268Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thanhnienviet.vn/tong-bi-thu-chu-tich-nuoc-phai-doi-moi-cong-tac-quy-hoach-va-to-chuc-phat-trien-ha-tang-209260807082713164.htm",
+      "https://thanhnienviet.vn/vinh-long-khoi-cong-nha-may-hon-2500-ty-dong-209252808163728865.htm",
+      "https://thanhnienviet.vn/tiep-nang-luong-cung-thanh-nien-viet-nam-tien-buoc-209261023105042589.htm",
+      "https://thanhnienviet.vn/dien-dan-thu-tuong-chinh-phu-doi-thoai-voi-thanh-nien-nam-2026-khoi-nguon-khat-vong-khoi-nghiep-doi-moi-sang-tao-va-tao-viec-lam-cho-the-he-tre-20926101610320137.htm",
+      "https://thanhnienviet.vn/phat-trien-nang-luc-hoi-nhap-quoc-te-cho-thanh-nien-quan-doi-thong-qua-mo-hinh-sang-tao-5t-trong-doi-ngoai-quoc-phong-209261030144345292.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thanhnienviet.vn/",
+    "categories": [
+      "https://thanhnienviet.vn/thoi-su.htm",
+      "https://thanhnienviet.vn/thoi-su/chinh-tri.htm",
+      "https://thanhnienviet.vn/thoi-su/the-gioi.htm",
+      "https://thanhnienviet.vn/thoi-su/tieu-diem.htm",
+      "https://thanhnienviet.vn/thoi-su/xa-hoi.htm",
+      "https://thanhnienviet.vn/thoi-su/bao-hiem-xa-hoi.htm",
+      "https://thanhnienviet.vn/gioi-tre.htm",
+      "https://thanhnienviet.vn/gioi-tre/nhip-song-tre.htm",
+      "https://thanhnienviet.vn/gioi-tre/doan-hoi-doi.htm",
+      "https://thanhnienviet.vn/gioi-tre/lam-theo-loi-bac.htm",
+      "https://thanhnienviet.vn/gioi-tre/nhat-ky-tinh-nguyen.htm",
+      "https://thanhnienviet.vn/ly-luan-tre.htm",
+      "https://thanhnienviet.vn/giao-duc.htm",
+      "https://thanhnienviet.vn/giao-duc/day-nghe.htm",
+      "https://thanhnienviet.vn/giao-duc/du-hoc.htm",
+      "https://thanhnienviet.vn/giao-duc/huong-nghiep.htm",
+      "https://thanhnienviet.vn/giao-duc/dao-tao-truc-tuyen.htm",
+      "https://thanhnienviet.vn/giao-duc/viec-lam.htm",
+      "https://thanhnienviet.vn/cong-nghe.htm",
+      "https://thanhnienviet.vn/cong-nghe/so-hoa.htm",
+      "https://thanhnienviet.vn/cong-nghe/o-to-xe-may.htm",
+      "https://thanhnienviet.vn/cong-nghe/so-huu-tri-tue.htm",
+      "https://thanhnienviet.vn/doanh-nhan.htm",
+      "https://thanhnienviet.vn/doanh-nhan/guong-doanh-nhan-tre.htm",
+      "https://thanhnienviet.vn/doanh-nhan/hoi-nhap.htm",
+      "https://thanhnienviet.vn/the-thao.htm",
+      "https://thanhnienviet.vn/the-thao/tennis.htm",
+      "https://thanhnienviet.vn/the-thao/the-thao-trong-nuoc.htm",
+      "https://thanhnienviet.vn/the-thao/the-thao-quoc-te.htm",
+      "https://thanhnienviet.vn/the-thao/van-hoa-the-thao.htm",
+      "https://thanhnienviet.vn/giai-tri.htm",
+      "https://thanhnienviet.vn/giai-tri/van-hoa.htm",
+      "https://thanhnienviet.vn/giai-tri/goc-hai-huoc.htm",
+      "https://thanhnienviet.vn/giai-tri/thu-gian.htm",
+      "https://thanhnienviet.vn/suc-khoe.htm",
+      "https://thanhnienviet.vn/suc-khoe/dinh-duong.htm",
+      "https://thanhnienviet.vn/suc-khoe/gioi-tinh.htm",
+      "https://thanhnienviet.vn/suc-khoe/truyen-thong-y-te.htm",
+      "https://thanhnienviet.vn/tai-chinh.htm",
+      "https://thanhnienviet.vn/tai-chinh/tai-chinh-ngan-hang.htm",
+      "https://thanhnienviet.vn/tai-chinh/chung-khoan.htm",
+      "https://thanhnienviet.vn/tai-chinh/tien-te.htm",
+      "https://thanhnienviet.vn/can-biet.htm",
+      "https://thanhnienviet.vn/can-biet/thi-truong.htm",
+      "https://thanhnienviet.vn/ban-doc.htm",
+      "https://thanhnienviet.vn/ban-doc/hop-thu-ban-doc.htm",
+      "https://thanhnienviet.vn/ban-doc/duong-day-nong.htm",
+      "https://thanhnienviet.vn/ban-doc/nhip-cau-nhan-ai.htm",
+      "https://thanhnienviet.vn/emagazine.htm",
+      "https://thanhnienviet.vn/video.htm",
+      "https://thanhnienviet.vn/anh.htm",
+      "https://thanhnienviet.vn/infographic.htm",
+      "https://thanhnienviet.vn/thanh-nien-dan-toc.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thanhnienviet.vn",
+    "checkedAt": "2026-11-09T03:57:29.098Z",
+    "url": "https://thanhnienviet.vn/tong-bi-thu-chu-tich-nuoc-phai-doi-moi-cong-tac-quy-hoach-va-to-chuc-phat-trien-ha-tang-209260807082713164.htm",
+    "finalUrl": "https://thanhnienviet.vn/tong-bi-thu-chu-tich-nuoc-phai-doi-moi-cong-tac-quy-hoach-va-to-chuc-phat-trien-ha-tang-209260807082713164.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7343,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thanhnienviet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 83,
+    "checkedArticleUrls": 85,
+    "freshArticleChecks": 20,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 83,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 54,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 496,
+        "passed": 83,
+        "distinctHashes": 83
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thanhnienviet.vn/tiep-nang-luong-cung-thanh-nien-viet-nam-tien-buoc-209261023105042589.htm",
+      "https://thanhnienviet.vn/dien-dan-thu-tuong-chinh-phu-doi-thoai-voi-thanh-nien-nam-2026-khoi-nguon-khat-vong-khoi-nghiep-doi-moi-sang-tao-va-tao-viec-lam-cho-the-he-tre-20926101610320137.htm",
+      "https://thanhnienviet.vn/phat-trien-nang-luc-hoi-nhap-quoc-te-cho-thanh-nien-quan-doi-thong-qua-mo-hinh-sang-tao-5t-trong-doi-ngoai-quoc-phong-209261030144345292.htm",
+      "https://thanhnienviet.vn/kien-tao-doi-ngu-quan-nhan-so-dap-ung-yeu-cau-xay-dung-nha-truong-quan-doi-thong-minh-hien-dai-209261103081101324.htm",
+      "https://thanhnienviet.vn/khoa-lich-su-truong-dai-hoc-su-pham-thanh-pho-ho-chi-minh-nua-the-ky-boi-dap-tri-thuc-hun-duc-tinh-yeu-lich-su-va-khat-vong-cong-hien-209261101153616434.htm",
+      "https://thanhnienviet.vn/tuoi-tre-nganh-y-lam-chu-cong-nghe-giu-tron-y-duc-het-long-vi-nguoi-benh-209261029100635665.htm",
+      "https://thanhnienviet.vn/108-tac-pham-vao-chung-khao-giai-bao-chi-toan-quoc-vi-su-nghiep-phat-trien-van-hoa-viet-nam-209261103085844915.htm",
+      "https://thanhnienviet.vn/mang-cao-hieu-qua-hop-tac-ve-quoc-phong-an-ninh-va-kinh-te-xa-hoi-giua-cac-tinh-bien-gioi-viet-nam-campuchia-trong-tinh-hinh-moi-209261110153254138.htm",
+      "https://thanhnienviet.vn/uy-ban-olympic-viet-nam-phoi-hop-cung-herbalife-viet-nam-to-chuc-tap-huan-dinh-duong-va-hoi-phuc-cho-cac-mon-suc-ben-suc-manh-209261110152906219.htm",
+      "https://thanhnienviet.vn/giai-phap-phong-chong-bao-luc-tren-khong-gian-mang-cho-sinh-vien-hien-nay-20926111015260269.htm",
+      "https://thanhnienviet.vn/khi-thu-nhap-tang-them-nen-tu-thuong-hay-tich-luy-cho-tuong-lai-209261110113118265.htm",
+      "https://thanhnienviet.vn/le-tuyen-duong-chuong-trinh-chia-se-cung-thay-conam-2026-209261110100533175.htm",
+      "https://thanhnienviet.vn/de-xuat-quy-dinh-moi-tieu-chuan-dieu-kien-bo-nhiem-mien-nhiem-giao-su-pho-giao-su-209261110081644354.htm",
+      "https://thanhnienviet.vn/bo-truong-bo-y-te-minh-bach-gia-thuoc-thiet-bi-y-te-tranh-tang-gia-day-gia-209261110081451552.htm",
+      "https://thanhnienviet.vn/phu-nhan-tong-bi-thu-chu-tich-nuoc-to-lam-du-cac-hoat-dong-giao-luu-van-hoa-nghe-thuat-tai-nhat-ban-209261110081257735.htm",
+      "https://thanhnienviet.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-209261110081038589.htm",
+      "https://thanhnienviet.vn/them-luan-cu-gop-phan-dau-tranh-phan-bac-cac-luan-dieu-phu-nhan-tu-tuong-ho-chi-minh-ve-dang-cong-san-viet-nam-209261110080830356.htm",
+      "https://thanhnienviet.vn/tu-nghi-quyet-den-thuc-tien-hoc-sinh-sinh-vien-tphcm-but-pha-voi-khoi-nghiep-xanh-tu-phu-pham-nong-nghiep-209260810114551577.htm",
+      "https://thanhnienviet.vn/tong-bi-thu-chu-tich-nuoc-phai-doi-moi-cong-tac-quy-hoach-va-to-chuc-phat-trien-ha-tang-209260807082713164.htm",
+      "https://thanhnienviet.vn/vinh-long-khoi-cong-nha-may-hon-2500-ty-dong-209252808163728865.htm",
+      "https://thanhnienviet.vn/hapro-tham-gia-trien-lam-thanh-tuu-kinh-te-xa-hoi-nhan-dip-ky-niem-80-nam-ngay-quoc-khanh-viet-nam-209250829115516311.htm",
+      "https://thanhnienviet.vn/tong-bi-thu-nguyen-phu-trong-khong-bao-gio-dua-cai-toi-cua-minh-vao-ly-luan-20924072310181931.htm",
+      "https://thanhnienviet.vn/thu-tuong-chinh-phu-doi-thoai-voi-thanh-nien-nam-2026-209261016105554135.htm",
+      "https://thanhnienviet.vn/hoi-lien-hiep-thanh-nien-viet-nam-don-nhan-huan-chuong-lao-dong-hang-nhat-20926101210540188.htm",
+      "https://thanhnienviet.vn/tap-chi-thanh-nien-64-nam-xay-dung-phat-trien-dong-hanh-cung-thanh-thieu-nien-viet-nam-15-10-1962-15-10-2026-209261012144412336.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:17:17.014Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thanhnienviet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "thanhnienviet.vn",
+      "siteId": "thanhnienviet.vn",
+      "registrableDomain": "thanhnienviet.vn",
+      "homepage": "https://thanhnienviet.vn/",
+      "allowedHosts": [
+        "thanhnienviet.vn",
+        "www.thanhnienviet.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Tổng Bí thư, Chủ tịch nước: Phải đổi mới công tác quy hoạch và tổ chức phát triển hạ tầng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:52.278Z",
+        "trainingUrls": [
+          "https://thanhnienviet.vn/tu-ngay-1-11-2026-hoa-don-tien-dien-chi-dao-chieu-dat-hon-khi-vuot-qua-moc-nay-209261109160249854.htm"
+        ],
+        "holdoutUrls": [
+          "https://thanhnienviet.vn/luong-30-trieu-dong-van-kho-tuyen-ha-noi-dang-thieu-lao-dong-nao-209261109113731397.htm",
+          "https://thanhnienviet.vn/chu-xe-quyet-giu-lexus-rx-350-gan-10-nam-tuoi-bao-duong-re-hon-nhieu-nguoi-nghi-cam-xuc-tu-may-v6-la-thu-xe-moi-khong-bao-gio-co-duoc-209261107212709434.htm"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "thanhnienviet.vn",
+      "siteId": "thanhnienviet.vn",
+      "registrableDomain": "thanhnienviet.vn",
+      "homepage": "https://thanhnienviet.vn/",
+      "allowedHosts": [
+        "thanhnienviet.vn",
+        "www.thanhnienviet.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Tổng Bí thư, Chủ tịch nước: Phải đổi mới công tác quy hoạch và tổ chức phát triển hạ tầng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:52.278Z",
+        "trainingUrls": [
+          "https://thanhnienviet.vn/tu-thang-7-2026-tat-ca-tre-duoi-6-tuoi-duoc-kham-suc-khoe-dinh-ky-mien-phi-20926072910390416.htm"
+        ],
+        "holdoutUrls": [
+          "https://thanhnienviet.vn/chuyen-cua-quang-anh-va-chuyen-cua-rhyder-hanh-trinh-lay-lai-hao-quang-o-tuoi-23-209241231214122545.htm",
+          "https://thanhnienviet.vn/chuyen-thay-khang-o-ha-noi-tu-hieu-truong-marie-curie-den-ong-noi-nuoi-22-dua-tre-lang-nu-209241231174142337.htm"
+        ]
+      }
+    }
+  ]
+}

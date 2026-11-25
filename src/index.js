@@ -1,5 +1,8 @@
 import 'dotenv/config';
+import {createApiAuthentication} from './services/apiAuthentication.js';
+import 'dotenv/config';
 import express from 'express';
+import { createFacebookShareRouter } from './routes/facebookShare.js';
 import { createBullBoard } from '@bull-board/api';
 import { BullMQAdapter } from '@bull-board/api/bullMQAdapter';
 import { ExpressAdapter } from '@bull-board/express';
@@ -32,6 +35,8 @@ createBullBoard({
 });
 
 const app = express();
+app.use(createApiAuthentication());
+app.use(createFacebookShareRouter());
 app.use('/', serverAdapter.getRouter());
 
 app.listen(BOARD_PORT, () => {

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "founder.com.vn",
+  "siteId": "founder.com.vn",
+  "registrableDomain": "founder.com.vn",
+  "homepage": "https://founder.com.vn/",
+  "allowedHosts": [
+    "founder.com.vn",
+    "www.founder.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://founder.com.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "TTC Land (SCR) thu về 237 tỷ đồng doanh thu định kỳ với biên lãi gộp vượt 51%, chuyển hóa hơn 2.066 tỷ đồng tồn kho sang tài sản cho thuê",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:57.070Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:48.912Z",
+    "independentHoldouts": [
+      "https://founder.com.vn/novaland-vuot-ke-hoach-loi-nhuan-2026-dai-do-thi-aqua-city-ghi-nhan-chuyen-bien-moi-a82025.html",
+      "https://founder.com.vn/ct-uav-quyet-khong-thua-duc-nhat-a82023.html",
+      "https://founder.com.vn/aeon-hai-duong-diem-sang-thuong-mai-gan-lien-phat-trien-ben-vung-a82022.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://founder.com.vn/ttc-land-scr-lai-rong-cong-ty-me-quy-32026-tang-gap-4-lan-dong-tien-cai-thien-nho-van-hanh-ttc-plaza-da-nang-va-quyet-liet-thu-hoi-cong-no-a82024.html",
+      "https://founder.com.vn/novaland-vuot-ke-hoach-loi-nhuan-2026-dai-do-thi-aqua-city-ghi-nhan-chuyen-bien-moi-a82025.html",
+      "https://founder.com.vn/ct-uav-quyet-khong-thua-duc-nhat-a82023.html",
+      "https://founder.com.vn/aeon-hai-duong-diem-sang-thuong-mai-gan-lien-phat-trien-ben-vung-a82022.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

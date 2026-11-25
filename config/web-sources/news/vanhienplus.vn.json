@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vanhienplus.vn",
+  "siteId": "vanhienplus.vn",
+  "registrableDomain": "vanhienplus.vn",
+  "homepage": "https://vanhienplus.vn/",
+  "allowedHosts": [
+    "vanhienplus.vn",
+    "www.vanhienplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Văn hóa doanh nghiệp: Chuyển hóa giá trị văn hóa thành sức mạnh phát triển quốc gia",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:50.982Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vanhienplus.vn/van-hoa-doanh-nghiep-chuyen-hoa-gia-tri-van-hoa-thanh-suc-manh-phat-trien-quoc-gia/121994/",
+      "https://vanhienplus.vn/hop-tac-y-te-viet-nhat-hon-nua-the-ky-dong-hanh-vi-suc-khoe-nhan-dan/121986/",
+      "https://vanhienplus.vn/sot-xuat-huyet-dengue-dien-bien-phuc-tap-ket-hop-nhieu-giai-phap-de-giam-ca-mac-va-tu-vong/121944/",
+      "https://vanhienplus.vn/bung-vi-nam-chau-tai-le-hoi-van-hoa-am-thuc-quoc-te-ha-noi-2026/121940/",
+      "https://vanhienplus.vn/quang-ngai-18-nguoi-nhap-vien-sau-an-banh-mi-co-quan-chuc-nang-phat-hien-gi-tai-3-diem-ban/121930/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vanhienplus.vn/",
+    "categories": [
+      "https://vanhienplus.vn/su-kien-va-binh-luan/",
+      "https://vanhienplus.vn/van-hoa/",
+      "https://vanhienplus.vn/bao-ton-va-di-san/",
+      "https://vanhienplus.vn/xa-hoi-va-phat-trien/",
+      "https://vanhienplus.vn/tac-pham-va-nghe-si/",
+      "https://vanhienplus.vn/du-lich-va-doanh-nghiep/",
+      "https://vanhienplus.vn/phap-luat-va-giao-duc/",
+      "https://vanhienplus.vn/goc-nhin-dan-sinh/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vanhienplus.vn",
+    "checkedAt": "2026-11-09T03:57:35.667Z",
+    "url": "https://vanhienplus.vn/van-hoa-doanh-nghiep-chuyen-hoa-gia-tri-van-hoa-thanh-suc-manh-phat-trien-quoc-gia/121994/",
+    "finalUrl": "https://vanhienplus.vn/van-hoa-doanh-nghiep-chuyen-hoa-gia-tri-van-hoa-thanh-suc-manh-phat-trien-quoc-gia/121994/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11092,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:35.083Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/vanhienplus.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "vanhienplus.vn",
+    "parsedArticles": 10,
+    "distinctHashes": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 207,
+    "checkedArticleUrls": 10,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 207,
+        "attempted": 10,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

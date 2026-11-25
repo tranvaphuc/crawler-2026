@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafebitcoin.org",
+  "siteId": "cafebitcoin.org",
+  "registrableDomain": "cafebitcoin.org",
+  "homepage": "https://cafebitcoin.org/",
+  "allowedHosts": [
+    "cafebitcoin.org",
+    "www.cafebitcoin.org"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Binance mở lại rút tiền giai đoạn 2 sau vụ hack 6,3 tỷ USD: Dòng tiền rút khỏi sàn bắt đầu hạ nhiệt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:20.031Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+      "https://cafebitcoin.org/bitcoin-co-the-sap-buoc-vao-dot-tang-manh-khi-nhung-dong-btc-lau-nam-ngung-dich-chuyen/",
+      "https://cafebitcoin.org/tom-lee-khang-dinh-thi-truong-crypto-da-buoc-vao-chu-ky-tang-gia-bitmine-tiep-tuc-gom-them-10-452-eth/",
+      "https://cafebitcoin.org/meta-earth-chinh-thuc-khai-truong-van-phong-tai-tp-ho-chi-minh-buoc-di-chien-luoc-vao-thi-truong-viet-nam/",
+      "https://cafebitcoin.org/binance-bi-tan-cong-mang-gay-thiet-hai-58-ty-usd/",
+      "https://cafebitcoin.org/xrp-dat-ky-luc-824-trieu-vi-nam-giu-nhung-gia-van-giam-17-dieu-gi-dang-xay-ra/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafebitcoin.org/",
+    "categories": [
+      "https://cafebitcoin.org/category/altcoin/",
+      "https://cafebitcoin.org/blog/",
+      "https://cafebitcoin.org/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.261Z",
+      "verifiedSeeds": [
+        "https://cafebitcoin.org/",
+        "https://cafebitcoin.org/category/altcoin/",
+        "https://cafebitcoin.org/blog/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafebitcoin.org",
+    "checkedAt": "2026-11-09T03:56:53.552Z",
+    "url": "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+    "finalUrl": "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3987,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafebitcoin.org",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 13,
+    "freshArticleChecks": 8,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 3,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 1,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 22,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+      "https://cafebitcoin.org/meta-earth-chinh-thuc-khai-truong-van-phong-tai-tp-ho-chi-minh-buoc-di-chien-luoc-vao-thi-truong-viet-nam/",
+      "https://cafebitcoin.org/bitcoin-co-the-sap-buoc-vao-dot-tang-manh-khi-nhung-dong-btc-lau-nam-ngung-dich-chuyen/",
+      "https://cafebitcoin.org/xrp-dat-ky-luc-824-trieu-vi-nam-giu-nhung-gia-van-giam-17-dieu-gi-dang-xay-ra/",
+      "https://cafebitcoin.org/ap-luc-ban-bitcoin-xuong-muc-hiem-thay-nha-dau-tu-dai-han-van-chua-muon-ban/",
+      "https://cafebitcoin.org/binance-bi-rut-rong-58-ty-usd-sau-vu-hack-lich-su-niem-tin-cua-nha-dau-tu-dang-bi-thu-thach/",
+      "https://cafebitcoin.org/binance-bi-hack-63-ty-usd-vu-danh-cap-crypto-lon-nhat-lich-su-va-cam-ket-boi-thuong-toan-bo-thiet-hai/",
+      "https://cafebitcoin.org/binance-bi-tan-cong-mang-gay-thiet-hai-58-ty-usd/",
+      "https://cafebitcoin.org/bitwise-nang-du-bao-bitcoin-len-16-trieu-usd-vao-nam-2036-loi-nhuan-ky-vong-34-moi-nam/",
+      "https://cafebitcoin.org/tom-lee-khang-dinh-thi-truong-crypto-da-buoc-vao-chu-ky-tang-gia-bitmine-tiep-tuc-gom-them-10-452-eth/",
+      "https://cafebitcoin.org/dwf-labs-nguoi-mua-etf-bitcoin-la-nhung-nguoi-di-theo-xu-huong-chu-khong-phai-nguoi-tao-ra-xu-huong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:34.124Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafebitcoin.org/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T04:50:58.276Z",
+    "method": "wordpress",
+    "proofs": [
+      {
+        "url": "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+        "contentHash": "550edec26cd26a0efa9364726cde4eca68c7a43184705866e646e0f601b5adc2",
+        "description": "Sau những ngày đầy biến động vì vụ tấn công trị giá 6,3 tỷ USD, Binance đang từng bước khôi phục hoạt động bình thường. Theo thông báo ngày 3/11, sàn giao dịch tiền mã hóa lớn nhất thế giới bắt đầu triển khai giai đoạn 2 của kế hoạch mở lại rút tiền, trong […]",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://cafebitcoin.org/binance-mo-lai-rut-tien-giai-doan-2-sau-vu-hack-63-ty-usd-dong-tien-rut-khoi-san-bat-dau-ha-nhiet/",
+          "publishedDate": "2026-11-03T07:47:37.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://cafebitcoin.org/binance-bi-tan-cong-mang-gay-thiet-hai-58-ty-usd/",
+        "contentHash": "d4eb2c11e9449511aac6fe93a8c24582d8ee9ead1ba5018eaf2395ec90372b84",
+        "description": "Binance đang điều tra một vụ vi phạm an ninh tiềm tàng trị giá hàng tỷ USD liên quan đến một trong những ví Ethereum của họ, sau khi các giao dịch đáng ngờ đã khiến các nhà phát hành stablecoin Tether và Circle được cho là đã đóng băng gần 1,8 tỷ USD tài […]",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://cafebitcoin.org/binance-bi-tan-cong-mang-gay-thiet-hai-58-ty-usd/",
+          "publishedDate": "2026-10-29T23:07:42.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://cafebitcoin.org/tom-lee-khang-dinh-thi-truong-crypto-da-buoc-vao-chu-ky-tang-gia-bitmine-tiep-tuc-gom-them-10-452-eth/",
+        "contentHash": "7ebb7bc77cb20e97c6bae26d8cc7997562f979c7040ebb7ef628192a118628b2",
+        "description": "Bất chấp những biến động gần đây của thị trường tiền mã hóa, Tom Lee vẫn tin rằng chu kỳ tăng giá crypto đã bắt đầu. Đáng chú ý, công ty BitMine do ông làm Chủ tịch vừa tiếp tục mua thêm 10.452 ETH, nâng tổng lượng Ethereum nắm giữ lên hơn 6,05 triệu ETH. […]",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://cafebitcoin.org/tom-lee-khang-dinh-thi-truong-crypto-da-buoc-vao-chu-ky-tang-gia-bitmine-tiep-tuc-gom-them-10-452-eth/",
+          "publishedDate": "2026-10-27T08:35:46.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null,
+  "nativePublicationAdapter": "declared_wordpress_post"
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Check newly observed newspaper sections every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=30
+Unit=news-category-maintenance.service
+
+[Install]
+WantedBy=timers.target

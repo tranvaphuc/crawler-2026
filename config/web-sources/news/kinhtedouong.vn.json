@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtedouong.vn",
+  "siteId": "kinhtedouong.vn",
+  "registrableDomain": "kinhtedouong.vn",
+  "homepage": "https://kinhtedouong.vn/",
+  "allowedHosts": [
+    "kinhtedouong.vn",
+    "www.kinhtedouong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Festival Trà Quốc tế - Thái Nguyên 2026: Tôn vinh di sản, khẳng định vị thế “Đệ nhất danh trà”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:30.706Z",
+    "sampleCount": 10,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 7,
+    "sampleUrls": [
+      "https://kinhtedouong.vn/festival-tra-quoc-te--thai-nguyen-2026-ton-vinh-di-san-khang-dinh-vi-the-de-nhat-danh-tra-154021.html",
+      "https://kinhtedouong.vn/tp-ho-chi-minh-tang-toc-chuan-bi-nang-tam-dien-dan-kinh-te-mua-thu-2026-154052.html",
+      "https://kinhtedouong.vn/starbucks-ra-mat-honey-glazed-walnut--bo-doi-thuc-uong-mua-thu-day-cam-xuc-128442.html",
+      "https://kinhtedouong.vn/lien-ket-que-lam-tao-dong-luc-phat-trien-nong-nghiep-huu-co-o-ha-tinh-164708.html",
+      "https://kinhtedouong.vn/bai-sau-chuyen-minh-voi-dien-mao-do-thi-bien-hien-dai-164707.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtedouong.vn/",
+    "categories": [
+      "https://kinhtedouong.vn/tin-tuc-su-kien/",
+      "https://kinhtedouong.vn/kinh-te-tieu-dung/",
+      "https://kinhtedouong.vn/doi-song/",
+      "https://kinhtedouong.vn/thi-truong/",
+      "https://kinhtedouong.vn/doanh-nghiep-doanh-nhan/",
+      "https://kinhtedouong.vn/do-uong/",
+      "https://kinhtedouong.vn/phap-luat/",
+      "https://kinhtedouong.vn/khoa-giao/",
+      "https://kinhtedouong.vn/multimedia/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtedouong.vn",
+    "checkedAt": "2026-11-09T03:57:11.013Z",
+    "url": "https://kinhtedouong.vn/festival-tra-quoc-te--thai-nguyen-2026-ton-vinh-di-san-khang-dinh-vi-the-de-nhat-danh-tra-154021.html",
+    "finalUrl": "https://kinhtedouong.vn/festival-tra-quoc-te--thai-nguyen-2026-ton-vinh-di-san-khang-dinh-vi-the-de-nhat-danh-tra-154021.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6095,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:35.637Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhtedouong.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhtedouong.vn",
+    "parsedArticles": 18,
+    "distinctHashes": 18,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 201,
+    "checkedArticleUrls": 18,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 201,
+        "attempted": 16,
+        "passed": 18,
+        "distinctContents": 5,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "kinhtedouong.vn",
+      "siteId": "kinhtedouong.vn",
+      "registrableDomain": "kinhtedouong.vn",
+      "homepage": "https://kinhtedouong.vn/",
+      "allowedHosts": [
+        "kinhtedouong.vn",
+        "www.kinhtedouong.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Festival Trà Quốc tế - Thái Nguyên 2026: Tôn vinh di sản, khẳng định vị thế “Đệ nhất danh trà”",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".news-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:56.812Z",
+        "trainingUrls": [
+          "https://kinhtedouong.vn/thai-nguyen-khan-truong-hoan-tat-cong-tac-chuan-bi-festival-tra-quoc-te-2026-164450.html",
+          "https://kinhtedouong.vn/tphcm-thuc-day-kinh-te-tap-the-do-phu-nu-lam-chu-164442.html",
+          "https://kinhtedouong.vn/phat-trien-vung-che-gan-voi-du-lich-trai-nghiem-mo-huong-di-moi-cho-kinh-te-tra-164449.html",
+          "https://kinhtedouong.vn/cham-lophat-trien-con-nguoi-la-muc-tieu-hang-dau-cua-phat-trien-ben-vung-164447.html",
+          "https://kinhtedouong.vn/tphcm-quang-ba-nong-nghiep-xanh-va-kinh-te-tuan-hoan-tai-green-expo-2027-164443.html",
+          "https://kinhtedouong.vn/tphcm-nguoi-dan-co-the-mua-ve-xe-buyt-metro-tren-ung-dung-vneid-164253.html",
+          "https://kinhtedouong.vn/vinfast-vf-6-plus-sac-nhanh-di-xa-tiet-kiem-uu-dai-gan-63-trieu-dong-164233.html",
+          "https://kinhtedouong.vn/lan-song-tra-rang-hoicha-153859.html",
+          "https://kinhtedouong.vn/tp-ho-chi-minh-tang-cuong-quan-ly-chan-chinh-vi-pham-giao-thong-trong-hoc-sinh-sinh-vien-153801.html",
+          "https://kinhtedouong.vn/tphcm-to-chuc-lai-2-truong-cao-dang-sau-sap-nhap-153960.html",
+          "https://kinhtedouong.vn/tphcm-thuc-day-giao-thong-cong-cong-huong-den-do-thi-xanh-va-ben-vung-164445.html"
+        ],
+        "holdoutUrls": [
+          "https://kinhtedouong.vn/khai-thac-tiem-nang-du-lich-cong-dong-tai-cac-vung-che-dac-san-thai-nguyen-164731.html",
+          "https://kinhtedouong.vn/che-tuyen-quang-khang-dinh-pham-cap-tai-bup-che-vang-viet-nam-2026-164729.html"
+        ]
+      }
+    }
+  ]
+}

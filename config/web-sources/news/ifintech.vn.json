@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ifintech.vn",
+  "siteId": "ifintech.vn",
+  "registrableDomain": "ifintech.vn",
+  "homepage": "https://ifintech.vn/",
+  "allowedHosts": [
+    "ifintech.vn",
+    "www.ifintech.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ứng dụng AI trong doanh nghiệp: tối ưu chi phí và dữ liệu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:18.822Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://ifintech.vn/ung-dung-ai-trong-doanh-nghiep-toi-uu-chi-phi-va-du-lieu/",
+      "https://ifintech.vn/top-5-sai-lam-thuong-gap-ve-fintech-khi-dung-app/",
+      "https://ifintech.vn/san-crypto-duoc-cap-phep-tai-viet-nam-cach-tu-tra-cuu-truoc-khi-nap-tien/",
+      "https://ifintech.vn/top-7-xu-huong-vi-dien-tu-va-chuyen-tien-nam-2026/",
+      "https://ifintech.vn/app-dau-tu-chung-khoan-viet-nam-tieu-chi-chon-cho-nguoi-moi/",
+      "https://ifintech.vn/doi-soat-chuyen-khoan-tu-dong-cho-shop-key-game-case-2-000-don-thang/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://ifintech.vn/",
+    "categories": [
+      "https://ifintech.vn/ve-ifintechvn/",
+      "https://ifintech.vn/cong-nghe-tai-chinh-fintech/",
+      "https://ifintech.vn/category/p2p-lending/",
+      "https://ifintech.vn/category/insurtech/",
+      "https://ifintech.vn/category/fintech/",
+      "https://ifintech.vn/category/kien-thuc-tai-chinh/",
+      "https://ifintech.vn/kien-thuc-dau-tu/",
+      "https://ifintech.vn/category/ngan-hang/",
+      "https://ifintech.vn/category/tien-dien-tu/",
+      "https://ifintech.vn/category/vang/",
+      "https://ifintech.vn/category/chung-chi-quy/",
+      "https://ifintech.vn/category/chung-khoan/",
+      "https://ifintech.vn/category/tin-tuc/",
+      "https://ifintech.vn/dau-tu-tai-chinh-4-0/",
+      "https://ifintech.vn/fundingvn/",
+      "https://ifintech.vn/gofundme-la-gi/",
+      "https://ifintech.vn/fundraz/",
+      "https://ifintech.vn/ung-dung-ai-trong-doanh-nghiep-toi-uu-chi-phi-va-du-lieu/",
+      "https://ifintech.vn/top-5-sai-lam-thuong-gap-ve-fintech-khi-dung-app/",
+      "https://ifintech.vn/san-crypto-duoc-cap-phep-tai-viet-nam-cach-tu-tra-cuu-truoc-khi-nap-tien/",
+      "https://ifintech.vn/top-7-xu-huong-vi-dien-tu-va-chuyen-tien-nam-2026/",
+      "https://ifintech.vn/app-dau-tu-chung-khoan-viet-nam-tieu-chi-chon-cho-nguoi-moi/",
+      "https://ifintech.vn/dau-tu-online-co-an-toan-khong-4-tieu-chi-tu-kiem-tra/",
+      "https://ifintech.vn/dau-tu-online-von-it-3-kenh-hop-phap-va-rui-ro-can-biet/",
+      "https://ifintech.vn/vi-dien-tu-tai-viet-nam-chon-vi-theo-nhu-cau-thuc-te/",
+      "https://ifintech.vn/dau-tu-vang-nen-mua-vang-nhan-hay-vang-mieng-phan-tich-thuc-te/",
+      "https://ifintech.vn/vay-vdong/",
+      "https://ifintech.vn/tieu-chuan-basel-la-gi/",
+      "https://ifintech.vn/vay-finami/",
+      "https://ifintech.vn/doi-soat-chuyen-khoan-tu-dong-cho-shop-key-game-case-2-000-don-thang/",
+      "https://ifintech.vn/bang-gia-mona-cloud-thang-11-2026-so-sanh-chi-phi-deploy/",
+      "https://ifintech.vn/camera-360-wifi-gia-re-nen-mua-loai-nao-nam-2026/",
+      "https://ifintech.vn/nhap-hang-trung-quoc-chinh-ngach-kinh-nghiem-thuc-te-tu-doi-ngu/",
+      "https://ifintech.vn/ket-sat-tiem-vang-bao-nhieu-tien-moc-gia-thuc-te/",
+      "https://ifintech.vn/khoa-van-tay-cua-nhom-cho-phong-du-lieu-van-phong-fintech/",
+      "https://ifintech.vn/chinh-sach-bao-mat-cua-ifintech-vn/",
+      "https://ifintech.vn/tuyen-bo-mien-tru-trach-nhiem-phap-ly/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "ifintech.vn",
+    "checkedAt": "2026-11-09T03:57:07.244Z",
+    "url": "https://ifintech.vn/ung-dung-ai-trong-doanh-nghiep-toi-uu-chi-phi-va-du-lieu/",
+    "finalUrl": "https://ifintech.vn/ung-dung-ai-trong-doanh-nghiep-toi-uu-chi-phi-va-du-lieu/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5846,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ifintech.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 34,
+    "checkedArticleUrls": 34,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 34,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 37,
+    "categoriesFreshChecked": 12,
+    "categoriesUnconfirmed": 12,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 52,
+        "passed": 34,
+        "distinctHashes": 34
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ifintech.vn/mo-tai-khoan-ngan-hang-trung-quoc-tai-viet-nam/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:42.587Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ifintech.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

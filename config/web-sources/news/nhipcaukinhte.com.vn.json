@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipcaukinhte.com.vn",
+  "siteId": "nhipcaukinhte.com.vn",
+  "registrableDomain": "nhipcaukinhte.com.vn",
+  "homepage": "https://nhipcaukinhte.com.vn/",
+  "allowedHosts": [
+    "nhipcaukinhte.com.vn",
+    "www.nhipcaukinhte.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Các công ty chứng khoán thu lãi margin 12.843 tỷ đồng trong quý III",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:56.632Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/cac-cong-ty-chung-khoan-thu-lai-margin-12.843-ty-dong-trong-quy-iii.html",
+      "https://nhipcaukinhte.com.vn/thi-truong/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html",
+      "https://nhipcaukinhte.com.vn/thi-truong/gia-lai-khai-truong-trien-lam-nong-san-ton-vinh-ca-phe-dac-san.html",
+      "https://nhipcaukinhte.com.vn/the-gioi/ten-lua-sejil-va-khorramshahr-se-bay-vao-lviv-neu-my-noi-lai-tan-cong-iran.html",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/ngay-van-hoa-viet-nam-2026-406-hoat-dong-lan-toa-ban-sac-va-suc-manh-dai-doan-ket.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipcaukinhte.com.vn/",
+    "categories": [
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h",
+      "https://nhipcaukinhte.com.vn/the-gioi",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep",
+      "https://nhipcaukinhte.com.vn/ngan-hang",
+      "https://nhipcaukinhte.com.vn/xa-hoi",
+      "https://nhipcaukinhte.com.vn/dau-tu-hop-tac",
+      "https://nhipcaukinhte.com.vn/thi-truong",
+      "https://nhipcaukinhte.com.vn/nhip-song-so",
+      "https://nhipcaukinhte.com.vn/video-clip",
+      "https://nhipcaukinhte.com.vn/moi-truong",
+      "https://nhipcaukinhte.com.vn/emagazine",
+      "https://nhipcaukinhte.com.vn/star?isFeatured=1",
+      "https://nhipcaukinhte.com.vn/ocop?isFeatured=1",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/video-tieu-diem-24h",
+      "https://nhipcaukinhte.com.vn/the-gioi/video",
+      "https://nhipcaukinhte.com.vn/thi-truong/video?isFeatured=1",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/video",
+      "https://nhipcaukinhte.com.vn/ngan-hang/video",
+      "https://nhipcaukinhte.com.vn/xa-hoi/video",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipcaukinhte.com.vn",
+    "checkedAt": "2026-11-09T03:57:19.506Z",
+    "url": "https://nhipcaukinhte.com.vn/doanh-nghiep/cac-cong-ty-chung-khoan-thu-lai-margin-12.843-ty-dong-trong-quy-iii.html",
+    "finalUrl": "https://nhipcaukinhte.com.vn/doanh-nghiep/cac-cong-ty-chung-khoan-thu-lai-margin-12.843-ty-dong-trong-quy-iii.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4199,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipcaukinhte.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 20,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 188,
+        "passed": 17,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipcaukinhte.com.vn/the-gioi/tinh-bao-nga-canh-bao-eu-tim-cach-dua-hon-1-trieu-nam-gioi-ukraina-ve-nuoc.html",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/doanh-nghiep-phia-bac-tphcm-tuyen-gap-hang-nghin-lao-dong.html",
+      "https://nhipcaukinhte.com.vn/the-gioi/my-chi-ra-vai-tro-cua-chau-au-trong-qua-trinh-cham-dut-xung-dot-ukraina.html",
+      "https://nhipcaukinhte.com.vn/the-gioi/iran-yeu-cau-my-ngung-tung-tin-gia-ve-cac-cuoc-dam-phan.html",
+      "https://nhipcaukinhte.com.vn/xa-hoi/lao-cai-phat-trien-doan-vien-tu-su-gan-gui-lang-nghe.html",
+      "https://nhipcaukinhte.com.vn/xa-hoi/bi-thu-xa-len-song-du-lich-va-nong-san-hut-khach.html",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/mien-nhiem-2-pho-chu-tich-bau-3-pho-chu-tich-ubnd-tinh-vinh-long.html",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/mo-rong-22km-cao-toc-tphcm-long-thanh-ket-noi-san-bay-hoan-thanh-trong-quy-i-2027.html",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/mien-nhiem-2-pho-chu-tich-bau-3-pho-chu-tich-ubnd-tinh-vinh-long.html?categoryId=1642313",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/mo-rong-22km-cao-toc-tphcm-long-thanh-ket-noi-san-bay-hoan-thanh-trong-quy-i-2027.html?categoryId=1642313",
+      "https://nhipcaukinhte.com.vn/the-gioi/tinh-bao-nga-canh-bao-eu-tim-cach-dua-hon-1-trieu-nam-gioi-ukraina-ve-nuoc.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/the-gioi/my-chi-ra-vai-tro-cua-chau-au-trong-qua-trinh-cham-dut-xung-dot-ukraina.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/thi-truong/gia-bac-tuan-9-13-11-thi-truong-xuat-hien-tin-hieu-phuc-hoi.html?categoryId=1642306",
+      "https://nhipcaukinhte.com.vn/thi-truong/lam-dong-ap-dung-khung-gia-dich-vu-quan-ly-chung-cu-moi-tu-ngay-17.11.html?categoryId=1642306",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/doanh-nghiep-phia-bac-tphcm-tuyen-gap-hang-nghin-lao-dong.html?categoryId=1642311",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/vietnam-airlines-va-ana-holdings-tang-cuong-ket-noi-hang-khong-thuc-day-hop-tac-viet-nam-nhat-ban.html",
+      "https://nhipcaukinhte.com.vn/ngan-hang/truong-hop-ngan-hang-tra-no-trai-phieu-thay-doanh-nghiep.html?categoryId=1642310",
+      "https://nhipcaukinhte.com.vn/ngan-hang/shb-hop-tac-cung-benh-vien-bach-mai-ket-noi-nguon-luc-tai-chinh-va-y-te.html?categoryId=1642310",
+      "https://nhipcaukinhte.com.vn/xa-hoi/lao-cai-phat-trien-doan-vien-tu-su-gan-gui-lang-nghe.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/xa-hoi/bi-thu-xa-len-song-du-lich-va-nong-san-hut-khach.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/ung-dung-ai-mai-moi-o-trung-quoc-cam-ket-hoan-tien-neu-khong-ket-hon.html?categoryId=1642305",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/goc-nhin-chuyen-gia-ve-lan-song-ung-dung-ai-trong-nganh-tham-my-khong-xam-lan.html",
+      "https://nhipcaukinhte.com.vn/dau-tu-hop-tac/phan-bo-ngan-sach-trung-uong-nam-2027-hon-757.000-ty-dong-danh-cho-dau-tu-phat-trien.html?categoryId=1642307",
+      "https://nhipcaukinhte.com.vn/dau-tu-hop-tac/dak-lak-khoi-thong-dong-von-dau-tu-cong-but-pha-phat-trien-huong-bien.html?categoryId=1642307",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/sat-lo-quoc-lo-9c-nhieu-ban-o-quang-tri-bi-co-lap-do-mua-lon.html?categoryId=1642313",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/muc-nuoc-ho-thuy-dien-lon-nhat-mien-nam-ngay-10.11-dat-gan-61-5m.html?categoryId=1642313",
+      "https://nhipcaukinhte.com.vn/tieu-diem-24h/tphcm-yeu-cau-khan-truong-hoan-thien-ho-so-dua-29-xa-len-phuong.html?categoryId=1642313",
+      "https://nhipcaukinhte.com.vn/the-gioi/iran-yeu-cau-my-ngung-tung-tin-gia-ve-cac-cuoc-dam-phan.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/the-gioi/chau-au-cu-loat-quan-chuc-cap-cao-den-abu-dhabi-ho-tro-ukraina-dam-phan.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/the-gioi/nga-tuyen-bo-khong-co-ke-hoach-tan-cong-cac-nuoc-chau-au.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/thi-truong/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html?categoryId=1642306",
+      "https://nhipcaukinhte.com.vn/thi-truong/gia-lai-khai-truong-trien-lam-nong-san-ton-vinh-ca-phe-dac-san.html?categoryId=1642306",
+      "https://nhipcaukinhte.com.vn/thi-truong/tuyen-quang-xay-dung-thuong-hieu-gung-lung-cu-cho-ba-con-h-mong-giay.html?categoryId=1642306",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/doanh-nghiep-ngung-hoat-dong-ca-thap-ky-van-chua-thoat-no-thue-vcci-de-xuat-thay-doi-lon.html",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/thanh-hoa-ket-noi-thi-truong-mo-rong-khong-gian-phat-trien-cho-doanh-nghiep.html?categoryId=1642311",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/khong-ngung-nang-chuan-vinamilk-gat-hai-ket-qua-doanh-thu-cung-cac-danh-hieu-trong-nuoc-va-quoc-te.html",
+      "https://nhipcaukinhte.com.vn/doanh-nghiep/vinh-ha-long-thu-tren-700-ti-dong-trong-10-thang-dau-nam.html?categoryId=1642311",
+      "https://nhipcaukinhte.com.vn/ngan-hang/mb-dua-dong-von-chuoi-cung-ung-xuong-tan-doanh-nghiep-tang-cuoi.html?categoryId=1642310",
+      "https://nhipcaukinhte.com.vn/ngan-hang/shb-va-cuc-thue-hop-tac-thuc-day-chuyen-doi-so-ho-tro-doanh-nghiep-ho-kinh-doanh-va-ca-nhan-kinh-doanh.html?categoryId=1642310",
+      "https://nhipcaukinhte.com.vn/ngan-hang/sacombank-huong-toi-hoan-thanh-de-an-tai-co-cau-theo-ke-hoach.html?categoryId=1642310",
+      "https://nhipcaukinhte.com.vn/xa-hoi/tin-tuc-ha-noi-24h-xu-phat-bai-trong-giu-xe-vuot-dien-tich-duoc-cap-phep.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/xa-hoi/luong-toi-thieu-vung-tang-tu-nam-2027-ai-se-duoc-tang-luong.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/xa-hoi/canh-sat-pccc-cong-nguoi-dan-ong-58-tuoi-ra-khoi-can-nha-chay-o-tphcm.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/xa-hoi/sinh-vien-mo-rong-tu-duy-tu-viec-quoc-te-hoa-san-choi-khoi-nghiep.html?categoryId=1642309",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/ai-dang-lam-thay-doi-cach-doanh-nghiep-bao-hiem-kiem-tien.html?categoryId=1642305",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/da-nang-dang-cai-cuoc-thi-cong-nghe-thong-tin-danh-cho-thanh-thieu-nien-khuyet-tat.html?categoryId=1642305",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/tra-cuu-thong-tin-dang-kiem-oto-tren-vneid.html?categoryId=1642305",
+      "https://nhipcaukinhte.com.vn/nhip-song-so/ai-mo-huong-doi-moi-day-va-hoc-trong-ky-nguyen-so.html?categoryId=1642305",
+      "https://nhipcaukinhte.com.vn/dau-tu-hop-tac/da-nang-vietjet-hop-tac-toan-dien-phat-trien-du-lich-hang-khong.html?categoryId=1642307",
+      "https://nhipcaukinhte.com.vn/dau-tu-hop-tac/viet-nam-de-xuat-ba-dinh-huong-thuc-day-hop-tac-kinh-te-apec.html?categoryId=1642307",
+      "https://nhipcaukinhte.com.vn/nangluong-cuocsong/dong-luc-moi-cho-hop-tac-nang-luong-va-cong-nghe-viet-nam-phap.html",
+      "https://nhipcaukinhte.com.vn/nangluong-cuocsong/phat-trien-luoi-dien-thong-minh-don-bay-cho-tang-truong.html",
+      "https://nhipcaukinhte.com.vn/nangluong-cuocsong/coi-bo-chiec-ao-hanh-chinh-de-doanh-nghiep-nha-nuoc-but-pha.html",
+      "https://nhipcaukinhte.com.vn/nangluong-cuocsong/sua-luat-dien-luc-can-co-che-dot-pha-cho-lng-dien-gio-ngoai-khoi.html",
+      "https://nhipcaukinhte.com.vn/nangluong-cuocsong/tu-hop-dong-dppa-dau-tien-den-bai-toan-thuc-thi-the-che-chuyen-dich-nang-luong-o-viet-nam.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:16:17.493Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipcaukinhte.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "Các công ty chứng khoán thu lãi margin 12.843 tỷ đồng trong quý III",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:53.956Z",
+        "trainingUrls": [
+          "https://nhipcaukinhte.com.vn/xa-hoi/suong-lua-trang-ke-hau-truong-dong-canh-tinh-cam-de-lay-thong-tin.html?categoryId=5184897"
+        ],
+        "holdoutUrls": [
+          "https://nhipcaukinhte.com.vn/the-gioi/nga-ra-pha-260ha-dat-o-donbass-chuan-bi-xay-san-bay-moi.html?categoryId=1642312",
+          "https://nhipcaukinhte.com.vn/thi-truong/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html?categoryId=1642306"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:43.533Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://nhipcaukinhte.com.vn/the-gioi/nga-ra-pha-260ha-dat-o-donbass-chuan-bi-xay-san-bay-moi.html?categoryId=1642312",
+      "https://nhipcaukinhte.com.vn/thi-truong/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html?categoryId=1642306"
+    ],
+    "improvedUrls": [
+      "https://nhipcaukinhte.com.vn/xa-hoi/suong-lua-trang-ke-hau-truong-dong-canh-tinh-cam-de-lay-thong-tin.html?categoryId=5184897"
+    ],
+    "regressions": 0
+  }
+}

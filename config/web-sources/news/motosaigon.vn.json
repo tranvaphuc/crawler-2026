@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "motosaigon.vn",
+  "siteId": "motosaigon.vn",
+  "registrableDomain": "motosaigon.vn",
+  "homepage": "https://motosaigon.vn/",
+  "allowedHosts": [
+    "motosaigon.vn",
+    "www.motosaigon.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://motosaigon.vn/",
+    "categories": [
+      "https://motosaigon.vn/chuyen-muc/sport-bike",
+      "https://motosaigon.vn/chuyen-muc/nakestreet-bike",
+      "https://motosaigon.vn/chuyen-muc/cafe-racer-bobber",
+      "https://motosaigon.vn/chuyen-muc/atv-3-banh",
+      "https://motosaigon.vn/chuyen-muc/offroad-cao-cao",
+      "https://motosaigon.vn/chuyen-muc/touring-cruiser"
+    ]
+  },
+  "title": {
+    "value": "So sánh Mitsubishi Pajero 2027 vs Toyota Land Cruiser Prado LC250",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:08.917Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:01.960Z",
+    "independentHoldouts": [
+      "https://motosaigon.vn/gia-xe-mitsubishi-moi-nhat-hom-nay-bang-gia-xe-2026-2027.html",
+      "https://motosaigon.vn/honda-viet-nam-cong-bo-ket-qua-kinh-doanh-thang-102026.html",
+      "https://motosaigon.vn/sau-s1000rr-trung-quoc-den-luot-kawasaki-ninja-zx-10r-bi-nhai-finja-500.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://motosaigon.vn/sanh-mitsubishi-pajero-2027-vs-toyota-land-cruiser-prado-lc250.html",
+      "https://motosaigon.vn/gia-xe-mitsubishi-moi-nhat-hom-nay-bang-gia-xe-2026-2027.html",
+      "https://motosaigon.vn/honda-viet-nam-cong-bo-ket-qua-kinh-doanh-thang-102026.html",
+      "https://motosaigon.vn/sau-s1000rr-trung-quoc-den-luot-kawasaki-ninja-zx-10r-bi-nhai-finja-500.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

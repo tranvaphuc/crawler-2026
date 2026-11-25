@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhdoanhvaphattrien.vn",
+  "siteId": "kinhdoanhvaphattrien.vn",
+  "registrableDomain": "kinhdoanhvaphattrien.vn",
+  "homepage": "https://kinhdoanhvaphattrien.vn/",
+  "allowedHosts": [
+    "kinhdoanhvaphattrien.vn",
+    "www.kinhdoanhvaphattrien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "SABECO ra mắt 333 Triple Pure qua không gian trải nghiệm đa giác quan",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:29.808Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhdoanhvaphattrien.vn/sabeco-ra-mat-333-triple-pure-qua-khong-gian-trai-nghiem-da-giac-quan-49767.html",
+      "https://kinhdoanhvaphattrien.vn/thuong-ton-hien-phap-va-phap-luat--dong-luc-kien-tao-phat-trien-dat-nuoc-49768.html",
+      "https://kinhdoanhvaphattrien.vn/thong-qua-de-an-dieu-chinh-dia-gioi-don-vi-hanh-chinh-ha-noi-va-phu-tho-49766.html",
+      "https://kinhdoanhvaphattrien.vn/gia-ca-phe-hom-nay-8-11-tiep-da-tang-them-500-dong-kg-49764.html",
+      "https://kinhdoanhvaphattrien.vn/viet-nam--nhat-ban-tiep-tuc-dong-hanh-dong-kien-tao-cung-chia-se-co-hoi-va-trach-nhiem-49763.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhdoanhvaphattrien.vn/",
+    "categories": [
+      "https://kinhdoanhvaphattrien.vn/van-de-hom-nay",
+      "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/ky-nguyen-vuon-minh",
+      "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/goc-nhin",
+      "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/chinh-sach--phap-ly",
+      "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/hoat-dong-ide-vusta",
+      "https://kinhdoanhvaphattrien.vn/kinh-te",
+      "https://kinhdoanhvaphattrien.vn/kinh-te/tai-chinh",
+      "https://kinhdoanhvaphattrien.vn/kinh-te/dau-tu",
+      "https://kinhdoanhvaphattrien.vn/kinh-te/bat-dong-san",
+      "https://kinhdoanhvaphattrien.vn/kinh-te/tieu-dung",
+      "https://kinhdoanhvaphattrien.vn/kinh-te/thong-tin-gia-vang",
+      "https://kinhdoanhvaphattrien.vn/khoa-hoc-cong-nghe",
+      "https://kinhdoanhvaphattrien.vn/khoa-hoc-cong-nghe/chuyen-doi-so",
+      "https://kinhdoanhvaphattrien.vn/khoa-hoc-cong-nghe/kinh-te-so",
+      "https://kinhdoanhvaphattrien.vn/khoa-hoc-cong-nghe/ung-dung",
+      "https://kinhdoanhvaphattrien.vn/cam-nang-thuong-hieu",
+      "https://kinhdoanhvaphattrien.vn/cam-nang-thuong-hieu/tu-van",
+      "https://kinhdoanhvaphattrien.vn/cam-nang-thuong-hieu/thuong-hieu",
+      "https://kinhdoanhvaphattrien.vn/lam-giau-xua-nay",
+      "https://kinhdoanhvaphattrien.vn/lam-giau-xua-nay/doanh-nghiep-thuong-hieu",
+      "https://kinhdoanhvaphattrien.vn/lam-giau-xua-nay/doanh-nhan-thoi-cuoc",
+      "https://kinhdoanhvaphattrien.vn/lam-giau-xua-nay/dien-dan-kinh-te-tu-nhan",
+      "https://kinhdoanhvaphattrien.vn/san-pham-moi",
+      "https://kinhdoanhvaphattrien.vn/san-pham-moi/ket-noi",
+      "https://kinhdoanhvaphattrien.vn/san-pham-moi/y-te--suc-khoe",
+      "https://kinhdoanhvaphattrien.vn/xanh-plus",
+      "https://kinhdoanhvaphattrien.vn/xanh-plus/tai-chinh-xanh",
+      "https://kinhdoanhvaphattrien.vn/xanh-plus/cong-nghiep-xanh",
+      "https://kinhdoanhvaphattrien.vn/xanh-plus/moi-truong-xanh",
+      "https://kinhdoanhvaphattrien.vn/emagazine",
+      "https://kinhdoanhvaphattrien.vn/video",
+      "https://kinhdoanhvaphattrien.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.254Z",
+      "verifiedSeeds": [
+        "https://kinhdoanhvaphattrien.vn/",
+        "https://kinhdoanhvaphattrien.vn/van-de-hom-nay",
+        "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/ky-nguyen-vuon-minh",
+        "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/goc-nhin",
+        "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/chinh-sach--phap-ly",
+        "https://kinhdoanhvaphattrien.vn/van-de-hom-nay/hoat-dong-ide-vusta",
+        "https://kinhdoanhvaphattrien.vn/kinh-te",
+        "https://kinhdoanhvaphattrien.vn/kinh-te/tai-chinh",
+        "https://kinhdoanhvaphattrien.vn/kinh-te/dau-tu",
+        "https://kinhdoanhvaphattrien.vn/kinh-te/bat-dong-san",
+        "https://kinhdoanhvaphattrien.vn/kinh-te/tieu-dung"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhdoanhvaphattrien.vn",
+    "checkedAt": "2026-11-09T03:57:10.281Z",
+    "url": "https://kinhdoanhvaphattrien.vn/sabeco-ra-mat-333-triple-pure-qua-khong-gian-trai-nghiem-da-giac-quan-49767.html",
+    "finalUrl": "https://kinhdoanhvaphattrien.vn/sabeco-ra-mat-333-triple-pure-qua-khong-gian-trai-nghiem-da-giac-quan-49767.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5761,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:35.083Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhdoanhvaphattrien.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhdoanhvaphattrien.vn",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 31,
+    "categoriesAttempted": 31,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 700,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 700,
+        "attempted": 9,
+        "passed": 11,
+        "distinctContents": 6,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "kinhdoanhvaphattrien.vn",
+      "siteId": "kinhdoanhvaphattrien.vn",
+      "registrableDomain": "kinhdoanhvaphattrien.vn",
+      "homepage": "https://kinhdoanhvaphattrien.vn/",
+      "allowedHosts": [
+        "kinhdoanhvaphattrien.vn",
+        "www.kinhdoanhvaphattrien.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "SABECO ra mắt 333 Triple Pure qua không gian trải nghiệm đa giác quan",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#content_detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:55.366Z",
+        "trainingUrls": [
+          "https://kinhdoanhvaphattrien.vn/bidv-va-su-chuyen-dich-tu-duy-tu-hoan-thanh-nhiem-vu-sang-kien-tao-gia-tri-49761.html",
+          "https://kinhdoanhvaphattrien.vn/chu-tich-mb-luu-trung-thai-tu-nhung-bai-toan-thuc-tien-den-khat-vong-kien-tao-gia-tri-49622.html",
+          "https://kinhdoanhvaphattrien.vn/doanh-nhan-nguyen-thi-thu-huyen-tu-tinh-yeu-hat-com-den-khat-vong-noi-dai-di-san-ha-noi-49473.html"
+        ],
+        "holdoutUrls": [
+          "https://kinhdoanhvaphattrien.vn/gia-xang-dau-hom-nay-gia-dau-lao-doc-manh-dau-brent-mat-gan-6-49791.html",
+          "https://kinhdoanhvaphattrien.vn/be-boi-jensen-huang-ngoai-tinh-thoi-bay-200-ty-usd-von-hoa-nvidia-49789.html"
+        ]
+      }
+    }
+  ],
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

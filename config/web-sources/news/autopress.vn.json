@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autopress.vn",
+  "siteId": "autopress.vn",
+  "registrableDomain": "autopress.vn",
+  "homepage": "https://autopress.vn/",
+  "allowedHosts": [
+    "autopress.vn",
+    "www.autopress.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://autopress.vn/",
+    "categories": [
+      "https://autopress.vn/chuyen-muc/thong-tin.html",
+      "https://autopress.vn/chuyen-muc/thong-tin-trong-nuoc.html",
+      "https://autopress.vn/chuyen-muc/thong-tin-quoc-te.html",
+      "https://autopress.vn/chuyen-muc/trai-nghiem.html",
+      "https://autopress.vn/chuyen-muc/o-to.html",
+      "https://autopress.vn/chuyen-muc/xe-may.html",
+      "https://autopress.vn/chuyen-muc/thi-truong.html",
+      "https://autopress.vn/chuyen-muc/giai-tri.html",
+      "https://autopress.vn/chuyen-muc/tu-van-ky-thuat.html",
+      "https://autopress.vn/chuyen-muc/tu-van.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Honda Việt Nam bán hơn 198.000 xe máy trong tháng 10, doanh số ô tô giảm 50%",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".article-date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#BoxNewContentInfo",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:46.316Z",
+    "frozenAt": "2026-11-16T01:57:28.166Z",
+    "trainingUrl": "https://autopress.vn/honda-viet-nam-ban-hon-198000-xe-may-trong-thang-10-doanh-so-o-to-giam-50.html",
+    "independentHoldouts": [
+      "https://autopress.vn/saic-passenger-company-vuot-moc-doanh-so-1-trieu-xe-tang-truong-438.html",
+      "https://autopress.vn/byd-khoi-dong-techweek-2026-mo-chuoi-su-kien-trai-nghiem-xe-nang-luong-moi.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://autopress.vn/honda-viet-nam-ban-hon-198000-xe-may-trong-thang-10-doanh-so-o-to-giam-50.html",
+      "https://autopress.vn/saic-passenger-company-vuot-moc-doanh-so-1-trieu-xe-tang-truong-438.html",
+      "https://autopress.vn/subaru-forester-25-eboxer-hybrid-ra-mat-thi-truong-viet-nam.html",
+      "https://autopress.vn/byd-khoi-dong-techweek-2026-mo-chuoi-su-kien-trai-nghiem-xe-nang-luong-moi.html",
+      "https://autopress.vn/defender-cong-bo-36-guong-mat-buoc-vao-vong-chung-ket-cua-giai-dau-mang-tinh-bieu-tuong-defender-trophy.html",
+      "https://autopress.vn/toyota-viet-nam-ban-hon-6300-xe-trong-thang-10-uu-dai-den-75-trieu-dong-trong-thang-11.html",
+      "https://autopress.vn/danh-gia-omoda-c5-shsh-sau-hanh-trinh-tphcm-cam-ranh-khac-biet-den-tu-trai-nghiem.html",
+      "https://autopress.vn/byd-dolphin-2026-hatchback-dien-the-he-moi-voi-quang-duong-435-km-cong-nghe-hien-dai-va-gia-tu-499-trieu-dong.html",
+      "https://autopress.vn/honda-ra-mat-loat-mo-to-2026-lan-dau-trang-bi-eclutch-tren-ca-5-mau-xe.html",
+      "https://autopress.vn/vinfast-va-gowa-motor-hop-tac-mo-rong-dai-ly-xe-dien-tai-indonesia.html",
+      "https://autopress.vn/honda-mo-ban-xe-may-dien-uc3-trien-khai-mang-luoi-tram-sac-tai-viet-nam.html",
+      "https://autopress.vn/hyundai-palisade-hybrid-chinh-thuc-ban-giao-toi-tay-khach-hang-viet.html",
+      "https://autopress.vn/vi-sao-mot-so-dong-co-hybrid-tuong-thich-tot-voi-xang-e10.html",
+      "https://autopress.vn/volkswagen-viet-nam-trien-khai-dong-loat-cac-hoat-dong-hau-mai-uu-dai-va-pho-bien-kien-thuc-ve-nhien-lieu-e10.html",
+      "https://autopress.vn/ky-nang-lai-xe-tay-ga-an-toan-trong-mua-tron-truot.html",
+      "https://autopress.vn/nhung-luu-y-khi-di-xe-may-qua-duong-ngap-nuoc.html",
+      "https://autopress.vn/ky-thuat-lai-xe-con-tay-tren-deo-bi-quyet-va-kinh-nghiem.html",
+      "https://autopress.vn/the-hien-ban-linh-phai-manh-khi-duong-dau-thu-thach.html",
+      "https://autopress.vn/giao-thong-do-thi-va-su-thay-doi-chong-mat.html",
+      "https://autopress.vn/vgreen-da-chinh-thuc-van-hanh-tram-sac-o-to-dien-lon-nhat-viet-nam.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

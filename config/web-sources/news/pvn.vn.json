@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "siteName": "pvn.vn",
+  "siteId": "pvn.vn",
+  "registrableDomain": "petrovietnam.vn",
+  "homepage": "https://petrovietnam.vn/",
+  "allowedHosts": [
+    "pvn.vn",
+    "www.pvn.vn",
+    "petrovietnam.vn",
+    "www.petrovietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "enabled": true,
+  "stage": "customer_requested_pending_qualification",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "publicationDatePolicy": "original_only",
+  "discovery": {
+    "homepage": "https://petrovietnam.vn/",
+    "categories": []
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:51:28.295Z",
+    "sampleUrls": [
+      "https://petrovietnam.vn/petrovietnam-thuc-day-hop-tac-nang-luong-voi-tinh-leningrad-lien-bang-nga-36422",
+      "https://petrovietnam.vn/vtv1-phat-song-phim-tai-lieu-nhung-quyet-sach-mo-duong-vao-luc-20h20-toi-nay-16-11-36396",
+      "https://petrovietnam.vn/cong-doan-petrovietnam-hanh-trinh-khoi-nguon-va-triet-ly-lay-con-nguoi-lam-cot-loi-36371",
+      "https://petrovietnam.vn/petrovietnam-mo-rong-hop-tac-cong-nghiep-nang-luong-voi-cac-doi-tac-nhat-ban-36358",
+      "https://petrovietnam.vn/petrovietnam-tap-huan-cong-tac-kiem-soat-tai-san-thu-nhap-36350"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "customerRequest": {
+    "requestedAt": "2026-11-17",
+    "requestedDomain": "pvn.vn",
+    "requestedUrl": "https://pvn.vn/",
+    "redirectObserved": "https://petrovietnam.vn/",
+    "evidence": "outputs/customer-sites-20261117/audit/pvn.vn/result.json",
+    "reasons": {
+      "NEWS_UNCONFIGURED_TARGET_HOST": 3,
+      "no_working_article_discovery_seed": 1,
+      "insufficient_distinct_verified_articles": 1,
+      "insufficient_independent_http_holdouts": 1
+    },
+    "paidAiCalls": 0
+  },
+  "title": {
+    "strategy": "selector",
+    "selector": "article > h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article > h1 + div > div > span:first-child"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-detail-content",
+    "remove": "script,style,.related,related-content"
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "article",
+    "selector": ".news-detail-content p"
+  },
+  "midnightProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "pvn.vn",
+    "confirmation": "original_date_with_midnight_vietnam_2026-11-17",
+    "displayClock": "00:00",
+    "timezone": "Asia/Ho_Chi_Minh"
+  }
+}

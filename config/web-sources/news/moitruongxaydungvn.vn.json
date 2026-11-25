@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "moitruongxaydungvn.vn",
+  "siteId": "moitruongxaydungvn.vn",
+  "registrableDomain": "moitruongxaydungvn.vn",
+  "homepage": "https://moitruongxaydungvn.vn/",
+  "allowedHosts": [
+    "moitruongxaydungvn.vn",
+    "www.moitruongxaydungvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://moitruongxaydungvn.vn/",
+    "categories": [
+      "https://moitruongxaydungvn.vn/tin-tuc-news",
+      "https://moitruongxaydungvn.vn/thien-nhien-moi-truong",
+      "https://moitruongxaydungvn.vn/chinh-tri-xa-hoi",
+      "https://moitruongxaydungvn.vn/moi-truong-xa-hoi",
+      "https://moitruongxaydungvn.vn/moi-truong-sinh-thai",
+      "https://moitruongxaydungvn.vn/bien-doi-khi-hau",
+      "https://moitruongxaydungvn.vn/bao-ve-moi-truong-xanh",
+      "https://moitruongxaydungvn.vn/phap-luat-moi-truong-xay-dung",
+      "https://moitruongxaydungvn.vn/an-ninh-trat-tu",
+      "https://moitruongxaydungvn.vn/phong-su-dieu-tra"
+    ]
+  },
+  "title": {
+    "value": "TTC Land chính thức mở rộng sở hữu tại dự án Đảo Kim Quy lên 87,63%",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date_post_core",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:03:03.152Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:02:29.760Z",
+    "independentHoldouts": [
+      "https://moitruongxaydungvn.vn/tac-dong-den-moi-truong-va-xa-hoi-cua-cac-du-an-thuy-dien-o-viet-nam",
+      "https://moitruongxaydungvn.vn/tac-dong-cua-thien-tai-va-bien-doi-khi-hau-doi-voi-phat-trien-ben-vung-o-viet-nam",
+      "https://moitruongxaydungvn.vn/nha-vach-kinh-lon-sat-thu-nang-luong",
+      "https://moitruongxaydungvn.vn/du-thao-luat-kinh-doanh-bat-dong-san-giam-dieu-kien-tang-minh-bach-va-dua-giao-dich-len-moi-truong-so"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://moitruongxaydungvn.vn/tac-dong-den-moi-truong-va-xa-hoi-cua-cac-du-an-thuy-dien-o-viet-nam",
+      "https://moitruongxaydungvn.vn/tac-dong-cua-thien-tai-va-bien-doi-khi-hau-doi-voi-phat-trien-ben-vung-o-viet-nam",
+      "https://moitruongxaydungvn.vn/nha-vach-kinh-lon-sat-thu-nang-luong",
+      "https://moitruongxaydungvn.vn/du-thao-luat-kinh-doanh-bat-dong-san-giam-dieu-kien-tang-minh-bach-va-dua-giao-dich-len-moi-truong-so"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

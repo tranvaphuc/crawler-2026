@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietcetera.com",
+  "siteId": "vietcetera.com",
+  "registrableDomain": "vietcetera.com",
+  "homepage": "https://vietcetera.com/",
+  "allowedHosts": [
+    "vietcetera.com",
+    "www.vietcetera.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Từ chiếc máy tính bị hack đến 6,3 tỷ đô la Mỹ bị đánh cắp: Binance ơi, có ổn không?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".styles_articleContentDetail__IttGI.article-content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:53.845Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vietcetera.com/vn/tu-chiec-may-tinh-bi-hack-den-63-ty-do-la-my-bi-danh-cap-binance-oi-co-on-khong",
+      "https://vietcetera.com/vn/tong-gia-tri-ma-thang-9-dat-174-ty-usd-vifc-uu-tien-huy-dong-von-dai-han",
+      "https://vietcetera.com/vn/weltschmerz-chung-ta-co-dang-dau-noi-dau-vi-the-gioi",
+      "https://vietcetera.com/vn/friendship-recession-vi-sao-cang-lon-ban-be-ta-cang-rung-dan",
+      "https://vietcetera.com/vn/gac-mai-muoi-nam-va-nhung-nguoi-nghe-van-doi"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietcetera.com/",
+    "categories": [
+      "https://vietcetera.com/vn/chuyen-muc/kinh-doanh",
+      "https://vietcetera.com/vn/chuyen-muc/van-hoa",
+      "https://vietcetera.com/vn/chuyen-muc/du-lich",
+      "https://vietcetera.com/vn/chuyen-muc/thuong-thuc",
+      "https://vietcetera.com/vn/chuyen-muc/cuoc-song",
+      "https://vietcetera.com/vn/chuyen-muc/nghe-nghiep",
+      "https://vietcetera.com/vn/video",
+      "https://vietcetera.com/vn/podcast",
+      "https://vietcetera.com/vn/tat-ca-chu-de",
+      "https://vietcetera.com/vn/chuyen-muc/onboardy",
+      "https://vietcetera.com/vn/bo-suu-tap",
+      "https://vietcetera.com/vn/bo-suu-tap/boc-term",
+      "https://vietcetera.com/vn/bo-suu-tap/co-van-an-choi",
+      "https://vietcetera.com/vn/bo-suu-tap/ask-a-senior",
+      "https://vietcetera.com/vn/bo-suu-tap/opinion",
+      "https://vietcetera.com/vn/bo-suu-tap/tom-lai-la",
+      "https://vietcetera.com/vn/bo-suu-tap/toi-day-bo-me",
+      "https://vietcetera.com/vn/bo-suu-tap/bo-nao",
+      "https://vietcetera.com/vn/bo-suu-tap/nhin-phat-yeu-luon",
+      "https://vietcetera.com/vn/bo-suu-tap/ke-sach",
+      "https://vietcetera.com/vn/bo-suu-tap/the-money-date",
+      "https://vietcetera.com/vn/bo-suu-tap/to-tien",
+      "https://vietcetera.com/vn/bo-suu-tap/thu-roi-thich",
+      "https://vietcetera.com/vn/bo-suu-tap/thuong-than",
+      "https://vietcetera.com/vn/bo-suu-tap/tan-chay",
+      "https://vietcetera.com/en/flavorsvietnam",
+      "https://vietcetera.com/onboardy",
+      "https://vietcetera.com/vn/well-ness",
+      "https://vietcetera.com/vn/ve-chung-toi",
+      "https://vietcetera.com/vn/media-kit",
+      "https://vietcetera.com/careers",
+      "https://vietcetera.com/vn/thoa-thuan-nguoi-dung"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietcetera.com",
+    "checkedAt": "2026-11-09T03:57:37.005Z",
+    "url": "https://vietcetera.com/vn/tu-chiec-may-tinh-bi-hack-den-63-ty-do-la-my-bi-danh-cap-binance-oi-co-on-khong",
+    "finalUrl": "https://vietcetera.com/vn/tu-chiec-may-tinh-bi-hack-den-63-ty-do-la-my-bi-danh-cap-binance-oi-co-on-khong",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 10528,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vietcetera.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 67,
+    "checkedArticleUrls": 71,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 66,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 32,
+    "categoriesFreshChecked": 7,
+    "categoriesUnconfirmed": 7,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 236,
+        "passed": 30,
+        "distinctHashes": 29
+      },
+      {
+        "name": "video",
+        "discovered": 30,
+        "passed": 30,
+        "distinctHashes": 30
+      },
+      {
+        "name": "audio",
+        "discovered": 13,
+        "passed": 4,
+        "distinctHashes": 4
+      },
+      {
+        "name": "language_variant",
+        "discovered": 14,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietcetera.com/vn/lam-dich-vu-hieu-khach-tu-nong-san-viet-khi-humventures-tim-thay-tieng-noi-chung-cung-beacon-fund",
+      "https://vietcetera.com/vn/performative-reading-nhu-mot-vo-kich-ban-dien-tron-vai-nguoi-doc-sach",
+      "https://vietcetera.com/vn/bai-toan-chuyen-giao-tai-san-khi-the-he-ke-tiep-chon-con-duong-rieng",
+      "https://vietcetera.com/vn/bo-sua-bay-giua-nhung-phim-khoc-vi-gia-dinh-va-het-trong-bong-toi-co-mot-con-bo-can-dam-bay-len",
+      "https://vietcetera.com/vn/su-chuyen-minh-cua-ngon-ngu-nhin-tu-10-bai-viet-boc-term-tren-vietcetera",
+      "https://vietcetera.com/vn/weltschmerz-chung-ta-co-dang-dau-noi-dau-vi-the-gioi",
+      "https://vietcetera.com/vn/friendship-recession-vi-sao-cang-lon-ban-be-ta-cang-rung-dan",
+      "https://vietcetera.com/vn/gac-mai-muoi-nam-va-nhung-nguoi-nghe-van-doi",
+      "https://vietcetera.com/vn/vo-si-mma-quang-loc-dinh-cao-cua-vo-thuat-la-su-quay-vao-ben-trong",
+      "https://vietcetera.com/vn/tu-chiec-may-tinh-bi-hack-den-63-ty-do-la-my-bi-danh-cap-binance-oi-co-on-khong",
+      "https://vietcetera.com/vn/tong-gia-tri-ma-thang-9-dat-174-ty-usd-vifc-uu-tien-huy-dong-von-dai-han",
+      "https://vietcetera.com/vn/hon-400-su-kien-dang-dien-ra-tren-khap-viet-nam-mo-ngay-ban-do-van-hoa-so-neu-chua-biet-di-dau-lam-gi",
+      "https://vietcetera.com/vn/tui-sinh-ton-72-gio-la-gi-ma-ban-nhat-dinh-phai-chuan-bi-mot-chiec",
+      "https://vietcetera.com/vn/thuc-hu-33-nuoc-khuyen-nghi-nguoi-dan-trang-bi-tui-sinh-ton-72-gio",
+      "https://vietcetera.com/vn/1-trong-8-ty-song-mot-cuoc-doi-khac-khien-ta-nghi-gi-ve-cuoc-doi-minh-dang-co",
+      "https://vietcetera.com/vn/nhin-lai-10-bai-viet-tam-ly-hoc-duoc-doc-gia-quan-tam-nhat-tren-vietcetera",
+      "https://vietcetera.com/vn/tu-toi-da-hoa-maxxing-den-kha-nang-chi-tra-affordability-tu-cua-nam-2026-theo-dictionarycom-noi-gi-ve-the-gioi-hien-dai",
+      "https://vietcetera.com/vn/tai-sao-80-cac-cong-ty-dang-phat-trien-tai-viet-nam-lai-vap-phai-rao-can-lon"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:54.414Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietcetera.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".styles_detailDes__nilDb",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ],
+  "parserAdapterValidation": {
+    "state": "independent_native_adapter_holdouts_passed",
+    "frozenAt": "2026-11-10T07:52:28.859Z",
+    "holdoutUrls": [
+      "https://vietcetera.com/vn/video/tldr-vietnam/why-is-vietnam-launching-500-day-campaign",
+      "https://vietcetera.com/vn/video/tldr-vietnam/why-are-collectible-toys-booming-in-vietnam"
+    ]
+  }
+}

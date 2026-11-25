@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "siteName": "inlook.vn",
+  "siteId": "inlook.vn",
+  "registrableDomain": "inlook.vn",
+  "homepage": "https://inlook.vn/",
+  "allowedHosts": [
+    "inlook.vn",
+    "www.inlook.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "PTE MAGIC đánh dấu hành trình 10 năm đồng hành cùng người học tiếng Anh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:23.514Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://inlook.vn/the-gioi-tre/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh/",
+      "https://inlook.vn/khoa-hoc-cong-nghe/o-to-xe-may/byd-neg-ban-giao-them-20-xe-byd-m6-mo-rong-hop-tac-voi-vinasun/",
+      "https://inlook.vn/the-gioi-ict/vuong-binh-da-lab-do-bo-pepero-unitour-cung-gen-z-show-your-love-truoc-them-pop-up-store-11-11/",
+      "https://inlook.vn/khoa-hoc-cong-nghe/truong-dai-hoc-ton-duc-thang-chuyen-giao-he-thong-kiosk-tiep-dan-thong-minh-tai-phuong-phuoc-thang/",
+      "https://inlook.vn/the-gioi-ict/oppo-mo-ban-find-x10-pro-max-3-camera-200mp-gia-4999-trieu-dong-2/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://inlook.vn/",
+    "categories": [
+      "https://inlook.vn/category/tin-tuc/",
+      "https://inlook.vn/category/the-gioi-ict/",
+      "https://inlook.vn/category/khoa-hoc-cong-nghe/",
+      "https://inlook.vn/category/showbiz/",
+      "https://inlook.vn/category/sach-van-hoa-doc/",
+      "https://inlook.vn/category/nhac-va-phim/",
+      "https://inlook.vn/category/the-gioi-tre/",
+      "https://inlook.vn/shop/",
+      "https://inlook.vn/category/khoa-hoc-cong-nghe/o-to-xe-may/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?inlook.vn/.*?[\\w-]{30,}[\\w]{1}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "inlook.vn",
+    "checkedAt": "2026-11-09T03:57:07.338Z",
+    "url": "https://inlook.vn/the-gioi-tre/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh/",
+    "finalUrl": "https://inlook.vn/the-gioi-tre/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5436,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "inlook.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 13,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 110,
+        "passed": 20,
+        "distinctHashes": 20
+      },
+      {
+        "name": "audio",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://inlook.vn/the-gioi-tre/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh/",
+      "https://inlook.vn/the-gioi-ict/oppo-mo-ban-find-x10-pro-max-3-camera-200mp-gia-4999-trieu-dong-2/",
+      "https://inlook.vn/the-gioi-ict/di-dong-viet-giao-dien-thoai-gap-iphone-duo-cho-khach-dat-truoc/",
+      "https://inlook.vn/the-gioi-ict/samsung-galaxy-s27-ultra-co-the-van-dung-chip-snapdragon/",
+      "https://inlook.vn/the-gioi-ict/vuong-binh-da-lab-do-bo-pepero-unitour-cung-gen-z-show-your-love-truoc-them-pop-up-store-11-11/",
+      "https://inlook.vn/the-gioi-ict/poco-x8s-ra-mat-smartphone-tam-trung-nhung-cong-nghe-tam-cao/",
+      "https://inlook.vn/the-gioi-ict/vertiv-ho-tro-doanh-nghiep-dua-ai-tu-thu-nghiem-vao-van-hanh-thuc-te/",
+      "https://inlook.vn/khoa-hoc-cong-nghe/trao-giai-thuong-khoa-hoc-va-cong-nghe-danh-cho-sinh-vien-trong-co-so-giao-duc-dai-hoc-nam-2026/",
+      "https://inlook.vn/khoa-hoc-cong-nghe/truong-dai-hoc-ton-duc-thang-chuyen-giao-he-thong-kiosk-tiep-dan-thong-minh-tai-phuong-phuoc-thang/",
+      "https://inlook.vn/tin-tuc/icsc-2026-hoa-hoc-cho-tuong-lai-ben-vung-kien-tao-giai-phap-cho-tuong-lai-xanh/",
+      "https://inlook.vn/the-gioi-tre/quy-dau-tu-mao-hiem-tp-hcm-khai-truong-van-phong/",
+      "https://inlook.vn/the-gioi-tre/gan-200-giao-vien-nhan-vien-thpt-marie-curie-tham-gia-tap-huan-ve-doi-moi-sang-tao-va-sang-kien/",
+      "https://inlook.vn/showbiz/hoa-minzy-chinh-thuc-xac-nhan-da-cuoi-chong-quan-nhan/",
+      "https://inlook.vn/showbiz/white-feather-hawk-tail-deer-hunter-lana-del-rey-va-ban-sac-khong-can-chieu-long-so-dong/",
+      "https://inlook.vn/showbiz/khong-ngai-nam-tuoi-mot-nghe-si-gen-z-vuot-lan-song-nhac-tet-de-dan-dau/",
+      "https://inlook.vn/showbiz/hoa-hau-duoc-tran-thanh-san-don-nhat-dong-3-phim-tram-ty-ca-3-duoc-bao-han-tung-ho-la-nu-hoang-nhan-sac/",
+      "https://inlook.vn/showbiz/cung-maybelline-dinh-nghia-lai-khai-niem-lam-dep/",
+      "https://inlook.vn/the-gioi-tre/no-ballot-visa-462-dot-moi-nguoi-tre-viet-tim-them-duong-trai-nghiem-quoc-te/",
+      "https://inlook.vn/tin-tuc/australia-giu-ke-hoach-tuyen-sinh-quoc-te-nam-2027-o-muc-295-000-luot-viet-nam-la-doi-tac-trong-diem/",
+      "https://inlook.vn/the-gioi-ict/realme-dong-hanh-cung-dau-truong-danh-vong-mua-dong-2026/",
+      "https://inlook.vn/sach-van-hoa-doc/podcast-ngu-ngon-ve-nhung-giot-nuoc-mat/",
+      "https://inlook.vn/the-gioi-tre/son-flortte-va-sinh-vien-vov-college/",
+      "https://inlook.vn/sach-van-hoa-doc/talkshow-doc-gia-4-0-tro-chuyen-cung-nha-van-tong-phuoc-bao/",
+      "https://inlook.vn/nhac-va-phim/duyen-lo-minh-remake/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 4
+    },
+    "checkedAt": "2026-11-10T09:15:43.633Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/inlook.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

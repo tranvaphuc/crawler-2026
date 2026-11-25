@@ -1,0 +1,634 @@
+[
+  {
+    "source_ids": [
+      "0s",
+      "bid0"
+    ],
+    "names": [
+      "Andree",
+      "Andree Right Hand"
+    ],
+    "birth_date": "1987-06-18",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/andree/0s",
+      "https://nguoinoitieng.tv/nghe-nghiep/rapper/andree-right-hand/bid0"
+    ],
+    "grouping_rule": "manually_reviewed_identity",
+    "identity_evidence": {
+      "identity_id": "andree-bui-the-anh-1987-06-18",
+      "birth_date": "1987-06-18",
+      "members": [
+        {
+          "source_id": "0s",
+          "expected_name": "Andree"
+        },
+        {
+          "source_id": "bid0",
+          "expected_name": "Andree Right Hand"
+        }
+      ],
+      "source_url": "https://voh.com.vn/tieu-su-sao/andree-right-hand-anh-baus-profile-478800.html",
+      "finding": "Cùng tên thật Bùi Thế Anh, ngày sinh 18/06/1987 và nghệ danh Andree Right Hand; đã đọc cả hai hồ sơ nguồn và đối chiếu chân dung VOH. Không gộp theo tài khoản dùng chung."
+    }
+  },
+  {
+    "source_ids": [
+      "7",
+      "d5"
+    ],
+    "names": [
+      "Kim Tử Long"
+    ],
+    "birth_date": "1966-10-17",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-cai-luong/kim-tu-long/7",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/kim-tu-long/d5"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "8y",
+      "aoo"
+    ],
+    "names": [
+      "Đức Hoàn"
+    ],
+    "birth_date": "1937-01-02",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/duc-hoan/8y",
+      "https://nguoinoitieng.tv/nghe-nghiep/dao-dien/duc-hoan/aoo"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a8",
+      "af"
+    ],
+    "names": [
+      "Cao Tùng Anh"
+    ],
+    "birth_date": "1990-05-11",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/cao-tung-anh/a8",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/cao-tung-anh/af"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a95b",
+      "be4q"
+    ],
+    "names": [
+      "Vane Love",
+      "Vanelove"
+    ],
+    "birth_date": "1988-06-07",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/game-thu-aoe/vane-love/a95b",
+      "https://nguoinoitieng.tv/nghe-nghiep/game-thu-aoe/vanelove/be4q"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a97c",
+      "zl"
+    ],
+    "names": [
+      "Thiên Kim"
+    ],
+    "birth_date": "1972-08-29",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-dan-tranh/thien-kim/a97c",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/thien-kim/zl"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a98e",
+      "w9"
+    ],
+    "names": [
+      "Nguyễn Thái Học"
+    ],
+    "birth_date": "1902-12-01",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/anh-hung-chien-tranh-viet-nam/nguyen-thai-hoc/a98e",
+      "https://nguoinoitieng.tv/nghe-nghiep/chinh-tri-gia/nguyen-thai-hoc/w9"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a98k",
+      "w1"
+    ],
+    "names": [
+      "Phan Bội Châu"
+    ],
+    "birth_date": "1867-12-26",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/anh-hung-chien-tranh-viet-nam/phan-boi-chau/a98k",
+      "https://nguoinoitieng.tv/nghe-nghiep/chinh-tri-gia/phan-boi-chau/w1"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "a9i2",
+      "qs"
+    ],
+    "names": [
+      "Nam Trân"
+    ],
+    "birth_date": "1907-02-15",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nha-tho/nam-tran/a9i2",
+      "https://nguoinoitieng.tv/nghe-nghiep/nha-tho-moi/nam-tran/qs"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "ab0",
+      "afm"
+    ],
+    "names": [
+      "Jun Phạm"
+    ],
+    "birth_date": "1989-07-24",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/jun-pham/ab0",
+      "https://nguoinoitieng.tv/nghe-nghiep/nha-van/jun-pham/afm"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "ab2",
+      "bac5"
+    ],
+    "names": [
+      "Will (365)",
+      "Will 365"
+    ],
+    "birth_date": "1989-11-27",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/will-365/ab2",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/will-365/bac5"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "ab9",
+      "apei"
+    ],
+    "names": [
+      "Karrueche Tran"
+    ],
+    "birth_date": "1988-05-17",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/karrueche-tran/ab9",
+      "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/karrueche-tran/apei"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "akb",
+      "bbbc"
+    ],
+    "names": [
+      "Minh Quang"
+    ],
+    "birth_date": "1951-10-24",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/minh-quang/akb",
+      "https://nguoinoitieng.tv/nghe-nghiep/nghe-si/minh-quang/bbbc"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "alr",
+      "badr"
+    ],
+    "names": [
+      "Duy Quang"
+    ],
+    "birth_date": "1950-11-04",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/duy-quang/alr",
+      "https://nguoinoitieng.tv/nghe-nghiep/nam-ca-si-nhac-si/duy-quang/badr"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "ba0e",
+      "bbeg"
+    ],
+    "names": [
+      "Cung Lê"
+    ],
+    "birth_date": "1972-05-25",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/vo-si/cung-le/ba0e",
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/cung-le/bbeg"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "ba1v",
+      "fo"
+    ],
+    "names": [
+      "Mr Siro",
+      "Mr. Siro"
+    ],
+    "birth_date": "1982-11-18",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/mr-siro/ba1v",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/mr-siro/fo"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "baos",
+      "baox"
+    ],
+    "names": [
+      "Lý Thanh Thảo"
+    ],
+    "birth_date": "1982-12-11",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/ly-thanh-thao/baos",
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien-nu/ly-thanh-thao/baox"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bawt",
+      "p0"
+    ],
+    "names": [
+      "Only C",
+      "Onlyc"
+    ],
+    "birth_date": "1988-02-20",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/only-c/bawt",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/onlyc/p0"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bb9f",
+      "nx"
+    ],
+    "names": [
+      "Anh Tú"
+    ],
+    "birth_date": "1993-10-03",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/anh-tu/bb9f",
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/anh-tu/nx"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bbc1",
+      "bcyu"
+    ],
+    "names": [
+      "Cường D-gon",
+      "Cường Dgon"
+    ],
+    "birth_date": "1993-01-27",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/hot-boy/cuong-d-gon/bbc1",
+      "https://nguoinoitieng.tv/nghe-nghiep/stylist/cuong-dgon/bcyu"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bbwh",
+      "bmcv"
+    ],
+    "names": [
+      "Đặng Thanh Tuyền"
+    ],
+    "birth_date": "1988-01-26",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/sao-facebook/dang-thanh-tuyen/bbwh",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/dang-thanh-tuyen/bmcv"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bbxx",
+      "biia"
+    ],
+    "names": [
+      "Võ Thanh Hiền"
+    ],
+    "birth_date": "1992-08-26",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/vo-thanh-hien/bbxx",
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/vo-thanh-hien/biia"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bcow",
+      "bg4r"
+    ],
+    "names": [
+      "Ngô Mai Phương"
+    ],
+    "birth_date": "1997-07-29",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/a-khoi/ngo-mai-phuong/bcow",
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/ngo-mai-phuong/bg4r"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "beki",
+      "bewx"
+    ],
+    "names": [
+      "Dj Chip",
+      "Djchip"
+    ],
+    "birth_date": "1986-05-08",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/streamer/dj-chip/beki",
+      "https://nguoinoitieng.tv/nghe-nghiep/game-thu/djchip/bewx"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bg06",
+      "bjjp"
+    ],
+    "names": [
+      "Sơn Đoàn"
+    ],
+    "birth_date": "1994-08-05",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/blogger/son-doan/bg06",
+      "https://nguoinoitieng.tv/nghe-nghiep/blogger-du-lich/so-n-doan/bjjp"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bgiw",
+      "r1"
+    ],
+    "names": [
+      "Slimv",
+      "Slim V"
+    ],
+    "birth_date": "1988-08-03",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/san-xuat-am-nhac/slimv/bgiw",
+      "https://nguoinoitieng.tv/nghe-nghiep/dj/slim-v/r1"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bgp6",
+      "bh65"
+    ],
+    "names": [
+      "Võ Phước Long"
+    ],
+    "birth_date": "2003-12-13",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/youtuber/vo-phuoc-long/bgp6",
+      "https://nguoinoitieng.tv/nghe-nghiep/ho-tro-facebook/vo-phuoc-long/bh65"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bhdl",
+      "bkoe"
+    ],
+    "names": [
+      "Lê Hoàng Phương"
+    ],
+    "birth_date": "1995-12-27",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/le-hoang-phuong/bhdl",
+      "https://nguoinoitieng.tv/nghe-nghiep/hoa-hau/le-hoang-phuong/bkoe"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bhr5",
+      "bhyb"
+    ],
+    "names": [
+      "Lê Thị Hoàng Yến"
+    ],
+    "birth_date": "1990-03-13",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/giang-vien/le-thi-hoang-yen/bhr5",
+      "https://nguoinoitieng.tv/nghe-nghiep/ceo/le-thi-hoang-yen/bhyb"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bi65",
+      "biks"
+    ],
+    "names": [
+      "Trang Nấm"
+    ],
+    "birth_date": "1997-12-09",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/trang-nam/bi65",
+      "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau-anh/trang-nam/biks"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "biak",
+      "blxy"
+    ],
+    "names": [
+      "Nguyễn Phương Hà"
+    ],
+    "birth_date": "2003-07-03",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/nguyen-phuong-ha/biak",
+      "https://nguoinoitieng.tv/nghe-nghiep/hoa-khoi/nguyen-phuong-ha/blxy"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bkyk",
+      "bmik"
+    ],
+    "names": [
+      "Ninh Anh Bùi"
+    ],
+    "birth_date": "1994-04-18",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/ninh-anh-bui/bkyk",
+      "https://nguoinoitieng.tv/nghe-nghiep/kol/ninh-anh-bui/bmik"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bl4o",
+      "bl7j"
+    ],
+    "names": [
+      "Toản trần",
+      "Toản Trần"
+    ],
+    "birth_date": "1991-11-10",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/stylist/toan-tran/bl4o",
+      "https://nguoinoitieng.tv/nghe-nghiep/nha-thiet-ke-thoi-trang/toan-tran/bl7j"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bo",
+      "c8"
+    ],
+    "names": [
+      "Hồ Việt Trung"
+    ],
+    "birth_date": "1983-06-07",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/ho-viet-trung/bo",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/ho-viet-trung/c8"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "bs",
+      "db"
+    ],
+    "names": [
+      "Hoàng Bách"
+    ],
+    "birth_date": "1980-08-03",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/hoang-bach/bs",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/hoang-bach/db"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "cd",
+      "gk"
+    ],
+    "names": [
+      "Nguyễn Đình Vũ"
+    ],
+    "birth_date": "1991-03-17",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/nguyen-dinh-vu/cd",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/nguyen-dinh-vu/gk"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "dd",
+      "g0"
+    ],
+    "names": [
+      "Phạm Hồng Phước"
+    ],
+    "birth_date": "1991-05-13",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/pham-hong-phuoc/dd",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/pham-hong-phuoc/g0"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  },
+  {
+    "source_ids": [
+      "di",
+      "h6"
+    ],
+    "names": [
+      "Tăng Nhật Tuệ"
+    ],
+    "birth_date": "1986-12-24",
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/tang-nhat-tue/di",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/tang-nhat-tue/h6"
+    ],
+    "grouping_rule": "same_normalized_name_and_valid_full_birthdate",
+    "identity_evidence": null
+  }
+]

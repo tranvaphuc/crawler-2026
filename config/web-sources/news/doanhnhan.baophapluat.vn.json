@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhan.baophapluat.vn",
+  "siteId": "doanhnhan.baophapluat.vn",
+  "registrableDomain": "baophapluat.vn",
+  "homepage": "https://doanhnhan.baophapluat.vn/",
+  "allowedHosts": [
+    "doanhnhan.baophapluat.vn",
+    "www.doanhnhan.baophapluat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "SJ Group (SJS): Cổ đông tổ chức liên tục thoái vốn trước thềm huy động 2.000 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".main-article > .breadcrumb-and-date"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:36.454Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnhan.baophapluat.vn/sj-group-sjs-co-dong-to-chuc-lien-tuc-thoai-von-truoc-them-huy-dong-2-000-ty-dong.html",
+      "https://doanhnhan.baophapluat.vn/taseco-land-tal-cong-ty-me-gia-tang-so-huu-giai-the-cong-ty-con-400-ty-dong.html",
+      "https://doanhnhan.baophapluat.vn/bo-truong-bo-tu-phap-hoang-thanh-tung-4-nhiem-vu-trong-tam-lan-toa-tinh-than-thuong-ton-hien-phap-va-phap-luat-2f1b1a6e-86002c08.html",
+      "https://doanhnhan.baophapluat.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc.html",
+      "https://doanhnhan.baophapluat.vn/toan-van-phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-toan-quoc-quan-triet-va-trien-khai-thuc-hien-nghi-quyet-hoi-nghi-trung-uong-3-33d49f8e.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnhan.baophapluat.vn/",
+    "categories": [
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/doanh-nghiep.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/hang-hoa.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/quang-cao-tai-tro.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/wiki-doanh-nhan.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/dia-oc.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/kien-truc.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/dau-tu.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/du-an.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/tai-chinh.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/chung-khoan.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/ngan-hang.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/bao-hiem.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/cong-nghe.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/xe.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/so-hoa.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/cong-nghe-doi-song.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/phap-luat.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/van-ban-moi.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/dan-nguyen.html",
+      "https://doanhnhan.baophapluat.vn/chuyen-muc/goc-nhin.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnhan.baophapluat.vn",
+    "checkedAt": "2026-11-09T03:57:01.523Z",
+    "url": "https://doanhnhan.baophapluat.vn/sj-group-sjs-co-dong-to-chuc-lien-tuc-thoai-von-truoc-them-huy-dong-2-000-ty-dong.html",
+    "finalUrl": "https://doanhnhan.baophapluat.vn/sj-group-sjs-co-dong-to-chuc-lien-tuc-thoai-von-truoc-them-huy-dong-2-000-ty-dong.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3135,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnhan.baophapluat.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 35,
+    "checkedArticleUrls": 36,
+    "freshArticleChecks": 17,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 35,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 20,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 225,
+        "passed": 35,
+        "distinctHashes": 35
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnhan.baophapluat.vn/bo-truong-bo-tu-phap-hoang-thanh-tung-4-nhiem-vu-trong-tam-lan-toa-tinh-than-thuong-ton-hien-phap-va-phap-luat-2f1b1a6e-86002c08.html",
+      "https://doanhnhan.baophapluat.vn/buc-tranh-loi-nhuan-nganh-thep-quy-3-voi-be-phong-tu-hoat-dong-cot-loi-va-cac-khoan-thu-nhap-bat-thuong.html",
+      "https://doanhnhan.baophapluat.vn/toan-van-phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-toan-quoc-quan-triet-va-trien-khai-thuc-hien-nghi-quyet-hoi-nghi-trung-uong-3-33d49f8e.html",
+      "https://doanhnhan.baophapluat.vn/phat-trien-viet-nam-tu-cuong-sang-tao-nhan-van-ben-vung-va-hoi-nhap-0ae717c3.html",
+      "https://doanhnhan.baophapluat.vn/11-000-cuoc-goi-mot-canh-cong-va-hang-van-ky-uc-cho-duoc-tro-ve.html",
+      "https://doanhnhan.baophapluat.vn/dai-gia-chau-au-chi-hon-13-000-ty-dong-thau-tom-danh-muc-bat-dong-san-cong-nghiep-khong-lo-tai-viet-nam.html",
+      "https://doanhnhan.baophapluat.vn/hang-ty-usd-von-ngoai-do-ve-go-kho-bai-toan-thanh-khoan-cho-he-thong-ngan-hang.html",
+      "https://doanhnhan.baophapluat.vn/uy-ban-chung-khoan-nha-nuoc-canh-bao-thu-doan-lua-dao-xac-thuc-dinh-danh-tai-khoan.html",
+      "https://doanhnhan.baophapluat.vn/sj-group-sjs-co-dong-to-chuc-lien-tuc-thoai-von-truoc-them-huy-dong-2-000-ty-dong.html",
+      "https://doanhnhan.baophapluat.vn/taseco-land-tal-cong-ty-me-gia-tang-so-huu-giai-the-cong-ty-con-400-ty-dong.html",
+      "https://doanhnhan.baophapluat.vn/dau-tu-gia-san-iwealth-nhan-che-tai-tai-chinh-do-vi-pham-nghia-vu-minh-bach-dong-von-trai-phieu.html",
+      "https://doanhnhan.baophapluat.vn/mot-don-vi-nam-98-83-von-hancorp-han-khong-con-dap-ung-dieu-kien-cong-ty-dai-chung.html",
+      "https://doanhnhan.baophapluat.vn/tap-doan-vng-vnz-pho-tong-giam-doc-tu-nhiem.html",
+      "https://doanhnhan.baophapluat.vn/boc-tran-nhung-tu-huyet-tai-chinh-an-sau-lop-vo-boc-pho-truong-cua-nguoi-gia-giau.html",
+      "https://doanhnhan.baophapluat.vn/thoat-khoi-chiec-long-lam-thue-danh-thuc-tu-duy-ong-chu-de-thay-doi-van-menh.html",
+      "https://doanhnhan.baophapluat.vn/ha-noi-cho-thue-gan-24-ha-dat-tai-viet-hung-lam-cang-thuy-noi-dia-giang-bien.html",
+      "https://doanhnhan.baophapluat.vn/da-nang-phe-duyet-du-an-luong-cua-lo-hon-7-585-ty-dong.html",
+      "https://doanhnhan.baophapluat.vn/metro-mo-rong-bat-dong-san-ha-noi-va-tp-hcm-buoc-vao-cuoc-dua-ve-kha-nang-ket-noi.html",
+      "https://doanhnhan.baophapluat.vn/bao-hiem-ngan-hang-nong-nghiep-abi-chi-152-ty-dong-tra-co-tuc-sau-chuoi-tang-truong-loi-nhuan.html",
+      "https://doanhnhan.baophapluat.vn/kinh-te-vi-mo-phuc-hoi-tich-cuc-lo-dien-4-nhom-nganh-huong-loi-cuoi-nam-2026.html",
+      "https://doanhnhan.baophapluat.vn/ap-luc-ban-thao-thu-thach-thi-truong-chung-khoan-du-dinh-gia-co-phieu-lui-ve-vung-hap-dan.html",
+      "https://doanhnhan.baophapluat.vn/gia-vang-bat-tang-manh-nhung-nha-dau-tu-van-om-khoan-lo-hang-trieu-dong.html",
+      "https://doanhnhan.baophapluat.vn/ra-mat-goi-thu-phi-facebook-plus-tai-viet-nam-meta-day-manh-da-dang-hoa-nguon-thu.html",
+      "https://doanhnhan.baophapluat.vn/oppo-tam-dung-phat-trien-find-x10-ultra-ap-luc-chi-phi-linh-kien-va-nhung-don-doan-ve-he-thong-camera-khung.html",
+      "https://doanhnhan.baophapluat.vn/anthropic-chon-loi-di-rieng-bang-viec-tu-choi-ai-tao-anh-va-video-de-don-luc-cho-phan-khuc-doanh-nghiep.html",
+      "https://doanhnhan.baophapluat.vn/giai-ma-bai-hoc-quan-tri-va-nghe-thuat-dac-nhan-tam-dang-sau-su-troi-day-cua-de-che-chatgpt.html",
+      "https://doanhnhan.baophapluat.vn/pho-thu-tuong-le-tien-chau-xay-dung-van-hoa-thuong-ton-hien-phap-va-phap-luat-trong-toan-xa-hoi-69b23d52.html",
+      "https://doanhnhan.baophapluat.vn/dau-tu-duc-trung-bi-phat-hon-267-trieu-dong-vi-sai-pham-cong-bo-thong-tin-trai-phieu.html",
+      "https://doanhnhan.baophapluat.vn/thao-tung-co-phieu-xay-dung-va-giao-thong-binh-duong-bce-mot-ca-nhan-bi-phat-1-5-ty-dong.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 1
+    },
+    "checkedAt": "2026-11-10T09:15:07.579Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnhan.baophapluat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationStabilityReview": {
+    "state": "unconfirmed_original_publication",
+    "reviewFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/publication-stability-review.json"
+  },
+  "publicationEvidencePolicy": {
+    "kind": "stable_article_clock_over_dynamic_metadata",
+    "selector": ".main-article > .breadcrumb-and-date",
+    "verifiedSnapshots": [
+      {
+        "url": "https://doanhnhan.baophapluat.vn/sj-group-sjs-co-dong-to-chuc-lien-tuc-thoai-von-truoc-them-huy-dong-2-000-ty-dong.html",
+        "oldHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/live/sites/doanhnhan.baophapluat.vn/5-e871f68ab710.html.gz",
+        "freshHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/live/sites/doanhnhan.baophapluat.vn/7-e871f68ab710.html.gz",
+        "nativeDateStable": true,
+        "metadataChanged": true,
+        "nativeDate": "2026-11-08T15:05:00.000Z",
+        "oldMetadata": [
+          "2026-11-10T07:39:13.679Z"
+        ],
+        "freshMetadata": [
+          "2026-11-10T08:52:04.837Z"
+        ]
+      },
+      {
+        "url": "https://doanhnhan.baophapluat.vn/nganh-nhua-viet-nam-truoc-suc-ep-chuyen-doi-kinh-te-tuan-hoan.html",
+        "oldHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/live/sites/doanhnhan.baophapluat.vn/6-73c32a6bdba8.html.gz",
+        "freshHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/live/sites/doanhnhan.baophapluat.vn/8-73c32a6bdba8.html.gz",
+        "nativeDateStable": true,
+        "metadataChanged": true,
+        "nativeDate": "2026-10-13T05:47:00.000Z",
+        "oldMetadata": [
+          "2026-11-10T07:39:13.825Z"
+        ],
+        "freshMetadata": [
+          "2026-11-10T08:52:05.137Z"
+        ]
+      },
+      {
+        "url": "https://doanhnhan.baophapluat.vn/herbalife-va-uy-ban-olympic-viet-nam-tap-huan-dinh-duong-hoi-phuc-cho-the-thao-thanh-tich-cao-0bc6be84.html",
+        "oldHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/live/sites/doanhnhan.baophapluat.vn/7-2787cb918ce2.html.gz",
+        "freshHtmlPath": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/live/sites/doanhnhan.baophapluat.vn/9-2787cb918ce2.html.gz",
+        "nativeDateStable": true,
+        "metadataChanged": true,
+        "nativeDate": "2026-11-10T05:38:00.000Z",
+        "oldMetadata": [
+          "2026-11-10T07:39:13.971Z"
+        ],
+        "freshMetadata": [
+          "2026-11-10T08:52:05.323Z"
+        ]
+      }
+    ]
+  }
+}

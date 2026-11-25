@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nghenhinvietnam.vn",
+  "siteId": "nghenhinvietnam.vn",
+  "registrableDomain": "nghenhinvietnam.vn",
+  "homepage": "https://nghenhinvietnam.vn/",
+  "allowedHosts": [
+    "nghenhinvietnam.vn",
+    "www.nghenhinvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "\"Bắt trend\" thám hiểm overland, một loạt bán tải và xe địa hình thân rời thi nhau ra mắt trong tháng 10/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time",
+    "attribute": null,
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:32.108Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://nghenhinvietnam.vn/xe-doi-song/bat-trend-tham-hiem-overland-mot-loat-ban-tai-va-xe-dia-hinh-than-roi-thi-nhau-ra-mat-trong-thang-102026",
+      "https://nghenhinvietnam.vn/chi-tiet-jbl-4329p-loa-khong-day-studio-monitor-powered-bookshelf-cho-audiophile-chot-gia-118-trieu-dong-tai-viet-nam",
+      "https://nghenhinvietnam.vn/trai-nghiem-danh-gia-loa-wharfedale-elysian-3-tinh-hoa-anh-quoc-chat-am-ngot-mem-ve-dep-sang-trong",
+      "https://nghenhinvietnam.vn/danh-gia-honor-watch-6-pin-trau-man-hinh-sang-smartwatch-noi-bat-phan-khuc-gia-7-trieu",
+      "https://nghenhinvietnam.vn/enough-phone-mau-dien-thoai-android-moi-cho-nguoi-yeu-thich-thiet-bi-nho-gon-di-kem-pin-co-the-thao-roi",
+      "https://nghenhinvietnam.vn/xe-doi-song/bat-trend-tham-hiem-overland-mot-loat-ban-tai-va-xe-dia-hinh-than-roi-thi-nhau-ra-mat-trong-thang-102026"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/nghenhinvietnam.vn"
+  },
+  "discovery": {
+    "homepage": "https://nghenhinvietnam.vn/",
+    "categories": [
+      "https://nghenhinvietnam.vn/video",
+      "https://nghenhinvietnam.vn/tin-tuc",
+      "https://nghenhinvietnam.vn/danh-gia",
+      "https://nghenhinvietnam.vn/brand-apple",
+      "https://nghenhinvietnam.vn/editors-choice",
+      "https://nghenhinvietnam.vn/e-magazine",
+      "https://nghenhinvietnam.vn/virtual-tours",
+      "https://nghenhinvietnam.vn/quang-cao",
+      "https://nghenhinvietnam.vn/giai-tri",
+      "https://nghenhinvietnam.vn/danh-muc/smart-phone",
+      "https://nghenhinvietnam.vn/danh-muc/xanh",
+      "https://nghenhinvietnam.vn/danh-muc/hifi-audio",
+      "https://nghenhinvietnam.vn/danh-muc/tablet-laptop",
+      "https://nghenhinvietnam.vn/danh-muc/tai-nghe",
+      "https://nghenhinvietnam.vn/danh-muc/tv",
+      "https://nghenhinvietnam.vn/danh-muc/camera",
+      "https://nghenhinvietnam.vn/danh-muc/loa",
+      "https://nghenhinvietnam.vn/danh-muc/home-cinema",
+      "https://nghenhinvietnam.vn/danh-muc/thiet-bi-deo",
+      "https://nghenhinvietnam.vn/danh-muc/pc",
+      "https://nghenhinvietnam.vn/danh-muc/smart-home",
+      "https://nghenhinvietnam.vn/xe-doi-song",
+      "https://nghenhinvietnam.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?nghenhinvietnam.vn/.*?(\\d{3,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.314Z",
+      "verifiedSeeds": [
+        "https://nghenhinvietnam.vn/",
+        "https://nghenhinvietnam.vn/video",
+        "https://nghenhinvietnam.vn/tin-tuc",
+        "https://nghenhinvietnam.vn/danh-gia",
+        "https://nghenhinvietnam.vn/brand-apple",
+        "https://nghenhinvietnam.vn/danh-muc/smart-phone"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nghenhinvietnam.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 31,
+    "checkedArticleUrls": 49,
+    "freshArticleChecks": 25,
+    "parserIssues": 18,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 31,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 22,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 316,
+        "passed": 30,
+        "distinctHashes": 30
+      },
+      {
+        "name": "audio",
+        "discovered": 2,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "video",
+        "discovered": 17,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nghenhinvietnam.vn/xe-doi-song/van-la-hang-hot-nhung-nhieu-mau-crossover-noi-tieng-van-ru-nhau-cap-nhat-trong-thang-102026",
+      "https://nghenhinvietnam.vn/chi-tiet-jbl-4329p-loa-khong-day-studio-monitor-powered-bookshelf-cho-audiophile-chot-gia-118-trieu-dong-tai-viet-nam",
+      "https://nghenhinvietnam.vn/trai-nghiem-danh-gia-loa-wharfedale-elysian-3-tinh-hoa-anh-quoc-chat-am-ngot-mem-ve-dep-sang-trong",
+      "https://nghenhinvietnam.vn/nen-mua-iphone-17-ngay-luc-nay-hay-kien-nhan-cho-doi-iphone-18-ra-mat",
+      "https://nghenhinvietnam.vn/dong-dien-thoai-oppo-reno-17-an-dinh-ngay-ra-mat-vao-tuan-toi-loat-anh-chinh-thuc-he-lo-thiet-ke-an-tuong-cung-he-sinh-thai-moi",
+      "https://nghenhinvietnam.vn/trai-nghiem-he-thong-tham-chieu-dinh-cao-tu-ongaku-audio-tai-trien-lam-vietnam-high-end-show-2026-su-ket-hop-hoan-hao-giua-ken-duc-va-den-nhat",
+      "https://nghenhinvietnam.vn/phien-ban-one-ui-95-beta-se-som-ra-mat-ngay-trong-thang-11-pha-vo-thong-le-hang-nam-cua-samsung",
+      "https://nghenhinvietnam.vn/msi-tung-laptop-venture-15-ai-b3m-voi-suc-manh-tu-vi-xu-ly-intel-panther-lake-va-do-hoa-tich-hop-arc-b390-an-tuong",
+      "https://nghenhinvietnam.vn/lutra-hoa-a1-chiec-may-anh-trong-suot-loai-bo-kinh-ngam-de-giu-tron-anh-nhin",
+      "https://nghenhinvietnam.vn/pro-ject-debut-carbon-the-original-su-tro-lai-day-kieu-hanh-cua-mot-bieu-tuong-mam-dia-than-kinh-dien",
+      "https://nghenhinvietnam.vn/ke-hoach-trien-khai-ban-cap-nhat-xiaomi-hyperos-4-android-17-thoi-diem-dien-thoai-cua-ban-nhan-duoc-ban-cap-nhat",
+      "https://nghenhinvietnam.vn/jbl-tai-thiet-ke-toan-dien-dong-loa-kiem-am-3-series-mkiii-buoc-dot-pha-ve-cong-nghe-am-thanh-va-kha-nang-tuy-bien-khong-gian",
+      "https://nghenhinvietnam.vn/optoma-photon-life-pk31-may-chieu-4k-nho-gon-mang-rap-phim-150-inch-vao-phong-khach",
+      "https://nghenhinvietnam.vn/xiaomi-gioi-thieu-dem-ngoi-cong-thai-hoc-mijia-tich-hop-suoi-am-that-lung-va-cam-bien-nhac-nho-thong-minh",
+      "https://nghenhinvietnam.vn/green-sm-trien-khai-chuong-trinh-mua-dong-xanh-vi-tuong-lai-xanh-ho-tro-dac-biet-cho-khach-hang-va-tai-xe",
+      "https://nghenhinvietnam.vn/panasonic-gioi-thieu-tai-nghe-chup-tai-khong-day-rb-hj800-voi-thoi-luong-pin-ky-luc-len-den-100-gio",
+      "https://nghenhinvietnam.vn/macbook-pro-14-moi-mong-va-nhe-hon-truoc-nhung-quat-tan-nhiet-lai-on-hon",
+      "https://nghenhinvietnam.vn/huawei-ra-mat-chiec-may-tinh-de-ban-thuan-noi-dia-dau-tien-cua-trung-quoc-trang-bi-chip-kirin-x90-va-chay-he-dieu-hanh-harmonyos",
+      "https://nghenhinvietnam.vn/coolpad-chinh-thuc-mo-ban-mau-dien-thoai-man-hinh-rong-cool-x-wide-voi-muc-gia-vo-cung-phai-chang",
+      "https://nghenhinvietnam.vn/aoc-ra-mat-man-hinh-di-dong-oled-16-inch-moi-voi-than-may-hop-kim-nhom-sieu-mong",
+      "https://nghenhinvietnam.vn/audio-technica-trinh-lang-tai-nghe-khong-day-dau-bang-ath-twx9mk3-voi-cong-nghe-chong-on-thich-ung-tung-ben-tai",
+      "https://nghenhinvietnam.vn/enough-phone-mau-dien-thoai-android-moi-cho-nguoi-yeu-thich-thiet-bi-nho-gon-di-kem-pin-co-the-thao-roi",
+      "https://nghenhinvietnam.vn/xe-doi-song/bat-gap-suv-hybrid-chay-dien-icaur-v27-truoc-ngay-ra-mat-viet-nam-mam-be-se-co-it-nhat-2-phien-ban",
+      "https://nghenhinvietnam.vn/xe-doi-song/dau-ducati-panigale-v2-honda-sap-tung-ra-superbike-hang-900cc-v3r-supersport",
+      "https://nghenhinvietnam.vn/xe-doi-song/la-mo-to-adventure-bui-bam-moto-guzzi-v85-tt-cung-van-co-ban-dac-biet-hop-tac-cung-nha-mot-y-napapijri",
+      "https://nghenhinvietnam.vn/xe-doi-song/mitsubishi-pajero-the-he-moi-da-len-tau-xuat-khau-chuan-bi-toi-viet-nam-vao-nua-sau-2027",
+      "https://nghenhinvietnam.vn/xe-doi-song/them-mot-bieu-tuong-xe-the-thao-nhat-nua-vua-duoc-toyota-xac-nhan-dem-tro-lai-se-dua-tai-giai-rally-the-gioi",
+      "https://nghenhinvietnam.vn/danh-gia-honor-watch-6-pin-trau-man-hinh-sang-smartwatch-noi-bat-phan-khuc-gia-7-trieu",
+      "https://nghenhinvietnam.vn/cam-nhan-nhanh-oppo-find-x10-chuong-moi-that-nhu-mat-thay",
+      "https://nghenhinvietnam.vn/danh-gia-paramax-euro-801-smart-giai-phap-am-thanh-bookshelf-hifi-karaoke-all-in-one-480w",
+      "https://nghenhinvietnam.vn/danh-gia-paramax-homi-6-smart-he-thong-nghe-nhac-karaoke-all-in-one-nho-gon-cho-khong-gian-hien-dai",
+      "https://nghenhinvietnam.vn/lieu-chiec-dien-thoai-oppo-find-x10-co-dang-mua-ngay-luc-nay-khong",
+      "https://nghenhinvietnam.vn/3-thang-cung-galaxy-z-fold8-khoan-dau-tu-xung-dang-lam-chu-trai-nghiem-song-thong-minh",
+      "https://nghenhinvietnam.vn/ec-2025-k-elec-google-tv-65ql990vsb-tv-pho-thong-dang-mua-cua-nam",
+      "https://nghenhinvietnam.vn/ec2025-asus-expertbook-p5-laptop-doanh-nghiep-dat-chuan-copilot-pc-ben-bi-nhat-nam",
+      "https://nghenhinvietnam.vn/ec2025-rog-strix-g16-2025-laptop-gaming-manh-me-tot-nhat-cho-game-thu-esports-cua-nam"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 18
+    },
+    "checkedAt": "2026-11-10T09:16:12.369Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nghenhinvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "originalPublicationBlockedReason": null,
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T05:47:42.838Z",
+    "method": "explicit_user_confirmed_GMT7_2026_11_17",
+    "proofs": [
+      {
+        "url": "https://nghenhinvietnam.vn/chi-tiet-jbl-4329p-loa-khong-day-studio-monitor-powered-bookshelf-cho-audiophile-chot-gia-118-trieu-dong-tai-viet-nam",
+        "contentHash": "a731d9c845abd54cbb848ee1821b3783b7046c9c935ed75a7fc7e709afc3c86d",
+        "description": "Nhà phân phối Thanh Tùng Audio vừa công bố sản phẩm JBL 4329P - hệ thống loa Studio Monitor Powered Bookshelf không dây cho audiophile và những người yêu nhạc sẽ có mặt vào tuần 1 tháng 06/2023 với giá bán lẻ chính thức là 118.000.000 VNĐ.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/chi-tiet-jbl-4329p-loa-khong-day-studio-monitor-powered-bookshelf-cho-audiophile-chot-gia-118-trieu-dong-tai-viet-nam",
+          "publishedDate": "2023-05-20T11:44:49.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nghenhinvietnam.vn/trai-nghiem-danh-gia-loa-wharfedale-elysian-3-tinh-hoa-anh-quoc-chat-am-ngot-mem-ve-dep-sang-trong",
+        "contentHash": "c878de266861fdbe36cd1134dbf32cd419245d7e853a2d4f425775fa948a0b85",
+        "description": "Wharfedale Elysian 3 hội tụ mọi giá trị tinh hoa trên mẫu flagship Elysian 4, từ vẻ đẹp thẩm mỹ lộng lẫy cho tới các công nghệ kỹ thuật tiên tiến, trong một thiết kế nhỏ gọn hơn để đáp ứng cho những phòng nghe hay không gian phòng khách vừa nhỏ hơn. Elysian 3 có giá bán 196,22 triệu đồng/cặp.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/trai-nghiem-danh-gia-loa-wharfedale-elysian-3-tinh-hoa-anh-quoc-chat-am-ngot-mem-ve-dep-sang-trong",
+          "publishedDate": "2023-08-28T08:59:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nghenhinvietnam.vn/oppo-reno-17-va-reno-17-pro-chinh-thuc-trinh-lang-voi-camera-200mp-sac-net-cung-vien-pin-dung-luong-khung-len-toi-8000-mah",
+        "contentHash": "f0c65b83cdae0f5ce9d9edbdcb98c2d629ba30091e8ee2d24d3f8c22fa4e40b7",
+        "description": "Chỉ sau khoảng 6 tháng kể từ khi dòng sản phẩm Reno 16 tiền nhiệm ra mắt hồi tháng 5, Oppo đã tiếp tục khuấy đảo thị trường smartphone bằng việc chính thức giới thiệu bộ đôi tân binh Oppo Reno 17 và Oppo Reno 17 Pro. Sự kiện ra mắt lần này thu hút sự chú ý đặc biệt từ giới công nghệ nhờ những nâng cấp táo bạo về thời lượng sử dụng cũng như khả năng nhiếp ảnh di động. Theo công bố từ nhà sản xuất, cả hai mẫu điện thoại thông minh mới này sẽ chính thức lên kệ và đến tay người tiêu dùng từ ngày 20 tháng 11 tới đây.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/oppo-reno-17-va-reno-17-pro-chinh-thuc-trinh-lang-voi-camera-200mp-sac-net-cung-vien-pin-dung-luong-khung-len-toi-8000-mah",
+          "publishedDate": "2026-11-16T15:26:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "nghenhinvietnam.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "backfillLayoutRepair": {
+    "checkedAt": "2026-11-17T11:32:46.276Z",
+    "kind": "native_original_clock",
+    "proofs": [
+      {
+        "url": "https://nghenhinvietnam.vn/xe-doi-song/sieu-xe-bay-roadster-con-lau-moi-mo-ban-nhung-tesla-da-bat-dau-ban-xe-tu-lai-toan-phan-khong-vo-lang-khong-chan-gaphanh-toi-tay-khach-hang",
+        "publisherUrl": "https://nghenhinvietnam.vn/xe-doi-song/sieu-xe-bay-roadster-con-lau-moi-mo-ban-nhung-tesla-da-bat-dau-ban-xe-tu-lai-toan-phan-khong-vo-lang-khong-chan-gaphanh-toi-tay-khach-hang",
+        "contentHash": "60a8c41571976d694e948fd5ab4cde77681f487a1425fe454e53f76a74c72b77",
+        "description": "Tesla đã bắt đầu mở bán mẫu xe tự lái toàn phần Cybercab cho khách hàng cá nhân tại Mỹ với giá 29.990 USD, kèm phí thuê bao tự lái 299 USD mỗi tháng.",
+        "publishedDate": "2026-11-15T23:45:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/xe-doi-song/sieu-xe-bay-roadster-con-lau-moi-mo-ban-nhung-tesla-da-bat-dau-ban-xe-tu-lai-toan-phan-khong-vo-lang-khong-chan-gaphanh-toi-tay-khach-hang",
+          "publishedDate": "2026-11-15T23:45:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nghenhinvietnam.vn/xe-doi-song/dung-mo-co-toyota-fortuner-the-he-moi-thay-doi-dot-pha",
+        "publisherUrl": "https://nghenhinvietnam.vn/xe-doi-song/dung-mo-co-toyota-fortuner-the-he-moi-thay-doi-dot-pha",
+        "contentHash": "955d31f4dea8c625a5b457902f1b7425b588046f0fdbf5c686f574b934929eca",
+        "description": "Những hình ảnh chụp bản thử nghiệm giai đoạn cuối mới nhất đã xác nhận Toyota Fortuner thế hệ kế tiếp có ngoại hình được làm mới và trang bị bổ sung, nhưng nền tảng khung bậc thang IMV và thân vỏ cốt lõi sẽ được giữ lại.",
+        "publishedDate": "2026-11-16T00:45:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/xe-doi-song/dung-mo-co-toyota-fortuner-the-he-moi-thay-doi-dot-pha",
+          "publishedDate": "2026-11-16T00:45:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nghenhinvietnam.vn/xe-doi-song/nguoi-trung-quoc-da-co-the-so-gang-voi-nhung-tuong-dai-superbike-1000cc-nhu-yamaha-r1-honda-cbr1000rr-r-hay-ducati-panigale-v4",
+        "publisherUrl": "https://nghenhinvietnam.vn/xe-doi-song/nguoi-trung-quoc-da-co-the-so-gang-voi-nhung-tuong-dai-superbike-1000cc-nhu-yamaha-r1-honda-cbr1000rr-r-hay-ducati-panigale-v4",
+        "contentHash": "a9d4fb80f2df6b19413902b318671c787767846d74956030dd7614b68fe4a1b9",
+        "description": "Với việc tung ra chiếc V4SR-RR bản thương mại, CFMOTO không chỉ đánh dấu một bước tiến mới của ngành công nghiệp mô tô Trung Quốc mà còn đại diện cho quốc gia này trong phân khúc superbike từ 1.000cc danh giá.",
+        "publishedDate": "2026-11-16T06:20:36.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nghenhinvietnam.vn/xe-doi-song/nguoi-trung-quoc-da-co-the-so-gang-voi-nhung-tuong-dai-superbike-1000cc-nhu-yamaha-r1-honda-cbr1000rr-r-hay-ducati-panigale-v4",
+          "publishedDate": "2026-11-16T06:20:36.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nghenhinvietnam.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "activationPending": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": ".news-detail",
+    "selector": ".description,.news-content p"
+  }
+}

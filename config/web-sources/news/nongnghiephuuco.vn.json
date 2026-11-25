@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nongnghiephuuco.vn",
+  "siteId": "nongnghiephuuco.vn",
+  "registrableDomain": "nongnghiephuuco.vn",
+  "homepage": "https://nongnghiephuuco.vn/",
+  "allowedHosts": [
+    "nongnghiephuuco.vn",
+    "www.nongnghiephuuco.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nongnghiephuuco.vn/",
+    "categories": [
+      "https://nongnghiephuuco.vn/de-an-885",
+      "https://nongnghiephuuco.vn/de-an-885/nghien-cuu-trao-doi",
+      "https://nongnghiephuuco.vn/de-an-885/hop-tac-quoc-te",
+      "https://nongnghiephuuco.vn/de-an-885/tieu-chuan-huu-co",
+      "https://nongnghiephuuco.vn/de-an-885/che-pham-sinh-hoc",
+      "https://nongnghiephuuco.vn/nong-nghiep-xanh"
+    ]
+  },
+  "title": {
+    "value": "BVTW Huế đẩy mạnh phòng, chống tác hại thuốc lá, vì sức khỏe cộng đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".__MASTERCMS_CONTENT",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:12.332Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:04.804Z",
+    "independentHoldouts": [
+      "https://nongnghiephuuco.vn/hai-phong-dong-hanh-cung-doanh-nghiep-thuc-day-san-xuat-tai-cac-khu-cong-nghiep-18307.html",
+      "https://nongnghiephuuco.vn/lam-dong-nhieu-doanh-nghiep-no-dong-tien-su-dung-dat-tien-cap-quyen-khai-thac-khoang-san-tai-nguyen-nuoc-18230.html",
+      "https://nongnghiephuuco.vn/lam-dong-tang-cuong-thuc-hien-cac-bien-phap-bao-dam-an-toan-truong-hoc-18546.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nongnghiephuuco.vn/bvtw-hue-day-manh-phong-chong-tac-hai-thuoc-la-vi-suc-khoe-cong-dong-18272.html",
+      "https://nongnghiephuuco.vn/hai-phong-dong-hanh-cung-doanh-nghiep-thuc-day-san-xuat-tai-cac-khu-cong-nghiep-18307.html",
+      "https://nongnghiephuuco.vn/lam-dong-nhieu-doanh-nghiep-no-dong-tien-su-dung-dat-tien-cap-quyen-khai-thac-khoang-san-tai-nguyen-nuoc-18230.html",
+      "https://nongnghiephuuco.vn/lam-dong-tang-cuong-thuc-hien-cac-bien-phap-bao-dam-an-toan-truong-hoc-18546.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

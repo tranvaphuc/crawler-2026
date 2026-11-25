@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "siteName": "taichinhso.net.vn",
+  "siteId": "taichinhso.net.vn",
+  "registrableDomain": "taichinhso.net.vn",
+  "homepage": "https://taichinhso.net.vn/",
+  "allowedHosts": [
+    "taichinhso.net.vn",
+    "www.taichinhso.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Truy tố Mr Pips cùng 188 bị can trong đại án lừa đảo hơn 1.568 tỷ đồng, Shark Bình bị cáo buộc rửa tiền",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".l-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "ignoreCanonicalIdentity": true,
+  "canonicalEvidence": "Multiple independently titled/full-bodied training and holdout pages declare the same unrelated canonical /tin-tuc/tien-ao-tien-that.html. Use exact requested URL for identity and retain declared canonical only as evidence.",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:38.373Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 4,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://taichinhso.net.vn/chi-tiet/truy-to-mr-pips-cung-188-bi-can-trong-dai-an-lua-dao-hon-1568-ty-dong-shark-binh-bi-cao-buoc-rua-tien.html",
+      "https://taichinhso.net.vn/chi-tiet/cong-an-tp-ha-noi-khoi-to-them-47-doi-tuong-lien-quan-vu-lua-dao-hop-dong-ky-nghi.html",
+      "https://taichinhso.net.vn/chi-tiet/bieu-gia-ban-le-dien-moi-ap-dung-tu-ngay-1112026.html",
+      "https://taichinhso.net.vn/chi-tiet/hoan-thien-de-an-sap-xep-to-chuc-lai-he-thong-co-so-giao-duc-dai-hoc-truoc-ngay-10112026.html",
+      "https://taichinhso.net.vn/chi-tiet/my-toan-tinh-dieu-gi-khi-chua-chuyen-giao-goi-vien-tro-16-ty-usd-cho-ukraina.html",
+      "https://taichinhso.net.vn/chi-tiet/chi-thi-cua-ban-bi-thu-ve-day-manh-va-nang-tam-cong-tac-doi-ngoai-nhan-dan.html",
+      "https://taichinhso.net.vn/chi-tiet/ong-trump-bo-nhiem-stephen-miller-lam-chanh-van-phong-nha-trang-sau-that-bai-bau-cu-giua-nhiem-ky.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://taichinhso.net.vn/",
+    "categories": [
+      "https://taichinhso.net.vn/tin-tuc/tien-ao-tien-that.html",
+      "https://taichinhso.net.vn/tin-tuc/dau-tu-thong-minh.html",
+      "https://taichinhso.net.vn/tin-tuc/tai-chinh-quoc-te.html",
+      "https://taichinhso.net.vn/tin-tuc/doanh-nghiep.html",
+      "https://taichinhso.net.vn/tin-tuc/an-toan-tai-chinh.html",
+      "https://taichinhso.net.vn/tin-tuc/lua-thu-vang.html",
+      "https://taichinhso.net.vn/video.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "taichinhso.net.vn",
+    "checkedAt": "2026-11-09T03:57:26.762Z",
+    "url": "https://taichinhso.net.vn/chi-tiet/truy-to-mr-pips-cung-188-bi-can-trong-dai-an-lua-dao-hon-1568-ty-dong-shark-binh-bi-cao-buoc-rua-tien.html",
+    "finalUrl": "https://taichinhso.net.vn/chi-tiet/truy-to-mr-pips-cung-188-bi-can-trong-dai-an-lua-dao-hon-1568-ty-dong-shark-binh-bi-cao-buoc-rua-tien.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4124,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:17.208Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/taichinhso.net.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "taichinhso.net.vn",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesAttempted": 7,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 163,
+    "checkedArticleUrls": 13,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 155,
+        "attempted": 10,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

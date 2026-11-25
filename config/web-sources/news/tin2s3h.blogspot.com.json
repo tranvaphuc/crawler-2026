@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tin2s3h.blogspot.com",
+  "siteId": "tin2s3h.blogspot.com",
+  "registrableDomain": "tin2s3h.blogspot.com",
+  "homepage": "https://tin2s3h.blogspot.com/",
+  "allowedHosts": [
+    "tin2s3h.blogspot.com",
+    "www.tin2s3h.blogspot.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tippsy Sake Review: I Tried & Tasted. Is This Worth the Investment?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://tin2s3h.blogspot.com/feeds/posts/default"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:49.097Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+      "https://tin2s3h.blogspot.com/2023/03/norovirus-appears-to-maintain-spreading.html",
+      "https://tin2s3h.blogspot.com/2023/03/china-criticizes-us-eu-for-banning.html",
+      "https://tin2s3h.blogspot.com/2023/03/us-democratic-congressman-opposes.html",
+      "https://tin2s3h.blogspot.com/2023/03/us-air-force-fires-6-officers-at.html",
+      "https://tin2s3h.blogspot.com/2023/03/us-air-force-fires-6-officers-at.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tin2s3h.blogspot.com/",
+    "categories": [
+      "https://tin2s3h.blogspot.com/",
+      "https://tin2s3h.blogspot.com/feeds/posts/default"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.332Z",
+      "verifiedSeeds": [
+        "https://tin2s3h.blogspot.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tin2s3h.blogspot.com",
+    "checkedAt": "2026-11-09T03:57:33.815Z",
+    "url": "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+    "finalUrl": "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 18793,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tin2s3h.blogspot.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 11,
+    "checkedArticleUrls": 11,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 11,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 12,
+        "passed": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+      "https://tin2s3h.blogspot.com/2023/03/norovirus-appears-to-maintain-spreading.html",
+      "https://tin2s3h.blogspot.com/2023/03/china-criticizes-us-eu-for-banning.html",
+      "https://tin2s3h.blogspot.com/2023/03/us-democratic-congressman-opposes.html",
+      "https://tin2s3h.blogspot.com/2023/03/us-air-force-fires-6-officers-at.html",
+      "https://tin2s3h.blogspot.com/2023/03/why-are-republicans-in-favor-of.html",
+      "https://tin2s3h.blogspot.com/2023/02/nhung-giac-mo-bao-hieu-may-man-ang-tim.html",
+      "https://tin2s3h.blogspot.com/2021/09/hot-lai-clip-tran-thanh-tro-chuyen-voi.html",
+      "https://tin2s3h.blogspot.com/2023/02/paralyzed-patients-can-use-computers-by.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:27.673Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tin2s3h.blogspot.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalPublicationBlockedReason": null,
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".post-content p"
+  },
+  "nativePublicationAdapter": null,
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T05:47:42.842Z",
+    "method": "https://tin2s3h.blogspot.com/feeds/posts/default",
+    "proofs": [
+      {
+        "url": "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+        "contentHash": "f1b181aef675e3182b22dc30bc98629117b8a66ad2f6e5e7b5cccc3461cc7167",
+        "description": "Tippsy Sake is a subscription field choice for sake drinkers, each pro sake enthusiasts, and rookies. They provide a large quantity of alternatives whether or not you’re shopping for a box once, sending some to a pal, or subscribing for a yr. The company ambitions to teach new sake drinkers, introduce fresh sake to seasoned sake drinkers, and usual aid the sake industry in Japan.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html",
+          "publishedDate": "2023-03-04T06:15:00.001Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://tin2s3h.blogspot.com/2023/03/norovirus-appears-to-maintain-spreading.html",
+        "contentHash": "f6492b79c731ed0cf8503c8d8b075b9cf14527397286d288d880882f94bbf54e",
+        "description": "Norovirus appears to be at a 12-month high, in step with data from the centers for sickness manage and Prevention.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tin2s3h.blogspot.com/2023/03/norovirus-appears-to-maintain-spreading.html",
+          "publishedDate": "2023-03-04T05:53:00.003Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://tin2s3h.blogspot.com/2023/03/china-criticizes-us-eu-for-banning.html",
+        "contentHash": "00180d187647a0c1520b0171bda3255f249a77d9c866470b9dde24b39bdcda8a",
+        "description": "According to the South China Morning Post , TikTok is facing a new wave of political backlash in some of its major international markets, as the US, Canada and the European Union (EU) all move to ban the app. on government devices. The US House of Representatives Foreign Affairs Committee on March 1 passed a bill giving US President Joe Biden the power to ban TikTok nationwide.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tin2s3h.blogspot.com/2023/03/china-criticizes-us-eu-for-banning.html",
+          "publishedDate": "2023-03-03T14:18:00.001Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  }
+}

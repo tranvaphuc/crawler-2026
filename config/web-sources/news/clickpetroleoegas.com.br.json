@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "clickpetroleoegas.com.br",
+  "siteId": "clickpetroleoegas.com.br",
+  "registrableDomain": "clickpetroleoegas.com.br",
+  "homepage": "https://clickpetroleoegas.com.br/",
+  "allowedHosts": [
+    "clickpetroleoegas.com.br",
+    "www.clickpetroleoegas.com.br"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://clickpetroleoegas.com.br/",
+    "categories": [
+      "https://clickpetroleoegas.com.br/category/acidentes/",
+      "https://clickpetroleoegas.com.br/category/automotivo/",
+      "https://clickpetroleoegas.com.br/category/automotivo/veiculos-a-gas-gnv/",
+      "https://clickpetroleoegas.com.br/category/automotivo/veiculos-a-hidrogenio/",
+      "https://clickpetroleoegas.com.br/category/automotivo/veiculos-eletricos/"
+    ]
+  },
+  "title": {
+    "value": "Prefeitura de Porto Velho abre 330 vagas de professor de séries iniciais, metade para contratação imediata, paga R$ 3.847,97 por 30 horas semanais e prorroga as inscrições só até 16 de novembro",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:28.569Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:15.056Z",
+    "independentHoldouts": [
+      "https://clickpetroleoegas.com.br/ufgd-15-professores-visitantes-mh15e-mhbb01/",
+      "https://clickpetroleoegas.com.br/gwm-testa-no-litoral-paulista-suv-hibrido-maior-que-o-haval-h6-modelo-vendido-na-china-tem-319-cv-e-478-metros-mas-venda-no-brasil-segue-sem-confirmacao-afch/",
+      "https://clickpetroleoegas.com.br/cientistas-chineses-inventam-pente-eletrico-contra-calvicie-que-usa-impulsos-eletricos-e-terapias-geneticas-para-recuperar-quase-100-dos-pelos-em-28-dias-rpc95/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://clickpetroleoegas.com.br/porto-velho-330-professores-mh15e-mhbb01/",
+      "https://clickpetroleoegas.com.br/ufgd-15-professores-visitantes-mh15e-mhbb01/",
+      "https://clickpetroleoegas.com.br/gwm-testa-no-litoral-paulista-suv-hibrido-maior-que-o-haval-h6-modelo-vendido-na-china-tem-319-cv-e-478-metros-mas-venda-no-brasil-segue-sem-confirmacao-afch/",
+      "https://clickpetroleoegas.com.br/cientistas-chineses-inventam-pente-eletrico-contra-calvicie-que-usa-impulsos-eletricos-e-terapias-geneticas-para-recuperar-quase-100-dos-pelos-em-28-dias-rpc95/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

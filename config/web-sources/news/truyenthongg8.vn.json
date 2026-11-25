@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "siteName": "truyenthongg8.vn",
+  "siteId": "truyenthongg8.vn",
+  "registrableDomain": "truyenthongg8.vn",
+  "homepage": "https://truyenthongg8.vn/",
+  "allowedHosts": [
+    "truyenthongg8.vn",
+    "www.truyenthongg8.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Công trình tháp chuông xây dựng ở Cảng Nha Trang bất ngờ đổ sập",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "variants": [
+    {
+      "title": {
+        "value": "Nhà máy xử lý rác Dị Sử thành bãi đổ thải: Trách nhiệm bị đùn đẩy!",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "Khương Đình: Hàng loạt ngôi nhà “mọc” trên đất nông nghiệp, cần kiểm tra, xử lý vi phạm",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".datetimekdn",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".post-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:49.625Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://truyenthongg8.vn/tin-tuc-su-kien/cong-trinh-thap-chuong-xay-dung-o-cang-nha-trang-bat-ngo-do-sap-83439.html",
+      "https://truyenthongg8.vn/tin-tuc-su-kien/nha-may-xu-ly-rac-di-su-thanh-bai-do-thai-trach-nhiem-bi-dun-day-89639.html",
+      "https://truyenthongg8.vn/tin-tuc-su-kien/khuong-dinh-hang-loat-ngoi-nha-moc-tren-dat-nong-nghiep-can-kiem-tra-xu-ly-vi-pham-89625.html",
+      "https://truyenthongg8.vn/van-hoa-xa-hoi/bac-ninh-soi-noi-giai-pickleball-neo-tra-ngon-dam-vi-6-tranh-cup-anchi-network-team-championship-2026-89642.html",
+      "https://truyenthongg8.vn/an-ninh-trat-tu/ha-noi-nhieu-ngoi-nha-chieu-cao-vuot-troi-o-tu-liem-can-kiem-tra-dam-bao-quy-hoach-89641.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://truyenthongg8.vn/",
+    "categories": [
+      "https://truyenthongg8.vn/tin-tuc-su-kien",
+      "https://truyenthongg8.vn/tai-chinh-ngan-hang",
+      "https://truyenthongg8.vn/quy-hoach-do-thi",
+      "https://truyenthongg8.vn/doi-song-tieu-dung",
+      "https://truyenthongg8.vn/hang-hoa-thuong-hieu",
+      "https://truyenthongg8.vn/van-hoa-xa-hoi",
+      "https://truyenthongg8.vn/an-ninh-trat-tu",
+      "https://truyenthongg8.vn/the-gioi-do-day",
+      "https://truyenthongg8.vn/chuyen-via-he"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "truyenthongg8.vn",
+    "checkedAt": "2026-11-09T03:57:35.280Z",
+    "url": "https://truyenthongg8.vn/tin-tuc-su-kien/cong-trinh-thap-chuong-xay-dung-o-cang-nha-trang-bat-ngo-do-sap-83439.html",
+    "finalUrl": "https://truyenthongg8.vn/tin-tuc-su-kien/cong-trinh-thap-chuong-xay-dung-o-cang-nha-trang-bat-ngo-do-sap-83439.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 614,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:34.702Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/truyenthongg8.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "truyenthongg8.vn",
+    "parsedArticles": 15,
+    "distinctHashes": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 201,
+    "checkedArticleUrls": 15,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 199,
+        "attempted": 13,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:00:29.768Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://truyenthongg8.vn/quy-hoach-do-thi/nha-may-xu-ly-rac-di-su-tro-thanh-bai-do-chat-thai-xay-dung-89640.html",
+      "https://truyenthongg8.vn/tin-tuc-su-kien/dai-hoc-quoc-gia-ha-noi-mo-nganh-hoc-trai-quy-dinh-89633.html"
+    ],
+    "improvedUrls": [
+      "https://truyenthongg8.vn/tai-chinh-ngan-hang/mot-minh-tong-giam-doc-sjc-quyet-dinh-gia-vang-vi-pham-ve-thue-bi-chuyen-dieu-tra-87429.html",
+      "https://truyenthongg8.vn/quy-hoach-do-thi/ha-noi-cong-trinh-9-tang-trong-ngach-47a-an-duong-vuong-co-dau-hieu-xay-dung-vuot-quy-mo-can-lam-ro-giay-phep-89552.html",
+      "https://truyenthongg8.vn/van-hoa-xa-hoi/vu-nha-dat-333-giang-vo-sau-quyet-dinh-huy-hai-ban-an-quyen-loi-cua-ong-nguyen-xuan-cuu-bao-gio-duoc-xem-xet-dut-diem-89541.html",
+      "https://truyenthongg8.vn/the-gioi-do-day/nu-hanh-khach-bi-cua-chan-vi-mac-ket-vao-bang-chuyen-di-bo-o-san-bay-80196.html",
+      "https://truyenthongg8.vn/van-hoa-xa-hoi/bac-ninh-soi-noi-giai-pickleball-neo-tra-ngon-dam-vi-6-tranh-cup-anchi-network-team-championship-2026-89642.html",
+      "https://truyenthongg8.vn/tin-tuc-su-kien/nha-may-xu-ly-rac-di-su-thanh-bai-do-thai-trach-nhiem-bi-dun-day-89639.html",
+      "https://truyenthongg8.vn/the-gioi-do-day/video-can-canh-chay-pha-o-indonesia-it-nhat-5-nguoi-thiet-mang-89485.html",
+      "https://truyenthongg8.vn/quy-hoach-do-thi/nha-may-xu-ly-rac-di-su-tro-thanh-bai-do-chat-thai-xay-dung-89640.html",
+      "https://truyenthongg8.vn/tin-tuc-su-kien/dai-hoc-quoc-gia-ha-noi-mo-nganh-hoc-trai-quy-dinh-89633.html"
+    ],
+    "regressions": 0
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "siteName": "finance24h.vn",
+  "siteId": "finance24h.vn",
+  "registrableDomain": "finance24h.vn",
+  "homepage": "https://finance24h.vn/",
+  "allowedHosts": [
+    "finance24h.vn",
+    "www.finance24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Pháp rung chuyển vì làn sóng biểu tình mới, 1,57 triệu người xuống đường",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:03.762Z",
+    "sampleCount": 7,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://finance24h.vn/thoi-su/phap-rung-chuyen-vi-lan-song-bieu-tinh-moi-1-57-trieu-nguoi-xuong-duong.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/dai-bieu-quoc-hoi-can-cu-long-gia-goi-thau-tro-thanh-chiec-bay-hai-chieu-.html?categoryId=1596073",
+      "https://finance24h.vn/kinh-te/on-dinh-tai-chinh-phai-gan-voi-bao-dam-an-ninh-tien-te.html",
+      "https://finance24h.vn/thoi-su/pho-chu-tich-nuoc-vo-thi-anh-xuan-trao-huy-hieu-80-nam-tuoi-dang-cho-dang-vien-lao-thanh-o-thanh-hoa.html",
+      "https://finance24h.vn/kinh-te/gia-bac-chiu-ap-luc-dieu-chinh-trien-vong-thi-truong-2027-2028-ra-sao-.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://finance24h.vn/",
+    "categories": [
+      "https://finance24h.vn/thoi-su",
+      "https://finance24h.vn/kinh-te",
+      "https://finance24h.vn/doanh-nghiep",
+      "https://finance24h.vn/doi-song",
+      "https://finance24h.vn/nhip-song-so",
+      "https://finance24h.vn/giao-duc",
+      "https://finance24h.vn/giai-tri",
+      "https://finance24h.vn/giai-tri/video?isFeatured=1",
+      "https://finance24h.vn/media/video",
+      "https://finance24h.vn/thoi-su/trong-nuoc",
+      "https://finance24h.vn/thoi-su/quoc-te",
+      "https://finance24h.vn/emagazine",
+      "https://finance24h.vn/kinh-te/thi-truong",
+      "https://finance24h.vn/kinh-te/bat-dong-san",
+      "https://finance24h.vn/kinh-te/ngan-hang",
+      "https://finance24h.vn/ocop?isFeatured=1",
+      "https://finance24h.vn/doanh-nghiep/dau-tu",
+      "https://finance24h.vn/doanh-nghiep/tai-chinh",
+      "https://finance24h.vn/doi-song/y-te",
+      "https://finance24h.vn/doi-song/phap-luat",
+      "https://finance24h.vn/doi-song/song-xanh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "finance24h.vn",
+    "checkedAt": "2026-11-09T03:57:04.529Z",
+    "url": "https://finance24h.vn/thoi-su/phap-rung-chuyen-vi-lan-song-bieu-tinh-moi-1-57-trieu-nguoi-xuong-duong.html?categoryId=1596073",
+    "finalUrl": "https://finance24h.vn/thoi-su/phap-rung-chuyen-vi-lan-song-bieu-tinh-moi-1-57-trieu-nguoi-xuong-duong.html?categoryId=1596073",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1074,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".time",
+        "attribute": null,
+        "index": 0,
+        "priority": 65
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "finance24h.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 35,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 26,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 21,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 153,
+        "passed": 32,
+        "distinctHashes": 23
+      },
+      {
+        "name": "video",
+        "discovered": 10,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://finance24h.vn/giai-tri/forbes-neu-ten-nghe-si-giau-thu-3-the-gioi.html",
+      "https://finance24h.vn/kinh-te/thi-truong-giao-dich-hang-hoa-gia-dau-gia-ca-phe-giam-manh.html",
+      "https://finance24h.vn/kinh-te/hdbank-day-manh-ipo-cong-ty-thanh-vien-mo-rong-he-sinh-thai-tai-chinh.html",
+      "https://finance24h.vn/giao-duc/trang-bi-ky-nang-nang-cao-nhan-thuc-tren-khong-gian-mang-cho-hoc-sinh-da-nang.html",
+      "https://finance24h.vn/thoi-su/bac-ninh-kiem-tra-xu-ly-vi-pham-trong-cap-giay-chung-nhan-nghi-viec-huong-bao-hiem-xa-hoi.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/eu-co-ke-hoach-buoc-nam-gioi-ukraine-tro-ve-nuoc-de-bo-sung-quan-so-.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/nga-danh-tat-suon-tao-buoc-dot-pha-moi-o-zaporizhzhia.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/quan-doi-ukraine-phan-cong-lon-tai-sumy-du-bao-tiep-tuc-vuot-bien-gioi-nga.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/mau-a-doi-moi-cach-lam-de-gan-dan-sat-dan-sau-sap-nhap.html?categoryId=1596073",
+      "https://finance24h.vn/thoi-su/nhat-tra-gia-dat-vi-ukraine.html?categoryId=1596073",
+      "https://finance24h.vn/kinh-te/thi-truong-giao-dich-hang-hoa-gia-dau-gia-ca-phe-giam-manh.html?categoryId=1596078",
+      "https://finance24h.vn/kinh-te/hdbank-day-manh-ipo-cong-ty-thanh-vien-mo-rong-he-sinh-thai-tai-chinh.html?categoryId=1596078",
+      "https://finance24h.vn/kinh-te/ngay-10-11-gia-vang-trong-nuoc-tiep-tuc-tang.html?categoryId=1596078",
+      "https://finance24h.vn/kinh-te/ngay-10-11-ty-gia-trung-tam-giam-10-dong.html?categoryId=1596078",
+      "https://finance24h.vn/kinh-te/thi-truong-chung-khoan-cuoi-nam-dong-tien-than-trong-cho-nhip-moi.html?categoryId=1596078",
+      "https://finance24h.vn/kinh-te/nam-a-bank-du-kien-huy-dong-1.320-ty-dong-tu-chao-ban-rieng-le-100-trieu-co-phieu.html?categoryId=1596078",
+      "https://finance24h.vn/thoi-su/bac-ninh-kiem-tra-xu-ly-vi-pham-trong-cap-giay-chung-nhan-nghi-viec-huong-bao-hiem-xa-hoi.html",
+      "https://finance24h.vn/thoi-su/eu-co-ke-hoach-buoc-nam-gioi-ukraine-tro-ve-nuoc-de-bo-sung-quan-so-.html",
+      "https://finance24h.vn/kinh-te/ngay-10-11-gia-vang-trong-nuoc-tiep-tuc-tang.html",
+      "https://finance24h.vn/thoi-su/nga-danh-tat-suon-tao-buoc-dot-pha-moi-o-zaporizhzhia.html",
+      "https://finance24h.vn/kinh-te/ngay-10-11-ty-gia-trung-tam-giam-10-dong.html",
+      "https://finance24h.vn/kinh-te/thi-truong-chung-khoan-cuoi-nam-dong-tien-than-trong-cho-nhip-moi.html",
+      "https://finance24h.vn/thoi-su/quan-doi-ukraine-phan-cong-lon-tai-sumy-du-bao-tiep-tuc-vuot-bien-gioi-nga.html",
+      "https://finance24h.vn/thoi-su/mau-a-doi-moi-cach-lam-de-gan-dan-sat-dan-sau-sap-nhap.html",
+      "https://finance24h.vn/kinh-te/nam-a-bank-du-kien-huy-dong-1.320-ty-dong-tu-chao-ban-rieng-le-100-trieu-co-phieu.html",
+      "https://finance24h.vn/giao-duc/giao-vien-biet-phai-co-duoc-huong-phu-cap-tham-nien-.html",
+      "https://finance24h.vn/giao-duc/san-khau-hoa-giup-hoc-sinh-hieu-luat-vung-ky-nang.html",
+      "https://finance24h.vn/thoi-su/nhat-tra-gia-dat-vi-ukraine.html",
+      "https://finance24h.vn/doi-song/dat-thue-tra-tien-hang-nam-co-duoc-chuyen-cho-con-chau-tiep-tuc-thue-.html",
+      "https://finance24h.vn/doanh-nghiep/loi-nhuan-doanh-nghiep-tang-46-1-nhom-bat-dong-san-tang-364-6-.html",
+      "https://finance24h.vn/doi-song/du-bao-thoi-tiet-ngay-10-11-bac-bo-troi-lanh-trung-bo-mua-to.html",
+      "https://finance24h.vn/kinh-te/tien-gui-ngan-hang-tang-manh-trong-boi-canh-dieu-chinh-lai-suat.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:28.989Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/finance24h.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

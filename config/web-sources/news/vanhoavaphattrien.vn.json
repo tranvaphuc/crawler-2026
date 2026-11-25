@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vanhoavaphattrien.vn",
+  "siteId": "vanhoavaphattrien.vn",
+  "registrableDomain": "vanhoavaphattrien.vn",
+  "homepage": "https://vanhoavaphattrien.vn/",
+  "allowedHosts": [
+    "vanhoavaphattrien.vn",
+    "www.vanhoavaphattrien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hồ sơ 121/2026: Tìm mộ liệt sỹ Hà Sỹ Ban mai táng bên một dòng suối…",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:51.781Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vanhoavaphattrien.vn/ho-so-1212026-tim-mo-liet-sy-ha-sy-ban-mai-tang-ben-mot-dong-suoi-a35778.html",
+      "https://vanhoavaphattrien.vn/phu-tho-ubnd-phuong-vinh-phuc-thong-bao-tim-nguoi-duoc-nha-nuoc-giao-dat-va-nguoi-thua-ke-theo-quy-dinh-de-phoi-hop-thuc-hien-cong-tac-gpmb-theo-quy-dinh-a35530.html",
+      "https://vanhoavaphattrien.vn/tran-tap-kich-cu-diem-ngoc-cung-giao-ngoc-bo-cua-tieu-doan-20-dac-cong-10051968-a35756.html",
+      "https://vanhoavaphattrien.vn/chuyen-lang-chuyen-pho-lai-suy-ngam-nghich-canh-sao-rong-kien-thuc-a35783.html",
+      "https://vanhoavaphattrien.vn/pho-thu-tuong-pham-thi-thanh-tra-chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-a35782.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vanhoavaphattrien.vn/",
+    "categories": [
+      "https://vanhoavaphattrien.vn/c/van-hoa",
+      "https://vanhoavaphattrien.vn/c/van-hoa-duong-dai",
+      "https://vanhoavaphattrien.vn/c/van-hoa-co-truyen",
+      "https://vanhoavaphattrien.vn/c/di-san-du-lich",
+      "https://vanhoavaphattrien.vn/c/tim-kiem-xac-dinh-danh-tinh-liet-si",
+      "https://vanhoavaphattrien.vn/c/phap-luat-doi-song",
+      "https://vanhoavaphattrien.vn/c/the-thao",
+      "https://vanhoavaphattrien.vn/c/am-thuc",
+      "https://vanhoavaphattrien.vn/c/thoi-cuoc",
+      "https://vanhoavaphattrien.vn/c/chinh-sach-su-kien",
+      "https://vanhoavaphattrien.vn/c/dien-dan",
+      "https://vanhoavaphattrien.vn/c/nguoi-tot-viec-tot",
+      "https://vanhoavaphattrien.vn/c/ban-doc",
+      "https://vanhoavaphattrien.vn/c/phat-trien-ben-vung",
+      "https://vanhoavaphattrien.vn/c/chuyen-lang-chuyen-pho",
+      "https://vanhoavaphattrien.vn/c/doanh-nghiep",
+      "https://vanhoavaphattrien.vn/c/khoa-hoc-cong-nghe",
+      "https://vanhoavaphattrien.vn/c/lang-nghe",
+      "https://vanhoavaphattrien.vn/c/thuong-hieu-san-pham",
+      "https://vanhoavaphattrien.vn/c/bai-viet",
+      "https://vanhoavaphattrien.vn/c/cong-trinh",
+      "https://vanhoavaphattrien.vn/c/nong-nghiep-nong-dan-nong-thon",
+      "https://vanhoavaphattrien.vn/c/nong-nghiep-va-moi-truong",
+      "https://vanhoavaphattrien.vn/c/nong-nghiep-sang-tao",
+      "https://vanhoavaphattrien.vn/c/nong-nghiep-cong-nghe-cao",
+      "https://vanhoavaphattrien.vn/c/chuyen-lang-xa",
+      "https://vanhoavaphattrien.vn/c/tac-gia-tac-pham",
+      "https://vanhoavaphattrien.vn/c/cong-trinh-1",
+      "https://vanhoavaphattrien.vn/c/goc-nhin-chuyen-gia",
+      "https://vanhoavaphattrien.vn/c/bai-nghien-cuu",
+      "https://vanhoavaphattrien.vn/video",
+      "https://vanhoavaphattrien.vn/photo",
+      "https://vanhoavaphattrien.vn/podcast",
+      "https://vanhoavaphattrien.vn/infographic",
+      "https://vanhoavaphattrien.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vanhoavaphattrien.vn",
+    "checkedAt": "2026-11-09T03:57:35.990Z",
+    "url": "https://vanhoavaphattrien.vn/ho-so-1212026-tim-mo-liet-sy-ha-sy-ban-mai-tang-ben-mot-dong-suoi-a35778.html",
+    "finalUrl": "https://vanhoavaphattrien.vn/ho-so-1212026-tim-mo-liet-sy-ha-sy-ban-mai-tang-ben-mot-dong-suoi-a35778.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7927,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".video-content-section",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "vanhoavaphattrien.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 45,
+    "checkedArticleUrls": 47,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 45,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 418,
+        "passed": 45,
+        "distinctHashes": 45
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vanhoavaphattrien.vn/ho-so-1222026-liet-si-bui-huy-tho-tu-nha-may-bia-ha-noi-den-mat-tran-phia-nam-a35807.html",
+      "https://vanhoavaphattrien.vn/chua-het-han-nhan-bai-cuoc-thi-gui-tuong-lai-xanh-2050-mua-3-da-nhan-hon-10500-bai-du-thi-a35808.html",
+      "https://vanhoavaphattrien.vn/giu-on-dinh-gia-hang-hoa-dich-vu-do-nha-nuoc-quan-ly-den-het-nam-2026-a35797.html",
+      "https://vanhoavaphattrien.vn/ky-niem-ngay-phap-luat-viet-nam-911-hinh-thanh-van-hoa-thuong-ton-phap-luat-a35792.html",
+      "https://vanhoavaphattrien.vn/goc-nhin-van-hoa-an-toan-thuc-pham-thong-nhat-mot-dau-moi-quan-ly-bao-ve-suc-khoe-cong-dong-a35801.html",
+      "https://vanhoavaphattrien.vn/chu-tich-quoc-hoi-tran-thanh-man-du-le-khanh-thanh-cong-trinh-tai-khu-di-tich-quoc-gia-dac-biet-tan-trao-a35791.html",
+      "https://vanhoavaphattrien.vn/chuyen-lang-chuyen-pho-lai-suy-ngam-nghich-canh-sao-rong-kien-thuc-a35783.html",
+      "https://vanhoavaphattrien.vn/pho-thu-tuong-pham-thi-thanh-tra-chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-a35782.html",
+      "https://vanhoavaphattrien.vn/goc-nhin-van-hoa-45-nam-phat-giao-viet-nam-dong-hanh-cung-dan-toc-a35772.html",
+      "https://vanhoavaphattrien.vn/quang-ngai-bo-y-quy-hoach-truong-noi-tru-lien-cap-mo-rong-co-hoi-hoc-tap-cho-hoc-sinh-vung-bien-a35810.html",
+      "https://vanhoavaphattrien.vn/gan-20-nam-lan-lon-voi-nghe-moi-gioi-ceo-ky-cuu-tiet-lo-bi-quyet-tru-vung-qua-moi-chu-ky-bat-dong-san-a35806.html",
+      "https://vanhoavaphattrien.vn/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-a35805.html",
+      "https://vanhoavaphattrien.vn/ngay-1011-khong-khi-lanh-tran-sau-mien-bac-ret-trung-bo-mua-lon-a35804.html",
+      "https://vanhoavaphattrien.vn/bac-ninh-dai-su-an-do-tai-viet-nam-tham-trao-tang-va-trong-cay-luu-niem-tai-chua-bo-da-di-tich-quoc-gia-dac-biet-di-san-van-hoa-the-gioi-a35803.html",
+      "https://vanhoavaphattrien.vn/di-san-van-hoa-bien-ca-mau-the-manh-tao-suc-hut-cho-festival-tom-lan-thu-2-a35802.html",
+      "https://vanhoavaphattrien.vn/an-giang-phat-dong-thang-hanh-dong-vi-binh-dang-gioi-nam-2026-a35809.html",
+      "https://vanhoavaphattrien.vn/phu-tho-mai-truong-tam-duong-noi-dat-nen-mong-cho-su-truong-thanh-a32177.html",
+      "https://vanhoavaphattrien.vn/bao-lua-po-chen-tong-va-chien-cong-cua-doan-dac-cong-anh-hung-a35800.html",
+      "https://vanhoavaphattrien.vn/phu-tho-ubnd-phuong-vinh-phuc-thong-bao-tim-nguoi-duoc-nha-nuoc-giao-dat-va-nguoi-thua-ke-theo-quy-dinh-de-phoi-hop-thuc-hien-cong-tac-gpmb-theo-quy-dinh-a35530.html",
+      "https://vanhoavaphattrien.vn/an-giang-khong-gian-van-hoa-ho-chi-minh-dia-chi-do-giao-duc-long-yeu-nuoc-cho-hoc-sinh-a35798.html",
+      "https://vanhoavaphattrien.vn/ngay-911-khong-khi-lanh-tran-ve-bac-bo-mua-ret-a35793.html",
+      "https://vanhoavaphattrien.vn/vi-tri-vai-tro-cua-he-thong-tieu-chi-danh-gia-ket-qua-hoat-dong-cua-uy-ban-mat-tran-to-quoc-viet-nam-cac-cap-a35795.html",
+      "https://vanhoavaphattrien.vn/chu-truong-chinh-sach-cua-dang-nha-nuoc-va-quan-diem-chi-dao-cua-uy-ban-trung-uong-mttq-viet-nam-lien-quan-den-xay-dung-ap-dung-he-thong-tieu-chi-danh-gia-ket-qua-hoat-dong-cua-uy-ban-mttq-viet-nam-cac-cap-a35794.html",
+      "https://vanhoavaphattrien.vn/cuoi-thu-ve-voi-nha-trang-a35665.html",
+      "https://vanhoavaphattrien.vn/bac-ninh-hon-50-nam-giu-nghe-cua-nghe-nhan-lang-tranh-dong-ho-a35654.html",
+      "https://vanhoavaphattrien.vn/hai-phong-van-mieu-mao-dien-dau-an-hon-500-nam-luu-giu-mach-nguon-khoa-bang-xu-dong-a35609.html",
+      "https://vanhoavaphattrien.vn/bac-ninh-trung-tam-bao-ton-tranh-dan-gian-dong-ho-no-luc-gin-giu-di-san-tram-nam-a35562.html",
+      "https://vanhoavaphattrien.vn/ha-noi-suc-song-nghin-nam-cua-lang-nghe-det-lua-van-phuc-a35515.html",
+      "https://vanhoavaphattrien.vn/binh-bai-tho-muoi-co-gai-anh-hung-lam-ha-cua-dang-vuong-hung-a35512.html",
+      "https://vanhoavaphattrien.vn/vuong-duy-bien-tu-san-khau-mua-roi-den-khong-gian-cuoc-doi-a35475.html",
+      "https://vanhoavaphattrien.vn/toi-nho-nhung-ngay-thu-da-xa-a35473.html",
+      "https://vanhoavaphattrien.vn/cai-gia-65-trieu-tren-iphone-duo-ken-op-khong-dung-cuong-luc-nhung-sao-van-chay-hang-a35608.html",
+      "https://vanhoavaphattrien.vn/doanh-nhan-pham-van-son-duoc-nobel-university-hoa-ky-trao-tang-danh-hieu-giao-su-danh-du-nganh-quan-tri-kinh-doanh-a35415.html",
+      "https://vanhoavaphattrien.vn/dem-nguoc-ngay-le-tet-va-su-kien-voi-demnguocnet-a35405.html",
+      "https://vanhoavaphattrien.vn/chuan-bi-mua-iphone-duo-phan-biet-lich-ra-mat-va-thoi-diem-nhan-may-a35357.html",
+      "https://vanhoavaphattrien.vn/tieu-chi-chon-cong-ty-luat-khi-gap-tranh-chap-hang-hai-bao-hiem-a35302.html",
+      "https://vanhoavaphattrien.vn/nghe-an-xa-than-linh-thuc-hien-thang-loi-cac-muc-tieu-phat-trien-kinh-te-xa-hoi-a35282.html",
+      "https://vanhoavaphattrien.vn/iphone-18-pro-so-pin-voi-iphone-17-pro-max-con-so-thuc-te-noi-len-dieu-gi-a35184.html",
+      "https://vanhoavaphattrien.vn/chinh-ngach-pro-don-vi-van-chuyen-hang-taobao-uy-tin-a35181.html",
+      "https://vanhoavaphattrien.vn/vinfast-vf-wild-chinh-thuc-nhan-dat-coc-voi-uu-dai-61-trieu-dong-a35169.html",
+      "https://vanhoavaphattrien.vn/vinfast-vf-wild-gia-tu-799-trieu-dong-sau-uu-dai-coc-som-ban-tai-tien-nghi-cho-ca-nha-a35167.html",
+      "https://vanhoavaphattrien.vn/vua-di-lam-vua-hoc-nghe-spa-bi-quyet-hoc-vien-legacy-academy-van-vung-tay-nghe-sau-khoa-hoc-a35026.html",
+      "https://vanhoavaphattrien.vn/iphone-18-propro-max-co-may-camera-thong-so-chi-tiet-a35016.html",
+      "https://vanhoavaphattrien.vn/vinfast-kinet-ghi-dau-an-voi-kha-nang-tang-toc-manh-me-va-co-che-doi-pin-nhanh-a34481.html",
+      "https://vanhoavaphattrien.vn/chuan-song-khoe-tu-than-an-tu-tam-tai-vinh-xanh-ocean-city-a34326.html",
+      "https://vanhoavaphattrien.vn/chu-xe-vinfast-vf-8-an-tam-tren-nhung-hanh-trinh-xuyen-viet-nho-ha-tang-sac-va-dich-vu-rong-khap-a34311.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1,
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:17:42.112Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vanhoavaphattrien.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -6,6 +6,12 @@
   "type": "module",
   "packageManager": "npm@8.19.4",
   "scripts": {
+    "api:social-metrics": "node scripts/social_metrics_api.mjs",
+    "test:social-metrics": "node --test test/social-metrics.test.mjs",
+    "api:facebook-share": "node scripts/facebook_share_api.mjs",
+    "test:facebook-share": "node --test test/facebook-share.test.mjs",
+    "test:facebook-es5": "node --test test/facebook-es5.test.mjs test/facebook-posts.test.mjs test/facebook-comments.test.mjs",
+    "demo:facebook-es5": "node scripts/build_facebook_es5_demo.mjs",
     "dev": "nodemon src/index.js",
     "build": "babel src -d dist",
     "start": "node dist/index.js",
@@ -38,10 +44,28 @@
     "batdongsan:hcm:excel": "node scripts/build-batdongsan-hcm-excel.mjs",
     "batdongsan:hcm:all": "npm run batdongsan:hcm && npm run batdongsan:hcm:excel",
     "es7:profiles": "node scripts/update-es7-profiles.mjs",
+    "es7:profile-sync": "node scripts/sync-es7-profile-demographics.mjs",
     "es7:gender": "node scripts/normalize-es7-gender.mjs",
+    "sync:omachi": "node scripts/sync_omachi_es5_es7_to_mongo.mjs",
     "time": "node test/time.js",
     "lint": "eslint .",
-    "test": "node test/normalize-es7-gender.test.mjs"
+    "test": "node test/normalize-es7-gender.test.mjs",
+    "test:profile-sync": "node --test test/sync-es7-profile-demographics.test.mjs",
+    "test:social-content": "node --test test/social-content.test.mjs test/social-metrics.test.mjs",
+    "api:social": "node scripts/social_metrics_api.mjs",
+    "test:apis": "node --test test/interaction-availability.test.mjs test/facebook-reel-metrics.test.mjs test/facebook-metrics-fallback.test.mjs test/facebook-video-metrics.test.mjs test/api-stability.test.mjs test/api-reference-recovery.test.mjs test/proxy-manager.test.mjs test/production-fixes.test.mjs test/api-authentication.test.mjs test/social-system-api.test.mjs test/social-ordering.test.mjs test/social-http.test.mjs test/api-errors.test.mjs test/social-metrics.test.mjs test/social-content.test.mjs test/facebook-share.test.mjs test/facebook-es5.test.mjs test/facebook-posts.test.mjs test/facebook-comments.test.mjs test/facebook-media-identity.test.mjs test/facebook-target-availability.test.mjs test/tiktok-interaction.test.mjs",
+    "api:public": "node scripts/public_api.mjs",
+    "api:verify-stability": "node scripts/verify_api_stability.mjs",
+    "api:proxy-manager": "node scripts/proxy_manager.mjs",
+    "proxy:admin": "node scripts/proxy_manager_admin.mjs",
+    "crawler:queues": "node scripts/crawler_queue_flow.mjs",
+    "crawler:queues:verify": "node scripts/verify_crawler_queue_flow.mjs",
+    "crawler:queues:board": "node scripts/crawler_v8_queue_board.mjs",
+    "test:crawler-queues": "node --test test/crawler-queue-flow.test.mjs test/meta-source-pagination.test.mjs",
+    "news:flow": "node scripts/run_news_flow.mjs",
+    "news:preflight": "node scripts/preflight_news_es5.mjs",
+    "news:proxies": "node scripts/probe_news_proxies.mjs",
+    "test:news-flow": "node --test test/news-flow.test.mjs test/news-flow-transport.test.mjs test/news-runtime-repairs.test.mjs test/news-batch-reader.test.mjs test/news-network-pool.test.mjs"
   },
   "engines": {
     "node": ">=16.20.2"
@@ -83,6 +107,7 @@
     "path": "^0.12.7",
     "puppeteer": "21.11.0",
     "qs": "^6.15.0",
-    "redis": "^4.7.1"
+    "redis": "^4.7.1",
+    "http-proxy-agent": "^7.0.2"
   }
 }

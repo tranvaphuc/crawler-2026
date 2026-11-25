@@ -1,0 +1,11 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {createRequire} from 'node:module';import {DatabaseSync} from 'node:sqlite';const require=createRequire(process.cwd()+'/package.json'),ch=require('cheerio'),root='/var/lib/news-flow/recovery-all-20261123',db=new DatabaseSync(root+'/audit.sqlite',{readOnly:true}),s=JSON.parse(fs.readFileSync(root+'/source-audit.json')),out={sources:[],proposals:[],stageErrors:db.prepare("SELECT c.url,c.site,c.config_sha,c.proof,c.doc FROM cohort c JOIN stage_results s USING(parse_key) WHERE s.status='not_staged' LIMIT 5").all().map(p=>({...p,doc:p.doc?JSON.parse(p.doc):null,proof:JSON.parse(p.proof)}))};
+for(const site of ['cadn.com.vn','depviet.net.vn','qdnd.vn','vnbiznews.com']){const entry=s.sites.find(p=>p.site===site),a=entry?.articles.find(p=>p.file);if(!a)continue;const html=gunzipSync(fs.readFileSync(a.file)).toString(),$=ch.load(html);out.sources.push({site,url:a.url,error:a.reason,h1:$('h1').map((i,e)=>$(e).text().trim()).get(),canonical:$('link[rel=canonical]').map((i,e)=>$(e).attr('href')).get(),meta:$('meta[property],meta[name]').map((i,e)=>({k:$(e).attr('property')||$(e).attr('name'),v:$(e).attr('content')})).get().filter(p=>/title|time|date|url/i.test(p.k)),jsonld:$('script[type="application/ld+json"]').map((i,e)=>$(e).text().slice(0,20000)).get(),timeNodes:$('time,[class*="date"],[class*="time"],[id*="date"]').map((i,e)=>({tag:e.tagName,id:$(e).attr('id'),class:$(e).attr('class'),datetime:$(e).attr('datetime'),text:$(e).text().replace(/\s+/g,' ').trim().slice(0,400)})).get().slice(0,30)});}
+for(const site of ['doanhnghiepbiz.vn','24h.com.vn','dautucophieu.net','tin2s3h.blogspot.com']){const p=root+'/proposals/'+site+'.json';if(fs.existsSync(p)){const d=JSON.parse(fs.readFileSync(p));out.proposals.push({...d,beforeConfig:undefined,config:undefined});}}
+fs.writeFileSync(root+'/inspect.json',JSON.stringify(out,null,2));console.log(JSON.stringify(out));
+NODE
+journalctl -u news-flow-baomoi-original --since '2026-11-23 02:00:00 UTC' -o cat --no-pager | tail -n 14
+upload_dir=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+install -o "$SUDO_USER" -m 0600 /var/lib/news-flow/recovery-all-20261123/inspect.json "$upload_dir/.qc-recovery-all-inspect.json"

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vov.gov.vn",
+  "siteId": "vov.gov.vn",
+  "registrableDomain": "vov.gov.vn",
+  "homepage": "https://vov.gov.vn/",
+  "allowedHosts": [
+    "vov.gov.vn",
+    "www.vov.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vov.gov.vn/",
+    "categories": [
+      "https://vov.gov.vn/co-cau-to-chuc-cctc-1124",
+      "https://vov.gov.vn/nghe-va-xem-truc-tuyen",
+      "https://vov.gov.vn/thoi-su-dtcate-1093",
+      "https://vov.gov.vn/the-gioi-dtcate-1094",
+      "https://vov.gov.vn/noi-chinh-dtcate-1095",
+      "https://vov.gov.vn/kinh-te-dtcate-1096",
+      "https://vov.gov.vn/doi-song-dtcate-1099",
+      "https://vov.gov.vn/the-thao-dtcate-1119",
+      "https://vov.gov.vn/am-nhac-dien-anh-dtcate-1120"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "PGS.TS Nguyễn Duy Thịnh: Không thể lấy lý do lợn bị stress để giải thích thịt nhũn",
+    "strategy": "selector",
+    "selector": ".muc-5-2 .text-1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".muc-5-2 .text-2 span",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".muc06.chiTietTinBai",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": ".muc-5-2",
+    "selector": ".muc03"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:15:31.019Z",
+    "frozenAt": "2026-11-16T02:15:26.379Z",
+    "trainingUrl": "https://vov.gov.vn/pgsts-nguyen-duy-thinh-khong-the-lay-ly-do-lon-bi-stress-de-giai-thich-thit-nhun-dtnew-1173229",
+    "independentHoldouts": [
+      "https://vov.gov.vn/nhung-doanh-nghiep-nang-tam-thuong-hieu-dua-hang-viet-vuon-xa-dtnew-1169102",
+      "https://vov.gov.vn/phat-hien-hanh-tinh-co-nuoc-va-thoi-tiet-giong-trai-dat-dtnew-1170199"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vov.gov.vn/pgsts-nguyen-duy-thinh-khong-the-lay-ly-do-lon-bi-stress-de-giai-thich-thit-nhun-dtnew-1173229",
+      "https://vov.gov.vn/nhung-doanh-nghiep-nang-tam-thuong-hieu-dua-hang-viet-vuon-xa-dtnew-1169102",
+      "https://vov.gov.vn/phat-hien-hanh-tinh-co-nuoc-va-thoi-tiet-giong-trai-dat-dtnew-1170199",
+      "https://vov.gov.vn/nu-anh-hung-ngo-thi-hue-con-soc-nho-giua-bay-ho-du-dtnew-1160158",
+      "https://vov.gov.vn/tiep-tuc-tim-thay-nhieu-hai-cot-liet-si-tai-cong-vien-le-thi-rieng-dtnew-1171717"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

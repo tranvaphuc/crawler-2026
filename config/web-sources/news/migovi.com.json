@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "siteName": "migovi.com",
+  "siteId": "migovi.com",
+  "registrableDomain": "migovi.com",
+  "homepage": "https://migovi.com/",
+  "allowedHosts": [
+    "migovi.com",
+    "www.migovi.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Apple: hơn 100,000 ứng dụng đã được tối ưu cho iPhone Duo",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:42.952Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://migovi.com/iphone-duo-100000-ung-dung-toi-uu/",
+      "https://migovi.com/iphone-duo-vs-galaxy-z-fold-8-camera/",
+      "https://migovi.com/siri-agentic-apple-tro-ly-chu-dong/",
+      "https://migovi.com/geforce-8800-gtx-20-nam-demo-steam/",
+      "https://migovi.com/android-xr-glasses-ra-mat-thang-12/",
+      "https://migovi.com/iphone-duo-100000-ung-dung-toi-uu/",
+      "https://migovi.com/iphone-duo-100000-ung-dung-toi-uu/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://migovi.com/",
+    "categories": [
+      "https://migovi.com/category/tin-tuc/",
+      "https://migovi.com/category/hands-on/",
+      "https://migovi.com/category/review/",
+      "https://migovi.com/category/technology/",
+      "https://migovi.com/category/editorial/",
+      "https://migovi.com/category/lam-the-nao/",
+      "https://migovi.com/chinh-sach-quyen-rieng-tu/",
+      "https://migovi.com/govit/",
+      "https://migovi.com/tw/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "migovi.com",
+    "checkedAt": "2026-11-09T03:57:14.952Z",
+    "url": "https://migovi.com/iphone-duo-100000-ung-dung-toi-uu/",
+    "finalUrl": "https://migovi.com/iphone-duo-100000-ung-dung-toi-uu/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3538,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "migovi.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 25,
+    "checkedArticleUrls": 34,
+    "freshArticleChecks": 17,
+    "parserIssues": 5,
+    "transportUnconfirmed": 4,
+    "distinctHashes": 25,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 3,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 99,
+        "passed": 25,
+        "distinctHashes": 25
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://migovi.com/asus-ascent-qn10-mini-pc-chau-au/",
+      "https://migovi.com/galaxy-ai-premium-goi-dang-ky-samsung/",
+      "https://migovi.com/microsoft-tra-tien-huan-luyen-ai-gpu-nhan/",
+      "https://migovi.com/alphaproof-code-kiem-chung-giao-thuc-signal/",
+      "https://migovi.com/anthropic-ipo-van-tien-hanh-niem-yet/",
+      "https://migovi.com/lyra-nvidia-tao-the-gioi-3d-tu-anh/",
+      "https://migovi.com/get-huge-looksmaxxing-hulu-phim-tai-lieu/",
+      "https://migovi.com/muse-ember-mo-hinh-ai-gia-re/",
+      "https://migovi.com/mustang-mach-e-suc-khoe-pin/",
+      "https://migovi.com/claude-fable-5-2-mythos-ra-mat/",
+      "https://migovi.com/gta-6-ps5-pro-pssr-2-120hz/",
+      "https://migovi.com/siri-agentic-3-rui-ro-lon/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4,
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:16:05.067Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/migovi.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "migovi.com",
+      "siteId": "migovi.com",
+      "registrableDomain": "migovi.com",
+      "homepage": "https://migovi.com/",
+      "allowedHosts": [
+        "migovi.com",
+        "www.migovi.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Apple: hơn 100,000 ứng dụng đã được tối ưu cho iPhone Duo",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:07.833Z",
+        "trainingUrls": [
+          "https://migovi.com/chinh-sach-quyen-rieng-tu/"
+        ],
+        "holdoutUrls": [
+          "https://migovi.com/ugreen-magflow-air-magnetic-power-bank-honkai-star-rail-edition/",
+          "https://migovi.com/sandisk-wd-black-sn7100-sn8100-review/"
+        ]
+      }
+    }
+  ]
+}

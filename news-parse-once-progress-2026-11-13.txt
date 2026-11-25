@@ -1,0 +1,24 @@
+Đã deploy release20261113-17: queue parse chỉ admission một lần theo URL canonical local.
+
+- Bỏ dấu / cuối path trong khóa queue; gộp HTTP/HTTPS, www, tracking và fragment. Giữ query có ý nghĩa và path case.
+- Không sửa URL request, url_key transport hoặc URL/ID legacy ghi ES. Không có ES lookup trước admission.
+- parse_admissions được ghi cùng transaction với task ngay lần enqueue đầu; không bị prune theo tasks/catalog. URL đã nhập queue không tự nhập lại sau hoàn tất/lỗi/config đổi/restart/dọn lịch sử. Gặp lại pending chỉ cập nhật ưu tiên task hiện có.
+- Seed homepage/category vẫn polling theo vòng; writer service riêng vẫn dùng bulk create, giữ news timeout2s, cooldown và no URL retry. Checker/refresh thủ công không tự chạy.
+- Migration local có backup, đã retire 1176task trùng/đã có lịch sử; không xóa dữ liệu đã import.
+-173/173 regression pass local và VPS, gồm restart/prune, rollback transaction, rowid reuse và hai connection enqueue đồng thời.
+
+Kiểm tra queue live lúc 2026-11-13T07:36:31.285Z:
+- Sổ admission: 519,603URL.
+- Active: 396,327task = 396,327khóa URL khác nhau.
+- Nhóm trùng 0, task trùng 0, active thiếu ledger owner 0.
+
+Tiến độ lúc 14:38:58 ngày 13/11/2026 (UTC+7):
+- Pending bài: 396,967; uptime sau deploy 4.3phút.
+- Một phút gần nhất: xử lý 559link, nhận 1038link mới; ES tạo 26bài.
+- Năm phút gần nhất: xử lý 294.0link/phút; ES tạo 119bài/5phút. Cửa sổ này có giai đoạn dừng migrate và warm-up, không dùng làm tuyên bố throughput ổn định của bản mới.
+- Outbox xác nhận tổng 7,631bài tạo mới hiện lưu; outbox hiện tại [{"state": "created", "n": 7631}, {"state": "existing", "n": 3677}, {"state": "held", "n": 93}, {"state": "pending", "n": 2}].
+- Article HTTP timeout5phút 4.43%, cấu hình newsHTTP2000ms; network worker failures 0.
+- Backlog vẫn tăng vì số link duy nhất mới nhận còn cao hơn số xử lý. Thay đổi này loại admission lặp, không khẳng định mọi URL còn lại chưa có trên ES.
+
+Backup trước migrate: /var/lib/news-flow/backups/write-before-parse-once-20261113.sqlite.
+Thông tin gốc trong outputs/news-speed-2026-11-13/parse-once-live-check.json, parse-once-deploy.log và parse-once-progress-final-readable.json.

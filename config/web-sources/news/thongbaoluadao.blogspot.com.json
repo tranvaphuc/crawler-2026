@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thongbaoluadao.blogspot.com",
+  "siteId": "thongbaoluadao.blogspot.com",
+  "registrableDomain": "thongbaoluadao.blogspot.com",
+  "homepage": "https://thongbaoluadao.blogspot.com/",
+  "allowedHosts": [
+    "thongbaoluadao.blogspot.com",
+    "www.thongbaoluadao.blogspot.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Web cảnh báo công ty alma lừa đảo bị nhà mạng VN chặn",
+    "strategy": "selector",
+    "selector": ".entry-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:38.849Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://thongbaoluadao.blogspot.com/2021/07/web-nay-bi-nha-mang-vn-chan.html",
+      "https://thongbaoluadao.blogspot.com/2020/06/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+      "https://thongbaoluadao.blogspot.com/2019/04/to-cao-cong-ty-alma-vinh-thien-uong-chu.html",
+      "https://thongbaoluadao.blogspot.com/2019/04/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+      "https://thongbaoluadao.blogspot.com/2017/10/bai-phan-tich-nhe-cua-cac-thanh-vien.html",
+      "https://thongbaoluadao.blogspot.com/2017/10/vach-tran-cac-chieu-tro-lua-ao-so-huu.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thongbaoluadao.blogspot.com/",
+    "categories": [
+      "https://thongbaoluadao.blogspot.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.330Z",
+      "verifiedSeeds": [
+        "https://thongbaoluadao.blogspot.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thongbaoluadao.blogspot.com",
+    "checkedAt": "2026-11-09T03:57:31.996Z",
+    "url": "https://thongbaoluadao.blogspot.com/2021/07/web-nay-bi-nha-mang-vn-chan.html",
+    "finalUrl": "https://thongbaoluadao.blogspot.com/2021/07/web-nay-bi-nha-mang-vn-chan.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1280,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:26.793Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thongbaoluadao.blogspot.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thongbaoluadao.blogspot.com",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesAttempted": 0,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 9,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 9,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T10:02:17.450Z",
+    "proofs": [
+      {
+        "url": "https://thongbaoluadao.blogspot.com/2020/06/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+        "publisherUrl": "https://thongbaoluadao.blogspot.com/2020/06/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+        "contentHash": "67d6486b1c580ea19ed2c779adbf7a532e1b92e5bde25579a49e0a73ac1b55c1",
+        "description": "+ Vợ nó được nhận cuộc gọi tham gia sự kiện từ Paradise Bay, con bé tư vấn là chỉ đi tham gia event + survey khách hàng khi tham gia thôi. Khách tham gia event sẽ được tặng 1 đêm nghỉ ở khách sạn Hội An hoặc Đà Lạt ( 5 sao ). Khách đồng ý đi mà hủy thì con bé sẽ bị khiển trách - trừ lương. Mình thì thấy lành ít dữ nhiều rồi, mấy event này chả nào tốt đẹp hay ra hồn cả theo exp từ xưa đến giờ.... Mà thôi đợt này chiều theo ý vợ lâu lâu lắng nghe mấy bạn Sales \"đỉnh cao\" kia học hỏi exp :v.",
+        "publishedDate": "2020-06-02T03:00:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thongbaoluadao.blogspot.com/2020/06/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+          "publishedDate": "2020-06-02T03:00:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://thongbaoluadao.blogspot.com/2019/04/to-cao-cong-ty-alma-vinh-thien-uong-chu.html",
+        "publisherUrl": "https://thongbaoluadao.blogspot.com/2019/04/to-cao-cong-ty-alma-vinh-thien-uong-chu.html",
+        "contentHash": "e2f716a248adcc2a2b6792660330104e4afc1a85337ea05a1891fa8a69a6622a",
+        "description": "Vào ngày 14/12/2017, nhân viên của Công ty Vịnh Thiên Đường liên tục gọi điện năn nỉ mời chúng tôi đến tham dự sự kiện tại trụ sở Công ty,",
+        "publishedDate": "2019-04-17T15:14:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thongbaoluadao.blogspot.com/2019/04/to-cao-cong-ty-alma-vinh-thien-uong-chu.html",
+          "publishedDate": "2019-04-17T15:14:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://thongbaoluadao.blogspot.com/2019/04/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+        "publisherUrl": "https://thongbaoluadao.blogspot.com/2019/04/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+        "contentHash": "b9b90ecbf4e7c13f9ac42105191be4b50cc4f8ccf952538d4c85d28ffa417b48",
+        "description": "+ Vợ nó được nhận cuộc gọi tham gia sự kiện từ Paradise Bay, con bé tư vấn là chỉ đi tham gia event + survey khách hàng khi tham gia thôi. Khách tham gia event sẽ được tặng 1 đêm nghỉ ở khách sạn Hội An hoặc Đà Lạt ( 5 sao ). Khách đồng ý đi mà hủy thì con bé sẽ bị khiển trách - trừ lương. Mình thì thấy lành ít dữ nhiều rồi, mấy event này chả nào tốt đẹp hay ra hồn cả theo exp từ xưa đến giờ.... Mà thôi đợt này chiều theo ý vợ lâu lâu lắng nghe mấy bạn Sales \"đỉnh cao\" kia học hỏi exp :v.",
+        "publishedDate": "2019-04-17T15:14:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thongbaoluadao.blogspot.com/2019/04/so-huu-ki-nghi-alma-nghe-thuat-moc-tui.html",
+          "publishedDate": "2019-04-17T15:14:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_text_lead",
+    "scope": "body",
+    "selector": ".entry-content > div:first"
+  },
+  "publicationTimePolicy": "original_clock_required"
+}

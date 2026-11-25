@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "siteName": "gialai.gov.vn",
+  "siteId": "gialai.gov.vn",
+  "registrableDomain": "gialai.gov.vn",
+  "homepage": "https://gialai.gov.vn/",
+  "allowedHosts": [
+    "gialai.gov.vn",
+    "www.gialai.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://gialai.gov.vn/",
+    "categories": [
+      "https://gialai.gov.vn/loi-chao-mung",
+      "https://gialai.gov.vn/qua-trinh-hinh-thanh-va-phat-trien",
+      "https://gialai.gov.vn/don-vi-hanh-chinh",
+      "https://gialai.gov.vn/tin-tuc",
+      "https://gialai.gov.vn/tin-tuc/thong-tin-chi-dao-dieu-hanh",
+      "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao",
+      "https://gialai.gov.vn/tin-tuc/tin-tuc-chinh-tri",
+      "https://gialai.gov.vn/tin-tuc/tin-kinh-te-tong-hop",
+      "https://gialai.gov.vn/tin-tuc/tin-van-hoa-xa-hoi",
+      "https://gialai.gov.vn/tin-tuc/thong-tin-doi-ngoai"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Gia Lai trao Giấy chứng nhận đăng ký đầu tư dự án Trung tâm thương mại GO! Pleiku",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:18.979Z",
+    "frozenAt": "2026-11-16T01:57:16.369Z",
+    "trainingUrl": "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao/gia-lai-trao-giay-chung-nhan-dang-ky-dau-tu-du-an-trung-tam-thuong-mai-go-pleiku.html",
+    "independentHoldouts": [
+      "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao/pho-chu-tich-ubnd-tinh-duong-mah-tiep-kiem-tra-tien-do-cac-cong-trinh-ke-khac-phuc-thiet-hai-do-bao-lu.html",
+      "https://gialai.gov.vn/tin-tuc/thong-tin-chi-dao-dieu-hanh/chi-dao-dieu-hanh-noi-bat-cua-tinh-gia-lai-tu-ngay-9-15-11-2026.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao/gia-lai-trao-giay-chung-nhan-dang-ky-dau-tu-du-an-trung-tam-thuong-mai-go-pleiku.html",
+      "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao/pho-chu-tich-ubnd-tinh-duong-mah-tiep-kiem-tra-tien-do-cac-cong-trinh-ke-khac-phuc-thiet-hai-do-bao-lu.html",
+      "https://gialai.gov.vn/tin-tuc/thong-tin-chi-dao-dieu-hanh/chi-dao-dieu-hanh-noi-bat-cua-tinh-gia-lai-tu-ngay-9-15-11-2026.html",
+      "https://gialai.gov.vn/tin-tuc/hoat-dong-cua-lanh-dao/chu-tich-ubnd-tinh-pham-anh-tuan-yeu-cau-xay-dung-kich-ban-tang-truong-sat-thuc-tien.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

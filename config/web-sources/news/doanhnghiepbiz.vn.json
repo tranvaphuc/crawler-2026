@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepbiz.vn",
+  "siteId": "doanhnghiepbiz.vn",
+  "registrableDomain": "doanhnghiepbiz.vn",
+  "homepage": "https://doanhnghiepbiz.vn/",
+  "allowedHosts": [
+    "doanhnghiepbiz.vn",
+    "www.doanhnghiepbiz.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Zalo yêu cầu người dùng chấp thuận điều khoản mới, gây tranh luận về thu thập dữ liệu cá nhân",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Toàn cảnh Bãi Sau – Phường Vũng Tàu, TP. Hồ Chí Minh",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".section-content.relative",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:34.484Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiepbiz.vn/zalo-yeu-cau-nguoi-dung-chap-thuan-dieu-khoan-moi-gay-tranh-luan-ve-thu-thap-du-lieu-ca-nhan/",
+      "https://doanhnghiepbiz.vn/toan-canh-bai-sau-phuong-vung-tau-tp-ho-chi-minh-thang-7-2025/",
+      "https://doanhnghiepbiz.vn/bao-hiem-agribank-abic-sap-chi-hon-150-ty-dong-tra-co-tuc-cho-co-dong/",
+      "https://doanhnghiepbiz.vn/ton-dong-a-dua-hon-149-trieu-co-phieu-gda-len-hose-tu-ngay-12-11/",
+      "https://doanhnghiepbiz.vn/taseco-group-gom-thanh-cong-6-trieu-co-phieu-tal-nang-so-huu-len-hon-61/",
+      "https://doanhnghiepbiz.vn/an-giang-12-co-so-nha-dat-cong-bo-trong-keo-dai-3-co-so-su-dung-sai-muc-dich/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepbiz.vn/",
+    "categories": [
+      "https://doanhnghiepbiz.vn/hot/",
+      "https://doanhnghiepbiz.vn/thoa-thuan-su-dung/",
+      "https://doanhnghiepbiz.vn/huong-dan-dang-bai/",
+      "https://doanhnghiepbiz.vn/author/nhatminh/",
+      "https://doanhnghiepbiz.vn/phan-tich-tai-chinh/",
+      "https://doanhnghiepbiz.vn/author/nhungnguyen/",
+      "https://doanhnghiepbiz.vn/dau-tu-chung-khoan/",
+      "https://doanhnghiepbiz.vn/author/merry/",
+      "https://doanhnghiepbiz.vn/author/bonprive/",
+      "https://doanhnghiepbiz.vn/review-bat-dong-san/",
+      "https://doanhnghiepbiz.vn/author/nhunnhun/",
+      "https://doanhnghiepbiz.vn/author/minhphuc/",
+      "https://doanhnghiepbiz.vn/chuyen-thuong-truong/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepbiz.vn",
+    "checkedAt": "2026-11-09T03:57:00.064Z",
+    "url": "https://doanhnghiepbiz.vn/zalo-yeu-cau-nguoi-dung-chap-thuan-dieu-khoan-moi-gay-tranh-luan-ve-thu-thap-du-lieu-ca-nhan/",
+    "finalUrl": "https://doanhnghiepbiz.vn/zalo-yeu-cau-nguoi-dung-chap-thuan-dieu-khoan-moi-gay-tranh-luan-ve-thu-thap-du-lieu-ca-nhan/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4738,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnghiepbiz.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 19,
+    "freshArticleChecks": 11,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 75,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghiepbiz.vn/cong-ty-co-phan-dau-tu-phat-trien-ninh-phong-duoc-thue-hon-438-ha-dat-trien-khai-khu-cong-nghiep-dong-no/",
+      "https://doanhnghiepbiz.vn/thanh-tra-chinh-phu-chuyen-ho-so-tap-doan-duong-dong-sang-bo-cong-an-phat-hien-nhieu-dau-hieu-vi-pham-kinh-doanh-xang-dau/",
+      "https://doanhnghiepbiz.vn/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-di-chuyen-xanh-tai-lao/",
+      "https://doanhnghiepbiz.vn/vat-lieu-xay-dung-bien-hoa-vlb-sap-chi-gan-117-ty-dong-tra-co-tuc-dot-1-2026/",
+      "https://doanhnghiepbiz.vn/siba-group-chao-ban-rieng-le-20-trieu-co-phieu-voi-gia-10-000-dong-cp/",
+      "https://doanhnghiepbiz.vn/nhom-quy-ngoai-dragon-capital-tro-lai-lam-co-dong-lon-cua-bluemarq-group/",
+      "https://doanhnghiepbiz.vn/ocb-muon-phat-hanh-20-000-ty-dong-trai-phieu-trong-quy-iv/",
+      "https://doanhnghiepbiz.vn/co-phieu-hgi-chinh-thuc-giao-dich-tren-upcom-von-hoa-dat-hon-11-350-ty-dong/",
+      "https://doanhnghiepbiz.vn/evf-bat-tay-cac-nha-dau-tu-nhat-ban-du-kien-phat-hanh-rieng-le-45-trieu-co-phieu/",
+      "https://doanhnghiepbiz.vn/dien-may-xanh-doanh-thu-10-thang-tang-28-so-voi-cung-ky-quy-iv-ky-vong-tang-truong-cao-nhat-nam/",
+      "https://doanhnghiepbiz.vn/f88-bi-phat-150-trieu-dong-do-cong-bo-thong-tin-sai-lech/",
+      "https://doanhnghiepbiz.vn/dai-quang-minh-bao-lai-hon-1-043-ty-dong-sau-6-thang-gap-64-lan-cung-ky/",
+      "https://doanhnghiepbiz.vn/masan-va-sojitz-ky-mou-huong-toi-dua-sojitz-thanh-co-dong-chien-luoc-va-mo-rong-thi-truong-cho-msr-tai-nhat-ban/",
+      "https://doanhnghiepbiz.vn/becamex-ijc-becamex-bce-dam-nhan-goi-thau-hon-1-720-ty-dong-tai-vanh-dai-4-tp-hcm/",
+      "https://doanhnghiepbiz.vn/thuy-dien-thac-mo-dieu-chinh-ke-hoach-2026-loi-nhuan-sau-thue-du-kien-dat-376-ty-dong/",
+      "https://doanhnghiepbiz.vn/thanh-phuong-real-duoc-thue-gan-900-ha-dat-lam-hai-khu-cong-nghiep-tai-dong-nai/",
+      "https://doanhnghiepbiz.vn/fpt-telecom-sap-phat-hanh-hon-110-trieu-co-phieu-thuong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:15:02.274Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghiepbiz.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

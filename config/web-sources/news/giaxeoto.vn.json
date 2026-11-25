@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaxeoto.vn",
+  "siteId": "giaxeoto.vn",
+  "registrableDomain": "giaxeoto.vn",
+  "homepage": "https://giaxeoto.vn/",
+  "allowedHosts": [
+    "giaxeoto.vn",
+    "www.giaxeoto.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://giaxeoto.vn/",
+    "categories": [
+      "https://giaxeoto.vn/gia-xe",
+      "https://giaxeoto.vn/gia-xe-zotye-256",
+      "https://giaxeoto.vn/gia-xe-daihatsu-226",
+      "https://giaxeoto.vn/gia-xe-bmw-132",
+      "https://giaxeoto.vn/gia-xe-uaz-197",
+      "https://giaxeoto.vn/mua-ban-xe"
+    ]
+  },
+  "title": {
+    "value": "BẢNG GIÁ XE MITSUBISHI 2026 MỚI NHẤT (10/2026)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:34.496Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:26.168Z",
+    "independentHoldouts": [
+      "https://giaxeoto.vn/byd-dm-p-plug-in-hybrid-technology-633",
+      "https://giaxeoto.vn/gia-ban-thue-sac-pin-vinfast-459",
+      "https://giaxeoto.vn/vinfast-chon-dia-phuong-nao-o-ha-tinh-de-xay-nha-may-moi-687"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://giaxeoto.vn/gia-xe-mitsubishi-152",
+      "https://giaxeoto.vn/byd-dm-p-plug-in-hybrid-technology-633",
+      "https://giaxeoto.vn/gia-ban-thue-sac-pin-vinfast-459",
+      "https://giaxeoto.vn/vinfast-chon-dia-phuong-nao-o-ha-tinh-de-xay-nha-may-moi-687"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

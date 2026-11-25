@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "khoedepvn.com",
+  "siteId": "khoedepvn.com",
+  "registrableDomain": "khoedepvn.com",
+  "homepage": "https://khoedepvn.com/",
+  "allowedHosts": [
+    "khoedepvn.com",
+    "www.khoedepvn.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://khoedepvn.com/",
+    "categories": [
+      "https://khoedepvn.com/c/gioi-tinh",
+      "https://khoedepvn.com/c/suc-khoe",
+      "https://khoedepvn.com/c/dinh-duong",
+      "https://khoedepvn.com/c/an-uong-de-khoe",
+      "https://khoedepvn.com/c/lam-dep"
+    ]
+  },
+  "title": {
+    "value": "Loại cá từng bị chê nay thành đặc sản \"nhiều người mê\", lại bổ đủ bề",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:37.904Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:29.794Z",
+    "independentHoldouts": [
+      "https://khoedepvn.com/co-dau-hieu-nay-suot-nua-nam-nhung-khong-di-kham-nguoi-dan-ong-35-tuoi-bi-suy-than-giai-doan-cuoi-a136317.html",
+      "https://khoedepvn.com/hhen-nie-ke-chong-nhu-sieu-nhan-lai-xe-dua-ca-nha-rong-ruoi-chau-au-a136316.html",
+      "https://khoedepvn.com/thoai-hoa-xuong-khop-khi-chua-den-35-tuoi-bac-si-canh-bao-dieu-dang-lo-ngai-a136312.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://khoedepvn.com/loai-ca-tung-bi-che-nay-thanh-dac-san-nhieu-nguoi-me-lai-bo-du-be-a136318.html",
+      "https://khoedepvn.com/co-dau-hieu-nay-suot-nua-nam-nhung-khong-di-kham-nguoi-dan-ong-35-tuoi-bi-suy-than-giai-doan-cuoi-a136317.html",
+      "https://khoedepvn.com/hhen-nie-ke-chong-nhu-sieu-nhan-lai-xe-dua-ca-nha-rong-ruoi-chau-au-a136316.html",
+      "https://khoedepvn.com/thoai-hoa-xuong-khop-khi-chua-den-35-tuoi-bac-si-canh-bao-dieu-dang-lo-ngai-a136312.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

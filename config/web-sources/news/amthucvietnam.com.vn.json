@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "siteName": "amthucvietnam.com.vn",
+  "siteId": "amthucvietnam.com.vn",
+  "registrableDomain": "amthucvietnam.com.vn",
+  "homepage": "https://amthucvietnam.com.vn/",
+  "allowedHosts": [
+    "amthucvietnam.com.vn",
+    "www.amthucvietnam.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hoa hậu Lý Kim Ngân khai trương nhà hàng Buffet lẩu rau nấm – Rau Mộc",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:45.923Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://amthucvietnam.com.vn/tin-noi-bat/24593.html",
+      "https://amthucvietnam.com.vn/su-kien-am-thuc/thu-thach-dau-bep-tiem-nang-2026-vinh-danh-the-he-dau-bep-tre-tai-vong-chung-ket.html",
+      "https://amthucvietnam.com.vn/tin-noi-bat/han-quoc-va-singapore-hai-trai-nghiem-chau-a-khac-biet.html",
+      "https://amthucvietnam.com.vn/an-gi-o-dau/buffet-chay-ket-hop-nghe-thuat-a-dong-tai-kim-center-mua-vu-lan.html",
+      "https://amthucvietnam.com.vn/su-kien-am-thuc/workshop-tao-phap-su-ket-hop-giua-nghe-thuat-am-thuc-mixology-khong-gian-phong-cach-phap-giua-long-sai-gon.html",
+      "https://amthucvietnam.com.vn/quang-cao-nha-hang-quang-cao-quan-an"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://amthucvietnam.com.vn/",
+    "categories": [
+      "https://amthucvietnam.com.vn/su-kien-am-thuc",
+      "https://amthucvietnam.com.vn/an-gi-o-dau",
+      "https://amthucvietnam.com.vn/vao-bep",
+      "https://amthucvietnam.com.vn/am-thuc-chay",
+      "https://amthucvietnam.com.vn/home"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://amthucvietnam.com.vn/quang-cao-nha-hang-quang-cao-quan-an"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "amthucvietnam.com.vn",
+    "checkedAt": "2026-11-09T03:56:47.232Z",
+    "url": "https://amthucvietnam.com.vn/tin-noi-bat/24593.html",
+    "finalUrl": "https://amthucvietnam.com.vn/tin-noi-bat/24593.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2002,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:27.639Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/amthucvietnam.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "amthucvietnam.com.vn",
+    "parsedArticles": 6,
+    "distinctHashes": 6,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesAttempted": 5,
+    "categoriesRemoved": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 60,
+    "checkedArticleUrls": 6,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 60,
+        "attempted": 5,
+        "passed": 5,
+        "distinctContents": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

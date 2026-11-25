@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "contentScope": "Native public Web30 news detail state (type_page=7), matching QR canonical URL and slug. Creation epoch only; modified/current clock are not publication substitutes.",
+  "siteName": "otopro.com.vn",
+  "siteId": "otopro.com.vn",
+  "registrableDomain": "otopro.com.vn",
+  "homepage": "https://www.otopro.com.vn/",
+  "allowedHosts": [
+    "www.otopro.com.vn",
+    "otopro.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "HYUNDAI THÀNH CÔNG VIỆT NAM TRIỂN KHAI CHUỖI SỰ KIỆN BÀN GIAO VÀ TRƯNG BÀY PALISADE HYBRID HOÀN TOÀN MỚI TRÊN TOÀN QUỐC",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "epoch",
+    "strategy": "selector",
+    "selector": "meta[name=\"crawler:created-epoch\"]",
+    "attribute": "content",
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "httpAdapter": "web30_embedded_public_state",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:37:01.853Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.otopro.com.vn/hyundai-thanh-cong-viet-nam-trien-khai-chuoi-su-kien-ban-giao-va-trung-bay-palisade-hybrid-hoan-toan-moi-tren-toan-quoc",
+      "https://www.otopro.com.vn/subaru-forester-hybrid-co-lich-ra-mat-chinh-thuc-tai-viet-nam",
+      "https://www.otopro.com.vn/gia-hyundai-stargazer-giam-manh-tai-nhieu-dai-ly",
+      "https://www.otopro.com.vn/loat-mau-xe-dien-moi-tai-viet-nam-tu-nha-wuling",
+      "https://www.otopro.com.vn/dan-xe-sang-tram-ty-dua-don-nhom-nhac-big-bang-tai-viet-nam"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round7-http/sites/otopro.com.vn",
+    "contentScope": "Native public Web30 news detail state (type_page=7), matching QR canonical URL and slug. Creation epoch only; modified/current clock are not publication substitutes.",
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://www.otopro.com.vn/",
+    "categories": [
+      "https://www.otopro.com.vn/tin-tuc",
+      "https://www.otopro.com.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.280Z",
+      "verifiedSeeds": [
+        "https://www.otopro.com.vn/",
+        "https://www.otopro.com.vn/tin-tuc"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T05:41:23.391Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "native_public_news_state",
+    "creationField": "date_created_format",
+    "modificationNeverUsedForPublication": true,
+    "homepageAndProductPagesExcluded": true,
+    "authorMayUseSiteFallback": true
+  },
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:55.866Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/otopro.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "otopro.com.vn",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 8,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 8,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

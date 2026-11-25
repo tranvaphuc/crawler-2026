@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "navigator.com.vn",
+  "siteId": "navigator.com.vn",
+  "registrableDomain": "navigator.com.vn",
+  "homepage": "https://navigator.com.vn/",
+  "allowedHosts": [
+    "navigator.com.vn",
+    "www.navigator.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tesla Roadster thế hệ mới: Màn ra mắt “xe bay” gây sốc của Elon Musk",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "public_feed",
+    "feedUrl": "https://navigator.com.vn/feed/",
+    "sourceKind": "public_feed",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".elementor-element.elementor-element-nsgContW",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:35.064Z",
+    "sampleCount": 11,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://navigator.com.vn/tesla-roadster-the-he-moi-man-ra-mat-xe-bay-gay-soc-cua-elon-musk/",
+      "https://navigator.com.vn/sieu-du-thuyen-maai-47m-net-toi-gian-phuong-dong-trong-ngon-ngu-thiet-ke-y/",
+      "https://navigator.com.vn/kiet-tac-great-princess-mama-occollo-ngon-ngu-thi-giac-phong-phu-cua-nghe-thuat-peru/",
+      "https://navigator.com.vn/tiffany-co-dua-sac-xanh-ngoc-lam-bieu-tuong-vao-bo-suu-tap-hardwear-moi/",
+      "https://navigator.com.vn/tesla-roadster-the-he-moi-man-ra-mat-xe-bay-gay-soc-cua-elon-musk/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://navigator.com.vn/",
+    "categories": [
+      "https://navigator.com.vn/art-of-life/",
+      "https://navigator.com.vn/vehicles/",
+      "https://navigator.com.vn/watches/",
+      "https://navigator.com.vn/fashion-style/",
+      "https://navigator.com.vn/travel-leisure/",
+      "https://navigator.com.vn/arch-decor/",
+      "https://navigator.com.vn/culture-art/",
+      "https://navigator.com.vn/portrait/",
+      "https://navigator.com.vn/category/most-wanted-vi/",
+      "https://navigator.com.vn/yachting/",
+      "https://navigator.com.vn/featured-yachts/",
+      "https://navigator.com.vn/yachts-review/",
+      "https://navigator.com.vn/market/",
+      "https://navigator.com.vn/boatshow-events/",
+      "https://navigator.com.vn/charter/",
+      "https://navigator.com.vn/spotlight/",
+      "https://navigator.com.vn/marina/",
+      "https://navigator.com.vn/business/",
+      "https://navigator.com.vn/markets/",
+      "https://navigator.com.vn/news/",
+      "https://navigator.com.vn/investing/",
+      "https://navigator.com.vn/technology/",
+      "https://navigator.com.vn/leaders/",
+      "https://navigator.com.vn/real-estate/",
+      "https://navigator.com.vn/science/",
+      "https://navigator.com.vn/marcom/",
+      "https://navigator.com.vn/start-up/",
+      "https://navigator.com.vn/contributors/",
+      "https://navigator.com.vn/en/home-en/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "navigator.com.vn",
+    "checkedAt": "2026-11-09T03:57:15.834Z",
+    "url": "https://navigator.com.vn/tesla-roadster-the-he-moi-man-ra-mat-xe-bay-gay-soc-cua-elon-musk/",
+    "finalUrl": "https://navigator.com.vn/tesla-roadster-the-he-moi-man-ra-mat-xe-bay-gay-soc-cua-elon-musk/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1970,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "navigator.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 16,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 30,
+    "categoriesFreshChecked": 23,
+    "categoriesUnconfirmed": 22,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 13,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://navigator.com.vn/navigator-tv/",
+      "https://navigator.com.vn/bst-omega-speedmaster-38-mm-moi-thiet-ke-tinh-gon-di-cung-ve-dep-sang-trong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:16:06.914Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/navigator.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

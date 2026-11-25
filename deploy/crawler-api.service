@@ -1,0 +1,34 @@
+[Unit]
+Description=Private authenticated crawler HTTP API
+Wants=network-online.target crawler-proxy-manager.service
+After=network-online.target crawler-proxy-manager.service
+
+[Service]
+Type=simple
+User=crawler-api
+Group=crawler-api
+WorkingDirectory=/opt/crawler-api/current
+EnvironmentFile=/etc/crawler-api/runtime.env
+ExecStart=/opt/crawler-node/bin/node /opt/crawler-api/current/scripts/public_api.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+UMask=0077
+StateDirectory=crawler-api
+StateDirectoryMode=0700
+ReadWritePaths=/var/lib/crawler-api
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+LimitNOFILE=65536
+MemoryMax=8G
+TasksMax=256
+
+[Install]
+WantedBy=multi-user.target

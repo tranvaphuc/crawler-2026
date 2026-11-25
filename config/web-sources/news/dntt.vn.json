@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dntt.vn",
+  "siteId": "dntt.vn",
+  "registrableDomain": "dntt.vn",
+  "homepage": "https://dntt.vn/",
+  "allowedHosts": [
+    "dntt.vn",
+    "www.dntt.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://dntt.vn/",
+    "categories": [
+      "https://dntt.vn/tin-tuc/",
+      "https://dntt.vn/khoa-hoc--cong-nghe/",
+      "https://dntt.vn/kinh-te-xanh/",
+      "https://dntt.vn/van-hoa-doanh-nghiep/",
+      "https://dntt.vn/nong-nghiep/",
+      "https://dntt.vn/moi-truong/"
+    ]
+  },
+  "title": {
+    "value": "Hỗ trợ người dân đến gần tín dụng chính thức qua thanh toán số",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:12.082Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:07.544Z",
+    "independentHoldouts": [
+      "https://dntt.vn/vinamilk-va-hanh-trinh-giu-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he-d15031.html",
+      "https://dntt.vn/thanh-toan-so-khong-chi-chuyen-tien-nhanh-ma-con-phai-quan-tri-tot-d15050.html",
+      "https://dntt.vn/vfaea-kien-toan-nhan-su-chuan-bi-dai-hoi-iv-nhiem-ky-20262031-d15081.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://dntt.vn/ho-tro-nguoi-dan-den-gan-tin-dung-chinh-thuc-qua-thanh-toan-so-d15021.html",
+      "https://dntt.vn/vinamilk-va-hanh-trinh-giu-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he-d15031.html",
+      "https://dntt.vn/thanh-toan-so-khong-chi-chuyen-tien-nhanh-ma-con-phai-quan-tri-tot-d15050.html",
+      "https://dntt.vn/vfaea-kien-toan-nhan-su-chuan-bi-dai-hoi-iv-nhiem-ky-20262031-d15081.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

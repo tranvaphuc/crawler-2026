@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "racv.com.au",
+  "siteId": "racv.com.au",
+  "registrableDomain": "racv.com.au",
+  "homepage": "https://www.racv.com.au/",
+  "allowedHosts": [
+    "www.racv.com.au",
+    "racv.com.au"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.racv.com.au/",
+    "categories": [
+      "https://www.racv.com.au/about-racv.html",
+      "https://www.racv.com.au/cars-transport/vehicle-maintenance/fuel-prices.html",
+      "https://www.racv.com.au/help-and-support.html",
+      "https://www.racv.com.au/insurance.html",
+      "https://www.racv.com.au/cars-transport.html",
+      "https://www.racv.com.au/home.html"
+    ]
+  },
+  "title": {
+    "value": "2027 Mitsubishi Pajero: price, specs and release date in Australia",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".contenthub-container.aem-Grid",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "additionalMediaStrategy": "jsonld",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:28.014Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:53.749Z",
+    "independentHoldouts": [
+      "https://www.racv.com.au/royalauto/transport/cars/how-to-keep-your-car-cool-in-summer.html",
+      "https://www.racv.com.au/about-racv/newsroom/building-inspections-home-buyers.html",
+      "https://www.racv.com.au/about-racv/newsroom/racv-noosa-self-contained-accomodation.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.racv.com.au/royalauto/transport/cars/2027-mitsubishi-pajero-price-specs-release-date.html",
+      "https://www.racv.com.au/royalauto/transport/cars/how-to-keep-your-car-cool-in-summer.html",
+      "https://www.racv.com.au/about-racv/newsroom/building-inspections-home-buyers.html",
+      "https://www.racv.com.au/about-racv/newsroom/racv-noosa-self-contained-accomodation.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

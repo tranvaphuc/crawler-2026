@@ -1,0 +1,1191 @@
+[
+  {
+    "domain": "2banh.vn",
+    "adapter": "xenforo",
+    "homepage": "https://www.2banh.vn/",
+    "allowedHosts": [
+      "2banh.vn",
+      "www.2banh.vn"
+    ],
+    "seeds": [
+      "https://www.2banh.vn/",
+      "https://www.2banh.vn/forums/thu-tuc-hanh-chinh.8/?direction=desc",
+      "https://www.2banh.vn/forums/kien-thuc-chung-ve-xe-may.61/?direction=desc",
+      "https://www.2banh.vn/forums/thong-tin-cac-giai-dua-xe.10/?direction=desc",
+      "https://www.2banh.vn/honda/?order=post_date",
+      "https://www.2banh.vn/yamaha/?order=post_date",
+      "https://www.2banh.vn/suzuki/?order=post_date",
+      "https://www.2banh.vn/piaggio/?order=post_date",
+      "https://www.2banh.vn/sym/?order=post_date",
+      "https://www.2banh.vn/xe-phan-khoi-lon/?direction=desc",
+      "https://www.2banh.vn/phuot/",
+      "https://www.2banh.vn/forums/hoi-nhom-xe-vn.107/",
+      "https://www.2banh.vn/forums/hinh-anh-cac-hoi-xe.96/",
+      "https://www.2banh.vn/forums/chuyen-tro.66/",
+      "https://www.2banh.vn/forums/me-bong-da.95/"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\2banh.vn.json",
+      "sha256": "ac3291d2b9eeb53b17d399dcd2d9bb8cc865bfbbdd3a1493f117d0639c2a7e6f"
+    },
+    "legacy": {
+      "seedUrls": [
+        "https://www.2banh.vn/forums/thu-tuc-hanh-chinh.8/?direction=desc",
+        "https://www.2banh.vn/forums/kien-thuc-chung-ve-xe-may.61/?direction=desc",
+        "https://www.2banh.vn/forums/thong-tin-cac-giai-dua-xe.10/?direction=desc",
+        "https://www.2banh.vn/honda/?order=post_date",
+        "https://www.2banh.vn/yamaha/?order=post_date",
+        "https://www.2banh.vn/suzuki/?order=post_date",
+        "https://www.2banh.vn/piaggio/?order=post_date",
+        "https://www.2banh.vn/sym/?order=post_date",
+        "https://www.2banh.vn/xe-phan-khoi-lon/?direction=desc",
+        "https://www.2banh.vn/phuot/",
+        "https://www.2banh.vn/forums/hoi-nhom-xe-vn.107/",
+        "https://www.2banh.vn/forums/hinh-anh-cac-hoi-xe.96/",
+        "https://www.2banh.vn/forums/chuyen-tro.66/",
+        "https://www.2banh.vn/forums/me-bong-da.95/"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?2banh.vn/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".mainContent .titleBar h1",
+        "comments": ".mainContent ol.messageList li.message[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?2banh.vn/.*?/page\\-)(\\d+)$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText  a.username",
+        "url": {
+          "selector": ".messageInfo .publicControls a.postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .privateControls .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Tháng một",
+              "to": "01"
+            },
+            {
+              "from": "Tháng hai",
+              "to": "02"
+            },
+            {
+              "from": "Tháng ba",
+              "to": "03"
+            },
+            {
+              "from": "Tháng tư",
+              "to": "04"
+            },
+            {
+              "from": "Tháng năm",
+              "to": "05"
+            },
+            {
+              "from": "Tháng sáu",
+              "to": "06"
+            },
+            {
+              "from": "Tháng bảy",
+              "to": "07"
+            },
+            {
+              "from": "Tháng tám",
+              "to": "08"
+            },
+            {
+              "from": "Tháng chín",
+              "to": "09"
+            },
+            {
+              "from": "Tháng mười một",
+              "to": "11"
+            },
+            {
+              "from": "Tháng mười hai",
+              "to": "12"
+            },
+            {
+              "from": "Tháng mười",
+              "to": "10"
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "bovagau.vn",
+    "adapter": "bovagau",
+    "homepage": "https://bovagau.vn/",
+    "allowedHosts": [
+      "bovagau.vn",
+      "www.bovagau.vn"
+    ],
+    "seeds": [
+      "https://bovagau.vn/"
+    ],
+    "threadPattern": "^/[^/]+-\\d+$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "carpassion.vn",
+    "adapter": "xenforo",
+    "homepage": "https://carpassion.vn/",
+    "allowedHosts": [
+      "carpassion.vn",
+      "www.carpassion.vn"
+    ],
+    "seeds": [
+      "https://carpassion.vn/whats-new/posts/"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "chomoto.vn",
+    "adapter": "xenforo",
+    "homepage": "https://chomoto.vn/",
+    "allowedHosts": [
+      "chomoto.vn",
+      "www.chomoto.vn"
+    ],
+    "seeds": [
+      "http://chomoto.vn/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\chomoto.vn.json",
+      "sha256": "f6f8f8f361f6717abad60a2d6acae1b368351e2a66f8b1d2650832ac6d88f7fe"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://chomoto.vn/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?chomoto.vn/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".titleBar h1",
+        "comments": ".pageContent ol.messageList li[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?chomoto.vn/.*?/page\\-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText a.username",
+        "url": {
+          "selector": ".messageMeta .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "dff.vn",
+    "adapter": "dff",
+    "homepage": "https://dff.vn/",
+    "allowedHosts": [
+      "dff.vn",
+      "www.dff.vn"
+    ],
+    "seeds": [
+      "https://dff.vn/"
+    ],
+    "threadPattern": "-p\\d+\\.html$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "diendan.gamethuvn.net",
+    "adapter": "xenforo",
+    "homepage": "http://diendan.gamethuvn.net/",
+    "allowedHosts": [
+      "diendan.gamethuvn.net",
+      "www.diendan.gamethuvn.net"
+    ],
+    "seeds": [
+      "http://diendan.gamethuvn.net/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\diendan.gamethuvn.net.json",
+      "sha256": "2bbdc692ac8d6c24d4b9038be5b2a059ab537a60a4369ca7483889edf377876b"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://diendan.gamethuvn.net/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?diendan.gamethuvn.net/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".titleBar h1",
+        "comments": ".pageContent ol.messageList li[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?diendan.gamethuvn.net/.*?/page\\-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText a.username",
+        "url": {
+          "selector": ".messageMeta .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "forum.gamevn.com",
+    "adapter": "xenforo",
+    "homepage": "https://forum.gamevn.com/",
+    "allowedHosts": [
+      "forum.gamevn.com",
+      "www.forum.gamevn.com"
+    ],
+    "seeds": [
+      "http://forum.gamevn.com/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\forum.gamevn.com.json",
+      "sha256": "9bb3df4ab667212b521746bb357f397d1ff66b70ee329bb53001947833e77509"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://forum.gamevn.com/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?forum.gamevn.com/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".titleBar h1",
+        "comments": ".pageContent ol.messageList li[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?forum.gamevn.com/.*?/page\\-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText a.username",
+        "url": {
+          "selector": ".messageMeta .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "offb.vn",
+    "adapter": "offb",
+    "homepage": "https://offb.vn/",
+    "allowedHosts": [
+      "offb.vn",
+      "www.offb.vn"
+    ],
+    "seeds": [
+      "https://offb.vn/"
+    ],
+    "threadPattern": "^/[^/]+-\\d+$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "otofun.net",
+    "adapter": "xenforo",
+    "homepage": "https://www.otofun.net.vn/",
+    "allowedHosts": [
+      "otofun.net",
+      "www.otofun.net",
+      "www.otofun.net.vn"
+    ],
+    "seeds": [
+      "https://www.otofun.net.vn/whats-new/posts/"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 1,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\otofun.net.json",
+      "sha256": "e3956223b454d0170c2ae2482d82c5238a8a056b22d7352868283daf9d4799dd"
+    },
+    "legacy": {
+      "seedUrls": [
+        "https://www.otofun.net/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?otofun.net(/threads/)(?!threads/).*?.(\\d{4,})$",
+        "replace": {
+          "from": "/unread$",
+          "to": ""
+        }
+      },
+      "postProcessor": {
+        "title": "h1.p-title-value",
+        "comments": ".block-container.thread-container.lbContainer .block-body .message",
+        "nextpage": "",
+        "pagination": ".block-outer-main .pageNav-main li a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?otofun.net/.*?/page-)(\\d+)$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": {
+          "selector": ".message-content.js-messageContent"
+        },
+        "author": ".message-userDetails h4 a",
+        "url": {
+          "selector": ".message-inner ul li a",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".message-inner .message-attribution-main a",
+          "skip_text": false,
+          "replaces": [
+            {
+              "from": "Hôm nay",
+              "to": "moment().format('DD-MM-YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Hôm qua",
+              "to": "moment().subtract(1, 'days').format('DD-MM-YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^(\\d{1,2}):(\\d{1,2}).*?(\\d{1,2})/(\\d{1,2})/(\\d{2}).*?$",
+              "to": "$3/$4/$5 $1:$2",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm"
+        }
+      },
+      "priority": 1,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "otosaigon.com",
+    "adapter": "xenforo",
+    "homepage": "https://www.otosaigon.com/",
+    "allowedHosts": [
+      "otosaigon.com",
+      "www.otosaigon.com"
+    ],
+    "seeds": [
+      "https://www.otosaigon.com/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 1,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\otosaigon.com.json",
+      "sha256": "5c0a17fb13dc98220f264e13ab368fa1d7e565035e3fdd1d3cefecb77f46b61f"
+    },
+    "legacy": {
+      "seedUrls": [
+        "https://www.otosaigon.com/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?otosaigon.com(/threads/).*?(\\.\\d{4,})/?$"
+      },
+      "postProcessor": {
+        "title": ".p-title-value",
+        "comments": "article[id*=post]",
+        "nextpage": "",
+        "pagination": ".pageNav-main li a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?otosaigon.com/threads/.*?\\d{4,}/page-)(\\d+)$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": {
+          "selector": ".message-userContent.lbContainer.js-lbContainer",
+          "quote": ".bbCodeQuote"
+        },
+        "author": ".message-name a",
+        "url": {
+          "selector": ".message-attribution-opposite li:nth-child(2) a",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".message-attribution-main a time.u-dt",
+          "skip_text": false,
+          "attribute": "datetime",
+          "timezone": "+7",
+          "replaces": [
+            {
+              "from": "Hôm nay",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Hôm qua",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "(\\d{4})-(\\d{2})-(\\d{2})(T)(\\d{2}):(\\d{2}):(\\d{2})(\\+)(0700)",
+              "to": "$3/$2/$1 $5:$6",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm"
+        }
+      },
+      "priority": 1,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "pantip.com",
+    "adapter": "pantip",
+    "homepage": "https://pantip.com/",
+    "allowedHosts": [
+      "pantip.com",
+      "www.pantip.com"
+    ],
+    "seeds": [
+      "https://pantip.com/"
+    ],
+    "threadPattern": "^/topic/\\d+$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "Asia/Bangkok UTC+07; Buddhist calendar converted explicitly",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "phunuvietkhoinghiep.vn",
+    "adapter": "wordpress",
+    "homepage": "https://phunuvietkhoinghiep.vn/",
+    "allowedHosts": [
+      "phunuvietkhoinghiep.vn",
+      "www.phunuvietkhoinghiep.vn"
+    ],
+    "seeds": [
+      "https://phunuvietkhoinghiep.vn/"
+    ],
+    "threadPattern": null,
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "raovatdalat.vn",
+    "adapter": "xenforo",
+    "homepage": "https://raovatdalat.vn/",
+    "allowedHosts": [
+      "raovatdalat.vn",
+      "www.raovatdalat.vn"
+    ],
+    "seeds": [
+      "http://raovatdalat.vn/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\raovatdalat.vn.json",
+      "sha256": "6d7757682f1fefe809a5a1ca8b65a09ff3ae298caaf55d5f8accfb213dfd5d4f"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://raovatdalat.vn/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?raovatdalat.vn/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".titleBar h1",
+        "comments": ".pageContent ol.messageList li[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?raovatdalat.vn/.*?/page\\-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText a.username",
+        "url": {
+          "selector": ".messageMeta .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "tctd.vn",
+    "adapter": "wn",
+    "homepage": "https://tctd.vn/",
+    "allowedHosts": [
+      "tctd.vn",
+      "www.tctd.vn"
+    ],
+    "seeds": [
+      "https://tctd.vn/"
+    ],
+    "threadPattern": "-a\\d+\\.html$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "techrum.vn",
+    "adapter": "xenforo",
+    "homepage": "https://www.techrum.vn/",
+    "allowedHosts": [
+      "techrum.vn",
+      "www.techrum.vn"
+    ],
+    "seeds": [
+      "http://techrum.vn/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\techrum.vn.json",
+      "sha256": "40ff85ff1a0440cb21a846558dca269ea417e1d6a79c36fc1179258aeb230338"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://techrum.vn/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?techrum.vn(/threads/).*?(\\.\\d{2,})/?$"
+      },
+      "postProcessor": {
+        "title": ".mainContent .titleBar > h1",
+        "comments": ".mainContent ol[id=messageList] > li[id*=post]",
+        "nextpage": "",
+        "pagination": ".mainContent .PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?techrum.vn/threads/.*?\\.\\d{2,}/page-)(\\d+)$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageInfo .messageContent > article > blockquote",
+        "author": ".messageUserInfo .userText > .username",
+        "url": {
+          "selector": ".messageInfo .post_info_div .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageInfo .post_info_div .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Hôm nay",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Hôm qua",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^(\\d{1,2})/(\\d{1,2})/(\\d{2})(?:\\s|.)*?(\\d{1,2}):(\\d{1,2})$",
+              "to": "$1/$2/20$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "tinhte.vn",
+    "adapter": "tinhte",
+    "homepage": "https://tinhte.vn/",
+    "allowedHosts": [
+      "tinhte.vn",
+      "www.tinhte.vn"
+    ],
+    "seeds": [
+      "https://tinhte.vn/",
+      "https://tinhte.vn/find-new/threads"
+    ],
+    "threadPattern": "^/thread/[^/]+[./]\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 1,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\tinhte.vn.json",
+      "sha256": "08ad421a781cf916bfb67e67e231b536221ff796c4bfa58096f6f5655c2e518d"
+    },
+    "legacy": {
+      "seedUrls": [
+        "https://tinhte.vn/find-new/threads"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?tinhte.vn(/thread/).*?(\\.\\d{4,})/?$"
+      },
+      "postProcessor": {
+        "title": ".thread-title",
+        "comments": ".thread-comment__wrapper .thread-comment__box",
+        "nextpage": "",
+        "pagination": ".pagination--pages a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?tinhte.vn/threads/.*?\\d{4,}/page-)(\\d+)$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": {
+          "selector": ".thread-comment__box .thread-comment__content"
+        },
+        "author": ".thread-comment__box .author-name",
+        "url": {
+          "selector": ".thread-comment .thread-comment__author a:nth-child(3)",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".thread-comment__author span",
+          "skip_text": false,
+          "replaces": [
+            {
+              "from": "Hôm nay",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Hôm qua",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "giây",
+              "to": "seconds"
+            },
+            {
+              "from": "giờ",
+              "to": "hours"
+            },
+            {
+              "from": "phút",
+              "to": "minutes"
+            },
+            {
+              "from": "ngày",
+              "to": "days"
+            },
+            {
+              "from": "tuần",
+              "to": "weeks"
+            },
+            {
+              "from": "tháng",
+              "to": "months"
+            },
+            {
+              "from": "năm",
+              "to": "years"
+            },
+            {
+              "from": "(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm"
+        }
+      },
+      "priority": 1,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "vietnambusinessinsider.vn",
+    "adapter": "wn",
+    "homepage": "https://vietnambusinessinsider.vn/",
+    "allowedHosts": [
+      "vietnambusinessinsider.vn",
+      "www.vietnambusinessinsider.vn"
+    ],
+    "seeds": [
+      "https://vietnambusinessinsider.vn/"
+    ],
+    "threadPattern": "-a\\d+\\.html$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/explicit offset preferred; local VN wall clock UTC+07",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "vnbadminton.com",
+    "adapter": "xenforo",
+    "homepage": "https://www.vnbadminton.com/",
+    "allowedHosts": [
+      "vnbadminton.com",
+      "www.vnbadminton.com"
+    ],
+    "seeds": [
+      "http://vnbadminton.com/find-new/posts"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\vnbadminton.com.json",
+      "sha256": "fbbcbc42a34dd029d556ec3d21d5847b0ed597bb3135d6ad96b20dc1e55a7cf8"
+    },
+    "legacy": {
+      "seedUrls": [
+        "http://vnbadminton.com/find-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?vnbadminton.com/threads/.*?\\.(\\d{4,})$"
+      },
+      "postProcessor": {
+        "title": ".titleBar h1",
+        "comments": ".pageContent ol.messageList li[id*=post-]",
+        "nextpage": "",
+        "pagination": ".PageNav nav a",
+        "pagination_url_pattern": "^((?:http(?:s)?://)?(?:.*?\\.)?vnbadminton.com/.*?/page\\-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": ".messageContent .messageText",
+        "author": ".messageUserInfo .messageUserBlock .userText a.username",
+        "url": {
+          "selector": ".messageMeta .postNumber",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".messageMeta .DateTime",
+          "skip_text": false,
+          "attribute": "title",
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "^.*?(\\d{1,2})/(\\d{1,2})/(\\d{2,4}).*?(\\d{1,2}):(\\d{1,2}).*?$",
+              "to": "$1/$2/$3 $4:$5",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YY HH:mm"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "vnreview.vn",
+    "adapter": "xenforo",
+    "homepage": "https://vnreview.vn/",
+    "allowedHosts": [
+      "vnreview.vn",
+      "www.vnreview.vn"
+    ],
+    "seeds": [
+      "https://vnreview.vn/whats-new/"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  },
+  {
+    "domain": "voz.vn",
+    "adapter": "xenforo",
+    "homepage": "https://voz.vn/",
+    "allowedHosts": [
+      "voz.vn",
+      "www.voz.vn"
+    ],
+    "seeds": [
+      "https://voz.vn/",
+      "https://voz.vn/whats-new/posts"
+    ],
+    "threadPattern": "^/t/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": {
+      "file": "C:\\Users\\PC Master Race\\Workspace\\eastdata\\scripts\\forum\\sites\\voz.vn.json",
+      "sha256": "5717be255649a1eefec606cafab973c6c7c47c94df16e22a4577c48ceac5c92d"
+    },
+    "legacy": {
+      "seedUrls": [
+        "https://voz.vn/whats-new/posts"
+      ],
+      "urlProcessor": {
+        "pattern_match": "^(http(s)?://)?(.*?\\.)?voz.vn/t/.*?(\\.)(\\d{3,})$"
+      },
+      "postProcessor": {
+        "title": "h1.p-title-value",
+        "comments": ".message.message--post[id*='post']",
+        "nextpage": "",
+        "pagination": ".pageNav-main li a",
+        "pagination_url_pattern": "^(https://voz.vn/t/.*?/page-)(\\d{1,})$",
+        "pagination_url_format": "$1{{num}}"
+      },
+      "commentProcessor": {
+        "message": {
+          "selector": ".message-body.js-selectToQuote"
+        },
+        "author": ".message-userDetails .message-name a",
+        "url": {
+          "selector": ".message-cell.message-cell--main li a",
+          "attribute": "href"
+        },
+        "created_time": {
+          "selector": ".message-attribution-main a time",
+          "attribute": "title",
+          "skip_text": false,
+          "replaces": [
+            {
+              "from": "Today",
+              "to": "moment().format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Yesterday",
+              "to": "moment().subtract(1, 'days').format('DD/MM/YYYY')",
+              "isExpression": true
+            },
+            {
+              "from": "Mar",
+              "to": "03"
+            },
+            {
+              "from": "Apr",
+              "to": "04"
+            },
+            {
+              "from": "May",
+              "to": "05"
+            },
+            {
+              "from": "Jun",
+              "to": "06"
+            },
+            {
+              "from": "Jul",
+              "to": "07"
+            },
+            {
+              "from": "Aug",
+              "to": "08"
+            },
+            {
+              "from": "Sep",
+              "to": "09"
+            },
+            {
+              "from": "Oct",
+              "to": "10"
+            },
+            {
+              "from": "Nov",
+              "to": "11"
+            },
+            {
+              "from": "Dec",
+              "to": "12"
+            },
+            {
+              "from": "Jan",
+              "to": "01"
+            },
+            {
+              "from": "Feb",
+              "to": "02"
+            },
+            {
+              "from": "^.*?(\\d{1,2}).*?(\\d{1,2}).*?(\\d{4}).*?(\\d{1,2}):(\\d{1,2}).*?(AM|PM)$",
+              "to": "$2/$1/$3 $4:$5 $6",
+              "isRegx": true
+            }
+          ],
+          "format": "DD/MM/YYYY HH:mm A"
+        }
+      },
+      "priority": 0,
+      "maxPage": 10
+    }
+  },
+  {
+    "domain": "xetv.vn",
+    "adapter": "xenforo",
+    "homepage": "https://xetv.vn/",
+    "allowedHosts": [
+      "xetv.vn",
+      "www.xetv.vn"
+    ],
+    "seeds": [
+      "https://xetv.vn/whats-new/posts/"
+    ],
+    "threadPattern": "^/threads/[^/]+\\.\\d+/?$",
+    "offsetMinutes": 420,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "native epoch/offset preferred; local title cross-checked when available",
+    "priority": 0,
+    "pollSeconds": 60,
+    "maxSeedPages": 10,
+    "maxThreadPagesPerRun": 100,
+    "legacySource": null,
+    "legacy": null
+  }
+]

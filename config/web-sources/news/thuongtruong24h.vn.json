@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuongtruong24h.vn",
+  "siteId": "thuongtruong24h.vn",
+  "registrableDomain": "thuongtruong24h.vn",
+  "homepage": "https://thuongtruong24h.vn/",
+  "allowedHosts": [
+    "thuongtruong24h.vn",
+    "www.thuongtruong24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Vinpearl đồng loạt khai trương hệ sinh thái “siêu điểm đến” tại Cần Giờ từ 1/7/2027",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".dt-news__body .tacgia-area .datetime",
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Phúc Long Heritage làm mới trà đóng gói, mở rộng thêm 10.000 điểm bán tạp hóa",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": ".dt-news__body .tacgia-area .datetime",
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:41.793Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thuongtruong24h.vn/phuc-long-heritage-lam-moi-tra-dong-goi-mo-rong-them-10000-diem-ban-tap-hoa-a156512.html",
+      "https://thuongtruong24h.vn/vinpearl-dong-loat-khai-truong-he-sinh-thai-sieu-diem-den-tai-can-gio-tu-172027-a156495.html",
+      "https://thuongtruong24h.vn/vinfast-ban-giao-11382-xe-o-to-dien-trong-thang-62025-a156272.html",
+      "https://thuongtruong24h.vn/masterise-homes-trien-khai-chuong-trinh-dong-hanh-kien-tao-gia-tri-nang-tam-trai-nghiem-song-ben-vung-tren-toan-quoc-a156476.html",
+      "https://thuongtruong24h.vn/cong-bo-san-pham-nhom-thoi-dau-tien-cua-viet-nam-a156471.html",
+      "https://thuongtruong24h.vn/phan-ung-cua-viet-nam-truoc-viec-co-quan-dai-dien-thuong-mai-hoa-ky-ustr-ap-muc-thue-moi-a156470.html",
+      "https://thuongtruong24h.vn/bo-sung-5000-ty-dong-von-dieu-le-cho-ngan-hang-hop-tac-xa-viet-nam-a156464.html",
+      "https://thuongtruong24h.vn/no-vay-giam-gan-mot-nua-sau-3-nam-masan-se-dung-nguon-luc-moi-vao-dau-a156510.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuongtruong24h.vn/",
+    "categories": [
+      "https://thuongtruong24h.vn/c/tieu-diem",
+      "https://thuongtruong24h.vn/c/tai-chinh",
+      "https://thuongtruong24h.vn/c/bat-dong-san",
+      "https://thuongtruong24h.vn/c/chuyen-thuong-truong",
+      "https://thuongtruong24h.vn/c/doanh-nhan",
+      "https://thuongtruong24h.vn/c/cong-nghe"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuongtruong24h.vn",
+    "checkedAt": "2026-11-09T03:57:32.789Z",
+    "url": "https://thuongtruong24h.vn/phuc-long-heritage-lam-moi-tra-dong-goi-mo-rong-them-10000-diem-ban-tap-hoa-a156512.html",
+    "finalUrl": "https://thuongtruong24h.vn/phuc-long-heritage-lam-moi-tra-dong-goi-mo-rong-them-10000-diem-ban-tap-hoa-a156512.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1977,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thuongtruong24h.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 133,
+        "passed": 16,
+        "distinctHashes": 15
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuongtruong24h.vn/phuc-long-heritage-lam-moi-tra-dong-goi-mo-rong-them-10000-diem-ban-tap-hoa-a156512.html",
+      "https://thuongtruong24h.vn/vinfast-ban-giao-11382-xe-o-to-dien-trong-thang-62025-a156272.html",
+      "https://thuongtruong24h.vn/masterise-homes-trien-khai-chuong-trinh-dong-hanh-kien-tao-gia-tri-nang-tam-trai-nghiem-song-ben-vung-tren-toan-quoc-a156476.html",
+      "https://thuongtruong24h.vn/cong-bo-san-pham-nhom-thoi-dau-tien-cua-viet-nam-a156471.html",
+      "https://thuongtruong24h.vn/phan-ung-cua-viet-nam-truoc-viec-co-quan-dai-dien-thuong-mai-hoa-ky-ustr-ap-muc-thue-moi-a156470.html",
+      "https://thuongtruong24h.vn/bo-sung-5000-ty-dong-von-dieu-le-cho-ngan-hang-hop-tac-xa-viet-nam-a156464.html",
+      "https://thuongtruong24h.vn/no-vay-giam-gan-mot-nua-sau-3-nam-masan-se-dung-nguon-luc-moi-vao-dau-a156510.html",
+      "https://thuongtruong24h.vn/vinhomes-loi-nhuan-9-thang-dat-751-nghin-ty-dong-vuot-25-ke-hoach-ca-nam-gap-gan-5-lan-cung-ky-a156509.html",
+      "https://thuongtruong24h.vn/vinfast-vf-8-the-he-moi-khien-khach-viet-ung-y-nho-loat-cong-nghe-bao-ve-ca-gia-dinh-a156508.html",
+      "https://thuongtruong24h.vn/tu-ngon-ngu-kien-truc-den-trai-nghiem-song-cach-areus-by-bm-windows-tao-dau-an-trong-phan-khuc-nhom-kinh-cao-cap-a156507.html",
+      "https://thuongtruong24h.vn/tu-xe-xang-5-cho-len-vinfast-vf-mpv-7-du-cho-cho-ba-the-he-sac-xe-0-dong-a156506.html",
+      "https://thuongtruong24h.vn/dai-gia-quan-7-he-lo-su-giau-co-khung-khiep-dap-bo-hoan-toan-1-can-biet-thu-de-xay-nha-400-ty-se-mua-them-chuc-cai-sieu-xe-ve-trung-cho-bo-a151897.html",
+      "https://thuongtruong24h.vn/cac-tap-doan-lon-o-trung-quoc-tu-bo-loi-nhuan-de-ne-don-cua-bac-kinh-a151895.html",
+      "https://thuongtruong24h.vn/tu-viec-vimedimex-tran-9-phien-sau-tin-nhap-vaccine-chan-dung-bo-tu-thong-linh-mang-nhap-khau-thuoc-voi-tong-doanh-thu-3-ty-usd-nhung-lai-rat-thap-a151833.html",
+      "https://thuongtruong24h.vn/tren-thuong-truong-co-hai-chu-vang-du-la-nguoi-moi-bat-dau-hay-cac-bac-lao-lang-deu-can-ghi-nho-di-trai-nguyen-tac-nay-som-muon-cung-se-bi-dao-thai-a151561.html",
+      "https://thuongtruong24h.vn/4-luu-y-khi-dung-kol-trong-chien-dich-tiep-thi-a151016.html",
+      "https://thuongtruong24h.vn/khau-trang-y-te-noi-dia-trung-quoc-tran-lan-tren-mang-a151012.html",
+      "https://thuongtruong24h.vn/buoc-thang-tram-cua-vua-lop-a151007.html",
+      "https://thuongtruong24h.vn/bau-thuy-bien-3-000-ty-thanh-70-000-ty-bang-cach-nao-a151001.html",
+      "https://thuongtruong24h.vn/loi-nhuan-masan-tang-hon-gap-doi-vuot-ke-hoach-co-so-ca-nam-2026-chi-sau-9-thang-a156505.html",
+      "https://thuongtruong24h.vn/masan-high-tech-materials-bo-nhiem-tong-giam-doc-moi-tang-toc-phat-trien-nen-tang-vat-lieu-chien-luoc-toan-cau-a156504.html",
+      "https://thuongtruong24h.vn/tu-bua-an-viet-den-chuoi-cung-ung-toan-cau-dau-an-thuong-hieu-masan-a156503.html",
+      "https://thuongtruong24h.vn/phuc-long-va-chien-luoc-lam-moi-trai-nghiem-tren-nen-tang-tra-viet-a156502.html",
+      "https://thuongtruong24h.vn/ngoi-nha-nghi-duong-vinh-may-dap-ung-hoan-hao-nhip-song-rieng-cua-tung-the-he-a156501.html",
+      "https://thuongtruong24h.vn/chu-nhan-vinhomes-sai-gon-park-tu-hao-goi-diem-den-ca-trieu-nguoi-muon-tim-ve-kham-pha-la-nha-a156511.html",
+      "https://thuongtruong24h.vn/uy-ban-thuong-vu-quoc-hoi-cho-y-kien-ve-du-an-luat-sua-doi-bo-sung-03-luat-trong-linh-vuc-ngan-hang-a156465.html",
+      "https://thuongtruong24h.vn/dau-la-chien-luoc-de-techcombank-xay-dung-he-sinh-thai-tai-chinh-toan-dien-mang-tam-quoc-te-a156401.html",
+      "https://thuongtruong24h.vn/techcombank-cung-co-cau-chuyen-dau-tu-voi-hieu-qua-vuot-troi-dan-dau-khi-co-dong-nhan-them-len-den-67-a156400.html",
+      "https://thuongtruong24h.vn/siet-tien-do-giai-ngan-cac-du-an-ha-tang-giao-thong-a156462.html",
+      "https://thuongtruong24h.vn/tphcm-khoi-cong-dong-loat-8-du-an-trong-diem-chao-mung-50-nam-thanh-pho-vinh-du-mang-ten-bac-a156455.html",
+      "https://thuongtruong24h.vn/masterise-homes-2-nam-lien-tiep-duoc-vinh-danh-tai-appa-khang-dinh-nang-luc-dinh-chuan-hang-hieu-duoc-quoc-te-cong-nhan-a156416.html",
+      "https://thuongtruong24h.vn/70-doanh-thu-den-tu-thuong-hieu-chu-luc-masan-consumer-tang-truong-tiep-the-nao-a156487.html",
+      "https://thuongtruong24h.vn/masan-duoc-du-bao-lai-quy-ii-tang-62-cac-cong-ty-chung-khoan-tiep-tuc-duy-tri-danh-gia-tich-cuc-a156452.html",
+      "https://thuongtruong24h.vn/the-gioi-dang-nhin-vonfram-khac-di-nhu-the-nao-a156431.html",
+      "https://thuongtruong24h.vn/vinpearl-hop-tac-voi-3-doanh-nghiep-lu-hanh-hang-dau-an-do-khai-mo-thi-truong-147-ty-dan-a156414.html",
+      "https://thuongtruong24h.vn/hieu-ung-black-friday-cua-mg-khach-hang-quyet-dinh-mua-xe-nhanh-hon-a156491.html",
+      "https://thuongtruong24h.vn/uu-dai-don-dap-trang-bi-vuot-phan-khuc-vinfast-vf-5-hut-khach-dip-cuoi-nam-a156359.html",
+      "https://thuongtruong24h.vn/chuyen-gia-noi-ve-vinfast-vf-8-mau-suv-dien-toan-dien-nhat-trong-tam-gia-a156256.html",
+      "https://thuongtruong24h.vn/bat-dong-san-gan-voi-bao-ton-di-san-can-nhung-nha-phat-trien-du-tam-du-tam-a151540.html",
+      "https://thuongtruong24h.vn/sieu-thap-habico-tower-85-tycan-gay-chan-dong-gioi-bat-dong-san-mot-thoi-gio-ra-sao-a151371.html",
+      "https://thuongtruong24h.vn/video-bua-nha-dinh-doc-dao-giup-dong-dinh-bang-mot-tay-khong-lo-dong-nham-vao-ngon-a37121.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:25.342Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuongtruong24h.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "dateCorrectionEvidence": {
+    "reason": "Broad selector selected a recommendation timestamp; scoped to original article clock",
+    "requiresHistoricalIndexReconciliation": true,
+    "checkedAt": "2026-11-16T02:28:16.217Z",
+    "verifiedUrls": [
+      "https://thuongtruong24h.vn/phuc-long-heritage-lam-moi-tra-dong-goi-mo-rong-them-10000-diem-ban-tap-hoa-a156512.html",
+      "https://thuongtruong24h.vn/vinfast-ban-giao-11382-xe-o-to-dien-trong-thang-62025-a156272.html"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "thuongtruong24h.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

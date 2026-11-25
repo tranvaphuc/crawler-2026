@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchisuthat.com",
+  "siteId": "tapchisuthat.com",
+  "registrableDomain": "tapchisuthat.com",
+  "homepage": "https://tapchisuthat.com/",
+  "allowedHosts": [
+    "tapchisuthat.com",
+    "www.tapchisuthat.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "LOVEDEAR NỢ LƯƠNG, QUỴT LƯƠNG NHÂN VIÊN, NỢ ĐỐI TÁC KHÔNG THANH TOÁN",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:47.568Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://tapchisuthat.com/lovedears-no-luong-quyt-luong-nhan-vien-no-doi-tac-khong-thanh-toan/",
+      "https://tapchisuthat.com/so-huu-ky-nghi-alma-giai-dap-cac-cau-hoi-cua-khach-hang/",
+      "https://tapchisuthat.com/so-huu-ky-nghi-o-viet-nam-dang-thieu-nhung-gi/",
+      "https://tapchisuthat.com/su-that-ve-alma-nha-trang-review-thuc-te-co-dung-nhu-review/",
+      "https://tapchisuthat.com/nhung-kich-ban-lua-dao-an-theo-mo-hinh-so-huu-ky-nghi/",
+      "https://tapchisuthat.com/so-huu-ky-nghi-alma-giai-dap-cac-cau-hoi-cua-khach-hang/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tapchisuthat.com/",
+    "categories": [
+      "https://tapchisuthat.com/category/uncategorized/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tapchisuthat.com",
+    "checkedAt": "2026-11-09T03:57:27.512Z",
+    "url": "https://tapchisuthat.com/lovedears-no-luong-quyt-luong-nhan-vien-no-doi-tac-khong-thanh-toan/",
+    "finalUrl": "https://tapchisuthat.com/lovedears-no-luong-quyt-luong-nhan-vien-no-doi-tac-khong-thanh-toan/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6115,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:18.296Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/tapchisuthat.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "tapchisuthat.com",
+    "parsedArticles": 4,
+    "distinctHashes": 4,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 13,
+    "checkedArticleUrls": 4,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 13,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

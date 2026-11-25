@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "toancanhbatdongsan.com.vn",
+  "siteId": "toancanhbatdongsan.com.vn",
+  "registrableDomain": "toancanhbatdongsan.com.vn",
+  "homepage": "https://toancanhbatdongsan.com.vn/",
+  "allowedHosts": [
+    "toancanhbatdongsan.com.vn",
+    "www.toancanhbatdongsan.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://toancanhbatdongsan.com.vn/",
+    "categories": [
+      "https://toancanhbatdongsan.com.vn/c/cong-dong-tri-thuc",
+      "https://toancanhbatdongsan.com.vn/c/cong-dong-chuyen-gia",
+      "https://toancanhbatdongsan.com.vn/c/cong-dong-nghe-moi-gioi",
+      "https://toancanhbatdongsan.com.vn/c/cong-dong-chia-se",
+      "https://toancanhbatdongsan.com.vn/video"
+    ]
+  },
+  "title": {
+    "value": "TP.HCM nâng trần phí quản lý chung cư lên 13.700 đồng/m² mỗi tháng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:44.641Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:36.432Z",
+    "independentHoldouts": [
+      "https://toancanhbatdongsan.com.vn/cam-tu-realtalk-thi-truong-bat-dong-san-2027-muon-nam-bat-co-hoi-can-chuan-bi-gi-a4776",
+      "https://toancanhbatdongsan.com.vn/lai-suat-vay-mua-nha-nam-2027-kho-giam-sau-nguoi-mua-tiep-tuc-chiu-ap-luc-a4775",
+      "https://toancanhbatdongsan.com.vn/65-doanh-nghiep-moi-gioi-bat-dong-san-cho-hoa-hong-tu-6-12-thang-a4774"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://toancanhbatdongsan.com.vn/tphcm-nang-tran-phi-quan-ly-chung-cu-len-13700-dongm2-moi-thang-a4771",
+      "https://toancanhbatdongsan.com.vn/cam-tu-realtalk-thi-truong-bat-dong-san-2027-muon-nam-bat-co-hoi-can-chuan-bi-gi-a4776",
+      "https://toancanhbatdongsan.com.vn/lai-suat-vay-mua-nha-nam-2027-kho-giam-sau-nguoi-mua-tiep-tuc-chiu-ap-luc-a4775",
+      "https://toancanhbatdongsan.com.vn/65-doanh-nghiep-moi-gioi-bat-dong-san-cho-hoa-hong-tu-6-12-thang-a4774"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

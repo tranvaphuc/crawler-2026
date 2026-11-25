@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baochinhphu.vn",
+  "siteId": "baochinhphu.vn",
+  "registrableDomain": "baochinhphu.vn",
+  "homepage": "https://baochinhphu.vn/",
+  "allowedHosts": [
+    "baochinhphu.vn",
+    "www.baochinhphu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp mặt cán bộ, nhân viên các cơ quan đại diện và cộng đồng người Việt Nam tại Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:53.714Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-102261108171852963.htm",
+      "https://baochinhphu.vn/dau-an-chinh-phu-tuan-qua-nhung-no-luc-cao-nhat-tap-trung-cao-do-hoan-thanh-nhiem-vu-nam-2026-102261108165951073.htm",
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-102261108201757967.htm",
+      "https://baochinhphu.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-102261107172703245.htm",
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cung-phu-nhan-bat-dau-tham-chinh-thuc-nhat-ban-102261108142531497.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baochinhphu.vn/",
+    "categories": [
+      "https://baochinhphu.vn/chinh-tri.htm",
+      "https://baochinhphu.vn/chinh-tri/doi-ngoai.htm",
+      "https://baochinhphu.vn/chinh-tri/to-chuc-nhan-su.htm",
+      "https://baochinhphu.vn/chinh-tri/hoi-nhap.htm",
+      "https://baochinhphu.vn/kinh-te.htm",
+      "https://baochinhphu.vn/kinh-te/ngan-hang.htm",
+      "https://baochinhphu.vn/kinh-te/chung-khoan.htm",
+      "https://baochinhphu.vn/kinh-te/kinh-doanh.htm",
+      "https://baochinhphu.vn/van-hoa.htm",
+      "https://baochinhphu.vn/van-hoa/the-thao.htm",
+      "https://baochinhphu.vn/van-hoa/du-lich.htm",
+      "https://baochinhphu.vn/xa-hoi.htm",
+      "https://baochinhphu.vn/xa-hoi/phap-luat.htm",
+      "https://baochinhphu.vn/xa-hoi/doi-song.htm",
+      "https://baochinhphu.vn/xa-hoi/y-te.htm",
+      "https://baochinhphu.vn/khoa-giao.htm",
+      "https://baochinhphu.vn/khoa-giao/giao-duc.htm",
+      "https://baochinhphu.vn/khoa-giao/khoa-hoc-cong-nghe.htm",
+      "https://baochinhphu.vn/quoc-te.htm",
+      "https://baochinhphu.vn/chinh-sach-va-cuoc-song/tham-van-chinh-sach.htm",
+      "https://baochinhphu.vn/chinh-sach-va-cuoc-song/chinh-sach-moi.htm",
+      "https://baochinhphu.vn/luan-va-dam.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?baochinhphu.vn/.*?(\\d{6,})(.vgp)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baochinhphu.vn",
+    "checkedAt": "2026-11-09T03:56:49.485Z",
+    "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-102261108171852963.htm",
+    "finalUrl": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-102261108171852963.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5902,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baochinhphu.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 23,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 494,
+        "passed": 32,
+        "distinctHashes": 32
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-102261110135520338.htm",
+      "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-de-nghi-som-xay-dung-danh-muc-dau-tu-dai-han-voi-aiib-102261110121924537.htm",
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-nguyen-chu-tich-lien-minh-nghi-si-huu-nghi-nhat-viet-va-thong-doc-mot-so-dia-phuong-cua-nhat-ban-102261110134653492.htm",
+      "https://baochinhphu.vn/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-102261110090949404.htm",
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-bch-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-102261110120733394.htm",
+      "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake-102261110133838798.htm",
+      "https://baochinhphu.vn/lay-luat-dat-dai-lam-goc-khi-hoan-thien-cac-luat-lien-quan-bao-dam-dong-bo-he-thong-phap-luat-102261110115509003.htm",
+      "https://baochinhphu.vn/pho-thu-tuong-le-tien-chau-tiep-thong-doc-tinh-gunma-nhat-ban-102261110105811114.htm",
+      "https://baochinhphu.vn/chuong-trinh-hanh-dong-cua-chinh-phu-phat-trien-cac-vung-va-to-chuc-khong-gian-phat-trien-quoc-gia-102261109190145971.htm",
+      "https://baochinhphu.vn/bo-cong-thuong-phe-duyet-khung-gia-phat-dien-mat-troi-nam-2026-102261109191428965.htm",
+      "https://baochinhphu.vn/bo-truong-bo-noi-vu-de-xuat-ngay-27-7-hang-nam-la-ngay-nghi-huong-nguyen-luong-102261109132000757.htm",
+      "https://baochinhphu.vn/quy-dinh-moi-ve-trinh-tu-thu-tuc-giam-sat-hoat-dong-phong-chong-rua-tien-10226110917035004.htm",
+      "https://baochinhphu.vn/de-thanh-pho-ho-chi-minh-but-pha-thanh-pho-chu-dong-trung-uong-dong-hanh-102261012081735347.htm",
+      "https://baochinhphu.vn/thu-tuong-le-minh-hung-nhung-thong-diep-cua-viet-nam-tai-dien-dan-kinh-te-mua-thu-102261028085000768.htm",
+      "https://baochinhphu.vn/toan-van-bao-cao-kinh-te-xa-hoi-do-thu-tuong-le-minh-hung-trinh-bay-tai-ky-hop-thu-2-quoc-hoi-khoa-xvi-102261017082403958.htm",
+      "https://baochinhphu.vn/thu-tuong-le-minh-hung-chuyen-tu-lam-ra-tai-viet-nam-sang-sang-tao-boi-viet-nam-102261016212648827.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:01.171Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baochinhphu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baoquangninh.vn",
+  "siteId": "baoquangninh.vn",
+  "registrableDomain": "baoquangninh.vn",
+  "homepage": "https://baoquangninh.vn/",
+  "allowedHosts": [
+    "baoquangninh.vn",
+    "www.baoquangninh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baoquangninh.vn/",
+    "categories": [
+      "https://baoquangninh.vn/truyen-hinh/",
+      "https://baoquangninh.vn/phat-thanh/",
+      "https://baoquangninh.vn/bao-in/",
+      "https://baoquangninh.vn/chinh-tri/",
+      "https://baoquangninh.vn/chinh-tri/xay-dung-dang/",
+      "https://baoquangninh.vn/chinh-tri/hoc-lam-theo-bac/"
+    ]
+  },
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm tiếp lãnh đạo các tập đoàn, doanh nghiệp Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:40.303Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:33.079Z",
+    "independentHoldouts": [
+      "https://baoquangninh.vn/uefa-nations-league-4-tran-dau-cung-khoi-tranh-luc-2h45-ngay-1611-post3427234.html",
+      "https://baoquangninh.vn/chuong-trinh-nghe-thuat-thanh-am-mien-di-san-post3427242.html",
+      "https://baoquangninh.vn/chuong-trinh-nghe-thuat-tro-ve-ky-uc-tu-hao-van-hoa-vung-mo-post3427240.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baoquangninh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-lanh-dao-cac-tap-doan-doanh-nghiep-nhat-ban-post3426573.html",
+      "https://baoquangninh.vn/uefa-nations-league-4-tran-dau-cung-khoi-tranh-luc-2h45-ngay-1611-post3427234.html",
+      "https://baoquangninh.vn/chuong-trinh-nghe-thuat-thanh-am-mien-di-san-post3427242.html",
+      "https://baoquangninh.vn/chuong-trinh-nghe-thuat-tro-ve-ky-uc-tu-hao-van-hoa-vung-mo-post3427240.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

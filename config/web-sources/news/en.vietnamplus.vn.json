@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "siteName": "en.vietnamplus.vn",
+  "siteId": "en.vietnamplus.vn",
+  "registrableDomain": "vietnamplus.vn",
+  "homepage": "https://en.vietnamplus.vn/",
+  "allowedHosts": [
+    "en.vietnamplus.vn",
+    "www.en.vietnamplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Unity, strength take centre stage at Vietnam’s National Buddhist Congress",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container",
+    "removeExtra": ".article__social"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "NA President attends Great National Solidarity Festival in Ho Chi Minh City",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "en.vietnamplus.vn",
+      "siteId": "en.vietnamplus.vn",
+      "registrableDomain": "vietnamplus.vn",
+      "homepage": "https://en.vietnamplus.vn/",
+      "allowedHosts": [
+        "en.vietnamplus.vn",
+        "www.en.vietnamplus.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Unity, strength take centre stage at Vietnam’s National Buddhist Congress",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article.longform",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:38.286Z",
+        "trainingUrls": [
+          "https://en.vietnamplus.vn/traditional-attire-reflects-cham-muslim-cultural-identity-post354682.vnp",
+          "https://en.vietnamplus.vn/nui-chua-national-park-showcases-natural-beauty-and-local-livelihoods-post354787.vnp",
+          "https://en.vietnamplus.vn/two-vietnamese-documentary-heritage-collections-added-to-unesco-regional-register-post354957.vnp",
+          "https://en.vietnamplus.vn/vietnam-japan-comprehensive-strategic-partnership-continues-to-deepen-post355064.vnp"
+        ],
+        "holdoutUrls": [
+          "https://en.vietnamplus.vn/lawmakers-discuss-additional-safeguards-for-workers-reporting-safety-risks-post355084.vnp",
+          "https://en.vietnamplus.vn/lawmakers-consider-measures-to-expand-social-insurance-coverage-post355043.vnp"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:57.773Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://en.vietnamplus.vn/unity-strength-take-centre-stage-at-vietnams-national-buddhist-congress-post355007.vnp",
+      "https://en.vietnamplus.vn/na-president-attends-great-national-solidarity-festival-in-ho-chi-minh-city-post355000.vnp",
+      "https://en.vietnamplus.vn/respect-for-the-constitution-and-law-a-driver-of-national-development-post355020.vnp",
+      "https://en.vietnamplus.vn/top-vietnamese-leader-begins-official-visit-to-japan-post355021.vnp",
+      "https://en.vietnamplus.vn/vietnamese-cuisine-brings-a-taste-of-home-to-colombia-post355004.vnp"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://en.vietnamplus.vn/",
+    "categories": [
+      "https://en.vietnamplus.vn/politics/",
+      "https://en.vietnamplus.vn/op-ed/",
+      "https://en.vietnamplus.vn/world/",
+      "https://en.vietnamplus.vn/kieubao/",
+      "https://en.vietnamplus.vn/asean/",
+      "https://en.vietnamplus.vn/society/",
+      "https://en.vietnamplus.vn/business/",
+      "https://en.vietnamplus.vn/culturesports/",
+      "https://en.vietnamplus.vn/sci-tech/",
+      "https://en.vietnamplus.vn/health/",
+      "https://en.vietnamplus.vn/environment/",
+      "https://en.vietnamplus.vn/travel/",
+      "https://en.vietnamplus.vn/destinations/",
+      "https://en.vietnamplus.vn/festival/",
+      "https://en.vietnamplus.vn/tours/",
+      "https://en.vietnamplus.vn/multimedia/",
+      "https://en.vietnamplus.vn/mega-story/",
+      "https://en.vietnamplus.vn/infographics/",
+      "https://en.vietnamplus.vn/photo/",
+      "https://en.vietnamplus.vn/videos/",
+      "https://en.vietnamplus.vn/podcast/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "en.vietnamplus.vn",
+    "checkedAt": "2026-11-09T03:57:03.950Z",
+    "url": "https://en.vietnamplus.vn/unity-strength-take-centre-stage-at-vietnams-national-buddhist-congress-post355007.vnp",
+    "finalUrl": "https://en.vietnamplus.vn/unity-strength-take-centre-stage-at-vietnams-national-buddhist-congress-post355007.vnp",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7429,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "en.vietnamplus.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 40,
+    "freshArticleChecks": 12,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 35,
+    "listingResponsesAtArticleUrls": 1,
+    "categoriesPlanned": 21,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 522,
+        "passed": 38,
+        "distinctHashes": 35
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://en.vietnamplus.vn/lawmakers-debate-expressway-network-under-planning-post355133.vnp",
+      "https://en.vietnamplus.vn/apec-2026-2027-opportunity-for-vietnam-and-china-to-advance-continuous-agenda-post355124.vnp",
+      "https://en.vietnamplus.vn/building-a-civilised-nation-through-meritocracy-the-950-year-legacy-of-quoc-tu-giam-post355121.vnp",
+      "https://en.vietnamplus.vn/top-leader-meets-chairman-of-jcp-central-committee-post355140.vnp",
+      "https://en.vietnamplus.vn/vietnam-japan-fortify-cooperation-in-environment-agriculture-marine-economy-post355120.vnp",
+      "https://en.vietnamplus.vn/vietnam-japan-exchange-three-loan-and-grant-aid-documents-post355115.vnp",
+      "https://en.vietnamplus.vn/japanese-investors-eye-new-opportunities-in-vietnam-post355138.vnp",
+      "https://en.vietnamplus.vn/top-vietnamese-leader-receives-co-leader-of-japan-innovation-party-post355137.vnp",
+      "https://en.vietnamplus.vn/governor-of-japans-gunma-prefecture-welcomed-in-hanoi-post355139.vnp",
+      "https://en.vietnamplus.vn/petrolimex-steps-up-strategic-cooperation-with-japans-eneos-post355136.vnp",
+      "https://en.vietnamplus.vn/vietnamese-goods-make-strong-impression-at-ciie-2026-post355135.vnp",
+      "https://en.vietnamplus.vn/vifc-hcmc-japanese-partners-explore-jpy-denominated-bond-issuance-post355134.vnp",
+      "https://en.vietnamplus.vn/vietnamese-women-in-europe-uphold-national-cultural-identity-post355132.vnp",
+      "https://en.vietnamplus.vn/op-ed-optimising-cultural-strength-reinforcing-great-national-unity-from-grassroots-post355049.vnp",
+      "https://en.vietnamplus.vn/cao-bang-chinas-guangxi-explore-key-areas-for-cross-border-cooperation-post355130.vnp",
+      "https://en.vietnamplus.vn/ho-chi-minh-city-reinforces-position-as-regional-supply-chain-connector-post355131.vnp",
+      "https://en.vietnamplus.vn/phu-bai-airport-plan-targets-4-million-passengers-annually-by-2030-post355123.vnp",
+      "https://en.vietnamplus.vn/quoc-tu-giams-950th-anniversary-celebrates-scholars-contributions-to-traditional-crafts-post355129.vnp",
+      "https://en.vietnamplus.vn/vietnams-first-lady-attends-cultural-exchanges-in-japan-post355128.vnp",
+      "https://en.vietnamplus.vn/vietnams-retail-market-attracts-growing-interest-from-us-suppliers-post355127.vnp",
+      "https://en.vietnamplus.vn/top-leaders-visit-gives-new-impetus-to-vietnam-japan-cooperation-post355126.vnp",
+      "https://en.vietnamplus.vn/fifth-world-conference-of-overseas-vietnamese-targets-substantive-ov-involvement-in-national-goals-post355125.vnp",
+      "https://en.vietnamplus.vn/hanoi-intl-film-festival-2026-to-connect-cinema-heritage-tourism-post355065.vnp",
+      "https://en.vietnamplus.vn/up-to-1005-sets-of-martyrs-remains-recovered-at-le-thi-rieng-park-so-far-post355116.vnp",
+      "https://en.vietnamplus.vn/na-president-attends-great-national-solidarity-festival-in-ho-chi-minh-city-post355000.vnp",
+      "https://en.vietnamplus.vn/vietnam-japan-comprehensive-strategic-partnership-continues-to-deepen-post355064.vnp",
+      "https://en.vietnamplus.vn/japanese-pm-hosts-banquet-for-top-vietnamese-leader-and-his-spouse-post355113.vnp",
+      "https://en.vietnamplus.vn/vietnams-first-lady-attends-cultural-artistic-exchanges-in-japan-post355112.vnp",
+      "https://en.vietnamplus.vn/top-vietnamese-leader-welcomed-in-japan-holds-talks-with-japanese-pm-post355092.vnp",
+      "https://en.vietnamplus.vn/vietnams-best-road-trips-as-selected-by-lonely-planet-post355068.vnp",
+      "https://en.vietnamplus.vn/vneid-railway-ticketing-goes-official-from-november-9-post355101.vnp",
+      "https://en.vietnamplus.vn/vietnam-gains-popularity-among-czech-travellers-post355050.vnp",
+      "https://en.vietnamplus.vn/vietnam-taps-tourism-potential-to-promote-local-specialties-post354968.vnp",
+      "https://en.vietnamplus.vn/quang-tri-bets-on-cua-viet-cua-tung-con-co-island-triangle-to-scale-marine-economy-post354970.vnp",
+      "https://en.vietnamplus.vn/forum-taps-overseas-vietnamese-brainpower-in-germany-post355100.vnp",
+      "https://en.vietnamplus.vn/indian-ambassador-presents-bodhi-tree-to-bo-da-pagoda-in-bac-ninh-post355099.vnp",
+      "https://en.vietnamplus.vn/roks-ai-robotics-drive-opens-cooperation-opportunities-with-vietnam-post355103.vnp",
+      "https://en.vietnamplus.vn/russian-survey-vessel-docks-in-hai-phong-post355110.vnp",
+      "https://en.vietnamplus.vn/vietnam-japan-semiconductor-cooperation-paves-the-way-for-high-tech-investment-post355067.vnp",
+      "https://en.vietnamplus.vn/vietnam-to-open-registration-for-two-character-vn-domain-names-for-first-time-post355062.vnp",
+      "https://en.vietnamplus.vn/coastal-biosphere-reserves-network-adopts-action-plan-for-sustainable-development-post355063.vnp",
+      "https://en.vietnamplus.vn/ninh-binh-establishes-worlds-largest-delacours-langur-sanctuary-post354875.vnp",
+      "https://en.vietnamplus.vn/vietnam-indonesia-boost-green-energy-cooperation-post354859.vnp",
+      "https://en.vietnamplus.vn/vietnam-denmark-expand-cooperation-in-high-tech-healthcare-post354880.vnp",
+      "https://en.vietnamplus.vn/flu-can-trigger-cardiovascular-events-worsen-chronic-conditions-in-the-elderly-post354855.vnp",
+      "https://en.vietnamplus.vn/traditional-medicine-gives-wellness-tourism-distinctive-identity-post354736.vnp",
+      "https://en.vietnamplus.vn/indonesian-newspaper-highlights-vietnams-lead-in-investment-attraction-industrial-development-post355059.vnp",
+      "https://en.vietnamplus.vn/vietnams-top-leader-seeks-more-investment-cooperation-from-japan-japanese-media-post355045.vnp"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "content_integrity_review": 1
+    },
+    "checkedAt": "2026-11-10T09:15:23.254Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/en.vietnamplus.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "nativePublicationAdapter": "publisher_native_video_caption"
+}

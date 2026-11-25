@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioimoitruong.vn",
+  "siteId": "thegioimoitruong.vn",
+  "registrableDomain": "thegioimoitruong.vn",
+  "homepage": "https://thegioimoitruong.vn/",
+  "allowedHosts": [
+    "thegioimoitruong.vn",
+    "www.thegioimoitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chưa thực hiện kiểm định khí thải xe máy",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:33.819Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thegioimoitruong.vn/chua-thuc-hien-kiem-dinh-khi-thai-xe-may.html",
+      "https://thegioimoitruong.vn/sap-dien-ra-trien-lam-quoc-te-chuyen-nganh-may-moc-trang-thiet-bi-vat-tu-hoa-chat-va-san-pham-nong-nghiep-agri-vietnam-2024.html",
+      "https://thegioimoitruong.vn/tu-ban-cong-den-tram-sac-xe-dien-alena-energy-gop-giai-phap-cho-do-thi-xanh.html",
+      "https://thegioimoitruong.vn/green-food-festival-2026-lan-toa-loi-song-xanh-tu-nhung-lua-chon-tren-ban-an.html",
+      "https://thegioimoitruong.vn/chuyen-doi-nang-luong-xanh-green-flow-solar-trien-khai-du-an-dien-mat-troi-tai-nutifood.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioimoitruong.vn/",
+    "categories": [
+      "https://thegioimoitruong.vn/su-kien-van-de",
+      "https://thegioimoitruong.vn/doanh-nghiep",
+      "https://thegioimoitruong.vn/doanh-nhan",
+      "https://thegioimoitruong.vn/doanh-nghiep/chuyen-doi-xanh",
+      "https://thegioimoitruong.vn/khoa-hoc-cong-nghe",
+      "https://thegioimoitruong.vn/thuong-hieu-manh",
+      "https://thegioimoitruong.vn/tai-nguyen-moi-truong",
+      "https://thegioimoitruong.vn/tai-nguyen-moi-truong/bao-ve-moi-truong",
+      "https://thegioimoitruong.vn/tai-nguyen-moi-truong/bao-ton-thien-nhien",
+      "https://thegioimoitruong.vn/tai-nguyen-moi-truong/thich-ung-bien-doi-khi-hau",
+      "https://thegioimoitruong.vn/khoa-hoc-cong-nghe/khoa-hoc-moi-truong",
+      "https://thegioimoitruong.vn/moi-truong-the-gioi",
+      "https://thegioimoitruong.vn/kinh-te-xanh",
+      "https://thegioimoitruong.vn/kinh-te-xanh/kinh-te-tuan-hoan",
+      "https://thegioimoitruong.vn/kinh-te-xanh/kien-truc-xanh",
+      "https://thegioimoitruong.vn/phap-luat",
+      "https://thegioimoitruong.vn/phap-luat/thong-tin-quy-hoach",
+      "https://thegioimoitruong.vn/dien-dan",
+      "https://thegioimoitruong.vn/dien-dan/du-lich",
+      "https://thegioimoitruong.vn/dien-dan/bat-dong-san",
+      "https://thegioimoitruong.vn/dien-dan/thanh-pho-xanh",
+      "https://thegioimoitruong.vn/dien-dan/phat-trien-ben-vung",
+      "https://thegioimoitruong.vn/xa-hoi",
+      "https://thegioimoitruong.vn/cong-dong",
+      "https://thegioimoitruong.vn/xa-hoi/nhip-cau-nhan-ai",
+      "https://thegioimoitruong.vn/an-toan-thuc-pham",
+      "https://thegioimoitruong.vn/song-khoe",
+      "https://thegioimoitruong.vn/hoat-dong-hoi",
+      "https://thegioimoitruong.vn/ve-hoi-bao-ve-thien-nhien-moi-truong-tphcm",
+      "https://thegioimoitruong.vn/hoat-dong-hoi/vi-viet-nam-xanh",
+      "https://thegioimoitruong.vn/hoat-dong-hoi/caravan-bao-ve-moi-truong",
+      "https://thegioimoitruong.vn/hoat-dong-hoi/vi-bien-dao-xanh-to-quoc",
+      "https://thegioimoitruong.vn/hoat-dong-hoi/hanh-dong-xanh",
+      "https://thegioimoitruong.vn/hoat-dong-hoi/gian-hang-xanh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioimoitruong.vn",
+    "checkedAt": "2026-11-09T03:57:29.913Z",
+    "url": "https://thegioimoitruong.vn/chua-thuc-hien-kiem-dinh-khi-thai-xe-may.html",
+    "finalUrl": "https://thegioimoitruong.vn/chua-thuc-hien-kiem-dinh-khi-thai-xe-may.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2876,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:25.255Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thegioimoitruong.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thegioimoitruong.vn",
+    "parsedArticles": 35,
+    "distinctHashes": 35,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesAttempted": 34,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 235,
+    "checkedArticleUrls": 35,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 233,
+        "attempted": 33,
+        "passed": 33,
+        "distinctContents": 33,
+        "distinctHashes": 33
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "siteName": "truyenhinh.baobinhduong.vn",
+  "siteId": "truyenhinh.baobinhduong.vn",
+  "registrableDomain": "baobinhduong.vn",
+  "homepage": "https://truyenhinh.baobinhduong.vn/video/",
+  "allowedHosts": [
+    "truyenhinh.baobinhduong.vn",
+    "www.truyenhinh.baobinhduong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": ".title-video"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".date-time-video"
+  },
+  "body": {
+    "strategy": "jsonld_media",
+    "selector": "video",
+    "requirePageIdentity": true
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_passed_category_unverified",
+  "validation": {
+    "checkedAt": "2026-11-09T02:20:52.658Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+      "https://truyenhinh.baobinhduong.vn/en/video/xem-video/a-journey-to-spread-love-and-kindness-9976.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/khanh-thanh-tuong-dai-trung-tam-khu-tuong-niem-chien-khu-d-10050.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/hop-long-cau-600-ti-dong-bac-qua-song-sai-gon-10048.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/biwase-khoi-dong-nha-may-dien-rac-cong-suat-24mw-10047.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/hdnd-tinh-binh-duong-khoa-x-khep-lai-mot-hanh-trinh-huong-den-hoi-nhap-cung-phat-trien-10046.html",
+      "https://truyenhinh.baobinhduong.vn/en/video/xem-video/war-zone-d-vinh-loi-war-zone-9902.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/tinh-uy-binh-duong-trao-quyet-dinh-ve-cong-tac-can-bo-8649.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": false,
+    "reason": null
+  },
+  "discovery": {
+    "homepage": "https://truyenhinh.baobinhduong.vn/video/",
+    "categories": [
+      "https://truyenhinh.baobinhduong.vn/cn",
+      "https://truyenhinh.baobinhduong.vn/video/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.343Z",
+      "verifiedSeeds": [
+        "https://truyenhinh.baobinhduong.vn/video/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_passed_category_unverified",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "truyenhinh.baobinhduong.vn",
+    "checkedAt": "2026-11-09T03:57:35.013Z",
+    "url": "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+    "finalUrl": "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "truyenhinh.baobinhduong.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 6,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 6,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "video",
+        "discovered": 4,
+        "passed": 6,
+        "distinctHashes": 6
+      },
+      {
+        "name": "ordinary",
+        "discovered": 15,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/khanh-thanh-tuong-dai-trung-tam-khu-tuong-niem-chien-khu-d-10050.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/hop-long-cau-600-ti-dong-bac-qua-song-sai-gon-10048.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/biwase-khoi-dong-nha-may-dien-rac-cong-suat-24mw-10047.html",
+      "https://truyenhinh.baobinhduong.vn/video/xem-video/hdnd-tinh-binh-duong-khoa-x-khep-lai-mot-hanh-trinh-huong-den-hoi-nhap-cung-phat-trien-10046.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:32.684Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/truyenhinh.baobinhduong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "truyenhinh.baobinhduong.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T10:22:24.676Z",
+    "proofs": [
+      {
+        "url": "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+        "publisherUrl": "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+        "contentHash": "0e037814ffcc2cae364cc31dcc7d3d414c93297547b7019dddbdb12c46306325",
+        "description": "Binh Duong Place Names - the imprints on a land",
+        "publishedDate": "2025-05-31",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://truyenhinh.baobinhduong.vn/en/video/xem-video/binh-duong-place-names-the-imprints-on-a-land-9996.html",
+          "publishedDate": "2025-05-31",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "truyenhinh.baobinhduong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://truyenhinh.baobinhduong.vn/video/xem-video/khanh-thanh-tuong-dai-trung-tam-khu-tuong-niem-chien-khu-d-10050.html",
+        "publisherUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/khanh-thanh-tuong-dai-trung-tam-khu-tuong-niem-chien-khu-d-10050.html",
+        "contentHash": "eb8df93d54640f7de2a910da182bfbd11420c5407bbe62a757c64021bfe3464d",
+        "description": "Khánh thành tượng đài trung tâm khu tưởng niệm chiến khu D",
+        "publishedDate": "2025-06-28",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://truyenhinh.baobinhduong.vn/video/xem-video/khanh-thanh-tuong-dai-trung-tam-khu-tuong-niem-chien-khu-d-10050.html",
+          "publishedDate": "2025-06-28",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "truyenhinh.baobinhduong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://truyenhinh.baobinhduong.vn/video/xem-video/hop-long-cau-600-ti-dong-bac-qua-song-sai-gon-10048.html",
+        "publisherUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/hop-long-cau-600-ti-dong-bac-qua-song-sai-gon-10048.html",
+        "contentHash": "6f8f47d1aa48a594e0245cb4bdd49eccb3ab20147f6a1722acb9232f081b9a96",
+        "description": "Hợp long cầu 600 tỉ đồng bắc qua sông Sài Gòn",
+        "publishedDate": "2025-06-28",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://truyenhinh.baobinhduong.vn/video/xem-video/hop-long-cau-600-ti-dong-bac-qua-song-sai-gon-10048.html",
+          "publishedDate": "2025-06-28",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "truyenhinh.baobinhduong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationTimePolicy": "original_clock_required",
+  "publicationArticleScope": ".video-body"
+}

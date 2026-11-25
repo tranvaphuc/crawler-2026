@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "siteName": "marketingai.vn",
+  "siteId": "marketingai.vn",
+  "registrableDomain": "marketingai.vn",
+  "homepage": "https://marketingai.vn/",
+  "allowedHosts": [
+    "marketingai.vn",
+    "www.marketingai.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nền tảng số A80 Tự Hào Việt Nam: Khi công nghệ Việt kiến tạo niềm tự hào Việt",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "[KANTAR] Xu hướng Marketing 2026: Khi trí tuệ nhân tạo định hình mọi điểm chạm",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:39.991Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://marketingai.vn/nen-tang-so-a80-tu-hao-viet-nam-khi-cong-nghe-viet-kien-tao-niem-tu-hao-viet-194251031174415182.htm",
+      "https://marketingai.vn/hanh-trinh-lang-nghe-tieng-long-cua-phu-nu-hien-dai-khai-mo-insight-ve-su-can-bang-va-buoc-tien-moi-cua-da-huong-194250217095807481.htm",
+      "https://marketingai.vn/kantar-xu-huong-marketing-2026-khi-tri-tue-nhan-tao-dinh-hinh-moi-diem-cham-194260211155614302.htm",
+      "https://marketingai.vn/social-first-commerce-tu-tuong-tac-nguoi-dung-den-tang-truong-kinh-doanh-194261030102351529.htm",
+      "https://marketingai.vn/athena-cm-agency-trien-khai-tu-van-san-xuat-va-toi-uu-noi-dung-chuan-geo-voi-giai-phap-luvi-geo-194261030140829592.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://marketingai.vn/",
+    "categories": [
+      "https://marketingai.vn/e-magazine.htm",
+      "https://marketingai.vn/podcast.htm",
+      "https://marketingai.vn/cho-nha-quan-ly.htm",
+      "https://marketingai.vn/admicro-highlight.htm",
+      "https://marketingai.vn/marketing-news.htm",
+      "https://marketingai.vn/digital-marketing.htm",
+      "https://marketingai.vn/digital-marketing/creatives.htm",
+      "https://marketingai.vn/digital-marketing/advertising.htm",
+      "https://marketingai.vn/digital-marketing/kien-thuc-chung.htm",
+      "https://marketingai.vn/digital-marketing/mar-tech.htm",
+      "https://marketingai.vn/digital-marketing/content-marketing.htm",
+      "https://marketingai.vn/digital-marketing/social-media.htm",
+      "https://marketingai.vn/digital-marketing/seo-sem.htm",
+      "https://marketingai.vn/case-study.htm",
+      "https://marketingai.vn/case-study/viet-nam.htm",
+      "https://marketingai.vn/case-study/nuoc-ngoai.htm",
+      "https://marketingai.vn/bao-cao.htm",
+      "https://marketingai.vn/bao-cao/bao-cao-thi-truong.htm",
+      "https://marketingai.vn/bao-cao/tai-lieu-marketing.htm",
+      "https://marketingai.vn/goc-nhin.htm",
+      "https://marketingai.vn/goc-nhin/agency.htm",
+      "https://marketingai.vn/goc-nhin/brands.htm",
+      "https://marketingai.vn/goc-nhin/chuyen-nghe.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "marketingai.vn",
+    "checkedAt": "2026-11-09T03:57:14.239Z",
+    "url": "https://marketingai.vn/nen-tang-so-a80-tu-hao-viet-nam-khi-cong-nghe-viet-kien-tao-niem-tu-hao-viet-194251031174415182.htm",
+    "finalUrl": "https://marketingai.vn/nen-tang-so-a80-tu-hao-viet-nam-khi-cong-nghe-viet-kien-tao-niem-tu-hao-viet-194251031174415182.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3934,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "marketingai.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 36,
+    "checkedArticleUrls": 40,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 36,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 23,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 368,
+        "passed": 35,
+        "distinctHashes": 35
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://marketingai.vn/kantar-xu-huong-marketing-2026-khi-tri-tue-nhan-tao-dinh-hinh-moi-diem-cham-194260211155614302.htm",
+      "https://marketingai.vn/display-ads-la-gi-toi-uu-hoa-quang-cao-de-chinh-phuc-moi-khach-hang-194142289.htm",
+      "https://marketingai.vn/marketing-trong-boi-canh-bien-dong-khong-phai-nhan-khau-hoc-van-hoa-moi-la-yeu-to-song-con-194250418233813663.htm",
+      "https://marketingai.vn/su-khac-biet-giua-hanh-vi-tim-kiem-tren-tiktok-va-google-194250416095030435.htm",
+      "https://marketingai.vn/camps-of-week-vietnam-airlines-ra-mat-tvc-cherish-every-mile-2025columbus-cafeco-ca-khia-thoi-quen-viet-sai-ten-khach-hang-len-coc-cua-starbucks-194250416090711414.htm",
+      "https://marketingai.vn/marketing-la-gi-10-dac-diem-co-ban-ve-marketing-2023-ban-nen-biet-19421939.htm",
+      "https://marketingai.vn/lo-dien-nhung-chien-dich-marketing-xuat-sac-nhat-tai-smarties-awards-vietnam-2025-194250926123533385.htm",
+      "https://marketingai.vn/google-tung-chien-dich-ky-niem-50-nam-voi-concept-day-hoai-niem-194250425092919264.htm",
+      "https://marketingai.vn/xu-huong-moi-cua-gen-z-hoi-sinh-triet-ly-cua-steve-jobs-ua-chuong-phong-cach-toi-gian-va-mac-dong-phuc-di-lam-194250424091231089.htm",
+      "https://marketingai.vn/dau-tuan-doc-gi-chatgpt-ton-hang-chuc-trieu-usd-vi-nguoi-dung-noi-cam-on-194250421174923454.htm",
+      "https://marketingai.vn/diem-tin-tuan-hermes-tro-thanh-tap-doan-thoi-trang-gia-tri-nhat-the-gioi-194250417174632776.htm",
+      "https://marketingai.vn/nen-tang-so-a80-tu-hao-viet-nam-khi-cong-nghe-viet-kien-tao-niem-tu-hao-viet-194251031174415182.htm",
+      "https://marketingai.vn/hanh-trinh-lang-nghe-tieng-long-cua-phu-nu-hien-dai-khai-mo-insight-ve-su-can-bang-va-buoc-tien-moi-cua-da-huong-194250217095807481.htm",
+      "https://marketingai.vn/thien-long-10-nam-dong-vai-nguoi-ke-chuyen-lan-toa-tam-long-yeu-nghe-men-tre-cua-thay-co-19424111916522371.htm",
+      "https://marketingai.vn/chien-luoc-marketing-chagee-khac-biet-voi-hinh-anh-hy-kich-trung-quoc-va-dinh-vi-tra-nguyen-ban-194250309000104655.htm",
+      "https://marketingai.vn/hoc-cach-chinh-phuc-phai-dep-nhu-kotex-ke-ve-chu-ky-phu-nu-duoi-goc-nhin-day-thang-than-ca-tinh-194250228165333755.htm",
+      "https://marketingai.vn/vib-tram-song-ve-bien-lon-194250210085858763.htm",
+      "https://marketingai.vn/chien-dich-tet-2025-tiger-khai-xuan-ban-linh-chiem-song-mang-xa-hoi-cung-dai-nhac-hoi-chuoi-minigame-194250127030728539.htm",
+      "https://marketingai.vn/chien-dich-tet-2025-bia-sai-gon-khac-biet-voi-y-tuong-doc-dao-ve-tieng-dzo-194250120085202136.htm",
+      "https://marketingai.vn/so-sanh-chien-dich-tet-2025-cua-pepsi-coca-cola-thuong-hieu-nao-dang-giu-vi-the-noi-bat-hon-194250102223225209.htm",
+      "https://marketingai.vn/nguoi-dep-la-nguoi-tim-duoc-mot-nguoi-khen-minh-dep-19425030712004209.htm",
+      "https://marketingai.vn/ban-se-noi-gi-ve-tinh-yeu-neu-la-mot-marketer-194250214145644677.htm",
+      "https://marketingai.vn/nhu-spotify-vi-sao-ta-cung-thich-tam-biet-nam-cu-bang-viec-tong-ket-wrapped-cuoi-nam-194241221085327244.htm",
+      "https://marketingai.vn/tu-concert-atvncg-nguoi-viet-co-quyen-tin-vao-mot-the-he-tre-yeu-van-hoa-dan-toc-nhieu-lam-194241116085725008.htm",
+      "https://marketingai.vn/athena-cm-agency-trien-khai-tu-van-san-xuat-va-toi-uu-noi-dung-chuan-geo-voi-giai-phap-luvi-geo-194261030140829592.htm",
+      "https://marketingai.vn/social-first-commerce-tu-tuong-tac-nguoi-dung-den-tang-truong-kinh-doanh-194261030102351529.htm",
+      "https://marketingai.vn/qr-code-marketing-khi-ma-qr-tro-thanh-cong-cu-do-luong-chien-dich-marketing-19426031709134389.htm",
+      "https://marketingai.vn/18-chien-dich-marketing-8-3-y-nghia-sang-tao-2023-19420478.htm",
+      "https://marketingai.vn/xu-huong-tieu-dung-tet-194251120163212657.htm",
+      "https://marketingai.vn/xu-huong-truyen-thong-tet-194251112174130879.htm",
+      "https://marketingai.vn/phe-la-co-hy-ban-trap-cuoi-tra-sua-chien-luoc-marketing-sang-tao-hay-chi-tao-trend-nhat-thoi-194251028164330691.htm",
+      "https://marketingai.vn/brand-footprint-vietnam-2025-goi-ten-chin-su-voi-3-chien-luoc-tang-truong-noi-bat-194250828165031411.htm",
+      "https://marketingai.vn/bao-cao-mang-xa-hoi-quy-1-2025-tiktok-cung-youtube-dan-dau-ve-thoi-luong-su-dung-messenger-gap-kho-khan-194250504225117415.htm",
+      "https://marketingai.vn/bao-cao-moi-nhat-ve-linkedin-2025-co-hoi-thu-hut-nguoi-dung-bang-nhung-video-ngan-va-cac-cuoc-khao-sat-online-19425042809054423.htm",
+      "https://marketingai.vn/so-lieu-bat-ngo-ve-gen-x-la-nhom-user-trung-thanh-nhat-cua-facebook-194250414090033362.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 4
+    },
+    "checkedAt": "2026-11-10T09:16:04.520Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/marketingai.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

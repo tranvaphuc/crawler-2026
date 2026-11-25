@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "siteName": "chasingcars.com.au",
+  "siteId": "chasingcars.com.au",
+  "registrableDomain": "chasingcars.com.au",
+  "homepage": "https://www.chasingcars.com.au/",
+  "allowedHosts": [
+    "www.chasingcars.com.au",
+    "chasingcars.com.au"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.chasingcars.com.au/",
+    "categories": [
+      "https://www.chasingcars.com.au/reviews/",
+      "https://www.chasingcars.com.au/reviews/midsize-suvs/",
+      "https://www.chasingcars.com.au/reviews/small-cars/",
+      "https://www.chasingcars.com.au/reviews/utes/",
+      "https://www.chasingcars.com.au/reviews/small-suvs/",
+      "https://www.chasingcars.com.au/reviews/large-suvs/"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Triton to get Pajero’s new diesel, HEV and PHEV possible",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:55.696Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://www.chasingcars.com.au/reviews/large-cars/tesla-model-3-rwd-2027-review/",
+      "https://www.chasingcars.com.au/reviews/small-cars/kia-k4-gt-line-2026-review/"
+    ],
+    "improvedUrls": [
+      "https://www.chasingcars.com.au/reviews/midsize-suvs/nissan-x-trail-e-power-fwd-2027-first-drive-review/",
+      "https://www.chasingcars.com.au/reviews/midsize-suvs/toyota-rav4-gxl-awd-2026-long-term-review/",
+      "https://www.chasingcars.com.au/reviews/sports-cars/ferrari-12cilindri-manuale-2027-review/",
+      "https://www.chasingcars.com.au/reviews/large-cars/tesla-model-3-rwd-2027-review/",
+      "https://www.chasingcars.com.au/reviews/small-cars/kia-k4-gt-line-2026-review/"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.chasingcars.com.au/news/future-cars/mitsubishi-triton-to-get-pajeros-new-diesel-hev-and-phev-possible",
+      "https://www.chasingcars.com.au/news/future-cars/mitsubishi-pajero-vs-toyota-prado-vs-ford-everest-spec-battle",
+      "https://www.chasingcars.com.au/news/car-industry/mitsubishi-pajero-2027-iconic-nameplate-returns-on-a-flagship-body-on-frame-suv-hunting-for-prado-and-everest",
+      "https://www.chasingcars.com.au/news/new-car-prices/haval-h7-2027-all-new-all-hybrid-medium-suv-range-priced-from-45990-driveaway/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Mitsubishi Triton to get Pajero’s new diesel, HEV and PHEV possible",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:28.178Z",
+        "trainingUrls": [
+          "https://www.chasingcars.com.au/reviews/midsize-suvs/nissan-x-trail-e-power-fwd-2027-first-drive-review/",
+          "https://www.chasingcars.com.au/reviews/midsize-suvs/toyota-rav4-gxl-awd-2026-long-term-review/",
+          "https://www.chasingcars.com.au/reviews/sports-cars/ferrari-12cilindri-manuale-2027-review/"
+        ],
+        "holdoutUrls": [
+          "https://www.chasingcars.com.au/reviews/large-cars/tesla-model-3-rwd-2027-review/",
+          "https://www.chasingcars.com.au/reviews/small-cars/kia-k4-gt-line-2026-review/"
+        ]
+      }
+    }
+  ]
+}

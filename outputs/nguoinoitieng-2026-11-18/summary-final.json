@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-11-18T21:49:35.745Z",
+  "final": true,
+  "collection_state": "frontier_exhausted",
+  "pending_urls": 0,
+  "failed_urls": 0,
+  "queue": [
+    {
+      "kind": "listing",
+      "status": "done",
+      "count": 10271
+    },
+    {
+      "kind": "profile",
+      "status": "done",
+      "count": 102709
+    },
+    {
+      "kind": "profile",
+      "status": "resolved_source_reference",
+      "count": 37
+    },
+    {
+      "kind": "sitemap",
+      "status": "done",
+      "count": 8
+    }
+  ],
+  "total_source_profiles": 102543,
+  "vietnamese_source_profiles": 16586,
+  "vietnamese_people_conservative_count": 16548,
+  "people_with_explicit_or_external_origin_evidence": 1045,
+  "people_inferred_from_vietnam_birthplace": 15503,
+  "people_with_explicit_or_external_origin_evidence_and_platform_link": 608,
+  "people_inferred_from_vietnam_birthplace_and_platform_link": 13196,
+  "people_with_subject_platform_link": 13804,
+  "people_without_subject_platform_link": 2744,
+  "people_by_platform": {
+    "facebook": 13489,
+    "twitter": 2,
+    "youtube": 3,
+    "instagram": 287,
+    "tiktok": 24
+  },
+  "duplicate_profile_groups_merged": 38,
+  "duplicate_groups_kept_separate_after_review": [
+    {
+      "identity_id": "separate-ag8-bio6",
+      "decision": "keep_separate",
+      "birth_date": "1988-09-07",
+      "members": [
+        {
+          "source_id": "ag8",
+          "expected_name": "Quỳnh Nga"
+        },
+        {
+          "source_id": "bio6",
+          "expected_name": "Quỳnh Nga"
+        }
+      ],
+      "source_urls": [
+        "https://nguoinoitieng.tv/nghe-nghiep/ca-si/quynh-nga/ag8",
+        "https://nguoinoitieng.tv/nghe-nghiep/mc/quynh-nga/bio6"
+      ],
+      "finding": "Tên đầy đủ khác nhau (Phạm Thị Quỳnh Nga và Nguyễn Thị Quỳnh Nga), sự nghiệp diễn viên/ca sĩ và MC khác nhau; không gộp dù trường ngày sinh giống.",
+      "reviewed_at": "2026-11-18T21:47:38.389Z"
+    },
+    {
+      "identity_id": "separate-bhk1-biz4",
+      "decision": "keep_separate",
+      "birth_date": "2001-02-21",
+      "members": [
+        {
+          "source_id": "bhk1",
+          "expected_name": "Minh Thư"
+        },
+        {
+          "source_id": "biz4",
+          "expected_name": "Minh Thư"
+        }
+      ],
+      "source_urls": [
+        "https://nguoinoitieng.tv/nghe-nghiep/kol/minh-thu/bhk1",
+        "https://nguoinoitieng.tv/nghe-nghiep/hotface/minh-thu/biz4"
+      ],
+      "finding": "Tiểu sử rất giống nhưng tên đầy đủ Lê Thị Minh Thư và Nguyễn Thị Minh Thư mâu thuẫn; giữ riêng đến khi có căn cứ xác định.",
+      "reviewed_at": "2026-11-18T21:47:38.390Z"
+    },
+    {
+      "identity_id": "separate-be64-bjni",
+      "decision": "keep_separate",
+      "birth_date": "1996-10-17",
+      "members": [
+        {
+          "source_id": "be64",
+          "expected_name": "Thu Hà"
+        },
+        {
+          "source_id": "bjni",
+          "expected_name": "Thu Hà"
+        }
+      ],
+      "source_urls": [
+        "https://nguoinoitieng.tv/nghe-nghiep/mc/thu-ha/be64",
+        "https://nguoinoitieng.tv/nghe-nghiep/mc/thu-ha/bjni"
+      ],
+      "finding": "Tên phổ biến, nơi sinh và quá trình nghề nghiệp khác; có khả năng trùng nhưng chưa đủ căn cứ gộp.",
+      "reviewed_at": "2026-11-18T21:47:38.390Z"
+    },
+    {
+      "identity_id": "separate-bhd0-bloz",
+      "decision": "keep_separate",
+      "birth_date": "2000-04-30",
+      "members": [
+        {
+          "source_id": "bhd0",
+          "expected_name": "Hoàng Lan"
+        },
+        {
+          "source_id": "bloz",
+          "expected_name": "Hoàng Lan"
+        }
+      ],
+      "source_urls": [
+        "https://nguoinoitieng.tv/nghe-nghiep/hien-tuong-mang/hoang-lan/bhd0",
+        "https://nguoinoitieng.tv/nghe-nghiep/ca-si/hoang-lan/bloz"
+      ],
+      "finding": "Mô tả giọng hát/công việc chung chung và tài khoản khác, chưa có căn cứ gộp hai hồ sơ Hoàng Lan.",
+      "reviewed_at": "2026-11-18T21:47:38.390Z"
+    },
+    {
+      "identity_id": "separate-biov-blp5",
+      "decision": "keep_separate",
+      "birth_date": "1992-03-08",
+      "members": [
+        {
+          "source_id": "biov",
+          "expected_name": "Xuân Đức"
+        },
+        {
+          "source_id": "blp5",
+          "expected_name": "Xuân Đức"
+        }
+      ],
+      "source_urls": [
+        "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/xuan-duc/biov",
+        "https://nguoinoitieng.tv/nghe-nghiep/ca-si/xuan-duc/blp5"
+      ],
+      "finding": "Hồ sơ Xuân Đức mô tả hai quá trình nghề nghiệp, cần đối chiếu thêm danh tính trước khi gộp.",
+      "reviewed_at": "2026-11-18T21:47:38.390Z"
+    }
+  ],
+  "extra_duplicate_profiles": 38,
+  "classification_counts": [
+    {
+      "vietnam_status": "foreign_identity_reported",
+      "count": 1348
+    },
+    {
+      "vietnam_status": "foreign_identity_reviewed",
+      "count": 2
+    },
+    {
+      "vietnam_status": "needs_review",
+      "count": 57
+    },
+    {
+      "vietnam_status": "non_person",
+      "count": 1200
+    },
+    {
+      "vietnam_status": "unresolved_origin",
+      "count": 83350
+    },
+    {
+      "vietnam_status": "vietnamese_explicit",
+      "count": 949
+    },
+    {
+      "vietnam_status": "vietnamese_external_supported",
+      "count": 13
+    },
+    {
+      "vietnam_status": "vietnamese_origin_supported",
+      "count": 15539
+    },
+    {
+      "vietnam_status": "vietnamese_source_reviewed",
+      "count": 85
+    }
+  ],
+  "caveats": [
+    "Người Việt gồm cả gốc Việt ở nước ngoài. Nhóm suy luận từ nơi sinh được đếm riêng, không phải xác minh quốc tịch.",
+    "Khử trùng bảo thủ theo tên khớp sau chuẩn hóa dấu câu và ngày sinh đầy đủ hợp lệ hoặc cùng danh tính đã đối chiếu riêng; nghệ danh khác hoặc ngày sinh mâu thuẫn vẫn có thể trùng.",
+    "Đếm người có link được nguồn đặt trong trường tài khoản chính, không đếm nút chia sẻ, link nhắc trong tiểu sử, nhóm, bài đăng hay website thông thường. Link chưa được xác minh chính chủ/khả dụng độc lập.",
+    "Đã đối chiếu sitemap, liên kết danh mục và phân trang nghề nghiệp trong kho; không chứng minh không có hồ sơ ẩn, bị bỏ liên kết hoặc mới phát sinh.",
+    "Các hồ sơ chưa rõ xuất thân vẫn giữ nguyên trong DB, không tự đoán nguồn gốc theo tên; số người Việt là kết quả phân loại có giới hạn theo bằng chứng công khai."
+  ],
+  "files": {
+    "database": "celebrities.sqlite",
+    "full_vietnamese_json": "vietnamese.json",
+    "full_vietnamese_jsonl": "vietnamese.jsonl",
+    "grouped_people": "vietnamese-people.jsonl",
+    "duplicate_review": "duplicate-review.json",
+    "coverage": "coverage-verification.json",
+    "verification": "verification-final.json",
+    "origin_uncertainty_review": "origin-uncertainty-review-final.json"
+  },
+  "coverage_verification": {
+    "checked_at": "2026-11-18T21:35:53.907Z",
+    "archive_listing_and_sitemap_pages_checked": 10279,
+    "career_directories": 572,
+    "unique_valid_referenced_urls": 112810,
+    "missing_references": [],
+    "career_pagination_gaps": [],
+    "queue": [
+      {
+        "kind": "listing",
+        "status": "done",
+        "n": 10271
+      },
+      {
+        "kind": "profile",
+        "status": "done",
+        "n": 102709
+      },
+      {
+        "kind": "profile",
+        "status": "resolved_source_reference",
+        "n": 37
+      },
+      {
+        "kind": "sitemap",
+        "status": "done",
+        "n": 8
+      }
+    ],
+    "resolved_source_references": 37,
+    "coverage_scope": "All valid profile and listing links in archived career/province listing pages and published sitemaps, plus consecutive discovered career pagination. Hidden/unlinked pages and future updates cannot be proven from these archives."
+  },
+  "verification": {
+    "checked_at": "2026-11-18T21:50:49.820Z",
+    "result": "passed",
+    "sqlite_quick_check": "ok",
+    "matching_json_and_jsonl": true,
+    "source_date_anomalies": 21,
+    "focused_origin_cases_without_sufficient_evidence": 57
+  },
+  "delivery": {
+    "automation_id": "b-o-k-t-qu-crawl-ng-i-vi-t",
+    "automation_deleted": true,
+    "prepared_at": "2026-11-18T21:51:24.333Z"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baovephapluat.vn",
+  "siteId": "baovephapluat.vn",
+  "registrableDomain": "baovephapluat.vn",
+  "homepage": "https://baovephapluat.vn/",
+  "allowedHosts": [
+    "baovephapluat.vn",
+    "www.baovephapluat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thủ tướng: Thuốc, thiết bị y tế bị đội giá cao gây thiệt hại lớn cho cả người bệnh và Nhà nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".lbPublishedDate",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "THƯỢNG TÔN HIẾN PHÁP VÀ PHÁP LUẬT – ĐỘNG LỰC KIẾN TẠO PHÁT TRIỂN ĐẤT NƯỚC",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:02.276Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baovephapluat.vn/thoi-su/thu-tuong-thuoc-thiet-bi-y-te-bi-doi-gia-cao-gay-thiet-hai-lon-cho-ca-nguoi-benh-va-nha-nuoc-208704.html",
+      "https://baovephapluat.vn/thoi-su/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-209767.html",
+      "https://baovephapluat.vn/thoi-su/tong-bi-thu-chu-tich-nuoc-to-lam-tra-loi-phong-van-hang-truyen-hinh-nhk-nhat-ban-209772.html",
+      "https://baovephapluat.vn/kiem-sat-24h/ban-tin-kiem-sat/doan-cong-tac-vksnd-toi-cao-lam-viec-voi-thuong-truc-tinh-uy-ca-mau-209740.html",
+      "https://baovephapluat.vn/vien-truong-vksndtc-nguyen-huy-tien/vien-truong-nguyen-huy-tien-tiep-tuc-cung-co-va-phat-huy-suc-manh-khoi-dai-doan-ket-toan-dan-toc-209731.html",
+      "https://baovephapluat.vn/kiem-sat-24h/ban-tin-kiem-sat/vien-truong-nguyen-huy-tien-du-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam-tai-ca-mau-209718.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baovephapluat.vn/",
+    "categories": [
+      "https://baovephapluat.vn/thoi-su",
+      "https://baovephapluat.vn/kiem-sat-24h",
+      "https://baovephapluat.vn/kiem-sat-24h/van-de-su-kien",
+      "https://baovephapluat.vn/kiem-sat-24h/ban-tin-kiem-sat",
+      "https://baovephapluat.vn/kiem-sat-24h/nhan-su-moi",
+      "https://baovephapluat.vn/kiem-sat-24h/chinh-sach-moi",
+      "https://baovephapluat.vn/cong-to-kiem-sat-tu-phap",
+      "https://baovephapluat.vn/cong-to-kiem-sat-tu-phap/theo-dong",
+      "https://baovephapluat.vn/cong-to-kiem-sat-tu-phap/khoi-to",
+      "https://baovephapluat.vn/cong-to-kiem-sat-tu-phap/truy-to",
+      "https://baovephapluat.vn/cong-to-kiem-sat-tu-phap/an-ninh-trat-tu",
+      "https://baovephapluat.vn/phap-dinh",
+      "https://baovephapluat.vn/phap-dinh/toa-tuyen-an",
+      "https://baovephapluat.vn/phap-dinh/ky-an",
+      "https://baovephapluat.vn/phap-dinh/cau-chuyen-phap-luat",
+      "https://baovephapluat.vn/cai-cach-tu-phap",
+      "https://baovephapluat.vn/cai-cach-tu-phap/dien-dan",
+      "https://baovephapluat.vn/cai-cach-tu-phap/thuc-tien-kinh-nghiem",
+      "https://baovephapluat.vn/cai-cach-tu-phap/nhan-to-dien-hinh",
+      "https://baovephapluat.vn/kinh-te",
+      "https://baovephapluat.vn/kinh-te/kinh-doanh-phap-luat",
+      "https://baovephapluat.vn/kinh-te/do-thi-xay-dung",
+      "https://baovephapluat.vn/kinh-te/giao-thong-bot",
+      "https://baovephapluat.vn/kinh-te/tai-chinh-ngan-hang",
+      "https://baovephapluat.vn/kinh-te/dung-hang-viet",
+      "https://baovephapluat.vn/van-hoa-xa-hoi",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/giao-duc",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/y-te",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/lao-dong-viec-lam",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/vong-tay-nhan-ai",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/goc-van-hoa",
+      "https://baovephapluat.vn/van-hoa-xa-hoi/doi-song-xa-hoi",
+      "https://baovephapluat.vn/quoc-te",
+      "https://baovephapluat.vn/quoc-te/tin-tuc",
+      "https://baovephapluat.vn/quoc-te/phap-luat-5-chau",
+      "https://baovephapluat.vn/quoc-te/chuyen-la-bon-phuong",
+      "https://baovephapluat.vn/phap-luat-ban-doc",
+      "https://baovephapluat.vn/phap-luat-ban-doc/tin-duong-day-nong",
+      "https://baovephapluat.vn/phap-luat-ban-doc/dieu-tra-theo-don-thu",
+      "https://baovephapluat.vn/phap-luat-ban-doc/hoi-am",
+      "https://baovephapluat.vn/phap-luat-ban-doc/bao-chi-cong-dan",
+      "https://baovephapluat.vn/cai-cach-tu-phap/phong-chong-tham-nhung"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baovephapluat.vn",
+    "checkedAt": "2026-11-09T03:56:51.961Z",
+    "url": "https://baovephapluat.vn/thoi-su/thu-tuong-thuoc-thiet-bi-y-te-bi-doi-gia-cao-gay-thiet-hai-lon-cho-ca-nguoi-benh-va-nha-nuoc-208704.html",
+    "finalUrl": "https://baovephapluat.vn/thoi-su/thu-tuong-thuoc-thiet-bi-y-te-bi-doi-gia-cao-gay-thiet-hai-lon-cho-ca-nguoi-benh-va-nha-nuoc-208704.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5355,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baovephapluat.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 112,
+    "checkedArticleUrls": 121,
+    "freshArticleChecks": 110,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 112,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 42,
+    "categoriesFreshChecked": 42,
+    "categoriesUnconfirmed": 42,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 926,
+        "passed": 111,
+        "distinctHashes": 111
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "longform",
+        "discovered": 2,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2,
+      "original_publication_not_yet_confirmed": 6
+    },
+    "checkedAt": "2026-11-10T09:14:33.617Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baovephapluat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

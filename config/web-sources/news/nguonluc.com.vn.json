@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguonluc.com.vn",
+  "siteId": "nguonluc.com.vn",
+  "registrableDomain": "nguonluc.com.vn",
+  "homepage": "https://nguonluc.com.vn/",
+  "allowedHosts": [
+    "nguonluc.com.vn",
+    "www.nguonluc.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Doanh nghiệp tìm nhân lực trẻ từ giảng đường",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:53.944Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nguonluc.com.vn/doanh-nghiep-tim-nhan-luc-tre-tu-giang-duong-a27839.html",
+      "https://nguonluc.com.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tra-loi-phong-van-hang-truyen-hinh-nhk-a27835.html",
+      "https://nguonluc.com.vn/seabank-lai-1315-ty-dong-trong-quy-iii2026-tang-375-tong-tai-san-vuot-429376-ty-dong-a27780.html",
+      "https://nguonluc.com.vn/tp-hcm-to-chuc-ban-phao-hoa-tai-3-khu-vuc-trong-toi-2411-a27838.html",
+      "https://nguonluc.com.vn/bo-gdanddt-xay-dung-de-an-quan-ly-dien-thoai-mang-xa-hoi-trong-truong-hoc-a27837.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nguonluc.com.vn/",
+    "categories": [
+      "https://nguonluc.com.vn/c/thong-tin",
+      "https://nguonluc.com.vn/c/nhan-luc",
+      "https://nguonluc.com.vn/c/hien-tai",
+      "https://nguonluc.com.vn/c/dieu-can-biet",
+      "https://nguonluc.com.vn/c/doanh-nghiep-nhan-luc",
+      "https://nguonluc.com.vn/c/phan-bien",
+      "https://nguonluc.com.vn/c/hop-thu-dien-tu",
+      "https://nguonluc.com.vn/c/thong-tin-quang-cao",
+      "https://nguonluc.com.vn/c/media",
+      "https://nguonluc.com.vn/video",
+      "https://nguonluc.com.vn/photo",
+      "https://nguonluc.com.vn/podcast",
+      "https://nguonluc.com.vn/infographic",
+      "https://nguonluc.com.vn/emagazine",
+      "https://nguonluc.com.vn/co-quan-chu-quan",
+      "https://nguonluc.com.vn/thong-tin-toa-soan",
+      "https://nguonluc.com.vn/bang-gia-quang-cao"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nguonluc.com.vn",
+    "checkedAt": "2026-11-09T03:57:18.821Z",
+    "url": "https://nguonluc.com.vn/doanh-nghiep-tim-nhan-luc-tre-tu-giang-duong-a27839.html",
+    "finalUrl": "https://nguonluc.com.vn/doanh-nghiep-tim-nhan-luc-tre-tu-giang-duong-a27839.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3984,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nguonluc.com.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 198,
+        "passed": 31,
+        "distinctHashes": 31
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nguonluc.com.vn/pho-thu-tuong-ho-quoc-dung-lay-luat-dat-dai-lam-goc-khi-hoan-thien-cac-luat-lien-quan-a27874.html",
+      "https://nguonluc.com.vn/vinh-long-bau-3-tan-pho-chu-tich-tinh-a27872.html",
+      "https://nguonluc.com.vn/truong-chuyen-co-the-thay-doi-cach-tuyen-chon-va-boi-duong-hoc-sinh-nang-khieu-a27871.html",
+      "https://nguonluc.com.vn/kiem-tra-thuc-pham-nhap-khau-theo-muc-do-rui-ro-a27870.html",
+      "https://nguonluc.com.vn/dam-bao-an-toan-an-ninh-thong-tin-trong-ky-nguyen-tri-tue-nhan-tao-a27867.html",
+      "https://nguonluc.com.vn/de-xuat-them-ngay-nghi-277-huong-nguyen-luong-tu-nam-2027-a27856.html",
+      "https://nguonluc.com.vn/tp-ho-chi-minh-doi-moi-dao-tao-nghe-nong-nghiep-gan-voi-sinh-ke-ben-vung-a27868.html",
+      "https://nguonluc.com.vn/ban-tin-nhan-luc-nhan-tai-1011-rut-ngan-thoi-gian-hoc-nghe-tro-cap-om-dau-dai-ngay-va-ky-su-nhiet-hat-nhan-a27866.html",
+      "https://nguonluc.com.vn/chuong-trinh-hanh-dong-cua-chinh-phu-ve-phat-trien-cac-vung-va-to-chuc-khong-gian-quoc-gia-trong-giai-doan-moi-a27863.html",
+      "https://nguonluc.com.vn/bo-gdanddt-quyet-dinh-sap-nhap-8-truong-nghe-tai-4-dia-phuong-a27858.html",
+      "https://nguonluc.com.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-a27873.html",
+      "https://nguonluc.com.vn/hop-tac-quoc-phong-viet-nam-nhat-ban-tang-cuong-co-che-doi-thoai-tham-van-hop-tac-dao-tao-cong-nghiep-a27865.html",
+      "https://nguonluc.com.vn/kien-quyet-tay-chay-dau-to-cuc-doan-thanh-loc-moi-truong-mang-lanh-manh-van-minh-a27864.html",
+      "https://nguonluc.com.vn/ban-tin-nhan-luc-nhan-tai-0911-ngay-phap-luat-911-ho-tro-100-bhxh-tu-nguyen-va-nhan-luc-luat-cong-nghe-a27859.html",
+      "https://nguonluc.com.vn/moc-chau-don-mua-hoa-mai-anh-dao-giua-nui-rung-tay-bac-a27857.html",
+      "https://nguonluc.com.vn/de-xuat-dua-ngay-277-thanh-ngay-nghi-huong-nguyen-luong-a27855.html",
+      "https://nguonluc.com.vn/huong-ve-coi-nguon-suoi-am-ban-lau-trao-yeu-thuong-lan-toa-tri-thuc-noi-bien-cuong-a27853.html",
+      "https://nguonluc.com.vn/bao-ve-nguoi-lao-dong-tu-khau-nhan-dien-nguy-co-a27852.html",
+      "https://nguonluc.com.vn/to-chuc-lai-4-co-so-giao-duc-nghe-nghiep-tai-4-dia-phuong-a27850.html",
+      "https://nguonluc.com.vn/ngoai-tam-bang-dai-hoc-sinh-vien-can-gi-de-vung-buoc-vao-thi-truong-lao-dong-a27849.html",
+      "https://nguonluc.com.vn/nghiem-cam-gay-ap-luc-de-nang-diem-tang-ty-le-tot-nghiep-a27848.html",
+      "https://nguonluc.com.vn/ha-noi-khao-sat-hoc-sinh-lop-4-lop-7-theo-de-chung-khong-tinh-diem-hoc-ba-a27847.html",
+      "https://nguonluc.com.vn/cach-gui-tien-tiet-kiem-online-an-toan-don-gian-va-tien-loi-tai-mbbank-a27006.html",
+      "https://nguonluc.com.vn/ngan-hang-mb-khang-dinh-vi-the-dan-dau-trong-tam-tri-khach-hang-priority-ca-ve-thuong-hieu-uu-tien-va-san-pham-vay-von-a25703.html",
+      "https://nguonluc.com.vn/tong-giam-doc-pentacom-le-minh-dao-chung-toi-xay-dung-thuong-hieu-tu-su-chan-thuc-a25592.html",
+      "https://nguonluc.com.vn/net-dep-chuon-chuon-tre-tinh-hoa-tu-su-moc-mac-a18742.html",
+      "https://nguonluc.com.vn/cho-tre-di-du-lich-can-luu-y-gi-a16382.html",
+      "https://nguonluc.com.vn/ngay-the-thao-viet-nam-273-nhung-loi-ich-cua-viec-tap-the-duc-moi-ngay-a15292.html",
+      "https://nguonluc.com.vn/khat-vong-cong-hien-vung-buoc-tien-phong-phat-huy-suc-tre-a15267.html",
+      "https://nguonluc.com.vn/chuan-hoa-nang-luc-bac-si-bat-dau-tu-giang-duong-a27846.html",
+      "https://nguonluc.com.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-tro-thanh-cau-noi-hop-tac-ve-cong-nghe-a27841.html",
+      "https://nguonluc.com.vn/nu-cuu-chien-binh-bui-thi-yen-va-mot-doi-tan-tam-cong-hien-a27550.html",
+      "https://nguonluc.com.vn/dao-tao-va-trong-dung-nhan-tai-phai-gan-voi-cong-nghe-trong-nen-kinh-te-so-a27515.html",
+      "https://nguonluc.com.vn/tran-nhuan-minh-va-3-lan-dinh-vi-tho-phan-4-va-het-a23328.html",
+      "https://nguonluc.com.vn/luong-y-nguyen-thi-tam-tam-nguyen-tan-tam-voi-hanh-trinh-tri-benh-cuu-nguoi-a27499.html",
+      "https://nguonluc.com.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-hoan-thien-co-che-phoi-hop-xu-ly-trach-nhiem-thao-go-du-an-ton-dong-keo-dai-a27862.html",
+      "https://nguonluc.com.vn/quoc-hoi-thong-qua-nghi-quyet-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-voi-a27854.html",
+      "https://nguonluc.com.vn/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-a27821.html",
+      "https://nguonluc.com.vn/pho-thu-tuong-ho-quoc-dung-khan-truong-chuyen-tu-cong-tac-chuan-bi-sang-to-chuc-thuc-hien-chuong-trinh-muc-tieu-quoc-gia-a27794.html",
+      "https://nguonluc.com.vn/thu-tuong-le-minh-hung-tiep-chu-tich-dieu-hanh-quoc-te-tap-doan-airbus-wouter-van-wersch-a27782.html",
+      "https://nguonluc.com.vn/bao-ve-nen-tang-tu-tuong-cua-dang-trong-tinh-hinh-moi-boc-me-ban-chat-chieu-bai-dau-to-cuc-doan-a27842.html",
+      "https://nguonluc.com.vn/bao-ve-nen-tang-tu-tuong-cua-dang-trong-tinh-hinh-moi-ban-linh-can-bo-truoc-hoi-chung-dam-dong-a27785.html",
+      "https://nguonluc.com.vn/bao-ve-nen-tang-tu-tuong-cua-dang-trong-tinh-hinh-moi-danh-tu-san-mot-luan-dieu-xuyen-tac-trang-tron-nguy-hiem-1-a27744.html",
+      "https://nguonluc.com.vn/vi-the-uy-tin-viet-nam-gia-tang-tren-truong-quoc-te-bac-bo-luan-dieu-xuyen-tac-ve-duong-loi-doi-ngoai-cua-dang-a27723.html",
+      "https://nguonluc.com.vn/doi-tuong-nao-duoc-huong-ho-tro-chuyen-doi-so-a27660.html",
+      "https://nguonluc.com.vn/quyen-phe-duyet-cho-can-bo-tinh-gian-bien-che-theo-nghi-dinh-154-thuoc-to-chuc-ca-nhan-nao-a27308.html",
+      "https://nguonluc.com.vn/chuyen-tiep-ve-xet-thang-hang-vien-chuc-co-lien-quan-den-vi-tri-viec-lam-a26483.html",
+      "https://nguonluc.com.vn/dieu-kien-lanh-dao-don-vi-su-nghiep-cap-xa-huong-phu-cap-chuc-vu-a26391.html",
+      "https://nguonluc.com.vn/huong-dan-vien-du-lich-quoc-te-phai-dap-ung-yeu-cau-van-bang-ngoai-ngu-nhu-the-nao-a26314.html",
+      "https://nguonluc.com.vn/bo-chqs-tinh-dong-thap-kham-benh-cap-thuoc-mien-phi-cho-nguoi-dan-campuchia-a27104.html",
+      "https://nguonluc.com.vn/nhung-doi-canh-tim-ten-dong-doi-a26948.html",
+      "https://nguonluc.com.vn/khai-giang-nam-hoc-moi-2026-2027-o-dac-khu-truong-sa-a26842.html",
+      "https://nguonluc.com.vn/xuyen-quoc-khanh-tim-lai-dong-doi-a26785.html",
+      "https://nguonluc.com.vn/vinh-an-hoa-city-do-thi-trung-tam-kinh-te-moi-cuc-nam-da-nang-a27581.html",
+      "https://nguonluc.com.vn/bao-minh-va-hanh-trinh-gin-giu-hon-com-ha-noi-giua-dong-chay-hoi-nhap-a25297.html",
+      "https://nguonluc.com.vn/wedtech-show-2024-su-kien-thuc-day-kinh-te-quang-ba-du-lich-va-van-hoa-xu-nghe-a17985.html",
+      "https://nguonluc.com.vn/hoa-nhac-viet-nam-thuong-men-loving-viet-nam-2024-thuc-qua-thu-cho-nguoi-ha-noi-a17627.html",
+      "https://nguonluc.com.vn/banh-mi-khoi-hanh-trinh-tu-can-phong-20m2-den-chuoi-nhuong-quyen-thuong-hieu-noi-tieng-toan-quoc-a17433.html",
+      "https://nguonluc.com.vn/cong-nghe-tinh-loc-khong-khi-plasma-ion-trong-may-loc-khong-khi-saniair-v1-a14245.html",
+      "https://nguonluc.com.vn/master-thuong-vu-cong-nghe-dinh-cao-dem-lai-nu-cuoi-toa-sang-cho-phai-dep-a13481.html",
+      "https://nguonluc.com.vn/ruou-vang-ao-tran-wein-and-cigar-shop-chia-se-cung-bac-cam-xuc-thang-hoa-a11099.html",
+      "https://nguonluc.com.vn/hydrogen-mall-ok-nha-cung-cap-may-tao-nuoc-hydrogen-giau-ion-kiem-sach-so-1-tai-viet-nam-a9526.html",
+      "https://nguonluc.com.vn/thuong-hieu-dcd-vuon-len-tam-cao-moi-a9222.html",
+      "https://nguonluc.com.vn/thong-bao-casting-phim-dien-anh-cham-vao-hanh-phuc-tai-mien-bac-a9199.html",
+      "https://nguonluc.com.vn/specialty-viet-nam-chat-luong-san-pham-tao-nen-su-khac-biet-hoan-hao-a3859.html",
+      "https://nguonluc.com.vn/ra-mat-hiep-hoi-trien-lam-tham-my-viet-nam-a3871.html",
+      "https://nguonluc.com.vn/iposvn-phu-cam-moi-ngo-ngach-dua-cafe-coc-len-doi-cong-nghe-a2761.html",
+      "https://nguonluc.com.vn/khanh-hoa-can-khoi-thong-thu-tuc-cap-giay-chung-nhan-dat-o-nong-thon-dat-o-khong-hinh-thanh-don-vi-o-a2738.html",
+      "https://nguonluc.com.vn/7-xa-o-tphcm-da-dat-tieu-chi-dan-so-do-thi-chuan-bi-ho-so-len-phuong-a27869.html",
+      "https://nguonluc.com.vn/hoa-sy-pham-van-kiem-hon-bon-thap-ky-ben-bi-luu-giu-va-lan-toa-hinh-hai-to-quoc-a27610.html",
+      "https://nguonluc.com.vn/dau-an-thang-long-khi-di-san-cham-vao-tuong-lai-a27309.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:15.611Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nguonluc.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".video-content-section",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "nguonluc.com.vn",
+      "siteId": "nguonluc.com.vn",
+      "registrableDomain": "nguonluc.com.vn",
+      "homepage": "https://nguonluc.com.vn/",
+      "allowedHosts": [
+        "nguonluc.com.vn",
+        "www.nguonluc.com.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Doanh nghiệp tìm nhân lực trẻ từ giảng đường",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:15.678Z",
+        "trainingUrls": [
+          "https://nguonluc.com.vn/cach-gui-tien-tiet-kiem-online-an-toan-don-gian-va-tien-loi-tai-mbbank-a27006.html",
+          "https://nguonluc.com.vn/ngan-hang-mb-khang-dinh-vi-the-dan-dau-trong-tam-tri-khach-hang-priority-ca-ve-thuong-hieu-uu-tien-va-san-pham-vay-von-a25703.html",
+          "https://nguonluc.com.vn/dau-an-thang-long-khi-di-san-cham-vao-tuong-lai-a27309.html",
+          "https://nguonluc.com.vn/emagazine-cau-chuyen-ngoai-giao-vaccine-tu-goc-nhin-cua-bo-y-te-a856.html"
+        ],
+        "holdoutUrls": [
+          "https://nguonluc.com.vn/de-xuat-them-ngay-nghi-277-huong-nguyen-luong-tu-nam-2027-a27856.html",
+          "https://nguonluc.com.vn/7-xa-o-tphcm-da-dat-tieu-chi-dan-so-do-thi-chuan-bi-ho-so-len-phuong-a27869.html"
+        ]
+      }
+    }
+  ]
+}

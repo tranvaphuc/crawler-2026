@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xevathethao.vn",
+  "siteId": "xevathethao.vn",
+  "registrableDomain": "xevathethao.vn",
+  "homepage": "https://xevathethao.vn/",
+  "allowedHosts": [
+    "xevathethao.vn",
+    "www.xevathethao.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lewis Hamilton và Charles Leclerc hóa giải mâu thuẫn sau vụ va chạm tại Mexico",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:53.765Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://xevathethao.vn/the-thao/lewis-hamilton-va-charles-leclerc-hoa-giai-mau-thuan-sau-vu-va-cham-tai-mexico.html",
+      "https://xevathethao.vn/the-thao/max-verstappen-thanh-thoi-xem-ngoai-hang-anh-truoc-khi-xuat-phat-o-gp-brazil.html",
+      "https://xevathethao.vn/the-thao/audi-r26-khoac-dien-mao-dac-biet-tai-gp-brazil-ton-vinh-duong-pho-sao-paulo.html",
+      "https://xevathethao.vn/the-thao/verstappen-va-lawson-cung-bi-phat-sau-va-cham-tai-gp-mexico-2.html",
+      "https://xevathethao.vn/xe/bugatti-quy-tu-21-hypercar-tai-las-vegas-ky-niem-20-nam-hien-dien-o-my.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://xevathethao.vn/",
+    "categories": [
+      "https://xevathethao.vn/xe",
+      "https://xevathethao.vn/xe/2-banh",
+      "https://xevathethao.vn/xe/4-banh",
+      "https://xevathethao.vn/xe/hot-wheels",
+      "https://xevathethao.vn/xe/khac",
+      "https://xevathethao.vn/the-thao",
+      "https://xevathethao.vn/the-thao/binh-luan-bong-da",
+      "https://xevathethao.vn/the-thao/bong-da",
+      "https://xevathethao.vn/the-thao/bongda",
+      "https://xevathethao.vn/the-thao/duong-dua",
+      "https://xevathethao.vn/xe-doi-song",
+      "https://xevathethao.vn/xe-doi-song/cong-nghe",
+      "https://xevathethao.vn/xe-doi-song/giao-thong",
+      "https://xevathethao.vn/xe-doi-song/nguoi-dep-va-xe",
+      "https://xevathethao.vn/xe-doi-song/sao-xe",
+      "https://xevathethao.vn/xe-the-thao-tv",
+      "https://xevathethao.vn/xe-the-thao-tv/clip-hay",
+      "https://xevathethao.vn/xe-the-thao-tv/lets-viet",
+      "https://xevathethao.vn/phong-cach",
+      "https://xevathethao.vn/phong-cach/golf",
+      "https://xevathethao.vn/phong-cach/hi-tech",
+      "https://xevathethao.vn/phong-cach/life",
+      "https://xevathethao.vn/phong-cach/showbiz",
+      "https://xevathethao.vn/o-to-xe-may"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "xevathethao.vn",
+    "checkedAt": "2026-11-09T03:57:40.394Z",
+    "url": "https://xevathethao.vn/the-thao/lewis-hamilton-va-charles-leclerc-hoa-giai-mau-thuan-sau-vu-va-cham-tai-mexico.html",
+    "finalUrl": "https://xevathethao.vn/the-thao/lewis-hamilton-va-charles-leclerc-hoa-giai-mau-thuan-sau-vu-va-cham-tai-mexico.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3546,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:58.819Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/xevathethao.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "xevathethao.vn",
+    "parsedArticles": 19,
+    "distinctHashes": 19,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 24,
+    "categoriesAttempted": 24,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 67,
+    "checkedArticleUrls": 19,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 67,
+        "attempted": 19,
+        "passed": 19,
+        "distinctContents": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".td-post-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

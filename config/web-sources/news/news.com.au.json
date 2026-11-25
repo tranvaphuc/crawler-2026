@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.com.au",
+  "siteId": "news.com.au",
+  "registrableDomain": "news.com.au",
+  "homepage": "https://www.news.com.au/",
+  "allowedHosts": [
+    "www.news.com.au",
+    "news.com.au"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.news.com.au/",
+    "categories": [
+      "https://www.news.com.au/national",
+      "https://www.news.com.au/national/breaking-news",
+      "https://www.news.com.au/national/politics",
+      "https://www.news.com.au/national/crime",
+      "https://www.news.com.au/national/courts-law",
+      "https://www.news.com.au/national/nsw-act"
+    ]
+  },
+  "title": {
+    "value": "England fight back to level series with emphatic win as Australia set unwanted record",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:04.119Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:58.329Z",
+    "independentHoldouts": [
+      "https://www.news.com.au/lifestyle/real-life/news-life/worst-nightmare-aussie-followed-for-over-an-hour-in-middle-of-bali/news-story/e4f0c30a34319e6a8d867bfdbe01fb60",
+      "https://www.news.com.au/entertainment/taxiride-cofounder-aria-winner-daniel-hall-dies-unexpectedly/news-story/04991f94598227c9d6b0b1b8711d934b",
+      "https://www.news.com.au/finance/work/leaders/i-hope-you-die-how-exnvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs/news-story/39874c42c5151e3951402f0061776ec7"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.news.com.au/sport/cricket/england-fight-back-to-level-series-with-emphatic-win-as-australia-set-unwanted-record/news-story/6facc959129b843c166a9dbba70ab266",
+      "https://www.news.com.au/lifestyle/real-life/news-life/worst-nightmare-aussie-followed-for-over-an-hour-in-middle-of-bali/news-story/e4f0c30a34319e6a8d867bfdbe01fb60",
+      "https://www.news.com.au/entertainment/taxiride-cofounder-aria-winner-daniel-hall-dies-unexpectedly/news-story/04991f94598227c9d6b0b1b8711d934b",
+      "https://www.news.com.au/finance/work/leaders/i-hope-you-die-how-exnvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs/news-story/39874c42c5151e3951402f0061776ec7"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

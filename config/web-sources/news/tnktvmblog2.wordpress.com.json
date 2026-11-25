@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tnktvmblog2.wordpress.com",
+  "siteId": "tnktvmblog2.wordpress.com",
+  "registrableDomain": "tnktvmblog2.wordpress.com",
+  "homepage": "https://tnktvmblog2.wordpress.com/",
+  "allowedHosts": [
+    "tnktvmblog2.wordpress.com",
+    "www.tnktvmblog2.wordpress.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tnktvmblog2.wordpress.com/",
+    "categories": []
+  },
+  "title": {
+    "value": "Cổ phiếu LPBank tăng trần, “cháy hàng” sau chuỗi giảm sâu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:37.473Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:30.896Z",
+    "independentHoldouts": [
+      "https://tnktvmblog2.wordpress.com/2026/11/15/khoi-ngoai-bat-ngo-mua-rong-hon-300-ti-dong-co-phieu-vix/",
+      "https://tnktvmblog2.wordpress.com/2026/11/15/hang-trieu-nguoi-nop-thue-dien-03-06-du-kien-duoc-xem-xet-xoa-no-tu-21-11/",
+      "https://tnktvmblog2.wordpress.com/2026/11/15/truy-vet-dong-tien-ao-thu-hoi-tai-san-cho-nguoi-bi-hai/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tnktvmblog2.wordpress.com/2026/10/08/co-phieu-lpbank-tang-tran-chay-hang-sau-chuoi-giam-sau",
+      "https://tnktvmblog2.wordpress.com/2026/11/15/khoi-ngoai-bat-ngo-mua-rong-hon-300-ti-dong-co-phieu-vix/",
+      "https://tnktvmblog2.wordpress.com/2026/11/15/hang-trieu-nguoi-nop-thue-dien-03-06-du-kien-duoc-xem-xet-xoa-no-tu-21-11/",
+      "https://tnktvmblog2.wordpress.com/2026/11/15/truy-vet-dong-tien-ao-thu-hoi-tai-san-cho-nguoi-bi-hai/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

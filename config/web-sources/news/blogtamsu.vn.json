@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "siteName": "blogtamsu.vn",
+  "siteId": "blogtamsu.vn",
+  "registrableDomain": "blogtamsu.vn",
+  "homepage": "https://blogtamsu.vn/",
+  "allowedHosts": [
+    "blogtamsu.vn",
+    "www.blogtamsu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://blogtamsu.vn/",
+    "categories": [
+      "https://blogtamsu.vn/c/doi-song-xa-hoi",
+      "https://blogtamsu.vn/c/giai-tri",
+      "https://blogtamsu.vn/doi-song-xa-hoi",
+      "https://blogtamsu.vn/giai-tri",
+      "https://blogtamsu.vn/sitemap/posts/sitemap_posts_news_1.xml"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Thịt vào trường học nhũn bất thường, phụ huynh phản ứng, UBND phường nói gì?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://blogtamsu.vn/sitemap/posts/sitemap_posts_news_1.xml"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [
+    {
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      }
+    }
+  ],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:07.797Z",
+    "frozenAt": "2026-11-16T01:58:04.618Z",
+    "trainingUrl": "https://blogtamsu.vn/p/phu-huynh-ha-noi-phat-hien-thit-lon-nhun-bo-bat-thuong-tai-truong-mam-non-ubnd-phuong-len-tieng-giai-thich-141187",
+    "independentHoldouts": [
+      "https://blogtamsu.vn/p/xe-may-cho-3-nguoi-va-xe-tai-dam-nhau-ca-3-thuong-vong-danh-tinh-nan-nhan-141841",
+      "https://blogtamsu.vn/p/cong-an-vao-cuoc-vu-o-to-tong-vang-co-gai-keo-le-xe-may-toe-lua-roi-bo-di-141837"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://blogtamsu.vn/p/phu-huynh-ha-noi-phat-hien-thit-lon-nhun-bo-bat-thuong-tai-truong-mam-non-ubnd-phuong-len-tieng-giai-thich-141187",
+      "https://blogtamsu.vn/p/xe-may-cho-3-nguoi-va-xe-tai-dam-nhau-ca-3-thuong-vong-danh-tinh-nan-nhan-141841",
+      "https://blogtamsu.vn/p/cong-an-vao-cuoc-vu-o-to-tong-vang-co-gai-keo-le-xe-may-toe-lua-roi-bo-di-141837",
+      "https://blogtamsu.vn/p/thoi-diem-mien-bac-don-khong-khi-lanh-chuyen-ret-trong-tuan-toi-141834",
+      "https://blogtamsu.vn/p/cong-an-xac-minh-thong-tin-vu-nguoi-dan-ong-bi-danh-chay-mau-mat-o-san-bong-141833",
+      "https://blogtamsu.vn/p/phat-hien-nguoi-dan-ong-tu-vong-o-bo-bien-nha-trang-cong-bo-danh-tinh-141829",
+      "https://blogtamsu.vn/p/gia-xang-dau-chieu-1511-xang-e5-va-e10-tiep-tuc-duoi-20000-donglit-xh-141825",
+      "https://blogtamsu.vn/p/sau-vu-chay-hoc-sinh-truong-thcs-kim-lien-hoc-nho-o-4-dia-diem-xh-141824",
+      "https://blogtamsu.vn/p/he-lo-chi-tiet-bat-ngo-trong-bua-toi-cua-jensen-huang-va-alice-huang-con-gai-ceo-nvidia-cung-co-mat-xh-141822",
+      "https://blogtamsu.vn/p/tron-chat-cam-vao-cam-lon-giam-doc-bi-tam-giu-hinh-su-141821",
+      "https://blogtamsu.vn/p/lai-them-mot-nam-dien-vien-tu-huy-hoai-su-nghiep-141817",
+      "https://blogtamsu.vn/p/bat-tam-giam-nam-tiktoker-dinh-dam-141811",
+      "https://blogtamsu.vn/p/kien-doi-khoan-no-48-ty-dong-nguoi-phu-nu-bi-bat-vi-lo-viec-cho-vay-nang-lai-xh-141810",
+      "https://blogtamsu.vn/p/loi-khai-cua-nguoi-phu-nu-danh-me-chong-hon-80-tuoi-o-ha-noi-xh-141809",
+      "https://blogtamsu.vn/p/loi-khai-cua-nguoi-phu-nu-danh-me-chong-hon-80-tuoi-o-ha-noi-141808",
+      "https://blogtamsu.vn/p/chu-quan-nhau-ke-thoi-diem-truoc-khi-nam-sinh-o-nghe-an-bi-ban-tha-xuong-song-bieu-hien-cua-nghi-pham-truoc-luc-ra-tay-141806",
+      "https://blogtamsu.vn/p/ban-cung-phong-tro-tiet-lo-noi-dung-tin-nhan-10-chu-ki-la-cua-tu-ngay-sau-khi-ra-tay-voi-nan-nhan-141804",
+      "https://blogtamsu.vn/p/hung-yen-bat-giu-nhom-doi-tuong-to-chuc-su-dung-m-a-t-uy-luu-dong-tren-xe-o-to-xh-141801",
+      "https://blogtamsu.vn/p/them-4-phu-nu-o-hue-bi-phat-vi-tung-tin-sai-su-that-ve-cac-hieu-truong-xh-141798",
+      "https://blogtamsu.vn/p/cong-an-khuyen-cao-toi-nhung-nguoi-mua-rieng-xay-san-ve-nau-an-141796",
+      "https://blogtamsu.vn/p/vang-bac-rot-gia-nha-dau-tu-nhu-ngoi-tren-dong-lua-xh-141794",
+      "https://blogtamsu.vn/p/vi-sao-hieu-truong-phai-giao-tiep-bang-tieng-anh-141790",
+      "https://blogtamsu.vn/p/co-gai-bi-anh-trai-ren-luyen-ky-luat-chi-con-276kg-roi-qua-doi-tuc-tuoi-xh-141789",
+      "https://blogtamsu.vn/p/bo-quoc-phong-thong-tin-ve-viec-6-quan-nhan-hy-sinh-khi-thuc-hien-nhiem-vu-cap-bang-to-quoc-ghi-cong-141786",
+      "https://blogtamsu.vn/p/bo-quoc-phong-thong-tin-ve-viec-6-quan-nhan-hy-sinh-khi-thuc-hien-nhiem-vu-141787",
+      "https://blogtamsu.vn/p/bo-quoc-phong-thong-tin-vu-tai-nan-xay-ra-tai-truong-ban-quoc-gia-tb1-bac-ninh-khien-6-quan-nhan-hy-sinh-141785",
+      "https://blogtamsu.vn/p/xe-thiet-giap-chim-khi-huan-luyen-danh-tinh-6-quan-nhan-hy-sinh-141783",
+      "https://blogtamsu.vn/p/danh-tinh-nam-dien-vien-noi-tieng-vua-gay-tai-n-an-giao-thong-nong-do-con-du-de-bi-thu-hoi-giay-phep-lai-xe-xh-141782",
+      "https://blogtamsu.vn/p/nam-ca-si-viet-vua-bi-bat-la-ai-141780",
+      "https://blogtamsu.vn/p/quy-dinh-ve-thuong-tien-trong-dip-nghi-le-ngay-van-hoa-viet-nam-2411-141775",
+      "https://blogtamsu.vn/p/sap-toa-chung-cu-cu-xay-cach-day-96-nam-khien-8-nguoi-thiet-mang-trong-do-co-2-tre-em-141772",
+      "https://blogtamsu.vn/p/vu-phat-hien-hop-so-gan-lang-dai-hoc-o-tphcm-cong-bo-nhan-dang-tu-bo-rang-su-xh-141769",
+      "https://blogtamsu.vn/p/tu-ngay-5102026-nguoi-tu-75-tuoi-du-dieu-kien-sau-duoc-huong-tro-cap-huu-tri-xa-hoi-540000thang-141767",
+      "https://blogtamsu.vn/p/cong-an-lam-viec-voi-nguoi-dan-ong-da-lien-tiep-vao-dau-nguoi-di-xe-may-o-tay-ninh-xh-141766",
+      "https://blogtamsu.vn/p/gia-vang-mieng-xuong-thap-nhat-hon-mot-nam-xh-141765"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

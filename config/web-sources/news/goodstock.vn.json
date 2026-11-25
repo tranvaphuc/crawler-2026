@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "siteName": "goodstock.vn",
+  "siteId": "goodstock.vn",
+  "registrableDomain": "goodstock.vn",
+  "homepage": "https://goodstock.vn/",
+  "allowedHosts": [
+    "goodstock.vn",
+    "www.goodstock.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Top cổ phiếu đáng chú ý đầu phiên 09/11",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "httpAdapter": "wordpress_public_query_api",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:15:30.617Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://goodstock.vn/top-co-phieu-dang-chu-y-dau-phien-09-11/",
+      "https://goodstock.vn/thuc-chien-chung-khoan-phai-sinh-vn-livestream-truc-tiep-09-03-2025-phien-chieu-goodstock-vn/",
+      "https://goodstock.vn/tai-khoan-chung-khoan-mo-moi-dat-hon-252-ngan-trong-thang-10/",
+      "https://goodstock.vn/vietstock-weekly-09-13-11-2026-bien-dong-kho-luong/",
+      "https://goodstock.vn/chen-thanh-trong-dau-tu-cung-tim-hieu-ve-bo-code-phai-sinh-cua-goodstock-vn/",
+      "https://goodstock.vn/top-co-phieu-dang-chu-y-dau-phien-09-11/",
+      "https://goodstock.vn/top-co-phieu-dang-chu-y-dau-phien-09-11/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round6-http/sites/goodstock.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://goodstock.vn/",
+    "categories": [
+      "https://goodstock.vn/?rest_route=/wp/v2/posts&categories=16&per_page=20"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T05:19:03.170Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "native_content_scope",
+    "completenessScope": "Complete WordPress content field as supplied by Goodstock; syndicated originals are not inferred.",
+    "shortSyndicatedPostExample": {
+      "url": "https://goodstock.vn/top-co-phieu-dang-chu-y-dau-phien-09-11/",
+      "bodyCharacters": 126,
+      "sourceNote": "Vietstock"
+    },
+    "originalSyndicatedArticleCompletenessNotVerified": true
+  },
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:24.829Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/goodstock.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "goodstock.vn",
+    "parsedArticles": 7,
+    "distinctHashes": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 3,
+    "categoriesAttempted": 3,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 66,
+    "checkedArticleUrls": 7,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 66,
+        "attempted": 7,
+        "passed": 7,
+        "distinctContents": 7,
+        "distinctHashes": 7
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

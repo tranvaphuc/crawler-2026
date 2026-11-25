@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "siteName": "asemconnectvietnam.gov.vn",
+  "siteId": "asemconnectvietnam.gov.vn",
+  "registrableDomain": "asemconnectvietnam.gov.vn",
+  "homepage": "https://asemconnectvietnam.gov.vn/",
+  "allowedHosts": [
+    "asemconnectvietnam.gov.vn",
+    "www.asemconnectvietnam.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": ".panel-body:has(> h3) > h3"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".panel-body:has(> h3) > i:not([class]):first"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".panel-body:has(> h3)"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:36:49.054Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=20&ID8=152149&ID1=1",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=23&ID8=152201&ID1=1",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=6&ID8=152226&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=14&ID8=152257&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=6&ID8=152223&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=12&ID8=152220&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=4&ID8=152206&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=14&ID8=152175&ID1=2"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://asemconnectvietnam.gov.vn/",
+    "categories": [
+      "https://asemconnectvietnam.gov.vn/default.aspx?id1=1",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=146&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=148&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=137&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=7&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=9&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=6&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=8&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=10&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=4&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=133&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=11&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=12&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=14&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=5&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=13&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=101&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=109&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=60&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=61&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=49&ID1=2",
+      "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=118&ID1=2",
+      "https://asemconnectvietnam.gov.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.244Z",
+      "verifiedSeeds": [
+        "https://asemconnectvietnam.gov.vn/",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=146&ID1=2",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=148&ID1=2",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=137&ID1=2",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=6&ID1=2",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=8&ID1=2",
+        "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=4&ID1=2"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "asemconnectvietnam.gov.vn",
+    "checkedAt": "2026-11-09T03:56:47.737Z",
+    "url": "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=20&ID8=152149&ID1=1",
+    "finalUrl": "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=20&ID8=152149&ID1=1",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3316,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "asemconnectvietnam.gov.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 8,
+    "freshArticleChecks": 6,
+    "parserIssues": 0,
+    "transportUnconfirmed": 6,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 22,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 22,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": "request_deadline_exceeded",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:50.111Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/asemconnectvietnam.gov.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "asemconnectvietnam.gov.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "publicationTimePolicy": "original_clock_required",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:08:41.499Z",
+    "proofs": [
+      {
+        "url": "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=20&ID8=152149&ID1=1",
+        "publisherUrl": "http://asemconnectvietnam.gov.vn/default.aspx?id1=1&ID8=152149",
+        "contentHash": "e61a13581ef9c7b0a9ec7a517be6d66b102f665abe74c9f5caa1420f92002af5",
+        "description": "Ngân hàng TMCP Phát triển TP.HCM (HDBank, HOSE: HDB) công bố kết quả kinh doanh 9 tháng năm 2026 với lợi nhuận trước thuế hợp nhất đạt 18.379 tỷ đồng, tăng 24,2% so với cùng kỳ; tổng tài sản đạt 1,143 triệu tỷ đồng.",
+        "publishedDate": "2026-11-06",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "http://asemconnectvietnam.gov.vn/default.aspx?id1=1&ID8=152149",
+          "publishedDate": "2026-11-06",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "asemconnectvietnam.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=13&ID8=152422&ID1=2",
+        "publisherUrl": "http://asemconnectvietnam.gov.vn/default.aspx?id1=2&ID8=152422",
+        "contentHash": "ef8d22e42ca939a485daab13562f0067b89bbd17eef4e0392eada23bfe57c14a",
+        "description": "The statistics of exports by country/territory main exports (October 2026) reported by General Department of Vietnam Customs.",
+        "publishedDate": "2026-11-17",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "http://asemconnectvietnam.gov.vn/default.aspx?id1=2&ID8=152422",
+          "publishedDate": "2026-11-17",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "asemconnectvietnam.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://asemconnectvietnam.gov.vn/default.aspx?ZID1=11&ID8=152411&ID1=2",
+        "publisherUrl": "http://asemconnectvietnam.gov.vn/default.aspx?id1=2&ID8=152411",
+        "contentHash": "b9852dd9c6b5e3abb7a24fb7fc4ad36b8e4b21df40617a672ef236f7ac2e7382",
+        "description": "Prime Minister Le Minh Hung held separate meetings with Brazilian President Luiz Inácio Lula da Silva and Canadian Prime Minister Mark Carney on the sidelines of the 49th ASEAN Summit and related Summits in Manila, on November 15.",
+        "publishedDate": "2026-11-16",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "http://asemconnectvietnam.gov.vn/default.aspx?id1=2&ID8=152411",
+          "publishedDate": "2026-11-16",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "asemconnectvietnam.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationArticleScope": "section.panel:has(> .panel-body > h3)",
+  "publicationDatePolicy": "original_only",
+  "nativeIdQueryPattern": "^id8$",
+  "pageIdentityPolicy": "asem_original_article_query_alias"
+}

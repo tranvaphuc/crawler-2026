@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congan.com.vn",
+  "siteId": "congan.com.vn",
+  "registrableDomain": "congan.com.vn",
+  "homepage": "https://congan.com.vn/",
+  "allowedHosts": [
+    "congan.com.vn",
+    "www.congan.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gia Lai: Quân đội, Công an hỗ trợ 77.000 ngày công xây dựng 7 trường học vùng biên",
+    "strategy": "selector",
+    "selector": "#blocknew .article_tile"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[name=\"pubdate\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#blocknew .article_content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:19.192Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://congan.com.vn/tin-chinh/gia-lai-quan-doi-cong-an-ho-tro-77000-ngay-cong-xay-dung-7-truong-hoc-vung-bien_199357.html",
+      "https://congan.com.vn/tin-chinh/tu-dau-nam-den-nay-chinh-phu-da-danh-64000-ty-dong-thuc-hien-cac-chinh-sach-giam-thue-phi-xang-dau_199413.html",
+      "https://congan.com.vn/thi-truong/tphcm-kich-cau-mua-sam-cuoi-nam-huong-toi-gia-tri-giao-dich-dat-hon-30000-ty-dong_199606.html",
+      "https://congan.com.vn/tin-chinh/chinh-phu-trinh-quoc-hoi-dau-tu-162393-ty-dong-lam-3-du-an-duong-bo-cao-toc_199668.html",
+      "https://congan.com.vn/thi-truong/thuong-hieu-viet/vinamilk-cung-48000-san-pham-dinh-duong-chap-canh-nhung-uoc-mo-tuoi-tho_198767.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congan.com.vn/",
+    "categories": [
+      "https://congan.com.vn/tin-chinh",
+      "https://congan.com.vn/vu-an",
+      "https://congan.com.vn/giao-thong-24h",
+      "https://congan.com.vn/an-ninh-kinh-te",
+      "https://congan.com.vn/thi-truong",
+      "https://congan.com.vn/doi-song",
+      "https://congan.com.vn/quoc-te",
+      "https://congan.com.vn/guong-sang",
+      "https://congan.com.vn/tu-thien",
+      "https://congan.com.vn/cong-nghe",
+      "https://congan.com.vn/xe"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?congan.com.vn/.*?(\\d{1,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congan.com.vn",
+    "checkedAt": "2026-11-09T03:56:56.043Z",
+    "url": "https://congan.com.vn/tin-chinh/gia-lai-quan-doi-cong-an-ho-tro-77000-ngay-cong-xay-dung-7-truong-hoc-vung-bien_199357.html",
+    "finalUrl": "https://congan.com.vn/tin-chinh/gia-lai-quan-doi-cong-an-ho-tro-77000-ngay-cong-xay-dung-7-truong-hoc-vung-bien_199357.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2182,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congan.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 44,
+    "checkedArticleUrls": 47,
+    "freshArticleChecks": 38,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 44,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 11,
+    "categoriesUnconfirmed": 11,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 242,
+        "passed": 43,
+        "distinctHashes": 43
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3
+    },
+    "checkedAt": "2026-11-10T09:14:42.068Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congan.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "congan.com.vn",
+      "siteId": "congan.com.vn",
+      "registrableDomain": "congan.com.vn",
+      "homepage": "https://congan.com.vn/",
+      "allowedHosts": [
+        "congan.com.vn",
+        "www.congan.com.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Những hình ảnh xúc động trong đêm hoa đăng cầu quốc thái dân an tại TPHCM",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[name=\"pubdate\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#vcmsLayout_ctl00_Content_Left_Zone_ctl00_pnlArticleView",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:16.561Z",
+        "trainingUrls": [
+          "https://congan.com.vn/phong-su-anh/nhung-hinh-anh-xuc-dong-trong-dem-hoa-dang-cau-quoc-thai-dan-an-tai-tphcm_199654.html"
+        ],
+        "holdoutUrls": [
+          "https://congan.com.vn/vu-an/phong-chong-ma-tuy/lan-theo-nhung-mat-xich-trong-duong-day-mua-ban-trai-phep-can-sa-xuyen-bien-gioi_199758.html",
+          "https://congan.com.vn/tin-chinh/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban_199766.html"
+        ]
+      }
+    }
+  ]
+}

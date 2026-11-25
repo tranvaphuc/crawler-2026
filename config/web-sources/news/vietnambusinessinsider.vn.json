@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnambusinessinsider.vn",
+  "siteId": "vietnambusinessinsider.vn",
+  "registrableDomain": "vietnambusinessinsider.vn",
+  "homepage": "https://vietnambusinessinsider.vn/",
+  "allowedHosts": [
+    "vietnambusinessinsider.vn",
+    "www.vietnambusinessinsider.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vietnambusinessinsider.vn/",
+    "categories": [
+      "https://vietnambusinessinsider.vn/tin-tuc/noi-bat"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Profile Chủ tịch mới của Thuduc House - thạc sĩ Trần Thành Vinh, người không nắm giữ cổ phiếu TDH",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:45.760Z",
+    "frozenAt": "2026-11-16T02:00:40.702Z",
+    "trainingUrl": "https://www.vietnambusinessinsider.vn/profile-chu-tich-moi-cua-thuduc-house-thac-si-tran-thanh-vinh-nguoi-khong-nam-giu-co-phieu-tdh-a42642.html",
+    "independentHoldouts": [
+      "https://vietnambusinessinsider.vn/cc1-lam-them-hon-2700-ty-dong-doanh-thu-xay-dung-lai-gop-lai-chuyen-thanh-lo-a56775.html",
+      "https://vietnambusinessinsider.vn/agris-dat-muc-tieu-28000-ty-doanh-thu-vua-tang-truong-vua-don-danh-muc-dau-tu-a55906.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.vietnambusinessinsider.vn/profile-chu-tich-moi-cua-thuduc-house-thac-si-tran-thanh-vinh-nguoi-khong-nam-giu-co-phieu-tdh-a42642.html",
+      "https://vietnambusinessinsider.vn/cc1-lam-them-hon-2700-ty-dong-doanh-thu-xay-dung-lai-gop-lai-chuyen-thanh-lo-a56775.html",
+      "https://vietnambusinessinsider.vn/agris-dat-muc-tieu-28000-ty-doanh-thu-vua-tang-truong-vua-don-danh-muc-dau-tu-a55906.html",
+      "https://vietnambusinessinsider.vn/masan-high-tech-materials-dat-hang-voi-nha-dau-tu-ngoai-dai-gia-nhat-ban-noi-got-elmet-muon-mua-5-co-phan-a56796.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

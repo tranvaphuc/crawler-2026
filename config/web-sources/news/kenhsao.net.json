@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kenhsao.net",
+  "siteId": "kenhsao.net",
+  "registrableDomain": "kenhsao.net",
+  "homepage": "https://kenhsao.net/",
+  "allowedHosts": [
+    "kenhsao.net",
+    "www.kenhsao.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Vê vê là ai? Tiểu sử nàng thơ nổi tiếng Tiktoker Tường Vyy",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:32.997Z",
+    "sampleCount": 5,
+    "passedSamples": 4,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://kenhsao.net/ve-ve-la-ai-tieu-su-nang-tho-noi-tieng-tiktoker-tuong-vyy/",
+      "https://kenhsao.net/tra-dang/",
+      "https://kenhsao.net/tieu-su-my-tam/",
+      "https://kenhsao.net/tra-dang/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kenhsao.net/",
+    "categories": [
+      "https://kenhsao.net/an-ngon/",
+      "https://kenhsao.net/gia-dinh/",
+      "https://kenhsao.net/giai-tri/",
+      "https://kenhsao.net/kheo-tay/",
+      "https://kenhsao.net/lam-dep/",
+      "https://kenhsao.net/lam-me/",
+      "https://kenhsao.net/nhip-song/",
+      "https://kenhsao.net/song-khoe/",
+      "https://kenhsao.net/thoi-trang/",
+      "https://kenhsao.net/video/",
+      "https://kenhsao.net/xem-choi/",
+      "https://kenhsao.net/tiktoker-youtuber/",
+      "https://kenhsao.net/wp-json/wp/v2/posts?categories=147&per_page=10",
+      "https://kenhsao.net/ca-si-nghe-si/",
+      "https://kenhsao.net/wp-json/wp/v2/posts?categories=142&per_page=10"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kenhsao.net",
+    "checkedAt": "2026-11-09T03:57:07.982Z",
+    "url": "https://kenhsao.net/ve-ve-la-ai-tieu-su-nang-tho-noi-tieng-tiktoker-tuong-vyy/",
+    "finalUrl": "https://kenhsao.net/ve-ve-la-ai-tieu-su-nang-tho-noi-tieng-tiktoker-tuong-vyy/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7200,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "kenhsao.net",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 12,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 12,
+    "categoriesUnconfirmed": 12,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 20,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kenhsao.net/ve-ve-la-ai-tieu-su-nang-tho-noi-tieng-tiktoker-tuong-vyy/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:44.867Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kenhsao.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

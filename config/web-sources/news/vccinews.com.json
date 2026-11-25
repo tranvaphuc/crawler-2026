@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vccinews.com",
+  "siteId": "vccinews.com",
+  "registrableDomain": "vccinews.com",
+  "homepage": "https://vccinews.com/",
+  "allowedHosts": [
+    "vccinews.com",
+    "www.vccinews.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "vccinews.com",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "dateOrder": "MDY",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Shattuck-St. Mary’s Vietnam Seeks Cooperation in Sports and Scholarship Programs",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-blog-page",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:43.718Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+      "https://vccinews.com/news/63129/bank-of-china-seeks-to-connect-vietnamese-and-chinese-businesses.html",
+      "https://vccinews.com/news/63164/harnessing-cultural-heritage-for-new-growth-opportunities.html",
+      "https://vccinews.com/news/63166/standard-chartered-hanoi-marathon-%E2%80%93-heritage-race-2026-ready-for-race-day-on-8-november.html",
+      "https://vccinews.com/news/63165/corn-hill-golf-resort-advancing-golf-tourism-in-bac-ninh.html",
+      "https://vccinews.com/news/63163/vietnam-korea-industrial-park-expansion-creating-new-space-for-quality-investment.html",
+      "https://vccinews.com/news/63162/sea-can-alliance-hosts-seminar-on-building-vietnamese-brands-across-southeast-asia.html",
+      "https://vccinews.com/news/63161/scg-highlights-vietnam%E2%80%99s-role-in-advancing-asean-manufacturing-at-fortune-summit-2026.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vccinews.com/",
+    "categories": [
+      "https://vccinews.com/cate/1/vcci.html",
+      "https://vccinews.com/cate/16/integration.html",
+      "https://vccinews.com/cate/36/economy.html",
+      "https://vccinews.com/cate/2/business.html",
+      "https://vccinews.com/cate/4/investment.html",
+      "https://vccinews.com/cate/7/enterprises.html",
+      "https://vccinews.com/cate/17/culture-tourism.html",
+      "https://vccinews.com/prolist/index.html",
+      "https://vccinews.com/opp/index.html",
+      "https://vccinews.com/opp/0/0/index.html",
+      "https://vccinews.com/opp/0/1/index.html",
+      "https://vccinews.com/opp/0/2/index.html",
+      "https://vccinews.com/opp/0/3/index.html",
+      "https://vccinews.com/cate/26/about-vcci.html",
+      "https://vccinews.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.352Z",
+      "verifiedSeeds": [
+        "https://vccinews.com/",
+        "https://vccinews.com/cate/1/vcci.html",
+        "https://vccinews.com/cate/16/integration.html",
+        "https://vccinews.com/cate/36/economy.html",
+        "https://vccinews.com/cate/2/business.html",
+        "https://vccinews.com/cate/4/investment.html",
+        "https://vccinews.com/cate/7/enterprises.html",
+        "https://vccinews.com/cate/17/culture-tourism.html",
+        "https://vccinews.com/prolist/index.html",
+        "https://vccinews.com/opp/index.html",
+        "https://vccinews.com/opp/0/0/index.html"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vccinews.com",
+    "checkedAt": "2026-11-09T03:57:36.273Z",
+    "url": "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+    "finalUrl": "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2389,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "parserRepairValidation": {
+    "domain": "vccinews.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 40,
+    "freshArticleChecks": 28,
+    "parserIssues": 21,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 6,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 5,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 225,
+        "passed": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vccinews.com/news/63169/at-least-30-of-s-t-programs-to-address-business-needs-from-2027.html",
+      "https://vccinews.com/news/63166/standard-chartered-hanoi-marathon-%E2%80%93-heritage-race-2026-ready-for-race-day-on-8-november.html",
+      "https://vccinews.com/news/63165/corn-hill-golf-resort-advancing-golf-tourism-in-bac-ninh.html",
+      "https://vccinews.com/news/63164/harnessing-cultural-heritage-for-new-growth-opportunities.html",
+      "https://vccinews.com/news/63163/vietnam-korea-industrial-park-expansion-creating-new-space-for-quality-investment.html",
+      "https://vccinews.com/news/63162/sea-can-alliance-hosts-seminar-on-building-vietnamese-brands-across-southeast-asia.html",
+      "https://vccinews.com/news/63161/scg-highlights-vietnam%E2%80%99s-role-in-advancing-asean-manufacturing-at-fortune-summit-2026.html",
+      "https://vccinews.com/news/63160/bac-giang-logistics-government-support-and-business-commitment.html",
+      "https://vccinews.com/news/63158/raising-iz-standards-for-better-business-climate.html",
+      "https://vccinews.com/news/63157/unlocking-resources-for-breakthrough-growth.html",
+      "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+      "https://vccinews.com/news/63129/bank-of-china-seeks-to-connect-vietnamese-and-chinese-businesses.html",
+      "https://vccinews.com/news/63128/connecting-businesses-in-vietnam-and-india%E2%80%99s-gujarat-state.html",
+      "https://vccinews.com/news/63127/vcci-most-coordinate-preparations-for-apec-2027-events.html",
+      "https://vccinews.com/news/63126/vcci-unu-macau-discuss-ai-training-for-smes.html",
+      "https://vccinews.com/news/63130/vcci-turkish-airlines-explore-cooperation-opportunities.html",
+      "https://vccinews.com/news/63124/new-zealand-universities-unveil-2027-scholarships-expand-early-admission-opportunities-and-deliver-online-masterclass-experiences-for-vietnamese-students.html",
+      "https://vccinews.com/news/62981/standing-deputy-prime-minister-pham-gia-tuc-holds-talks-with-chinese-vice-premier-ding-xuexiang.html",
+      "https://vccinews.com/news/62980/australia-and-vietnam-share-leadership-solutions%C2%A0for-effective-two-tier-governance.html",
+      "https://vccinews.com/news/62960/top-leader-holds-talks-with-french-president-macron-in-paris.html",
+      "https://vccinews.com/news/62958/to-lam-holds-talks-with-russian-president-putin-in-moscow.html",
+      "https://vccinews.com/news/62953/to-lam-meets-with-russian-prime-minister-mikhail-mishustin.html",
+      "https://vccinews.com/news/63140/viet-nam-s-retail-sales-service-revenue-to-hit-over-us-525-bln-by-2030.html",
+      "https://vccinews.com/news/63139/restructuring-vietnam%E2%80%99s-oil-and-gas-industry-towards-an-integrated-energy-industrial-ecosystem.html",
+      "https://vccinews.com/news/63135/vietnam%E2%80%99s-import-export-turnover-hits-us-1-trillion-setting-a-historic-record.html",
+      "https://vccinews.com/news/63122/four-priorities-for-vietnam-australia-cooperation-in-digital-technology-and-ai.html",
+      "https://vccinews.com/news/63115/vietnam%E2%80%99s-manufacturing-and-digital-economy-momentum-seen-to-drive-further-growth.html",
+      "https://vccinews.com/news/63170/sunlife-asia-study-finds-just-6-in-vietnam-have-fully-documented-their-legacy-plan-and-communicated-it-to-heirs.html",
+      "https://vccinews.com/news/63168/visa-from-rewards-to-recognition-customer-loyalty-is-being-redefined.html",
+      "https://vccinews.com/news/63152/promoting-industrial-value-chain-and-sustainable-infrastructure-development-landscape.html",
+      "https://vccinews.com/news/63150/viet-nam-targets-annual-growth-of-at-least-10-in-paper-industry.html",
+      "https://vccinews.com/news/63142/viet-nam%E2%80%99s-foreign-trade-surpasses-us-1-trillion-mark-in-first-10-months.html",
+      "https://vccinews.com/news/63138/smarter-travel-stronger-business-visa-outlines-how-vietnamese-businesses-can-close-the-expense-control-gap.html",
+      "https://vccinews.com/news/63133/south-korea%E2%80%99s-ls-eco-energy-to-invest-us-49-million-in-viet-nam-ultracapacitor-plant.html",
+      "https://vccinews.com/news/63114/minister-dao-hong-lan-receives-and-works-with-the-chief-executive-officer-of-dksh.html",
+      "https://vccinews.com/news/62942/unlocking-resources-for-double-digit-growth.html",
+      "https://vccinews.com/news/62867/high-quality-fdi-and-sme-linkages-key-to-improving-vietnam-growth-model.html",
+      "https://vccinews.com/news/62857/ips-and-ezs-management-board-expanding-development-space-forging-favorable-investment-climate.html",
+      "https://vccinews.com/news/63167/tetra-pak-brings-end-to-end-food-and-nutrition-innovation-capabilities-to-vietnam-foodexpo-2026.html",
+      "https://vccinews.com/news/63159/ba-dat-2-bridge-to-enhance-connectivity-in-nam-rach-chiec.html",
+      "https://vccinews.com/news/63156/jutech-advancing-bac-ninh%E2%80%99s-industrial-ecosystem.html",
+      "https://vccinews.com/news/63146/ironman-70-3-triathlon-heads-to-spectacular-new-destination-in-ha-long-bay.html",
+      "https://vccinews.com/news/63141/viet-nam-ranks-4th-among-15-biggest-travel-destinations-for-fall-2026.html",
+      "https://vccinews.com/news/63132/the-9th-edition-of-the-techcombank-ho-chi-minh-city-international-marathon-kicks-off-creating-greater-value.html",
+      "https://vccinews.com/news/63155/bac-ninh-city-setting-higher-standards-for-investment-and-business-environment.html",
+      "https://vccinews.com/news/63006/businesses-drive-phu-tho-budget-revenue-growth.html",
+      "https://vccinews.com/news/63009/strengthening-business-ties-with-russian-partners.html",
+      "https://vccinews.com/news/63008/phu-tho-businesses-accelerate-digital-transformation.html",
+      "https://vccinews.com/news/63154/welstory-vietnam-enhancing-workers%E2%80%99-quality-of-life.html",
+      "https://vccinews.com/news/63153/vietcombank-tan-bac-ninh-breakthrough-growth-strong-partnerships.html",
+      "https://vccinews.com/prode/63155/bac-ninh-city-setting-higher-standards-for-investment-and-business-environment.html",
+      "https://vccinews.com/prode/62849/tuyen-quang-shaping-development-space-strengthening-growth-drivers.html",
+      "https://vccinews.com/prode/62576/phu-tho-opens-door-to-billion-dollar-capital-inflows.html",
+      "https://vccinews.com/prode/62509/bac-ninh-strengthening-its-role-as-strategic-trusted-destination.html",
+      "https://vccinews.com/prode/62421/can-tho-city-reinforcing-its-position-as-center-of-mekong-delta.html",
+      "https://vccinews.com/opp/31290/index.html",
+      "https://vccinews.com/opp/31288/index.html",
+      "https://vccinews.com/opp/31281/index.html",
+      "https://vccinews.com/opp/31278/index.html",
+      "https://vccinews.com/opp/31277/index.html",
+      "https://vccinews.com/opp/31294/index.html",
+      "https://vccinews.com/opp/31285/index.html",
+      "https://vccinews.com/opp/31275/index.html",
+      "https://vccinews.com/opp/31266/index.html",
+      "https://vccinews.com/opp/31264/index.html",
+      "https://vccinews.com/opp/31295/index.html",
+      "https://vccinews.com/opp/31293/index.html",
+      "https://vccinews.com/opp/31292/index.html",
+      "https://vccinews.com/opp/31291/index.html",
+      "https://vccinews.com/opp/31286/index.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 20,
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:48.184Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vccinews.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T07:26:18.812Z",
+    "method": "user_confirmed_gmt7_owned_native_article_clock",
+    "proofs": [
+      {
+        "url": "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+        "contentHash": "bc5f3d9a5049eb26b039050d98af13edc5538957d039de004a601dff1e1746f8",
+        "description": "The Vietnam Chamber of Commerce and Industry (VCCI) will help Shattuck-St. Mary’s Vietnam International School connect with the business community to explore cooperation in organizing youth golf and pickleball tournaments and developing scholarship programs for talented students.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/news/63131/shattuck-st-mary%E2%80%99s-vietnam-seeks-cooperation-in-sports-and-scholarship-programs.html",
+          "publishedDate": "2026-10-28T04:01:44.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vccinews.com/news/63179/pham-quang-dung-appointed-secretary-of-the-vcci-party-committee-and-president-of-vcci.html",
+        "contentHash": "dff71902bc7209b57698d362305f026c9ac4ad780daf6a61d0158e13ac736e49",
+        "description": "On November 16, in Hanoi, the Party Committee of the Central Commission for Mass Mobilization, the Vietnam Fatherland Front and mass organizations, together with the Party Committee of the Vietnam Chamber of Commerce and Industry (VCCI), held a conference to announce personnel decisions.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/news/63179/pham-quang-dung-appointed-secretary-of-the-vcci-party-committee-and-president-of-vcci.html",
+          "publishedDate": "2026-11-16T09:00:09.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vccinews.com/news/63177/first-global-festival-for-the-preservation-and-development-of-craft-villages-2026-opens-in-hanoi.html",
+        "contentHash": "96c37e737cdeaa8a0d1cd029d298367e56db359cf7184e10417387a7c92a0d01",
+        "description": "The first Global Festival for the Preservation and Development of Craft Villages 2026 officially opened on the evening of November 13 at the Imperial Citadel of Thang Long in Hanoi. The event brings together 200 artisans and designers from 60 countries and territories, creating a platform for international exchange and cooperation in skills transmission, design and market development for handicraft products.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/news/63177/first-global-festival-for-the-preservation-and-development-of-craft-villages-2026-opens-in-hanoi.html",
+          "publishedDate": "2026-11-14T00:13:13.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "pageIdentityPolicy": "vcci_erroneous_index_og",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "backfillLayoutRepair": {
+    "checkedAt": "2026-11-17T11:32:46.282Z",
+    "kind": "native_original_clock",
+    "proofs": [
+      {
+        "url": "https://vccinews.com/prode/63067/craft-villages-open-new-opportunities-for-hanoi-rural-economy.html",
+        "publisherUrl": "https://vccinews.com/prode/63067/craft-villages-open-new-opportunities-for-hanoi-rural-economy.html",
+        "contentHash": "f3b649648583fed970ba6d0ca2a470b6c4b4de0cc19261ae97d466583a113bbb",
+        "description": "With more than 1,350 craft villages and villages with traditional trades, Hanoi has a distinctive economic resource that creates jobs, raises local incomes and preserves long-standing cultural values. By connecting traditional crafts with markets, technology, design and tourism, the sector is creating new momentum for rural economic development in the city.",
+        "publishedDate": "2026-01-10T03:34:15.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/prode/63067/craft-villages-open-new-opportunities-for-hanoi-rural-economy.html",
+          "publishedDate": "2026-01-10T03:34:15.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vccinews.com/prode/63068/nhan-hien-village-builds-on-craft-heritage-for-rural-development.html",
+        "publisherUrl": "https://vccinews.com/prode/63068/nhan-hien-village-builds-on-craft-heritage-for-rural-development.html",
+        "contentHash": "a390343fc4c2b86c7dc22538cb51f517d83b33da0b785f4999572a21f05a3094",
+        "description": "Preserving wood carving, expanding markets and improving the production environment are helping Nhan Hien Village, Thuong Tin, a southern commune of Hanoi, leverage its craft heritage, create livelihoods and improve the quality of new rural development.",
+        "publishedDate": "2026-02-10T07:40:17.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/prode/63068/nhan-hien-village-builds-on-craft-heritage-for-rural-development.html",
+          "publishedDate": "2026-02-10T07:40:17.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vccinews.com/prode/63069/quang-minh-raises-the-quality-of-rural-development.html",
+        "publisherUrl": "https://vccinews.com/prode/63069/quang-minh-raises-the-quality-of-rural-development.html",
+        "contentHash": "61e57601a70de91180aff67233978db4a11aee2d9fefc44146e5794e07ad8c19",
+        "description": "In 2026, Quang Minh, a northern commune of Hanoi, is focusing on improving the quality of rural development by linking infrastructure completion with environmental protection, digital transformation and better living standards.",
+        "publishedDate": "2026-07-10T07:42:30.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vccinews.com/prode/63069/quang-minh-raises-the-quality-of-rural-development.html",
+          "publishedDate": "2026-07-10T07:42:30.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vccinews.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "activationPending": true,
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null
+}

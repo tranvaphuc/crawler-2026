@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "siteName": "freshnews.com.kh",
+  "siteId": "freshnews.com.kh",
+  "registrableDomain": "freshnews.com.kh",
+  "homepage": "https://freshnews.com.kh/",
+  "allowedHosts": [
+    "freshnews.com.kh",
+    "www.freshnews.com.kh"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://freshnews.com.kh/",
+    "categories": [
+      "https://freshnews.com.kh/localnews",
+      "https://freshnews.com.kh/internationalnews",
+      "https://freshnews.com.kh/business"
+    ]
+  },
+  "title": {
+    "value": "នាយករដ្ឋមន្ត្រីវៀតណាម ទស្សនកិច្ចតំបន់សេដ្ឋកិច្ចពិសេស រ៉ូយ៉ាល់ គ្រុប ភ្នំពេញ របស់អ្នកឧកញ៉ា គិត ម៉េង និងរោងចក្រផលិតទឹកដោះគោអង្គរមីល ដើម្បីស្វែងយល់ពីសក្តានុពលវិនិយោគ និងសកម្មភាពផលិតកម្មនៅកម្ពុជា",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content.w-full",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:21.149Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:17.028Z",
+    "independentHoldouts": [
+      "https://freshnews.com.kh/localnews/447814-2026-11-15-23-18-50-034",
+      "https://freshnews.com.kh/localnews/447813-2026-11-15-23-05-50-522",
+      "https://freshnews.com.kh/internationalnews/447812-2026-11-15-22-08-35-793"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://freshnews.com.kh/localnews/443882-2026-10-10-15-15-26-738",
+      "https://freshnews.com.kh/localnews/447814-2026-11-15-23-18-50-034",
+      "https://freshnews.com.kh/localnews/447813-2026-11-15-23-05-50-522",
+      "https://freshnews.com.kh/internationalnews/447812-2026-11-15-22-08-35-793"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

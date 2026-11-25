@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ngoisao.vn",
+  "siteId": "ngoisao.vn",
+  "registrableDomain": "ngoisao.vn",
+  "homepage": "https://ngoisao.vn/",
+  "allowedHosts": [
+    "ngoisao.vn",
+    "www.ngoisao.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://ngoisao.vn/",
+    "categories": [
+      "https://ngoisao.vn/hau-truong/",
+      "https://ngoisao.vn/chuyen-lang-sao/",
+      "https://ngoisao.vn/tham-do-sao/",
+      "https://ngoisao.vn/ho-so-sao/"
+    ]
+  },
+  "title": {
+    "value": "Hà Nội: Phụ huynh phát hiện thịt lợn bở, nhũn bất thường tại trường mầm non, đón con về giữa trưa",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:44.004Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:34.215Z",
+    "independentHoldouts": [
+      "https://ngoisao.vn/cong-nghe/di-gi/loat-o-to-vua-ra-mat-thi-truong-viet-trong-thang-9-xe-dien-chiem-da-so-d492908.html",
+      "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/gia-xang-dau-hom-nay-14-11-2026-e5-ron92-e10-ron95-giam-sau-duoi-20000-dong-lit-do-day-binh-xe-may-honda-het-bao-nhieu-tien-d495771.html",
+      "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/gia-xang-dau-trua-hom-nay-15-11-2026-giam-gia-manh-nhat-nam-xang-ve-duoi-20000-dong-lit-tuan-toi-se-tang-d495824.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/ha-noi-phu-huynh-phat-hien-thit-lon-bo-nhun-bat-thuong-tai-truong-mam-non-don-con-ve-giua-trua-d495248.html",
+      "https://ngoisao.vn/cong-nghe/di-gi/loat-o-to-vua-ra-mat-thi-truong-viet-trong-thang-9-xe-dien-chiem-da-so-d492908.html",
+      "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/gia-xang-dau-hom-nay-14-11-2026-e5-ron92-e10-ron95-giam-sau-duoi-20000-dong-lit-do-day-binh-xe-may-honda-het-bao-nhieu-tien-d495771.html",
+      "https://ngoisao.vn/theo-dong-su-kien/tin-nong-trong-ngay/gia-xang-dau-trua-hom-nay-15-11-2026-giam-gia-manh-nhat-nam-xang-ve-duoi-20000-dong-lit-tuan-toi-se-tang-d495824.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

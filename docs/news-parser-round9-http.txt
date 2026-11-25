@@ -1,0 +1,48 @@
+NEWS / AXIOS — ROUND 9 — 2026-11-09T06:14:26.116Z
+
+Rà soát 22 mục còn vướng: 21 site có HTTP mới; Giacavattu giữ trong Crawl-Delay nguồn công bố. 1/19 mục được xử lý xong theo phạm vi alias; còn 18. HTTP: 0/3 khôi phục, 3 còn lỗi.
+
+KẾT QUẢ:
+- VietnamFDI được ưu tiên: home HTTP/HTTPS timeout; www HTTPS timeout; URL bài đã biết vẫn 404. Parser MDY/article-meta vẫn đạt 6 HTML archive được replay bằng source hiện tại; chưa có bài live mới nên không nâng trạng thái. Xem sites/vietnamfdi.vn, probes/vietnamfdi-* và vietnamfdi-cached-replay.
+- Điện tử tiêu dùng: home hiện là landing dẫn rõ sang chuyên mục Điện tử tiêu dùng tại dientuungdung.vn. Đã xác nhận 5 bài khác nhau và 2 holdout, category riêng; thêm một mẫu category trùng URL trong evidence. Cùng HTML parse bằng cấu hình alias và cấu hình dientuungdung.vn hiện có cho cùng ID latin1 MD5, full content và publication date. Alias dùng siteName/siteId/registrableDomain của publisher đích, giữ sourceAlias, crawlOwner=dientuungdung.vn và independentCrawlRequired=false. Đây là xử lý migration/loại trùng, KHÔNG thêm một publisher độc lập. Xem dientutieudung-migration-proof.json.
+- Hưng Yên: sửa selector body .boxcontent, clock .boxheading .datetimes, native ID trong /news/{category}/{id}/...; giữ MP4 gốc và bỏ comment. 5 bài khác nhau / 2 holdout cùng category đạt; body có thể chỉ HYTV (4 ký tự) vì đây là video-only news, content hash bao gồm media URL. Hai trang legacy /video/ được gọi HTTP mới vẫn chỉ có tuổi tương đối và thiếu publication date. Lần runtime cuối lại timeout sau các sample/category thành công, nên HTTP cũng đang gián đoạn; xem runtime-checks.json. Giữ parser_partial_scope_validated, KHÔNG coi toàn nguồn đã hoàn tất. Xem scope-gaps/hungyen-unverified-video-dates.json.
+- DealStreetAsia: đọc JSON Next.js như dữ liệu, không chạy JavaScript. REST index công khai khai báo gmt_offset=5.5, timezone_string rỗng; native date + offset thành +05:30, không suy ra Singapore +08:00 từ địa chỉ publisher. Sitemap cùng URL có lastmod với +05:30 để đối chiếu offset, nhưng tuyệt đối không dùng lastmod làm ngày đăng. Hai bài anonymous/free parse đủ body/date/native ID/author. Bài premium/research, overlay register và state authenticated đều bị loại, kể cả HTML có encoded body. Chưa có holdout public độc lập đạt và toàn bộ subscription coverage chưa có, nên vẫn parser_partial; CMS offset chưa phải offset riêng từng bài, giữ review trước ghi. Endpoint metadata type trả 401 được dừng, không dùng header xác thực. Xem dealstreet-public-scope-proof.json.
+- Thêm chốt kiểm chứng: batch/replay giữ transportError và đọc lỗi từ evidence; không parse lại HTML bị HTTP 403 hoặc publisher gate rồi nâng nhầm thành thành công. Có test regression với HTML vẫn chứa đủ title/date/body nhưng bị chặn. Date precision được giữ đến giây nếu nguồn có giây; không bịa thêm giây cho clock chỉ có phút.
+- Nhansac HTTP trả lại nhưng body vẫn trùng ở các native ID nên chưa đạt. Baobaria chỉ có updated clock; Taynguyen chỉ có một phần archive đủ ngày. Toancanh giữ mâu thuẫn clock nguồn; Lao Động Đồng Nai 500; Ngôi Sao Việt Nam/Tầm Nhìn permalink 404; MSN shell; Nikkei/AdvertisingVietnam còn hạn chế nội dung/truy cập; các nguồn khác vẫn thiếu publication date.
+- Giacavattu không được gọi thêm trong vòng này vì robots đã công bố Crawl-Delay 2129 giây. Bằng chứng cũ chỉ có giờ cập nhật; deferred-source-crawl-delay.json ghi lần gọi trước và mốc không fetch trước. Đây không phải kết quả live mới.
+
+PARSER / DỮ LIỆU NGUỒN CÒN VƯỚNG:
+- advertisingvietnam.com: access_blocked
+- asia.nikkei.com: publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview
+- baobariavungtau.com.vn: Video/image bodies are distinguished correctly. Visible time is labelled updated; the declared RSS is 404, so original publication time remains unconfirmed.
+- danhgiaxe.com: missing_published_date
+- dealstreetasia.com: Two anonymous free stories parse with native publication date plus public CMS fixed offset +05:30. Premium/research/register overlays and authenticated states are rejected. No successful independent public holdouts; full-source subscription coverage remains unavailable.
+- giacavattu.com.vn: No fresh HTTP request in this round during publisher Crawl-Delay 2129 seconds. Prior evidence only exposes an updated clock, not original publication; see deferred-source-crawl-delay.json.
+- hungyentv.vn: Five distinct dated /news/ pages plus category pass with original MP4 media and two independent holdouts. Two freshly fetched legacy /video/ pages expose only relative age and still fail original publication date; full-source coverage remains pending. Final runtime retry also timed out after earlier successful samples.
+- laodongdongnai.vn: Fresh article requests return HTTP 500. Prior public REST query reported Error establishing a database connection; no origin recovery verified.
+- msn.com: Tested native master article ID returns HTTP 410 from the public content service. HTML is an article app shell; a complete current article has not been verified.
+- ngoisaovietnam.vn: No trainable article HTML
+- nhansac.vn: HTTP responds again, but distinct native IDs still return duplicate short bodies and fail independent distinct-document validation; do not treat HTTP recovery as a parser pass.
+- tamnhin.net: No trainable article HTML
+- taynguyen24h.com.vn: Dated archive articles parse; prominent current advertisement pages still have no original publication date.
+- thoibaobatdongsan.net: No article candidate in homepage/category
+- tintuctoday.net: missing_published_date
+- toancanhbaochi.net: Prior public Atom/RSS have +0700 clocks seven hours behind the current matching HTML created clock. Source conflict remains unresolved; no silent correction.
+- travelguide.org.vn: missing_published_date
+- vietnamfdi.vn: Publication selector and MDY date order validated unchanged on six archived HTTP articles (three holdouts); current homepage requests time out and tested article returns 404. Cached parser success is not a live HTTP pass.
+
+HTTP CÒN VƯỚNG:
+- coindesk.com: Current HTTP remains 429. Prior official RSS exposed links/pubDates but empty content:encoded; feed summaries are not full article content.
+- molistar.com: HTTP 520 persists, including standard User-Agent; response requests Retry-After 60 seconds.
+- tamnhin.kienthuc.net.vn: DNS resolution remains unavailable.
+
+Toàn bộ 544 mục nguồn: 523 mục có mẫu HTTP/dispatcher parse đạt, gồm alias Điện tử tiêu dùng dùng lại publisher đã có; 520 mục có cả category. 21 còn vướng. Không diễn giải các số này thành số publisher độc lập hoặc kiểm chứng quét hết toàn site.
+Các nguồn ngoài vòng này giữ evidence vòng trước. 85 tests pass và có SHA256 proof. Mọi cấu hình enabled:false, queueCreated:false, es5Written:false; không browser/Puppeteer. Chưa kiểm chứng chu kỳ quét đủ tất cả nguồn trong 15 phút.
+
+TIẾP THEO: VietnamFDI cần origin phục hồi. Hưng Yên cần nguồn ngày gốc cho legacy /video/. DealStreetAsia cần phạm vi public rõ hoặc quyền/API publisher cho phần gated; không lấy encoded content sau overlay. Các nguồn chỉ có updated clock, lỗi backend/404 hoặc body trùng giữ pending. Alias Điện tử tiêu dùng dùng cùng crawl owner dientuungdung.vn để tránh quét/ghi lặp sau này. Chưa triển khai queue.
+
+CHẠY LẠI:
+node scripts/test_news_site_article.mjs --site dientutieudung.vn
+node scripts/test_news_site_article.mjs --site hungyentv.vn
+node scripts/test_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round9-http --config-dir outputs/news-parser-rollout-2026-11-09/round9-http/configs --domains DOMAIN
+node scripts/finalize_news_parser_rollout.mjs --round9-http

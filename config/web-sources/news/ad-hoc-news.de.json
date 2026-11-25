@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ad-hoc-news.de",
+  "siteId": "ad-hoc-news.de",
+  "registrableDomain": "ad-hoc-news.de",
+  "homepage": "https://www.ad-hoc-news.de/",
+  "allowedHosts": [
+    "www.ad-hoc-news.de",
+    "ad-hoc-news.de"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.ad-hoc-news.de/",
+    "categories": [
+      "https://www.ad-hoc-news.de/blogs",
+      "https://www.ad-hoc-news.de/boersenlexikon/a",
+      "https://www.ad-hoc-news.de/boerse/news",
+      "https://www.ad-hoc-news.de/wirtschaft"
+    ]
+  },
+  "title": {
+    "value": "Vinamilk expands Angkormilk: what it means for Vietnam Dairy Products stock",
+    "strategy": "selector",
+    "selector": "h1:eq(2)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:54.467Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:46.044Z",
+    "independentHoldouts": [
+      "https://www.ad-hoc-news.de/boerse/news/corporate-news/vinamilk-reports-angkormilk-growth-what-it-means-for-vietnam-dairy-products-stock/70325319",
+      "https://www.ad-hoc-news.de/politik/cyberangriff-auf-maileva-stiehlt-adressdaten-von-22-millionen-menschen/70517490",
+      "https://www.ad-hoc-news.de/ausland/papst-leo-xiv-feiert-messe-auf-3-700-metern-in-cusco/70517481"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.ad-hoc-news.de/boerse/news/corporate-news/vinamilk-expands-angkormilk-what-it-means-for-vietnam-dairy-products-stock/70312435",
+      "https://www.ad-hoc-news.de/boerse/news/corporate-news/vinamilk-reports-angkormilk-growth-what-it-means-for-vietnam-dairy-products-stock/70325319",
+      "https://www.ad-hoc-news.de/politik/cyberangriff-auf-maileva-stiehlt-adressdaten-von-22-millionen-menschen/70517490",
+      "https://www.ad-hoc-news.de/ausland/papst-leo-xiv-feiert-messe-auf-3-700-metern-in-cusco/70517481"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

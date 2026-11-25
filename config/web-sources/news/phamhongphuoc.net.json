@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phamhongphuoc.net",
+  "siteId": "phamhongphuoc.net",
+  "registrableDomain": "phamhongphuoc.net",
+  "homepage": "https://phamhongphuoc.net/",
+  "allowedHosts": [
+    "phamhongphuoc.net",
+    "www.phamhongphuoc.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://phamhongphuoc.net/",
+    "categories": [
+      "https://phamhongphuoc.net/its-php/",
+      "https://phamhongphuoc.net/category/tan-man/",
+      "https://phamhongphuoc.net/category/bai-viet/",
+      "https://phamhongphuoc.net/category/the-gioi-cua-chung-ta/",
+      "https://phamhongphuoc.net/category/tho/"
+    ]
+  },
+  "title": {
+    "value": "Samsung chính thức hỗ trợ tiếng Việt cho Trợ lý AI TV Bixby trên TV Samsung",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:46.353Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:38.532Z",
+    "independentHoldouts": [
+      "https://phamhongphuoc.net/2026/10/29/lg-channels-dich-vu-truyen-hinh-truc-tuyen-mien-phi-co-quang-cao-hoat-dong-tai-viet-nam",
+      "https://phamhongphuoc.net/2026/10/30/video-msi-va-hanh-trinh-40-nam-phan-cung-may-tinh",
+      "https://phamhongphuoc.net/2026/10/14/loat-phu-kien-nha-thong-minh-moi-do-lg-phat-trien-cung-apple-cho-apple-home/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://phamhongphuoc.net/2026/11/03/samsung-chinh-thuc-ho-tro-tieng-viet-cho-tro-ly-ai-tv-bixby-tren-tv-samsung/",
+      "https://phamhongphuoc.net/2026/10/29/lg-channels-dich-vu-truyen-hinh-truc-tuyen-mien-phi-co-quang-cao-hoat-dong-tai-viet-nam",
+      "https://phamhongphuoc.net/2026/10/30/video-msi-va-hanh-trinh-40-nam-phan-cung-may-tinh",
+      "https://phamhongphuoc.net/2026/10/14/loat-phu-kien-nha-thong-minh-moi-do-lg-phat-trien-cung-apple-cho-apple-home/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

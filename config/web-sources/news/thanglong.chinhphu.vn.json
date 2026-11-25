@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thanglong.chinhphu.vn",
+  "siteId": "thanglong.chinhphu.vn",
+  "registrableDomain": "thanglong.chinhphu.vn",
+  "homepage": "https://thanglong.chinhphu.vn/",
+  "allowedHosts": [
+    "thanglong.chinhphu.vn",
+    "www.thanglong.chinhphu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thanglong.chinhphu.vn/",
+    "categories": [
+      "https://thanglong.chinhphu.vn/thoi-su.htm",
+      "https://thanglong.chinhphu.vn/kinh-te.htm",
+      "https://thanglong.chinhphu.vn/kinh-te/ngan-hang.htm",
+      "https://thanglong.chinhphu.vn/kinh-te/chung-khoan.htm",
+      "https://thanglong.chinhphu.vn/kinh-te/thi-truong.htm",
+      "https://thanglong.chinhphu.vn/kinh-te/doanh-nghiep.htm"
+    ]
+  },
+  "title": {
+    "value": "Hà Nội thúc đẩy hợp tác đầu tư chiến lược phát triển hạ tầng, công nghệ cao với đối tác Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail__content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:46.334Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:41.969Z",
+    "independentHoldouts": [
+      "https://thanglong.chinhphu.vn/ha-noi-tao-suc-bat-moi-sau-100-ngay-cao-diem-chuyen-doi-so-103261114230654774.htm",
+      "https://thanglong.chinhphu.vn/ha-noi-nang-hieu-qua-ket-noi-cung-cau-lao-dong-bao-dam-an-sinh-ben-vung-103261114233831551.htm",
+      "https://thanglong.chinhphu.vn/ha-noi-siet-quan-ly-ngan-chan-hanh-vi-xam-pham-quyen-loi-nguoi-tieu-dung-10326111423321297.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thanglong.chinhphu.vn/ha-noi-thuc-day-hop-tac-dau-tu-chien-luoc-voi-doi-tac-nhat-ban-phat-trien-ha-tang-va-cong-nghe-cao-103261110190023864.htm",
+      "https://thanglong.chinhphu.vn/ha-noi-tao-suc-bat-moi-sau-100-ngay-cao-diem-chuyen-doi-so-103261114230654774.htm",
+      "https://thanglong.chinhphu.vn/ha-noi-nang-hieu-qua-ket-noi-cung-cau-lao-dong-bao-dam-an-sinh-ben-vung-103261114233831551.htm",
+      "https://thanglong.chinhphu.vn/ha-noi-siet-quan-ly-ngan-chan-hanh-vi-xam-pham-quyen-loi-nguoi-tieu-dung-10326111423321297.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

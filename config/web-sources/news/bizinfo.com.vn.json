@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bizinfo.com.vn",
+  "siteId": "bizinfo.com.vn",
+  "registrableDomain": "bizinfo.com.vn",
+  "homepage": "https://bizinfo.com.vn/",
+  "allowedHosts": [
+    "bizinfo.com.vn",
+    "www.bizinfo.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://bizinfo.com.vn/",
+    "categories": [
+      "https://bizinfo.com.vn/thoi-su",
+      "https://bizinfo.com.vn/dau-tu",
+      "https://bizinfo.com.vn/tai-chinh",
+      "https://bizinfo.com.vn/thi-truong",
+      "https://bizinfo.com.vn/doanh-nghiep",
+      "https://bizinfo.com.vn/bat-dong-san",
+      "https://bizinfo.com.vn/the-gioi",
+      "https://bizinfo.com.vn/cong-nghe"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Doanh nghiệp Nhật Bản cam kết rót 9.500 tỷ vào Thanh Hóa",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".news-3__time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": "article",
+    "selector": ".post-content > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:01.360Z",
+    "frozenAt": "2026-11-16T01:57:59.602Z",
+    "trainingUrl": "https://bizinfo.com.vn/doanh-nghiep-nhat-ban-cam-ket-rot-9-500-ty-vao-thanh-hoa-4331.ipavietnam",
+    "independentHoldouts": [
+      "https://bizinfo.com.vn/foxconn-dau-tu-2-du-an-moi-hon-246-trieu-usd-vao-kcn-cua-amata-tai-quang-ninh-4326.ipavietnam",
+      "https://bizinfo.com.vn/gan-2-9-ty-usd-von-fdi-do-vao-tp-hcm-trong-6-thang-dau-nam-2023-4329.ipavietnam"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://bizinfo.com.vn/doanh-nghiep-nhat-ban-cam-ket-rot-9-500-ty-vao-thanh-hoa-4331.ipavietnam",
+      "https://bizinfo.com.vn/foxconn-dau-tu-2-du-an-moi-hon-246-trieu-usd-vao-kcn-cua-amata-tai-quang-ninh-4326.ipavietnam",
+      "https://bizinfo.com.vn/gan-2-9-ty-usd-von-fdi-do-vao-tp-hcm-trong-6-thang-dau-nam-2023-4329.ipavietnam",
+      "https://bizinfo.com.vn/viglacera-rot-hon-300-ty-dong-thanh-lap-cong-ty-con-tai-thai-nguyen-4332.ipavietnam",
+      "https://bizinfo.com.vn/tuyen-bo-chung-viet-nam-trung-quoc-4328.ipavietnam",
+      "https://bizinfo.com.vn/thu-tuong-chot-khoi-cong-du-an-vanh-dai-4-vung-thu-do-ha-noi-vao-ngay-25-6-4311.ipavietnam",
+      "https://bizinfo.com.vn/bo-bien-nga-la-cua-ngo-cho-hang-viet-nam-tham-nhap-thi-truong-chau-phi-4303.ipavietnam",
+      "https://bizinfo.com.vn/chu-tich-nuoc-de-nghi-bulgaria-som-phe-chuan-hiep-dinh-bao-ho-dau-tu-viet-nam-eu-4284.ipavietnam",
+      "https://bizinfo.com.vn/tiep-thu-y-kien-cua-dai-bieu-quoc-hoi-thu-tuong-chi-dao-tiep-tuc-quyet-liet-cai-cach-thu-tuc-hanh-chinh-4243.ipavietnam",
+      "https://bizinfo.com.vn/nghien-cuu-mo-duong-bay-thang-viet-nam-sri-lanka-de-thu-hut-du-lich-4237.ipavietnam",
+      "https://bizinfo.com.vn/thu-tuong-pham-minh-chinh-du-hoi-nghi-thuong-dinh-g7-mo-rong-4210.ipavietnam",
+      "https://bizinfo.com.vn/phat-bieu-cua-tong-bi-thu-nguyen-phu-trong-khai-mac-hoi-nghi-giua-nhiem-ky-ban-chap-hanh-trung-uong-dang-khoa-xiii-4206.ipavietnam",
+      "https://bizinfo.com.vn/chinh-thuc-phe-duyet-quy-hoach-dien-8-4205.ipavietnam",
+      "https://bizinfo.com.vn/tap-doan-sumitomo-corporation-tiep-tuc-mo-rong-dau-tu-vao-tinh-hung-yen-4321.ipavietnam",
+      "https://bizinfo.com.vn/du-an-ty-usd-tro-lai-dau-tu-nuoc-ngoai-tang-toc-4320.ipavietnam",
+      "https://bizinfo.com.vn/nha-dau-tu-nhat-ban-se-dau-tu-35-trieu-usd-vao-kcn-song-khoai-tai-quang-ninh-4301.ipavietnam",
+      "https://bizinfo.com.vn/hai-cong-ty-australia-va-nhat-ban-hop-tac-mang-bao-hiem-han-han-den-viet-nam-4283.ipavietnam",
+      "https://bizinfo.com.vn/san-sang-cho-khoi-cong-khu-cong-nghiep-vsip-can-tho-tren-3-700-ty-dong-4282.ipavietnam",
+      "https://bizinfo.com.vn/tap-doan-cot-singapore-chon-dau-tu-vao-hung-yen-4251.ipavietnam",
+      "https://bizinfo.com.vn/lan-song-dich-chuyen-san-xuat-cua-doanh-nghiep-trung-quoc-sang-viet-nam-dang-dien-ra-the-nao-4236.ipavietnam",
+      "https://bizinfo.com.vn/viet-nam-tiep-tuc-la-diem-den-cua-dong-von-dau-tu-nuoc-ngoai-4235.ipavietnam",
+      "https://bizinfo.com.vn/trao-doi-co-hoi-hop-tac-cung-phai-doan-doanh-nghiep-an-do-4234.ipavietnam",
+      "https://bizinfo.com.vn/xuat-khau-tiep-da-tang-truong-xuat-sieu-hon-12-ty-usd-4327.ipavietnam",
+      "https://bizinfo.com.vn/doanh-nghiep-nhat-ban-mong-muon-mua-hang-tu-cac-nha-san-xuat-dia-phuong-viet-nam-4316.ipavietnam",
+      "https://bizinfo.com.vn/eu-noi-long-quy-dinh-kiem-tra-mat-hang-my-an-lien-viet-nam-4299.ipavietnam",
+      "https://bizinfo.com.vn/vinamilk-mo-rong-thi-truong-quoc-te-voi-2-huong-di-mui-nhon-4280.ipavietnam",
+      "https://bizinfo.com.vn/pmi-tiep-tuc-giam-diem-nganh-san-xuat-viet-nam-chua-het-kho-khan-4249.ipavietnam",
+      "https://bizinfo.com.vn/hcm-city-expo-2023-ket-noi-nha-mua-hang-quoc-te-voi-nguon-cung-ung-cua-viet-nam-4232.ipavietnam",
+      "https://bizinfo.com.vn/khan-truong-hoan-thanh-muc-gia-phat-dien-tam-thoi-cho-cac-du-an-nang-luong-tai-tao-da-hoan-thanh-4214.ipavietnam",
+      "https://bizinfo.com.vn/cong-nhan-19-san-pham-dat-chung-nhan-ocop-5-sao-cap-quoc-gia-4213.ipavietnam",
+      "https://bizinfo.com.vn/thu-hut-fdi-viet-nam-can-thay-doi-tu-duy-trong-cuoc-choi-toan-cau-4193.ipavietnam",
+      "https://bizinfo.com.vn/gia-xang-dau-dong-loat-giam-manh-4185.ipavietnam",
+      "https://bizinfo.com.vn/bac-giang-phan-dau-xuat-khau-1-500-tan-vai-thieu-sang-thi-truong-my-4171.ipavietnam",
+      "https://bizinfo.com.vn/thuong-mai-dien-tu-viet-nam-dat-tren-20-ty-usd-4158.ipavietnam"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

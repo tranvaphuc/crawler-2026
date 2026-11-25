@@ -1,0 +1,213 @@
+{
+  "input": "1523676827_10244867879701466",
+  "finalUrl": "https://www.facebook.com/1523676827/posts/10244867879701466/",
+  "payloads": [
+    {
+      "query": "adp_CometSinglePostDialogContentQueryRelayPreloader_regression",
+      "result": {
+        "data": {
+          "node_v2": {
+            "__typename": "Story",
+            "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ=",
+            "feedback": {
+              "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw="
+            },
+            "post_id": "10244869595264354",
+            "attachments": [
+              {
+                "media": {
+                  "__typename": "Photo",
+                  "id": "10244867879701466"
+                },
+                "styles": {
+                  "__typename": "StoryAttachmentAlbumStyleRenderer",
+                  "attachment": {}
+                }
+              }
+            ],
+            "attached_story": null,
+            "comet_sections": {
+              "__typename": "CometStorySections",
+              "content": {
+                "__typename": "CometFeedStoryDefaultContentStrategy",
+                "story": {
+                  "feedback": {
+                    "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw="
+                  },
+                  "comet_sections": {
+                    "attached_story": null
+                  },
+                  "attachments": [
+                    {
+                      "__typename": "StoryAttachment",
+                      "styles": {
+                        "__typename": "StoryAttachmentAlbumStyleRenderer",
+                        "attachment": {}
+                      },
+                      "media": {
+                        "__typename": "Photo",
+                        "id": "10244867879701466"
+                      }
+                    }
+                  ],
+                  "post_id": "10244869595264354",
+                  "actors": [
+                    {
+                      "__typename": "User",
+                      "id": "pfbid0p94sQZ1rNMPHniwyNSvLP4uu3Bp4mnaDAwp2oiZKSjA5VaoYsemXEs7od2Jyj7Ygl"
+                    }
+                  ],
+                  "attached_story": null,
+                  "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ="
+                }
+              },
+              "context_layout": {
+                "__typename": "CometFeedStoryDefaultContextLayoutStrategy",
+                "story": {
+                  "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ=",
+                  "actors": [
+                    {
+                      "__typename": "User",
+                      "id": "pfbid0p94sQZ1rNMPHniwyNSvLP4uu3Bp4mnaDAwp2oiZKSjA5VaoYsemXEs7od2Jyj7Ygl"
+                    }
+                  ],
+                  "comet_sections": {
+                    "title": {
+                      "__typename": "CometFeedStoryTitleWithActorStrategy",
+                      "story": {
+                        "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ=",
+                        "post_id": "10244869595264354",
+                        "actors": [
+                          {
+                            "__typename": "User",
+                            "id": "pfbid0p94sQZ1rNMPHniwyNSvLP4uu3Bp4mnaDAwp2oiZKSjA5VaoYsemXEs7od2Jyj7Ygl"
+                          }
+                        ],
+                        "title": null,
+                        "comet_sections": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "feedback": {
+                "__typename": "CometStoryFeedbackUFIStrategy",
+                "story": {
+                  "feedback": {
+                    "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw="
+                  },
+                  "feedback_context": {
+                    "feedback_target_with_context": {
+                      "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw="
+                    }
+                  },
+                  "story_ufi_container": {
+                    "__typename": "XFBFullUFIContainer",
+                    "story": {
+                      "feedback_context": {
+                        "feedback_target_with_context": {
+                          "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw=",
+                          "associated_video": null,
+                          "comet_ufi_summary_and_actions_renderer": {
+                            "__typename": "UnauthenticatedUCometUFISummaryAndActionsRenderer",
+                            "feedback": {
+                              "id": "ZmVlZGJhY2s6cGZiaWQwWERiWTlCREg3S2RmckhIMmpFaWM0b1dDcUNDZDhraXpvSEY0NnRIdDZtaVEzeHhKalBaNVFSTWRKQ0FBUVkxcGw=",
+                              "reaction_count": {
+                                "count": 54,
+                                "is_empty": false
+                              },
+                              "top_reactions": {
+                                "count": 2,
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "id": "1635855486666999"
+                                    },
+                                    "reaction_count": 30
+                                  },
+                                  {
+                                    "node": {
+                                      "id": "1678524932434102"
+                                    },
+                                    "reaction_count": 24
+                                  }
+                                ]
+                              },
+                              "share_count": {
+                                "count": 0,
+                                "is_empty": true
+                              },
+                              "associated_video": null,
+                              "comment_rendering_instance": {
+                                "comments": {
+                                  "total_count": 9
+                                }
+                              },
+                              "video_view_count": null,
+                              "video_view_count_renderer": null
+                            }
+                          }
+                        }
+                      },
+                      "post_id": "10244869595264354",
+                      "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ=",
+                      "actors": [
+                        {
+                          "__typename": "User",
+                          "id": "pfbid0p94sQZ1rNMPHniwyNSvLP4uu3Bp4mnaDAwp2oiZKSjA5VaoYsemXEs7od2Jyj7Ygl"
+                        }
+                      ]
+                    }
+                  },
+                  "id": "UzpfSTE1MjM2NzY4Mjc6MTAyNDQ4Njk1OTUyNjQzNTQ6MTAyNDQ4Njk1OTUyNjQzNTQ="
+                }
+              }
+            },
+            "actors": [
+              {
+                "__typename": "User",
+                "id": "pfbid0p94sQZ1rNMPHniwyNSvLP4uu3Bp4mnaDAwp2oiZKSjA5VaoYsemXEs7od2Jyj7Ygl"
+              }
+            ],
+            "work_is_repost": null,
+            "work_reposted_story": null
+          }
+        }
+      }
+    },
+    {
+      "query": "adp_CometSinglePostDialogContentQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "node_v2"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometSinglePostDialogContentQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "node_v2"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometSinglePostDialogContentQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "node_v2",
+          "comet_sections",
+          "feedback",
+          "story",
+          "story_ufi_container",
+          "story"
+        ],
+        "data": {
+          "comet_sections": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaoducvaxahoi.vn",
+  "siteId": "giaoducvaxahoi.vn",
+  "registrableDomain": "giaoducvaxahoi.vn",
+  "homepage": "https://giaoducvaxahoi.vn/",
+  "allowedHosts": [
+    "giaoducvaxahoi.vn",
+    "www.giaoducvaxahoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Trường Tiểu học Hoàng Văn Thụ: Đột phá đổi mới dạy học Toán 5 trong kỷ nguyên số",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".thongKe",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".noidung",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:13:53.876Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://giaoducvaxahoi.vn/truong-tieu-hoc-hoang-van-thu-dot-pha-doi-moi-day-hoc-toan-5-trong-ky-nguyen-so.htm",
+      "https://giaoducvaxahoi.vn/chi-bo-truong-tieu-hoc-cam-duong-nang-cao-chat-luong-sinh-hoat-tang-cuong-doan-ket-sau-sap-nhap.htm",
+      "https://giaoducvaxahoi.vn/mot-nen-tam-nhang-tien-biet-giao-su-cao-van-phuong.htm",
+      "https://giaoducvaxahoi.vn/truong-dai-hoc-binh-duong-nhung-cong-trinh-nang-tinh-nghia-o-vung-dat-kho.htm",
+      "https://giaoducvaxahoi.vn/dai-dien-tap-chi-giao-duc-va-xa-hoi-vieng-tien-biet-gs-vs-tskh-cao-van-phuong.htm",
+      "https://giaoducvaxahoi.vn/benh-vien-da-khoa-khu-vuc-phu-tho-bo-nhiem-12-can-bo-lanh-dao-quan-ly.htm",
+      "https://giaoducvaxahoi.vn/truong-thcs-cam-duong-to-chuc-chuyen-de-giao-duc-gioi-tinh-va-cham-soc-suc-khoe-vi-thanh-nien-cho-hoc-sinh-khoi-9.htm",
+      "https://giaoducvaxahoi.vn/truong-tieu-hoc-bac-cuong-30-nam-uom-mam-tri-thuc-viet-tiep-nhung-mua-hoa.htm"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://giaoducvaxahoi.vn/",
+    "categories": [
+      "https://giaoducvaxahoi.vn/tin-tuc-su-kien.htm",
+      "https://giaoducvaxahoi.vn/giao-duc-dao-tao.htm",
+      "https://giaoducvaxahoi.vn/suc-khoe.htm",
+      "https://giaoducvaxahoi.vn/van-hoa-xa-hoi.htm",
+      "https://giaoducvaxahoi.vn/nghien-cuu-khoa-hoc.htm",
+      "https://giaoducvaxahoi.vn/the-le-viet-va-gui-bai-dang-tap-chi-giao-duc-va-xa-hoi.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "giaoducvaxahoi.vn",
+    "checkedAt": "2026-11-09T03:57:05.581Z",
+    "url": "https://giaoducvaxahoi.vn/truong-tieu-hoc-hoang-van-thu-dot-pha-doi-moi-day-hoc-toan-5-trong-ky-nguyen-so.htm",
+    "finalUrl": "https://giaoducvaxahoi.vn/truong-tieu-hoc-hoang-van-thu-dot-pha-doi-moi-day-hoc-toan-5-trong-ky-nguyen-so.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3312,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "giaoducvaxahoi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 15,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 6,
+    "categoriesUnconfirmed": 6,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 106,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:15:34.231Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/giaoducvaxahoi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "giaoducvaxahoi.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

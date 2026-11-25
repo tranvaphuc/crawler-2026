@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "smartf.vn",
+  "siteId": "smartf.vn",
+  "registrableDomain": "smartf.vn",
+  "homepage": "https://smartf.vn/",
+  "allowedHosts": [
+    "smartf.vn",
+    "www.smartf.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://smartf.vn/",
+    "categories": [
+      "https://smartf.vn/article-category/vang/",
+      "https://smartf.vn/article-category/thoi-su/",
+      "https://smartf.vn/article-category/xe/",
+      "https://smartf.vn/article-category/chung-khoan-2/",
+      "https://smartf.vn/article-category/ty-gia/",
+      "https://smartf.vn/article-category/bat-dong-san-2/",
+      "https://smartf.vn/article-category/tai-chinh/",
+      "https://smartf.vn/article-category/kien-thuc/",
+      "https://smartf.vn/article-category/bao-cao-tai-chinh/",
+      "https://smartf.vn/article-category/ngan-hang/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "CC1 tăng hơn 2.700 tỷ đồng doanh thu xây dựng nhưng bất ngờ báo lỗ gộp",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".sec-single-post-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:34.237Z",
+    "frozenAt": "2026-11-16T01:59:26.573Z",
+    "trainingUrl": "https://smartf.vn/article/cc1-tang-hon-2-700-ty-dong-doanh-thu-xay-dung-nhung-bat-ngo-bao-lo-gop",
+    "independentHoldouts": [
+      "https://smartf.vn/article/masan-high-tech-materials-hut-von-ngoai-va-lai-lon",
+      "https://smartf.vn/article/cc1-tinh-giam-quyen-kiem-soat-tai-cong-ty-con-dang-nam-gan-95-von"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://smartf.vn/article/cc1-tang-hon-2-700-ty-dong-doanh-thu-xay-dung-nhung-bat-ngo-bao-lo-gop",
+      "https://smartf.vn/article/masan-high-tech-materials-hut-von-ngoai-va-lai-lon",
+      "https://smartf.vn/article/cc1-tinh-giam-quyen-kiem-soat-tai-cong-ty-con-dang-nam-gan-95-von",
+      "https://smartf.vn/article/nhieu-co-phieu-von-hoa-lon-giam-sau-dong-tien-tim-den-nhom-nang-luong",
+      "https://smartf.vn/article/asean-va-bai-toan-huy-dong-71-nghin-ty-usd-dau-tu-ha-tang/",
+      "https://smartf.vn/article/xuat-khau-thuy-san-huong-toi-16-ty-usd-chi-phi-san-xuat-van-la-diem-nghen/",
+      "https://smartf.vn/article/loat-co-phieu-duoc-khuyen-nghi-tich-cuc-muc-sinh-loi-ky-vong-cao-nhat-gan-65/",
+      "https://smartf.vn/article/vn-index-co-the-tiep-tuc-dao-dong-trong-bien-do-hep/",
+      "https://smartf.vn/article/cap-doi-och-ogc-va-phep-tinh-cua-doanh-nhan-le-minh-thanh/",
+      "https://smartf.vn/article/cuoc-dua-huy-dong-von-dai-han-day-lai-suat-nhieu-ngan-hang-len-moc-ky-luc/",
+      "https://smartf.vn/article/30-nam-chung-khoan-viet-nam-khat-vong-xay-ha-tang-tai-chinh-quoc-gia/",
+      "https://smartf.vn/article/shark-binh-va-187-bi-cao-hau-toa-trong-vu-lua-dao-nghin-ty/",
+      "https://smartf.vn/article/viet-my-doanh-nghiep-lien-quan-vu-khoi-to-thu-truong-bo-y-te/",
+      "https://smartf.vn/article/khoi-to-ong-tran-van-thuan-thu-truong-bo-y-te/",
+      "https://smartf.vn/article/hose-go-mot-an-phat-co-phieu-dgc-vi-sao-van-chua-the-thoat-hiem/",
+      "https://smartf.vn/article/pnj-tang-kich-tran-sau-thong-tin-dieu-tra-vu-buon-lau-kim-cuong/",
+      "https://smartf.vn/article/chap-nhan-mat-bang-chi-phi-von-cao-hon/",
+      "https://smartf.vn/article/thanh-khoan-thap-ky-luc-nha-dau-tu-can-luu-y-gi/",
+      "https://smartf.vn/article/vinhomes-doi-vang-lay-nha-ai-se-chiu-rui-ro/",
+      "https://smartf.vn/article/hon-10-000-ty-dong-co-phieu-lpbank-duoc-sang-tay-trong-10-ngay/",
+      "https://smartf.vn/article/khoi-ngoai-mua-rong-gan-21-trieu-co-phieu-pow-trong-mot-tuan/",
+      "https://smartf.vn/article/vietravel-airlines-bo-nhiem-cuu-chu-tich-bamboo-airways-vao-hdqt/",
+      "https://smartf.vn/article/ty-phu-jensen-huang-mat-108-trieu-usd-co-phan-thuong-sau-khi-roi-nvidia/",
+      "https://smartf.vn/article/microsoft-xin-loi-sau-su-co-dien-rong-tai-74-quoc-gia/",
+      "https://smartf.vn/article/nhieu-tap-doan-doanh-nghiep-nha-nuoc-se-thoai-bot-von-trong-giai-doan-2026-2030/",
+      "https://smartf.vn/article/ha-noi-thong-qua-co-che-dac-thu-giai-quyet-12-du-an-vi-pham-cua-muong-thanh/",
+      "https://smartf.vn/article/nang-hang-thi-truong-va-co-hoi-hut-von/",
+      "https://smartf.vn/article/ngan-hang-phai-cham-dut-cho-vay-tap-trung-vao-doanh-nghiep-san-sau/",
+      "https://smartf.vn/article/gia-dinh-chu-tich-cao-thi-ngoc-dung-giam-so-huu-tai-pnj-xuong-con-762/",
+      "https://smartf.vn/article/loi-suat-trai-phieu-toan-cau-bien-dong-manh-truoc-ap-luc-lam-phat/",
+      "https://smartf.vn/article/pnj-bi-phat-gan-2-ty-dong-do-vi-pham-ke-khai-thue/",
+      "https://smartf.vn/article/chung-khoan-tuan-qua-vn-index-tang-gan-10-diem-khoi-ngoai-ban-rong-hon-878-ty-dong/",
+      "https://smartf.vn/article/nhom-cong-nghe-thong-tin-giu-sac-xanh-chung-khoan/",
+      "https://smartf.vn/news-video/cac-app-xe-cong-nghe-kiem-tien-the-nao/",
+      "https://smartf.vn/news-video/ipo-the-he-moi-khi-ky-vong-tuong-lai-duoc-dua-vao-dinh-gia/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

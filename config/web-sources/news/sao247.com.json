@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sao247.com",
+  "siteId": "sao247.com",
+  "registrableDomain": "sao247.com",
+  "homepage": "https://sao247.com/",
+  "allowedHosts": [
+    "sao247.com",
+    "www.sao247.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "30 Ngày dùng tiền mặt giúp kiểm soát chi tiêu hiệu quả hơn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:38.267Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://sao247.com/30-ngay-dung-tien-mat-giup-kiem-soat-chi-tieu-hieu-qua-hon-2972.html",
+      "https://sao247.com/tuoi-50-nghi-huu-song-vui-tuoi-voi-5-thoi-quen-tuyet-voi-moi-ngay-2971.html",
+      "https://sao247.com/pha-vo-gioi-han-bao-ve-tai-sao-kem-chong-nang-thuan-chay-dinsee-co-the-giu-lan-da-rang-ro-ben-bi-suot-30-gio-2970.html",
+      "https://sao247.com/gia-bac-tang-phi-ma-nhieu-nguoi-no-nuc-di-luc-thia-bac-trong-bep-ban-lay-tien-2965.html",
+      "https://sao247.com/virus-nipah-khong-chi-lay-tu-doi-ma-con-qua-lon-va-thit-lon-can-canh-giac-ngay-2969.html",
+      "https://sao247.com/30-ngay-dung-tien-mat-giup-kiem-soat-chi-tieu-hieu-qua-hon-2972.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://sao247.com/",
+    "categories": [
+      "https://sao247.com/sao/",
+      "https://sao247.com/thoi-trang/",
+      "https://sao247.com/nhac-phim/",
+      "https://sao247.com/dep-khoe/",
+      "https://sao247.com/suc-khoe/",
+      "https://sao247.com/xa-hoi/",
+      "https://sao247.com/tam-su/",
+      "https://sao247.com/tuoi-tre/",
+      "https://sao247.com/du-lich/",
+      "https://sao247.com/giao-duc/",
+      "https://sao247.com/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "sao247.com",
+    "checkedAt": "2026-11-09T03:57:24.521Z",
+    "url": "https://sao247.com/30-ngay-dung-tien-mat-giup-kiem-soat-chi-tieu-hieu-qua-hon-2972.html",
+    "finalUrl": "https://sao247.com/30-ngay-dung-tien-mat-giup-kiem-soat-chi-tieu-hieu-qua-hon-2972.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4081,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:09.301Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/sao247.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "sao247.com",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesAttempted": 11,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 99,
+    "checkedArticleUrls": 13,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 99,
+        "attempted": 13,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

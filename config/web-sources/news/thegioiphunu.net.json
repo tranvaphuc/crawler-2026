@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioiphunu.net",
+  "siteId": "thegioiphunu.net",
+  "registrableDomain": "thegioiphunu.net",
+  "homepage": "https://thegioiphunu.net/",
+  "allowedHosts": [
+    "thegioiphunu.net",
+    "www.thegioiphunu.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Embark on Tranquility: 5 Pathways to Achieve Inner Peace",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:48.612Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://thegioiphunu.net/embark-on-tranquility-5-pathways-to-achieve-inner-peace/",
+      "https://thegioiphunu.net/7-steps-to-master-goal-setting-for-success/",
+      "https://thegioiphunu.net/7-effective-tips-to-boost-your-confidence-today/",
+      "https://thegioiphunu.net/7-empowering-habits-every-woman-should-cultivate/",
+      "https://thegioiphunu.net/5-transformative-personal-growth-techniques-you-need-to-try/",
+      "https://thegioiphunu.net/7-effective-tips-to-boost-your-confidence-today/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioiphunu.net/",
+    "categories": [
+      "https://thegioiphunu.net/category/confidence-building-tips/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioiphunu.net",
+    "checkedAt": "2026-11-09T03:57:30.427Z",
+    "url": "https://thegioiphunu.net/embark-on-tranquility-5-pathways-to-achieve-inner-peace/",
+    "finalUrl": "https://thegioiphunu.net/embark-on-tranquility-5-pathways-to-achieve-inner-peace/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1535,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:22.841Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thegioiphunu.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thegioiphunu.net",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 7,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 7,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

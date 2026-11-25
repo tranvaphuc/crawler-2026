@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cuuchienbinh.vn",
+  "siteId": "cuuchienbinh.vn",
+  "registrableDomain": "cuuchienbinh.vn",
+  "homepage": "https://cuuchienbinh.vn/",
+  "allowedHosts": [
+    "cuuchienbinh.vn",
+    "www.cuuchienbinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Minh Guitar – Tiếng đàn qua lửa chiến trường và thương trường",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "THƯỢNG TÔN HIẾN PHÁP VÀ PHÁP LUẬT – ĐỘNG LỰC KIẾN TẠO PHÁT TRIỂN ĐẤT NƯỚC",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:25.143Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cuuchienbinh.vn/minh-guitar-tieng-dan-qua-lua-chien-truong-va-thuong-truong-d45498.html",
+      "https://cuuchienbinh.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-d45497.html",
+      "https://cuuchienbinh.vn/trung-doan-121-gin-giu-ky-uc-chien-truong-cho-mai-sau-d45431.html",
+      "https://cuuchienbinh.vn/moi-ccb-phai-la-mot-tuyen-truyen-vien-ve-phap-luat-d45486.html",
+      "https://cuuchienbinh.vn/kien-an-xay-dung-khong-gian-van-hoa-ho-chi-minh-d45485.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cuuchienbinh.vn/",
+    "categories": [
+      "https://cuuchienbinh.vn/thoi-su",
+      "https://cuuchienbinh.vn/cuu-chien-binh",
+      "https://cuuchienbinh.vn/cuu-chien-binh-tren-tran-tuyen-moi",
+      "https://cuuchienbinh.vn/cuu-chien-binh-vac-tu-va",
+      "https://cuuchienbinh.vn/cuu-chien-binh-cong-tac-hoi",
+      "https://cuuchienbinh.vn/doanh-nhan-ccb",
+      "https://cuuchienbinh.vn/doanh-nhan-ccb-khoi-nghiep",
+      "https://cuuchienbinh.vn/doanh-nhan-ccb-chinh-sach-moi",
+      "https://cuuchienbinh.vn/doanh-nhan-ccb-la-lanh-dum-la-rach",
+      "https://cuuchienbinh.vn/suc-khoe",
+      "https://cuuchienbinh.vn/van-hoa-the-thao",
+      "https://cuuchienbinh.vn/phap-luat",
+      "https://cuuchienbinh.vn/vi-cong-dong-khong-ma-tuy",
+      "https://cuuchienbinh.vn/thong-tin-liet-si",
+      "https://cuuchienbinh.vn/media",
+      "https://cuuchienbinh.vn/longform",
+      "https://cuuchienbinh.vn/podcast"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cuuchienbinh.vn",
+    "checkedAt": "2026-11-09T03:56:57.393Z",
+    "url": "https://cuuchienbinh.vn/minh-guitar-tieng-dan-qua-lua-chien-truong-va-thuong-truong-d45498.html",
+    "finalUrl": "https://cuuchienbinh.vn/minh-guitar-tieng-dan-qua-lua-chien-truong-va-thuong-truong-d45498.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9409,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cuuchienbinh.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 27,
+    "checkedArticleUrls": 29,
+    "freshArticleChecks": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 237,
+        "passed": 27,
+        "distinctHashes": 27
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cuuchienbinh.vn/mua-lu-khien-1577-ho-dan-o-xa-nong-cong-bi-ngap-gan-12000-hoc-sinh-nghi-hoc-d45522.html",
+      "https://cuuchienbinh.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-d45497.html",
+      "https://cuuchienbinh.vn/cao-bang-huong-toi-tro-thanh-diem-ket-noi-thuong-mai-xuyen-bien-gioi-d45518.html",
+      "https://cuuchienbinh.vn/vu-dau-gia-khach-san-river-thai-nguyen-pho-thu-tuong-yeu-cau-ra-soat-toan-dien-d45520.html",
+      "https://cuuchienbinh.vn/minh-guitar-tieng-dan-qua-lua-chien-truong-va-thuong-truong-d45498.html",
+      "https://cuuchienbinh.vn/trung-doan-121-gin-giu-ky-uc-chien-truong-cho-mai-sau-d45431.html",
+      "https://cuuchienbinh.vn/mai-truong--thanh-luy-bao-ve-to-quoc-tu-som-tu-xa-d45005.html",
+      "https://cuuchienbinh.vn/bai-3tao-dung-la-chan-vac-xin-sovo-hieu-hoa-nhung-luan-dieu-xuyen-tac-cua-cac-the-luc-thu-dich-d44848.html",
+      "https://cuuchienbinh.vn/bai-2-khong-the-luc-nao-co-the-xuyen-tac-nhung-thanh-tuu-doi-moi-o-viet-nam-d44843.html",
+      "https://cuuchienbinh.vn/tang-truong-o-viet-nam-khong-bao-gio-la-khau-hieu-suong-d44828.html",
+      "https://cuuchienbinh.vn/ve-lang-du-lich-ong-de-d45496.html",
+      "https://cuuchienbinh.vn/mua-lu-lam-sap-cau-dai-6m-tren-tuyen-nghi-son--bai-tranh-o-thanh-hoa-d45502.html",
+      "https://cuuchienbinh.vn/nha-tho-do-trong-khoi-hanh-trinh-vuot-qua-gioi-han-than-xac-de-cham-toi-su-bao-la-cua-tam-hon-d45524.html",
+      "https://cuuchienbinh.vn/yen-sao-khanh-hoa-ky-niem-36-nam-thanh-lap-va-ra-mat-5-dong-san-pham-moi-d45519.html",
+      "https://cuuchienbinh.vn/cuoc-chuyen-doi-song-con-voi-iran-d44693.html",
+      "https://cuuchienbinh.vn/don-bien-phong-dam-thuy--diem-tua-long-dan-noi-bien-gioi-d44639.html",
+      "https://cuuchienbinh.vn/doi-thay-----tren-que-huong-cach-mang-cao-bang-d44575.html",
+      "https://cuuchienbinh.vn/quang-ngai-tim-kiem-va-quy-tap-mot-hcls-d45514.html",
+      "https://cuuchienbinh.vn/tuyen-quang-dua-phap-luat-den-voi-dong-bao-vung-bien-cung-co-the-tran-long-dan-d45516.html",
+      "https://cuuchienbinh.vn/trien-lam-to-nghe-va-danh-nho-nuoc-viet-d45515.html",
+      "https://cuuchienbinh.vn/dang-bo-tu-hoi-ccb-viet-nam-to-chuc-le-trao-tang-huy-hieu-40-nam-tuoi-dang-d45487.html",
+      "https://cuuchienbinh.vn/moi-ccb-phai-la-mot-tuyen-truyen-vien-ve-phap-luat-d45486.html",
+      "https://cuuchienbinh.vn/doi-moi-tu-duy-nhan-thuc-trong-giam-ngheo-xay-dung-nong-thon-moi-d45472.html",
+      "https://cuuchienbinh.vn/cum-thi-dua-so-1-hoi-cuu-chien-viet-nam-doan-ket-doi-moi-nang-cao-hieu-qua-cong-tac-hoi-d45469.html",
+      "https://cuuchienbinh.vn/thanh-hoa-cuu-chien-binh-cum-thi-dua-so-3-doan-ket-guong-mau-trach-nhiem-d45458.html",
+      "https://cuuchienbinh.vn/cuu-chien-binh-lan-toa-tinh-dan-toc-nghia-dong-bao-d45316.html",
+      "https://cuuchienbinh.vn/nguoi-linh-giu-hon-nghe-moc-d45315.html",
+      "https://cuuchienbinh.vn/nu-anh-hung-hoang-thi-nham-toa-sang-giua-dai-ngan-tay-bac-d45298.html",
+      "https://cuuchienbinh.vn/hiep-hoi-doanh-nhan-ccb-tinh-thai-nguyen-vung-buoc-trong-ky-nguyen-moi-d45175.html",
+      "https://cuuchienbinh.vn/doanh-nhan-cuu-chien-binh-tp-ho-chi-minhphat-huy-pham-chat-bo-doi-cu-ho-tren-mat-tran-kinh-te-d45102.html",
+      "https://cuuchienbinh.vn/hue-dat-muc-tieu-den-nam-2030-co-ban-khong-con-ho-ngheo-tai-5-xa-a-luoi-d45471.html",
+      "https://cuuchienbinh.vn/hai-doan-21-nang-cao-y-thuc-chap-hanh-phap-luat-ky-luat-quan-doi-d45470.html",
+      "https://cuuchienbinh.vn/bo-doi-bien-phong-tp-hue-chu-trong-nang-cao-chat-luong-cong-tac-xay-dung-dang-d45419.html",
+      "https://cuuchienbinh.vn/de-xuat-sua-doi-chinh-sach-doi-voi-ha-si-quan-binh-si-va-than-nhan-d45404.html",
+      "https://cuuchienbinh.vn/nang-ho-tro-phi-bao-hiem-nong-nghiep-len-toi-da-95-d45405.html",
+      "https://cuuchienbinh.vn/phat-huy-vai-tro-hoi-cuu-chien-binh-trong-dao-tao-nghe-tao-sinh-ke-ben-vung-d45403.html",
+      "https://cuuchienbinh.vn/cuu-chien-binh-va-hanh-trinh-song-khoe-d45441.html",
+      "https://cuuchienbinh.vn/benh-vien-trung-uong-hue-co-so-2-thuc-hien-ca-ghep-than-dau-tien-d45418.html",
+      "https://cuuchienbinh.vn/cap-nhat-tien-bo-noi-soi-can-thiep-tu-cac-chuyen-gia-dong-nam-a-d45263.html",
+      "https://cuuchienbinh.vn/dai-hoc-y-duoc-can-tho-chung-tay-vi-suc-khoe-nhan-dan-d45203.html",
+      "https://cuuchienbinh.vn/benh-vien-trung-uong-hue-ho-tro-benh-vien-c-da-nang-lan-dau-phau-thuat-bac-cau-dong-mach-vanh-d45171.html",
+      "https://cuuchienbinh.vn/cham-soc-suc-khoe-nguoi-cao-tuoi-d44924.html",
+      "https://cuuchienbinh.vn/quang-tri-khoi-to-6-bi-can-trong-2-vu-an-buon-lau-hai-sam-go-quy-d45453.html",
+      "https://cuuchienbinh.vn/duong-dan-sinh-bi-xe-tai-cay-nat-nguoi-dan-lo-mat-an-toan-d45433.html",
+      "https://cuuchienbinh.vn/vien-kiem-sat-khang-nghi-toan-bo-ban-an-tranh-chap-dat-dai-tai-phu-tho-d45426.html",
+      "https://cuuchienbinh.vn/xa-lac-dao-tinh-hung-yen-can-tang-cuong-giam-sat-quan-ly-dat-dai-tai-san-cong-d45425.html",
+      "https://cuuchienbinh.vn/dia-phuong-yeu-cau-khac-phuc-ngay-d45423.html",
+      "https://cuuchienbinh.vn/quang-ngai-truy-dieu-va-an-tang-11-hcls-tai-xa-dak-pek-d45483.html",
+      "https://cuuchienbinh.vn/quan-doan-34-tim-kiem-va-quy-tap-2-hcls-tai-xa-duc-nong-d45449.html",
+      "https://cuuchienbinh.vn/quang-tri-tim-thay-them-2-hai-cot-liet-si-tai-khu-vuc-ban-bai-dinh-d45445.html",
+      "https://cuuchienbinh.vn/tim-thay-hai-cot-liet-si-o-nghia-trang-tam-cau-chu-y-d45440.html",
+      "https://cuuchienbinh.vn/dong-thap-day-manh-tim-kiem-quy-tap-hai-cot-liet-si-d45439.html",
+      "https://cuuchienbinh.vn/ky-1-tu-tam-nhin-lon-den-viec-phai-lam-ngay-d45288.html",
+      "https://cuuchienbinh.vn/duc-hue-tinh-que-d45494.html",
+      "https://cuuchienbinh.vn/series/bao-ve-nen-tang-tu-tuong-cua-dang-2",
+      "https://cuuchienbinh.vn/tim-mo-liet-si-d45435.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:45.797Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cuuchienbinh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

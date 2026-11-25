@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baohungyen.vn",
+  "siteId": "baohungyen.vn",
+  "registrableDomain": "baohungyen.vn",
+  "homepage": "https://baohungyen.vn/",
+  "allowedHosts": [
+    "baohungyen.vn",
+    "www.baohungyen.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baohungyen.vn/",
+    "categories": [
+      "https://baohungyen.vn/video-clip",
+      "https://baohungyen.vn/bao-in",
+      "https://baohungyen.vn/chinh-tri",
+      "https://baohungyen.vn/kinh-te",
+      "https://baohungyen.vn/xa-hoi",
+      "https://baohungyen.vn/van-hoa",
+      "https://baohungyen.vn/the-thao",
+      "https://baohungyen.vn/an-ninh-quoc-phong",
+      "https://baohungyen.vn/quoc-te",
+      "https://baohungyen.vn/Giao-duc"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm chứng kiến trao văn kiện hợp tác Việt Nam-Đan Mạch",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:45.411Z",
+    "frozenAt": "2026-11-16T01:57:40.345Z",
+    "trainingUrl": "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chung-kien-trao-van-kien-hop-tac-viet-nam-dan-mach-3200122.html",
+    "independentHoldouts": [
+      "https://baohungyen.vn/ngay-hoi-dai-doan-ket-toan-dan-toc-ngay-van-hoa-viet-nam-khu-dan-cu-doai-gang-3200905.html",
+      "https://baohungyen.vn/truong-thpt-nguyen-thien-thuat-ky-niem-50-nam-thanh-lap-va-don-nhan-co-thi-dua-cua-chinh-phu-3200902.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chung-kien-trao-van-kien-hop-tac-viet-nam-dan-mach-3200122.html",
+      "https://baohungyen.vn/ngay-hoi-dai-doan-ket-toan-dan-toc-ngay-van-hoa-viet-nam-khu-dan-cu-doai-gang-3200905.html",
+      "https://baohungyen.vn/truong-thpt-nguyen-thien-thuat-ky-niem-50-nam-thanh-lap-va-don-nhan-co-thi-dua-cua-chinh-phu-3200902.html",
+      "https://baohungyen.vn/truong-thpt-binh-thanh-to-chuc-le-ky-niem-50-nam-thanh-lap-3200901.html",
+      "https://baohungyen.vn/vao-vu-thu-hoach-cu-nieng-o-phuong-hong-chau-3200872.html",
+      "https://baohungyen.vn/chuyen-cu-ba-gan-90-tuoi-neo-don-xin-rut-khoi-danh-sach-ho-ngheo-3200873.html",
+      "https://baohungyen.vn/thu-tuong-le-minh-hung-du-phien-toan-the-hoi-nghi-cap-cao-asean-lan-thu-49-3200896.html",
+      "https://baohungyen.vn/nguoi-dan-tich-cuc-tham-gia-sang-tao-va-thu-huong-van-hoa-3200894.html",
+      "https://baohungyen.vn/xa-nam-tien-hai-ky-niem-20-nam-don-nhan-bang-xep-hang-di-tich-quoc-gia-dinh-dong-quach-va-khai-mac-le-hoi-truyen-thong-3200882.html",
+      "https://baohungyen.vn/truong-thpt-nguyen-thien-thuat-day-manh-doi-moi-nang-cao-chat-luong-day-va-hoc-3200887.html",
+      "https://baohungyen.vn/gan-ket-cong-dong-tu-nhung-gia-tri-van-hoa-3200867.html",
+      "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-tong-bi-thu-chu-tich-nuoc-lao-thongloun-sisoulith-3200906.html",
+      "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-phien-khai-mac-hoi-nghi-cap-cao-phap-ngu-lan-thu-20-3200903.html",
+      "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-tong-bi-thu-chu-tich-nuoc-lao-3200895.html",
+      "https://baohungyen.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-tong-thong-cong-hoa-congo-3200897.html",
+      "https://baohungyen.vn/thu-tuong-le-minh-hung-du-le-khai-mac-hoi-nghi-cap-cao-asean-lan-thu-49-3200893.html",
+      "https://baohungyen.vn/khi-hoc-sinh-len-tieng-truoc-bao-luc-hoc-duong-3200875.html",
+      "https://baohungyen.vn/thu-tuong-le-minh-hung-tham-du-hoi-nghi-cap-cao-asean-tai-philippines-3200876.html",
+      "https://baohungyen.vn/to-dai-bieu-hdnd-tinh-so-7-tiep-xuc-cu-tri-3-xa-tien-tien-tong-tran-va-quang-hung-3200862.html",
+      "https://baohungyen.vn/cu-tri-de-nghi-tinh-quan-tam-chat-luong-cung-cap-nuoc-sach-nong-thon-bao-dam-ve-sinh-moi-truong-3200854.html",
+      "https://baohungyen.vn/cu-tri-de-nghi-tinh-quan-tam-den-linh-vuc-nong-nghiep-3200856.html",
+      "https://baohungyen.vn/ra-mat-trung-tam-giam-sat-va-dieu-hanh-an-ninh-mang-tinh-hung-yen-3200857.html",
+      "https://baohungyen.vn/tang-toc-hoan-thien-co-so-du-lieu-quoc-gia-ve-dat-dai-3200859.html",
+      "https://baohungyen.vn/to-dai-bieu-hdnd-tinh-so-3-tiep-xuc-cu-tri-cac-dia-phuong-3200861.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "siteName": "langsontv.vn",
+  "siteId": "langsontv.vn",
+  "registrableDomain": "langsontv.vn",
+  "homepage": "https://langsontv.vn/",
+  "allowedHosts": [
+    "langsontv.vn",
+    "www.langsontv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Báo và PTTH Lạng Sơn công bố các quyết định về công tác cán bộ",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:36.295Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://langsontv.vn/news/472/93044/bao-va-ptth-lang-son-cong-bo-cac-quyet-dinh-ve-cong-tac-can-bo",
+      "https://langsontv.vn/news/472/88252/bao-va-dai-phat-thanh-truyen-hinh-lang-son-tuyen-cong-tac-vien",
+      "https://langsontv.vn/news/473/107167/chia-se-rui-ro-trong-phat-trien-cong-nghe-chien-luoc",
+      "https://langsontv.vn/news/474/107163/nam-diem-chieu-phim-cong-cong-phuc-vu-khan-gia-tai-lien-hoan-phim-quoc-te-ha-noi-2026",
+      "https://langsontv.vn/news/488/107159/nguyen-dinh-bac-rat-quan-trong-voi-dt-viet-nam-nhung-can-duoc-su-dung-hop-ly"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://langsontv.vn/",
+    "categories": [
+      "https://langsontv.vn/category/472/thong-tin-lstv",
+      "https://langsontv.vn/faqs",
+      "https://langsontv.vn/category/474/tin-trong-nuoc",
+      "https://langsontv.vn/category/475/tin-trong-tinh",
+      "https://langsontv.vn/category/451/chinh-tri",
+      "https://langsontv.vn/category/452/kinh-te",
+      "https://langsontv.vn/category/453/thuong-mai-thi-truong",
+      "https://langsontv.vn/category/455/giao-duc",
+      "https://langsontv.vn/category/456/suc-khoe-va-doi-song",
+      "https://langsontv.vn/category/457/van-hoa-xa-hoi",
+      "https://langsontv.vn/category/458/phap-luat",
+      "https://langsontv.vn/category/459/an-ninh-quoc-phong",
+      "https://langsontv.vn/category/460/du-lich",
+      "https://langsontv.vn/category/488/the-thao",
+      "https://langsontv.vn/category/476/o-to-xe-may",
+      "https://langsontv.vn/category/473/cong-nghe-thong-tin",
+      "https://langsontv.vn/video",
+      "https://langsontv.vn/video/413/thoi-su",
+      "https://langsontv.vn/video/503/gameshow",
+      "https://langsontv.vn/video/500/cai-cach-hanh-chinh",
+      "https://langsontv.vn/video/501/cai-cach-thu-tuc-hanh-chinh",
+      "https://langsontv.vn/video/499/chuyen-doi-so",
+      "https://langsontv.vn/video/498/tieu-diem-thoi-su-chinh-nghia",
+      "https://langsontv.vn/video/417/truyen-hinh-co-so",
+      "https://langsontv.vn/video/495/dat-va-nguoi-xu-lang",
+      "https://langsontv.vn/video/418/cuoc-song-quanh-ta",
+      "https://langsontv.vn/video/497/van-hoa-dan-toc",
+      "https://langsontv.vn/video/415/truyen-hinh-tieng-dan-toc",
+      "https://langsontv.vn/video/491/phong-su",
+      "https://langsontv.vn/video/494/day-hoc-tren-truyen-hinh",
+      "https://langsontv.vn/video/416/ca-nhac",
+      "https://langsontv.vn/video/502/tac-gia-tac-pham",
+      "https://langsontv.vn/audio",
+      "https://langsontv.vn/audio/466/chuong-trinh-ca-nhac-phat-thanh",
+      "https://langsontv.vn/audio/465/chuong-trinh-phat-thanh-tieng-tay-nung",
+      "https://langsontv.vn/audio/464/chuong-trinh-phat-thanh-tieng-dao",
+      "https://langsontv.vn/audio/463/chuong-trinh-phat-thanh-tieng-kinh",
+      "https://langsontv.vn/category/490/tin-hoat-dong-cua-bao-va-dai-ptth-lang-son",
+      "https://langsontv.vn/news/472/4790/chuc-nang-nhiem-vu",
+      "https://langsontv.vn/category/492/quang-cao"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "langsontv.vn",
+    "checkedAt": "2026-11-09T03:57:13.357Z",
+    "url": "https://langsontv.vn/news/472/93044/bao-va-ptth-lang-son-cong-bo-cac-quyet-dinh-ve-cong-tac-can-bo",
+    "finalUrl": "https://langsontv.vn/news/472/93044/bao-va-ptth-lang-son-cong-bo-cac-quyet-dinh-ve-cong-tac-can-bo",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3451,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "langsontv.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 100,
+    "checkedArticleUrls": 155,
+    "freshArticleChecks": 105,
+    "parserIssues": 54,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 99,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 40,
+    "categoriesFreshChecked": 12,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 5,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 472,
+        "passed": 41,
+        "distinctHashes": 40
+      },
+      {
+        "name": "video",
+        "discovered": 440,
+        "passed": 59,
+        "distinctHashes": 59
+      },
+      {
+        "name": "audio",
+        "discovered": 98,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "photo",
+        "discovered": 4,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://langsontv.vn/news/474/107186/sau-nhieu-nam-lom-song-den-nay-100-thon-xom-o-mien-nui-da-nang-co-mang-internet-va-ve-tinh-starlink",
+      "https://langsontv.vn/news/474/107182/so-gddt-thong-tin-vu-nhan-vien-y-te-truong-hoc-tan-cong-hieu-truong-tai-truong",
+      "https://langsontv.vn/news/452/107178/thao-go-kho-khan-som-dua-du-an-hoat-dong",
+      "https://langsontv.vn/news/488/107175/hong-linh-ha-tinh-dut-mach-bat-bai-hlv-phan-nhu-thuat-chi-thang-ly-do",
+      "https://langsontv.vn/news/452/107170/gia-vang-hom-nay-9-11-dien-bien-kho-luong",
+      "https://langsontv.vn/news/473/107167/chia-se-rui-ro-trong-phat-trien-cong-nghe-chien-luoc",
+      "https://langsontv.vn/news/474/107163/nam-diem-chieu-phim-cong-cong-phuc-vu-khan-gia-tai-lien-hoan-phim-quoc-te-ha-noi-2026",
+      "https://langsontv.vn/news/488/107159/nguyen-dinh-bac-rat-quan-trong-voi-dt-viet-nam-nhung-can-duoc-su-dung-hop-ly",
+      "https://langsontv.vn/news/474/107153/xay-dung-he-sinh-thai-cong-nghe-giao-duc",
+      "https://langsontv.vn/news/452/107150/tang-toc-giai-ngan-von-dau-tu-cong",
+      "https://langsontv.vn/news/452/107144/gia-vang-hom-nay-8-11-phuc-hoi-manh-tro-lai-sau-1-tuan",
+      "https://langsontv.vn/news/452/107143/gia-xang-dau-hom-nay-8-11-dau-the-gioi-hoi-phuc-trong-nuoc-tiep-tuc-giam-manh",
+      "https://langsontv.vn/news/474/107138/de-xuat-nhieu-chinh-sach-dac-thu-tao-dong-luc-phat-trien-du-lich-viet-nam",
+      "https://langsontv.vn/news/474/107136/lan-toa-sac-mau-van-hoa-cac-dan-toc-huong-ung-ngay-van-hoa-viet-nam-24-11",
+      "https://langsontv.vn/news/488/107132/tin-sang-7-11-lo-dien-la-chan-thep-o-hang-phong-ngu-thep-xanh-nam-dinh",
+      "https://langsontv.vn/news/474/107117/chuyen-nhung-nguoi-gac-troi-o-tram-khi-tuong-hon-100-nam-tuoi-bao-giat-tung-cua-van-khong-roi-vi-tri",
+      "https://langsontv.vn/news/452/107116/gia-vang-hom-nay-7-11-dong-loat-giam-sau",
+      "https://langsontv.vn/news/452/107115/gia-xang-dau-hom-nay-7-11-dau-tho-bat-ngo-lao-doc-trong-nuoc-giam-manh",
+      "https://langsontv.vn/news/452/107114/cuc-hang-khong-chot-ngay-san-bay-long-thanh-khai-thac-thuong-mai",
+      "https://langsontv.vn/news/474/107111/dung-chu-quan-voi-mang-sam-mau-xuat-hien-o-long-ban-chan",
+      "https://langsontv.vn/news/451/100412/3-phuong-an-sap-xep-voi-can-bo-khong-chuyen-trach-cap-xa-nghi-tu-31-5",
+      "https://langsontv.vn/news/458/107108/xet-xu-phuc-tham-cuu-thu-truong-nguyen-ba-hoan",
+      "https://langsontv.vn/news/455/107153/xay-dung-he-sinh-thai-cong-nghe-giao-duc",
+      "https://langsontv.vn/news/456/107111/dung-chu-quan-voi-mang-sam-mau-xuat-hien-o-long-ban-chan",
+      "https://langsontv.vn/news/451/100409/khong-the-danh-do-dan-len-thanh-pho-ma-hoi-len-trung-uong-ma-kien",
+      "https://langsontv.vn/news/451/100408/tang-bang-khen-cua-thu-tuong-cho-hlv-kim-sang-sik-va-3-tro-ly-nguoi-han",
+      "https://langsontv.vn/news/451/100370/thu-tuong-yeu-cau-bo-cong-an-dieu-tra-xu-ly-nhanh-vu-san-bay-long-thanh",
+      "https://langsontv.vn/news/452/107188/du-2-000-ti-dong-trong-du-an-nang-cap-quoc-lo-91-can-tho-se-xu-ly-ra-sao",
+      "https://langsontv.vn/news/452/107187/vi-sao-ninh-binh-de-xuat-dung-cung-luc-91-du-an-dau-tu-cong",
+      "https://langsontv.vn/news/488/107185/u19-viet-nam-dung-lua-u16-u17-da-giai-trung-quoc",
+      "https://langsontv.vn/news/488/107179/the-cong-viettel-hoa-thanh-hoa-du-choi-hon-nguoi",
+      "https://langsontv.vn/news/458/107083/cong-an-son-la-tam-giu-38-ket-sat-co-dau-hieu-xam-pham-nhan-hieu",
+      "https://langsontv.vn/news/458/107184/bi-xu-vang-mat-cuu-giam-doc-seabank-hai-ba-trung-viet-thu-gui-toa",
+      "https://langsontv.vn/news/458/107164/vien-kiem-sat-dua-ra-cac-bang-chung-ve-hoat-dong-co-may-lua-dao-do-mr-pips-van-hanh",
+      "https://langsontv.vn/news/455/107055/viet-nam-tang-8-truong-trong-bang-xep-hang-dai-hoc-chau-a-cua-qs",
+      "https://langsontv.vn/news/455/107140/gan-800-giao-vien-hoc-vien-kieu-bao-tham-gia-khoa-tap-huan-phuong-phap-giang-day-tieng-viet",
+      "https://langsontv.vn/news/455/107110/com-ban-tru-hoc-duong-dong-hanh-cung-hoc-tro-vung-cao",
+      "https://langsontv.vn/news/456/107087/truong-dai-hoc-y-duoc-can-tho-cong-bo-quyet-dinh-bo-nhiem-4-pho-hieu-truong",
+      "https://langsontv.vn/news/456/107166/vinh-long-ho-tro-tam-soat-cac-benh-ung-thu-pho-bien-cho-1-000-phu-nu",
+      "https://langsontv.vn/news/456/107141/bo-y-te-trao-doi-voi-to-chuc-quoc-te-va-dai-su-quan-mot-so-nuoc-ve-du-an-luat-an-toan-thuc-pham-sua-doi",
+      "https://langsontv.vn/video/chuong-trinh-thoi-su-trua-ngay-10-11-2026",
+      "https://langsontv.vn/video/lang-son-ngay-moi-ngay-10-11-2026",
+      "https://langsontv.vn/video/chuong-trinh-truyen-hinh-tieng-dao-ngay-09-11-2026",
+      "https://langsontv.vn/video/cm-van-de-hom-nay-ngay-09-11-2026",
+      "https://langsontv.vn/video/cm-cong-ty-dien-luc-lang-son-thap-sang-niem-tin-ngay-09-11-2026",
+      "https://langsontv.vn/video/cm-dan-so-va-phat-trien-ngay-09-11-2026",
+      "https://langsontv.vn/video/cm-an-toan-giao-thong-ngay-09-11-2026",
+      "https://langsontv.vn/video/ban-tin-trong-nuoc-ngay-09-11-2026",
+      "https://langsontv.vn/video/chuong-trinh-thoi-su-trua-ngay-09-11-2026",
+      "https://langsontv.vn/video/lang-son-ngay-moi-ngay-09-11-2026",
+      "https://langsontv.vn/video/chuong-trinh-thoi-su-tong-hop-ngay-08-11-2026",
+      "https://langsontv.vn/video/lang-son-ngay-moi-ngay-08-11-2026",
+      "https://langsontv.vn/video/tieu-diem-thoi-su-ngay-04-11-2026",
+      "https://langsontv.vn/video/cuoc-song-quanh-ta-so-45-2026",
+      "https://langsontv.vn/video/tieu-diem-thoi-su-ngay-28-10-2026",
+      "https://langsontv.vn/video/tieu-diem-thoi-su-ngay-21-10-2026"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3,
+      "unresolved_extraction": 51
+    },
+    "checkedAt": "2026-11-10T09:16:05.986Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/langsontv.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "meta[property=\"og:title\"]",
+        "attribute": "content"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": ".video_info .date"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T08:00:39.032Z",
+        "holdoutUrls": [
+          "https://langsontv.vn/video/cm-dan-so-va-phat-trien-ngay-09-11-2026",
+          "https://langsontv.vn/video/cm-an-toan-giao-thong-ngay-09-11-2026"
+        ]
+      }
+    }
+  ],
+  "parserAdapterValidation": {
+    "state": "independent_native_adapter_holdouts_passed",
+    "frozenAt": "2026-11-10T08:00:39.032Z",
+    "holdoutUrls": [
+      "https://langsontv.vn/video/cm-dan-so-va-phat-trien-ngay-09-11-2026",
+      "https://langsontv.vn/video/cm-an-toan-giao-thong-ngay-09-11-2026"
+    ]
+  }
+}

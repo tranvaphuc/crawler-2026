@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "siteName": "elleman.vn",
+  "siteId": "elleman.vn",
+  "registrableDomain": "elleman.vn",
+  "homepage": "https://www.elleman.vn/",
+  "allowedHosts": [
+    "www.elleman.vn",
+    "elleman.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "8 cách đơn giản giúp bạn hạ huyết áp một cách tự nhiên",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Sale 11/11: Nâng tầm diện mạo với túi xách nam",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".prose-content.text-justify",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:57.061Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.elleman.vn/phong-do/suc-khoe/8-cach-ha-huyet-ap-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/4-quan-niem-sai-lam-ve-tap-co-bung-elleman-2026/",
+      "https://www.elleman.vn/elleman-chon/giay-phu-kien/tui-xach-nam-an-tuong-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/dong-ho/dong-ho-g-shock-tinh-than-xa-xi-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/7-kieu-nghi-ngoi-ban-nen-biet-elleman-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.elleman.vn/",
+    "categories": [
+      "https://www.elleman.vn/phong-do/",
+      "https://www.elleman.vn/phong-do/suc-khoe/",
+      "https://www.elleman.vn/phong-do/cham-soc-ca-nhan/",
+      "https://www.elleman.vn/phong-cach/",
+      "https://www.elleman.vn/phong-cach/style-guide/",
+      "https://www.elleman.vn/phong-cach/thoi-trang/",
+      "https://www.elleman.vn/phong-cach/dong-ho/",
+      "https://www.elleman.vn/phong-cach-song/",
+      "https://www.elleman.vn/phong-cach-song/du-lich/",
+      "https://www.elleman.vn/phong-cach-song/ky-nang/",
+      "https://www.elleman.vn/phong-cach-song/the-thao/",
+      "https://www.elleman.vn/phong-cach-song/thu-choi/",
+      "https://www.elleman.vn/phong-cach-song/du-doan-hoc/",
+      "https://www.elleman.vn/phai-dep/",
+      "https://www.elleman.vn/phai-dep/hot-women/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/",
+      "https://www.elleman.vn/elle-man-360/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/",
+      "https://www.elleman.vn/elle-man-360/tap-chi/",
+      "https://www.elleman.vn/van-hoa-giai-tri/",
+      "https://www.elleman.vn/tin-tuc/",
+      "https://www.elleman.vn/elleman-chon/",
+      "https://www.elleman.vn/elleman-chon/cham-soc-da-cham-soc-toc/",
+      "https://www.elleman.vn/elleman-chon/duong-the-nuoc-hoa/",
+      "https://www.elleman.vn/elleman-chon/giay-phu-kien/",
+      "https://www.elleman.vn/elleman-chon/trang-phuc/",
+      "https://www.elleman.vn/chinh-sach-rieng-tu",
+      "https://www.elleman.vn/cau-hoi-thuong-gap"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "elleman.vn",
+    "checkedAt": "2026-11-09T03:57:03.489Z",
+    "url": "https://www.elleman.vn/phong-do/suc-khoe/8-cach-ha-huyet-ap-elleman-2026/",
+    "finalUrl": "https://www.elleman.vn/phong-do/suc-khoe/8-cach-ha-huyet-ap-elleman-2026/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5185,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "elleman.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 30,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 30,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 30,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 263,
+        "passed": 30,
+        "distinctHashes": 30
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.elleman.vn/van-hoa-giai-tri/matthew-perry-nhung-nam-cuoi-cung-elleman-2026/",
+      "https://www.elleman.vn/elleman-chon/trang-phuc/ao-so-mi-trang-cho-nam-gioi-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/nhung-thuc-pham-cung-cap-chat-beo-lanh-manh-elleman-2026/",
+      "https://www.elleman.vn/phong-cach-song/the-thao/10-dieu-thu-vi-co-the-ban-chua-biet-ve-jude-bellingham/",
+      "https://www.elleman.vn/phong-cach/dong-ho/thang-11-2026-dong-ho-g-shock-elleman/",
+      "https://www.elleman.vn/phong-cach-song/ky-nang/8-cach-don-gian-de-ban-cam-thay-hanh-phuc-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/dong-ho/dong-ho-g-shock-tinh-than-xa-xi-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/7-kieu-nghi-ngoi-ban-nen-biet-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/dong-ho/dong-ho-thong-minh-nam-2026-elleman/",
+      "https://www.elleman.vn/phong-cach/thoi-trang/ao-khoac-quang-hung-masterd-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/8-cach-ha-huyet-ap-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/4-quan-niem-sai-lam-ve-tap-co-bung-elleman-2026/",
+      "https://www.elleman.vn/phong-do/cham-soc-ca-nhan/8-kieu-toc-uon-nam-dang-thu-elleman-2026/",
+      "https://www.elleman.vn/phong-do/suc-khoe/phat-trien-co-bap-hieu-qua-elleman-2026/",
+      "https://www.elleman.vn/elleman-chon/giay-phu-kien/tui-xach-nam-an-tuong-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/thoi-trang/jungkook-bts-graff-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/thoi-trang/dong-ho-vong-deo-tay-elleman-2026/",
+      "https://www.elleman.vn/phong-cach/dong-ho/dong-ho-louis-vuitton-tambour-elleman-2026/",
+      "https://www.elleman.vn/phong-cach-song/du-doan-hoc/trac-nghiem-hinh-anh-tiet-lo-cach-ban-yeu-mot-nguoi-elleman-2026/",
+      "https://www.elleman.vn/phong-cach-song/ky-nang/8-cuon-sach-tam-ly-nam-gioi-nen-doc/",
+      "https://www.elleman.vn/phong-cach-song/thu-choi/7-loai-cay-trong-phong-thuy-nen-dat-truoc-cua-nha/",
+      "https://www.elleman.vn/phong-cach-song/du-lich/nhung-nha-hang-phap-lang-man-va-sang-trong-ban-nen-thu/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/tinh-yeu-lop-du-phong-trong-moi-quan-he-elleman-2026/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/7-bieu-hien-thuong-gap-khi-het-yeu/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/ung-xu-tu-tin-hon-trong-ngay-hen-ho-elleman-2026/",
+      "https://www.elleman.vn/phai-dep/hot-women/my-nhan-tai-victorias-secret-fashion-show-2026-elleman/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/nuoc-hoa-tinh-yeu-danh-tang-phai-dep-dip-20-10-elleman-2026/",
+      "https://www.elleman.vn/phai-dep/tam-ly-tinh-yeu/7-loi-ich-cua-doc-than-duoi-goc-nhin-khoa-hoc-elleman-2026/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/lien-nguyen-chay-de-ket-noi-va-tim-thay-noi-thuoc-ve-elleman-2026/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/alex-hoang-dat-giu-binh-tinh-giua-duong-dua-toc-do-elleman-2026/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/triathlete-tuna-dang-elleman-2026/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/le-quoc-phong-phia-sau-nhung-mui-ten-vinh-quang-elleman-2026/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/tuan-andrew-nguyen-nghe-thuat-chua-lanh-tu-tan-tich-chien-tranh/",
+      "https://www.elleman.vn/elle-man-360/nhan-vat/dien-vien-so-ji-sub-elleman-2026/",
+      "https://www.elleman.vn/van-hoa-giai-tri/grammy-2027-suc-tre-thach-thuc-tuong-dai-elleman-2026/",
+      "https://www.elleman.vn/van-hoa-giai-tri/truc-nhan-va-tan-mui-mot-san-pham-tham-vong/",
+      "https://www.elleman.vn/van-hoa-giai-tri/review-clayface-phim-elleman-2026/",
+      "https://www.elleman.vn/van-hoa-giai-tri/cuoc-dua-ke-vi-007-canh-bac-thay-mau-james-bond/",
+      "https://www.elleman.vn/van-hoa-giai-tri/ep-press-play-cua-lisa-blackpink-elleman/",
+      "https://www.elleman.vn/tin-tuc/korea-spotlight-2026-ket-noi-am-nhac-han-viet-elleman/",
+      "https://www.elleman.vn/tin-tuc/garmin-run-vietnam-2026-chay-bo-elleman/",
+      "https://www.elleman.vn/tin-tuc/never-still-truyen-cam-hung-cho-mot-cuoc-song-luon-chuyen-dong/",
+      "https://www.elleman.vn/tin-tuc/aristino-vun-dan-rang-hanh-trinh-tiep-noi-huyen-thoai-elleman-2026/",
+      "https://www.elleman.vn/tin-tuc/rachel-ikemeh-duoc-vinh-danh-la-laureate-cua-rolex-awards-2026/",
+      "https://www.elleman.vn/elleman-chon/giay-phu-kien/6-mau-giay-tennis-ma-ban-co-the-thu-elleman-2026/",
+      "https://www.elleman.vn/elleman-chon/cham-soc-da-cham-soc-toc/lua-chon-san-pham-lam-sang-da-xin-mau-elleman-2026/",
+      "https://www.elleman.vn/elleman-chon/cham-soc-da-cham-soc-toc/san-pham-chua-vitamin-b5-elleman-2026/",
+      "https://www.elleman.vn/tin-tuc/strong-world-tour-2026-2027/",
+      "https://www.elleman.vn/elleman-chon/trang-phuc/7-kieu-ao-len-nam-elleman-2026/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:19.106Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/elleman.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

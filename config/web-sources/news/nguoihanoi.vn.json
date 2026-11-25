@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoihanoi.vn",
+  "siteId": "nguoihanoi.vn",
+  "registrableDomain": "nguoihanoi.vn",
+  "homepage": "https://nguoihanoi.vn/",
+  "allowedHosts": [
+    "nguoihanoi.vn",
+    "www.nguoihanoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:52.872Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nguoihanoi.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-103245.html",
+      "https://nguoihanoi.vn/ha-noi-day-manh-kham-suc-khoe-va-cap-phat-ho-so-suc-khoe-dien-tu-cho-nguoi-dan-103236.html",
+      "https://nguoihanoi.vn/vo-cheo-dao-hoc-ton-vinh-hinh-tuong-nguoi-thay-mau-muc-103240.html",
+      "https://nguoihanoi.vn/tu-thuc-qua-tien-vua-den-thuc-day-du-lich-trai-nghiem-van-hoa-am-thuc-ha-noi-103243.html",
+      "https://nguoihanoi.vn/van-hoa-va-su-menh-ket-noi-khoi-dai-doan-ket-toan-dan-toc-103241.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nguoihanoi.vn/",
+    "categories": [
+      "https://nguoihanoi.vn/theo-dong-su-kien",
+      "https://nguoihanoi.vn/van-hoa",
+      "https://nguoihanoi.vn/van-hoc-nghe-thuat",
+      "https://nguoihanoi.vn/thang-long-ha-noi",
+      "https://nguoihanoi.vn/podcast",
+      "https://nguoihanoi.vn/san-khau-dien-anh",
+      "https://nguoihanoi.vn/my-thuat-nhiep-anh",
+      "https://nguoihanoi.vn/cuoc-thi-viet-ha-noi-toi"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nguoihanoi.vn",
+    "checkedAt": "2026-11-09T03:57:18.504Z",
+    "url": "https://nguoihanoi.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-103245.html",
+    "finalUrl": "https://nguoihanoi.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-103245.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12123,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:52.042Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/nguoihanoi.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "nguoihanoi.vn",
+    "parsedArticles": 18,
+    "distinctHashes": 18,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 299,
+    "checkedArticleUrls": 18,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 278,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      },
+      {
+        "name": "video",
+        "discovered": 4,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "audio",
+        "discovered": 17,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".block-sc-publish-time",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

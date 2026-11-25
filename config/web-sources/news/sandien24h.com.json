@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sandien24h.com",
+  "siteId": "sandien24h.com",
+  "registrableDomain": "sandien24h.com",
+  "homepage": "https://sandien24h.com/",
+  "allowedHosts": [
+    "sandien24h.com",
+    "www.sandien24h.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ms được yêu thích nhất Trần Hà: Cảm ơn với lòng yêu thương chân thành",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:09.628Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://sandien24h.com/ms-duoc-yeu-thich-nhat-tran-ha-cam-on-voi-long-yeu-thuong-chan-thanh/",
+      "https://sandien24h.com/dinh-thuy-linh-duoc-bgk-ms-universe-business-2026-danh-gia-la-thi-sinh-co-guong-mat-kha-ai-nhat/",
+      "https://sandien24h.com/hoa-hau-dong-thi-nhung-dau-gia-thanh-cong-ao-dai-rong-viet-cua-ntk-nguyen-tuan-tai-han-quoc-cho-muc-dich-tu-thien/",
+      "https://sandien24h.com/ao-dai-nguyen-tuan-tung-bay-tai-xu-so-hoa-anh-dao/",
+      "https://sandien24h.com/hoa-khoi-bao-ngoc-tu-duy-tu-chu-ban-linh-tai-chinh/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://sandien24h.com/",
+    "categories": [
+      "https://sandien24h.com/hoa-hau/",
+      "https://sandien24h.com/hoa-hau/anh-dep/",
+      "https://sandien24h.com/hoa-hau/thi-sinh/",
+      "https://sandien24h.com/doanh-nhan/",
+      "https://sandien24h.com/doanh-nhan/doanh-nghiep/",
+      "https://sandien24h.com/doanh-nhan/xuc-tien-thuong-mai/",
+      "https://sandien24h.com/doanh-nhan/kinh-doanh/",
+      "https://sandien24h.com/giai-tri/",
+      "https://sandien24h.com/giai-tri/sao/",
+      "https://sandien24h.com/giai-tri/hau-truong/",
+      "https://sandien24h.com/dep/",
+      "https://sandien24h.com/du-lich/",
+      "https://sandien24h.com/du-lich/kham-pha/",
+      "https://sandien24h.com/du-lich/diem-den/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "sandien24h.com",
+    "checkedAt": "2026-11-09T03:57:24.426Z",
+    "url": "https://sandien24h.com/ms-duoc-yeu-thich-nhat-tran-ha-cam-on-voi-long-yeu-thuong-chan-thanh/",
+    "finalUrl": "https://sandien24h.com/ms-duoc-yeu-thich-nhat-tran-ha-cam-on-voi-long-yeu-thuong-chan-thanh/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1694,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "sandien24h.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 21,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 21,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 134,
+        "passed": 21,
+        "distinctHashes": 21
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://sandien24h.com/mai-lan-cuc-truc-cua-nguyen-tuan-giup-yun-hsin-trang-dang-quang-hoa-hau-nhan-ai-hoa-hau-ao-dai-2026/",
+      "https://sandien24h.com/hoa-hau-dong-thi-nhung-dau-gia-thanh-cong-ao-dai-rong-viet-cua-ntk-nguyen-tuan-tai-han-quoc-cho-muc-dich-tu-thien/",
+      "https://sandien24h.com/ao-dai-nguyen-tuan-tung-bay-tai-xu-so-hoa-anh-dao/",
+      "https://sandien24h.com/hoa-khoi-bao-ngoc-tu-duy-tu-chu-ban-linh-tai-chinh/",
+      "https://sandien24h.com/a-hau-phan-thi-kim-quy-moi-nguoi-phu-nu-nen-cho-minh-co-hoi/",
+      "https://sandien24h.com/ms-duoc-yeu-thich-nhat-tran-ha-cam-on-voi-long-yeu-thuong-chan-thanh/",
+      "https://sandien24h.com/dinh-thuy-linh-duoc-bgk-ms-universe-business-2026-danh-gia-la-thi-sinh-co-guong-mat-kha-ai-nhat/",
+      "https://sandien24h.com/a-hau-le-thi-tuong-vi-danh-hieu-la-ky-niem-dep-dang-de-nang-niu/",
+      "https://sandien24h.com/dong-thi-nhung-dang-quang-hoa-hau-doanh-nhan-hoan-vu-2026/",
+      "https://sandien24h.com/nhung-hinh-anh-dep-cua-giam-khao-hoa-hau-jennifer-ly-tai-hoa-hau-doanh-nhan-hoan-vu-2026/",
+      "https://sandien24h.com/nguyen-bao-ngoc-hoa-khoi-truyen-cam-hung-tai-ms-universe-business-2026/",
+      "https://sandien24h.com/a-hau-doanh-nhan-hoan-vu-2026-truong-thi-huong-tri-an-va-cam-on-tat-ca/",
+      "https://sandien24h.com/tgd-gia-hana-group-dang-quang-hoa-hau-than-thien-tai-cuoc-thi-ms-universe-business-2026/",
+      "https://sandien24h.com/a-hau-trinh-kim-chi-hoa-hau-doanh-nhan-nguyen-trang-kochan-deo-shark-doi-vuong-mien-a-hau-2-cho-nguyen-thi-tuyet-tam/",
+      "https://sandien24h.com/ao-thuat-gia-tuan-minh-tham-du-dai-hoi-hoi-nghe-si-san-khau-tp-hcm-nhiem-ky-2026-2031/",
+      "https://sandien24h.com/ngam-va-share-bo-anh-moi-cua-hoa-khoi-doanh-nhan-bao-ngoc/",
+      "https://sandien24h.com/ao-thuat-gia-quoc-te-tuan-minh-trinh-dien-tuong-tac-cong-nghe-led-dem-chung-ket-ms-universe-business-2026/",
+      "https://sandien24h.com/pho-btc-nguoi-dep-tai-nang-pham-kim-thoa-hoa-hau-doanh-nhan-hoan-vu-2026-la-chang-duong-dep/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:40.824Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/sandien24h.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

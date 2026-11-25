@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiep.kinhtechungkhoan.vn",
+  "siteId": "doanhnghiep.kinhtechungkhoan.vn",
+  "registrableDomain": "kinhtechungkhoan.vn",
+  "homepage": "https://doanhnghiep.kinhtechungkhoan.vn/",
+  "allowedHosts": [
+    "doanhnghiep.kinhtechungkhoan.vn",
+    "www.doanhnghiep.kinhtechungkhoan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cho vay margin lập kỷ lục 460.000 tỷ đồng, lợi nhuận công ty chứng khoán bị bào mòn bởi chi phí vốn tăng 70%",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:26.513Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://doanhnghiep.kinhtechungkhoan.vn/cho-vay-margin-lap-ky-luc-460-000-ty-dong-loi-nhuan-cong-ty-chung-khoan-bi-bao-mon-boi-chi-phi-von-tang-70-1474001.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/hut-hoi-truoc-cuoc-dua-dien-hoa-va-doi-thu-trung-quoc-mot-doanh-nghiep-phan-phoi-o-to-cua-viet-nam-bao-lo-nang-1473993.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/tap-doan-2-800-ty-usd-cua-my-tuyen-bo-se-ho-tro-30-doanh-nghiep-viet-nam-vuon-ra-quoc-te-1473992.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/tong-thau-lon-nhat-viet-nam-cua-vingroup-phat-thong-bao-quan-trong-toi-tat-ca-cong-nhan-da-nghi-viec-1473978.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/my-sap-cu-doan-cong-tac-co-quy-mo-lon-nhat-lich-su-sang-viet-nam-mo-ra-buoc-ngoat-moi-cho-hop-tac-nong-nghiep-1473977.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/cho-vay-margin-lap-ky-luc-460-000-ty-dong-loi-nhuan-cong-ty-chung-khoan-bi-bao-mon-boi-chi-phi-von-tang-70-1474001.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/cho-vay-margin-lap-ky-luc-460-000-ty-dong-loi-nhuan-cong-ty-chung-khoan-bi-bao-mon-boi-chi-phi-von-tang-70-1474001.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiep.kinhtechungkhoan.vn/",
+    "categories": [
+      "https://doanhnghiep.kinhtechungkhoan.vn/tin-moi-nhat",
+      "https://doanhnghiep.kinhtechungkhoan.vn/van-ban-chinh-sach",
+      "https://doanhnghiep.kinhtechungkhoan.vn/niem-yet-co-tuc",
+      "https://doanhnghiep.kinhtechungkhoan.vn/cao-bach-tai-chinh",
+      "https://doanhnghiep.kinhtechungkhoan.vn/dong-von-co-phan",
+      "https://doanhnghiep.kinhtechungkhoan.vn/cam-nang-doanh-nghiep",
+      "https://doanhnghiep.kinhtechungkhoan.vn/quan-tri-ky-tri"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiep.kinhtechungkhoan.vn",
+    "checkedAt": "2026-11-09T03:56:59.986Z",
+    "url": "https://doanhnghiep.kinhtechungkhoan.vn/cho-vay-margin-lap-ky-luc-460-000-ty-dong-loi-nhuan-cong-ty-chung-khoan-bi-bao-mon-boi-chi-phi-von-tang-70-1474001.html",
+    "finalUrl": "https://doanhnghiep.kinhtechungkhoan.vn/cho-vay-margin-lap-ky-luc-460-000-ty-dong-loi-nhuan-cong-ty-chung-khoan-bi-bao-mon-boi-chi-phi-von-tang-70-1474001.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3145,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnghiep.kinhtechungkhoan.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 164,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghiep.kinhtechungkhoan.vn/tang-23-sau-5-phien-khoi-ngoai-gom-hon-18-trieu-co-phieu-bat-dong-san-tung-thuoc-vn30-1474255.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/khong-chi-lam-thep-hoa-phat-tu-san-xuat-luong-dien-bang-nua-nam-cua-thuy-dien-hoa-binh-giup-giam-8-800-ty-chi-phi-1474241.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/doanh-nghiep-tung-giu-ky-luc-22-nam-cua-thi-truong-chung-khoan-cong-bo-thong-tin-quan-trong-1474239.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/mot-doanh-nghiep-thuoc-vingroup-gop-mat-tai-3-sieu-du-an-bat-dong-san-ha-tang-cang-bien-gan-422-000-ty-1474235.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/he-sinh-thai-vingroup-chiem-gan-10-du-no-sacombank-1474232.html",
+      "https://doanhnghiep.kinhtechungkhoan.vn/green-sm-bat-tay-loat-doi-tac-tai-lao-he-lo-su-gop-mat-cua-sacombank-va-muong-thanh-1474230.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:00.254Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghiep.kinhtechungkhoan.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

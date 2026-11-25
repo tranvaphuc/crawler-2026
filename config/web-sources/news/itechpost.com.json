@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "itechpost.com",
+  "siteId": "itechpost.com",
+  "registrableDomain": "itechpost.com",
+  "homepage": "https://www.itechpost.com/",
+  "allowedHosts": [
+    "www.itechpost.com",
+    "itechpost.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.itechpost.com/",
+    "categories": [
+      "https://www.itechpost.com/reviews",
+      "https://www.itechpost.com/tech/",
+      "https://www.itechpost.com/auto",
+      "https://www.itechpost.com/games/",
+      "https://www.itechpost.com/apps/",
+      "https://www.itechpost.com/apple/",
+      "https://www.itechpost.com/samsung/",
+      "https://www.itechpost.com/google/",
+      "https://www.itechpost.com/mobile/",
+      "https://www.itechpost.com/wearable/"
+    ]
+  },
+  "title": {
+    "value": "Apple Home Collection Pre-Orders Open November 13 for New LG Smart Home Accessories",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:48:27.133Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:48:06.221Z",
+    "independentHoldouts": [
+      "https://www.itechpost.com/articles/237807/20261116/samsung-app-shutdown-these-two-useful-mobile-apps-are-being-discontinued-december.htm",
+      "https://www.itechpost.com/articles/237809/20261116/narwal-reinvents-smart-cleaning-robots-robot-vacuums-designed-local-markets.htm",
+      "https://www.itechpost.com/articles/237806/20261116/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites-major-launch-setback.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.itechpost.com/articles/237798/20261113/apple-home-collection-pre-orders-open-november-13-new-lg-smart-home-accessories.htm",
+      "https://www.itechpost.com/articles/237807/20261116/samsung-app-shutdown-these-two-useful-mobile-apps-are-being-discontinued-december.htm",
+      "https://www.itechpost.com/articles/237809/20261116/narwal-reinvents-smart-cleaning-robots-robot-vacuums-designed-local-markets.htm",
+      "https://www.itechpost.com/articles/237806/20261116/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites-major-launch-setback.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

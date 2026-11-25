@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "siteName": "carsauce.com",
+  "siteId": "carsauce.com",
+  "registrableDomain": "carsauce.com",
+  "homepage": "https://carsauce.com/",
+  "allowedHosts": [
+    "carsauce.com",
+    "www.carsauce.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://carsauce.com/",
+    "categories": [
+      "https://carsauce.com/reviews",
+      "https://carsauce.com/news"
+    ]
+  },
+  "title": {
+    "value": "2026 Mitsubishi Pajero Price And Specs: Icon Returns From $68,490",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "additionalMediaStrategy": "jsonld",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:50.273Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:42.323Z",
+    "independentHoldouts": [
+      "https://carsauce.com/news/2027-tesla-cybercab-price-personal-use-subscription",
+      "https://carsauce.com/news/2027-chery-fulwin-t11-china-price-lidar-australia",
+      "https://carsauce.com/news/porsche-mission-s-nurburgring-exhaust-note"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://carsauce.com/news/2026-mitsubishi-pajero-price-specs-australia",
+      "https://carsauce.com/news/2027-tesla-cybercab-price-personal-use-subscription",
+      "https://carsauce.com/news/2027-chery-fulwin-t11-china-price-lidar-australia",
+      "https://carsauce.com/news/porsche-mission-s-nurburgring-exhaust-note"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

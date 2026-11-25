@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baolaichau.vn",
+  "siteId": "baolaichau.vn",
+  "registrableDomain": "baolaichau.vn",
+  "homepage": "https://baolaichau.vn/",
+  "allowedHosts": [
+    "baolaichau.vn",
+    "www.baolaichau.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baolaichau.vn/",
+    "categories": [
+      "https://baolaichau.vn/e-paper",
+      "https://baolaichau.vn/chinh-tri",
+      "https://baolaichau.vn/thuc-hien-nq-tw4",
+      "https://baolaichau.vn/lich-su-dang-bo-tinh-lai-chau",
+      "https://baolaichau.vn/xa-hoi",
+      "https://baolaichau.vn/giao-duc",
+      "https://baolaichau.vn/y-te",
+      "https://baolaichau.vn/chung-tay-xoa-nha-tam-nha-dot-nat",
+      "https://baolaichau.vn/cai-cach-hanh-chinh",
+      "https://baolaichau.vn/nong-thon-moi"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Quyết tâm xây dựng môi trường công sở không khói thuốc",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:49.227Z",
+    "frozenAt": "2026-11-16T01:57:45.731Z",
+    "trainingUrl": "https://baolaichau.vn/xa-hoi/quyet-tam-xay-dung-moi-truong-cong-so-khong-khoi-thuoc-1006582",
+    "independentHoldouts": [
+      "https://baolaichau.vn/the-thao/3000-van-dong-vien-tham-gia-giai-marathon-tinh-lai-chau-lan-thu-iii-nam-2026-548583",
+      "https://baolaichau.vn/van-hoa/dac-sac-chuong-trinh-nghe-thuat-nhip-buoc-vuon-xa-lan-toa-sac-mau-617820"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baolaichau.vn/xa-hoi/quyet-tam-xay-dung-moi-truong-cong-so-khong-khoi-thuoc-1006582",
+      "https://baolaichau.vn/the-thao/3000-van-dong-vien-tham-gia-giai-marathon-tinh-lai-chau-lan-thu-iii-nam-2026-548583",
+      "https://baolaichau.vn/van-hoa/dac-sac-chuong-trinh-nghe-thuat-nhip-buoc-vuon-xa-lan-toa-sac-mau-617820",
+      "https://baolaichau.vn/van-hoa/sin-suoi-ho-to-chuc-ngay-hoi-van-hoa-cac-dan-toc-lan-thu-i-nam-2026-1011358"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

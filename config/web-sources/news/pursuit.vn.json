@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "pursuit.vn",
+  "siteId": "pursuit.vn",
+  "registrableDomain": "pursuit.vn",
+  "homepage": "https://pursuit.vn/",
+  "allowedHosts": [
+    "pursuit.vn",
+    "www.pursuit.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://pursuit.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "SHB quý 3/2026: lãi trước thuế cao nhất 15 quý nhờ phí dịch vụ gấp 3, khoản phải thu 81.272 tỷ vượt vốn chủ, P/B 0,62x",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:03.388Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:58.173Z",
+    "independentHoldouts": [
+      "https://pursuit.vn/blog/31-tuoi-nhung-da-chay-than-5-nam-ung-thu-giai-doan-cuoi-vi-ngay-nao-cung-an-1-mon-thit-van-nguoi-me-2026-11.html",
+      "https://pursuit.vn/blog/may-bay-dien-trung-quoc-thuc-hien-chuyen-bay-co-nguoi-lai-dau-tien-2026-11.html",
+      "https://pursuit.vn/blog/du-no-cho-vay-cong-ty-chung-khoan-quy-3-2026-tcbs-dan-dau-54-740-ty-vpbanks-lan-dau-vuot-ssi-hsc-sat-tran-margin"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://pursuit.vn/blog/shb-quy-3-2026-lai-truoc-thue-cao-nhat-15-quy-nho-phi-dich-vu-gap-3-khoan-phai-thu-81-272-ty-vuot-von-chu-p-b-0-62x",
+      "https://pursuit.vn/blog/31-tuoi-nhung-da-chay-than-5-nam-ung-thu-giai-doan-cuoi-vi-ngay-nao-cung-an-1-mon-thit-van-nguoi-me-2026-11.html",
+      "https://pursuit.vn/blog/may-bay-dien-trung-quoc-thuc-hien-chuyen-bay-co-nguoi-lai-dau-tien-2026-11.html",
+      "https://pursuit.vn/blog/du-no-cho-vay-cong-ty-chung-khoan-quy-3-2026-tcbs-dan-dau-54-740-ty-vpbanks-lan-dau-vuot-ssi-hsc-sat-tran-margin"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

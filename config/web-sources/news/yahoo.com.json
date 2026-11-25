@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "siteName": "yahoo.com",
+  "siteId": "yahoo.com",
+  "registrableDomain": "yahoo.com",
+  "homepage": "https://www.yahoo.com/news/",
+  "allowedHosts": [
+    "www.yahoo.com",
+    "yahoo.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Trump says renewed attacks on Iran ‘highly unlikely’ if talks show progress",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:08.276Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.yahoo.com/news/politics/articles/trump-says-renewed-attacks-iran-172827786.html",
+      "https://www.yahoo.com/news/us/articles/pilot-navy-elite-blue-angels-200742704.html",
+      "https://www.yahoo.com/news/politics/articles/jeffries-says-democrats-not-trumps-192628126.html",
+      "https://www.yahoo.com/news/articles/1-dead-least-12-injured-212046133.html",
+      "https://www.yahoo.com/news/politics/articles/previously-unreported-votes-reverse-lead-191831170.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.yahoo.com/news/",
+    "categories": [
+      "https://www.yahoo.com/news/",
+      "https://www.yahoo.com/news/us/",
+      "https://www.yahoo.com/news/politics/",
+      "https://www.yahoo.com/election/",
+      "https://www.yahoo.com/news/science/",
+      "https://www.yahoo.com/news/world/",
+      "https://www.yahoo.com/news/weather-news/",
+      "https://www.yahoo.com/news/originals/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "yahoo.com",
+    "checkedAt": "2026-11-09T03:57:40.818Z",
+    "url": "https://www.yahoo.com/news/politics/articles/trump-says-renewed-attacks-iran-172827786.html",
+    "finalUrl": "https://www.yahoo.com/news/politics/articles/trump-says-renewed-attacks-iran-172827786.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5152,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "yahoo.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 24,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 24,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 373,
+        "passed": 21,
+        "distinctHashes": 21
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.yahoo.com/news/politics/articles/where-cindy-hyde-smith-nail-110015698.html",
+      "https://www.yahoo.com/news/us/articles/air-france-american-airlines-jets-222656767.html",
+      "https://www.yahoo.com/news/politics/articles/trump-meeting-qatari-pm-tells-215241988.html",
+      "https://www.yahoo.com/sports/mma/article/donald-trump-jokes-hes-devastated-after-dana-white-rules-out-white-house-press-secretary-role-015346461.html",
+      "https://www.yahoo.com/news/us/articles/ohio-state-suspends-fraternity-video-203756237.html",
+      "https://www.yahoo.com/news/politics/article/articles-of-impeachment-against-hegseth-introduced-in-the-house-as-gop-criticism-over-the-iran-war-mounts-after-midterm-rout-194929419.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:35.116Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/yahoo.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

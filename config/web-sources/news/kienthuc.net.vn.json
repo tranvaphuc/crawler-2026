@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kienthuc.net.vn",
+  "siteId": "kienthuc.net.vn",
+  "registrableDomain": "kienthuc.net.vn",
+  "homepage": "https://kienthuc.net.vn/",
+  "allowedHosts": [
+    "kienthuc.net.vn",
+    "www.kienthuc.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hà Nội cùng 25 địa phương khẩn trương ứng phó thiên tai",
+    "strategy": "selector",
+    "selector": ".article__title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Kho tri thức",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:27.626Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kienthuc.net.vn/cho-da-quy-o-ha-noi-khach-mang-kinh-lup-den-soi-di-san-hang-post1644538.html",
+      "https://kienthuc.net.vn/ha-noi-cung-25-dia-phuong-khan-truong-ung-pho-thien-tai-post1644506.html",
+      "https://kienthuc.net.vn/chuyen-gia-phap-ly-noi-ve-viec-pho-duc-nam-xin-duoc-ket-hon-trong-tu-post1644528.html",
+      "https://kienthuc.net.vn/thay-gi-tu-hien-tuong-giang-ho-mang-hiep-den-post1644393.html",
+      "https://kienthuc.net.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-post1644494.html",
+      "https://kienthuc.net.vn/chu-tich-quoc-hoi-tran-thanh-man-du-khanh-thanh-cong-trinh-tai-tan-trao-post1644505.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kienthuc.net.vn/",
+    "categories": [
+      "https://kienthuc.net.vn/nha-khoa-hoc/",
+      "https://kienthuc.net.vn/kien-thuc-can-biet/",
+      "https://kienthuc.net.vn/chinh-tri/",
+      "https://kienthuc.net.vn/xa-hoi/",
+      "https://kienthuc.net.vn/kinh-doanh/",
+      "https://kienthuc.net.vn/ban-doc/",
+      "https://kienthuc.net.vn/song-4-mau/",
+      "https://kienthuc.net.vn/kho-tri-thuc/",
+      "https://kienthuc.net.vn/quan-su/",
+      "https://kienthuc.net.vn/giai-tri/",
+      "https://kienthuc.net.vn/so-hoa/",
+      "https://kienthuc.net.vn/doanh-nghiep/",
+      "https://kienthuc.net.vn/photo/",
+      "https://kienthuc.net.vn/video/",
+      "https://kienthuc.net.vn/podcast/",
+      "https://kienthuc.net.vn/emagazine/",
+      "https://kienthuc.net.vn/nhin-thang-noi-that/",
+      "https://kienthuc.net.vn/cai-chinh/",
+      "https://kienthuc.net.vn/spotlight/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?kienthuc.net.vn/.*?/.*?(\\d{6,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kienthuc.net.vn",
+    "checkedAt": "2026-11-09T03:57:09.511Z",
+    "url": "https://kienthuc.net.vn/cho-da-quy-o-ha-noi-khach-mang-kinh-lup-den-soi-di-san-hang-post1644538.html",
+    "finalUrl": "https://kienthuc.net.vn/cho-da-quy-o-ha-noi-khach-mang-kinh-lup-den-soi-di-san-hang-post1644538.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2087,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kienthuc.net.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 42,
+    "checkedArticleUrls": 42,
+    "freshArticleChecks": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 42,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 19,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 377,
+        "passed": 31,
+        "distinctHashes": 31
+      },
+      {
+        "name": "longform",
+        "discovered": 24,
+        "passed": 8,
+        "distinctHashes": 8
+      },
+      {
+        "name": "video",
+        "discovered": 19,
+        "passed": 2,
+        "distinctHashes": 2
+      },
+      {
+        "name": "audio",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kienthuc.net.vn/dbqh-de-xuat-3-mui-nhon-phat-trien-cong-nghiep-van-hoa-viet-post1644951.html",
+      "https://kienthuc.net.vn/he-qua-tu-vu-ong-le-viet-cuong-thao-tung-co-phieu-bce-post1645021.html",
+      "https://kienthuc.net.vn/luat-phat-trien-cong-nghiep-van-hoa-thuc-day-ban-sac-viet-va-thuong-hieu-quoc-gia-post1645018.html",
+      "https://kienthuc.net.vn/trien-lam-quoc-tu-giam-thang-long-dua-950-nam-dao-hoc-den-gan-cong-chung-post1645019.html",
+      "https://kienthuc.net.vn/tu-hoi-an-den-nagasaki-dau-an-giao-thuong-viet-nhat-trong-lich-su-post1644900.html",
+      "https://kienthuc.net.vn/tp-hcm-dau-tu-hon-5100-ty-dong-cai-tao-rach-thu-duc-chong-ngap-post1644972.html",
+      "https://kienthuc.net.vn/du-lich-ngan-ngay-len-ngoi-buoc-chuyen-trong-tu-duy-tieu-dung-hien-dai-post1644967.html",
+      "https://kienthuc.net.vn/lien-hiep-hoi-viet-nam-tuyen-dung-7-vi-tri-han-nop-ho-so-30112026-post1645016.html",
+      "https://kienthuc.net.vn/nghe-an-trao-50-xe-dap-50-suat-qua-cho-hoc-sinh-kho-khan-post1644819.html",
+      "https://kienthuc.net.vn/son-la-hoi-thao-dinh-huong-chien-luoc-phat-trien-sam-post1644711.html",
+      "https://kienthuc.net.vn/bac-ninh-hoi-thao-chuyen-doi-so-co-hoi-thach-thuc-va-nhu-cau-nhan-luc-post1644708.html",
+      "https://kienthuc.net.vn/thanh-hoa-phat-huy-nguon-luc-tri-tue-cua-doi-ngu-tri-thuc-post1644707.html",
+      "https://kienthuc.net.vn/hon-100000-tre-sinh-non-moi-nam-cuu-song-tre-la-chua-du-post1644739.html",
+      "https://kienthuc.net.vn/canh-bao-bien-chung-benh-tri-khi-nao-can-di-kham-post1643532.html",
+      "https://kienthuc.net.vn/huong-dan-dieu-tri-tang-huyet-ap-toan-cau-2026-dieu-tri-som-kiem-soat-chat-post1644187.html",
+      "https://kienthuc.net.vn/buoc-tien-moi-trong-dieu-tri-tim-bam-sinh-o-tre-tai-ha-noi-post1644352.html",
+      "https://kienthuc.net.vn/uong-omega-3-dieu-tri-triglycerid-cao-de-bo-qua-nguyen-nhan-quan-trong-post1644190.html",
+      "https://kienthuc.net.vn/khoi-to-3-nguoi-thue-o-to-tu-lai-o-phu-tho-roi-mang-di-cam-co-post1644990.html",
+      "https://kienthuc.net.vn/ba-muc-danh-gia-moi-thuc-day-tieng-anh-thanh-ngon-ngu-thu-hai-post1644910.html",
+      "https://kienthuc.net.vn/mua-lu-gay-ngap-lut-sat-lo-nhieu-noi-o-quang-tri-va-tp-hue-post1644917.html",
+      "https://kienthuc.net.vn/ton-vinh-8-vi-tien-si-va-danh-nho-la-to-nghe-truyen-thong-tai-van-mieu-post1644873.html",
+      "https://kienthuc.net.vn/pha-nhieu-chuyen-an-lon-cong-an-tp-dong-nai-duoc-thuong-nong-post1645000.html",
+      "https://kienthuc.net.vn/sao-viet-chu-dong-nho-phap-luat-can-thiep-het-thoi-giu-im-lang-truoc-tin-gia-post1644884.html",
+      "https://kienthuc.net.vn/kham-pha-nui-kho-bau-gandzasar-bau-vat-nghin-nam-cua-nguoi-armenia-post1644880.html",
+      "https://kienthuc.net.vn/infographic-dan-nu-mc-cua-vtv-tai-sac-ven-toan-post1644866.html",
+      "https://kienthuc.net.vn/ong-le-truong-son-lam-truong-ban-to-chuc-thanh-uy-dong-nai-post1644955.html",
+      "https://kienthuc.net.vn/gallery-can-canh-mercedes-benz-g-class-do-doc-ban-gioi-han-chi-50-chiec-post1644979.html",
+      "https://kienthuc.net.vn/phat-nu-tai-xe-xe-ban-tai-vi-khong-nhuong-duong-cho-xe-uu-tien-post1644889.html",
+      "https://kienthuc.net.vn/vat-lieu-tu-pectin-va-cellulose-thuc-vat-phan-chieu-95-anh-sang-post1644773.html",
+      "https://kienthuc.net.vn/e-magazine-nha-tho-nguyen-le-hoa-tu-noi-dau-mat-ban-tay-toi-ha-noi-yeu-va-nho-post1644837.html",
+      "https://kienthuc.net.vn/kiem-soat-thuc-pham-nhap-khau-theo-nguy-co-nguoi-tieu-dung-duoc-loi-gi-post1644861.html",
+      "https://kienthuc.net.vn/gallery-do-tai-sac-hai-a-hau-hoa-hau-viet-nam-2026-post1644668.html",
+      "https://kienthuc.net.vn/hacker-dung-ai-mien-phi-nham-vao-ngan-hang-dong-nam-a-post1644747.html",
+      "https://kienthuc.net.vn/bi-an-chiec-nhan-da-xanh-tren-tay-thi-the-phu-nu-trong-mo-co-post1643474.html",
+      "https://kienthuc.net.vn/iphone-duo-co-100000-ung-dung-toi-uu-google-van-dung-ngoai-post1644702.html",
+      "https://kienthuc.net.vn/gallery-hyundai-tucson-blk-edition-made-in-viet-nam-xuat-uc-co-gi-dac-biet-post1644918.html",
+      "https://kienthuc.net.vn/dam-bui-vat-chat-he-lo-tan-tich-he-hanh-tinh-quanh-sao-lun-trang-post1644788.html",
+      "https://kienthuc.net.vn/mercedes-benz-trieu-hoi-215000-xe-sang-s-class-do-loi-ong-phanh-truoc-post1644879.html",
+      "https://kienthuc.net.vn/du-bao-thoi-tiet-1011-khong-khi-lanh-tang-cuong-bac-bo-ret-14-do-c-post1644862.html",
+      "https://kienthuc.net.vn/giai-cuu-thanh-cong-10-nguoi-dan-bi-nuoc-lu-co-lap-o-quang-tri-post1645053.html",
+      "https://kienthuc.net.vn/mua-lon-don-dap-2-ho-thuy-dien-o-hue-tang-xa-tran-post1645042.html",
+      "https://kienthuc.net.vn/danh-thue-dat-bo-hoang-dat-chua-xay-dung-o-muc-nao-moi-ap-thue-post1644857.html",
+      "https://kienthuc.net.vn/thi-truong-thanh-loc-bung-no-mo-ra-co-hoi-vang-cho-nganh-cham-soc-suc-khoe-post1644732.html",
+      "https://kienthuc.net.vn/thu-doan-thao-tung-co-phieu-bce-cua-ong-le-viet-cuong-post1644808.html",
+      "https://kienthuc.net.vn/dau-gia-dat-o-ninh-binh-len-gan-15-ty-dongm-dong-co-la-gi-post1644715.html",
+      "https://kienthuc.net.vn/dien-bien-11-lo-dat-trung-dau-gia-cao-bat-thuong-o-ninh-binh-co-lo-hon-14-tym2-post1644624.html",
+      "https://kienthuc.net.vn/chuyen-gia-phap-ly-noi-ve-viec-pho-duc-nam-xin-duoc-ket-hon-trong-tu-post1644528.html",
+      "https://kienthuc.net.vn/thay-gi-tu-hien-tuong-giang-ho-mang-hiep-den-post1644393.html",
+      "https://kienthuc.net.vn/nam-2026-gan-nhu-chac-chan-vuot-nguong-nong-len-15c-post1644777.html",
+      "https://kienthuc.net.vn/phu-nu-nghe-an-gop-suc-lan-toa-loi-song-xanh-post1644677.html",
+      "https://kienthuc.net.vn/cong-nghe-thuc-day-chuoi-gia-tri-nong-san-tai-le-hoi-trai-cay-bac-ninh-2026-post1644689.html",
+      "https://kienthuc.net.vn/ham-thuan-nam-tu-thi-tran-den-hot-vit-den-giac-mo-do-thi-post1644369.html",
+      "https://kienthuc.net.vn/khoi-to-vu-an-do-trai-phep-hon-261-tan-chat-thai-tai-bac-ninh-post1644353.html",
+      "https://kienthuc.net.vn/tu-vi-12-cung-hoang-dao-11112026-ma-ket-can-than-ganh-no-thay-nguoi-post1642660.html",
+      "https://kienthuc.net.vn/vi-sao-cu-buon-buc-la-lai-them-do-ngot-post1644783.html",
+      "https://kienthuc.net.vn/phap-cao-buoc-iran-tan-cong-mang-vao-he-thong-tu-lanh-cua-sieu-thi-post1645025.html",
+      "https://kienthuc.net.vn/infographic-ong-lula-da-silva-va-4-lan-dac-cu-tong-thong-brazil-post1644640.html",
+      "https://kienthuc.net.vn/dai-tuong-phan-van-giang-hoi-kien-bo-truong-bo-quoc-phong-nhat-ban-post1644816.html",
+      "https://kienthuc.net.vn/fujitsu-dua-cpu-monaka-2-nm-vao-cuoc-dua-ha-tang-ai-post1644643.html",
+      "https://kienthuc.net.vn/galaxy-ring-lan-dau-co-tinh-nang-nhan-dien-nguy-co-ngung-tho-khi-ngu-post1644621.html",
+      "https://kienthuc.net.vn/beachtro-tower-kien-tao-cuoc-song-dam-chat-dien-anh-giua-pho-bien-blanca-city-post1645041.html",
+      "https://kienthuc.net.vn/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-xanh-tai-lao-post1645044.html",
+      "https://kienthuc.net.vn/chua-het-han-nhan-bai-cuoc-thi-gui-tuong-lai-xanh-2050-mua-3-da-nhan-hon-10500-bai-du-thi-post1645050.html",
+      "https://kienthuc.net.vn/gia-canh-cua-hoa-hau-yen-trang-phuong-nghi-khanh-linh-post1644636.html",
+      "https://kienthuc.net.vn/qua-trinh-200000-usd-toi-tay-cuu-pho-chu-tich-thanh-hoa-quay-ve-bau-doan-post1637402.html",
+      "https://kienthuc.net.vn/cong-ty-dien-viet-nam-trung-thau-giam-sat-cai-tao-tram-bien-ap-cau-giay-post1644122.html",
+      "https://kienthuc.net.vn/ha-noi-cuong-che-di-doi-bai-vlxd-o-nhiem-o-an-khanh-post1637414.html",
+      "https://kienthuc.net.vn/ha-noi-dung-thu-3-the-gioi-ve-o-nhiem-khong-khi-aqi-cham-nguong-do-post1641761.html",
+      "https://kienthuc.net.vn/bo-y-te-yeu-cau-shopee-ngung-kinh-doanh-san-pham-sausando-slimming-capsule-post1639279.html",
+      "https://kienthuc.net.vn/bien-chung-nguy-hiem-sau-nhieu-nam-tiem-filler-khong-ro-nguon-goc-post1637945.html",
+      "https://kienthuc.net.vn/nha-khoa-hoc-vusta-news/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:50.019Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kienthuc.net.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

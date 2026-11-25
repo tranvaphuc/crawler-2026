@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "siteName": "msb.com.vn",
+  "siteId": "msb.com.vn",
+  "registrableDomain": "msb.com.vn",
+  "homepage": "https://www.msb.com.vn/",
+  "allowedHosts": [
+    "msb.com.vn",
+    "www.msb.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.msb.com.vn/",
+    "categories": [
+      "https://www.msb.com.vn/so-do-website/",
+      "https://www.msb.com.vn/ve-chung-toi/",
+      "https://www.msb.com.vn/khach-hang-ca-nhan/",
+      "https://www.msb.com.vn/m-first/",
+      "https://www.msb.com.vn/khach-hang-doanh-nghiep/",
+      "https://www.msb.com.vn/dinh-che-tai-chinh/",
+      "https://www.msb.com.vn/nha-dau-tu/",
+      "https://www.msb.com.vn/khach-hang-ca-nhan/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Chuyển đổi thuế nhẹ nhàng cùng “trợ lý số” từ MSB",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".msb_search_sp_card_date",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".msb-news-content.mt-24",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:19.790Z",
+    "frozenAt": "2026-11-16T01:59:15.496Z",
+    "trainingUrl": "https://www.msb.com.vn/chuyen-doi-thue-nhe-nhang-cung-tro-ly-so-tu-msb-1/",
+    "independentHoldouts": [
+      "https://www.msb.com.vn/ve-chung-toi/tin-tuc-va-su-kien/ve-msb/qr-global-thanh-toan-xuyen-bien-gioi-cung-msb",
+      "https://www.msb.com.vn/ve-chung-toi/tin-tuc-va-su-kien/huong-dan-dang-nhap-nen-tang-so-danh-cho-ca-nhan/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.msb.com.vn/chuyen-doi-thue-nhe-nhang-cung-tro-ly-so-tu-msb-1/",
+      "https://www.msb.com.vn/ve-chung-toi/tin-tuc-va-su-kien/ve-msb/qr-global-thanh-toan-xuyen-bien-gioi-cung-msb",
+      "https://www.msb.com.vn/ve-chung-toi/tin-tuc-va-su-kien/huong-dan-dang-nhap-nen-tang-so-danh-cho-ca-nhan/",
+      "https://www.msb.com.vn/ve-chung-toi/tin-tuc-va-su-kien/huong-dan-dang-nhap-nen-tang-so-danh-cho-doanh-nghiep/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tgs.vn",
+  "siteId": "tgs.vn",
+  "registrableDomain": "tgs.vn",
+  "homepage": "https://tgs.vn/",
+  "allowedHosts": [
+    "tgs.vn",
+    "www.tgs.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "HP toàn cầu bổ nhiệm “nữ tướng” mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#editor",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:41:54.443Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tgs.vn/dong-chay/hp-toan-cau-bo-nhiem-nu-tuong-moi/",
+      "https://tgs.vn/dong-chay/fpt-ai-factory-duoc-vinh-danh-tai-giai-thuong-tri-tue-nhan-tao-viet-nam-2026/",
+      "https://tgs.vn/dong-chay/viettel-va-ban-co-yeu-chinh-phu-ra-mat-chip-va-nen-tang-ban-dan-bao-mat-dau-tien-tai-viet-nam/",
+      "https://tgs.vn/dong-chay/gui-canh-bao-den-phu-huynh-giup-kip-thoi-ho-tro-thanh-thieu-nien-tren-nhieu-nen-tang/",
+      "https://tgs.vn/dong-chay/bosch-tga-mong-muon-mo-rong-hop-tac-phat-trien-nguon-nhan-luc-ky-thuat-chat-luong-cao-tai-viet-nam/",
+      "https://tgs.vn/dong-chay/trung-tam-an-toan-do-zalo-va-google-phoi-hop-thuc-hien-thu-hut-gan-130-nghin-luot-truy-cap/",
+      "https://tgs.vn/trai-nghiem/honor-watch-6-su-hien-dai-ben-bi-trong-mot-phong-cach-hoai-co/",
+      "https://tgs.vn/chuyen-doi-so/bosch-rexroth-mang-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-den-vimf-bac-ninh-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tgs.vn/",
+    "categories": [
+      "https://tgs.vn/dong-chay/",
+      "https://tgs.vn/trai-nghiem/",
+      "https://tgs.vn/chuyen-doi-so/",
+      "https://tgs.vn/doanh-nghiep/",
+      "https://tgs.vn/phong-cach-song/",
+      "https://tgs.vn/gia-dung/",
+      "https://tgs.vn/game/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?tgs.vn/.*?/(\\d{4,}).*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tgs.vn",
+    "checkedAt": "2026-11-09T03:57:28.673Z",
+    "url": "https://tgs.vn/dong-chay/hp-toan-cau-bo-nhiem-nu-tuong-moi/",
+    "finalUrl": "https://tgs.vn/dong-chay/hp-toan-cau-bo-nhiem-nu-tuong-moi/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2245,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "tgs.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 19,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 112,
+        "passed": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tgs.vn/dong-chay/doanh-nghiep-viet-can-gi-de-don-dong-von-moi-tao-chat-luong-dong-tien/",
+      "https://tgs.vn/dong-chay/honor-x6e-cau-hinh-manh-ben-bi-trong-phan-khuc-gia-pho-thong/",
+      "https://tgs.vn/dong-chay/hp-toan-cau-bo-nhiem-nu-tuong-moi/",
+      "https://tgs.vn/dong-chay/viettel-va-ban-co-yeu-chinh-phu-ra-mat-chip-va-nen-tang-ban-dan-bao-mat-dau-tien-tai-viet-nam/",
+      "https://tgs.vn/dong-chay/gui-canh-bao-den-phu-huynh-giup-kip-thoi-ho-tro-thanh-thieu-nien-tren-nhieu-nen-tang/",
+      "https://tgs.vn/dong-chay/ericsson-cong-bo-thiet-lap-nang-luc-rd-tai-viet-nam/",
+      "https://tgs.vn/phong-cach-song/trai-nghiem-ai-home-quan-tam-nguoi-dung-cua-samsung-trong-khong-gian-luu-tru-tai-kin-wander/",
+      "https://tgs.vn/game/vnggames-pha-vo-loi-mon-cach-choi-dong-game-slg-tai-viet-nam/",
+      "https://tgs.vn/uncategorized/vi-sao-chuyen-doi-so-khong-de-dang/",
+      "https://tgs.vn/dong-chay/may-tinh-luong-tu-se-den-som-hon-du-kien-la-ban-hay-thu/",
+      "https://tgs.vn/dong-chay/ma-doc-tong-tien-gia-tang-tan-cong-may-tinh-windows/",
+      "https://tgs.vn/trai-nghiem/trai-nghiem-xiaomi-watch-s4-thiet-ke-phong-cach-khoe-manh-gia-tot/",
+      "https://tgs.vn/dong-chay/visa-thau-hieu-de-tao-moi-gan-ket-moi-voi-khach-hang/",
+      "https://tgs.vn/trai-nghiem/honor-watch-6-su-hien-dai-ben-bi-trong-mot-phong-cach-hoai-co/",
+      "https://tgs.vn/chuyen-doi-so/bosch-rexroth-mang-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-den-vimf-bac-ninh-2026/",
+      "https://tgs.vn/dong-chay/fpt-ai-factory-duoc-vinh-danh-tai-giai-thuong-tri-tue-nhan-tao-viet-nam-2026/",
+      "https://tgs.vn/dong-chay/mo-rong-nganh-hang-viettel-distribution-chinh-thuc-phan-phoi-phu-kien-cong-nghe-mokin-tai-viet-nam/",
+      "https://tgs.vn/game/gam-thu-hao-huc-trai-nghiem-kiem-hiep-tinh-vng-vua-khai-mo-closed-beta-test-vao-ngay-06-11/",
+      "https://tgs.vn/chuyen-doi-so/zalo-duoc-vinh-danh-la-doanh-nghiep-ai-tieu-bieu-tai-ai-awards-2026/",
+      "https://tgs.vn/game/tam-quoc-chi-chien-ky-hut-game-thu-bang-nhung-tinh-nang-doc-dao/",
+      "https://tgs.vn/dong-chay/sis-technologies-vietnam-tro-thanh-nha-phan-phoi-cua-microsoft-tai-viet-nam/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:06.357Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tgs.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

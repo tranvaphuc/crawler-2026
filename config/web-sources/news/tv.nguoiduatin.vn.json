@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tv.nguoiduatin.vn",
+  "siteId": "tv.nguoiduatin.vn",
+  "registrableDomain": "nguoiduatin.vn",
+  "homepage": "https://tv.nguoiduatin.vn/",
+  "allowedHosts": [
+    "tv.nguoiduatin.vn",
+    "www.tv.nguoiduatin.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Công an phường Thượng Cát (Hà Nội): Quyết tâm xây dựng mô hình \"Cổng trường an toàn giao thông\"",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:50.609Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tv.nguoiduatin.vn/cong-an-phuong-thuong-cat-ha-noi-quyet-tam-xay-dung-mo-hinh-cong-truong-an-toan-giao-thong-p10839.html",
+      "https://tv.nguoiduatin.vn/cong-vien-le-thi-rieng-quy-tap-942-bo-hai-cot-liet-si-p10837.html",
+      "https://tv.nguoiduatin.vn/duong-hoa-dai-doan-ket-lan-toa-sac-xanh-tai-phuong-vung-tau-p10835.html",
+      "https://tv.nguoiduatin.vn/an-tuong-chung-ket-hoi-dien-van-nghe-chao-mung-30-nam-thanh-lap-truong-dai-hoc-kinh-doanh-va-cong-nghe-ha-noi-p10838.html",
+      "https://tv.nguoiduatin.vn/tphcm-phuong-binh-quoi-ra-quan-tuyen-truyen-phong-chong-ma-tuy-p10834.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tv.nguoiduatin.vn/",
+    "categories": [
+      "https://tv.nguoiduatin.vn/c/doi-song",
+      "https://tv.nguoiduatin.vn/c/phap-luat",
+      "https://tv.nguoiduatin.vn/c/nghien-cuu-trao-doi",
+      "https://tv.nguoiduatin.vn/c/nguoi-tot-viec-tot",
+      "https://tv.nguoiduatin.vn/c/hoat-dong-hoi-luat-gia",
+      "https://tv.nguoiduatin.vn/c/can-biet",
+      "https://tv.nguoiduatin.vn/c/dinhchinh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tv.nguoiduatin.vn",
+    "checkedAt": "2026-11-09T03:57:35.587Z",
+    "url": "https://tv.nguoiduatin.vn/cong-an-phuong-thuong-cat-ha-noi-quyet-tam-xay-dung-mo-hinh-cong-truong-an-toan-giao-thong-p10839.html",
+    "finalUrl": "https://tv.nguoiduatin.vn/cong-an-phuong-thuong-cat-ha-noi-quyet-tam-xay-dung-mo-hinh-cong-truong-an-toan-giao-thong-p10839.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4311,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tv.nguoiduatin.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 3,
+    "freshArticleChecks": 0,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 7,
+    "categoriesUnconfirmed": 7,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:35.017Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tv.nguoiduatin.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "nativeIdPattern": "-p(\\d+)\\.html?$",
+  "runtimeRepairRevision": "native-post-id-is-not-pagination-20261113",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.369Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://tv.nguoiduatin.vn/cong-an-cua-khau-cang-hang-khong-quoc-te-tan-son-nhat-trien-khai-de-an-1066-huong-den-cang-hang-khong-an-ninh-thong-minh-than-thien-p10840.html",
+      "https://tv.nguoiduatin.vn/ra-mat-cau-lac-bo-nha-kinh-te-hubt-chao-mung-30-nam-thanh-lap-khoa-p10841.html",
+      "https://tv.nguoiduatin.vn/khoa-triet-hoc-va-khoa-hoc-xa-hoi-hubt-30-nam-truong-thanh-va-huong-den-tuong-lai-p10842.html"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  }
+}

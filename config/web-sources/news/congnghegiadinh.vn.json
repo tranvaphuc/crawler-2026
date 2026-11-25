@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congnghegiadinh.vn",
+  "siteId": "congnghegiadinh.vn",
+  "registrableDomain": "congnghegiadinh.vn",
+  "homepage": "https://congnghegiadinh.vn/",
+  "allowedHosts": [
+    "congnghegiadinh.vn",
+    "www.congnghegiadinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congnghegiadinh.vn/",
+    "categories": [
+      "https://congnghegiadinh.vn/di-dong/",
+      "https://congnghegiadinh.vn/gia-dung/",
+      "https://congnghegiadinh.vn/xe/",
+      "https://congnghegiadinh.vn/review/",
+      "https://congnghegiadinh.vn/thi-truong/",
+      "https://congnghegiadinh.vn/",
+      "https://congnghegiadinh.vn/tin-tuc/",
+      "https://congnghegiadinh.vn/lifestyle/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.229Z",
+      "verifiedSeeds": [
+        "https://congnghegiadinh.vn/",
+        "https://congnghegiadinh.vn/tin-tuc/",
+        "https://congnghegiadinh.vn/di-dong/",
+        "https://congnghegiadinh.vn/gia-dung/",
+        "https://congnghegiadinh.vn/xe/",
+        "https://congnghegiadinh.vn/review/",
+        "https://congnghegiadinh.vn/thi-truong/",
+        "https://congnghegiadinh.vn/lifestyle/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "Kao Việt Nam kỷ niệm 30 năm hoạt động, công bố chương trình “Tăng cường chăm sóc y tế”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:59.408Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:53.568Z",
+    "independentHoldouts": [
+      "https://congnghegiadinh.vn/the-gioi-di-dong-mang-tram-tech-den-lang-dai-hoc-ra-mat-the-uni-pass-co-nhieu-uu-dai-cho-sinh-vien/",
+      "https://congnghegiadinh.vn/cu-hai-laptop-windows-cao-cap-ban-ra-tai-viet-nam-mot-chiec-la-asus-zenbook/",
+      "https://congnghegiadinh.vn/asus-trinh-lang-zenbook-14-moi-mong-nhe-chi-1-1kg-pin-den-30-gio/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congnghegiadinh.vn/kao-viet-nam-ky-niem-30-nam-hoat-dong-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te",
+      "https://congnghegiadinh.vn/the-gioi-di-dong-mang-tram-tech-den-lang-dai-hoc-ra-mat-the-uni-pass-co-nhieu-uu-dai-cho-sinh-vien/",
+      "https://congnghegiadinh.vn/cu-hai-laptop-windows-cao-cap-ban-ra-tai-viet-nam-mot-chiec-la-asus-zenbook/",
+      "https://congnghegiadinh.vn/asus-trinh-lang-zenbook-14-moi-mong-nhe-chi-1-1kg-pin-den-30-gio/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

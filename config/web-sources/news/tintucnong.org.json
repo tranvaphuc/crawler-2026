@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintucnong.org",
+  "siteId": "tintucnong.org",
+  "registrableDomain": "tintucnong.org",
+  "homepage": "https://tintucnong.org/",
+  "allowedHosts": [
+    "tintucnong.org",
+    "www.tintucnong.org"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Việt Nam có 1 tỷ phú từng làm nghề sửa ô tô thuê: Giờ đứng sau giải thưởng 50.000 USD ở Đường Lên Đỉnh Olympia",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:41.888Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://tintucnong.org/viet-nam-co-1-ty-phu-tung-lam-nghe-sua-o-to-thue-gio-dung-sau-giai-thuong-50000-usd-o-duong-len-dinh-olympia-1346.html",
+      "https://tintucnong.org/gia-vang-hom-nay-311-tiep-tuc-tang-sau-khi-roi-day-3-thang-1351.html",
+      "https://tintucnong.org/mien-bac-hung-nang-truoc-khi-don-khong-khi-lanh-1350.html",
+      "https://tintucnong.org/dieu-chua-biet-ve-nu-co-pho-20-tuoi-tu-nan-tren-may-bay-learjet-60-1349.html",
+      "https://tintucnong.org/o-noi-nguoi-dan-duoc-mua-vang-voi-gia-re-hon-gan-20-trieu-dong-bai-hoc-tu-phong-thi-nghiem-mo-cua-cua-trung-quoc-1348.html",
+      "https://tintucnong.org/viet-nam-co-1-ty-phu-tung-lam-nghe-sua-o-to-thue-gio-dung-sau-giai-thuong-50000-usd-o-duong-len-dinh-olympia-1346.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tintucnong.org/",
+    "categories": [
+      "https://tintucnong.org/tin-nong/",
+      "https://tintucnong.org/giai-tri/",
+      "https://tintucnong.org/cuoc-song/",
+      "https://tintucnong.org/suc-khoe/",
+      "https://tintucnong.org/tam-su/",
+      "https://tintucnong.org/nhip-song-tre/",
+      "https://tintucnong.org/du-lich/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tintucnong.org",
+    "checkedAt": "2026-11-09T03:57:34.407Z",
+    "url": "https://tintucnong.org/viet-nam-co-1-ty-phu-tung-lam-nghe-sua-o-to-thue-gio-dung-sau-giai-thuong-50000-usd-o-duong-len-dinh-olympia-1346.html",
+    "finalUrl": "https://tintucnong.org/viet-nam-co-1-ty-phu-tung-lam-nghe-sua-o-to-thue-gio-dung-sau-giai-thuong-50000-usd-o-duong-len-dinh-olympia-1346.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9532,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tintucnong.org",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 13,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 84,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tintucnong.org/viet-nam-co-1-ty-phu-tung-lam-nghe-sua-o-to-thue-gio-dung-sau-giai-thuong-50000-usd-o-duong-len-dinh-olympia-1346.html",
+      "https://tintucnong.org/gia-vang-hom-nay-311-tiep-tuc-tang-sau-khi-roi-day-3-thang-1351.html",
+      "https://tintucnong.org/mien-bac-hung-nang-truoc-khi-don-khong-khi-lanh-1350.html",
+      "https://tintucnong.org/dieu-chua-biet-ve-nu-co-pho-20-tuoi-tu-nan-tren-may-bay-learjet-60-1349.html",
+      "https://tintucnong.org/o-noi-nguoi-dan-duoc-mua-vang-voi-gia-re-hon-gan-20-trieu-dong-bai-hoc-tu-phong-thi-nghiem-mo-cua-cua-trung-quoc-1348.html",
+      "https://tintucnong.org/an-qua-hong-co-the-gay-tac-ruot-nhung-ai-can-dac-biet-than-trong-1347.html",
+      "https://tintucnong.org/tu-chuan-muc-quoc-te-den-nhip-song-thuc-te-dieu-gi-lam-nen-suc-song-cua-mot-trung-tam-do-thi-tai-khu-dong-1345.html",
+      "https://tintucnong.org/viet-nam-dang-lam-cong-trinh-tuong-phat-cao-81m-tac-thang-vao-vach-nui-se-vuot-trung-quoc-de-lap-ky-luc-the-gioi-1342.html",
+      "https://tintucnong.org/nu-streamer-noi-tieng-chuyen-mukbang-do-an-qua-doi-o-tuoi-24-he-lo-goc-khuat-phia-sau-nhung-video-an-uong-trieu-view-1343.html",
+      "https://tintucnong.org/T%E1%BB%AB%20chu%E1%BA%A9n%20m%E1%BB%B1c%20qu%E1%BB%91c%20t%E1%BA%BF%20%C4%91%E1%BA%BFn%20nh%E1%BB%8Bp%20s%E1%BB%91ng%20th%E1%BB%B1c%20t%E1%BA%BF:%20%C4%90i%E1%BB%81u%20g%C3%AC%20l%C3%A0m%20n%C3%AAn%20s%E1%BB%A9c%20s%E1%BB%91ng%20c%E1%BB%A7a%20m%E1%BB%99t%20trung%20t%C3%A2m%20%C4%91%C3%B4%20th%E1%BB%8B%20t%E1%BA%A1i%20khu%20%C4%90%C3%B4ng?-1344.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:28.645Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tintucnong.org/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

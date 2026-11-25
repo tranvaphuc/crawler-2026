@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "siteName": "trangcongnghe.com",
+  "siteId": "trangcongnghe.com",
+  "registrableDomain": "trangcongnghe.com",
+  "homepage": "https://trangcongnghe.com/",
+  "allowedHosts": [
+    "trangcongnghe.com",
+    "www.trangcongnghe.com"
+  ],
+  "timezone": null,
+  "languageScope": "RSS currently exposes English topics; Vietnamese homepage article dates not exposed",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Galaxy S24 series will feature LTPO, M13 displays with 2,500 nits of peak brightness",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "public_feed",
+    "feedUrl": "https://trangcongnghe.com/rss.xml",
+    "sourceKind": "public_feed",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".full_story",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:01:08.194Z",
+    "sampleCount": 11,
+    "passedSamples": 10,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://trangcongnghe.com/topics/mobile/18084-galaxy-s24-series-will-feature-ltpo-m13-displays-with-2500-nits-of-peak-brightness.html",
+      "https://trangcongnghe.com/topics/mobile/18082-apple-uses-snapdragon-x70-5g-modem-on-iphone-15-pro.html",
+      "https://trangcongnghe.com/news/18086-the-apple-m3-max-performed-matches-the-m2-ultra-in-geekbench.html",
+      "https://trangcongnghe.com/news/18083-samsungs-exynos-2400-and-snapdragon-8-gen-3-appears-on-geekbench.html",
+      "https://trangcongnghe.com/news/18081-android-14-lands-on-the-xiaomi-13-13-pro-and-12t.html",
+      "https://trangcongnghe.com/topics/mobile/18080-iphone-15-pro-max-with-periscope-lens-only-ranks-2nd-in-dxomarks-chart.html",
+      "https://trangcongnghe.com/topics/laptop-pc/18079-lg-unveils-gram-fold-laptop-with-foldable-oled-display-lgs-first-folding-screen-laptop.html",
+      "https://trangcongnghe.com/topics/mobile/18078-samsung-revealed-images-of-galaxy-s23-fe-tab-s9-fe-and-buds-fe.html",
+      "https://trangcongnghe.com/topics/mobile/18077-schematic-shows-galaxy-a05-with-a-dual-camera-a05s-with-triple-cam-and-nfc-chip.html",
+      "https://trangcongnghe.com/topics/mobile/18084-galaxy-s24-series-will-feature-ltpo-m13-displays-with-2500-nits-of-peak-brightness.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "stage": "parser_samples_passed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round4-http/sites/trangcongnghe.com"
+  },
+  "discovery": {
+    "homepage": "https://trangcongnghe.com/",
+    "categories": [
+      "https://trangcongnghe.com/lastnews",
+      "https://trangcongnghe.com/trending/",
+      "https://trangcongnghe.com/news/",
+      "https://trangcongnghe.com/best-pick/",
+      "https://trangcongnghe.com/reviews/",
+      "https://trangcongnghe.com/how-to/",
+      "https://trangcongnghe.com/news/globe-newswire/",
+      "https://trangcongnghe.com/news/pr-newswire/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?trangcongnghe.com/.*?(\\d{5,}-).*?(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "see baseline evidence"
+  },
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "sampleCount": 11,
+    "passedSamples": 10,
+    "independentSamples": 2,
+    "checkedAt": "2026-11-09T04:02:41.158Z"
+  },
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "trangcongnghe.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 3,
+    "checkedArticleUrls": 26,
+    "freshArticleChecks": 24,
+    "parserIssues": 21,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 3,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 9,
+    "categoriesUnconfirmed": 7,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 47,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://trangcongnghe.com/trending/18087-grizz-studio-debuts-thought-provoking-special-collections.html",
+      "https://trangcongnghe.com/news/18086-the-apple-m3-max-performed-matches-the-m2-ultra-in-geekbench.html",
+      "https://trangcongnghe.com/trending/18-top-5-best-anker-power-banks-with-advantages-and-just-a-defect.html",
+      "https://trangcongnghe.com/news/51-square-peg-leads-20m-round-of-vietnam-advanced-financial-firm.html",
+      "https://trangcongnghe.com/trending/24-price-review-and-comparison-top-5-energizer-power-banks-highly-recommended.html",
+      "https://trangcongnghe.com/news/49-vingroup-to-raise-15b-via-bond-issuance.html",
+      "https://trangcongnghe.com/trending/13-a-detailed-review-of-apple-watch-series-6-versions-and-colors-available.html",
+      "https://trangcongnghe.com/reviews/14-apple-watch-series-4-top-notch-design-premium-quality-unique-features-and-more.html",
+      "https://trangcongnghe.com/trending/15-apple-watch-series-1-the-most-sought-after-smartwatch-after-all.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 21
+    },
+    "checkedAt": "2026-11-10T09:17:31.400Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/trangcongnghe.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

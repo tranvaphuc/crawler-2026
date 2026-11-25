@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "siteName": "camnangdulich.vn",
+  "siteId": "camnangdulich.vn",
+  "registrableDomain": "camnangdulich.vn",
+  "homepage": "https://camnangdulich.vn/",
+  "allowedHosts": [
+    "camnangdulich.vn",
+    "www.camnangdulich.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:13.100Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://camnangdulich.vn/hlv-tan-cheng-hoe-tra-loi-hop-bao-sau-tran-thua-viet-nam.html",
+      "https://camnangdulich.vn/tuyen-viet-nam-bao-ve-ngoi-dau-sau-tran-thang-malaysia.html",
+      "https://camnangdulich.vn/tour-mien-bac-4n3d-hanh-trinh-ngan-kham-pha-tron-ven-ha-long-ninh-binh-ha-noi.html",
+      "https://camnangdulich.vn/tour-mien-bac-5n4d-hanh-trinh-doi-gio-duoc-nhieu-nguoi-chon-dip-he.html",
+      "https://camnangdulich.vn/tour-mien-bac-4n3d-van-don-vinh-ha-long-du-thuyen-starlight.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://camnangdulich.vn/",
+    "categories": [
+      "https://camnangdulich.vn/du-lich-trong-nuoc",
+      "https://camnangdulich.vn/du-lich-nuoc-ngoai",
+      "https://camnangdulich.vn/diem-den-du-lich",
+      "https://camnangdulich.vn/cam-nang-du-lich",
+      "https://camnangdulich.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.226Z",
+      "verifiedSeeds": [
+        "https://camnangdulich.vn/",
+        "https://camnangdulich.vn/du-lich-trong-nuoc",
+        "https://camnangdulich.vn/du-lich-nuoc-ngoai",
+        "https://camnangdulich.vn/diem-den-du-lich",
+        "https://camnangdulich.vn/cam-nang-du-lich"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "camnangdulich.vn",
+    "checkedAt": "2026-11-09T03:56:54.354Z",
+    "url": "https://camnangdulich.vn/hlv-tan-cheng-hoe-tra-loi-hop-bao-sau-tran-thua-viet-nam.html",
+    "finalUrl": "https://camnangdulich.vn/hlv-tan-cheng-hoe-tra-loi-hop-bao-sau-tran-thua-viet-nam.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 502,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "camnangdulich.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 113,
+        "passed": 16,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://camnangdulich.vn/tour-mien-bac-4n3d-hanh-trinh-ngan-kham-pha-tron-ven-ha-long-ninh-binh-ha-noi.html",
+      "https://camnangdulich.vn/tour-mien-bac-5n4d-hanh-trinh-doi-gio-duoc-nhieu-nguoi-chon-dip-he.html",
+      "https://camnangdulich.vn/tour-mien-bac-4n3d-van-don-vinh-ha-long-du-thuyen-starlight.html",
+      "https://camnangdulich.vn/review-tour-dong-bac-6n5d-ha-giang-dong-van-lung-cu-dep-va-dang-di-hon-minh-nghi.html",
+      "https://camnangdulich.vn/tour-mien-bac-4n3d-van-don-mong-cai-tra-co-yen-tu-hap-dan.html",
+      "https://camnangdulich.vn/hlv-tan-cheng-hoe-tra-loi-hop-bao-sau-tran-thua-viet-nam.html",
+      "https://camnangdulich.vn/tuyen-viet-nam-bao-ve-ngoi-dau-sau-tran-thang-malaysia.html",
+      "https://camnangdulich.vn/indonesia-0-4-uae-chu-nha-tam-len-ngoi-dau-bang-g.html",
+      "https://camnangdulich.vn/tuyen-viet-nam-1-1-malaysia-van-hau-mac-sai-lam.html",
+      "https://camnangdulich.vn/lan-ngoc-jack-vo-oa-khi-tien-linh-ghi-ban-thang.html",
+      "https://camnangdulich.vn/17-nuoc-cuoi-cung-covid-19-chua-lan-toi.html",
+      "https://camnangdulich.vn/do-xo-ra-bien-bat-chap-covid-19.html",
+      "https://camnangdulich.vn/du-lich-dong-nam-a-suy-sup.html",
+      "https://camnangdulich.vn/hon-dao-kien-khach-nhiem-ncov.html",
+      "https://camnangdulich.vn/thi-tran-tu-cach-ly-voi-the-gioi.html",
+      "https://camnangdulich.vn/nguoi-da-tiem-vaccine-se-chi-cach-ly-7-ngay-khi-den-hong-kong.html",
+      "https://camnangdulich.vn/nhung-cai-nhat-cua-malaysia.html",
+      "https://camnangdulich.vn/11-san-van-dong-to-chuc-euro-2020.html",
+      "https://camnangdulich.vn/7-su-that-thu-vi-cua-thanh-pho-khai-mac-euro-2020.html",
+      "https://camnangdulich.vn/10-thanh-pho-dang-song-nhat-the-gioi-nam-2021.html",
+      "https://camnangdulich.vn/vi-sao-khach-san-dat-chocolate-len-goi.html",
+      "https://camnangdulich.vn/loai-rau-rung-ngon-bo-re-o-mien-tay-duoc-menh-danh-la-than-duoc.html",
+      "https://camnangdulich.vn/vi-sao-khach-san-dat-chocolate-len-goi-khach-hang.html",
+      "https://camnangdulich.vn/choang-ngop-dam-sen-can-hon-10-000-chau-cua-chang-trai-que-lua.html",
+      "https://camnangdulich.vn/khiep-so-canh-nhieu-nguoi-an-tuoi-nuot-song-mon-dac-san-tron-ung-nhung-nhuc-cua-ben-tre.html",
+      "https://camnangdulich.vn/lang-mien-trung-co-cay-trai-quanh-nam-nhu-miet-vuon-nam-bo.html",
+      "https://camnangdulich.vn/le-cung-mua-dau-mua-cua-dan-toc-mnong-o-dak-lak.html",
+      "https://camnangdulich.vn/check-in-cuoi-tuan-com-ga-nuc-tieng-pho-hoi-vuon-dau-moc-chau.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:36.150Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/camnangdulich.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "nativePublicationAdapter": "url_bound_camnang_original_post",
+  "httpAdapter": "url_bound_public_wordpress_original_utc"
+}

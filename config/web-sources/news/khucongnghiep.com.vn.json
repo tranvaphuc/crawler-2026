@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "siteName": "khucongnghiep.com.vn",
+  "siteId": "khucongnghiep.com.vn",
+  "registrableDomain": "khucongnghiep.com.vn",
+  "homepage": "https://www.khucongnghiep.com.vn/",
+  "allowedHosts": [
+    "www.khucongnghiep.com.vn",
+    "khucongnghiep.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Top 10 cơ sở may đồng phục học sinh tại Sài Gòn uy tín, giá rẻ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:26.911Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.khucongnghiep.com.vn/top-xuong-may-dong-phuc-hoc-sinh/",
+      "https://www.khucongnghiep.com.vn/co-nen-ban-hang-tren-muamau-khong/",
+      "https://www.khucongnghiep.com.vn/gia-thue-xuong-kcn-nhon-trach-2/",
+      "https://www.khucongnghiep.com.vn/top-7-khu-cong-nghiep-lon-nhat-viet-nam/",
+      "https://www.khucongnghiep.com.vn/kcn-dat-cuoc-dia-diem-ly-tuong-thu-hut-dau-tu/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.khucongnghiep.com.vn/",
+    "categories": [
+      "https://www.khucongnghiep.com.vn/category/tin-tuc-su-kien/",
+      "https://www.khucongnghiep.com.vn/category/dinh-huong-chinh-sach/",
+      "https://www.khucongnghiep.com.vn/category/xuc-tien-dau-tu/",
+      "https://www.khucongnghiep.com.vn/category/kinh-nghiem/",
+      "https://www.khucongnghiep.com.vn/category/nghien-cuu/",
+      "https://www.khucongnghiep.com.vn/category/ket-noi-cung-cau/",
+      "http://khucongnghiep.com.vn/ve-chung-toi/",
+      "https://www.khucongnghiep.com.vn/category/tra-loi-ban-doc/",
+      "https://www.khucongnghiep.com.vn/lien-ket/",
+      "https://www.khucongnghiep.com.vn/so-do-trang/",
+      "https://www.khucongnghiep.com.vn/huong-dan-thanh-toan/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?khucongnghiep.com.vn/.*?/(\\d{4,})/(default|Default)(.aspx)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "khucongnghiep.com.vn",
+    "checkedAt": "2026-11-09T03:57:09.388Z",
+    "url": "https://www.khucongnghiep.com.vn/top-xuong-may-dong-phuc-hoc-sinh/",
+    "finalUrl": "https://www.khucongnghiep.com.vn/top-xuong-may-dong-phuc-hoc-sinh/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7972,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "khucongnghiep.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 14,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 68,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.khucongnghiep.com.vn/gia-thue-xuong-kcn-nhon-trach-2/",
+      "https://www.khucongnghiep.com.vn/top-7-khu-cong-nghiep-lon-nhat-viet-nam/",
+      "https://www.khucongnghiep.com.vn/kcn-dat-cuoc-dia-diem-ly-tuong-thu-hut-dau-tu/",
+      "https://www.khucongnghiep.com.vn/kcn-hoa-phu-tang-toc-phat-trien/",
+      "https://www.khucongnghiep.com.vn/phong-khach-co-man-hinh-led-chon-kich-thuoc-va-vi-tri-hop-ly/",
+      "https://www.khucongnghiep.com.vn/top-5-cong-ty-xay-dung-o-phu-nhuan-nen-tham-khao/",
+      "https://www.khucongnghiep.com.vn/xuat-khau-noi-that-sang-thi-truong-kho-tinh-chuan-dong-goi/",
+      "https://www.khucongnghiep.com.vn/kinh-nghiem-chon-cang-xuat-khau-gan-khu-cong-nghiep-toi-uu-logistics-van-chuyen-va-xuat-nhap-khau/",
+      "https://www.khucongnghiep.com.vn/noi-ban-ket-sat-tp-hcm-cach-chon-dung-cho-uy-tin/",
+      "https://www.khucongnghiep.com.vn/khu-cong-nghiep-nhon-trach-2/",
+      "https://www.khucongnghiep.com.vn/cac-kcn-bac-ninh-diem-sang-trong-thu-hut-dau-tu/",
+      "https://www.khucongnghiep.com.vn/cong-ty-tnhh-canon-viet-nam-chi-nhanh-que-vo-bac-ninh-luon-hoat-dong-vi-loi-ich-cong-dong/",
+      "https://www.khucongnghiep.com.vn/kcn-binh-vang-buoc-dau-khoi-sac-trong-thu-hut-dau-tu/",
+      "https://www.khucongnghiep.com.vn/kcn-binh-vang-ha-giang-them-du-an-di-vao-hoat-dong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 2,
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:15:48.479Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/khucongnghiep.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

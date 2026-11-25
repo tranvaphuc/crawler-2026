@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "siteName": "oto.com.vn",
+  "siteId": "oto.com.vn",
+  "registrableDomain": "oto.com.vn",
+  "homepage": "https://oto.com.vn/",
+  "allowedHosts": [
+    "oto.com.vn",
+    "www.oto.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://oto.com.vn/",
+    "categories": [
+      "https://oto.com.vn/mua-ban-xe",
+      "https://oto.com.vn/mua-ban-xe-toyota",
+      "https://oto.com.vn/mua-ban-xe-toyota-vios",
+      "https://oto.com.vn/mua-ban-xe-toyota-innova",
+      "https://oto.com.vn/mua-ban-xe-toyota-fortuner",
+      "https://oto.com.vn/mua-ban-xe-toyota-camry",
+      "https://oto.com.vn/mua-ban-xe-toyota-corolla-altis",
+      "https://oto.com.vn/mua-ban-xe-toyota-corolla-cross",
+      "https://oto.com.vn/mua-ban-xe-toyota-yaris",
+      "https://oto.com.vn/mua-ban-xe-toyota-wigo"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Destinator lần đầu được ưu đãi 100% trước bạ, nhiều mẫu xe Mitsubishi giảm chi phí lăn bánh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".box-detail-new",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:26.256Z",
+    "frozenAt": "2026-11-16T01:59:22.902Z",
+    "trainingUrl": "https://oto.com.vn/thi-truong-o-to/uu-dai-mitsubishi-thang-8-2026-articleid-1dw71h0",
+    "independentHoldouts": [
+      "https://oto.com.vn/bang-gia-xe-o-to-mitsubishi-xpander-moi-nhat",
+      "https://oto.com.vn/thi-truong-o-to/doanh-so-viet-thang-10-2026-articleid-dglvdp6"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://oto.com.vn/bang-gia-xe-o-to-mitsubishi-xpander-moi-nhat",
+      "https://oto.com.vn/thi-truong-o-to/uu-dai-mitsubishi-thang-8-2026-articleid-1dw71h0",
+      "https://oto.com.vn/thi-truong-o-to/doanh-so-viet-thang-10-2026-articleid-dglvdp6",
+      "https://oto.com.vn/thi-truong-o-to/uu-dai-xe-honda-city-thang-11-2026-articleid-6t58bqg",
+      "https://oto.com.vn/thi-truong-o-to/subaru-forester-hybrid-mo-ban-tai-viet-nam-articleid-fz4nckt",
+      "https://oto.com.vn/thi-truong-o-to/vinfast-vf5-va-vf6-moi-ra-mat-viet-nam-articleid-bz52whx"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

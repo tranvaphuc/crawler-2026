@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhdoanhtieudung.com",
+  "siteId": "kinhdoanhtieudung.com",
+  "registrableDomain": "kinhdoanhtieudung.com",
+  "homepage": "https://kinhdoanhtieudung.com/",
+  "allowedHosts": [
+    "kinhdoanhtieudung.com",
+    "www.kinhdoanhtieudung.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "TP. Hồ Chí Minh mở cơ chế ưu đãi để hút đầu tư vào kinh tế biển",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:28.945Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhdoanhtieudung.com/tp-ho-chi-minh-mo-co-che-uu-dai-de-hut-dau-tu-vao-kinh-te-bien/",
+      "https://kinhdoanhtieudung.com/dong-von-dau-tu-ban-dan-do-ve-viet-nam-hap-dan-cac-ong-lon-cong-nghe/",
+      "https://kinhdoanhtieudung.com/tai-tu-johnny-depp-duoc-dao-dien-ti-west-khang-dinh-la-linh-hon-cua-ebenezer-phep-mau-dem-giang-sinh/",
+      "https://kinhdoanhtieudung.com/vuong-binh-da-lab-do-bo-pepero-unitour-cung-gen-z-show-your-love-truoc-them-pop-up-store-11-11/",
+      "https://kinhdoanhtieudung.com/giam-gia-dien-giam-thue-xang-gop-phan-kiem-che-ap-luc-lam-phat-cuoi-nam/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhdoanhtieudung.com/",
+    "categories": [
+      "https://kinhdoanhtieudung.com/category/kinh-te/",
+      "https://kinhdoanhtieudung.com/category/thi-truong/",
+      "https://kinhdoanhtieudung.com/category/doanh-nghiep/",
+      "https://kinhdoanhtieudung.com/category/kinh-doanh/",
+      "https://kinhdoanhtieudung.com/category/bat-dong-san/",
+      "https://kinhdoanhtieudung.com/category/tieu-dung/",
+      "https://kinhdoanhtieudung.com/category/cong-nghe/",
+      "https://kinhdoanhtieudung.com/category/giai-tri/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhdoanhtieudung.com",
+    "checkedAt": "2026-11-09T03:57:09.731Z",
+    "url": "https://kinhdoanhtieudung.com/tp-ho-chi-minh-mo-co-che-uu-dai-de-hut-dau-tu-vao-kinh-te-bien/",
+    "finalUrl": "https://kinhdoanhtieudung.com/tp-ho-chi-minh-mo-co-che-uu-dai-de-hut-dau-tu-vao-kinh-te-bien/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6919,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:34.069Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhdoanhtieudung.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhdoanhtieudung.com",
+    "parsedArticles": 10,
+    "distinctHashes": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 78,
+    "checkedArticleUrls": 10,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 78,
+        "attempted": 10,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

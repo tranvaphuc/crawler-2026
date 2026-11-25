@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioikinhdoanh.vn",
+  "siteId": "thegioikinhdoanh.vn",
+  "registrableDomain": "thegioikinhdoanh.vn",
+  "homepage": "https://thegioikinhdoanh.vn/",
+  "allowedHosts": [
+    "thegioikinhdoanh.vn",
+    "www.thegioikinhdoanh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Sữa công thức trẻ em Vinamilk Optimum Gold được vinh danh thương hiệu của năm tại Lễ trao giải Thương hiệu thế giới 2026 - 2027",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:48.467Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://thegioikinhdoanh.vn/doanh-nghiep/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/cao-bang-chan-chinh-tiep-cong-dan-tu-co-so-tham-muu-che-do-boi-duong.html",
+      "https://thegioikinhdoanh.vn/dau-tu/tp.-ho-chi-minh-moi-goi-dau-tu-cong-vien-hon-456-ha-tai-cu-chi-cung-loat-du-an-lon.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/cuc-x-hoan-thanh-dung-han-100-nhiem-vu-khong-de-cong-viec-ton-dong.html",
+      "https://thegioikinhdoanh.vn/doanh-nghiep/dien-dan-hop-tac-kinh-te-thuong-mai-viet-nam-eu-lan-thu-9-khang-dinh-tam-nhin-doi-tac-chien-luoc-toan-dien..html",
+      "https://thegioikinhdoanh.vn/doanh-nghiep/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026.html",
+      "https://thegioikinhdoanh.vn/doanh-nghiep/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioikinhdoanh.vn/",
+    "categories": [
+      "https://thegioikinhdoanh.vn/thong-tin-247",
+      "https://thegioikinhdoanh.vn/hi-tech",
+      "https://thegioikinhdoanh.vn/o-to-xe-may",
+      "https://thegioikinhdoanh.vn/tai-chinh-ngan-hang",
+      "https://thegioikinhdoanh.vn/dau-tu",
+      "https://thegioikinhdoanh.vn/doanh-nghiep",
+      "https://thegioikinhdoanh.vn/media",
+      "https://thegioikinhdoanh.vn/kinh-doanh",
+      "https://thegioikinhdoanh.vn/tieu-dung",
+      "https://thegioikinhdoanh.vn/tiep-thi",
+      "https://thegioikinhdoanh.vn/thong-tin-247/trong-nuoc",
+      "https://thegioikinhdoanh.vn/thong-tin-247/quoc-te",
+      "https://thegioikinhdoanh.vn/trai-dat-xanh?isFeatured=1",
+      "https://thegioikinhdoanh.vn/emagazine",
+      "https://thegioikinhdoanh.vn/tai-chinh-ngan-hang/ngan-hang",
+      "https://thegioikinhdoanh.vn/tai-chinh-ngan-hang/tien-te",
+      "https://thegioikinhdoanh.vn/kinh-doanh/chinh-sach-phap-luat",
+      "https://thegioikinhdoanh.vn/kinh-doanh/chung-khoan",
+      "https://thegioikinhdoanh.vn/kinh-doanh/bat-dong-san",
+      "https://thegioikinhdoanh.vn/ocop?isFeatured=1",
+      "https://thegioikinhdoanh.vn/thong-tin-247/video",
+      "https://thegioikinhdoanh.vn/star",
+      "https://thegioikinhdoanh.vn/kinh-doanh/video",
+      "https://thegioikinhdoanh.vn/doanh-nghiep/video-doanh-nghiep",
+      "https://thegioikinhdoanh.vn/hi-tech/video-hi-tech",
+      "https://thegioikinhdoanh.vn/tai-chinh-ngan-hang/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioikinhdoanh.vn",
+    "checkedAt": "2026-11-09T03:57:29.884Z",
+    "url": "https://thegioikinhdoanh.vn/doanh-nghiep/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026.html",
+    "finalUrl": "https://thegioikinhdoanh.vn/doanh-nghiep/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8248,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thegioikinhdoanh.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 25,
+    "freshArticleChecks": 19,
+    "parserIssues": 12,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 36,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 255,
+        "passed": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "longform",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 5,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thegioikinhdoanh.vn/doanh-nghiep/vietjet-mo-rong-cau-noi-viet-nam-nhat-ban-voi-duong-bay-moi-da-nang-osaka-gop-phan-thuc-day-nam-hop-tac-du-lich-2027-202.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/bo-truong-bo-van-hoa-the-thao-va-du-lich-giai-trinh-du-an-sua-7-luat-linh-vuc-van-hoa.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/benh-vien-quan-y-7-to-chuc-hoi-nghi-cong-tac-tuyen-nam-2026.html",
+      "https://thegioikinhdoanh.vn/doanh-nghiep/xuat-khau-nong-lam-thuy-san-dat-hon-63-ty-usd-trong-10-thang-nam-2026.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/phan-loai-rac-trach-nhiem-khong-chi-tu-nguoi-dan.html",
+      "https://thegioikinhdoanh.vn/thong-tin-247/cop31-bien-cam-ket-thanh-hanh-dong.html",
+      "https://thegioikinhdoanh.vn/dau-tu/tao-nen-tang-don-dong-von-fdi-chat-luong-cao.html",
+      "https://thegioikinhdoanh.vn/o-to-xe-may/di-xa-bang-o-to-dien-vinfast-chu-xe-yen-tam-nho-tram-sac-phu-rong-va-dich-vu-24-7.html?categoryId=1642174",
+      "https://thegioikinhdoanh.vn/o-to-xe-may/vinfast-vf-mpv-7-nhieu-cong-nghe-ho-tro-nguoi-lai-hanh-khach-cung-yen-tam.html?categoryId=1642174",
+      "https://thegioikinhdoanh.vn/o-to-xe-may/chu-xe-vinfast-chia-se-trai-nghiem-sau-hang-chuc-nghin-kilomet-su-dung.html?categoryId=1642174",
+      "https://thegioikinhdoanh.vn/tiep-thi/khai-mo-tiem-nang-thi-truong-du-lich-halal.html",
+      "https://thegioikinhdoanh.vn/tiep-thi/hoi-cho-videx-cambodia-2026-day-manh-giao-thuong-ket-noi-thuong-mai-viet-nam-campuchia.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/quang-ba-san-pham-lang-nghe-thuc-day-lien-ket-voi-du-lich-nong-thon.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/dien-bien-quang-ba-san-pham-mac-ca-tren-cac-chuyen-bay-cua-vietnam-airlines-.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/khai-mac-hoi-cho-cong-thuong-khu-vuc-phia-bac-bac-ninh-2026.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/da-nang-ket-noi-cung-cau-dua-hang-viet-chat-luong-cao-ve-mien-nui.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/nong-san-muong-ang-nang-gia-tri-mo-rong-thi-truong-tieu-thu.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/dac-san-cao-bang-xuong-pho-trang-tien.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/nang-tam-gia-tri-nong-san-viet-trong-chuoi-cung-ung-toan-cau.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/le-hoi-sau-rieng-dak-lak-nam-2026-thanh-cong-ruc-ro-khang-dinh-vi-the-nong-san-viet.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/khai-mac-hoi-cho-cong-thuong-vung-bac-trung-bo-tai-nghe-an-nam-2026.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/tiep-thi/be-phong-giao-thuong-nang-tam-san-pham-dia-phuong-tu-hoi-cho-lon.html?categoryId=1642167",
+      "https://thegioikinhdoanh.vn/nangluong-cuocsong/phat-dong-thi-dua-120-ngay-dem-hoan-thanh-cac-moc-thi-cong-trong-diem-du-an-phat-trien-mo-khi-lo-b.html",
+      "https://thegioikinhdoanh.vn/nangluong-cuocsong/su-a-do-i-luat-dau-khi-de-cung-co-chuoi-cung-ung-nang-luong-quoc-gia.html",
+      "https://thegioikinhdoanh.vn/nangluong-cuocsong/cong-doan-pvfcco-phu-my-tao-dong-luc-tu-cham-lo-nguoi-lao-dong-va-doi-moi-sang-tao.html",
+      "https://thegioikinhdoanh.vn/nangluong-cuocsong/petrovietnam-thoai-von-tai-pvcombank-tai-phan-bo-nguon-luc-tap-trung-vao-nhung-linh-vuc-cot-loi.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3,
+      "selector_or_layout_mismatch": 8,
+      "content_integrity_review": 1
+    },
+    "checkedAt": "2026-11-10T09:17:12.588Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thegioikinhdoanh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

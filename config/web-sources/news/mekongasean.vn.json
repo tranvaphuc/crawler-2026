@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mekongasean.vn",
+  "siteId": "mekongasean.vn",
+  "registrableDomain": "mekongasean.vn",
+  "homepage": "https://mekongasean.vn/",
+  "allowedHosts": [
+    "mekongasean.vn",
+    "www.mekongasean.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "native_self_jsonld"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".mekong-detail-grid.mt-40",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:41.541Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://mekongasean.vn/ngan-hang-nao-chi-binh-quan-hon-65-trieu-dongthang-cho-moi-nhan-vien-61595.html",
+      "https://mekongasean.vn/de-xuat-phat-trien-to-hop-du-lich-bien-hoat-dong-247-61592.html",
+      "https://mekongasean.vn/tong-bi-thu-chu-tich-nuoc-to-lam-bat-dau-tham-nhat-ban-61607.html",
+      "https://mekongasean.vn/xuat-nhap-khau-khoi-sac-doanh-nghiep-cang-bien-don-mua-kinh-doanh-thuan-loi-61605.html",
+      "https://mekongasean.vn/ssi-research-gdp-quy-4-co-the-tang-khoang-105-61600.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://mekongasean.vn/",
+    "categories": [
+      "https://mekongasean.vn/data/bao-cao-tai-chinh",
+      "https://mekongasean.vn/doanh-nghiep",
+      "https://mekongasean.vn/doanh-nghiep/chan-dung-doanh-nghiep",
+      "https://mekongasean.vn/doanh-nghiep/ho-so-doanh-nghiep",
+      "https://mekongasean.vn/doanh-nghiep/cau-chuyen-thuong-truong",
+      "https://mekongasean.vn/doanh-nghiep/doanh-nhan",
+      "https://mekongasean.vn/doanh-nghiep/m-a",
+      "https://mekongasean.vn/thuong-truong-asean",
+      "https://mekongasean.vn/thuong-truong-asean/nong-nghiep",
+      "https://mekongasean.vn/thuong-truong-asean/du-lich-hang-khong",
+      "https://mekongasean.vn/thuong-truong-asean/bat-dong-san-ha-tang",
+      "https://mekongasean.vn/thuong-truong-asean/duoc-pham",
+      "https://mekongasean.vn/thuong-truong-asean/logistics",
+      "https://mekongasean.vn/thuong-truong-asean/xuat-nhap-khau",
+      "https://mekongasean.vn/thuong-truong-asean/nang-luong-khoang-san",
+      "https://mekongasean.vn/thuong-truong-asean/lao-dong-viec-lam",
+      "https://mekongasean.vn/dien-dan-dau-tu",
+      "https://mekongasean.vn/dien-dan-dau-tu/chung-khoan",
+      "https://mekongasean.vn/dien-dan-dau-tu/ngan-hang",
+      "https://mekongasean.vn/dien-dan-dau-tu/tai-chinh",
+      "https://mekongasean.vn/dien-dan-dau-tu/thue",
+      "https://mekongasean.vn/kinh-te-khu-vuc",
+      "https://mekongasean.vn/kinh-te-khu-vuc/hop-tac",
+      "https://mekongasean.vn/kinh-te-khu-vuc/dien-dan-asean",
+      "https://mekongasean.vn/kinh-te-khu-vuc/co-hoi-thi-truong",
+      "https://mekongasean.vn/kinh-te-khu-vuc/giao-thuong",
+      "https://mekongasean.vn/kinh-te-khu-vuc/the-gioi",
+      "https://mekongasean.vn/kinh-te-khu-vuc/dau-tu",
+      "https://mekongasean.vn/kinh-te-so",
+      "https://mekongasean.vn/kinh-te-so/cuoc-song-so",
+      "https://mekongasean.vn/kinh-te-so/tai-chinh-so",
+      "https://mekongasean.vn/kinh-te-so/xu-huong",
+      "https://mekongasean.vn/kinh-te-so/chinh-phu-so",
+      "https://mekongasean.vn/sac-mau-asean",
+      "https://mekongasean.vn/sac-mau-asean/van-hoa",
+      "https://mekongasean.vn/sac-mau-asean/giao-luu",
+      "https://mekongasean.vn/sac-mau-asean/am-thuc",
+      "https://mekongasean.vn/data",
+      "https://mekongasean.vn/data/tong-quan",
+      "https://mekongasean.vn/data/nghien-cuu-thi-truong",
+      "https://mekongasean.vn/data/thong-tin-cong-bo",
+      "https://mekongasean.vn/data/infographic"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "mekongasean.vn",
+    "checkedAt": "2026-11-09T03:57:14.626Z",
+    "url": "https://mekongasean.vn/ngan-hang-nao-chi-binh-quan-hon-65-trieu-dongthang-cho-moi-nhan-vien-61595.html",
+    "finalUrl": "https://mekongasean.vn/ngan-hang-nao-chi-binh-quan-hon-65-trieu-dongthang-cho-moi-nhan-vien-61595.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4945,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "mekongasean.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "deep_samples_verified",
+    "parsedArticles": 48,
+    "checkedArticleUrls": 48,
+    "freshArticleChecks": 37,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 48,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 42,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1353,
+        "passed": 48,
+        "distinctHashes": 48
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:11:28.591Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/mekongasean.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/mekongasean.vn.json",
+    "configBeforeSha256": "b1f510148cee989c150a59e18bee23e2d48ac2295b7404b65f36af614c77babc",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "native_self_jsonld"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".__MASTERCMS_CONTENT"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T08:08:01.313Z",
+        "holdoutUrls": [
+          "https://mekongasean.vn/mwg-va-cong-thuc-tang-truong-moi-61342.html",
+          "https://mekongasean.vn/cuc-tang-truong-moi-mo-khong-gian-noi-dong-luc-61384.html"
+        ]
+      }
+    }
+  ],
+  "nativeTitleValidation": {
+    "reason": "Use the Article headline for this exact URL instead of a related-story title",
+    "holdoutUrls": [
+      "https://mekongasean.vn/mwg-va-cong-thuc-tang-truong-moi-61342.html",
+      "https://mekongasean.vn/cuc-tang-truong-moi-mo-khong-gian-noi-dong-luc-61384.html"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "siteName": "suckhoevasacdep.com.vn",
+  "siteId": "suckhoevasacdep.com.vn",
+  "registrableDomain": "suckhoevasacdep.com.vn",
+  "homepage": "https://suckhoevasacdep.com.vn/",
+  "allowedHosts": [
+    "suckhoevasacdep.com.vn",
+    "www.suckhoevasacdep.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://suckhoevasacdep.com.vn/",
+    "categories": [
+      "https://suckhoevasacdep.com.vn/gop-y",
+      "https://suckhoevasacdep.com.vn/c/tin-tuc",
+      "https://suckhoevasacdep.com.vn/c/suc-khoe",
+      "https://suckhoevasacdep.com.vn/c/thuoc",
+      "https://suckhoevasacdep.com.vn/c/lam-dep",
+      "https://suckhoevasacdep.com.vn/c/tham-my-vien"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "PGS.TS Nguyễn Duy Thịnh: “Giải thích thịt đưa vào trường mầm non bở nhũn do lợn bị stress là nói liều và bao biện”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:20.860Z",
+    "frozenAt": "2026-11-16T01:59:17.314Z",
+    "trainingUrl": "https://suckhoevasacdep.com.vn/pgsts-nguyen-duy-thinh-giai-thich-thit-dua-vao-truong-mam-non-bo-nhun-do-lon-bi-stress-la-noi-lieu-va-bao-bien-12621.html",
+    "independentHoldouts": [
+      "https://suckhoevasacdep.com.vn/cong-nghe-doi-moi-sang-tao-cho-phep-hien-dai-hoa-nganh-thuoc-la-theo-huong-giam-tac-hai-11309.html",
+      "https://suckhoevasacdep.com.vn/philip-morris-international-mong-muon-dong-gop-vao-hanh-trinh-tang-truong-va-doi-moi-sang-tao-cua-viet-nam-11685.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://suckhoevasacdep.com.vn/pgsts-nguyen-duy-thinh-giai-thich-thit-dua-vao-truong-mam-non-bo-nhun-do-lon-bi-stress-la-noi-lieu-va-bao-bien-12621.html",
+      "https://suckhoevasacdep.com.vn/cong-nghe-doi-moi-sang-tao-cho-phep-hien-dai-hoa-nganh-thuoc-la-theo-huong-giam-tac-hai-11309.html",
+      "https://suckhoevasacdep.com.vn/philip-morris-international-mong-muon-dong-gop-vao-hanh-trinh-tang-truong-va-doi-moi-sang-tao-cua-viet-nam-11685.html",
+      "https://suckhoevasacdep.com.vn/cac-quoc-gia-duy-tri-nghien-cuu-khoa-hoc-de-cap-nhat-chinh-sach-ve-san-pham-khong-khoi-11954.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

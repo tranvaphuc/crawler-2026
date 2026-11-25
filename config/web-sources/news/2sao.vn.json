@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "siteName": "2sao.vn",
+  "siteId": "2sao.vn",
+  "registrableDomain": "2sao.vn",
+  "homepage": "https://2sao.vn/",
+  "allowedHosts": [
+    "2sao.vn",
+    "www.2sao.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nửa cuối tháng 11 dương lịch, 3 con giáp biến nghèo thành giàu, trở nên phú quý, giàu sang khiến nhiều người ngưỡng mộ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".bread-crumb-detail__time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:44.624Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://2sao.vn/nua-cuoi-thang-11-duong-lich-3-con-giap-bien-ngheo-thanh-giau-tro-nen-phu-quy-5137715.html",
+      "https://2sao.vn/tai-sao-ronaldo-luon-mac-ao-dai-tay-khi-thi-dau-5137707.html",
+      "https://2sao.vn/ky-duyen-dang-anh-cuoi-bao-tin-vui-5137718.html",
+      "https://2sao.vn/em-be-ha-noi-nsnd-lan-huong-tuoi-u70-vang-bong-man-anh-chon-cuoc-song-binh-yen-5137721.html",
+      "https://2sao.vn/nhan-sac-doi-thuong-cua-tan-hoa-hau-viet-nam-2026-nguyen-yen-trang-5137708.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://2sao.vn/",
+    "categories": [
+      "https://2sao.vn/tin-moi",
+      "https://2sao.vn/showbiz",
+      "https://2sao.vn/phim",
+      "https://2sao.vn/sao",
+      "https://2sao.vn/nhac",
+      "https://2sao.vn/dep",
+      "https://2sao.vn/doi-song",
+      "https://2sao.vn/xa-hoi",
+      "https://2sao.vn/mat-ngu",
+      "https://2sao.vn/sanh"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?2sao.vn/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "2sao.vn",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://2sao.vn/nua-cuoi-thang-11-duong-lich-3-con-giap-bien-ngheo-thanh-giau-tro-nen-phu-quy-5137715.html",
+    "finalUrl": "https://2sao.vn/nua-cuoi-thang-11-duong-lich-3-con-giap-bien-ngheo-thanh-giau-tro-nen-phu-quy-5137715.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2930,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "2sao.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 21,
+    "checkedArticleUrls": 22,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 21,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 242,
+        "passed": 21,
+        "distinctHashes": 21
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://2sao.vn/mc-huyen-chau-tung-la-guong-mat-noi-tieng-vtv-nghi-viec-sau-16-nam-5137995.html",
+      "https://2sao.vn/cherry-an-nhien-9-tuoi-duoc-ong-lon-xu-han-de-mat-mua-dien-thoai-81-trieu-cho-me-5137982.html",
+      "https://2sao.vn/vo-tuan-hung-phan-phao-tin-don-voi-duy-manh-buc-xuc-vi-gia-dinh-bi-anh-huong-5138069.html",
+      "https://2sao.vn/van-mai-huong-2004-toc-tien-1999-trend-gioi-thieu-ban-than-bang-1-buc-anh-5138037.html",
+      "https://2sao.vn/song-ji-hyo-tuoi-45-nhan-sac-mat-moc-gay-bat-ngo-5138038.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:48.973Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/2sao.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "2sao.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

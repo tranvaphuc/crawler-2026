@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bizreal.vn",
+  "siteId": "bizreal.vn",
+  "registrableDomain": "bizreal.vn",
+  "homepage": "https://bizreal.vn/",
+  "allowedHosts": [
+    "bizreal.vn",
+    "www.bizreal.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Năm 2026 sẽ hoàn thành hơn 87.600 căn nhà ở xã hội",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:03.867Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://bizreal.vn/nam-2026-se-hoan-thanh-hon-87-600-can-nha-o-xa-hoi-50186.html",
+      "https://bizreal.vn/cam-chuyen-nhuong-nha-tren-giay-gay-kho-khan-cho-nguoi-mua-va-ca-chu-dau-tu-50184.html",
+      "https://bizreal.vn/kho-giam-gia-niem-yet-doanh-nghiep-dia-oc-xoay-so-the-nao-de-kich-cau-50182.html",
+      "https://bizreal.vn/gia-nha-giam-tai-sao-nguoi-dan-van-kho-tiep-can-50178.html",
+      "https://bizreal.vn/lai-suat-tang-cao-gan-20-vay-mua-nha-bao-nhieu-de-an-toan-50167.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bizreal.vn/",
+    "categories": [
+      "https://bizreal.vn/category/kinh-te",
+      "https://bizreal.vn/category/cong-nghe"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bizreal.vn",
+    "checkedAt": "2026-11-09T03:56:52.278Z",
+    "url": "https://bizreal.vn/nam-2026-se-hoan-thanh-hon-87-600-can-nha-o-xa-hoi-50186.html",
+    "finalUrl": "https://bizreal.vn/nam-2026-se-hoan-thanh-hon-87-600-can-nha-o-xa-hoi-50186.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3561,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "bizreal.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 12,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 32,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://bizreal.vn/nam-2026-se-hoan-thanh-hon-87-600-can-nha-o-xa-hoi-50186.html",
+      "https://bizreal.vn/cam-chuyen-nhuong-nha-tren-giay-gay-kho-khan-cho-nguoi-mua-va-ca-chu-dau-tu-50184.html",
+      "https://bizreal.vn/kho-giam-gia-niem-yet-doanh-nghiep-dia-oc-xoay-so-the-nao-de-kich-cau-50182.html",
+      "https://bizreal.vn/gia-nha-giam-tai-sao-nguoi-dan-van-kho-tiep-can-50178.html",
+      "https://bizreal.vn/lai-suat-tang-cao-gan-20-vay-mua-nha-bao-nhieu-de-an-toan-50167.html",
+      "https://bizreal.vn/bi-kich-nha-dau-tu-om-chung-cu-cu-ban-thi-lo-giu-thi-lom-50165.html",
+      "https://bizreal.vn/de-xuat-giu-5-tien-mua-nha-hinh-thanh-trong-tuong-lai-tai-ngan-hang-den-khi-co-so-hong-49999.html",
+      "https://bizreal.vn/dong-tien-dau-tu-bat-dong-san-dang-chay-vao-dau-49996.html",
+      "https://bizreal.vn/thi-truong-dia-oc-2027-co-la-thoi-ky-tranh-ban-50180.html",
+      "https://bizreal.vn/bigbang-khep-lai-hai-dem-dien-tai-my-dinh-trong-phao-hoa-ruc-ro-50175.html",
+      "https://bizreal.vn/vpbanks-duy-tri-hang-loat-uu-dai-margin-cho-nha-dau-tu-trong-boi-canh-lai-suat-tang-cao-50162.html",
+      "https://bizreal.vn/khoi-thong-dong-von-xanh-de-thuc-day-doanh-nghiep-dau-tu-tiet-kiem-nang-luong-49978.html",
+      "https://bizreal.vn/tu-khai-thac-den-tai-che-vonfram-bai-toan-nang-gia-tri-tai-nguyen-chien-luoc-viet-49958.html",
+      "https://bizreal.vn/khi-thu-nhap-nguoi-viet-tang-co-hoi-cho-mang-tieu-dung-cua-masan-2-49949.html",
+      "https://bizreal.vn/doanh-nghiep-vn30-nao-vua-duoc-hsbc-nang-gia-muc-tieu-len-110-000-dong-49955.html",
+      "https://bizreal.vn/de-xuat-kiem-soat-giao-dich-ngan-hang-co-dau-hieu-dang-ngo-cua-nguoi-nop-thue-49728.html",
+      "https://bizreal.vn/grab-lan-san-tai-chinh-so-tham-vong-fintech-so-1-dong-nam-a-49725.html",
+      "https://bizreal.vn/vi-the-dan-dau-cua-dong-von-fdi-singapore-tai-viet-nam-49722.html",
+      "https://bizreal.vn/loi-nhuan-masan-tang-hon-gap-doi-vuot-ke-hoach-co-so-ca-nam-sau-9-thang-50172.html",
+      "https://bizreal.vn/masan-ghi-dau-an-voi-19-san-pham-dich-vu-dat-thuong-hieu-quoc-gia-2026-50169.html",
+      "https://bizreal.vn/suc-mua-phuc-hoi-mang-tieu-dung-cua-masan-tang-truong-ra-sao-49952.html",
+      "https://bizreal.vn/gpbank-xuong-pho-ha-noi-khi-ngan-hang-chu-dong-tim-den-khach-hang-49894.html",
+      "https://bizreal.vn/masterise-homes-dong-hanh-cung-khach-hang-tren-toan-quoc-voi-giai-phap-tai-chinh-uu-viet-49887.html",
+      "https://bizreal.vn/tro-ly-ai-tai-chuoi-winmart-winmart-khi-cong-nghe-giup-nhan-vien-co-them-thoi-gian-phuc-vu-khach-hang-49935.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:31.034Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/bizreal.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

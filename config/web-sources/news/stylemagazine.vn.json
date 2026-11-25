@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "siteName": "stylemagazine.vn",
+  "siteId": "stylemagazine.vn",
+  "registrableDomain": "stylemagazine.vn",
+  "homepage": "https://stylemagazine.vn/",
+  "allowedHosts": [
+    "stylemagazine.vn",
+    "www.stylemagazine.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Jean Cocteau và Cartier: Mối giao cảm giữa thi ca, nghệ thuật và trang sức",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".simple-text.tt-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Fashion Week ra đời như thế nào? Giải mã lịch sử hình thành hệ thống gốc rễ của ngành công nghiệp thời trang",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:13.802Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://stylemagazine.vn/jean-cocteau-va-cartier-moi-giao-cam-giua-thi-ca-nghe-thuat-va-trang-suc/",
+      "https://stylemagazine.vn/fashion-week-ra-doi-nhu-the-nao-giai-ma-lich-su-hinh-thanh-he-thong-goc-re-cua-nganh-cong-nghiep-thoi-trang/",
+      "https://stylemagazine.vn/tai-sao-chung-ta-van-can-nhung-thu-duoc-lam-cham/",
+      "https://stylemagazine.vn/thuat-toan-dang-lam-gu-cua-chung-ta-giong-nhau-hon-hay-khac-nhau-hon/",
+      "https://stylemagazine.vn/not-huong-trai-le-khi-not-huong-thanh-tao-cua-mua-he-bat-ngo-thong-tri-tu-do-nuoc-hoa-mua-thu/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://stylemagazine.vn/",
+    "categories": [
+      "https://stylemagazine.vn/chuyen-muc/thoi-trang/",
+      "https://stylemagazine.vn/chuyen-muc/lam-dep/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/",
+      "https://stylemagazine.vn/chuyen-muc/cong-nghe/",
+      "https://stylemagazine.vn/chuyen-muc/tai-chinh-su-nghiep/",
+      "https://stylemagazine.vn/chuyen-muc/thoi-trang/thuong-hieu/",
+      "https://stylemagazine.vn/chuyen-muc/thoi-trang/tu-van/",
+      "https://stylemagazine.vn/chuyen-muc/thoi-trang/xu-huong/",
+      "https://stylemagazine.vn/chuyen-muc/thoi-trang/tin-thoi-trang/",
+      "https://stylemagazine.vn/chuyen-muc/lam-dep/thuong-hieu-lam-dep/",
+      "https://stylemagazine.vn/chuyen-muc/lam-dep/tu-van-lam-dep/",
+      "https://stylemagazine.vn/chuyen-muc/lam-dep/xu-huong-lam-dep/",
+      "https://stylemagazine.vn/chuyen-muc/lam-dep/tin-lam-dep-lam-dep/",
+      "https://stylemagazine.vn/huong-hoa-cho-mua-dong-tai-sao-khong/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/am-thuc/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/du-lich/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/noi-that/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/tam-ly/",
+      "https://stylemagazine.vn/chuyen-muc/phong-cach-song/tin-doi-song/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/nguoi-noi-tieng/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/am-nhac/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/dien-anh/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/trien-lam-nghe-thuat/",
+      "https://stylemagazine.vn/chuyen-muc/van-hoa/tin-van-hoa/",
+      "https://stylemagazine.vn/chuyen-muc/cong-nghe/thuong-hieu-cong-nghe/",
+      "https://stylemagazine.vn/chuyen-muc/cong-nghe/tu-van-cong-nghe/",
+      "https://stylemagazine.vn/chuyen-muc/cong-nghe/xu-huong-cong-nghe/",
+      "https://stylemagazine.vn/chuyen-muc/cong-nghe/tin-cong-nghe/",
+      "https://stylemagazine.vn/smartphone-dien-thoai-cua-07-ty-nguoi/",
+      "https://stylemagazine.vn/dieter-rams-nha-thiet-ke-cong-nghiep/",
+      "https://stylemagazine.vn/hitech-styles-trend-nha-hat-tai-gia/",
+      "https://stylemagazine.vn/chuyen-muc/tai-chinh-su-nghiep/ky-nang/",
+      "https://stylemagazine.vn/chuyen-muc/tai-chinh-su-nghiep/phat-trien-su-nghiep/",
+      "https://stylemagazine.vn/chuyen-muc/tai-chinh-su-nghiep/tai-chinh-ca-nhan/",
+      "https://stylemagazine.vn/chuyen-muc/tai-chinh-su-nghiep/women-at-work/",
+      "https://stylemagazine.vn/ban-khong-co-nghia-la-dang-di-dung-huong/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "stylemagazine.vn",
+    "checkedAt": "2026-11-09T03:57:25.713Z",
+    "url": "https://stylemagazine.vn/jean-cocteau-va-cartier-moi-giao-cam-giua-thi-ca-nghe-thuat-va-trang-suc/",
+    "finalUrl": "https://stylemagazine.vn/jean-cocteau-va-cartier-moi-giao-cam-giua-thi-ca-nghe-thuat-va-trang-suc/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6967,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "stylemagazine.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 44,
+    "checkedArticleUrls": 44,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 44,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 37,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 258,
+        "passed": 44,
+        "distinctHashes": 44
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://stylemagazine.vn/tai-sao-chung-ta-van-can-nhung-thu-duoc-lam-cham/",
+      "https://stylemagazine.vn/thuat-toan-dang-lam-gu-cua-chung-ta-giong-nhau-hon-hay-khac-nhau-hon/",
+      "https://stylemagazine.vn/not-huong-trai-le-khi-not-huong-thanh-tao-cua-mua-he-bat-ngo-thong-tri-tu-do-nuoc-hoa-mua-thu/",
+      "https://stylemagazine.vn/the-art-of-living-mot-cuoc-doi-dep-khong-phai-la-mot-cuoc-doi-hoan-hao/",
+      "https://stylemagazine.vn/khi-nhung-cham-bi-khong-con-la-hoa-tiet-di-san-cua-yayoi-kusama/",
+      "https://stylemagazine.vn/success-vs-meaning-khi-thanh-cong-khong-con-la-cau-tra-loi-duy-nhat/",
+      "https://stylemagazine.vn/moi-lien-he-giua-thoi-trang-va-wellness-trong-doi-song-hien-dai/",
+      "https://stylemagazine.vn/boots-da-cuoi-ngua-xu-huong-old-money-mua-dong-2026-va-8-cong-thuc-phoi-do-thanh-lich/",
+      "https://stylemagazine.vn/jean-cocteau-va-cartier-moi-giao-cam-giua-thi-ca-nghe-thuat-va-trang-suc/",
+      "https://stylemagazine.vn/ralph-lauren-hanh-trinh-phat-trien-tu-chiec-ao-polo-bieu-tuong-den-nhung-nha-tao-mau-ai/",
+      "https://stylemagazine.vn/fashion-week-ra-doi-nhu-the-nao-giai-ma-lich-su-hinh-thanh-he-thong-goc-re-cua-nganh-cong-nghiep-thoi-trang/",
+      "https://stylemagazine.vn/xa-phong-banh-danh-cho-da-mat-co-nen-thay-the-sua-rua-mat-dang-long/",
+      "https://stylemagazine.vn/my-pham-va-nuoc-hoa-giang-sinh-2026-ysl-tom-ford-maison-francis-kurkdjian-va-kilian-paris/",
+      "https://stylemagazine.vn/my-pham-va-nuoc-hoa-giang-sinh-2026-nhung-tuyet-pham-gioi-han-tu-chanel-dior-guerlain-va-nars/",
+      "https://stylemagazine.vn/vi-sao-thoi-son-ngay-cang-lau-het-co-the-doi-moi-dang-mong-di-theo-tuoi-tac/",
+      "https://stylemagazine.vn/foliage-nails-xu-huong-nail-mua-thu-lay-cam-hung-tu-sac-la-chuyen-mua/",
+      "https://stylemagazine.vn/huong-mua-trong-treo-sach-lanh-va-moc-mac-xu-huong-nuoc-hoa-se-thong-tri-mua-dong-nay/",
+      "https://stylemagazine.vn/ban-thich-o-mot-minh-xu-huong-nay-dang-duoc-yeu-thich-nho-triet-ly-song-nhat-ban-iyashikei/",
+      "https://stylemagazine.vn/loi-khen-co-the-anh-huong-den-tam-ly-tre-nhu-the-nao/",
+      "https://stylemagazine.vn/10-thoi-quen-tu-cham-soc-ban-than-khi-tam-trang-di-xuong/",
+      "https://stylemagazine.vn/tai-sao-phu-nu-ua-chuong-phim-kinh-di-va-true-crime-hon-dan-ong-ly-giai-tu-goc-do-tam-ly-hoc/",
+      "https://stylemagazine.vn/johnny-depp-ong-hoang-cua-nhung-nhan-vat-di-biet-tren-man-anh/",
+      "https://stylemagazine.vn/vi-sao-cac-nha-thiet-ke-thoi-trang-tin-vao-me-tin-va-diem-bao/",
+      "https://stylemagazine.vn/rung-xanh-nuoc-bac-khi-nhung-canh-rung-len-tieng-ve-cai-gia-cua-van-minh/",
+      "https://stylemagazine.vn/ban-co-yeu-nhung-cau-chuyen-tinh-dau-don-100-days-of-lies-va-ban-tinh-ca-giua-nhung-bien-dong-lich-su/",
+      "https://stylemagazine.vn/louis-vuitton-len-duong-cung-singer-khi-nghe-thuat-du-hanh-gap-go-huyen-thoai-porsche-911/",
+      "https://stylemagazine.vn/lieu-tri-tue-nhan-tao-co-the-chua-lanh-tam-tri-chung-ta/",
+      "https://stylemagazine.vn/apple-iphone-17-phien-ban-nao-la-danh-cho-ban/",
+      "https://stylemagazine.vn/chatgpt-sap-ra-mat-che-do-nguoi-lon-khi-vien-tuong-trong-her-dan-tro-thanh-hien-thuc/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:55.447Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/stylemagazine.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

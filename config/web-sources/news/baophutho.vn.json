@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baophutho.vn",
+  "siteId": "baophutho.vn",
+  "registrableDomain": "baophutho.vn",
+  "homepage": "https://baophutho.vn/",
+  "allowedHosts": [
+    "baophutho.vn",
+    "www.baophutho.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baophutho.vn/",
+    "categories": [
+      "https://baophutho.vn/video",
+      "https://baophutho.vn/podcast"
+    ]
+  },
+  "title": {
+    "value": "Thuốc lá điện tử - cạm bẫy tàn phá thế hệ trẻ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#dcontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:17:06.900Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://baophutho.vn/video/du-bao-thoi-tiet-tinh-phu-tho-ngay-15-11-2026-264538.htm",
+      "https://baophutho.vn/podcast/ban-tin-phat-thanh-ngay-12-11-2026-264382.htm"
+    ],
+    "improvedUrls": [
+      "https://baophutho.vn/bao-ve-nen-tang-tu-tuong-cua-dang",
+      "https://baophutho.vn/video/mua-cam-cao-phong-264537.htm",
+      "https://baophutho.vn/video/du-bao-thoi-tiet-tinh-phu-tho-ngay-15-11-2026-264538.htm",
+      "https://baophutho.vn/podcast/ban-tin-phat-thanh-ngay-12-11-2026-264382.htm"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baophutho.vn/thuoc-la-dien-tu-cam-bay-tan-pha-the-he-tre-262164.htm",
+      "https://baophutho.vn/tuoi-tre-truong-dai-hoc-hung-vuong-xay-dung-moi-truong-giao-duc-khong-khoi-thuoc-262539.htm",
+      "https://baophutho.vn/xay-dung-moi-truong-lam-viec-khong-khoi-thuoc-262365.htm",
+      "https://baophutho.vn/quyen-luc-mem-xua-tan-khoi-thuoc-263809.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Xây dựng Đảng",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:16:01.557Z",
+        "trainingUrls": [
+          "https://baophutho.vn/bao-ve-nen-tang-tu-tuong-cua-dang",
+          "https://baophutho.vn/video/mua-cam-cao-phong-264537.htm"
+        ],
+        "holdoutUrls": [
+          "https://baophutho.vn/video/du-bao-thoi-tiet-tinh-phu-tho-ngay-15-11-2026-264538.htm",
+          "https://baophutho.vn/podcast/ban-tin-phat-thanh-ngay-12-11-2026-264382.htm"
+        ]
+      }
+    }
+  ]
+}

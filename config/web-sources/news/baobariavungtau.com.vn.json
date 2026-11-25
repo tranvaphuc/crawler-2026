@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sggp.org.vn",
+  "siteId": "sggp.org.vn",
+  "registrableDomain": "sggp.org.vn",
+  "homepage": "https://www.sggp.org.vn/",
+  "allowedHosts": [
+    "www.sggp.org.vn",
+    "sggp.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp gỡ cộng đồng và trí thức Việt Nam tại Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-17T09:19:04.074Z",
+    "sampleUrls": [
+      "https://www.sggp.org.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-bi-thu-chu-tich-nuoc-trung-quoc-tap-can-binh-post882247.html",
+      "https://www.sggp.org.vn/tong-bi-thu-chu-tich-nuoc-to-lam-den-trung-quoc-bat-dau-tham-du-tuan-le-cap-cao-apec-lan-thu-33-post882199.html",
+      "https://www.sggp.org.vn/bi-thu-thanh-uy-tphcm-tran-luu-quang-tham-chuc-mung-pgs-ts-phan-thanh-binh-nhan-ngay-nha-giao-viet-nam-post882156.html",
+      "https://www.sggp.org.vn/chung-mot-dai-duong-chung-mot-tuong-lai-post882144.html",
+      "https://www.sggp.org.vn/de-12-gia-tri-cot-loi-tro-thanh-nep-song-hang-ngay-post882147.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "discovery": {
+    "homepage": "https://www.sggp.org.vn/",
+    "categories": [
+      "https://www.sggp.org.vn/kinh-te/"
+    ],
+    "requiredArticlePattern": "^https?://(?:www\\.)?sggp\\.org\\.vn/[^/]+-post\\d+\\.html$"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "sggp.org.vn",
+    "checkedAt": "2026-11-09T03:57:25.175Z",
+    "url": "https://www.sggp.org.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-cong-dong-va-tri-thuc-viet-nam-tai-nhat-ban-post880719.html",
+    "finalUrl": "https://www.sggp.org.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-cong-dong-va-tri-thuc-viet-nam-tai-nhat-ban-post880719.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3921,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "sggp.org.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 72,
+    "checkedArticleUrls": 84,
+    "freshArticleChecks": 18,
+    "parserIssues": 11,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 72,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 59,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1469,
+        "passed": 72,
+        "distinctHashes": 72
+      },
+      {
+        "name": "audio",
+        "discovered": 5,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.sggp.org.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-lanh-dao-nguyen-lanh-dao-cac-chinh-dang-va-chinh-phu-nhat-ban-post881017.html",
+      "https://www.sggp.org.vn/tphcm-hoan-thien-co-che-thu-hut-nhan-tai-tham-gia-giai-bai-toan-lon-kho-post880974.html",
+      "https://www.sggp.org.vn/ban-thuong-vu-thanh-uy-tphcm-dieu-dong-nhieu-can-bo-post880953.html",
+      "https://www.sggp.org.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-doi-tac-dong-hanh-dong-kien-tao-cung-co-loi-vi-tang-truong-chat-luong-cao-tu-chu-chien-luoc-va-tu-cuong-post880943.html",
+      "https://www.sggp.org.vn/khong-chi-la-cau-chuyen-to-chuc-khong-gian-post880922.html",
+      "https://www.sggp.org.vn/300-tu-lieu-hien-vat-ke-chuyen-ve-nguoi-tu-con-dao-post880997.html",
+      "https://www.sggp.org.vn/tphcm-khong-che-vu-chay-tau-sat-gan-cau-cua-lap-post881005.html",
+      "https://www.sggp.org.vn/truyen-nghe-bang-su-tan-tam-giu-lua-gom-su-lai-thieu-post880979.html",
+      "https://www.sggp.org.vn/du-bao-tphcm-tiep-tuc-oi-nong-nang-tu-sang-den-dau-gio-chieu-post880957.html",
+      "https://www.sggp.org.vn/podcast-ban-tin-thoi-su-the-gioi-ngay-10-11-nvidia-va-ceo-jensen-huang-bi-co-dong-khoi-kien-post880941.html",
+      "https://www.sggp.org.vn/nhieu-nguoi-dan-tphcm-duoc-tu-van-phap-luat-mien-phi-post880917.html",
+      "https://www.sggp.org.vn/bao-sai-gon-giai-phong-va-truong-dh-luat-tphcm-phat-dong-giai-thuong-tinh-hoa-phap-ly-viet-nam-2027-post880914.html",
+      "https://www.sggp.org.vn/tphcm-lan-dau-to-chuc-tuan-le-hoat-dong-nha-sang-tao-noi-dung-so-post880913.html",
+      "https://www.sggp.org.vn/co-phieu-bat-dong-san-hut-dong-tien-vn-index-tang-gan-29-diem-post881037.html",
+      "https://www.sggp.org.vn/iran-phat-trien-ten-lua-chuyen-tim-diet-radar-doi-phuong-post881034.html",
+      "https://www.sggp.org.vn/tphcm-xu-ly-dut-diem-kien-nghi-thuoc-tham-quyen-khong-de-cu-tri-phan-anh-nhieu-lan-post880989.html",
+      "https://www.sggp.org.vn/quang-tri-mua-lu-gay-ach-tac-tuyen-duong-doc-dao-len-cua-khau-quoc-te-la-lay-post880998.html",
+      "https://www.sggp.org.vn/thanh-tra-chinh-phu-xac-dinh-nhieu-dau-hieu-vi-pham-phap-luat-hinh-su-o-doanh-nghiep-xang-dau-post880968.html",
+      "https://www.sggp.org.vn/cu-tri-kien-nghi-nhieu-van-de-ve-an-sinh-xa-hoi-va-ha-tang-do-thi-post880966.html",
+      "https://www.sggp.org.vn/lien-ket-vung-de-mo-rong-du-dia-tang-truong-cong-nghiep-post881036.html",
+      "https://www.sggp.org.vn/xay-dung-chinh-sach-uu-dai-cac-san-pham-mang-gia-tri-ban-sac-van-hoa-viet-nam-post881008.html",
+      "https://www.sggp.org.vn/tphcm-tau-sat-boc-chay-du-doi-tai-cang-ca-gan-cau-cua-lap-post881009.html",
+      "https://www.sggp.org.vn/du-bao-bac-bo-ret-ha-noi-con-15-16-do-c-post880960.html",
+      "https://www.sggp.org.vn/tphcm-khoi-cong-goi-thau-dau-tien-cai-tao-rach-van-thanh-post880903.html",
+      "https://www.sggp.org.vn/khong-khi-lanh-tran-ve-ha-noi-17-19-do-c-post880780.html",
+      "https://www.sggp.org.vn/du-bao-nam-bo-nang-nhieu-co-noi-tren-35-do-c-post880645.html",
+      "https://www.sggp.org.vn/ngam-cau-vuot-cua-bien-dai-nhat-mien-trung-tu-tren-cao-post880543.html",
+      "https://www.sggp.org.vn/du-bao-mien-trung-co-mua-lon-dien-rong-co-noi-tren-700mm-post880496.html",
+      "https://www.sggp.org.vn/tu-chieu-toi-6-11-du-bao-nam-bo-co-mua-dong-rai-rac-cuoi-tuan-mua-co-the-tang-o-mien-dong-nam-bo-bac-bo-chua-ret-nhung-chieu-toi-va-dem-nay-co-noi-mua-tren-70mm-post880309.html",
+      "https://www.sggp.org.vn/nhom-cam-dau-duong-day-lua-dao-cat-da-tim-ngoc-linh-an-post881014.html",
+      "https://www.sggp.org.vn/khoi-to-bat-tam-giam-nguoi-cha-bao-hanh-hai-con-gai-ruot-post880869.html",
+      "https://www.sggp.org.vn/de-xuat-dieu-chinh-mon-hoc-khoi-luong-kien-thuc-cua-chuong-trinh-giao-duc-pho-thong-post880924.html",
+      "https://www.sggp.org.vn/thong-tu-85-cua-bo-gd-dt-lung-tung-khi-trien-khai-post880920.html",
+      "https://www.sggp.org.vn/tphcm-hon-95-trieu-nguoi-duoc-kham-suc-khoe-kham-sang-loc-post880978.html",
+      "https://www.sggp.org.vn/ho-tro-chi-phi-kham-suc-khoe-tien-hon-nhan-dau-tu-som-cho-chat-luong-dan-so-post880929.html",
+      "https://www.sggp.org.vn/bao-sai-gon-giai-phong-ngay-10112026-post880916.html",
+      "https://www.sggp.org.vn/ke-chuyen-950-nam-quoc-tu-giam-ben-ho-hoan-kiem-post881007.html",
+      "https://www.sggp.org.vn/be-do-an-sinh-cho-lao-dong-tu-do-bai-2-trach-nhiem-tu-nhieu-phia-post880923.html",
+      "https://www.sggp.org.vn/ganh-no-chung-tu-nhung-bay-lua-dau-tu-post880640.html",
+      "https://www.sggp.org.vn/bosch-rexroth-mang-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-den-vimf-bac-ninh-2026-post880825.html",
+      "https://www.sggp.org.vn/dep-nan-hanh-dan-o-co-so-post880296.html",
+      "https://www.sggp.org.vn/diem-tua-cho-phu-nu-kho-khan-nang-do-tre-yeu-the-post880750.html",
+      "https://www.sggp.org.vn/thap-anh-sang-tri-thuc-trong-dem-post880615.html",
+      "https://www.sggp.org.vn/ai-thay-doi-ban-chat-cong-viec-khong-thay-the-hoan-toan-con-nguoi-post880900.html",
+      "https://www.sggp.org.vn/tien-cho-minh-nguy-cho-nguoi-post877779.html",
+      "https://www.sggp.org.vn/vinamilk-dat-doanh-thu-18465-ty-dong-trong-quy-iii-lien-tiep-duoc-vinh-danh-quoc-te-post880812.html",
+      "https://www.sggp.org.vn/tap-huan-tuyen-truyen-ve-phong-chong-ma-tuy-cho-can-bo-cong-doan-post879958.html",
+      "https://www.sggp.org.vn/mo-rong-truong-lien-cap-loi-the-nguon-luc-thach-thuc-quan-tri-post881022.html",
+      "https://www.sggp.org.vn/gia-lai-thu-hut-hon-237000-ty-dong-von-dau-tu-trong-10-thang-post880648.html",
+      "https://www.sggp.org.vn/sieu-thi-giu-niem-tin-cua-nguoi-tieu-dung-tu-quay-hang-post880565.html",
+      "https://www.sggp.org.vn/ericsson-thiet-lap-nang-luc-rd-tai-viet-nam-post880971.html",
+      "https://www.sggp.org.vn/vietinbank-to-chuc-vietnam-connect-forum-2026-dien-dan-dau-tu-va-ket-noi-doanh-nghiep-fdi-post880578.html",
+      "https://www.sggp.org.vn/da-nang-auckland-thuc-day-hop-tac-cong-nghe-cao-du-lich-va-ket-noi-hang-khong-post880930.html",
+      "https://www.sggp.org.vn/chung-tay-giu-gin-ve-sinh-moi-truong-moi-nguoi-dan-la-mot-dai-su-du-lich-post880661.html",
+      "https://www.sggp.org.vn/khoa-hoc-cong-nghe-tao-dong-luc-tang-truong-moi-cho-tp-dong-nai-post880768.html",
+      "https://www.sggp.org.vn/quan-khu-9-quy-tap-1132-hai-cot-liet-si-trong-chien-dich-500-ngay-dem-post879793.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "unresolved_extraction": 8
+    },
+    "checkedAt": "2026-11-10T09:16:50.022Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/sggp.org.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "sourceAlias": "baobariavungtau.com.vn",
+  "publisherReplacement": {
+    "authority": "explicit_user_confirmation",
+    "requestedDomain": "baobariavungtau.com.vn",
+    "replacementPublisher": "sggp.org.vn",
+    "confirmedAt": "2026-11-17",
+    "reason": "Customer approved SGGP as successor; old domain serves a different publisher",
+    "evidenceUrl": "https://www.sggp.org.vn/chuyen-giao-bao-binh-duong-va-ba-ria-vung-tau-ve-bao-sai-gon-giai-phong-dung-quy-dinh-post815451.html"
+  }
+}

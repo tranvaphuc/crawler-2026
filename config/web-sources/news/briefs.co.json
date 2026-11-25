@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "siteName": "briefs.co",
+  "siteId": "briefs.co",
+  "registrableDomain": "briefs.co",
+  "homepage": "https://www.briefs.co/",
+  "allowedHosts": [
+    "www.briefs.co",
+    "briefs.co"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Poppi Founders Launch Jetty Hydration Brand",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".ct-inner-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:06.654Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.briefs.co/news/poppi-founders-launch-jetty-hydration-brand/",
+      "https://www.briefs.co/news/nifty-50-posts-a-rare-decline-on-special-diwali-trading/",
+      "https://www.briefs.co/news/u-s-minor-strikes-comment-follows-reports-of-missiles-hittin/",
+      "https://www.briefs.co/news/explosions-near-the-strait-of-hormuz-tied-to-iranian-activit/",
+      "https://www.briefs.co/news/bezos-home-robot-vision-lives-on-at-amazon-after-astro-stumb/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.briefs.co/",
+    "categories": [
+      "https://www.briefs.co/all-news/stock/",
+      "https://www.briefs.co/all-news/crypto/",
+      "https://www.briefs.co/all-news/technology/",
+      "https://www.briefs.co/all-news/economy/",
+      "https://www.briefs.co/all-news/global-scoop/",
+      "https://www.briefs.co/all-news/real-estate/",
+      "https://www.briefs.co/deep-briefs/",
+      "https://www.briefs.co/category/investing/",
+      "https://www.briefs.co/category/personal-finance/",
+      "https://www.briefs.co/category/wealth/",
+      "https://www.briefs.co/category/retirement/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "briefs.co",
+    "checkedAt": "2026-11-09T03:56:52.972Z",
+    "url": "https://www.briefs.co/news/poppi-founders-launch-jetty-hydration-brand/",
+    "finalUrl": "https://www.briefs.co/news/poppi-founders-launch-jetty-hydration-brand/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5095,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "briefs.co",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "deep_samples_verified",
+    "parsedArticles": 36,
+    "checkedArticleUrls": 36,
+    "freshArticleChecks": 20,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 36,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 661,
+        "passed": 36,
+        "distinctHashes": 36
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:10:14.918Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/briefs.co/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/briefs.co.json",
+    "configBeforeSha256": "f17b0ed69eb0530cca93781ce61708e0895f102a4290ba5a4206bcc31b81a5b6",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Poppi Founders Launch Jetty Hydration Brand",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".ct-text-block.atomic-simple-article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:49:24.431Z",
+        "trainingUrls": [
+          "https://www.briefs.co/how-to-budget-five-payday-moves/",
+          "https://www.briefs.co/how-to-invest-in-stocks-before-you-start/",
+          "https://www.briefs.co/best-etfs-to-buy-three-etf-portfolios/",
+          "https://www.briefs.co/common-investing-mistakes/",
+          "https://www.briefs.co/lower-credit-card-interest-rate/",
+          "https://www.briefs.co/dividend-investing-vs-growth-investing/",
+          "https://www.briefs.co/what-is-a-401k-heres-what-you-actually-need-to-know/",
+          "https://www.briefs.co/how-to-choose-an-etf/",
+          "https://www.briefs.co/is-a-recession-coming/",
+          "https://www.briefs.co/what-is-financial-literacy-the-real-skills-that-build-wealth/",
+          "https://www.briefs.co/how-to-stop-living-paycheck-to-paycheck-and-actually-build-wealth/",
+          "https://www.briefs.co/best-investments-five-market-shifts/"
+        ],
+        "holdoutUrls": [
+          "https://www.briefs.co/national-debt-inflation-hidden-tax/",
+          "https://www.briefs.co/fomc-meeting-fed-rates-ai-bubble/"
+        ]
+      }
+    }
+  ]
+}

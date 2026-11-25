@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hatinh24h.com.vn",
+  "siteId": "hatinh24h.com.vn",
+  "registrableDomain": "hatinh24h.com.vn",
+  "homepage": "https://hatinh24h.com.vn/",
+  "allowedHosts": [
+    "hatinh24h.com.vn",
+    "www.hatinh24h.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://hatinh24h.com.vn/",
+    "categories": [
+      "https://hatinh24h.com.vn/c/video-tin-tuc",
+      "https://hatinh24h.com.vn/c/tin-ha-tinh",
+      "https://hatinh24h.com.vn/c/trong-nuoc",
+      "https://hatinh24h.com.vn/c/the-gioi",
+      "https://hatinh24h.com.vn/c/xa-hoi",
+      "https://hatinh24h.com.vn/c/phap-luat",
+      "https://hatinh24h.com.vn/c/giao-duc",
+      "https://hatinh24h.com.vn/c/kinh-te",
+      "https://hatinh24h.com.vn/c/giai-tri",
+      "https://hatinh24h.com.vn/c/the-thao"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "hatinh24h.com.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "value": "Vinamilk 18 năm liên tục giữ danh hiệu thương hiệu quốc gia",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:40.192Z",
+    "frozenAt": "2026-11-16T01:58:36.476Z",
+    "trainingUrl": "https://hatinh24h.com.vn/vinamilk-18-nam-lien-tuc-giu-danh-hieu-thuong-hieu-quoc-gia-a198203.html",
+    "independentHoldouts": [
+      "https://hatinh24h.com.vn/ngay-23112026-dau-gia-quyen-su-dung-dat-tai-tinh-ha-tinh-a198509.html",
+      "https://hatinh24h.com.vn/mua-ve-so-125000-dong-trung-hon-43-ty-nguoi-dan-ong-lai-lo-mat-co-hoi-doi-doi-chi-vi-li-do-nay-a198517.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://hatinh24h.com.vn/vinamilk-18-nam-lien-tuc-giu-danh-hieu-thuong-hieu-quoc-gia-a198203.html",
+      "https://hatinh24h.com.vn/ngay-23112026-dau-gia-quyen-su-dung-dat-tai-tinh-ha-tinh-a198509.html",
+      "https://hatinh24h.com.vn/mua-ve-so-125000-dong-trung-hon-43-ty-nguoi-dan-ong-lai-lo-mat-co-hoi-doi-doi-chi-vi-li-do-nay-a198517.html",
+      "https://hatinh24h.com.vn/quan-banh-canh-cua-tran-thanh-tung-bao-tron-len-gia-400000-dong-chu-quan-noi-ai-thay-dat-thi-khong-an-a198431.html",
+      "https://hatinh24h.com.vn/ha-noi-co-hang-bun-moc-40000-dong-ban-trong-biet-thu-100-tuoi-moi-sang-chi-mo-dung-4-tieng-a198230.html",
+      "https://hatinh24h.com.vn/thu-hoa-cua-cay-gia-vi-quen-thuoc-tuong-chi-de-ngam-nay-thanh-dac-san-son-la-gia-toi-80000-dongkg-trong-6-thang-cho-thu-hoach-a198175.html",
+      "https://hatinh24h.com.vn/cham-nhat-ngay-30062027-tai-khoan-ngan-hang-phai-lien-ket-vneid-nguoi-dung-can-lam-gi-a198222.html",
+      "https://hatinh24h.com.vn/nghe-an-dau-tu-cau-ben-thuy-3-mo-rong-ket-noi-cang-bien-khu-cong-nghiep-voi-ha-tinh-a198533.html",
+      "https://hatinh24h.com.vn/lo-dien-21-cau-thu-u17-viet-nam-duoc-fifa-cong-bo-du-world-cup-2026-a198538.html",
+      "https://hatinh24h.com.vn/spacex-lan-dau-thu-hoi-thanh-cong-tau-starship-tu-quy-dao-a198535.html",
+      "https://hatinh24h.com.vn/triet-pha-duong-day-san-xuat-mua-ban-trai-phep-khoang-100-tan-khi-cuoi-a198542.html",
+      "https://hatinh24h.com.vn/o-to-hat-vang-nguoi-di-xe-may-len-nap-capo-roi-lao-di-hon-100m-a198541.html",
+      "https://hatinh24h.com.vn/jensen-huang-bi-to-quat-mang-nem-chai-nuoc-vao-lanh-dao-nvidia-a198540.html",
+      "https://hatinh24h.com.vn/ca-si-toc-tien-gianh-hang-3-tai-eurovision-song-contest-asia-2026-a198539.html",
+      "https://hatinh24h.com.vn/danh-tinh-nu-tiep-vien-hang-khong-cuoi-bac-si-phau-thuat-chinh-hinh-vua-dang-clip-voi-dan-be-trap-da-gay-sot-a198537.html",
+      "https://hatinh24h.com.vn/ba-thieu-nien-thuong-vong-trong-vu-tai-nan-giua-xe-may-voi-o-to-tai-a198536.html",
+      "https://hatinh24h.com.vn/khoi-to-chu-tai-khoan-a-ty-tiktok-huong-dan-su-dung-ma-tuy-tren-mang-a198534.html",
+      "https://hatinh24h.com.vn/quyet-dinh-ve-nhan-su-cua-thu-tuong-a198530.html",
+      "https://hatinh24h.com.vn/ong-trinh-van-quyet-bi-xoa-ten-khoi-doan-luat-su-ha-noi-a198525.html",
+      "https://hatinh24h.com.vn/cho-thoi-nhiem-vu-dai-bieu-quoc-hoi-doi-voi-ong-ho-sy-hung-a198507.html",
+      "https://hatinh24h.com.vn/ban-bi-thu-xem-xet-thi-hanh-ky-luat-doi-voi-dang-vien-vi-pham-a198514.html",
+      "https://hatinh24h.com.vn/nu-tai-xe-o-to-dap-nham-chan-ga-khien-o-to-lao-vao-cua-hang-an-a198430.html",
+      "https://hatinh24h.com.vn/ha-tinh-tiep-noi-mach-nguon-van-hoa-lam-giau-kho-tang-di-san-viet-nam-a198528.html",
+      "https://hatinh24h.com.vn/van-con-nhieu-lo-hong-trong-quan-ly-khai-thac-khoang-san-a198527.html",
+      "https://hatinh24h.com.vn/kip-thoi-ngan-chan-hanh-vi-tang-qua-ban-hang-gia-cao-cho-nguoi-cao-tuoi-tai-ha-tinh-a198512.html",
+      "https://hatinh24h.com.vn/cap-bang-to-quoc-ghi-cong-doi-voi-6-liet-si-hy-sinh-trong-thuc-hien-nhiem-vu-a198526.html",
+      "https://hatinh24h.com.vn/quy-dinh-moi-ve-quan-ly-su-dung-bien-che-cong-chuc-a198523.html",
+      "https://hatinh24h.com.vn/6-quan-nhan-hy-sinh-khi-thuc-hien-nhiem-vu-a198519.html",
+      "https://hatinh24h.com.vn/hai-nuoc-thanh-vien-nato-tu-choi-tai-tro-them-vu-khi-cho-ukraine-a198529.html",
+      "https://hatinh24h.com.vn/co-gai-26-tuoi-roi-tu-tang-7-tu-vong-truoc-mat-ban-trai-camera-ghi-lai-phan-ung-bat-thuong-gay-tranh-cai-a198498.html",
+      "https://hatinh24h.com.vn/nong-ceo-nvidia-tiep-tuc-bi-to-ngoai-tinh-voi-cap-duoi-1-nu-pho-chu-tich-cap-cao-a198484.html",
+      "https://hatinh24h.com.vn/nam-sinh-nghe-an-bi-ban-tha-xuong-song-tiet-lo-noi-dung-mot-trong-nhung-cuoc-goi-cuoi-cung-a198520.html",
+      "https://hatinh24h.com.vn/bi-da-lien-tiep-vao-dau-sau-va-cham-giao-thong-a198518.html",
+      "https://hatinh24h.com.vn/5-nguoi-o-hue-bi-phat-vi-dang-tin-suy-dien-bia-dat-ve-cac-hieu-truong-a198511.html",
+      "https://hatinh24h.com.vn/tam-giu-mot-giam-doc-tron-chat-cam-salbutamol-vao-thuc-an-chan-nuoi-a198522.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

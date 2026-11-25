@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "siteName": "businesstimes.com.sg",
+  "siteId": "businesstimes.com.sg",
+  "registrableDomain": "businesstimes.com.sg",
+  "homepage": "https://www.businesstimes.com.sg/global?ref=home-redirect",
+  "allowedHosts": [
+    "www.businesstimes.com.sg",
+    "businesstimes.com.sg"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "From AI financing to Indonesia outlook: 4 takeaways from Singapore banks’ Q3 results",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Is Hong Kong back?",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "Grit built in the genes: Malaysia’s Lee Yeow Seng drives IOI’s bold Singapore push",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".paywall-content.typo-article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:08.120Z",
+    "sampleCount": 9,
+    "passedSamples": 7,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.businesstimes.com.sg/international/global/inside-new-hong-kong-what-fuelling-its-economy?ref=global-top-featured",
+      "https://www.businesstimes.com.sg/international/asean/grit-built-genes-malaysias-lee-yeow-seng-drives-iois-bold-singapore-push?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/companies-markets/ai-financing-indonesia-outlook-4-takeaways-singapore-banks-q3-results?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/companies-markets/ai-stocks-meta-nvidia-and-microsoft-are-sliding-it-time-buy-dip?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/opinion-features/dbs-ocbc-uobs-big-sell-was-it-their-q3-numbers-or-broader-market-de-rating?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/singapore/haze-2026-estimated-cost-singapore-s2-32-billion-4-2015-experts?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/singapore/bt50/accenture-firm-kept-rebuilding-itself-keep-building-singapore"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.businesstimes.com.sg/global?ref=home-redirect",
+    "categories": [
+      "https://www.businesstimes.com.sg/bt50?ref=header",
+      "https://www.businesstimes.com.sg/singapore/economy-policy?ref=global-header",
+      "https://www.businesstimes.com.sg/companies-markets?ref=global-header",
+      "https://www.businesstimes.com.sg/international?ref=global-header",
+      "https://www.businesstimes.com.sg/keywords/asean?ref=global-header",
+      "https://www.businesstimes.com.sg/singapore?ref=global-header",
+      "https://www.businesstimes.com.sg/opinion-features?ref=global-header",
+      "https://www.businesstimes.com.sg/startups-tech?ref=global-header",
+      "https://www.businesstimes.com.sg/lifestyle/bt-luxe?ref=global-header",
+      "https://www.businesstimes.com.sg/newsletters/sign-up?ref=header"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "businesstimes.com.sg",
+    "checkedAt": "2026-11-09T03:56:53.511Z",
+    "url": "https://www.businesstimes.com.sg/international/global/inside-new-hong-kong-what-fuelling-its-economy?ref=global-top-featured",
+    "finalUrl": "https://www.straitstimes.com/multimedia/graphics/2026/11/insider-hong-kong/index.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 53236,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "businesstimes.com.sg",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 16,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 17,
+    "parserIssues": 14,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 152,
+        "passed": 16,
+        "distinctHashes": 16
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.businesstimes.com.sg/singapore/economy-policy/singapore-still-south-east-asias-headquarters-haven?ref=global-top-featured",
+      "https://www.businesstimes.com.sg/international/chinas-li-auto-makes-asia-pacific-push-announcing-entry-singapore-hong-kong-thailand-vietnam?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/international/global/jsw-pact-fresh-cash-alone-wont-put-volkswagen-indias-fast-lane?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/nvidia-ceo-jensen-huang-sued-over-disclosures-related-suspected-chinese-spy?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/opinion-features/asias-ai-boom-has-timing-problem?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/companies-markets/singapore-launches-central-bank-gold-vaulting-extends-gst-waiver-wholesale-activities?ref=global-five-stories-block",
+      "https://www.businesstimes.com.sg/international/global/post-midterm-elections-asia-faces-more-constrained-no-less-unpredictable-trump?ref=global-bt-plus",
+      "https://www.businesstimes.com.sg/international/asean/china-helping-modernise-timor-leste-investment-trade-and-jobs-trouble-brewing?ref=global-bt-plus",
+      "https://www.businesstimes.com.sg/opinion-features/south-east-asia-financial-access-not-same-financial-inclusion?ref=global-opinion",
+      "https://www.businesstimes.com.sg/opinion-features/when-ai-agents-haggle-who-gets-stuck-bill?ref=global-opinion",
+      "https://www.businesstimes.com.sg/opinion-features/south-east-asias-haze-shows-diversified-electricity-source-may-not-be-dependable?ref=global-opinion",
+      "https://www.businesstimes.com.sg/international/asean/grit-built-genes-malaysias-lee-yeow-seng-drives-iois-bold-singapore-push?ref=global-behind-the-name",
+      "https://www.businesstimes.com.sg/international/asean/no-chicken-feed-how-malayan-flour-mills-built-empire-flour-fowl?ref=global-behind-the-name",
+      "https://www.businesstimes.com.sg/international/asean/he-built-vingroup-empire-now-south-east-asias-richest-man-handing-some-key-roles-his-sons?ref=global-behind-the-name",
+      "https://www.businesstimes.com.sg/companies-markets/concerts-sports-and-mice-promoters-line-marina-bay-sands-new-entertainment-arena?ref=global-singapore",
+      "https://www.businesstimes.com.sg/companies-markets/singapores-deep-tech-startups-tap-china-scale-set-sights-us-higher-margins?ref=global-singapore",
+      "https://www.businesstimes.com.sg/esg/low-carbon-transition-face-stronger-headwinds-cop31-says-grace-fu?ref=global-singapore",
+      "https://www.businesstimes.com.sg/international/food-innovators-suspects-worker-embezzled-s359000-unit-and-clients?ref=global-singapore",
+      "https://www.businesstimes.com.sg/singapore/haze-2026-estimated-cost-singapore-s2-32-billion-4-2015-experts?ref=global-singapore",
+      "https://www.businesstimes.com.sg/international/asean/mekong-capitals-chris-freund-turns-hard-lessons-better-leadership?ref=global-leadership",
+      "https://www.businesstimes.com.sg/international/master-niche-then-listen-experts-how-haas-f1s-ayao-komatsu-rose-top-job?ref=global-leadership",
+      "https://www.businesstimes.com.sg/international/asean/only-common-thing-s-e-asia-we-all-eat-rice-ciscos-asean-president?ref=global-leadership",
+      "https://www.businesstimes.com.sg/international/global/inside-new-hong-kong-what-fuelling-its-economy?ref=global-middle-featured",
+      "https://www.businesstimes.com.sg/international/asean/us-extends-vietnam-trade-probe-intellectual-property-end-february?ref=global-asean",
+      "https://www.businesstimes.com.sg/international/asean/vietnams-masan-secures-japans-sojitz-second-strategic-investor-tungsten-business?ref=global-asean",
+      "https://www.businesstimes.com.sg/international/asean/philippines-october-inflation-shock-signals-tough-road-2027?ref=global-asean",
+      "https://www.businesstimes.com.sg/international/global/chinas-trade-surplus-soars-past-us1-trillion-ai-boom-powers-exports?ref=global-international",
+      "https://www.businesstimes.com.sg/international/chinas-li-auto-makes-asia-pacific-push-announcing-entry-singapore-hong-kong-thailand-vietnam?ref=global-international",
+      "https://www.businesstimes.com.sg/international/global/demand-tech-capabilities-position-apac-and-ai-skyscanners-next-growth-frontiers-ceo-bryan-batista?ref=global-international",
+      "https://www.businesstimes.com.sg/international/sias-s2-billion-new-cabin-seats-draw-both-praise-and-flak?ref=global-international",
+      "https://www.businesstimes.com.sg/companies-markets/transport-logistics/qantas-axe-850-jobs-offshoring-deal-accenture?ref=global-international",
+      "https://www.businesstimes.com.sg/global?ref=logo",
+      "https://www.businesstimes.com.sg/opinion-features/ai-frenzy-gets-reality-check?ref=global-bt-plus",
+      "https://www.businesstimes.com.sg/keywords/leadership-playbook",
+      "https://www.businesstimes.com.sg/keywords/capitaland-integrated-commercial-trust",
+      "https://www.businesstimes.com.sg/keywords/mapletree-pan-asia-commercial-trust"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3,
+      "public_inline_state_requires_adapter": 1,
+      "selector_or_layout_mismatch": 1,
+      "publisher_restricted": 9
+    },
+    "checkedAt": "2026-11-10T09:14:35.018Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/businesstimes.com.sg/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "pageIdentityPolicy": "business_times_ref_article_alias"
+}

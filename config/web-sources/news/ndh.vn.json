@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ndh.vn",
+  "siteId": "ndh.vn",
+  "registrableDomain": "ndh.vn",
+  "homepage": "https://ndh.vn/",
+  "allowedHosts": [
+    "ndh.vn",
+    "www.ndh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "[Infographic] Tập đoàn chi 13 tỷ USD thâu tóm Dior lớn cỡ nào?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:43.104Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://ndh.vn/infographic-tap-doan-chi-13-ty-usd-thau-tom-dior-lon-co-nao--20170503021241396p98c114.news",
+      "https://ndh.vn/doanh-so-ban-o-to-toan-thi-truong-lao-doc-giam-manh-20170508020727172p145c151.news",
+      "https://ndh.vn/chuyen-that-bai-steve-jobs-dua-tre-bi-bo-roi-bo-hoc-va-bi-duoi-khoi-cong-ty-do-minh-sang-lap-2017050503199228p5c128.news",
+      "https://ndh.vn/muon-suc-nguoi-nhat-coteccons-chien-thang-2-ong-lon-han-quoc/",
+      "https://ndh.vn/telsa-vuot-toyota-tro-thanh-nha-san-xuat-oto-gia-tri-nhat-the-gioi-nhu-the-nao-2/",
+      "https://ndh.vn/infographic-tap-doan-chi-13-ty-usd-thau-tom-dior-lon-co-nao--20170503021241396p98c114.news"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://ndh.vn/",
+    "categories": [
+      "https://ndh.vn/gia-dau-the-gioi/",
+      "https://ndh.vn/chuyen-gia/",
+      "https://ndh.vn/du-an/",
+      "https://ndh.vn/du-an/tinh-trang/dang-mo-ban/",
+      "https://ndh.vn/du-an/tinh-trang/sap-mo-ban/",
+      "https://ndh.vn/du-an/?review=1",
+      "https://ndh.vn/du-an/loai-hinh/can-ho/",
+      "https://ndh.vn/du-an/loai-hinh/nha-pho-biet-thu/",
+      "https://ndh.vn/du-an/loai-hinh/dat-nen/",
+      "https://ndh.vn/du-an/khu-vuc/tp-ho-chi-minh/",
+      "https://ndh.vn/du-an/khu-vuc/ha-noi/",
+      "https://ndh.vn/chuyen-gia/linh-vuc/bat-dong-san/",
+      "https://ndh.vn/cong-cu/",
+      "https://ndh.vn/gia-vang-hom-nay/",
+      "https://ndh.vn/gia-vang-nhan-9999/",
+      "https://ndh.vn/gia-vang-24k/",
+      "https://ndh.vn/lich-su-gia-vang/",
+      "https://ndh.vn/gia-vang-pnj/",
+      "https://ndh.vn/gia-vang-phu-quy/",
+      "https://ndh.vn/gia-vang-bao-tin-manh-hai/",
+      "https://ndh.vn/gia-vang-mi-hong/",
+      "https://ndh.vn/gia-vang-18k/",
+      "https://ndh.vn/gui-tiet-kiem/",
+      "https://ndh.vn/kien-thuc/",
+      "https://ndh.vn/the-tin-dung/",
+      "https://ndh.vn/gia-vang-the-gioi/",
+      "https://ndh.vn/cau-hoi-thuong-gap/",
+      "https://ndh.vn/hop-tac/",
+      "https://ndh.vn/nguyen-tac-bien-tap/",
+      "https://ndh.vn/nguon-du-lieu/",
+      "https://ndh.vn/cach-chung-toi-kiem-tien/",
+      "https://ndh.vn/tin-tuc/tin-tuc/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?ndh.vn/.*?(\\d{15,}).*?(.news)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "ndh.vn",
+    "checkedAt": "2026-11-09T03:57:16.006Z",
+    "url": "https://ndh.vn/infographic-tap-doan-chi-13-ty-usd-thau-tom-dior-lon-co-nao--20170503021241396p98c114.news",
+    "finalUrl": "https://ndh.vn/infographic-tap-doan-chi-13-ty-usd-thau-tom-dior-lon-co-nao--20170503021241396p98c114.news",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1394,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ndh.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 5,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 18,
+    "parserIssues": 15,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 5,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 32,
+    "categoriesFreshChecked": 30,
+    "categoriesUnconfirmed": 22,
+    "categoriesWithoutParsedArticle": 8,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 25,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ndh.vn/infographic-tap-doan-chi-13-ty-usd-thau-tom-dior-lon-co-nao--20170503021241396p98c114.news",
+      "https://ndh.vn/doanh-so-ban-o-to-toan-thi-truong-lao-doc-giam-manh-20170508020727172p145c151.news",
+      "https://ndh.vn/chuyen-that-bai-steve-jobs-dua-tre-bi-bo-roi-bo-hoc-va-bi-duoi-khoi-cong-ty-do-minh-sang-lap-2017050503199228p5c128.news",
+      "https://ndh.vn/muon-suc-nguoi-nhat-coteccons-chien-thang-2-ong-lon-han-quoc/",
+      "https://ndh.vn/telsa-vuot-toyota-tro-thanh-nha-san-xuat-oto-gia-tri-nhat-the-gioi-nhu-the-nao-2/",
+      "https://ndh.vn/du-an/khu-do-thi-nha-o-xa-hoi-ba-diem/",
+      "https://ndh.vn/du-an/i-home-pham-van-chieu/",
+      "https://ndh.vn/du-an/the-peak-garden/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 15
+    },
+    "checkedAt": "2026-11-10T09:16:07.776Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ndh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

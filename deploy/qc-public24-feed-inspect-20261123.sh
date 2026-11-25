@@ -1,0 +1,5 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {createRequire} from 'node:module';import {parsePublicPublicationFeed} from './src/web/newsDateContext.mjs';const ch=createRequire('/opt/news-flow/current/package.json')('cheerio'),root='/var/lib/news-flow/qc-public24-20261123',raw=gunzipSync(fs.readFileSync(root+'/evidence/49616f580a65aebb433ab2875c121d8e9b17ede65995d3f4ca717f8396a1e2c6.gz')).toString(),$=ch.load(raw,{xmlMode:true}),f=parsePublicPublicationFeed(raw,'https://www.coindesk.com/arc/outboundfeeds/rss?outputType=xml');console.log(JSON.stringify({head:raw.slice(0,200),items:f.items.slice(0,3),nativeItems:$('item').toArray().slice(0,3).map(e=>({title:$(e).children('title').text(),link:$(e).children('link').toArray().map(l=>({text:$(l).text(),href:$(l).attr('href')})),guid:$(e).children('guid').text(),pubDate:$(e).children('pubDate').text(),encodedChars:$(e).children('content\\:encoded').text().length,descriptionChars:$(e).children('description').text().length}))}));
+NODE

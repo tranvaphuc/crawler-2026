@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vntravel.org.vn",
+  "siteId": "vntravel.org.vn",
+  "registrableDomain": "vntravel.org.vn",
+  "homepage": "https://vntravel.org.vn/",
+  "allowedHosts": [
+    "vntravel.org.vn",
+    "www.vntravel.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vntravel.org.vn/",
+    "categories": [
+      "https://vntravel.org.vn/c/dong-chay",
+      "https://vntravel.org.vn/c/vita-awards",
+      "https://vntravel.org.vn/rss/tin-moi.rss"
+    ],
+    "remaining29Qc": {
+      "checkedAt": "2026-11-22T03:02:37.241Z",
+      "verifiedCategories": [
+        {
+          "url": "https://vntravel.org.vn/c/dong-chay",
+          "links": 21,
+          "sha": "c19f366d096c071d6e1c75254c8f6b8fd3e62213accaa24543e4679e875afbd6"
+        },
+        {
+          "url": "https://vntravel.org.vn/c/vita-awards",
+          "links": 19,
+          "sha": "b93774d3be58822b6367aade884af0b17a993caaf1dc920fdf4b0281c927cba5"
+        }
+      ],
+      "nativeArticleUrls": [
+        "https://vntravel.org.vn/hon-500-van-dong-vien-tham-gia-giai-chay-vinh-hai-run-vinh-hy-cup-2026-a10459.html",
+        "https://vntravel.org.vn/tui-blue-nha-trang-dua-van-hoa-viet-den-gan-hon-voi-du-khach-quoc-te-a10458.html",
+        "https://vntravel.org.vn/mai-truong-vung-mo-hanh-trang-van-hoa-a10449.html"
+      ]
+    },
+    "remaining29Rss": {
+      "checkedAt": "2026-11-22T03:08:30.335Z",
+      "originalFeed": "https://vntravel.org.vn/rss/tin-moi.rss",
+      "items": 33,
+      "verifiedOriginalUrls": [
+        "https://vntravel.org.vn/hy-lap-cham-vao-mien-co-tich-dia-trung-hai-a10457.html",
+        "https://vntravel.org.vn/500-nguoi-cung-buoc-vao-dau-truong-vua-tieng-viet-tai-van-mieu-quoc-tu-giam-a10451.html",
+        "https://vntravel.org.vn/gsts-nha-giao-nhan-dan-nguyen-van-dinh-mong-nguoi-tre-den-voi-du-lich-bang-tri-thuc-dam-me-va-trach-nhiem-a10446.html"
+      ],
+      "unchangedControlUrls": [
+        "https://vntravel.org.vn/hon-500-van-dong-vien-tham-gia-giai-chay-vinh-hai-run-vinh-hy-cup-2026-a10459.html",
+        "https://vntravel.org.vn/tui-blue-nha-trang-dua-van-hoa-viet-den-gan-hon-voi-du-khach-quoc-te-a10458.html",
+        "https://vntravel.org.vn/mai-truong-vung-mo-hanh-trang-van-hoa-a10449.html",
+        "https://vntravel.org.vn/ruc-sang-khat-vong-vinh-quang-trong-dem-khai-mac-dai-hoi-the-thao-toan-quoc-lan-thu-x-ben-song-sai-gon-a10462.html",
+        "https://vntravel.org.vn/dong-nai-chuan-bi-toa-dam-du-lich-xanh-thuc-day-cac-giai-phap-giam-phat-thai-a10460.html",
+        "https://vntravel.org.vn/cao-bang-mo-loi-kham-pha-di-san-voi-24-cau-chuyen-va-4-tuyen-trai-nghiem-dac-sac-huong-ung-ngay-van-hoa-viet-nam-2026-a10461.html"
+      ]
+    }
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "ShopeePay thành trợ thủ gỡ rối tài chính cho tân sinh viên",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [
+    {
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vntravel.org.vn/rss/tin-moi.rss"
+      }
+    }
+  ],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:47.638Z",
+    "frozenAt": "2026-11-16T02:00:43.925Z",
+    "trainingUrl": "https://vntravel.org.vn/shopeepay-thanh-tro-thu-go-roi-tai-chinh-cho-tan-sinh-vien-a10344.html",
+    "independentHoldouts": [
+      "https://vntravel.org.vn/the-he-nguoi-viet-tre-noi-khong-voi-thuoc-la-kien-tao-diem-den-xanh-van-minh-va-ben-vung-a10200.html",
+      "https://vntravel.org.vn/ttc-hospitality-chinh-thuc-trinh-lang-cum-ttc-lotus-hotel-tai-phu-quoc-a10301.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vntravel.org.vn/shopeepay-thanh-tro-thu-go-roi-tai-chinh-cho-tan-sinh-vien-a10344.html",
+      "https://vntravel.org.vn/the-he-nguoi-viet-tre-noi-khong-voi-thuoc-la-kien-tao-diem-den-xanh-van-minh-va-ben-vung-a10200.html",
+      "https://vntravel.org.vn/ttc-hospitality-chinh-thuc-trinh-lang-cum-ttc-lotus-hotel-tai-phu-quoc-a10301.html",
+      "https://vntravel.org.vn/unitour-heritage-ho-chi-minh-city-nguoi-tre-ke-chuyen-di-san-the-nao-trong-thoi-dai-ai-a10141.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "http": {
+    "maxConcurrentArticles": 1
+  }
+}

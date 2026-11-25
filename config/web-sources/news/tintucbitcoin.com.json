@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintucbitcoin.com",
+  "siteId": "tintucbitcoin.com",
+  "registrableDomain": "tintucbitcoin.com",
+  "homepage": "https://tintucbitcoin.com/",
+  "allowedHosts": [
+    "tintucbitcoin.com",
+    "www.tintucbitcoin.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "TRUMP giảm 17% khi đảng Dân chủ thắng lớn, mốc 1,22 USD then chốt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:45.955Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tintucbitcoin.com/trump-giam-17-khi-dang-dan-chu-thang-lon-moc-122-usd-then-chot/",
+      "https://tintucbitcoin.com/tron-dat-765-trieu-nguoi-nam-giu-rlusd-vuot-25-ty-usd/",
+      "https://tintucbitcoin.com/ca-voi-mua-ethereum-lieu-co-the-dao-chieu-xu-huong-giam/",
+      "https://tintucbitcoin.com/tam-ly-xrp-xuong-day-4-thang-gia-co-giu-tren-1-usd/",
+      "https://tintucbitcoin.com/ca-voi-uniswap-ban-ra-vi-sao-uni-co-the-ve-58-usd/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tintucbitcoin.com/",
+    "categories": [
+      "https://tintucbitcoin.com/tin-tuc-bitcoin-moi-nhat/",
+      "https://tintucbitcoin.com/tin-tuc/bitcoin/",
+      "https://tintucbitcoin.com/tin-tuc/ethereum/",
+      "https://tintucbitcoin.com/tin-tuc/altcoin/",
+      "https://tintucbitcoin.com/tin-tuc/tin-tuc-ai/",
+      "https://tintucbitcoin.com/phan-tich-thi-truong/",
+      "https://tintucbitcoin.com/kien-thuc/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://tintucbitcoin.com/flashnews/"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tintucbitcoin.com",
+    "checkedAt": "2026-11-09T03:57:34.379Z",
+    "url": "https://tintucbitcoin.com/trump-giam-17-khi-dang-dan-chu-thang-lon-moc-122-usd-then-chot/",
+    "finalUrl": "https://tintucbitcoin.com/trump-giam-17-khi-dang-dan-chu-thang-lon-moc-122-usd-then-chot/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2817,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:31.893Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/tintucbitcoin.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "tintucbitcoin.com",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 103,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 103,
+        "attempted": 10,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

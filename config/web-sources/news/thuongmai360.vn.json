@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuongmai360.vn",
+  "siteId": "thuongmai360.vn",
+  "registrableDomain": "thuongmai360.vn",
+  "homepage": "https://thuongmai360.vn/",
+  "allowedHosts": [
+    "thuongmai360.vn",
+    "www.thuongmai360.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cú hích khoa học công nghệ và kinh tế số cho đặc sản vùng cao Phú Thọ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:41.040Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thuongmai360.vn/cong-nghe/cu-hich-khoa-hoc-cong-nghe-va-kinh-te-so-cho-dac-san-vung-cao-phu-tho.html",
+      "https://thuongmai360.vn/thi-truong/dua-san-pham-da-nang-vao-he-thong-ban-le-hien-dai.html",
+      "https://thuongmai360.vn/thi-truong/da-nang-dua-que-tra-my-sam-tay-giang-vao-ly-ca-phe-made-in-da-nang-.html",
+      "https://thuongmai360.vn/tin-tuc-su-kien/ngay-7-11-2026-quoc-hoi-bieu-quyet-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027.html",
+      "https://thuongmai360.vn/tin-tuc-su-kien/my-gia-han-tam-hoan-han-che-xuat-khau-cong-nghe-voi-doanh-nghiep-trung-quoc.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuongmai360.vn/",
+    "categories": [
+      "https://thuongmai360.vn/tin-tuc-su-kien",
+      "https://thuongmai360.vn/doanh-nghiep",
+      "https://thuongmai360.vn/thuong-gia",
+      "https://thuongmai360.vn/tai-chinh",
+      "https://thuongmai360.vn/thi-truong",
+      "https://thuongmai360.vn/hoi-nhap",
+      "https://thuongmai360.vn/cong-nghe",
+      "https://thuongmai360.vn/video-clip",
+      "https://thuongmai360.vn/moi-truong",
+      "https://thuongmai360.vn/tin-tuc-su-kien/tin-tong-hop",
+      "https://thuongmai360.vn/tin-tuc-su-kien/su-kien-noi-bat",
+      "https://thuongmai360.vn/emagazine",
+      "https://thuongmai360.vn/ocop?isFeatured=1",
+      "https://thuongmai360.vn/thi-truong/o-to-xe-may",
+      "https://thuongmai360.vn/thi-truong/phap-luat",
+      "https://thuongmai360.vn/thi-truong/tieu-dung",
+      "https://thuongmai360.vn/thi-truong/thong-tin",
+      "https://thuongmai360.vn/tin-tuc-su-kien/video",
+      "https://thuongmai360.vn/tin-tuc-su-kien/moi-truong",
+      "https://thuongmai360.vn/ngo-sao?isFeatured=1",
+      "https://thuongmai360.vn/thi-truong/video",
+      "https://thuongmai360.vn/doanh-nghiep/video-doanh-nghiep",
+      "https://thuongmai360.vn/tai-chinh/video",
+      "https://thuongmai360.vn/cong-nghe/video",
+      "https://thuongmai360.vn/thuong-gia/video-thuong-gia"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuongmai360.vn",
+    "checkedAt": "2026-11-09T03:57:32.265Z",
+    "url": "https://thuongmai360.vn/cong-nghe/cu-hich-khoa-hoc-cong-nghe-va-kinh-te-so-cho-dac-san-vung-cao-phu-tho.html",
+    "finalUrl": "https://thuongmai360.vn/cong-nghe/cu-hich-khoa-hoc-cong-nghe-va-kinh-te-so-cho-dac-san-vung-cao-phu-tho.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 10783,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thuongmai360.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 25,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 207,
+        "passed": 17,
+        "distinctHashes": 17
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuongmai360.vn/doanh-nghiep/bao-dam-than-cho-san-xuat-dien-giu-vung-an-ninh-nang-luong-quoc-gia.html",
+      "https://thuongmai360.vn/thi-truong/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html",
+      "https://thuongmai360.vn/doanh-nghiep/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html",
+      "https://thuongmai360.vn/doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html",
+      "https://thuongmai360.vn/cong-nghe/thuong-mai-dien-tu-lan-toa-den-tung-xa-phuong.html",
+      "https://thuongmai360.vn/tin-tuc-su-kien/moi-nguoi-dan-moi-cong-dong-deu-co-the-la-chu-the-trong-cong-nghiep-van-hoa.html",
+      "https://thuongmai360.vn/cong-nghe/vat-lieu-tien-tien-mo-huong-nghien-cuu-moi-cho-nganh-nang-luong.html",
+      "https://thuongmai360.vn/tai-chinh/kiem-toan-nha-nuoc-chi-ro-bat-cap-trong-quan-ly-ngan-sach-dia-phuong.html",
+      "https://thuongmai360.vn/hoi-nhap/thanh-pho-hue-thuong-mai-dien-tu-mo-rong-thi-truong-nong-dac-san.html",
+      "https://thuongmai360.vn/doanh-nghiep/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu.html",
+      "https://thuongmai360.vn/doanh-nghiep/chung-minh-xuat-xu-dieu-kien-tan-dung-uu-dai-fta.html",
+      "https://thuongmai360.vn/thi-truong/tp.-ho-chi-minh-outlet-mo-them-du-dia-cho-thi-truong-ban-le.html",
+      "https://thuongmai360.vn/thi-truong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html",
+      "https://thuongmai360.vn/thuong-gia/son-la-dua-thuong-mai-dien-tu-ve-xa-nong-san-them-co-hoi-vuon-xa.html",
+      "https://thuongmai360.vn/tin-tuc-su-kien/moi-nguoi-dan-moi-cong-dong-deu-co-the-la-chu-the-trong-cong-nghiep-van-hoa.html?categoryId=1643136",
+      "https://thuongmai360.vn/thi-truong/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html?categoryId=1643132",
+      "https://thuongmai360.vn/doanh-nghiep/bao-dam-than-cho-san-xuat-dien-giu-vung-an-ninh-nang-luong-quoc-gia.html?categoryId=1643135",
+      "https://thuongmai360.vn/tai-chinh/kiem-toan-nha-nuoc-chi-ro-bat-cap-trong-quan-ly-ngan-sach-dia-phuong.html?categoryId=1643133",
+      "https://thuongmai360.vn/cong-nghe/thuong-mai-dien-tu-lan-toa-den-tung-xa-phuong.html?categoryId=5118815",
+      "https://thuongmai360.vn/thuong-gia/son-la-dua-thuong-mai-dien-tu-ve-xa-nong-san-them-co-hoi-vuon-xa.html?categoryId=5118813",
+      "https://thuongmai360.vn/moi-truong/mien-bac-sap-don-dot-khong-khi-lanh-manh-nguy-co-xuat-hien-nhung-dot-ret-sau.html",
+      "https://thuongmai360.vn/moi-truong/canh-bao-mua-rat-to-tu-ha-tinh-den-da-nang-nguy-co-lu-quet-va-sat-lo.html",
+      "https://thuongmai360.vn/moi-truong/vinh-bac-bo-xuat-hien-ap-thap-nhiet-doi-gio-giat-cap-8.html",
+      "https://thuongmai360.vn/tin-tuc-su-kien/ngay-10-11-2026-quoc-hoi-thao-luan-ve-du-an-luat-linh-vuc-van-hoa-bao-chi.html?categoryId=1643136",
+      "https://thuongmai360.vn/tin-tuc-su-kien/ha-noi-yeu-cau-mo-hinh-xa-hoi-chu-nghia-co-tieu-chi-vuot-troi.html?categoryId=1643136",
+      "https://thuongmai360.vn/thi-truong/tp.-ho-chi-minh-outlet-mo-them-du-dia-cho-thi-truong-ban-le.html?categoryId=1643132",
+      "https://thuongmai360.vn/thi-truong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html?categoryId=1643132",
+      "https://thuongmai360.vn/doanh-nghiep/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html?categoryId=1643135",
+      "https://thuongmai360.vn/doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html?categoryId=1643135",
+      "https://thuongmai360.vn/tai-chinh/quoc-hoi-chot-du-toan-ngan-sach-nam-2027-thu-hon-3-334-trieu-ty-dong-boi-chi-4-5-gdp.html?categoryId=1643133",
+      "https://thuongmai360.vn/tai-chinh/cac-ngan-hang-thu-hang-nghin-ty-dong-tu-hoat-dong-dich-vu.html?categoryId=1643133",
+      "https://thuongmai360.vn/cong-nghe/vat-lieu-tien-tien-mo-huong-nghien-cuu-moi-cho-nganh-nang-luong.html?categoryId=5118815",
+      "https://thuongmai360.vn/cong-nghe/cu-hich-khoa-hoc-cong-nghe-va-kinh-te-so-cho-dac-san-vung-cao-phu-tho.html",
+      "https://thuongmai360.vn/thuong-gia/warren-buffett-tich-luy-tien-lon-khong-mang-lai-vi-dai-van-song-tai-can-nha-31.500-usd-va-dung-phieu-giam-gia.html",
+      "https://thuongmai360.vn/thuong-gia/nu-lanh-dao-duy-nhat-cua-viet-nam-ba-nam-lien-duoc-fortune-vinh-danh-ghi-dau-an-tai-hoi-nghi-thuong-dinh-southeast-asia-.html",
+      "https://thuongmai360.vn/nangluong-cuocsong/lac-da-vang-a-thuoc-do-nang-luc-moi-cua-ptsc-m-c.html",
+      "https://thuongmai360.vn/nangluong-cuocsong/nang-luc-ton-chua-dau-tho-cua-nmld-dung-quat-tang-them-12-5-.html",
+      "https://thuongmai360.vn/nangluong-cuocsong/tong-giam-doc-le-manh-cuong-ngoai-giao-dong-hanh-cung-petrovietnam-bao-dam-an-ninh-nang-luong-quoc-gia.html",
+      "https://thuongmai360.vn/nangluong-cuocsong/dvk-lan-toa-van-hoa-an-toan-san-sang-cho-dot-bao-duong-sua-chua-dung-khi-nam-2026.html",
+      "https://thuongmai360.vn/nangluong-cuocsong/thanh-nien-ptsc-m-c-tang-toc-phat-trien-nang-luc-ca-nhan.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:17:25.203Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuongmai360.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

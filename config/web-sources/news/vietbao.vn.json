@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietbao.vn",
+  "siteId": "vietbao.vn",
+  "registrableDomain": "vietbao.vn",
+  "homepage": "https://vietbao.vn/",
+  "allowedHosts": [
+    "vietbao.vn",
+    "www.vietbao.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thúc đẩy quan hệ hợp tác giữa Đảng Cộng sản Việt Nam và Đảng Lao động Mexico",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:50.164Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html",
+      "https://vietbao.vn/chu-tich-ecb-christine-lagarde-lam-phat-du-kien-o-muc-cao-trong-thoi-gian-toi-615073.html",
+      "https://vietbao.vn/doi-tuyen-viet-nam-tiep-tuc-trao-co-hoi-cho-cac-nhan-to-moi-tai-casper-cup-2026-615075.html",
+      "https://vietbao.vn/cong-nghiep-che-bien-che-tao-va-dau-tu-cong-tao-luc-day-cho-tang-truong-615067.html",
+      "https://vietbao.vn/truc-tiep-mu-vs-aston-villa-vong-10-ngoai-hang-anh-20262027-615072.html",
+      "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html",
+      "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietbao.vn/",
+    "categories": [
+      "https://vietbao.vn/c/doi-ngoai",
+      "https://vietbao.vn/c/tin-doi-ngoai",
+      "https://vietbao.vn/c/tin-the-gioi",
+      "https://vietbao.vn/c/chu-quyen",
+      "https://vietbao.vn/c/cong-dong-nguoi-viet",
+      "https://vietbao.vn/c/quan-su-the-gioi",
+      "https://vietbao.vn/c/xa-hoi",
+      "https://vietbao.vn/c/nhip-song",
+      "https://vietbao.vn/c/phap-luat",
+      "https://vietbao.vn/c/ho-so-nhan-vat",
+      "https://vietbao.vn/c/giao-duc-doi-song-tre",
+      "https://vietbao.vn/c/kinh-doanh",
+      "https://vietbao.vn/c/chuyen-dong-thi-truong",
+      "https://vietbao.vn/c/tai-chinh-ngan-hang",
+      "https://vietbao.vn/c/bat-dong-san",
+      "https://vietbao.vn/c/di-cho-40",
+      "https://vietbao.vn/c/thong-tin-can-biet",
+      "https://vietbao.vn/c/the-thao",
+      "https://vietbao.vn/c/bong-da-viet-nam",
+      "https://vietbao.vn/c/bong-da-quoc-te",
+      "https://vietbao.vn/c/cac-mon-the-thao-khac",
+      "https://vietbao.vn/c/cau-chuyen-the-thao",
+      "https://vietbao.vn/c/van-hoa-giai-tri",
+      "https://vietbao.vn/c/dong-chay",
+      "https://vietbao.vn/c/showbiz",
+      "https://vietbao.vn/c/phim-nhac-sach",
+      "https://vietbao.vn/c/dep",
+      "https://vietbao.vn/c/to-am",
+      "https://vietbao.vn/c/gia-dinh",
+      "https://vietbao.vn/c/tam-su",
+      "https://vietbao.vn/c/am-thuc",
+      "https://vietbao.vn/c/cung-con-truong-thanh",
+      "https://vietbao.vn/c/khong-gian-song",
+      "https://vietbao.vn/c/van-may",
+      "https://vietbao.vn/c/doc-la",
+      "https://vietbao.vn/c/du-lich",
+      "https://vietbao.vn/c/tin-tuc",
+      "https://vietbao.vn/c/diem-den",
+      "https://vietbao.vn/c/kinh-nghiem-du-lich",
+      "https://vietbao.vn/c/xe-cong-nghe",
+      "https://vietbao.vn/c/di-cho-cong-nghe",
+      "https://vietbao.vn/c/chuyen-doi-so",
+      "https://vietbao.vn/c/cuoc-song-so",
+      "https://vietbao.vn/c/blockchain-game",
+      "https://vietbao.vn/c/xe",
+      "https://vietbao.vn/c/xa-lo",
+      "https://vietbao.vn/c/soi-xe",
+      "https://vietbao.vn/c/khoa-hoc",
+      "https://vietbao.vn/c/thien-nhien-moi-truong",
+      "https://vietbao.vn/c/suc-khoe",
+      "https://vietbao.vn/c/tin-y-te",
+      "https://vietbao.vn/c/song-khoe",
+      "https://vietbao.vn/c/cac-benh",
+      "https://vietbao.vn/media",
+      "https://vietbao.vn/video",
+      "https://vietbao.vn/photo",
+      "https://vietbao.vn/infographic",
+      "https://vietbao.vn/emagazine"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?vietbao.vn/.*?(\\d{6,})/.*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietbao.vn",
+    "checkedAt": "2026-11-09T03:57:37.005Z",
+    "url": "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html",
+    "finalUrl": "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9757,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".video-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "vietbao.vn",
+      "siteId": "vietbao.vn",
+      "registrableDomain": "vietbao.vn",
+      "homepage": "https://vietbao.vn/",
+      "allowedHosts": [
+        "vietbao.vn",
+        "www.vietbao.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thúc đẩy quan hệ hợp tác giữa Đảng Cộng sản Việt Nam và Đảng Lao động Mexico",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:12.929Z",
+        "trainingUrls": [
+          "https://vietbao.vn/pham-thu-ha-nguyen-tuan-nam-sau-nhung-dong-dieu-am-nhac-tim-thay-tu-do-tren-dia-than-581567.html"
+        ],
+        "holdoutUrls": [
+          "https://vietbao.vn/pham-thu-ha-giong-hat-cham-toi-mien-an-tru-rieng-tu-giua-thanh-am-dep-de-592679.html",
+          "https://vietbao.vn/pham-thu-ha-nguoi-ta-vi-toi-la-hoa-mi-toi-muon-minh-la-dong-suoi-592137.html"
+        ]
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "vietbao.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 64,
+    "checkedArticleUrls": 65,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 63,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 58,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 825,
+        "passed": 64,
+        "distinctHashes": 63
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietbao.vn/nhung-loi-the-nganh-ban-dan-viet-nhat-co-the-bo-tro-nhau-615330.html",
+      "https://vietbao.vn/sua-luat-an-toan-thuc-pham-tuoc-co-hoi-cua-quang-cao-no-tang-cuong-bao-ve-nguoi-tieu-dung-615329.html",
+      "https://vietbao.vn/pho-thu-tuong-le-tien-chau-tiep-thong-doc-tinh-gunma-cua-nhat-ban-615327.html",
+      "https://vietbao.vn/mua-ban-dat-nhieu-lan-khong-sang-ten-coi-chung-pham-luat-615322.html",
+      "https://vietbao.vn/buc-tranh-tai-chinh-cua-dai-quang-minh-lai-hon-nghin-ty-no-vay-ngan-hang-vuot-19000-ty-dong-615328.html",
+      "https://vietbao.vn/tong-thong-nam-phi-keu-goi-thanh-lap-chinh-quyen-lien-minh-vi-loi-ich-cua-nguoi-dan-615326.html",
+      "https://vietbao.vn/can-canh-bo-doi-xe-dien-volvo-ex90-va-es90-ra-mat-tai-viet-nam-gia-tu-26-ty-dong-615324.html",
+      "https://vietbao.vn/co-dau-40-tuoi-o-ha-noi-duoc-con-gai-dua-ve-nha-chong-sau-17-nam-lam-me-don-than-615325.html",
+      "https://vietbao.vn/hue-chuyen-giao-2-benh-vien-ve-benh-vien-trung-uong-hue-lo-trinh-ra-sao-615323.html",
+      "https://vietbao.vn/bao-chi-cach-mang-viet-nam-trong-thoi-dai-so-595965.html",
+      "https://vietbao.vn/tong-bi-thu-kinh-te-co-von-dau-tu-nuoc-ngoai-duoc-doi-xu-binh-dang-587747.html",
+      "https://vietbao.vn/xay-dung-van-hoa-liem-chinh-trong-ky-nguyen-vuon-minh-587618.html",
+      "https://vietbao.vn/thanh-nien-voi-tuong-lai-dat-nuoc-587432.html",
+      "https://vietbao.vn/dan-chu-hoa-giao-duc-nen-tang-cho-doi-moi-va-sang-tao-587287.html",
+      "https://vietbao.vn/hanh-phuc-thuoc-do-moi-cua-phat-trien-quoc-gia-587000.html",
+      "https://vietbao.vn/thong-diep-phong-chong-tham-nhung-cua-tong-bi-thu-tu-chuyen-san-bay-long-thanh-586995.html",
+      "https://vietbao.vn/chung-ta-dang-song-voi-thu-nhap-trung-binh-nhung-chi-phi-cao-586731.html",
+      "https://vietbao.vn/tu-la-phieu-dau-tien-den-trach-nhiem-truoc-dong-chay-lich-su-586379.html",
+      "https://vietbao.vn/ngoai-tinh-tu-tuong-khi-tinh-cam-da-di-xa-truoc-ca-mot-loi-thu-nhan-615311.html",
+      "https://vietbao.vn/nhac-si-dong-thien-duc-lan-dau-khoe-vu-dao-bat-tay-tai-nang-nhi-gabi-bao-uyen-gay-sot-san-khau-hoa-binh-615304.html",
+      "https://vietbao.vn/khi-giac-mo-an-cu-dich-chuyen-ve-vung-ven-an-phuoc-riverside-trong-buc-tranh-do-thi-moi-615280.html",
+      "https://vietbao.vn/nha-dau-tu-san-bds-khi-dong-tien-chuyen-dich-nhung-tieu-chi-giup-tranh-sut-ho-615310.html",
+      "https://vietbao.vn/tuyen-sinh-lop-10-chuyen-bo-gddt-du-kien-chuyen-sang-thi-to-hop-615282.html",
+      "https://vietbao.vn/gan-12000-hoc-sinh-thanh-hoa-phai-nghi-hoc-do-mua-lu-615283.html",
+      "https://vietbao.vn/ha-noi-mo-ban-loat-nha-xa-hoi-gia-tu-16-trieu-dong-mot-m2-615309.html",
+      "https://vietbao.vn/xuyen-dem-dua-be-gai-2-tuoi-nguy-kich-tu-dao-tho-chu-ve-phu-quoc-cap-cuu-615284.html",
+      "https://vietbao.vn/vietjet-uu-dai-ve-eco-deluxe-dip-1111-615308.html",
+      "https://vietbao.vn/kiem-soat-thuc-pham-nhap-khau-theo-cach-moi-nguoi-tieu-dung-duoc-loi-gi-615286.html",
+      "https://vietbao.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-ban-chap-hanh-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-615303.html",
+      "https://vietbao.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake-615275.html",
+      "https://vietbao.vn/tu-quyet-dinh-o-lai-den-hanh-trinh-lon-len-cung-burundi-dau-an-ban-linh-viet-nam-615276.html",
+      "https://vietbao.vn/chuyen-bo-cong-an-vu-tap-doan-duong-dong-ton-kho-am-123-trieu-lit-xang-dau-615319.html",
+      "https://vietbao.vn/ha-noi-co-them-nhieu-tuyen-buyt-dien-thay-the-diesel-615318.html",
+      "https://vietbao.vn/nghe-an-mo-khong-gian-tang-truong-bat-dong-san-don-co-hoi-moi-615314.html",
+      "https://vietbao.vn/bat-dau-chi-tra-tien-day-them-gio-cho-giao-vien-tai-thanh-pho-ho-chi-minh-615316.html",
+      "https://vietbao.vn/tieu-chuan-tieu-chi-danh-gia-muc-do-trien-khai-de-an-dua-tieng-anh-thanh-ngon-ngu-thu-hai-trong-truong-hoc-615317.html",
+      "https://vietbao.vn/chung-khoan-kafi-muon-huy-dong-them-200-ty-dong-trai-phieu-615321.html",
+      "https://vietbao.vn/thoi-diem-vang-so-huu-lien-ke-eurowindow-twin-parks-615315.html",
+      "https://vietbao.vn/v-league-cu-mai-dem-tien-hlv-van-sy-son-lang-le-dem-diem-cung-slna-615266.html",
+      "https://vietbao.vn/messi-vao-doi-hinh-hay-nhat-nam-harry-kane-bat-ngo-bi-loai-615233.html",
+      "https://vietbao.vn/nhan-dinh-u23-viet-nam-vs-u23-thai-lan-quyet-thang-ngay-ra-quan-615216.html",
+      "https://vietbao.vn/kane-bi-loai-messi-co-ten-trong-doi-hinh-hay-nhat-nam-615199.html",
+      "https://vietbao.vn/u23-viet-nam-co-quan-bai-gi-de-san-sang-nghenh-chien-thai-lan-615172.html",
+      "https://vietbao.vn/truc-tiep-mu-vs-aston-villa-vong-10-ngoai-hang-anh-20262027-615072.html",
+      "https://vietbao.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico-615074.html",
+      "https://vietbao.vn/nu-ca-si-dai-gia-dat-mo-khong-nho-noi-minh-co-bao-nhieu-can-nha-45-tuoi-moi-lay-chong-615186.html",
+      "https://vietbao.vn/facebook-ong-hoang-hoa-trung-bien-mat-du-an-nuoi-em-lai-nong-586728.html",
+      "https://vietbao.vn/tong-bi-thu-chu-tich-nuoc-va-phu-nhan-hoi-kien-chu-tich-ha-vien-va-chu-tich-thuong-vien-nhat-ban-615188.html",
+      "https://vietbao.vn/ly-do-hoa-minzy-phuong-my-chi-bi-loai-o-giai-mai-vang-615320.html",
+      "https://vietbao.vn/be-boi-tinh-duc-rung-dong-nuoc-anh-615298.html",
+      "https://vietbao.vn/chuyen-la-o-nong-truong-bo-sua-moc-chau-615299.html",
+      "https://vietbao.vn/vi-sao-dan-ong-giau-co-thanh-dat-de-ngoai-tinh-615289.html",
+      "https://vietbao.vn/dua-con-du-thua-khi-tinh-thuong-cua-me-khong-danh-deu-cho-nhung-dua-con-615291.html",
+      "https://vietbao.vn/vietnamtravel-vuon-len-vi-tri-thu-hai-dong-nam-a-suc-canh-tranh-moi-cua-thuong-hieu-du-lich-viet-nam-615290.html",
+      "https://vietbao.vn/hue-phat-trien-du-lich-duong-song-va-khong-gian-pho-co-gia-hoi-615292.html",
+      "https://vietbao.vn/du-lich-ha-noi-chuyen-huong-tang-gia-tri-tao-luc-day-tang-truong-kinh-te-cuoi-nam-615211.html",
+      "https://vietbao.vn/lam-moi-diem-den-danh-thuc-suc-hut-du-lich-mua-dong-2026-615183.html",
+      "https://vietbao.vn/byd-trinh-lang-sedan-sieu-sang-yangwang-altior-tham-vong-canh-tranh-rolls-royce-615313.html",
+      "https://vietbao.vn/thi-truong-o-to-cuoi-nam-nhieu-mau-xe-uu-dai-hang-tram-trieu-dong-615265.html",
+      "https://vietbao.vn/byd-bi-land-rover-cao-buoc-sao-chep-thiet-ke-hai-van-phong-bi-thu-giu-du-lieu-615269.html",
+      "https://vietbao.vn/iphone-duo-2tb-dat-do-bac-nhat-lieu-co-tro-thanh-mon-do-cong-nghe-xa-xi-dang-so-huu-615281.html",
+      "https://vietbao.vn/oppo-find-x10-va-pro-max-unlock-gioi-han-camera-smartphone-voi-bo-kit-nhiep-anh-cellphones-615262.html",
+      "https://vietbao.vn/viet-nam-quyet-tam-chuyen-doi-he-thong-luong-thuc-ben-vung-gan-voi-net-zero-615238.html",
+      "https://vietbao.vn/phat-hien-2-ca-mac-nao-mo-cau-o-tay-ninh-co-mot-hoc-sinh-7-tuoi-615287.html",
+      "https://vietbao.vn/cong-ty-luat-thien-huong-ky-niem-ngay-truyen-thong-luat-su-viet-nam-va-5-nam-thanh-lap-611107.html",
+      "https://vietbao.vn/nhung-noi-dung-quan-trong-cua-ky-hop-khong-thuong-le-thu-nhat-quoc-hoi-khoa-xvi-601491.html",
+      "https://vietbao.vn/mo-rong-quyen-loi-doi-voi-nguoi-tham-gia-bao-hiem-y-te-595650.html",
+      "https://vietbao.vn/kham-chua-benh-bhyt-duoi-3795000-dong-khong-phai-tra-tien-594864.html",
+      "https://vietbao.vn/xang-e10-phu-hop-voi-dong-xe-nao-tai-viet-nam-592697.html",
+      "https://vietbao.vn/chi-tiet-cac-khoan-chi-duoc-tru-va-khong-duoc-tru-trong-xac-dinh-thue-thu-nhap-ca-nhan-587496.html",
+      "https://vietbao.vn/lich-thi-dau-va-truc-tiep-bong-da-viet-nam-hom-nay-811-615014.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:54.894Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietbao.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

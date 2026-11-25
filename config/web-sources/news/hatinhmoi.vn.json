@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hatinhmoi.vn",
+  "siteId": "hatinhmoi.vn",
+  "registrableDomain": "hatinhmoi.vn",
+  "homepage": "https://hatinhmoi.vn/",
+  "allowedHosts": [
+    "hatinhmoi.vn",
+    "www.hatinhmoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://hatinhmoi.vn/",
+    "categories": [
+      "https://hatinhmoi.vn/xa-hoi/",
+      "https://hatinhmoi.vn/doi-song/",
+      "https://hatinhmoi.vn/phap-luat/",
+      "https://hatinhmoi.vn/the-gioi/",
+      "https://hatinhmoi.vn/diem-nong/",
+      "https://hatinhmoi.vn/giao-duc/",
+      "https://hatinhmoi.vn/tin-giao-duc/",
+      "https://hatinhmoi.vn/thay-hay-tro-gioi/",
+      "https://hatinhmoi.vn/sang-kien-dao-tao/",
+      "https://hatinhmoi.vn/tu-van-tuyen-sinh/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Hương phấn còn vương",
+    "strategy": "selector",
+    "selector": "h1.title"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".h5",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#news-bodyhtml",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:15:45.788Z",
+    "frozenAt": "2026-11-16T02:15:42.776Z",
+    "trainingUrl": "https://hatinhmoi.vn/giao-duc/huong-phan-con-vuong-67150.html",
+    "independentHoldouts": [
+      "https://hatinhmoi.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-67024.html",
+      "https://hatinhmoi.vn/18-nam-dat-thuong-hieu-quoc-gia-va-hanh-trinh-khong-ngung-nang-chuan-cua-vinamilk-66943.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://hatinhmoi.vn/giao-duc/huong-phan-con-vuong-67150.html",
+      "https://hatinhmoi.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-67024.html",
+      "https://hatinhmoi.vn/18-nam-dat-thuong-hieu-quoc-gia-va-hanh-trinh-khong-ngung-nang-chuan-cua-vinamilk-66943.html",
+      "https://hatinhmoi.vn/vinamilk-va-bai-toan-giu-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he-66887.html",
+      "https://hatinhmoi.vn/phap-luat/phat-hien-hon-400-mon-trang-suc-vang-gia-nhan-hieu-xa-xi-o-3-tiem-vang-67146.html",
+      "https://hatinhmoi.vn/xa-hoi/nhung-de-xuat-moi-ve-an-toan-thuc-pham-doi-voi-bep-an-tap-the-va-thuc-an-duong-pho-67140.html",
+      "https://hatinhmoi.vn/giao-duc/san-khau-hoa-giup-hoc-sinh-hieu-luat-vung-ky-nang-67098.html",
+      "https://hatinhmoi.vn/van-hoa-giai-tri/nghe-an-va-ha-tinh-gianh-giai-xuat-sac-lien-hoan-tieng-hat-dan-ca-nguoi-cao-tuoi-khu-vuc-bac-trung-bo-va-tp-quang-ninh-67119.html",
+      "https://hatinhmoi.vn/xa-hoi/ha-tinh-chu-dong-ngan-nguy-co-dich-benh-ebola-xam-nhap-qua-cua-khau-cang-bien-67106.html",
+      "https://hatinhmoi.vn/nguoi-nghe-thanh-dat/5-tap-the-12-ca-nhan-duoc-trao-giai-thuong-phu-nu-viet-nam-nam-2026-66934.html",
+      "https://hatinhmoi.vn/nguoi-nghe-thanh-dat/chan-dung-quai-kiet-goc-ha-tinh-roi-google-sang-lap-startup-ai-dinh-gia-50-ty-usd-gay-chan-dong-silicon-valley-66910.html",
+      "https://hatinhmoi.vn/xa-hoi/ha-tinh-tiep-noi-mach-nguon-van-hoa-lam-giau-kho-tang-di-san-viet-nam-67147.html",
+      "https://hatinhmoi.vn/kinh-te/phai-doan-xuc-tien-thuong-mai-cua-bo-nong-nghiep-hoa-ky-tham-quan-nha-may-sua-cua-vinamilk-67142.html",
+      "https://hatinhmoi.vn/kinh-te/chan-kip-thoi-nhom-doi-tuong-tiep-can-nguoi-cao-tuoi-tang-qua-de-ban-hang-voi-gia-cat-co-67138.html",
+      "https://hatinhmoi.vn/kinh-te/gia-xang-dau-tiep-tuc-giam-co-loai-giam-hon-2-000-dong-lit-67124.html",
+      "https://hatinhmoi.vn/kinh-te/gia-xang-giam-hang-hoa-van-neo-cao-loi-ich-roi-vao-tui-ai-67120.html",
+      "https://hatinhmoi.vn/kinh-te/vinamilk-tiep-tuc-tang-truong-doanh-thu-va-dat-nhieu-vinh-danh-trong-nuoc-lan-quoc-te-67113.html",
+      "https://hatinhmoi.vn/kinh-te/mobifone-du-kien-rot-500-ty-dong-phat-trien-ha-tang-so-tai-ha-tinh-67104.html",
+      "https://hatinhmoi.vn/xa-hoi/mua-lon-gay-sat-lo-quoc-lo-nhieu-tuyen-duong-o-ha-tinh-bi-chia-cat-67099.html",
+      "https://hatinhmoi.vn/giao-duc/ha-tinh-thay-giao-9x-dung-ai-truyen-cam-hung-mon-toan-cho-hoc-tro-67152.html",
+      "https://hatinhmoi.vn/the-thao/an-phat-qua-nang-danh-cho-hlv-park-hang-seo-67149.html",
+      "https://hatinhmoi.vn/kinh-te/kinh-te-tap-the-tru-do-cho-phat-trien-kinh-te-nong-thon-67148.html",
+      "https://hatinhmoi.vn/kinh-te/gia-vang-thap-nhat-nam-mat-gan-55-trieu-dong-luong-so-voi-dinh-lich-su-67145.html",
+      "https://hatinhmoi.vn/xa-hoi/du-bao-thoi-tiet-ngay-14-11-mien-bac-ngay-nang-mien-nam-chieu-va-toi-mua-dong-67141.html",
+      "https://hatinhmoi.vn/kinh-te/nghe-an-loat-du-an-nha-o-xa-hoi-dong-loat-mo-ban-dip-cuoi-nam-67136.html",
+      "https://hatinhmoi.vn/kham-pha-mien-trung/khai-mo-tiem-nang-tu-khong-gian-van-hoa-tien-dien-67131.html",
+      "https://hatinhmoi.vn/xa-hoi/canh-bao-lu-quet-sat-lo-dat-sut-lun-dat-trong-6-gio-toi-ngay-13-11-2026-tu-hue-den-khanh-hoa-67128.html",
+      "https://hatinhmoi.vn/kinh-te/ha-tinh-tap-huan-xay-dung-nong-thon-moi-gan-voi-kinh-te-xanh-67125.html",
+      "https://hatinhmoi.vn/phap-luat/chu-quan-nhau-ke-thoi-diem-truoc-khi-nam-sinh-o-nghe-an-bi-ban-tha-xuong-song-67151.html",
+      "https://hatinhmoi.vn/phap-luat/cong-an-xa-hong-son-xac-minh-vu-xo-xat-me-chong-nang-dau-67144.html",
+      "https://hatinhmoi.vn/xa-hoi/4-con-voi-rung-bat-ngo-xuat-hien-pha-lan-trai-cua-nguoi-dan-o-nghe-an-hien-van-chua-chiu-roi-di-67143.html",
+      "https://hatinhmoi.vn/kham-pha-mien-trung/nguy-co-mac-chung-mat-tri-nho-tang-len-theo-so-luong-thuoc-la-hut-moi-ngay-67139.html",
+      "https://hatinhmoi.vn/kham-pha-mien-trung/nhung-thuc-pham-quen-thuoc-co-the-khien-axit-uric-tang-xuong-khop-dau-nhuc-67137.html",
+      "https://hatinhmoi.vn/phap-luat/xu-phat-hon-60-trieu-dong-vi-dang-tai-thong-tin-sai-su-that-tren-mang-xa-hoi-67135.html",
+      "https://hatinhmoi.vn/xa-hoi/ky-luat-chu-tich-pho-chu-tich-ubnd-tinh-tuyen-quang-sau-tieu-cuc-diem-thi-67134.html",
+      "https://hatinhmoi.vn/phap-luat/ha-tinh-khoi-to-vu-lua-dao-qua-moi-gioi-xuat-khau-lao-dong-63-nguoi-bi-hai-67133.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

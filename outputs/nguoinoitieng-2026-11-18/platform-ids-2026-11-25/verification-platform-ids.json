@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "people": 13804,
+  "link_rows": 13820,
+  "unique_accounts": 13369,
+  "counts": {
+    "resolved": 9406,
+    "unresolved": 3963
+  },
+  "xlsx_ids_exact_text": true,
+  "xlsx_rows_checked": 27189,
+  "xlsx_formula_errors": 0,
+  "original_archive_modified": false
+}

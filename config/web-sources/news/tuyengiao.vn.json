@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tuyengiao.vn",
+  "siteId": "tuyengiao.vn",
+  "registrableDomain": "tuyengiao.vn",
+  "homepage": "https://tuyengiao.vn/vn",
+  "allowedHosts": [
+    "tuyengiao.vn",
+    "www.tuyengiao.vn"
+  ],
+  "httpDependencyHosts": [
+    "tuyengiaodanvan.vn"
+  ],
+  "httpAdapter": "tuyengiao_public_news",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article > h1"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".tuyengiao-public-body",
+    "remove": "script,style"
+  },
+  "publishedDate": {
+    "strategy": "jsonld"
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "discovery": {
+    "homepage": "https://tuyengiao.vn/vn",
+    "categories": [],
+    "requiredArticlePattern": "^https://tuyengiao\\.vn/vn/blogs/[a-z0-9-]+-[a-f0-9]{24}$"
+  },
+  "enabled": true,
+  "originalPublicationMappingEvidence": {
+    "frontendChunk": "page-db8c84e9439dc140.js",
+    "component": "BlogPublishDate",
+    "fieldExpression": "blog.publishDate ?? blog.createdAt",
+    "backend": "https://tuyengiaodanvan.vn/api/v1/news/public"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:22:31.630Z",
+    "sampleUrls": [
+      "https://tuyengiao.vn/vn/blogs/khai-truong-trung-tam-bao-chi-dai-hoi-the-thao-toan-quoc-lan-thu-x-nam-2026-6aeebe3efe13b9ef33e00d4f",
+      "https://tuyengiao.vn/vn/blogs/quoc-hoi-chot-muc-tieu-tang-truong-gdp-nam-2027-tu-10-tro-len-6aeeba241dfce6e28581a26a",
+      "https://tuyengiao.vn/vn/blogs/ra-mat-chip-va-nen-tang-ban-dan-bao-mat-dau-tien-tai-viet-nam-6aeeb921fe13b9ef33e00ca1",
+      "https://tuyengiao.vn/vn/blogs/ky-niem-109-nam-cach-mang-thang-muoi-nga-7111917-7112026-bai-hoc-phat-huy-vai-tro-chu-the-cua-nhan-dan-trong-xay-dung-xa-hoi-moi-6aeeb7d21dfce6e28581a1e5"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

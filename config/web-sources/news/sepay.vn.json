@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sepay.vn",
+  "siteId": "sepay.vn",
+  "registrableDomain": "sepay.vn",
+  "homepage": "https://sepay.vn/",
+  "allowedHosts": [
+    "sepay.vn",
+    "www.sepay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://sepay.vn/",
+    "categories": [
+      "https://sepay.vn/cong-thanh-toan-truc-tuyen.html",
+      "https://sepay.vn/cong-thanh-toan-vietqr.html",
+      "https://sepay.vn/cong-thanh-toan-napas.html",
+      "https://sepay.vn/cong-thanh-toan-woocommerce.html",
+      "https://sepay.vn/cong-thanh-toan-haravan.html",
+      "https://sepay.vn/cong-thanh-toan-hostbill.html"
+    ]
+  },
+  "title": {
+    "value": "SePay là nhà tài trợ Đồng của Hội thảo “Thúc đẩy thanh toán xuyên biên giới qua mã QR: Động lực mới cho bán lẻ và du lịch”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:28.382Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:16.620Z",
+    "independentHoldouts": [
+      "https://sepay.vn/blog/combo-khoi-nghiep-cung-sepay-va-vietinbank",
+      "https://sepay.vn/blog/sepay-chinh-thuc-hop-tac-ngan-hang-shinhan-viet-nam-shinhan-bank",
+      "https://sepay.vn/blog/tang-3600-giao-dich-khi-mo-tai-khoan-ho-kinh-doanh-doanh-nghiep-vietinbank-qua-sepay/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://sepay.vn/blog/sepay-la-nha-tai-tro-dong-cua-hoi-thao-thuc-day-thanh-toan-xuyen-bien-gioi-qua-ma-qr-dong-luc-moi-cho-ban-le-va-du-lich",
+      "https://sepay.vn/blog/combo-khoi-nghiep-cung-sepay-va-vietinbank",
+      "https://sepay.vn/blog/sepay-chinh-thuc-hop-tac-ngan-hang-shinhan-viet-nam-shinhan-bank",
+      "https://sepay.vn/blog/tang-3600-giao-dich-khi-mo-tai-khoan-ho-kinh-doanh-doanh-nghiep-vietinbank-qua-sepay/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

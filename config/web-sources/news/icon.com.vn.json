@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "icon.com.vn",
+  "siteId": "icon.com.vn",
+  "registrableDomain": "icon.com.vn",
+  "homepage": "https://icon.com.vn/",
+  "allowedHosts": [
+    "icon.com.vn",
+    "www.icon.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "EVNNPT báo cáo Bộ trưởng Bộ Công Thương các giải pháp bảo đảm truyền tải điện năm 2027",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#ContentPlaceHolder1_ctl00_row3_container_col1",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:31.363Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://icon.com.vn/d6/vi-VN/news/EVNNPT-bao-cao-Bo-truong-Bo-Cong-Thuong-cac-giai-phap-bao-dam-truyen-tai-dien-nam-2027-60-574-217547",
+      "https://icon.com.vn/d6/vi-VN/news/Hai-giai-phap-cua-doan-vien-thanh-nien-EVNCPC-dat-Giai-thuong-Tuoi-tre-sang-tao-toan-quoc-nam-2026-60-626-217561",
+      "https://icon.com.vn/d6/vi-VN/news/Dien-mat-troi-mai-nha-Giai-phap-nguon-quan-trong-va-nhanh-nhat-cho-nam-2027-60-620-217560",
+      "https://icon.com.vn/d6/vi-VN/news/EVNHANOI-hoan-thien-he-sinh-thai-dich-vu-cham-soc-khach-hang-60-639-217556",
+      "https://icon.com.vn/d6/vi-VN/news/PC-Quang-Tri-Tang-cuong-kiem-tra-kip-thoi-phat-hien-vi-pham-trong-su-dung-dien-60-621-217555",
+      "https://icon.com.vn/d6/vi-VN/news/Hai-giai-phap-cua-doan-vien-thanh-nien-EVNCPC-dat-Giai-thuong-Tuoi-tre-sang-tao-toan-quoc-nam-2026-60-626-217561"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/icon.com.vn"
+  },
+  "discovery": {
+    "homepage": "https://icon.com.vn/",
+    "categories": [
+      "https://icon.com.vn/c3/vi-VN/news-lf/Tin-tuc-60-641",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Su-kien-60-631",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Tin-trong-nuoc-60-626",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Tin-the-gioi-60-632",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Phong-su-60-688",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Phong-su-anh-60-661",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Thi-truong-dien-60-638",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Thiet-ke-60-634",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Hoat-dong-60-635",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Van-hanh-60-623",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Thi-truong-dien-the-gioi-60-622",
+      "https://icon.com.vn/c3/vi-VN/news-lf/San-xuat-kinh-doanh-60-637",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Truyen-tai-60-574",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Nguon-dien-60-654",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Phan-phoi-60-621",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Tai-chinh-Ngan-hang-60-581",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Dau-tu-xay-dung-60-640",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Tien-do-cong-trinh-60-579",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Danh-muc-du-an-60-625",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Thong-tin-dau-tu-60-580",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Doi-moi-doanh-nghiep-60-639",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Co-phan-hoa-60-624",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Dao-tao-60-627",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Chuyen-dong-nang-luong-60-633",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Dien-dan-nang-luong-60-618",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Nang-luong-xanh-60-620",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Quan-ly-nang-luong-60-619",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Khoa-hoc-cong-nghe-60-630",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Dien-luc-60-645",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Nang-luong-60-646",
+      "https://icon.com.vn/c3/vi-VN/news-lf/Dich-vu-CNTT-60-571"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?icon.com.vn/.*?(\\d{5,}).*?(.html|.htm|.chn|.aspx)$",
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "icon.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 79,
+    "checkedArticleUrls": 80,
+    "freshArticleChecks": 76,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 79,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 31,
+    "categoriesFreshChecked": 31,
+    "categoriesUnconfirmed": 31,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 314,
+        "passed": 79,
+        "distinctHashes": 79
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:15:46.696Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/icon.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".time",
+        "attribute": null,
+        "index": 0,
+        "priority": 65
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".npt-news-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

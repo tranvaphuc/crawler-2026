@@ -1,0 +1,307 @@
+BÁO CÁO NEWS — 2026-11-13T01:01:24.623404+00:00
+Release VPS: 20261113-04; service active; 94/94 tests; 11/11 proxy HTTPS tốt.
+Đã xử lý task: 544/544 site. Có ít nhất một bài hợp lệ (gồm bài cũ): 467. Chưa có bài hợp lệ trong runtime: 77.
+Kiểm tra lại 85 site lỗi/lỗi một phần: 163 request ở lượt chẩn đoán đầu; sau đó kiểm tra thêm các bài độc lập cho bản sửa.
+9 bộ parser pass 3 bài độc lập/bộ: Dongvon, Kinh tế Nông thôn, Cơ hội Giao thương, Hương Sen Việt, Nghệ Tĩnh Plus, Bản Tin Sáng, TV Người Đưa Tin, Yahoo Finance, Advertising Vietnam. Advertising dùng ba HTML HTTP công khai đã lưu; request chẩn đoán mới có 403, runtime lúc 08:02:54 sau deploy đã có 6 bài verified_outbox và 4 bài cũ được bỏ qua đúng cửa sổ 24h.
+9 parser đã sửa không đồng nghĩa 9 site đã có bài mới trong ES. Một số chỉ có bài cũ hoặc đang chờ queue; giữ cửa sổ bài mới 24h, không import toàn kho.
+Không dùng browser hoặc gọi model. Giữ ID Latin-1/MD5 tương thích Eastdata; giữ kiểm tra description, giờ đăng, timezone, nội dung và quyền truy cập.
+
+I. CÁC SITE CHƯA CÓ BÀI HỢP LỆ TRONG RUNTIME (SNAPSHOT)
+Các lý do runtime dưới đây có cả lịch sử trước sửa; đối chiếu trạng thái kiểm tra mới trên cùng dòng. Không đồng nhất lỗi một số URL với site không truy cập được.
+2saigon.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:ECONNRESET (111) | recheck: ECONNRESET
+anhsangvacuocsong.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 41 | runtime: NEWS_FIELD_VERIFICATION_FAILED (41); request_deadline_exceeded (16); seed:request_deadline_exceeded (76) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+asemconnectvietnam.gov.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 96 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (65); missing_title,missing_published_date,missing_body (3); request_deadline_exceeded (1); seed:no_article_links (6) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+bantinsang.net | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 0 | runtime: seed:no_article_links (89) | recheck: NO_ARTICLE_LINKS
+baobariavungtau.com.vn | Có mẫu đạt khi kiểm tra lại; còn lỗi theo URL/layout | seed có link: 80 | runtime: NEWS_FIELD_VERIFICATION_FAILED (28); missing_title,missing_published_date,missing_body (1) | recheck: xem chi tiết JSON
+baodoi.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 80 | runtime: NEWS_UNCONFIGURED_TARGET_HOST (44); UNAPPROVED_CROSS_PUBLISHER_REDIRECT (20) | recheck: NEWS_UNCONFIGURED_TARGET_HOST
+baoxehoi.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 93 | runtime: NEWS_FIELD_VERIFICATION_FAILED (10) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+blog.rever.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 90 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (9) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+chatluongvacuocsong.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 119 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (41); missing_title,missing_published_date (2); missing_body (1) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+cohoigiaothuong.vn | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 86 | runtime: NEWS_FIELD_VERIFICATION_FAILED (7) | recheck: missing_published_date,missing_body
+coindesk.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:rate_limited (31) | recheck: rate_limited
+dientungaynay.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 115 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (36); seed:request_deadline_exceeded (3); seed:http_503 (1) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+dientutieudung.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 6 | runtime: seed:no_article_links (78); seed:request_deadline_exceeded (2) | recheck: NO_ARTICLE_LINKS
+doanhnghiepchinhsach.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 90 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (11); missing_published_date,missing_body (3) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+doanhnhansaoviet.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 93 | runtime: NEWS_FIELD_VERIFICATION_FAILED (5) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+doisongvanhoa.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 85 | runtime: NEWS_FIELD_VERIFICATION_FAILED (7) | recheck: NEWS_TIMEZONE_UNCONFIRMED, NEWS_GENERIC_DESCRIPTION
+doithoaiphattrien.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 87 | runtime: missing_title,missing_published_date,missing_body (2); NEWS_PUBLICATION_PRECISION_UNCONFIRMED (2); seed:request_deadline_exceeded (1) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+dongvon.doanhnhanvn.vn | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 88 | runtime: NEWS_FIELD_VERIFICATION_FAILED (11) | recheck: xem chi tiết JSON
+dulichgiaitri.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 114 | runtime: NEWS_FIELD_VERIFICATION_FAILED (22); missing_title,missing_published_date,missing_body (1) | recheck: NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+dzogame.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 81 | runtime: NEWS_FIELD_VERIFICATION_FAILED (5); seed:no_article_links (2) | recheck: NEWS_GENERIC_DESCRIPTION
+edition.cnn.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:access_blocked (139) | recheck: ERR_BAD_RESPONSE
+emagazine24.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:access_blocked (31) | recheck: access_blocked
+en.qdnd.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 27 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (15); missing_body (3); seed:NEWS_REDIRECT_LOOP (86) | recheck: NEWS_REDIRECT_LOOP, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+finance.yahoo.com | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 0 | runtime: seed:HPE_HEADER_OVERFLOW (81) | recheck: HPE_HEADER_OVERFLOW
+giacavattu.com.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 12 | runtime: seed:request_deadline_exceeded (1) | recheck: NO_ARTICLE_LINKS
+gialaitv.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 80 | runtime: NEWS_FIELD_VERIFICATION_FAILED (2); not_found (1); seed:access_blocked (4) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+giavang.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 97 | runtime: NEWS_FIELD_VERIFICATION_FAILED (20) | recheck: NEWS_GENERIC_DESCRIPTION
+hungyentv.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 76 | runtime: missing_title,missing_published_date,missing_body (5); seed:request_deadline_exceeded (5) | recheck: missing_title,missing_published_date,missing_body
+huongsenviet.com | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 93 | runtime: NEWS_FIELD_VERIFICATION_FAILED (8) | recheck: missing_published_date,missing_body
+kenhtinxe.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 106 | runtime: NEWS_FIELD_VERIFICATION_FAILED (28); seed:no_article_links (1) | recheck: NEWS_TIMEZONE_UNCONFIRMED
+kiemsat.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 86 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (6); NEWS_MEDIA_WITHOUT_NATIVE_TEXT (2) | recheck: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+kientrucvietnam.org.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 120 | runtime: NEWS_FIELD_VERIFICATION_FAILED (24); seed:no_article_links (3) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+kinhtenews.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 78 | runtime: NEWS_FIELD_VERIFICATION_FAILED (3); seed:request_deadline_exceeded (3) | recheck: NEWS_GENERIC_DESCRIPTION
+kinhtenongthon.vn | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 94 | runtime: NEWS_FIELD_VERIFICATION_FAILED (9); NEWS_PUBLICATION_PRECISION_UNCONFIRMED (1) | recheck: xem chi tiết JSON
+kinhteplus.com.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 106 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (20); request_deadline_exceeded (1); seed:request_deadline_exceeded (6) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+kinhtexahoi.vn | Có mẫu đạt khi kiểm tra lại; còn lỗi theo URL/layout | seed có link: 96 | runtime: NEWS_FIELD_VERIFICATION_FAILED (12); missing_title,missing_published_date,missing_body (2); missing_body (1); seed:request_deadline_exceeded (2) | recheck: xem chi tiết JSON
+laodongdongnai.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 39 | runtime: http_500 (5); seed:http_500 (41) | recheck: http_500
+lyluanchinhtrivatruyenthong.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:no_article_links (94) | recheck: NO_ARTICLE_LINKS
+markets.businessinsider.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 79 | runtime: publisher_restricted_content_unverified (1); seed:not_found (6); seed:no_article_links (1) | recheck: publisher_restricted_content_unverified
+molistar.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:http_520 (86) | recheck: http_520
+msn.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:empty_page (79) | recheck: empty_page
+mxpress.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 105 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (19) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+ngaymoisaigon.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 86 | runtime: request_deadline_exceeded (3) | recheck: request_deadline_exceeded, NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+nghetinhplus.vn | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 94 | runtime: NEWS_FIELD_VERIFICATION_FAILED (11) | recheck: missing_body
+ngoisaovietnam.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 77 | runtime: not_found (3); seed:request_deadline_exceeded (2) | recheck: not_found
+nguoinoitieng.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:no_article_links (100) | recheck: NO_ARTICLE_LINKS
+nhansac.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 81 | runtime: NEWS_FIELD_VERIFICATION_FAILED (2) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+nhipcaudautu.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 90 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (14); missing_published_date,missing_body (3) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+nudoanhnhan.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 100 | runtime: NEWS_FIELD_VERIFICATION_FAILED (7); missing_published_date,missing_body (1); seed:no_article_links (1) | recheck: NEWS_GENERIC_DESCRIPTION
+phunustyle.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 79 | runtime: NEWS_FIELD_VERIFICATION_FAILED (2) | recheck: NEWS_GENERIC_DESCRIPTION
+seekingalpha.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 80 | runtime: access_blocked (4); seed:empty_page (3); seed:request_deadline_exceeded (1) | recheck: access_blocked
+taichinhdoanhnghiep.net.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 76 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (9); body_link_density (2) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+tamnhin.kienthuc.net.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:ECONNRESET (75) | recheck: ECONNRESET
+tamnhin.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 67 | runtime: not_found (1); missing_title,missing_published_date,missing_body (1) | recheck: missing_title,missing_published_date,missing_body, not_found
+tapchithangmay.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 79 | runtime: missing_title,missing_published_date,missing_body (1); missing_published_date,missing_body (1) | recheck: missing_published_date,missing_body, missing_title,missing_published_date,missing_body
+thanhtra.gov.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 37 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (2); missing_title,missing_published_date,missing_body (1); seed:request_deadline_exceeded (19) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+thoibaobatdongsan.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:no_article_links (53) | recheck: NO_ARTICLE_LINKS
+thongbaoluadao.blogspot.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 50 | runtime: NEWS_FIELD_VERIFICATION_FAILED (1); seed:request_deadline_exceeded (1) | recheck: NEWS_GENERIC_DESCRIPTION
+tieudungthoinay.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:not_found (50) | recheck: not_found
+tiim.com.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 95 | runtime: NEWS_MEDIA_WITHOUT_NATIVE_TEXT (7) | recheck: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+tin2s3h.blogspot.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 48 | runtime: NEWS_FIELD_VERIFICATION_FAILED (1) | recheck: NEWS_GENERIC_DESCRIPTION
+tintuctoday.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 45 | runtime: parser_configuration_missing (2) | recheck: parser_configuration_missing
+tinxe.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 57 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (16); missing_published_date,missing_body (1) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+toancanhbaochi.net | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 63 | runtime: missing_published_date (7); seed:no_article_links (1) | recheck: missing_published_date
+travelguide.org.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 44 | runtime: parser_configuration_missing (2) | recheck: parser_configuration_missing
+truyenhinh.baobinhduong.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 44 | runtime: NEWS_MEDIA_WITHOUT_NATIVE_TEXT (2); seed:no_article_links (1) | recheck: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+truyenthongg8.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 52 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (5); NEWS_FIELD_VERIFICATION_FAILED (2) | recheck: native_paragraph_coverage_requires_review, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+tv.kiemsat.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 51 | runtime: NEWS_PUBLICATION_PRECISION_UNCONFIRMED (7) | recheck: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+tv.nguoiduatin.vn | ĐÃ SỬA, 3/3 bài kiểm tra đạt; chờ kết quả queue/bài mới | seed có link: 0 | runtime: seed:no_article_links (49) | recheck: NO_ARTICLE_LINKS
+vccinews.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 54 | runtime: NEWS_FIELD_VERIFICATION_FAILED (8); missing_title,missing_published_date,missing_body (3); seed:not_found (1) | recheck: NEWS_TIMEZONE_UNCONFIRMED
+vietnet24h.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 65 | runtime: NEWS_FIELD_VERIFICATION_FAILED (19) | recheck: NEWS_GENERIC_DESCRIPTION
+vinh24h.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 0 | runtime: seed:request_deadline_exceeded (58) | recheck: request_deadline_exceeded
+vntravellive.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 86 | runtime: NEWS_FIELD_VERIFICATION_FAILED (48); missing_title,missing_published_date (1); missing_published_date (1) | recheck: NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+world.kbs.co.kr | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 41 | runtime: missing_published_date (3); missing_title,missing_published_date,missing_body (2); missing_published_date,missing_body (2) | recheck: missing_published_date
+xaluan.com | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 39 | runtime: NEWS_REDIRECT_LOOP (2); seed:no_article_links (3); seed:NEWS_REDIRECT_LOOP (1) | recheck: NEWS_REDIRECT_LOOP
+xecongnghe.vn | CHƯA XÁC MINH ĐƯỢC BÀI ĐẠT | seed có link: 48 | runtime: NEWS_FIELD_VERIFICATION_FAILED (12) | recheck: missing_description, NEWS_MISSING_DESCRIPTION
+yahoo.com | Có mẫu đạt khi kiểm tra lại; còn lỗi theo URL/layout | seed có link: 2 | runtime: request_deadline_exceeded (1); seed:request_deadline_exceeded (45) | recheck: xem chi tiết JSON
+
+II. CHI TIẾT 85 SITE ĐÃ KIỂM TRA LẠI
+Mỗi dòng phản ánh các URL đã thử; không phải chứng nhận toàn site. Lý luận Chính trị đã lấy được 20 link nhưng cả 3 mẫu chỉ có ngày, chưa chứng minh được giờ đăng. Nguoinoitieng.vn trả trang Account Suspended.
+2saigon.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"error":"ECONNRESET","links":0} | lỗi: ECONNRESET
+advertisingvietnam.com | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/1 | home: {} | lỗi: access_blocked
+  https://advertisingvietnam.com/article/van-hoa-viet-trong-my-pham | access_blocked
+anhsangvacuocsong.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://anhsangvacuocsong.vn/xe-chay-nang-luong-mat-troi-xu-the-tat-yeu-sau-xe-dien/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2022-07-14T12:31:42.000Z
+  https://anhsangvacuocsong.vn/phe-duyet-chuong-trinh-phat-trien-vat-lieu-xay-khong-nung-tai-viet-nam-den-nam-2030/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2021-12-24T01:12:21.000Z
+asemconnectvietnam.gov.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://asemconnectvietnam.gov.vn/default.aspx?ID1=2&ID8=84048&ZID1=133 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2019-01-29T17:00:00.000Z
+  https://asemconnectvietnam.gov.vn/default.aspx?ID1=2&ID8=84204&ZID1=133 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2019-02-01T17:00:00.000Z
+bantinsang.net | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":56} | lỗi: NO_ARTICLE_LINKS
+baobariavungtau.com.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 2/2 | home: {} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  http://baobariavungtau.com.vn/truyen-hinh/muc-chuyen-muc/bien-cuong-lai-chau/202509/bien-cuong-lai-chau-01-09-2025-810126/ | đạt (có thể là bài cũ) | time=2025-09-03T02:42:00.000Z
+  http://baobariavungtau.com.vn/truyen-hinh/muc-chuyen-muc/bien-cuong-lai-chau/202607/bien-cuong-lai-chau-14-07-2026-815686/ | đạt (có thể là bài cũ) | time=2026-07-08T09:59:00.000Z
+baochinhphu.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_UNCONFIGURED_TARGET_HOST
+  https://baochinhphu.vn/mau-ban-kiem-diem-dang-vien-cuoi-nam-moi-nhat-voi-ca-nhan-khong-giu-chuc-vu-lanh-dao-119231113225927061.htm | NEWS_UNCONFIGURED_TARGET_HOST
+  https://baochinhphu.vn/kinh-te-duy-tri-da-tang-truong-cung-co-suc-chong-chiu-102261111152934952.htm | NEWS_UNCONFIGURED_TARGET_HOST
+baodoi.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_UNCONFIGURED_TARGET_HOST
+  https://www.baodoi.com/r.php?id=4mkab | NEWS_UNCONFIGURED_TARGET_HOST
+  https://www.baodoi.com/r.php?id=0aY88 | NEWS_UNCONFIGURED_TARGET_HOST
+baoquocte.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://baoquocte.vn/bao-in/chuyen-trang-apec-g20-2024.paper | loại: printed_edition_reader
+  https://baoquocte.vn/bao-in/chuyen-trang-kieu-bao-2024.paper | loại: printed_edition_reader
+baoxehoi.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://baoxehoi.net/bang-gia-xe-mercedes-thang-10-2018-va-khuyen-mai-hap-dan/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2018-10-03T05:25:50.000Z
+  https://baoxehoi.net/bang-gia-xe-sang-lexus-chinh-hang-thang-10-2018/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2018-10-03T05:31:16.000Z
+bienphong.com.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/1 | home: {"status":200,"error":"public_cookie_bootstrap_pending_next_round","links":0} | lỗi: missing_body
+  https://www.bienphong.com.vn/e-magazine/giu-vung-chu-quyen-so-bao-ve-to-quoc-tu-som-tu-xa-theo-tinh-than-nghi-quyet-80-cua-dang-bai-2/505146.html | missing_body
+blog.rever.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://blog.rever.vn/phong-thuy-quan-2-co-that-su-tot-de-an-cu-lau-dai | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2019-10-27T17:00:00.000Z
+  https://blog.rever.vn/bi-quyet-phong-thuy-nhung-viec-can-lam-truoc-khi-don-vao-nha-moi | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2019-10-28T17:00:00.000Z
+chatluongvacuocsong.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://chatluongvacuocsong.vn/xuat-khau-nong-nghiep-9-thang-chuyen-tu-loi-the-san-luong-sang-gia-tri-d155327.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-10-18T17:00:00.000Z
+  https://chatluongvacuocsong.vn/chuyen-tu-tuan-thu-sang-dan-dat-loi-giai-cho-nong-lam-san-viet-nam-tren-ban-do-gia-tri-toan-cau-d155392.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-10-21T17:00:00.000Z
+cohoigiaothuong.vn | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":30} | lỗi: missing_published_date,missing_body
+  https://cohoigiaothuong.vn/bao-cao-giai-trinh-cua-thu-tuong-le-minh-hung-tai-phien-chat-van-va-tra-loi-chat-van-ky-hop-thu-2-quoc-hoi-khoa-xvi/ | missing_published_date,missing_body
+  https://cohoigiaothuong.vn/bao-tang-gom-su-minh-long-mo-rong-trai-nghiem-lan-toa-gia-tri-di-san-gom-viet/ | missing_published_date,missing_body
+coindesk.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":429,"error":"rate_limited","links":0} | lỗi: rate_limited
+dientungaynay.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://dientungaynay.vn/mobile/mobifone-trien-khai-5g-cuoc-dua-5g-viet-nam-buoc-vao-giai-doan-moi | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-12T17:00:00.000Z
+  https://dientungaynay.vn/vien-thong/siet-tin-nhan-cuoc-goi-rac-vo-vong-voi-nha-mang | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-12T17:00:00.000Z
+dientutieudung.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":0} | lỗi: NO_ARTICLE_LINKS
+doanhnghiepchinhsach.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://doanhnghiepchinhsach.vn/de-tai-nghien-cuu/mau-thuan-phap-ly-dang-can-tro-muc-tieu-xay-dung-xanh-tai-viet-nam-333.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2025-07-17T17:00:00.000Z
+  https://doanhnghiepchinhsach.vn/de-tai-nghien-cuu/thuc-trang-va-giai-phap-tien-tien-chong-an-mon-ben-vung-cho-cong-trinh-bien-viet-nam-335.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2025-08-04T17:00:00.000Z
+doanhnhansaoviet.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://doanhnhansaoviet.vn/doanh-nhan/he-lo-khoi-tai-san-khung-cua-nguoi-phu-nu-giau-nhat-the-gioi.html | missing_description, NEWS_MISSING_DESCRIPTION | time=2019-03-13T08:22:34.000Z
+  https://doanhnhansaoviet.vn/noi-toi-song/co-dau-bi-danh-bam-tim-mat-vi-tu-choi-hon-chong-trong-dam-cuoi.html | missing_description, NEWS_MISSING_DESCRIPTION | time=2019-05-10T12:33:31.000Z
+doisongvanhoa.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_TIMEZONE_UNCONFIRMED, NEWS_GENERIC_DESCRIPTION
+  http://doisongvanhoa.com/tin-tuc/giat-minh-khi-biet-tuoi-nghe-cua-cac-sao-han-dinh-dam-nay-4202.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_GENERIC_DESCRIPTION | time=2018-09-19T04:35:00.000Z
+  http://doisongvanhoa.com/tin-tuc/ung-dung-sinh-trac-van-tay-vao-trong-hoc-duong-5190.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_GENERIC_DESCRIPTION | time=2019-03-21T10:26:00.000Z
+doithoaiphattrien.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://doithoaiphattrien.vn/vi/news/khong-gian-van-hoa/hon-20-000-hoa-dang-tao-khong-gian-lung-linh-cua-dip-le-hoi-ky-niem-289-nam-thanh-lap-tao-dan-chieu-anh-cac-12089.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2025-02-08T17:00:00.000Z
+  https://doithoaiphattrien.vn/vi/news/khong-gian-van-hoa/dam-cuoi-don-xuan-trong-thoi-chien-12090.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2025-02-09T17:00:00.000Z
+dongvon.doanhnhanvn.vn | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 2/2 | home: {"status":200,"error":null,"links":28} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://dongvon.doanhnhanvn.vn/can-canh-vi-tri-du-kien-lam-ga-metro-so-14-o-phia-bac-khu-do-thi-ciputra-4320261110142559910.htm | đạt (có thể là bài cũ) | time=2026-11-11T23:55:00.000Z
+  https://dongvon.doanhnhanvn.vn/ty-gia-euro-ngay-1211-euro-tiep-tuc-mat-gia-sau-422026111292814563.htm | đạt (có thể là bài cũ) | time=2026-11-12T03:08:00.000Z
+dulichgiaitri.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://dulichgiaitri.com/tphcm-thong-xe-cau-binh-phuoc-1-sau-khi-nang-tinh-khong-cau-them-125m-659688755979.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2025-12-22T17:00:00.000Z
+  https://dulichgiaitri.com/bhaya-group-gioi-thieu-hanh-trinh-khac-biet.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2017-11-02T17:00:00.000Z
+dzogame.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://dzogame.vn/gaming-gear/nintendo-xac-nhan-thoi-diem-gioi-thieu-nintendo-switch-2-25112-58.html | NEWS_GENERIC_DESCRIPTION | time=2025-02-07T08:30:00.000Z
+  https://dzogame.vn/gaming-gear/nvidia-rtx-5050-8gb-vram-gddr6-ra-mat-gia-de-tho-25289-58.html | NEWS_GENERIC_DESCRIPTION | time=2025-06-27T02:30:00.000Z
+edition.cnn.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"error":"ERR_BAD_RESPONSE","links":0} | lỗi: ERR_BAD_RESPONSE
+emagazine24.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":403,"error":"access_blocked","links":0} | lỗi: access_blocked
+en.qdnd.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_REDIRECT_LOOP, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://en.qdnd.vn/social-affairs/special-reports/keeper-of-history-man-preserves-images-of-late-president-national-sovereignty-through-postage-stamps-593626 | NEWS_REDIRECT_LOOP
+  https://en.qdnd.vn/social-affairs/special-reports/socialist-communes-wards-concretize-vietnam-s-new-development-orientation-chinese-scholar-593731 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-12T17:00:00.000Z
+finance.yahoo.com | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":49} | lỗi: HPE_HEADER_OVERFLOW
+giacavattu.com.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":63} | lỗi: NO_ARTICLE_LINKS
+gialaitv.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://gialaitv.vn/phim-tai-lieu-to-quoc-dan-toc-doi-doi-khac-ghi-27-7-2026/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2026-07-27T08:07:28.000Z
+  https://gialaitv.vn/tap-chi-phat-thanh-gia-lai-diem-den-12-11-2026/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2026-11-12T11:11:10.000Z
+giavang.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://giavang.net/kien-thuc-trading-vang-phan-5-vang-va-thi-truong-ngoai-hoi-lien-quan-the-nao-den-nhau/ | NEWS_GENERIC_DESCRIPTION | time=2024-09-13T11:10:00.000Z
+  https://giavang.net/kien-thuc-trading-vang-phan-10-nhung-trung-tam-giao-dich-vang-tren-the-gioi-can-biet/ | NEWS_GENERIC_DESCRIPTION | time=2024-10-08T10:05:44.000Z
+hungyentv.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_title,missing_published_date,missing_body
+  https://hungyentv.vn/video/thoi-su-hung-yen-thu-hai-ngay-2-11-2026 | missing_title,missing_published_date,missing_body
+  https://hungyentv.vn/video/thoi-su-hung-yen-thu-tu-ngay-4-11-2026 | missing_title,missing_published_date,missing_body
+huongsenviet.com | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":71} | lỗi: missing_published_date,missing_body
+  https://huongsenviet.com/tu-tuong-ho-chi-minh-soi-sang-hanh-trinh-phat-trien-dat-nuoc/ | missing_published_date,missing_body
+  https://huongsenviet.com/ket-luan-114-kl-tw-thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong/ | missing_published_date,missing_body
+kenhtinxe.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_TIMEZONE_UNCONFIRMED
+  https://kenhtinxe.com/tu-van-xe/goc-ky-thuat/mazda-cx-90-re-hon-vw-teramont-president-9-trieu-dong-chon-xe-nhat-nhieu-option-hay-xe-duc-lai-trung-quoc/76628 | NEWS_TIMEZONE_UNCONFIRMED | time=2026-02-28T02:40:59.000Z
+  https://kenhtinxe.com/tin-tuc-xe/giao-thong/viet-nam-lan-dau-bo-sung-xe-erev-vao-nhom-xe-dien-hoa-mo-duong-hoan-thien-chinh-sach-quan-ly/81735 | NEWS_TIMEZONE_UNCONFIRMED | time=2026-07-23T14:27:09.000Z
+kiemsat.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+  https://kiemsat.vn/benh-vien-phu-san-trung-uong-76277.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2026-11-08T17:00:00.000Z
+  https://kiemsat.vn/cong-ty-co-phan-phan-lan-ninh-binh-73997.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2026-11-07T17:00:00.000Z
+kientrucvietnam.org.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://kientrucvietnam.org.vn/bo-tai-chinh-quy-dinh-ve-quyet-toan-du-an-hoan-thanh-thuoc-nguon-von-nha-nuoc/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2016-04-01T01:25:00.000Z
+  https://kientrucvietnam.org.vn/ba-ria-vung-tau-phe-duyet-quy-hoach-khu-do-thi-hon-2-200ha/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2023-09-13T04:43:00.000Z
+kinhtenews.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://www.kinhtenews.com/2026/05/trien-lam-quoc-te-go-va-may-che-bien-go-vietnam.html | NEWS_GENERIC_DESCRIPTION | time=2026-05-15T14:00:00.000Z
+  https://www.kinhtenews.com/2017/07/doanh-nhan-ngo-nhat-phuong-rut-von-khoi-duoc-pham-tw-1.html | NEWS_GENERIC_DESCRIPTION | time=2017-07-06T15:51:00.000Z
+kinhtenongthon.vn | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 2/2 | home: {"status":200,"error":null,"links":119} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://kinhtenongthon.vn/Tap-chi-Kinh-te-nong-thon-khong-ngung-doi-moi-va-dong-hanh-cung-ban-doc-post86963.html | đạt (có thể là bài cũ) | time=2026-06-19T08:48:00.000Z
+  https://kinhtenongthon.vn/Loi-cam-on-nhan-ky-niem-101-nam-ngay-Bao-chi-Cach-mang-Viet-Nam-post87002.html | đạt (có thể là bài cũ) | time=2026-06-22T01:14:00.000Z
+kinhteplus.com.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://kinhteplus.com.vn/dai-lo-hoa-va-cong-nghe-anh-sang-ben-vinh-ky-quan-di-san-lan-dau-tien-to-chuc-tai-quang-ninh-22115.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-04-15T17:00:00.000Z
+  https://kinhteplus.com.vn/tiktok-chot-thoa-thuan-lap-lien-doanh-voi-ong-lon-cong-nghe-my-22251.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-04-15T17:00:00.000Z
+kinhtexahoi.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 2/2 | home: {} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://kinhtexahoi.vn/the-gioi/viet-nam-kip-thoi-trien-khai-cac-bien-phap-bao-ho-cong-dan-vu-dong-dat-o-nhat-ban_t114c102n47215 | đạt (có thể là bài cũ) | time=2026-07-28T21:31:00.000Z
+  https://kinhtexahoi.vn/van-hoa/khuc-tri-an-o-cong-vien-le-thi-rieng-truoc-gio-an-tang-731-hai-cot-liet-si_t114c94n47465 | đạt (có thể là bài cũ) | time=2026-10-13T23:07:00.000Z
+laodong.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: public_cookie_bootstrap_pending_next_round, NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+  https://laodong.vn/short-video/can-tho-chuan-bi-an-tang-120-hai-cot-liet-si-vao-sang-1510-1782975.ldo | public_cookie_bootstrap_pending_next_round
+  https://laodong.vn/short-video/can-canh-luc-luong-dac-cong-huan-luyen-truoc-them-trien-lam-quoc-phong-quoc-te-1798618.ldo | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2026-11-11T10:19:24.000Z
+laodongdongnai.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: http_500
+  https://laodongdongnai.vn/14-dia-chi-sua-may-giat-uy-tin-tai-ha-noi/ | http_500
+  https://laodongdongnai.vn/loi-h-30-tu-lanh-sharp-de-doa-toan-thuc-pham-bao-quan/ | http_500
+laodongthudo.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: request_deadline_exceeded
+  https://laodongthudo.vn/bao-lao-dong-thu-do-dat-giai-ba-cuoc-thi-viet-bao-ve-moi-truong-tren-dia-ban-thanh-pho-ha-noi-nam-2025-203048.html | request_deadline_exceeded
+  https://laodongthudo.vn/ha-noi-dieu-chinh-chuong-trinh-phat-trien-nha-o-doan-2021-2030-204613.html | request_deadline_exceeded
+lyluanchinhtrivatruyenthong.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":20} | lỗi: NO_ARTICLE_LINKS
+markets.businessinsider.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":10} | lỗi: publisher_restricted_content_unverified
+  https://markets.businessinsider.com/news/stocks/oil-prices-outlook-supply-hoarding-iran-war-energy-crisis-2026-04 | publisher_restricted_content_unverified
+  https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4 | publisher_restricted_content_unverified
+molistar.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":520,"error":"http_520","links":0} | lỗi: http_520
+msn.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":"empty_page","links":0} | lỗi: empty_page
+mxpress.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://mxpress.vn/tin-tuc/ceo-le-hoang-uyen-vy-bat-ngo-roi-khoi-adayroicom | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2017-05-02T17:00:00.000Z
+  https://mxpress.vn/tin-tuc/nha-ong-trong-ngo-nho-ha-noi-dep-man-nhan-khi-xuat-hien-tren-bao-tay | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2018-10-27T17:00:00.000Z
+ngaymoisaigon.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: request_deadline_exceeded, NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://ngaymoisaigon.com/cua-hang-thoi-trang-mon-moi-cho-dong-9296/ | request_deadline_exceeded
+  https://ngaymoisaigon.com/four-points-by-sheraton-danang-duoc-vinh-danh-voi-8-giai-thuong-8537/ | NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-07-15T17:00:00.000Z
+nghetinhplus.vn | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":41} | lỗi: missing_body
+  https://nghetinhplus.vn/de-con-xong-nghe-me-chong-noi-2-cau-co-gai-son-la-biet-da-chon-dung-nha-chong/ | missing_body
+  https://nghetinhplus.vn/4-nguoi-mu-khon-kho-vi-chu-cho-thue-nha-lat-keo-hop-dong/ | missing_body
+ngoisaovietnam.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: not_found
+  https://ngoisaovietnam.vn/-btc-chuong-trinh-ngoi-sao-viet-khong-chung-minh-duoc-ban-quyen_i423.html | not_found
+  https://ngoisaovietnam.vn/ngoi-sao-viet-nam_giai-tri_ngoi-sao-viet.html | not_found
+nguoinoitieng.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":0} | lỗi: NO_ARTICLE_LINKS
+nhansac.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  https://nhansac.vn/bi-quyet-cap-am-cho-da-bi-mat-nuoc-ma-khong-bong-dau/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2025-05-18T19:17:02.000Z
+  https://nhansac.vn/da-bi-mun-an-nguyen-nhan-va-huong-xu-ly-khong-bao-mon-da/ | missing_description, NEWS_MISSING_DESCRIPTION | time=2025-05-18T19:16:14.000Z
+nhipcaudautu.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://nhipcaudautu.vn/the-gioi/nganh-it-an-do-dat-doanh-thu-ky-luc-315-ty-usd-bat-chap-lan-song-ai-3364738/ | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-03-25T17:00:00.000Z
+  https://nhipcaudautu.vn/phong-cach-song/xa-xi-kieu-moi-3364903/ | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-04-27T17:00:00.000Z
+nudoanhnhan.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  http://nudoanhnhan.vn/song-dep/nhin-nhung-my-nhan-viet-nay-ban-se-hieu-tai-sao-toc-ngan-lai-hot-den-the.html | NEWS_GENERIC_DESCRIPTION | time=2018-05-17T00:49:00.000Z
+  http://nudoanhnhan.vn/song-dep/hoa-ra-vi-4-dac-diem-nay-ma-toc-ngan-xoan-song-nuoc-chua-bao-gio-ngung-hot.html | NEWS_GENERIC_DESCRIPTION | time=2018-05-17T00:49:00.000Z
+phunustyle.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://www.phunustyle.vn/2026/11/trung-hieu-chinh-phuc-hamlet-truong.html | NEWS_GENERIC_DESCRIPTION | time=2026-11-10T02:06:00.000Z
+  https://www.phunustyle.vn/2026/11/xuc-tien-thuong-mai-nong-nghiep-tphcm.html | NEWS_GENERIC_DESCRIPTION | time=2026-11-10T02:09:00.000Z
+qdnd.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 1/1 | home: {"status":302,"error":"NEWS_REDIRECT_LOOP","links":0} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://www.qdnd.vn/anh-hung-luc-luong-vu-trang-nhan-dan/truy-tang-danh-hieu-anh-hung-llvt-nhan-dan-doi-voi-liet-si-nguyen-van-duong-1057369 | đạt (có thể là bài cũ) | time=2026-09-18T06:40:00.000Z
+quangngaitv.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":81} | lỗi: missing_published_date,missing_body, non_news_document:news_listing
+  https://quangngaitv.vn/phat-thanh/dua-nghi-quyet-dai-hoi-vao-cuoc-song | missing_published_date,missing_body
+  https://quangngaitv.vn/xa-tu-nghia-phan-dau-thanh-phuong-6525320.html | non_news_document:news_listing
+seekingalpha.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/1 | home: {} | lỗi: access_blocked
+  https://seekingalpha.com/news/4671990-enersys-outlines-q3-fy2027-eps-of-3_05-to-3_15-as-it-plans-320m-ultralife-deal-with-15m-to | access_blocked
+taichinhdoanhnghiep.net.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://taichinhdoanhnghiep.net.vn/doanh-nghiep-da-nhan-hoa-don-nhung-chua-thanh-toan-cho-doi-tac-nuoc-ngoai-thi-co-phai-ke-khai-thue-nha-thau-khong-d70528.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-10-15T17:00:00.000Z
+  https://taichinhdoanhnghiep.net.vn/de-xuat-doanh-nghiep-mot-nguoi-duoc-tinh-thue-don-gian-d70289.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-05T17:00:00.000Z
+tamnhin.kienthuc.net.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"error":"ECONNRESET","links":0} | lỗi: ECONNRESET
+tamnhin.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_title,missing_published_date,missing_body, not_found
+  https://tamnhin.net/chuyen-gia/pgsts-tran-dinh-thien.author | missing_title,missing_published_date,missing_body
+  https://tamnhin.net/nsnd-thu-hien-tuyen-tap-nhung-ca-khuc-hay-nhat-cua-nsnd-thu-hien.media | not_found
+tapchithangmay.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_published_date,missing_body, missing_title,missing_published_date,missing_body
+  https://tapchithangmay.vn/policy.html | missing_published_date,missing_body
+  https://tapchithangmay.vn/tap-chi-thang-may-so-07-a7.html | missing_title,missing_published_date,missing_body
+thanhtra.gov.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=7851133&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728645&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2022-06-23T17:00:00.000Z
+  https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=7852817&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728645&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2022-09-21T17:00:00.000Z
+thoibaobatdongsan.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":0} | lỗi: NO_ARTICLE_LINKS
+thongbaoluadao.blogspot.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":9} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://thongbaoluadao.blogspot.com/2017/10/alma-bi-len-bao-au-tu-bat-ong-san.html | NEWS_GENERIC_DESCRIPTION | time=2017-10-30T11:11:00.000Z
+  https://thongbaoluadao.blogspot.com/2021/07/web-nay-bi-nha-mang-vn-chan.html | NEWS_GENERIC_DESCRIPTION | time=2021-07-30T01:07:00.000Z
+tieudungthoinay.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":404,"error":"not_found","links":0} | lỗi: not_found
+tiim.com.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+  https://tiim.com.vn/video/xa-hoi/can-som-khac-phuc-su-co-bao-dam-chat-luong-nuoc-sinh-hoat/3826762.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2026-11-10T03:11:00.000Z
+  https://tiim.com.vn/video/xa-hoi/tu-ngay-12-11-ha-noi-rao-chan-di-dong-duong-nguyen-trai-de-thi-cong-vanh-dai-2-5/3827293.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2026-11-11T23:05:00.000Z
+tin2s3h.blogspot.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {"status":200,"error":null,"links":12} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://tin2s3h.blogspot.com/2023/02/nhung-giac-mo-bao-hieu-may-man-ang-tim.html | NEWS_GENERIC_DESCRIPTION | time=2023-02-25T14:32:00.000Z
+  https://tin2s3h.blogspot.com/2023/03/tippsy-sake-review-i-tried-tasted-is.html | NEWS_GENERIC_DESCRIPTION | time=2023-03-04T06:15:00.000Z
+tintuctoday.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: parser_configuration_missing
+  https://tintuctoday.net/3-nhan-vien-ngan-hang-cau-ket-voi-toi-pham-trong-duong-day-rua-tien-30-nghin-ty-nhu-the-nao-82482.html | parser_configuration_missing
+  https://tintuctoday.net/nuoc-la-oi-thuc-uong-dan-gian-mang-lai-nhieu-loi-ich-bat-ngo-cho-suc-khoe-82507.html | parser_configuration_missing
+tinxe.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://tinxe.vn/tu-van-mua-xe/tam-che-nang-kinh-lai-khong-phai-la-giai-phap-chong-nong-hieu-qua-nhat-nhung-van-co-1-loi-ich-lon-ad20260630125730371 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-06-30T17:00:00.000Z
+  https://tinxe.vn/xe-may-dien-mo-to-dien/xe-may-dien-honda-uc3-chinh-thuc-duoc-cong-bo-gia-ban-tai-viet-nam-chi-tu-565-trieu-dong-id20260604202839790 | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-06-04T17:00:00.000Z
+toancanhbaochi.net | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_published_date
+  https://toancanhbaochi.net/suc-khoe/gia-kham-chua-benh-tai-nhieu-benh-vien-tang.html | missing_published_date
+  https://toancanhbaochi.net/suc-khoe/dau-nanh-va-cac-loai-hat-hoi-tu-nhieu-dac-tinh-dinh-duong-quan-trong.html | missing_published_date
+travelguide.org.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: parser_configuration_missing
+  https://travelguide.org.vn/d3333/tp.-ho-chi-minh-mo-rong-du-lich-duong-thuy-them-nhieu-tuyen-moi-ket-noi-dong-nam-bo-va-mien-tay.html | parser_configuration_missing
+  https://travelguide.org.vn/d3633/lao-cai--diem-den-4-mua.html | parser_configuration_missing
+truyenhinh.baobinhduong.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_MEDIA_WITHOUT_NATIVE_TEXT
+  https://truyenhinh.baobinhduong.vn/video/xem-video/biwase-khoi-dong-nha-may-dien-rac-cong-suat-24mw-10047.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2025-06-25T17:00:00.000Z
+  https://truyenhinh.baobinhduong.vn/video/xem-video/hdnd-tinh-binh-duong-khoa-x-khep-lai-mot-hanh-trinh-huong-den-hoi-nhap-cung-phat-trien-10046.html | NEWS_MEDIA_WITHOUT_NATIVE_TEXT | time=2025-06-24T17:00:00.000Z
+truyenthongg8.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: native_paragraph_coverage_requires_review, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://truyenthongg8.vn/the-gioi-do-day/hinh-anh-ha-tang-dan-su-o-nhat-ban-do-nat-sau-tran-dong-dat-7-1-do-richter-89470.html | native_paragraph_coverage_requires_review, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-12T17:00:00.000Z
+  https://truyenthongg8.vn/an-ninh-trat-tu/tiktoker-nguyen-thien-huong-bi-bat-89366.html | native_paragraph_coverage_requires_review, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-11-12T17:00:00.000Z
+tv.kiemsat.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://tv.kiemsat.vn/hoa-tu-mieng-kovmgmo1.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2020-10-11T17:00:00.000Z
+  https://tv.kiemsat.vn/long-tham-vo-day-3rydpqrq.html | NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2020-11-08T17:00:00.000Z
+tv.nguoiduatin.vn | sửa 3/3: có | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"status":200,"error":null,"links":51} | lỗi: NO_ARTICLE_LINKS
+vccinews.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_TIMEZONE_UNCONFIRMED
+  https://vccinews.com/news/62855/transforming-heritage-assets-to-elevate-tourism-industry.html | NEWS_TIMEZONE_UNCONFIRMED | time=2026-08-12T07:46:31.000Z
+  https://vccinews.com/news/62883/snp-run-as-one-2026-strengthening-partnerships-across-port-and-logistics-industry.html | NEWS_TIMEZONE_UNCONFIRMED | time=2026-08-13T04:27:31.000Z
+vietnet24h.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_GENERIC_DESCRIPTION
+  https://vietnet24h.vn/thi-truong/may-tinh-mang/su-co-facebook-va-loi-canh-tinh-ve-rui-ro-phu-thuoc-vao-nen-tang-so | NEWS_GENERIC_DESCRIPTION | time=2025-06-28T01:43:00.000Z
+  https://vietnet24h.vn/thi-truong/may-tinh-mang/lieu-ai-cua-google-co-con-trung-lap-khi-bi-cay-quang-cao- | NEWS_GENERIC_DESCRIPTION | time=2025-07-13T00:16:00.000Z
+vinh24h.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/0 | home: {"error":"request_deadline_exceeded","links":0} | lỗi: request_deadline_exceeded
+vntravellive.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED
+  https://vntravellive.com/de-den-nhung-noi-nay-ban-can-phai-biet-cach-sinh-ton-thuc-thu-d40417.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-05-19T17:00:00.000Z
+  https://vntravellive.com/sai-gon-nhuom-hong-voi-cuoc-tai-ngo-bat-ngo-cuoi-thang-5-d40508.html | NEWS_TIMEZONE_UNCONFIRMED, NEWS_PUBLICATION_PRECISION_UNCONFIRMED | time=2026-05-25T17:00:00.000Z
+world.kbs.co.kr | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_published_date
+  https://world.kbs.co.kr/service/news_view.htm?Seq_Code=205538&lang=e | missing_published_date
+  https://world.kbs.co.kr/service/contents_view.htm?board_code=&board_seq=472310&lang=e&menu_cate=learnkorean&page=0 | missing_published_date
+xaluan.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: NEWS_REDIRECT_LOOP
+  https://www.xaluan.com/modules.php?file=article&name=News&sid=3752215 | NEWS_REDIRECT_LOOP
+  https://www.xaluan.com/modules.php?file=article&name=News&sid=3752214 | NEWS_REDIRECT_LOOP
+xecongnghe.vn | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 0/2 | home: {} | lỗi: missing_description, NEWS_MISSING_DESCRIPTION
+  http://xecongnghe.vn/ownice-c970-cua-icar-viet-nam-doat-giai-nhat-cuoc-thi-am-thanh-emma-2022-.html | missing_description, NEWS_MISSING_DESCRIPTION | time=2022-07-19T11:57:00.000Z
+  http://xecongnghe.vn/lan-dau-tham-gia-thi-dau-am-thanh-xe-hoi-emma-mmk-auto-xuat-sac-gianh-A-quan-.html | missing_description, NEWS_MISSING_DESCRIPTION | time=2022-07-19T12:06:00.000Z
+yahoo.com | sửa 3/3: không | mẫu HTML cũ đạt với parser mới: 2/2 | home: {"status":200,"error":null,"links":26} | lỗi: không có lỗi ở mẫu đã kiểm tra
+  https://www.yahoo.com/entertainment/tv/article/the-pitt-and-er-are-too-similar-and-lawsuit-can-proceed-appeals-court-rules-155936601.html | đạt (có thể là bài cũ) | time=2026-11-05T16:03:04.000Z
+  https://www.yahoo.com/news/weather-news/articles/super-el-ni-o-declared-140025545.html | đạt (có thể là bài cũ) | time=2026-11-12T14:00:25.000Z

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "requestedAt": "2026-11-17",
+  "expectedCount": 39,
+  "sources": [
+    {
+      "index": 1,
+      "domain": "bbw.vn",
+      "requestedUrl": "http://bbw.vn/"
+    },
+    {
+      "index": 2,
+      "domain": "e.vnexpress.net",
+      "requestedUrl": "https://e.vnexpress.net/"
+    },
+    {
+      "index": 3,
+      "domain": "businesstimes.com.sg",
+      "requestedUrl": "https://businesstimes.com.sg/"
+    },
+    {
+      "index": 4,
+      "domain": "theinvestor.vn",
+      "requestedUrl": "https://theinvestor.vn/"
+    },
+    {
+      "index": 5,
+      "domain": "pvn.vn",
+      "requestedUrl": "https://pvn.vn/"
+    },
+    {
+      "index": 6,
+      "domain": "nangluongvietnam.vn",
+      "requestedUrl": "https://nangluongvietnam.vn/"
+    },
+    {
+      "index": 7,
+      "domain": "moit.gov.vn",
+      "requestedUrl": "https://moit.gov.vn/"
+    },
+    {
+      "index": 8,
+      "domain": "sbv.gov.vn",
+      "requestedUrl": "https://sbv.gov.vn/"
+    },
+    {
+      "index": 9,
+      "domain": "tapchinganhang.gov.vn",
+      "requestedUrl": "https://tapchinganhang.gov.vn/"
+    },
+    {
+      "index": 10,
+      "domain": "kinhtedothi.vn",
+      "requestedUrl": "https://kinhtedothi.vn/"
+    },
+    {
+      "index": 11,
+      "domain": "luatvietnam.vn",
+      "requestedUrl": "https://luatvietnam.vn/"
+    },
+    {
+      "index": 12,
+      "domain": "tuyengiao.vn",
+      "requestedUrl": "https://tuyengiao.vn/"
+    },
+    {
+      "index": 13,
+      "domain": "tietkiemnangluong.com.vn",
+      "requestedUrl": "https://tietkiemnangluong.com.vn/"
+    },
+    {
+      "index": 14,
+      "domain": "baotainguyenmoitruong.vn",
+      "requestedUrl": "https://baotainguyenmoitruong.vn/"
+    },
+    {
+      "index": 15,
+      "domain": "hanoitimes.vn",
+      "requestedUrl": "https://hanoitimes.vn/"
+    },
+    {
+      "index": 16,
+      "domain": "dealstreetasia.com",
+      "requestedUrl": "https://dealstreetasia.com/"
+    },
+    {
+      "index": 17,
+      "domain": "haiquanonline.com.vn",
+      "requestedUrl": "https://haiquanonline.com.vn/"
+    },
+    {
+      "index": 18,
+      "domain": "baodansinh.vn",
+      "requestedUrl": "https://baodansinh.vn/"
+    },
+    {
+      "index": 19,
+      "domain": "kinhtetrunguong.vn",
+      "requestedUrl": "https://kinhtetrunguong.vn/"
+    },
+    {
+      "index": 20,
+      "domain": "baobariavungtau.com.vn",
+      "requestedUrl": "https://baobariavungtau.com.vn/"
+    },
+    {
+      "index": 21,
+      "domain": "laodong.vn",
+      "requestedUrl": "https://laodong.vn/"
+    },
+    {
+      "index": 22,
+      "domain": "tienphong.vn",
+      "requestedUrl": "https://tienphong.vn/"
+    },
+    {
+      "index": 23,
+      "domain": "daidoanket.vn",
+      "requestedUrl": "https://daidoanket.vn/"
+    },
+    {
+      "index": 24,
+      "domain": "plo.vn",
+      "requestedUrl": "https://plo.vn/"
+    },
+    {
+      "index": 25,
+      "domain": "daibieunhandan.vn",
+      "requestedUrl": "https://daibieunhandan.vn/"
+    },
+    {
+      "index": 26,
+      "domain": "thoibaonganhang.vn",
+      "requestedUrl": "https://thoibaonganhang.vn/"
+    },
+    {
+      "index": 27,
+      "domain": "thoibaotaichinhvietnam.vn",
+      "requestedUrl": "https://thoibaotaichinhvietnam.vn/"
+    },
+    {
+      "index": 28,
+      "domain": "bnews.vn",
+      "requestedUrl": "https://bnews.vn/"
+    },
+    {
+      "index": 29,
+      "domain": "baotintuc.vn",
+      "requestedUrl": "https://baotintuc.vn/"
+    },
+    {
+      "index": 30,
+      "domain": "kinhtechungkhoan.vn",
+      "requestedUrl": "https://kinhtechungkhoan.vn/"
+    },
+    {
+      "index": 31,
+      "domain": "baoxaydung.vn",
+      "requestedUrl": "https://baoxaydung.vn/"
+    },
+    {
+      "index": 32,
+      "domain": "1thegioi.vn",
+      "requestedUrl": "https://1thegioi.vn/"
+    },
+    {
+      "index": 33,
+      "domain": "thitruongtaichinhtiente.vn",
+      "requestedUrl": "https://thitruongtaichinhtiente.vn/"
+    },
+    {
+      "index": 34,
+      "domain": "nguoidothi.net.vn",
+      "requestedUrl": "https://nguoidothi.net.vn/"
+    },
+    {
+      "index": 35,
+      "domain": "baodaklak.vn",
+      "requestedUrl": "https://baodaklak.vn/"
+    },
+    {
+      "index": 36,
+      "domain": "vneconomy.vn",
+      "requestedUrl": "https://vneconomy.vn/"
+    },
+    {
+      "index": 37,
+      "domain": "nld.com.vn",
+      "requestedUrl": "https://nld.com.vn/"
+    },
+    {
+      "index": 38,
+      "domain": "vov.vn",
+      "requestedUrl": "https://vov.vn/"
+    },
+    {
+      "index": 39,
+      "domain": "en.vietnamplus.vn",
+      "requestedUrl": "https://en.vietnamplus.vn/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[Unit]
+Description=Continuous social crawl with separate source comment reply and ES5 queues
+After=network-online.target redis-server.service crawler-proxy-manager.service
+Wants=network-online.target crawler-proxy-manager.service
+Requires=redis-server.service
+
+[Service]
+Type=simple
+User=crawler-v8
+Group=crawler-api
+WorkingDirectory=/opt/crawler-v8/current
+EnvironmentFile=/etc/crawler-v8/runtime.env
+ExecStart=/opt/crawler-node/bin/node --max-old-space-size=10000 /opt/crawler-v8/current/scripts/crawler_queue_flow.mjs
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=240
+LimitNOFILE=65536
+MemoryMax=12G
+TasksMax=1024
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/crawler-v8
+
+[Install]
+WantedBy=multi-user.target

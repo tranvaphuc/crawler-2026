@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ridebuster.com",
+  "siteId": "ridebuster.com",
+  "registrableDomain": "ridebuster.com",
+  "homepage": "https://www.ridebuster.com/",
+  "allowedHosts": [
+    "www.ridebuster.com",
+    "ridebuster.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.ridebuster.com/",
+    "categories": [
+      "https://www.ridebuster.com/category/news/",
+      "https://www.ridebuster.com/category/news/th-news/",
+      "https://www.ridebuster.com/category/news/inter-news/",
+      "https://www.ridebuster.com/category/news/pr-m-promotion/",
+      "https://www.ridebuster.com/category/bust-issue/",
+      "https://www.ridebuster.com/category/bust-issue/bust-scoop/"
+    ]
+  },
+  "title": {
+    "value": "Porsche 911 Turbo S พกไฮบริดเทอร์โบไฟฟ้าคู่ แรงสุด 711 ม้า",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:43.556Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:36.746Z",
+    "independentHoldouts": [
+      "https://www.ridebuster.com/news/mercedes-amg-to-phase-out-4cyl-engine/",
+      "https://www.ridebuster.com/review/toyota-hilux-gr-sport-wide-tread-review/",
+      "https://www.ridebuster.com/review/porsche-cayenne-coupe-e-hybrid-review-2024/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.ridebuster.com/new-car-debut/porsche-911-turbo-s-2025-official/",
+      "https://www.ridebuster.com/news/mercedes-amg-to-phase-out-4cyl-engine/",
+      "https://www.ridebuster.com/review/toyota-hilux-gr-sport-wide-tread-review/",
+      "https://www.ridebuster.com/review/porsche-cayenne-coupe-e-hybrid-review-2024/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

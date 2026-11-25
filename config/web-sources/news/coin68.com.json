@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "siteName": "coin68.com",
+  "siteId": "coin68.com",
+  "registrableDomain": "coin68.com",
+  "homepage": "https://coin68.com/",
+  "allowedHosts": [
+    "coin68.com",
+    "www.coin68.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Zilliqa từ bỏ blockchain layer-1, chuyển về làm layer-2 Ethereum",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:17.419Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://coin68.com/zilliqa-tu-bo-blockchain-layer-1-chuyen-sang-layer-2/",
+      "https://coin68.com/cac-dot-unlock-token-dang-chu-y-trong-thang-11-2026/",
+      "https://coin68.com/phap-buoc-nha-dau-tu-khai-bao-vi-crypto-tu-luu-ky-tu-100000-euro/",
+      "https://coin68.com/tether-nang-luong-bitcoin-nam-giu-khoang-150000-btc/",
+      "https://coin68.com/bitcoin-xoa-sach-da-tang-sau-bau-cu-my-theo-lan-song-ban-thao-co-phieu-cong-nghe/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://coin68.com/",
+    "categories": [
+      "https://coin68.com/article/big-cap/",
+      "https://coin68.com/article/defi/",
+      "https://coin68.com/article/nft-gamefi/",
+      "https://coin68.com/article/phap-ly/",
+      "https://coin68.com/article/tin-tong-hop/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "coin68.com",
+    "checkedAt": "2026-11-09T03:56:55.594Z",
+    "url": "https://coin68.com/zilliqa-tu-bo-blockchain-layer-1-chuyen-sang-layer-2/",
+    "finalUrl": "https://coin68.com/zilliqa-tu-bo-blockchain-layer-1-chuyen-sang-layer-2/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5949,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:52.567Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/coin68.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "coin68.com",
+    "parsedArticles": 9,
+    "distinctHashes": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesAttempted": 5,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 48,
+    "checkedArticleUrls": 9,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 48,
+        "attempted": 9,
+        "passed": 9,
+        "distinctContents": 9,
+        "distinctHashes": 9
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

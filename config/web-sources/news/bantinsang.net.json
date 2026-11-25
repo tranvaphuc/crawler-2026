@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bantinsang.net",
+  "siteId": "bantinsang.net",
+  "registrableDomain": "bantinsang.net",
+  "homepage": "https://bantinsang.net/",
+  "allowedHosts": [
+    "bantinsang.net",
+    "www.bantinsang.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Shipper lội nước giao hàng, dân giăng lưới bắt cá giữa hẻm ngập sâu ở TP.HCM",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:26.498Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://bantinsang.net/shipper-loi-nuoc-giao-hang-dan-giang-luoi-bat-ca-giua-hem-ngap-sau-o-tphcm-1566.html",
+      "https://bantinsang.net/loi-ich-cua-rau-muong-giup-bo-gan-duong-tim-va-phong-ngua-ung-thu-hieu-qua-1565.html",
+      "https://bantinsang.net/xac-minh-vu-nguoi-dan-ong-mat-tich-bi-an-gan-1-thang-loi-ke-cua-gia-dinh-ve-chiec-o-to-la-1564.html",
+      "https://bantinsang.net/nam-dien-vien-sn-1984-ban-chan-ga-rut-xuong-o-pho-di-bo-3-nam-mua-2-can-nha-1563.html",
+      "https://bantinsang.net/hau-ve-cao-pendant-quang-vinh-to-chuc-dam-cuoi-voi-ban-gai-goc-phi-tai-da-nang-5-diem-den-o-viet-nam-duoc-cac-cap-doi-lua-chon-cho-ngay-trong-dai-1562.html",
+      "https://bantinsang.net/shipper-loi-nuoc-giao-hang-dan-giang-luoi-bat-ca-giua-hem-ngap-sau-o-tphcm-1566.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bantinsang.net/",
+    "categories": [
+      "https://bantinsang.net/sao/",
+      "https://bantinsang.net/nhac-phim/",
+      "https://bantinsang.net/dep-khoe/",
+      "https://bantinsang.net/suc-khoe/",
+      "https://bantinsang.net/xa-hoi/",
+      "https://bantinsang.net/tam-su/",
+      "https://bantinsang.net/tuoi-tre/",
+      "https://bantinsang.net/thu-gian/",
+      "https://bantinsang.net/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bantinsang.net",
+    "checkedAt": "2026-11-09T03:56:48.982Z",
+    "url": "https://bantinsang.net/shipper-loi-nuoc-giao-hang-dan-giang-luoi-bat-ca-giua-hem-ngap-sau-o-tphcm-1566.html",
+    "finalUrl": "https://bantinsang.net/shipper-loi-nuoc-giao-hang-dan-giang-luoi-bat-ca-giua-hem-ngap-sau-o-tphcm-1566.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3433,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "bantinsang.net",
+    "previousStatus": "http_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 10,
+    "checkedArticleUrls": 10,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 10,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 16,
+    "categoriesUnconfirmed": 16,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 7,
+        "passed": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:55.988Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/bantinsang.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "runtimeRepairRevision": "tagdiv-article-card-discovery-20261113",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.368Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://bantinsang.net/shipper-loi-nuoc-giao-hang-dan-giang-luoi-bat-ca-giua-hem-ngap-sau-o-tphcm-1566.html",
+      "https://bantinsang.net/loi-ich-cua-rau-muong-giup-bo-gan-duong-tim-va-phong-ngua-ung-thu-hieu-qua-1565.html",
+      "https://bantinsang.net/xac-minh-vu-nguoi-dan-ong-mat-tich-bi-an-gan-1-thang-loi-ke-cua-gia-dinh-ve-chiec-o-to-la-1564.html"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  }
+}

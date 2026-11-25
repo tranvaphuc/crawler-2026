@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "siteName": "blog.rever.vn",
+  "siteId": "blog.rever.vn",
+  "registrableDomain": "rever.vn",
+  "homepage": "https://blog.rever.vn/",
+  "allowedHosts": [
+    "blog.rever.vn",
+    "www.blog.rever.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lễ ra quân dự án La Pura: Chủ đầu tư công bố giá bán chính thức từ 46 triệu đồng/m2",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".post-date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:19.357Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://blog.rever.vn/truc-tiep-le-ra-quan-du-an-la-pura-khoi-dau-y-tuong-tao-nen-la-pura",
+      "https://blog.rever.vn/tien-do-xay-dung-du-an-eaton-park-cap-nhat-moi-nhat-t1-2024",
+      "https://blog.rever.vn/tai-lieu-phan-tich-chuyen-sau-du-an-caraworld-tu-rever",
+      "https://blog.rever.vn/tron-bo-tieu-chuan-ban-giao-nha-pho-bien-tho-mong-song-town-sieu-do-thi-bien-trai-tim-caraworld-cam-",
+      "https://blog.rever.vn/ban-ve-xu-huong-va-thach-thuc-chuyen-nghiep-hoa-nghe-moi-gioi-trong-ky-nguyen-cong-nghe"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://blog.rever.vn/",
+    "categories": [
+      "https://blog.rever.vn/du-an",
+      "https://blog.rever.vn/thi-truong",
+      "https://blog.rever.vn/dau-tu",
+      "https://blog.rever.vn/dau-tu-nha-dat",
+      "https://blog.rever.vn/dau-tu-cho-thue",
+      "https://blog.rever.vn/huong-dan",
+      "https://blog.rever.vn/kinh-nghiem-mua-nha",
+      "https://blog.rever.vn/kinh-nghiem-ban-nha",
+      "https://blog.rever.vn/nha-dep",
+      "https://blog.rever.vn/phong-thuy",
+      "https://blog.rever.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.258Z",
+      "verifiedSeeds": [
+        "https://blog.rever.vn/",
+        "https://blog.rever.vn/du-an",
+        "https://blog.rever.vn/thi-truong",
+        "https://blog.rever.vn/dau-tu",
+        "https://blog.rever.vn/dau-tu-nha-dat",
+        "https://blog.rever.vn/dau-tu-cho-thue",
+        "https://blog.rever.vn/huong-dan",
+        "https://blog.rever.vn/kinh-nghiem-mua-nha",
+        "https://blog.rever.vn/kinh-nghiem-ban-nha",
+        "https://blog.rever.vn/nha-dep",
+        "https://blog.rever.vn/phong-thuy"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "blog.rever.vn",
+    "checkedAt": "2026-11-09T03:56:52.491Z",
+    "url": "https://blog.rever.vn/truc-tiep-le-ra-quan-du-an-la-pura-khoi-dau-y-tuong-tao-nen-la-pura",
+    "finalUrl": "https://blog.rever.vn/truc-tiep-le-ra-quan-du-an-la-pura-khoi-dau-y-tuong-tao-nen-la-pura",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3651,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:45.629Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/blog.rever.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "blog.rever.vn",
+    "parsedArticles": 12,
+    "distinctHashes": 12,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesAttempted": 10,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 281,
+    "checkedArticleUrls": 12,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 281,
+        "attempted": 12,
+        "passed": 12,
+        "distinctContents": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".post-date",
+        "attribute": null,
+        "index": 0,
+        "priority": 65
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".main-content.px-6",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "blog.rever.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:21:07.683Z",
+    "proofs": [
+      {
+        "url": "https://blog.rever.vn/tai-lieu-phan-tich-chuyen-sau-du-an-caraworld-tu-rever",
+        "publisherUrl": "https://blog.rever.vn/tai-lieu-phan-tich-chuyen-sau-du-an-caraworld-tu-rever",
+        "contentHash": "8cd949db0995426ac54261e2cad9c95225ab5409f77f033053ef8de82fa6c104",
+        "description": "Cam Ranh - thiên đường nghỉ dưỡng mới tại Bãi Dài, thuộc top những bãi biển đẹp nhất hành tinh, nổi tiếng với hàng loạt resort đẳng cấp quốc tế. Nhưng, Cam Ranh vẫn đang thiếu một “trái tim sôi động” - một trung tâm giải trí và đô thị nghỉ dưỡng xứng tầm đẳng cấp quốc tế. Tài liệu phân tích chuyên sâu dự án CaraWorld từ đội ngũ phát triển và nghiên cứu REVER Tọa lạc tại Bãi Dài, Phường Cam Nghĩa, thành phố Cam Ranh, Khánh Hòa, đô thị biển CaraWorld - một \"trái tim\" sôi động đang dần hình thành, \"tái sinh\" Cam Ranh trở thành thủ phủ du lịch của Việt Nam, đưa Cam Ranh trở thành điểm đến được định danh trên thế giới và lựa chọn độc lập trên bản đồ du lịch Việt Nam, mang thế giới tới Việt Nam.",
+        "publishedDate": "2025-01-03",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://blog.rever.vn/tai-lieu-phan-tich-chuyen-sau-du-an-caraworld-tu-rever",
+          "publishedDate": "2025-01-03",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "blog.rever.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://blog.rever.vn/tron-bo-tieu-chuan-ban-giao-nha-pho-bien-tho-mong-song-town-sieu-do-thi-bien-trai-tim-caraworld-cam-",
+        "publisherUrl": "https://blog.rever.vn/tron-bo-tieu-chuan-ban-giao-nha-pho-bien-tho-mong-song-town-sieu-do-thi-bien-trai-tim-caraworld-cam-",
+        "contentHash": "7ddcc09199d0e75fa8b1a0d41006ee0d93a58ff0cc31e2014bf3bbe3c1abb94f",
+        "description": "Chỉ từ 7,9 TỶ, quý khách hàng sở hữu ngay nhà phố biển thơ mộng tại Thị trấn nổi bên biển \"Sông Town\". Bàn giao \"full\" nội thất và đồ rời, khách hàng chỉ cần kéo vali vào ở ngay hoặc linh hoạt cho thuê 300 ngày nắng đẹp.",
+        "publishedDate": "2024-12-20",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://blog.rever.vn/tron-bo-tieu-chuan-ban-giao-nha-pho-bien-tho-mong-song-town-sieu-do-thi-bien-trai-tim-caraworld-cam-",
+          "publishedDate": "2024-12-20",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "blog.rever.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://blog.rever.vn/sap-dien-ra-le-kick-off-du-an-do-thi-bien-caraworld-cam-ranh",
+        "publisherUrl": "https://blog.rever.vn/sap-dien-ra-le-kick-off-du-an-do-thi-bien-caraworld-cam-ranh",
+        "contentHash": "55cdae9f06898f83fcd5168c3f4386747318520dae25e1b2395dec4d6966c8de",
+        "description": "Mục lục bài viết \"Nhá nhẹ\" vài con số khủng trước lễ ra quân CaraWorld Cam Ranh Lần đầu tiên lễ ra quân tổ chức tại sân golf CaraWorld và phân khu “Sông” Town: Biểu tượng mới tại Cam Ranh",
+        "publishedDate": "2024-11-28",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://blog.rever.vn/sap-dien-ra-le-kick-off-du-an-do-thi-bien-caraworld-cam-ranh",
+          "publishedDate": "2024-11-28",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "blog.rever.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".body-content p,.body-content > div"
+  },
+  "publicationTimePolicy": "original_clock_required"
+}

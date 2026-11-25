@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtexahoi.vn",
+  "siteId": "kinhtexahoi.vn",
+  "registrableDomain": "kinhtexahoi.vn",
+  "homepage": "https://kinhtexahoi.vn/",
+  "allowedHosts": [
+    "kinhtexahoi.vn",
+    "www.kinhtexahoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hòa Bình: Khai thác đất trái phép rầm rộ, chính quyền không biết?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".newdetailscontent .xdate"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:35.086Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+      "https://kinhtexahoi.vn/tin-tuc/bac-giang-can-som-xu-ly-o-nhiem-moi-truong-tu-trang-trai-nuoi-lon_t114c12n1541",
+      "https://kinhtexahoi.vn/tieu-dung/tu-hom-nay-gia-dien-giam-2-con-21599-dongkwh_t114c92n47525",
+      "https://kinhtexahoi.vn/tin-tuc/thong-tin-moi-cua-chinh-phu-ve-vi-tri-viec-lam-bien-che-va-chinh-sach-tien-luong_t114c12n47549",
+      "https://kinhtexahoi.vn/tin-tuc/bat-hiep-den-cung-13-doi-tuong-dung-clip-giang-ho-cau-view-cho-vay-lai-nang-tang-tru-vu-khi_t114c12n47550"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtexahoi.vn/",
+    "categories": [
+      "https://kinhtexahoi.vn/tin-tuc_t113c12",
+      "https://kinhtexahoi.vn/doanh-nghiep-247_t113c8",
+      "https://kinhtexahoi.vn/tai-chinh_t113c10",
+      "https://kinhtexahoi.vn/tieu-dung_t113c92",
+      "https://kinhtexahoi.vn/phap-luat_t113c9",
+      "https://kinhtexahoi.vn/bat-dong-san_t113c91",
+      "https://kinhtexahoi.vn/van-hoa_t113c94",
+      "https://kinhtexahoi.vn/the-thao_t113c95",
+      "https://kinhtexahoi.vn/the-gioi_t113c102",
+      "https://kinhtexahoi.vn/tin-tuc-ha-noi_t113c116",
+      "https://kinhtexahoi.vn/video-clip_t113c33",
+      "https://kinhtexahoi.vn/doanh-nghiep-24/7_t113c8",
+      "https://kinhtexahoi.vn/doanh-nghiep-24/7/kinh-doanh-va-phap-luat_t113c115",
+      "https://kinhtexahoi.vn/tai-chinh/chung-khoan_t113c113",
+      "https://kinhtexahoi.vn/tai-chinh/ngan-hang_t113c114",
+      "https://kinhtexahoi.vn/phap-luat/an-ninh-trat-tu_t113c108",
+      "https://kinhtexahoi.vn/phap-luat/tu-van-phap-luat_t113c109",
+      "https://kinhtexahoi.vn/phap-luat/phap-dinh_t113c110",
+      "https://kinhtexahoi.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.303Z",
+      "verifiedSeeds": [
+        "https://kinhtexahoi.vn/",
+        "https://kinhtexahoi.vn/tin-tuc_t113c12",
+        "https://kinhtexahoi.vn/doanh-nghiep-24/7_t113c8",
+        "https://kinhtexahoi.vn/tai-chinh_t113c10",
+        "https://kinhtexahoi.vn/tieu-dung_t113c92",
+        "https://kinhtexahoi.vn/phap-luat_t113c9",
+        "https://kinhtexahoi.vn/bat-dong-san_t113c91",
+        "https://kinhtexahoi.vn/van-hoa_t113c94",
+        "https://kinhtexahoi.vn/the-thao_t113c95",
+        "https://kinhtexahoi.vn/the-gioi_t113c102",
+        "https://kinhtexahoi.vn/tin-tuc-ha-noi_t113c116"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtexahoi.vn",
+    "checkedAt": "2026-11-09T03:57:12.833Z",
+    "url": "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+    "finalUrl": "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3955,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kinhtexahoi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 64,
+    "checkedArticleUrls": 86,
+    "freshArticleChecks": 74,
+    "parserIssues": 22,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 58,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 18,
+    "categoriesUnconfirmed": 18,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 334,
+        "passed": 64,
+        "distinctHashes": 58
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 6,
+      "selector_or_layout_mismatch": 16
+    },
+    "checkedAt": "2026-11-10T09:16:00.276Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kinhtexahoi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "pageIdentityPolicy": "kinhtexahoi_empty_authority_canonical",
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:31:27.120Z",
+    "proofs": [
+      {
+        "url": "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+        "publisherUrl": "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+        "contentHash": "08b02107ba0b91bb220ff8944d442ec5887b46ea5bed4a2337d453c30e30f656",
+        "description": "Kinhte&Xahoi Thời gian gần đây, tình trạng khai thác đất đồi trái phép thậm chí không phép trên địa bàn tỉnh Hòa Bình diễn ra một cách rầm rộ trong khi chính quyền và cơ quan ban ngành lại trả lời không biết.",
+        "publishedDate": "2018-07-03T02:47:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kinhtexahoi.vn/tin-tuc/hoa-binh-khai-thac-dat-trai-phep-ram-ro-chinh-quyen-khong-biet_t114c12n1236",
+          "publishedDate": "2018-07-03T02:47:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kinhtexahoi.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://kinhtexahoi.vn/tieu-dung/tu-hom-nay-gia-dien-giam-2-con-21599-dongkwh_t114c92n47525",
+        "publisherUrl": "https://kinhtexahoi.vn/tieu-dung/tu-hom-nay-gia-dien-giam-2-con-21599-dongkwh_t114c92n47525",
+        "contentHash": "354fc039e6a236e60fceb044545cfb5d33dfac4b18f86f2f5eef9171a245c842",
+        "description": "Kinhte&Xahoi Tập đoàn Điện lực Việt Nam (EVN) thông báo điều chỉnh giảm giá bán lẻ điện bình quân từ ngày 1/11/2026. Giá điện giảm 2%, còn 2.159,9 đồng/kWh, chưa bao gồm thuế giá trị gia tăng.",
+        "publishedDate": "2026-11-02T10:00:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kinhtexahoi.vn/tieu-dung/tu-hom-nay-gia-dien-giam-2-con-21599-dongkwh_t114c92n47525",
+          "publishedDate": "2026-11-02T10:00:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kinhtexahoi.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://kinhtexahoi.vn/tieu-dung/gia-xang-e10ron95-iii-giam-con-duoi-20000-donglit_t114c92n47567",
+        "publisherUrl": "https://kinhtexahoi.vn/tieu-dung/gia-xang-e10ron95-iii-giam-con-duoi-20000-donglit_t114c92n47567",
+        "contentHash": "7d7c3c7d47e3ed0ffaa65b9aec50c7ee947e8f034f6eb2921518dda8d9430973",
+        "description": "Kinhte&Xahoi Từ 15h hôm nay 12-11, giá các mặt hàng xăng, dầu đồng loạt giảm mạnh.",
+        "publishedDate": "2026-11-12T08:12:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kinhtexahoi.vn/tieu-dung/gia-xang-e10ron95-iii-giam-con-duoi-20000-donglit_t114c92n47567",
+          "publishedDate": "2026-11-12T08:12:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kinhtexahoi.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": ".newdetailscontent",
+    "selector": ".xsubject"
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "kinhtexahoi.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationArticleScope": ".newdetailscontent"
+}

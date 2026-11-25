@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ngoisao.vnexpress.net",
+  "siteId": "ngoisao.vnexpress.net",
+  "registrableDomain": "vnexpress.net",
+  "homepage": "https://ngoisao.vnexpress.net/",
+  "allowedHosts": [
+    "ngoisao.vnexpress.net",
+    "www.ngoisao.vnexpress.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Jo In Sung tuổi 45: Sống độc thân 'vì không hiểu phụ nữ'",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".fck_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:51.801Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://ngoisao.vnexpress.net/jo-in-sung-tuoi-45-song-doc-than-vi-khong-hieu-phu-nu-5130013.html",
+      "https://ngoisao.vnexpress.net/sao-chau-a-9-11-lee-hyori-he-lo-hai-vo-chong-tam-chung-suot-13-nam-5142129.html",
+      "https://ngoisao.vnexpress.net/concert-bigbang-o-thai-lan-bi-huy-giua-chung-5142221.html",
+      "https://ngoisao.vnexpress.net/nhan-sac-doi-thuong-cua-tan-a-hau-le-phuong-nghi-5141994.html",
+      "https://ngoisao.vnexpress.net/anh-sao-9-11-me-chu-tich-tran-hung-huy-tre-trung-o-tuoi-71-5142207.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://ngoisao.vnexpress.net/",
+    "categories": [
+      "https://ngoisao.vnexpress.net/tin-tuc-24h",
+      "https://ngoisao.vnexpress.net/showbiz",
+      "https://ngoisao.vnexpress.net/showbiz/viet-nam",
+      "https://ngoisao.vnexpress.net/showbiz/chau-a",
+      "https://ngoisao.vnexpress.net/showbiz/au-my",
+      "https://ngoisao.vnexpress.net/thoi-cuoc",
+      "https://ngoisao.vnexpress.net/thoi-cuoc/hoang-gia",
+      "https://ngoisao.vnexpress.net/thoi-cuoc/chuyen-la",
+      "https://ngoisao.vnexpress.net/thoi-cuoc/hinh-su",
+      "https://ngoisao.vnexpress.net/video",
+      "https://ngoisao.vnexpress.net/lam-dep",
+      "https://ngoisao.vnexpress.net/lam-dep/toc",
+      "https://ngoisao.vnexpress.net/lam-dep/da",
+      "https://ngoisao.vnexpress.net/lam-dep/trang-diem",
+      "https://ngoisao.vnexpress.net/lam-dep/dang",
+      "https://ngoisao.vnexpress.net/lam-dep/phau-thuat-tham-my",
+      "https://ngoisao.vnexpress.net/loi-song",
+      "https://ngoisao.vnexpress.net/loi-song/song-khoe",
+      "https://ngoisao.vnexpress.net/loi-song/go-roi",
+      "https://ngoisao.vnexpress.net/loi-song/tinh-yeu",
+      "https://ngoisao.vnexpress.net/loi-song/cong-so",
+      "https://ngoisao.vnexpress.net/loi-song/cuoi-hoi",
+      "https://ngoisao.vnexpress.net/loi-song/nha-cua",
+      "https://ngoisao.vnexpress.net/anh",
+      "https://ngoisao.vnexpress.net/thoi-trang",
+      "https://ngoisao.vnexpress.net/thoi-trang/sao-style",
+      "https://ngoisao.vnexpress.net/thoi-trang/tu-van",
+      "https://ngoisao.vnexpress.net/thoi-trang/lang-mot",
+      "https://ngoisao.vnexpress.net/an-choi",
+      "https://ngoisao.vnexpress.net/an-choi/am-thuc",
+      "https://ngoisao.vnexpress.net/an-choi/du-lich",
+      "https://ngoisao.vnexpress.net/an-choi/tips",
+      "https://ngoisao.vnexpress.net/trac-nghiem",
+      "https://ngoisao.vnexpress.net/trac-nghiem/cung-hoang-dao",
+      "https://ngoisao.vnexpress.net/trac-nghiem/quiz",
+      "https://ngoisao.vnexpress.net/trac-nghiem/tarot",
+      "https://ngoisao.vnexpress.net/xem",
+      "https://ngoisao.vnexpress.net/xem/phim",
+      "https://ngoisao.vnexpress.net/xem/nhac",
+      "https://ngoisao.vnexpress.net/the-thao",
+      "https://ngoisao.vnexpress.net/the-thao/trong-nuoc",
+      "https://ngoisao.vnexpress.net/the-thao/quoc-te",
+      "https://ngoisao.vnexpress.net/thuong-truong",
+      "https://ngoisao.vnexpress.net/thuong-truong/doanh-nhan",
+      "https://ngoisao.vnexpress.net/thuong-truong/tieu-dung"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "ngoisao.vnexpress.net",
+    "checkedAt": "2026-11-09T03:57:17.379Z",
+    "url": "https://ngoisao.vnexpress.net/jo-in-sung-tuoi-45-song-doc-than-vi-khong-hieu-phu-nu-5130013.html",
+    "finalUrl": "https://ngoisao.vnexpress.net/jo-in-sung-tuoi-45-song-doc-than-vi-khong-hieu-phu-nu-5130013.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5558,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ngoisao.vnexpress.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 52,
+    "checkedArticleUrls": 57,
+    "freshArticleChecks": 12,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 52,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 45,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1238,
+        "passed": 50,
+        "distinctHashes": 50
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ngoisao.vnexpress.net/tan-hoa-hau-viet-nam-toi-chua-tung-hen-ho-5142672.html",
+      "https://ngoisao.vnexpress.net/ceo-nvidia-chup-anh-tinh-tu-ben-vo-mot-tuan-truoc-khi-nhan-ngoai-tinh-5142699.html",
+      "https://ngoisao.vnexpress.net/bo-viec-luong-1-5-ty-dong-nam-hai-co-gai-viet-mo-quan-banh-trang-tron-o-canada-5142310.html",
+      "https://ngoisao.vnexpress.net/pax-thien-va-em-trai-dua-me-di-an-toi-5142716.html",
+      "https://ngoisao.vnexpress.net/loan-niem-tinh-bach-nhien-dien-ao-ren-ho-lung-di-tham-do-5142888.html",
+      "https://ngoisao.vnexpress.net/nghi-pham-22-tuoi-song-cach-nha-be-gai-goc-viet-o-berlin-chua-day-800-m-5142728.html",
+      "https://ngoisao.vnexpress.net/con-gai-jensen-huang-huy-chuyen-cong-tac-giua-on-ao-cua-cha-5142566.html",
+      "https://ngoisao.vnexpress.net/katy-perry-se-tiet-lo-bi-mat-ve-cuoc-hon-nhan-den-toi-voi-russell-brand-5142783.html",
+      "https://ngoisao.vnexpress.net/meghan-huy-bai-phat-bieu-ve-an-toan-tre-em-sau-khi-cha-bi-bat-5142693.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 5
+    },
+    "checkedAt": "2026-11-10T09:16:14.579Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ngoisao.vnexpress.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "additionalMediaStrategy": "jsonld"
+    }
+  ]
+}

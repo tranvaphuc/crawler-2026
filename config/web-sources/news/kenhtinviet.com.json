@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kenhtinviet.com",
+  "siteId": "kenhtinviet.com",
+  "registrableDomain": "kenhtinviet.com",
+  "homepage": "https://kenhtinviet.com/",
+  "allowedHosts": [
+    "kenhtinviet.com",
+    "www.kenhtinviet.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Messi tuyên bố cuộc chiến ai là GOAT đã kết thúc sau khi chia tay Argentina?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Rượu bia ảnh hưởng đến cân nặng thế nào",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".fck_detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:25.490Z",
+    "sampleCount": 9,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://kenhtinviet.com/world-cup-2026/messi-tuyen-bo-cuoc-chien-ai-la-goat-da-ket-thuc-sau-khi-chia-tay-argentina.html",
+      "https://kenhtinviet.com/world-cup-2026/world-cup-mo-rong-va-co-hoi-cua-bong-da-viet-nam.html",
+      "https://kenhtinviet.com/suc-khoe/ruou-bia-anh-huong-den-can-nang-the-nao.html",
+      "https://kenhtinviet.com/giai-tri/hoa-hau-yen-trang-dien-dam-vu-khuc-ngoc-trai-khi-dang-quang.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/mu-arsenal-tranh-mua-nguoi-dong-the-cua-tchouameni-tai-world-cup.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kenhtinviet.com/",
+    "categories": [
+      "https://kenhtinviet.com/world-cup-2026",
+      "https://kenhtinviet.com/doi-song",
+      "https://kenhtinviet.com/giai-tri",
+      "https://kenhtinviet.com/suc-khoe",
+      "https://kenhtinviet.com/the-thao",
+      "https://kenhtinviet.com/thoi-su",
+      "https://kenhtinviet.com/tin-tong-hop",
+      "https://kenhtinviet.com/anh-dep",
+      "https://kenhtinviet.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.246Z",
+      "verifiedSeeds": [
+        "https://kenhtinviet.com/",
+        "https://kenhtinviet.com/world-cup-2026",
+        "https://kenhtinviet.com/doi-song",
+        "https://kenhtinviet.com/giai-tri",
+        "https://kenhtinviet.com/suc-khoe",
+        "https://kenhtinviet.com/the-thao",
+        "https://kenhtinviet.com/thoi-su",
+        "https://kenhtinviet.com/tin-tong-hop",
+        "https://kenhtinviet.com/anh-dep"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kenhtinviet.com",
+    "checkedAt": "2026-11-09T03:57:08.214Z",
+    "url": "https://kenhtinviet.com/world-cup-2026/messi-tuyen-bo-cuoc-chien-ai-la-goat-da-ket-thuc-sau-khi-chia-tay-argentina.html",
+    "finalUrl": "https://kenhtinviet.com/world-cup-2026/messi-tuyen-bo-cuoc-chien-ai-la-goat-da-ket-thuc-sau-khi-chia-tay-argentina.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2533,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kenhtinviet.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 38,
+    "freshArticleChecks": 29,
+    "parserIssues": 19,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 104,
+        "passed": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kenhtinviet.com/giai-tri/stephen-king-toi-thuong-viet-ba-gio-moi-ngay.html",
+      "https://kenhtinviet.com/suc-khoe/cac-dau-hieu-ung-thu-tuy-thuong-gap.html",
+      "https://kenhtinviet.com/tin-tong-hop/ba-thap-ky-chuyen-dich-dong-von-nhat-tai-viet-nam.html",
+      "https://kenhtinviet.com/suc-khoe/tai-sao-tac-dong-manh-o-co-co-the-gay-dot-quy.html",
+      "https://kenhtinviet.com/suc-khoe/5-loai-dau-giau-vitamin-va-khoang-chat-nen-an.html",
+      "https://kenhtinviet.com/suc-khoe/phong-tay-chan-mieng-cho-con-truoc-chuyen-du-lich.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/mu-arsenal-tranh-mua-nguoi-dong-the-cua-tchouameni-tai-world-cup.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/du-doan-ty-so-argentina-vs-thuy-si-messi-tiep-tuc-toa-sang.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/kylian-mbappe-doi-tuyen-phap-so-huu-tiem-nang-vo-han.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/phap-vua-vao-ban-ket-sieu-may-tinh-lap-tuc-chi-ten-nha-vo-dich-world-cup-2026.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/chinh-thuc-justin-bieber-bieu-dien-tai-chung-ket-world-cup-2026-2.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/chinh-thuc-justin-bieber-bieu-dien-tai-chung-ket-world-cup-2026.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-icloud/dich-vu-mo-khoa-icloud-iphone-8-plus-iphone-x-nhanh-nhat-viet-nam-8.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-icloud/dich-vu-mo-khoa-icloud-xs-xs-max-xr-re-nhat-ha-noi-tphcm-20.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/mo-khoa-mang-samsung-galaxy-s9-s9-plus-nhanh-chong-1.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/mo-khoa-mang-samsung-note-9-sprint-2.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/mo-mang-iphone-6-6s-6s-plus-gia-re-3.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/mo-mang-samsung-glaxy-note-8-lay-ngay-4.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/unlock-mo-mang-iphone-x-xs-xs-max-xr-vinh-vien-5.html",
+      "https://kenhtinviet.com/mo-khoa-nha-mang/unlock-mo-mang-samsung-galaxy-s8-s8-plus-nhat-6.html",
+      "https://kenhtinviet.com/giai-tri/bi-quyet-chinh-phuc-nhung-vong-quay-no-hu-may-man.html",
+      "https://kenhtinviet.com/thu-thuat/huong-dan-tao-tai-khoan-icloud-tren-iphone-ipad-10.html",
+      "https://kenhtinviet.com/thu-thuat/huong-dan-sao-luu-backup-du-lieu-iphone-qua-itunes-13.html",
+      "https://kenhtinviet.com/thu-thuat/huong-dan-ket-noi-iphone-voi-may-tinh-14.html",
+      "https://kenhtinviet.com/thu-thuat/huong-da%cc%83n-khoi-phu%cc%a3c-ma%cc%a3t-kha%cc%89u-tai-khoa%cc%89n-gmail-nhanh-nhat-15.html",
+      "https://kenhtinviet.com/thu-thuat/huong-dan-xoa-tai-khoan-samsung-account-17.html",
+      "https://kenhtinviet.com/thoi-su/can-hon-600-ty-dong-sua-duong-qua-bot-ben-thuy.html",
+      "https://kenhtinviet.com/thoi-su/nu-sinh-16-tuoi-chong-choi-ung-thu-dai-trang.html",
+      "https://kenhtinviet.com/thoi-su/hai-nguoi-tu-vong-khi-cau-ca-o-ho-dinh-cong.html",
+      "https://kenhtinviet.com/doi-song/hon-40-nam-hon-nhan-cua-vo-chong-ceo-nvidia-jensen-huang.html",
+      "https://kenhtinviet.com/the-thao/barca-dap-tat-hy-vong-chiem-dinh-bang-cua-atletico.html",
+      "https://kenhtinviet.com/suc-khoe/bac-si-chi-ra-thu-pham-gay-tang-can-khong-do-an-uong.html",
+      "https://kenhtinviet.com/the-thao/cau-thu-nhan-the-do-vi-thuc-cau-be-nhat-bong.html",
+      "https://kenhtinviet.com/the-thao/man-utd-cham-hai-moc-buon-tu-mua-1986-1987.html",
+      "https://kenhtinviet.com/go-bo-tai-khoan-google/my-dam-phan-voi-fifa-muon-dang-cai-them-mot-giai-dau-khong-lo.html",
+      "https://kenhtinviet.com/suc-khoe/be-hai-tuoi-viem-hong-do-lien-cau-khuan.html",
+      "https://kenhtinviet.com/tin-tong-hop/dat-da-vui-lap-duong-bang-hieu-do-sap-o-mien-trung.html",
+      "https://kenhtinviet.com/tin-tong-hop/de-xuat-quy-hoach-to-hop-ga-ngoc-hoi-3-tang-ket-noi-5-tuyen-metro.html",
+      "https://kenhtinviet.com/the-thao/man-utd-thoat-hiem-kho-tin-o-ngoai-hang-anh.html",
+      "https://kenhtinviet.com/suc-khoe/co-gai-23-tuoi-soc-tim-sau-khi-truyen-dich-tai-phong-kham-tu.html",
+      "https://kenhtinviet.com/the-thao/aston-villa-phan-doi-ban-go-4-4-cua-man-utd.html",
+      "https://kenhtinviet.com/suc-khoe/bac-si-tam-than-giai-ma-5-ly-do-dan-ong-thanh-dat-de-ngoai-tinh.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 19
+    },
+    "checkedAt": "2026-11-10T09:15:46.859Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kenhtinviet.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

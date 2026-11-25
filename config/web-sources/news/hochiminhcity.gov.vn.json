@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hochiminhcity.gov.vn",
+  "siteId": "hochiminhcity.gov.vn",
+  "registrableDomain": "hochiminhcity.gov.vn",
+  "homepage": "https://hochiminhcity.gov.vn/",
+  "allowedHosts": [
+    "hochiminhcity.gov.vn",
+    "www.hochiminhcity.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://hochiminhcity.gov.vn/",
+    "categories": [
+      "https://hochiminhcity.gov.vn/web/hcm",
+      "https://hochiminhcity.gov.vn/tin-tuc-su-kien",
+      "https://hochiminhcity.gov.vn/cds",
+      "https://hochiminhcity.gov.vn/phan-hoi-tu-co-quan-don-vi",
+      "https://hochiminhcity.gov.vn/thi-dua-khen-thuong",
+      "https://hochiminhcity.gov.vn/chinhquyen",
+      "https://hochiminhcity.gov.vn/web/ct-phan-van-mai"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tin liên quan",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".sp-dislaydate",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#contentText",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:17.247Z",
+    "frozenAt": "2026-11-16T01:57:11.671Z",
+    "trainingUrl": "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/fdi-cong-nghe-va-tai-chinh-can-uoc-ket-noi-thanh-mot-truc-phat-trien-thong-nhat",
+    "independentHoldouts": [
+      "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/tpho-chi-minh-cong-bo-loat-du-an-au-tu-quy-mo-lon-va-cac-chuong-trinh-hop-tac-quoc-te",
+      "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/vifc-hcmc-cua-ngo-thu-hut-dong-von-au-tu-the-he-moi"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/fdi-cong-nghe-va-tai-chinh-can-uoc-ket-noi-thanh-mot-truc-phat-trien-thong-nhat",
+      "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/tpho-chi-minh-cong-bo-loat-du-an-au-tu-quy-mo-lon-va-cac-chuong-trinh-hop-tac-quoc-te",
+      "https://www.hochiminhcity.gov.vn/vi/web/hcm/w/vifc-hcmc-cua-ngo-thu-hut-dong-von-au-tu-the-he-moi",
+      "https://hochiminhcity.gov.vn/web/hcm/-/tpho-chi-minh-du-bao-can-tuyen-them-45000-50000-lao-ong-trong-nhung-thang-cuoi-nam-2026",
+      "https://hochiminhcity.gov.vn/web/hcm/-/tpho-chi-minh-vinh-danh-1113-nha-giao-tre-co-nhieu-ong-gop-cho-su-nghiep-giao-duc",
+      "https://hochiminhcity.gov.vn/web/hcm/-/oan-luat-su-tphcm-nhiem-ky-2026-2031-phat-huy-vai-tro-tu-van-phan-bien-chinh-sach-va-phung-su-cong-ong",
+      "https://hochiminhcity.gov.vn/web/hcm/-/ngay-hoi-ai-oan-ket-toan-dan-toc-nam-2026-tai-khu-pho-bach-ang-2-phuong-tan-uyen",
+      "https://hochiminhcity.gov.vn/web/hcm/-/vifc-hcmc-ra-mat-hoc-vien-vifc-ket-noi-ao-tao-voi-nhu-cau-nhan-luc-tai-chinh-quoc-te",
+      "https://hochiminhcity.gov.vn/web/hcm/-/thu-tuong-chinh-phu-phe-chuan-ket-qua-bau-chu-tich-ubnd-tpho-chi-minh",
+      "https://hochiminhcity.gov.vn/web/hcm/-/tpho-chi-minh-trien-khai-cac-nhiem-vu-thuc-ay-khoa-hoc-cong-nghe-va-chuyen-oi-so-trong-linh-vuc-nong-nghiep"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

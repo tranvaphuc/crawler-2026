@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thethao247.vn",
+  "siteId": "thethao247.vn",
+  "registrableDomain": "thethao247.vn",
+  "homepage": "https://thethao247.vn/",
+  "allowedHosts": [
+    "thethao247.vn",
+    "www.thethao247.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thethao247.vn/",
+    "categories": [
+      "https://thethao247.vn/bao-gia.html",
+      "https://thethao247.vn/lich-thi-dau-bong-da/",
+      "https://thethao247.vn/bong-da-viet-nam-c1/",
+      "https://thethao247.vn/v-league-c15/",
+      "https://thethao247.vn/aff-cup",
+      "https://thethao247.vn/asian-cup"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Pajero thế hệ mới chốt giá rẻ hơn Toyota Land Cruiser Prado",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:25.200Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:18.509Z",
+    "independentHoldouts": [
+      "https://thethao247.vn/419-suv-co-c-dua-nhau-ha-gia-nhieu-mau-re-ngang-xe-hang-b-d431101.html",
+      "https://thethao247.vn/419-mitsubishi-tang-uu-dai-trong-thang-8-2026-xpander-nhan-ho-tro-toi-95-trieu-dong-d431003.html",
+      "https://thethao247.vn/190556-ldbd-panama-cong-bo-su-that-bat-ngo-tran-hoa-viet-nam-truoc-world-cup-c1-d445529.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thethao247.vn/419-mitsubishi-pajero-the-he-moi-chot-gia-re-hon-toyota-land-cruiser-prado-c191-d434915.html",
+      "https://thethao247.vn/419-suv-co-c-dua-nhau-ha-gia-nhieu-mau-re-ngang-xe-hang-b-d431101.html",
+      "https://thethao247.vn/419-mitsubishi-tang-uu-dai-trong-thang-8-2026-xpander-nhan-ho-tro-toi-95-trieu-dong-d431003.html",
+      "https://thethao247.vn/190556-ldbd-panama-cong-bo-su-that-bat-ngo-tran-hoa-viet-nam-truoc-world-cup-c1-d445529.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

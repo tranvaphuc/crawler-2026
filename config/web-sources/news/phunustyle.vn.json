@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunustyle.vn",
+  "siteId": "phunustyle.vn",
+  "registrableDomain": "phunustyle.vn",
+  "homepage": "https://www.phunustyle.vn/",
+  "allowedHosts": [
+    "www.phunustyle.vn",
+    "phunustyle.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lãnh đạo Thành ủy TPHCM trao Huy hiệu Đảng tại phường Cầu Ông Lãnh",
+    "strategy": "selector",
+    "selector": ".entry-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "abbr.published[title]",
+    "attribute": "title",
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:26.324Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html",
+      "https://www.phunustyle.vn/2026/11/huong-giang-cung-bebe-pham-ngoi-ghe.html",
+      "https://www.phunustyle.vn/2026/11/dien-vien-phuong-dung-tung-bi-ao-thai-o.html",
+      "https://www.phunustyle.vn/2026/11/ca-si-nguyen-kieu-oanh-tiet-lo-su-anh.html",
+      "https://www.phunustyle.vn/2026/11/ca-si-duong-hong-loan-trai-long-ve-buc.html",
+      "https://www.phunustyle.vn/2026/11/giai-ironman-703-vinh-ha-long-chinh.html",
+      "https://www.phunustyle.vn/2026/11/lan-au-tien-to-chuc-ai-hoi-ai-bieu-phat.html",
+      "https://www.phunustyle.vn/2026/11/gan-1400-luot-hien-toc-tai-ngay-hoi-non.html",
+      "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.phunustyle.vn/",
+    "categories": [
+      "https://www.phunustyle.vn/search/label/ch%C3%ADnh%20tr%E1%BB%8B",
+      "https://www.phunustyle.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.323Z",
+      "verifiedSeeds": [
+        "https://www.phunustyle.vn/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunustyle.vn",
+    "checkedAt": "2026-11-09T03:57:22.566Z",
+    "url": "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html",
+    "finalUrl": "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1683,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:58.460Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/phunustyle.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "phunustyle.vn",
+    "parsedArticles": 6,
+    "distinctHashes": 6,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 0,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 18,
+    "checkedArticleUrls": 6,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 18,
+        "attempted": 6,
+        "passed": 6,
+        "distinctContents": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T06:18:26.770Z",
+    "method": "original_visible_blogger_article_lead",
+    "proofs": [
+      {
+        "url": "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html",
+        "contentHash": "b8a1abbe2be1c0595a64843f98ee4d6be933ec1464837094f4ce34d9247632ae",
+        "description": "Sáng 5-11, Đảng ủy - HĐND - UBND - Uỷ ban MTTQ Việt Nam phường Cầu Ông Lãnh, TPHCM tổ chức họp mặt kỷ niệm 109 năm Cách mạng Tháng Mười Nga (7-11-1917 – 7-11-2026) và Lễ trao tặng Huy hiệu Đảng đến 39 đảng viên.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.phunustyle.vn/2026/11/lanh-ao-thanh-uy-tphcm-trao-huy-hieu.html",
+          "publishedDate": "2026-11-05T07:04:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://www.phunustyle.vn/2026/11/cau-chuyen-khoi-nghiep-phia-sau-anh-hao.html",
+        "contentHash": "70e8ad2ba38e6278bfe040640f36cd47c86070ba2a04a16ad1bd0d44e260ca12",
+        "description": "Đời Nghệ Sỹ tuần này là câu chuyện của ca sỹ Nguyễn Phi Hùng với những chia sẻ về hành trình kinh doanh phía sau ánh hào quang sân khấu.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.phunustyle.vn/2026/11/cau-chuyen-khoi-nghiep-phia-sau-anh-hao.html",
+          "publishedDate": "2026-11-16T09:28:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://www.phunustyle.vn/2026/11/oi-rat-ep-tu-bien-co-nhiem-hiv-en-hanh.html",
+        "contentHash": "a46150a041344b6a180bfb789ebc136f067db866abe491225cc3b3adc43b5032",
+        "description": "Từ một sinh viên y khoa từng đối diện với cú sốc khi nhận kết quả xét nghiệm năm 2008, anh đã lựa chọn tiếp tục theo đuổi nghề y, chuyển hướng sang lĩnh vực y tế dự phòng và tham gia xây dựng những mô hình hỗ trợ người bệnh.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.phunustyle.vn/2026/11/oi-rat-ep-tu-bien-co-nhiem-hiv-en-hanh.html",
+          "publishedDate": "2026-11-16T09:21:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null,
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".entry-content > div[style*=\"text-align\"]"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipcauthuonghieu.vn",
+  "siteId": "nhipcauthuonghieu.vn",
+  "registrableDomain": "nhipcauthuonghieu.vn",
+  "homepage": "https://nhipcauthuonghieu.vn/",
+  "allowedHosts": [
+    "nhipcauthuonghieu.vn",
+    "www.nhipcauthuonghieu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hội thảo khoa học quốc tế : văn hóa ẩm thực chay và phát triển bền vững ở châu Á",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:57.065Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhipcauthuonghieu.vn/2026/11/05/hoi-thao-khoa-hoc-quoc-te-van-hoa-am-thuc-chay-va-phat-trien-ben-vung-o-chau-a/",
+      "https://nhipcauthuonghieu.vn/2026/10/23/le-ky-niem-108-nam-ngay-thanh-lap-nha-nuoc-tiep-khac-doc-lap/",
+      "https://nhipcauthuonghieu.vn/2026/10/21/trien-lam-quoc-te-ogav-vimox-2026-mo-ra-nhieu-trien-vong-cho-nganh-hang-hai-dau-khi-viet-nam/",
+      "https://nhipcauthuonghieu.vn/2026/09/30/hoi-huu-nghi-viet-nam-duc-tp-hcm-hop-mat-mung-quoc-khanh-duc/",
+      "https://nhipcauthuonghieu.vn/2026/10/28/tbt-to-lam-trao-tang-hcld-hang-nhat-cho-dhkt-tp-hcm-nhan-ky-niem-50-nam-thanh-lap/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipcauthuonghieu.vn/",
+    "categories": [
+      "https://nhipcauthuonghieu.vn/category/truyen-thong/",
+      "https://nhipcauthuonghieu.vn/category/thuong-hieu/",
+      "https://nhipcauthuonghieu.vn/category/du-lich/",
+      "https://nhipcauthuonghieu.vn/category/vh-nt/",
+      "https://nhipcauthuonghieu.vn/category/y-te/",
+      "https://nhipcauthuonghieu.vn/category/doanh-nghiep/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipcauthuonghieu.vn",
+    "checkedAt": "2026-11-09T03:57:19.954Z",
+    "url": "https://nhipcauthuonghieu.vn/2026/11/05/hoi-thao-khoa-hoc-quoc-te-van-hoa-am-thuc-chay-va-phat-trien-ben-vung-o-chau-a/",
+    "finalUrl": "https://nhipcauthuonghieu.vn/2026/11/05/hoi-thao-khoa-hoc-quoc-te-van-hoa-am-thuc-chay-va-phat-trien-ben-vung-o-chau-a/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3231,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "nhipcauthuonghieu.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 48,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipcauthuonghieu.vn/2026/11/05/hoi-thao-khoa-hoc-quoc-te-van-hoa-am-thuc-chay-va-phat-trien-ben-vung-o-chau-a/",
+      "https://nhipcauthuonghieu.vn/2026/10/23/le-ky-niem-108-nam-ngay-thanh-lap-nha-nuoc-tiep-khac-doc-lap/",
+      "https://nhipcauthuonghieu.vn/2026/10/21/trien-lam-quoc-te-ogav-vimox-2026-mo-ra-nhieu-trien-vong-cho-nganh-hang-hai-dau-khi-viet-nam/",
+      "https://nhipcauthuonghieu.vn/2026/09/30/hoi-huu-nghi-viet-nam-duc-tp-hcm-hop-mat-mung-quoc-khanh-duc/",
+      "https://nhipcauthuonghieu.vn/2026/10/28/tbt-to-lam-trao-tang-hcld-hang-nhat-cho-dhkt-tp-hcm-nhan-ky-niem-50-nam-thanh-lap/",
+      "https://nhipcauthuonghieu.vn/2026/09/09/taiwan-pavilion-khai-mac-gian-hang-tai-trien-lam-quoc-te-ve-may-moc-thiet-bi-nganh-cong-nghiep-nhua-cao-su-viet-nam/",
+      "https://nhipcauthuonghieu.vn/2026/08/17/vietjet-air-hay-sun-phuquoc-airways-nen-chon-hang-bay-nao-cho-hanh-trinh-noi-dia/",
+      "https://nhipcauthuonghieu.vn/2026/07/09/man-hinh-gap-lon-tren-galaxy-z-fold-8-va-trai-nghiem-lam-viec-di-dong/",
+      "https://nhipcauthuonghieu.vn/2026/11/06/le-hoi-horea-glow-va-wellness-fest-2026/",
+      "https://nhipcauthuonghieu.vn/2026/10/14/cong-bo-chuong-trinh-truyen-thong-quang-ba-du-lich-tp-hcm-song-dong-tung-trai-nghiem/",
+      "https://nhipcauthuonghieu.vn/2026/09/30/cuoc-thi-khoi-nghiep-doi-moi-sang-tao-du-lich-tp-hcm-ky-vong-su-but-pha-ben-vung/",
+      "https://nhipcauthuonghieu.vn/2026/08/28/hoi-nghi-xuc-tien-du-lich-thai-nguyen-diem-den-xanh-cho-du-khach-quoc-te/",
+      "https://nhipcauthuonghieu.vn/2026/08/16/co-mot-dem-giao-luu-van-hoa-viet-nam-indonesia-tuyet-voi-nhan-ky-niem-81-nam-quoc-khanh-nuoc-cong-hoa-indonesia/",
+      "https://nhipcauthuonghieu.vn/2026/03/08/jica-tham-gia-le-hoi-nhat-viet-lan-thu-11/",
+      "https://nhipcauthuonghieu.vn/2026/03/07/can-nha-ky-uc-chinh-thuc-ra-mat-tac-pham-dien-anh-doat-9-de-cu-oscar-chuan-bi-den-viet-nam/",
+      "https://nhipcauthuonghieu.vn/2026/03/06/le-cong-bo-quyet-dinh-cua-thu-tuong-chinh-phu-ve-02-bao-vat-quoc-gia-tai-bao-tang-tp-hcm/",
+      "https://nhipcauthuonghieu.vn/2026/07/02/co-nhung-ca-truc-khong-co-benh-nhan/",
+      "https://nhipcauthuonghieu.vn/2026/03/19/ra-mat-clb-hoc-mai-vn-cau-noi-hoc-thuat-y-khoa-viet-nam-uc/",
+      "https://nhipcauthuonghieu.vn/2025/12/01/noi-lai-ban-tay-cho-thai-phu-mang-song-thai-34-tuan-dau-an-dac-biet-ve-phau-thuat-vi-phau-cua-benh-vien-da-khoa-binh-duong/",
+      "https://nhipcauthuonghieu.vn/2025/09/09/so-y-te-tp-hcm-kich-liet-len-an-hinh-anh-phan-cam-mac-ao-blouse-trang-nhung-lai-co-hanh-vi-hanh-hung-xam-hai-suc-khoe-va-tai-san-cua-nguoi-benh/",
+      "https://nhipcauthuonghieu.vn/2026/10/09/lam-the-nao-de-robusta-viet-thoat-vai-lam-nen-khang-dinh-thuong-hieu-rieng/",
+      "https://nhipcauthuonghieu.vn/2026/07/22/dien-dan-chien-luoc-kinh-doanh-the-future-of-business-doanh-nghiep-rut-ra-duoc-dieu-gi/",
+      "https://nhipcauthuonghieu.vn/2026/07/14/hoi-nghi-sau-rieng-chau-a-lan-thu-hai-va-ket-noi-san-xuat-tieu-thu-sau-rieng-viet-nam/",
+      "https://nhipcauthuonghieu.vn/2026/07/11/ra-mat-hai-du-an-an-sinh-danh-cho-nguoi-gia-neo-don/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:18.527Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipcauthuonghieu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

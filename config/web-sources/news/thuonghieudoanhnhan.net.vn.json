@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieudoanhnhan.net.vn",
+  "siteId": "thuonghieudoanhnhan.net.vn",
+  "registrableDomain": "thuonghieudoanhnhan.net.vn",
+  "homepage": "https://thuonghieudoanhnhan.net.vn/",
+  "allowedHosts": [
+    "thuonghieudoanhnhan.net.vn",
+    "www.thuonghieudoanhnhan.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thuonghieudoanhnhan.net.vn/",
+    "categories": [
+      "https://thuonghieudoanhnhan.net.vn/c/thoi-su",
+      "https://thuonghieudoanhnhan.net.vn/c/kinh-te-tai-chinh",
+      "https://thuonghieudoanhnhan.net.vn/c/tieu-dung",
+      "https://thuonghieudoanhnhan.net.vn/c/bat-dong-san",
+      "https://thuonghieudoanhnhan.net.vn/c/doanh-nghiep",
+      "https://thuonghieudoanhnhan.net.vn/c/doi-song",
+      "https://thuonghieudoanhnhan.net.vn/c/xe-cong-nghe",
+      "https://thuonghieudoanhnhan.net.vn/video"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Vingroup sắp khởi công KCN 13.000 tỷ đồng tại quê nhà tỷ phú Phạm Nhật Vượng nhân dịp 80 năm Quốc khánh 2/9",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "index": 0
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:31.124Z",
+    "frozenAt": "2026-11-16T02:00:20.950Z",
+    "trainingUrl": "https://thuonghieudoanhnhan.net.vn/vingroup-sap-khoi-cong-kcn-13000-ty-dong-tai-que-nha-ty-phu-pham-nhat-vuong-nhan-dip-80-nam-quoc-khanh-29-a123742.html",
+    "independentHoldouts": [
+      "https://thuonghieudoanhnhan.net.vn/grab-giam-phi-xuong-32-cuoc-xe-100000-dong-tai-xe-van-chi-cam-ve-59680-dong-a209900.html",
+      "https://thuonghieudoanhnhan.net.vn/nha-dat-vung-ven-hay-can-ho-all-in-one-tai-trung-tam-vinh-dau-la-lua-chon-dang-gia-a209969.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thuonghieudoanhnhan.net.vn/vingroup-sap-khoi-cong-kcn-13000-ty-dong-tai-que-nha-ty-phu-pham-nhat-vuong-nhan-dip-80-nam-quoc-khanh-29-a123742.html",
+      "https://thuonghieudoanhnhan.net.vn/grab-giam-phi-xuong-32-cuoc-xe-100000-dong-tai-xe-van-chi-cam-ve-59680-dong-a209900.html",
+      "https://thuonghieudoanhnhan.net.vn/nha-dat-vung-ven-hay-can-ho-all-in-one-tai-trung-tam-vinh-dau-la-lua-chon-dang-gia-a209969.html",
+      "https://thuonghieudoanhnhan.net.vn/ung-dung-ai-trong-doanh-nghiep-phat-trien-cong-nghe-lay-con-nguoi-lam-trung-tam-tai-ha-noi-a209968.html"
+    ],
+    "fullSiteCycleVerified": false,
+    "remaining36Qc": {
+      "checkedAt": "2026-11-22T02:39:00.902Z",
+      "originalClockPolicyUnchanged": true,
+      "verifiedUrls": [
+        "https://thuonghieudoanhnhan.net.vn/nguoi-sinh-vao-nhung-nam-nay-can-kiem-tra-thoi-han-the-can-cuoc-truoc-ngay-31122026-a211633.html",
+        "https://thuonghieudoanhnhan.net.vn/tuan-toi-mien-bac-don-them-dot-khong-khi-lanh-manh-a211700.html",
+        "https://thuonghieudoanhnhan.net.vn/song-da-du-kien-chi-gan-450-ty-dong-tam-ung-co-tuc-nam-2026-a211697.html",
+        "https://thuonghieudoanhnhan.net.vn/hdbank-va-mufg-mo-rong-hop-tac-thi-truong-von-thuc-day-dong-von-dau-tu-viet-nam-nhat-ban-a211695.html",
+        "https://thuonghieudoanhnhan.net.vn/vingroup-sap-khoi-cong-kcn-13000-ty-dong-tai-que-nha-ty-phu-pham-nhat-vuong-nhan-dip-80-nam-quoc-khanh-29-a123742.html",
+        "https://thuonghieudoanhnhan.net.vn/tu-112027-mot-nhom-nguoi-lao-dong-phai-cho-them-4-thang-moi-du-tuoi-nghi-huu-theo-quy-dinh-a211687.html",
+        "https://thuonghieudoanhnhan.net.vn/cuoc-dua-pho-an-lien-tai-viet-nam-mot-cai-ten-vua-xac-lap-vi-tri-top-1-a211694.html"
+      ],
+      "freshIndependentUrls": [
+        "https://thuonghieudoanhnhan.net.vn/vingroup-sap-khoi-cong-kcn-13000-ty-dong-tai-que-nha-ty-phu-pham-nhat-vuong-nhan-dip-80-nam-quoc-khanh-29-a123742.html",
+        "https://thuonghieudoanhnhan.net.vn/tu-112027-mot-nhom-nguoi-lao-dong-phai-cho-them-4-thang-moi-du-tuoi-nghi-huu-theo-quy-dinh-a211687.html",
+        "https://thuonghieudoanhnhan.net.vn/cuoc-dua-pho-an-lien-tai-viet-nam-mot-cai-ten-vua-xac-lap-vi-tri-top-1-a211694.html"
+      ],
+      "report": "/var/lib/news-flow/qc-remaining36-20261122/verified-extra.json"
+    }
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "http": {
+    "maxConcurrentArticles": 1
+  }
+}

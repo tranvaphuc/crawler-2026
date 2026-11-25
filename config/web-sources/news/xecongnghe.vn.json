@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xecongnghe.vn",
+  "siteId": "xecongnghe.vn",
+  "registrableDomain": "xecongnghe.vn",
+  "homepage": "http://xecongnghe.vn/",
+  "allowedHosts": [
+    "xecongnghe.vn",
+    "www.xecongnghe.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "dateOrder": "MDY",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Honda Việt Nam bán hơn 210.000 xe máy trong tháng 9/2026",
+    "strategy": "selector",
+    "selector": "h2:eq(0)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "#span-ngaydang",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".noi-dung",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:01:08.445Z",
+    "sampleCount": 9,
+    "passedSamples": 8,
+    "independentSampleCount": 4,
+    "holdoutAttempted": 6,
+    "sampleUrls": [
+      "http://xecongnghe.vn/honda-viet-nam-ban-hon-210000-xe-may-trong-thang-92026.html",
+      "http://xecongnghe.vn/honda-viet-nam-trao-tang-mu-bao-hiem-cho-hoc-sinh-lop-mot-khu-vuc-mien-nam-nam-hoc-2026%E2%80%932027.html",
+      "http://xecongnghe.vn/samsung-cong-bo-tam-nhin-cho-ky-nguyen-truyen-hinh-the-he-moi-tai-ces-2026.html",
+      "http://xecongnghe.vn/samsung-ra-mat-man-hinh-spatial-signage-danh-cho-doanh-nghiep-tai-ces-2026.html",
+      "http://xecongnghe.vn/vmrc-2020-chang-5-%E2%80%9Cnan-giai%E2%80%9D-cuoc-dua-den-ngoi-vo-dich-hang-muc-ub130.html",
+      "http://xecongnghe.vn/honda-tung-uu-dai-o-to-thang-112026-khuyen-mai-len-den-142-trieu-dong.html",
+      "http://xecongnghe.vn/subaru-viet-nam-trien-khai-uu-dai-thang-112026-lai-suat-tu-0-cho-outback.html",
+      "http://xecongnghe.vn/honda-viet-nam-ban-hon-210000-xe-may-trong-thang-92026.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "stage": "parser_samples_passed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round4-http/sites/xecongnghe.vn"
+  },
+  "discovery": {
+    "homepage": "http://xecongnghe.vn/",
+    "categories": [
+      "http://xecongnghe.vn/chuyenmuc/tin-moi-the-gioi/2-1",
+      "http://xecongnghe.vn/chuyenmuc/tin-moi-trong-nuoc/3-1",
+      "http://xecongnghe.vn/chuyenmuc/thi-truong-tong-quan/5-1",
+      "http://xecongnghe.vn/chuyenmuc/lai-xe-O-to/8-1",
+      "http://xecongnghe.vn/chuyenmuc/lai-xe-xe-may/9-1",
+      "http://xecongnghe.vn/chuyenmuc/cong-nghe-moi/11-1",
+      "http://xecongnghe.vn/chuyenmuc/cong-nghe-Dang-cap/12-1",
+      "http://xecongnghe.vn/chuyenmuc/cong-nghe-ky-thuat/13-1",
+      "http://xecongnghe.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?xecongnghe.vn/(?!thuvienanh).*?(\\d{3,})(.html)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.375Z",
+      "verifiedSeeds": [
+        "http://xecongnghe.vn/",
+        "http://xecongnghe.vn/chuyenmuc/tin-moi-the-gioi/2-1",
+        "http://xecongnghe.vn/chuyenmuc/tin-moi-trong-nuoc/3-1",
+        "http://xecongnghe.vn/chuyenmuc/thi-truong-tong-quan/5-1",
+        "http://xecongnghe.vn/chuyenmuc/lai-xe-O-to/8-1",
+        "http://xecongnghe.vn/chuyenmuc/lai-xe-xe-may/9-1",
+        "http://xecongnghe.vn/chuyenmuc/cong-nghe-moi/11-1",
+        "http://xecongnghe.vn/chuyenmuc/cong-nghe-Dang-cap/12-1",
+        "http://xecongnghe.vn/chuyenmuc/cong-nghe-ky-thuat/13-1"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "historicalValidation": {
+    "status": "parser_partial",
+    "browserMode": "see baseline evidence"
+  },
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "sampleCount": 9,
+    "passedSamples": 8,
+    "independentSamples": 4,
+    "checkedAt": "2026-11-09T04:02:41.158Z"
+  },
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "xecongnghe.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 14,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 105,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "http://xecongnghe.vn/honda-viet-nam-ban-hon-210000-xe-may-trong-thang-92026.html",
+      "http://xecongnghe.vn/samsung-cong-bo-tam-nhin-cho-ky-nguyen-truyen-hinh-the-he-moi-tai-ces-2026.html",
+      "http://xecongnghe.vn/samsung-ra-mat-man-hinh-spatial-signage-danh-cho-doanh-nghiep-tai-ces-2026.html",
+      "http://xecongnghe.vn/vmrc-2020-chang-5-%E2%80%9Cnan-giai%E2%80%9D-cuoc-dua-den-ngoi-vo-dich-hang-muc-ub130.html",
+      "http://xecongnghe.vn/honda-viet-nam-trao-tang-mu-bao-hiem-cho-hoc-sinh-lop-mot-khu-vuc-mien-nam-nam-hoc-2026%E2%80%932027.html",
+      "http://xecongnghe.vn/honda-tung-uu-dai-o-to-thang-112026-khuyen-mai-len-den-142-trieu-dong.html",
+      "http://xecongnghe.vn/subaru-viet-nam-trien-khai-uu-dai-thang-112026-lai-suat-tu-0-cho-outback.html",
+      "http://xecongnghe.vn/ford-viet-nam-tang-102-giai-vang-khi-mua-xe-thang-11.html",
+      "http://xecongnghe.vn/byd-techweek-2026-khoi-dong-tai-ca-mau-mo-man-chuoi-su-kien-trai-nghiem-cong-nghe-tren-toan-quoc.html",
+      "http://xecongnghe.vn/volvo-ex90-va-es90-ra-mat-viet-nam-suv-dien-680-ma-luc-sedan-di-706-km-moi-lan-sac.html",
+      "http://xecongnghe.vn/mforce-viet-nam-ra-mat-hai-thuong-hieu-xe-may-moi-trinh-lang-ba-mau-xe-gia-tu-98-trieu-dong.html",
+      "http://xecongnghe.vn/xpander-tiep-tuc-dan-dau-doanh-so-thang-10-va-mitsubishi-tiep-tuc-tung-ra-ctkm-thang-11.html",
+      "http://xecongnghe.vn/lo-xe-omoda-c5-dau-tien-xuat-khau-tu-indonesia-ve-viet-nam.html",
+      "http://xecongnghe.vn/maserati-grancabrio-chinh-thuc-duoc-ra-mat.html",
+      "http://xecongnghe.vn/vespa-946-dragon-sap-xuat-hien-tai-viet-nam.html",
+      "http://xecongnghe.vn/trai-nghiem-nhanh-honda-uc3-xe-dien-honda-co-gi-dang-chu-y.html",
+      "http://xecongnghe.vn/volvo-xc90-ultra-suv-hang-sang-danh-cho-nhung-hanh-trinh-dai.html",
+      "http://xecongnghe.vn/hyundai-to-chuc-lai-thu-bo-doi-tucson-hybrid-va-palisade-hybrid-tai-tphcm.html",
+      "http://xecongnghe.vn/bridgestone-potenza-adrenalin-re005-ra-mat-tai-viet-nam-trai-nghiem-thuc-te-tren-volkswagen-golf-voi-bai-lai-gymkhana.html",
+      "http://xecongnghe.vn/audi-q3-the-he-thu-ba-khi-thiet-ke-va-anh-sang-cung-ke-mot-cau-chuyen.html",
+      "http://xecongnghe.vn/byd-gioi-thieu-pin-blade-the-he-thu-2-va-cong-nghe-sac-sieu-nhanh-flash-charging.html",
+      "http://xecongnghe.vn/rollsroyce-phantom-%E2%80%93-hanh-trinh-huyen-thoai-xuyen-suot-mot-the-ky.html",
+      "http://xecongnghe.vn/samsung-chinh-thuc-ra-mat-galaxy-a06-5g.html",
+      "http://xecongnghe.vn/tecno-chinh-thuc-gioi-thieu-spark-30-tai-thi-truong-viet-nam.html",
+      "http://xecongnghe.vn/tecno-ra-mat-spark-30-pro-phien-ban-transformers-manh-hon--ben-hon.html",
+      "http://xecongnghe.vn/redmi-k80-lo-dien-thiet-ke-moi.html",
+      "http://xecongnghe.vn/-samsung-chinh-thuc-ra-mat-dong-galaxy-tab-s10-fe-series.html",
+      "http://xecongnghe.vn/he-lo-toan-bo-thong-so-cau-hinh-cua-playstation-5-pro-truoc-ngay-mo-ban.html",
+      "http://xecongnghe.vn/samsung-ra-mat-music-frame-phien-ban-gioi-han-wicked.html",
+      "http://xecongnghe.vn/cung-tam-gia-chon-suzuki-xl7-ertiga-moi-hay-mua-xe-cu.html",
+      "http://xecongnghe.vn/lua-chon-o-to-cua-nguoi-dan-ong-thau-dao.html",
+      "http://xecongnghe.vn/chang-3-giai-dua-mo-to-chau-A-arrc-2023-se-dien-ra-tai-truong-dua-sugo-nhat-ban.html",
+      "http://xecongnghe.vn/volvo-to-chuc-giai-volvo-golf-championship-vietnam-2022-race-to-sweden.html",
+      "http://xecongnghe.vn/ba-tay-dua-viet-nam-tham-gia-chinh-thuc-chang-thu-hai--giai-dua-mo-to-chau-A-arrc-2022-.html",
+      "http://xecongnghe.vn/defender-trophy-2026-36-tay-lai-xuat-sac-chuan-bi-chinh-phuc-chau-phi.html",
+      "http://xecongnghe.vn/pvoil-voc-2026-khep-lai-voi-mua-giai-kich-tinh-nhat-lich-su-xac-lap-nhieu-ky-luc-moi.html",
+      "http://xecongnghe.vn/mercedesbenz-viet-nam-ra-mat-5-mau-xe-dien-hoa-moi-gia-tu-159-ty-dong.html",
+      "http://xecongnghe.vn/honda-sh160i125i-2027-ra-mat-tai-viet-nam-gia-tu-7667-trieu-dong.html",
+      "http://xecongnghe.vn/wuling-ra-mat-4-mau-xe-dien-moi-tai-viet-nam-gia-tu-279-trieu-dong.html",
+      "http://xecongnghe.vn/gaz-viet-nam-lan-dau-tham-du-cam-auto-2026-gioi-thieu-loat-xe-thuong-mai-tai-campuchia.html",
+      "http://xecongnghe.vn/honda-viet-nam-va-so-xay-dung-tphcm-phat-dong-chuong-trinh-phat-trien-giao-thong-ben-vung.html",
+      "http://xecongnghe.vn/byd-sealion-5-dmi-ra-mat-viet-nam-gia-uu-dai-tu-659-trieu-dong.html",
+      "http://xecongnghe.vn/mg-viet-nam-ra-mat-mg-all-new-zs-va-mg-gt-gia-tu-512-trieu-va-tang-bao-hanh-len-10-nam.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:31.996Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/xecongnghe.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "xecongnghe.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".noi-dung p"
+  },
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T07:26:18.816Z",
+    "method": "user_confirmed_gmt7_owned_native_article_clock",
+    "proofs": [
+      {
+        "url": "http://xecongnghe.vn/honda-viet-nam-ban-hon-210000-xe-may-trong-thang-92026.html",
+        "contentHash": "4c64cd23aa4419f2f4bc75b1f2bb75313e132f847aa329dc0765b49efbb36aa2",
+        "description": "Theo Honda Việt Nam, số liệu được tổng hợp từ các Cửa hàng Bán xe và Dịch vụ do Honda Ủy nhiệm/Nhà Phân phối ô tô Honda giao cho khách hàng và theo ước tính của HVN.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://xecongnghe.vn/honda-viet-nam-ban-hon-210000-xe-may-trong-thang-92026.html",
+          "publishedDate": "2026-10-07T05:32:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "xecongnghe.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "http://xecongnghe.vn/honda-viet-nam-uu-dai-honda-city-trong-thang-112026-muc-ho-tro-len-den-75-trieu-dong.html",
+        "contentHash": "40d17ad89a7759b24598bcd0d8d9a33286d87d0f31eba1e62002774c9c38dd16",
+        "description": "Cụ thể, khách hàng mua Honda City mới sẽ được hỗ trợ 50% lệ phí trước bạ và hưởng ưu đãi lãi suất cố định 0% trong 12 tháng đầu tiên. Mức hỗ trợ lệ phí trước bạ được tính theo mức 10%, trong khi ưu đãi lãi suất áp dụng theo gói vay tiêu chuẩn dành cho khách hàng mua xe Honda tại ngân hàng VPBank.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://xecongnghe.vn/honda-viet-nam-uu-dai-honda-city-trong-thang-112026-muc-ho-tro-len-den-75-trieu-dong.html",
+          "publishedDate": "2026-11-14T02:10:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "xecongnghe.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "http://xecongnghe.vn/honda-tung-uu-dai-o-to-thang-112026-khuyen-mai-len-den-142-trieu-dong.html",
+        "contentHash": "3887c1d2ce63aa2ce546aadbf082b7219d3252c811868c5beb5880b5fa3eda4b",
+        "description": "Honda Việt Nam (HVN) phối hợp cùng hệ thống nhà phân phối triển khai chương trình khuyến mại ô tô từ ngày 1/11 đến hết ngày 30/11/2026. Trong đó, Honda BR-V và HR-V là những mẫu xe nhận được nhiều ưu đãi đáng chú ý, giúp khách hàng giảm đáng kể chi phí sở hữu ban đầu.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://xecongnghe.vn/honda-tung-uu-dai-o-to-thang-112026-khuyen-mai-len-den-142-trieu-dong.html",
+          "publishedDate": "2026-11-02T12:28:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "xecongnghe.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "publicationArticleScope": "#content > .container > .col-md-8:has(> #span-ngaydang):has(> .noi-dung)",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "originalPublicationBlockedReason": null
+}

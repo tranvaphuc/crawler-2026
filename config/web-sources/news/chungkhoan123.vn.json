@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "siteName": "chungkhoan123.vn",
+  "siteId": "chungkhoan123.vn",
+  "registrableDomain": "chungkhoan123.vn",
+  "homepage": "https://chungkhoan123.vn/",
+  "allowedHosts": [
+    "chungkhoan123.vn",
+    "www.chungkhoan123.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thống kê 30 cổ phiếu được nước ngoài giao dịch mua ròng nhiều nhất trong 10 phiên gần đây (08/08/2018)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:16.021Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://chungkhoan123.vn/thong-ke-30-co-phieu-duoc-nuoc-ngoai-giao-dich-mua-rong-nhieu-nhat-trong-10-phien-gan-day-08082018/",
+      "https://chungkhoan123.vn/cac-chi-so-kinh-te-vi-mo-anh-huong-len-thi-truong-chung-khoan/",
+      "https://chungkhoan123.vn/cac-buoc-dang-ky-va-su-dung-margin-cao-tren-ung-dung-vpbanks/",
+      "https://chungkhoan123.vn/huong-dan-nop-tien-vao-tai-khoan-chung-khoan-vpbanks/",
+      "https://chungkhoan123.vn/cac-chi-so-co-ban-trong-chung-khoan/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://chungkhoan123.vn/",
+    "categories": [
+      "https://chungkhoan123.vn/ho-tro-dau-tu/",
+      "https://chungkhoan123.vn/cac-cau-hoi-co-ban/",
+      "https://chungkhoan123.vn/mo-tai-khoan-chung-khoan/",
+      "https://chungkhoan123.vn/huong-dan-dat-lenh-mua-ban-chung-khoan/",
+      "https://chungkhoan123.vn/uy-thac-dau-tu-chung-khoan/",
+      "https://chungkhoan123.vn/giao-dich-co-phieu-chua-niem-yet-otc/",
+      "https://chungkhoan123.vn/mo-tai-khoan-chung-khoan-phai-sinh/",
+      "https://chungkhoan123.vn/luu-ky-chung-khoan-2/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "chungkhoan123.vn",
+    "checkedAt": "2026-11-09T03:56:55.267Z",
+    "url": "https://chungkhoan123.vn/thong-ke-30-co-phieu-duoc-nuoc-ngoai-giao-dich-mua-rong-nhieu-nhat-trong-10-phien-gan-day-08082018/",
+    "finalUrl": "https://chungkhoan123.vn/thong-ke-30-co-phieu-duoc-nuoc-ngoai-giao-dich-mua-rong-nhieu-nhat-trong-10-phien-gan-day-08082018/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 454,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "chungkhoan123.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 15,
+    "parserIssues": 6,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 36,
+        "passed": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://chungkhoan123.vn/cac-buoc-dang-ky-va-su-dung-margin-cao-tren-ung-dung-vpbanks/",
+      "https://chungkhoan123.vn/huong-dan-nop-tien-vao-tai-khoan-chung-khoan-vpbanks/",
+      "https://chungkhoan123.vn/cac-chi-so-kinh-te-vi-mo-anh-huong-len-thi-truong-chung-khoan/",
+      "https://chungkhoan123.vn/cac-chi-so-co-ban-trong-chung-khoan/",
+      "https://chungkhoan123.vn/tuyen-dung-moi-gioi-cong-tac-vien-chung-khoan-hoa-hong-cao-nhat-thi-truong/",
+      "https://chungkhoan123.vn/cac-buoc-khoi-dau-dau-tu/",
+      "https://chungkhoan123.vn/phan-tich-co-ban-chung-khoan/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3,
+      "original_publication_not_yet_confirmed": 3
+    },
+    "checkedAt": "2026-11-10T09:14:37.835Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/chungkhoan123.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

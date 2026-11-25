@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kawowo.com",
+  "siteId": "kawowo.com",
+  "registrableDomain": "kawowo.com",
+  "homepage": "https://kawowo.com/",
+  "allowedHosts": [
+    "kawowo.com",
+    "www.kawowo.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lady Cranes win Rugby Africa Women’s 7s to qualify for HSBC Division III",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:24.390Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://kawowo.com/2026/11/08/lady-cranes-win-rugby-africa-womens-7s-to-qualify-for-hsbc-division-iii/",
+      "https://kawowo.com/2026/11/08/nakanwagi-targets-more-success-after-ura-ladies-overcome-she-corporates/",
+      "https://kawowo.com/2026/11/08/caf-womens-champions-league-kawempe-defeat-usfas-bamako-to-qualify-for-semifinals/",
+      "https://kawowo.com/2026/11/08/vipers-kigezi-homeboyz-league-clash-rescheduled/",
+      "https://kawowo.com/2026/11/08/uganda-beat-kenya-to-reach-rugby-africa-womens-7s-final/",
+      "https://kawowo.com/2026/04/19/morocco-afcon-2025-three-senegalese-fans-released-after-serving-sentences/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kawowo.com/",
+    "categories": [
+      "https://kawowo.com/support/",
+      "https://kawowo.com/afcon-2025/",
+      "https://kawowo.com/football/",
+      "https://kawowo.com/paris-2024-olympics/",
+      "https://kawowo.com/athletics/",
+      "https://kawowo.com/tusker-lite-rwenzori-marathon/",
+      "https://kawowo.com/rugby/",
+      "https://kawowo.com/national-rugby-7s-series/",
+      "https://kawowo.com/africa7s/",
+      "https://kawowo.com/motorsport/",
+      "https://kawowo.com/basketball/",
+      "https://kawowo.com/golf/",
+      "https://kawowo.com/uganda-golf-open/",
+      "https://kawowo.com/cricket/",
+      "https://kawowo.com/op-eds/",
+      "https://kawowo.com/boxing/",
+      "https://kawowo.com/category/netball/",
+      "https://kawowo.com/category/volleyball/",
+      "https://kawowo.com/category/pool/",
+      "https://kawowo.com/category/hockey/",
+      "https://kawowo.com/category/weightlifting/",
+      "https://kawowo.com/category/chess/",
+      "https://kawowo.com/category/others/",
+      "https://kawowo.com/category/cycling/",
+      "https://kawowo.com/category/lacrosse/",
+      "https://kawowo.com/category/live/",
+      "https://kawowo.com/category/rowing/",
+      "https://kawowo.com/category/swimming/",
+      "https://kawowo.com/category/tennis/",
+      "https://kawowo.com/stats/",
+      "https://kawowo.com/calendar/fixtures/",
+      "https://kawowo.com/calendar/results/",
+      "https://kawowo.com/support"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?kawowo.com/.*?[\\w-]{30,}[\\w]{1}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kawowo.com",
+    "checkedAt": "2026-11-09T03:57:07.414Z",
+    "url": "https://kawowo.com/2026/11/08/lady-cranes-win-rugby-africa-womens-7s-to-qualify-for-hsbc-division-iii/",
+    "finalUrl": "https://kawowo.com/2026/11/08/lady-cranes-win-rugby-africa-womens-7s-to-qualify-for-hsbc-division-iii/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2745,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kawowo.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 44,
+    "checkedArticleUrls": 48,
+    "freshArticleChecks": 15,
+    "parserIssues": 1,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 44,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 33,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 5,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 314,
+        "passed": 44,
+        "distinctHashes": 44
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kawowo.com/2026/11/10/hoima-beckons-as-khalid-aucho-prepares-for-emotional-cranes-goodbye/",
+      "https://kawowo.com/2026/11/10/talking-points-from-the-uganda-premier-league-after-10-games/",
+      "https://kawowo.com/2026/11/10/22-boxers-one-mission-iba-presidents-cup-glory/",
+      "https://kawowo.com/2026/11/10/uganda-cranes-paul-put-confirms-mato-will-not-feature-against-botswana/",
+      "https://kawowo.com/2026/11/09/nic-show-championship-intent-with-weyonje-triumph/",
+      "https://kawowo.com/2026/11/09/btg-showcase-offers-east-africas-u-15-basketball-talents-pathway-to-bigger-opportunities/",
+      "https://kawowo.com/2026/11/09/khalifa-hails-kawempe-muslims-fighting-spirit-after-semi-final-qualification/",
+      "https://kawowo.com/2026/11/09/uganda-cranes-begin-afcon-2027-preparations-as-nine-players-report-to-camp/",
+      "https://kawowo.com/2026/11/09/nampiina-sets-the-pace-as-victoria-pearls-sweep-first-round/",
+      "https://kawowo.com/2026/11/09/fufa-big-league-2026-27-west-nile-region-clubs-post-impressive-home-performance-on-match-day-7/",
+      "https://kawowo.com/2026/11/09/new-egypt-head-coach-maher-drops-emam-ashour/",
+      "https://kawowo.com/2026/11/09/onyangos-sundowns-fall-to-usm-alger-in-caf-super-cup/",
+      "https://kawowo.com/2026/11/09/one-goal-glory-nile-queens-rule-zone-5-again/",
+      "https://kawowo.com/2026/11/09/victoria-pearls-namibia-complete-first-round-with-big-wins-on-day-3-of-victoria-series/",
+      "https://kawowo.com/2026/11/08/lady-cranes-win-rugby-africa-womens-7s-to-qualify-for-hsbc-division-iii/",
+      "https://kawowo.com/2026/11/08/nakanwagi-targets-more-success-after-ura-ladies-overcome-she-corporates/",
+      "https://kawowo.com/2026/11/08/caf-womens-champions-league-kawempe-defeat-usfas-bamako-to-qualify-for-semifinals/",
+      "https://kawowo.com/2026/11/08/vipers-kigezi-homeboyz-league-clash-rescheduled/",
+      "https://kawowo.com/2026/11/08/uganda-beat-kenya-to-reach-rugby-africa-womens-7s-final/",
+      "https://kawowo.com/2026/11/08/namugerwa-reveals-secret-behind-uganda-martyrs-flying-start/",
+      "https://kawowo.com/2026/11/08/nile-queens-a-win-away-from-continental-ticket-after-rwanda-victory/",
+      "https://kawowo.com/2026/11/08/lukwago-grateful-for-another-national-team-opportunity/",
+      "https://kawowo.com/2026/11/08/uganda-rises-again-on-africas-elite-refereeing-stage-through-young-star-kasalirwe-lucky-razake/",
+      "https://kawowo.com/2026/11/07/lady-cranes-annihilate-burkina-faso-in-rugby-africa-womens-7s-opener/",
+      "https://kawowo.com/2026/11/06/road-to-bal-2027-nam-blazers-learn-elite-16-group-opponents-as-tougher-test-awaits/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 1
+    },
+    "checkedAt": "2026-11-10T09:15:45.900Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kawowo.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+Đã triển khai news-flow release 20261113-15 trên VPS.
+Đo từ 13:12:28 đến 13:22:59 ngày 13/11/2026 (UTC+7), thời gian thực 10.52 phút.
+
+Các thay đổi:
+- Batch ưu tiên bài mới và lúc claim giữ đúng thứ tự đã chọn. Sửa lỗi chọn link mới rồi lại lấy bài cũ theo FIFO trước. Batch cập nhật mỗi 2 giây.
+- Khi seed thấy lại URL đang pending, cập nhật ưu tiên và thời điểm thấy lại, không tạo task trùng hoặc khôi phục URL lỗi.
+- Đồng hồ trong card và ngày trong URL chỉ dùng xếp thứ tự; không dùng để điền publishedDate lên ES hoặc xóa task.
+- Với bài quá 24 giờ, chỉ bỏ parse body sớm nếu publication thuộc đúng bài, headline khớp, có giờ/timezone rõ và các bằng chứng không mâu thuẫn. Link liên quan vẫn được lưu vào queue trước khi kết thúc bài cũ.
+- Gộp kiểm tra trang, phân loại, trích link và publication preflight trong một lần đọc DOM ở worker. Chỉ tái dùng kết quả khi HTML/URL/publisher/role còn khớp. Adapter thay đổi HTML sẽ được phân tích lại.
+- Chuyển kiểm tra field độc lập vào parser worker, dùng lại DOM chỉ đọc giữa các parser variant; giảm clone DOM khi đọc body/anchor text.
+- Đã xác minh index ES có refresh_interval=60s. Bulk dùng refresh=true riêng batch và đối soát sau ghi; cấu hình chung của index vẫn 60s. Outbox ưu tiên publishedDate mới, vẫn tôn trọng lịch đối soát next_at.
+
+Giới hạn và tính đúng:
+- 80 slot seed + 32 slot bài; 3 parser, 3 worker HTML và 7 worker mạng. Giữ 4 CPU/4 GiB.
+- HTTP timeout tối đa 2 giây, spacing ít nhất 3 giây/host và cooldown riêng từng publisher.
+- URL lỗi được đưa vào ledger để check riêng; không tự retry ở vòng mới, restart hoặc đổi parser. Không chạy checker URL lỗi trong đợt này. ES outbox vẫn đối soát/retry riêng để bảo toàn import.
+- Giữ create-only ES5, kiểm tra cluster/mapping, lookup URL/native ID trên master*, kiểm tra duplicate sau ghi và version guard khi bù trừ race. Không ghi đè document cũ.
+- 152/152 test pass cả local và VPS. SQLite quick_check đạt; source đã đối chiếu hash.
+- Đối chiếu live 30/30 bài vừa tạo: toàn bộ field, ID legacy, UTC publishedDate và index tuần Việt Nam khớp. Không chuyển document ES mẫu về máy local.
+
+Kết quả tốc độ:
+- Trước: 166,4 link bài/phút, 12 bài ES mới/phút trong cửa sổ 5 phút; timeout bài 10,29%.
+- Sau: 323.63 link bài/phút trung bình trong 10.52 phút. Tổng 3403 URL đã xử lý xong, bao gồm hợp lệ, quá hạn, non-article và lỗi.
+- ES tạo 328 bài, trung bình 31.19/phút; số này có phần giải phóng outbox cũ.
+- Cửa sổ cuối 3.17 phút: xử lý 353.94 link/phút, ES tạo 19.87 bài/phút, nhận 652.68 link/phút.
+- Article HTTP timeout 8.56%; seed 1485.3 request/phút, timeout seed 1.54%.
+- URL lỗi bị request lại: 0. URL lỗi còn nằm trong queue active: 3. Response thành công vượt deadline mạng 2 giây: 0.
+- Outbox hiện tại: {"created": 5836, "existing": 2791, "held": 78, "pending": 8, "sending": 7}. Held là các trường hợp identity/race cần review, không tự import lại.
+- CPU 3.81/4 core; RAM 1.98/4 GiB; service active/running, NRestarts=0.
+
+Đánh giá mốc 20 phút:
+- Chỉ tính cohort có publishedDate sau lúc bắt đầu phép đo bản 15: 27 bài đã tạo trong ES. Publication→ES trung vị 2.59 phút, p95 6.78 phút, lớn nhất 6.91 phút.
+- Đây là ngày đăng đã xác minh, không thay bằng tuổi enqueue. Kết quả chỉ xác nhận trên các bài mới quan sát được, chưa phải SLA cho toàn bộ 544 site hoặc cho những bài chưa discover được.
+- Từ thấy link trên seed đến bắt đầu xử lý: trung vị 5.58 giây, p95 100.44 giây. Có cả URL cũ được seed thấy lại trong thống kê này.
+- Queue tổng còn 381,217 URL; thay đổi +2,758 trong cửa sổ. Backlog cũ vẫn tăng, chưa được giải phóng hết; bài mới được ưu tiên thay vì chờ FIFO toàn bộ backlog.
+
+Backup trước migration freshness: /var/lib/news-flow/backups/write-before-article-freshness-20261113.sqlite.
+Queue WAL, identity ledger và outbox live được giữ nguyên. Chi tiết đo và kiểm tra nằm ở outputs/news-speed-2026-11-13/article-final-summary.json và các artifact cùng thư mục.

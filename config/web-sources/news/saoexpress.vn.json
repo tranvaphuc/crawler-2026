@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "siteName": "saoexpress.vn",
+  "siteId": "saoexpress.vn",
+  "registrableDomain": "saoexpress.vn",
+  "homepage": "https://saoexpress.vn/",
+  "allowedHosts": [
+    "saoexpress.vn",
+    "www.saoexpress.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nữ hoàng ảnh lịch Hiền Mai: Nhiều lần muốn ly hôn vì thấy bị ràng buộc",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:10.255Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://saoexpress.vn/nu-hoang-anh-lich-hien-mai-nhieu-lan-muon-ly-hon-vi-thay-bi-rang-buoc.html",
+      "https://saoexpress.vn/rapper-datmaniac-doi-album-lay-rac.html",
+      "https://saoexpress.vn/ntk-nomi-thao-nguyen-dua-ao-dai-viet-buoc-vao-khong-gian-thoi-trang-quoc-te.html",
+      "https://saoexpress.vn/ngoc-quyen-tai-xuat-san-catwalk-cung-nha-thiet-ke-nomi-thao-nguyen.html",
+      "https://saoexpress.vn/dan-vy-metzler-va-hanh-trinh-lan-toa-nang-luong-khoe-de-dep-tai-miss-universe-business-world-2026.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles",
+    "complete27Qc": {
+      "checkedAt": "2026-11-22T12:10:29.293Z",
+      "verifiedUrls": [
+        "https://saoexpress.vn/lan-ngoc-khanh-van-tap-luyen-de-co-vong-eo-thon.html",
+        "https://saoexpress.vn/a-hau-thanh-tu-sau-sinh-khong-rung-soi-toc-nao-toc-vua-den-vua-day-khien-chi-em-ghen-ty-ma-bi-quyet-lai-de-ot-the-nay.html",
+        "https://saoexpress.vn/xe-cho-39-nguoi-chet-thuoc-nhom-3-container-vao-anh.html",
+        "https://saoexpress.vn/bac-tin-don-phong-toa-toan-tp-hcm.html",
+        "https://saoexpress.vn/toi-da-phai-gianh-giat-tung-hoi-tho-benh-nhan-nhiem-covid-19-binh-phuc-ke-lai-ve-nhung-phut-giay-tam-toi-nhat-cuoc-doi-minh.html"
+      ],
+      "holdouts": [
+        "https://saoexpress.vn/bac-tin-don-phong-toa-toan-tp-hcm.html",
+        "https://saoexpress.vn/toi-da-phai-gianh-giat-tung-hoi-tho-benh-nhan-nhiem-covid-19-binh-phuc-ke-lai-ve-nhung-phut-giay-tam-toi-nhat-cuoc-doi-minh.html"
+      ],
+      "nativePublicationAdapter": null,
+      "report": "/var/lib/news-flow/qc-complete27-20261122/qualified-sites.json",
+      "originalIdentityPreserved": true
+    }
+  },
+  "discovery": {
+    "homepage": "https://saoexpress.vn/",
+    "categories": [
+      "https://saoexpress.vn/category/ha%cc%a3u-truong",
+      "https://saoexpress.vn/category/ha%cc%a3u-truong/sao-trong-nuoc",
+      "https://saoexpress.vn/category/ha%cc%a3u-truong/sao-the-gioi",
+      "https://saoexpress.vn/category/giai-tri",
+      "https://saoexpress.vn/category/giai-tri/tin-tuc",
+      "https://saoexpress.vn/category/giai-tri/ca-nha%cc%a3c",
+      "https://saoexpress.vn/category/giai-tri/phim",
+      "https://saoexpress.vn/category/giai-tri/tv-show",
+      "https://saoexpress.vn/category/thoi-trang",
+      "https://saoexpress.vn/category/thoi-trang/phong-cach-sao",
+      "https://saoexpress.vn/category/thoi-trang/xu-huong-bi-quyet",
+      "https://saoexpress.vn/category/thoi-trang/thoi-trang-no%cc%a3i-y",
+      "https://saoexpress.vn/category/thoi-trang/accesorize",
+      "https://saoexpress.vn/category/thoi-trang/shop-sao",
+      "https://saoexpress.vn/category/kho%cc%89e-de%cc%a3p",
+      "https://saoexpress.vn/category/kho%cc%89e-de%cc%a3p/song-kho%cc%89e",
+      "https://saoexpress.vn/category/kho%cc%89e-de%cc%a3p/de%cc%a3p-cung-sao",
+      "https://saoexpress.vn/category/kho%cc%89e-de%cc%a3p/bi-quyet-lam-de%cc%a3p",
+      "https://saoexpress.vn/category/kham-pha-2",
+      "https://saoexpress.vn/category/kham-pha-2/du-li%cc%a3ch",
+      "https://saoexpress.vn/category/kham-pha-2/du-li%cc%a3ch/phuo%cc%a3t",
+      "https://saoexpress.vn/category/kham-pha-2/du-li%cc%a3ch/tour",
+      "https://saoexpress.vn/category/kham-pha-2/a%cc%89m-thu%cc%a3c",
+      "https://saoexpress.vn/category/kham-pha-2/khong-gian-song",
+      "https://saoexpress.vn/category/kham-pha-2/khong-gian-song/nha-de%cc%a3p-sao",
+      "https://saoexpress.vn/category/kham-pha-2/khong-gian-song/phong-thu%cc%89y",
+      "https://saoexpress.vn/category/kham-pha-2/quiz",
+      "https://saoexpress.vn/category/kham-pha-2/quiz/trac-nghie%cc%a3m",
+      "https://saoexpress.vn/category/kham-pha-2/quiz/boi-vui",
+      "https://saoexpress.vn/category/kham-pha-2/journey-to-happy",
+      "https://saoexpress.vn/category/hoa-ha%cc%a3u-nam-vuong",
+      "https://saoexpress.vn/category/hoa-ha%cc%a3u-nam-vuong/the-gioi-hoa-ha%cc%a3u",
+      "https://saoexpress.vn/category/hoa-ha%cc%a3u-nam-vuong/the-gioi-dan-ong",
+      "https://saoexpress.vn/category/hoa-ha%cc%a3u-nam-vuong/tam-su%cc%a3-sao",
+      "https://saoexpress.vn/category/sao-nhi",
+      "https://saoexpress.vn/category/sao-nhi/con-cung-sao",
+      "https://saoexpress.vn/category/sao-nhi/con-cung-sao/vie%cc%a3t-nam",
+      "https://saoexpress.vn/category/sao-nhi/con-cung-sao/the-gioi",
+      "https://saoexpress.vn/category/sao-nhi/con-ngoan",
+      "https://saoexpress.vn/category/sao-nhi/tai-nang-nhi",
+      "https://saoexpress.vn/category/sao-nhi/lop-ho%cc%a3c-nhi",
+      "https://saoexpress.vn/category/sao-nhi/a%cc%89nh-nhi",
+      "https://saoexpress.vn/category/video",
+      "https://saoexpress.vn/category/video/tv-show-video",
+      "https://saoexpress.vn/category/video/c-ing",
+      "https://www.saoexpress.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json",
+    "maxConcurrentArticles": 1
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "saoexpress.vn",
+    "checkedAt": "2026-11-09T03:57:24.732Z",
+    "url": "https://saoexpress.vn/nu-hoang-anh-lich-hien-mai-nhieu-lan-muon-ly-hon-vi-thay-bi-rang-buoc.html",
+    "finalUrl": "https://saoexpress.vn/nu-hoang-anh-lich-hien-mai-nhieu-lan-muon-ly-hon-vi-thay-bi-rang-buoc.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3529,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "saoexpress.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 46,
+    "checkedArticleUrls": 46,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 46,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 45,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 486,
+        "passed": 46,
+        "distinctHashes": 46
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://saoexpress.vn/ntk-nomi-thao-nguyen-dua-ao-dai-viet-buoc-vao-khong-gian-thoi-trang-quoc-te.html",
+      "https://saoexpress.vn/ngoc-quyen-tai-xuat-san-catwalk-cung-nha-thiet-ke-nomi-thao-nguyen.html",
+      "https://saoexpress.vn/dan-vy-metzler-va-hanh-trinh-lan-toa-nang-luong-khoe-de-dep-tai-miss-universe-business-world-2026.html",
+      "https://saoexpress.vn/nguoi-dep-tai-nang-chi-april-nguyen-thanh-cong-la-dam-theo-duoi-uoc-mo.html",
+      "https://saoexpress.vn/hue-wonderverse-music-fest-2026-nang-tam-diem-den-di-san-co-do.html",
+      "https://saoexpress.vn/mrs-world-2025-sammy-suc-hut-cua-ve-dep-tri-thuc-va-ban-linh-nguoi-phu-nu-hien-dai.html",
+      "https://saoexpress.vn/tan-mrs-business-global-2026-christine-thao-tran-tu-nghich-canh-mat-tri-nho-den-nu-vuong-nganh-tai-chinh.html",
+      "https://saoexpress.vn/nha-phuong-va-hanh-trinh-toa-sang-sau-chien-thang-o-miss-grand-business-global-2026.html",
+      "https://saoexpress.vn/hoa-hau-nguyen-thi-hoang-tu-co-gai-sai-gon-den-nu-doanh-nhan-thanh-cong-tai-florida.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:43.441Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/saoexpress.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "motor1.com",
+  "siteId": "motor1.com",
+  "registrableDomain": "motor1.com",
+  "homepage": "https://www.motor1.com/",
+  "allowedHosts": [
+    "www.motor1.com",
+    "motor1.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.motor1.com/",
+    "categories": [
+      "https://www.motor1.com/news/",
+      "https://www.motor1.com/news/category/trending/",
+      "https://www.motor1.com/news/category/official/",
+      "https://www.motor1.com/news/category/industry/",
+      "https://www.motor1.com/news/category/supercars/",
+      "https://www.motor1.com/news/category/manufacturing-production/"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Explains Why The New Pajero Lost Its External Spare Wheel",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".postBody",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:06.182Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:53.406Z",
+    "independentHoldouts": [
+      "https://www.motor1.com/news/807380/mitsubishi-pajero-rally-concept-ralliart",
+      "https://www.motor1.com/news/806962/mitsubishi-teases-smaller-pajero-models",
+      "https://www.motor1.com/news/807163/2027-mitsubishi-pajero-price-australia-us"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.motor1.com/news/808297/mitsubishi-pajero-why-lost-external-spare-wheel",
+      "https://www.motor1.com/news/807380/mitsubishi-pajero-rally-concept-ralliart",
+      "https://www.motor1.com/news/806962/mitsubishi-teases-smaller-pajero-models",
+      "https://www.motor1.com/news/807163/2027-mitsubishi-pajero-price-australia-us"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

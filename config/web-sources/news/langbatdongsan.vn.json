@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "siteName": "langbatdongsan.vn",
+  "siteId": "langbatdongsan.vn",
+  "registrableDomain": "langbatdongsan.vn",
+  "homepage": "https://langbatdongsan.vn/",
+  "allowedHosts": [
+    "langbatdongsan.vn",
+    "www.langbatdongsan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://langbatdongsan.vn/",
+    "categories": [
+      "https://langbatdongsan.vn/",
+      "https://langbatdongsan.vn/nha-dat-ban",
+      "https://langbatdongsan.vn/ban-can-ho-chung-cu",
+      "https://langbatdongsan.vn/ban-nha-rieng"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.257Z",
+      "verifiedSeeds": [
+        "https://langbatdongsan.vn/",
+        "https://langbatdongsan.vn/nha-dat-ban",
+        "https://langbatdongsan.vn/ban-can-ho-chung-cu",
+        "https://langbatdongsan.vn/ban-nha-rieng"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "Dùng voucher Vinhomes 30% mua nhà bên vịnh di sản trước 31/12/2026, giữ dòng tiền đón sóng tiện ích",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:44.250Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:38.304Z",
+    "independentHoldouts": [
+      "https://langbatdongsan.vn/sun-urban-city-chuan-muc-tu-ban-ve-den-doi-thuc",
+      "https://langbatdongsan.vn/suc-hut-an-cu-tron-doi-cua-vinhomes-green-paradise",
+      "https://langbatdongsan.vn/the-emerald-boulevard-don-dau-dong-dich-chuyen-dan-cu-ve-dong-bac-tphcm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://langbatdongsan.vn/dung-voucher-vinhomes-30-mua-nha-ben-vinh-di-san-truoc-31122026-giu-dong-tien-don-song-tien-ich",
+      "https://langbatdongsan.vn/sun-urban-city-chuan-muc-tu-ban-ve-den-doi-thuc",
+      "https://langbatdongsan.vn/suc-hut-an-cu-tron-doi-cua-vinhomes-green-paradise",
+      "https://langbatdongsan.vn/the-emerald-boulevard-don-dau-dong-dich-chuyen-dan-cu-ve-dong-bac-tphcm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "siteName": "money.vtv.vn",
+  "siteId": "money.vtv.vn",
+  "registrableDomain": "vtv.vn",
+  "homepage": "https://money.vtv.vn/",
+  "allowedHosts": [
+    "money.vtv.vn",
+    "www.money.vtv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giữ ổn định giá cả, tạo động lực tăng trưởng cuối năm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:45.919Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://money.vtv.vn/giu-on-dinh-gia-ca-tao-dong-luc-tang-truong-cuoi-nam-10926110511093592.htm",
+      "https://money.vtv.vn/giam-thue-xang-gia-dien-du-kien-keo-cpi-thang-11-giam-05-diem-phan-tram-10926110511124439.htm",
+      "https://money.vtv.vn/cuc-thue-huong-dan-cham-dut-hieu-luc-ma-so-thue-doi-voi-nguoi-nop-thue-trang-thai-06-109261105111657873.htm",
+      "https://money.vtv.vn/hoan-doi-ngoai-te-ky-han-6-thang-them-du-dia-giam-lai-suat-10926110511212172.htm",
+      "https://money.vtv.vn/gia-dien-sinh-hoat-5-bac-94-khach-hang-duoc-giam-tien-dien-gom-nhung-ai-109261105110703012.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://money.vtv.vn/",
+    "categories": [
+      "https://money.vtv.vn/kinh-te-so.htm",
+      "https://money.vtv.vn/doanh-nghiep.htm",
+      "https://money.vtv.vn/dan-sinh.htm",
+      "https://money.vtv.vn/talk-show.htm",
+      "https://money.vtv.vn/tai-chinh.htm",
+      "https://money.vtv.vn/goc-nhin.htm",
+      "https://money.vtv.vn/khoi-nghiep.htm",
+      "https://money.vtv.vn/dau-tu.htm",
+      "https://money.vtv.vn/canh-giac.htm",
+      "https://money.vtv.vn/vi-cong-dong.htm",
+      "https://money.vtv.vn/vinh-danh.htm",
+      "https://money.vtv.vn/video.htm",
+      "https://money.vtv.vn/noi-bat.htm",
+      "https://money.vtv.vn/shorts-video.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "money.vtv.vn",
+    "checkedAt": "2026-11-09T03:57:15.232Z",
+    "url": "https://money.vtv.vn/giu-on-dinh-gia-ca-tao-dong-luc-tang-truong-cuoi-nam-10926110511093592.htm",
+    "finalUrl": "https://money.vtv.vn/giu-on-dinh-gia-ca-tao-dong-luc-tang-truong-cuoi-nam-10926110511093592.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6204,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "money.vtv.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 25,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 9,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 25,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 90,
+        "passed": 20,
+        "distinctHashes": 20
+      },
+      {
+        "name": "video",
+        "discovered": 17,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://money.vtv.vn/giu-on-dinh-gia-ca-tao-dong-luc-tang-truong-cuoi-nam-10926110511093592.htm",
+      "https://money.vtv.vn/cuc-thue-huong-dan-cham-dut-hieu-luc-ma-so-thue-doi-voi-nguoi-nop-thue-trang-thai-06-109261105111657873.htm",
+      "https://money.vtv.vn/hoan-doi-ngoai-te-ky-han-6-thang-them-du-dia-giam-lai-suat-10926110511212172.htm",
+      "https://money.vtv.vn/giam-thue-xang-gia-dien-du-kien-keo-cpi-thang-11-giam-05-diem-phan-tram-10926110511124439.htm",
+      "https://money.vtv.vn/gia-dien-sinh-hoat-5-bac-94-khach-hang-duoc-giam-tien-dien-gom-nhung-ai-109261105110703012.htm",
+      "https://money.vtv.vn/72-doanh-nghiep-viet-vao-top-500-dong-nam-a-109261105105528399.htm",
+      "https://money.vtv.vn/video/tai-chinh-kinh-doanh-2-6-2025-108676302.htm",
+      "https://money.vtv.vn/video/tai-chinh-kinh-doanh-30-5-2025-108676303.htm",
+      "https://money.vtv.vn/video/tai-chinh-kinh-doanh-sang-29-5-2025-108676305.htm",
+      "https://money.vtv.vn/video/tai-chinh-kinh-doanh-toi-28-5-2025-108676306.htm",
+      "https://money.vtv.vn/video/siet-hoat-dong-livestream-ban-hang-108684395.htm",
+      "https://money.vtv.vn/video/xu-ly-hang-chuc-nghin-bao-thuoc-la-khong-ro-nguon-goc-108684394.htm",
+      "https://money.vtv.vn/video/nhip-song-2-ca-cua-nguoi-tre-thanh-pho-108684393.htm",
+      "https://money.vtv.vn/video/tung-buoc-thich-nghi-khi-chuyen-tu-thue-khoan-sang-ke-khai-108684392.htm",
+      "https://money.vtv.vn/tp-ho-chi-minh-kich-hoat-hai-chuyen-trang-kich-cau-tieu-dung-ky-vong-dat-duoc-doanh-thu-100000-ty-109261107110327213.htm",
+      "https://money.vtv.vn/du-kien-mien-hon-2000-ty-dong-thue-nam-cho-cac-co-so-giao-duc-109261106154836311.htm",
+      "https://money.vtv.vn/adb-canh-bao-rui-ro-nang-luong-doi-voi-kinh-te-chau-a-10926071610291241.htm",
+      "https://money.vtv.vn/dong-thap-ngan-chan-dao-dat-trai-phep-trong-pham-vi-du-an-duong-tinh-878-109260715153206187.htm",
+      "https://money.vtv.vn/luu-tru-nang-luong-mo-khoa-tiem-nang-dien-tai-tao-va-giam-phat-thai-109260714163848985.htm",
+      "https://money.vtv.vn/lam-sach-ma-so-thue-go-nut-that-cho-moi-truong-kinh-doanh-109260714073930104.htm",
+      "https://money.vtv.vn/phan-dau-hoan-thanh-gan-17000-can-nha-o-cho-thue-trong-nam-2026-10926110710590253.htm",
+      "https://money.vtv.vn/thu-hon-3500-ty-dong-phi-su-dung-15-tuyen-cao-toc-bac-nam-dau-tu-cong-109261107110722689.htm",
+      "https://money.vtv.vn/ty-gia-lai-suat-va-bai-toan-giu-diem-can-bang-cho-kinh-te-viet-nam-109260819152150451.htm",
+      "https://money.vtv.vn/nganh-thue-thuc-tien-do-hoan-thue-khoi-thong-dong-tien-cho-doanh-nghiep-109260818144431802.htm",
+      "https://money.vtv.vn/cat-hang-loat-giay-to-trong-thanh-toan-chi-tra-ngan-sach-nha-nuoc-109260817144718171.htm",
+      "https://money.vtv.vn/kien-tao-co-che-vuot-troi-dua-viet-nam-tro-thanh-quoc-gia-manh-ve-bien-109260723144556602.htm",
+      "https://money.vtv.vn/de-an-1-trieu-can-nha-o-xa-hoi-da-hoan-thanh-duoc-77-10926082018141816.htm",
+      "https://money.vtv.vn/doanh-nghiep-viet-thay-doi-cach-tiep-can-de-mo-rong-thi-phan-tai-hoa-ky-10926081915083158.htm",
+      "https://money.vtv.vn/giai-ngan-chua-but-pha-bo-xay-dung-yeu-cau-xu-nghiem-truong-hop-co-tinh-cham-tre-trong-thanh-toan-109260818144833199.htm",
+      "https://money.vtv.vn/gia-vang-the-gioi-di-ngang-trong-phien-giao-dich-dau-tuan-109260817150250069.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 4
+    },
+    "checkedAt": "2026-11-10T09:16:06.200Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/money.vtv.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

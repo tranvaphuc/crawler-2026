@@ -1,0 +1,24 @@
+TỐI ƯU QUEUE NEWS — 2026-11-13 10:10:37 (UTC+7)
+Đã deploy /opt/news-flow/releases/20261113-06; backup SQLite trước rollout; 109/109 test pass cả local và VPS; preflight ES5 mapping và 11 proxy đạt.
+Thay đổi: bỏ ROW_NUMBER/sort trên toàn backlog để chọn batch; dùng partial index (site,created,id) trên article pending. Mỗi publisher đọc tối đa một URL cũ và ba URL mới. Giữ tối đa 10 slot oldest + 40 slot newest, phân tán publisher như cũ.
+Worker riêng dùng SQLite read-only với WAL snapshot để chọn batch. Main HTTP claim theo tối đa 50 primary key, kiểm tra lại state/cooldown/publisher đang chạy. Lỗi worker được báo và service dừng an toàn thay vì fallback vào truy vấn nặng trên main thread.
+Giữ concurrency 16 seed + 16 article, khoảng cách theo host, proxy, parser, ID Latin-1/MD5 và mọi kiểm tra field/time/dedup của ES5.
+Benchmark trên metadata 304537 URL pending: cũ 1546 ms; mới trung vị 24.15 ms. Cùng snapshot, cùng 50 ID, không sửa database production khi benchmark.
+Đo tải thật 5.09 phút: seed 202.3 → 246 URL/phút; request seed trung bình 4.302 → 3.651 giây; p95 mới 7.527 giây.
+Batch worker cuối: {"mode":"readonly_worker","lastMs":25.266313000000082,"inFlight":false}. Event loop cuối: {"p50":92.8,"p95":388.5,"max":1653.6}.
+ES5 xác nhận tạo mới 55 bài trong cửa sổ đo; CPU 1.78 core, RAM 1.55 GiB; trạng thái active/running; restart 0.
+Mốc 20 phút: chưa đạt một lượt toàn bộ URL seed. Theo thông lượng này, 13239 category cần khoảng 53.8 phút, cộng 544 homepage thành khoảng 56 phút; site cooldown có thể chờ lâu hơn. Đây là ngoại suy thông lượng, không phải thời gian đã đo để request đủ 100% danh sách.
+Baseline lấy cửa sổ 10 phút trước sửa; cửa sổ sau sửa hơn 5 phút, thành phần site khác nhau. Số đo cho thấy hiệu năng thực tế cải thiện, chưa chứng minh mọi request hoặc bài mới đều đạt một mức độ trễ cố định.
+
+TIMELINE: phút | seed/phút | latency seed TB giây | batch ms | event-loop p95 ms
+0 | 0 |  | 46.574554999999236 | 388.24
+0.51 | 233.3 | 3.705 | 21.49300299999595 | 359.14
+1.02 | 240 | 3.801 | 24.423947999996017 | 368.05
+1.53 | 237.9 | 3.75 | 25.124710000003688 | 345.24
+2.04 | 236.5 | 3.824 | 30.963162999978522 | 414.45
+2.55 | 240.2 | 3.77 | 31.37605699998676 | 341.57
+3.06 | 241.5 | 3.742 | 21.407880999991903 | 339.74
+3.56 | 245.8 | 3.667 | 28.561418999976013 | 368.05
+4.07 | 246.5 | 3.644 | 21.852209999982733 | 368.31
+4.58 | 248 | 3.632 | 24.2243240000098 | 329.78
+5.09 | 246 | 3.651 | 25.266313000000082 | 388.5

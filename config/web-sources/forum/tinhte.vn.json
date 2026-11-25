@@ -1,0 +1,55 @@
+{
+  "siteName": "tinhte.vn",
+  "homepage": "https://tinhte.vn/",
+  "findNewsUrl": "https://tinhte.vn/find-new/posts",
+  "parser": "src/web/tinhteParser.mjs",
+  "strategy": "public_next_data",
+  "stateSelector": "script#__NEXT_DATA__",
+  "threadPattern": "/thread/.*\\.(\\d+)$",
+  "dateSource": "post_create_date Unix seconds; thread_create_date for parentDate",
+  "idEncoding": "latin1",
+  "nativeIds": [
+    "thread_id",
+    "post_id",
+    "poster_user_id"
+  ],
+  "observedSamples": [
+    {
+      "url": "https://tinhte.vn/thread/the-verge-so-iphone-duo-voi-android-gap-phan-cung-da-theo-kip-phan-mem-con-hut.4190529",
+      "requestedUrl": "https://tinhte.vn/thread/the-verge-so-iphone-duo-voi-android-gap-phan-cung-da-theo-kip-phan-mem-con-hut.4190529",
+      "evidence": "tinhte.vn-thread-1.json",
+      "httpStatus": 200,
+      "blocked": false,
+      "parsedPosts": 12,
+      "completeRequiredFields": true,
+      "error": null
+    },
+    {
+      "url": "https://tinhte.vn/thread/anthropic-ra-mat-tinh-nang-personal-finance-cho-claude-co-can-ung-dung-quan-ly-chi-tieu-nua-khong.4190501",
+      "requestedUrl": "https://tinhte.vn/thread/anthropic-ra-mat-tinh-nang-personal-finance-cho-claude-co-can-ung-dung-quan-ly-chi-tieu-nua-khong.4190501",
+      "evidence": "tinhte.vn-thread-2.json",
+      "httpStatus": 200,
+      "blocked": false,
+      "parsedPosts": 8,
+      "completeRequiredFields": true,
+      "error": null
+    },
+    {
+      "url": "https://tinhte.vn/thread/mark-zuckerberg-giai-thich-vi-sao-dung-samsung-galaxy.4190622",
+      "requestedUrl": "https://tinhte.vn/thread/mark-zuckerberg-giai-thich-vi-sao-dung-samsung-galaxy.4190622",
+      "evidence": "tinhte.vn-thread-3.json",
+      "httpStatus": 200,
+      "blocked": false,
+      "parsedPosts": 20,
+      "completeRequiredFields": true,
+      "error": null
+    }
+  ],
+  "sampleStatus": "samples_passed",
+  "enabled": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "paginationScope": "Only posts embedded in the first page of each sampled topic; full history not verified",
+  "identityReconciliationRequired": true,
+  "browserMode": "headless-new"
+}

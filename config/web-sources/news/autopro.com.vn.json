@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autopro.com.vn",
+  "siteId": "autopro.com.vn",
+  "registrableDomain": "autopro.com.vn",
+  "homepage": "https://autopro.com.vn/",
+  "allowedHosts": [
+    "autopro.com.vn",
+    "www.autopro.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chủ xe quyết giữ Lexus RX 350 gần 10 năm tuổi: 'Bảo dưỡng rẻ hơn nhiều người nghĩ, cảm xúc từ máy V6 là thứ xe mới không bao giờ có được'",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Li Auto xác nhận đưa 4 mẫu xe về Việt Nam: Hé lộ cả trang bị, có cả REEV và thuần điện, có thể ra mắt ngay tháng sau",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-09T02:03:43.358Z",
+    "sampleCount": 10,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://autopro.com.vn/li-auto-xac-nhan-dua-4-mau-xe-ve-viet-nam-he-lo-ca-trang-bi-co-ca-reev-va-thuan-dien-co-the-ra-mat-ngay-thang-sau-177261108120929926.chn",
+      "https://autopro.com.vn/chu-xe-quyet-giu-lexus-rx-350-gan-10-nam-tuoi-bao-duong-re-hon-nhieu-nguoi-nghi-cam-xuc-tu-may-v6-la-thu-xe-moi-khong-bao-gio-co-duoc-177261108064725491.chn",
+      "https://autopro.com.vn/nissan-navara-ban-phev-mo-ban-gan-viet-nam-chot-gia-tu-1-ty-khac-hoan-toan-navara-dang-mo-ban-177261108172015007.chn",
+      "https://autopro.com.vn/hyundai-palisade-them-ban-moi-dung-may-thuan-xang-gam-cao-hon-de-di-off-road-de-duoc-dan-choi-viet-tim-kiem-177261108172645067.chn",
+      "https://autopro.com.vn/lynk-co-900-ban-keo-dai-chot-ngay-ra-mat-dai-hon-them-cho-ngoi-thiet-ke-gan-giong-range-rover-177261108172956606.chn",
+      "https://autopro.com.vn/clip-dau-xe-land-cruiser-bien-dang-sau-va-cham-voi-o-to-tai-177261108112410281.chn",
+      "https://autopro.com.vn/lynk-co-900-ban-keo-dai-chot-ngay-ra-mat-dai-hon-them-cho-ngoi-thiet-ke-gan-giong-range-rover-177261108172956606.chn",
+      "https://autopro.com.vn/private-office-seoul-canh-cua-dan-vao-the-gioi-cho-nhung-ai-da-san-sang-voi-rolls-royce-177260817012923544.chn"
+    ],
+    "datePrecision": [
+      "second",
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://autopro.com.vn/",
+    "categories": [
+      "https://autopro.com.vn/magazine.chn",
+      "https://autopro.com.vn/o-to.chn",
+      "https://autopro.com.vn/danh-gia-xe.chn",
+      "https://autopro.com.vn/van-hoa-xe.chn",
+      "https://autopro.com.vn/ky-thuat-tu-van.chn",
+      "https://autopro.com.vn/xe-may.chn"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?autopro.com.vn/.*?(\\d{9,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "autopro.com.vn",
+    "checkedAt": "2026-11-09T03:56:47.944Z",
+    "url": "https://autopro.com.vn/li-auto-xac-nhan-dua-4-mau-xe-ve-viet-nam-he-lo-ca-trang-bi-co-ca-reev-va-thuan-dien-co-the-ra-mat-ngay-thang-sau-177261108120929926.chn",
+    "finalUrl": "https://autopro.com.vn/li-auto-xac-nhan-dua-4-mau-xe-ve-viet-nam-he-lo-ca-trang-bi-co-ca-reev-va-thuan-dien-co-the-ra-mat-ngay-thang-sau-177261108120929926.chn",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7288,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "autopro.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 37,
+    "freshArticleChecks": 25,
+    "parserIssues": 18,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 145,
+        "passed": 19,
+        "distinctHashes": 19
+      },
+      {
+        "name": "video",
+        "discovered": 5,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://autopro.com.vn/xem-thuc-te-li-i6-gia-du-kien-hon-2-ty-dong-sap-ve-viet-nam-ngang-co-palisade-dang-coupe-day-dien-du-chay-ha-noi-da-nang-177261110114802343.chn",
+      "https://autopro.com.vn/mazda-cx-3-the-he-moi-sap-ra-mat-se-la-mau-re-nhat-cua-hang-co-co-hoi-ve-viet-nam-the-cho-mazda2-sap-bi-khai-tu-177261110062128268.chn",
+      "https://autopro.com.vn/mitsubishi-pajero-co-goi-phu-kien-cho-cac-dan-choi-thich-off-road-op-can-truoc-co-khung-giap-gam-co-ca-ong-tho-177261110095948324.chn",
+      "https://autopro.com.vn/xem-truoc-li-l9-sap-ve-viet-nam-suv-lon-co-gia-du-kien-37-ty-dong-6-cho-voi-ghe-thuong-gia-2-man-hinh-nhu-tv-dieu-hoa-7-vung-17726111014473538.chn",
+      "https://autopro.com.vn/nissan-elgrand-doi-thu-alphard-ra-mat-dna-thang-sau-noi-that-kieu-thuong-gia-treo-dien-tu-thong-minh-awd-dong-co-hybrid-177261110061735047.chn",
+      "https://autopro.com.vn/top-sedan-thuan-dien-hang-sang-gia-nhap-thi-truong-viet-nam-2026-177261110141253516.chn",
+      "https://autopro.com.vn/byd-bi-kien-nhai-thiet-ke-jlr-nghi-hang-trung-quoc-thao-tung-ca-chiec-defender-de-sao-chep-cong-nghe-177261110100355949.chn",
+      "https://autopro.com.vn/dien-bien-moi-nhat-tuyen-duong-6-ty-usd-rong-16-lan-xe-ket-noi-trung-tam-ha-noi-voi-sieu-san-van-dong-lon-nhat-the-gioi-cua-ty-phu-pham-nhat-vuong-177261110093134535.chn",
+      "https://autopro.com.vn/day-la-chiec-mercedes-amg-sl-mui-tran-doc-nhat-vo-nhi-chi-de-tang-chu-co-tien-cung-khong-mua-duoc-17726111009552638.chn",
+      "https://autopro.com.vn/xe-may-nam-tren-noc-o-to-sau-cu-dam-kinh-hoang-177261110092901784.chn",
+      "https://autopro.com.vn/vu-nu-lai-xe-o-to-huc-nga-thai-phu-bi-can-tung-danh-nguoi-bi-xu-phat-hanh-chinh-177261110075912036.chn",
+      "https://autopro.com.vn/ford-mustang-mach-e-co-do-ben-pin-dang-ne-5-nam-van-con-92-dung-luong-co-chiec-chay-hon-640000km-chua-thay-pin-177261110061347917.chn",
+      "https://autopro.com.vn/toyota-hon-20-nam-chua-bi-mercedes-bmw-vuot-mat-vua-lap-them-2-ky-luc-o-viet-nam-cung-co-con-so-dang-chu-y-1772611091944192.chn",
+      "https://autopro.com.vn/30-giay-biet-ngay-xe-nao-giam-gia-trong-thang-11-co-mau-giam-ngang-mot-chiec-kia-morning-177261107110451431.chn",
+      "https://autopro.com.vn/xe-tu-lai-vinfast-177261022112408907.chn",
+      "https://autopro.com.vn/icaur-sap-ban-xe-tai-viet-nam-day-la-thuong-hieu-nao-ma-it-nguoi-nghe-ten-177261020172100013.chn",
+      "https://autopro.com.vn/vinfast-thang-lon-tai-car-choice-awards-2026-3-mau-xe-1-su-kien-duoc-xuong-ten-trong-gala-9-luot-de-cu-voi-hang-tram-nghin-luot-binh-chon-177261019105853651.chn",
+      "https://autopro.com.vn/khach-viet-mua-gan-nua-trieu-o-to-sau-9-thang-cua-nam-2026-vf-3-lam-vua-yaris-cross-dan-dau-phe-xe-xang-nhung-co-mau-ban-chua-noi-100-chiec-177261015000329481.chn",
+      "https://autopro.com.vn/hanh-trinh-4-nam-ford-territory-tai-viet-nam-177261009172344659.chn",
+      "https://autopro.com.vn/car-choice-awards-2026-13-xe-5-noi-dung-5-su-kien-cho-thay-nguoi-viet-dang-can-gi-o-cac-hang-xe-177261005211108482.chn",
+      "https://autopro.com.vn/range-rover-sport-phev-manh-toi-muc-nhe-nhang-17726082911541099.chn",
+      "https://autopro.com.vn/vua-vao-viet-nam-tesla-da-len-lich-khai-tu-cybertruck-nguyen-nhan-khien-nhieu-nguoi-nga-ngua-177261107075721549.chn",
+      "https://autopro.com.vn/volvo-ex90-ra-mat-viet-nam-gia-35-ty-dong-ngang-co-xc90-tran-kinh-dien-tu-day-dien-du-chay-ha-noi-hue-177261106214124106.chn",
+      "https://autopro.com.vn/sedan-byd-trong-cang-giong-rolls-royce-khi-nhin-tu-goc-nay-cua-mo-nguoc-nhieu-chi-tiet-chrome-sang-bong-co-mat-than-177261106060040815.chn",
+      "https://autopro.com.vn/vinfast-gay-soc-tai-an-do-tro-thanh-hang-xe-dien-ban-chay-thu-4-thi-truong-kia-va-suzuki-cong-lai-chi-hon-24-xe-177261105073609926.chn",
+      "https://autopro.com.vn/them-loat-trang-bi-tren-vinfast-vf-5-moi-khien-nguoi-dung-chu-y-tu-camera-360-do-den-sac-khong-day-de-ra-mat-vao-dau-nam-sau-177261103103956491.chn",
+      "https://autopro.com.vn/suv-trong-nhu-tieu-mec-g-sap-lap-o-viet-nam-voi-ban-hieu-suat-cao-manh-gan-450hp-co-nut-tang-toc-nhu-porsche-chay-toi-550km-sac-177261103053608236.chn",
+      "https://autopro.com.vn/byd-sealion-8-2027-lo-dien-thuc-te-gia-du-kien-quy-doi-tu-872-trieu-dong-co-treo-khi-nen-day-binh-du-chay-ha-noi-da-nang-177261101133227684.chn",
+      "https://autopro.com.vn/xe-dien-mg-urban-lien-tuc-nha-hang-tai-viet-nam-lo-xe-dau-tien-da-cap-cang-du-kien-ra-mat-vao-tuan-sau-177261109152341248.chn",
+      "https://autopro.com.vn/hang-loat-suv-do-thi-giam-gia-manh-co-mau-giam-toi-hon-300-trieu-177261109114800576.chn",
+      "https://autopro.com.vn/lo-mitsubishi-outlander-the-he-moi-cap-cang-viet-nam-it-nhat-2-ban-mam-khung-nhat-phan-khuc-co-adas-ra-mat-dau-thang-sau-canh-tranh-cr-v-177261109062726327.chn",
+      "https://autopro.com.vn/chu-xe-quyet-giu-lexus-rx-350-gan-10-nam-tuoi-bao-duong-re-hon-nhieu-nguoi-nghi-cam-xuc-tu-may-v6-la-thu-xe-moi-khong-bao-gio-co-duoc-177261108064725491.chn",
+      "https://autopro.com.vn/hai-mau-xe-may-dien-yamaha-moi-se-san-xuat-o-viet-nam-dang-khac-biet-deu-kieu-the-thao-di-lui-duoc-chay-hon-100km-sac-177261106103004165.chn",
+      "https://autopro.com.vn/nissan-patrol-chua-ra-mat-da-co-lac-du-kien-giao-xe-thang-sau-177261106071915516.chn",
+      "https://autopro.com.vn/khach-lai-thu-ford-ranger-raptor-30-tai-pvoil-voc-2026-qua-doc-sau-ma-cu-ngo-di-qua-go-giam-toc-177261031172719438.chn",
+      "https://autopro.com.vn/cat-pajero-sport-nguoi-dan-ong-nay-chon-dem-vinfast-vf-2-xuyen-viet-trong-365-ngay-chay-hon-4000km-thang-dau-co-luc-toat-mo-hoi-177261029061752576.chn",
+      "https://autopro.com.vn/bat-gap-volkswagen-id-era-9x-lan-banh-tai-viet-nam-ngap-trang-bi-co-danh-lai-banh-sau-gia-du-kien-duoi-3-ty-177261109191440351.chn",
+      "https://autopro.com.vn/phat-minh-phuong-tien-moi-cua-my-lam-rung-chuyen-nganh-van-tai-chay-tren-mat-nuoc-cat-canh-va-bay-nhu-may-bay-co-the-cho-khach-tren-bien-177261109163837449.chn",
+      "https://autopro.com.vn/hang-pha-san-roi-song-lai-chu-xe-cu-con-lai-gi-177261109151327433.chn",
+      "https://autopro.com.vn/li-auto-xac-nhan-dua-4-mau-xe-ve-viet-nam-he-lo-ca-trang-bi-co-ca-reev-va-thuan-dien-co-the-ra-mat-ngay-thang-sau-177261108120929926.chn",
+      "https://autopro.com.vn/lang-gieng-viet-nam-duoc-trung-quoc-dau-tu-xay-duong-sat-cao-toc-187000-ty-dong-rut-ngan-thoi-gian-di-chuyen-tu-3-gio-xuong-con-40-phut-177261109091902949.chn",
+      "https://autopro.com.vn/khong-can-do-qua-nhieu-chiec-lamborghini-temerario-nay-van-khien-anh-em-me-xe-phai-ngoai-nhin-177261109081320803.chn",
+      "https://autopro.com.vn/video/chu-xe-vinfast-vf-6-mua-byd-seal-suong-tay-lai-nhung-dau-dau-vi-sac-v34144.chn",
+      "https://autopro.com.vn/video/chuyen-gia-chi-nut-that-xe-trung-quoc-tai-viet-nam-mo-nhieu-showroom-chua-chac-ban-duoc-xe-yeu-to-quan-trong-den-tu-viec-khac-v34139.chn",
+      "https://autopro.com.vn/video/mazda-cx-5-the-he-moi-ban-gia-1-ty-2-chua-chac-nguoi-viet-da-con-muon-mua-nhu-hien-tai-va-day-la-ly-do-v34135.chn",
+      "https://autopro.com.vn/video/chu-xe-vinfast-vf-6-ky-vong-gi-o-xe-the-he-moi-treo-thanh-xoan-chua-chac-la-cai-lui-v34130.chn",
+      "https://autopro.com.vn/video/byd-sealion-5-la-mon-hoi-cong-nghe-hay-canh-bac-chua-duoc-kiem-chung-v34127.chn",
+      "https://autopro.com.vn/o-to/tai-nan-giao-thong.chn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4,
+      "selector_or_layout_mismatch": 14
+    },
+    "checkedAt": "2026-11-10T09:13:56.141Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/autopro.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

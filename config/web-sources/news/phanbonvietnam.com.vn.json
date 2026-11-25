@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phanbonvietnam.com.vn",
+  "siteId": "phanbonvietnam.com.vn",
+  "registrableDomain": "phanbonvietnam.com.vn",
+  "homepage": "https://phanbonvietnam.com.vn/",
+  "allowedHosts": [
+    "phanbonvietnam.com.vn",
+    "www.phanbonvietnam.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cập nhật quy định mới về bảo vệ môi trường ngành Công Thương",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:00.622Z",
+    "sampleCount": 7,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/cap-nhat-quy-dinh-moi-ve-bao-ve-moi-truong-nganh-cong-thuong.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/xu-ly-tai-xe-xe-tai-vuot-den-do-sau-phan-anh-qua-ung-dung-vnetraffic.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/bim-group-dong-hanh-cung-ironman-tu-hawai-i-den-khat-vong-phu-quoc.html",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/sap-dien-ra-hoi-nghi-quoc-te-nganh-cong-nghiep-thuc-pham-viet-nam-2026.html",
+      "https://phanbonvietnam.com.vn/trong-trot/gia-lua-gao-hom-nay-ngay-6-11-2026-gao-thom-deo-xuat-khau-neo-gia-cao.html?categoryId=1522361"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phanbonvietnam.com.vn/",
+    "categories": [
+      "https://phanbonvietnam.com.vn/tin-tuc-24h?isFeatured=1",
+      "https://phanbonvietnam.com.vn/tin-nong-nghiep?isFeatured=1",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh",
+      "https://phanbonvietnam.com.vn/trong-trot",
+      "https://phanbonvietnam.com.vn/video",
+      "https://phanbonvietnam.com.vn/giai-tri",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thi-truong",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/doanh-nghiep",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thi-truong-phan-bon",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/ocop?isFeatured=1",
+      "https://phanbonvietnam.com.vn/trong-trot/cay-cong-nghiep",
+      "https://phanbonvietnam.com.vn/trong-trot/cay-luong-thuc",
+      "https://phanbonvietnam.com.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phanbonvietnam.com.vn",
+    "checkedAt": "2026-11-09T03:57:21.514Z",
+    "url": "https://phanbonvietnam.com.vn/tin-tuc-24h/cap-nhat-quy-dinh-moi-ve-bao-ve-moi-truong-nganh-cong-thuong.html?categoryId=1522357",
+    "finalUrl": "https://phanbonvietnam.com.vn/tin-tuc-24h/cap-nhat-quy-dinh-moi-ve-bao-ve-moi-truong-nganh-cong-thuong.html?categoryId=1522357",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4799,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "phanbonvietnam.com.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 28,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 113,
+        "passed": 26,
+        "distinctHashes": 18
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thanh-pho-hue-thuong-mai-dien-tu-mo-rong-thi-truong-nong-dac-san.html",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/vat-lieu-tien-tien-mo-huong-nghien-cuu-moi-cho-nganh-nang-luong.html",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/bo-cong-thuong-to-chuc-dien-dan-an-ninh-nang-luong-quoc-gia-nam-2026.html",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html",
+      "https://phanbonvietnam.com.vn/trong-trot/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html?categoryId=1522361",
+      "https://phanbonvietnam.com.vn/trong-trot/gia-lua-gao-hom-nay-ngay-9-11-2026-gia-it-bien-dong.html?categoryId=1522361",
+      "https://phanbonvietnam.com.vn/trong-trot/gia-tieu-hom-nay-9-11-2026-lang-song-cao-nhat-137.000-dong-kg.html?categoryId=1522361",
+      "https://phanbonvietnam.com.vn/trong-trot/gia-ca-phe-hom-nay-9-11-2026-di-ngang-cao-nhat-84.500-dong-kg.html?categoryId=1522361",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/vat-lieu-tien-tien-mo-huong-nghien-cuu-moi-cho-nganh-nang-luong.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/bo-cong-thuong-to-chuc-dien-dan-an-ninh-nang-luong-quoc-gia-nam-2026.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/chung-minh-xuat-xu-dieu-kien-tan-dung-uu-dai-fta.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/tp.-ho-chi-minh-outlet-mo-them-du-dia-cho-thi-truong-ban-le.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/tu-fta-index-2025-den-yeu-cau-nang-cao-nang-luc-xuat-xu-hang-hoa.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/du-lich-viet-nam-ngay-cang-tang-suc-hut-tren-moi-truong-so.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/tu-chung-nhan-xuat-xu-mo-huong-chu-dong-tan-dung-uu-dai-cptpp.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/tin-tuc-24h/tp.-ho-chi-minh-gan-phat-trien-khu-cong-nghiep-voi-nha-o-cong-nhan.html?categoryId=1522357",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thanh-pho-hue-thuong-mai-dien-tu-mo-rong-thi-truong-nong-dac-san.html?categoryId=1522360",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html?categoryId=1522360",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/gia-vang-hom-nay-10-11-dao-chieu-tang-tro-lai.html?categoryId=1522360",
+      "https://phanbonvietnam.com.vn/cau-chuyen-kinh-doanh/gia-bac-hom-nay-10-11-2026-bat-tang-tro-lai.html?categoryId=1522360",
+      "https://phanbonvietnam.com.vn/tin-nong-nghiep/gia-heo-hoi-hom-nay-9-11-2026-bien-dong-trai-chieu.html?categoryId=1522358",
+      "https://phanbonvietnam.com.vn/tin-nong-nghiep/gia-heo-hoi-hom-nay-6-11-2026-bat-tang-den-3.000-dong-kg.html?categoryId=1522358",
+      "https://phanbonvietnam.com.vn/tin-nong-nghiep/gia-heo-hoi-hom-nay-5-11-2026-tiep-tuc-tang-dong-loat-tai-mien-bac.html?categoryId=1522358",
+      "https://phanbonvietnam.com.vn/tin-nong-nghiep/gia-heo-hoi-hom-nay-4-11-2026-bat-tang-manh-tai-mien-bac.html?categoryId=1522358",
+      "https://phanbonvietnam.com.vn/nongnghiep360/lien-ket-vung-nang-suc-canh-tranh-dua-du-lich-phat-trien-ben-vung.html",
+      "https://phanbonvietnam.com.vn/nongnghiep360/thich-ung-quy-dinh-moi-ve-xuat-khau-nong-san.html",
+      "https://phanbonvietnam.com.vn/nongnghiep360/dau-tu-cong-gop-suc-doi-thay-dien-mao-nong-thon.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:25.042Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phanbonvietnam.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

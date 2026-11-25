@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sanook.com",
+  "siteId": "sanook.com",
+  "registrableDomain": "sanook.com",
+  "homepage": "https://www.sanook.com/",
+  "allowedHosts": [
+    "www.sanook.com",
+    "sanook.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "ดูบอลสด แมนยู พบ แอสตันวิลลา ฟุตบอลพรีเมียร์ลีก อังกฤษ คืนนี้ เวลา 23.30 น.",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:09.925Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.sanook.com/sport/1673889/",
+      "https://www.sanook.com/women/272561/",
+      "https://www.sanook.com/auto/101087/",
+      "https://www.sanook.com/travel/1454346/",
+      "https://www.sanook.com/movie/190914/",
+      "https://www.sanook.com/news/9911402/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.sanook.com/",
+    "categories": [
+      "https://www.sanook.com/horoscope/findluckynumbers/rub/",
+      "https://www.sanook.com/hot/",
+      "https://www.sanook.com/news/",
+      "https://www.sanook.com/horoscope/",
+      "https://www.sanook.com/entertain/",
+      "https://www.sanook.com/sport/",
+      "https://www.sanook.com/money/",
+      "https://www.sanook.com/lifestyle/",
+      "https://www.sanook.com/auto/",
+      "https://www.sanook.com/it/",
+      "https://www.sanook.com/campus/",
+      "https://www.sanook.com/video/",
+      "https://www.sanook.com/wetv/",
+      "https://www.sanook.com/bookshelf/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "sanook.com",
+    "checkedAt": "2026-11-09T03:57:24.521Z",
+    "url": "https://www.sanook.com/sport/1673889/",
+    "finalUrl": "https://www.sanook.com/sport/1673889/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1028,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "sanook.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 15,
+    "parserIssues": 9,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 346,
+        "passed": 20,
+        "distinctHashes": 20
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.sanook.com/sport/1673914/",
+      "https://www.sanook.com/women/272577/",
+      "https://www.sanook.com/auto/101087/",
+      "https://www.sanook.com/travel/1454362/",
+      "https://www.sanook.com/movie/190962/",
+      "https://www.sanook.com/money/961051/",
+      "https://www.sanook.com/news/9911606/",
+      "https://www.sanook.com/health/39077/",
+      "https://www.sanook.com/campus/1433199/",
+      "https://www.sanook.com/music/2476709/",
+      "https://www.sanook.com/horoscope/337818/",
+      "https://www.sanook.com/hitech/1627890/",
+      "https://www.sanook.com/travel/1390794/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 2,
+      "original_publication_not_yet_confirmed": 6,
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:16:42.285Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/sanook.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

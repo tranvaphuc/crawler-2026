@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipsongthoidai.com.vn",
+  "siteId": "nhipsongthoidai.com.vn",
+  "registrableDomain": "nhipsongthoidai.com.vn",
+  "homepage": "https://nhipsongthoidai.com.vn/",
+  "allowedHosts": [
+    "nhipsongthoidai.com.vn",
+    "www.nhipsongthoidai.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Home Credit tiếp sức thày trò Lâm Đồng vững bước đến trường",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:58.356Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhipsongthoidai.com.vn/home-credit-tiep-suc-thay-tro-lam-dong-vung-buoc-den-truong-56417.htm",
+      "https://nhipsongthoidai.com.vn/de-con--cao-lon-truoc-7-tuoi--ket-noi-nguon-luc-vi-su-phat-trien-cua-tre-em-56414.htm",
+      "https://nhipsongthoidai.com.vn/meta-khoa-quang-cao-dan-sang-tiktok--nha-ban-hang-viet-phai-doi-pheu-ban-hang-56413.htm",
+      "https://nhipsongthoidai.com.vn/ai-re-hon-chua-chac-tiet-kiem--hoa-don-that-nam-o-token-hay-du-lieu-56377.htm",
+      "https://nhipsongthoidai.com.vn/garrya-mu-cang-chai-duoc-trao-tang-one-michelin-key-56383.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipsongthoidai.com.vn/",
+    "categories": [
+      "https://nhipsongthoidai.com.vn/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipsongthoidai.com.vn",
+    "checkedAt": "2026-11-09T03:57:20.721Z",
+    "url": "https://nhipsongthoidai.com.vn/home-credit-tiep-suc-thay-tro-lam-dong-vung-buoc-den-truong-56417.htm",
+    "finalUrl": "https://nhipsongthoidai.com.vn/home-credit-tiep-suc-thay-tro-lam-dong-vung-buoc-den-truong-56417.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4596,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipsongthoidai.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 16,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 51,
+        "passed": 16,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipsongthoidai.com.vn/meta-khoa-quang-cao-dan-sang-tiktok--nha-ban-hang-viet-phai-doi-pheu-ban-hang-56413.htm",
+      "https://nhipsongthoidai.com.vn/ai-re-hon-chua-chac-tiet-kiem--hoa-don-that-nam-o-token-hay-du-lieu-56377.htm",
+      "https://nhipsongthoidai.com.vn/garrya-mu-cang-chai-duoc-trao-tang-one-michelin-key-56383.htm",
+      "https://nhipsongthoidai.com.vn/ban-cap-nhat-lam-tat-lanh--samsung-va-lo-hong-niem-tin-cua-ngoi-nha-thong-minh-56382.htm",
+      "https://nhipsongthoidai.com.vn/ai-agent-cang-thong-minh--canh-cua-an-ninh-cang-rong-56375.htm",
+      "https://nhipsongthoidai.com.vn/khong-chi-nhat-rac--nguoi-tre-tao-thoi-quen-tieu-dung-xanh-co-trach-nhiem-vao-doi-song-hang-ngay-56374.htm",
+      "https://nhipsongthoidai.com.vn/bo-nong-nghiep-va-moi-truong-se-dao-tao-tren-550-000-nong-dan-so-56371.htm",
+      "https://nhipsongthoidai.com.vn/go-kho-nguon-von-cho-doanh-nghiep-doi-moi-cong-nghe-56368.htm",
+      "https://nhipsongthoidai.com.vn/bo-nho-ai-lap-ky-luc--chuoi-dien-tu-viet-nam-duoc-gi-va-chiu-gi-56412.htm",
+      "https://nhipsongthoidai.com.vn/phong-lab-dung-chung--ha-tang-mo-cho-buoc-nhay-cong-nghe-viet-nam-56416.htm",
+      "https://nhipsongthoidai.com.vn/home-credit-tiep-suc-thay-tro-lam-dong-vung-buoc-den-truong-56417.htm",
+      "https://nhipsongthoidai.com.vn/de-con--cao-lon-truoc-7-tuoi--ket-noi-nguon-luc-vi-su-phat-trien-cua-tre-em-56414.htm",
+      "https://nhipsongthoidai.com.vn/uniqlo-khai-truong-cua-hang-dau-tien-tai-thanh-hoa-56415.htm",
+      "https://nhipsongthoidai.com.vn/uniqlo-sap-co-cua-hang-dau-tien-tai-thanh-hoa-56378.htm",
+      "https://nhipsongthoidai.com.vn/ton-vinh-ban-tay-lao-dong-thong-diep-tu-phim-quang-cao-moi-cua-home-credit-56372.htm",
+      "https://nhipsongthoidai.com.vn/samsung-ra-mat-galaxy-z-flip8-voi-gia-tu-32-trieu-dong-56370.htm",
+      "https://nhipsongthoidai.com.vn/ho-tro-nguoi-cao-tuoi-nang-cao-nang-luc-so-56369.htm",
+      "https://nhipsongthoidai.com.vn/cong-bo-thi-diem-cong-cu-thu-gom-rac-tren-song-tai-huyen-giao-thuy--tinh-nam-dinh-2158.htm",
+      "https://nhipsongthoidai.com.vn/xiaomi-13-ultra-ra-mat-voi-he-thong-4-camera-leica-an-tuong-2137.htm",
+      "https://nhipsongthoidai.com.vn/techforstudy--giai-quyet-cac-van-de--nhuc-nhoi--khi-day-va-hoc-online-49.htm",
+      "https://nhipsongthoidai.com.vn/gioi-tre-dang-danh-gan-7-tieng-moi-ngay-truoc-man-hinh-24.htm",
+      "https://nhipsongthoidai.com.vn/ceo-lg-den-tham-cac-co-so-san-xuat-chinh-tai-viet-nam-2138.htm",
+      "https://nhipsongthoidai.com.vn/cuc-hang-khong-canh-bao-cac-chieu-lua-dao-ve-may-bay-gia-2136.htm",
+      "https://nhipsongthoidai.com.vn/bat-thuong-duong-day-nhap-sieu-xe-bieu-tang--lach-luat-tinh-vi--that-thu-thue-181.htm",
+      "https://nhipsongthoidai.com.vn/apple-watch-series-8-lo-anh-render--thiet-ke-co-thay-doi-115.htm",
+      "https://nhipsongthoidai.com.vn/kham-pha-loa-di-dong-jbl-wind-3s--gia-1-5-trieu-dong-2119.htm",
+      "https://nhipsongthoidai.com.vn/vong-deo-huawei-band-8-co-gia-ban-chi-tu-920-000-dong-2126.htm",
+      "https://nhipsongthoidai.com.vn/lg-gioi-thieu-loat-laptop-sieu-mong-va-nhe-2154.htm",
+      "https://nhipsongthoidai.com.vn/huawei-viet-nam-dua-cong-nghe-trong-giao-duc-den-vung-cao-341.htm",
+      "https://nhipsongthoidai.com.vn/nhan-luc-co-ky-nang-so-thuc-day-gdp-hang-nam-cua-apac-them-934-ty-usd-1884.htm",
+      "https://nhipsongthoidai.com.vn/co-quan-vu-tru-uc-ra-mat-hoc-vien-danh-rieng-cho-nguoi-ban-dia-2008.htm",
+      "https://nhipsongthoidai.com.vn/tuong-lai-nao-cua-edtech-sau-dai-dich-149.htm",
+      "https://nhipsongthoidai.com.vn/mang-xa-hoi-facebook-can-moc-2-ty-nguoi-dung-hang-ngay-329.htm",
+      "https://nhipsongthoidai.com.vn/cac-cong-ty-nhat-ban-trien-khai-dich-vu-giao-hang-bang-uav-328.htm",
+      "https://nhipsongthoidai.com.vn/nhung-xu-huong-moi-cua-cong-nghe-du-lich-330.htm",
+      "https://nhipsongthoidai.com.vn/netflix-day-manh-no-luc-thu-phi-nguoi-dung-chia-se-tai-khoan-358.htm",
+      "https://nhipsongthoidai.com.vn/cuoc-chay-dua-nguon-cung-ban-dan-chua-dung-lai-2125.htm",
+      "https://nhipsongthoidai.com.vn/can-trong-chieu-lam-gia-giao-dich-ngan-hang-2124.htm",
+      "https://nhipsongthoidai.com.vn/shopee-trien-khai-nhieu-hoat-dong-ho-tro-kinh-doanh-truc-tuyen-2128.htm",
+      "https://nhipsongthoidai.com.vn/viettel-khai-truong-5g-tai-vinh-phuc-117.htm",
+      "https://nhipsongthoidai.com.vn/apple-su-dung-100--pin-coban-tai-che-vao-nam-2025-2118.htm",
+      "https://nhipsongthoidai.com.vn/thi-truong-chung-khoan-chao-dao-vi-tin-chien-su--trung-phat-va-tra-dua-135.htm",
+      "https://nhipsongthoidai.com.vn/viet-nam-lot-top-5-diem-den-cua-gioi-dau-tu-bat-dong-san-singapore-1944.htm",
+      "https://nhipsongthoidai.com.vn/vinacapital-ventures-dau-tu-1-trieu-usd-vao-nen-tang-cong-nghe-koina-335.htm",
+      "https://nhipsongthoidai.com.vn/ngan-hang-nao-dang-co-lai-suat-tien-gui-cao-nhat-320.htm",
+      "https://nhipsongthoidai.com.vn/lai-suat-tiet-kiem-ngan-hang-nao-cao-nhat-thang-9-2022-225.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:16:20.204Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipsongthoidai.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "nhipsongthoidai.com.vn",
+      "siteId": "nhipsongthoidai.com.vn",
+      "registrableDomain": "nhipsongthoidai.com.vn",
+      "homepage": "https://nhipsongthoidai.com.vn/",
+      "allowedHosts": [
+        "nhipsongthoidai.com.vn",
+        "www.nhipsongthoidai.com.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Home Credit tiếp sức thày trò Lâm Đồng vững bước đến trường",
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:17.293Z",
+        "trainingUrls": [
+          "https://nhipsongthoidai.com.vn/nganh-det-may-tang-toc-chuyen-doi-so-de-nang-cao-suc-canh-tranh-53846.htm"
+        ],
+        "holdoutUrls": [
+          "https://nhipsongthoidai.com.vn/ban-cap-nhat-lam-tat-lanh--samsung-va-lo-hong-niem-tin-cua-ngoi-nha-thong-minh-56382.htm",
+          "https://nhipsongthoidai.com.vn/ai-agent-cang-thong-minh--canh-cua-an-ninh-cang-rong-56375.htm"
+        ]
+      }
+    }
+  ]
+}

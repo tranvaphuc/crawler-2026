@@ -1,0 +1,14 @@
+import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {DatabaseSync} from 'node:sqlite';import {createRequire} from 'node:module';
+const base='/opt/news-flow/current',root='/var/lib/news-flow/recovery-all-20261123',require=createRequire(base+'/package.json'),ch=require('cheerio'),{publicationPageKey:key,publicationHeadlinesMatch}=await import('file://'+base+'/src/web/newsPublicationPageIdentity.mjs'),db=new DatabaseSync(root+'/audit.sqlite',{readOnly:true}),r={at:new Date().toISOString(),checked:0,rootCanonicals:0,candidates:[]};
+function flatten(value){if(Array.isArray(value))return value.flatMap(flatten);if(!value||typeof value!=='object')return [];return [value,...flatten(value['@graph'])];}
+for(const row of db.prepare("SELECT site,url,evidence_file FROM cohort WHERE status='done' AND outcome='failed' AND reason='NEWS_PUBLICATION_PAGE_IDENTITY_CONFLICT' AND evidence_file IS NOT NULL").all()){
+ r.checked++;let html;try{html=gunzipSync(fs.readFileSync(row.evidence_file)).toString();const tag=html.match(/<link\b[^>]*\brel\s*=\s*["']canonical["'][^>]*>/i)?.[0],href=tag?.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];if(!href)continue;const canonical=new URL(href,row.url),u=new URL(row.url);if(canonical.pathname!=='/'||canonical.search||canonical.hash||canonical.hostname.replace(/^www\./,'')!==u.hostname.replace(/^www\./,'')||u.pathname==='/')continue;
+ r.rootCanonicals++;const $=ch.load(html),h=$('h1'),title=h.text().replace(/\s+/g,' ').trim(),og=$('head meta[property="og:url"]'),ogTitle=$('head meta[property="og:title"]');if(h.length!==1||og.length!==1||key(og.attr('content'),row.url)!==key(row.url)||!publicationHeadlinesMatch($,ogTitle.attr('content'),title))continue;
+ const articles=[];for(const e of $('script[type="application/ld+json"]').toArray())try{articles.push(...flatten(JSON.parse($(e).text())));}catch{}
+ const own=articles.filter(a=>/^(?:NewsArticle|Article|BlogPosting|ReportageNewsArticle)$/.test(String(a['@type']))&&publicationHeadlinesMatch($,a.headline,title,a));
+ const urls=a=>[a.url,a.mainEntityOfPage?.['@id'],a.mainEntityOfPage?.url,typeof a.mainEntityOfPage==='string'?a.mainEntityOfPage:null,a['@id']].filter(Boolean);
+ const good=own.filter(a=>urls(a).length&&urls(a).every(v=>key(String(v),row.url)===key(row.url))&&/T\d\d:\d\d.*(?:Z|[+-]\d{2}:?\d{2})$/i.test(a.datePublished||'')&&Number.isFinite(Date.parse(a.datePublished))&&Date.parse(a.datePublished)<=Date.now()+300000);
+ if(good.length===1){r.candidates.push({...row,canonical:canonical.href,title,publishedDate:good[0].datePublished});if(r.candidates.length>=30&&new Set(r.candidates.map(c=>c.site)).size>=3)break;}
+ }catch{}
+}
+db.close();fs.writeFileSync(root+'/home-canonical-candidates.json',JSON.stringify(r,null,2));console.log(JSON.stringify({checked:r.checked,rootCanonicals:r.rootCanonicals,candidates:r.candidates.map(c=>({site:c.site,url:c.url,publishedDate:c.publishedDate}))}));

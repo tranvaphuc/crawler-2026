@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "caranddriver.com",
+  "siteId": "caranddriver.com",
+  "registrableDomain": "caranddriver.com",
+  "homepage": "https://www.caranddriver.com/",
+  "allowedHosts": [
+    "www.caranddriver.com",
+    "caranddriver.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.caranddriver.com/",
+    "categories": [
+      "https://www.caranddriver.com/reviews/",
+      "https://www.caranddriver.com/buying-guide/",
+      "https://www.caranddriver.com/shopping-advice/",
+      "https://www.caranddriver.com/features/",
+      "https://www.caranddriver.com/news/",
+      "https://www.caranddriver.com/car-accessories/"
+    ]
+  },
+  "title": {
+    "value": "Edsel B. Ford II’s Mustang Improves on His Dad Henry’s Famous Original",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:10.079Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:27:03.113Z",
+    "independentHoldouts": [
+      "https://www.caranddriver.com/news/a74426482/sanrivatii-one-motorcycle-hypercar-revealed/",
+      "https://www.caranddriver.com/news/a74427363/1979-ss-monte-mino-2026-hot-wheels-legends-tour-winner/",
+      "https://www.caranddriver.com/news/a74416276/1986-yugo-bring-a-trailer-auction/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.caranddriver.com/news/a74416365/revology-ford-mustang-convertible-bring-a-trailer-auction/",
+      "https://www.caranddriver.com/news/a74426482/sanrivatii-one-motorcycle-hypercar-revealed/",
+      "https://www.caranddriver.com/news/a74427363/1979-ss-monte-mino-2026-hot-wheels-legends-tour-winner/",
+      "https://www.caranddriver.com/news/a74416276/1986-yugo-bring-a-trailer-auction/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

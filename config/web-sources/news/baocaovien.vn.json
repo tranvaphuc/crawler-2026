@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baocaovien.vn",
+  "siteId": "baocaovien.vn",
+  "registrableDomain": "baocaovien.vn",
+  "homepage": "https://baocaovien.vn/",
+  "allowedHosts": [
+    "baocaovien.vn",
+    "www.baocaovien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lan tỏa tinh thần vì sức khỏe cộng đồng của thầy thuốc trẻ Việt Nam tại Nga",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:24:31.883Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baocaovien.vn/tin-tuc/lan-toa-tinh-than-vi-suc-khoe-cong-dong-cua-thay-thuoc-tre-viet-nam-tai-nga/432893.html",
+      "https://baocaovien.vn/tin-tuc/chuong-trinh-nghe-thuat-lan-toa-niem-tu-hao-ve-truyen-thong-quoc-hoc/432892.html",
+      "https://baocaovien.vn/ban-tuyen-giao-trung-uong-huong-dan-tuyen-truyen-ky-niem-950-nam-quoc-tu-giam-quoc-hoc-viet-nam/10913.html",
+      "https://baocaovien.vn/viet-nam-chia-se-kinh-nghiem-mo-rong-co-hoi-tiep-can-giao-duc-mam-non/10917.html",
+      "https://baocaovien.vn/huong-dan-tham-gia-cuoc-thi-truc-tuyen-tim-hieu-ve-chuyen-doi-so-quoc-gia-tren-ung-dung-he-thong-thong-tin-tuyen-giao/10918.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baocaovien.vn/",
+    "categories": [
+      "https://baocaovien.vn/trong-nuoc.html",
+      "https://baocaovien.vn/chinh-tri.html",
+      "https://baocaovien.vn/kinh-te.html",
+      "https://baocaovien.vn/xa-hoi.html",
+      "https://baocaovien.vn/van-hoa.html",
+      "https://baocaovien.vn/the-thao.html",
+      "https://baocaovien.vn/the-gioi.html",
+      "https://baocaovien.vn/tin-hoat-dong.html",
+      "https://baocaovien.vn/nghiep-vu.html",
+      "https://baocaovien.vn/thong-tin-chuyen-de.html",
+      "https://baocaovien.vn/cac-ban-tin.html",
+      "https://baocaovien.vn/bao-cao-vien.html",
+      "https://baocaovien.vn/multimedia.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baocaovien.vn",
+    "checkedAt": "2026-11-09T03:56:49.260Z",
+    "url": "https://baocaovien.vn/tin-tuc/lan-toa-tinh-than-vi-suc-khoe-cong-dong-cua-thay-thuoc-tre-viet-nam-tai-nga/432893.html",
+    "finalUrl": "https://baocaovien.vn/tin-tuc/lan-toa-tinh-than-vi-suc-khoe-cong-dong-cua-thay-thuoc-tre-viet-nam-tai-nga/432893.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5785,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baocaovien.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 43,
+    "freshArticleChecks": 14,
+    "parserIssues": 0,
+    "transportUnconfirmed": 7,
+    "distinctHashes": 33,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 314,
+        "passed": 33,
+        "distinctHashes": 33
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baocaovien.vn/bai-viet-thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-cua-dong-chi-tong-bi-thu-chu-tich-nuoc-to-lam/10923.html",
+      "https://baocaovien.vn/day-manh-doi-moi-cong-tac-tuyen-truyen-ve-bien-dao-va-nang-cao-hieu-qua-cac-chuong-trinh-phoi-hop/10925.html",
+      "https://baocaovien.vn/giam-sat-viec-trien-khai-thuc-hien-nghi-quyet-so-71-nq-tw-cua-bo-chinh-tri-tai-thanh-pho-ho-chi-minh/10921.html",
+      "https://baocaovien.vn/phat-trien-nen-kinh-te-thi-truong-dinh-huong-xhcn-thoi-ky-doi-moi-thanh-tuu-va-nguyen-nhan/10899.html",
+      "https://baocaovien.vn/ca-mau-cu-the-hoa-cac-chu-truong-quyet-sach-cua-hoi-nghi-trung-uong-4-khoa-xiv-thanh-nhiem-vu-giai-phap-phu-hop-voi-tung-dia-phuong-don-vi/10922.html",
+      "https://baocaovien.vn/chuyen-cac-giai-bao-chi-toan-quoc-chuyen-nganh-thanh-cac-giai-chuyen-de-thuoc-cac-hang-muc-giai-bao-chi-quoc-gia/10924.html",
+      "https://baocaovien.vn/tin-tuc/hue-khan-truong-khac-phuc-sat-lo-tai-3-tuyen-duong-huyet-mach/433124.html",
+      "https://baocaovien.vn/tin-tuc/xay-dung-ke-hoach-phuong-an-to-chuc-van-hanh-khai-thac-san-bay-long-thanh/433123.html",
+      "https://baocaovien.vn/tin-tuc/nhat-ban-trao-tang-huan-chuong-mat-troi-moc-hang-nhat-dai-thap-tu-cho-nguyen-thu-tuong-pham-minh-chinh/433119.html",
+      "https://baocaovien.vn/tin-tuc/gia-lai-chap-thuan-dau-tu-3-du-an-nang-luong-tai-tao-hon-3-800-ty-dong/433122.html",
+      "https://baocaovien.vn/tin-tuc/duong-sat-chay-tau-ha-noi-thai-nguyen-kham-pha-am-thuc-va-van-hoa-tra/433121.html",
+      "https://baocaovien.vn/tin-tuc/viet-nam-philippines-thuc-day-quan-he-doi-tac-chien-luoc-tang-cuong/433120.html",
+      "https://baocaovien.vn/tin-tuc/phu-nu-viet-o-chau-au-lan-toa-ban-sac-van-hoa-dan-toc/433118.html",
+      "https://baocaovien.vn/tin-tuc/thanh-hoa-chung-tay-dua-hai-cot-liet-sy-ve-an-tang-tai-que-nha/433117.html",
+      "https://baocaovien.vn/tin-tuc/ukraine-va-eu-phoi-hop-lap-truong-truoc-cac-cuoc-dam-phan-tai-uae/433116.html",
+      "https://baocaovien.vn/thuc-day-quan-he-hop-tac-giua-dang-cong-san-viet-nam-va-dang-lao-dong-mexico/10920.html",
+      "https://baocaovien.vn/viet-nam-chia-se-kinh-nghiem-mo-rong-co-hoi-tiep-can-giao-duc-mam-non/10917.html",
+      "https://baocaovien.vn/cung-co-tin-cay-chinh-tri-va-mo-rong-hop-tac-giua-viet-nam-va-phan-lan/10919.html",
+      "https://baocaovien.vn/ban-tuyen-giao-trung-uong-huong-dan-tuyen-truyen-ky-niem-950-nam-quoc-tu-giam-quoc-hoc-viet-nam/10913.html",
+      "https://baocaovien.vn/doi-moi-can-ban-cong-tac-truyen-thong-chinh-sach-dap-ung-yeu-cau-phat-trien-dat-nuoc-trong-giai-doan-moi/10915.html",
+      "https://baocaovien.vn/kien-tao-he-sinh-thai-giao-duc-nghe-thuat-hien-dai-giau-ban-sac-trong-ky-nguyen-so/10914.html",
+      "https://baocaovien.vn/ha-noi-tap-trung-tuyen-truyen-cac-nhiem-vu-chinh-tri-tao-dong-thuan-xa-hoi/10911.html",
+      "https://baocaovien.vn/nghe-an-dinh-huong-tuyen-truyen-cac-nhiem-vu-trong-tam-thang-11-2026-tren-bao-chi/10907.html",
+      "https://baocaovien.vn/dien-bien-tap-trung-tuyen-truyen-nghi-quyet-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv/10904.html",
+      "https://baocaovien.vn/thanh-hoa-gan-trach-nhiem-nguoi-dung-dau-voi-ket-qua-thuc-hien-cac-nghi-quyet/10905.html",
+      "https://baocaovien.vn/quang-tri-ket-noi-chuyen-gia-dinh-vi-thuong-hieu-mo-rong-thi-truong-du-lich-trong-boi-canh-moi/10897.html",
+      "https://baocaovien.vn/ha-tinh-cu-the-hoa-nghi-quyet-bang-nhiem-vu-ket-qua-va-trach-nhiem-ro-rang/10898.html",
+      "https://baocaovien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chu-tri-cuoc-hop-ve-chuan-bi-nam-apec-2027/10916.html",
+      "https://baocaovien.vn/tiep-noi-xung-dang-di-san-lap-hien-gop-phan-xay-dung-dat-nuoc-phon-vinh-van-minh-hanh-phuc/10912.html",
+      "https://baocaovien.vn/quyet-dinh-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-ban-tuyen-giao-trung-uong/10887.html",
+      "https://baocaovien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-lam-viec-voi-dang-uy-chinh-phu-ve-phat-trien-logistics/10886.html",
+      "https://baocaovien.vn/tiep-tuc-dong-gop-vao-phat-trien-ly-luan-hoan-thien-duong-loi-lanh-dao-cam-quyen-cua-dang/10868.html",
+      "https://baocaovien.vn/infographic-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-ban-tuyen-giao-trung-uong/10908.html",
+      "https://baocaovien.vn/infographic-cac-nguyen-tac-ve-xac-dinh-vi-tri-viec-lam-xac-dinh-nhu-cau-nhan-luc-va-quan-ly-bien-che/10888.html",
+      "https://baocaovien.vn/infographic-cuoc-thi-truc-tuyen-tim-hieu-ve-chuyen-doi-so-quoc-gia/10818.html",
+      "https://baocaovien.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban/433096.html",
+      "https://baocaovien.vn/tin-tuc/pho-thu-tuong-le-tien-chau-tiep-thong-doc-tinh-gunma-cua-nhat-ban/433099.html",
+      "https://baocaovien.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake/433098.html",
+      "https://baocaovien.vn/tin-tuc/bao-dam-tinh-thong-nhat-kha-thi-cua-luat-dat-dai-sua-doi/433093.html",
+      "https://baocaovien.vn/tin-tuc/tong-thong-my-nhan-dinh-co-dong-luc-tich-cuc-huong-toi-cham-dut-xung-dot/433080.html",
+      "https://baocaovien.vn/tin-tuc/bo-truong-chien-tranh-my-doi-mat-nguy-co-bi-luan-toi/433079.html",
+      "https://baocaovien.vn/tin-tuc/chuyen-gia-kha-nang-dien-ra-thuong-dinh-my-trieu-tien-sau-bau-cu-giua-nhiem-ky/433056.html",
+      "https://baocaovien.vn/tin-tuc/trieu-tien-thu-nghiem-ngu-loi-toc-do-cao-tai-vung-bien-phia-dong/433053.html",
+      "https://baocaovien.vn/tin-tuc/dien-dan-an-ninh-nang-luong-quoc-gia-tim-giai-phap-bao-dam-nguon-cung-ben-vung/433113.html",
+      "https://baocaovien.vn/tin-tuc/co-che-dac-thu-dua-khu-kinh-te-dung-quat-thanh-trung-tam-nang-luong-quoc-gia/433109.html",
+      "https://baocaovien.vn/tin-tuc/dong-nai-tao-dong-thuan-trong-giai-phong-mat-bang-du-an-bauxite/433105.html",
+      "https://baocaovien.vn/tin-tuc/tu-chu-nang-luong-nen-tang-cho-muc-tieu-tang-truong-hai-con-so/433088.html",
+      "https://baocaovien.vn/tin-tuc/thuc-day-giao-luu-giao-duc-moi-truong-va-van-hoa-viet-nam-han-quoc/433100.html",
+      "https://baocaovien.vn/tin-tuc/luat-phat-trien-cong-nghiep-van-hoa-mo-duong-cho-van-hoa-tro-thanh-suc-manh-kinh-te/433097.html",
+      "https://baocaovien.vn/tin-tuc/11-nha-sang-tao-noi-dung-viet-nam-chinh-thuc-tranh-tai-tai-tiktok-awards-dong-nam-a-2026/433091.html",
+      "https://baocaovien.vn/tin-tuc/apec-2027-quang-tri-chu-dong-quang-ba-van-hoa-du-lich-va-thu-hut-dau-tu/433081.html",
+      "https://baocaovien.vn/tin-tuc/khoi-thong-nguon-luc-danh-thuc-tiem-nang-van-hoa/433076.html",
+      "https://baocaovien.vn/tin-tuc/vff-va-herbalife-tap-huan-dinh-duong-the-thao-nang-cao-chat-luong-bong-da-viet-nam/433115.html",
+      "https://baocaovien.vn/tin-tuc/giai-pickleball-vtv-cup-2026-co-tong-gia-tri-giai-thuong-hon-1-ty-dong/433011.html",
+      "https://baocaovien.vn/tin-tuc/u23-viet-nam-co-quan-bai-gi-de-san-sang-nghenh-chien-thai-lan/432959.html",
+      "https://baocaovien.vn/tin-tuc/vong-7-v-league-nam-dinh-xay-chac-ngoi-dau-the-cong-chim-sau-vao-khung-hoang/432890.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:58.456Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baocaovien.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "baocaovien.vn",
+      "siteId": "baocaovien.vn",
+      "registrableDomain": "baocaovien.vn",
+      "homepage": "https://baocaovien.vn/",
+      "allowedHosts": [
+        "baocaovien.vn",
+        "www.baocaovien.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Lan tỏa tinh thần vì sức khỏe cộng đồng của thầy thuốc trẻ Việt Nam tại Nga",
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "time",
+        "attribute": null,
+        "index": 1,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:51:49.375Z",
+        "trainingUrls": [
+          "https://baocaovien.vn/tiep-tuc-dong-gop-vao-phat-trien-ly-luan-hoan-thien-duong-loi-lanh-dao-cam-quyen-cua-dang/10868.html",
+          "https://baocaovien.vn/mot-so-giai-phap-tang-cuong-dong-luc-cong-vu-o-nuoc-ta-trong-ky-nguyen-moi/10869.html",
+          "https://baocaovien.vn/huong-dan-to-chuc-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-thuc-hien-nghi-quyet-sau-hoi-nghi-toan-quoc-do-bo-chinh-tri-ban-bi-thu-to-chuc/10860.html",
+          "https://baocaovien.vn/video-huong-ung-giai-thuong-toan-quoc-ve-thong-tin-doi-ngoai-lan-thu-xii-nam-2026/9970.html",
+          "https://baocaovien.vn/video-giai-thuong-toan-quoc-ve-thong-tin-doi-ngoai-lan-thu-xii/9792.html"
+        ],
+        "holdoutUrls": [
+          "https://baocaovien.vn/ca-mau-cu-the-hoa-cac-chu-truong-quyet-sach-cua-hoi-nghi-trung-uong-4-khoa-xiv-thanh-nhiem-vu-giai-phap-phu-hop-voi-tung-dia-phuong-don-vi/10922.html",
+          "https://baocaovien.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban/433096.html"
+        ]
+      }
+    }
+  ]
+}

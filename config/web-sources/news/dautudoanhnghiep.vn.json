@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dautudoanhnghiep.vn",
+  "siteId": "dautudoanhnghiep.vn",
+  "registrableDomain": "dautudoanhnghiep.vn",
+  "homepage": "https://dautudoanhnghiep.vn/",
+  "allowedHosts": [
+    "dautudoanhnghiep.vn",
+    "www.dautudoanhnghiep.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "7 chỉ số ngành trên HOSE giảm điểm trong tháng 10",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:28.405Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/7-chi-so-nganh-tren-hose-giam-diem-trong-thang-10.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/scg-duoc-vinh-danh-o-vi-tri-thu-22-trong-bang-xep-hang-fortune-southeast-asia-500-nam-2026.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html",
+      "https://dautudoanhnghiep.vn/bat-dong-san/bim-group-dong-hanh-cung-ironman-tu-hawai-i-den-khat-vong-phu-quoc.html",
+      "https://dautudoanhnghiep.vn/vang-tien-te/on-dinh-tai-chinh-phai-gan-voi-bao-dam-an-ninh-tien-te.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dautudoanhnghiep.vn/",
+    "categories": [
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep",
+      "https://dautudoanhnghiep.vn/vang-tien-te",
+      "https://dautudoanhnghiep.vn/bat-dong-san",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai",
+      "https://dautudoanhnghiep.vn/ngan-hang",
+      "https://dautudoanhnghiep.vn/kinh-doanh-online",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong",
+      "https://dautudoanhnghiep.vn/khoi-nghiep",
+      "https://dautudoanhnghiep.vn/trai-dat-xanh",
+      "https://dautudoanhnghiep.vn/video",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/doanh-nhan",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh",
+      "https://dautudoanhnghiep.vn/emagazine",
+      "https://dautudoanhnghiep.vn/bat-dong-san/video-bat-dong-san",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/xuat-nhap-khau",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/khuyen-mai",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/hoi-cho-trien-lam",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/ocop?isFeatured=1",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/thi-truong-the-gioi",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/video-thong-tin-thi-truong",
+      "https://dautudoanhnghiep.vn/khoi-nghiep/guong-mat-tieu-bieu",
+      "https://dautudoanhnghiep.vn/khoi-nghiep/doanh-nghiep-tieu-bieu"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dautudoanhnghiep.vn",
+    "checkedAt": "2026-11-09T03:56:58.408Z",
+    "url": "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/7-chi-so-nganh-tren-hose-giam-diem-trong-thang-10.html?categoryId=1613030",
+    "finalUrl": "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/7-chi-so-nganh-tren-hose-giam-diem-trong-thang-10.html?categoryId=1613030",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2886,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dautudoanhnghiep.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 42,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 30,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 24,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 185,
+        "passed": 32,
+        "distinctHashes": 24
+      },
+      {
+        "name": "video",
+        "discovered": 6,
+        "passed": 6,
+        "distinctHashes": 6
+      },
+      {
+        "name": "longform",
+        "discovered": 4,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/xuat-nhap-khau/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html",
+      "https://dautudoanhnghiep.vn/kinh-doanh-online/thuong-mai-dien-tu-lan-toa-den-tung-xa-phuong.html",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html?categoryId=1613030,1613031,1613032,1613051,1613033,1613034,1613036,1613055,1613056,1613057,5273269,1613037,1613041,1613042,1613044,1613043,1613052,1613035,5194504",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/thi-truong-trai-phieu-kho-bac-huy-dong-gan-366.000-ty-dong-ngan-hang-dan-dat-phat-hanh-tpdn.html?categoryId=1613030,1613031,1613032,1613051,1613033,1613034,1613036,1613055,1613056,1613057,5273269,1613037,1613041,1613042,1613044,1613043,1613052,1613035,1613053,1613054,5194504",
+      "https://dautudoanhnghiep.vn/trai-dat-xanh/tp-hue-canh-bao-mua-lon-dien-rong-lu-vuot-bao-dong-2.html",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html?categoryId=1613030,1613031,1613032,1613051,1613033,1613034,1613036,1613055,1613056,1613057,5273269,1613037,1613041,1613042,1613044,1613043,1613052,1613035,1613053,1613054,5194504",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/ra-mat-van-phong-dai-dien-hoi-bao-ve-nguoi-tieu-dung-viet-nam-tai-da-nang.html",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/formosa-ha-tinh-nop-ngan-sach-hon-5.500-ty-dong-sau-10-thang.html?categoryId=1613030,1613031,1613032,1613051,1613033,1613034,1613036,1613055,1613056,1613057,5273269,1613037,1613041,1613042,1613044,1613043,1613052,1613035,1613053,1613054,5194504",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/doanh-nghiep-thuc-pham-thuy-dien-tim-kiem-co-hoi-hop-tac-tai-thi-truong-viet-nam.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/formosa-ha-tinh-nop-ngan-sach-hon-5.500-ty-dong-sau-10-thang.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/cac-quy-etf-du-kien-ban-manh-kdh-vic-mua-gom-gmd-ree.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/thi-truong-chung-khoan-cuoi-nam-dong-tien-than-trong-cho-nhip-moi.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/thong-tin-doanh-nghiep/loi-nhuan-doanh-nghiep-tang-46-1-nhom-bat-dong-san-tang-364-6-.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/tin-doanh-nghiep/kinh-te-tai-chinh/thi-truong-trai-phieu-kho-bac-huy-dong-gan-366.000-ty-dong-ngan-hang-dan-dat-phat-hanh-tpdn.html?categoryId=1613030",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-kim-loai-quy-khoi-sac-nhung-thi-truong-hang-hoa-van-giam-manh-do-gia-dau-lao-doc.html",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-lua-gao-hom-nay-ngay-9-11-2026-gia-it-bien-dong.html?categoryId=1613042,1613044,1613043",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-bac-the-gioi-lay-lai-moc-53-usd-ounce-bac-trong-nuoc-tang-gan-1-trieu-dong-kg.html",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-heo-hoi-hom-nay-8-11-2026-dao-chieu-tang-manh-trong-tuan.html?categoryId=1613042,1613044,1613043",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-bac-the-gioi-hoi-phuc-gan-6-thi-truong-trong-nuoc-dien-bien-trai-chieu.html",
+      "https://dautudoanhnghiep.vn/thong-tin-thi-truong/gia-ca-phe-hom-nay-7-11-2026-dao-chieu-tang-nhe-300-500-dong-kg.html?categoryId=1613042,1613044,1613043",
+      "https://dautudoanhnghiep.vn/ngan-hang/msb-du-kien-thu-9.360-ty-dong-tu-chao-ban-co-phieu-uu-tien-bo-sung-von-cho-vay.html",
+      "https://dautudoanhnghiep.vn/ngan-hang/nam-a-bank-du-kien-huy-dong-1.320-ty-dong-tu-chao-ban-rieng-le-100-trieu-co-phieu.html",
+      "https://dautudoanhnghiep.vn/ngan-hang/visa-thau-hieu-nhung-gia-tri-khach-hang-coi-trong-va-dap-ung-dung-nhu-cau-vao-nhung-thoi-diem-quan-trong.html",
+      "https://dautudoanhnghiep.vn/ngan-hang/hon-1-3-trieu-khach-hang-the-tin-dung-dau-an-vi-the-va-doi-moi-cua-sacombank.html",
+      "https://dautudoanhnghiep.vn/vang-tien-te/ngay-10-11-gia-vang-trong-nuoc-tiep-tuc-tang.html",
+      "https://dautudoanhnghiep.vn/vang-tien-te/gia-vang-hom-nay-10-11-dao-chieu-tang-tro-lai.html?categoryId=1613033",
+      "https://dautudoanhnghiep.vn/vang-tien-te/gia-vang-ngay-10-11-dong-loat-tang-nhe.html?categoryId=1613033",
+      "https://dautudoanhnghiep.vn/vang-tien-te/ngay-9-11-gia-vang-trong-nuoc-tang.html",
+      "https://dautudoanhnghiep.vn/bat-dong-san/bim-group-dong-hanh-cung-ironman-tu-hawai-i-den-khat-vong-phu-quoc.html?categoryId=1613034",
+      "https://dautudoanhnghiep.vn/bat-dong-san/quoc-hoi-thao-luan-luat-kinh-doanh-bat-dong-san-sua-doi-go-vuong-du-an-bao-ve-nguoi-mua-nha.html",
+      "https://dautudoanhnghiep.vn/bat-dong-san/t-a-tro-thanh-dai-ly-phan-phoi-du-an-happy-one-elite-cua-van-xuan-group.html",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/xuat-nhap-khau/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html?categoryId=1613036,1613055,1613056,1613057,5273269",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/xuat-nhap-khau/hoan-thien-quy-dinh-ve-danh-muc-va-chi-tieu-ky-thuat-khoang-san-xuat-khau.html?categoryId=1613036,1613055,1613056,1613057,5273269",
+      "https://dautudoanhnghiep.vn/xuc-tien-thuong-mai/thuc-day-ket-noi-giao-thuong-viet-nam-campuchia.html?categoryId=1613036,1613055,1613056,1613057,5273269",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/bo-cong-thuong-phe-duyet-khung-gia-phat-dien-dien-mat-troi-nam-2026.html",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/tong-bi-thu-chu-tich-nuoc-to-lam-va-thu-tuong-takaichi-sanae-gap-go-bao-chi.html?categoryId=1613052",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/heading-for-the-future-digital-marketing-mua-4-mo-co-hoi-trai-nghiem-thuc-tien-cho-sinh-vien.html",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/dien-dan-quoc-gia-van-hoa-voi-doanh-nghiep-2026-do-luong-hieu-qua-thuc-hanh-van-hoa-kinh-doanh-trong-doanh-nghiep.html",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/-cao-bang-mien-hoi-tu-quang-ba-van-hoa-du-lich-dia-phuong.html?categoryId=1613052",
+      "https://dautudoanhnghiep.vn/su-kien-truyen-thong/ra-mat-van-phong-dai-dien-hoi-bao-ve-nguoi-tieu-dung-viet-nam-tai-da-nang.html?categoryId=1613052"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 4
+    },
+    "checkedAt": "2026-11-10T09:14:52.083Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dautudoanhnghiep.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

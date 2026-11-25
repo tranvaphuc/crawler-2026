@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cuoi.tuoitre.vn",
+  "siteId": "cuoi.tuoitre.vn",
+  "registrableDomain": "tuoitre.vn",
+  "homepage": "https://cuoi.tuoitre.vn/",
+  "allowedHosts": [
+    "cuoi.tuoitre.vn",
+    "www.cuoi.tuoitre.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thuận tự nhiên, lợi thu nhập",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".fck",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:24:33.613Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cuoi.tuoitre.vn/thuan-tu-nhien-loi-thu-nhap-20260422114159461.htm",
+      "https://cuoi.tuoitre.vn/khong-tu-quynh-mua-ca-khuc-cua-thi-sinh-bai-hat-hay-nhat-de-tai-xuat-20230227125417867.htm",
+      "https://cuoi.tuoitre.vn/tuoi-tre-cuoi-song-kieu-hanh-dung-ve-phe-nuoc-mat-100260705093413305.htm",
+      "https://cuoi.tuoitre.vn/ban-giau-tinh-cam-nhu-the-nao-100261108061849405.htm",
+      "https://cuoi.tuoitre.vn/phan-hien-phan-ung-gi-khi-ba-xa-khanh-thi-bat-on-giua-dem-100261108141252706.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cuoi.tuoitre.vn/",
+    "categories": [
+      "https://cuoi.tuoitre.vn/xu-huong.htm",
+      "https://cuoi.tuoitre.vn/noi-bat.htm",
+      "https://cuoi.tuoitre.vn/de-xuat.htm",
+      "https://cuoi.tuoitre.vn/lau-thap-cam.htm",
+      "https://cuoi.tuoitre.vn/biem-hoa.htm",
+      "https://cuoi.tuoitre.vn/video.htm",
+      "https://cuoi.tuoitre.vn/tram-hoat-hinh.htm",
+      "https://cuoi.tuoitre.vn/showbiz-muon-mau.htm",
+      "https://cuoi.tuoitre.vn/truyen-tranh.htm",
+      "https://cuoi.tuoitre.vn/doi-cuoi.htm",
+      "https://cuoi.tuoitre.vn/phong-mach-ta-pi-lu.htm",
+      "https://cuoi.tuoitre.vn/the-thao-cuoi.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cuoi.tuoitre.vn",
+    "checkedAt": "2026-11-09T03:56:57.135Z",
+    "url": "https://cuoi.tuoitre.vn/thuan-tu-nhien-loi-thu-nhap-20260422114159461.htm",
+    "finalUrl": "https://cuoi.tuoitre.vn/thuan-tu-nhien-loi-thu-nhap-20260422114159461.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 218,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cuoi.tuoitre.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 48,
+    "checkedArticleUrls": 49,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 48,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 2,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 185,
+        "passed": 48,
+        "distinctHashes": 48
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cuoi.tuoitre.vn/tuoi-tre-cuoi-song-kieu-hanh-dung-ve-phe-nuoc-mat-100260705093413305.htm",
+      "https://cuoi.tuoitre.vn/du-trend-moi-nhu-co-chi-dep-tre-ra-ca-chuc-tuoi-100261110123652471.htm",
+      "https://cuoi.tuoitre.vn/goc-toi-nghe-shipper-ma-khong-phai-ai-cung-biet-100261110120757337.htm",
+      "https://cuoi.tuoitre.vn/ba-loat-phim-hoat-hinh-thap-nien-1990-va-nhung-du-dinh-con-dang-do-100261110110712789.htm",
+      "https://cuoi.tuoitre.vn/ban-do-rep-giuong-cung-cap-ten-khach-san-can-ne-o-trung-quoc-100261110100906422.htm",
+      "https://cuoi.tuoitre.vn/noi-long-hlv-khong-thang-noi-tran-nao-gan-25-nam-100261110105205844.htm",
+      "https://cuoi.tuoitre.vn/co-gai-nga-dap-mong-khi-dang-goi-dau-cho-khach-100261110095145737.htm",
+      "https://cuoi.tuoitre.vn/quyen-ngat-ket-noi-nhieu-dan-van-phong-thay-mat-long-100261110122117978.htm",
+      "https://cuoi.tuoitre.vn/nu-do-vat-goi-cam-gay-sot-khi-xo-giay-tro-lai-san-co-100261109182007389.htm",
+      "https://cuoi.tuoitre.vn/chu-cho-cay-cu-khi-thay-dong-bon-nhieu-banh-hon-100261110110715521.htm",
+      "https://cuoi.tuoitre.vn/hai-bo-con-uot-dam-vi-qua-tin-tuong-vao-cay-du-100261110101648264.htm",
+      "https://cuoi.tuoitre.vn/noi-tam-ban-dang-trong-rong-the-nao-100261109160201721.htm",
+      "https://cuoi.tuoitre.vn/xe-dap-dien-hon-xe-may-xac-xe-dap-100261109145613124.htm",
+      "https://cuoi.tuoitre.vn/du-doan-xu-huong-di-chuyen-trong-vanh-dai-1-20250804140801752.htm",
+      "https://cuoi.tuoitre.vn/xe-may-xang-ve-que-nuoi-ca-va-trong-them-rau-20250804120037416.htm",
+      "https://cuoi.tuoitre.vn/mien-tay-chuan-bi-vua-lu-truoc-nguy-co-el-nino-100261110002402465.htm",
+      "https://cuoi.tuoitre.vn/truong-quoc-te-hoc-phi-gan-ti-dong-sap-khong-con-quoc-te-100261107232924684.htm",
+      "https://cuoi.tuoitre.vn/tru-bat-gioi-bi-stress-nhun-ca-thit-100261106232712567.htm",
+      "https://cuoi.tuoitre.vn/nguoi-phu-nu-kin-tieng-ben-ceo-nvidia-jensen-huang-100261109094706937.htm",
+      "https://cuoi.tuoitre.vn/danh-tinh-nam-mc-tam-onsen-khien-khan-gia-mat-tron-mat-det-100261108154447112.htm",
+      "https://cuoi.tuoitre.vn/4-chang-trai-mac-hoi-chung-down-mo-tiem-pizza-vi-khong-xin-duoc-viec-100261108091445367.htm",
+      "https://cuoi.tuoitre.vn/bo-ca-tram-ngan-ti-dong-de-mua-lai-cong-ty-tung-hat-cang-minh-100261108234324059.htm",
+      "https://cuoi.tuoitre.vn/thu-tai-iq-di-chuyen-mot-que-diem-de-7218-thanh-phep-tinh-dung-100261109053109951.htm",
+      "https://cuoi.tuoitre.vn/chong-no-don-vi-dam-treu-choc-vo-luc-gian-100261108115757129.htm",
+      "https://cuoi.tuoitre.vn/nhat-duoc-tien-roi-cua-ong-chu-chu-cho-nhanh-chan-mang-di-giau-100261108094245147.htm",
+      "https://cuoi.tuoitre.vn/chu-tiem-banh-tieu-don-hang-som-vi-duoc-than-tai-ghe-tham-100261108073910997.htm",
+      "https://cuoi.tuoitre.vn/meo-hu-hon-khi-du-khach-vuot-ve-100261108074611709.htm",
+      "https://cuoi.tuoitre.vn/ba-co-ngo-ngang-khi-shipper-huong-dan-dung-thiet-bi-tiet-kiem-dien-100261105141331133.htm",
+      "https://cuoi.tuoitre.vn/tuong-treu-duoc-khach-anh-ban-kem-tho-nhi-ky-nhan-cai-ket-bat-ngo-100261106121913401.htm",
+      "https://cuoi.tuoitre.vn/dang-viral-chang-trai-phat-hien-ban-gai-ngoai-tinh-va-cach-hanh-xu-day-bat-ngo-100261107090338786.htm",
+      "https://cuoi.tuoitre.vn/vo-noi-doa-khi-hoi-chong-sau-nay-anh-nhieu-tien-co-cho-gai-khong-1002611071134126.htm",
+      "https://cuoi.tuoitre.vn/chong-mung-hut-vi-tuong-vo-tam-ly-100261107111435285.htm",
+      "https://cuoi.tuoitre.vn/gia-chu-ngan-ngo-nhin-hau-qua-cua-anh-tho-sua-may-lanh-100261106121646157.htm",
+      "https://cuoi.tuoitre.vn/giao-vien-gioi-cung-bo-tay-100261024190958653.htm",
+      "https://cuoi.tuoitre.vn/con-sot-cao-90-do-la-gan-boc-hoi-roi-chong-oi-100261024184432298.htm",
+      "https://cuoi.tuoitre.vn/trau-choi-vo-dich-niem-vui-dang-quang-cung-hoi-lan-lon-100260922164139809.htm",
+      "https://cuoi.tuoitre.vn/top-nhung-thu-dung-de-boi-tron-nam-2026-10026091306543325.htm",
+      "https://cuoi.tuoitre.vn/phat-den-20-trieu-dong-nguoi-tung-tin-that-thiet-phia-truong-giang-quyet-het-nhin-10026110911505831.htm",
+      "https://cuoi.tuoitre.vn/cuoc-song-cua-phuong-oanh-ra-sao-sau-roi-xa-man-anh-100261109112033899.htm",
+      "https://cuoi.tuoitre.vn/phan-hien-phan-ung-gi-khi-ba-xa-khanh-thi-bat-on-giua-dem-100261108141252706.htm",
+      "https://cuoi.tuoitre.vn/chan-dung-chau-ruot-quach-ngoc-ngoan-vua-tro-thanh-a-hau-100261108133733032.htm",
+      "https://cuoi.tuoitre.vn/qua-bong-vang-harry-kane-vang-khoi-doi-hinh-hay-nhat-the-gioi-100261110084448834.htm",
+      "https://cuoi.tuoitre.vn/yamal-mua-biet-thu-cua-shakira-roi-dai-tu-chieu-long-nguoi-dep-100261109181532624.htm",
+      "https://cuoi.tuoitre.vn/ke-gian-dot-nhap-biet-thu-lebron-james-roi-tu-nhan-la-con-trai-100261109104842804.htm",
+      "https://cuoi.tuoitre.vn/bai-toan-chuyen-the-7-cuoc-doi-trong-18-tap-phim-cua-anime-spirit-circle-100261106144806935.htm",
+      "https://cuoi.tuoitre.vn/duong-dua-anime-dau-nam-2027-khi-cac-ong-lon-giai-bai-toan-chuyen-the-tu-manga-100261106095511023.htm",
+      "https://cuoi.tuoitre.vn/anime-spy-x-family-cong-bo-san-xuat-mua-phim-thu-4-va-phim-dien-anh-thu-hai-100261109103306696.htm",
+      "https://cuoi.tuoitre.vn/gian-tinh-mach-thung-tinh-cam-chac-vo-sinh-20251201104456331.htm",
+      "https://cuoi.tuoitre.vn/dang-tri-khi-nao-khong-lo-thanh-dang-lo-20250513144102162.htm",
+      "https://cuoi.tuoitre.vn/hong-hac-test-dung-mot-chan-lau-thi-song-lau-20250116105507452.htm",
+      "https://cuoi.tuoitre.vn/dot-quy-trong-luc-ngu-muoi-phan-nguy-20250929143436682.htm",
+      "https://cuoi.tuoitre.vn/nhin-an-lieu-phap-ngan-hay-dai-do-20251201104042456.htm",
+      "https://cuoi.tuoitre.vn/cuoc-quay-xe-bo-dau-ve-voi-mo-20250716142514646.htm",
+      "https://cuoi.tuoitre.vn/gan-cuoi-nam-tat-toan-voi-ky-sinh-trung-duong-ruot-20251230153655111.htm",
+      "https://cuoi.tuoitre.vn/suy-than-de-hay-kho-20250613144519541.htm",
+      "https://cuoi.tuoitre.vn/khoc-vi-nuoc-mat-nhan-tao-20250121151010296.htm",
+      "https://cuoi.tuoitre.vn/xon-xao-vu-vo-doi-doi-me-trum-mafia-de-cuu-chong-bi-bat-coc-100260715152404092.htm",
+      "https://cuoi.tuoitre.vn/danh-nhau-vi-tranh-mua-may-lanh-o-phap-100260703100111905.htm",
+      "https://cuoi.tuoitre.vn/hen-ban-gai-quen-qua-mang-an-cua-hoang-de-ket-bill-muon-hoang-hon-100260625163303322.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:47.702Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cuoi.tuoitre.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "body": {
+        "strategy": "selector",
+        "selector": ".block-video",
+        "removeExtra": ".slides-btn,.row"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:59:24.626Z",
+        "holdoutUrls": [
+          "https://cuoi.tuoitre.vn/phat-den-20-trieu-dong-nguoi-tung-tin-that-thiet-phia-truong-giang-quyet-het-nhin-10026110911505831.htm",
+          "https://cuoi.tuoitre.vn/cuoc-song-cua-phuong-oanh-ra-sao-sau-roi-xa-man-anh-100261109112033899.htm"
+        ]
+      }
+    }
+  ]
+}

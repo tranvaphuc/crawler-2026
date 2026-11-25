@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "siteName": "voh.com.vn",
+  "siteId": "voh.com.vn",
+  "registrableDomain": "voh.com.vn",
+  "homepage": "https://voh.com.vn/",
+  "allowedHosts": [
+    "voh.com.vn",
+    "www.voh.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khu vực phía Đông TP. Hồ Chí Minh: Chuyển từ \"điểm dừng chân\" thành \"điểm đến trải nghiệm trọn gói\"",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:02.227Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://voh.com.vn/kinh-te/khu-vuc-phia-dong-tp-ho-chi-minh-chuyen-tu-diem-dung-chan-thanh-diem-den-trai-nghiem-tron-goi-678682.html",
+      "https://voh.com.vn/chinh-tri/tong-bi-thu-chu-tich-nuoc-to-lam-thuong-ton-hien-phap-va-phap-luat-la-dong-luc-phat-trien-dat-nuoc-678672.html",
+      "https://voh.com.vn/kinh-te/xuat-khau-nong-san-duy-tri-da-tang-truong-doanh-nghiep-chu-dong-thich-ung-thi-truong-678669.html",
+      "https://voh.com.vn/chinh-tri/quoc-hoi-thao-luan-du-an-luat-thoa-thuan-quoc-te-sua-doi-de-cao-kiem-soat-rui-ro-phap-ly-678662.html",
+      "https://voh.com.vn/bong-da/tuyen-viet-nam-mat-5-ngoi-sao-vi-bao-chan-thuong-thay-kim-trieu-tap-gap-2-tan-binh-678714.html",
+      "https://voh.com.vn/xa-hoi/lich-cup-dien-ngay-0911-678695.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://voh.com.vn/",
+    "categories": [
+      "https://voh.com.vn/tin-moi-nhat.html",
+      "https://voh.com.vn/tin-xem-nhieu.html"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?voh.com.vn/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "voh.com.vn",
+    "checkedAt": "2026-11-09T03:57:39.180Z",
+    "url": "https://voh.com.vn/kinh-te/khu-vuc-phia-dong-tp-ho-chi-minh-chuyen-tu-diem-dung-chan-thanh-diem-den-trai-nghiem-tron-goi-678682.html",
+    "finalUrl": "https://voh.com.vn/kinh-te/khu-vuc-phia-dong-tp-ho-chi-minh-chuyen-tu-diem-dung-chan-thanh-diem-den-trai-nghiem-tron-goi-678682.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4456,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "voh.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 46,
+    "freshArticleChecks": 39,
+    "parserIssues": 32,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 48,
+        "passed": 14,
+        "distinctHashes": 14
+      },
+      {
+        "name": "audio",
+        "discovered": 47,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 10,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://voh.com.vn/chinh-tri/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-dang-cong-san-nhat-ban-679088.html",
+      "https://voh.com.vn/chinh-tri/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-tuc-duy-tri-quan-he-hop-tac-dang-cong-san-viet-nam-nhat-ban-679108.html",
+      "https://voh.com.vn/chinh-tri/de-nghi-quy-dinh-ro-hop-dong-lao-dong-bao-hiem-xa-hoi-cho-huong-dan-vien-du-lich-679090.html",
+      "https://voh.com.vn/thoi-su/tram-tin-trua-1011-viet-nam-lan-dau-cong-bo-bao-cao-an-ninh-nang-luong-tau-hang-dai-124-met-mac-can-o-bien-sa-huynh-679067.html",
+      "https://voh.com.vn/kinh-te/2-phuong-o-tp-ho-chi-minh-dat-ty-le-giai-ngan-dau-tu-cong-tren-96-679114.html",
+      "https://voh.com.vn/tam-su/phi-cong-tre-ep-pha-thai-tro-mat-doi-gianh-quyen-nuoi-con-678928.html",
+      "https://voh.com.vn/kinh-te/tp-ho-chi-minh-muc-tieu-30-000-ty-dong-giao-dich-tu-vibrant-hcmc-679112.html",
+      "https://voh.com.vn/chinh-tri/viet-nam-australia-thuc-day-hop-tac-quoc-phong-tren-nhieu-linh-vuc-679113.html",
+      "https://voh.com.vn/giao-thong/tp-ho-chi-minh-un-tac-keo-dai-hang-km-tren-duong-ton-duc-thang-sau-tai-nan-xe-ban-tai-679119.html",
+      "https://voh.com.vn/doi-song/nan-nhan-vu-phat-hien-so-nguoi-o-khu-do-thi-dhqg-tp-ho-chi-minh-la-nam-gioi-40-50-tuoi-679100.html",
+      "https://voh.com.vn/thoi-su/phat-hien-vat-nghi-so-nguoi-sau-mot-truong-dai-hoc-o-tp-ho-chi-minh-60-giay-sang-ngay-10-11-2026-679087.html",
+      "https://voh.com.vn/van-hoa/van-hoa-doanh-nghiep-nen-tang-kien-tao-tuong-lai-va-phat-trien-ben-vung-679091.html",
+      "https://voh.com.vn/kinh-te/tp-ho-chi-minh-day-manh-hop-tac-xuat-khau-nong-san-my-dat-5-6-ty-usd-679096.html",
+      "https://voh.com.vn/phap-luat/36-bi-cao-duong-day-cat-da-tim-ngoc-linh-an-tu-chiem-doat-hon-2639-ti-dong-679101.html",
+      "https://voh.com.vn/radio/khung-hinh-thu-25/nguyen-hung-va-ninh-duong-lan-ngoc-cung-hanh-trinh-den-voi-bo-sua-bay-va-chi-chi-em-em-3-14261106000125119.html",
+      "https://voh.com.vn/radio/dem-thanh-pho/nho-to-canh-rieu-cua-dong-nau-rau-tap-tang-cua-ma-o-mien-tay-14261108000125310.html",
+      "https://voh.com.vn/radio/radio-ca-phe/ky-vong-suc-bat-cua-the-thao-tp-ho-chi-minh-14261107000125263.html",
+      "https://voh.com.vn/phim/phim-cua-dong-tu-thanh-678997.html",
+      "https://voh.com.vn/nha/tuyet-chieu-thiet-ke-sanh-dem-va-tu-giay-giup-ngoi-nha-luon-gon-gang-678889.html",
+      "https://voh.com.vn/nha/meo-hack-khong-gian-678857.html",
+      "https://voh.com.vn/nha/ban-an-treo-tuong-gap-gon-co-ben-khong-678793.html",
+      "https://voh.com.vn/nha/xu-huong-trang-tri-giang-sinh-678794.html",
+      "https://voh.com.vn/video/giai-tri/cowboy-bebop-tro-lai-sau-25-nam-16261110000679039.html",
+      "https://voh.com.vn/video/thoi-su/bi-quyet-giup-hai-phuong-tai-tp-hcm-giai-ngan-dau-tu-cong-vuot-moc-96-16261110000679120.html",
+      "https://voh.com.vn/video/thoi-su/da-nang-mua-lon-va-gio-giat-manh-lam-nhieu-cay-xanh-gay-do-trong-dem-16261110000679111.html",
+      "https://voh.com.vn/video/camera-cuoc-song/nu-sinh-17-tuoi-vua-di-hoc-vua-lam-them-phu-cha-cham-me-benh-16261110000679121.html",
+      "https://voh.com.vn/tin-tuc/webstories/cham-diem-arsenal-1-1-psg-penalty-3-4-rice-dang-thuong-20260531000655954.html",
+      "https://voh.com.vn/tin-tuc/webstories/cham-diem-mu-3-2-liverpool-toi-do-phai-xin-loi-tren-san-20260504000653621.html",
+      "https://voh.com.vn/tin-tuc/webstories/cham-diem-mu-2-1-brentford-casemiro-toan-nang-20260428000653254.html",
+      "https://voh.com.vn/tin-tuc/webstories/cham-diem-man-city-1-0-burnley-khusanov-hay-ngang-haaland-20260423000652898.html",
+      "https://voh.com.vn/suc-khoe/vong-tranh-thai-mac-ket-gay-nhiem-trung-mui-suot-20-nam-678658.html",
+      "https://voh.com.vn/bong-da/nhan-dinh-va-link-xem-u23-viet-nam-vs-u23-thai-lan-19h00-1011-thang-de-phuc-han-678966.html",
+      "https://voh.com.vn/thoi-su/diem-tin-trua-811-vang-the-gioi-tang-manh-sjc-chi-nhich-2-trieu-dongluong-gia-ho-tieu-tang-cao-su-the-gioi-giam-678665.html",
+      "https://voh.com.vn/thoi-su/tram-tin-trua-9-11-gia-vang-sjc-tang-khoang-1-trieu-dong-luong-ve-may-bay-tet-2027-tang-gia-kho-tim-ve-re-678807.html",
+      "https://voh.com.vn/xa-hoi/lich-cup-dien-ngay-0911-678695.html",
+      "https://voh.com.vn/podcast/tram-ting/radio-ting-10-11-tp-hcm-nghien-cuu-ho-tro-phi-kiem-dinh-xe-may-giai-ma-doi-dua-dung-mot-lan-13261109000008669.html",
+      "https://voh.com.vn/podcast/tram-ting/radio-ting-09-11-canh-sat-dung-cam-cuu-nguoi-cau-be-viet-6-tuoi-san-tay-hoc-tieng-anh-13261108000008667.html",
+      "https://voh.com.vn/podcast/tram-ting/radio-ting-08-11-tp-hcm-mua-lon-ket-hop-trieu-cuong-vi-sao-nguoi-viet-goi-ung-thu-la-benh-k-13261108000008665.html",
+      "https://voh.com.vn/podcast/tong-hop/cristiano-ronaldo-23-nam-va-mot-loi-chia-tay-mang-ten-huyen-thoai-13261106000008661.html",
+      "https://voh.com.vn/radio/kenh-fm-925-02251113001000925.html",
+      "https://voh.com.vn/radio/nghe-radio-truc-tuyen-02240315000000002.html",
+      "https://voh.com.vn/radio/phien-cho-startup/van-hoa-doanh-nghiep-14261105000125081.html",
+      "https://voh.com.vn/radio/khung-hinh-thu-25/nguyen-hung-va-ninh-duong-lan-ngoc-cung-hanh-trinh-den-voi-bo-sua-bay-va-chi-chi-em-em-3-14261106000125119.html?t=2533",
+      "https://voh.com.vn/radio/phien-cho-startup/van-hoa-doanh-nghiep-14261105000125081.html?t=638",
+      "https://voh.com.vn/radio/dem-thanh-pho/nho-to-canh-rieu-cua-dong-nau-rau-tap-tang-cua-ma-o-mien-tay-14261108000125310.html?t=840",
+      "https://voh.com.vn/radio/radio-ca-phe/ky-vong-suc-bat-cua-the-thao-tp-ho-chi-minh-14261107000125263.html?t=75",
+      "https://voh.com.vn/radio/sai-gon-buoi-sang/hom-nay-8-11-thoi-tiet-nam-bo-va-tphcm-se-tang-mua-ca-ve-dien-va-luong-14261108000125271.html?t=0",
+      "https://voh.com.vn/radio/vi-thanh-pho-co-chat-luong-song-tot-am-610/festival-nhan-ai-2026-voi-chu-de-vi-moi-nguoi-o-moi-noi-14261106000125186.html?t=55",
+      "https://voh.com.vn/radio/kenh-fm-999-02221123001000999.html",
+      "https://voh.com.vn/radio/kenh-fm-956-02221123001000956.html",
+      "https://voh.com.vn/radio/kenh-fm-877-02221123001000877.html",
+      "https://voh.com.vn/radio/kenh-am-610-02221123001000610.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 24,
+      "public_inline_state_requires_adapter": 8
+    },
+    "checkedAt": "2026-11-10T09:18:21.109Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/voh.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

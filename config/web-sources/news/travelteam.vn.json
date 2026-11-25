@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "siteName": "travelteam.vn",
+  "siteId": "travelteam.vn",
+  "registrableDomain": "travelteam.vn",
+  "homepage": "https://travelteam.vn/",
+  "allowedHosts": [
+    "travelteam.vn",
+    "www.travelteam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://travelteam.vn/",
+    "categories": [
+      "https://travelteam.vn/c/lien-minh-travel-team",
+      "https://travelteam.vn/c/tour-travel-team",
+      "https://travelteam.vn/c/am-thuc",
+      "https://travelteam.vn/c/van-hoa",
+      "https://travelteam.vn/video"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "An Giang cho 1 ngày điều chuyển 322.000m³ cát làm cao tốc, Thanh tra Chính phủ kết luận không khả thi",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:33.653Z",
+    "frozenAt": "2026-11-16T02:00:29.360Z",
+    "trainingUrl": "https://travelteam.vn/an-giang-cho-1-ngay-dieu-chuyen-322000m3-cat-lam-cao-toc-thanh-tra-chinh-phu-ket-luan-khong-kha-thi-19722.html",
+    "independentHoldouts": [
+      "https://travelteam.vn/chieu-nay-toa-tuyen-an-mr-pips-shark-binh-va-186-bi-cao-20483.html",
+      "https://travelteam.vn/den-hue-nhung-nhom-khach-nao-duoc-giam-den-50-phi-tham-quan-di-tich-20482.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://travelteam.vn/an-giang-cho-1-ngay-dieu-chuyen-322000m3-cat-lam-cao-toc-thanh-tra-chinh-phu-ket-luan-khong-kha-thi-19722.html",
+      "https://travelteam.vn/chieu-nay-toa-tuyen-an-mr-pips-shark-binh-va-186-bi-cao-20483.html",
+      "https://travelteam.vn/den-hue-nhung-nhom-khach-nao-duoc-giam-den-50-phi-tham-quan-di-tich-20482.html",
+      "https://travelteam.vn/houthi-tien-sat-thu-do-lam-thoi-cua-yemen-chi-con-cach-60km-20481.html",
+      "https://travelteam.vn/tin-tuc-sang-16-11-trung-tam-tai-chinh-quoc-te-tphcm-ra-mat-hoc-vien-dao-tao-nhan-luc-20480.html",
+      "https://travelteam.vn/tin-tuc-the-gioi-16-11-jensen-huang-tro-lai-lam-ceo-nvidia-ly-do-estonia-dong-bien-gioi-voi-nga-20479.html",
+      "https://travelteam.vn/viet-nam-se-du-tuan-le-cap-cao-apec-2026-voi-tam-the-chu-nha-apec-2027-20478.html",
+      "https://travelteam.vn/40-tieng-sau-khi-my-dung-bay-toan-quoc-ong-trump-moi-len-tieng-tai-biden-20477.html",
+      "https://travelteam.vn/california-fitness-tiep-tuc-dong-cua-nhieu-ly-do-khien-phong-gym-lon-lao-dao-20476.html",
+      "https://travelteam.vn/ba-hoa-si-dua-ky-uc-que-huong-bac-trung-nam-vao-tranh-20475.html",
+      "https://travelteam.vn/ngoi-sao-malaysia-khien-du-luan-trung-quoc-phan-no-vi-sut-bong-vao-nguoi-doi-thu-20474.html",
+      "https://travelteam.vn/no-nuc-san-tour-gia-re-tai-hoi-cho-du-lich-lon-nhat-trong-nam-11534.html",
+      "https://travelteam.vn/khai-mac-mua-du-lich-thai-nguyen-ho-tren-nui-tra-trong-may-11533.html",
+      "https://travelteam.vn/miet-vuon-hut-khach-dip-he-11528.html",
+      "https://travelteam.vn/khach-tay-cam-que-xien-ga-di-tim-thung-rac-suot-mot-tieng-o-seoul-20469.html",
+      "https://travelteam.vn/bao-my-tiet-lo-nhung-bai-bien-dep-nhat-viet-nam-20466.html",
+      "https://travelteam.vn/thanh-pho-duy-nhat-o-viet-nam-lot-top-diem-den-the-gioi-mua-cuoi-nam-20450.html",
+      "https://travelteam.vn/bo-viec-ngan-hang-vo-cung-chong-gay-dung-quan-mi-duoc-michelin-vinh-danh-6-nam-20458.html",
+      "https://travelteam.vn/dac-san-nao-thuong-co-trong-mam-co-phu-tho-nho-co-qua-chanh-de-goi-phan-20436.html",
+      "https://travelteam.vn/dac-san-nao-o-phu-tho-khong-nuoi-van-co-tuom-dau-nhu-mo-lon-20379.html",
+      "https://travelteam.vn/cam-150000-dong-kham-pha-am-thuc-hue-thuong-thuc-no-ne-5-7-mon-ngon-20327.html",
+      "https://travelteam.vn/dac-san-do-lu-mang-huong-vi-nui-rung-o-lao-cai-cho-3-ngay-moi-duoc-thuong-thuc-20316.html",
+      "https://travelteam.vn/mua-dac-san-khau-nhuc-lang-son-nhan-ve-cuc-xuong-chan-gio-19750.html",
+      "https://travelteam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-nhan-huan-chuong-cao-quy-nhat-cua-dan-mach-19765.html",
+      "https://travelteam.vn/ceo-nvidia-jensen-huang-thua-nhan-ngoai-tinh-nu-doanh-nhan-alice-huang-la-ai-20294.html",
+      "https://travelteam.vn/da-nang-thong-qua-nghi-quyet-ve-sap-xep-don-vi-hanh-chinh-cap-xa-19785.html",
+      "https://travelteam.vn/mo-phong-phuong-an-hop-long-vom-thep-nhip-cau-di-bo-qua-song-sai-gon-nang-3400-tan-19789.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

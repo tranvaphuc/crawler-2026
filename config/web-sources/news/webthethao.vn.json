@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "siteName": "webthethao.vn",
+  "siteId": "webthethao.vn",
+  "registrableDomain": "webthethao.vn",
+  "homepage": "https://webthethao.vn/",
+  "allowedHosts": [
+    "webthethao.vn",
+    "www.webthethao.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "HLV Phan Quốc Vinh: “Cúp Chiến thắng là động lực để những người làm thể thao tiếp tục cống hiến”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:57.251Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://webthethao.vn/bai-viet/hlv-phan-quoc-vinh-cup-chien-thang-dong-luc-nguoi-lam-the-thao-cong-hien-ART-209264",
+      "https://webthethao.vn/bai-viet/hlv-nguyen-nhu-cuong-nguyen-thi-tam-da-la-nha-vo-dich-tuyet-doi-trong-long-toi-ART-209266",
+      "https://webthethao.vn/bai-viet/gen-g-danh-bai-ig-3-0-vao-chung-ket-cktg-2026-ART-209445",
+      "https://webthethao.vn/bai-viet/bien-phong-mb-di-vao-lich-su-voi-3-lan-lien-tiep-vo-dich-quoc-gia-ART-209444",
+      "https://webthethao.vn/bai-viet/nhung-khoanh-khac-nghet-tho-trong-tran-chung-ket-bien-phong-mb-bao-ve-ngoi-vuong-ART-209443"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://webthethao.vn/",
+    "categories": [
+      "https://webthethao.vn/cup-chien-thang",
+      "https://webthethao.vn/bong-da",
+      "https://webthethao.vn/bong-chuyen",
+      "https://webthethao.vn/bo-mon/bong-da/quoc-te",
+      "https://webthethao.vn/giai-dau/dai-hoi-the-thao-toan-quoc",
+      "https://webthethao.vn/nhan-dinh",
+      "https://webthethao.vn/esports",
+      "https://webthethao.vn/bong-ro",
+      "https://webthethao.vn/pickleball",
+      "https://webthethao.vn/giai-dau/asiad",
+      "https://webthethao.vn/giai-dau/nuc",
+      "https://webthethao.vn/cau-long",
+      "https://webthethao.vn/bong-ban",
+      "https://webthethao.vn/tennis",
+      "https://webthethao.vn/fitness",
+      "https://webthethao.vn/vo-thuat",
+      "https://webthethao.vn/bo-mon",
+      "https://webthethao.vn/highlight"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?webthethao.vn/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "webthethao.vn",
+    "checkedAt": "2026-11-09T03:57:39.462Z",
+    "url": "https://webthethao.vn/bai-viet/hlv-phan-quoc-vinh-cup-chien-thang-dong-luc-nguoi-lam-the-thao-cong-hien-ART-209264",
+    "finalUrl": "https://webthethao.vn/bai-viet/hlv-phan-quoc-vinh-cup-chien-thang-dong-luc-nguoi-lam-the-thao-cong-hien-ART-209264",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4196,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "webthethao.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 42,
+    "checkedArticleUrls": 49,
+    "freshArticleChecks": 42,
+    "parserIssues": 7,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 42,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 13,
+    "categoriesUnconfirmed": 13,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 205,
+        "passed": 42,
+        "distinctHashes": 42
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "content_integrity_review": 7
+    },
+    "checkedAt": "2026-11-10T09:18:31.156Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/webthethao.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

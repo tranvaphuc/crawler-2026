@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruongtaichinhtiente.vn",
+  "siteId": "thitruongtaichinhtiente.vn",
+  "registrableDomain": "thitruongtaichinhtiente.vn",
+  "homepage": "https://thitruongtaichinhtiente.vn/",
+  "allowedHosts": [
+    "thitruongtaichinhtiente.vn",
+    "www.thitruongtaichinhtiente.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn Hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".c-news-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Gần 2.500 vận động viên quốc tế đến từ gần 70 quốc gia tham gia giải Standard Chartered Marathon Di sản Hà Nội 2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".b-maincontent",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "Thượng tôn Hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-news-detail .entry",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:51:58.708Z",
+        "trainingUrls": [
+          "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-viet-nam-ban-hanh-quy-dinh-ve-trinh-tu-thu-tuc-giam-sat-hoat-dong-phong-chong-rua-tien-86907.html",
+          "https://thitruongtaichinhtiente.vn/ford-viet-nam-trien-khai-chuong-trinh-mua-xe-tang-vang-voi-hon-100-giai-thuong-vang-9999-86900.html",
+          "https://thitruongtaichinhtiente.vn/thi-truong-chung-khoan-cuoi-nam-dong-tien-than-trong-cho-nhip-moi-86922.html"
+        ],
+        "holdoutUrls": [
+          "https://thitruongtaichinhtiente.vn/ngay-10-11-ty-gia-trung-tam-giam-10-dong-86927.html",
+          "https://thitruongtaichinhtiente.vn/thi-truong-trai-phieu-kho-bac-huy-dong-gan-366-000-ty-dong-ngan-hang-dan-dat-phat-hanh-tpdn-86917.html"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Thượng tôn Hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry.longform",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:51:58.708Z",
+        "holdoutUrls": [
+          "https://thitruongtaichinhtiente.vn/kinh-te-viet-nam-9-thang-nam-2026-dat-9-01-cao-nhat-trong-15-nam-qua-86182.html",
+          "https://thitruongtaichinhtiente.vn/giam-doc-dieu-hanh-edelman-viet-nam-niem-tin-la-loi-the-canh-tranh-cua-doanh-nghiep-trong-ky-nguyen-moi-85622.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:37.226Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thitruongtaichinhtiente.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-86880.html",
+      "https://thitruongtaichinhtiente.vn/cong-dien-cua-thu-tuong-chinh-phu-ve-viec-chu-dong-ung-pho-voi-mua-lon-lu-ngap-lut-lu-quet-sat-lo-dat-tai-khu-vuc-trung-bo-86876.html",
+      "https://thitruongtaichinhtiente.vn/gan-2-500-van-dong-vien-quoc-te-den-tu-gan-70-quoc-gia-tham-gia-giai-standard-chartered-marathon-di-san-ha-noi-2026-86883.html",
+      "https://thitruongtaichinhtiente.vn/huong-ung-ngay-phap-luat-viet-nam-2026-doi-moi-tu-duy-xay-dung-va-to-chuc-thi-hanh-phap-luat-86881.html",
+      "https://thitruongtaichinhtiente.vn/ngan-hang-dong-hanh-tiep-suc-doanh-nghiep-tinh-khanh-hoa-phat-trien-86879.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thitruongtaichinhtiente.vn/",
+    "categories": [
+      "https://thitruongtaichinhtiente.vn/hoat-dong-ngan-hang",
+      "https://thitruongtaichinhtiente.vn/thi-truong",
+      "https://thitruongtaichinhtiente.vn/dien-dan-tai-chinh-tien-te",
+      "https://thitruongtaichinhtiente.vn/phap-luat-nghiep-vu",
+      "https://thitruongtaichinhtiente.vn/nhin-ra-the-gioi",
+      "https://thitruongtaichinhtiente.vn/cong-nghe",
+      "https://thitruongtaichinhtiente.vn/ket-noi",
+      "https://thitruongtaichinhtiente.vn/van-hoa"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thitruongtaichinhtiente.vn",
+    "checkedAt": "2026-11-09T03:57:31.289Z",
+    "url": "https://thitruongtaichinhtiente.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-86880.html",
+    "finalUrl": "https://thitruongtaichinhtiente.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-86880.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12510,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thitruongtaichinhtiente.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "deep_samples_verified",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 38,
+    "freshArticleChecks": 30,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 38,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 2,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 233,
+        "passed": 38,
+        "distinctHashes": 38
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:12:23.620Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/thitruongtaichinhtiente.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/thitruongtaichinhtiente.vn.json",
+    "configBeforeSha256": "2aa35bb0df2b89796cbc9077a23b3e6b10942ff6591d1f436c58573546d07d01",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  }
+}

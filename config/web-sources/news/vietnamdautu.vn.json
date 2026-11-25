@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnamdautu.vn",
+  "siteId": "vietnamdautu.vn",
+  "registrableDomain": "vietnamdautu.vn",
+  "homepage": "https://vietnamdautu.vn/",
+  "allowedHosts": [
+    "vietnamdautu.vn",
+    "www.vietnamdautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vietnamdautu.vn/",
+    "categories": [
+      "https://vietnamdautu.vn/tieu-diem/",
+      "https://vietnamdautu.vn/ngan-hang/",
+      "https://vietnamdautu.vn/bat-dong-san/",
+      "https://vietnamdautu.vn/chung-khoan/",
+      "https://vietnamdautu.vn/nong-nghiep/",
+      "https://vietnamdautu.vn/cong-nghe/"
+    ]
+  },
+  "title": {
+    "value": "VIB Privilege Banking đưa khách hàng nhìn lại câu chuyện mỹ thuật thời Đổi mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:26.701Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:21.952Z",
+    "independentHoldouts": [
+      "https://vietnamdautu.vn/thanh-toan-so-tu-cua-ngo-den-chieu-sau-tai-chinh-toan-dien-d6275.html",
+      "https://vietnamdautu.vn/khoi-thong-dong-von-tin-dung-phat-trien-tiem-nang-kinh-te-bien-o-khanh-hoa-d6281.html",
+      "https://vietnamdautu.vn/cong-bo-10-thanh-vien-dau-tien-cua-trung-tam-tai-chinh-quoc-te-viet-nam-tai-tp-ho-chi-minh-d6665.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vietnamdautu.vn/vib-privilege-banking-dua-khach-hang-nhin-lai-cau-chuyen-my-thuat-thoi-doi-moi-d6416.html",
+      "https://vietnamdautu.vn/thanh-toan-so-tu-cua-ngo-den-chieu-sau-tai-chinh-toan-dien-d6275.html",
+      "https://vietnamdautu.vn/khoi-thong-dong-von-tin-dung-phat-trien-tiem-nang-kinh-te-bien-o-khanh-hoa-d6281.html",
+      "https://vietnamdautu.vn/cong-bo-10-thanh-vien-dau-tien-cua-trung-tam-tai-chinh-quoc-te-viet-nam-tai-tp-ho-chi-minh-d6665.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import {gzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+import {DatabaseSync} from 'node:sqlite';
+const base='/opt/news-flow/current',root='/var/lib/news-flow/qc-public24-20261123',imp=p=>import('file://'+base+'/'+p),sha=x=>createHash('sha256').update(x).digest('hex');
+const {loadNewsRegistry}=await imp('src/newsFlow/registry.mjs'),{NewsHttpDriver,NewsProxyPool}=await imp('src/newsFlow/transport.mjs'),{NewsNetworkPool}=await imp('src/newsFlow/networkPool.mjs'),{NewsRepairPool}=await imp('src/web/newsRepairPool.mjs'),{createNewsResearchTransport}=await imp('src/web/newsResearchTransport.mjs'),{parsePublicPublicationFeed}=await imp('src/web/newsDateContext.mjs'),{discoverNewsLinks,learnNewsConfig}=await imp('src/web/configurableNewsParser.mjs'),{currentAuditGate}=await imp('scripts/news_current_audit_gate.mjs'),{toEs5News}=await imp('src/newsFlow/identity.mjs');
+const registry=await loadNewsRegistry(),site='tieudungso.vn',source=registry.sources.get(site),file=base+'/config/web-sources/news/'+site+'.json',fileText=fs.readFileSync(file,'utf8'),db=new DatabaseSync('/var/lib/news-flow/news-flow-runtime/write.sqlite',{readOnly:true}),network=new NewsNetworkPool({workers:2}),parsers=new NewsRepairPool(2,new URL('file://'+base+'/src/web/newsDeepAuditWorker.mjs')),pool=await NewsProxyPool.load('/etc/news-flow/proxies.json',{rotation:'request'}),driver=new NewsHttpDriver({state:{cacheResponses:false,failedUrl:()=>false,request:()=>null,reserve:()=>true,cache:()=>null,completeHttpResponse:()=>{}},network,pool,allowedDomains:registry.allowedDomains,siteCooldown:false,maxWireRequests:30});
+let config={...source.config,enabled:true,nativePublicationAdapter:'declared_wordpress_post',http:{...source.config.http,maxConcurrentArticles:1}};delete config.originalPublicationBlockedReason;
+const r={at:new Date().toISOString(),site,file,fileText,fileSha:sha(fileText),overlay:db.prepare('SELECT * FROM parser_overlays WHERE site=?').get(site)||null,pages:[],config,aiUsage:db.prepare('SELECT * FROM ai_usage ORDER BY day').all()},save=()=>fs.writeFileSync(root+'/tieudungso-qualified.json',JSON.stringify(r,null,2)),evidence=html=>{const file=root+'/evidence/'+sha(html)+'.gz';fs.writeFileSync(file,gzipSync(html));return file;};
+try{
+ const seed=await driver.get('qc24-qualify-home',config.homepage,config,[],{reviewFailed:true,taskRole:'seed'}),links=seed.html&&!seed.error?discoverNewsLinks(seed.html,seed.finalUrl||config.homepage,{domain:site,allowedHosts:config.allowedHosts,legacy:{}}).articles:[];
+ r.seed={url:config.homepage,statusCode:seed.statusCode,error:seed.error,links:links.length,checkedAt:Date.now(),file:seed.html?evidence(seed.html):null};
+ const feed=await driver.get('qc24-qualify-feed','https://tieudungso.vn/feed/',config,[],{reviewFailed:true,taskRole:'publication_feed'});r.feed={error:feed.error,file:feed.html?evidence(feed.html):null};const feedItems=feed.html&&!feed.error?parsePublicPublicationFeed(feed.html,'https://tieudungso.vn/feed/').items:[];
+ const urls=[...new Set([...links.map(p=>p.url),...feedItems.map(p=>p.url),...(config.validation?.sampleUrls||[])])];
+ for(const url of urls.slice(0,15)){
+  const transport=createNewsResearchTransport({nativePublicationAdapter:config.nativePublicationAdapter,taskRole:'article',persistEvidence:false,baseTransport:driver.forCycle('qc24-qualify-native-'+r.pages.length,config,{reviewFailed:true,taskRole:'article'})}),p=await transport.get(url,null,'qualify'),o={url,error:p.error,statusCode:p.statusCode,sourceApiUrl:p.sourceApiUrl,checkedAt:Date.now(),phase:r.pages.filter(p=>p.doc).length<3?'training':'holdout'};
+  if(!p.error&&p.html){
+   let a=currentAuditGate(await parsers.run({sample:{domain:site,url,html:p.html,kind:'article'},config,learn:false}),config,registry);
+   if(!r.pages.length&&(a.error||a.quality?.length)){const learned=learnNewsConfig(p.html,url,{domain:site,url:config.homepage,registrableDomain:config.registrableDomain,timezone:config.timezone,legacy:{}},{});if(learned.config){for(const k of ['title','body','description','publishedDate'])if(learned.config[k])config[k]=learned.config[k];config.variants=[];}r.frozenAt=new Date().toISOString();a=currentAuditGate(await parsers.run({sample:{domain:site,url,html:p.html,kind:'article'},config,learn:false}),config,registry);}
+   o.file=evidence(p.html);o.error=a.error;o.quality=a.quality;o.fields=a.fields;o.publicationProof=a.parsed?.extracted.publicationProof;
+   if(!a.error&&!a.quality?.length){o.doc=toEs5News(a.parsed,config);o.contentHash=a.parsed.extracted.contentSha256;o.outsideCurrentWindow=Date.parse(o.doc._source.publishedDate)<Date.now()-86400000;}
+  }
+  r.pages.push(o);save();console.log(JSON.stringify({url,error:o.error,quality:o.quality,verified:!!o.doc,date:o.doc?._source.publishedDate,phase:o.phase,expired:o.outsideCurrentWindow}));if(r.pages.filter(p=>p.doc).length>=7)break;
+ }
+ const good=r.pages.filter(p=>p.doc);r.approved=good.length>=5&&good.filter(p=>p.phase==='holdout').length>=2&&new Set(good.map(p=>p.contentHash)).size===good.length;r.config=config;r.finishedAt=new Date().toISOString();save();console.log(JSON.stringify({approved:r.approved,good:good.length,current:good.filter(p=>!p.outsideCurrentWindow).length,overlay:!!r.overlay}));
+}finally{db.close();await parsers.close();await network.close();}

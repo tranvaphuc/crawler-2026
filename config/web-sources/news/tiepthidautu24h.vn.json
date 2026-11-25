@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tiepthidautu24h.vn",
+  "siteId": "tiepthidautu24h.vn",
+  "registrableDomain": "tiepthidautu24h.vn",
+  "homepage": "https://tiepthidautu24h.vn/",
+  "allowedHosts": [
+    "tiepthidautu24h.vn",
+    "www.tiepthidautu24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tiepthidautu24h.vn/",
+    "categories": [
+      "https://tiepthidautu24h.vn/thi-truong-tieu-dung.html",
+      "https://tiepthidautu24h.vn/van-hoa-giao-duc.html",
+      "https://tiepthidautu24h.vn/cong-nghe-xe.html",
+      "https://tiepthidautu24h.vn/suc-khoe-doi-song.html",
+      "https://tiepthidautu24h.vn/giai-tri-the-thao.html",
+      "https://tiepthidautu24h.vn/du-lich-am-thuc.html",
+      "https://tiepthidautu24h.vn/thoi-trang-lam-dep.html",
+      "https://tiepthidautu24h.vn/tin-tuc-the-gioi.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Franklin Asia Showcase 3 quy tụ dàn sao pickleball quốc tế, hé lộ sản phẩm mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date_social",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".the-content.desc",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:57.991Z",
+    "frozenAt": "2026-11-16T01:59:55.519Z",
+    "trainingUrl": "http://tiepthidautu24h.vn/franklin-asia-showcase-3-quy-tu-dan-sao-pickleball-quoc-te-he-lo-san-pham-moi.html",
+    "independentHoldouts": [
+      "https://tiepthidautu24h.vn/de-xuat-huong-dan-thuc-hien-chuong-trinh-ho-tro-kinh-doanh-ben-vung.html",
+      "https://tiepthidautu24h.vn/ngan-hang-nha-nuoc-yeu-cau-he-thong-chu-dong-ung-pho-tan-cong-mang.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "http://tiepthidautu24h.vn/franklin-asia-showcase-3-quy-tu-dan-sao-pickleball-quoc-te-he-lo-san-pham-moi.html",
+      "https://tiepthidautu24h.vn/de-xuat-huong-dan-thuc-hien-chuong-trinh-ho-tro-kinh-doanh-ben-vung.html",
+      "https://tiepthidautu24h.vn/ngan-hang-nha-nuoc-yeu-cau-he-thong-chu-dong-ung-pho-tan-cong-mang.html",
+      "https://tiepthidautu24h.vn/thong-tu-50/2026-thuoc-do-moi-ho-tro-ngan-hang-co-nen-tang-tot-hon.html",
+      "https://tiepthidautu24h.vn/viet-nam-co-mot-quy-tu-thien-sap-duoc-tang-so-co-phieu-tri-gia-gan-4-ty-dong.html",
+      "https://tiepthidautu24h.vn/co-hoi-cho-doanh-nghiep-chau-a-tai-dinh-hinh-cach-ung-dung-ai.html",
+      "https://tiepthidautu24h.vn/no-cong-cua-phap-dang-keo-dong-euro-xuong-gia-bong-ma-khung-hoang-no-chau-au-co-tro-lai-.html",
+      "https://tiepthidautu24h.vn/fed-tien-gan-quyet-dinh-tang-lai-suat-con-so-quan-trong-duoc-cong-bo-vao-tuan-sau-se-la-phan-quyet-cuoi-cung.html",
+      "https://tiepthidautu24h.vn/huyen-thoai-warren-buffett-khang-dinh-1-nguyen-tac-dau-tu-lam-nen-thanh-cong-suot-60-nam-lich-su-chung-minh-da-dung.html",
+      "https://tiepthidautu24h.vn/hon-700-gian-hang-tu-hon-500-doanh-nghiep-hang-dau-trong-va-ngoai-nuoc-tham-gia-trien-lam-vietnam-foodexpo-2026.html",
+      "https://tiepthidautu24h.vn/san-khuyen-mai-chua-chac-da-tiet-kiem-di-cho-sao-cho-vua-kheo-vua-ngon-.html",
+      "https://tiepthidautu24h.vn/herbalife-viet-nam-vinh-du-nhan-giai-thuong-top-10-cong-ty-thuc-pham-uy-tin-nam-thu-sau-lien-tiep.html",
+      "https://tiepthidautu24h.vn/khoa-hoc-mo-khoa-nguon-duong-chat-tu-hat.html",
+      "https://tiepthidautu24h.vn/chon-so-chuan-doanh-nghiep-voi-kho-so-dep-skyx.html",
+      "https://tiepthidautu24h.vn/qualcomm-cong-bo-ket-qua-chung-ket-cuoc-thi-thu-thach-doi-moi-sang-tao-qualcomm-viet-nam-qvic-2026.html",
+      "https://tiepthidautu24h.vn/tong-thong-myanmar-tham-nha-may-vinfast-hai-phong.html",
+      "https://tiepthidautu24h.vn/samsung-galaxy-s26-fe-mang-den-trai-nghiem-flagship-moi-nhat-tap-trung-gia-tri-thiet-yeu-cho-nguoi-dung.html",
+      "https://tiepthidautu24h.vn/m-riverside-danang-tuyen-ngon-vi-the-danh-gia-ben-song-han.html",
+      "https://tiepthidautu24h.vn/tu-cong-trinh-cong-dong-den-to-am-rieng-kts-hoang-thuc-hao-xay-dung-khong-gian-song-sau-sac-bang-mau-son-va-do-thu-cong-.html",
+      "https://tiepthidautu24h.vn/chuyen-gi-se-xay-ra-voi-bat-dong-san-phia-tay-tp-ho-chi-minh-khi-hanh-lang-cao-toc-dong-tay-duoc-khep-kin-.html",
+      "https://tiepthidautu24h.vn/giai-ba-mon-phoi-hop-ironman-70-3-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long.html",
+      "https://tiepthidautu24h.vn/sinh-vien-nguyen-tat-thanh-dua-ai-iot-vao-giai-quyet-bai-toan-doi-song.html",
+      "https://tiepthidautu24h.vn/tuoi-tre-hanh-dong-vi-nhung-thanh-pho-dang-song-phat-dong-cuoc-thi-di-bo-online-lien-tinh-tai-khu-vuc-dong-bang-song-cuu-long-nam-2026.html",
+      "https://tiepthidautu24h.vn/tham-nha-nam-sinh-thi-dh-diem-cao-thu-khoa-mon-vat-ly-toi-phat-hien-gia-dinh-co-1-dac-diem-nay-tre-lon-len-rat-de-xuat-chung.html",
+      "https://tiepthidautu24h.vn/herbalife-viet-nam-tro-thanh-nha-tai-tro-kim-cuong-cho-giai-chay-vnexpress-marathon-grand-tour-nghe-an-2026.html",
+      "https://tiepthidautu24h.vn/thuc-pham-nao-chua-nhieu-muoi-nhung-lai-khong-co-vi-man-.html",
+      "https://tiepthidautu24h.vn/10-nam-thu-vien-toc-bcnv-tu-mot-mai-toc-duoc-trao-di-den-mot-mang-luoi-dong-hanh-cung-nguoi-benh-ung-thu.html",
+      "https://tiepthidautu24h.vn/herbalife-cong-bo-ket-qua-khao-sat-ve-van-hoa-song-khoe-manh-tai-khu-vuc-chau-a-thai-binh-duong-2026.html",
+      "https://tiepthidautu24h.vn/hang-viet-khang-dinh-vi-the-ghi-nhan-nhieu-tin-hieu-tich-cuc-tai-hoi-cho-ciie-2026.html",
+      "https://tiepthidautu24h.vn/herbalife-viet-nam-duoc-xep-hang-top-30-doanh-nghiep-van-hoa-uy-tin-boi-lien-doan-thuong-mai-va-cong-nghiep-viet-nam-nam-thu-hai-lien-tiep.html",
+      "https://tiepthidautu24h.vn/cellovita-swiss-longevity-clinic-huong-den-mo-hinh-cham-soc-suc-khoe-ca-nhan-hoa-theo-tieu-chuan-thuy-si.html",
+      "https://tiepthidautu24h.vn/giai-thuong-danh-gia-danh-cho-helencare-tai-dien-dan-kinh-te-toan-cau-gef-2026.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

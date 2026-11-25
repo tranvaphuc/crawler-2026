@@ -1,0 +1,85 @@
+{
+  "provenance": "Minimal structural projection of anonymous live hero response observed 2026-10-26; post/actor IDs and creation-story relation retained, no captured authentication or post/comment bodies.",
+  "url": "https://www.facebook.com/61566087015185/posts/122104480808536233/",
+  "expected": {
+    "id": "61566087015185_122104480808536233",
+    "isShare": false
+  },
+  "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_observed",
+  "chunks": [
+    {
+      "data": {
+        "video": {
+          "id": "1114206894866768",
+          "story": {
+            "id": "UzpfSTYxNTY2MDg3MDE1MTg1OlZLOjExMTQyMDY4OTQ4NjY3Njg=",
+            "attachments": [
+              {
+                "media": {
+                  "__typename": "Video",
+                  "id": "1114206894866768",
+                  "permalink_url": "https://www.facebook.com/reel/1114206894866768/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": [
+        "video",
+        "story"
+      ],
+      "data": {
+        "attachments": [
+          {
+            "media": {
+              "__typename": "Video",
+              "id": "1114206894866768",
+              "creation_story": {
+                "id": "UzpfSTYxNTY2MDg3MDE1MTg1OlZLOjExMTQyMDY4OTQ4NjY3Njg=",
+                "attachments": [
+                  {}
+                ],
+                "comet_sections": {
+                  "title": {
+                    "__typename": "CometFeedStoryTitleWithActorStrategy",
+                    "story": {
+                      "id": "UzpfSTYxNTY2MDg3MDE1MTg1OlZLOjExMTQyMDY4OTQ4NjY3Njg=",
+                      "post_id": "122104480808536233",
+                      "actors": [
+                        {
+                          "__typename": "User",
+                          "id": "61566087015185",
+                          "name": "Nguyen Anh",
+                          "url": "https://www.facebook.com/people/Nguyen-Anh/61566087015185/"
+                        }
+                      ],
+                      "comet_sections": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": [
+        "video",
+        "story",
+        "attachments",
+        0,
+        "media"
+      ],
+      "data": {
+        "id": "1114206894866768",
+        "creation_story": {
+          "id": "UzpfSTYxNTY2MDg3MDE1MTg1OlZLOjExMTQyMDY4OTQ4NjY3Njg="
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieungaynay.vn",
+  "siteId": "thuonghieungaynay.vn",
+  "registrableDomain": "thuonghieungaynay.vn",
+  "homepage": "https://thuonghieungaynay.vn/",
+  "allowedHosts": [
+    "thuonghieungaynay.vn",
+    "www.thuonghieungaynay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thuonghieungaynay.vn/",
+    "categories": [
+      "https://thuonghieungaynay.vn/category/tin-tuc-su-kien",
+      "https://thuonghieungaynay.vn/category/tin-tuc-su-kien/tin-trong-nuoc",
+      "https://thuonghieungaynay.vn/category/tin-tuc-su-kien/tin-quoc-te",
+      "https://thuonghieungaynay.vn/category/tin-tuc-su-kien/van-de-quan-tam",
+      "https://thuonghieungaynay.vn/category/tin-tuc-su-kien/nhin-ra-the-gioi",
+      "https://thuonghieungaynay.vn/category/thuong-hieu"
+    ]
+  },
+  "title": {
+    "value": "Sữa công thức trẻ em Vinamilk Optimum Gold được vinh danh tại lễ trao giải Thương hiệu Thế giới 2026 – 2027",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:19.580Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:13.868Z",
+    "independentHoldouts": [
+      "https://thuonghieungaynay.vn/vinamilk-gia-nhap-lien-minh-niem-tin-so-chung-tay-bao-ve-tre-em-tren-moi-truong-mang.html",
+      "https://thuonghieungaynay.vn/dieu-gi-giup-mot-thuong-hieu-van-giu-duoc-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he.html",
+      "https://thuonghieungaynay.vn/truyen-thong-my-bat-ngo-tuyen-bo-nga-chien-thang.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thuonghieungaynay.vn/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-tai-le-trao-giai-thuong-hieu-the-gioi-2026-2027.html",
+      "https://thuonghieungaynay.vn/vinamilk-gia-nhap-lien-minh-niem-tin-so-chung-tay-bao-ve-tre-em-tren-moi-truong-mang.html",
+      "https://thuonghieungaynay.vn/dieu-gi-giup-mot-thuong-hieu-van-giu-duoc-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he.html",
+      "https://thuonghieungaynay.vn/truyen-thong-my-bat-ngo-tuyen-bo-nga-chien-thang.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

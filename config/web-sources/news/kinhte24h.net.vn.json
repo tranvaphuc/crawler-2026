@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "kinhte24h.net.vn",
+  "siteId": "kinhte24h.net.vn",
+  "registrableDomain": "kinhte24h.net.vn",
+  "homepage": "https://kinhte24h.net.vn/",
+  "allowedHosts": [
+    "kinhte24h.net.vn",
+    "www.kinhte24h.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://kinhte24h.net.vn/",
+    "categories": [
+      "https://kinhte24h.net.vn/c/tin-tuc",
+      "https://kinhte24h.net.vn/c/kinh-te",
+      "https://kinhte24h.net.vn/c/doanh-nhan-doanh-nghiep",
+      "https://kinhte24h.net.vn/c/doi-song",
+      "https://kinhte24h.net.vn/video",
+      "https://kinhte24h.net.vn/photo",
+      "https://kinhte24h.net.vn/infographic",
+      "https://kinhte24h.net.vn/emagazine",
+      "https://kinhte24h.net.vn/thong-tin-giay-phep"
+    ]
+  },
+  "title": {
+    "value": "Dư nợ bất động sản tại VIB gấp 3,3 lần sau một năm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "head meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "precision": "second",
+    "timezone": "explicit_offset"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:02:38.916Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:02:28.782Z",
+    "independentHoldouts": [
+      "https://kinhte24h.net.vn/gia-heo-sut-giam-loat-ong-lon-chan-nuoi-bao-loi-nhuan-di-lui-a3374.html",
+      "https://kinhte24h.net.vn/cac-tap-doan-xay-dung-han-quoc-mo-rong-dau-tu-phat-trien-dai-do-thi-tai-viet-nam-a3373.html",
+      "https://kinhte24h.net.vn/hodeco-loi-nhuan-lao-doc-tien-mat-can-kiet-dong-tien-kinh-doanh-am-trien-mien-a3372.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://kinhte24h.net.vn/du-no-bat-dong-san-tai-vib-gap-33-lan-sau-mot-nam-a3220.html",
+      "https://kinhte24h.net.vn/gia-heo-sut-giam-loat-ong-lon-chan-nuoi-bao-loi-nhuan-di-lui-a3374.html",
+      "https://kinhte24h.net.vn/cac-tap-doan-xay-dung-han-quoc-mo-rong-dau-tu-phat-trien-dai-do-thi-tai-viet-nam-a3373.html",
+      "https://kinhte24h.net.vn/hodeco-loi-nhuan-lao-doc-tien-mat-can-kiet-dong-tien-kinh-doanh-am-trien-mien-a3372.html"
+    ],
+    "fullSiteCycleVerified": false,
+    "remaining36Qc": {
+      "checkedAt": "2026-11-22T02:39:00.902Z",
+      "originalClockPolicyUnchanged": true,
+      "verifiedUrls": [
+        "https://kinhte24h.net.vn/don-nguon-cung-them-11000-phong-khach-san-phu-quoc-doi-dien-bai-toan-hau-apec-a3420.html",
+        "https://kinhte24h.net.vn/ong-trum-nam-9-lo-dat-hon-96000-m2-tai-thu-thiem-co-phieu-co-bien-lon-khi-tphcm-tai-dau-gia-dat-a3418.html",
+        "https://kinhte24h.net.vn/loreal-viet-nam-dan-dau-ve-noi-lam-viec-tot-nhat-viet-nam-nam-2026-a3422.html",
+        "https://kinhte24h.net.vn/tphcm-mua-nha-10-nam-chua-duoc-o-nay-bi-de-nghi-tang-gia-gap-doi-a3421.html",
+        "https://kinhte24h.net.vn/mon-no-gan-1000-ty-dong-duoi-thoi-cuu-chu-tich-ocean-bank-ha-van-tham-dang-duoc-rao-ban-a3419.html",
+        "https://kinhte24h.net.vn/tphcm-dung-7-khu-dat-doi-ung-lam-cao-toc-ho-tram-long-thanh-a3404.html",
+        "https://kinhte24h.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-bi-thu-chu-tich-nuoc-trung-quoc-tap-can-binh-a3393.html",
+        "https://kinhte24h.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-den-trung-quoc-bat-dau-tham-du-tuan-le-cap-cao-apec-lan-thu-33-a3385.html"
+      ],
+      "freshIndependentUrls": [
+        "https://kinhte24h.net.vn/tphcm-dung-7-khu-dat-doi-ung-lam-cao-toc-ho-tram-long-thanh-a3404.html",
+        "https://kinhte24h.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-bi-thu-chu-tich-nuoc-trung-quoc-tap-can-binh-a3393.html",
+        "https://kinhte24h.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-den-trung-quoc-bat-dau-tham-du-tuan-le-cap-cao-apec-lan-thu-33-a3385.html"
+      ],
+      "report": "/var/lib/news-flow/qc-remaining36-20261122/verified-sources.json"
+    }
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "http": {
+    "maxConcurrentArticles": 1
+  }
+}

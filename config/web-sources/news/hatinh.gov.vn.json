@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hatinh.gov.vn",
+  "siteId": "hatinh.gov.vn",
+  "registrableDomain": "hatinh.gov.vn",
+  "homepage": "https://hatinh.gov.vn/vi/",
+  "allowedHosts": [
+    "hatinh.gov.vn",
+    "www.hatinh.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://hatinh.gov.vn/vi/",
+    "categories": [
+      "https://hatinh.gov.vn/vi/chuyen-muc/BDCB854D-C676-48A5-50DB-08DD5A66EB36",
+      "https://hatinh.gov.vn/vi/chuyen-muc/lich-su-hinh-thanh",
+      "https://hatinh.gov.vn/vi/chuyen-muc/5C206BF5-E87E-485A-0A0C-08DD9F24E2D2",
+      "https://hatinh.gov.vn/vi/chuyen-muc/co-cau-to-chuc",
+      "https://hatinh.gov.vn/vi/chuyen-muc/07F9077E-F33E-4F92-0A0D-08DD9F24E2D2",
+      "https://hatinh.gov.vn/vi/chuyen-muc/cong-dan"
+    ]
+  },
+  "title": {
+    "value": "Giá trị thương hiệu Việt tăng mạnh trong đại dịch",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[name=\"DC.Date.Issued\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:39.188Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:20.332Z",
+    "independentHoldouts": [
+      "https://hatinh.gov.vn/vi/bai-viet/huong-dan-nguoi-dan-nhan-400000-dong-tien-an-sinh-xa-hoi-dip-tet-nguyen-dan",
+      "https://hatinh.gov.vn/vi/bai-viet/cuoc-thi-diem-hen-phap-luat-2026-chinh-thuc-khoi-hanh-tu-0-gio-ngay-21102026",
+      "https://hatinh.gov.vn/vi/bai-viet/du-an-dau-tien-tai-gia-lach-mo-rong-se-cung-cap-gan-15000-m-nha-xuong-cho-thue"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://hatinh.gov.vn/vi/bai-viet/gia-tri-thuong-hieu-viet-tang-manh-trong-dai-dich",
+      "https://hatinh.gov.vn/vi/bai-viet/huong-dan-nguoi-dan-nhan-400000-dong-tien-an-sinh-xa-hoi-dip-tet-nguyen-dan",
+      "https://hatinh.gov.vn/vi/bai-viet/cuoc-thi-diem-hen-phap-luat-2026-chinh-thuc-khoi-hanh-tu-0-gio-ngay-21102026",
+      "https://hatinh.gov.vn/vi/bai-viet/du-an-dau-tien-tai-gia-lach-mo-rong-se-cung-cap-gan-15000-m-nha-xuong-cho-thue"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "fechtin.com",
+  "siteId": "fechtin.com",
+  "registrableDomain": "fechtin.com",
+  "homepage": "https://fechtin.com/",
+  "allowedHosts": [
+    "fechtin.com",
+    "www.fechtin.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://fechtin.com/",
+    "categories": [
+      "https://fechtin.com/tu-do-tai-chinh",
+      "https://fechtin.com/doc-doanh-nghiep",
+      "https://fechtin.com/blog"
+    ]
+  },
+  "title": {
+    "value": "AgriS công bố tài liệu ĐHĐCĐ: Đặt mục tiêu doanh thu 28.000 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".reader-body.text-zinc-800",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:17:06.242Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://fechtin.com/blog/mua-co-phieu-la-mua-doanh-nghiep",
+      "https://fechtin.com/blog/lai-suat-tiet-kiem-ngan-hang-2026"
+    ],
+    "improvedUrls": [
+      "https://fechtin.com/blog/thi-truong-chung-khoan-viet-nam",
+      "https://fechtin.com/blog/nguon-du-lieu-doanh-nghiep-viet",
+      "https://fechtin.com/blog/mo-hinh-kinh-doanh-loi-the-canh-tranh",
+      "https://fechtin.com/blog/mua-co-phieu-la-mua-doanh-nghiep",
+      "https://fechtin.com/blog/lai-suat-tiet-kiem-ngan-hang-2026"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://fechtin.com/news/agris-cong-bo-tai-lieu-dhdcd-dat-muc-tieu-doanh-thu-28-000-ty-dong-27840",
+      "https://fechtin.com/news/ttc-land-bi-xu-phat-vi-pham-hanh-chinh-do-cham-dang-ky-luu-ky-trai-phieu-29674",
+      "https://fechtin.com/news/sojitz-muon-chi-125-trieu-usd-mua-5-co-phan-masan-high-tech-materials-37138",
+      "https://fechtin.com/news/vib-bao-lai-9-thang-gan-7-600-ty-dong-toi-uu-chi-phi-van-hanh-hieu-qua-33812"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "AgriS công bố tài liệu ĐHĐCĐ: Đặt mục tiêu doanh thu 28.000 tỷ đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:16:00.607Z",
+        "trainingUrls": [
+          "https://fechtin.com/blog/thi-truong-chung-khoan-viet-nam",
+          "https://fechtin.com/blog/nguon-du-lieu-doanh-nghiep-viet",
+          "https://fechtin.com/blog/mo-hinh-kinh-doanh-loi-the-canh-tranh"
+        ],
+        "holdoutUrls": [
+          "https://fechtin.com/blog/mua-co-phieu-la-mua-doanh-nghiep",
+          "https://fechtin.com/blog/lai-suat-tiet-kiem-ngan-hang-2026"
+        ]
+      }
+    }
+  ]
+}

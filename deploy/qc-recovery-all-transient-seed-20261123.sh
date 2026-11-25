@@ -1,0 +1,14 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {DatabaseSync} from 'node:sqlite';
+import {loadNewsRegistry} from './src/newsFlow/registry.mjs';import {registerOriginalSources} from './src/newsFlow/baomoiOriginalBranch.mjs';import {ThreeFlowState} from './src/newsFlow/threeFlowState.mjs';import {seedTransientFailurePolicies,isConfiguredTransientSeedFailure} from './src/web/newsSeedTransientFailures.mjs';
+const root='/var/lib/news-flow/recovery-all-20261123',db=new DatabaseSync('/var/lib/news-flow/news-flow-runtime/write.sqlite'),state=new ThreeFlowState(db),registry=await loadNewsRegistry();registerOriginalSources(db,registry);state.loadOverlays(registry);db.exec('PRAGMA busy_timeout=10000');
+const site='dulich.thethaovanhoa.vn',source=registry.sources.get(site),old=db.prepare('SELECT * FROM parser_overlays WHERE site=?').get(site)||null,config={...source.config,discovery:{...source.config.discovery,retryTransientHttpStatuses:[...new Set([...(source.config.discovery?.retryTransientHttpStatuses||[]),503])]}};
+const policies=seedTransientFailurePolicies([{domain:site,config}]);assert(isConfiguredTransientSeedFailure(policies,site,'http_503'));assert(!isConfiguredTransientSeedFailure(policies,site,'http_403'));assert(!isConfiguredTransientSeedFailure(policies,site,'not_found'));
+const before={at:Date.now(),site,overlay:old,seeds:db.prepare('SELECT * FROM seed_sources WHERE site=?').all(site)};fs.writeFileSync(root+'/transient-seed-before.json',JSON.stringify(before,null,2));
+const text=JSON.stringify(config),revision=createHash('sha256').update(text).digest('hex');db.exec('BEGIN IMMEDIATE');try{assert.deepEqual(db.prepare('SELECT * FROM parser_overlays WHERE site=?').get(site)||null,old);db.prepare('INSERT INTO parser_overlays VALUES(?,?,?,?) ON CONFLICT(site) DO UPDATE SET config=excluded.config,revision=excluded.revision,verified_at=excluded.verified_at').run(site,text,revision,Date.now());db.prepare('INSERT INTO events(at,site,kind,details) VALUES(?,?,?,?)').run(Date.now(),site,'manual_transient_seed_policy',JSON.stringify({retryTransientHttpStatuses:[503],scope:'next_seed_cycle_only',articleFailuresUnchanged:true}));db.exec('COMMIT');}catch(e){db.exec('ROLLBACK');throw e;}
+source.config=config;state.configureSites(registry.sources.values());state.reopenSeedTimeouts();const result={site,revision,seeds:db.prepare('SELECT url,status,reason FROM seed_sources WHERE site=?').all(site),paidAiCalls:0};fs.writeFileSync(root+'/transient-seed-applied.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));state.close();
+NODE
+systemctl restart news-flow-seed.service
+systemctl is-active news-flow-seed.service news-flow-parse.service news-flow-import.service

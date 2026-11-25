@@ -1,0 +1,6 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import * as ch from 'cheerio';const root='/var/lib/news-flow/recovery-all-20261123',s=JSON.parse(fs.readFileSync(root+'/source-audit.json'));
+for(const site of ['cadn.com.vn','vnbiznews.com']){const xml=gunzipSync(fs.readFileSync(root+'/'+site+'-native-feed.gz')).toString(),$=ch.load(xml,{xmlMode:true}),a=s.sites.find(s=>s.site===site).articles.find(p=>p.file),page=ch.load(gunzipSync(fs.readFileSync(a.file)).toString());console.log(JSON.stringify({site,items:$('item').slice(0,3).map((i,e)=>({title:$(e).find('title').text(),url:$(e).find('link').text(),date:$(e).find('pubDate').text()})).get(),cadnArticleChildren:page('article.cadn-ct-post').children().map((i,e)=>({tag:e.tagName,class:page(e).attr('class'),chars:page(e).text().trim().length})).get(),cadnClock:page('article.cadn-ct-post span').filter((i,e)=>/\d{2}\/\d{2}\/\d{4}/.test(page(e).text())&&page(e).text().length<100).map((i,e)=>({html:page.html(e),parents:page(e).parents().toArray().slice(0,3).map(x=>({tag:x.tagName,class:page(x).attr('class')}))})).get()}));}
+NODE

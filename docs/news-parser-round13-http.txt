@@ -1,0 +1,27 @@
+NEWS AXIOS — REPAIR ROUND 13 — 10/11/2026
+
+Đã kiểm tra 350/350 nguồn qua 4761 lượt tải Axios ở hai đợt. Không browser, không queue, không ghi ES5.
+
+Kết quả cuối với đúng cấu hình đã lưu: 14 nguồn qua bộ mẫu kiểm tra lại; 336 nguồn còn lỗi hoặc cần xác nhận.
+
+Trong nhóm chưa đạt: 185 nguồn có ít nhất 3 bài khác nội dung và bài lấy từ category nhưng còn lỗi ở mẫu khác; 118 nguồn mới parse được một phần mẫu hoặc chưa xác nhận đủ category; 33 nguồn chưa có mẫu đạt do HTTP/parser.
+
+Tiêu chí đạt: homepage HTTP 200, category có bài parse đạt, >=3 bài khác nội dung, không lỗi ở toàn bộ mẫu lỗi cũ đã lưu và hợp các bài Axios đã thử trong cả hai đợt. Không lấy riêng kết quả tạm của candidate config.
+
+1243 kết quả bài Axios parse đạt sau audit. Thêm 13 variant ở 13 nguồn; mỗi variant có >=2 URL holdout độc lập và >=2 hash nội dung khác nhau. Những variant còn thiếu bằng chứng không được đưa vào cấu hình.
+
+Loại thêm 4 URL category khỏi cấu hình. Trên cùng tập URL lỗi benchmark cũ của 350 nguồn: bộ lọc trước nhận diện 2691 URL không phải bài; bộ lọc hiện tại 2806, tăng thêm 115. Đây không phải số bài đã thu thập.
+
+Sửa parser/lọc: semantic articleBody; loại bảng gợi ý bài có thumbnail/headline và iframe tracking; không lấy preview/card của trang danh sách; lọc native event/publisher/business directory; gộp alias category HTTP/HTTPS/www; WordPress HTML công khai đầy đủ không phụ thuộc API tùy chọn; timezone có nhãn rõ ràng; đối chiếu giờ đăng native cho video/longform CMS bị đảo tháng/ngày.
+
+Kiểm thử: 134/134 test đạt. Chạy lại 990 mẫu cũ với chính cấu hình canonical: 990 parse đạt, toàn bộ ID giữ nguyên. 13 mẫu có body thay đổi do bỏ gợi ý bài/tracking.
+
+Bốn mẫu tại nguoihanoi.vn và nhipsonghanoi.hanoimoi.vn được sửa ngày từ tháng 5/7/8 thành tháng 11 theo giờ đăng trên chính bài. ID không đổi, chỉ mục tuần thay đổi; phải đối soát master trước khi có bước ghi ES5. Bằng chứng: date-corrections-reconciliation-required.json. File này cũng dẫn tới 6 ca thay đổi ID đã ghi nhận ở Round12; chưa ghi dữ liệu nào.
+
+Đã cập nhật metadata/cấu hình của 350 nguồn trong vòng này; không đồng nghĩa với sửa riêng parser cho cả 350 nguồn. Kiểm tra đủ 544 cấu hình đều enabled:false.
+
+14 nguồn qua mẫu: anninhthudo.vn, 2sao.vn, baodauthau.vn, bazaarvietnam.vn, antt.vn, cand.vn, lifestyle.zingnews.vn, nhipsongkinhte.com, thuongtruong.com.vn, vietnammedia.vnanet.vn, vtcnews.vn, vtv.vn, vinanet.vn, xevathethao.vn.
+
+Chưa chạy lại toàn bộ URL của một vòng quét, chưa xác nhận thời hạn 15 phút. Lần này là lấy mẫu có giới hạn và replay HTML lỗi đã có.
+
+Chi tiết: summary.json; resolved-samples.json; remaining-sites.txt/json; remaining-error-groups.json; configuration-changes.json; delivery-verification.json; sites/<domain>/result.json.

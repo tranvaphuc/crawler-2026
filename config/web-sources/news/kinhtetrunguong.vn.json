@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtetrunguong.vn",
+  "siteId": "kinhtetrunguong.vn",
+  "registrableDomain": "cscltw.dcs.vn",
+  "homepage": "https://cscltw.dcs.vn/",
+  "allowedHosts": [
+    "kinhtetrunguong.vn",
+    "www.kinhtetrunguong.vn",
+    "cscltw.dcs.vn",
+    "www.cscltw.dcs.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "kinhtetrunguong.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article.article-new h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article.article-new > header .post-date"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.article-new .article-content",
+    "remove": "script,style,h1,related-content,.related,.box-related"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "discovery": {
+    "homepage": "https://cscltw.dcs.vn/",
+    "categories": []
+  },
+  "publisherMigration": {
+    "requestedDomain": "kinhtetrunguong.vn",
+    "canonicalPublisherHost": "cscltw.dcs.vn",
+    "verifiedAt": "2026-11-17T09:03:16.364Z"
+  },
+  "publicationEvidencePolicy": {
+    "kind": "user_confirmed_cscltw_visible_original_clock_20261117",
+    "authority": "explicit_user_confirmation",
+    "selector": "article.article-new > header .post-date"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T09:03:16.497Z",
+    "sampleUrls": [
+      "https://cscltw.dcs.vn/thoi-su/hoat-dong-cua-ban/truong-ban-chinh-sach-chien-luoc-trung-uong-nguyen-thanh-nghi-chu-tri-va-phat-bieu-chi-dao-tai-hoi-nghi-doi-thoai-chinh-.html",
+      "https://cscltw.dcs.vn/thoi-su/hoat-dong-cua-ban/pho-truong-ban-chinh-sach-chien-luoc-trung-uong-nguyen-kim-son-du-hoi-nghi-dai-doan-ket-toan-dan-toc-o-xa-quang-minh-ha-.html",
+      "https://cscltw.dcs.vn/kinh-te/kinh-te-nganh/tong-quan-muc-dich-yeu-cau-chinh-tri-va-boi-canh-trien-khai-nghi-quyet-so-57-nq-tw.html",
+      "https://cscltw.dcs.vn/thoi-su/hoat-dong-cua-ban/pho-truong-ban-chinh-sach-chien-luoc-trung-uong-nguyen-duc-hien-tiep-doan-cong-tac-cua-quy-tien-te-quoc-te-imf-.html",
+      "https://cscltw.dcs.vn/thoi-su/hoat-dong-cua-ban/hoi-nghi-lan-thu-nhat-ban-chi-dao-xay-dung-de-an-chien-luoc-quoc-gia-ve-nang-cao-nang-suat-chat-luong-nang-luc-canh-tran.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

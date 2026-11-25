@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kenhtinxe.com",
+  "siteId": "kenhtinxe.com",
+  "registrableDomain": "kenhtinxe.com",
+  "homepage": "https://kenhtinxe.com/",
+  "allowedHosts": [
+    "kenhtinxe.com",
+    "www.kenhtinxe.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "kenhtinxe.com",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article.post.hentry > h1.post-title"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "abbr[itemprop=\"datePublished\"]",
+    "attribute": "title",
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-body.entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container",
+    "removeExtra": "#related-posts,.list_tag_trend"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:15:30.948Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/toyota-innova-2027-facelift-sap-ra-mat-top-5-nang-cap-dang-mong-doi/84712",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/honda-avancier-7-cho-sap-ra-mat-ma-so-huu-thiet-ke-nhu-the-nay-anh-em-co-chot-don-khong-/84711",
+      "https://kenhtinxe.com/xe-moi/oto-moi/kia-k4-the-he-moi-chuan-bi-mo-ban-tai-dna-dung-dong-co-hybrid-dau-honda-civic/84713",
+      "https://kenhtinxe.com/danh-gia-xe/danh-gia-xe-oto-xe-may/thu-thuc-te-everest-23l-ecoboost-platinum-bo-chong-on-chu-dong-anc-thi-cach-am-gia-toc-ra-sao-/84710",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/mitsubishi-destinator-co-gi-de-canh-tranh-trong-phan-khuc-suv-gia-dinh-dong-nguoi-/84709",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/toyota-innova-2027-facelift-sap-ra-mat-top-5-nang-cap-dang-mong-doi/84712"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round6-http/sites/kenhtinxe.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://kenhtinxe.com/",
+    "categories": [
+      "https://kenhtinxe.com/tin-tuc-xe/1",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/1",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/1",
+      "https://kenhtinxe.com/tin-tuc-xe/giao-thong/1",
+      "https://kenhtinxe.com/tin-tuc-xe/giai-tri/1",
+      "https://kenhtinxe.com/tin-tuc-xe/cong-nghe/1",
+      "https://kenhtinxe.com/danh-gia-xe/1",
+      "https://kenhtinxe.com/danh-gia-xe/danh-gia-xe-oto-xe-may/1",
+      "https://kenhtinxe.com/danh-gia-xe/so-sanh-xe/1",
+      "https://kenhtinxe.com/tu-van-xe/1",
+      "https://kenhtinxe.com/tu-van-xe/goc-ky-thuat/1",
+      "https://kenhtinxe.com/tu-van-xe/hoi-dap/1",
+      "https://kenhtinxe.com/cong-dong-xe/1",
+      "https://kenhtinxe.com/cong-dong-xe/blog-xe/1",
+      "https://kenhtinxe.com/xe-moi/1",
+      "https://kenhtinxe.com/xe-moi/oto-moi/1",
+      "https://kenhtinxe.com/xe-moi/xe-may-moi/1",
+      "https://kenhtinxe.com/chuyen-de-xe/1",
+      "https://kenhtinxe.com/chuyen-de-xe/nha-san-xuat-chuyen-gia/1",
+      "https://kenhtinxe.com/chuyen-de-xe/du-lich-tren-tung-cay-so/1",
+      "https://kenhtinxe.com/chuyen-de-xe/kham-pha/1",
+      "https://kenhtinxe.com/racing/1",
+      "https://kenhtinxe.com/racing/do-xe-dua-xe/1",
+      "https://kenhtinxe.com/phu-tung/1",
+      "https://kenhtinxe.com/bang-gia/1",
+      "https://kenhtinxe.com/bang-gia/bang-gia-xe-oto/1",
+      "https://kenhtinxe.com/bang-gia/bang-gia-xe-may/1",
+      "https://kenhtinxe.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.295Z",
+      "verifiedSeeds": [
+        "https://kenhtinxe.com/",
+        "https://kenhtinxe.com/tin-tuc-xe/1",
+        "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/1",
+        "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/1",
+        "https://kenhtinxe.com/tin-tuc-xe/giao-thong/1",
+        "https://kenhtinxe.com/tin-tuc-xe/giai-tri/1",
+        "https://kenhtinxe.com/tin-tuc-xe/cong-nghe/1",
+        "https://kenhtinxe.com/danh-gia-xe/1",
+        "https://kenhtinxe.com/danh-gia-xe/danh-gia-xe-oto-xe-may/1",
+        "https://kenhtinxe.com/danh-gia-xe/so-sanh-xe/1",
+        "https://kenhtinxe.com/tu-van-xe/1"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed_with_configured_timezone",
+    "checkedAt": "2026-11-09T05:19:03.170Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": true,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "kenhtinxe.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 27,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 477,
+        "passed": 32,
+        "distinctHashes": 32
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/xu-phat-nguoi-dan-ong-dang-tin-bao-chot-csgt/84755",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/sata-va-sailun-that-chat-quan-he-doi-tac-chien-luoc-nham-thuc-day-tang-truong-toan-cau/84754",
+      "https://kenhtinxe.com/bang-gia/bang-gia-xe-may/gia-xe-may-dien-honda-cuv-e-thang-11-2026-re-hon-de-xuat-5-trieu-dong/84753",
+      "https://kenhtinxe.com/xe-moi/oto-moi/icaur-chuan-bi-mo-ban-tai-viet-nam-he-lo-uu-dai-dac-biet-cho-khach-hang-dat-xe-ngay-11-11/84752",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/hyundai-uu-dai-toi-220-trieu-dong-nang-bao-hanh-len-den-10-nam-hoac-200000-km/84751",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/hyundai-tucson-va-kona-ra-mat-ban-blk-edition-them-loat-chi-tiet-mau-den-ca-tinh/84750",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/green-sm-chinh-thuc-lan-banh-tai-m-/84749",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/xe-dien-mg-urban-dau-tien-cap-cang-viet-nam-ngay-ra-mat-khong-xa/84748",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/mustang-mach-e-chay-643000-km-van-dung-pin-goc-ford-cong-bo-du-lieu-do-ben-thuc-te/84747",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-di-chuyen-xanh-tai-lao/84746",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/vinfast-vf8-the-he-moi-ra-mat-tai-philippines-gia-quy-doi-tu-627-trieu-dong/84745",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/li-auto-chinh-thuc-gia-nhap-thi-truong-viet-nam-thong-qua-nha-phan-phoi-neera-motors/84744",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/hom-nay-10-11-sh160i-125i-2027-chinh-thuc-mo-ban-tai-viet-nam/84743",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/cham-do-va-vang-tren-lop-o-to-co-y-nghia-gi-/84742",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/yamaha-xsr155-2026-co-gi-moi-ma-khien-dan-me-mo-to-chu-y-/84741",
+      "https://kenhtinxe.com/bang-gia/bang-gia-xe-oto/gia-xe-toyota-corolla-altis-cap-nhat-thang-11-2026/84740",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/doi-thu-toyota-alphard-chot-lich-ra-mat-dong-nam-a-nissan-elgrand-co-awd-va-hybrid/84739",
+      "https://kenhtinxe.com/xe-moi/oto-moi/mazda-khai-tu-mazda2-sau-hon-10-nam-cx-3-the-he-moi-se-thay-the-tu-nam-2027/84738",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/lo-xe-outlander-dau-tien-xuat-hien-tai-cang-viet-nam/84737",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/honda-67-duoc-dau-tu-phuc-dung-do-them-dan-do-hieu-nhat-ban-cuc-chat/84736",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/-goc-nhin-mua-o-to-thoi-diem-nay-nguoi-thich-tien-phong-co-the-phai-tra-them-thue-mat-gia-/84735",
+      "https://kenhtinxe.com/racing/do-xe-dua-xe/mercedes-benz-g-class-lot-xac-voi-goi-do-doc-ban-chi-co-dung-50-chiec-tren-toan-the-gioi/84734",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/byd-ra-mat-yangwang-altior-sedan-dien-hang-sang-tham-vong-canh-tranh-rolls-royce/84733",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/xe-dien-sieu-sang-byd-voi-cong-nghe-xe-tang-co-the-noi-len-khi-roi-xuong-nuoc/84732",
+      "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/hyundai-accent-di-pho-dong-moi-ngay-hop-so-va-muc-tieu-hao-nhien-lieu-co-phu-hop-/84731"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:47.057Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kenhtinxe.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "article.post.hentry",
+    "selector": ".post-body.entry-content p"
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "publicationArticleScope": "article.post.hentry",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T10:17:21.365Z",
+    "proofs": [
+      {
+        "url": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/mercedes-g-580-eq-ban-lai-mat-368-trieu-dong-sau-khi-chay-450km/84944",
+        "publisherUrl": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/mercedes-g-580-eq-ban-lai-mat-368-trieu-dong-sau-khi-chay-450km/84944",
+        "contentHash": "543947613a0960a3f95efdf5c05b8c496c2428bf230d6a18a390126aabae326a",
+        "description": "Một chiếc Mercedes-Benz G 580 EQ mới chạy khoảng 450km đang được rao 7,399 tỷ đồng ở Hà Nội, thấp hơn khoảng 368 triệu so với số tiền chủ đầu tiên bỏ ra. Con số gây chú ý, nhưng chưa đủ để kết luận G-Class điện mất giá nhanh.",
+        "publishedDate": "2026-11-17T04:18:44.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/mercedes-g-580-eq-ban-lai-mat-368-trieu-dong-sau-khi-chay-450km/84944",
+          "publishedDate": "2026-11-17T04:18:44.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kenhtinxe.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/italjet-roadster-400-2027-xe-ga-quai-thu-danh-cho-nguoi-du-manh/84943",
+        "publisherUrl": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/italjet-roadster-400-2027-xe-ga-quai-thu-danh-cho-nguoi-du-manh/84943",
+        "contentHash": "e3ae9ff21cf942c89ecdb5dba67688736c47d0b7ddc7cd0e536ae24d367b1477",
+        "description": "Vẫn được thiết kế với phong cách xe tay ga cổ điển và kết cấu khung sườn lộ thiên cá tính, mẫu xe hướng tới những người dùng cần một mẫu xe hiệu suất cao cho nhu cầu di chuyển hàng ngày trên đường phố nhưng vẫn thể hiện được cá tính, Xe có chiều cao yên 790 mm, chiều dài cơ sở 1.540 mm và trọng lượng xe được công bố ở mức 151 kg.",
+        "publishedDate": "2026-11-17T04:14:15.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kenhtinxe.com/tin-tuc-xe/xe-trong-nuoc/italjet-roadster-400-2027-xe-ga-quai-thu-danh-cho-nguoi-du-manh/84943",
+          "publishedDate": "2026-11-17T04:14:15.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kenhtinxe.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/tieu-thu-xe-dien-toan-cau-thang-10-tang-8-dat-hon-2-trieu-xe/84942",
+        "publisherUrl": "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/tieu-thu-xe-dien-toan-cau-thang-10-tang-8-dat-hon-2-trieu-xe/84942",
+        "contentHash": "81d7329ce42bd1fd8b394ae5784f75831682c1a0f4775cca30d63964aaa84169",
+        "description": "Theo báo cáo của Benchmark Mineral Intelligence, một đơn vị nghiên cứu thị trường tại Anh, tổng lượng tiêu thụ xe thuần điện (BEV) và xe hybrid cắm sạc (PHEV) ở phân khúc xe du lịch và xe thương mại hạng nhẹ trên toàn cầu đạt 2,09 triệu chiếc trong tháng 10.",
+        "publishedDate": "2026-11-17T04:00:09.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kenhtinxe.com/tin-tuc-xe/xe-the-gioi/tieu-thu-xe-dien-toan-cau-thang-10-tang-8-dat-hon-2-trieu-xe/84942",
+          "publishedDate": "2026-11-17T04:00:09.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "kenhtinxe.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  }
+}

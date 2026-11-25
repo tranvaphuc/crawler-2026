@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baongoisao.net",
+  "siteId": "baongoisao.net",
+  "registrableDomain": "baongoisao.net",
+  "homepage": "https://baongoisao.net/",
+  "allowedHosts": [
+    "baongoisao.net",
+    "www.baongoisao.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "MC Quyền Linh dừng dẫn dắt “Vì bạn xứng đáng”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:59.148Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baongoisao.net/mc-quyen-linh-roi-chuong-trinh-vi-ban-xung-dang.html",
+      "https://baongoisao.net/seungri-bi-to-vung-chai-soju-de-doa-xu-nan-nhan.html",
+      "https://baongoisao.net/callum-turner-la-james-bond-moi.html",
+      "https://baongoisao.net/man-of-tomorrow-he-lo-thong-tin-moi-ve-trailer-va-dan-sao.html",
+      "https://baongoisao.net/chi-dau-taylor-swift-chia-se-quy-tac-nuoi-day-con.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baongoisao.net/",
+    "categories": [
+      "https://baongoisao.net/sao-chau-a",
+      "https://baongoisao.net/sao-chau-au",
+      "https://baongoisao.net/giai-tri",
+      "https://baongoisao.net/giai-tri/am-nhac",
+      "https://baongoisao.net/giai-tri/phim",
+      "https://baongoisao.net/lam-dep",
+      "https://baongoisao.net/chinh-sach-bao-mat-thong-tin",
+      "https://baongoisao.net/so-do-trang-web"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baongoisao.net",
+    "checkedAt": "2026-11-09T03:56:50.896Z",
+    "url": "https://baongoisao.net/mc-quyen-linh-roi-chuong-trinh-vi-ban-xung-dang.html",
+    "finalUrl": "https://baongoisao.net/mc-quyen-linh-roi-chuong-trinh-vi-ban-xung-dang.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3901,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baongoisao.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 17,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 8,
+    "categoriesUnconfirmed": 8,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 333,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:19.191Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baongoisao.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

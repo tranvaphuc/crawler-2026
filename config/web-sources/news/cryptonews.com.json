@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "contentScope": "Published public WordPress post records with matching canonical /news/ URLs. date_gmt is original publication; protected/draft/non-post records are rejected. Cryptocurrency product guides are outside the News scope.",
+  "siteName": "cryptonews.com",
+  "siteId": "cryptonews.com",
+  "registrableDomain": "cryptonews.com",
+  "homepage": "https://cryptonews.com/",
+  "allowedHosts": [
+    "cryptonews.com",
+    "www.cryptonews.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "LIVE – Why Is Crypto Down? Jensen Huang Chinese Spy Scandal Sends AI Stocks Into Chaos",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "httpAdapter": "wordpress_public_rest",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:50:59.599Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://cryptonews.com/news/why-is-crypto-down-jensen-huang-ai-stocks/",
+      "https://cryptonews.com/news/paraguay-bank-collapse-usdt-premium-bitcoin-purpose/",
+      "https://cryptonews.com/news/which-bitcoin-treasury-stocks-could-surge-on-bullish-cpi-data-drop/",
+      "https://cryptonews.com/news/elon-musks-grok-ai-predicts-unbelievable-btc-price/",
+      "https://cryptonews.com/news/franklin-templeton-using-openai-chatgpt-to-predicts-crypto/",
+      "https://cryptonews.com/news/why-is-crypto-down-jensen-huang-ai-stocks/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round8-http/sites/cryptonews.com",
+    "contentScope": "Published public WordPress post records with matching canonical /news/ URLs. date_gmt is original publication; protected/draft/non-post records are rejected. Cryptocurrency product guides are outside the News scope.",
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://cryptonews.com/",
+    "categories": [
+      "https://cryptonews.com/wp-json/wp/v2/posts?categories=6&per_page=5&_embed=1",
+      "https://cryptonews.com/wp-json/wp/v2/posts?categories=14&per_page=5&_embed=1"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T05:53:08.306Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "native_public_wordpress_content",
+    "scope": "Published /news/ WordPress posts only; commercial cryptocurrency comparison guides excluded from this News scope.",
+    "publicApi": "https://cryptonews.com/wp-json/wp/v2/posts",
+    "landingMayReturn403": true,
+    "protectedContentRejected": true,
+    "publicationField": "date_gmt",
+    "authorSource": "Embedded author or same-URL Yoast Article author; otherwise flagged site fallback"
+  },
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:55.048Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/cryptonews.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "cryptonews.com",
+    "parsedArticles": 7,
+    "distinctHashes": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesAttempted": 2,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 10,
+    "checkedArticleUrls": 7,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 10,
+        "attempted": 7,
+        "passed": 7,
+        "distinctContents": 7,
+        "distinctHashes": 7
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

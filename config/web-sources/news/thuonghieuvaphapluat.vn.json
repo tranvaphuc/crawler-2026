@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieuvaphapluat.vn",
+  "siteId": "thuonghieuvaphapluat.vn",
+  "registrableDomain": "thuonghieuvaphapluat.vn",
+  "homepage": "https://thuonghieuvaphapluat.vn/",
+  "allowedHosts": [
+    "thuonghieuvaphapluat.vn",
+    "www.thuonghieuvaphapluat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tập đoàn Bảo Việt đạt gần 48.000 tỷ đồng doanh thu 9 tháng đầu năm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".time_detail_news"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".pkg.upd2024_boxcontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:41.463Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thuonghieuvaphapluat.vn/tap-doan-bao-viet-dat-gan-48000-ty-dong-doanh-thu-9-thang-dau-nam-d85000.html",
+      "https://thuonghieuvaphapluat.vn/dien-dan-xuc-tien-xuat-khau-viet-nam-2026-tap-doan-th-chia-se-kinh-nghiem-go-global-tu-triet-ly-kien-dinh-voi-chu-that-d85100.html",
+      "https://thuonghieuvaphapluat.vn/san-xuat-cong-nghiep-10-thang-nam-2026-iip-tang-124-cao-nhat-trong-giai-doan-20192026-d85014.html",
+      "https://thuonghieuvaphapluat.vn/bo-cong-thuong-trien-khai-8-giai-phap-bao-dam-cung-ung-dien-nam-2027-2028-d85108.html",
+      "https://thuonghieuvaphapluat.vn/chinh-phu-trinh-quoc-hoi-co-che-chinh-sach-dac-thu-ve-phat-trien-du-lich-viet-nam-d85107.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuonghieuvaphapluat.vn/",
+    "categories": [
+      "https://thuonghieuvaphapluat.vn/dien-dan-thuong-hieu/",
+      "https://thuonghieuvaphapluat.vn/ton-vinh-thuong-hieu/",
+      "https://thuonghieuvaphapluat.vn/moi-tuan-mot-thuong-hieu/",
+      "https://thuonghieuvaphapluat.vn/thuong-hieu-va-hoi-nhap/",
+      "https://thuonghieuvaphapluat.vn/doanh-nhan-nghe-nhan/",
+      "https://thuonghieuvaphapluat.vn/tai-chinh-ngan-hang/",
+      "https://thuonghieuvaphapluat.vn/kinh-te-va-du-bao/",
+      "https://thuonghieuvaphapluat.vn/thi-truong-tieu-dung/",
+      "https://thuonghieuvaphapluat.vn/phap-luat-va-chinh-sach/",
+      "https://thuonghieuvaphapluat.vn/chinh-sach-moi/",
+      "https://thuonghieuvaphapluat.vn/canh-bao-phap-ly/",
+      "https://thuonghieuvaphapluat.vn/nghe-nhan-va-xa-hoi/",
+      "https://thuonghieuvaphapluat.vn/tieu-diem/",
+      "https://thuonghieuvaphapluat.vn/y-te-giao-duc/",
+      "https://thuonghieuvaphapluat.vn/moi-truong-song/",
+      "https://thuonghieuvaphapluat.vn/khoi-nghiep-sang-tao/",
+      "https://thuonghieuvaphapluat.vn/nhip-cau-nhan-ai/",
+      "https://thuonghieuvaphapluat.vn/hoat-dong-hoi/",
+      "https://thuonghieuvaphapluat.vn/truyen-hinh-phap-luat/",
+      "https://thuonghieuvaphapluat.vn/chinh-sach-phap-luat-kinh-doanh/",
+      "https://thuonghieuvaphapluat.vn/kt-pl-dn/",
+      "https://thuonghieuvaphapluat.vn/suc-song-so/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuonghieuvaphapluat.vn",
+    "checkedAt": "2026-11-09T03:57:32.265Z",
+    "url": "https://thuonghieuvaphapluat.vn/tap-doan-bao-viet-dat-gan-48000-ty-dong-doanh-thu-9-thang-dau-nam-d85000.html",
+    "finalUrl": "https://thuonghieuvaphapluat.vn/tap-doan-bao-viet-dat-gan-48000-ty-dong-doanh-thu-9-thang-dau-nam-d85000.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8411,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thuonghieuvaphapluat.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 22,
+    "checkedArticleUrls": 53,
+    "freshArticleChecks": 42,
+    "parserIssues": 28,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 22,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 23,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 470,
+        "passed": 22,
+        "distinctHashes": 22
+      },
+      {
+        "name": "photo",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuonghieuvaphapluat.vn/san-xuat-cong-nghiep-10-thang-nam-2026-iip-tang-124-cao-nhat-trong-giai-doan-20192026-d85014.html",
+      "https://thuonghieuvaphapluat.vn/tap-doan-bao-viet-dat-gan-48000-ty-dong-doanh-thu-9-thang-dau-nam-d85000.html",
+      "https://thuonghieuvaphapluat.vn/bao-dam-an-ninh-nang-luong-quoc-gia-cho-tang-truong-gdp-hai-con-so-d85145.html",
+      "https://thuonghieuvaphapluat.vn/chinh-phu-ban-hanh-chien-luoc-mo-khong-gian-phat-trien-quoc-gia-trong-ky-nguyen-moi-d85143.html",
+      "https://thuonghieuvaphapluat.vn/bo-cong-thuong-phe-duyet-khung-gia-phat-dien-mat-troi-nam-2026-d85141.html",
+      "https://thuonghieuvaphapluat.vn/van-phu-loi-nhuan-gop-9-thang-dau-nam-2026-tang-689-d85054.html",
+      "https://thuonghieuvaphapluat.vn/talkshow-cau-chuyen-thuong-hieu/",
+      "https://thuonghieuvaphapluat.vn/phap-luat-doanh-nghiep-thuong-hieu/",
+      "https://thuonghieuvaphapluat.vn/cuc-thue-ban-hanh-so-tay-nghiep-vu-quan-ly-thue-ho-kinh-doanh-d85147.html",
+      "https://thuonghieuvaphapluat.vn/gia-vang-hom-nay-1011-vang-sjc-tang-vuot-1415-trieu-dongluong-d85142.html",
+      "https://thuonghieuvaphapluat.vn/du-thao-luat-an-toan-thuc-pham-sua-doi-siet-quan-ly-thuc-pham-bo-sung-bao-ve-nguoi-tieu-dung-d85132.html",
+      "https://thuonghieuvaphapluat.vn/vneid-cho-phep-tich-hop-giay-khai-sinh-va-cac-loai-giay-to-ho-tich-so-d85111.html",
+      "https://thuonghieuvaphapluat.vn/festival-mua-dong-bac-ha-2026-trai-nghiem-van-hoa-du-lich-d85109.html",
+      "https://thuonghieuvaphapluat.vn/hoc-sinh-tieu-hoc-co-the-duoc-hoc-tieng-muong-va-tieng-co-tu-theo-hinh-thuc-tu-chon-d85091.html",
+      "https://thuonghieuvaphapluat.vn/vi-pham-hanh-chinh-trong-linh-vuc-cong-nghiep-cong-nghe-so-bi-phat-toi-200-trieu-dong-d85089.html",
+      "https://thuonghieuvaphapluat.vn/sot-xuat-huyet-dengue-dien-bien-phuc-tap-viet-nam-can-chuyen-manh-sang-the-phong-ngua-chu-dong-d85084.html",
+      "https://thuonghieuvaphapluat.vn/dien-dan-xuc-tien-xuat-khau-viet-nam-2026-tap-doan-th-chia-se-kinh-nghiem-go-global-tu-triet-ly-kien-dinh-voi-chu-that-d85100.html",
+      "https://thuonghieuvaphapluat.vn/giai-phap-quan-ly-dong-tien-giup-vpbank-duoc-euromoney-vinh-danh-bang-hai-giai-thuong-danh-gia-d85095.html",
+      "https://thuonghieuvaphapluat.vn/doji-tang-cuong-trao-doi-chuyen-mon-voi-gia-nang-cao-trai-nghiem-mua-sam-trang-suc-cua-khach-hang-d85060.html",
+      "https://thuonghieuvaphapluat.vn/vinfuture-ket-noi-tri-tue-toan-cau-khoi-nguon-cam-hung-va-hop-tac-khoa-hoc-viet-d85056.html",
+      "https://thuonghieuvaphapluat.vn/chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-d85104.html",
+      "https://thuonghieuvaphapluat.vn/canh-bao-thu-doan-lua-dao-doi-tien-ban-lay-tien-sach-d85087.html",
+      "https://thuonghieuvaphapluat.vn/thuc-day-hop-tac-viet-nam--singapore-di-vao-chieu-sau-thuc-chat-va-hieu-qua-d85134.html",
+      "https://thuonghieuvaphapluat.vn/mo-rong-dien-tham-gia-bhxh-bat-buoc-bai-toan-an-sinh-va-ganh-nang-thu-nhap-d85128.html",
+      "https://thuonghieuvaphapluat.vn/hon-viet-trong-net-but-lan-toa-gia-tri-van-hoa-truyen-thong-tu-co-do-hue-d84858.html",
+      "https://thuonghieuvaphapluat.vn/hoi-nghe-nhan-va-thuong-hieu-viet-nam-moi-tham-du-lien-hoan-van-hoa-thu-phap-toan-quoc-lan-thu-nhat--le-hoi-my-nghe-thu-cong-truyen-thong-va-am-thuc-hue-2026-d84220.html",
+      "https://thuonghieuvaphapluat.vn/ky-niem-13-nam-thanh-lap-hoi-nghe-nhan-va-thuong-hieu-viet-nam-vinh-quang-tri-tue-ban-tay-vang-tu-hao-thuong-hieu-viet-nam-d84029.html",
+      "https://thuonghieuvaphapluat.vn/tuyen-nhan-su-pho-tong-bien-tap-tap-chi-dien-tu-thuong-hieu-va-phap-luat-d83808.html",
+      "https://thuonghieuvaphapluat.vn/ha-noi-ruc-ro-sac-do-chao-mung-72-nam-ngay-giai-phong-thu-do-1010-d84517.html",
+      "https://thuonghieuvaphapluat.vn/nghe-an-tu-du-dia-phat-trien-den-vai-tro-cuc-tang-truong-d84471.html",
+      "https://thuonghieuvaphapluat.vn/moi-nguoi-chi-duoc-mua-hoac-thue-mua-mot-can-nha-o-xa-hoi-d85044.html",
+      "https://thuonghieuvaphapluat.vn/bo-tai-chinh-de-xuat-5-giai-phap-kiem-soat-lam-phat-2026-theo-muc-tieu-45-d85041.html",
+      "https://thuonghieuvaphapluat.vn/phan-dau-100-chi-so-danh-gia-cham-diem-cai-cach-tthc-duoc-so-hoa-d85015.html",
+      "https://thuonghieuvaphapluat.vn/giam-30-thue-thu-nhap-doi-voi-ca-nhan-doanh-nghiep-co-doanh-thu-duoi-10-ty-dong-d84999.html",
+      "https://thuonghieuvaphapluat.vn/tap-doan-bao-viet-duoc-vinh-danh-trong-danh-sach-fortune-southeast-asia-500-d85035.html",
+      "https://thuonghieuvaphapluat.vn/techcombank-lan-thu-3-lien-tiep-nhan-giai-ngan-hang-tot-nhat-viet-nam-tu-global-finance-d84846.html",
+      "https://thuonghieuvaphapluat.vn/giu-on-dinh-gia-hang-hoa-dich-vu-do-nha-nuoc-quan-ly-den-het-nam-2026-d85130.html",
+      "https://thuonghieuvaphapluat.vn/tphcm-de-xuat-ho-tro-boi-thuong-den-100-cho-nha-dat-mua-ban-giay-tay-d85126.html",
+      "https://thuonghieuvaphapluat.vn/ha-tinh-chap-thuan-quy-hoach-tong-mat-bang-du-an-benh-vien-da-khoa-nam-ky-anh-quy-mo-gan-39-ha-d85114.html",
+      "https://thuonghieuvaphapluat.vn/bo-cong-thuong-trien-khai-8-giai-phap-bao-dam-cung-ung-dien-nam-2027-2028-d85108.html",
+      "https://thuonghieuvaphapluat.vn/phao-hoa-ruc-sang-bau-troi-ha-noi-mung-72-nam-ngay-giai-phong-thu-do-d84585.html.photo"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 25,
+      "original_publication_not_yet_confirmed": 3
+    },
+    "checkedAt": "2026-11-10T09:17:27.441Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuonghieuvaphapluat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationStabilityReview": {
+    "state": "unconfirmed_original_publication",
+    "reviewFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/publication-stability-review.json"
+  }
+}

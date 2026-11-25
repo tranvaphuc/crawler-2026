@@ -1,0 +1,228 @@
+{
+  "input": "100000002601520_29156234290626604",
+  "finalUrl": "https://www.facebook.com/watch/?v=3287787711432517",
+  "payloads": [
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "data": {
+          "video": {
+            "story": {
+              "attachments": [
+                {
+                  "media": {
+                    "__typename": "Video",
+                    "id": "3287787711432517",
+                    "owner": {
+                      "__typename": "User",
+                      "id": "100000002601520"
+                    }
+                  }
+                }
+              ],
+              "id": "UzpfSTEwMDAwMDAwMjYwMTUyMDpWSzozMjg3Nzg3NzExNDMyNTE3"
+            },
+            "id": "3287787711432517"
+          }
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "3287787711432517"
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story"
+        ],
+        "data": {
+          "attachments": [
+            {
+              "media": {
+                "__typename": "Video",
+                "title": {},
+                "creation_story": {
+                  "attachments": [
+                    {}
+                  ],
+                  "comet_sections": {
+                    "title": {
+                      "__typename": "CometFeedStoryTitleWithActorStrategy",
+                      "story": {
+                        "id": "UzpfSTEwMDAwMDAwMjYwMTUyMDpWSzozMjg3Nzg3NzExNDMyNTE3",
+                        "post_id": "29156234290626604",
+                        "actors": [
+                          {
+                            "__typename": "User",
+                            "id": "100000002601520"
+                          }
+                        ],
+                        "title": null,
+                        "comet_sections": {}
+                      }
+                    }
+                  },
+                  "id": "UzpfSTEwMDAwMDAwMjYwMTUyMDpWSzozMjg3Nzg3NzExNDMyNTE3"
+                },
+                "owner": {
+                  "__typename": "User",
+                  "id": "100000002601520"
+                },
+                "id": "3287787711432517"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "3287787711432517"
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "feedback": {
+            "id": "ZmVlZGJhY2s6cGZiaWQwMm9jcEV1QzQ3bXpxQlhmaGRBTTYycjF3SFUzRHNuVkRWMjl2emlobXFTblFzUjl3b3BEVTVrcXJOdHBwOW5yU1Bs",
+            "associated_video": {
+              "id": "3287787711432517"
+            }
+          }
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "3287787711432517",
+          "title": {},
+          "feedback": {
+            "id": "ZmVlZGJhY2s6cGZiaWQwMm9jcEV1QzQ3bXpxQlhmaGRBTTYycjF3SFUzRHNuVkRWMjl2emlobXFTblFzUjl3b3BEVTVrcXJOdHBwOW5yU1Bs",
+            "comment_rendering_instance": {
+              "comments": {
+                "total_count": 1
+              }
+            },
+            "reaction_count": {
+              "count": 29,
+              "is_empty": false
+            },
+            "top_reactions": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "1635855486666999"
+                  },
+                  "reaction_count": 27
+                },
+                {
+                  "node": {
+                    "id": "1678524932434102"
+                  },
+                  "reaction_count": 2
+                }
+              ]
+            },
+            "total_comment_count": 2,
+            "video_view_count_renderer": {
+              "__typename": "UFI2ViewCountRenderer",
+              "feedback": {
+                "associated_video": {
+                  "id": "3287787711432517"
+                },
+                "video_view_count": 189,
+                "video_post_view_count": 185,
+                "play_count": 632,
+                "id": "ZmVlZGJhY2s6cGZiaWQwMm9jcEV1QzQ3bXpxQlhmaGRBTTYycjF3SFUzRHNuVkRWMjl2emlobXFTblFzUjl3b3BEVTVrcXJOdHBwOW5yU1Bs"
+              }
+            }
+          },
+          "creation_story": {
+            "id": "UzpfSTEwMDAwMDAwMjYwMTUyMDpWSzozMjg3Nzg3NzExNDMyNTE3"
+          },
+          "owner": {
+            "__typename": "User",
+            "id": "100000002601520"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "siteName": "gamelandvn.com",
+  "siteId": "gamelandvn.com",
+  "registrableDomain": "gamelandvn.com",
+  "homepage": "https://gamelandvn.com/",
+  "allowedHosts": [
+    "gamelandvn.com",
+    "www.gamelandvn.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Honkai: Nexus Anima mở đăng ký thử nghiệm lần cuối",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:04.718Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://gamelandvn.com/honkai-nexus-anima-mo-dang-ky-thu-nghiem-lan-cuoi/",
+      "https://gamelandvn.com/honkai-star-rail-phien-ban-4-7-ra-mat-vao-ngay-11-11/",
+      "https://gamelandvn.com/crossfire-mo-hai-kho-bau-hoang-gia-va-bingo-dau-thang-11/",
+      "https://gamelandvn.com/moi-dieu-can-biet-ve-phantom-blade-zero-truoc-khi-mua-game/",
+      "https://gamelandvn.com/chung-ket-cfs-26-path-vietnam-mo-cua-tu-do-tai-ha-noi/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://gamelandvn.com/",
+    "categories": [
+      "https://gamelandvn.com/game/",
+      "https://gamelandvn.com/esports/",
+      "https://gamelandvn.com/gear/",
+      "https://gamelandvn.com/cosplay/",
+      "https://gamelandvn.com/lien-lac/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?gamelandvn.com/.*?/(gameland.vn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "gamelandvn.com",
+    "checkedAt": "2026-11-09T03:57:04.650Z",
+    "url": "https://gamelandvn.com/honkai-nexus-anima-mo-dang-ky-thu-nghiem-lan-cuoi/",
+    "finalUrl": "https://gamelandvn.com/honkai-nexus-anima-mo-dang-ky-thu-nghiem-lan-cuoi/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1536,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "gamelandvn.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 46,
+    "checkedArticleUrls": 47,
+    "freshArticleChecks": 20,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 46,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 66,
+        "passed": 46,
+        "distinctHashes": 46
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://gamelandvn.com/honkai-nexus-anima-mo-dang-ky-thu-nghiem-lan-cuoi/",
+      "https://gamelandvn.com/honkai-star-rail-phien-ban-4-7-ra-mat-vao-ngay-11-11/",
+      "https://gamelandvn.com/crossfire-mo-hai-kho-bau-hoang-gia-va-bingo-dau-thang-11/",
+      "https://gamelandvn.com/moi-dieu-can-biet-ve-phantom-blade-zero-truoc-khi-mua-game/",
+      "https://gamelandvn.com/chung-ket-cfs-26-path-vietnam-mo-cua-tu-do-tai-ha-noi/",
+      "https://gamelandvn.com/crossfire-mo-hai-kho-bau-hoang-gia-moi-don-halloween-2026/",
+      "https://gamelandvn.com/studio-phat-trien-ghost-of-yotei-sa-thai-26-nhan-vien/",
+      "https://gamelandvn.com/zenless-zone-zero-nguyen-lieu-kafka/",
+      "https://gamelandvn.com/genshin-impact-nguyen-lieu-danica/",
+      "https://gamelandvn.com/silver-palace-ra-mat-tren-toan-cau-ngay-14-12/",
+      "https://gamelandvn.com/genshin-impact-nguyen-lieu-anastasya/",
+      "https://gamelandvn.com/crossfire-ra-mat-galil-ace-phantom-don-halloween/",
+      "https://gamelandvn.com/cfs-2026-path-vietnam-khoi-tranh/",
+      "https://gamelandvn.com/where-winds-meet-hoc-lom-everspring-umbrella/",
+      "https://gamelandvn.com/where-winds-meet-hoc-lom-unfettered-rope-dart/",
+      "https://gamelandvn.com/huong-dan-mo-khoa-sandswirl-tail-where-winds-meet/",
+      "https://gamelandvn.com/huong-dan-mo-khoa-flute-of-tides-where-winds-meet/",
+      "https://gamelandvn.com/where-winds-meet-ra-mat-dlc-hexi/",
+      "https://gamelandvn.com/genshin-impact-phien-ban-7-2-ra-mat-vao-ngay-04-11/",
+      "https://gamelandvn.com/honkai-star-rail-aventurine-waveflair/",
+      "https://gamelandvn.com/honkai-star-rail-robin-summeretto/",
+      "https://gamelandvn.com/zenless-zone-zero-phien-ban-3-3/",
+      "https://gamelandvn.com/zenless-zone-zero-nguyen-lieu-severian/",
+      "https://gamelandvn.com/roblox-dat-doanh-thu-14-ti-usd-nhung-ha-du-bao-tang-truong/",
+      "https://gamelandvn.com/roblox-dat-doanh-thu-49-ti-usd-nam-2025/",
+      "https://gamelandvn.com/grow-a-garden-christmas-harvest-event/",
+      "https://gamelandvn.com/mutation-machine-plants-vs-brainrots/",
+      "https://gamelandvn.com/plants-vs-brainrots-spooky-event/",
+      "https://gamelandvn.com/xbox-helix-co-tflops-cao-hon-ps6-toi-40/",
+      "https://gamelandvn.com/gamesir-ra-mat-hai-tay-cam-mobile-mang-thuong-hieu-fortnite/",
+      "https://gamelandvn.com/danh-sach-game-tuong-thich-steam-deck-vuot-moc-30-000/",
+      "https://gamelandvn.com/tay-cam-playstation-6-co-the-dung-can-gat-chong-troi/",
+      "https://gamelandvn.com/nintendo-ngung-ban-switch-tai-chau-au-tu-thang-02-2027/",
+      "https://gamelandvn.com/ps6-gan-nhu-chac-chan-doi-sang-cuoi-2028/",
+      "https://gamelandvn.com/free-fire-ra-mat-bo-anh-cosplay-graffiti-dip-sinh-nhat/",
+      "https://gamelandvn.com/cosplayer-tai-hien-demo-the-witcher-4/",
+      "https://gamelandvn.com/genshin-impact-mitya/",
+      "https://gamelandvn.com/genshin-impact-valeriy/",
+      "https://gamelandvn.com/honkai-star-rail-phien-ban-4-6/",
+      "https://gamelandvn.com/honkai-star-rail-phien-ban-4-5/",
+      "https://gamelandvn.com/zenless-zone-zero-severian/",
+      "https://gamelandvn.com/zenless-zone-zero-phoenix/",
+      "https://gamelandvn.com/cosplay-mualani-sixtwotwo/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 1
+    },
+    "checkedAt": "2026-11-10T09:15:31.319Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/gamelandvn.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "gamelandvn.com",
+      "siteId": "gamelandvn.com",
+      "registrableDomain": "gamelandvn.com",
+      "homepage": "https://gamelandvn.com/",
+      "allowedHosts": [
+        "gamelandvn.com",
+        "www.gamelandvn.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Honkai: Nexus Anima mở đăng ký thử nghiệm lần cuối",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:40.478Z",
+        "trainingUrls": [
+          "https://gamelandvn.com/18-chu-de-thi-dau-trong-ngoi-sao-thoi-trang/"
+        ],
+        "holdoutUrls": [
+          "https://gamelandvn.com/silver-palace-ra-mat-tren-toan-cau-ngay-14-12/",
+          "https://gamelandvn.com/genshin-impact-nguyen-lieu-anastasya/"
+        ]
+      }
+    }
+  ]
+}

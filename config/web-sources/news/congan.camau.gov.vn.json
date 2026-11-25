@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congan.camau.gov.vn",
+  "siteId": "congan.camau.gov.vn",
+  "registrableDomain": "congan.camau.gov.vn",
+  "homepage": "https://congan.camau.gov.vn/",
+  "allowedHosts": [
+    "congan.camau.gov.vn",
+    "www.congan.camau.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congan.camau.gov.vn/",
+    "categories": [
+      "https://congan.camau.gov.vn/ch40/td40.html",
+      "https://congan.camau.gov.vn/ch7/td7.html",
+      "https://congan.camau.gov.vn/ch6/td6.html",
+      "https://congan.camau.gov.vn/ch29/td29.html",
+      "https://congan.camau.gov.vn/ch26/td26.html",
+      "https://congan.camau.gov.vn/ch5/td5.html",
+      "https://congan.camau.gov.vn/ch12/td12.html",
+      "https://congan.camau.gov.vn/ch9/td9.html",
+      "https://congan.camau.gov.vn/ch4/index1.html",
+      "https://congan.camau.gov.vn/ch2/index1.html"
+    ]
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Việt Nam - Nhật Bản tăng cường hợp tác thực thi pháp luật",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".article-date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:20:33.155Z",
+    "frozenAt": "2026-11-16T04:20:31.066Z",
+    "trainingUrl": "https://congan.camau.gov.vn/ch7/8495-Viet-Nam---Nhat-Ban-tang-cuong-hop-tac-thuc-thi-phap-luat.html",
+    "independentHoldouts": [
+      "https://congan.camau.gov.vn/ch40/10186-Cong-an-xa-Khanh-An-phoi-hop-truy-bat-02-doi-tuong-trom-cap-tai-san.html",
+      "https://congan.camau.gov.vn/ch40/10185-Cong-an-xa-Hung-My-day-manh-tich-hop-giay-to-thong-tin-thiet-yeu-tren-ung-dung-VNeID-cho-nguoi-dan.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congan.camau.gov.vn/ch7/8495-Viet-Nam---Nhat-Ban-tang-cuong-hop-tac-thuc-thi-phap-luat.html",
+      "https://congan.camau.gov.vn/ch40/10186-Cong-an-xa-Khanh-An-phoi-hop-truy-bat-02-doi-tuong-trom-cap-tai-san.html",
+      "https://congan.camau.gov.vn/ch40/10185-Cong-an-xa-Hung-My-day-manh-tich-hop-giay-to-thong-tin-thiet-yeu-tren-ung-dung-VNeID-cho-nguoi-dan.html",
+      "https://congan.camau.gov.vn/ch40/10184-Cong-an-xa-Tan-Tien-to-chuc-danh-gia-xep-loai-chat-luong-tap-the-ca-nhan-quy-IV2026-va-nam-2026.html",
+      "https://congan.camau.gov.vn/ch40/10183-Phong-An-ninh-noi-dia-bao-dam-an-ninh-trat-tu-buoi-tiep-cong-dan-cua-Bi-thu-Tinh-uy-Ca-Mau.html",
+      "https://congan.camau.gov.vn/ch40/10182-Dang-uy-Cong-an-tinh-phoi-hop-giam-sat-chuyen-de-doi-voi-Chi-bo-Cong-an-xa-Phan-Ngoc-Hien.html",
+      "https://congan.camau.gov.vn/ch40/10181-Cong-an-xa-Tan-Loc-to-chuc-Le-ket-nap-dang-vien-moi.html",
+      "https://congan.camau.gov.vn/ch40/10180-Nang-cao-kha-nang-san-sang-chien-dau-qua-dien-tap-phuong-an-xu-ly-tinh-huong-phuc-tap-ve-an-ninh-trat-tu.html",
+      "https://congan.camau.gov.vn/ch40/10179-Cong-an-xa-Tri-Phai-sinh-hoat-chuyen-de-nhan-ky-niem-81-nam-Ngay-Cach-mang-Thang-Tam-thanh-cong-va-Quoc-khanh-29.html",
+      "https://congan.camau.gov.vn/ch40/10178-Luc-luong-ANTT-co-so-xa-Luong-The-Tran-tang-cuong-huong-dan-nguoi-dan-cai-dat-ung-dung-VNeTraffic.html",
+      "https://congan.camau.gov.vn/ch40/10177-Phong-Canh-sat-giao-thong-phoi-hop-Cong-an-xa-phuong-ra-soat-lam-sach-du-lieu-dang-ky-phuong-tien-va-huong-dan-nguoi-dan-cai-dat-su-dung-VNeTraffic.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

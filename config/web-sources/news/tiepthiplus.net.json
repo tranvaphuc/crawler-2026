@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tiepthiplus.net",
+  "siteId": "tiepthiplus.net",
+  "registrableDomain": "tiepthiplus.net",
+  "homepage": "https://tiepthiplus.net/",
+  "allowedHosts": [
+    "tiepthiplus.net",
+    "www.tiepthiplus.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tiepthiplus.net/",
+    "categories": [
+      "https://tiepthiplus.net/c/tin-tuc",
+      "https://tiepthiplus.net/c/kinh-te",
+      "https://tiepthiplus.net/c/tiep-thi-tieu-dung",
+      "https://tiepthiplus.net/c/nha-va-dat",
+      "https://tiepthiplus.net/c/cong-nghe-va-xe",
+      "https://tiepthiplus.net/c/van-hoa-giai-tri",
+      "https://tiepthiplus.net/video",
+      "https://tiepthiplus.net/photo",
+      "https://tiepthiplus.net/infographic",
+      "https://tiepthiplus.net/emagazine"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Kao Việt Nam kỷ niệm 30 năm hoạt động tại Việt Nam và công bố Chương trình “Tăng cường chăm sóc y tế” (Care within Reach)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": ".article-detail",
+    "selector": ".article-content > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:23.249Z",
+    "frozenAt": "2026-11-16T02:01:08.822Z",
+    "trainingUrl": "https://tiepthiplus.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a195396.html",
+    "independentHoldouts": [
+      "https://tiepthiplus.net/thanh-cong-ben-vung-bat-dau-tu-hoach-dinh-chien-luoc-xuat-sac-hoi-nghi-thuong-dinh-cac-nha-lanh-dao-global-chinese-insurance-agency-500-cia500-2026-va-le-trao-chung-nhan-dien-ra-tai-thuong-hai-a197583.html",
+      "https://tiepthiplus.net/chung-ket-mcfit-2026-midea-ton-vinh-nhung-tho-lap-dat-dieu-hoa-xuat-sac-tai-dong-nam-a-a197576.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tiepthiplus.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a195396.html",
+      "https://tiepthiplus.net/gha-vinh-danh-benh-vien-truc-thuoc-so-2-truong-y-dai-hoc-chiet-giang-voi-chung-nhan-xuat-sac-hang-distinction-ve-trai-nghiem-benh-nhan-du-lich-y-te-quoc-te-a197594.html",
+      "https://tiepthiplus.net/thanh-cong-ben-vung-bat-dau-tu-hoach-dinh-chien-luoc-xuat-sac-hoi-nghi-thuong-dinh-cac-nha-lanh-dao-global-chinese-insurance-agency-500-cia500-2026-va-le-trao-chung-nhan-dien-ra-tai-thuong-hai-a197583.html",
+      "https://tiepthiplus.net/chung-ket-mcfit-2026-midea-ton-vinh-nhung-tho-lap-dat-dieu-hoa-xuat-sac-tai-dong-nam-a-a197576.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "laodongdongnai.vn",
+  "siteId": "laodongdongnai.vn",
+  "registrableDomain": "laodongdongnai.vn",
+  "homepage": "https://laodongdongnai.vn/",
+  "allowedHosts": [
+    "laodongdongnai.vn",
+    "www.laodongdongnai.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "domain": "laodongdongnai.vn",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:33.383Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSampleCount": 0,
+    "categoryVerified": false,
+    "fullSiteCycleVerified": false,
+    "reason": "missing_published_date",
+    "stage": "parser_failed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/laodongdongnai.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Sửa bếp từ ở đâu uy tín giá rẻ nhất tại Hà Nội 2026?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-post",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "parserRepairValidation": {
+    "domain": "laodongdongnai.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 10,
+    "checkedArticleUrls": 96,
+    "freshArticleChecks": 91,
+    "parserIssues": 0,
+    "transportUnconfirmed": 86,
+    "distinctHashes": 10,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 37,
+    "categoriesFreshChecked": 29,
+    "categoriesUnconfirmed": 6,
+    "categoriesWithoutParsedArticle": 22,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1321,
+        "passed": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": "http_500",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:56.635Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/laodongdongnai.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "discovery": {
+    "homepage": "https://laodongdongnai.vn/",
+    "categories": [
+      "https://laodongdongnai.vn/",
+      "https://laodongdongnai.vn/linh-kien/",
+      "https://laodongdongnai.vn/ban-hang/",
+      "https://laodongdongnai.vn/doanh-nghiep/",
+      "https://laodongdongnai.vn/viec-lam/",
+      "https://laodongdongnai.vn/nguoi-dich-vu/",
+      "https://laodongdongnai.vn/nguoi-lao-dong/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.259Z",
+      "verifiedSeeds": [
+        "https://laodongdongnai.vn/",
+        "https://laodongdongnai.vn/linh-kien/",
+        "https://laodongdongnai.vn/ban-hang/",
+        "https://laodongdongnai.vn/doanh-nghiep/",
+        "https://laodongdongnai.vn/viec-lam/",
+        "https://laodongdongnai.vn/nguoi-dich-vu/",
+        "https://laodongdongnai.vn/nguoi-lao-dong/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  }
+}

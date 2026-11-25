@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {spawn} from 'node:child_process';import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),dir=path.join(root,'outputs/cohort-13-queues-2026-10-27');
+const raw=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[path.join(root,'scripts/crawl_remote_admin.mjs'),'exec',path.join(dir,'poll.sh')],{cwd:root,stdio:['ignore','pipe','pipe']});let output='';child.stdout.on('data',b=>output+=b);child.stderr.on('data',b=>output+=b);child.on('error',reject);child.on('exit',async code=>{try{await fs.writeFile(path.join(dir,'poll-latest.raw.txt'),output);if(code!==0)reject(Error('REMOTE_MONITOR_FAILED_'+code));else resolve(output);}catch(e){reject(e);}});});
+const line=raw.split(/\r?\n/).find(s=>s.startsWith('{')&&s.includes('"cohortId"'));if(!line)throw Error('MONITOR_JSON_MISSING');
+const report=JSON.parse(line),manifest=JSON.parse(await fs.readFile(path.join(dir,'manifest.json'),'utf8'));if(report.cohortId!==manifest.cohortId)throw Error('COHORT_ID_CHANGED');
+const state=report.monitorState;delete report.monitorState;
+await fs.writeFile(path.join(dir,'monitor-state.json'),JSON.stringify(state,null,2)+'\n');await fs.writeFile(path.join(dir,'latest.json'),JSON.stringify(report,null,2)+'\n');
+await fs.writeFile(path.join(dir,'check-'+report.at.replace(/[:.]/g,'-')+'.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({at:report.at,startedAt:report.startedAt,allFinished:report.allFinished,queues:report.queues.map(q=>({name:q.name,total:q.total,completed:q.completed,failed:q.failed,pending:q.pending,unknown:q.unknown,removedUnconfirmed:q.removedUnconfirmed,finished:q.finished,finishedObservedAt:q.finishedObservedAt,newJobsExcluded:q.newJobsExcluded,eventStreamGap:q.eventStreamGap,errors:q.errors}))}));

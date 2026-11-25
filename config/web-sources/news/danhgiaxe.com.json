@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "siteName": "danhgiaxe.com",
+  "siteId": "danhgiaxe.com",
+  "registrableDomain": "danhgiaxe.com",
+  "homepage": "https://www.danhgiaxe.com/",
+  "allowedHosts": [
+    "www.danhgiaxe.com",
+    "danhgiaxe.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "[VIDEO] Mù Kính Khi Mưa: 99% Tài Mới Xử Lý SAI!",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".main-content",
+    "remove": "script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_failed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:30.512Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "categoryArticleParsed": true,
+    "independentSampleCount": 0,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.danhgiaxe.com/can-canh-bo-doi-tay-ga-300cc-wmoto-gobi-300-va-touch-300-gia-98-trieu-dong-tai-viet-nam-34145",
+      "https://www.danhgiaxe.com/128-trieu-dong-cho-mo-to-adv-hai-xi-lanh-morbidelli-t352x-co-gi-dang-chu-y-34144",
+      "https://www.danhgiaxe.com/video/video-hanh-trinh-giao-thoa-innova-cross-hybrid-ban-linh-an-tam-33743",
+      "https://www.danhgiaxe.com/video/video-mu-kinh-khi-mua-99-tai-moi-xu-ly-sai-33714",
+      "https://www.danhgiaxe.com/mforce-viet-nam-ra-mat-3-mau-xe-va-hang-loat-uu-dai-nhan-dip-ky-niem-1-nam-thanh-lap-34143",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-sirius-2026-phien-ban-mau-sac-thong-so-2026-34140",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-sirius-fi-2026-phien-ban-mau-sac-thong-so-2026-34139"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": false,
+    "reason": "missing_published_date",
+    "stage": "parser_failed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/danhgiaxe.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://www.danhgiaxe.com/",
+    "categories": [
+      "https://www.danhgiaxe.com/tim-kiem",
+      "https://www.danhgiaxe.com/danh-gia",
+      "https://www.danhgiaxe.com/liberty",
+      "https://www.danhgiaxe.com/tu-van-mua-xe",
+      "https://www.danhgiaxe.com/kinh-nghiem-lai-xe",
+      "https://www.danhgiaxe.com/",
+      "https://www.danhgiaxe.com/huong-dan-su-dung-kinh-nghiem-lai-xe/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?danhgiaxe.com/.*?(\\d{5,})(.htm)$",
+    "discoveryMethod": "homepage+navigation category; candidate ranking requires article-level validation",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.270Z",
+      "verifiedSeeds": [
+        "https://www.danhgiaxe.com/",
+        "https://www.danhgiaxe.com/danh-gia",
+        "https://www.danhgiaxe.com/tu-van-mua-xe",
+        "https://www.danhgiaxe.com/huong-dan-su-dung-kinh-nghiem-lai-xe/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "danhgiaxe.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 13,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "video",
+        "discovered": 2,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "ordinary",
+        "discovered": 43,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.danhgiaxe.com/video/video-hanh-trinh-giao-thoa-innova-cross-hybrid-ban-linh-an-tam-33743",
+      "https://www.danhgiaxe.com/video/video-mu-kinh-khi-mua-99-tai-moi-xu-ly-sai-33714",
+      "https://www.danhgiaxe.com/volvo-ex90-va-volvo-es90-chinh-thuc-ra-mat-tai-viet-nam-34147",
+      "https://www.danhgiaxe.com/byd-viet-nam-chinh-thuc-khoi-dong-byd-techweek-2026-34146",
+      "https://www.danhgiaxe.com/can-canh-bo-doi-tay-ga-300cc-wmoto-gobi-300-va-touch-300-gia-98-trieu-dong-tai-viet-nam-34145",
+      "https://www.danhgiaxe.com/128-trieu-dong-cho-mo-to-adv-hai-xi-lanh-morbidelli-t352x-co-gi-dang-chu-y-34144",
+      "https://www.danhgiaxe.com/mforce-viet-nam-ra-mat-3-mau-xe-va-hang-loat-uu-dai-nhan-dip-ky-niem-1-nam-thanh-lap-34143",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-sirius-2026-phien-ban-mau-sac-thong-so-2026-34140",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-sirius-fi-2026-phien-ban-mau-sac-thong-so-2026-34139",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-jupiter-finn-2026-phien-ban-mau-sac-thong-so-2026-34138",
+      "https://www.danhgiaxe.com/honda-o-to-viet-nam-tung-chuong-trinh-khuyen-mai-luot-nhip-thu-vang-nhan-ngan-uu-dai-34137",
+      "https://www.danhgiaxe.com/gia-xe-yamaha-exciter-2026-phien-ban-mau-sac-thong-so-2026-34136",
+      "https://www.danhgiaxe.com/danh-gia/danh-gia-kia-new-sportage-hybrid-2026-thiet-ke-dep-cong-nghe-ngap-tran-gia-tu-749-trieu-dong-34080",
+      "https://www.danhgiaxe.com/danh-gia/danh-gia-kia-sorento-hybrid-2026-co-gi-de-canh-tranh-santa-fe-hybrid-va-nhung-suv-7-cho-cao-cap-34079",
+      "https://www.danhgiaxe.com/danh-gia/danh-gia-ram-rebel-1500-2026-gia-35-ty-dong-xe-ban-tai-hang-sang-rong-rai-full-option--34063",
+      "https://www.danhgiaxe.com/danh-gia/danh-gia-peugeot-3008-2026-gia-1279-ty-dong-ngoai-that-cuon-hut-noi-that-co-gi-34062",
+      "https://www.danhgiaxe.com/danh-gia/danh-gia-chi-tiet-ford-territory-2026-platinum-gia-916-trieu-co-gi-dang-tien-34057"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 8
+    },
+    "checkedAt": "2026-11-10T09:14:49.221Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/danhgiaxe.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

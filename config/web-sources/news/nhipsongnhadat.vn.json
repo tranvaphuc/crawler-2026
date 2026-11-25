@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipsongnhadat.vn",
+  "siteId": "nhipsongnhadat.vn",
+  "registrableDomain": "nhipsongnhadat.vn",
+  "homepage": "https://nhipsongnhadat.vn/",
+  "allowedHosts": [
+    "nhipsongnhadat.vn",
+    "www.nhipsongnhadat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Kê khai “hai giá” bán đất, 2 cá nhân ở Hưng Yên bị khởi tố tội trốn thuế",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:57.677Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhipsongnhadat.vn/ke-khai-hai-gia-ban-dat-2-ca-nhan-o-hung-yen-bi-khoi-to-toi-tron-thue.html",
+      "https://nhipsongnhadat.vn/du-kien-hoan-thanh-gan-17-nghin-can-nha-o-cho-thue-trong-nam-2026.html",
+      "https://nhipsongnhadat.vn/phat-dat-tang-hon-gap-doi-loi-nhuan-mo-rong-danh-muc-dau-tu.html",
+      "https://nhipsongnhadat.vn/gia-bat-dong-san-chua-the-ha-nhiet-trong-ngan-han-nguoi-mua-nen-ung-bien-the-nao.html",
+      "https://nhipsongnhadat.vn/nam-long-tang-doanh-so-san-sang-cho-cao-diem-ban-giao-cuoi-nam.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipsongnhadat.vn/",
+    "categories": [
+      "https://nhipsongnhadat.vn/chuyen-muc/thi-truong.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/tieu-diem.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/dang-mo-ban.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/doanh-nghiep.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/doanh-nhan.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/dau-tu.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/ha-tang-quy-hoach.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/quy-hoach.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/ha-tang.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/tin-du-an.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/tai-chinh.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/chung-khoan.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/bao-hiem.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/tien-te.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/kinh-doanh.html",
+      "https://nhipsongnhadat.vn/chuyen-muc/tieu-dung.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipsongnhadat.vn",
+    "checkedAt": "2026-11-09T03:57:20.391Z",
+    "url": "https://nhipsongnhadat.vn/ke-khai-hai-gia-ban-dat-2-ca-nhan-o-hung-yen-bi-khoi-to-toi-tron-thue.html",
+    "finalUrl": "https://nhipsongnhadat.vn/ke-khai-hai-gia-ban-dat-2-ca-nhan-o-hung-yen-bi-khoi-to-toi-tron-thue.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3545,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipsongnhadat.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 26,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 26,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 49,
+        "passed": 26,
+        "distinctHashes": 26
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipsongnhadat.vn/iso-56000-don-bay-doi-moi-sang-tao-nang-cao-nang-suat-doanh-nghiep.html",
+      "https://nhipsongnhadat.vn/gia-vang-bat-tang-manh-trong-phien-dau-tuan-41503702.html",
+      "https://nhipsongnhadat.vn/thi-truong-bat-dong-san-nghi-duong-tim-kiem-dong-luc-phuc-hoi-khu-vuc-nao-giu-vai-tro-chu-dao-6f1f4209.html",
+      "https://nhipsongnhadat.vn/thi-truong-can-ho-ha-noi-buoc-vao-giai-doan-tai-can-bang-mat-bang-gia-dieu-chinh-tich-cuc.html",
+      "https://nhipsongnhadat.vn/do-thi-hoa-lac-don-cong-dong-cu-dan-moi-gia-tang-nhu-cau-song-chat-luong.html",
+      "https://nhipsongnhadat.vn/nha-pho-biet-thu-co-hoi-tai-dinh-vi-dong-tien-mat-bang-gia-giam-mo-ra-co-hoi-lua-chon.html",
+      "https://nhipsongnhadat.vn/34-nam-nam-long-ben-bi-lam-dieu-xa-hoi-can-kien-tao-nhung-do-thi-day-suc-song.html",
+      "https://nhipsongnhadat.vn/ngan-hang-nha-nuoc-mua-25-500-dong-usd-thuc-hien-hai-phien-moi-tuan.html",
+      "https://nhipsongnhadat.vn/nha-o-xa-hoi-ha-noi-co-can-gia-hon-720-trieu-dong-ai-duoc-mua.html",
+      "https://nhipsongnhadat.vn/gia-vang-the-gioi-tang-trong-nuoc-giam-nua-trieu-luong.html",
+      "https://nhipsongnhadat.vn/thanh-tra-260-doanh-nghiep-xang-dau-phat-hien-vi-pham-thue-hang-nghin-ty-dong.html",
+      "https://nhipsongnhadat.vn/du-kien-khoang-1-trieu-ty-dong-chi-thuong-xuyen-nam-2027.html",
+      "https://nhipsongnhadat.vn/chu-tich-ha-noi-chi-dao-khan-truong-hoan-thanh-gpmb-du-an-kdt-bac-thang-long-cua-lien-danh-sunshine-group.html",
+      "https://nhipsongnhadat.vn/dat-nen-buoc-vao-giai-doan-tai-dinh-vi-thanh-khoan-dang-thuc-day-qua-trinh-sang-loc-6cf94919.html",
+      "https://nhipsongnhadat.vn/nha-pho-biet-thu-co-hoi-tai-dinh-vi-dong-tien-mat-bang-gia-giam-mo-ra-co-hoi-lua-chon-929cdb9b.html",
+      "https://nhipsongnhadat.vn/thi-truong-can-ho-ha-noi-buoc-vao-giai-doan-tai-can-bang-mat-bang-gia-dieu-chinh-tich-cuc-4adcbd82.html",
+      "https://nhipsongnhadat.vn/can-ho-phia-nam-khoi-sac-ve-nguon-cung-va-thanh-khoan-ha-tang-tao-them-dong-luc-cho-thi-truong-db3f5f4b.html",
+      "https://nhipsongnhadat.vn/giai-phap-ham-rieng-tu-va-bai-toan-toi-uu-cong-suat-bat-dong-san-thuong-mai-tay-ho-tay.html",
+      "https://nhipsongnhadat.vn/giu-von-kinh-doanh-yen-tam-lai-suat-khi-mua-nha-pho-vinhomes-global-gate-ha-long.html",
+      "https://nhipsongnhadat.vn/dic-corp-giam-du-no-tap-trung-nguon-luc-cho-cac-du-an-trong-diem.html",
+      "https://nhipsongnhadat.vn/f88-bi-phat-150-trieu-dong-do-cong-bo-thong-tin-sai-lech.html",
+      "https://nhipsongnhadat.vn/gia-vang-the-gioi-giam-trong-nuoc-bien-dong-nhe-b1dc8969.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:16:20.198Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipsongnhadat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

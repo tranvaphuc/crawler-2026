@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipsongkinhte.com",
+  "siteId": "nhipsongkinhte.com",
+  "registrableDomain": "nhipsongkinhte.com",
+  "homepage": "https://nhipsongkinhte.com/",
+  "allowedHosts": [
+    "nhipsongkinhte.com",
+    "www.nhipsongkinhte.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Standard Chartered dự báo Việt Nam ưu tiên tăng trưởng năm 2027, tiềm năng ổn định trong năm 2028",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "public_feed",
+    "feedUrl": "https://nhipsongkinhte.com/feed/",
+    "sourceKind": "public_feed",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:35.993Z",
+    "sampleCount": 9,
+    "passedSamples": 4,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://nhipsongkinhte.com/kinh-doanh/standard-chartered-du-bao-viet-nam-uu-tien-tang-truong-nam-2027-tiem-nang-on-inh-trong-nam-2028/",
+      "https://nhipsongkinhte.com/kinh-doanh/toi-uu-cong-tac-phi-van-hanh-hieu-qua-hon-visa-ong-hanh-cung-doanh-nghiep-viet-nam-giai-quyet-nhung-bat-cap-trong-kiem-soat-chi-phi-cong-tac/",
+      "https://nhipsongkinhte.com/kinh-doanh/amazon-global-selling-viet-nam-cong-bo-ba-uu-tien-chien-luoc-nham-thuc-ay-tang-truong-xuat-khau-thuong-mai-ien-tu-cua-viet-nam-trong-nam-2027/",
+      "https://nhipsongkinhte.com/kinh-doanh/amazon-global-selling-viet-nam-cong-bo-ba-uu-tien-chien-luoc-nham-thuc-ay-tang-truong-xuat-khau-thuong-mai-ien-tu-cua-viet-nam-trong-nam-2027/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipsongkinhte.com/",
+    "categories": [
+      "https://nhipsongkinhte.com/tin-tuc/",
+      "https://nhipsongkinhte.com/toasoan/",
+      "https://nhipsongkinhte.com/chuyenmuc/thoi-su/",
+      "https://nhipsongkinhte.com/chuyenmuc/kinh-doanh/",
+      "https://nhipsongkinhte.com/chuyenmuc/kinh-doanh/phap-luat/",
+      "https://nhipsongkinhte.com/chuyenmuc/kinh-doanh/khoi-nghiep/",
+      "https://nhipsongkinhte.com/chuyenmuc/tai-chinh/",
+      "https://nhipsongkinhte.com/chuyenmuc/tai-chinh/chung-khoan/",
+      "https://nhipsongkinhte.com/chuyenmuc/tai-chinh/ngan-hang/",
+      "https://nhipsongkinhte.com/chuyenmuc/tai-chinh/bao-hiem/",
+      "https://nhipsongkinhte.com/chuyenmuc/nha-dat/",
+      "https://nhipsongkinhte.com/chuyenmuc/nha-dat/nha-dep/",
+      "https://nhipsongkinhte.com/chuyenmuc/cong-nghe/",
+      "https://nhipsongkinhte.com/chuyenmuc/the-gioi/",
+      "https://nhipsongkinhte.com/chuyenmuc/cuoc-song/",
+      "https://nhipsongkinhte.com/chuyenmuc/cuoc-song/du-lich/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipsongkinhte.com",
+    "checkedAt": "2026-11-09T03:57:20.255Z",
+    "url": "https://nhipsongkinhte.com/kinh-doanh/standard-chartered-du-bao-viet-nam-uu-tien-tang-truong-nam-2027-tiem-nang-on-inh-trong-nam-2028/",
+    "finalUrl": "https://nhipsongkinhte.com/kinh-doanh/standard-chartered-du-bao-viet-nam-uu-tien-tang-truong-nam-2027-tiem-nang-on-inh-trong-nam-2028/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2225,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:54.978Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/nhipsongkinhte.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "nhipsongkinhte.com",
+    "parsedArticles": 19,
+    "distinctHashes": 19,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesAttempted": 16,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 126,
+    "checkedArticleUrls": 19,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 126,
+        "attempted": 19,
+        "passed": 19,
+        "distinctContents": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

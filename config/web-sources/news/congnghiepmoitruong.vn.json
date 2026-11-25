@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congnghiepmoitruong.vn",
+  "siteId": "congnghiepmoitruong.vn",
+  "registrableDomain": "congnghiepmoitruong.vn",
+  "homepage": "https://congnghiepmoitruong.vn/",
+  "allowedHosts": [
+    "congnghiepmoitruong.vn",
+    "www.congnghiepmoitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Quản lý nguồn thải",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".article-publish-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".bx-detail.fw",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Doanh nghiệp - Doanh nhân",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-publish-time",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-detail-content.clearfix",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:24.910Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://congnghiepmoitruong.vn/bao-dam-an-ninh-moi-truong-trong-thoi-ky-phat-trien-moi-cua-dat-nuoc-17388.html",
+      "https://congnghiepmoitruong.vn/gia-lai-hang-loat-ton-tai-ve-moi-truong-tai-cac-du-an-chan-nuoi-heo-17422.html",
+      "https://congnghiepmoitruong.vn/nu-moi-gioi-chot-26-can-vinhomesthang-ban-hang-vinhomes-khong-bao-gio-co-tran-thu-nhap-17424.html",
+      "https://congnghiepmoitruong.vn/3m-pro-shop-by-auto-labvn-mo-hinh-3m-pro-shop-theo-tieu-chuan-moi-nhat-2026-tai-viet-nam-17443.html",
+      "https://congnghiepmoitruong.vn/chuyen-gia-quoc-te-trien-khai-phan-ky-cuon-chieu-cho-phep-nguoi-dan-vinh-hung-tiep-can-ngay-voi-cac-tien-ich-moi-17451.html",
+      "https://congnghiepmoitruong.vn/lan-toa-gia-tri-van-hoa-kinh-bac-thong-qua-su-kien-ngay-van-hoa-viet-nam-17423.html",
+      "https://congnghiepmoitruong.vn/cong-nghe-xu-ly-tro-bay-tu-nha-may-dot-rac-phat-dien-tren-the-gioi-va-kha-nang-ung-dung-tai-viet-nam-17357.html",
+      "https://congnghiepmoitruong.vn/co-quan-chuc-nang-phat-hien-14055-vu-vi-pham-moi-truong-trong-chin-thang-nam-2026-17298.html",
+      "https://congnghiepmoitruong.vn/gia-lai-hang-loat-ton-tai-ve-moi-truong-tai-cac-du-an-chan-nuoi-heo-17422.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congnghiepmoitruong.vn/",
+    "categories": [
+      "https://congnghiepmoitruong.vn/toa-soan",
+      "https://congnghiepmoitruong.vn/chinh-sach-phap-luat",
+      "https://congnghiepmoitruong.vn/cong-nghe-thiet-bi",
+      "https://congnghiepmoitruong.vn/kinh-te-moi-truong",
+      "https://congnghiepmoitruong.vn/nghien-cuu-trao-doi",
+      "https://congnghiepmoitruong.vn/van-hoa",
+      "https://congnghiepmoitruong.vn/dia-phuong",
+      "https://congnghiepmoitruong.vn/media",
+      "https://congnghiepmoitruong.vn/thong-tin-cai-chinh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congnghiepmoitruong.vn",
+    "checkedAt": "2026-11-09T03:56:56.528Z",
+    "url": "https://congnghiepmoitruong.vn/bao-dam-an-ninh-moi-truong-trong-thoi-ky-phat-trien-moi-cua-dat-nuoc-17388.html",
+    "finalUrl": "https://congnghiepmoitruong.vn/bao-dam-an-ninh-moi-truong-trong-thoi-ky-phat-trien-moi-cua-dat-nuoc-17388.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 13881,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congnghiepmoitruong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 22,
+    "freshArticleChecks": 15,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 131,
+        "passed": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://congnghiepmoitruong.vn/bao-dam-an-ninh-moi-truong-trong-thoi-ky-phat-trien-moi-cua-dat-nuoc-17388.html",
+      "https://congnghiepmoitruong.vn/xa-ngai-giao-ngay-hoi-dai-doan-ket-toan-dan-toc-tang-gan-bo-trach-nhiem-voi-cong-dong-17454.html",
+      "https://congnghiepmoitruong.vn/green-sm-trien-khai-chuong-trinh-mua-dong-xanh-vi-tuong-lai-xanh-ho-tro-dac-biet-cho-khach-hang-va-tai-xe-17453.html",
+      "https://congnghiepmoitruong.vn/hung-yen-can-lam-ro-trach-nhiem-cua-lanh-dao-xa-viet-yen-khi-de-tai-dien-viec-hinh-thanh-con-duong-rac-17452.html",
+      "https://congnghiepmoitruong.vn/gia-lai-hang-loat-ton-tai-ve-moi-truong-tai-cac-du-an-chan-nuoi-heo-17422.html",
+      "https://congnghiepmoitruong.vn/nu-moi-gioi-chot-26-can-vinhomesthang-ban-hang-vinhomes-khong-bao-gio-co-tran-thu-nhap-17424.html",
+      "https://congnghiepmoitruong.vn/cong-nghe-xu-ly-tro-bay-tu-nha-may-dot-rac-phat-dien-tren-the-gioi-va-kha-nang-ung-dung-tai-viet-nam-17357.html",
+      "https://congnghiepmoitruong.vn/co-quan-chuc-nang-phat-hien-14055-vu-vi-pham-moi-truong-trong-chin-thang-nam-2026-17298.html",
+      "https://congnghiepmoitruong.vn/thiet-bi-tach-dau-mo-giam-tai-cho-ha-tang-thoat-nuoc-do-thi-bao-ve-moi-truong-17141.html",
+      "https://congnghiepmoitruong.vn/chat-thai-y-te-sau-canh-cua-benh-vien-17138.html",
+      "https://congnghiepmoitruong.vn/3m-pro-shop-by-auto-labvn-mo-hinh-3m-pro-shop-theo-tieu-chuan-moi-nhat-2026-tai-viet-nam-17443.html",
+      "https://congnghiepmoitruong.vn/chuyen-gia-quoc-te-trien-khai-phan-ky-cuon-chieu-cho-phep-nguoi-dan-vinh-hung-tiep-can-ngay-voi-cac-tien-ich-moi-17451.html",
+      "https://congnghiepmoitruong.vn/lan-toa-gia-tri-van-hoa-kinh-bac-thong-qua-su-kien-ngay-van-hoa-viet-nam-17423.html",
+      "https://congnghiepmoitruong.vn/tong-cong-ty-loc-hoa-dau-viet-nam-va-vien-vat-lieu-sinh-hoc-va-moi-truong-day-manh-hop-tac-chien-luoc-tao-dong-luc-moi-but-pha-sxkd-17447.html",
+      "https://congnghiepmoitruong.vn/trien-lam-quoc-te-dien-tu-va-thiet-bi-thong-minh-viet-nam-2026-san-choi-cong-nghe-ty-do-tai-ha-noi-17445.html",
+      "https://congnghiepmoitruong.vn/entech-2025-nhieu-cong-nghe-xu-ly-moi-truong-tien-tien-den-tu-han-quoc-15210.html",
+      "https://congnghiepmoitruong.vn/ke-hoach-tham-gia-thi-truong-carbon-cua-tp-ho-chi-minh-12497.html",
+      "https://congnghiepmoitruong.vn/nhin-qua-cong-nghe-xu-ly-tai-che-tren-gioi-12484.html",
+      "https://congnghiepmoitruong.vn/tich-hop-nganh-nhua-vao-nen-kinh-te-tuan-hoan-12478.html",
+      "https://congnghiepmoitruong.vn/danh-sach-cac-don-vi-tai-che-san-pham-bao-bi-co-giay-phep-moi-truong-hoac-giay-phep-moi-truong-thanh-phan-theo-quy-dinh-cua-phap-luat-12431.html",
+      "https://congnghiepmoitruong.vn/tien-len-toan-thang-at-ve-ta-16403.html",
+      "https://congnghiepmoitruong.vn/day-manh-doi-ngoai-toan-dien-o-tam-cao-moi-16513.html",
+      "https://congnghiepmoitruong.vn/cong-bo-quyet-dinh-bo-nhiem-pho-tong-bien-tap-tap-chi-cong-nghiep-moi-truong-15676.html",
+      "https://congnghiepmoitruong.vn/cong-bo-quyet-dinh-cua-thu-tuong-chinh-phu-ve-phat-trien-nganh-cong-nghiep-moi-truong-viet-nam-giai-doan-2025-2030-15831.html",
+      "https://congnghiepmoitruong.vn/ky-ket-ban-ghi-nho-hop-tac-trong-linh-vuc-cong-nghiep-moi-truong-nuoc-moi-truong-tai-che-15834.html",
+      "https://congnghiepmoitruong.vn/phat-bieu-cua-tong-bi-thu-to-lam-tai-hoi-nghi-toan-quoc-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-nghi-quyet-so-79-va-80-cua-bo-chinh-tri-16522.html",
+      "https://congnghiepmoitruong.vn/khai-truong-don-vi-ho-tro-sinh-san-ivf-my-duc-kon-tum-them-co-hoi-tim-kiem-hanh-phuc-lam-cha-me-17366.html",
+      "https://congnghiepmoitruong.vn/cong-nghiep-moi-truong-va-kinh-te-tuan-hoan-tu-giai-phap-den-gia-tri-ben-vung-17359.html",
+      "https://congnghiepmoitruong.vn/cong-nghiep-moi-truong-nen-tang-mo-hinh-kinh-te-tuan-hoan-17358.html",
+      "https://congnghiepmoitruong.vn/tinh-hung-yen-dinh-huong-tro-thanh-thanh-pho-truoc-nam-2030-17336.html",
+      "https://congnghiepmoitruong.vn/bac-ninh-thuc-day-ket-noi-chuoi-cung-ung-toan-cau-tai-dien-dan-go-global-2026-17318.html",
+      "https://congnghiepmoitruong.vn/tung-buoc-xay-dung-bac-ninh-la-thanh-pho-dieu-hanh-bang-du-lieu-17313.html",
+      "https://congnghiepmoitruong.vn/bac-ninh-kien-quyet-xu-ly-cac-vi-pham-bien-quang-cao-gan-voi-chinh-trang-do-thi-17312.html",
+      "https://congnghiepmoitruong.vn/nang-cao-hieu-qua-cong-tac-thu-gom-xu-ly-rac-thai-theo-dung-quy-trinh-ky-thuat-16519.html",
+      "https://congnghiepmoitruong.vn/can-tho-quan-ly-ve-sinh-moi-truong-quyet-liet-chinh-trang-do-thi-17415.html",
+      "https://congnghiepmoitruong.vn/gia-lai-tang-cuong-cong-tac-quan-ly-nha-nuoc-doi-voi-hoat-dong-chan-nuoi-tren-dia-ban-tinh-17409.html",
+      "https://congnghiepmoitruong.vn/hoan-thien-ha-tang-ky-thuat-tang-cuong-bao-ve-moi-truong-va-nang-cao-chat-luong-hoat-dong-cua-cac-cum-cong-nghiep-tren-ca-nuoc-17368.html",
+      "https://congnghiepmoitruong.vn/quang-ngai-chu-tich-xa-sa-loong-chi-dao-kiem-tra-xu-ly-nghiem-o-nhiem-moi-truong-trong-chan-nuoi-17316.html",
+      "https://congnghiepmoitruong.vn/tai-tao-ac-quy-khong-dung-hoa-chat-giai-phap-cong-nghe-xanh-cho-xu-ly-chat-thai-nguy-hai-16461.html",
+      "https://congnghiepmoitruong.vn/phuoc-hau-ra-quan-ve-sinh-moi-truong-xoa-diem-den-rac-thai-17390.html",
+      "https://congnghiepmoitruong.vn/nghien-cuu-che-tao-loi-loc-nuoc-nhiem-man-tu-phe-pham-nong-nghiep-17374.html",
+      "https://congnghiepmoitruong.vn/quang-ngai-nha-may-xu-ly-chat-thai-ran-dak-ha-bi-xu-phat-hon-155-trieu-dong-do-vi-pham-moi-truong-17385.html",
+      "https://congnghiepmoitruong.vn/bac-ninh-yeu-cau-day-nhanh-tien-do-nha-may-xu-ly-rac-va-phat-dien-phuong-hiep-hoa-17314.html",
+      "https://congnghiepmoitruong.vn/thuong-truc-dang-uy-xa-mang-den-lam-viec-ve-cong-tac-ve-sinh-moi-truong-quan-ly-rac-thai-va-bien-hieu-quang-cao-17305.html",
+      "https://congnghiepmoitruong.vn/seabank-lai-1315-ty-dong-trong-quy-iii2026-tang-375-cung-ky-tong-tai-san-vuot-429376-ty-dong-17450.html",
+      "https://congnghiepmoitruong.vn/nuoc-thai-xu-ly-dat-chuan-la-nguon-tai-nguyen-quy-16501.html",
+      "https://congnghiepmoitruong.vn/cac-mo-hinh-va-giai-phap-phat-trien-kinh-te-tuan-hoan-trong-nganh-cong-nghiep-moi-truong-cua-viet-nam-17376.html",
+      "https://congnghiepmoitruong.vn/nganh-nhiet-dien-viet-nam-truoc-thach-thuc-bao-dam-an-ninh-nang-luong-quoc-gia-va-lo-trinh-chuyen-dich-phat-thai-thap-16984.html",
+      "https://congnghiepmoitruong.vn/bai-viet-chinh-luan-bao-ve-nen-tang-tu-tuong-cua-dang-lan-thu-6-nam-2026-16955.html",
+      "https://congnghiepmoitruong.vn/nhien-lieu-sinh-hoc-2026-dong-luc-xanh-tren-hanh-trinh-chinh-phuc-muc-tieu-net-zero-cua-viet-nam-16938.html",
+      "https://congnghiepmoitruong.vn/dne-tu-doanh-nghiep-cong-ich-den-moi-truong-do-thi-tich-hop-16841.html",
+      "https://congnghiepmoitruong.vn/tac-dong-cua-tri-tue-nhan-tao-va-chuyen-doi-xanh-den-lao-dong-nong-nghiep-16788.html",
+      "https://congnghiepmoitruong.vn/cong-nghiep-moi-truong-dan-dat-tien-trinh-phat-trien-kinh-te-tuan-hoan-16697.html",
+      "https://congnghiepmoitruong.vn/mua-xuan-tren-con-duong-hanh-phuc-16523.html",
+      "https://congnghiepmoitruong.vn/le-hoi-ca-phe-buon-ma-thuot-hanh-trinh-ket-noi-thuong-hieu-va-phat-trien-ca-phe-xanh-17411.html",
+      "https://congnghiepmoitruong.vn/lam-dong-dua-cong-vien-dia-chat-toan-cau-unesco-dak-nong-den-gan-hon-voi-cong-dong-17414.html",
+      "https://congnghiepmoitruong.vn/festival-hoa-da-lat-2026-hoa-quyen-sac-hoa-am-nhac-va-khat-vong-phat-trien-xanh-17413.html",
+      "https://congnghiepmoitruong.vn/khong-gian-tuong-tac-tro-lai-trong-long-khoi-goi-tinh-yeu-thien-nhien-giua-long-ha-noi-17367.html",
+      "https://congnghiepmoitruong.vn/ban-giao-huong-ho-tren-nui-tra-trong-may-vang-len-giua-long-thai-nguyen-16802.html",
+      "https://congnghiepmoitruong.vn/nghe-an-phat-dong-phu-nu-chung-tay-bao-ve-moi-truong-vi-mot-viet-nam-xanh-sach-dep-17467.html",
+      "https://congnghiepmoitruong.vn/phu-quoc-ban-giao-1200-nen-tai-dinh-cu-phuc-vu-apec-2027-ngay-sat-dai-lo-10-lan-xe-va-tuyen-tau-dien-lrt-17421.html",
+      "https://congnghiepmoitruong.vn/dak-lak-chu-dong-ung-pho-thien-tai-bao-ve-moi-truong-nhung-thang-cuoi-nam-2026-17412.html",
+      "https://congnghiepmoitruong.vn/cong-nghe-vat-lieu-moi-duc-thinh-luon-uu-tien-giai-quyet-viec-lam-cho-lao-dong-dia-phuong-va-chu-trong-van-de-an-sinh-17419.html",
+      "https://congnghiepmoitruong.vn/bao-dam-an-toan-thuc-pham-chat-luong-bua-an-noi-tru-ban-tru-trong-co-so-giao-duc-tai-thanh-hoa-17408.html",
+      "https://congnghiepmoitruong.vn/trien-khai-cac-phuong-tien-co-gioi-thuc-hien-ve-sinh-moi-truong-thu-gom-van-chuyen-chat-thai-ran-sinh-hoat-437.media",
+      "https://congnghiepmoitruong.vn/nhan-dien-thao-g-mot-so-vuong-mac-trong-thuc-hien-phan-loai-thu-gom-van-chuyen-chat-thai-ran-sinh-hoat-436.media",
+      "https://congnghiepmoitruong.vn/ky-vong-ve-chat-luong-tu-viec-nang-cao-gia-dich-vu-thu-gom-van-chuyen-xu-ly-chat-thai-ran-sinh-hoat-435.media",
+      "https://congnghiepmoitruong.vn/phu-thien-gia-lai-huong-toi-moi-truong-xanh-sach-khong-khoi-thuoc-vi-suc-khoe-cong-dong-424.media"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 8
+    },
+    "checkedAt": "2026-11-10T09:14:42.989Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congnghiepmoitruong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

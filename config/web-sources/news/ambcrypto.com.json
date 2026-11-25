@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ambcrypto.com",
+  "siteId": "ambcrypto.com",
+  "registrableDomain": "ambcrypto.com",
+  "homepage": "https://ambcrypto.com/",
+  "allowedHosts": [
+    "ambcrypto.com",
+    "www.ambcrypto.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tether holds about 150,000 Bitcoin, Ardoino says—What do its reserves show?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Bitcoin Price Prediction: Can BTC Reclaim $82,000 as ETF Inflows Slip to $56 Billion?",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:45.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://ambcrypto.com/tether-holds-about-150000-bitcoin-ardoino-says-what-do-its-reserves-show/",
+      "https://ambcrypto.com/core-scientific-plans-to-shut-down-bitcoin-mining-despite-q3-revenue-hitting-233m/",
+      "https://ambcrypto.com/bitcoin-price-prediction-can-btc-reclaim-82000-as-etf-inflows-slip-to-56-billion/",
+      "https://ambcrypto.com/ethereum-can-whales-latest-buying-spree-offset-bearish-market-trend/",
+      "https://ambcrypto.com/uniswap-whales-are-selling-why-5-80-could-be-unis-next-stop/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://ambcrypto.com/",
+    "categories": [
+      "https://ambcrypto.com/news/",
+      "https://ambcrypto.com/category/bitcoin-news/",
+      "https://ambcrypto.com/category/ethereum-news/",
+      "https://ambcrypto.com/category/altcoins-news/",
+      "https://ambcrypto.com/category/analysis/",
+      "https://ambcrypto.com/category/stablecoins/",
+      "https://ambcrypto.com/category/global-news/",
+      "https://ambcrypto.com/category/memecoins/",
+      "https://ambcrypto.com/predictions/",
+      "https://ambcrypto.com/convert/",
+      "https://ambcrypto.com/calculator/",
+      "https://ambcrypto.com/chain-reaction-podcast/",
+      "https://ambcrypto.com/category/sponsored/",
+      "https://ambcrypto.com/category/press-release/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "ambcrypto.com",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://ambcrypto.com/tether-holds-about-150000-bitcoin-ardoino-says-what-do-its-reserves-show/",
+    "finalUrl": "https://ambcrypto.com/tether-holds-about-150000-bitcoin-ardoino-says-what-do-its-reserves-show/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2918,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ambcrypto.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 19,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 1,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 200,
+        "passed": 18,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ambcrypto.com/can-pepe-break-0-0000052-while-the-rest-of-the-crypto-market-is-falling/",
+      "https://ambcrypto.com/bitcoin-price-prediction-can-btc-reclaim-82000-as-etf-inflows-slip-to-56-billion/",
+      "https://ambcrypto.com/shiba-inu-price-analysis-analyzing-if-shib-buyers-can-defend-0-00000426/",
+      "https://ambcrypto.com/tether-holds-about-150000-bitcoin-ardoino-says-what-do-its-reserves-show/",
+      "https://ambcrypto.com/michael-saylor-teases-fresh-bitcoin-move-amid-strategys-1b-paper-loss/",
+      "https://ambcrypto.com/whales-scoop-up-16-46m-xrp-in-5-days-right-before-a-900m-inflow-to-binance/",
+      "https://ambcrypto.com/ethereum-loses-2024-gains-is-vitalik-buterin-rethinking-eths-long-term-value/",
+      "https://ambcrypto.com/why-fidelity-calls-solana-an-emerging-piece-of-financial-market-infrastructure/",
+      "https://ambcrypto.com/why-altcoin-season-faces-a-reality-check-after-800b-market-cap-plunge/",
+      "https://ambcrypto.com/robinhood-chain-was-built-for-tokenized-stocks-but-memecoins-took-over/",
+      "https://ambcrypto.com/200-billion-lost-but-heres-why-solanas-tokenized-rwa-market-could-be-silver-lining-for-altcoins/",
+      "https://ambcrypto.com/bitcoin-price-prediction-with-80k-lost-is-more-downside-ahead-for-btc/",
+      "https://ambcrypto.com/ethereum-can-whales-latest-buying-spree-offset-bearish-market-trend/",
+      "https://ambcrypto.com/4-month-low-for-xrps-sentiment-but-will-garlinghouses-north-star-stay-above-1/",
+      "https://ambcrypto.com/arbitrum-added-64-2m-in-stablecoin-trading-in-a-week-but-what-does-this-mean-for-arb/",
+      "https://ambcrypto.com/avax-jumps-12-7-after-nyse-picks-avalanche-to-settle-tokenized-stocks-details/",
+      "https://ambcrypto.com/hyperliquid-loses-key-support-can-a-bear-trap-send-hype-to-100/",
+      "https://ambcrypto.com/coinbase-wins-final-occ-approval-why-coin-stock-remains-under-pressure/",
+      "https://ambcrypto.com/binance-to-shut-down-its-bitcoin-mining-pool-despite-233m-in-q3-revenue/",
+      "https://ambcrypto.com/bitcoin-price-faces-297m-liquidation-wave-why-70k-is-at-risk/",
+      "https://ambcrypto.com/tom-lee-says-ethereum-is-bottoming-a-whale-is-betting-45m-that-hes-right/",
+      "https://ambcrypto.com/bmnr-stock-jumps-7-as-bitmine-closes-in-on-owning-5-of-all-eth/",
+      "https://ambcrypto.com/tezos-algorand-qrl-are-quantum-ready-but-where-does-bitcoin-stand-with-bip-360/",
+      "https://ambcrypto.com/why-28b-in-weekend-trading-has-wall-street-chasing-cryptos-24-7-model/",
+      "https://ambcrypto.com/you-are-still-early-inside-4-stage-machine-behind-gen-zs-crypto-fomo/",
+      "https://ambcrypto.com/pi-network-price-under-pressure-can-pi-defend-0-065-support/",
+      "https://ambcrypto.com/wlfi-falls-16-in-2-days-will-world-liberty-financials-buyback-announcement-fix-prices/",
+      "https://ambcrypto.com/uniswap-whales-are-selling-why-5-80-could-be-unis-next-stop/",
+      "https://ambcrypto.com/xrp-casino-transfers-destination-tags-transaction-costs-and-common-mistakes/",
+      "https://ambcrypto.com/1win-team-secure-direct-qualification-for-major-stage-2-after-moscow-cyber-games-2026-victory/",
+      "https://ambcrypto.com/the-growing-role-of-crypto-in-online-casinos/",
+      "https://ambcrypto.com/stakerxs-ai-agent-surpasses-passes-40m-staked-assets-on-solana-within-3-months-of-launch/",
+      "https://ambcrypto.com/why-crypto-transfers-have-both-an-asset-and-a-network/",
+      "https://ambcrypto.com/gmgn-launches-a-10-day-onchain-trading-championship-with-a-custom-aston-martin-on-the-line/",
+      "https://ambcrypto.com/monero-exchange-2026-how-to-swap-btc-to-xmr-without-kyc/",
+      "https://ambcrypto.com/no-kyc-crypto-exchange-in-2026-10-questions-answered-before-your-first-swap/",
+      "https://ambcrypto.com/how-to-compare-crypto-investment-platforms-without-getting-lost/",
+      "https://ambcrypto.com/trump-crashes-17-as-democrats-sweep-the-midterms-1-22-is-what-matters-now/",
+      "https://ambcrypto.com/cashcat-rallies-11-will-bullish-bets-push-the-memecoin-towards-0-12/",
+      "https://ambcrypto.com/useless-surges-15-as-buyers-return-but-2-risks-could-interrupt-recovery/",
+      "https://ambcrypto.com/circle-reports-865m-q3-revenue-can-usdc-challenge-tethers-dominance/",
+      "https://ambcrypto.com/stablecoin-adoption-hits-new-highs-tron-reaches-76-53m-holders-rlusd-climbs-past-2-5b/",
+      "https://ambcrypto.com/stablecoin-supply-falls-17b-as-solana-card-spending-hits-141m/",
+      "https://ambcrypto.com/coinbase-gets-new-jersey-staking-relief-after-three-years-details/",
+      "https://ambcrypto.com/kraken-restricts-accounts-linked-to-suspected-133m-crypto-theft/",
+      "https://ambcrypto.com/mercado-bitcoin-halts-transfers-as-tether-freezes-over-4-5m-usdt/",
+      "https://ambcrypto.com/u-s-midterms-loom-why-grayscale-remains-bullish-on-cryptos-future/",
+      "https://ambcrypto.com/defi-vault-regulation-splits-aave-kamino-and-veda-from-morpho-details/",
+      "https://ambcrypto.com/cexs-are-losing-market-share-to-dexs-even-when-both-are-shrinking/",
+      "https://ambcrypto.com/how-did-binance-hacker-leverage-aave-to-outsmart-tether-circle-freeze/",
+      "https://ambcrypto.com/uniswap-expands-trading-routes-bringing-outside-swaps-into-uni-burns/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:49.056Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ambcrypto.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

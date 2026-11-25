@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "siteName": "gocnhinthoidai.vn",
+  "siteId": "gocnhinthoidai.vn",
+  "registrableDomain": "gocnhinthoidai.vn",
+  "homepage": "https://gocnhinthoidai.vn/",
+  "allowedHosts": [
+    "gocnhinthoidai.vn",
+    "www.gocnhinthoidai.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá xăng dầu bán lẻ hôm nay 6.11",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Giá vàng sáng nay 6/11/2026: Tiếp tục giảm sâu",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:13.182Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://gocnhinthoidai.vn/tin-kinh-te/gia-xang-dau-ban-le-hom-nay-6.11.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/tin-kinh-te/gia-vang-sang-nay-6-11-2026-tiep-tuc-giam-sau.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/so-hoa/apple-khao-sat-nguoi-mua-iphone-duo-ve-nep-gap-va-camera-duoi-man-hinh.html",
+      "https://gocnhinthoidai.vn/du-lich/phu-quoc-vuot-phuket-trong-bang-xep-hang-diem-den-don-nang-vao-mua-dong.html",
+      "https://gocnhinthoidai.vn/suc-khoe/3-thuc-pham-nen-co-trong-bua-sang-de-xuong-khoe-kiem-soat-cholesterol.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://gocnhinthoidai.vn/",
+    "categories": [
+      "https://gocnhinthoidai.vn/tin-kinh-te",
+      "https://gocnhinthoidai.vn/ocop?isFeatured=1",
+      "https://gocnhinthoidai.vn/tin-kinh-te/quoc-te",
+      "https://gocnhinthoidai.vn/tin-kinh-te/tai-chinh",
+      "https://gocnhinthoidai.vn/tin-kinh-te/nha-dat",
+      "https://gocnhinthoidai.vn/tin-kinh-te/thi-truong",
+      "https://gocnhinthoidai.vn/emagazine",
+      "https://gocnhinthoidai.vn/chuyen-bon-phuong",
+      "https://gocnhinthoidai.vn/hoc-duong?isFeatured=1",
+      "https://gocnhinthoidai.vn/suc-khoe",
+      "https://gocnhinthoidai.vn/nhip-song-tre",
+      "https://gocnhinthoidai.vn/the-thao",
+      "https://gocnhinthoidai.vn/du-lich",
+      "https://gocnhinthoidai.vn/so-hoa",
+      "https://gocnhinthoidai.vn/moi-truong",
+      "https://gocnhinthoidai.vn/van-hoa",
+      "https://gocnhinthoidai.vn/podcast",
+      "https://gocnhinthoidai.vn/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "gocnhinthoidai.vn",
+    "checkedAt": "2026-11-09T03:57:06.237Z",
+    "url": "https://gocnhinthoidai.vn/tin-kinh-te/gia-xang-dau-ban-le-hom-nay-6.11.html?categoryId=1643062",
+    "finalUrl": "https://gocnhinthoidai.vn/tin-kinh-te/gia-xang-dau-ban-le-hom-nay-6.11.html?categoryId=1643062",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1481,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "gocnhinthoidai.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 31,
+    "checkedArticleUrls": 56,
+    "freshArticleChecks": 32,
+    "parserIssues": 25,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 191,
+        "passed": 29,
+        "distinctHashes": 21
+      },
+      {
+        "name": "longform",
+        "discovered": 5,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "audio",
+        "discovered": 19,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://gocnhinthoidai.vn/hoc-duong/hang-nghin-hoc-sinh-o-hue-nghi-hoc-vi-mua-lon.html",
+      "https://gocnhinthoidai.vn/du-lich/le-hoi-hoa-anh-dao-o-dien-bien-keo-dai-den-thang-1.2027.html",
+      "https://gocnhinthoidai.vn/van-hoa/van-hoa-nghe-thuat-gop-phan-lam-sau-sac-them-su-gan-bo-giua-nhan-dan-viet-nam-nhat-ban.html",
+      "https://gocnhinthoidai.vn/nhip-song-tre/jennie-san-bang-ky-luc-cua-rose-tren-billboard-hot-100.html",
+      "https://gocnhinthoidai.vn/the-thao/lamine-yamal-bao-tin-khong-vui-cho-tuyen-tay-ban-nha.html",
+      "https://gocnhinthoidai.vn/tin-kinh-te/trung-quoc-muon-dung-nhan-dan-te-dinh-gia-rui-ro-van-tai-bien.html",
+      "https://gocnhinthoidai.vn/van-hoa/luong-toi-thieu-vung-tang-tu-nam-2027-ai-se-duoc-tang-luong.html",
+      "https://gocnhinthoidai.vn/tin-kinh-te/trung-quoc-muon-dung-nhan-dan-te-dinh-gia-rui-ro-van-tai-bien.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/tin-kinh-te/gia-vang-sang-nay-10-11-2026-bat-tang-tham-do.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/tin-kinh-te/de-xuat-cam-ban-nha-o-xa-hoi-theo-gia-thi-truong-nhieu-nguoi-voi-va-rut-dang-ky.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/tin-kinh-te/bitcoin-truot-gia-duoi-tac-dong-kep-tu-be-boi-cua-ceo-nvidia-va-dam-phan-my-iran-be-tac.html?categoryId=1643062",
+      "https://gocnhinthoidai.vn/tin-kinh-te/dien-mat-troi-co-khung-gia-phat-dien-moi.html",
+      "https://gocnhinthoidai.vn/chuyen-bon-phuong/nghe-an-chu-dong-ung-pho-mua-lon-dien-rong-nguy-co-sat-lo.html?categoryId=5118808",
+      "https://gocnhinthoidai.vn/chuyen-bon-phuong/cuoc-song-muu-sinh-duoi-bau-troi-o-nhiem-bac-nhat-the-gioi.html?categoryId=5118808",
+      "https://gocnhinthoidai.vn/chuyen-bon-phuong/son-la-kiem-tra-chat-luong-cong-trinh-truong-hoc-tai-13-xa-bien-gioi.html?categoryId=5118808",
+      "https://gocnhinthoidai.vn/chuyen-bon-phuong/toi-uu-hoa-lo-trinh-di-chuyen-cua-xe-buyt-thu-do.html",
+      "https://gocnhinthoidai.vn/suc-khoe/mach-ba-noi-tro-cach-che-bien-ca-hoi-bo-nao-tot-cho-tim-mach.html?categoryId=5118809",
+      "https://gocnhinthoidai.vn/suc-khoe/thuc-uong-buoi-sang-ho-tro-thai-doc-gan-va-kiem-soat-duong-huyet.html?categoryId=5118809",
+      "https://gocnhinthoidai.vn/suc-khoe/nguoi-cao-tuoi-can-luu-y-6-sai-lam-an-uong-khien-duong-huyet-tang.html?categoryId=5118809",
+      "https://gocnhinthoidai.vn/suc-khoe/4-cach-ket-hop-ca-phe-giup-bo-sung-dinh-duong-ho-tro-duong-huyet.html?categoryId=5118809",
+      "https://gocnhinthoidai.vn/van-hoa/van-hoa-nghe-thuat-gop-phan-lam-sau-sac-them-su-gan-bo-giua-nhan-dan-viet-nam-nhat-ban.html?categoryId=1643054",
+      "https://gocnhinthoidai.vn/van-hoa/luong-toi-thieu-vung-tang-tu-nam-2027-ai-se-duoc-tang-luong.html?categoryId=1643054",
+      "https://gocnhinthoidai.vn/van-hoa/tien-boi-duong-nghi-duong-voi-si-quan-nguyen-la-chi-huy-cong-an-xa-nghi-huu-tu-nam-2027.html?categoryId=1643054",
+      "https://gocnhinthoidai.vn/van-hoa/ly-giai-nguyen-nhan-dong-bhxh-hon-37-nam-luong-huu-chi-hon-10-trieu-dong-moi-thang.html?categoryId=1643054",
+      "https://gocnhinthoidai.vn/van-hoa/quy-dinh-ve-quan-ly-si-quan-cong-an-nghi-huu-tu-nam-2027.html?categoryId=1643054",
+      "https://gocnhinthoidai.vn/nhip-song-tre/nhung-su-trung-hop-kho-tin-khi-quay-tay-du-ky-1986.html",
+      "https://gocnhinthoidai.vn/nhip-song-tre/phuong-anh-dao-tiet-lo-ly-do-than-tuong-hong-dao-sau-phim-550-ti-dong-cua-tran-thanh.html",
+      "https://gocnhinthoidai.vn/nhip-song-tre/lee-jong-suk-gay-chu-y-voi-khoi-bat-dong-san-tri-gia-nghin-ti-dong.html",
+      "https://gocnhinthoidai.vn/the-thao/lamine-yamal-bao-tin-khong-vui-cho-tuyen-tay-ban-nha.html?categoryId=5118810",
+      "https://gocnhinthoidai.vn/the-thao/u23-viet-nam-u23-thai-lan-cuoc-doi-dau-dang-chu-y-tai-gia-lai-vtv-cup-2026.html",
+      "https://gocnhinthoidai.vn/the-thao/bang-xep-hang-v.league-2026-2027-sau-vong-7.html?categoryId=5118810",
+      "https://gocnhinthoidai.vn/the-thao/man-united-thoat-thua-aston-villa-nho-2-ban-go-phut-bu-gio.html?categoryId=5118810",
+      "https://gocnhinthoidai.vn/so-hoa/apple-co-the-bien-siri-thanh-tro-ly-ai-chu-dong-tu-nam-2027.html",
+      "https://gocnhinthoidai.vn/so-hoa/apple-khao-sat-nguoi-mua-iphone-duo-ve-nep-gap-va-camera-duoi-man-hinh.html",
+      "https://gocnhinthoidai.vn/so-hoa/apple-phat-hanh-safari-technology-preview-256-bo-sung-loat-ban-sua-loi.html",
+      "https://gocnhinthoidai.vn/so-hoa/iphone-duo-co-them-tinh-nang-reachability-trong-ban-beta-ios-27.3.html",
+      "https://gocnhinthoidai.vn/so-hoa/apple-chuan-bi-tung-loat-san-pham-moi-tu-nay-den-cuoi-nam-2026.html",
+      "https://gocnhinthoidai.vn/du-lich/hang-chau-dan-dau-top-thanh-pho-duoc-khach-viet-san-don-nhat.html",
+      "https://gocnhinthoidai.vn/du-lich/phu-quoc-vuot-phuket-trong-bang-xep-hang-diem-den-don-nang-vao-mua-dong.html",
+      "https://gocnhinthoidai.vn/du-lich/khach-nuoc-ngoai-vuot-nui-xuyen-rung-chinh-phuc-dinh-fansipan.html",
+      "https://gocnhinthoidai.vn/du-lich/viet-nam-don-19-5-trieu-luot-khach-quoc-te-sau-10-thang.html",
+      "https://gocnhinthoidai.vn/hoc-duong/bo-gddt-de-xuat-quy-dinh-moi-ve-tieu-chuan-nang-luc-cua-giao-su-pho-giao-su.html?categoryId=1643060",
+      "https://gocnhinthoidai.vn/hoc-duong/nhung-truong-dai-hoc-su-dung-to-hop-a00-de-xet-tuyen.html",
+      "https://gocnhinthoidai.vn/hoc-duong/tieng-nhat-mo-rong-hien-dien-trong-he-thong-giao-duc-viet-nam.html?categoryId=1643060"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 25
+    },
+    "checkedAt": "2026-11-10T09:15:38.537Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/gocnhinthoidai.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

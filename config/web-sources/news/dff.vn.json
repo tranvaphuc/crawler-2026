@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dff.vn",
+  "siteId": "dff.vn",
+  "registrableDomain": "dff.vn",
+  "homepage": "https://dff.vn/",
+  "allowedHosts": [
+    "dff.vn",
+    "www.dff.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://dff.vn/",
+    "categories": [
+      "https://dff.vn/",
+      "https://dff.vn/",
+      "https://dff.vn/",
+      "https://dff.vn/",
+      "https://dff.vn/tin-moi.html",
+      "https://dff.vn/binh-luan.html",
+      "https://dff.vn/vi-mo-t128-1.html",
+      "https://dff.vn/thi-truong-t129-1.html",
+      "https://dff.vn/crypto-t2202-1.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "TCEX bắt kịp CAEX và SCEX trong cuộc đua vốn điều lệ 10.000 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 95
+  },
+  "body": {
+    "strategy": "jsonld_media"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:20.482Z",
+    "frozenAt": "2026-11-16T01:57:18.351Z",
+    "trainingUrl": "https://dff.vn/tcex-bat-kip-caex-va-scex-trong-cuoc-dua-von-dieu-le-10000-ty-dong-v427.html",
+    "independentHoldouts": [
+      "https://dff.vn/lien-danh-do-thanh-vien-vingroup-dung-dau-duoc-chap-thuan-dau-tu-lam-khu-to-hop-cang-cai-mep-ha-gan-8-ty-usd-quy-mo-hon-2500ha-v430.html",
+      "https://dff.vn/ca-voi-strategy-gom-1000-btc-trong-tuan-qua-nam-giu-hon-4-nguon-cung-bitcoin-v428.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://dff.vn/tcex-bat-kip-caex-va-scex-trong-cuoc-dua-von-dieu-le-10000-ty-dong-v427.html",
+      "https://dff.vn/lien-danh-do-thanh-vien-vingroup-dung-dau-duoc-chap-thuan-dau-tu-lam-khu-to-hop-cang-cai-mep-ha-gan-8-ty-usd-quy-mo-hon-2500ha-v430.html",
+      "https://dff.vn/ca-voi-strategy-gom-1000-btc-trong-tuan-qua-nam-giu-hon-4-nguon-cung-bitcoin-v428.html",
+      "https://dff.vn/man-chao-san-song-gio-cua-nha-san-xuat-anh-trai-say-hi-co-phieu-lao-doc-gan-12-sau-chua-day-2-phien-von-hoa-boc-hoi-724-ty-dong-v426.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

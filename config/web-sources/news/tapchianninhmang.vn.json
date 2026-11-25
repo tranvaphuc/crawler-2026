@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchianninhmang.vn",
+  "siteId": "tapchianninhmang.vn",
+  "registrableDomain": "tapchianninhmang.vn",
+  "homepage": "https://tapchianninhmang.vn/",
+  "allowedHosts": [
+    "tapchianninhmang.vn",
+    "www.tapchianninhmang.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tapchianninhmang.vn/",
+    "categories": [
+      "https://tapchianninhmang.vn/canh-bao-lua-dao",
+      "https://tapchianninhmang.vn/bao-ve-du-lieu",
+      "https://tapchianninhmang.vn/su-kien-quan-diem",
+      "https://tapchianninhmang.vn/nhin-ra-the-gioi"
+    ]
+  },
+  "title": {
+    "value": "Kết cấu thép cầu đi bộ sông Sài Gòn vượt thử tải thành công",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:22.005Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:16.588Z",
+    "independentHoldouts": [
+      "https://tapchianninhmang.vn/lao-cai-tap-huan-ky-nang-livestream-cho-1-000-dai-bieu",
+      "https://tapchianninhmang.vn/de-xuat-cam-ban-thuoc-la-truc-tuyen-trung-bay-tai-diem-ban",
+      "https://tapchianninhmang.vn/vpbank-va-aia-ra-mat-san-pham-bao-hiem-dau-tu-cao-cap"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tapchianninhmang.vn/ket-cau-thep-cau-di-bo-song-sai-gon-vuot-thu-tai-thanh-cong",
+      "https://tapchianninhmang.vn/lao-cai-tap-huan-ky-nang-livestream-cho-1-000-dai-bieu",
+      "https://tapchianninhmang.vn/de-xuat-cam-ban-thuoc-la-truc-tuyen-trung-bay-tai-diem-ban",
+      "https://tapchianninhmang.vn/vpbank-va-aia-ra-mat-san-pham-bao-hiem-dau-tu-cao-cap"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

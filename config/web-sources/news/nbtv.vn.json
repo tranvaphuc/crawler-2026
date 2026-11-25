@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nbtv.vn",
+  "siteId": "nbtv.vn",
+  "registrableDomain": "nbtv.vn",
+  "homepage": "https://nbtv.vn/",
+  "allowedHosts": [
+    "nbtv.vn",
+    "www.nbtv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nbtv.vn/",
+    "categories": [
+      "https://nbtv.vn/truyen-hinh",
+      "https://nbtv.vn/phat-thanh",
+      "https://nbtv.vn/media",
+      "https://nbtv.vn/video-moi",
+      "https://nbtv.vn/e-magazine",
+      "https://nbtv.vn/infographics",
+      "https://nbtv.vn/photo",
+      "https://nbtv.vn/chinh-tri",
+      "https://nbtv.vn/kinh-te",
+      "https://nbtv.vn/van-hoa"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tập đoàn Central Retail Việt Nam bàn giao công trình nhà đa năng cho Trường Tiểu học Hà Nam (phân hiệu 2)",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:00.104Z",
+    "frozenAt": "2026-11-16T01:58:57.934Z",
+    "trainingUrl": "https://nbtv.vn/tap-doan-central-retail-viet-nam-ban-giao-cong-trinh-nha-da-nang-cho-truong-tieu-hoc-ha-nam-phan-hieu-2-115464.html",
+    "independentHoldouts": [
+      "https://nbtv.vn/dong-chi-pho-thu-tuong-thuong-truc-chinh-phu-pham-gia-tuc-va-dong-chi-bi-thu-tinh-uy-tran-huy-tuan-du-le-ky-niem-60-nam-ngay-thanh-lap-truong-thpt-a-tran-hung-dao-va-don-nhan-huan-chuong-lao-dong-hang-nhat-116270.html",
+      "https://nbtv.vn/sang-nay-17-10-khai-mac-ky-hop-thu-hai-quoc-hoi-khoa-xvi-xem-xet-nhieu-noi-dung-quan-trong-114856.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nbtv.vn/tap-doan-central-retail-viet-nam-ban-giao-cong-trinh-nha-da-nang-cho-truong-tieu-hoc-ha-nam-phan-hieu-2-115464.html",
+      "https://nbtv.vn/dong-chi-pho-thu-tuong-thuong-truc-chinh-phu-pham-gia-tuc-va-dong-chi-bi-thu-tinh-uy-tran-huy-tuan-du-le-ky-niem-60-nam-ngay-thanh-lap-truong-thpt-a-tran-hung-dao-va-don-nhan-huan-chuong-lao-dong-hang-nhat-116270.html",
+      "https://nbtv.vn/sang-nay-17-10-khai-mac-ky-hop-thu-hai-quoc-hoi-khoa-xvi-xem-xet-nhieu-noi-dung-quan-trong-114856.html",
+      "https://nbtv.vn/hoi-nghi-ban-thuong-vu-tinh-uy-cho-y-kien-ve-cac-noi-dung-thuoc-tham-quyen-113947.html",
+      "https://nbtv.vn/dang-huong-tuong-niem-chu-tich-ho-chi-minh-va-cac-anh-hung-liet-si-muoi-nu-dan-quan-phao-phong-khong-lam-ha-114090.html",
+      "https://nbtv.vn/ninh-binh-long-trong-to-chuc-le-ky-niem-60-nam-ngay-hy-sinh-cua-muoi-nu-dan-quan-phao-phong-khong-lam-ha-1966-2026-114092.html",
+      "https://nbtv.vn/ngay-lam-viec-thu-nhat-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv-114257.html",
+      "https://nbtv.vn/ngay-lam-viec-thu-hai-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv-114325.html",
+      "https://nbtv.vn/ngay-lam-viec-thu-ba-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv-114373.html",
+      "https://nbtv.vn/thu-tuong-le-minh-hung-toi-phnom-penh-bat-dau-chuyen-tham-chinh-thuc-campuchia-114457.html",
+      "https://nbtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-ky-niem-80-nam-ngay-truyen-thong-luc-luong-vu-trang-quan-khu-2-114607.html",
+      "https://nbtv.vn/ninh-binh-gap-mat-ky-niem-ngay-doanh-nhan-viet-nam-nam-2026-114626.html",
+      "https://nbtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-doanh-nghiep-vung-manh-gop-phan-boi-dap-suc-manh-quoc-gia-114632.html",
+      "https://nbtv.vn/hoi-nghi-trien-khai-thuc-hien-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-114772.html",
+      "https://nbtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-chu-tich-hoi-dong-chau-au-antonio-costa-115134.html",
+      "https://nbtv.vn/hoi-nghi-toan-quoc-nghien-cuu-quan-triet-va-trien-khai-thuc-hien-nghi-quyet-hoi-nghi-trung-uong-4-114819.html",
+      "https://nbtv.vn/chinh-thuc-ky-ket-hiep-dinh-thuong-mai-tu-do-viet-nam-va-cac-nuoc-thanh-vien-hiep-hoi-mau-dich-tu-do-chau-au-114912.html",
+      "https://nbtv.vn/phat-dong-ung-ho-quy-an-sinh-xa-hoi-tinh-nam-2026-va-bieu-duong-cac-tap-the-ca-nhan-co-nhieu-dong-gop-cho-quy-va-cong-tac-an-sinh-xa-hoi-giai-doan-2024-2026-116113.html",
+      "https://nbtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cung-phu-nhan-len-duong-tham-dan-mach-lien-minh-chau-au-va-bi-114939.html",
+      "https://nbtv.vn/gap-mat-nu-can-bo-lanh-dao-quan-ly-thuoc-dien-ban-thuong-vu-tinh-uy-quan-ly-nhan-ky-niem-ngay-phu-nu-viet-nam-20-10-114979.html",
+      "https://nbtv.vn/viet-nam-dan-mach-tu-nen-tang-tin-cay-den-hop-tac-dong-kien-tao-114988.html",
+      "https://nbtv.vn/ra-mat-trung-tam-doi-moi-sang-tao-cap-tinh-va-gioi-thieu-cac-giai-phap-thuc-day-doi-moi-sang-tao-ho-tro-phat-trien-doanh-nghiep-khoi-nghiep-115129.html",
+      "https://nbtv.vn/tuyen-bo-chung-ve-viec-thiet-lap-quan-he-doi-tac-chien-luoc-toan-dien-giua-nuoc-cong-hoa-xhcn-viet-nam-va-dan-mach-115038.html",
+      "https://nbtv.vn/dong-chi-bi-thu-tinh-uy-tran-huy-tuan-khao-sat-va-lam-viec-ve-tinh-hinh-phat-trien-nganh-cong-nghiep-dong-tau-tren-dia-ban-tinh-115189.html",
+      "https://nbtv.vn/hom-nay-26-10-quoc-hoi-thao-luan-ve-du-an-luat-bao-ve-cong-trinh-quan-trong-lien-quan-den-an-ninh-quoc-gia-115282.html",
+      "https://nbtv.vn/dong-chi-bi-thu-tinh-uy-tran-huy-tuan-tiep-va-lam-viec-voi-lanh-dao-tap-doan-vti-group-115459.html",
+      "https://nbtv.vn/hom-nay-30-10-quoc-hoi-thao-luan-ve-tinh-hinh-kinh-te-xa-hoi-115485.html",
+      "https://nbtv.vn/sang-nay-31-10-quoc-hoi-tiep-tuc-thao-luan-ve-kinh-te-xa-hoi-115546.html",
+      "https://nbtv.vn/cong-bo-quyet-dinh-thanh-lap-khu-rung-dac-dung-khu-bao-ton-loai-sinh-canh-vooc-mong-trang-kim-bang-115680.html",
+      "https://nbtv.vn/le-ky-niem-125-nam-ngay-sinh-co-giao-su-vien-si-tran-huy-lieu-va-don-bang-xep-hang-di-tich-quoc-gia-nha-luu-niem-dong-chi-tran-huy-lieu-115582.html",
+      "https://nbtv.vn/doan-dbqh-tinh-ninh-binh-thao-luan-ve-co-che-chinh-sach-dac-thu-phat-trien-du-lich-115923.html",
+      "https://nbtv.vn/tuyen-ngon-doc-lap-nam-1945-va-loi-the-bao-ve-to-quoc-112604.html",
+      "https://nbtv.vn/be-mac-va-trao-giai-trang-an-marathon-2026-powered-by-pho-de-nhat-116277.html",
+      "https://nbtv.vn/dong-chi-pho-bi-thu-tinh-uy-chu-tich-uy-ban-mttq-viet-nam-tinh-dinh-thi-lua-tham-va-dong-vien-gia-dinh-2-liet-si-116276.html",
+      "https://nbtv.vn/dong-chi-mai-van-tuat-pho-bi-thu-tinh-uy-truong-doan-dai-bieu-quoc-hoi-tinh-du-ngay-hoi-dai-doan-ket-toan-dan-toc-tai-to-dan-pho-2-phuong-liem-tuyen-116275.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

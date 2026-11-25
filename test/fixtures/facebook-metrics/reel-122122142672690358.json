@@ -1,0 +1,81 @@
+{
+  "input": "1056649874202596_122122142672690358",
+  "finalUrl": "https://www.facebook.com/reel/1724462299082816/",
+  "payloads": [
+    {
+      "require": [
+        [
+          "RelayPrefetchedStreamCache",
+          "next",
+          [],
+          [
+            "adp_FBReelsRootWithEntrypointQueryRelayPreloader_regression",
+            {
+              "__bbox": {
+                "result": {
+                  "data": {
+                    "video": {
+                      "id": "1724462299082816",
+                      "creation_story": {
+                        "id": "UzpfSTYxNTcwNzEwNzU2NjQ1OlZLOjE3MjQ0NjIyOTkwODI4MTY=",
+                        "post_id": "122122142672690358",
+                        "feedback": {
+                          "id": "ZmVlZGJhY2s6MTIyMTIyMTQyNjcyNjkwMzU4"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "require": [
+        [
+          "RelayPrefetchedStreamCache",
+          "next",
+          [],
+          [
+            "adp_FBReelsRootWithEntrypointQueryRelayPreloader_regression",
+            {
+              "__bbox": {
+                "result": {
+                  "path": [
+                    "video",
+                    "creation_story"
+                  ],
+                  "data": {
+                    "id": "UzpfSTYxNTcwNzEwNzU2NjQ1OlZLOjE3MjQ0NjIyOTkwODI4MTY=",
+                    "post_id": "122122142672690358",
+                    "feedback": {
+                      "id": "ZmVlZGJhY2s6MTIyMTIyMTQyNjcyNjkwMzU4",
+                      "total_comment_count": 14,
+                      "share_count_reduced": "12"
+                    },
+                    "fb_reel_react_button": {
+                      "story": {
+                        "id": "UzpfSTYxNTcwNzEwNzU2NjQ1OlZLOjE3MjQ0NjIyOTkwODI4MTY=",
+                        "feedback": {
+                          "id": "ZmVlZGJhY2s6MTIyMTIyMTQyNjcyNjkwMzU4",
+                          "likers": {
+                            "count": 351
+                          },
+                          "unified_reactors": {
+                            "count": 351
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      ]
+    }
+  ]
+}

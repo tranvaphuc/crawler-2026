@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tv.kiemsat.vn",
+  "siteId": "tv.kiemsat.vn",
+  "registrableDomain": "tv.kiemsat.vn",
+  "homepage": "https://tv.kiemsat.vn/",
+  "allowedHosts": [
+    "tv.kiemsat.vn",
+    "www.tv.kiemsat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Công bố và trao quyết định bổ nhiệm chức vụ Phó Viện trưởng VKSND tối cao, Viện trưởng VKSQS Trung ương",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".main_vd .time"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".main_vd .desc",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "mediaEmbedSelector": "#embedid",
+  "nativeIdPattern": "-([a-z0-9]{8})\\.html$",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:49.779Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+      "https://tv.kiemsat.vn/tang-cuong-tuyen-truyen-phap-luat-ngan-chan-ma-tuy-xam-nhap-hoc-duong-q6d3ggo7.html",
+      "https://tv.kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-noz9gw6w.html",
+      "https://tv.kiemsat.vn/doan-kiem-tra-so-4-vksnd-toi-cao-lam-viec-tai-vksnd-tinh-cao-bang-3ry1vjrq.html",
+      "https://tv.kiemsat.vn/vksnd-tinh-quang-ngai-phoi-hop-to-chuc-phien-toa-gia-dinh-vu-an-mua-ban-trai-phep-chat-ma-tuy-va-tang-tru-trai-phep-chat-ma-tuy-do0q3jr3.html",
+      "https://tv.kiemsat.vn/vksnd-huyen-mai-son-tang-cuong-cong-tac-tuyen-truyen-phap-luat-trong-hoc-duong-yr5pyq6p.html",
+      "https://tv.kiemsat.vn/phoi-hop-bat-giu-duong-day-ma-tuy-khung-tai-thai-binh-vr4yg1r5.html",
+      "https://tv.kiemsat.vn/hot-girl-truong-du-lich-cam-dau-duong-day-mua-ban-ma-tuy-linh-an-20-nam-tu-9ondmqrk.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tv.kiemsat.vn/",
+    "categories": [
+      "https://tv.kiemsat.vn/ban-tin-kiem-sat",
+      "https://tv.kiemsat.vn/phong-chong-ma-tuy-va-tnxh",
+      "https://tv.kiemsat.vn/bao-ve-phap-luat",
+      "https://tv.kiemsat.vn/dieu-tra",
+      "https://tv.kiemsat.vn/clip-cua-ban",
+      "https://tv.kiemsat.vn/phong-su-phim-tai-lieu",
+      "https://tv.kiemsat.vn/doanh-nhan-va-thoi-dai",
+      "https://tv.kiemsat.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.346Z",
+      "verifiedSeeds": [
+        "https://tv.kiemsat.vn/",
+        "https://tv.kiemsat.vn/ban-tin-kiem-sat",
+        "https://tv.kiemsat.vn/phong-chong-ma-tuy-va-tnxh",
+        "https://tv.kiemsat.vn/bao-ve-phap-luat",
+        "https://tv.kiemsat.vn/dieu-tra",
+        "https://tv.kiemsat.vn/clip-cua-ban",
+        "https://tv.kiemsat.vn/phong-su-phim-tai-lieu",
+        "https://tv.kiemsat.vn/doanh-nhan-va-thoi-dai"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tv.kiemsat.vn",
+    "checkedAt": "2026-11-09T03:57:35.474Z",
+    "url": "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+    "finalUrl": "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 236,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "tv.kiemsat.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 141,
+        "passed": 18,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+      "https://tv.kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-noz9gw6w.html",
+      "https://tv.kiemsat.vn/tang-cuong-tuyen-truyen-phap-luat-ngan-chan-ma-tuy-xam-nhap-hoc-duong-q6d3ggo7.html",
+      "https://tv.kiemsat.vn/doan-kiem-tra-so-4-vksnd-toi-cao-lam-viec-tai-vksnd-tinh-cao-bang-3ry1vjrq.html",
+      "https://tv.kiemsat.vn/vksnd-tinh-quang-ngai-phoi-hop-to-chuc-phien-toa-gia-dinh-vu-an-mua-ban-trai-phep-chat-ma-tuy-va-tang-tru-trai-phep-chat-ma-tuy-do0q3jr3.html",
+      "https://tv.kiemsat.vn/vksnd-huyen-mai-son-tang-cuong-cong-tac-tuyen-truyen-phap-luat-trong-hoc-duong-yr5pyq6p.html",
+      "https://tv.kiemsat.vn/phoi-hop-bat-giu-duong-day-ma-tuy-khung-tai-thai-binh-vr4yg1r5.html",
+      "https://tv.kiemsat.vn/hot-girl-truong-du-lich-cam-dau-duong-day-mua-ban-ma-tuy-linh-an-20-nam-tu-9ondmqrk.html",
+      "https://tv.kiemsat.vn/la-chan-vung-bien-cuong-1rq0qyo4.html",
+      "https://tv.kiemsat.vn/khong-chap-hanh-nghia-vu-an-treo-thanh-an-giam-q6dy4x67.html",
+      "https://tv.kiemsat.vn/phat-hien-toi-pham-tu-nhung-quyet-dinh-xu-phat-hanh-chinh-3ryd4grq.html",
+      "https://tv.kiemsat.vn/ap-dung-an-treo-trai-phap-luat-yrk74q6n.html",
+      "https://tv.kiemsat.vn/loi-canh-tinh-cho-nhung-ke-buon-ban-dong-vat-hoang-da-3ry193rq.html",
+      "https://tv.kiemsat.vn/hoang-mang-nhung-khoan-thu-khong-ten-dau-nam-hoc-y68n7j6w.html",
+      "https://tv.kiemsat.vn/luat-dat-dai-2013-can-ra-soat-sua-doi-bo-sung-lkoveq61.html",
+      "https://tv.kiemsat.vn/chu-dau-tu-co-the-bi-khoi-to-neu-chiem-dung-quy-bao-tri-4yrkwwrn.html",
+      "https://tv.kiemsat.vn/vien-khoa-hoc-kiem-sat-va-truong-dai-hoc-kiem-sat-phoi-hop-trien-khai-nhiem-vu-nghien-cuu-khoa-hoc-cua-nganh-kiem-sat-nhan-dan-pr1e9lo1.html",
+      "https://tv.kiemsat.vn/lanh-dao-tinh-uy-lang-son-tiep-doan-dai-bieu-vksnd-trung-quoc-26wlk5r7.html",
+      "https://tv.kiemsat.vn/vu-12-vksnd-toi-cao-chu-dong-doi-moi-phuong-thuc-quan-ly-dieu-hanh-tren-nen-tang-so-e6gqjmr7.html",
+      "https://tv.kiemsat.vn/vien-khoa-hoc-kiem-sat-to-chuc-tap-huan-phan-mem-quan-ly-cong-viec-kovpv5o1.html",
+      "https://tv.kiemsat.vn/vksnd-tinh-phu-yen-chu-dong-phoi-hop-ap-dung-thu-tuc-rut-gon-giai-quyet-cac-toi-pham-lien-quan-den-phong-chong-dich-covid-19-nozqn2ow.html",
+      "https://tv.kiemsat.vn/chon-thanh-binh-phuoc-dat-nong-nghiep-bi-xe-thit-phan-lo-va-trach-nhiem-cua-chinh-quyen-dia-phuong-kovmnno1.html",
+      "https://tv.kiemsat.vn/van-nan-xe-nat-dat-nong-nghiep-phan-lo-rao-ban-tai-xa-minh-long-huyen-chon-thanh-binh-phuoc-trach-nhiem-thuoc-ve-ai-46xqndo7.html",
+      "https://tv.kiemsat.vn/vksnd-tinh-quang-ninh-tap-trung-thuc-hien-tot-cong-tac-ung-dung-cong-nghe-thong-tin-thuc-day-chuyen-doi-so-46xqngo7.html",
+      "https://tv.kiemsat.vn/khau-trang-viet-nam-medical-noj0g3rq.html",
+      "https://tv.kiemsat.vn/trung-tam-tham-my-miss-tram-cho-ve-dep-thang-hoa-4pr14xr1.html",
+      "https://tv.kiemsat.vn/nu-hoang-trung-sach-nj63xn69.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:34.841Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tv.kiemsat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:08:41.502Z",
+    "proofs": [
+      {
+        "url": "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+        "publisherUrl": "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+        "contentHash": "c3ff54274437e1d1189772780b764181681ed6bc054a4b17fe6efcb13ba71de4",
+        "description": "Ngày 6/11/2026, thừa Ủy quyền của Chủ tịch nước Cộng hoà XHCN Việt Nam, VKSND tối cao tổ chức Lễ công bố và trao quyết định bổ nhiệm Thiếu tướng Nguyễn Thanh Phong giữ chức vụ Phó Viện trưởng VKSND tối cao, Viện trưởng VKSQS Trung ương.",
+        "publishedDate": "2026-11-06",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-nojde2oq.html",
+          "publishedDate": "2026-11-06",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://tv.kiemsat.vn/le-cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-vien-truong-vien-khoa-hoc-kiem-sat-x6mepnr1.html",
+        "publisherUrl": "https://tv.kiemsat.vn/le-cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-vien-truong-vien-khoa-hoc-kiem-sat-x6mepnr1.html",
+        "contentHash": "949eaee8e47078c59337726ed65f401fab75431b911bc653ea0c718fc41c9e75",
+        "description": "Sáng ngày 13/11/2026, VKSND tối cao tổ chức Lễ công bố và trao quyết định bổ nhiệm đồng chí Đỗ Văn Thường giữ chức vụ Viện trưởng Viện Khoa học kiểm sát VKSND tối cao. Đồng chí Nguyễn Duy Giảng, Phó Viện trưởng VKSND tối cao dự và chỉ đạo buổi Lễ.",
+        "publishedDate": "2026-11-13",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/le-cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-vien-truong-vien-khoa-hoc-kiem-sat-x6mepnr1.html",
+          "publishedDate": "2026-11-13",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://tv.kiemsat.vn/vien-truong-vksnd-toi-cao-nguyen-huy-tien-tiep-dai-su-dac-menh-toan-quyen-hop-chung-quoc-hoa-ky-tai-viet-nam-56llm76x.html",
+        "publisherUrl": "https://tv.kiemsat.vn/vien-truong-vksnd-toi-cao-nguyen-huy-tien-tiep-dai-su-dac-menh-toan-quyen-hop-chung-quoc-hoa-ky-tai-viet-nam-56llm76x.html",
+        "contentHash": "0c489ef58e6bb3ce79b4d2198253ca523a7d69fc190d8657464c544959014ea6",
+        "description": "Chiều ngày 12/11/2026, Viện trưởng VKSND tối cao Việt Nam Nguyễn Huy Tiến đã có buổi tiếp và làm việc với bà Jennifer Wicks, Đại sứ Đặc mệnh toàn quyền Hợp chủng quốc Hoa Kỳ tại Việt Nam.",
+        "publishedDate": "2026-11-12",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/vien-truong-vksnd-toi-cao-nguyen-huy-tien-tiep-dai-su-dac-menh-toan-quyen-hop-chung-quoc-hoa-ky-tai-viet-nam-56llm76x.html",
+          "publishedDate": "2026-11-12",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationArticleScope": ".main_vd",
+  "publicationDatePolicy": "original_only",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "tv.kiemsat.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "description": {
+    "strategy": "native_text_lead",
+    "scope": "body",
+    "selector": ".main_vd .desc"
+  },
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "publicationTimePolicy": "original_clock_required",
+  "descriptionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "tv.kiemsat.vn",
+    "confirmation": "native_video_empty_description_2026-11-17"
+  },
+  "warning44Repair": {
+    "kind": "explicitly_confirmed_native_video_without_sapo",
+    "checkedAt": "2026-11-17T13:41:29.168Z",
+    "proofs": [
+      {
+        "url": "https://tv.kiemsat.vn/la-chan-vung-bien-cuong-1rq0qyo4.html",
+        "publishedDate": "2021-07-26",
+        "contentHash": "986729663fe66970069ff62786a599932c2f4a13ba48d1dd4e8a9cfcee2085c4",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://tv.kiemsat.vn/embed/if1rq0qyo4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://tv.kiemsat.vn/la-chan-vung-bien-cuong-1rq0qyo4.html",
+          "title": "Lá chắn vùng biên cương",
+          "publishedDate": "2021-07-26",
+          "nativeVideoUrl": "https://tv.kiemsat.vn/embed/if1rq0qyo4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/la-chan-vung-bien-cuong-1rq0qyo4.html",
+          "publishedDate": "2021-07-26",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://tv.kiemsat.vn/khong-chap-hanh-nghia-vu-an-treo-thanh-an-giam-q6dy4x67.html",
+        "publishedDate": "2021-07-19",
+        "contentHash": "e54a50b093d98bd51ce6e15166db0a6e8cb2c5172d29cd114c953f6f6a795d57",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://tv.kiemsat.vn/embed/ifq6dy4x67",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://tv.kiemsat.vn/khong-chap-hanh-nghia-vu-an-treo-thanh-an-giam-q6dy4x67.html",
+          "title": "Không chấp hành nghĩa vụ, án treo thành án giam",
+          "publishedDate": "2021-07-19",
+          "nativeVideoUrl": "https://tv.kiemsat.vn/embed/ifq6dy4x67"
+        },
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/khong-chap-hanh-nghia-vu-an-treo-thanh-an-giam-q6dy4x67.html",
+          "publishedDate": "2021-07-19",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://tv.kiemsat.vn/loi-canh-tinh-cho-nhung-ke-buon-ban-dong-vat-hoang-da-3ry193rq.html",
+        "publishedDate": "2024-12-30",
+        "contentHash": "e051bf7b7b2682079f1ef2588ad268d1b4f11c96ed08fb8d660bb35edae58c05",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://tv.kiemsat.vn/embed/if3ry193rq",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://tv.kiemsat.vn/loi-canh-tinh-cho-nhung-ke-buon-ban-dong-vat-hoang-da-3ry193rq.html",
+          "title": "Lời cảnh tỉnh cho những kẻ buôn bán động vật hoang dã",
+          "publishedDate": "2024-12-30",
+          "nativeVideoUrl": "https://tv.kiemsat.vn/embed/if3ry193rq"
+        },
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://tv.kiemsat.vn/loi-canh-tinh-cho-nhung-ke-buon-ban-dong-vat-hoang-da-3ry193rq.html",
+          "publishedDate": "2024-12-30",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "tv.kiemsat.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "descriptionPolicy": "user_confirmed_native_video_without_sapo_v1"
+}

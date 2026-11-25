@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nghetinhplus.vn",
+  "siteId": "nghetinhplus.vn",
+  "registrableDomain": "nghetinhplus.vn",
+  "homepage": "https://nghetinhplus.vn/",
+  "allowedHosts": [
+    "nghetinhplus.vn",
+    "www.nghetinhplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "timezone": "explicit_offset",
+    "precision": "second"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:51.216Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nghetinhplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-doan-lanh-dao-dang-nha-nuoc-vao-lang-vieng-chu-tich-ho-chi-minh/",
+      "https://nghetinhplus.vn/tong-bi-thu-chu-tich-nuoc-khong-de-quan-he-loi-ich-cuc-bo-lam-dep-ho-so-chi-phoi-quy-hoach-can-bo/",
+      "https://nghetinhplus.vn/cau-may-nghe-an-tao-da-cho-ky-dai-hoi-moi/",
+      "https://nghetinhplus.vn/giam-gia-dien-va-xang-dau-nen-kinh-te-duoc-ho-tro-dung-thoi-diem/",
+      "https://nghetinhplus.vn/nghe-an-cong-khai-cac-khoan-thu-chi-trong-nam-hoc-2026-2027/"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nghetinhplus.vn/",
+    "categories": [
+      "https://nghetinhplus.vn/category/thoi-su/",
+      "https://nghetinhplus.vn/category/kinh-te/",
+      "https://nghetinhplus.vn/category/kinh-te/bat-dong-san/",
+      "https://nghetinhplus.vn/category/kinh-te/doanh-nhan/",
+      "https://nghetinhplus.vn/category/kinh-te/tai-chinh/",
+      "https://nghetinhplus.vn/category/phap-luat/",
+      "https://nghetinhplus.vn/category/giao-thong/",
+      "https://nghetinhplus.vn/category/du-lich/",
+      "https://nghetinhplus.vn/category/moi-truong/",
+      "https://nghetinhplus.vn/category/suc-khoe/",
+      "https://nghetinhplus.vn/category/the-thao/",
+      "https://nghetinhplus.vn/category/tieu-diem/",
+      "https://nghetinhplus.vn/author/haithanh/",
+      "https://nghetinhplus.vn/category/doi-song/",
+      "https://nghetinhplus.vn/category/dep/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nghetinhplus.vn",
+    "checkedAt": "2026-11-09T03:57:17.271Z",
+    "url": "https://nghetinhplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-doan-lanh-dao-dang-nha-nuoc-vao-lang-vieng-chu-tich-ho-chi-minh/",
+    "finalUrl": "https://nghetinhplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-doan-lanh-dao-dang-nha-nuoc-vao-lang-vieng-chu-tich-ho-chi-minh/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2413,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:50.022Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/nghetinhplus.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "nghetinhplus.vn",
+    "parsedArticles": 15,
+    "distinctHashes": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesAttempted": 14,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 157,
+    "checkedArticleUrls": 15,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 157,
+        "attempted": 15,
+        "passed": 15,
+        "distinctContents": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "httpAdapter": "declared_public_wordpress_post_required",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.367Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://nghetinhplus.vn/de-con-xong-nghe-me-chong-noi-2-cau-co-gai-son-la-biet-da-chon-dung-nha-chong/",
+      "https://nghetinhplus.vn/4-nguoi-mu-khon-kho-vi-chu-cho-thue-nha-lat-keo-hop-dong/",
+      "https://nghetinhplus.vn/chinh-phu-neu-bien-phap-kiem-soat-dau-hieu-vi-pham-khi-doanh-nghiep-no-thue/"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,100 @@
+NEWS — AXIOS, ROUND 5 — 2026-11-09T04:38:16.655Z
+
+Đã kiểm tra đủ 56 site: 26 site đạt kiểm chứng mới, 30 site chưa đạt.
+Nhóm 34 lỗi parser: 8 đạt, 26 còn vướng.
+Nhóm 22 lỗi HTTP: 18 đạt, 4 còn vướng.
+
+NHÓM PARSER ĐÃ ĐẠT:
+- beforeitsnews.com: 9/9 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- cafeauto.vn: 6/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- giadinh24h.net: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- techinsight.com.vn: 6/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- thanhtra.gov.vn: 6/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- thoitrang360.net: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- tin.skydoor.net: 5/5 mẫu đạt; 2 holdout độc lập. Full original publisher articles passed independent holdouts; aggregator excerpts are not stored as complete articles.
+- tintuc.net: 5/5 mẫu đạt; 2 holdout độc lập. Full original publisher articles passed independent holdouts; aggregator excerpts are not stored as complete articles.
+
+NHÓM HTTP ĐÃ ĐẠT:
+- antoanthongtin.vn: 6/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- baomoi.com: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- bienphong.com.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- ceotoancau.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- chg.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- en.qdnd.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- finance.yahoo.com: 6/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- huongsenviet.com: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- icon.com.vn: 6/8 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- kinhtevn.com.vn: 5/6 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- laodong.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- lecourrier.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- nghenhinvietnam.vn: 6/8 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- openstock.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- qdnd.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- sctv.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- vietnamlawmagazine.vn: 5/5 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+- xaluan.com: 6/7 mẫu đạt; 2 holdout độc lập. Frozen per-site config passed training and two distinct holdout articles
+
+PARSER CÒN VƯỚNG:
+- advertisingvietnam.com: access_blocked
+- asia.nikkei.com: Publisher paywall preview; teaser is not counted as a full article.
+- baobariavungtau.com.vn: Media URL hashing now distinguishes short-caption video notices; original publication time remains unconfirmed because visible time is labelled updated and the linked RSS is 404.
+- cryptonews.com: access_blocked
+- danhgiaxe.com: Original publication date is unavailable; modified/comment dates are not substituted.
+- dealstreetasia.com: missing_published_date
+- dientutieudung.vn: not_found
+- doisongvanhoa.com: missing_published_date
+- giacavattu.com.vn: Only a timestamp labelled updated is exposed; original publication date remains unconfirmed.
+- goodstock.vn: not_found
+- hungyentv.vn: Relative times do not provide an exact publication date; media filenames are not used to invent it.
+- kenhtinxe.com: missing_published_date
+- laodongdongnai.vn: empty_page
+- msn.com: HTTP returns an app/client shell without the requested article body.
+- ngoisaovietnam.vn: not_found
+- nhansac.vn: Different native post IDs still return identical bodies. Independent distinct-body validation remains insufficient.
+- otopro.com.vn: Requested article routes return a homepage/client shell without a usable original publication date.
+- tamnhin.net: not_found
+- taynguyen24h.com.vn: Archive articles parse; five prominent homepage advertisements have no original publication date. Current coverage remains incomplete.
+- thoibaobatdongsan.net: Homepage does not expose article links; source closure page remains.
+- thuonghieuquocgia.nhandan.vn: Ordinary product/news articles parse; custom company profile landing pages still lack usable publication dates and supported article layouts.
+- thv.vn: HTTP access now works with a standard User-Agent. News pages parse, but company directory/product layouts still lack usable publication dates and article bodies.
+- tintuctoday.net: missing_published_date
+- toancanhbaochi.net: missing_published_date
+- travelguide.org.vn: missing_published_date
+- vietnamfdi.vn: ECONNABORTED
+
+HTTP CÒN VƯỚNG:
+- baokiemtoan.vn: http_502
+- coindesk.com: rate_limited
+- molistar.com: http_520
+- tamnhin.kienthuc.net.vn: ENOTFOUND
+
+THAY ĐỔI VÀ BẰNG CHỨNG:
+- Giữ Axios, giới hạn 8 socket và 4MB/response (CNN: 16MB). Không khởi chạy browser/Puppeteer.
+- Bổ sung ba intermediate TLS công khai sau khi openssl verify xác nhận nối được về root CA mặc định của Node; rejectUnauthorized vẫn true. Chi tiết: tls-intermediate-evidence.json.
+- Giữ cookie HTTP Set-Cookie theo host; sửa vòng redirect QĐND. Hỗ trợ response header tới 64KB để đọc Yahoo Finance.
+- Một số site cần User-Agent thông thường. Profile được ghi rõ trong config/web-sources/news-http-profiles.json.
+- Lao Động/Biên Phòng có bước đặt cookie D1N công khai dạng literal. Chỉ đọc đúng mẫu cố định trên hai host, thử lại tối đa một lần; không thực thi JavaScript tải về.
+- CafeAuto lấy ngày created_at có Z và full content từ API public chính trang gọi. TechInsight lấy post publish, content không protected, date_gmt, native post ID, author và featured image từ REST public.
+- An Toàn Thông Tin dùng API public cho danh sách trang chủ/category; Thanh tra Chính phủ nhận link Liferay theo baiVietId. Canonical Thanh tra bỏ mất query ID nên giữ nguyên URL bài có ID; thời gian chỉ tới ngày khi nguồn chỉ công bố ngày.
+- Before It’s News: sáu timestamp bài khớp chính xác RSS +0000, xác nhận timezone UTC; xem beforeitsnews-timezone-evidence.json.
+- Vietnam Law Magazine dùng MM/DD/YYYY: Monday 11/09/2026 là 09/11/2026. Sửa thứ tự ngày tháng từ HTTP thật, không dùng ngày sửa bài.
+- Skydoor/Tintuc.net: đoạn trích bị từ chối; dispatcher lấy nguyên bài từ publisher đã có config. ID, siteId, title và URL dùng báo gốc; link aggregator giữ làm provenance. Phải đối soát URL/native ID trước mọi ghi ES tương lai.
+- Rà 2.902 DTO đã lưu bằng cấu hình frozen của các mẫu cũ: không thay đổi _id, _index, tiêu đề, nội dung hay ngày đăng. 25 mẫu có media thay đổi do chuẩn hóa URL và bỏ 8 placeholder about:blank; xem frozen-parser-regression-summary.json.
+- Nhân Sắc vẫn trùng nội dung. Tây Nguyên 24h, Thương Hiệu Quốc Gia Nhân Dân và THV có layout/bản ghi chưa đủ thông tin; chưa tính là hoàn tất. Không dùng image filenames, sitemap lastmod, ngày sửa hoặc đồng hồ header để điền ngày xuất bản.
+
+Toàn bộ 544 nguồn: 514 có bài lấy mới qua HTTP hoặc dispatcher parse được; 30 còn cần xử lý. 511 có cả bằng chứng category. Các nguồn ngoài 56 site vòng này chủ yếu mới có kiểm tra HTTP một bài từ vòng trước, không phải quét hoàn chỉnh toàn site.
+Có 518 nguồn từng đạt bằng chứng parser/dispatcher (gồm bằng chứng browser cũ); con số này có phạm vi khác số tương thích HTTP hiện tại.
+60 tests pass. Tất cả cấu hình enabled:false; chưa queue, chưa ghi ES5. Chưa xác minh quét hết toàn bộ site trong 15 phút.
+
+ƯU TIÊN TIẾP THEO:
+1. Xác minh ngày đăng/timezone qua nguồn công khai cho các site có body nhưng thiếu mốc thời gian; chưa coi các ngày cập nhật, header clock hay ngày suy ra là ngày đăng.
+2. Hoàn thiện các layout công ty/sản phẩm ở THV và Thương Hiệu Quốc Gia, các bài quảng cáo ở Tây Nguyên 24h; Nhân Sắc cần nguồn trả đúng nội dung khác nhau.
+3. Bốn lỗi HTTP còn lại: baokiemtoan.vn 502 (www trả 404), molistar.com 520 cả bare/www, coindesk.com 429, tamnhin.kienthuc.net.vn DNS. Cần origin/rate-limit/DNS phục hồi hoặc một URL/nguồn công khai hợp lệ được xác minh.
+4. Chỉ khi dữ liệu và coverage đạt mới đo chu kỳ quét toàn bộ. Chưa triển khai queue và chưa ghi ES5.
+
+CHẠY LẠI:
+node scripts/test_news_site_article.mjs --site cafeauto.vn
+node scripts/test_news_site_article.mjs --site tin.skydoor.net
+node scripts/test_news_aggregator_dispatch.mjs --site tintuc.net
+node scripts/test_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round5-http --config-dir outputs/news-parser-rollout-2026-11-09/round5-http/configs --domains DOMAIN
+node scripts/finalize_news_parser_rollout.mjs --round5-http

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodansinh.vn",
+  "siteId": "baodansinh.vn",
+  "registrableDomain": "dansinh.dantri.com.vn",
+  "homepage": "https://dansinh.dantri.com.vn/",
+  "allowedHosts": [
+    "baodansinh.vn",
+    "www.baodansinh.vn",
+    "dansinh.dantri.com.vn",
+    "www.dansinh.dantri.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baodansinh.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "11 khoản phụ cấp, trợ cấp và 16 khoản thu nhập được miễn thuế cá nhân 2025",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "discovery": {
+    "homepage": "https://dansinh.dantri.com.vn/",
+    "categories": []
+  },
+  "publisherMigration": {
+    "requestedDomain": "baodansinh.vn",
+    "canonicalPublisherHost": "dansinh.dantri.com.vn",
+    "verifiedAt": "2026-11-17T09:03:15.997Z"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T09:03:16.320Z",
+    "sampleUrls": [
+      "https://dansinh.dantri.com.vn/tien-luong-tien-cong/11-khoan-phu-cap-tro-cap-va-16-khoan-thu-nhap-duoc-mien-thue-ca-nhan-2025-20250226140104255.htm",
+      "https://dansinh.dantri.com.vn/dien-dan-dan-sinh/tu-13-nguoi-dan-co-the-doi-cap-lai-giay-phep-lai-xe-tai-cong-an-xa-20250227082230481.htm",
+      "https://dansinh.dantri.com.vn/dien-dan-dan-sinh/bong-da-viet-nam-bat-dau-nong-20250227141410092.htm",
+      "https://dansinh.dantri.com.vn/tien-luong-tien-cong/dao-quat-hoi-sinh-tu-pho-ve-vuon-20250227143358048.htm",
+      "https://dansinh.dantri.com.vn/bao-hiem-xa-hoi/ky-hop-dong-lao-dong-bao-lau-thi-bat-buoc-phai-tham-gia-3-loai-bao-hiem-20250226093254030.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

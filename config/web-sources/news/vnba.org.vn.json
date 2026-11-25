@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vnba.org.vn",
+  "siteId": "vnba.org.vn",
+  "registrableDomain": "vnba.org.vn",
+  "homepage": "https://vnba.org.vn/",
+  "allowedHosts": [
+    "vnba.org.vn",
+    "www.vnba.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vnba.org.vn/",
+    "categories": [
+      "https://vnba.org.vn/vi/page/ve-chung-toi.htm",
+      "https://vnba.org.vn/vi/page/co-cau-to-chuc.htm",
+      "https://vnba.org.vn/vi/page/so-do-to-chuc.htm",
+      "https://vnba.org.vn/vi/page/hoi-dong-hiep-hoi.htm",
+      "https://vnba.org.vn/vi/page/thuong-truc-hiep-hoi.htm"
+    ]
+  },
+  "title": {
+    "value": "NAPAS phối hợp ngân hàng, đối tác triển khai loạt ưu đãi nhân Ngày Thanh toán số Việt Nam 2026",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:41.061Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:33.826Z",
+    "independentHoldouts": [
+      "https://vnba.org.vn/vi/napas-gioi-thieu-giai-phap-thanh-toan-so-tai-song-festival-2026-23977.htm",
+      "https://vnba.org.vn/vi/shb-dung-cung-cap-dich-vu-shb-online-tu-thang-11-2026-24083.htm",
+      "https://vnba.org.vn/vi/msb-trien-khai-dich-vu-thanh-toan-qr-xuyen-bien-gioi-vietqrglobal-23857.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vnba.org.vn/vi/napas-phoi-hop-ngan-hang--doi-tac-trien-khai-loat-uu-dai-nhan-ngay-thanh-toan-so-viet-nam-2026-23978.htm",
+      "https://vnba.org.vn/vi/napas-gioi-thieu-giai-phap-thanh-toan-so-tai-song-festival-2026-23977.htm",
+      "https://vnba.org.vn/vi/shb-dung-cung-cap-dich-vu-shb-online-tu-thang-11-2026-24083.htm",
+      "https://vnba.org.vn/vi/msb-trien-khai-dich-vu-thanh-toan-qr-xuyen-bien-gioi-vietqrglobal-23857.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

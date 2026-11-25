@@ -1,0 +1,6 @@
+set -euo pipefail
+cd /opt/news-flow/current
+/opt/news-flow/node/bin/node --input-type=module - <<'NODE'
+import fs from 'node:fs';import assert from 'node:assert/strict';import {DatabaseSync} from 'node:sqlite';import {loadNewsRegistry} from './src/newsFlow/registry.mjs';import {registerOriginalSources} from './src/newsFlow/baomoiOriginalBranch.mjs';import {ThreeFlowState} from './src/newsFlow/threeFlowState.mjs';import {seedTransientFailurePolicies} from './src/web/newsSeedTransientFailures.mjs';
+const db=new DatabaseSync('/var/lib/news-flow/news-flow-runtime/write.sqlite'),state=new ThreeFlowState(db),registry=await loadNewsRegistry();registerOriginalSources(db,registry);state.loadOverlays(registry);state.seedTransientFailurePolicies=seedTransientFailurePolicies(registry.sources.values());assert(state.seedTransientFailurePolicies.get('dulich.thethaovanhoa.vn')?.has('http_503'));const reopened=state.reopenSeedTimeouts(),seeds=db.prepare("SELECT url,status,reason,last_at FROM seed_sources WHERE site='dulich.thethaovanhoa.vn'").all();const result={at:Date.now(),reopened,seeds};fs.writeFileSync('/var/lib/news-flow/recovery-all-20261123/transient-seed-confirmed.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));state.close();
+NODE

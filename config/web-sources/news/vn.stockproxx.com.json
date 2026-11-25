@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vn.stockproxx.com",
+  "siteId": "vn.stockproxx.com",
+  "registrableDomain": "vn.stockproxx.com",
+  "allowedHosts": [
+    "vn.stockproxx.com",
+    "www.vn.stockproxx.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "script,style,aside,.related,.utf_post_nav,.utf_post_tags"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".single-post .utf_post_title-area > .utf_post_meta > .utf_post_date"
+  },
+  "homepage": "https://vn.stockproxx.com/",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "originalPublicationBlockedReason": null,
+  "stage": "discovery_only_publication_evidence_pending",
+  "discovery": {
+    "homepage": "https://vn.stockproxx.com/",
+    "categories": [
+      "https://vn.stockproxx.com/",
+      "https://vn.stockproxx.com/chung-khoan",
+      "https://vn.stockproxx.com/doanh-nghiep",
+      "https://vn.stockproxx.com/bat-dong-san",
+      "https://vn.stockproxx.com/tai-chinh-ngan-hang",
+      "https://vn.stockproxx.com/kinh-te-the-gioi",
+      "https://vn.stockproxx.com/kinh-te-dau-tu",
+      "https://vn.stockproxx.com/hang-hoa",
+      "https://vn.stockproxx.com/tin-tuc-su-kien",
+      "https://vn.stockproxx.com/cong-dong"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.299Z",
+      "verifiedSeeds": [
+        "https://vn.stockproxx.com/",
+        "https://vn.stockproxx.com/chung-khoan",
+        "https://vn.stockproxx.com/doanh-nghiep",
+        "https://vn.stockproxx.com/bat-dong-san",
+        "https://vn.stockproxx.com/tai-chinh-ngan-hang",
+        "https://vn.stockproxx.com/kinh-te-the-gioi",
+        "https://vn.stockproxx.com/kinh-te-dau-tu",
+        "https://vn.stockproxx.com/hang-hoa",
+        "https://vn.stockproxx.com/tin-tuc-su-kien",
+        "https://vn.stockproxx.com/cong-dong"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T05:47:42.826Z",
+    "method": "explicit_user_confirmed_GMT7_2026_11_17",
+    "proofs": [
+      {
+        "url": "https://vn.stockproxx.com/vib/vib-rot-them-1.000-ty-dong-tang-von-cho-vibamc",
+        "contentHash": "250889d4bc90dfbac6ea2be20e0560825ba8e46495de11f468e94db9e55ca54a",
+        "description": "VIB phê duyệt tăng vốn điều lệ cho VIBAMC từ 3.500 tỷ đồng lên 4.500 tỷ đồng từ nguồn vốn chủ sở hữu của ngân hàng.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vn.stockproxx.com/vib/vib-rot-them-1.000-ty-dong-tang-von-cho-vibamc",
+          "publishedDate": "2026-11-16T14:31:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vn.stockproxx.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vn.stockproxx.com/tu-112027-luong-toi-thieu-vung-tang-310.000390.000-dong-tien-dong-bhxh-se-thay-doi-the-nao",
+        "contentHash": "fcf71694c47bc97aa97d98e0f6cb65c4decb0f48391463e59d4acd53c501ee6a",
+        "description": "Từ ngày 1/1/2027, lương tối thiểu vùng tăng thêm 310.000–390.000 đồng/tháng. Tuy nhiên, mức tăng này không đồng nghĩa tiền lương làm căn cứ đóng bảo hiểm xã hội (BHXH) của người lao động sẽ tự động tăng theo.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vn.stockproxx.com/tu-112027-luong-toi-thieu-vung-tang-310.000390.000-dong-tien-dong-bhxh-se-thay-doi-the-nao",
+          "publishedDate": "2026-11-17T01:05:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vn.stockproxx.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://vn.stockproxx.com/drl/lich-chot-quyen-co-tuc-tuan-121610-duc-giang-thanh-toan-ty-le-15",
+        "contentHash": "b362d96852e38004f8ed56f34416ae1f0569863d6eaf3d1608dc204d554faeac",
+        "description": "Trong tuần từ 12-16/10, 9 doanh nghiệp sẽ thực hiện chốt quyền trả cổ tức cho cổ đông với các tỷ lệ hấp dẫn.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vn.stockproxx.com/drl/lich-chot-quyen-co-tuc-tuan-121610-duc-giang-thanh-toan-ty-le-15",
+          "publishedDate": "2026-10-10T13:30:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "vn.stockproxx.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": ".single-post",
+    "selector": ".entry-content p"
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "vn.stockproxx.com",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  }
+}

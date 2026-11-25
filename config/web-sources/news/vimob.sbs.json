@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vimob.sbs",
+  "siteId": "vimob.sbs",
+  "registrableDomain": "vimob.sbs",
+  "homepage": "https://vimob.sbs/",
+  "allowedHosts": [
+    "vimob.sbs",
+    "www.vimob.sbs"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vimob.sbs/",
+    "categories": [
+      "https://vimob.sbs/cong-nghe",
+      "https://vimob.sbs/giao-duc",
+      "https://vimob.sbs/suc-khoe",
+      "https://vimob.sbs/the-thao",
+      "https://vimob.sbs/the-gioi",
+      "https://vimob.sbs/y-kien"
+    ]
+  },
+  "title": {
+    "value": "Masan lấn sân sang mảng cửa hàng tiện lợi",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body-cnt",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:20.562Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:13.260Z",
+    "independentHoldouts": [
+      "https://vimob.sbs/vn-vi/cand/canh-sat-tim-thay-thieu-nien-duoi-nuoc-khi-tam-suoi-post827768.html",
+      "https://vimob.sbs/vn-vi/dantri/the-gioi/hang-khong-my-chua-the-hoat-dong-binh-thuong-truoc-cuoi-ngay-1511-20261115172943268.htm",
+      "https://vimob.sbs/vn-vi/vtv/thu-do-new-delhi-bi-o-nhiem-khong-khi-nghiem-trong-100261115171942292.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vimob.sbs/vn-vi/vnexpress/masan-lan-san-sang-mang-cua-hang-tien-loi-5135942.html",
+      "https://vimob.sbs/vn-vi/cand/canh-sat-tim-thay-thieu-nien-duoi-nuoc-khi-tam-suoi-post827768.html",
+      "https://vimob.sbs/vn-vi/dantri/the-gioi/hang-khong-my-chua-the-hoat-dong-binh-thuong-truoc-cuoi-ngay-1511-20261115172943268.htm",
+      "https://vimob.sbs/vn-vi/vtv/thu-do-new-delhi-bi-o-nhiem-khong-khi-nghiem-trong-100261115171942292.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

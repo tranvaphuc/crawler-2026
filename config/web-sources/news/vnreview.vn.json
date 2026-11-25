@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "vnreview.vn",
+  "siteId": "vnreview.vn",
+  "registrableDomain": "vnreview.vn",
+  "homepage": "https://www.vnreview.vn/",
+  "allowedHosts": [
+    "vnreview.vn",
+    "www.vnreview.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.vnreview.vn/",
+    "categories": [
+      "https://www.vnreview.vn/forums/",
+      "https://www.vnreview.vn/media/",
+      "https://www.vnreview.vn/stories/",
+      "https://www.vnreview.vn/",
+      "https://www.vnreview.vn/",
+      "https://www.vnreview.vn/",
+      "https://www.vnreview.vn/whats-new/",
+      "https://www.vnreview.vn/news/page-2"
+    ]
+  },
+  "title": {
+    "value": "Samsung chính thức mang Bixby tiếng Việt đầy đủ lên các dòng TV mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:04:32.293Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:04:08.719Z",
+    "independentHoldouts": [
+      "https://vnreview.vn/threads/apple-lai-dam-30-7-ty-usd-trong-quy-3.94110/",
+      "https://vnreview.vn/threads/lg-electronics-viet-nam-mo-thu-vien-chap-canh-uoc-mo-cho-hoc-sinh-thai-nguyen.92881",
+      "https://vnreview.vn/threads/macbook-pro-man-hinh-oled-cam-ung-co-the-co-gia-khoi-diem-tu-2-899-usd.93896"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vnreview.vn/threads/samsung-chinh-thuc-mang-bixby-tieng-viet-day-du-len-cac-dong-tv-moi.94125/",
+      "https://vnreview.vn/threads/apple-lai-dam-30-7-ty-usd-trong-quy-3.94110/",
+      "https://vnreview.vn/threads/lg-electronics-viet-nam-mo-thu-vien-chap-canh-uoc-mo-cho-hoc-sinh-thai-nguyen.92881",
+      "https://vnreview.vn/threads/macbook-pro-man-hinh-oled-cam-ung-co-the-co-gia-khoi-diem-tu-2-899-usd.93896"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

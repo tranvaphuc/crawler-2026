@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vneconomy.vn",
+  "siteId": "vneconomy.vn",
+  "registrableDomain": "vneconomy.vn",
+  "homepage": "https://vneconomy.vn/",
+  "allowedHosts": [
+    "vneconomy.vn",
+    "www.vneconomy.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld",
+    "key": "datePublished"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-layout.main-detail-page",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-detail-section",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "C&#xE1;c kho&#x1EA3;n ti&#x1EC1;n c&#x1EE7;a ng&#x1B0;&#x1EDD;i lao &#x111;&#x1ED9;ng t&#x103;ng theo l&#x1B0;&#x1A1;ng t&#x1ED1;i thi&#x1EC3;u t&#x1EEB; 1/1/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-layout.main-detail-page",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "vneconomy.vn",
+      "siteId": "vneconomy.vn",
+      "registrableDomain": "vneconomy.vn",
+      "homepage": "https://vneconomy.vn/",
+      "allowedHosts": [
+        "vneconomy.vn",
+        "www.vneconomy.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail__content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:25.768Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/automotive/quy-iii2026-xe-xanh-keo-doanh-so-o-to-asean-vuot-800000-chiec.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/automotive/thai-lan-ap-thue-35-xe-dien-nhap-khau-ap-luc-noi-dia-hoa-va-tac-dong-den-nganh-o-to-viet-nam.htm",
+          "https://vneconomy.vn/automotive/xe-dien-giu-uu-dai-thue-den-2030-co-nen-mua-som.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".block-detail-page.mt-24",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:52:56.869Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/techconnect/ba-buoc-ngoat-lon-ve-bao-ve-du-lieu-tai-san-so-cua-doanh-nghiep-va-bai-toan-toi-uu-chi-phi-bao-mat-hau-luong-tu.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/techconnect/cac-quoc-gia-dang-phat-trien-co-du-kha-nang-xu-ly-hang-trieu-tac-nhan-ai.htm",
+          "https://vneconomy.vn/techconnect/ha-noi-se-ho-tro-100-nghien-cuu-sinh-giai-cac-bai-toan-lon-cua-thanh-pho.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".main-detail-page",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:52:56.869Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/techconnect/cong-nghe-tai-chinh-dat-ra-yeu-cau-moi-ve-on-dinh-va-kha-nang-chong-chiu-he-thong.htm",
+          "https://vneconomy.vn/techconnect/thi-truong-du-lieu-khong-gian-viet-nam-truoc-co-hoi-phat-trien-moi.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/de-nghi-cho-nguoi-tu-70-tuoi-tro-len-duoc-huong-tro-cap-huu-tri.htm",
+          "https://vneconomy.vn/de-xuat-cuong-che-tien-ky-quy-de-tra-luong-cho-cong-nhan-khi-doanh-nghiep-bo-tron.htm"
+        ]
+      }
+    },
+    {
+      "body": {
+        "strategy": "selector",
+        "selector": "#tab-chapters",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "independent_http_holdouts_passed",
+        "frozenAt": "2026-11-12T15:48:54.919Z",
+        "trainingUrl": "https://vneconomy.vn/diem-tin-18h-ngay-1211-s1214.htm",
+        "holdoutUrls": [
+          "https://vneconomy.vn/diem-tin-14h-ngay-1211-s1213.htm",
+          "https://vneconomy.vn/diem-tin-11h-ngay-1211-s1212.htm"
+        ]
+      },
+      "publishedDate": {
+        "strategy": "public_feed",
+        "feedUrl": "https://vneconomy.vn/tieu-diem.rss",
+        "sourceKind": "public_publication_feed"
+      }
+    },
+    {
+      "title": {
+        "value": "C&#xE1;c kho&#x1EA3;n ti&#x1EC1;n c&#x1EE7;a ng&#x1B0;&#x1EDD;i lao &#x111;&#x1ED9;ng t&#x103;ng theo l&#x1B0;&#x1A1;ng t&#x1ED1;i thi&#x1EC3;u t&#x1EEB; 1/1/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-layout.main-detail-page",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "vneconomy.vn",
+      "siteId": "vneconomy.vn",
+      "registrableDomain": "vneconomy.vn",
+      "homepage": "https://vneconomy.vn/",
+      "allowedHosts": [
+        "vneconomy.vn",
+        "www.vneconomy.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail__content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:25.768Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/automotive/quy-iii2026-xe-xanh-keo-doanh-so-o-to-asean-vuot-800000-chiec.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/automotive/thai-lan-ap-thue-35-xe-dien-nhap-khau-ap-luc-noi-dia-hoa-va-tac-dong-den-nganh-o-to-viet-nam.htm",
+          "https://vneconomy.vn/automotive/xe-dien-giu-uu-dai-thue-den-2030-co-nen-mua-som.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".block-detail-page.mt-24",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:52:56.869Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/techconnect/ba-buoc-ngoat-lon-ve-bao-ve-du-lieu-tai-san-so-cua-doanh-nghiep-va-bai-toan-toi-uu-chi-phi-bao-mat-hau-luong-tu.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/techconnect/cac-quoc-gia-dang-phat-trien-co-du-kha-nang-xu-ly-hang-trieu-tac-nhan-ai.htm",
+          "https://vneconomy.vn/techconnect/ha-noi-se-ho-tro-100-nghien-cuu-sinh-giai-cac-bai-toan-lon-cua-thanh-pho.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "N&#xEA;n theo d&#xF5;i k&#x1EF3; r&#xE0; so&#xE1;t c&#x1EE7;a FTSE Russell v&#xE0;o th&#xE1;ng 3/2027",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".main-detail-page",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:52:56.869Z",
+        "trainingUrls": [
+          "https://vneconomy.vn/techconnect/cong-nghe-tai-chinh-dat-ra-yeu-cau-moi-ve-on-dinh-va-kha-nang-chong-chiu-he-thong.htm",
+          "https://vneconomy.vn/techconnect/thi-truong-du-lieu-khong-gian-viet-nam-truoc-co-hoi-phat-trien-moi.htm"
+        ],
+        "holdoutUrls": [
+          "https://vneconomy.vn/de-nghi-cho-nguoi-tu-70-tuoi-tro-len-duoc-huong-tro-cap-huu-tri.htm",
+          "https://vneconomy.vn/de-xuat-cuong-che-tien-ky-quy-de-tra-luong-cho-cong-nhan-khi-doanh-nghiep-bo-tron.htm"
+        ]
+      }
+    },
+    {
+      "body": {
+        "strategy": "selector",
+        "selector": "#tab-chapters",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "independent_http_holdouts_passed",
+        "frozenAt": "2026-11-12T15:48:54.919Z",
+        "trainingUrl": "https://vneconomy.vn/diem-tin-18h-ngay-1211-s1214.htm",
+        "holdoutUrls": [
+          "https://vneconomy.vn/diem-tin-14h-ngay-1211-s1213.htm",
+          "https://vneconomy.vn/diem-tin-11h-ngay-1211-s1212.htm"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:01.301Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vneconomy.vn/nen-theo-doi-ky-ra-soat-cua-ftse-russell-vao-thang-32027.htm",
+      "https://vneconomy.vn/thanh-khoan-cuc-thap-nha-dau-tu-ca-nhan-van-mo-moi-252000-tai-khoan-chung-khoan-trong-thang-10.htm",
+      "https://vneconomy.vn/cac-khoan-tien-cua-nguoi-lao-dong-tang-theo-luong-toi-thieu-tu-112027.htm",
+      "https://vneconomy.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc.htm",
+      "https://vneconomy.vn/viet-nam-nhat-ban-cung-kien-tao-chuoi-gia-tri-nang-cao-nang-luc-tu-chu.htm"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vneconomy.vn/",
+    "categories": [
+      "https://vneconomy.vn/chung-khoan.htm",
+      "https://vneconomy.vn/tieu-dung.htm",
+      "https://vneconomy.vn/automotive",
+      "https://vneconomy.vn/video.htm",
+      "https://vneconomy.vn/techconnect",
+      "https://vneconomy.vn/tieu-diem.htm",
+      "https://vneconomy.vn/dau-tu.htm",
+      "https://vneconomy.vn/tai-chinh.htm",
+      "https://vneconomy.vn/kinh-te-so.htm",
+      "https://vneconomy.vn/kinh-te-xanh.htm",
+      "https://vneconomy.vn/thi-truong.htm",
+      "https://vneconomy.vn/nhip-cau-doanh-nghiep.htm",
+      "https://vneconomy.vn/dia-oc.htm",
+      "https://vneconomy.vn/kinh-te-the-gioi.htm",
+      "https://vneconomy.vn/dan-sinh.htm",
+      "https://vneconomy.vn/emagazine.htm",
+      "https://vneconomy.vn/podcast.htm",
+      "https://vneconomy.vn/infographics.htm",
+      "https://vneconomy.vn/chuyen-dong-xanh.htm",
+      "https://vneconomy.vn/phap-ly-kinh-te-xanh.htm",
+      "https://vneconomy.vn/thuong-hieu-xanh.htm",
+      "https://vneconomy.vn/dien-dan-kinh-te-xanh.htm",
+      "https://vneconomy.vn/tai-chinh-ngan-hang.htm",
+      "https://vneconomy.vn/thi-truong-von-tai-chinh.htm",
+      "https://vneconomy.vn/thue-tai-chhinh.htm",
+      "https://vneconomy.vn/bao-hiem-tai-chinh.htm",
+      "https://vneconomy.vn/doanh-nghiep-niem-yet.htm",
+      "https://vneconomy.vn/thi-truong-chung-khoan.htm",
+      "https://vneconomy.vn/dau-tu-chung-khoan.htm",
+      "https://vneconomy.vn/chung-khoan-quoc-te.htm",
+      "https://vneconomy.vn/khung-phap-ly-chung-khoan.htm",
+      "https://vneconomy.vn/san-pham-thi-truong-kinh-te-so.htm",
+      "https://vneconomy.vn/tai-san-so.htm",
+      "https://vneconomy.vn/dich-vu-so.htm",
+      "https://vneconomy.vn/start-up.htm",
+      "https://vneconomy.vn/quan-tri-so.htm",
+      "https://vneconomy.vn/chinh-sach-bat-dong-san.htm",
+      "https://vneconomy.vn/thi-truong-bat-dong-san.htm",
+      "https://vneconomy.vn/du-an-bat-dong-san.htm",
+      "https://vneconomy.vn/cafe-bds.htm",
+      "https://vneconomy.vn/tu-van-bat-dong-san.htm",
+      "https://vneconomy.vn/thi-truong-xuat-nhap-khau.htm",
+      "https://vneconomy.vn/khung-phap-ly-thi-truong.htm",
+      "https://vneconomy.vn/thi-truong-cong-nghiep.htm",
+      "https://vneconomy.vn/kin-te-thi-truong.htm",
+      "https://vneconomy.vn/thi-truong-nong-san.htm",
+      "https://vneconomy.vn/the-gioi-kinh-te.htm",
+      "https://vneconomy.vn/chuyen-dong-kinh-te-the-gioi-24h.htm",
+      "https://vneconomy.vn/kinh-doanh-the-gioi.htm",
+      "https://vneconomy.vn/chuyen-dong-doanh-nghiep.htm",
+      "https://vneconomy.vn/doi-thoai-doanh-nghiep.htm",
+      "https://vneconomy.vn/ket-noi-doanh-nghiep.htm",
+      "https://vneconomy.vn/doanh-nhan.htm",
+      "https://vneconomy.vn/cong-ty-doanh-nghiep.htm",
+      "https://vneconomy.vn/an-pham.htm",
+      "https://vneconomy.vn/the-guide.htm",
+      "https://vneconomy.vn/tap-chi-kinh-te-viet-nam.htm",
+      "https://vneconomy.vn/an-pham-tu-van-va-tieu-dung.htm",
+      "https://vneconomy.vn/multimedia.htm",
+      "https://vneconomy.vn/nha-dau-tu.htm",
+      "https://vneconomy.vn/ha-tang-dau-tu.htm",
+      "https://vneconomy.vn/dau-tu-dia-phuong.htm",
+      "https://vneconomy.vn/tieu-dung-du-lich.htm",
+      "https://vneconomy.vn/suc-khoe.htm",
+      "https://vneconomy.vn/thi-truong-tieu-dung.htm",
+      "https://vneconomy.vn/tin-dung.htm",
+      "https://vneconomy.vn/dep.htm",
+      "https://vneconomy.vn/tieu-dung-giai-tri.htm",
+      "https://vneconomy.vn/nha-tieu-dung.htm",
+      "https://vneconomy.vn/am-thuc-tieu-dung.htm",
+      "https://vneconomy.vn/khung-phap-ly-dan-sinh.htm",
+      "https://vneconomy.vn/bao-hiem-dan-sinh.htm",
+      "https://vneconomy.vn/nhan-luc.htm",
+      "https://vneconomy.vn/an-sinh.htm",
+      "https://vneconomy.vn/y-te-dan-sinh.htm",
+      "https://vneconomy.vn/dau-tu-ha-tang.htm",
+      "https://vneconomy.vn/cong-nghe-startup.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?vneconomy.vn/.*?(\\d{9,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vneconomy.vn",
+    "checkedAt": "2026-11-09T03:57:38.873Z",
+    "url": "https://vneconomy.vn/nen-theo-doi-ky-ra-soat-cua-ftse-russell-vao-thang-32027.htm",
+    "finalUrl": "https://vneconomy.vn/nen-theo-doi-ky-ra-soat-cua-ftse-russell-vao-thang-32027.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5501,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vneconomy.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 118,
+    "checkedArticleUrls": 128,
+    "freshArticleChecks": 39,
+    "parserIssues": 9,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 118,
+    "listingResponsesAtArticleUrls": 1,
+    "categoriesPlanned": 77,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1064,
+        "passed": 118,
+        "distinctHashes": 118
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vneconomy.vn/tai-co-cau-etf-chi-so-hose-thang-102026-dong-tien-du-kien-tap-trung-manh-vao-gmd-ree-va-vjc.htm",
+      "https://vneconomy.vn/da-giam-cua-gia-vang-trong-nuoc-chi-bang-30-so-voi-vang-the-gioi-1307504.htm",
+      "https://vneconomy.vn/nhom-viet-dung-khanh-thanh-nha-may-thu-3-quy-mo-hon-100000m2.htm",
+      "https://vneconomy.vn/bung-no-cung-the-gioi-bang-dien-xanh-muot-thanh-khoan-phuc-hoi.htm",
+      "https://vneconomy.vn/du-xuat-khau-dau-tho-trung-dong-da-phuc-hoi-eo-bien-hormuz-van-la-don-bay-cua-iran.htm",
+      "https://vneconomy.vn/vi-sao-dong-yen-kho-phuc-hoi-len-muc-cao-hon-sau-dot-can-thiep-ty-gia-ky-luc-cua-nhat-ban.htm",
+      "https://vneconomy.vn/vu-tan-cong-binance-va-7-bai-hoc-quan-tri-cho-thi-truong-tai-san-ma-hoa-viet-nam.htm",
+      "https://vneconomy.vn/hop-tac-voi-nhat-ban-chuan-hoa-co-so-san-xuat-te-bao-tai-viet-nam.htm",
+      "https://vneconomy.vn/nganh-kim-cuong-nhan-tao-khi-nhan-xanh-va-dau-chan-carbon-luoi-dien-than.htm",
+      "https://vneconomy.vn/truyen-thong-luong-tu-buoc-dot-pha-trong-cong-nghe-bao-mat-du-lieu.htm",
+      "https://vneconomy.vn/tong-bi-thu-chu-tich-nuoc-to-lam-de-nghi-mot-so-tap-doan-nhat-ban-dau-tu-vao-ha-tang-chien-luoc-tai-chinh-nang-luong-sach-cong-nghe-va-chuoi-gia-tri-moi.htm",
+      "https://vneconomy.vn/viet-nam-nhat-ban-chuyen-tu-hop-tac-san-xuat-sang-cung-sang-tao-cong-nghe-kien-tao-chuoi-gia-tri-moi.htm",
+      "https://vneconomy.vn/viet-nam-mong-muon-doanh-nghiep-nhat-ban-cung-phat-trien-cong-nghe-chien-luoc-gan-ket-chuoi-gia-tri.htm",
+      "https://vneconomy.vn/diem-tin-11h-ngay-1011-s1204.htm",
+      "https://vneconomy.vn/diem-tin-8h-ngay-1011-s1203.htm",
+      "https://vneconomy.vn/diem-tin-18h-ngay-0911-s1202.htm",
+      "https://vneconomy.vn/kinh-te-10-thang-nam-2026-dong-luc-tang-truong-va-bai-toan-nang-cao-nang-luc-noi-sinh.htm",
+      "https://vneconomy.vn/lanh-dao-bo-xay-dung-thong-tin-ve-quy-dinh-mua-nha-o-xa-hoi.htm",
+      "https://vneconomy.vn/mua-lu-dien-bien-phuc-tap-tap-trung-so-tan-dan-va-tieu-ung.htm",
+      "https://vneconomy.vn/don-doc-tap-chi-kinh-te-viet-nam-so-45-2026.htm",
+      "https://vneconomy.vn/ngan-hang-nha-nuoc-se-cung-ung-nguon-von-thanh-khoan-cho-thi-truong-ho-tro-giam-mat-bang-lai-suat.htm",
+      "https://vneconomy.vn/blog-chung-khoan-cau-cho-gia-qua-thap.htm",
+      "https://vneconomy.vn/niem-tin-cua-nha-dau-tu-se-quyet-dinh-thanh-cong-cua-trai-phieu-doanh-nghiep.htm",
+      "https://vneconomy.vn/tu-nguon-luc-den-nang-luc-con-duong-phat-trien-moi-cua-viet-nam.htm",
+      "https://vneconomy.vn/sat-lo-cau-bai-sim-tuyen-nghi-son-bai-tranh-bi-gian-doan.htm",
+      "https://vneconomy.vn/khong-de-truc-loi-chinh-sach-nhung-can-dam-bao-quyen-loi-chinh-dang-cua-nguoi-dan.htm",
+      "https://vneconomy.vn/ha-noi-cong-khai-du-an-cai-tao-chung-cu-thuoc-dien-pha-do.htm",
+      "https://vneconomy.vn/phat-trien-ben-vung-do-thi-gan-voi-muc-tieu-tang-truong.htm",
+      "https://vneconomy.vn/interactive-toan-canh-kinh-te-viet-nam-10-thang-nam-2026.htm",
+      "https://vneconomy.vn/25-nen-kinh-te-giau-nhat-the-gioi-5-nam-toi.htm",
+      "https://vneconomy.vn/chuyen-doi-xanh-lua-gao-phai-lay-nong-dan-lam-trung-tam.htm",
+      "https://vneconomy.vn/ibm-amd-va-oak-ridge-hop-tac-phat-trien-nen-tang-moi-cho-may-tinh-luong-tu.htm",
+      "https://vneconomy.vn/tieu-dung-xanh-dinh-hinh-lai-luat-choi-canh-tranh-cua-doanh-nghiep.htm",
+      "https://vneconomy.vn/quang-tri-dua-nha-may-bao-bi-hon-2669-ty-dong-vao-hoat-dong.htm",
+      "https://vneconomy.vn/tp-ho-chi-minh-day-manh-tang-truong-kinh-te-cuoi-nam-2026-khoi-thong-nguon-luc-va-thu-hut-dau-tu.htm",
+      "https://vneconomy.vn/nhung-diem-trong-tam-sua-doi-luat-an-toan-thuc-pham.htm",
+      "https://vneconomy.vn/viet-nam-vao-nhom-13-quoc-gia-tren-the-gioi-giu-vung-an-ninh-nang-luong.htm",
+      "https://vneconomy.vn/hiep-dinh-vifta-co-hoi-dan-xen-thach-thuc-tai-thi-truong-israel.htm",
+      "https://vneconomy.vn/dong-thap-lan-dau-tien-to-chuc-le-hoi-ca-tra-ket-noi-va-mo-rong-thi-truong.htm",
+      "https://vneconomy.vn/sua-doi-luat-an-toan-thuc-pham-can-giai-quyet-dung-bat-cap-tranh-tac-nghen-san-xuat-kinh-doanh.htm",
+      "https://vneconomy.vn/vu-be-boi-cua-ceo-jensen-huang-dat-tuong-lai-cua-nvidia-vao-the-kho.htm",
+      "https://vneconomy.vn/giao-dich-nhan-dan-te-qua-he-thong-thanh-toan-xuyen-bien-gioi-cua-trung-quoc-co-the-lap-ky-luc-nam-nay.htm",
+      "https://vneconomy.vn/techconnect/ba-buoc-ngoat-lon-ve-bao-ve-du-lieu-tai-san-so-cua-doanh-nghiep-va-bai-toan-toi-uu-chi-phi-bao-mat-hau-luong-tu.htm",
+      "https://vneconomy.vn/techconnect/cong-nghe-tai-chinh-dat-ra-yeu-cau-moi-ve-on-dinh-va-kha-nang-chong-chiu-he-thong.htm",
+      "https://vneconomy.vn/techconnect/thi-truong-du-lieu-khong-gian-viet-nam-truoc-co-hoi-phat-trien-moi.htm",
+      "https://vneconomy.vn/techconnect/cac-quoc-gia-dang-phat-trien-co-du-kha-nang-xu-ly-hang-trieu-tac-nhan-ai.htm",
+      "https://vneconomy.vn/techconnect/ha-noi-se-ho-tro-100-nghien-cuu-sinh-giai-cac-bai-toan-lon-cua-thanh-pho.htm",
+      "https://vneconomy.vn/thanh-tra-chinh-phu-canh-bao-tinh-trang-mua-ban-ngang-xang-dau-de-tron-thue.htm",
+      "https://vneconomy.vn/de-xuat-cuong-che-tien-ky-quy-de-tra-luong-cho-cong-nhan-khi-doanh-nghiep-bo-tron.htm",
+      "https://vneconomy.vn/dai-bieu-quoc-hoi-de-xuat-21-tuoi-moi-duoc-mua-thuoc-la.htm",
+      "https://vneconomy.vn/automotive/thai-lan-ap-thue-35-xe-dien-nhap-khau-ap-luc-noi-dia-hoa-va-tac-dong-den-nganh-o-to-viet-nam.htm",
+      "https://vneconomy.vn/automotive/xe-dien-giu-uu-dai-thue-den-2030-co-nen-mua-som.htm",
+      "https://vneconomy.vn/automotive/infographic-buc-tranh-doanh-so-thi-truong-xe-may-viet-10-thang-2026.htm",
+      "https://vneconomy.vn/automotive/dan-van-phong-di-xe-dien-bai-toan-tiet-kiem-khong-chi-nam-o-tien-xang.htm",
+      "https://vneconomy.vn/automotive/trien-vong-nganh-o-to-toan-cau-2027-thach-thuc-lon-tu-chi-phi-va-san-luong.htm",
+      "https://vneconomy.vn/nhung-truong-hop-nao-khong-nen-truyen-dich-khi-sot.htm",
+      "https://vneconomy.vn/kiem-soat-tai-san-tai-trung-quoc-tao-don-bay-cho-ban-le-xa-xi-tai-hong-kong.htm",
+      "https://vneconomy.vn/tu-di-san-haute-couture-den-ap-luc-thuong-mai-cua-nganh-thoi-trang.htm",
+      "https://vneconomy.vn/gia-xang-o-my-giam-manh.htm",
+      "https://vneconomy.vn/viet-nam-nhat-ban-rot-gan-500-ty-dong-cho-11-du-an-hop-tac-ve-ban-dan.htm",
+      "https://vneconomy.vn/phat-hang-goi-xe-cong-nghe-be-625-trieu-dong-vi-vi-pham-bao-ve-nguoi-dung.htm",
+      "https://vneconomy.vn/trung-quoc-nganh-cong-nghiep-hydrogen-truoc-buoc-ngoat-phat-trien-dot-pha.htm",
+      "https://vneconomy.vn/ccus-la-mot-trong-cac-giai-phap-de-viet-nam-dat-muc-tieu-netzero.htm",
+      "https://vneconomy.vn/new-tashkent-bai-hoc-quy-hoach-tu-mot-do-thi-moi-cua-uzbekistan.htm",
+      "https://vneconomy.vn/biz-traveler.htm",
+      "https://vneconomy.vn/vet-exclusive.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 9
+    },
+    "checkedAt": "2026-11-10T09:18:32.035Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vneconomy.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "remainingErrorsRepair": {
+    "checkedAt": "2026-11-12T15:49:37.441Z",
+    "evidence": "outputs\\news-flow-preparation-2026-11-12\\remaining-errors-recheck\\repairs\\vneconomy.vn\\result.json",
+    "approvedVariants": 1,
+    "scope": "Only independently proven layouts; prior unresolved URLs retained; no production data writes"
+  }
+}

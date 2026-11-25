@@ -1,0 +1,35 @@
+Đã tách writer ES thành service/process riêng, release 20261113-16.
+Số đo từ 13:45:31 đến 14:05:31 ngày 13/11/2026 (UTC+7), dài 20.0 phút.
+
+Cách chạy hiện tại:
+- news-flow.service chỉ crawl, parse, kiểm tra và ghi outbox SQLite WAL. Cờ --external-writer ngăn tạo client ES hoặc gọi initialize/flush trong producer.
+- news-flow-writer.service đọc outbox, kiểm tra cluster/mapping, lookup URL/native ID và bulk create. Writer không đọc proxy hoặc fetch news URL.
+- Hai PID riêng: producer 3273002, writer 3273165. Cả hai active/running, automatic restarts producer=0, writer=0.
+- Crawler giữ80seed/32article/3parser; HTTP news timeout2000ms, cooldown riêng site và không retry URL lỗi giữ nguyên.
+- Hai service dùng chung news-flow.slice4CPU/4GiB. Writer có trần riêng1CPU/768MiB trong tổng đó, batch30/poll1s.
+- Lease main/es5_writer riêng, heartbeat20s/TTL90s. Crawler restart không reset outbox.sending của writer; writer restart chỉ recover sending, không recover task/request crawl. Guard lease trước mutation, create409 và post-create reconciliation vẫn giữ nguyên.
+- ES action chỉ create; không index/overwrite. Refresh riêng bulk, index refresh_interval vẫn60s. ID legacy Latin1, UTC time, index tuần Việt Nam và các field không đổi.
+
+Kiểm chứng:
+-163/163 test pass local và VPS; gồm hai process thật, writer bị bậnCPU, graceful stop, crash recovery, lease fencing và create-only.
+- Live dừng writer8,07s: crawler giữ nguyên PID và hoàn thành60task bài. Writer đã bật lại trước cửa sổ đo.
+- Live30/30 bài vừa tạo khớp toàn bộ fields, ID legacy và time/week index. Không xuất document mẫu hoặc credential.
+- Helper /usr/local/libexec/news-flow-status.py đã theo dõi cả hai service và shared budget.
+
+Tốc độ trước/sau:
+- Baseline trước split, cửa sổ5phút: 352.6link bài/phút, 17.8bài ES mới/phút. Mẫu trực tiếp2,29phút trước split: 333.03link/phút.
+- Sau split trung bình 20.0phút: 375.98link/phút; 24.0bài ES mới/phút. Đã xử lý 7520URL và tạo 480bài trong ES; xử lý URL bao gồm hợp lệ, quá hạn, non-article và lỗi.
+- Cửa sổ cuối 5.0phút: 357.4link/phút, 23.6bài ES mới/phút; nhận 611.8link/phút.
+- Từ outbox đến ES: trung vị 8.04s, p95 15.91s, lớn nhất 22.95s.
+- Article timeout 8.4%; seed 1419.99request/phút, timeout seed 1.62%.
+- URL lỗi bị gọi lại 0; response thành công vượt deadline mạng2s 0; URL lỗi cònactive tại snapshot 2.
+- Tổng CPU 3.76/4core; RAM 2.43/4GiB.
+
+Mốc20phút:
+- Cohort có publishedDate sau bắt đầu phép đo: 142bài đã tạo trong ES. Publication→ES trung vị 3.78phút, p95 10.98phút, chậm nhất 13.96phút.
+- Ngày đăng đã được parser và writer kiểm chứng, không thay bằng giờ enqueue. Đây là mẫu các bài quan sát được, không phải ground truth mọi bài trên544site.
+- Kiểm tra cửa sổ/cohort đã đến hạn: Đủ20phút=True; cohort known đã đến hạn: 148bài tạo<=20phút, 10bài tạo>20phút, 0bài pending/sending quá20phút. Cohort này có publication trong20phút trước bắt đầu đo, nên toàn bộ deadline đã qua. Các ca trễ (site, tổng phút từ pub, phút trước outbox, phút writer): [{"site": "vtv.vn", "publicationToESMinutes": 20.84, "beforeOutboxMinutes": 20.74, "outboxToESMinutes": 0.1}, {"site": "yeuthethao.net.vn", "publicationToESMinutes": 21.9, "beforeOutboxMinutes": 21.84, "outboxToESMinutes": 0.06}, {"site": "ngoisao.vnexpress.net", "publicationToESMinutes": 22.01, "beforeOutboxMinutes": 21.82, "outboxToESMinutes": 0.19}, {"site": "nghean24h.vn", "publicationToESMinutes": 22.82, "beforeOutboxMinutes": 22.72, "outboxToESMinutes": 0.1}, {"site": "phunuvagiadinh.vn", "publicationToESMinutes": 27.42, "beforeOutboxMinutes": 27.31, "outboxToESMinutes": 0.11}, {"site": "suckhoedoisong.vn", "publicationToESMinutes": 22.9, "beforeOutboxMinutes": 22.77, "outboxToESMinutes": 0.13}, {"site": "bongdaplus.vn", "publicationToESMinutes": 22.31, "beforeOutboxMinutes": 22.24, "outboxToESMinutes": 0.07}, {"site": "nghean24h.vn", "publicationToESMinutes": 23.32, "beforeOutboxMinutes": 23.19, "outboxToESMinutes": 0.13}, {"site": "vietnamnet.vn", "publicationToESMinutes": 24.96, "beforeOutboxMinutes": 24.85, "outboxToESMinutes": 0.11}, {"site": "stockbiz.vn", "publicationToESMinutes": 24.25, "beforeOutboxMinutes": 24.15, "outboxToESMinutes": 0.1}].
+- Kết luận: tách importer đã hoàn tất, nhưng toàn luồng chưa bảo đảm20phút cho mọi bài. Các ca trễ cần kiểm tra đoạn discover/crawl/parse trước outbox. Bài chưa discover hoặc chưa parse được không nằm trong ground truth của phép đo.
+- Tổng backlog 390,754URL, thay đổi +4,914trong cửa sổ; outbox {"created": 6809, "existing": 3305, "held": 87, "pending": 4}. Queue tổng vẫn cần được phân biệt với bài mới được ưu tiên; báo cáo không coi backlog đã được giải phóng nếu còn tăng.
+
+Backup trước chuyển service: /var/lib/news-flow/backups/write-before-writer-service-20261113.sqlite. Cùng liveDB/WAL, identity ledger và outbox được giữ nguyên. Chi tiết ở outputs/news-speed-2026-11-13/writer-split-summary.json; số đo đầy đủ ở writer-split-observation.jsonl.

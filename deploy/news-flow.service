@@ -1,0 +1,34 @@
+[Unit]
+Description=News HTTP crawler parser and outbox producer
+Wants=network-online.target news-flow-writer.service
+Requires=news-flow-egress.service
+After=network-online.target news-flow-egress.service
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=news-flow
+Group=news-flow
+Slice=news-flow.slice
+WorkingDirectory=/opt/news-flow/current
+Environment=NODE_ENV=production
+Environment=NEWS_PROXY_FILE=/etc/news-flow/proxies.json
+ExecStart=/opt/news-flow/node/bin/node scripts/run_news_flow.mjs --write --external-writer --proof /etc/news-flow/identity-proof.json --state /var/lib/news-flow/news-flow-runtime/write.sqlite --seed-concurrency 80 --article-concurrency 32 --parser-workers 3
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=180
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/news-flow
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=4G
+CPUQuota=400%
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target

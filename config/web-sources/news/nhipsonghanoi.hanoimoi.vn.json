@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipsonghanoi.hanoimoi.vn",
+  "siteId": "nhipsonghanoi.hanoimoi.vn",
+  "registrableDomain": "hanoimoi.vn",
+  "homepage": "https://nhipsonghanoi.hanoimoi.vn/",
+  "allowedHosts": [
+    "nhipsonghanoi.hanoimoi.vn",
+    "www.nhipsonghanoi.hanoimoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giữ nhịp “chợ xưa” trong tâm thức hôm nay",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:57.237Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhipsonghanoi.hanoimoi.vn/giu-nhip-cho-xua-trong-tam-thuc-hom-nay-1764497.html",
+      "https://nhipsonghanoi.hanoimoi.vn/co-mot-mien-thuong-nam-trong-chiec-luoc-1764339.html",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha-bai-lau-trang-tinh-khoi-dep-nhat-ha-noi-1764807.html",
+      "https://nhipsonghanoi.hanoimoi.vn/gioi-tre-do-ve-vuon-quoc-gia-ba-vi-san-may-ngam-hoa-da-quy-1764714.html",
+      "https://nhipsonghanoi.hanoimoi.vn/nghe-quy-vang-bac-kieu-ky-gin-giu-tinh-hoa-nghe-co-1764688.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipsonghanoi.hanoimoi.vn/",
+    "categories": [
+      "https://nhipsonghanoi.hanoimoi.vn/ha-noi-360",
+      "https://nhipsonghanoi.hanoimoi.vn/di-san",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha",
+      "https://nhipsonghanoi.hanoimoi.vn/loi-song",
+      "https://nhipsonghanoi.hanoimoi.vn/do-thi-cac-nuoc",
+      "https://nhipsonghanoi.hanoimoi.vn/ha-noi-360/xua-va-nay",
+      "https://nhipsonghanoi.hanoimoi.vn/ha-noi-360/ha-noi-van",
+      "https://nhipsonghanoi.hanoimoi.vn/ha-noi-360/doc-la",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha/di-dau-xem-gi",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha/ha-noi-dem",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha/mon-ngon-ha-noi",
+      "https://nhipsonghanoi.hanoimoi.vn/loi-song/song-dep",
+      "https://nhipsonghanoi.hanoimoi.vn/loi-song/xu-huong",
+      "https://nhipsonghanoi.hanoimoi.vn/loi-song/cong-dong-mang"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipsonghanoi.hanoimoi.vn",
+    "checkedAt": "2026-11-09T03:57:20.055Z",
+    "url": "https://nhipsonghanoi.hanoimoi.vn/giu-nhip-cho-xua-trong-tam-thuc-hom-nay-1764497.html",
+    "finalUrl": "https://nhipsonghanoi.hanoimoi.vn/giu-nhip-cho-xua-trong-tam-thuc-hom-nay-1764497.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5426,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipsonghanoi.hanoimoi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 100,
+    "checkedArticleUrls": 107,
+    "freshArticleChecks": 64,
+    "parserIssues": 7,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 100,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 175,
+        "passed": 99,
+        "distinctHashes": 99
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipsonghanoi.hanoimoi.vn/cha-ca-mon-ngon-goi-gio-dong-ve-1765165.html",
+      "https://nhipsonghanoi.hanoimoi.vn/cuoc-tim-kiem-nhung-don-vi-mau-khong-the-thay-the-1765103.html",
+      "https://nhipsonghanoi.hanoimoi.vn/new-tashkent-cuoc-dich-chuyen-lon-o-thu-do-uzbekistan-1765023.html",
+      "https://nhipsonghanoi.hanoimoi.vn/truyen-ngan-manh-ghep-dieu-ky-1764938.html",
+      "https://nhipsonghanoi.hanoimoi.vn/giu-nhip-cho-xua-trong-tam-thuc-hom-nay-1764497.html",
+      "https://nhipsonghanoi.hanoimoi.vn/co-mot-mien-thuong-nam-trong-chiec-luoc-1764339.html",
+      "https://nhipsonghanoi.hanoimoi.vn/cho-dong-xuan-dau-an-ha-noi-xua-giua-nhip-song-duong-dai-1764308.html",
+      "https://nhipsonghanoi.hanoimoi.vn/nghe-quy-vang-bac-kieu-ky-gin-giu-tinh-hoa-nghe-co-1764688.html",
+      "https://nhipsonghanoi.hanoimoi.vn/ung-dung-cong-nghe-so-nang-tam-du-lich-hoai-duc-1764230.html",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha-di-tich-quoc-gia-dac-biet-den-phu-dong-1763509.html",
+      "https://nhipsonghanoi.hanoimoi.vn/den-chua-ba-tam-dau-an-van-hoa-vung-dat-gia-lam-1763366.html",
+      "https://nhipsonghanoi.hanoimoi.vn/lang-gom-kim-lan-chuyen-minh-giu-hon-di-san-1763228.html",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha-bai-lau-trang-tinh-khoi-dep-nhat-ha-noi-1764807.html",
+      "https://nhipsonghanoi.hanoimoi.vn/gioi-tre-do-ve-vuon-quoc-gia-ba-vi-san-may-ngam-hoa-da-quy-1764714.html",
+      "https://nhipsonghanoi.hanoimoi.vn/khoang-xanh-binh-yen-noi-cua-ngo-thu-do-1764707.html",
+      "https://nhipsonghanoi.hanoimoi.vn/kham-pha-thu-phu-hoa-giay-ven-dong-song-duong-1764558.html",
+      "https://nhipsonghanoi.hanoimoi.vn/co-giao-mam-non-noi-dai-nhung-hanh-trinh-yeu-thuong-1764639.html",
+      "https://nhipsonghanoi.hanoimoi.vn/tham-lang-cong-hien-vi-chat-luong-y-te-thu-do-1763278.html",
+      "https://nhipsonghanoi.hanoimoi.vn/nguoi-gieo-nhung-gia-tri-dep-o-khu-dan-cu-1763062.html",
+      "https://nhipsonghanoi.hanoimoi.vn/he-qua-kho-luong-khi-cho-con-su-dung-dien-thoai-cua-cha-me-1762534.html",
+      "https://nhipsonghanoi.hanoimoi.vn/dua-di-san-den-gan-cong-chung-bang-cong-nghe-so-1764541.html",
+      "https://nhipsonghanoi.hanoimoi.vn/helsinki-va-ky-tich-an-toan-giao-thong-duong-bo-1764169.html",
+      "https://nhipsonghanoi.hanoimoi.vn/tham-vong-hoi-sinh-mau-xanh-giua-do-thi-o-nhiem-bac-nhat-chau-au-1763846.html",
+      "https://nhipsonghanoi.hanoimoi.vn/cuoc-cach-mang-cong-nghe-tu-khu-cho-dien-mao-moi-cua-do-thi-tho-nhi-ky-1763554.html",
+      "https://nhipsonghanoi.hanoimoi.vn/banh-duc-nong-mon-ngon-niu-giu-ky-uc-pho-phuong-1764445.html",
+      "https://nhipsonghanoi.hanoimoi.vn/ha-noi-chom-dong-1764894.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2,
+      "original_publication_not_yet_confirmed": 5
+    },
+    "checkedAt": "2026-11-10T09:16:28.897Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipsonghanoi.hanoimoi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "nhipsonghanoi.hanoimoi.vn",
+      "siteId": "nhipsonghanoi.hanoimoi.vn",
+      "registrableDomain": "hanoimoi.vn",
+      "homepage": "https://nhipsonghanoi.hanoimoi.vn/",
+      "allowedHosts": [
+        "nhipsonghanoi.hanoimoi.vn",
+        "www.nhipsonghanoi.hanoimoi.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Giữ nhịp “chợ xưa” trong tâm thức hôm nay",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".block-sc-publish-time",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:18.995Z",
+        "trainingUrls": [
+          "https://nhipsonghanoi.hanoimoi.vn/lang-gom-kim-lan-chuyen-minh-giu-hon-di-san-1763228.html",
+          "https://nhipsonghanoi.hanoimoi.vn/kham-pha-di-tich-quoc-gia-dac-biet-den-phu-dong-1763509.html",
+          "https://nhipsonghanoi.hanoimoi.vn/den-chua-ba-tam-dau-an-van-hoa-vung-dat-gia-lam-1763366.html",
+          "https://nhipsonghanoi.hanoimoi.vn/he-qua-kho-luong-khi-cho-con-su-dung-dien-thoai-cua-cha-me-1762534.html"
+        ],
+        "holdoutUrls": [
+          "https://nhipsonghanoi.hanoimoi.vn/ung-dung-cong-nghe-so-nang-tam-du-lich-hoai-duc-1764230.html",
+          "https://nhipsonghanoi.hanoimoi.vn/kham-pha-thu-phu-hoa-giay-ven-dong-song-duong-1764558.html"
+        ]
+      }
+    },
+    {
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": ".sc-longform-header-date.block-sc-publish-time"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry.entry-no-padding",
+        "removeExtra": ".sc-longform-header-title,.sc-longform-header-date"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T09:11:18.433Z",
+        "trainingUrls": [
+          "https://nhipsonghanoi.hanoimoi.vn/cho-dong-xuan-dau-an-ha-noi-xua-giua-nhip-song-duong-dai-1764308.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ha-noi-chom-dong-1764894.html",
+          "https://nhipsonghanoi.hanoimoi.vn/lang-co-kim-lan-doi-song-doi-gom-1764709.html",
+          "https://nhipsonghanoi.hanoimoi.vn/mo-hinh-cong-nghiep-van-hoa-phuc-hop-xa-thu-lam-goi-mo-nhung-giai-phap-huong-di-tu-co-so-743202.html",
+          "https://nhipsonghanoi.hanoimoi.vn/video-bao-luc-tren-mang-xa-hoi-hiem-hoa-doi-voi-tre-em-727877.html",
+          "https://nhipsonghanoi.hanoimoi.vn/tran-lan-video-phan-cam-gan-mac-giao-duc-tren-tiktok-he-luy-kho-luong-717960.html",
+          "https://nhipsonghanoi.hanoimoi.vn/khoang-xanh-binh-yen-noi-cua-ngo-thu-do-1764707.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ruc-ro-khong-gian-chieu-sang-nghe-thuat-ho-guom-thap-rua-728057.html",
+          "https://nhipsonghanoi.hanoimoi.vn/du-lich-dem-ha-noi-cong-nghe-lam-nen-khac-biet-727940.html",
+          "https://nhipsonghanoi.hanoimoi.vn/lan-dau-tien-bao-tang-my-thuat-viet-nam-mo-cua-don-khach-dem-721759.html",
+          "https://nhipsonghanoi.hanoimoi.vn/gen-z-thu-do-va-lan-song-gig-economy-736012.html",
+          "https://nhipsonghanoi.hanoimoi.vn/hoai-niem-duong-co-ngu-1762659.html",
+          "https://nhipsonghanoi.hanoimoi.vn/noi-gi-duoi-mua-hoa-sua-1762099.html",
+          "https://nhipsonghanoi.hanoimoi.vn/cot-cach-thang-long-khoi-nguon-sang-tao-1761377.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ky-uc-ngay-giai-phong-1760815.html",
+          "https://nhipsonghanoi.hanoimoi.vn/danh-thuc-nguon-luc-di-san-cua-ha-noi-1761696.html",
+          "https://nhipsonghanoi.hanoimoi.vn/nen-tang-kien-tao-tuong-lai-1759435.html",
+          "https://nhipsonghanoi.hanoimoi.vn/nha-hat-lon-ha-noi-ban-hoa-ca-cua-kien-truc-va-thoi-gian-1759157.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ve-dep-cau-long-bien-trong-khoanh-khac-giao-hoa-cung-anh-sang-1757522.html",
+          "https://nhipsonghanoi.hanoimoi.vn/danh-thuc-di-san-van-mieu-tao-suc-bat-cho-kinh-te-dem-1709288.html",
+          "https://nhipsonghanoi.hanoimoi.vn/theo-dau-chan-thanh-giong-1761704.html",
+          "https://nhipsonghanoi.hanoimoi.vn/kham-pha-le-ruoc-vua-doc-dao-1759414.html",
+          "https://nhipsonghanoi.hanoimoi.vn/cho-dong-xuan-dau-an-ha-noi-xua-giua-nhip-song-duong-dai-1764308.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ha-noi-chom-dong-1764894.html",
+          "https://nhipsonghanoi.hanoimoi.vn/lang-co-kim-lan-doi-song-doi-gom-1764709.html",
+          "https://nhipsonghanoi.hanoimoi.vn/mo-hinh-cong-nghiep-van-hoa-phuc-hop-xa-thu-lam-goi-mo-nhung-giai-phap-huong-di-tu-co-so-743202.html",
+          "https://nhipsonghanoi.hanoimoi.vn/video-bao-luc-tren-mang-xa-hoi-hiem-hoa-doi-voi-tre-em-727877.html",
+          "https://nhipsonghanoi.hanoimoi.vn/tran-lan-video-phan-cam-gan-mac-giao-duc-tren-tiktok-he-luy-kho-luong-717960.html",
+          "https://nhipsonghanoi.hanoimoi.vn/khoang-xanh-binh-yen-noi-cua-ngo-thu-do-1764707.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ruc-ro-khong-gian-chieu-sang-nghe-thuat-ho-guom-thap-rua-728057.html",
+          "https://nhipsonghanoi.hanoimoi.vn/du-lich-dem-ha-noi-cong-nghe-lam-nen-khac-biet-727940.html",
+          "https://nhipsonghanoi.hanoimoi.vn/lan-dau-tien-bao-tang-my-thuat-viet-nam-mo-cua-don-khach-dem-721759.html",
+          "https://nhipsonghanoi.hanoimoi.vn/gen-z-thu-do-va-lan-song-gig-economy-736012.html",
+          "https://nhipsonghanoi.hanoimoi.vn/hoai-niem-duong-co-ngu-1762659.html",
+          "https://nhipsonghanoi.hanoimoi.vn/noi-gi-duoi-mua-hoa-sua-1762099.html",
+          "https://nhipsonghanoi.hanoimoi.vn/cot-cach-thang-long-khoi-nguon-sang-tao-1761377.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ky-uc-ngay-giai-phong-1760815.html",
+          "https://nhipsonghanoi.hanoimoi.vn/danh-thuc-nguon-luc-di-san-cua-ha-noi-1761696.html",
+          "https://nhipsonghanoi.hanoimoi.vn/nen-tang-kien-tao-tuong-lai-1759435.html",
+          "https://nhipsonghanoi.hanoimoi.vn/nha-hat-lon-ha-noi-ban-hoa-ca-cua-kien-truc-va-thoi-gian-1759157.html",
+          "https://nhipsonghanoi.hanoimoi.vn/ve-dep-cau-long-bien-trong-khoanh-khac-giao-hoa-cung-anh-sang-1757522.html",
+          "https://nhipsonghanoi.hanoimoi.vn/danh-thuc-di-san-van-mieu-tao-suc-bat-cho-kinh-te-dem-1709288.html",
+          "https://nhipsonghanoi.hanoimoi.vn/theo-dau-chan-thanh-giong-1761704.html",
+          "https://nhipsonghanoi.hanoimoi.vn/kham-pha-le-ruoc-vua-doc-dao-1759414.html",
+          "https://nhipsonghanoi.hanoimoi.vn/thong-ngo-va-y-tuong-ket-noi-khong-gian-van-hoa-dong-duong-thang-long-1758342.html",
+          "https://nhipsonghanoi.hanoimoi.vn/nguoi-tho-biet-noi-chuyen-voi-cac-co-may-1216352.html"
+        ],
+        "holdoutUrls": [
+          "https://nhipsonghanoi.hanoimoi.vn/ky-niem-1-000-nam-ngay-sinh-duc-thanh-lap-dia-danh-thap-tam-trai-735539.html",
+          "https://nhipsonghanoi.hanoimoi.vn/lang-nghe-son-dong-voi-khat-vong-vuon-tam-the-gioi-735514.html"
+        ]
+      }
+    }
+  ],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "nhipsonghanoi.hanoimoi.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

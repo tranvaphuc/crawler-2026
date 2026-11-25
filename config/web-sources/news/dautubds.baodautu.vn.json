@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodautu.vn",
+  "siteId": "baodautu.vn",
+  "registrableDomain": "baodautu.vn",
+  "homepage": "https://dautubds.baodautu.vn/",
+  "allowedHosts": [
+    "baodautu.vn",
+    "dautubds.baodautu.vn",
+    "www.dautubds.baodautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "sourceAlias": "dautubds.baodautu.vn",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hoàn thành gần 17.000 căn nhà cho thuê trong năm 2026",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".post-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content_detail_news",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:23.101Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://baodautu.vn/hoan-thanh-gan-17000-can-nha-cho-thue-trong-nam-2026-d738618.html",
+      "https://baodautu.vn/da-nang-chuyen-doi-hinh-thuc-thue-51789m-dat-khu-du-lich-nghi-duong-bien-vinacapital-hoi-an-d738293.html",
+      "https://baodautu.vn/novaland-ghi-nhan-doanh-thu-10215-ty-dong-trong-9-thang-2026-d738864.html",
+      "https://baodautu.vn/2000-chien-binh-nam---bac-san-sang-hoi-tu-cung-happy-one-elite-d738683.html",
+      "https://baodautu.vn/vi-sao-bat-dong-san-huong-thuy-luon-la-toa-do-vang-cua-gioi-tinh-hoa-d619067.html",
+      "https://baodautu.vn/novaland-ghi-nhan-doanh-thu-10215-ty-dong-trong-9-thang-2026-d738864.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dautubds.baodautu.vn/",
+    "categories": [
+      "https://dautubds.baodautu.vn/thong-tin-du-an/",
+      "https://dautubds.baodautu.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?dautubds.baodautu.vn/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.272Z",
+      "verifiedSeeds": [
+        "https://dautubds.baodautu.vn/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dautubds.baodautu.vn",
+    "checkedAt": "2026-11-09T03:56:58.151Z",
+    "url": "https://baodautu.vn/hoan-thanh-gan-17000-can-nha-cho-thue-trong-nam-2026-d738618.html",
+    "finalUrl": "https://baodautu.vn/hoan-thanh-gan-17000-can-nha-cho-thue-trong-nam-2026-d738618.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4644,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dautubds.baodautu.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 13,
+    "parserIssues": 6,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 81,
+        "passed": 14,
+        "distinctHashes": 14
+      },
+      {
+        "name": "longform",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baodautu.vn/quoc-hoi-chot-boi-chi-739597-ty-dong-ngan-sach-duoc-vay-1279717-ty-trong-nam-2027-d739750.html",
+      "https://baodautu.vn/maison-privee-chuan-muc-xa-xi-moi-tu-triet-ly-song-lay-suc-khoe-lam-trung-tam-d740071.html",
+      "https://baodautu.vn/vi-sao-bat-dong-san-huong-thuy-luon-la-toa-do-vang-cua-gioi-tinh-hoa-d619067.html",
+      "https://baodautu.vn/mo-hinh-work---live---enjoy-kien-tao-trai-nghiem-van-phong-thoi-thuong-d462831.html",
+      "https://baodautu.vn/khau-vi-mua-nha-cua-nguoi-dan-tphcm-thay-doi-du-an-can-ho-da-dien-tich-va-tien-ich-hut-khach-d442546.html",
+      "https://baodautu.vn/tim-loi-thoat-cho-du-an-khu-do-thi-nam-cau-dai-d733095.html",
+      "https://baodautu.vn/destino-centro-tao-suc-hut-tu-gia-tri-song-thiet-thuc-d740531.html",
+      "https://baodautu.vn/co-hoi-trung-can-ho-gan-8-ty-dong-khi-mua-diamond-sky-d740577.html",
+      "https://baodautu.vn/ct-homes-sau-khi-tach-khoi-ct-group-bai-toan-tang-truong-va-minh-bach-truoc-them-ipo-d740347.html",
+      "https://baodautu.vn/sau-kien-nghi-cua-nguoi-dan-gia-lai-ra-soat-xu-ly-hai-du-an-cham-tien-do-d740226.html",
+      "https://baodautu.vn/the-heritage-tay-ninh-khu-do-thi-du-lich-ben-nui-ba-den---giua-long-dan-cu-hien-huu-d740578.html",
+      "https://baodautu.vn/bac-ninh-dieu-chinh-quy-hoach-khu-do-thi-tay-bac-rong-hon-1546-ha-d740141.html",
+      "https://baodautu.vn/da-nang-tiep-tuc-bo-sung-4-du-an-duoc-thao-go-theo-co-che-dac-thu-d740139.html",
+      "https://baodautu.vn/bayfront-va-hilltop-tai-vinh-may-mot-can-nha-de-hoa-vao-nhip-song-mot-chon-ve-de-tan-huong-rieng-tu-d739839.html",
+      "https://baodautu.vn/bang-gia-dat-nhan-he-so-k-go-diem-nghen-dinh-gia-nhung-can-kiem-soat-chi-phi-d739777.html",
+      "https://baodautu.vn/ha-tang-va-cuoc-dich-chuyen-dong-khach-ve-cac-diem-den-ven-bien-tphcm-d739752.html",
+      "https://baodautu.vn/tu-46-nam-xay-dung-den-can-nha-dau-tien-cua-nguoi-tre-cach-phu-dong-tao-dung-niem-tin-d738620.html",
+      "https://baodautu.vn/hoan-thien-co-che-phoi-hop-de-thao-go-cac-du-an-ton-dong-keo-dai-d740771.html",
+      "https://baodautu.vn/quang-ngai-go-vuong-mat-bang-hai-du-an-giao-thong-hon-1370-ty-dong-d740605.html",
+      "https://baodautu.vn/da-nang-day-nhanh-thi-cong-quoc-lo-14d-hon-4500-ty-dong-d740173.html",
+      "https://baodautu.vn/longform-agribank-dong-hanh-thuc-chat-tiep-suc-kip-thoi-cho-nen-kinh-te-d733586.html",
+      "https://baodautu.vn/longform-tphcm-kich-hoat-nguon-luc-van-hoa-noi-sinh-kien-tao-he-sinh-thai-cong-nghiep-sang-tao-d739907.html",
+      "https://baodautu.vn/longform-tphcm-kich-hoat-he-sinh-thai-dong-luc-huong-den-hoan-thanh-muc-tieu-tang-truong-kep-d739397.html",
+      "https://baodautu.vn/insight-trong-trach-cua-quoc-hoi-phai-duoc-the-hien-bang-nhung-quyet-sach-vi-loi-ich-cua-nhan-dan-dat-nuoc-d738320.html",
+      "https://baodautu.vn/insight-kinh-te-vi-mo-co-ban-on-dinh-cac-can-doi-lon-duoc-giu-vung-d737181.html",
+      "https://baodautu.vn/uu-tien-dau-tu-truc-xuong-song-bac---nam-va-hanh-lang-dong---tay-the-he-moi-d740470.html",
+      "https://baodautu.vn/chot-chi-tieu-va-chi-tieu-de-nam-2027-tang-toc-but-pha-d740211.html",
+      "https://baodautu.vn/de-xuat-quy-hoach-cang-hang-khong-quoc-te-phu-bai-co-2-duong-cat-ha-canh-d739669.html",
+      "https://baodautu.vn/bai-toan-kep-cua-chang-nuoc-rut-d737526.html",
+      "https://baodautu.vn/thanh-tra-chinh-phu-kien-nghi-bo-cong-an-dieu-tra-7-vu-viec-nganh-xang-dau-d740711.html",
+      "https://baodautu.vn/mo-lai-phien-toa-xet-xu-vu-mua-ban-giay-phep-tai-so-y-te-ha-noi-d740633.html",
+      "https://baodautu.vn/xu-ly-nghiem-hanh-vi-dau-co-gam-hang-thao-tung-gia-tang-gia-bat-hop-ly-d740178.html",
+      "https://baodautu.vn/tron-truy-na-cuu-pho-tong-giam-doc-mot-ngan-hang-bi-xet-xu-vang-mat-d739877.html",
+      "https://baodautu.vn/harley-davidson-chon-horizon-global-lam-doi-tac-tang-truong-d740487.html",
+      "https://baodautu.vn/saigontourist-group-duoc-vinh-danh-tai-apea-2026-d740227.html",
+      "https://baodautu.vn/fpt-de-xuat-5-tru-cot-dong-kien-tao-ai-va-luong-tu-trong-hop-tac-viet-nam---nhat-ban-d740346.html",
+      "https://baodautu.vn/tu-y-tuong-ket-noi-ngan-hang-den-giao-dich-tai-san-ma-hoa-minh-bach-d740068.html",
+      "https://baodautu.vn/pan-va-agri-smile-hop-tac-5-nam-dua-che-pham-sinh-hoc-nhat-vao-viet-nam-d739924.html",
+      "https://baodautu.vn/dksh-to-chuc-ngay-vi-suc-khoe-nguoi-benh-2026-d739855.html",
+      "https://baodautu.vn/batdongsan/bat-dong-san-hai-ba-trung-ha-noi-c72/",
+      "https://baodautu.vn/batdongsan/bat-dong-san-hoa-lac-quoc-oai-c73/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 4,
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:14:49.946Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dautubds.baodautu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

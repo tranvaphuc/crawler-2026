@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autovina.com",
+  "siteId": "autovina.com",
+  "registrableDomain": "autovina.com",
+  "homepage": "https://autovina.com/",
+  "allowedHosts": [
+    "autovina.com",
+    "www.autovina.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ford Hỗ Trợ Lãi Suất Cố Định 0% Trị Giá Lên Đến 41 Triệu Đồng Khi Mua Xe Trong Tháng 7/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:51.454Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://autovina.com/ford-ho-tro-lai-suat-co-dinh-0-tri-gia-len-den-41-trieu-dong-khi-mua-xe-trong-thang-72026-a24842.html",
+      "https://autovina.com/honda-viet-nam-cong-bo-ket-qua-kinh-doanh-thang-52026-a24831.html",
+      "https://autovina.com/bugi-ngk-spark-plug-nay-chinh-thuc-doi-ten-san-pham-theo-ten-cua-tap-doan-la-niterra-tren-toan-cau-tu-ngay-142023-a24484.html",
+      "https://autovina.com/trien-lam-o-to-quoc-te-bangkok-lan-thu-47-da-khep-lai-voi-gan-18-trieu-khach-tham-quan-va-gan-133000-xe-duoc-chot-don-a24805.html",
+      "https://autovina.com/top-10-mau-xe-ban-chay-nhat-thang-12018-a17344.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles",
+    "remaining36Qc": {
+      "checkedAt": "2026-11-22T02:39:00.902Z",
+      "originalClockPolicyUnchanged": true,
+      "verifiedUrls": [
+        "https://autovina.com/trien-lam-o-to-quoc-te-bangkok-lan-thu-47-da-khep-lai-voi-gan-18-trieu-khach-tham-quan-va-gan-133000-xe-duoc-chot-don-a24805.html",
+        "https://autovina.com/top-10-mau-xe-ban-chay-nhat-thang-12018-a17344.html",
+        "https://autovina.com/10-mau-o-to-ban-chay-nhat-viet-nam-thang-122017-a17152.html",
+        "https://autovina.com/ford-ho-tro-lai-suat-co-dinh-0-tri-gia-len-den-41-trieu-dong-khi-mua-xe-trong-thang-72026-a24842.html",
+        "https://autovina.com/bugi-ngk-spark-plug-nay-chinh-thuc-doi-ten-san-pham-theo-ten-cua-tap-doan-la-niterra-tren-toan-cau-tu-ngay-142023-a24484.html",
+        "https://autovina.com/honda-viet-nam-cong-bo-ket-qua-kinh-doanh-thang-52026-a24831.html"
+      ],
+      "freshIndependentUrls": [
+        "https://autovina.com/ford-ho-tro-lai-suat-co-dinh-0-tri-gia-len-den-41-trieu-dong-khi-mua-xe-trong-thang-72026-a24842.html",
+        "https://autovina.com/bugi-ngk-spark-plug-nay-chinh-thuc-doi-ten-san-pham-theo-ten-cua-tap-doan-la-niterra-tren-toan-cau-tu-ngay-142023-a24484.html",
+        "https://autovina.com/honda-viet-nam-cong-bo-ket-qua-kinh-doanh-thang-52026-a24831.html"
+      ],
+      "report": "/var/lib/news-flow/qc-remaining36-20261122/verified-extra.json"
+    }
+  },
+  "discovery": {
+    "homepage": "https://autovina.com/",
+    "categories": [
+      "https://autovina.com/c/tin-tuc",
+      "https://autovina.com/c/trong-nuoc",
+      "https://autovina.com/c/quoc-te",
+      "https://autovina.com/c/giao-thong",
+      "https://autovina.com/c/trai-nghiem",
+      "https://autovina.com/c/trai-nghiem-nhanh",
+      "https://autovina.com/c/trai-nghiem-chuyen-sau",
+      "https://autovina.com/c/tu-van",
+      "https://autovina.com/c/xe-va-toi",
+      "https://autovina.com/c/tu-van-xe",
+      "https://autovina.com/c/phu-kien-xe",
+      "https://autovina.com/c/an-toan",
+      "https://autovina.com/c/xe-may",
+      "https://autovina.com/c/tin-trong-nuoc",
+      "https://autovina.com/c/tin-quoc-te",
+      "https://autovina.com/c/trai-nghiem-nhanh-xe-may",
+      "https://autovina.com/c/trai-nghiem-sau-xe-may",
+      "https://autovina.com/c/motor-show",
+      "https://autovina.com/c/hi-tech",
+      "https://autovina.com/c/miss-auto",
+      "https://autovina.com/c/the-thao",
+      "https://autovina.com/c/vinaventure",
+      "https://autovina.com/c/giai-tri",
+      "https://autovina.com/c/album",
+      "https://autovina.com/c/ban-xe",
+      "https://autovina.com/c/xe-moi",
+      "https://autovina.com/c/top-xe-ban-chay",
+      "https://autovina.com/c/so-sanh-gia",
+      "https://autovina.com/c/ke-hoach-tai-chinh",
+      "https://autovina.com/c/tra-gop",
+      "https://autovina.com/video",
+      "https://autovina.com/photo",
+      "https://autovina.com/podcasts",
+      "https://autovina.com/infographic",
+      "https://autovina.com/emagazine",
+      "https://autovina.com/thong-tin-toa-soan",
+      "https://autovina.com/bang-gia-quang-cao"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json",
+    "maxConcurrentArticles": 1
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "autovina.com",
+    "checkedAt": "2026-11-09T03:56:48.198Z",
+    "url": "https://autovina.com/ford-ho-tro-lai-suat-co-dinh-0-tri-gia-len-den-41-trieu-dong-khi-mua-xe-trong-thang-72026-a24842.html",
+    "finalUrl": "https://autovina.com/ford-ho-tro-lai-suat-co-dinh-0-tri-gia-len-den-41-trieu-dong-khi-mua-xe-trong-thang-72026-a24842.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5183,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:31.767Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/autovina.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "autovina.com",
+    "parsedArticles": 22,
+    "distinctHashes": 22,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 37,
+    "categoriesAttempted": 37,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 441,
+    "checkedArticleUrls": 22,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 423,
+        "attempted": 13,
+        "passed": 15,
+        "distinctContents": 10,
+        "distinctHashes": 15
+      },
+      {
+        "name": "video",
+        "discovered": 13,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 0,
+        "distinctHashes": 4
+      },
+      {
+        "name": "photo",
+        "discovered": 5,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "autovina.com",
+      "siteId": "autovina.com",
+      "registrableDomain": "autovina.com",
+      "homepage": "https://autovina.com/",
+      "allowedHosts": [
+        "autovina.com",
+        "www.autovina.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Ford Hỗ Trợ Lãi Suất Cố Định 0% Trị Giá Lên Đến 41 Triệu Đồng Khi Mua Xe Trong Tháng 7/2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:51:47.693Z",
+        "trainingUrls": [
+          "https://autovina.com/12-dieu-thu-vi-ve-iron-cobra-spa-detailing-a21311.html",
+          "https://autovina.com/video-top-xe-o-to-ban-chay-nhat-thang-3-nam-2017-a15987.html",
+          "https://autovina.com/ho-bien-bentley-continental-gt-thanh-xe-tang-ham-ho-bat-chap-moi-dia-hinh-a19786.html",
+          "https://autovina.com/oto-de-mop-dau--chu-dich-an-toan-cua-cac-hang-xe-a19418.html",
+          "https://autovina.com/video-gioi-thieu-mau-chevrolet-colorado-zr2-a15281.html",
+          "https://autovina.com/video-gioi-thieu-chevrolet-equinox-2018-a14935.html",
+          "https://autovina.com/video-bmw-x6m-doi-dau-ferrari-458-tren-duong-bang-a11206.html"
+        ],
+        "holdoutUrls": [
+          "https://autovina.com/10-mau-o-to-ban-chay-nhat-viet-nam-thang-122017-a17152.html",
+          "https://autovina.com/ford-viet-nam-trien-khai-chuong-trinh-uu-dai-danh-cho-khach-hang-mua-xe-trong-thang-72023-a24527.html"
+        ]
+      }
+    }
+  ]
+}

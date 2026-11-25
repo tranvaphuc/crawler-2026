@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "gadgetreview.com",
+  "siteId": "gadgetreview.com",
+  "registrableDomain": "gadgetreview.com",
+  "homepage": "https://www.gadgetreview.com/",
+  "allowedHosts": [
+    "www.gadgetreview.com",
+    "gadgetreview.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.gadgetreview.com/",
+    "categories": [
+      "https://www.gadgetreview.com/personal-tech",
+      "https://www.gadgetreview.com/gadgets",
+      "https://www.gadgetreview.com/tv",
+      "https://www.gadgetreview.com/projector",
+      "https://www.gadgetreview.com/speaker",
+      "https://www.gadgetreview.com/bluetooth-speakers",
+      "https://www.gadgetreview.com/soundbar",
+      "https://www.gadgetreview.com/computers",
+      "https://www.gadgetreview.com/computer-monitor",
+      "https://www.gadgetreview.com/gaming-monitors"
+    ]
+  },
+  "title": {
+    "value": "Apple Home Gets New Video Doorbell and Smart Cameras, Now Available for Preorder",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:49:11.548Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:48:59.260Z",
+    "independentHoldouts": [
+      "https://www.gadgetreview.com/attorney-named-her-plate-blank-nyc-sent-her-40000-in-other-peoples-tickets",
+      "https://www.gadgetreview.com/blazer-ev-police-pursuit-vehicles-under-30000",
+      "https://www.gadgetreview.com/united-airlines-it-outage-grounds-flights-stranding-passengers"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.gadgetreview.com/apple-home-gets-new-video-doorbell-and-smart-cameras-now-available-for-preorder",
+      "https://www.gadgetreview.com/attorney-named-her-plate-blank-nyc-sent-her-40000-in-other-peoples-tickets",
+      "https://www.gadgetreview.com/blazer-ev-police-pursuit-vehicles-under-30000",
+      "https://www.gadgetreview.com/united-airlines-it-outage-grounds-flights-stranding-passengers"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

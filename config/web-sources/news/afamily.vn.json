@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "siteName": "afamily.vn",
+  "siteId": "afamily.vn",
+  "registrableDomain": "afamily.vn",
+  "homepage": "https://afamily.vn/",
+  "allowedHosts": [
+    "afamily.vn",
+    "www.afamily.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Có một kiểu người rất khó đề phòng: Lúc bạn khổ thì thương lắm, đến khi bạn sống tốt lại chẳng vui",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#af-detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:45.048Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://afamily.vn/co-mot-kieu-nguoi-rat-kho-de-phong-luc-ban-kho-thi-thuong-lam-den-khi-ban-song-tot-lai-chang-vui-236261108200157503.chn",
+      "https://afamily.vn/lo-lem-hoa-nu-than-giua-khu-rung-xanh-nhan-sac-dep-nhu-buoc-ra-tu-truyen-co-tich-236261107034906138.chn",
+      "https://afamily.vn/my-nhan-33-tuoi-phim-hoang-hau-tai-hon-gay-sot-vi-voc-dang-tuyet-voi-khong-nhin-an-tung-tap-1000-lan-squat-moi-ngay-de-giu-dang-236261108235018565.chn",
+      "https://afamily.vn/su-trao-tro-cua-ga-chong-giam-doc-va-cu-lat-ban-dang-cap-cua-co-vo-tao-khang-236260811194519225.chn",
+      "https://afamily.vn/tu-quan-ao-ngay-cang-it-tien-tiet-kiem-ngay-cang-nhieu-7-kinh-nghiem-mua-sam-toi-uoc-biet-som-hon-truoc-tuoi-40-236261104103147391.chn"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://afamily.vn/",
+    "categories": [
+      "https://afamily.vn/lifestyle.chn",
+      "https://afamily.vn/xa-hoi.chn",
+      "https://afamily.vn/dep.chn",
+      "https://afamily.vn/me-va-be.chn",
+      "https://afamily.vn/40-tuan-thai-ky.html",
+      "https://afamily.vn/dinh-duong-mang-thai.html",
+      "https://afamily.vn/rac-roi-khi-mang-thai.html",
+      "https://afamily.vn/dia-chi-kham-thai.html",
+      "https://afamily.vn/chuyen-di-de.html",
+      "https://afamily.vn/sau-khi-sinh.html",
+      "https://afamily.vn/nuoi-con-bang-sua-me.html",
+      "https://afamily.vn/tre-so-sinh.html",
+      "https://afamily.vn/lich-tiem-chung-cho-tre.html",
+      "https://afamily.vn/luyen-ngu-cho-con.html",
+      "https://afamily.vn/cho-con-an-dam.html",
+      "https://afamily.vn/phat-trien-chieu-cao.html",
+      "https://afamily.vn/giup-be-tang-can.html",
+      "https://afamily.vn/suc-khoe-tre-em.html",
+      "https://afamily.vn/khung-hoang-tuoi-len-2.html",
+      "https://afamily.vn/dinh-duong-cho-tre.html",
+      "https://afamily.vn/day-con-thong-minh.html",
+      "https://afamily.vn/canh-bao-tai-nan-tre-em.html",
+      "https://afamily.vn/tam-ly-tre-nho.html",
+      "https://afamily.vn/choi-voi-con.html",
+      "https://afamily.vn/giao-duc.chn",
+      "https://afamily.vn/hau-truong.chn",
+      "https://afamily.vn/suc-khoe.chn",
+      "https://afamily.vn/kha-nang-sinh-san.html",
+      "https://afamily.vn/benh-phu-khoa.html",
+      "https://afamily.vn/hiem-muon.html",
+      "https://afamily.vn/chuyen-phong-the.html",
+      "https://afamily.vn/benh-tinh-duc.html",
+      "https://afamily.vn/nhu-cau-sinh-ly.html",
+      "https://afamily.vn/benh-xuong-khop.html",
+      "https://afamily.vn/benh-ve-mat.html",
+      "https://afamily.vn/benh-ve-da.html",
+      "https://afamily.vn/benh-tieu-hoa.html",
+      "https://afamily.vn/thuc-pham-phong-benh.html",
+      "https://afamily.vn/thoi-quen-co-loi.html",
+      "https://afamily.vn/thoi-quen-co-hai.html",
+      "https://afamily.vn/chu-ki-kinh-nguyet.html",
+      "https://afamily.vn/dac-diem-sinh-ly.html",
+      "https://afamily.vn/roi-loan-noi-tiet.html",
+      "https://afamily.vn/tieu-dung.chn",
+      "https://afamily.vn/an-ngon.chn",
+      "https://afamily.vn/may-va.html",
+      "https://afamily.vn/tu-lam-thiep.html",
+      "https://afamily.vn/cach-cam-hoa-dep.html",
+      "https://afamily.vn/cat-tia-hoa-qua.html",
+      "https://afamily.vn/huong-dan-lam-phu-kien.html",
+      "https://afamily.vn/mon-an-tu-thit-ga.html",
+      "https://afamily.vn/mon-an-tu-thit-heo.html",
+      "https://afamily.vn/mon-an-tu-rau-cu.html",
+      "https://afamily.vn/mon-an-tu-tom.html",
+      "https://afamily.vn/mon-an-tu-trung.html",
+      "https://afamily.vn/mon-xao.html",
+      "https://afamily.vn/mon-nuong.html",
+      "https://afamily.vn/mon-kho.html",
+      "https://afamily.vn/mon-hap.html",
+      "https://afamily.vn/mon-chien.html",
+      "https://afamily.vn/mon-an-y.html",
+      "https://afamily.vn/mon-an-han-quoc.html",
+      "https://afamily.vn/mon-an-nhat-ban.html",
+      "https://afamily.vn/mon-an-thai-lan.html",
+      "https://afamily.vn/mon-an-phap.html",
+      "https://afamily.vn/mon-khai-vi.html",
+      "https://afamily.vn/mon-chinh.html",
+      "https://afamily.vn/mon-an-kem.html",
+      "https://afamily.vn/mon-canh.html",
+      "https://afamily.vn/diem-tam.html",
+      "https://afamily.vn/banh-cupcake.html",
+      "https://afamily.vn/banh-my.html",
+      "https://afamily.vn/banh-truyen-thong.html",
+      "https://afamily.vn/cac-loai-banh-khac.html",
+      "https://afamily.vn/tam-su-gia-dinh.chn",
+      "https://afamily.vn/40s-club.chn",
+      "https://afamily.vn/xa-hoi/trong-nuoc.chn",
+      "https://afamily.vn/xa-hoi/quoc-te.chn",
+      "https://afamily.vn/xa-hoi/hieu-luat.chn",
+      "https://afamily.vn/xa-hoi/nhan-ai.chn"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?afamily.vn/.*?(\\d{9,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "afamily.vn",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://afamily.vn/co-mot-kieu-nguoi-rat-kho-de-phong-luc-ban-kho-thi-thuong-lam-den-khi-ban-song-tot-lai-chang-vui-236261108200157503.chn",
+    "finalUrl": "https://afamily.vn/co-mot-kieu-nguoi-rat-kho-de-phong-luc-ban-kho-thi-thuong-lam-den-khi-ban-song-tot-lai-chang-vui-236261108200157503.chn",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8130,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#af-detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "afamily.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 166,
+    "checkedArticleUrls": 168,
+    "freshArticleChecks": 21,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 166,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 122,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1730,
+        "passed": 166,
+        "distinctHashes": 166
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://afamily.vn/vo-ty-phu-jensen-huang-mac-gi-khi-xuat-hien-ben-chong-kin-tieng-suot-40-nam-nhung-tu-do-toan-hang-hieu-dat-do-236261110112537465.chn",
+      "https://afamily.vn/neu-ly-hon-vo-ceo-nvidia-co-the-nhan-2-trieu-ty-dong-khoi-tai-san-khong-lo-phia-sau-be-boi-ngoai-tinh-236261110143612905.chn",
+      "https://afamily.vn/cam-hoa-thu-gian-cuoi-tuan-ma-phu-ba-ngoc-loan-lam-dan-tinh-choang-ngop-gu-tham-my-dung-la-khong-dua-duoc-23626111010475125.chn",
+      "https://afamily.vn/can-ho-34m-cua-co-gai-doc-than-gay-sot-khong-phong-khach-rieng-khong-ban-cong-nhung-cach-bo-tri-khien-nhieu-nguoi-muon-hoc-theo-236261105152259281.chn",
+      "https://afamily.vn/hang-loat-ceo-noi-tieng-the-gioi-phai-tra-gia-dat-vi-ngoai-tinh-nhung-2-ty-phu-nay-van-vung-vang-sau-song-gio-la-do-dau-23626111007004303.chn",
+      "https://afamily.vn/troi-tro-lanh-nhat-dinh-phai-dien-ao-khoac-da-de-mac-de-dep-lai-hack-tuoi-cuc-dinh-236261105153505141.chn",
+      "https://afamily.vn/con-gai-mc-diem-quynh-ly-luan-khi-khong-lam-duoc-nhieu-bai-toan-nghe-vua-hop-ly-vua-dang-yeu-236261110032033336.chn",
+      "https://afamily.vn/con-gai-ngo-thanh-van-gay-sot-voi-khoanh-khac-vua-an-vua-ngu-khi-di-nghi-duong-236261110101031265.chn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 2
+    },
+    "checkedAt": "2026-11-10T09:14:05.993Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/afamily.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

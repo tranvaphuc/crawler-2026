@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "siteName": "2saigon.vn",
+  "siteId": "2saigon.vn",
+  "registrableDomain": "2saigon.vn",
+  "homepage": "https://2saigon.vn/",
+  "allowedHosts": [
+    "2saigon.vn",
+    "www.2saigon.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khi mua nhà, đừng nghĩ “thích là được”, kiểu suy nghĩ này sẽ khiến bạn “lỗi nặng”!",
+    "strategy": "selector",
+    "selector": "h1.post-title-single"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:13:31.340Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://2saigon.vn/tu-van/khi-mua-nha-dung-nghi-thich-la-duoc-kieu-suy-nghi-nay-se-khien-ban-loi-nang.html",
+      "https://2saigon.vn/tu-van/co-nen-mua-nha-co-nhieu-cua-so.html",
+      "https://2saigon.vn/xa-hoi/tp-hcm-huong-den-sieu-do-thi-sieu-thu-nhap.html",
+      "https://2saigon.vn/xa-hoi/nua-the-ky-vuot-kho-vuon-minh-cua-tp-hcm.html",
+      "https://2saigon.vn/xa-hoi/tp-hcm-se-to-chuc-dai-tiec-buffet-banh-mi-vao-thang-3.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://2saigon.vn/",
+    "categories": [
+      "https://2saigon.vn/chuyen-muc/tu-van",
+      "https://2saigon.vn/chuyen-muc/tu-van/mua-gi-o-dau",
+      "https://2saigon.vn/chuyen-muc/tu-van/nguoi-tieu-dung-thong-minh",
+      "https://2saigon.vn/chuyen-muc/tu-van/dung-tien-hieu-qua",
+      "https://2saigon.vn/chuyen-muc/kinh-doanh",
+      "https://2saigon.vn/chuyen-muc/kinh-doanh/nha-dat-saigon",
+      "https://2saigon.vn/chuyen-muc/kinh-doanh/quan-tri",
+      "https://2saigon.vn/chuyen-muc/kinh-doanh/thi-truong",
+      "https://2saigon.vn/chuyen-muc/tai-chinh",
+      "https://2saigon.vn/chuyen-muc/tai-chinh/ngan-hang",
+      "https://2saigon.vn/chuyen-muc/tai-chinh/thi-truong-tieu-dung",
+      "https://2saigon.vn/chuyen-muc/khoi-nghiep",
+      "https://2saigon.vn/chuyen-muc/chinh-sach-can-biet",
+      "https://2saigon.vn/chuyen-muc/ceo",
+      "https://2saigon.vn/chuyen-muc/xa-hoi",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/am-thuc-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/thu-choi-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/chuyen-nho-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/diem-den-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/net-xua-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/cam-nhan-saigon",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/ngam-nghi",
+      "https://2saigon.vn/chuyen-muc/xa-hoi/cafe-sang-saigon",
+      "https://2saigon.vn/chuyen-muc/cong-nghe",
+      "https://2saigon.vn/chuyen-muc/xe",
+      "https://2saigon.vn/chuyen-muc/giai-tri",
+      "https://2saigon.vn/chuyen-muc/giai-tri/ngoi-sao-saigon",
+      "https://2saigon.vn/chuyen-muc/giai-tri/gioi-tre-saigon",
+      "https://2saigon.vn/chuyen-muc/giai-tri/phong-cach-saigon",
+      "https://2saigon.vn/chuyen-muc/giai-tri/hinh-anh-saigon",
+      "https://2saigon.vn/chuyen-muc/noi-toi-song"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "2saigon.vn",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://2saigon.vn/tu-van/khi-mua-nha-dung-nghi-thich-la-duoc-kieu-suy-nghi-nay-se-khien-ban-loi-nang.html",
+    "finalUrl": "https://2saigon.vn/tu-van/khi-mua-nha-dung-nghi-thich-la-duoc-kieu-suy-nghi-nay-se-khien-ban-loi-nang.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2906,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:28.647Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/2saigon.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "2saigon.vn",
+    "parsedArticles": 33,
+    "distinctHashes": 33,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 31,
+    "categoriesAttempted": 31,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 310,
+    "checkedArticleUrls": 33,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 308,
+        "attempted": 31,
+        "passed": 31,
+        "distinctContents": 31,
+        "distinctHashes": 31
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

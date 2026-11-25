@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dkn.tv",
+  "siteId": "dkn.tv",
+  "registrableDomain": "dkn.tv",
+  "homepage": "https://www.dkn.tv/",
+  "allowedHosts": [
+    "www.dkn.tv",
+    "dkn.tv"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.dkn.tv/",
+    "categories": [
+      "https://www.dkn.tv/cat/thoi-su",
+      "https://www.dkn.tv/cat/the-gioi",
+      "https://www.dkn.tv/video",
+      "https://www.dkn.tv/cat/van-hoa",
+      "https://www.dkn.tv/cat/doi-song",
+      "https://www.dkn.tv/cat/van-hoa/nghe-thuat"
+    ]
+  },
+  "title": {
+    "value": "Hà Nội kiểm nghiệm mẫu thịt bất thường tại Trường Mầm non Phương Liệt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:29.176Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:21.593Z",
+    "independentHoldouts": [
+      "https://www.dkn.tv/the-gioi/iran-tuyen-bo-dung-sau-drone-nham-can-cu-my-o-bahrain-bahrain-noi-da-danh-chan.html",
+      "https://www.dkn.tv/the-gioi/megaspeed-mo-dieu-tra-noi-bo-giua-nghi-van-ve-chuoi-cung-ung-chip-nvidia.html",
+      "https://www.dkn.tv/thoi-su/bo-cong-an-de-nghi-truy-to-14-nguoi-trong-duong-day-can-sa-tu-thai-lan.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.dkn.tv/thoi-su/ha-noi-kiem-nghiem-mau-thit-bat-thuong-tai-truong-mam-non-phuong-liet.html",
+      "https://www.dkn.tv/the-gioi/iran-tuyen-bo-dung-sau-drone-nham-can-cu-my-o-bahrain-bahrain-noi-da-danh-chan.html",
+      "https://www.dkn.tv/the-gioi/megaspeed-mo-dieu-tra-noi-bo-giua-nghi-van-ve-chuoi-cung-ung-chip-nvidia.html",
+      "https://www.dkn.tv/thoi-su/bo-cong-an-de-nghi-truy-to-14-nguoi-trong-duong-day-can-sa-tu-thai-lan.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

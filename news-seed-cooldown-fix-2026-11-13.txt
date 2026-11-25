@@ -1,0 +1,90 @@
+SỬA COOLDOWN CHẶN VÒNG QUÉT — 2026-11-13 09:28:22 (UTC+7)
+Đã deploy release /opt/news-flow/releases/20261113-05; nguồn runtime/state trên VPS khớp SHA256 với source local.
+100/100 regression tests pass cả local và VPS; 11/11 proxy HTTPS hoạt động; ES5 mapping/proof verified.
+Thay đổi: seed_schedule lưu lịch riêng từng publisher; chỉ nhận lượt khi site đó hết seed pending/running, hết cooldown và đến hạn tối thiểu 5 phút. Kiểm tra lại mỗi 5 giây sau lượt khởi động. Cooldown/backlog site khác không chặn admission. Enqueue và schedule atomic, chống lặp lượt; giữ FIFO, host spacing, task cũ và ES5 identity/field/time gates.
+Cửa sổ theo dõi sau deploy: 20.24 phút; 41 snapshot.
+HTTP: trước 5.01 request/giây; sau 7.01 request/giây.
+5 phút trước deploy: 0 seed hoàn tất, 80 bài đạt, 89 bài tạo mới ES.
+5 phút cuối quan sát: 1043 seed hoàn tất, 107 bài đạt, 75 bài tạo mới ES.
+Toàn cửa sổ: 4052 seed, 527 site có seed hoàn tất; 138 site được admission mới kể từ lúc bắt đầu quan sát; 371 bài được xác nhận tạo mới ES.
+Bài xuất bản sau khi bắt đầu quan sát: 86 bài qua kiểm tra; 53 bài xác nhận tạo mới ES, 53 bài import trong 20 phút từ khi đăng. Lag phút: {"count":53,"p50":5.78,"p95":11.8,"max":14.78}.
+Site có ít nhất một seed hoàn tất trong 20 phút gần nhất: 523/544. Đây không phải số site đã quét hết category trong 20 phút.
+Tổng outbox: [{"state":"created","n":2776},{"state":"existing","n":1365},{"state":"held","n":29},{"state":"pending","n":38},{"state":"sending","n":13}].
+Service: NRestarts=0; MemoryCurrent=2224295936; ActiveState=active; SubState=running.
+Kết luận: đã gỡ điều kiện backlog seed toàn hệ thống. Các số đo bài đăng mới chỉ mô tả những bài đã quan sát và import thành công, chưa chứng minh bắt được mọi bài mới của toàn bộ 544 site trong 20 phút. Những URL/site không truy cập hoặc parse được vẫn có thể bị bỏ lỡ.
+
+TIMELINE (phút | HTTP/s cửa sổ gần nhất | seed trong 5p | site có seed trong 20p | tổng ES tạo mới từ lúc đo | bài mới sau lúc đo đã tạo ES)
+0 |  | 0 | 0 | 0 | 0
+0.5 | 6.73 | 73 | 73 | 0 | 0
+1.01 | 6.45 | 160 | 160 | 3 | 0
+1.52 | 6.27 | 243 | 243 | 3 | 0
+2.02 | 6.5 | 333 | 333 | 21 | 0
+2.53 | 5.77 | 413 | 413 | 21 | 0
+3.03 | 5.93 | 488 | 488 | 43 | 0
+3.54 | 7.03 | 590 | 514 | 43 | 0
+4.05 | 6.7 | 678 | 516 | 63 | 0
+4.55 | 6.19 | 772 | 518 | 63 | 0
+5.06 | 7.47 | 882 | 519 | 86 | 2
+5.56 | 7.73 | 907 | 521 | 86 | 2
+6.07 | 6.93 | 935 | 521 | 106 | 5
+6.57 | 8.17 | 964 | 522 | 106 | 5
+7.08 | 7.19 | 985 | 523 | 124 | 5
+7.58 | 7.7 | 1022 | 523 | 124 | 5
+8.09 | 7.23 | 1040 | 523 | 140 | 5
+8.6 | 6.7 | 1050 | 525 | 140 | 5
+9.1 | 6.8 | 1047 | 525 | 163 | 10
+9.61 | 7.33 | 1063 | 526 | 163 | 10
+10.12 | 7 | 1052 | 526 | 185 | 13
+10.63 | 7.8 | 1061 | 526 | 185 | 13
+11.13 | 7.1 | 1066 | 526 | 213 | 18
+11.64 | 7.83 | 1056 | 526 | 213 | 18
+12.14 | 6.8 | 1044 | 526 | 236 | 23
+12.65 | 7.3 | 1027 | 526 | 261 | 30
+13.16 | 6.6 | 1038 | 526 | 261 | 30
+13.66 | 7.4 | 1031 | 526 | 286 | 34
+14.17 | 6.65 | 1039 | 526 | 286 | 34
+14.68 | 7.1 | 1031 | 526 | 292 | 35
+15.18 | 6.33 | 1033 | 527 | 296 | 36
+15.69 | 7.47 | 1029 | 527 | 305 | 39
+16.19 | 7.13 | 1034 | 527 | 305 | 39
+16.7 | 6.8 | 1016 | 527 | 325 | 40
+17.21 | 7.33 | 1021 | 527 | 325 | 40
+17.71 | 6.91 | 1036 | 527 | 344 | 47
+18.22 | 7.37 | 1034 | 527 | 344 | 47
+18.73 | 7.5 | 1038 | 527 | 366 | 52
+19.23 | 6.8 | 1031 | 527 | 366 | 52
+19.74 | 7.23 | 1034 | 527 | 368 | 53
+20.24 | 7.13 | 1043 | 523 | 371 | 53
+
+KIỂM TRA RIÊNG HOMEPAGE SAU CỬA SỔ ĐO
+Thời điểm: 2026-11-13T02:29:06.046289+00:00; homepage có request hoàn tất trong 20 phút: 367/544.
+Homepage đã có hai lần hoàn tất cách nhau <=20 phút với lần mới thuộc giai đoạn sau deploy: 0.
+Outbox chờ ghi, phút: {"count":383,"p50":2.69,"p95":4.17,"max":4.55}.
+Nút thắt còn lại: admission theo từng site đã chạy, nhưng các seed lượt mới vẫn xếp sau category cũ trong FIFO toàn queue. Chưa đạt SLA 20 phút toàn bộ danh sách. Với 13783 seed và tốc độ 200 seed/phút đo được, đọc đủ seed cần khoảng 69 phút nếu giữ nguyên thông lượng; không suy ra mọi bài cần chờ từng ấy vì một bài có thể xuất hiện trên nhiều seed.
+
+SITE KHÔNG CÓ SEED HOÀN TẤT TRONG 20 PHÚT — 2026-11-13T02:29:15.663535+00:00
+2saigon.vn | lần cuối: chưa có phút | lý do task cuối: ECONNRESET | cooldown hiện tại: không
+advertisingvietnam.com | lần cuối: 20.8 phút | lý do task cuối: links_found | cooldown hiện tại: không
+autotimes.vn | lần cuối: 20.8 phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: không
+baobariavungtau.com.vn | lần cuối: 20.8 phút | lý do task cuối: links_found | cooldown hiện tại: không
+baodoi.com | lần cuối: 20.7 phút | lý do task cuối: links_found | cooldown hiện tại: không
+baovinhlong.com.vn | lần cuối: 20.6 phút | lý do task cuối: links_found | cooldown hiện tại: không
+beforeitsnews.com | lần cuối: 20.5 phút | lý do task cuối: links_found | cooldown hiện tại: không
+business.cosmolife.vn | lần cuối: 20.4 phút | lý do task cuối: links_found | cooldown hiện tại: không
+chatluongvacuocsong.vn | lần cuối: 97.1 phút | lý do task cuối: links_found | cooldown hiện tại: access_blocked
+coindesk.com | lần cuối: chưa có phút | lý do task cuối: rate_limited | cooldown hiện tại: rate_limited
+cosmolife.vn | lần cuối: 20.3 phút | lý do task cuối: links_found | cooldown hiện tại: không
+deluxevietnam.com | lần cuối: 99.5 phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: access_blocked
+edition.cnn.com | lần cuối: chưa có phút | lý do task cuối: access_blocked | cooldown hiện tại: không
+emagazine24.net | lần cuối: chưa có phút | lý do task cuối: access_blocked | cooldown hiện tại: access_blocked
+finance.yahoo.com | lần cuối: chưa có phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: không
+gialaitv.vn | lần cuối: 145.6 phút | lý do task cuối: links_found | cooldown hiện tại: access_blocked
+laodongdongnai.vn | lần cuối: 155.1 phút | lý do task cuối: http_500 | cooldown hiện tại: không
+molistar.com | lần cuối: chưa có phút | lý do task cuối: http_520 | cooldown hiện tại: không
+msn.com | lần cuối: chưa có phút | lý do task cuối: empty_page | cooldown hiện tại: không
+seekingalpha.com | lần cuối: 42.7 phút | lý do task cuối: links_found | cooldown hiện tại: access_blocked
+tamnhin.kienthuc.net.vn | lần cuối: chưa có phút | lý do task cuối: ECONNRESET | cooldown hiện tại: không
+tieudungthoinay.vn | lần cuối: chưa có phút | lý do task cuối: not_found | cooldown hiện tại: không
+vietnamfdi.vn | lần cuối: 423.8 phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: không
+vinh24h.vn | lần cuối: chưa có phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: không
+yahoo.com | lần cuối: 82.5 phút | lý do task cuối: request_deadline_exceeded | cooldown hiện tại: không

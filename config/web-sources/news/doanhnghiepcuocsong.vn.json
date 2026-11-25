@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepcuocsong.vn",
+  "siteId": "doanhnghiepcuocsong.vn",
+  "registrableDomain": "doanhnghiepcuocsong.vn",
+  "homepage": "https://doanhnghiepcuocsong.vn/",
+  "allowedHosts": [
+    "doanhnghiepcuocsong.vn",
+    "www.doanhnghiepcuocsong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tập đoàn công nghiệp 60 năm tuổi, doanh thu gần 150.000 tỷ đồng chọn Việt Nam sản xuất vật liệu công nghệ cao",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:34.818Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://doanhnghiepcuocsong.vn/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-a283177.html",
+      "https://doanhnghiepcuocsong.vn/dai-cong-truong-18-ty-usd-cua-ty-phu-pham-nhat-vuong-can-10000-lao-dong-vincons-keu-goi-lao-dong-cu-quay-lai-a283142.html",
+      "https://www.doanhnghiepcuocsong.vn/bat-tam-giam-le-thanh-loi-sn-1994-de-dieu-tra-ve-so-tai-san-tri-gia-450000000-dong-a282984.html",
+      "https://doanhnghiepcuocsong.vn/nguoi-dan-ong-sinh-nam-1970-que-quang-ngai-gac-lai-giac-mo-hoc-dai-hoc-nay-nam-khoi-tai-san-gan-3500-ty-dong-a283185.html",
+      "https://doanhnghiepcuocsong.vn/cuu-sinh-vien-dai-hoc-bach-khoa-xay-dung-2-thuong-hieu-tieu-dung-van-nguoi-me-lan-luot-ban-lai-cho-an-do-nhat-ban-thu-ve-hang-nghin-ty-dong-a283182.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepcuocsong.vn/",
+    "categories": [
+      "https://doanhnghiepcuocsong.vn/c/doanh-nghiep",
+      "https://doanhnghiepcuocsong.vn/c/tai-chinh-chung-khoan",
+      "https://doanhnghiepcuocsong.vn/c/bat-dong-san",
+      "https://doanhnghiepcuocsong.vn/c/thi-truong",
+      "https://doanhnghiepcuocsong.vn/c/xa-hoi",
+      "https://doanhnghiepcuocsong.vn/c/phap-luat",
+      "https://doanhnghiepcuocsong.vn/c/van-hoa-giao-duc",
+      "https://doanhnghiepcuocsong.vn/c/y-te-suc-khoe",
+      "https://doanhnghiepcuocsong.vn/c/xe-cong-nghe"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepcuocsong.vn",
+    "checkedAt": "2026-11-09T03:57:00.306Z",
+    "url": "https://doanhnghiepcuocsong.vn/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-a283177.html",
+    "finalUrl": "https://doanhnghiepcuocsong.vn/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-a283177.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2270,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:04.210Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnghiepcuocsong.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnghiepcuocsong.vn",
+    "parsedArticles": 14,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 219,
+    "checkedArticleUrls": 14,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 219,
+        "attempted": 14,
+        "passed": 14,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

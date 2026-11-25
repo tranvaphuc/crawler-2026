@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hangthat.thuonghieucongluan.com.vn",
+  "siteId": "hangthat.thuonghieucongluan.com.vn",
+  "registrableDomain": "hangthat.thuonghieucongluan.com.vn",
+  "homepage": "https://hangthat.thuonghieucongluan.com.vn/",
+  "allowedHosts": [
+    "hangthat.thuonghieucongluan.com.vn",
+    "www.hangthat.thuonghieucongluan.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thời tiết ngày 8/11: Bắc Bộ chuẩn bị đón không khí lạnh, Trung Bộ có mưa trở lại",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".box_time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:14.992Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://hangthat.thuonghieucongluan.com.vn/thoi-tiet-ngay-8-11-bac-bo-chuan-bi-don-khong-khi-lanh-trung-bo-co-mua-tro-lai-a295161.html",
+      "https://hangthat.thuonghieucongluan.com.vn/doi-moi-huong-tiep-can-dua-hang-viet-den-gan-nguoi-tieu-dung-thu-do-a295138.html",
+      "https://hangthat.thuonghieucongluan.com.vn/hon-14-trieu-tai-khoan-chung-khoan-vi-sao-dong-tien-van-dung-ngoai-thi-truong-a295132.html",
+      "https://hangthat.thuonghieucongluan.com.vn/ha-noi-hang-hieu-giam-gia-toi-90-thi-truong-mua-sam-dau-thang-11-them-soi-dong-a295136.html",
+      "https://hangthat.thuonghieucongluan.com.vn/co-phieu-pvd-loi-nhuan-quy-iii-giam-hon-70-bsc-ky-vong-phuc-hoi-tu-quy-iv-2026-a295076.html",
+      "https://hangthat.thuonghieucongluan.com.vn/honda-adv-125-2027-ra-mat-chi-ton-2-1-lit-xang-100-km-a295056.html",
+      "https://hangthat.thuonghieucongluan.com.vn/petrovietnam-cung-6-don-vi-thanh-vien-ghi-danh-doanh-nghiep-van-hoa-uy-tin-2026-a295014.html",
+      "https://hangthat.thuonghieucongluan.com.vn/hang-viet-huong-toi-chiem-linh-thi-truong-noi-dia-tao-dong-luc-tang-truong-moi-a295008.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://hangthat.thuonghieucongluan.com.vn/",
+    "categories": [
+      "https://hangthat.thuonghieucongluan.com.vn/tin-tuc-c3",
+      "https://hangthat.thuonghieucongluan.com.vn/chong-hang-gia-c5",
+      "https://hangthat.thuonghieucongluan.com.vn/kinh-te-c58",
+      "https://hangthat.thuonghieucongluan.com.vn/top-thuong-hieu-quoc-gia-c50",
+      "https://hangthat.thuonghieucongluan.com.vn/tin-tuc-c42",
+      "https://hangthat.thuonghieucongluan.com.vn/thi-truong-c9",
+      "https://hangthat.thuonghieucongluan.com.vn/thuong-hieu-xe-c62",
+      "https://hangthat.thuonghieucongluan.com.vn/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "hangthat.thuonghieucongluan.com.vn",
+    "checkedAt": "2026-11-09T03:57:06.604Z",
+    "url": "https://hangthat.thuonghieucongluan.com.vn/thoi-tiet-ngay-8-11-bac-bo-chuan-bi-don-khong-khi-lanh-trung-bo-co-mua-tro-lai-a295161.html",
+    "finalUrl": "https://hangthat.thuonghieucongluan.com.vn/thoi-tiet-ngay-8-11-bac-bo-chuan-bi-don-khong-khi-lanh-trung-bo-co-mua-tro-lai-a295161.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3384,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:25.664Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/hangthat.thuonghieucongluan.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "hangthat.thuonghieucongluan.com.vn",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesAttempted": 8,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 168,
+    "checkedArticleUrls": 13,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 168,
+        "attempted": 13,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "hangthat.thuonghieucongluan.com.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

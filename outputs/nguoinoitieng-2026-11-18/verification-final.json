@@ -1,0 +1,558 @@
+{
+  "checked_at": "2026-11-18T21:50:49.820Z",
+  "result": "passed",
+  "sqlite_quick_check": "ok",
+  "all_profile_json_valid": true,
+  "queue_unfinished_or_failed": 0,
+  "total_source_profiles": 102543,
+  "vietnamese_array_records": 16586,
+  "vietnamese_jsonl_records": 16586,
+  "record_content_sha256": "1bed0243640cacdec1fd3479e0ff36636f42d4c5a8c1cf69ed2e6acb09c8b0b8",
+  "grouped_people": 16548,
+  "people_with_subject_platform_link": 13804,
+  "people_without_subject_platform_link": 2744,
+  "source_date_anomalies": [
+    {
+      "source_id": "08",
+      "name": "Thanh Hải",
+      "source_date": "1980-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nha-thiet-ke-thoi-trang/thanh-hai/08"
+    },
+    {
+      "source_id": "23",
+      "name": "Huy Trần",
+      "source_date": "1989-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/thiet-ke-thoi-trang/huy-tran/23"
+    },
+    {
+      "source_id": "2e",
+      "name": "Quốc Anh",
+      "source_date": "1962-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-hai/quoc-anh/2e"
+    },
+    {
+      "source_id": "3i",
+      "name": "John Huy Trần",
+      "source_date": "1985-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/vu-cong/john-huy-tran/3i"
+    },
+    {
+      "source_id": "6i",
+      "name": "Daniel Hoàng",
+      "source_date": "1990-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nhiep-anh-gia/daniel-hoang/6i"
+    },
+    {
+      "source_id": "73",
+      "name": "Đỗ Phượng Như",
+      "source_date": "1973-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-violon/do-phuong-nhu/73"
+    },
+    {
+      "source_id": "a9fv",
+      "name": "Đặng Ngọc Long",
+      "source_date": "1957-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-guitar/dang-ngoc-long/a9fv"
+    },
+    {
+      "source_id": "a9ir",
+      "name": "Thanh Tuấn",
+      "source_date": "1950-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-cai-luong/thanh-tuan/a9ir"
+    },
+    {
+      "source_id": "aik",
+      "name": "Vũ Thành",
+      "source_date": "1926-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nhac-si/vu-thanh/aik"
+    },
+    {
+      "source_id": "bajj",
+      "name": "Hưng Đạo Vương",
+      "source_date": "1232-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/danh-nhan-lich-su-viet-nam/hung-dao-vuong/bajj"
+    },
+    {
+      "source_id": "bb9u",
+      "name": "Chu Thị Khánh Vân",
+      "source_date": "2000-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/chu-thi-khanh-van/bb9u"
+    },
+    {
+      "source_id": "bbc8",
+      "name": "Lâm Vỹ Dạ",
+      "source_date": "1989-09-31",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/lam-vy-da/bbc8"
+    },
+    {
+      "source_id": "bbm4",
+      "name": "Ngọc Thúy",
+      "source_date": "1980-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/ngoc-thuy/bbm4"
+    },
+    {
+      "source_id": "bbpz",
+      "name": "Hoàng Mây",
+      "source_date": "1992-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/hoang-may/bbpz"
+    },
+    {
+      "source_id": "bd3i",
+      "name": "Laura Duyên",
+      "source_date": "2001-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-teen/laura-duyen/bd3i"
+    },
+    {
+      "source_id": "bdfd",
+      "name": "Kiều Đại Dũ",
+      "source_date": "1996-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghi-pham/kieu-dai-du/bdfd"
+    },
+    {
+      "source_id": "bdfv",
+      "name": "Thiên Bảo Bolero",
+      "source_date": "1974-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/thien-bao-bolero/bdfv"
+    },
+    {
+      "source_id": "bdli",
+      "name": "Nguyễn Văn Liệu",
+      "source_date": "1958-02-29",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/bac-si/nguyen-van-lieu/bdli"
+    },
+    {
+      "source_id": "bj36",
+      "name": "Quốc Dũng",
+      "source_date": "1992-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/quoc-dung/bj36"
+    },
+    {
+      "source_id": "bjxu",
+      "name": "Lâm Nam Phương",
+      "source_date": "2004-04-31",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/lam-nam-phuong/bjxu"
+    },
+    {
+      "source_id": "q0",
+      "name": "Vũ Quần Phương",
+      "source_date": "1940-02-30",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nha-tho/vu-quan-phuong/q0"
+    }
+  ],
+  "remaining_origin_uncertainties": [
+    {
+      "source_id": "bcn0",
+      "name": "Joe Ruelle",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/blogger/joe-ruelle/bcn0",
+      "birth_country": "Canada",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bko8",
+      "name": "Yee Pink",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/blogger/yee-pink/bko8",
+      "birth_country": "Trung quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "0t",
+      "name": "Kyo York",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/kyo-york/0t",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bcfz",
+      "name": "Shin Jin Ju",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/shin-jin-ju/bcfz",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bdfi",
+      "name": "Qlin",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/qlin/bdfi",
+      "birth_country": "Đài Loan",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "8t",
+      "name": "Kevin Tuấn Hùng",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/kevin-tuan-hung/8t",
+      "birth_country": "Đức",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "beg3",
+      "name": "Gigun",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/gigun/beg3",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "ba1t",
+      "name": "Janice Phương",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ca-si/janice-phuong/ba1t",
+      "birth_country": "Philippines",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "px",
+      "name": "Danny Van Bakel",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/cau-thu/danny-van-bakel/px",
+      "birth_country": "Hà Lan",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bfpm",
+      "name": "Matt Liu",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/ceo/matt-liu/bfpm",
+      "birth_country": "Singapore",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bas5",
+      "name": "Dương Khiết Trì",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/chinh-tri-gia/duong-khiet-tri/bas5",
+      "birth_country": "Trung Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bau9",
+      "name": "Ted Osius",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dai-su/ted-osius/bau9",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bhy7",
+      "name": "Chu Lê Vi Anh",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dancer/chu-le-vi-anh/bhy7",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bbpx",
+      "name": "Jordan Vogt-roberts",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dao-dien/jordan-vogt-roberts/bbpx",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bb8j",
+      "name": "Neko Lê",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dao-dien/neko-le/bb8j",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bj5j",
+      "name": "Charlie Win",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/charlie-win/bj5j",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bczb",
+      "name": "Minh Tiệp",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/minh-tiep/bczb",
+      "birth_country": "Slovakia",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bgo2",
+      "name": "Ngô Chí Thành",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/ngo-chi-thanh/bgo2",
+      "birth_country": "Trung Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bb35",
+      "name": "Lưu Hạo Nhiên",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/luu-hao-nhien/bb35",
+      "birth_country": "Trung quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "be9s",
+      "name": "Ri Trương",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dien-vien/ri-truong/be9s",
+      "birth_country": "Trung Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bd9d",
+      "name": "Alexandra Rud",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/dj/alexandra-rud/bd9d",
+      "birth_country": "Ukraine",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bmbl",
+      "name": "Jethro Asia Sulayao",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv/jethro-asia-sulayao/bmbl",
+      "birth_country": "Philippines",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bk47",
+      "name": "Kim Sang-Sik",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv/kim-sang-sik/bk47",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "biz2",
+      "name": "Chung Hae-Soung",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv-bong-da/chung-hae-soung/biz2",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bbvt",
+      "name": "Park Hang-seo",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv-bong-da/park-hang-seo/bbvt",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "a940",
+      "name": "Henrique Calisto",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv-bong-da/henrique-calisto/a940",
+      "birth_country": "Bồ Đào Nha",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "a941",
+      "name": "Miura Toshiya",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv-bong-da/miura-toshiya/a941",
+      "birth_country": "Nhật Bản",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bef5",
+      "name": "Johnny Trần",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hlv-the-hinh/johnny-tran/bef5",
+      "birth_country": "Đức",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "be6t",
+      "name": "July Huyền Trang",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hoa-khoi/july-huyen-trang/be6t",
+      "birth_country": "Nhật Bản",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bb3f",
+      "name": "Lê Minh Trường",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-boy/le-minh-truong/bb3f",
+      "birth_country": "Trung quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bfkg",
+      "name": "Tuấn Thanh",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-boy/tuan-thanh/bfkg",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bbz5",
+      "name": "Bạch Dương",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/bach-duong/bbz5",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "barr",
+      "name": "Han Sara",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/han-sara/barr",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "ae8",
+      "name": "Lâm Á Hân",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/lam-a-han/ae8",
+      "birth_country": "Trung Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bb0m",
+      "name": "Lê Thị Mỹ Hạnh",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/le-thi-my-hanh/bb0m",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bgsb",
+      "name": "Uyên Tô",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-girl/uyen-to/bgsb",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bd1w",
+      "name": "Natthamon Thongthep",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/hot-teen/natthamon-thongthep/bd1w",
+      "birth_country": "Lào",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bcan",
+      "name": "Daniel Shulyndin",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/mc/daniel-shulyndin/bcan",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "biff",
+      "name": "Nguyễn Tường Vy",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/mc-bien-tap-vien/nguyen-tuong-vy/biff",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bjri",
+      "name": "Nixon Tran",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-nhan/nixon-tran/bjri",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bj01",
+      "name": "David Lê",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si/david-le/bj01",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "blkm",
+      "name": "Jmi Ko",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nghe-si-violon/jmi-ko/blkm",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bfqs",
+      "name": "Dianka Zakhidova",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/dianka-zakhidova/bfqs",
+      "birth_country": "Ukraine",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "aap",
+      "name": "Lâm Bảo Châu",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/lam-bao-chau/aap",
+      "birth_country": "Đài Loan",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bflb",
+      "name": "Yura Po",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/yura-po/bflb",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bg9t",
+      "name": "Trần Luân Vũ",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/tran-luan-vu/bg9t",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bgv9",
+      "name": "Anna Matviichuk",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau/anna-matviichuk/bgv9",
+      "birth_country": "Ukraine",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bek3",
+      "name": "Tomek Vũ",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau-anh/tomek-vu/bek3",
+      "birth_country": "Ba Lan",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "beeo",
+      "name": "Paulo Rothhaar",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau-anh/paulo-rothhaar/beeo",
+      "birth_country": "Brazil",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bkhl",
+      "name": "Hoài Bảo Phan",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau-anh/hoai-bao-phan/bkhl",
+      "birth_country": "Đài Loan",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "beu8",
+      "name": "Lee Sumi",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nguoi-mau-nhi/lee-sumi/beu8",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "blu9",
+      "name": "Will Vũ",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/nha-san-xuat-phim/will-vu/blu9",
+      "birth_country": "Đức",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bf0y",
+      "name": "Tạ Hà",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/quan-ly/ta-ha/bf0y",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bitt",
+      "name": "Will In Vietnam",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/will-in-vietnam/bitt",
+      "birth_country": "Bỉ",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bjs2",
+      "name": "Choi Jongrak",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/youtuber/choi-jongrak/bjs2",
+      "birth_country": "Hàn Quốc",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bfni",
+      "name": "Mina Nguyễn",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/youtuber/mina-nguyen/bfni",
+      "birth_country": "Nga",
+      "vietnam_status": "needs_review"
+    },
+    {
+      "source_id": "bk8r",
+      "name": "Max Mcfarlin (Mắc Ơi)",
+      "source_url": "https://nguoinoitieng.tv/nghe-nghiep/youtuber/max-mcfarlin-mac-oi/bk8r",
+      "birth_country": "Hoa Kỳ",
+      "vietnam_status": "needs_review"
+    }
+  ],
+  "uncertainty_note": "Đã giữ riêng các trường hợp nguồn chưa đủ căn cứ hoặc mâu thuẫn; không suy đoán theo tên. Nhóm unresolved_origin lớn gồm hồ sơ quốc tế chưa có bằng chứng Việt/gốc Việt. Dữ liệu gốc được giữ để bổ sung/đối chiếu về sau.",
+  "files": {
+    "celebrities.sqlite": {
+      "bytes": 5085102080
+    },
+    "vietnamese.json": {
+      "bytes": 698018857
+    },
+    "vietnamese.jsonl": {
+      "bytes": 698002268
+    },
+    "vietnamese-people.jsonl": {
+      "bytes": 16098985
+    }
+  }
+}

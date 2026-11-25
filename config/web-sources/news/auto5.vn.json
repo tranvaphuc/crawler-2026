@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "auto5.vn",
+  "siteId": "auto5.vn",
+  "registrableDomain": "auto5.vn",
+  "homepage": "https://auto5.vn/",
+  "allowedHosts": [
+    "auto5.vn",
+    "www.auto5.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://auto5.vn/",
+    "categories": [
+      "https://auto5.vn/tin-tuc/",
+      "https://auto5.vn/xe-may/",
+      "https://auto5.vn/xe-dien/",
+      "https://auto5.vn/top-xe/",
+      "https://auto5.vn/danh-gia-xe/",
+      "https://auto5.vn/xe/"
+    ]
+  },
+  "title": {
+    "value": "Mừng 7.000 xe Destinator đến tay khách Việt, Mitsubishi tung ưu đãi đặc biệt trong tháng 6",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:26.991Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:20.957Z",
+    "independentHoldouts": [
+      "https://auto5.vn/344-mitsubishi-ban-hon-3200-xe-trong-thang-8-2026-triton-lap-thanh-tich-chua-tung-co-d183736.html",
+      "https://auto5.vn/344-chua-het-nam-2026-vinfast-da-ban-giao-hon-200000-o-to-dien-tai-viet-nam-d184048.html",
+      "https://auto5.vn/344-cuoc-dua-giam-gia-mpv-7-cho-nong-len-dip-cuoi-nam-co-mau-giam-hon-100-trieu-dong-de-hut-khach-d184068.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://auto5.vn/344-mung-7000-xe-destinator-den-tay-khach-viet-mitsubishi-tung-uu-dai-dac-biet-trong-thang-6-d183213.html",
+      "https://auto5.vn/344-mitsubishi-ban-hon-3200-xe-trong-thang-8-2026-triton-lap-thanh-tich-chua-tung-co-d183736.html",
+      "https://auto5.vn/344-chua-het-nam-2026-vinfast-da-ban-giao-hon-200000-o-to-dien-tai-viet-nam-d184048.html",
+      "https://auto5.vn/344-cuoc-dua-giam-gia-mpv-7-cho-nong-len-dip-cuoi-nam-co-mau-giam-hon-100-trieu-dong-de-hut-khach-d184068.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

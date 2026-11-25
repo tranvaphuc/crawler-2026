@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giadinh24h.net",
+  "siteId": "giadinh24h.net",
+  "registrableDomain": "giadinh24h.net",
+  "homepage": "https://giadinh24h.net/",
+  "allowedHosts": [
+    "giadinh24h.net",
+    "www.giadinh24h.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Người dân đông đảo xếp hàng chờ lấy vàng, Bảo Tín Mạnh Hải giải thích lý do trả vàng sớm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".col-md-9 > .time-news-detail + div",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:30.091Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+      "https://giadinh24h.net/vua-hai-dat-bac-xuan-hinh-toi-la-nguoi-tham-lam-thich-dung-nui-no-trong-nui-kia-cao-hon",
+      "https://giadinh24h.net/phat-hien-trung-quoc-di-doi-cong-trinh-nang-hon-30000-tan-di-xa-gan-288m-con-xoay-dung-90-do-nham-hoan-thanh-muc-tieu-lon",
+      "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+      "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/giadinh24h.net"
+  },
+  "discovery": {
+    "homepage": "https://giadinh24h.net/",
+    "categories": [
+      "https://giadinh24h.net/category/tin-moi/",
+      "https://giadinh24h.net/category/the-gioi/",
+      "https://giadinh24h.net/category/suc-khoe/",
+      "https://giadinh24h.net/category/tam-su/",
+      "https://giadinh24h.net/category/ngoi-sao/",
+      "https://giadinh24h.net/category/thoi-trang/",
+      "https://giadinh24h.net/category/cuoi-24h/",
+      "https://giadinh24h.net/category/bong-da/",
+      "https://giadinh24h.net/category/lam-dep/",
+      "https://giadinh24h.net/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?giadinh24h.net/.*?(\\d{6,}).*?(.htm)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.286Z",
+      "verifiedSeeds": [
+        "https://giadinh24h.net/",
+        "https://giadinh24h.net/category/tin-moi/",
+        "https://giadinh24h.net/category/the-gioi/",
+        "https://giadinh24h.net/category/suc-khoe/",
+        "https://giadinh24h.net/category/tam-su/",
+        "https://giadinh24h.net/category/ngoi-sao/",
+        "https://giadinh24h.net/category/thoi-trang/",
+        "https://giadinh24h.net/category/cuoi-24h/",
+        "https://giadinh24h.net/category/bong-da/",
+        "https://giadinh24h.net/category/lam-dep/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "giadinh24h.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 12,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 81,
+        "passed": 18,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://giadinh24h.net/phat-hien-trung-quoc-di-doi-cong-trinh-nang-hon-30000-tan-di-xa-gan-288m-con-xoay-dung-90-do-nham-hoan-thanh-muc-tieu-lon",
+      "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+      "https://giadinh24h.net/vua-hai-dat-bac-xuan-hinh-toi-la-nguoi-tham-lam-thich-dung-nui-no-trong-nui-kia-cao-hon",
+      "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+      "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi",
+      "https://giadinh24h.net/chuyen-kho-tin-trong-can-biet-thu-bo-hoang-o-vinh-phuc",
+      "https://giadinh24h.net/khong-phai-ca-thu-hay-ca-hoi-mua-he-co-1-loai-ca-duoc-vi-nhu-thuoc-cuong-phoi-cua-nguoi-viet",
+      "https://giadinh24h.net/con-cai-thua-huong-tri-thong-minh-tu-bo-hay-me",
+      "https://giadinh24h.net/thieng-lieng-khoanh-khac-con-gai-chao-doi",
+      "https://giadinh24h.net/toi-chang-can-nguoi-vo-khong-coi-trong-gia-dinh-chong",
+      "https://giadinh24h.net/chuyen-du-xuan-dau-nam-cua-gia-dinh",
+      "https://giadinh24h.net/sot-xuat-huyet-tang-22-lan-tay-chan-mieng-gap-5-lan",
+      "https://giadinh24h.net/thoi-tiet-mien-bac-nhung-ngay-toi",
+      "https://giadinh24h.net/canh-bao-suc-khoe-cho-gia-dinh-su-dung-tu-lanh-hang-ngay-nam-2026",
+      "https://giadinh24h.net/2-con-giap-sap-dat-dinh-cao-nam-binh-ngo-tai-loc-doi-dao-tuoi-tuat-can-trong",
+      "https://giadinh24h.net/ca-doi-ban-ron-nghi-huu-1-tuan-toi-moi-hieu-cang-it-ban-tam-cuoc-song-cang-giau-co",
+      "https://giadinh24h.net/jennifer-pham-quang-dung-day-tuoi-day-thi-sau-ly-hon",
+      "https://giadinh24h.net/ke-thu-tham-lang-tan-cong-lan-da-nam-tan-nhang",
+      "https://giadinh24h.net/kieu-ao-so-mi-quoc-dan-vua-thanh-lich-vua-hack-tuoi-cuc-dinh",
+      "https://giadinh24h.net/song-hye-kyo-bat-mi-4-tuyet-chieu-bao-duong-nhan-sac-chong-gia-cho-lan-da",
+      "https://giadinh24h.net/5-kieu-ao-xinh-xan-len-hinh-dep-chuan-nang-tho-khi-di-du-lich",
+      "https://giadinh24h.net/thu-khoa-thi-lop-10-nam-2026-o-tphcm-la-hoc-sinh-ngoai-cong-lap-voi-2-diem-10",
+      "https://giadinh24h.net/chuyen-gia-phat-canh-bao-nong-ve-gia-vang",
+      "https://giadinh24h.net/3-thu-nay-tren-co-the-cang-sach-thi-tuoi-tho-cang-cao",
+      "https://giadinh24h.net/dot-kich-tu-gia-vien-chuc-khao-sat-dat-dai-tich-thu-40-ty-dong-tien-mat-chat-nhu-thap-2-kg-vang-kim-cuong-va-12-mieng-vang-rong-nguon-goc-bat-minh",
+      "https://giadinh24h.net/lan-da-khoe-dang-tro-thanh-tieu-chuan-sac-dep-moi-cua-phu-nu-hien-dai",
+      "https://giadinh24h.net/bao-kalmaegi-di-chuyen-nhanh-co-the-manh-cap-14-tren-bien-dong",
+      "https://giadinh24h.net/goi-y-loat-cach-mix-chan-vay-sang-mau-chuan-dep-va-tre-trung",
+      "https://giadinh24h.net/ha-tang-me-man-loai-nguyen-lieu-mau-do-quen-thuoc-vua-giai-nhiet-vua-duong-nhan-cuc-dinh",
+      "https://giadinh24h.net/nhung-luu-y-co-ban-tay-te-bao-chet-tranh-lam-da-bi-kho-va-kich-ung",
+      "https://giadinh24h.net/gia-vang-trong-nuoc-trai-chieu-vang-the-gioi-giam-vi-chinh-sach-thue-moi-cua-trung-quoc",
+      "https://giadinh24h.net/chu-quan-bat-ngo-nhan-tin-gan-bi-ton-thuong-nang-vi-chinh-mon-an-minh-ban-moi-ngay",
+      "https://giadinh24h.net/phat-hien-nguy-co-mac-ung-thu-chi-trong-3-phut-co-the-lam-ngay-tai-nha-ai-cung-nen-biet",
+      "https://giadinh24h.net/walmart-am-tham-thau-tom-cac-trung-tam-thuong-mai-cu-tuong-lai-van-hanh-1-thanh-pho-thu-nho",
+      "https://giadinh24h.net/ky-tich-chua-tung-co-quoc-gia-ty-dan-chan-dung-song-du-trong-24-gio-xay-2-dap-thuy-dien-cong-suat-khung",
+      "https://giadinh24h.net/loai-gao-gan-3-trieu-dongcan-hat-cang-bong-nhu-nhung-vien-kim-cuong",
+      "https://giadinh24h.net/bi-quyet-lam-sinh-to-mang-cut-dep-da-trong-mua-he",
+      "https://giadinh24h.net/luoc-ga-bang-nuoc-la-la-sai-day-moi-la-loai-nuoc-giup-luoc-ga-mem-ngot-thom-lung-lai-chac-thit",
+      "https://giadinh24h.net/nghien-ga-ran-nuoc-ngot-ma-van-giam-deu-30kg-cach-an-uong-tuong-chung-phan-khoa-hoc-lai-khien-bac-si-gat-gu",
+      "https://giadinh24h.net/nguoi-co-gan-khoe-thuong-thich-lam-4-viec-nay-vao-buoi-sang-ai-lam-du-thi-xin-chuc-mung",
+      "https://giadinh24h.net/toi-muon-chia-tay-ban-trai-sau-khi-cung-anh-ay-di-cho",
+      "https://giadinh24h.net/6-ly-do-cang-thang-truoc-chuyen-ay-va-cach-cai-thien",
+      "https://giadinh24h.net/chong-co-so-thich-la-khien-toi-cam-thay-buc-boi-bat-luc",
+      "https://giadinh24h.net/vach-tran-su-that-scandal-nham-vuong-mien-o-hh-hoan-vu-2015-hoa-hau-hoan-vu-2015",
+      "https://giadinh24h.net/mac-hong-quan-hen-ho-voi-sieu-mau-ky-han-sau-scandal-voi-ly-kute",
+      "https://giadinh24h.net/dien-vien-van-trang-lan-dau-xuat-hien-sau-tin-don-mang-thai-voi-chong-dai-gia",
+      "https://giadinh24h.net/8-su-that-khong-may-ai-biet-ve-cuoc-thi-hoa-hau-hoan-vu",
+      "https://giadinh24h.net/nam-ca-sy-ho-quang-hieu-hon-ca-sau-tai-florida-my",
+      "https://giadinh24h.net/tuan-hung-dau-don-can-tay-dan-em-de-xam-hinh",
+      "https://giadinh24h.net/nhung-khuon-mieng-cao-sang-dat-gia-nhat-showbiz-chau-a-pham-huong",
+      "https://giadinh24h.net/sao-viet-dong-loat-noi-loi-yeu-thuong-thay-anh-dai-dien-trong-ngay-gia-dinh-viet-nam",
+      "https://giadinh24h.net/vo-hoang-yen-pham-huong-gap-bat-loi-ve-chieu-cao-pham-huong",
+      "https://giadinh24h.net/bao-gio-ha-noi-giam-mua",
+      "https://giadinh24h.net/thit-bo-kho-chu-tau-bo-ho"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4,
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:15:30.838Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/giadinh24h.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "warning44Repair": {
+    "kind": "original_timestamp_corroborated_by_native_day",
+    "checkedAt": "2026-11-17T13:41:29.170Z",
+    "proofs": [
+      {
+        "url": "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-7e830b9157c12f42500b0f6e27c621e42eba8bafa45146505d07682c4c42c44f.html.gz",
+        "publishedDate": "2026-03-27T08:58:06.000Z",
+        "contentHash": "dfbbdf934da743adbd9c039ad25eaf1336b4f09a7765ba3b60e4ce4400f1b7e0",
+        "description": "Đại diện Bảo Tín Mạnh Hải cho biết việc trả vàng sớm cho khách nằm trong kế hoạch của doanh nghiệp từ trước Tết Nguyên đán Bính Ngọ.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+          "publishedDate": "2026-03-27T08:58:06.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      },
+      {
+        "url": "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-82aa50258c7f80efdc0d84b168e36be38b50fc227742ee3a9641ab35a629679d.html.gz",
+        "publishedDate": "2025-11-03T09:12:54.000Z",
+        "contentHash": "7c7cbe009cd25b185a4157417c482f1690ea1c6b3665e8791e3d19bfafd2ae29",
+        "description": "Thực tế, bạn không nhất thiết phải dựa vào sữa để bổ sung canxi, bởi có rất nhiều viên canxi tự nhiên trong bữa ăn hằng ngày vừa rẻ, ngon, dễ hấp thụ",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+          "publishedDate": "2025-11-03T09:12:54.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      },
+      {
+        "url": "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-db91edbbe1ce2aa711981e84f7e25f3f03b02b91bc18f0c8addf1975311feefa.html.gz",
+        "publishedDate": "2025-11-03T09:00:02.000Z",
+        "contentHash": "2bb66fa7831c955fbb98c7080787f58c8cf8fd73e1d3f993777d1ad29a59f5f3",
+        "description": "Một thế hệ người tiêu dùng mới đang định nghĩa lại khái niệm “sống tiết kiệm” – không còn là thắt lưng buộc bụng, mà là chi tiêu có chọn lọc, tận hưởn",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi",
+          "publishedDate": "2025-11-03T09:00:02.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "giadinh24h.net",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "originalSourceRepair": {
+    "kind": "original_timestamp_corroborated_by_native_day",
+    "checkedAt": "2026-11-17T13:41:29.170Z",
+    "proofs": [
+      {
+        "url": "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-7e830b9157c12f42500b0f6e27c621e42eba8bafa45146505d07682c4c42c44f.html.gz",
+        "publishedDate": "2026-03-27T08:58:06.000Z",
+        "contentHash": "dfbbdf934da743adbd9c039ad25eaf1336b4f09a7765ba3b60e4ce4400f1b7e0",
+        "description": "Đại diện Bảo Tín Mạnh Hải cho biết việc trả vàng sớm cho khách nằm trong kế hoạch của doanh nghiệp từ trước Tết Nguyên đán Bính Ngọ.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/nguoi-dan-dong-dao-xep-hang-cho-lay-vang-bao-tin-manh-hai-giai-thich-ly-do-tra-vang-som",
+          "publishedDate": "2026-03-27T08:58:06.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      },
+      {
+        "url": "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-82aa50258c7f80efdc0d84b168e36be38b50fc227742ee3a9641ab35a629679d.html.gz",
+        "publishedDate": "2025-11-03T09:12:54.000Z",
+        "contentHash": "7c7cbe009cd25b185a4157417c482f1690ea1c6b3665e8791e3d19bfafd2ae29",
+        "description": "Thực tế, bạn không nhất thiết phải dựa vào sữa để bổ sung canxi, bởi có rất nhiều viên canxi tự nhiên trong bữa ăn hằng ngày vừa rẻ, ngon, dễ hấp thụ",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/uong-sua-khong-phai-cach-duy-nhat-bo-sung-canxi-5-loai-thuc-pham-sau-moi-that-su-la-vua-canxi",
+          "publishedDate": "2025-11-03T09:12:54.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      },
+      {
+        "url": "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi",
+        "htmlPath": "outputs/news-warning44-held331-20261117/new-seed-db91edbbe1ce2aa711981e84f7e25f3f03b02b91bc18f0c8addf1975311feefa.html.gz",
+        "publishedDate": "2025-11-03T09:00:02.000Z",
+        "contentHash": "2bb66fa7831c955fbb98c7080787f58c8cf8fd73e1d3f993777d1ad29a59f5f3",
+        "description": "Một thế hệ người tiêu dùng mới đang định nghĩa lại khái niệm “sống tiết kiệm” – không còn là thắt lưng buộc bụng, mà là chi tiêu có chọn lọc, tận hưởn",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://giadinh24h.net/khi-tiet-kiem-khong-con-dong-nghia-voi-kho-so-xu-huong-chi-tieu-thong-minh-dang-lan-toa-khap-noi",
+          "publishedDate": "2025-11-03T09:00:02.000Z",
+          "precision": "second",
+          "source": "corroborated_original_metadata"
+        }
+      }
+    ],
+    "paidAiCalls": 0,
+    "liveHttpVerified": true
+  }
+}

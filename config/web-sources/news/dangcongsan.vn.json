@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dangcongsan.vn",
+  "siteId": "dangcongsan.vn",
+  "registrableDomain": "dangcongsan.vn",
+  "homepage": "https://dangcongsan.vn/",
+  "allowedHosts": [
+    "dangcongsan.vn",
+    "www.dangcongsan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://dangcongsan.vn/",
+    "categories": [
+      "https://dangcongsan.vn/tin-hoat-dong",
+      "https://dangcongsan.vn/van-ban-cua-dang",
+      "https://dangcongsan.vn/mattrantq",
+      "https://dangcongsan.vn/xay-dung-dang",
+      "https://dangcongsan.vn/van-de-quan-tam",
+      "https://dangcongsan.vn/da-phuong-tien?categoryId=1902600",
+      "https://dangcongsan.vn/doi-thoai-truc-tuyen",
+      "https://dangcongsan.vn/dang-uy-trung-uong",
+      "https://dangcongsan.vn/tin-tuc/huong-dan-cong-tac-dang",
+      "https://dangcongsan.vn/viet-nam-ky-nguyen-vuon-minh"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước tiếp lãnh đạo tập đoàn, doanh nghiệp Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:16.067Z",
+    "frozenAt": "2026-11-16T01:58:12.805Z",
+    "trainingUrl": "https://dangcongsan.vn/vanphongtrunguong/hoat-dong-cua-vptw/hoat-dong-cua-cac-dong-chi-lanh-dao/tong-bi-thu-chu-tich-nuoc-tiep-lanh-dao-tap-doan-doanh-nghiep-nhat-ban.html",
+    "independentHoldouts": [
+      "https://dangcongsan.vn/tin-hoat-dong/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-lanh-dao-cac-tap-doan-doanh-nghiep-nhat-ban.html",
+      "https://dangcongsan.vn/hanoi/tin-hoat-dong/ha-noi-va-cac-doi-tac-nhat-ban-thuc-day-hop-tac-dau-tu-chien-luoc-thuc-chat-hieu-qua.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://dangcongsan.vn/vanphongtrunguong/hoat-dong-cua-vptw/hoat-dong-cua-cac-dong-chi-lanh-dao/tong-bi-thu-chu-tich-nuoc-tiep-lanh-dao-tap-doan-doanh-nghiep-nhat-ban.html",
+      "https://dangcongsan.vn/tin-hoat-dong/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-lanh-dao-cac-tap-doan-doanh-nghiep-nhat-ban.html",
+      "https://dangcongsan.vn/hanoi/tin-hoat-dong/ha-noi-va-cac-doi-tac-nhat-ban-thuc-day-hop-tac-dau-tu-chien-luoc-thuc-chat-hieu-qua.html",
+      "https://dangcongsan.vn/tin-hoat-dong/ha-noi-va-cac-doi-tac-nhat-ban-thuc-day-hop-tac-dau-tu-chien-luoc-thuc-chat-hieu-qua.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

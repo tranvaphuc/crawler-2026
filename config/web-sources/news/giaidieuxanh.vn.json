@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaidieuxanh.vn",
+  "siteId": "giaidieuxanh.vn",
+  "registrableDomain": "giaidieuxanh.vn",
+  "homepage": "https://www.giaidieuxanh.vn/",
+  "allowedHosts": [
+    "www.giaidieuxanh.vn",
+    "giaidieuxanh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "UEFA cấm 13 CLB tham dự Europa League mùa tới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:32.076Z",
+    "sampleCount": 4,
+    "passedSamples": 4,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.giaidieuxanh.vn/uefa-cam-13-clb-tham-du-europa-league-mua-toi/",
+      "https://www.giaidieuxanh.vn/xuat-hien-ung-vien-qbv-2025-tu-bo-dao-nha/",
+      "https://www.giaidieuxanh.vn/david-beckham-len-tieng/",
+      "https://www.giaidieuxanh.vn/tieu-su-gustav-isaksen/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.giaidieuxanh.vn/",
+    "categories": [
+      "https://www.giaidieuxanh.vn/tin-tottenham-hotspur/",
+      "https://www.giaidieuxanh.vn/tin-bong-da/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?giaidieuxanh.vn/news/(\\d{3,})/.*?(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "giaidieuxanh.vn",
+    "checkedAt": "2026-11-09T03:57:05.272Z",
+    "url": "https://www.giaidieuxanh.vn/uefa-cam-13-clb-tham-du-europa-league-mua-toi/",
+    "finalUrl": "https://www.giaidieuxanh.vn/uefa-cam-13-clb-tham-du-europa-league-mua-toi/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4427,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:20.553Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/giaidieuxanh.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "giaidieuxanh.vn",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesAttempted": 2,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 2,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 2,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

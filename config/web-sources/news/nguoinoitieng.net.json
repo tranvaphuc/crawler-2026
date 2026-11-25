@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoinoitieng.net",
+  "siteId": "nguoinoitieng.net",
+  "registrableDomain": "nguoinoitieng.net",
+  "homepage": "https://nguoinoitieng.net/",
+  "allowedHosts": [
+    "nguoinoitieng.net",
+    "www.nguoinoitieng.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nguoinoitieng.net/",
+    "categories": [
+      "https://nguoinoitieng.net/c/giai-tri",
+      "https://nguoinoitieng.net/c/doanh-nhan",
+      "https://nguoinoitieng.net/c/kham-pha",
+      "https://nguoinoitieng.net/c/thoi-trang",
+      "https://nguoinoitieng.net/c/lam-dep",
+      "https://nguoinoitieng.net/c/chia-se"
+    ]
+  },
+  "title": {
+    "value": "Bà Mai Kiều Liên cùng Vinamilk ba năm liền góp mặt trong hai bảng xếp hạng danh giá của Fortune",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:58.287Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://nguoinoitieng.net/nguyen-ngoc-gia-han-tu-co-be-8-tuoi-den-vuong-mien-miss-teen-grand-earth-international-2026-a100118.html",
+      "https://nguoinoitieng.net/lasol-fami-thanh-qua-tu-mot-quy-trinh-dao-tao-nghiem-tuc-a100119.html"
+    ],
+    "improvedUrls": [
+      "https://nguoinoitieng.net/danang-marriott-resort-spa-non-nuoc-beach-villas-tan-huong-mua-he-dang-cap-5-a98954.html",
+      "https://nguoinoitieng.net/buc-tranh-nam-cang-xanh-muot-hap-dan-du-khach-check-in-a99189.html",
+      "https://nguoinoitieng.net/dac-quyen-cho-khach-nghi-duong-da-nang-tai-he-sinh-thai-sun-group-a99192.html"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nguoinoitieng.net/ba-mai-kieu-lien-cung-vinamilk-ba-nam-lien-gop-mat-trong-hai-bang-xep-hang-danh-gia-cua-fortune-a100222.html",
+      "https://nguoinoitieng.net/dai-dien-duy-nhat-cua-viet-nam-duoc-vinh-danh-o-hang-muc-sua-cong-thuc-tre-em-tai-le-trao-giai-thuong-hieu-the-gioi-2026-2027-a100221.html",
+      "https://nguoinoitieng.net/viet-nam-lan-dau-co-ngay-thuong-mai-dien-tu-quoc-gia-nguoi-tieu-dung-duoc-gi-a100272.html",
+      "https://nguoinoitieng.net/phi-phung-ngoc-tuong-datkaa-cung-dan-nghe-si-viet-long-tieng-hoat-hinh-a100270.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Bà Mai Kiều Liên cùng Vinamilk ba năm liền góp mặt trong hai bảng xếp hạng danh giá của Fortune",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:37.126Z",
+        "trainingUrls": [
+          "https://nguoinoitieng.net/danang-marriott-resort-spa-non-nuoc-beach-villas-tan-huong-mua-he-dang-cap-5-a98954.html",
+          "https://nguoinoitieng.net/buc-tranh-nam-cang-xanh-muot-hap-dan-du-khach-check-in-a99189.html",
+          "https://nguoinoitieng.net/dac-quyen-cho-khach-nghi-duong-da-nang-tai-he-sinh-thai-sun-group-a99192.html"
+        ],
+        "holdoutUrls": [
+          "https://nguoinoitieng.net/nguyen-ngoc-gia-han-tu-co-be-8-tuoi-den-vuong-mien-miss-teen-grand-earth-international-2026-a100118.html",
+          "https://nguoinoitieng.net/lasol-fami-thanh-qua-tu-mot-quy-trinh-dao-tao-nghiem-tuc-a100119.html"
+        ]
+      }
+    }
+  ]
+}

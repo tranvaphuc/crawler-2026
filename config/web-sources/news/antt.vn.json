@@ -1,0 +1,42 @@
+{
+  "siteName": "antt.vn",
+  "siteId": "antt.vn",
+  "registrableDomain": "antt.vn",
+  "homepage": "http://antt.vn/",
+  "allowedHosts": [
+    "antt.vn",
+    "www.antt.vn"
+  ],
+  "seedSelector": ".menu_main a[href], .menu_mobile a[href], .menu_footer a[href]",
+  "categoryPattern": "^/[a-z0-9-]+\\.htm$",
+  "excludeCategories": [
+    "/gioi-thieu.htm",
+    "/rss.htm"
+  ],
+  "extraSeeds": [
+    "http://antt.vn/tin-tuc-24h.html"
+  ],
+  "articlePattern": "-(\\d{6,})\\.html?$",
+  "paginationSelector": "a[rel=next], .pagination a, .paging a, .pager a",
+  "selectors": {
+    "title": ".title_detail",
+    "description": ".sapo_news",
+    "body": "#main-detail",
+    "publishedDate": ".grid730 .time_home",
+    "author": "#main-detail .insert-dcb, #main-detail p[style*=\"right\"], .grid730 > .author_home",
+    "category": ".breadcump_detail a[itemprop=url]",
+    "removeFromBody": "script, style, noscript, iframe, .insert-dcb, .ads, .advertisement"
+  },
+  "publishedDateFormat": "DD/MM/YYYY HH:mm:ss",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "originConcurrency": 4,
+  "minRequestIntervalMs": 150,
+  "requestTimeoutMs": 15000,
+  "maxAttempts": 2,
+  "cycleDeadlineMs": 900000,
+  "enabled": false,
+  "stage": "pilot",
+  "authorIdStrategy": "name",
+  "maxPaginationDepth": 3
+}

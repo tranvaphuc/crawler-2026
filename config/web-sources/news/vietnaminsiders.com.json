@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnaminsiders.com",
+  "siteId": "vietnaminsiders.com",
+  "registrableDomain": "vietnaminsiders.com",
+  "homepage": "https://vietnaminsiders.com/",
+  "allowedHosts": [
+    "vietnaminsiders.com",
+    "www.vietnaminsiders.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tran Thanh’s Favorite Crab Noodle Soup Stall Hits 400,000 VND: Owner Says ‘If You Find It Expensive, Don’t Eat It’",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:26.888Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/",
+      "https://vietnaminsiders.com/sabeco-introduces-333-triple-pure-through-immersive-consumer-experience/",
+      "https://vietnaminsiders.com/part-time-workers-seek-unemployment-insurance-coverage-to-secure-social-welfare-benefits/",
+      "https://vietnaminsiders.com/vietnam-once-welcomed-the-rare-whale-capable-of-hauling-entire-wings-in-da-nang-with-only-five-built-worldwide/",
+      "https://vietnaminsiders.com/3-startups-successfully-raise-investment-at-vietnam-korea-ai-and-digital-technology-forum-2026/",
+      "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/",
+      "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietnaminsiders.com/",
+    "categories": [
+      "https://vietnaminsiders.com/guidelines-for-contributors/",
+      "https://vietnaminsiders.com/media-outreach/",
+      "https://vietnaminsiders.com/category/news/",
+      "https://vietnaminsiders.com/category/business/",
+      "https://vietnaminsiders.com/category/finance/",
+      "https://vietnaminsiders.com/category/enterprise/",
+      "https://vietnaminsiders.com/category/tech/",
+      "https://vietnaminsiders.com/category/life/",
+      "https://vietnaminsiders.com/category/travel/",
+      "https://vietnaminsiders.com/category/sports/",
+      "https://vietnaminsiders.com/category/entertainment/",
+      "https://vietnaminsiders.com/category/video/",
+      "https://vietnaminsiders.com/category/reviews/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietnaminsiders.com",
+    "checkedAt": "2026-11-09T03:57:37.683Z",
+    "url": "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/",
+    "finalUrl": "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7522,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vietnaminsiders.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 40,
+    "checkedArticleUrls": 53,
+    "freshArticleChecks": 45,
+    "parserIssues": 6,
+    "transportUnconfirmed": 7,
+    "distinctHashes": 40,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesFreshChecked": 13,
+    "categoriesUnconfirmed": 13,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 158,
+        "passed": 39,
+        "distinctHashes": 39
+      },
+      {
+        "name": "video",
+        "discovered": 3,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietnaminsiders.com/tran-thanhs-favorite-crab-noodle-soup-stall-hits-400000-vnd-owner-says-if-you-find-it-expensive-dont-eat-it/",
+      "https://vietnaminsiders.com/gg-perya-familiar-names-vs-legitimate-platforms/",
+      "https://vietnaminsiders.com/proposal-to-permanently-ban-tobacco-sales-to-people-born-in-2010-and-later/",
+      "https://vietnaminsiders.com/body-of-missing-13-year-old-vietnamese-girl-found-in-germany/",
+      "https://vietnaminsiders.com/the-wealthy-worry-about-succession/",
+      "https://vietnaminsiders.com/sabeco-introduces-333-triple-pure-through-immersive-consumer-experience/",
+      "https://vietnaminsiders.com/part-time-workers-seek-unemployment-insurance-coverage-to-secure-social-welfare-benefits/",
+      "https://vietnaminsiders.com/vietnam-once-welcomed-the-rare-whale-capable-of-hauling-entire-wings-in-da-nang-with-only-five-built-worldwide/",
+      "https://vietnaminsiders.com/3-startups-successfully-raise-investment-at-vietnam-korea-ai-and-digital-technology-forum-2026/",
+      "https://vietnaminsiders.com/vietnamese-female-director-helms-british-detective-series/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4,
+      "unresolved_extraction": 2
+    },
+    "checkedAt": "2026-11-10T09:18:01.772Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietnaminsiders.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

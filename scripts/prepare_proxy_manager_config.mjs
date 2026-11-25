@@ -1,0 +1,8 @@
+import fs from 'node:fs';import path from 'node:path';import {randomBytes} from 'node:crypto';import dotenv from 'dotenv';
+const env=dotenv.parse(fs.readFileSync('.env')),dir=path.resolve('outputs/proxy-manager-private-2026-10-25');fs.mkdirSync(dir,{recursive:true,mode:0o700});
+const keysFile=env.PROXY_MANAGER_KEYS_FILE||path.join(dir,'keys.credentials.json'),settingsFile=env.PROXY_MANAGER_SETTINGS_FILE||path.join(dir,'settings.json');
+if(!fs.existsSync(keysFile)){const cfg=JSON.parse(fs.readFileSync(env.SOCIAL_METRICS_PROXY_POOLS_FILE||'outputs/social-proxy-pools-2026-10-23/runtime.credentials.json'));const keys=[...new Set(Object.values(cfg.pools).flatMap(p=>fs.readFileSync(p.keyFile,'utf8').trim().split(/\s+/).filter(Boolean)))];fs.writeFileSync(keysFile,JSON.stringify({keys})+'\n',{mode:0o600});}
+if(!fs.existsSync(settingsFile))fs.writeFileSync(settingsFile,JSON.stringify({apiPolicies:{}},null,2)+'\n',{mode:0o600});
+const values={PROXY_MANAGER_URL:env.PROXY_MANAGER_URL||'http://127.0.0.1:3810',PROXY_MANAGER_AUTH_KEY:env.PROXY_MANAGER_AUTH_KEY||randomBytes(32).toString('hex'),PROXY_MANAGER_ADMIN_KEY:env.PROXY_MANAGER_ADMIN_KEY||randomBytes(32).toString('hex'),PROXY_MANAGER_KEYS_FILE:keysFile,PROXY_MANAGER_SETTINGS_FILE:settingsFile,PROXY_MANAGER_STATE_FILE:env.PROXY_MANAGER_STATE_FILE||path.join(dir,'state.credentials.json')};
+let text=fs.readFileSync('.env','utf8');for(const [key,value]of Object.entries(values)){const lines=text.split('\n').filter(l=>!l.startsWith(key+'='));text=lines.join('\n').replace(/\n*$/,'')+'\n'+key+'='+JSON.stringify(value)+'\n';}fs.writeFileSync('.env',text,{mode:0o600});
+console.log(JSON.stringify({configured:true,keyCount:JSON.parse(fs.readFileSync(keysFile)).keys.length,keysFile,credentialsOmitted:true}));

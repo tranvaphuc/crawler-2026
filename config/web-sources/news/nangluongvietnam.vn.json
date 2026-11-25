@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nangluongvietnam.vn",
+  "siteId": "nangluongvietnam.vn",
+  "registrableDomain": "nangluongvietnam.vn",
+  "homepage": "https://nangluongvietnam.vn/",
+  "allowedHosts": [
+    "nangluongvietnam.vn",
+    "www.nangluongvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những vấn đề đặt ra đối với Việt Nam trong chiến lược bảo đảm an ninh nhiên liệu hạt nhân",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-detail.fw",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:47.031Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nangluongvietnam.vn/nhung-van-de-dat-ra-doi-voi-viet-nam-trong-chien-luoc-bao-dam-an-ninh-nhien-lieu-hat-nhan-36834.html",
+      "https://nangluongvietnam.vn/ket-hop-the-manh-cua-petrovietnam-va-evn-trong-phat-trien-dien-hat-nhan-o-viet-nam-36759.html",
+      "https://nangluongvietnam.vn/bao-cao-toan-canh-phat-trien-cong-nghe-smr-tren-the-gioi-va-nhung-van-de-dat-ra-doi-voi-viet-nam-36867.html",
+      "https://nangluongvietnam.vn/canh-bao-rui-ro-kep-el-ni-o-nguon-cung-nhien-lieu-va-4-kich-ban-cung-ung-dien-cho-viet-nam-nam-2027-36764.html",
+      "https://nangluongvietnam.vn/giam-gia-dien-co-trach-nhiem-va-an-ninh-nang-luong-quoc-gia-trong-dai-han-36846.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nangluongvietnam.vn/",
+    "categories": [
+      "https://nangluongvietnam.vn/kien-giai-ton-tai",
+      "https://nangluongvietnam.vn/nhan-dinh-phan-bien-kien-nghi",
+      "https://nangluongvietnam.vn/nhan-dinh-phan-bien-kien-nghi/nhan-dinh-du-bao",
+      "https://nangluongvietnam.vn/nhan-dinh-phan-bien-kien-nghi/phan-bien-kien-nghi",
+      "https://nangluongvietnam.vn/dien-luc-viet-nam",
+      "https://nangluongvietnam.vn/dau-khi-viet-nam",
+      "https://nangluongvietnam.vn/than-khoang-san-viet-nam",
+      "https://nangluongvietnam.vn/dien-hat-nhan-nang-luong-tai-tao/nang-luong-tai-tao",
+      "https://nangluongvietnam.vn/dien-hat-nhan-nang-luong-tai-tao/dien-hat-nhan",
+      "https://nangluongvietnam.vn/khoa-hoc-cong-nghe-moi-truong",
+      "https://nangluongvietnam.vn/van-hoa-doanh-nghiep"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?nangluongvietnam.vn/news/vn/.*?/[\\w-]{30,}[\\w]{1}(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nangluongvietnam.vn",
+    "checkedAt": "2026-11-09T03:57:15.739Z",
+    "url": "https://nangluongvietnam.vn/nhung-van-de-dat-ra-doi-voi-viet-nam-trong-chien-luoc-bao-dam-an-ninh-nhien-lieu-hat-nhan-36834.html",
+    "finalUrl": "https://nangluongvietnam.vn/nhung-van-de-dat-ra-doi-voi-viet-nam-trong-chien-luoc-bao-dam-an-ninh-nhien-lieu-hat-nhan-36834.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 25421,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:46.840Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/nangluongvietnam.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "nangluongvietnam.vn",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesAttempted": 12,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 164,
+    "checkedArticleUrls": 17,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 164,
+        "attempted": 16,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

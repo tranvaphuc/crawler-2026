@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "moit.gov.vn",
+  "siteId": "moit.gov.vn",
+  "registrableDomain": "moit.gov.vn",
+  "homepage": "https://moit.gov.vn/",
+  "allowedHosts": [
+    "moit.gov.vn",
+    "www.moit.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article.article-new h1"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.article-new > .article-content",
+    "remove": "script,style,h1,related-content,.related,.box-related"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article.article-new > header .post-date"
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "moit.gov.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationEvidencePolicy": {
+    "kind": "user_confirmed_moit_visible_original_clock_20261117",
+    "authority": "explicit_user_confirmation",
+    "selector": "article.article-new > header .post-date"
+  },
+  "requiresTimezoneReviewBeforeWrite": true,
+  "discovery": {
+    "homepage": "https://moit.gov.vn/",
+    "categories": [
+      "https://moit.gov.vn/tin-tuc"
+    ],
+    "requiredArticlePattern": "^https?://(?:www\\.)?moit\\.gov\\.vn/tin-tuc/.+\\.html$"
+  },
+  "enabled": true,
+  "validation": {
+    "checkedAt": "2026-11-17T08:55:57.670Z",
+    "sampleUrls": [
+      "https://moit.gov.vn/tin-tuc/muc-tieu-va-giai-phap-trong-tam-cua-nganh-cong-thuong-nam-2026.html",
+      "https://moit.gov.vn/tin-tuc/viet-nam-chile-thuc-day-hop-tac-thuong-mai-dau-tu-theo-huong-thuc-chat.html",
+      "https://moit.gov.vn/tin-tuc/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-bon-luat-linh-vuc-cong-thuong.html",
+      "https://moit.gov.vn/tin-tuc/hoat-dong/hoat-dong-cua-lanh-dao-bo/thu-truong-bo-cong-thuong-nguyen-viet-son-phat-trien-thuong-mai-dien-tu-tu-cap-xa-can-di-xa-hon-viec-dua-san-pham-len-sa.html",
+      "https://moit.gov.vn/tin-tuc/hoi-nghi-hoi-dong-cong-dong-kinh-te-asean-lan-thu-28-manila.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

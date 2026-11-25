@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieuquocgia.nhandan.vn",
+  "siteId": "thuonghieuquocgia.nhandan.vn",
+  "registrableDomain": "nhandan.vn",
+  "homepage": "https://thuonghieuquocgia.nhandan.vn/",
+  "allowedHosts": [
+    "thuonghieuquocgia.nhandan.vn",
+    "www.thuonghieuquocgia.nhandan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "contentScope": "Article/NewsArticle product and news posts. Certification company-profile landing pages without Article schema are classified separately and skipped.",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thép xây dựng VAS",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-sp.body-non-criteriabox",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:15:31.456Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://thuonghieuquocgia.nhandan.vn/thep-xay-dung-vas-2475101001.htm",
+      "https://thuonghieuquocgia.nhandan.vn/dich-vu-tai-chinh-ngan-hang-tpbank-2475101101.htm",
+      "https://thuonghieuquocgia.nhandan.vn/dich-vu-quan-ly-van-hanh-bat-dong-san-psa-2475120401.htm",
+      "https://thuonghieuquocgia.nhandan.vn/dich-vu-can-cu-cang-dau-khi-va-hau-can-ptsc-2475100704.htm",
+      "https://thuonghieuquocgia.nhandan.vn/day-cap-dien-cadivi-2475102201.htm",
+      "https://thuonghieuquocgia.nhandan.vn/thep-xay-dung-vas-2475101001.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round6-http/sites/thuonghieuquocgia.nhandan.vn",
+    "contentScope": "Article/NewsArticle product and news posts. Certification company-profile landing pages without Article schema are classified separately and skipped.",
+    "excludedDocumentEvidence": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round6-http/excluded-non-news-documents.json"
+  },
+  "discovery": {
+    "homepage": "https://thuonghieuquocgia.nhandan.vn/",
+    "categories": [
+      "https://thuonghieuquocgia.nhandan.vn/thuong-hieu.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tin-tuc.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T05:19:03.170Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": true
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "parserRepairValidation": {
+    "domain": "thuonghieuquocgia.nhandan.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 90,
+        "passed": 15,
+        "distinctHashes": 15
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuonghieuquocgia.nhandan.vn/cong-ty-co-phan-thuc-pham-sua-th-new-247261016165100023.htm",
+      "https://thuonghieuquocgia.nhandan.vn/cong-ty-co-phan-san-xuat-va-kinh-doanh-vinfast-3-247261016152953124.htm",
+      "https://thuonghieuquocgia.nhandan.vn/cong-ty-co-phan-di-chuyen-xanh-va-thong-minh-gsm-6-247261016154159069.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tong-cong-ty-bao-viet-nhan-tho-247261016180707791.htm",
+      "https://thuonghieuquocgia.nhandan.vn/cong-ty-tnhh-vinh-hiep-6-247261016153433112.htm",
+      "https://thuonghieuquocgia.nhandan.vn/sua-tuoi-tiet-trung-th-true-milk-2475107401.htm",
+      "https://thuonghieuquocgia.nhandan.vn/xe-may-dien-vinfast-2475101701.htm",
+      "https://thuonghieuquocgia.nhandan.vn/dich-vu-van-tai-green-sm-2475102801.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-doanh-nghiep-tieu-bieu-247261103160524012.htm",
+      "https://thuonghieuquocgia.nhandan.vn/thuong-hieu-quoc-gia-la-diem-tua-va-dong-luc-moi-de-doanh-nghiep-viet-nam-vuon-tam-the-gioi-247261017132314966.htm",
+      "https://thuonghieuquocgia.nhandan.vn/thuong-hieu-viet-phai-chuyen-tu-loi-the-chi-phi-sang-loi-the-gia-tri-247261018213437269.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tap-doan-th-dan-dau-so-luong-san-pham-dat-thuong-hieu-quoc-gia-2026-247261019100823799.htm",
+      "https://thuonghieuquocgia.nhandan.vn/anh-le-cong-bo-san-pham-dat-thuong-hieu-quoc-gia-lan-thu-10-nam-2026-247261017133218135.htm",
+      "https://thuonghieuquocgia.nhandan.vn/thuong-hieu-quoc-gia-viet-nam-2026-etc-ghi-dau-hanh-trinh-hon-20-nam-lam-chu-cong-nghe-viet-247261017140131701.htm",
+      "https://thuonghieuquocgia.nhandan.vn/lua-chon-doanh-nghiep-thuong-hieu-quoc-gia-nang-tam-gia-tri-viet-trong-ky-nguyen-hoi-nhap-247957756.htm",
+      "https://thuonghieuquocgia.nhandan.vn/ung-dung-cong-nghe-du-lieu-so-de-xuc-tien-thuong-mai-phat-trien-thuong-hieu-quoc-gia-247993567.htm",
+      "https://thuonghieuquocgia.nhandan.vn/doanh-nghiep/ngan-hang-tmcp-phat-trien-thanh-pho-ho-chi-minh-60.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tin-tuc/vinh-danh-doanh-nghiep.htm",
+      "https://thuonghieuquocgia.nhandan.vn/doanh-nghiep/cong-ty-cp-canifa-145.htm",
+      "https://thuonghieuquocgia.nhandan.vn/tin-tuc/thong-cao-bao-chi.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2,
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:17:23.695Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuonghieuquocgia.nhandan.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

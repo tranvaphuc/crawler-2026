@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "siteName": "antt.nguoiduatin.vn",
+  "siteId": "antt.nguoiduatin.vn",
+  "registrableDomain": "antt.nguoiduatin.vn",
+  "homepage": "https://antt.nguoiduatin.vn/",
+  "allowedHosts": [
+    "antt.nguoiduatin.vn",
+    "www.antt.nguoiduatin.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://antt.nguoiduatin.vn/",
+    "categories": [
+      "https://antt.nguoiduatin.vn/toan-canh.htm",
+      "https://antt.nguoiduatin.vn/doanh-nghiep.htm",
+      "https://antt.nguoiduatin.vn/tai-chinh-ngan-hang.htm",
+      "https://antt.nguoiduatin.vn/thi-truong-chung-khoan.htm",
+      "https://antt.nguoiduatin.vn/bat-dong-san.htm",
+      "https://antt.nguoiduatin.vn/phap-luat.htm",
+      "https://antt.nguoiduatin.vn/video.htm",
+      "https://antt.nguoiduatin.vn/photo.htm",
+      "https://antt.nguoiduatin.vn/infographic.htm",
+      "https://antt.nguoiduatin.vn/emagazine.htm",
+      "https://antt.nguoiduatin.vn/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.213Z",
+      "verifiedSeeds": [
+        "https://antt.nguoiduatin.vn/",
+        "https://antt.nguoiduatin.vn/toan-canh.htm",
+        "https://antt.nguoiduatin.vn/doanh-nghiep.htm",
+        "https://antt.nguoiduatin.vn/tai-chinh-ngan-hang.htm",
+        "https://antt.nguoiduatin.vn/thi-truong-chung-khoan.htm",
+        "https://antt.nguoiduatin.vn/bat-dong-san.htm",
+        "https://antt.nguoiduatin.vn/phap-luat.htm",
+        "https://antt.nguoiduatin.vn/video.htm",
+        "https://antt.nguoiduatin.vn/photo.htm",
+        "https://antt.nguoiduatin.vn/infographic.htm",
+        "https://antt.nguoiduatin.vn/emagazine.htm"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "VIB 'rót' thêm 1.000 tỷ đồng tăng vốn cho VIBAMC",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T04:00:47.369Z",
+    "paidAiCalls": 0,
+    "source": "customer_links_strict_http_repair"
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://antt.nguoiduatin.vn/vib-rot-them-1000-ty-dong-tang-von-cho-vibamc-205261116150946761.htm",
+      "https://antt.nguoiduatin.vn/chung-mot-dai-duong-chung-mot-tuong-lai-205261117094418695.htm",
+      "https://antt.nguoiduatin.vn/vinh-hoan-chot-ngay-chia-co-tuc-bang-tien-mat-ty-le-30-205261116222409721.htm",
+      "https://antt.nguoiduatin.vn/mot-doanh-nghiep-vua-phat-hanh-7400-ty-dong-trai-phieu-lai-suat-chi-5-nam-205261116002708898.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

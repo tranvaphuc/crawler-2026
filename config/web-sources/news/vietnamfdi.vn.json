@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnamfdi.vn",
+  "siteId": "vietnamfdi.vn",
+  "registrableDomain": "vietnamfdi.vn",
+  "homepage": "https://vietnamfdi.vn/",
+  "allowedHosts": [
+    "vietnamfdi.vn",
+    "www.vietnamfdi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "dateOrder": "MDY",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "FDI kỷ lục tạo đòn bẩy cho doanh nghiệp Việt bước sâu vào chuỗi giá trị",
+    "strategy": "selector",
+    "selector": "article.article-post > .article-body > h1.article-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "article.article-post > .article-body > ul.article-meta",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.article-post > .article-body > .description",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T08:10:27.900Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vietnamfdi.vn/fdi-ky-luc-tao-don-bay-cho-doanh-nghiep-viet-buoc-sau-vao-chuoi-gia-tri-20_134943.html",
+      "https://vietnamfdi.vn/siet-thue-nen-tang-xuyen-bien-gioi-mo-rong-uu-dai-cho-doanh-nghiep-viet-13_134942.html",
+      "https://vietnamfdi.vn/khi-viettel-xay-be-phong-cho-chip-make-in-vietnam-33_134941.html",
+      "https://vietnamfdi.vn/quan-ly-thue-tmdt-tu-dong--go-kho-cho-ho-kinh-doanh-so-13_134940.html",
+      "https://vietnamfdi.vn/viet-nam-dung-truoc-co-hoi-lon-vuon-len-trong-chuoi-cung-ung-ai-3_134939.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/vietnamfdi.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null,
+    "remaining29ScopeQc": {
+      "checkedAt": "2026-11-22T03:18:19.659Z",
+      "verifiedUrls": [
+        "https://vietnamfdi.vn/van-hoa-tra-trong-dinh-vi-nam-a-bank--tu-ban-sac-van-hoa-den-dau-an-thuong-hieu-17_135965.html",
+        "https://vietnamfdi.vn/nestle-viet-nam-lan-thu-ba-duoc-vinh-danh-top-1-noi-lam-viec-tot-nhat-viet-nam-33_135964.html",
+        "https://vietnamfdi.vn/viet-nam-legends-tour-2026-chinh-thuc-khoi-tranh-tai-novaworld-phan-thiet-33_135963.html",
+        "https://vietnamfdi.vn/gentea-unitour-2026-thoi-bung-suc-hut-khoi-nghiep-tu-tra-viet-tai-dai-hoc-quoc-te-hong-bang-7_135962.html",
+        "https://vietnamfdi.vn/nang-cao-gia-tri-ca-phe-can-bat-dau-tu-dat-khoe-va-sinh-ke-ben-vung-12_135961.html",
+        "https://vietnamfdi.vn/trien-khai-dao-tao-the-he-nhan-tai-luong-tu-tai-viet-nam-3_135955.html"
+      ],
+      "writeStillBlockedBy": "NEWS_PUBLICATION_TIMEZONE_UNCONFIRMED"
+    }
+  },
+  "discovery": {
+    "homepage": "https://vietnamfdi.vn/",
+    "categories": [
+      "https://vietnamfdi.vn/tam-diem-dau-tu-3.html",
+      "https://vietnamfdi.vn/co-hoi-dau-tu-11.html",
+      "https://vietnamfdi.vn/dien-dan-dau-tu-12.html",
+      "https://vietnamfdi.vn/fdi-quoc-te-20.html",
+      "https://vietnamfdi.vn/phap-luat-13.html",
+      "https://vietnamfdi.vn/tai-chinh-5.html",
+      "https://vietnamfdi.vn/ngan-hang-17.html",
+      "https://vietnamfdi.vn/chung-khoan-18.html",
+      "https://vietnamfdi.vn/doanh-nghiep-19.html",
+      "https://vietnamfdi.vn/bat-dong-san-6.html",
+      "https://vietnamfdi.vn/thi-truong-23.html",
+      "https://vietnamfdi.vn/doanh-nghiep-24.html",
+      "https://vietnamfdi.vn/du-an-25.html",
+      "https://vietnamfdi.vn/khoi-nghiep-7.html",
+      "https://vietnamfdi.vn/giai-tri-cong-nghe-22.html",
+      "https://vietnamfdi.vn/du-lich-14.html",
+      "https://vietnamfdi.vn/thoi-trang-15.html",
+      "https://vietnamfdi.vn/cong-nghe-16.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "article_and_category_samples_validated_origin_intermittent",
+    "publicationDateOrder": "MDY",
+    "homepageHttpsVerified": true,
+    "categoryReadiness": "validated_samples",
+    "historicalHttpHttpsAliasesNeedReconciliation": true,
+    "priorIdentityEvidenceFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round10-http/vietnamfdi-live-publication-proof.json",
+    "evidenceFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/vietnamfdi-category-proof.json"
+  },
+  "httpOriginHealth": {
+    "status": "intermittent",
+    "categoryAndArticleHttp200Observed": true,
+    "laterDnsAndTimeoutFailuresObserved": true,
+    "strictTlsPreserved": true,
+    "evidenceFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/vietnamfdi-category-proof.json",
+    "diagnosticsFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/probes/vietnamfdi-advertised-dns-diagnostics.json",
+    "requiresOriginRecheckBeforeProduction": true
+  },
+  "httpProfile": {
+    "file": "config/web-sources/news-http-profiles.json",
+    "key": "vietnamfdi.vn"
+  },
+  "parserRepairValidation": {
+    "domain": "vietnamfdi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "http_unconfirmed",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 27,
+    "freshArticleChecks": 14,
+    "parserIssues": 0,
+    "transportUnconfirmed": 14,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 482,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": "request_deadline_exceeded",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:56.095Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietnamfdi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

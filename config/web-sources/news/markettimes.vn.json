@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "siteName": "markettimes.vn",
+  "siteId": "markettimes.vn",
+  "registrableDomain": "markettimes.vn",
+  "homepage": "https://markettimes.vn/",
+  "allowedHosts": [
+    "markettimes.vn",
+    "www.markettimes.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "THƯỢNG TÔN HIẾN PHÁP VÀ PHÁP LUẬT – ĐỘNG LỰC KIẾN TẠO PHÁT TRIỂN ĐẤT NƯỚC",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:40.619Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://markettimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-134107.html",
+      "https://markettimes.vn/trinh-quoc-hoi-co-che-chinh-sach-dac-thu-ve-phat-trien-du-lich-viet-nam-134072.html",
+      "https://markettimes.vn/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie-134115.html",
+      "https://markettimes.vn/thi-truong-tuan-qua-2-7-11-dau-tho-lao-doc-hon-13-vang-va-kim-loai-quy-bat-tang-manh-thi-truong-doi-chieu-sau-bau-cu-my-134103.html",
+      "https://markettimes.vn/diem-nhan-bat-dong-san-tuan-qua-gia-nha-lien-tho-giam-de-xuat-cam-chuyen-nhuong-hop-dong-mua-ban-nha-tren-giay-va-ban-tu-do-nha-o-xa-hoi-sau-5-nam-134105.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://markettimes.vn/",
+    "categories": [
+      "https://markettimes.vn/tieu-diem",
+      "https://markettimes.vn/tham-dinh-gia",
+      "https://markettimes.vn/tai-chinh",
+      "https://markettimes.vn/kinh-doanh",
+      "https://markettimes.vn/the-gioi",
+      "https://markettimes.vn/cong-nghe",
+      "https://markettimes.vn/bat-dong-san",
+      "https://markettimes.vn/nganh-hang"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "markettimes.vn",
+    "checkedAt": "2026-11-09T03:57:14.436Z",
+    "url": "https://markettimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-134107.html",
+    "finalUrl": "https://markettimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-134107.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11866,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "markettimes.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 21,
+    "checkedArticleUrls": 22,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 21,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 193,
+        "passed": 21,
+        "distinctHashes": 21
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://markettimes.vn/co-phieu-bat-dong-san-dong-loat-thang-hoa-vn-index-bat-tang-gan-29-diem-134205.html",
+      "https://markettimes.vn/tp-hcm-yeu-cau-han-che-thanh-tra-kiem-tra-doi-voi-doanh-nghiep-chap-hanh-tot-phap-luat-134197.html",
+      "https://markettimes.vn/ong-gian-tu-trung-lam-an-tu-te-de-kinh-doanh-thanh-cong-la-mot-quan-niem-con-nong-134199.html",
+      "https://markettimes.vn/cap-nhat-ve-moi-nhat-ve-khung-gia-phat-dien-mat-troi-nam-2026-134176.html",
+      "https://markettimes.vn/thi-truong-ngay-10-11-dau-lao-doc-hon-7-usd-thung-vang-phuc-hoi-cacao-xuong-day-3-thang-134185.html",
+      "https://markettimes.vn/dia-oc-dai-quang-minh-bao-lai-rong-dot-bien-hon-1-000-ty-dong-134192.html",
+      "https://markettimes.vn/ky-luc-phai-doan-nong-nghiep-lon-nhat-lich-su-my-den-tp-hcm-134190.html",
+      "https://markettimes.vn/chung-khoan-ssi-co-mot-chi-nhanh-bi-xu-phat-vi-pham-hanh-chinh-ve-thue-134187.html",
+      "https://markettimes.vn/ky-su-nga-phat-trien-thanh-cong-loai-be-tong-moi-giup-giam-40-vat-lieu-do-ben-tang-gan-80-gia-thap-hon-den-12-134184.html",
+      "https://markettimes.vn/duong-sat-mo-hanh-trinh-du-lich-ha-noi-thai-nguyen-tu-ngay-14-11-134206.html",
+      "https://markettimes.vn/ho-nuoc-nhan-tao-lon-nhat-viet-nam-dai-230km-co-nha-may-thuy-dien-lon-nhat-dong-nam-a-duoc-nghien-cuu-tro-thanh-khu-du-lich-quoc-gia-du-bao-thu-hut-hang-trieu-luot-khach-134208.html",
+      "https://markettimes.vn/khu-du-lich-dai-nam-cua-vo-chong-ba-nguyen-phuong-hang-co-thong-bao-moi-lien-quan-den-toa-bao-thap-9-tang-134204.html",
+      "https://markettimes.vn/becamex-bcm-huy-dong-1-200-ty-dong-trai-phieu-lai-suat-toi-thieu-12-5-nam-134195.html",
+      "https://markettimes.vn/sau-gan-20-nam-khu-do-thi-140ha-o-phia-tay-thu-do-co-chuyen-dong-moi-134202.html",
+      "https://markettimes.vn/thanh-pho-giau-nhat-mien-bac-sap-co-cong-vien-rong-gan-93ha-lon-gan-gap-doi-cong-vien-thong-nhat-va-gap-5-cong-vien-hoa-binh-134203.html",
+      "https://markettimes.vn/mixue-dong-hang-loat-cua-hang-134201.html",
+      "https://markettimes.vn/cong-an-thong-bao-se-dieu-tra-cac-tin-nhan-sms-zalo-messenger-co-chua-thong-tin-sau-134198.html",
+      "https://markettimes.vn/giao-su-ho-xuan-nang-ra-mat-robot-quet-duong-chay-hoan-toan-bang-dien-biet-tranh-xe-may-o-to-dinh-vi-chinh-xac-toi-10-cm-134194.html",
+      "https://markettimes.vn/nghi-quyet-171-tac-dong-the-nao-den-nguon-cung-va-gia-nha-o-thuong-mai-134191.html",
+      "https://markettimes.vn/nguyen-thu-truong-bng-pham-quang-vinh-tam-ho-chieu-dac-biet-de-doanh-nghiep-viet-vuon-tam-chaebol-134193.html",
+      "https://markettimes.vn/phat-hien-mot-cuu-sinh-vien-trao-tang-1-900-ty-dong-cho-truong-dai-hoc-cu-134188.html",
+      "https://markettimes.vn/vietjet-mo-rong-cau-noi-viet-nam-nhat-ban-voi-duong-bay-moi-da-nang-osaka-gop-phan-thuc-day-nam-hop-tac-du-lich-2027-2028-134186.html",
+      "https://markettimes.vn/nam-giu-luong-lon-co-phieu-ngan-hang-nhom-co-dong-huong-co-tuc-hang-tram-ty-dong-moi-nam-134189.html",
+      "https://markettimes.vn/ngay-mai-viet-nam-se-co-them-mot-tttm-aeon-di-vao-hoat-dong-rong-130-000-m2-tao-viec-lam-cho-khoang-3-700-nguoi-134182.html",
+      "https://markettimes.vn/mot-nha-thau-se-thi-cong-loat-hang-muc-quan-trong-tai-tuyen-metro-gan-4-ty-usd-dai-54km-noi-ben-thanh-can-gio-cua-ty-phu-pham-nhat-vuong-134181.html",
+      "https://markettimes.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-yeu-cau-som-go-kho-cho-cac-du-an-ton-dong-keo-dai-134175.html",
+      "https://markettimes.vn/jensen-huang-va-rui-ro-tu-vi-the-nhan-vat-khong-the-thay-the-tai-nvidia-134178.html",
+      "https://markettimes.vn/fbi-vao-cuoc-dieu-tra-jensen-huang-vi-be-boi-ngoai-tinh-134177.html",
+      "https://markettimes.vn/thi-truong-hang-hoa-ngay-10-11-gia-heo-hoi-dao-chieu-cao-su-the-gioi-tiep-tuc-giam-134173.html",
+      "https://markettimes.vn/phat-hien-mot-co-phieu-dang-tang-nong-gan-75-tu-day-bat-ngo-quay-xe-giam-san-134200.html",
+      "https://markettimes.vn/chung-khoan-ruc-lua-phien-dau-tuan-vn-index-mat-hon-11-diem-134146.html",
+      "https://markettimes.vn/dong-nam-a-can-hon-7-1-nghin-ty-usd-cho-co-so-ha-tang-den-nam-2040-134196.html",
+      "https://markettimes.vn/ve-thap-hon-the-gioi-gia-bac-sang-ngay-10-11-tai-ancarat-sacombank-doji-bao-tin-manh-hai-la-bao-nhieu-134180.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:16:02.757Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/markettimes.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

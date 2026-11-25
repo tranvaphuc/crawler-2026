@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "siteName": "depviet.net.vn",
+  "siteId": "depviet.net.vn",
+  "registrableDomain": "depviet.net.vn",
+  "homepage": "https://depviet.net.vn/",
+  "allowedHosts": [
+    "depviet.net.vn",
+    "www.depviet.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nên ăn gì để giảm đau bụng kinh? 6 nhóm thực phẩm chị em nên bổ sung",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".post-meta",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:44:49.117Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://depviet.net.vn/nen-an-gi-de-giam-dau-bung-kinh-6-nhom-thuc-pham-chi-em-nen-bo-sung-144272",
+      "https://depviet.net.vn/uong-nuoc-ep-rau-cu-co-giup-thai-doc-tri-mun-noi-tiet-144274",
+      "https://depviet.net.vn/uong-nuoc-muop-dang-mat-ong-moi-sang-loi-ich-va-nhung-dieu-can-than-trong-144275",
+      "https://depviet.net.vn/vitamin-e-co-thuc-su-giup-lam-dep-da-nen-uong-hay-boi-144261",
+      "https://depviet.net.vn/5-bi-quyet-giu-lan-da-min-mang-voc-dang-tre-trung-o-tuoi-41-cua-ta-han-dinh-144264",
+      "https://depviet.net.vn/cach-su-dung-dungnuoc-vo-gao-de-cham-soc-toc-tai-nha-144243",
+      "https://depviet.net.vn/kiem-soat-can-nang-cung-8-cong-thuc-nuoc-detox-de-lam-tai-nha-144234",
+      "https://depviet.net.vn/tro-ly-ai-tu-agoda-gom-gon-moi-buoc-len-ke-hoach-va-chot-chuyen-di-chi-trong-mot-khung-chat-144207",
+      "https://depviet.net.vn/tu-vi-ca-nhan-hang-ngay-12-cung-hoang-dao-chu-nhat-ngay-8-11-2026-kim-nguu-tien-bo-144259"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://depviet.net.vn/",
+    "categories": [
+      "https://depviet.net.vn/tin-tuc",
+      "https://depviet.net.vn/giai-tri",
+      "https://depviet.net.vn/chia-se",
+      "https://depviet.net.vn/song-khoe",
+      "https://depviet.net.vn/dep-plus",
+      "https://depviet.net.vn/tieu-dung"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "depviet.net.vn",
+    "checkedAt": "2026-11-09T03:56:59.218Z",
+    "url": "https://depviet.net.vn/nen-an-gi-de-giam-dau-bung-kinh-6-nhom-thuc-pham-chi-em-nen-bo-sung-144272",
+    "finalUrl": "https://depviet.net.vn/nen-an-gi-de-giam-dau-bung-kinh-6-nhom-thuc-pham-chi-em-nen-bo-sung-144272",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4806,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "depviet.net.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 16,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 6,
+    "categoriesUnconfirmed": 6,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 65,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://depviet.net.vn/tat-ren-ket-hop-giay-cao-got-cong-thuc-phoi-do-dieu-da-dang-duoc-hoi-sanh-mac-yeu-thich-144289",
+      "https://depviet.net.vn/dao-dien-nguyen-quang-dung-va-ban-gai-ca-si-bui-lan-huong-co-chung-niem-dam-me-144291",
+      "https://depviet.net.vn/quang-le-chuyen-huong-kinh-doanh-du-lich-144285",
+      "https://depviet.net.vn/5-sua-rua-mat-chua-bha-giup-lam-sach-lo-chan-long-ho-tro-cham-soc-da-dau-mun-144278",
+      "https://depviet.net.vn/lo-lem-con-gai-mc-quyen-linh-khoe-ve-dep-ngot-ngao-trong-bo-anh-moi-144257",
+      "https://depviet.net.vn/uong-nuoc-ep-rau-cu-co-giup-thai-doc-tri-mun-noi-tiet-144274",
+      "https://depviet.net.vn/5-bi-quyet-trang-diem-giup-phu-nu-sau-tuoi-40-tre-trung-rang-ro-hon-144273",
+      "https://depviet.net.vn/forbes-travel-guide-gioi-thieu-the-anam-cam-ranh-trong-hanh-trinh-kham-pha-viet-nam-144223",
+      "https://depviet.net.vn/ngoc-xuan-gay-chu-y-voi-nhan-sac-trong-treo-diu-dang-trong-144258",
+      "https://depviet.net.vn/a-hau-tran-di-linh-duoc-chon-dai-dien-viet-nam-du-thi-miss-globe-2026-144254",
+      "https://depviet.net.vn/mau-nhi-giang-thi-kim-ngan-gop-phan-lan-toa-ve-dep-ao-dai-viet-144265",
+      "https://depviet.net.vn/trang-moon-gay-chu-y-trong-phim-vtv-ngoai-doi-vua-tot-nghiep-thac-si-144249",
+      "https://depviet.net.vn/tang-thanh-ha-va-luong-manh-hai-tinh-ban-18-nam-tu-man-anh-den-doi-thuc-144248",
+      "https://depviet.net.vn/ntk-cao-thu-van-ket-noi-cong-dong-lan-toa-van-hoa-ao-dai-tai-hai-phong-144256",
+      "https://depviet.net.vn/mc-phi-linh-dau-an-ca-tinh-tren-san-khau-nhung-%E2%80%9Cconcert-quoc-gia%E2%80%9D-144247",
+      "https://depviet.net.vn/luu-nga-va-hanh-trinh-dua-thuong-hieu-viet-ra-the-gioi-144246",
+      "https://depviet.net.vn/maiquinn-huong-den-hanh-trinh-am-nhac-tu-do-va-chan-that-hon-qua-%E2%80%9Ctinh-tan%E2%80%9D-144240",
+      "https://depviet.net.vn/3-guong-mat-mc-btv-vtv-so-huu-hoc-vi-tien-si-nguoi-la-thu-khoa-nguoi-re-ngang-sang-truyen-hinh-144229",
+      "https://depviet.net.vn/ngan-khanh-tu-tinh-dau-quoc-dan-den-cuoc-song-o-my-sau-10-nam-roi-showbiz-144221",
+      "https://depviet.net.vn/hoa-hau-thuy-lam-roi-hao-quang-showbiz-u40-van-dep-man-ma-hanh-phuc-144210",
+      "https://depviet.net.vn/tro-ly-ai-tu-agoda-gom-gon-moi-buoc-len-ke-hoach-va-chot-chuyen-di-chi-trong-mot-khung-chat-144207",
+      "https://depviet.net.vn/gia-ban-le-dien-binh-quan-giam-2-tu-ngay-1-11-2026-144197",
+      "https://depviet.net.vn/standard-chartered-du-bao-viet-nam-uu-tien-tang-truong-nam-2027-144196",
+      "https://depviet.net.vn/hoi-dong-anh-to-chuc-ngay-hoi-thong-tin-du-hoc-vuong-quoc-anh-2026-144180",
+      "https://depviet.net.vn/thuc-don-hang-ngay-chao-trung-ga-cai-bo-xoi-144252",
+      "https://depviet.net.vn/tu-vi-ca-nhan-hang-ngay-12-cung-hoang-dao-thu-hai-ngay-9-11-2026-bao-binh-ap-luc-144271",
+      "https://depviet.net.vn/tu-vi-12-con-giap-ngay-9-11-2026-dau-tai-loc-doi-dao-ty-can-de-phong-mau-thuan-144280",
+      "https://depviet.net.vn/thuc-don-hang-ngay-sup-bi-do-sua-tuoi-144251",
+      "https://depviet.net.vn/tu-vi-ca-nhan-hang-ngay-12-cung-hoang-dao-chu-nhat-ngay-8-11-2026-kim-nguu-tien-bo-144259",
+      "https://depviet.net.vn/tu-vi-ca-nhan-hang-ngay-12-cung-hoang-dao-thu-sau-ngay-7-11-2026-bao-binh-lung-tung-144255",
+      "https://depviet.net.vn/thuc-don-hang-ngay-lau-chao-long-144250",
+      "https://depviet.net.vn/thuc-don-hang-ngay-chao-ca-chach-144215",
+      "https://depviet.net.vn/tu-vi-ca-nhan-hang-ngay-12-cung-hoang-dao-thu-sau-ngay-6-11-2026-song-ngu-tiec-nuoi-144238"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:56.934Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/depviet.net.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

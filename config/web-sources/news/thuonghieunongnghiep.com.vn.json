@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieunongnghiep.com.vn",
+  "siteId": "thuonghieunongnghiep.com.vn",
+  "registrableDomain": "thuonghieunongnghiep.com.vn",
+  "homepage": "https://thuonghieunongnghiep.com.vn/",
+  "allowedHosts": [
+    "thuonghieunongnghiep.com.vn",
+    "www.thuonghieunongnghiep.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Điện Biên hoàn thành 100% số hóa văn bằng chứng chỉ và tạo lập học bạ số",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:38.877Z",
+    "sampleCount": 7,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://thuonghieunongnghiep.com.vn/tong-hop/dien-bien-hoan-thanh-100-so-hoa-van-bang-chung-chi-va-tao-lap-hoc-ba-so.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/hoi-nghi-cong-thuong-dua-thuong-mai-dien-tu-ve-xa-thu-hut-nhieu-dia-phuong-tham-du.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/ban-cua-nha-nong/thanh-hoa-huy-dong-toan-dan-khoi-thong-he-thong-thuy-loi-truoc-mua-kho.html",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong/tuyen-quang-xay-dung-thuong-hieu-gung-lung-cu-cho-ba-con-h-mong-giay.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/xu-ly-tai-xe-xe-tai-vuot-den-do-sau-phan-anh-qua-ung-dung-vnetraffic.html?categoryId=5171981,5171985,5171982,5273282,1514791,5171983,1514798"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuonghieunongnghiep.com.vn/",
+    "categories": [
+      "https://thuonghieunongnghiep.com.vn/tong-hop",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong",
+      "https://thuonghieunongnghiep.com.vn/thuong-hieu-nong-nghiep",
+      "https://thuonghieunongnghiep.com.vn/xuat-nhap-khau?isFeatured=1",
+      "https://thuonghieunongnghiep.com.vn/ban-cua-nha-nong",
+      "https://thuonghieunongnghiep.com.vn/video",
+      "https://thuonghieunongnghiep.com.vn/emagazine",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong/ocop?isFeatured=1"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuonghieunongnghiep.com.vn",
+    "checkedAt": "2026-11-09T03:57:32.052Z",
+    "url": "https://thuonghieunongnghiep.com.vn/tong-hop/dien-bien-hoan-thanh-100-so-hoa-van-bang-chung-chi-va-tao-lap-hoc-ba-so.html?categoryId=5171981",
+    "finalUrl": "https://thuonghieunongnghiep.com.vn/tong-hop/dien-bien-hoan-thanh-100-so-hoa-van-bang-chung-chi-va-tao-lap-hoc-ba-so.html?categoryId=5171981",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3663,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thuonghieunongnghiep.com.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 95,
+        "passed": 20,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 7,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuonghieunongnghiep.com.vn/ban-cua-nha-nong/le-hoi-trai-cay-bac-ninh-nam-2026-du-kien-dien-ra-tu-ngay-04-7-12-2026.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ha-noi-de-xuat-ket-noi-duong-sat-san-bay-gia-binh-qua-ga-gia-lam.html?categoryId=5171981,5171985,5171982,5273282,1514791,5171983,1514798",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ban-giai-phap-trien-khai-hieu-qua-quy-hoach-mang-luoi-co-so-giao-duc-nghe-nghiep.html?categoryId=5171981,5171985,5171982,5273282,1514791,5171983,1514798",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/thanh-hoa-chu-dong-ung-pho-thien-tai-bao-dam-an-toan-truong-hoc.html?categoryId=5171981,5171985,5171982,5273282,1514791,5171983,1514798",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/du-lich-viet-nam-ngay-cang-tang-suc-hut-tren-moi-truong-so.html?categoryId=5171981,5171985,5171982,5273282,1514791,5171983,1514798",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/thuc-day-ket-noi-giao-thuong-viet-nam-campuchia.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ha-noi-de-xuat-ket-noi-duong-sat-san-bay-gia-binh-qua-ga-gia-lam.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ban-giai-phap-trien-khai-hieu-qua-quy-hoach-mang-luoi-co-so-giao-duc-nghe-nghiep.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/thanh-hoa-chu-dong-ung-pho-thien-tai-bao-dam-an-toan-truong-hoc.html",
+      "https://thuonghieunongnghiep.com.vn/xuat-nhap-khau/may-tre-dan-ha-noi-tim-co-hoi-mo-rong-thi-truong-xuat-khau.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/du-lich-viet-nam-ngay-cang-tang-suc-hut-tren-moi-truong-so.html",
+      "https://thuonghieunongnghiep.com.vn/xuat-nhap-khau/may-tre-dan-ha-noi-tim-co-hoi-mo-rong-thi-truong-xuat-khau.html?categoryId=5171983",
+      "https://thuonghieunongnghiep.com.vn/xuat-nhap-khau/senegal-siet-chat-kiem-soat-nhap-khau-gao.html?categoryId=5171983",
+      "https://thuonghieunongnghiep.com.vn/xuat-nhap-khau/trung-quoc-tang-mua-xuat-khau-gao-viet-nam-don-tin-hieu-phuc-hoi.html?categoryId=5171983",
+      "https://thuonghieunongnghiep.com.vn/thuong-hieu-nong-nghiep/da-nang-vietjet-hop-tac-toan-dien-phat-trien-du-lich-hang-khong.html?categoryId=1514791",
+      "https://thuonghieunongnghiep.com.vn/thuong-hieu-nong-nghiep/ket-noi-dau-tu-thuc-day-hop-tac-voi-500-doanh-nghiep-lon-nhat-dong-nam-a.html?categoryId=1514791",
+      "https://thuonghieunongnghiep.com.vn/thuong-hieu-nong-nghiep/huong-ung-chi-dao-cua-chinh-phu-sacombank-tung-goi-lai-suat-vay-chi-7-9-nam.html?categoryId=1514791",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong/tuyen-quang-xay-dung-thuong-hieu-gung-lung-cu-cho-ba-con-h-mong-giay.html?categoryId=5171982",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong/quang-ninh-nang-suc-canh-tranh-cho-san-pham-ocop.html?categoryId=5171982",
+      "https://thuonghieunongnghiep.com.vn/dac-san-dia-phuong/lai-chau-nang-gia-tri-san-pham-vung-dong-bao-dan-toc-thieu-so.html?categoryId=5171982",
+      "https://thuonghieunongnghiep.com.vn/ban-cua-nha-nong/thanh-hoa-huy-dong-toan-dan-khoi-thong-he-thong-thuy-loi-truoc-mua-kho.html",
+      "https://thuonghieunongnghiep.com.vn/ban-cua-nha-nong/doi-thay-o-xa-phieng-cam.html",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ha-noi-de-xuat-ket-noi-duong-sat-san-bay-gia-binh-qua-ga-gia-lam.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ban-giai-phap-trien-khai-hieu-qua-quy-hoach-mang-luoi-co-so-giao-duc-nghe-nghiep.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/thanh-hoa-chu-dong-ung-pho-thien-tai-bao-dam-an-toan-truong-hoc.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/du-lich-viet-nam-ngay-cang-tang-suc-hut-tren-moi-truong-so.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/mua-lon-lam-sap-mo-cau-tren-tuyen-giao-thong-huyet-mach-o-thanh-hoa.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/ai-cap-tau-hoa-trat-banh-khien-cac-benh-vien-dat-trong-tinh-trang-bao-dong.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/dien-bien-hoan-thanh-100-so-hoa-van-bang-chung-chi-va-tao-lap-hoc-ba-so.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/hoi-nghi-cong-thuong-dua-thuong-mai-dien-tu-ve-xa-thu-hut-nhieu-dia-phuong-tham-du.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/tong-hop/xu-ly-tai-xe-xe-tai-vuot-den-do-sau-phan-anh-qua-ung-dung-vnetraffic.html?categoryId=5171981",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/thuc-day-ket-noi-giao-thuong-viet-nam-campuchia.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/them-co-hoi-tiep-can-thuong-mai-dien-tu-cho-cac-xa-o-lang-son.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/quang-tri-tang-cuong-kiem-soat-thi-truong-phat-hien-nhieu-vu-kinh-doanh-hang-gia.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/ket-noi-tay-nguyen-tao-dot-pha-cho-logistics-viet-nam.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/quang-ninh-indonesia-mo-rong-hop-tac-thuong-mai-dau-tu-va-du-lich.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/viet-nam-bac-au-mo-rong-hop-tac-nang-tam-chuoi-cung-ung.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/lam-dong-thuc-day-thuong-mai-dien-tu-dua-nong-san-len-moi-truong-so.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/viet-nam-ba-lan-phan-dau-dua-thuong-mai-song-phuong-dat-6-ty-usd.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/giao-thuong/hoi-cho-thuong-mai-quoc-te-lai-chau-2026-mo-rong-co-hoi-giao-thuong.html?categoryId=5171985",
+      "https://thuonghieunongnghiep.com.vn/nongnghiep360/cac-tinh-phia-nam-tap-trung-bao-ve-lua-mua-va-lua-dong-xuan-moi-xuong-giong.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:22.671Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuonghieunongnghiep.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "#datetime6",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

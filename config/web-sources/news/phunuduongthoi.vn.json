@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunuduongthoi.vn",
+  "siteId": "phunuduongthoi.vn",
+  "registrableDomain": "phunuduongthoi.vn",
+  "homepage": "https://phunuduongthoi.vn/",
+  "allowedHosts": [
+    "phunuduongthoi.vn",
+    "www.phunuduongthoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nhiều hoạt động dân gian hấp dẫn tại Ngày Hội Trung Thu Phú Mỹ Hưng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:01.299Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://phunuduongthoi.vn/tin-tuc/nhieu-hoat-dong-dan-gian-hap-dan-tai-ngay-hoi-trung-thu-phu-my-hung.html",
+      "https://phunuduongthoi.vn/tin-tuc/nghe-si-thanh-ngoc-va-nhung-buoc-ngoat-doi-nghe-tu-tieng-ca-co-nhac-den-duyen-no-voi-man-anh-truyen-hinh.html",
+      "https://phunuduongthoi.vn/tin-tuc/khung-thu-lao-den-300-trieu-ng-thang-nu-tri-thuc-ky-vong-chinh-sach-dai-ngo-giup-nha-khoa-hoc-toan-tam-nghien-cuu.html",
+      "https://phunuduongthoi.vn/tin-tuc/nu-toan-hoc-duy-nhat-trong-cuoc-dua-huy-chuong-fields-2026.html",
+      "https://phunuduongthoi.vn/suc-khoe/hai-nu-tien-si-va-hanh-trinh-bien-cay-thuoc-viet-thanh-san-pham-cham-soc-suc-khoe.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phunuduongthoi.vn/",
+    "categories": [
+      "https://phunuduongthoi.vn/category/tin-tuc",
+      "https://phunuduongthoi.vn/category/gia-dinh",
+      "https://phunuduongthoi.vn/category/gia-dinh/hon-nhan-gia-dinh",
+      "https://phunuduongthoi.vn/category/gia-dinh/nha-dep",
+      "https://phunuduongthoi.vn/category/gia-dinh/lam-me",
+      "https://phunuduongthoi.vn/category/suc-khoe",
+      "https://phunuduongthoi.vn/category/dep-365",
+      "https://phunuduongthoi.vn/category/dep-365/thoi-trang",
+      "https://phunuduongthoi.vn/category/dep-365/lam-dep",
+      "https://phunuduongthoi.vn/category/du-lich",
+      "https://phunuduongthoi.vn/category/giai-tri",
+      "https://phunuduongthoi.vn/category/giai-tri/showbiz",
+      "https://phunuduongthoi.vn/category/giai-tri/xem-tu-vi",
+      "https://phunuduongthoi.vn/category/giai-tri/chuyen-la",
+      "https://phunuduongthoi.vn/category/mon-ngon",
+      "https://phunuduongthoi.vn/category/tieu-dung",
+      "https://phunuduongthoi.vn/author/huynhqueanh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://phunuduongthoi.vn/gia-dinh/tet-noi-tet-ngoai.html",
+      "https://phunuduongthoi.vn/dep-365/thoi-trang/rang-ngoi-don-tet.html"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunuduongthoi.vn",
+    "checkedAt": "2026-11-09T03:57:21.984Z",
+    "url": "https://phunuduongthoi.vn/tin-tuc/nhieu-hoat-dong-dan-gian-hap-dan-tai-ngay-hoi-trung-thu-phu-my-hung.html",
+    "finalUrl": "https://phunuduongthoi.vn/tin-tuc/nhieu-hoat-dong-dan-gian-hap-dan-tai-ngay-hoi-trung-thu-phu-my-hung.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4177,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:58.056Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/phunuduongthoi.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "phunuduongthoi.vn",
+    "parsedArticles": 20,
+    "distinctHashes": 20,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 21,
+    "categoriesAttempted": 18,
+    "categoriesRemoved": 4,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 214,
+    "checkedArticleUrls": 20,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 212,
+        "attempted": 16,
+        "passed": 16,
+        "distinctContents": 16,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

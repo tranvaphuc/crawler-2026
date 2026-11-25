@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "siteName": "trangcongnghe.com.vn",
+  "siteId": "trangcongnghe.com.vn",
+  "registrableDomain": "trangcongnghe.com.vn",
+  "homepage": "https://trangcongnghe.com.vn/",
+  "allowedHosts": [
+    "trangcongnghe.com.vn",
+    "www.trangcongnghe.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Qualcomm giúp SpaceX xây mạng 5G mặt đất toàn nước Mỹ cho Starlink Mobile",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:48.342Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://trangcongnghe.com.vn/ket-noi/7294-qualcomm-giup-spacex-xay-mang-5g-mat-dat-toan-nuoc-my-cho-starlink-mobile.html",
+      "https://trangcongnghe.com.vn/ket-noi/7242-straight-talk-nang-cap-ba-goi-khong-gioi-han-giu-nguyen-gia.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7304-byd-ra-mat-seal-07-ev-the-he-hai-re-hon-chay-xa-hon-nhanh-hon.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7291-oppo-pnc110-lo-pin-12-000mah-qua-chung-nhan-miit-trung-quoc.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7290-samsung-anh-giam-250-bang-cho-galaxy-s26-100-bang-cho-z-fold8-dip-black-friday.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://trangcongnghe.com.vn/",
+    "categories": [
+      "https://trangcongnghe.com.vn/ket-noi/",
+      "https://trangcongnghe.com.vn/thiet-bi-so/",
+      "https://trangcongnghe.com.vn/gia-dung/",
+      "https://trangcongnghe.com.vn/danh-gia/",
+      "https://trangcongnghe.com.vn/xe/",
+      "https://trangcongnghe.com.vn/gamez/",
+      "https://trangcongnghe.com.vn/kien-thuc/",
+      "https://trangcongnghe.com.vn/thong-tin-toa-soan.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "trangcongnghe.com.vn",
+    "checkedAt": "2026-11-09T03:57:34.762Z",
+    "url": "https://trangcongnghe.com.vn/ket-noi/7294-qualcomm-giup-spacex-xay-mang-5g-mat-dat-toan-nuoc-my-cho-starlink-mobile.html",
+    "finalUrl": "https://trangcongnghe.com.vn/ket-noi/7294-qualcomm-giup-spacex-xay-mang-5g-mat-dat-toan-nuoc-my-cho-starlink-mobile.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3023,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "trangcongnghe.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 34,
+    "freshArticleChecks": 23,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 33,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 139,
+        "passed": 33,
+        "distinctHashes": 33
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://trangcongnghe.com.vn/xe/4-banh/7307-byd-ra-mat-yangwang-altior-gia-311-500-usd-thach-thuc-rolls-royce-va-maybach.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7288-byd-lan-dau-ban-hon-300-000-xe-dien-trong-mot-thang.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7292-zeekr-7x-nang-cap-lo-dien-truoc-ra-mat-ban-tieu-chuan-len-pin-85kwh.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7306-one-ui-9-5-duoc-cho-la-se-nang-cap-bixby-thanh-tro-ly-ai-tu-chay-viec.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7297-vivo-duoc-cho-la-phat-trien-smartphone-man-hinh-rong-du-kien-ra-mat-nam-2027.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7304-byd-ra-mat-seal-07-ev-the-he-hai-re-hon-chay-xa-hon-nhanh-hon.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7301-yangwang-u9-xtreme-cua-byd-lap-ky-luc-xe-san-xuat-vuot-500-km-h.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/phu-kien/7308-samsung-ra-mat-galaxy-buds4-pro-ban-gioi-han-cung-nina-chuba.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7305-jeep-compass-4xe-khoe-kha-nang-off-road-mua-dong-tren-bang-tuyet-thuy-dien.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7303-pixel-11-pro-xl-va-galaxy-s26-ultra-pin-camera-hieu-nang-khac-nhau-ra-sao.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7302-gboard-beta-lo-tinh-nang-giup-rambler-ghi-nho-tu-nguoi-dung-tu-sua.html",
+      "https://trangcongnghe.com.vn/kien-thuc/thu-thuat/7300-ios-27-gap-loi-xuat-hdmi-khi-khoa-man-hinh-chua-co-ban-va.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7299-apple-noi-hon-100-000-ung-dung-da-toi-uu-cho-iphone-duo.html",
+      "https://trangcongnghe.com.vn/xe/4-banh/7298-tesla-dung-san-xuat-cybertruck-nam-sau-sau-khi-doanh-so-lao-doc.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/phu-kien/7296-sony-hoi-sinh-tai-nghe-walkman-mdr-3-voi-cong-usb-c-gia-59-99-usd.html",
+      "https://trangcongnghe.com.vn/kien-thuc/7295-gemini-omni-1-2-flash-ra-mat-voi-video-15-giay-gia-giam-30.html",
+      "https://trangcongnghe.com.vn/ket-noi/7294-qualcomm-giup-spacex-xay-mang-5g-mat-dat-toan-nuoc-my-cho-starlink-mobile.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7293-iphone-duo-iphone-gap-dau-tien-cua-apple-co-gi-dang-chu-y.html",
+      "https://trangcongnghe.com.vn/thiet-bi-so/mobile/7291-oppo-pnc110-lo-pin-12-000mah-qua-chung-nhan-miit-trung-quoc.html",
+      "https://trangcongnghe.com.vn/ket-noi/7242-straight-talk-nang-cap-ba-goi-khong-gioi-han-giu-nguyen-gia.html",
+      "https://trangcongnghe.com.vn/ket-noi/7232-dat-coc-iphone-duo-30-trieu-roi-doi-y-co-mat-trang-tien.html",
+      "https://trangcongnghe.com.vn/ket-noi/7214-anthropic-cap-nhat-chinh-sach-su-dung-cam-hanh-vi-lam-dung-voi-claude.html",
+      "https://trangcongnghe.com.vn/kien-thuc/khoa-hoc/7286-gemini-trong-lop-hoc-gia-su-ai-day-toan-va-giao-vien-soan-bai-hieu-qua-hon.html",
+      "https://trangcongnghe.com.vn/kien-thuc/thu-thuat/7282-ios-27-chiem-toi-15gb-cho-apple-intelligence-meo-lay-lai-dung-luong.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:33.434Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/trangcongnghe.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

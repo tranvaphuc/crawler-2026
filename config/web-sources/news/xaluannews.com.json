@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xaluannews.com",
+  "siteId": "xaluannews.com",
+  "registrableDomain": "xaluannews.com",
+  "homepage": "https://www.xaluannews.com/",
+  "allowedHosts": [
+    "www.xaluannews.com",
+    "xaluannews.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.xaluannews.com/",
+    "categories": [
+      "https://www.xaluannews.com/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.373Z",
+      "verifiedSeeds": [
+        "https://www.xaluannews.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "Chuẩn bị xét xử đường dây tội phạm xuyên quốc gia có nhân viên ngân hàng “góp mặt”",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:33.849Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:28.751Z",
+    "independentHoldouts": [
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752485",
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752466",
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752465"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752499",
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752485",
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752466",
+      "https://www.xaluannews.com/modules.php?name=News&file=article&sid=3752465"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

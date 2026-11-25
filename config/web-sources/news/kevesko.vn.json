@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kevesko.vn",
+  "siteId": "kevesko.vn",
+  "registrableDomain": "kevesko.vn",
+  "homepage": "https://kevesko.vn/",
+  "allowedHosts": [
+    "kevesko.vn",
+    "www.kevesko.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "An Giang bắt 5 người bị Trung Quốc truy nã",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "[itemprop=\"datePublished\"]",
+    "attribute": null,
+    "index": 0,
+    "priority": 88
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:25.694Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kevesko.vn/20261108/an-giang-bat-5-nguoi-bi-trung-quoc-truy-na-44878940.html",
+      "https://kevesko.vn/20261108/ha-noi-du-kien-sap-nhap-hon-4000-ha-dat-tu-phu-tho-44878509.html",
+      "https://kevesko.vn/20261108/bo-truong-quoc-phong-israel-su-menh-tai-iran-van-chua-hoan-thanh-44878754.html",
+      "https://kevesko.vn/20261108/viet-nam-dat-muc-tieu-gdp-tang-tren-10-vi-sao-hai-phong-quang-ninh-di-dau-44878002.html",
+      "https://kevesko.vn/20261108/cong-an-bac-ninh-trieu-tap-nhieu-nguoi-tung-tin-don-sap-nhap-xa-phuong-44877242.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kevesko.vn/",
+    "categories": [
+      "https://kevesko.vn/vietnam/",
+      "https://kevesko.vn/world/",
+      "https://kevesko.vn/politics/",
+      "https://kevesko.vn/keyword_kinh_te/",
+      "https://kevesko.vn/society/",
+      "https://kevesko.vn/multimedia/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?vn.sputniknews.com/.*?(\\d{15,}).*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kevesko.vn",
+    "checkedAt": "2026-11-09T03:57:08.315Z",
+    "url": "https://kevesko.vn/20261108/an-giang-bat-5-nguoi-bi-trung-quoc-truy-na-44878940.html",
+    "finalUrl": "https://kevesko.vn/20261108/an-giang-bat-5-nguoi-bi-trung-quoc-truy-na-44878940.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1908,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kevesko.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 27,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 164,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kevesko.vn/20261110/tau-nga-tro-lai-tim-bi-an-duoi-day-bien-viet-nam-44901783.html",
+      "https://kevesko.vn/20261110/bo-ngoai-giao-nga-eu-tu-loai-minh-khoi-cac-cuoc-dam-phan-do-lap-truong-va-su-hau-thuan-ukraina-44902827.html",
+      "https://kevesko.vn/20261110/tro-ly-tong-thong-nga-mo-dau-cuoc-dam-phan-bang-viec-cam-on-uae-vi-su-hieu-khach-44903993.html",
+      "https://kevesko.vn/20261110/bo-ngoai-giao-nga-goi-phong-tra-tan-la-mot-phan-cua-viec-dong-vien-cuong-buc-tai-ukraina-44902039.html",
+      "https://kevesko.vn/20261110/an-ninh-nga-bat-giu-dac-vu-sbu-duoc-giao-nhiem-vu-chuan-bi-tan-cong-khung-bo-nham-vao-quan-nhan-nga-44901352.html",
+      "https://kevesko.vn/20261110/the-thuc-va-lap-truong-cua-nga-44899886.html",
+      "https://kevesko.vn/20261110/nguoi-dung-dau-lau-nam-goc-tuyen-bo-ve-viec-my-ho-tro-chau-au-44898540.html",
+      "https://kevesko.vn/20261110/phuong-tay-lo-ngai-cac-thong-tin-ve-nhung-nha-tu-bi-mat-o-ukraina-44898230.html",
+      "https://kevesko.vn/20261110/llvt-lien-bang-nga-tan-cong-cac-co-so-ha-tang-nang-luong-cua-ukraina-44899486.html",
+      "https://kevesko.vn/20261110/du-luan-anh-canh-bao-truoc-them-cac-cuoc-dam-phan-tai-abu-dhabi-44898689.html",
+      "https://kevesko.vn/20261110/my-va-iran-tien-gan-toi-cac-thoa-thuan-so-bo-ve-van-de-hat-nhan-44898033.html",
+      "https://kevesko.vn/20261110/lau-nam-goc-that-lac-so-phu-tung-may-bay-chien-dau-f-35-tri-gia-85-trieu-usd-44897798.html",
+      "https://kevesko.vn/20261110/kiev-co-the-dang-chuan-bi-hanh-dong-khieu-khich-tai-nha-may-dien-hat-nhan-chernobyl-44897610.html",
+      "https://kevesko.vn/20261110/my-nhuong-bo-nga-truoc-them-dam-phan-tai-abu-dhabi-44897419.html",
+      "https://kevesko.vn/20261110/ngoai-truong-nga-lavrov-cao-buoc-tong-thu-ky-lhq-guterres-lam-viec-chochinh-quyen-kiev-44896824.html",
+      "https://kevesko.vn/20261110/chdcnd-trieu-tien-thu-nghiem-vu-khi-ngu-loi-moi-nhat-44896666.html",
+      "https://kevesko.vn/20261110/ngoai-truong-lavrov-london-chi-dao-vu-pha-hoai-duong-ong-dong-chay-phuong-bac-44897255.html",
+      "https://kevesko.vn/20261110/truyen-thong-thu-tuong-netanyahu-hang-ngay-keu-goi-tong-thong-trump-noi-lai-xung-dot-voi-iran-44897080.html",
+      "https://kevesko.vn/20261110/chuyen-gia-xac-nhan-muc-dich-quan-su-cua-chat-no-pha-hoai-dong-chay-phuong-bac-44896452.html",
+      "https://kevesko.vn/20261110/lien-hop-quoc-thong-bao-nam-2026-thuoc-so-nam-nong-nhat-trong-lich-su-44893871.html",
+      "https://kevesko.vn/20250919/nguon-goc-cua-chien-dich-quan-su-dac-biet-lich-su-xung-dot-o-ukraina-38412870.html",
+      "https://kevesko.vn/20260225/thoi-tong-tien-hat-nhan-cua-chinh-gioi-ukraina-41445395.html",
+      "https://kevesko.vn/20261109/kinh-te-viet-nam-vuot-moc-1000-ty-usd-thuong-mai-thach-thuc-tang-gdp-tren-10-44892704.html",
+      "https://kevesko.vn/20261108/viet-nam-dat-muc-tieu-gdp-tang-tren-10-vi-sao-hai-phong-quang-ninh-di-dau-44878002.html",
+      "https://kevesko.vn/20261109/boi-chi-45-gdp-viet-nam-se-chi-hon-4-trieu-ty-dong-vao-dau-44882376.html",
+      "https://kevesko.vn/20261109/ha-noi-nghien-cuu-chuyen-toan-bo-chuyen-bay-quoc-te-tu-noi-bai-sang-gia-binh-44889852.html",
+      "https://kevesko.vn/20261108/ha-noi-du-kien-sap-nhap-hon-4000-ha-dat-tu-phu-tho-44878509.html",
+      "https://kevesko.vn/20261108/cong-an-bac-ninh-trieu-tap-nhieu-nguoi-tung-tin-don-sap-nhap-xa-phuong-44877242.html",
+      "https://kevesko.vn/20261109/du-luan-my-kinh-ngac-truoc-quan-bai-moi-cua-nga-trong-khu-vuc-chien-dich-quan-su-dac-biet-44879664.html",
+      "https://kevesko.vn/20261109/chuyen-gia-nga-da-giang-mot-don-nghiem-trong-vao-nang-luc-san-xuat-ten-lua-cua-ukraina-44882032.html",
+      "https://kevesko.vn/20261109/chau-au-som-muon-gi-cung-truong-thanh-de-doi-thoai-voi-nga-thu-truong-ngoai-giao-ryabkov-tuyen-bo-44893193.html",
+      "https://kevesko.vn/20261108/an-giang-bat-5-nguoi-bi-trung-quoc-truy-na-44878940.html",
+      "https://kevesko.vn/20261109/tong-thong-trump-nga-bi-doi-xu-thieu-ton-trong-tai-cuoc-gap-putin-zelensky-nam-2019-44880923.html",
+      "https://kevesko.vn/20261109/cac-si-quan-llvt-ukraina-va-nato-an-nau-trong-tang-ham-cac-truong-hoco-tinh-kharkov-44880589.html",
+      "https://kevesko.vn/20260709/cuoc-choi-khong-luat-le-chinh-tri-tim-cach-chi-phoi-the-thao-quoc-te-nhu-the-nao-43275330.html",
+      "https://kevesko.vn/20260531/nhung-vi-du-thuc-tien-ve-nhung-tac-dong-xau-cua-chu-nghia-thuc-dan-moi-42765901.html",
+      "https://kevesko.vn/20260320/cuoc-chien-cua-my-va-israel-chong-iran-bat-dau-tu-ngay-28-thang-2-nam-2026-den-nay-41818809.html",
+      "https://kevesko.vn/20260205/so-luoc-lich-su-hiep-uoc-start-iii-new-start-41102960.html",
+      "https://kevesko.vn/20251112/cac-loai-vu-khi-moi-nhat-cua-nga-39455922.html",
+      "https://kevesko.vn/20261110/chuyen-gia-palestine-chau-au-la-mot-phan-cua-cuoc-khung-hoang-ukraina-chu-khong-phai-la-giai-phap-44901484.html",
+      "https://kevesko.vn/20261110/dao-thoat-bi-mat-bang-tau-ngam-chuyen-gia-tiet-lo-dac-diem-noi-tru-an-bi-mat-cua-tong-thong-macron-44888765.html",
+      "https://kevesko.vn/20261109/nga-tap-kich-cac-cay-cau-nham-lam-te-liet-he-thong-hau-can-dam-bao-hoat-dong-cua-quan-doi-ukraina--44892035.html",
+      "https://kevesko.vn/20261109/tu-ton-hai-chinh-minh-chuyen-gia-ly-giai-ly-do-lenh-trung-phat-gay-thiet-hai-nang-ne-nhat-cho-eu-44887811.html",
+      "https://kevesko.vn/20250926/cac-vu-tan-cong-khung-bo-vao-duong-ong-dan-khi-dong-chay-phuong-bac-38581641.html",
+      "https://kevesko.vn/20261105/viet-nam-nhieu-dien-thoai-trung-quoc-bi-go-khoi-ke-vi-loi-ban-do-hoang-sa-truong-sa-44845252.html",
+      "https://kevesko.vn/20261029/gan-mot-nua-nguoi-dan-philippines-khong-muon-doi-dau-voi-trung-quoc-ve-cac-dao-tai-bien-dong-44762652.html",
+      "https://kevesko.vn/20261005/quan-doi-trung-quoc-ep-may-bay-philippines-roi-khoi-khong-phan-tren-dao-tranh-chap-44412855.html",
+      "https://kevesko.vn/20261109/tong-thong-trump-de-nghi-thu-tuong-netanyahu-trien-khai-ke-hoach-lap-lai-hoa-binh-tai-dai-gaza-44879868.html",
+      "https://kevesko.vn/20261109/du-luan-my-tiet-lo-don-giang-cua-tong-thong-my-trump-doi-voi-chau-au-vi-nga-44879471.html",
+      "https://kevesko.vn/20261107/lieu-hoa-ky-co-ap-dat-nhung-khoan-thue-moi-chong-viet-nam-44866779.html",
+      "https://kevesko.vn/20261105/phan-ung-cua-iran-truoc-ket-qua-bau-cu-quoc-hoi-my-co-the-dan-den-viec-noi-lai-cac-hoat-dong-quan-44843551.html",
+      "https://kevesko.vn/20261104/dang-dan-chu-se-gianh-quyen-kiem-soat-quoc-hoi-my-44834621.html",
+      "https://kevesko.vn/20261102/nguoi-viet-o-nga-tu-buon-ban-trao-tay-den-cac-hiep-hoi-chuyen-nghiep-44744340.html",
+      "https://kevesko.vn/20261019/ho-da-den-lien-xo-nhung-sinh-song-o-nuoc-nga-thoi-hau-xo-viet-44571426.html",
+      "https://kevesko.vn/20261005/ai-da-giup-cac-doanh-nghiep-lien-xo-hoan-thanh-ke-hoach-nhung-nguoi-tho-viet-nam-44333500.html",
+      "https://kevesko.vn/20260921/nhung-nguoi-tho-viet-nam-tai-cac-xi-nghiep-lien-xo-44153588.html",
+      "https://kevesko.vn/20260907/trung-tam-nhiet-doi-viet--nga-mang-lai-loi-ich-thiet-thuc-cho-ca-hai-nuoc--43995464.html",
+      "https://kevesko.vn/20261102/chi-huy-luc-luong-dac-nhiem-nga-da-len-tieng-ve-nhung-no-luc-phan-cong-that-bai-cua-quan-ukraina-44807484.html",
+      "https://kevesko.vn/20261102/thanh-tra-vien-lantratova-tong-ket-chien-dich-nhan-dao-tai-aleshki-44808512.html",
+      "https://kevesko.vn/20261030/sudan-co-bang-chung-khong-the-choi-cai-ve-linh-danh-thue-ukraina-va-viec-tuon-vu-khi-my-44780729.html",
+      "https://kevesko.vn/20261030/ong-putin-nga-ung-ho-cham-dut-giao-tranh-tai-sudan-va-chuyen-sang-doi-thoai-44779944.html",
+      "https://kevesko.vn/20261029/hien-tuong-el-nio-sap-lap-ky-luc-lieu-the-gioi-dang-phai-doi-mat-voi-cu-soc-khi-hau-44764364.html",
+      "https://kevesko.vn/20261109/trien-lam-uav-tang-hinh-va-ten-lua-dan-dao-tai-bao-tang-luc-luong-hang-khong-vu-tru-irgc-o-tehran-44885421.html",
+      "https://kevesko.vn/20261031/the-gioi-bi-an-va-vuong-quoc-nhen-ai-doat-giai-cua-european-wildlife-photographer-of-the-year-2026-44711485.html",
+      "https://kevesko.vn/20261028/hoi-nghi-bo-truong-quoc-phong-asean-lan-thu-20-tai-philippines-44740826.html",
+      "https://kevesko.vn/20261103/tai-sao-cuoc-bau-cu-giua-nhiem-ky-o-my-lai-quan-trong-den-vay-44820326.html",
+      "https://kevesko.vn/20261106/live-xung-dot-nga-ukraina-dien-bien-su-kien-tuan-thu-246-44822674.html",
+      "https://kevesko.vn/20261110/44899299.html",
+      "https://kevesko.vn/category_tinh-hinh-leo-thang-o-dnr-va-lnr/",
+      "https://kevesko.vn/nguon-goc-cua-chien-dich-quan-su-dac-biet-lich-su-xung-dot-ukraina/",
+      "https://kevesko.vn/docs/terms_of_use.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3,
+      "content_integrity_review": 1
+    },
+    "checkedAt": "2026-11-10T09:15:47.687Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kevesko.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "An Giang bắt 5 người bị Trung Quốc truy nã",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "[itemprop=\"datePublished\"]",
+        "attribute": null,
+        "index": 0,
+        "priority": 88
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article__body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:50:27.767Z",
+        "trainingUrls": [
+          "https://kevesko.vn/20261102/chi-huy-luc-luong-dac-nhiem-nga-da-len-tieng-ve-nhung-no-luc-phan-cong-that-bai-cua-quan-ukraina-44807484.html",
+          "https://kevesko.vn/20261109/trien-lam-uav-tang-hinh-va-ten-lua-dan-dao-tai-bao-tang-luc-luong-hang-khong-vu-tru-irgc-o-tehran-44885421.html"
+        ],
+        "holdoutUrls": [
+          "https://kevesko.vn/20261110/truyen-thong-thu-tuong-netanyahu-hang-ngay-keu-goi-tong-thong-trump-noi-lai-xung-dot-voi-iran-44897080.html",
+          "https://kevesko.vn/20261110/ngoai-truong-nga-lavrov-cao-buoc-tong-thu-ky-lhq-guterres-lam-viec-chochinh-quyen-kiev-44896824.html"
+        ]
+      }
+    }
+  ]
+}

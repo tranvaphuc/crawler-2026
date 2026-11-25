@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tcn.vn",
+  "siteId": "tcn.vn",
+  "registrableDomain": "tcn.vn",
+  "homepage": "https://tcn.vn/",
+  "allowedHosts": [
+    "tcn.vn",
+    "www.tcn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những kiểu tóc ngắn đẹp phù hợp cô nàng có mái tóc mỏng 2018 2019",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:28.277Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tcn.vn/suc-khoe/lam-dep/14527-nhung-kieu-toc-ngan-dep-phu-hop-co-nang-co-mai-toc-mong-2018-2019.html",
+      "https://tcn.vn/giai-tri/13434-khong-thich-vu-khac-tiep-nhung-phai-thua-nhan-su-mat-tay-ga-cung-khong-hoa-hau-cung-sieu-mau-rai-thi-phi-huyen-nao-showbiz.html",
+      "https://tcn.vn/doi-song/39458-tai-sao-tai-khoan-shopee-bi-khoa-top-ly-do-pho-bien-038-cach-khac-phuc.html",
+      "https://tcn.vn/doi-song/39457-loi-m02-shopee-la-gi-nguyen-nhan-va-cach-fix-loi-m02-shopee-nhanh-chong-hieu-qua.html",
+      "https://tcn.vn/doi-song/39456-mua-xang-hoan-xu-shopee-x-shopeepay-dong-hanh-cung-ban.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tcn.vn/",
+    "categories": [
+      "https://tcn.vn/doi-song/",
+      "https://tcn.vn/doi-song/du-lich/",
+      "https://tcn.vn/doi-song/an-choi/",
+      "https://tcn.vn/doi-song/lam-vuon/",
+      "https://tcn.vn/giai-tri/",
+      "https://tcn.vn/giao-duc/",
+      "https://tcn.vn/kinh-doanh/",
+      "https://tcn.vn/kinh-doanh/globe-newswire/",
+      "https://tcn.vn/kinh-doanh/thuong-mai-dien-tu/",
+      "https://tcn.vn/kinh-doanh/bat-dong-san/",
+      "https://tcn.vn/suc-khoe/",
+      "https://tcn.vn/suc-khoe/dinh-duong/",
+      "https://tcn.vn/suc-khoe/lam-dep/",
+      "https://tcn.vn/khoa-hoc/",
+      "https://tcn.vn/cong-nghe/",
+      "https://tcn.vn/lastnews"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tcn.vn",
+    "checkedAt": "2026-11-09T03:57:27.913Z",
+    "url": "https://tcn.vn/suc-khoe/lam-dep/14527-nhung-kieu-toc-ngan-dep-phu-hop-co-nang-co-mai-toc-mong-2018-2019.html",
+    "finalUrl": "https://tcn.vn/suc-khoe/lam-dep/14527-nhung-kieu-toc-ngan-dep-phu-hop-co-nang-co-mai-toc-mong-2018-2019.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2320,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tcn.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 14,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 151,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tcn.vn/doi-song/39458-tai-sao-tai-khoan-shopee-bi-khoa-top-ly-do-pho-bien-038-cach-khac-phuc.html",
+      "https://tcn.vn/doi-song/39457-loi-m02-shopee-la-gi-nguyen-nhan-va-cach-fix-loi-m02-shopee-nhanh-chong-hieu-qua.html",
+      "https://tcn.vn/doi-song/39456-mua-xang-hoan-xu-shopee-x-shopeepay-dong-hanh-cung-ban.html",
+      "https://tcn.vn/doi-song/39455-review-phan-phu-carslan-co-may-loai-loai-nao-tot-nhat.html",
+      "https://tcn.vn/doi-song/39454-top-9-phan-phu-kiem-dau-tot-giup-nen-min-li-khong-lo-bong-nhon.html",
+      "https://tcn.vn/doi-song/39453-kem-lot-truoc-hay-kem-chong-nang-truoc-quy-tac-vang-trong-makeup.html",
+      "https://tcn.vn/doi-song/39452-10-cach-phoi-do-voi-quan-tay-ong-rong-moi-me-trendy.html",
+      "https://tcn.vn/doi-song/39451-5-cach-phoi-do-voi-quan-ong-rong-cho-nguoi-lun-hack-dang-tot.html",
+      "https://tcn.vn/doi-song/39450-mach-nang-5-cach-phoi-do-voi-ao-len-cardigan-ngan-cuc-xinh.html",
+      "https://tcn.vn/doi-song/39448-7-cach-xu-ly-quan-ao-bi-phai-mau-hieu-qua-nhanh-tai-nha.html",
+      "https://tcn.vn/doi-song/39447-review-giay-thom-quan-ao-10-loai-giay-thom-giat-quan-ao-tot-nhat.html",
+      "https://tcn.vn/doi-song/39446-nuoc-tay-quan-ao-mau-nao-tot-review-9-nuoc-tay-hot-nhat.html",
+      "https://tcn.vn/doi-song/39449-cup-c1-duoc-doi-ten-thanh-uefa-champions-league-tu-khi-nao.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:04.856Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tcn.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

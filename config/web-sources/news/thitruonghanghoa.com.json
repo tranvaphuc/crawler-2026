@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruonghanghoa.com",
+  "siteId": "thitruonghanghoa.com",
+  "registrableDomain": "thitruonghanghoa.com",
+  "homepage": "https://www.thitruonghanghoa.com/",
+  "allowedHosts": [
+    "www.thitruonghanghoa.com",
+    "thitruonghanghoa.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thị Trường Cao Su Tháng 10/2026: Sóng Tăng Tích Lũy Vững Chắc, Thách Thức Vĩ Mô Và Triển Vọng Cuối Năm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Tiến sỹ quản trị kinh doanh SN 1970 hai lần tự xây cơ ngơi tại Việt Nam rồi bán cho Ấn Độ, Nhật Bản thu về hàng nghìn tỷ đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:37.024Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.thitruonghanghoa.com/bao-cao-phan-tich/thi-truong-cao-su-thang-102026-song-tang-tich-luy-vung-chac-thach-thuc-vi-mo-va-trien-vong-cuoi-nam-172.html",
+      "https://www.thitruonghanghoa.com/nhan-dinh-thi-truong/thi-truong-hang-hoa-tuan-26102026-01112026-nang-luong-noi-song-nong-san-kim-loai-giu-nhip-26.html",
+      "https://www.thitruonghanghoa.com/tin-tuc/tien-sy-quan-tri-kinh-doanh-sn-1970-hai-lan-tu-xay-co-ngoi-tai-viet-nam-roi-ban-cho-an-do-nhat-ban-thu-ve-hang-nghin-ty-dong-362868.html",
+      "https://www.thitruonghanghoa.com/tin-tuc/gia-vang-mieng-vang-nhan-9999-hom-nay-ngay-911-362866.html",
+      "https://www.thitruonghanghoa.com/tin-tuc/ngay-911-gui-duoi-1-ty-dong-ky-han-9-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-362867.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.thitruonghanghoa.com/",
+    "categories": [
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-cao-su-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-duong-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-ca-cao-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-ca-phe-arabica-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-gao-viet-nam-5-phan-tram-tam",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-dau-nanh-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-bot-dau-nanh-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-dau-dau-nanh-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-bap-ngo-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-lua-mi-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-nong-san",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-vang-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-bac-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-dong-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-bach-kim-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-nickel-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-kim-loai-chi-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-nhom-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-kim-loai-kem-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-kim-loai",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-dau-tho-brent-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-dau-tho-wti-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-khi-tu-nhien-us",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-than-da-the-gioi-australia",
+      "https://www.thitruonghanghoa.com/gia-nang-luong",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-thit-bo-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-thit-ga-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-thit-cuu-the-gioi",
+      "https://www.thitruonghanghoa.com/gia-hang-hoa/gia-tom-mexico?period=4",
+      "https://www.thitruonghanghoa.com/gia-thuc-pham",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-xang-dau-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-ca-phe-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-tieu-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-heo-hoi-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-lua-gao-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-sau-rieng-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-tom-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-phan-bon-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-thep-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-xi-mang-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-cat-xay-dung-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-da-xay-dung-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-gach-xay-dung-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-cao-su-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-hat-dieu-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-thuy-san-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-trai-cay-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-rau-cu-hom-nay",
+      "https://www.thitruonghanghoa.com/gia-ca-thi-truong-viet-nam/gia-thit-trung-hom-nay",
+      "https://www.thitruonghanghoa.com/bao-cao-thi-truong",
+      "https://www.thitruonghanghoa.com/tin-tuc-thi-truong-tai-chinh",
+      "https://www.thitruonghanghoa.com/tin-tuc-thi-truong-chung-khoan",
+      "https://www.thitruonghanghoa.com/tin-doanh-nghiep",
+      "https://www.thitruonghanghoa.com/tin-tuc-thi-truong-bat-dong-san",
+      "https://www.thitruonghanghoa.com/tin-tuc-doanh-nhan",
+      "https://www.thitruonghanghoa.com/thi-truong-hang-hoa-main",
+      "https://www.thitruonghanghoa.com/tin-tuc",
+      "https://www.thitruonghanghoa.com/nl/",
+      "https://www.thitruonghanghoa.com/pt/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thitruonghanghoa.com",
+    "checkedAt": "2026-11-09T03:57:31.280Z",
+    "url": "https://www.thitruonghanghoa.com/bao-cao-phan-tich/thi-truong-cao-su-thang-102026-song-tang-tich-luy-vung-chac-thach-thuc-vi-mo-va-trien-vong-cuoi-nam-172.html",
+    "finalUrl": "https://www.thitruonghanghoa.com/bao-cao-phan-tich/thi-truong-cao-su-thang-102026-song-tang-tich-luy-vung-chac-thach-thuc-vi-mo-va-trien-vong-cuoi-nam-172.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7927,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thitruonghanghoa.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 57,
+    "checkedArticleUrls": 72,
+    "freshArticleChecks": 37,
+    "parserIssues": 15,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 57,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 59,
+    "categoriesFreshChecked": 21,
+    "categoriesUnconfirmed": 18,
+    "categoriesWithoutParsedArticle": 3,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 317,
+        "passed": 57,
+        "distinctHashes": 57
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 13,
+      "original_publication_not_yet_confirmed": 1,
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:17:23.727Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thitruonghanghoa.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

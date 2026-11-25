@@ -1,0 +1,32 @@
+import axios from 'axios';import tls from 'node:tls';import {readFileSync} from 'node:fs';import {ResearchHttpCookies,publicLiteralCookie} from './researchHttpCookies.mjs';
+const hostProfiles=JSON.parse(readFileSync(new URL('../../config/web-sources/news-http-profiles.json',import.meta.url),'utf8'));
+const intermediateFiles=['sectigo-dv-r36.pem','globalsign-ov-2018.pem','rapidssl-g1.pem'];
+const verifiedIntermediates=intermediateFiles.map(f=>readFileSync(new URL('../../config/web-sources/tls/'+f,import.meta.url),'utf8'));
+class HeaderHttpAgent extends http.Agent{addRequest(req,options){req.maxHeaderSize=65536;return super.addRequest(req,options);}}
+class HeaderHttpsAgent extends https.Agent{addRequest(req,options){req.maxHeaderSize=65536;return super.addRequest(req,options);}}
+import http from 'node:http';import https from 'node:https';import iconv from 'iconv-lite';
+import fs from 'node:fs/promises';import path from 'node:path';
+import {pageIssue} from './configurableNewsParser.mjs';
+
+// HTTP only: no browser, script execution, browser profile, or render fallback.
+export function createResearchTransport({timeoutMs=15000,requestDeadlineMs=timeoutMs,maxSockets=8,maxBytes=4000000,requestProfiles=hostProfiles,persistEvidence=true,validateHtml=true,maxTotalSockets=Infinity,maxFreeSockets=256,agentIdleTimeoutMs,onResponse,onNetworkRequest}={}){
+ const httpAgent=new HeaderHttpAgent({keepAlive:true,maxSockets,maxTotalSockets,maxFreeSockets,...(agentIdleTimeoutMs?{timeout:agentIdleTimeoutMs}:{}),maxHeaderSize:65536}),httpsAgent=new HeaderHttpsAgent({ca:[...tls.rootCertificates,...verifiedIntermediates],rejectUnauthorized:true,keepAlive:true,maxSockets,maxTotalSockets,maxFreeSockets,...(agentIdleTimeoutMs?{timeout:agentIdleTimeoutMs}:{}),maxHeaderSize:65536});
+ const cookies=new ResearchHttpCookies();
+ const client=axios.create({beforeRedirect:(options,response,request)=>{if(request?.url)cookies.store(request.url,response.headers['set-cookie']);const next=new URL(options.path,options.protocol+'//'+options.hostname+(options.port?':'+options.port:''));onNetworkRequest?.({url:next.href,kind:'redirect'});delete options.headers.Cookie;delete options.headers.cookie;const cookie=cookies.header(next.href);if(cookie)options.headers.Cookie=cookie;},proxy:false,httpAgent,httpsAgent,timeout:timeoutMs,maxRedirects:6,responseType:'arraybuffer',maxContentLength:maxBytes,validateStatus:()=>true,headers:{'User-Agent':'Mozilla/5.0 (compatible; NewsParserResearch/1.0)','Accept':'text/html,application/xhtml+xml,application/json,application/xml,text/xml;q=0.9,*/*;q=0.8','Accept-Language':'vi,en;q=0.9'}});
+ return {async get(url,dir,label,{maxDocumentChars=maxBytes}={}){
+  const hostProfile=requestProfiles[new URL(url).hostname.replace(/^www\./,'')];const requestHeaders={...(cookies.header(url)?{Cookie:cookies.header(url)}:{}),...(hostProfile?.userAgent?{'User-Agent':hostProfile.userAgent}:{}),...(hostProfile?.connectionClose?{Connection:'close'}:{}),...(hostProfile?.acceptEncoding==='identity'?{'Accept-Encoding':'identity'}:{})};
+  const started=Date.now(),controller=new AbortController(),deadline=setTimeout(()=>controller.abort(),requestDeadlineMs);let html=null,statusCode=null,finalUrl=null,error=null,contentType=null,encoding=null,cookieBootstrap=null,responseBytes=0,retryAfter=null;
+  try{
+   onNetworkRequest?.({url,kind:'request'});let response=await client.get(url,{headers:requestHeaders,signal:controller.signal});const firstUrl=response.request?.res?.responseUrl||url;const firstBody=response.data.byteLength<=1024?Buffer.from(response.data).toString('utf8'):'';const literal=response.status===200?publicLiteralCookie(firstBody,firstUrl):null;if(literal){if(persistEvidence){await fs.mkdir(dir,{recursive:true});await fs.writeFile(path.join(dir,label+'-cookie-bootstrap.html'),firstBody);}cookies.store(firstUrl,literal);cookieBootstrap={kind:'public_literal_D1N',sourceHtmlFile:persistEvidence?label+'-cookie-bootstrap.html':null,scriptExecuted:false,retries:1};onNetworkRequest?.({url:firstUrl,kind:'cookie_bootstrap_retry'});response=await client.get(firstUrl,{headers:{...requestHeaders,Cookie:cookies.header(firstUrl)},signal:controller.signal});}const buf=Buffer.isBuffer(response.data)?response.data:Buffer.from(response.data);responseBytes=buf.byteLength;retryAfter=response.headers['retry-after']||null;statusCode=response.status;finalUrl=response.request?.res?.responseUrl||url;contentType=response.headers['content-type']||'';cookies.store(finalUrl,response.headers['set-cookie']);
+   encoding=contentType.match(/charset\s*=\s*["']?([\w-]+)/i)?.[1]||buf.subarray(0,4000).toString('ascii').match(/charset\s*=\s*["']?([\w-]+)/i)?.[1]||'utf8';
+   html=iconv.decode(buf,iconv.encodingExists(encoding)?encoding:'utf8');if(html.length>maxDocumentChars){error='document_too_large:'+html.length;html=null;}
+   else if(statusCode===401||statusCode===403)error='access_blocked';
+   else if(statusCode===404||statusCode===410)error='not_found';
+   else if(statusCode===429)error='rate_limited';
+   else if(statusCode>=400)error='http_'+statusCode;
+   else if(validateHtml&&!/json|xml|rss|atom|text\/plain/i.test(contentType))error=pageIssue(html);
+  }catch(e){error=controller.signal.aborted?'request_deadline_exceeded':/maxContentLength/i.test(e.message)?'document_too_large':e.code||e.message;statusCode=e.response?.status||null;}finally{clearTimeout(deadline);}
+  const meta={requestedUrl:url,finalUrl,method:'HTTP/axios',statusCode,contentType,encoding,error,checkedAt:new Date().toISOString(),elapsedMs:Date.now()-started,htmlFile:persistEvidence&&html?label+'.html':null,evidencePersisted:persistEvidence,responseBytes,retryAfter,browserUsed:false,tlsVerification:'strict',intermediateBundle:intermediateFiles,httpCookiePolicy:'host-only HTTP cookies; exact public D1N literal for two configured publishers; no script execution',cookieBootstrap,requestProfile:hostProfile?.name||'research',connectionPolicy:hostProfile?.connectionClose?'close':'keep-alive',acceptEncodingPolicy:hostProfile?.acceptEncoding==='identity'?'identity':'axios_default'};
+  if(persistEvidence){await fs.mkdir(dir,{recursive:true});if(html)await fs.writeFile(path.join(dir,label+'.html'),html);await fs.writeFile(path.join(dir,label+'.json'),JSON.stringify(meta,null,2));}if(onResponse)await onResponse(meta);return {...meta,html};
+ },async close(){httpAgent.destroy();httpsAgent.destroy();}};
+}

@@ -1,0 +1,4 @@
+import {createResearchTransport} from '../src/web/researchTransport.mjs';import fs from 'node:fs/promises';import * as c from 'cheerio';
+const root='outputs/forum-flow-evidence-2026-11-17';const tasks=[['bovagau-comments','https://api.bovagau.vn/api/v1/comments?postId=151402&limit=10&offset=0'],['pantip-comments','https://pantip.com/forum/topic/render_comments?tid=44287538&param=page1&type=3&page=1']];
+const html=await fs.readFile(root+'/dff.vn-detail.html','utf8');console.log('dff-read-base',html.match(/Page\.urlBase\s*=\s*[^;]+/)?.[0]);
+const t=createResearchTransport({validateHtml:false});try{for(const [label,url] of tasks){const r=await t.get(url,root,label);console.log(JSON.stringify({label,error:r.error,bytes:r.html?.length,preview:r.html?.slice(0,1200)}));}}finally{await t.close();}

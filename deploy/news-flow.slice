@@ -1,0 +1,9 @@
+[Unit]
+Description=Shared resource budget for news crawler and ES writer
+
+[Slice]
+CPUAccounting=true
+MemoryAccounting=true
+CPUQuota=1600%
+MemoryMax=28G
+TasksMax=192

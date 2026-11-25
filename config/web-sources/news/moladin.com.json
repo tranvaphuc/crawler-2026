@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "siteName": "moladin.com",
+  "siteId": "moladin.com",
+  "registrableDomain": "moladin.com",
+  "homepage": "https://moladin.com/",
+  "allowedHosts": [
+    "moladin.com",
+    "www.moladin.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://moladin.com/",
+    "categories": [
+      "https://moladin.com/pembiayaan/",
+      "https://moladin.com/news/",
+      "https://moladin.com/sewa-kepemilikan-mobil/",
+      "https://moladin.com/",
+      "https://moladin.com/mobil-baru/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.272Z",
+      "verifiedSeeds": [
+        "https://moladin.com/",
+        "https://moladin.com/mobil-baru/",
+        "https://moladin.com/pembiayaan/",
+        "https://moladin.com/news/",
+        "https://moladin.com/sewa-kepemilikan-mobil/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "Pajero Sport Dakar 2016 Bekas Kini Rp300 Jutaan, Intip Spesifikasinya",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".elementor-element.elementor-element-a799a11",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:01.191Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:50.920Z",
+    "independentHoldouts": [
+      "https://moladin.com/news/mobil-listrik-200-jutaan-november-2026/",
+      "https://moladin.com/news/toyota-fortuner-g-vnt-2015-bekas/",
+      "https://moladin.com/news/ciri-ciri-rangka-mobil-bekas-pernah-tabrakan-berat/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://moladin.com/news/harga-pajero-sport-2016-bekas",
+      "https://moladin.com/news/mobil-listrik-200-jutaan-november-2026/",
+      "https://moladin.com/news/toyota-fortuner-g-vnt-2015-bekas/",
+      "https://moladin.com/news/ciri-ciri-rangka-mobil-bekas-pernah-tabrakan-berat/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

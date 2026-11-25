@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mst.gov.vn",
+  "siteId": "mst.gov.vn",
+  "registrableDomain": "mst.gov.vn",
+  "homepage": "https://mst.gov.vn/",
+  "allowedHosts": [
+    "mst.gov.vn",
+    "www.mst.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://mst.gov.vn/",
+    "categories": [
+      "https://mst.gov.vn/thong-tin-chung/chuc-nang-nhiem-vu",
+      "https://mst.gov.vn/thong-tin-chung/lich-su-phat-trien",
+      "https://mst.gov.vn/thong-tin-chung/so-khoa-hoc-va-cong-nghe",
+      "https://mst.gov.vn/tin-tuc-su-kien.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/khoa-hoc-va-cong-nghe.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/doi-moi-sang-tao.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/chuyen-doi-so.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/buu-chinh-vien-thong.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/so-huu-tri-tue.htm",
+      "https://mst.gov.vn/tin-tuc-su-kien/nang-luong-nguyen-tu.htm"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Việt Nam mở rộng cơ hội đầu tư R&D cho doanh nghiệp công nghệ châu Âu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-cmain",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:21.166Z",
+    "frozenAt": "2026-11-16T01:57:18.766Z",
+    "trainingUrl": "https://mst.gov.vn/viet-nam-mo-rong-co-hoi-dau-tu-rd-cho-doanh-nghiep-cong-nghe-chau-au-197261106211640311.htm",
+    "independentHoldouts": [
+      "https://mst.gov.vn/viet-nam-han-quoc-thuc-day-hop-tac-he-sinh-thai-khoi-nghiep-doi-moi-sang-tao-197261112202756506.htm",
+      "https://mst.gov.vn/unido-ghi-nhan-viet-nam-thuoc-nhom-quoc-gia-co-tien-bo-dang-ke-ve-ha-tang-chat-luong-197261107174451324.htm"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://mst.gov.vn/viet-nam-mo-rong-co-hoi-dau-tu-rd-cho-doanh-nghiep-cong-nghe-chau-au-197261106211640311.htm",
+      "https://mst.gov.vn/viet-nam-han-quoc-thuc-day-hop-tac-he-sinh-thai-khoi-nghiep-doi-moi-sang-tao-197261112202756506.htm",
+      "https://mst.gov.vn/unido-ghi-nhan-viet-nam-thuoc-nhom-quoc-gia-co-tien-bo-dang-ke-ve-ha-tang-chat-luong-197261107174451324.htm",
+      "https://mst.gov.vn/viet-nam-mong-muon-cung-cac-doi-tac-tao-ra-tri-thuc-moi-phat-trien-cong-nghe-va-chia-se-thanh-qua-197261105214709251.htm",
+      "https://mst.gov.vn/viet-nam-thuc-day-dich-vu-cong-lien-thong-lay-nguoi-dan-lam-trung-tam-197261115202407552.htm",
+      "https://mst.gov.vn/viet-nam-campuchia-mo-rong-hop-tac-chuyen-doi-so-ket-noi-doanh-nghiep-cong-nghe-197261115105038146.htm",
+      "https://mst.gov.vn/457-457-dai-bieu-tan-thanh-thong-qua-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-do-luong-197261113102112159.htm",
+      "https://mst.gov.vn/thao-go-diem-nghen-dua-khoa-hoc-cong-nghe-vao-thuc-tien-197261112135003371.htm",
+      "https://mst.gov.vn/viet-nam-nhat-ban-thuc-day-hop-tac-nghien-cuu-phat-trien-ai-va-so-huu-tri-tue-197261109212202448.htm",
+      "https://mst.gov.vn/vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-thong-bao-tuyen-dung-vien-chuc-dot-02-nam-2026-197261107203444707.htm",
+      "https://mst.gov.vn/tiep-nhan-ho-so-dang-ky-xet-chon-nha-khoa-hoc-tre-viet-nam-tham-du-dai-hoi-cac-nha-khoa-hoc-tre-lan-thu-vi-tai-lien-bang-nga-nam-2026-197261107200226754.htm",
+      "https://mst.gov.vn/tai-lieu-hop-bao-thuong-ky-thang-10-nam-2026-197261104104121668.htm",
+      "https://mst.gov.vn/ket-qua-thuc-hien-nhiem-vu-khcn-theo-nghi-dinh-thu-ma-so-ndt-cz-23-07-197261027150832859.htm",
+      "https://mst.gov.vn/thong-bao-ve-viec-ban-tai-san-cong-197261021155647496.htm",
+      "https://mst.gov.vn/bao-cao-tinh-hinh-thuc-hien-cong-khai-du-toan-nsnn-quy-ii-2026-cua-bo-khoa-hoc-va-cong-nghe-197261021152549118.htm",
+      "https://mst.gov.vn/muon-thanh-quoc-gia-bien-manh-viet-nam-phai-manh-ve-tri-thuc-va-cong-nghe-197261002111843905.htm",
+      "https://mst.gov.vn/sua-luat-do-luong-tap-trung-vao-3-tru-cot-lon-197261001231416003.htm",
+      "https://mst.gov.vn/san-sang-cho-giai-doan-2-du-an-vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-197261001144659762.htm",
+      "https://mst.gov.vn/do-hieu-qua-cua-natif-bang-so-cong-nghe-duoc-chuyen-giao-197260930175842547.htm",
+      "https://mst.gov.vn/nang-cao-nang-luc-nghien-cuu-khoa-hoc-co-ban-trong-giai-doan-moi-197260930170130207.htm",
+      "https://mst.gov.vn/tang-cuong-hop-tac-da-ben-thuc-day-phat-trien-he-sinh-thai-ai-197261028230133116.htm",
+      "https://mst.gov.vn/ket-noi-nghien-cuu-voi-thi-truong-mo-rong-hop-tac-doi-moi-sang-tao-so-asean-eu-197261029011019071.htm",
+      "https://mst.gov.vn/nghi-lon-bat-dau-tu-viec-nho-va-lam-den-cung-197261029073725892.htm",
+      "https://mst.gov.vn/phat-trien-ai-lay-con-nguoi-lam-trung-tam-thuc-day-hop-tac-quoc-te-197261028141945957.htm",
+      "https://mst.gov.vn/vietnam-post-dua-di-san-ha-noi-den-gan-cong-chung-qua-cong-nghe-thuc-te-hon-hop-197261115030349703.htm",
+      "https://mst.gov.vn/bien-soan-so-tay-ky-nang-so-cho-phong-trao-binh-dan-hoc-vu-so-197261114113242009.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

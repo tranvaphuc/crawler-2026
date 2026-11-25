@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtechungkhoan.vn",
+  "siteId": "kinhtechungkhoan.vn",
+  "registrableDomain": "kinhtechungkhoan.vn",
+  "homepage": "https://kinhtechungkhoan.vn/",
+  "allowedHosts": [
+    "kinhtechungkhoan.vn",
+    "www.kinhtechungkhoan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá heo hơi hôm nay 9/11/2026: Tăng mạnh, sát mốc 50.000 đồng/kg",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".article-date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:30.157Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhtechungkhoan.vn/gia-heo-hoi-hom-nay-9112026-tang-manh-sat-moc-50000-dongkg",
+      "https://kinhtechungkhoan.vn/gia-ca-phe-hom-nay-9112026-bien-dong-trai-chieu",
+      "https://kinhtechungkhoan.vn/gia-tieu-hom-nay-9112026-thi-truong-khoi-sac",
+      "https://kinhtechungkhoan.vn/gia-heo-hoi-hom-nay-8112026-chung-lai-sau-dot-tang-manh",
+      "https://kinhtechungkhoan.vn/gia-ca-phe-hom-nay-8112026-tien-sat-moc-85000-dongkg"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtechungkhoan.vn/",
+    "categories": [
+      "https://kinhtechungkhoan.vn/thi-truong",
+      "https://kinhtechungkhoan.vn/tieu-diem",
+      "https://kinhtechungkhoan.vn/xay-dung-dang",
+      "https://kinhtechungkhoan.vn/chu-truong-chinh-sach",
+      "https://kinhtechungkhoan.vn/hoat-dong-vasb",
+      "https://kinhtechungkhoan.vn/chung-khoan",
+      "https://kinhtechungkhoan.vn/nhip-dap-thi-truong",
+      "https://kinhtechungkhoan.vn/bao-cao-phan-tich",
+      "https://kinhtechungkhoan.vn/co-tuc-phat-hanh-trai-phieu",
+      "https://kinhtechungkhoan.vn/goc-nhin",
+      "https://kinhtechungkhoan.vn/goc-chuyen-gia",
+      "https://kinhtechungkhoan.vn/cafe-chung",
+      "https://kinhtechungkhoan.vn/tim-trong-von-co",
+      "https://kinhtechungkhoan.vn/doanh-nghiep",
+      "https://kinhtechungkhoan.vn/chuyen-dong",
+      "https://kinhtechungkhoan.vn/cao-bach-tai-chinh",
+      "https://kinhtechungkhoan.vn/chuyen-doanh-nhan",
+      "https://kinhtechungkhoan.vn/khoi-nghiep",
+      "https://kinhtechungkhoan.vn/tai-chinh",
+      "https://kinhtechungkhoan.vn/nhip-song-tai-chinh",
+      "https://kinhtechungkhoan.vn/ngan-hang",
+      "https://kinhtechungkhoan.vn/thue-bao-hiem",
+      "https://kinhtechungkhoan.vn/vang-ty-gia",
+      "https://kinhtechungkhoan.vn/dia-phuong",
+      "https://kinhtechungkhoan.vn/chinh-sach-dau-tu",
+      "https://kinhtechungkhoan.vn/doanh-nghiep-sme",
+      "https://kinhtechungkhoan.vn/mo-hinh-moi",
+      "https://kinhtechungkhoan.vn/dat-nguoi",
+      "https://kinhtechungkhoan.vn/kien-thuc-dau-tu",
+      "https://kinhtechungkhoan.vn/chien-luoc-ky-nang",
+      "https://kinhtechungkhoan.vn/hieu-thi-truong",
+      "https://kinhtechungkhoan.vn/kinh-nghiem-len-san",
+      "https://kinhtechungkhoan.vn/hang-hoa-gia-ca",
+      "https://kinhtechungkhoan.vn/thuong-hieu-san-pham",
+      "https://kinhtechungkhoan.vn/thuong-mai-dien-tu"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtechungkhoan.vn",
+    "checkedAt": "2026-11-09T03:57:10.294Z",
+    "url": "https://kinhtechungkhoan.vn/gia-heo-hoi-hom-nay-9112026-tang-manh-sat-moc-50000-dongkg",
+    "finalUrl": "https://kinhtechungkhoan.vn/gia-heo-hoi-hom-nay-9112026-tang-manh-sat-moc-50000-dongkg",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4590,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kinhtechungkhoan.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 58,
+    "checkedArticleUrls": 59,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 58,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 861,
+        "passed": 58,
+        "distinctHashes": 58
+      }
+    ],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:15:54.663Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kinhtechungkhoan.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "kinhtechungkhoan.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

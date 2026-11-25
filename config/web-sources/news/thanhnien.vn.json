@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thanhnien.vn",
+  "siteId": "thanhnien.vn",
+  "registrableDomain": "thanhnien.vn",
+  "homepage": "https://thanhnien.vn/",
+  "allowedHosts": [
+    "thanhnien.vn",
+    "www.thanhnien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp gỡ trí thức Việt Nam tại Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:30.786Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-tri-thuc-viet-nam-tai-nhat-ban-185261108202040767.htm",
+      "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-cong-dong-nguoi-viet-tai-nhat-ban-185261108183312353.htm",
+      "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-bat-dau-tham-chinh-thuc-nhat-ban-185261108142736222.htm",
+      "https://thanhnien.vn/mr-pips-xin-ket-hon-trong-tu-bo-me-tha-thiet-giam-dinh-tam-than-cho-con-18526110815293166.htm",
+      "https://thanhnien.vn/bo-truong-israel-he-lo-kha-nang-khoi-phuc-chien-su-voi-iran-canh-bao-hezbollah-185261108195807499.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thanhnien.vn/",
+    "categories": [
+      "https://thanhnien.vn/chinh-tri.htm",
+      "https://thanhnien.vn/thoi-su.htm",
+      "https://thanhnien.vn/the-gioi.htm",
+      "https://thanhnien.vn/kinh-te.htm",
+      "https://thanhnien.vn/doi-song.htm",
+      "https://thanhnien.vn/suc-khoe.htm",
+      "https://thanhnien.vn/gioi-tre.htm",
+      "https://thanhnien.vn/giao-duc.htm",
+      "https://thanhnien.vn/du-lich.htm",
+      "https://thanhnien.vn/van-hoa.htm",
+      "https://thanhnien.vn/giai-tri.htm",
+      "https://thanhnien.vn/the-thao.htm",
+      "https://thanhnien.vn/cong-nghe.htm",
+      "https://thanhnien.vn/xe.htm",
+      "https://thanhnien.vn/video.htm",
+      "https://thanhnien.vn/tieu-dung-thong-minh.htm",
+      "https://thanhnien.vn/thoi-trang-tre.htm",
+      "https://thanhnien.vn/chao-ngay-moi.htm",
+      "https://thanhnien.vn/tin-24h.htm",
+      "https://thanhnien.vn/thi-truong.htm",
+      "https://thanhnien.vn/tin-nhanh-360.htm",
+      "https://thanhnien.vn/magazine.htm",
+      "https://thanhnien.vn/tien-ich/thoi-tiet.htm",
+      "https://thanhnien.vn/ban-can-biet.htm",
+      "https://thanhnien.vn/thong-tin-toa-soan.html",
+      "https://thanhnien.vn/anh.htm",
+      "https://thanhnien.vn/infographic.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?thanhnien.vn/.*?/.*?(\\d{5,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thanhnien.vn",
+    "checkedAt": "2026-11-09T03:57:29.025Z",
+    "url": "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-tri-thuc-viet-nam-tai-nhat-ban-185261108202040767.htm",
+    "finalUrl": "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-tri-thuc-viet-nam-tai-nhat-ban-185261108202040767.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4040,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thanhnien.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 40,
+    "checkedArticleUrls": 42,
+    "freshArticleChecks": 9,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 40,
+    "listingResponsesAtArticleUrls": 1,
+    "categoriesPlanned": 27,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 5,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1232,
+        "passed": 39,
+        "distinctHashes": 39
+      },
+      {
+        "name": "video",
+        "discovered": 5,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-185261110132128774.htm",
+      "https://thanhnien.vn/thanh-tra-chinh-phu-253-doanh-nghiep-xang-dau-mua-ban-long-vong-doi-gia-gan-47000-ti-18526111014002155.htm",
+      "https://thanhnien.vn/dai-bieu-quoc-hoi-de-nghi-uu-tien-game-phim-am-nhac-bo-truong-lam-thi-phuong-thanh-noi-gi-185261110122337111.htm",
+      "https://thanhnien.vn/trinh-do-tieng-anh-c1-kho-co-nao-cu-nhan-ngon-ngu-anh-co-de-dat-duoc-185261110135316819.htm",
+      "https://thanhnien.vn/cong-an-tpha-noi-tim-nguoi-da-nop-tien-cho-cong-ty-amazing-star-185261110150838872.htm",
+      "https://thanhnien.vn/singapore-mo-dich-vu-nhan-gui-vang-tu-nuoc-ngoai-185261110152731143.htm",
+      "https://thanhnien.vn/ca-mau-du-kien-chi-300-ti-dong-xay-trung-tam-nghi-duong-nguoi-cao-tuoi-185261110142733956.htm",
+      "https://thanhnien.vn/su-that-xung-quanh-tin-tim-than-nhan-cua-be-trai-6-tuoi-bi-bat-coc-185261110124532284.htm",
+      "https://thanhnien.vn/cu-au-tau-doc-the-nao-ma-co-the-gay-nguy-kich-chi-sau-10-phut-185261110105155642.htm",
+      "https://thanhnien.vn/nhieu-tinh-nam-trung-bo-canh-bao-lu-quet-sat-lo-185261110135654898.htm",
+      "https://thanhnien.vn/lam-dong-thao-go-vuong-mac-tang-nguon-cung-vat-lieu-xay-dung-185261110131147647.htm",
+      "https://thanhnien.vn/do-kim-phuc-an-mung-siuuu-nhan-giai-nha-sang-tao-noi-dung-the-thao-cua-tiktok-awards-185261110141417925.htm",
+      "https://thanhnien.vn/de-xuat-chi-tam-hoan-xuat-canh-khi-thong-bao-hop-le-nhung-nguoi-nop-thue-chay-y-185261110150105515.htm",
+      "https://thanhnien.vn/doc-la-xe-may-dien-co-day-an-toan-va-canh-bao-diem-mu-nhu-o-to-185261110065440957.htm",
+      "https://thanhnien.vn/mua-lon-keo-dai-quang-ngai-di-doi-khan-cap-hang-chuc-nguoi-dan-185261110141726914.htm",
+      "https://thanhnien.vn/my-so-tan-may-bay-nang-bao-dong-an-ninh-tai-can-cu-o-anh-vi-iran-185261110151750042.htm",
+      "https://thanhnien.vn/nhieu-bac-si-tai-tphcm-bi-tuoc-chung-chi-hanh-nghe-185261109163254539.htm",
+      "https://thanhnien.vn/xac-dinh-nguyen-nhan-trau-bo-chet-hang-loat-o-nghe-an-185261110103611039.htm",
+      "https://thanhnien.vn/thanh-hoa-bat-tam-giam-nguoi-cha-dung-gay-danh-2-con-gai-bi-thuong-18526110916312591.htm",
+      "https://thanhnien.vn/hai-nu-sinh-o-phu-quoc-danh-nhau-gan-30-em-quay-clip-va-co-vu-185261109163956751.htm",
+      "https://thanhnien.vn/truong-dh-ngan-hang-tphcm-thanh-lap-3-truong-truc-thuoc-185261109214816134.htm",
+      "https://thanhnien.vn/du-an-benh-vien-1500-giuong-lon-nhat-tphcm-treo-13-nam-bao-gio-moi-hoat-dong-185261110115828236.htm",
+      "https://thanhnien.vn/tin-tuc-quoc-te-sang-1011-tong-thong-trump-ra-tuyen-bo-moi-185261110000427831.htm",
+      "https://thanhnien.vn/danh-sach-10-nha-khoa-hoc-tre-xuat-sac-nhan-giai-thuong-qua-cau-vang-nam-2026-185261110144953581.htm",
+      "https://thanhnien.vn/long-bao-vua-le-du-tong-lan-dau-tim-thay-ao-long-cong-trong-khao-co-viet-185261109222700196.htm",
+      "https://thanhnien.vn/lam-tam-nhu-bi-to-thai-do-hach-dich-va-cai-ket-185261110135328087.htm",
+      "https://thanhnien.vn/phan-ung-cua-meghan-markle-khi-cha-ruot-bi-fbi-bat-giu-185261109163413554.htm",
+      "https://thanhnien.vn/hlv-doi-tuyen-my-dan-dat-mu-sau-fifa-days-thang-11-185261110090034542.htm",
+      "https://thanhnien.vn/do-xo-tim-cong-troi-doc-dao-tren-nui-o-tphcm-185261110142711409.htm",
+      "https://thanhnien.vn/dieu-gi-dang-de-minh-cong-hien-185261110122842928.htm",
+      "https://thanhnien.vn/tu-cau-be-khong-noi-bat-den-hcv-the-gioi-nhan-huan-chuong-lao-dong-hang-nhat-18526111011553406.htm",
+      "https://thanhnien.vn/chuyen-de-thuong-tren-xe-buyt-o-tphcm-185261109203709848.htm",
+      "https://thanhnien.vn/dien-vien-trai-buon-nguoi-cung-cong-an-nhan-dien-chieu-tro-cua-toi-pham-mang-185261109202342171.htm",
+      "https://thanhnien.vn/chiec-phin-ca-phe-viet-duoc-cai-tien-nguoi-uong-bat-ngo-vi-dieu-gi-185261109152245668.htm",
+      "https://thanhnien.vn/me-viet-dua-4-con-gai-sang-nhat-doan-tu-cuoc-song-thay-doi-ra-sao-185260929113949802.htm",
+      "https://thanhnien.vn/duong-truong-chinh-o-tphcm-them-rao-chan-nguoi-di-xe-may-len-loi-tim-loi-ra-185261110105405209.htm",
+      "https://thanhnien.vn/thuc-hu-chuyen-nguoi-phu-nu-67-tuoi-bi-cac-hang-xe-cong-nghe-khoa-tai-khoan-185261107171721598.htm",
+      "https://thanhnien.vn/sau-be-boi-ngoai-tinh-ai-co-the-thay-jensen-huang-lam-ceo-nvidia-185261110111336005.htm",
+      "https://thanhnien.vn/gia-vang-don-dap-giam-sau-tang-manh-185261109140151548.htm",
+      "https://thanhnien.vn/toyota-fortuner-moi-sap-ve-viet-nam-van-co-ban-may-dau-185261109123943335.htm",
+      "https://thanhnien.vn/loc-gio-dong-co-xe-tay-ga-bao-lau-can-thay-moi-185261109115235863.htm",
+      "https://thanhnien.vn/phan-biet-bien-bao-nen-xanh-co-hinh-nguoi-di-bo-khac-nhau-the-nao-185261109154623029.htm",
+      "https://thanhnien.vn/gia-usd-hom-nay-10112026-giam-manh-roi-xa-muc-26000-dong-185261110065955845.htm",
+      "https://thanhnien.vn/cuoi-nam-don-dap-cac-chieu-lua-dao-moi-185261109213735586.htm",
+      "https://thanhnien.vn/ve-tinh-starlink-roi-tro-lai-khi-quyen-trai-dat-voi-nhieu-hiem-hoa-1852611091025294.htm",
+      "https://thanhnien.vn/bo-thu-nhap-chuc-trieu-ngay-ve-noi-nghiep-ong-ngoai-tiem-mi-5-ban-co-gi-dac-biet-185261028202956044.htm",
+      "https://thanhnien.vn/biet-dung-thu-tuc-de-tranh-bay-lua-185261109232928501.htm",
+      "https://thanhnien.vn/goc-nhin-phong-vien-cai-gia-cua-khon-loi-185261108175330111.htm",
+      "https://thanhnien.vn/dung-de-co-hoi-song-bi-che-khuat-boi-noi-so-hai-185261028210125884.htm",
+      "https://thanhnien.vn/thien-ca-phe-duoc-unesco-chon-la-trai-nghiem-van-hoa-dac-sac-cua-viet-nam-185261028144229181.htm",
+      "https://thanhnien.vn/cuon-sach-the-gioi-ba-khong-va-doanh-nghiep-xa-hoi-185261005164021004.htm",
+      "https://thanhnien.vn/trung-nguyen-legend-mang-ca-phe-dao-tao-dau-an-tren-que-huong-tra-dao-nhat-ban-185260919074547389.htm",
+      "https://thanhnien.vn/trung-nguyen-legend.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:12.060Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thanhnien.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[type=VideoStream][data-vid]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "title": {
+        "value": "Hoa hậu Kỳ Duyên diện đầm xuyên thấu, làm vedette cho Lê Thanh Hòa",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail__ttt-album",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:54.362Z",
+        "trainingUrls": [
+          "https://thanhnien.vn/thoi-trang-tre/hoa-hau-ky-duyen-dien-dam-xuyen-thau-lam-vedette-cho-le-thanh-hoa-1851515259.htm",
+          "https://thanhnien.vn/thoi-trang-tre/ao-dai-mau-pastel-ngot-ngao-lang-man-nhu-tiet-troi-mua-thu-1851515208.htm",
+          "https://thanhnien.vn/thoi-trang-tre/ao-yem-khoe-lung-tran-quyen-ru-duoc-yeu-thich-1851515746.htm"
+        ],
+        "holdoutUrls": [
+          "https://thanhnien.vn/thoi-trang-tre/dan-mau-cua-frederick-lee-trinh-dien-thoi-trang-trong-bong-dem-1851525739.htm",
+          "https://thanhnien.vn/thoi-trang-tre/nhung-bong-hoa-lua-mau-pastel-ngot-ngao-va-lang-man-cua-thao-nguyen-1851526028.htm"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:45.123Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://thanhnien.vn/thoi-trang-tre/dan-mau-cua-frederick-lee-trinh-dien-thoi-trang-trong-bong-dem-1851525739.htm",
+      "https://thanhnien.vn/thoi-trang-tre/nhung-bong-hoa-lua-mau-pastel-ngot-ngao-va-lang-man-cua-thao-nguyen-1851526028.htm"
+    ],
+    "improvedUrls": [
+      "https://thanhnien.vn/thoi-trang-tre/hoa-hau-ky-duyen-dien-dam-xuyen-thau-lam-vedette-cho-le-thanh-hoa-1851515259.htm",
+      "https://thanhnien.vn/thoi-trang-tre/ao-dai-mau-pastel-ngot-ngao-lang-man-nhu-tiet-troi-mua-thu-1851515208.htm",
+      "https://thanhnien.vn/thoi-trang-tre/ao-yem-khoe-lung-tran-quyen-ru-duoc-yeu-thich-1851515746.htm",
+      "https://thanhnien.vn/thoi-trang-tre/dan-mau-cua-frederick-lee-trinh-dien-thoi-trang-trong-bong-dem-1851525739.htm",
+      "https://thanhnien.vn/thoi-trang-tre/nhung-bong-hoa-lua-mau-pastel-ngot-ngao-va-lang-man-cua-thao-nguyen-1851526028.htm"
+    ],
+    "regressions": 0
+  }
+}

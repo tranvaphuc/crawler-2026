@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congly.vn",
+  "siteId": "congly.vn",
+  "registrableDomain": "congly.vn",
+  "homepage": "https://congly.vn/",
+  "allowedHosts": [
+    "congly.vn",
+    "www.congly.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chánh án TANDTC Nguyễn Văn Quảng dự Ngày hội Đại đoàn kết tại Lâm Đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:04.522Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://congly.vn/chanh-an-tandtc-nguyen-van-quang-du-ngay-hoi-dai-doan-ket-tai-lam-dong-546766.html",
+      "https://congly.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-546773.html",
+      "https://congly.vn/vu-mr-pips-loi-xin-loi-va-nuoc-mat-truoc-gio-nghi-an-546755.html",
+      "https://congly.vn/mien-trung-mua-lon-co-noi-du-bao-tren-400mm-546744.html",
+      "https://congly.vn/du-bao-thoi-tiet-toi-8-11-va-ngay-9-11-mien-bac-chuyen-ret-trung-bo-mua-lon-546748.html",
+      "https://congly.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-546773.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congly.vn/",
+    "categories": [
+      "https://congly.vn/tin-moi-nhat",
+      "https://congly.vn/chinh-tri",
+      "https://congly.vn/toa-an",
+      "https://congly.vn/xa-hoi",
+      "https://congly.vn/phap-dinh",
+      "https://congly.vn/the-gioi",
+      "https://congly.vn/phap-luat",
+      "https://congly.vn/van-hoa-the-thao",
+      "https://congly.vn/kinh-te",
+      "https://congly.vn/an-ninh-quoc-phong",
+      "https://congly.vn/ban-doc1",
+      "https://congly.vn/multimedia/emagazine",
+      "https://congly.vn/chinh-tri/xay-dung-dang",
+      "https://congly.vn/chinh-tri/doi-ngoai",
+      "https://congly.vn/chinh-tri/chinh-phu",
+      "https://congly.vn/chinh-tri/quoc-hoi",
+      "https://congly.vn/chinh-tri/nhan-su",
+      "https://congly.vn/toa-an/hoat-dong-tandtc",
+      "https://congly.vn/toa-an/cai-cach-tu-phap",
+      "https://congly.vn/toa-an/phong-trao-thi-dua",
+      "https://congly.vn/toa-an/toa-an-dia-phuong",
+      "https://congly.vn/toa-an/nghiep-vu",
+      "https://congly.vn/xa-hoi/doi-song",
+      "https://congly.vn/xa-hoi/giao-duc1",
+      "https://congly.vn/xa-hoi/suc-khoe",
+      "https://congly.vn/xa-hoi/moi-truong1",
+      "https://congly.vn/xa-hoi/giao-thong1",
+      "https://congly.vn/phap-dinh/ky-su-phap-dinh",
+      "https://congly.vn/phap-dinh/toa-tuyen-an",
+      "https://congly.vn/phap-dinh/tranh-tung",
+      "https://congly.vn/the-gioi/tin-tuc1",
+      "https://congly.vn/the-gioi/tu-phap-quoc-te",
+      "https://congly.vn/the-gioi/ho-so-phan-tich",
+      "https://congly.vn/the-gioi/quan-su",
+      "https://congly.vn/phap-luat/ho-so-vu-an",
+      "https://congly.vn/phap-luat/an-ninh-trat-tu",
+      "https://congly.vn/phap-luat/tu-van-phap-luat",
+      "https://congly.vn/van-hoa-the-thao/di-san",
+      "https://congly.vn/van-hoa-the-thao/nghe-thuat",
+      "https://congly.vn/van-hoa-the-thao/du-lich1",
+      "https://congly.vn/van-hoa-the-thao/the-thao",
+      "https://congly.vn/kinh-te/doanh-nghiep-doanh-nhan",
+      "https://congly.vn/kinh-te/tai-chinh",
+      "https://congly.vn/kinh-te/thi-truong1",
+      "https://congly.vn/kinh-te/bao-ve-nguoi-tieu-dung",
+      "https://congly.vn/kinh-te/bat-dong-san1",
+      "https://congly.vn/an-ninh-quoc-phong/tin-tuc2",
+      "https://congly.vn/an-ninh-quoc-phong/bien-gioi-bien-dao",
+      "https://congly.vn/an-ninh-quoc-phong/hop-tac-quoc-te",
+      "https://congly.vn/ban-doc1/nhip-cau-cong-ly",
+      "https://congly.vn/ban-doc1/van-de-quan-tam",
+      "https://congly.vn/ban-doc1/chinh-sach-moi",
+      "https://congly.vn/ban-doc1/nhan-ai",
+      "https://congly.vn/ban-doc1/hoi-am",
+      "https://congly.vn/video",
+      "https://congly.vn/dia-phuong",
+      "https://congly.vn/phong-su1",
+      "https://congly.vn/nhan-tin",
+      "https://congly.vn/cai-chinh1",
+      "https://congly.vn/chong-khai-thac-iuu",
+      "https://congly.vn/bao-ve-nen-tang-tu-tuong-cua-dang1",
+      "https://congly.vn/podcast1",
+      "https://congly.vn/thong-tin-doanh-nghiep",
+      "https://congly.vn/multimedia/infographic",
+      "https://congly.vn/multimedia/photo",
+      "https://congly.vn/multimedia/video",
+      "https://congly.vn/multimedia/podcast"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?congly.vn/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congly.vn",
+    "checkedAt": "2026-11-09T03:56:56.352Z",
+    "url": "https://congly.vn/chanh-an-tandtc-nguyen-van-quang-du-ngay-hoi-dai-doan-ket-tai-lam-dong-546766.html",
+    "finalUrl": "https://congly.vn/chanh-an-tandtc-nguyen-van-quang-du-ngay-hoi-dai-doan-ket-tai-lam-dong-546766.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4774,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "congly.vn",
+      "siteId": "congly.vn",
+      "registrableDomain": "congly.vn",
+      "homepage": "https://congly.vn/",
+      "allowedHosts": [
+        "congly.vn",
+        "www.congly.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Chánh án TANDTC Nguyễn Văn Quảng dự Ngày hội Đại đoàn kết tại Lâm Đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-video-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "additionalMediaStrategy": "jsonld",
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:20.156Z",
+        "trainingUrls": [
+          "https://congly.vn/thi-diem-so-hoa-ho-so-tai-lieu-ban-an-quyet-dinh-tai-6-dia-phuong-547003.html"
+        ],
+        "holdoutUrls": [
+          "https://congly.vn/cum-thi-dua-so-v-tand-tong-ket-cong-tac-thi-dua-nam-2026-543540.html",
+          "https://congly.vn/chanh-an-tandtc-nguyen-van-quang-trao-huy-hieu-80-nam-tuoi-dang-tai-tinh-lam-dong-546756.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "congly.vn",
+      "siteId": "congly.vn",
+      "registrableDomain": "congly.vn",
+      "homepage": "https://congly.vn/",
+      "allowedHosts": [
+        "congly.vn",
+        "www.congly.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Chánh án TANDTC Nguyễn Văn Quảng dự Ngày hội Đại đoàn kết tại Lâm Đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "additionalMediaStrategy": "jsonld",
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:20.156Z",
+        "trainingUrls": [
+          "https://congly.vn/radio-phap-dinh-ma-tuy-noi-dai-nhung-nam-tu-544029.html",
+          "https://congly.vn/radio-phap-dinh-ong-trum-sau-nhung-chuyen-hang-tu-than-544012.html",
+          "https://congly.vn/radio-phap-dinh-chi-vi-ly-tri-chon-cach-dau-hang-543997.html"
+        ],
+        "holdoutUrls": [
+          "https://congly.vn/radio-phap-dinh-bi-mat-trong-chiec-xe-bo-cu-va-cuoc-dao-thoat-bat-thanh-cua-ong-trum-ma-tuy-538407.html",
+          "https://congly.vn/radio-phap-dinh-cuoc-hen-luc-1-gio-sang-va-cai-gia-phai-tra-538320.html"
+        ]
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "congly.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 118,
+    "checkedArticleUrls": 119,
+    "freshArticleChecks": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 118,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 67,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1466,
+        "passed": 113,
+        "distinctHashes": 113
+      },
+      {
+        "name": "audio",
+        "discovered": 14,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://congly.vn/tang-cuong-su-lanh-dao-cua-dang-doi-voi-cong-tac-thi-hanh-an-hanh-chinh-547018.html",
+      "https://congly.vn/can-co-che-de-dong-bao-dan-toc-thieu-so-tro-thanh-chu-the-phat-trien-cong-nghiep-van-hoa-547019.html",
+      "https://congly.vn/335-nam-tu-cho-36-bi-cao-trong-vu-cat-da-tim-ngoc-547013.html",
+      "https://congly.vn/tand-khu-vuc-10-can-tho-dau-an-nam-2026-tu-nhung-ket-qua-noi-bat-547012.html",
+      "https://congly.vn/be-boi-tinh-ai-va-nhung-nghi-van-tinh-bao-xoay-quanh-ceo-nvidia-547043.html",
+      "https://congly.vn/song-lon-gay-sat-lo-xam-thuc-sau-20m-bo-bien-thuan-an-547038.html",
+      "https://congly.vn/xet-xu-nhom-cuu-can-bo-so-y-te-ha-noi-nhan-hoi-lo-nhieu-ty-dong-546993.html",
+      "https://congly.vn/tand-khu-vuc-12-ha-noi-dat-ket-qua-cao-nho-day-manh-hoa-giai-ung-dung-cong-nghe-thong-tin-546989.html",
+      "https://congly.vn/mua-lon-keo-dai-hue-tang-dieu-tiet-hai-ho-thuy-dien-546981.html",
+      "https://congly.vn/bo-chinh-tri-thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong-546956.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:48.289Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congly.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "siteName": "reatimes.vn",
+  "siteId": "reatimes.vn",
+  "registrableDomain": "reatimes.vn",
+  "homepage": "https://reatimes.vn/",
+  "allowedHosts": [
+    "reatimes.vn",
+    "www.reatimes.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn hiến pháp và pháp luật – Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:45.662Z",
+    "sampleCount": 12,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 6,
+    "sampleUrls": [
+      "https://reatimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-202261108145441539.htm",
+      "https://reatimes.vn/doanh-nghiep-noi-ngoai-tang-ket-noi-mo-rong-du-dia-dau-tu-bat-dong-san-202240819144333783.htm",
+      "https://reatimes.vn/thi-truong-bat-dong-san-ha-noi-buoc-vao-giai-doan-dieu-chinh-tren-dien-rong-202240613001805229.htm",
+      "https://reatimes.vn/nhu-cau-o-thuc-va-cho-thue-tiep-tuc-la-be-do-thanh-khoan-thi-truong-can-ho-6-thang-cuoi-nam-2026-202260526113929434.htm",
+      "https://reatimes.vn/truoc-mua-bao-cao-tai-chinh-quy-ii-2026-nhieu-ong-lon-bat-dong-san-duoc-du-bao-loi-nhuan-dot-bien-202240902015408183.htm",
+      "https://reatimes.vn/dien-dan-phat-trien-chuoi-gia-tri-bat-dong-san-viet-nam-nam-2026-vietnam-property-value-chain-awards-202261030112428748.htm",
+      "https://reatimes.vn/chuyen-doi-tu-duy-phat-trien-kien-tao-chuoi-gia-tri-bat-dong-san-la-yeu-cau-tat-yeu-de-thi-truong-phat-trien-ben-vung-202250724094537937.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://reatimes.vn/",
+    "categories": [
+      "https://reatimes.vn/chuyen-muc.htm",
+      "https://reatimes.vn/vnrea.htm",
+      "https://reatimes.vn/chinh-sach-cuoc-song.htm",
+      "https://reatimes.vn/thi-truong.htm",
+      "https://reatimes.vn/do-thi-doi-song.htm",
+      "https://reatimes.vn/dia-phuong.htm",
+      "https://reatimes.vn/ereatimes.htm",
+      "https://reatimes.vn/chuyen-trang.htm",
+      "https://reatimes.vn/rea-report.htm",
+      "https://reatimes.vn/rea-magazine.htm",
+      "https://reatimes.vn/rea-magazine/kinh-te-tu-nhan.htm",
+      "https://reatimes.vn/rea-magazine/tam-voc-viet-nam.htm",
+      "https://reatimes.vn/rea-magazine/rea-story.htm",
+      "https://reatimes.vn/rea-magazine/nhan-vat-truyen-cam-hung.htm",
+      "https://reatimes.vn/rea-magazine/thuong-hieu.htm",
+      "https://reatimes.vn/rea-magazine/gia-tri-dan-dat.htm",
+      "https://reatimes.vn/hoi-dong-chuyen-gia.htm",
+      "https://reatimes.vn/thong-tin-toa-soan.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?reatimes.vn/.*?\\d{4,}.html$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "reatimes.vn",
+    "checkedAt": "2026-11-09T03:57:23.956Z",
+    "url": "https://reatimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-202261108145441539.htm",
+    "finalUrl": "https://reatimes.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-202261108145441539.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12052,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "reatimes.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 41,
+    "freshArticleChecks": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 33,
+    "listingResponsesAtArticleUrls": 5,
+    "categoriesPlanned": 19,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 251,
+        "passed": 33,
+        "distinctHashes": 33
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://reatimes.vn/ariston-viet-nam-xu-huong-cong-trinh-xanh-dang-dinh-hinh-lai-bai-toan-nuoc-nong-202261109092314052.htm",
+      "https://reatimes.vn/quy-hoach-kien-tao-cau-truc-phat-trien-nang-tam-dong-luc-tang-truong-kinh-te-dia-phuong-202261028155237978.htm",
+      "https://reatimes.vn/khoi-thong-nguon-luc-bat-dong-san-them-dong-luc-cho-tang-truong-hai-con-so-202261006174852936.htm",
+      "https://reatimes.vn/tai-cau-truc-ha-tang-du-lich-dap-ung-nhu-cau-phat-trien-moi-202260924231658659.htm",
+      "https://reatimes.vn/obc-holdings-kien-dinh-triet-ly-phat-trien-bat-dong-san-theo-dinh-huong-gia-tri-thuc-202261105111743658.htm",
+      "https://reatimes.vn/thien-quan-center-khat-vong-kien-tao-bieu-tuong-moi-cua-tay-do-202261102162702016.htm",
+      "https://reatimes.vn/goonam-vina-khi-chat-luong-toc-do-va-trach-nhiem-tro-thanh-loi-the-canh-tranh-202261028105418935.htm",
+      "https://reatimes.vn/bai-2-khi-chuyen-doi-xanh-tai-dinh-hinh-tu-duy-phat-trien-va-cach-thuc-tao-lap-gia-tri-tren-thi-truong-bat-dong-san-202261105152130996.htm",
+      "https://reatimes.vn/kha-nang-chong-chiu-cua-do-thi-phai-duoc-tinh-den-ngay-tu-khi-lua-chon-khong-gian-phat-trien-202261107182436718.htm",
+      "https://reatimes.vn/thi-truong-dat-dau-gia-ha-noi-thang-11-co-gi-dang-chu-y-20226110612401311.htm",
+      "https://reatimes.vn/dinh-nghia-lai-gia-tri-bat-dong-san-cong-nghiep-trong-mo-hinh-phat-trien-moi-202260930191500522.htm",
+      "https://reatimes.vn/gs-ts-hoang-van-cuong-muon-phat-trien-ben-vung-doanh-nghiep-bat-dong-san-phai-di-cung-chuoi-gia-tri-202261031000959926.htm",
+      "https://reatimes.vn/doanh-nghiep-noi-ngoai-tang-ket-noi-mo-rong-du-dia-dau-tu-bat-dong-san-202240819144333783.htm",
+      "https://reatimes.vn/lai-suat-cho-san-xuat-kinh-doanh-ha-nhiet-thi-truong-bat-dong-san-don-hieu-ung-lan-toa-202251223093903016.htm",
+      "https://reatimes.vn/ca-phe-doanh-nhan-bat-dong-san-lam-dong-ky-6-quy-hoach-mo-loi-go-diem-nghen-khoi-thong-nguon-luc-202261109161127945.htm",
+      "https://reatimes.vn/dang-uy-phuong-dai-mo-trao-tang-298-huy-hieu-dang-cho-dang-vien-202261106120420983.htm",
+      "https://reatimes.vn/bai-1-thi-truong-bat-dong-san-hien-dang-dung-o-dau-trong-hanh-trinh-phuc-hoi-202260907102721465.htm",
+      "https://reatimes.vn/pgs-ts-pham-trung-luong-da-nang-can-chuyen-suc-hut-diem-den-thanh-nang-luc-dan-dat-cua-mot-cuc-tang-truong-du-lich-202260925003216217.htm",
+      "https://reatimes.vn/nien-han-su-dung-chung-cu-gioi-han-cong-trinh-khong-gioi-han-quyen-tai-san-202250903141233745.htm",
+      "https://reatimes.vn/pgs-ts-kts-do-tu-lan-cac-du-an-ha-tang-dang-chuyen-bien-ve-chat-theo-huong-lien-tuc-lien-ket-lan-toa-202260906225559029.htm",
+      "https://reatimes.vn/du-lich-viet-nam-trong-ky-nguyen-moi-tu-chinh-sach-dot-pha-den-suc-bat-tang-truong-202260917141557995.htm",
+      "https://reatimes.vn/quy-hoach-may-do-202261023151708518.htm",
+      "https://reatimes.vn/nhom-chu-de/vietnam-property-value-chain-4026.htm",
+      "https://reatimes.vn/nhom-chu-de/doanh-nghiep-doanh-nhan-tren-hanh-trinh-tien-phong-kien-quoc-4011.htm",
+      "https://reatimes.vn/nhom-chu-de/apec-2027-tu-cu-hich-ha-tang-den-bai-toan-chuyen-hoa-co-hoi-nang-tam-vi-the-viet-nam-4057.htm",
+      "https://reatimes.vn/nhom-chu-de/su-kien-noi-bat-cua-reatimes-3935.htm",
+      "https://reatimes.vn/nhom-chu-de/nong-nghiep-nong-dan-nong-thon-trong-mo-hinh-phat-trien-moi-cua-viet-nam-4048.htm",
+      "https://reatimes.vn/chuyen-gia/pgs-ts-nguyen-duc-thang-1371.htm",
+      "https://reatimes.vn/an-pham-dac-san/bao-cao-thi-truong-bat-dong-san-do-thi-tinh-vinh-long-2026-2030-but-pha-trong-khong-gian-phat-trien-moi-518.htm",
+      "https://reatimes.vn/an-pham-dac-san/bao-cao-thi-truong-bat-dong-san-tinh-tay-ninh-sau-sap-nhap-suc-manh-cong-huong-va-co-hoi-but-pha-251.htm",
+      "https://reatimes.vn/chuyen-gia/pgsts-pham-trung-luong-946.htm",
+      "https://reatimes.vn/chuyen-gia/gs-tskh-dang-hung-vo-1138.htm",
+      "https://reatimes.vn/chinh-sach-cuoc-song/nghien-cuu-phan-bien.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:39.563Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/reatimes.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "reatimes.vn",
+      "siteId": "reatimes.vn",
+      "registrableDomain": "reatimes.vn",
+      "homepage": "https://reatimes.vn/",
+      "allowedHosts": [
+        "reatimes.vn",
+        "www.reatimes.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thượng tôn hiến pháp và pháp luật – Động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:33.130Z",
+        "trainingUrls": [
+          "https://reatimes.vn/quy-hoach-kien-tao-cau-truc-phat-trien-nang-tam-dong-luc-tang-truong-kinh-te-dia-phuong-202261028155237978.htm",
+          "https://reatimes.vn/bai-2-khi-chuyen-doi-xanh-tai-dinh-hinh-tu-duy-phat-trien-va-cach-thuc-tao-lap-gia-tri-tren-thi-truong-bat-dong-san-202261105152130996.htm",
+          "https://reatimes.vn/obc-holdings-kien-dinh-triet-ly-phat-trien-bat-dong-san-theo-dinh-huong-gia-tri-thuc-202261105111743658.htm",
+          "https://reatimes.vn/thien-quan-center-khat-vong-kien-tao-bieu-tuong-moi-cua-tay-do-202261102162702016.htm",
+          "https://reatimes.vn/dinh-nghia-lai-gia-tri-bat-dong-san-cong-nghiep-trong-mo-hinh-phat-trien-moi-202260930191500522.htm",
+          "https://reatimes.vn/ariston-viet-nam-xu-huong-cong-trinh-xanh-dang-dinh-hinh-lai-bai-toan-nuoc-nong-202261109092314052.htm",
+          "https://reatimes.vn/cuoc-dien-thoai-la-ba-thap-ky-tich-luy-va-nhung-dong-chay-hoa-vao-dai-duong-202260930164007722.htm",
+          "https://reatimes.vn/dau-an-khat-vong-cong-hien-va-tu-duy-hoi-nhap-chu-dong-cua-anh-hung-lao-dong-nguyen-thi-nga-202260912151658347.htm",
+          "https://reatimes.vn/khoi-thong-nguon-luc-bat-dong-san-them-dong-luc-cho-tang-truong-hai-con-so-202261006174852936.htm",
+          "https://reatimes.vn/tai-cau-truc-ha-tang-du-lich-dap-ung-nhu-cau-phat-trien-moi-202260924231658659.htm"
+        ],
+        "holdoutUrls": [
+          "https://reatimes.vn/goonam-vina-khi-chat-luong-toc-do-va-trach-nhiem-tro-thanh-loi-the-canh-tranh-202261028105418935.htm",
+          "https://reatimes.vn/kha-nang-chong-chiu-cua-do-thi-phai-duoc-tinh-den-ngay-tu-khi-lua-chon-khong-gian-phat-trien-202261107182436718.htm"
+        ]
+      }
+    }
+  ]
+}

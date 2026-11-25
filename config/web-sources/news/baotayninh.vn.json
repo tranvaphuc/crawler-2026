@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baotayninh.vn",
+  "siteId": "baotayninh.vn",
+  "registrableDomain": "baotayninh.vn",
+  "homepage": "https://baotayninh.vn/",
+  "allowedHosts": [
+    "baotayninh.vn",
+    "www.baotayninh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baotayninh.vn/",
+    "categories": [
+      "https://baotayninh.vn/bao-in/bao-ngay",
+      "https://baotayninh.vn/bao-in/bao-cuoi-thang",
+      "https://baotayninh.vn/bao-in/bao-xuan",
+      "https://baotayninh.vn/truyen-hinh",
+      "https://baotayninh.vn/phat-thanh",
+      "https://baotayninh.vn/thoi-su-chinh-tri",
+      "https://baotayninh.vn/thoi-su-chinh-tri/trong-tinh",
+      "https://baotayninh.vn/thoi-su-chinh-tri/trong-nuoc",
+      "https://baotayninh.vn/thoi-su-chinh-tri/he-thong-chinh-tri-nhan-su-moi",
+      "https://baotayninh.vn/thoi-su-chinh-tri/van-de-su-kien"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Giải pháp pháp lý nâng cao hiệu quả phòng, chống buôn lậu thuốc lá",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:50.016Z",
+    "frozenAt": "2026-11-16T01:57:47.734Z",
+    "trainingUrl": "https://baotayninh.vn/tim-giai-phap-phap-ly-nang-cao-hieu-qua-phong-chong-buon-lau-thuoc-la-161341.html",
+    "independentHoldouts": [
+      "https://baotayninh.vn/lanh-dao-xa-an-ninh-tham-chuc-mung-doanh-nghiep-nhan-ngay-doanh-nhan-viet-nam-158321.html",
+      "https://baotayninh.vn/ung-dung-cong-nghe-cao-nang-gia-tri-nong-san-351902.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baotayninh.vn/tim-giai-phap-phap-ly-nang-cao-hieu-qua-phong-chong-buon-lau-thuoc-la-161341.html",
+      "https://baotayninh.vn/lanh-dao-xa-an-ninh-tham-chuc-mung-doanh-nghiep-nhan-ngay-doanh-nhan-viet-nam-158321.html",
+      "https://baotayninh.vn/ung-dung-cong-nghe-cao-nang-gia-tri-nong-san-351902.html",
+      "https://baotayninh.vn/khao-sat-thuc-te-va-xuc-tien-dau-tu-tai-khu-cong-nghiep-thanh-thanh-cong-157559.html",
+      "https://baotayninh.vn/tiep-suc-doanh-nghiep-but-pha-bang-khoa-hoc-cong-nghe-350812.html",
+      "https://baotayninh.vn/ngan-hang-shb-va-truong-dai-hoc-kinh-te-cong-nghiep-long-an-ky-ket-hop-tac-toan-dien-352230.html",
+      "https://baotayninh.vn/bi-thu-tinh-uy-nguyen-van-quyet-du-ngay-hoi-dai-doan-ket-toan-dan-toc-tai-phuong-long-hoa-353384.html",
+      "https://baotayninh.vn/tay-ninh-huong-den-mo-hinh-do-thi-thong-minh-dong-bo-hien-dai-353330.html",
+      "https://baotayninh.vn/bi-thu-tinh-uy-nguyen-van-quyet-tay-ninh-gan-phat-trien-kinh-te-xa-hoi-voi-bao-ve-chu-quyen-bien-gioi-353256.html",
+      "https://baotayninh.vn/chu-tich-ubnd-tinh-tay-ninh-trang-bang-phat-huy-hon-nua-khoi-dai-doan-ket-toan-dan-toc-353257.html",
+      "https://baotayninh.vn/chu-tich-hoi-dong-nhan-dan-tinh-nguyen-hong-thanh-du-ngay-hoi-dai-doan-ket-toan-dan-toc-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam-24-11-tai-xa-duong-minh-chau-353457.html",
+      "https://baotayninh.vn/siet-chat-thu-mua-cu-mi-ngan-tinh-trang-gian-lan-trong-luong-353458.html",
+      "https://baotayninh.vn/chu-tich-hdnd-tinh-nguyen-hong-thanh-tham-dong-vien-luc-luong-lam-nhiem-vu-bao-ve-bien-gioi-xa-hoa-hoi-353423.html",
+      "https://baotayninh.vn/xa-phuoc-thanh-to-chuc-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam-nam-2026-353400.html",
+      "https://baotayninh.vn/lanh-dao-tinh-tay-ninh-tham-hoi-dong-vien-gia-dinh-cac-nan-nhan-tu-vong-do-tai-nan-giao-thong-353396.html",
+      "https://baotayninh.vn/tay-ninh-dat-gan-90-chi-tieu-tim-kiem-quy-tap-hai-cot-liet-si-353394.html",
+      "https://baotayninh.vn/pho-bi-thu-tinh-uy-nguyen-thanh-hai-ngay-hoi-dai-doan-ket-toan-dan-toc-tai-xa-my-loc-353382.html",
+      "https://baotayninh.vn/cuoc-doan-tu-cua-hai-liet-si-la-anh-em-ruot-sau-hon-nua-the-ky-353387.html",
+      "https://baotayninh.vn/truong-dai-hoc-kinh-te-cong-nghiep-long-an-trao-bang-tot-nghiep-dot-2-nam-2026-353379.html",
+      "https://baotayninh.vn/bi-thu-tinh-uy-tay-ninh-nguyen-van-quyet-tham-chuc-mung-hoi-thanh-cao-dai-toa-thanh-tay-ninh-353381.html",
+      "https://baotayninh.vn/uy-ban-trung-uong-mat-tran-to-quoc-viet-nam-tham-chuc-mung-ky-niem-102-nam-ngay-khai-dao-cao-dai-353475.html",
+      "https://baotayninh.vn/cong-an-xac-minh-vu-xo-xat-giua-2-nguoi-tham-gia-giao-thong-353445.html",
+      "https://baotayninh.vn/xu-phat-truong-hop-dang-tai-binh-luan-thong-tin-sai-su-that-tren-mang-xa-hoi-353433.html",
+      "https://baotayninh.vn/an-ninh-bat-giu-vu-van-chuyen-1-100-bao-thuoc-la-ngoai-nhap-lau-353389.html",
+      "https://baotayninh.vn/nhieu-dia-phuong-o-tay-ninh-but-pha-trong-thu-ngan-sach-nam-2026-353462.html",
+      "https://baotayninh.vn/su-doan-5-va-su-doan-330-trao-doi-kinh-nghiem-xay-dung-don-vi-vung-manh-toan-dien-mau-muc-tieu-bieu-353459.html",
+      "https://baotayninh.vn/tay-ninh-nang-cao-hieu-qua-cong-tac-thong-tin-doi-ngoai-khu-vuc-bien-gioi-353456.html",
+      "https://baotayninh.vn/xa-hiep-hoa-soi-noi-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam-nam-2026-353450.html",
+      "https://baotayninh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-de-xuat-thuc-day-hop-tac-khoa-hoc-cong-nghe-trong-khong-gian-phap-n-353470.html",
+      "https://baotayninh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-lanh-dao-cac-nuoc-du-hoi-nghi-cap-cao-phap-ngu-lan-thu-20-353471.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

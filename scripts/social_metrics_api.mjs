@@ -1,0 +1,20 @@
+import 'dotenv/config';
+import {createApiAuthentication} from '../src/services/apiAuthentication.js';
+import {createSocialApiRuntime} from '../src/services/socialApiRuntime.js';
+import {createSocialInfoRouter} from '../src/routes/socialInfo.js';
+import 'dotenv/config';
+import express from 'express';
+import { createSocialContentRouter } from '../src/routes/socialContent.js';
+import { createSocialHttpContentReader, createSocialHttpMetricsReader } from '../src/services/socialHttpReaders.js';
+import {createConfiguredProxyProvider} from '../src/services/socialProxyConfig.js';
+import { createSocialMetricsRouter } from '../src/routes/socialMetrics.js';
+
+const runtime=createSocialApiRuntime();
+const app = express(); app.disable('x-powered-by');
+app.use(createApiAuthentication());
+app.use(createSocialMetricsRouter({ read:runtime.readMetrics, prepareInput:runtime.prepareInput }));
+app.use(createSocialContentRouter({ read:runtime.readContent, prepareInput:runtime.prepareInput }));
+app.use(createSocialInfoRouter({ readers:runtime.info, lookup:runtime.lookup, prepareInput:runtime.prepareInput }));
+const host = process.env.SOCIAL_METRICS_HOST || '127.0.0.1', port = Number(process.env.SOCIAL_METRICS_PORT || 3805);
+const server = app.listen(port, host, () => console.log(`Anonymous HTTP/proxy social API: http://${host}:${server.address().port}/api/social/post/metrics`));
+server.requestTimeout = 45000; server.headersTimeout = 10000;

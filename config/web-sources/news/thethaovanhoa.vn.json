@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thethaovanhoa.vn",
+  "siteId": "thethaovanhoa.vn",
+  "registrableDomain": "thethaovanhoa.vn",
+  "homepage": "https://thethaovanhoa.vn/",
+  "allowedHosts": [
+    "thethaovanhoa.vn",
+    "www.thethaovanhoa.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "T&#7893;ng Bí thư, Ch&#7911; t&#7883;ch nư&#7899;c Tô Lâm g&#7863;p g&#7905; đ&#7841;i di&#7879;n chuyên gia, trí th&#7913;c Vi&#7879;t Nam t&#7841;i Nh&#7853;t B&#7843;n",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".sp-body-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Văn hóa thư&#7907;ng tôn pháp lu&#7853;t",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "thethaovanhoa.vn",
+      "siteId": "thethaovanhoa.vn",
+      "registrableDomain": "thethaovanhoa.vn",
+      "homepage": "https://thethaovanhoa.vn/",
+      "allowedHosts": [
+        "thethaovanhoa.vn",
+        "www.thethaovanhoa.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "T&#7893;ng Bí thư, Ch&#7911; t&#7883;ch nư&#7899;c Tô Lâm g&#7863;p g&#7905; đ&#7841;i di&#7879;n chuyên gia, trí th&#7913;c Vi&#7879;t Nam t&#7841;i Nh&#7853;t B&#7843;n",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-cmain",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T16:56:08.255Z",
+        "trainingUrls": [
+          "https://thethaovanhoa.vn/chan-sut-cua-hagl-ruc-sang-giup-u23-viet-nam-hoa-u23-qatar-va-vo-dich-gia-lai-vtv-cup-2026-20261113145637615.htm"
+        ],
+        "holdoutUrls": [
+          "https://thethaovanhoa.vn/u23-viet-nam-can-them-nhung-nhan-to-moi-de-vuon-tam-20261114213322377.htm",
+          "https://thethaovanhoa.vn/ong-khiev-sameth-lam-chu-tich-lien-doan-bong-da-dong-nam-a-nhiem-ky-thu-3-lien-tiep-20261115195038252.htm"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:36.241Z",
+    "sampleCount": 8,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 5,
+    "sampleUrls": [
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-20261108203451782.htm",
+      "https://thethaovanhoa.vn/bai-viet-cua-tong-bi-thu-chu-tich-nuoc-to-lam-thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-20261108141203532.htm",
+      "https://thethaovanhoa.vn/van-hoa-thuong-ton-phap-luat-20261108113305308.htm",
+      "https://thethaovanhoa.vn/mang-coi-nguon-noi-tuong-lai-20261108192013601.htm",
+      "https://thethaovanhoa.vn/sang-tac-ve-de-tai-cach-mang-trong-ky-nguyen-vuon-minh-cua-dan-toc-20261028215328302.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thethaovanhoa.vn/",
+    "categories": [
+      "https://thethaovanhoa.vn/tin-tuc-24h.htm",
+      "https://thethaovanhoa.vn/tin-tuc-24h/tin-tuc-trong-nuoc.htm",
+      "https://thethaovanhoa.vn/tin-tuc-24h/tin-tuc-the-gioi.htm",
+      "https://thethaovanhoa.vn/tin-tuc-24h/binh-luan.htm",
+      "https://thethaovanhoa.vn/the-thao.htm",
+      "https://thethaovanhoa.vn/the-thao/bong-chuyen.htm",
+      "https://thethaovanhoa.vn/the-thao/pickleball.htm",
+      "https://thethaovanhoa.vn/the-thao/the-thao-toc-do.htm",
+      "https://thethaovanhoa.vn/the-thao/the-thao-tennis.htm",
+      "https://thethaovanhoa.vn/the-thao/billiards-snooker.htm",
+      "https://thethaovanhoa.vn/the-thao/the-thao-golf.htm",
+      "https://thethaovanhoa.vn/bong-da-viet-nam.htm",
+      "https://thethaovanhoa.vn/bong-da-viet-nam/v-league.htm",
+      "https://thethaovanhoa.vn/bong-da-viet-nam/doi-tuyen-viet-nam.htm",
+      "https://thethaovanhoa.vn/bong-da-quoc-te.htm",
+      "https://thethaovanhoa.vn/bong-da-quoc-te/bong-da-anh.htm",
+      "https://thethaovanhoa.vn/bong-da-quoc-te/bong-da-tay-ban-nha.htm",
+      "https://thethaovanhoa.vn/bong-da-quoc-te/italy.htm",
+      "https://thethaovanhoa.vn/bong-da-quoc-te/cac-cup-chau-au.htm",
+      "https://thethaovanhoa.vn/van-hoa.htm",
+      "https://thethaovanhoa.vn/van-hoa/doc-xem.htm",
+      "https://thethaovanhoa.vn/van-hoa/dien-dan-van-hoa.htm",
+      "https://thethaovanhoa.vn/cong-nghiep-van-hoa.htm",
+      "https://thethaovanhoa.vn/giai-tri.htm",
+      "https://thethaovanhoa.vn/giai-tri/phim.htm",
+      "https://thethaovanhoa.vn/giai-tri/am-nhac.htm",
+      "https://thethaovanhoa.vn/giai-tri/kbiz.htm",
+      "https://thethaovanhoa.vn/the-gioi-sao.htm",
+      "https://thethaovanhoa.vn/ban-can-biet.htm",
+      "https://thethaovanhoa.vn/du-doan-bong-da.htm",
+      "https://thethaovanhoa.vn/truc-tiep-bong-da.htm",
+      "https://thethaovanhoa.vn/du-doan-bong-da/lich-thi-dau.htm",
+      "https://thethaovanhoa.vn/du-doan-bong-da/ket-qua.htm",
+      "https://thethaovanhoa.vn/du-doan-bong-da/bang-xep-hang.htm",
+      "https://thethaovanhoa.vn/buixuanphai/home.htm",
+      "https://thethaovanhoa.vn/van-hoa-song-khoe.htm",
+      "https://thethaovanhoa.vn/van-hoa-song-khoe/nhip-dap-suc-khoe.htm",
+      "https://thethaovanhoa.vn/van-hoa-song-khoe/x-quang-tin-don.htm",
+      "https://thethaovanhoa.vn/van-hoa-song-khoe/viet-lai-uoc-mo.htm",
+      "https://thethaovanhoa.vn/hightech.htm",
+      "https://thethaovanhoa.vn/tieu-diem-spotlight.htm",
+      "https://thethaovanhoa.vn/infographic.htm",
+      "https://thethaovanhoa.vn/e-magazine.htm",
+      "https://thethaovanhoa.vn/anh.htm",
+      "https://thethaovanhoa.vn/e-paper.htm",
+      "https://thethaovanhoa.vn/tra-cuu-phuong-xa.htm",
+      "https://thethaovanhoa.vn/tien-ich/thoi-tiet.htm",
+      "https://thethaovanhoa.vn/lich-thi-dau-bong-da.htm?curl=lich-thi-dau-bong-da&keywords=Vleague",
+      "https://thethaovanhoa.vn/ket-qua-bong-da.htm?curl=ket-qua-bong-da&keywords=Vleague",
+      "https://thethaovanhoa.vn/bang-xep-hang-bong-da.htm?curl=bang-xep-hang-bong-da&keywords=Vleague",
+      "https://thethaovanhoa.vn/cong-nghiep-van-hoa/noi-luc-van-hoa.htm",
+      "https://thethaovanhoa.vn/cong-nghiep-van-hoa/dau-an-nhan-van.htm",
+      "https://thethaovanhoa.vn/cong-nghiep-van-hoa/kien-tao-gia-tri-viet.htm",
+      "https://thethaovanhoa.vn/cong-nghiep-van-hoa/van-hoa-doanh-nghiep.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?thethaovanhoa.vn/.*?(\\d{6,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thethaovanhoa.vn",
+    "checkedAt": "2026-11-09T03:57:31.105Z",
+    "url": "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-20261108203451782.htm",
+    "finalUrl": "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-20261108203451782.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5827,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thethaovanhoa.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 60,
+    "checkedArticleUrls": 68,
+    "freshArticleChecks": 13,
+    "parserIssues": 3,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 60,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 54,
+    "categoriesFreshChecked": 7,
+    "categoriesUnconfirmed": 6,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 743,
+        "passed": 60,
+        "distinctHashes": 60
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thethaovanhoa.vn/mai-dinh-lang-bien-cua-nguyen-cuong-tu-hinh-tuong-kien-truc-den-bieu-tuong-van-hoa-viet-nam-20261110054916045.htm",
+      "https://thethaovanhoa.vn/60-phut-danh-cho-nghe-thuat-lieu-phap-cho-suc-khoe-va-hanh-phuc-2026111006024144.htm",
+      "https://thethaovanhoa.vn/khoi-thong-nguon-luc-van-hoa-sang-tao-trong-ky-nguyen-so-20261110052315588.htm",
+      "https://thethaovanhoa.vn/tung-duong-lam-moi-mau-sac-am-nhac-truoc-live-concert-bay-ve-phia-mat-troi-20261110065931331.htm",
+      "https://thethaovanhoa.vn/jisoo-blackpink-buoc-vao-hollywood-mo-rong-su-nghiep-toan-cau-2026111009253988.htm",
+      "https://thethaovanhoa.vn/dua-tieng-anh-thanh-ngon-ngu-thu-hai-khong-dung-ket-qua-trien-khai-de-xep-loai-thi-dua-truong-hoc-20261110113024976.htm",
+      "https://thethaovanhoa.vn/mang-coi-nguon-noi-tuong-lai-20261108192013601.htm",
+      "https://thethaovanhoa.vn/van-hoa-thuong-ton-phap-luat-20261108113305308.htm",
+      "https://thethaovanhoa.vn/sang-tac-ve-de-tai-cach-mang-trong-ky-nguyen-vuon-minh-cua-dan-toc-20261028215328302.htm",
+      "https://thethaovanhoa.vn/truc-tiep-bong-da-u23-qatar-vs-u23-singapore-15h00-hom-nay-giai-gia-lai-vtv-cup-2026-20261109092801946.htm",
+      "https://thethaovanhoa.vn/ky-hop-thu-2-quoc-hoi-khoa-xvi-nang-cao-thiet-che-van-hoa-the-thao-tai-co-so-va-hinh-thanh-thoi-quen-van-dong-o-tre-20261110134115959.htm",
+      "https://thethaovanhoa.vn/thanh-chung-lam-doi-truong-doi-tuyen-viet-nam-20261110143103832.htm",
+      "https://thethaovanhoa.vn/hlv-carrick-nguy-co-bi-mu-sa-thai-trong-thang-nay-lo-dien-ung-vien-so-1-thay-the-20261110144347463.htm",
+      "https://thethaovanhoa.vn/bong-ban-viet-nam-doi-mat-thu-thach-lon-truoc-thai-lan-tai-giai-vo-dich-dong-nam-a-2026-20261110113558802.htm",
+      "https://thethaovanhoa.vn/hai-chi-em-lap-cu-dup-hcv-tai-dai-hoi-the-thao-toan-quoc-2026-20261110145142876.htm",
+      "https://thethaovanhoa.vn/thanh-nha-ho-trong-dong-chay-so-bai-1-khi-cong-nghe-mo-loi-vao-di-san-20261110124429918.htm",
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-ban-chap-hanh-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-20261110134004626.htm",
+      "https://thethaovanhoa.vn/950-nam-quoc-tu-giam-ton-vinh-8-vi-danh-nho-lam-rang-danh-nghe-viet-20261110030804774.htm",
+      "https://thethaovanhoa.vn/le-don-tong-bi-thu-chu-tich-nuoc-to-lam-tham-chinh-thuc-nhat-ban-2026110919455703.htm",
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-phat-bieu-chinh-sach-tai-quoc-hoi-nhat-ban-20261109162320456.htm",
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-du-dien-dan-cong-tu-ve-hop-tac-kinh-te-va-khcn-viet-nam-nhat-ban-20261109111414205.htm",
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-20261108203451782.htm",
+      "https://thethaovanhoa.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cung-phu-nhan-bat-dau-tham-chinh-thuc-nhat-ban-20261108143059042.htm",
+      "https://thethaovanhoa.vn/cuc-tdtt-xin-y-kien-ve-viec-ong-tran-quoc-tuan-tai-tranh-cu-vff-20261110105333875.htm",
+      "https://thethaovanhoa.vn/fifa-days-thang-11-khoang-nghi-can-thiet-cho-loat-tru-cot-doi-tuyen-viet-nam-20261109160820812.htm",
+      "https://thethaovanhoa.vn/co-hoi-vang-de-tan-binh-ghi-diem-voi-hlv-kim-sang-sik-20261110083547066.htm",
+      "https://thethaovanhoa.vn/doi-tuyen-viet-nam-va-nhung-lan-dau-tien-2026110920355831.htm",
+      "https://thethaovanhoa.vn/tin-nong-bong-da-viet-hom-nay-10-11-bong-da-viet-nam-va-a-rap-xe-ut-hop-tac-u23-viet-nam-tap-bai-dac-biet-dau-u23-thai-lan-2026111005002036.htm",
+      "https://thethaovanhoa.vn/dai-hoi-the-thao-toan-quoc-2026-du-kien-lay-160-mau-kiem-tra-doping-20261110105001239.htm",
+      "https://thethaovanhoa.vn/the-thao-viet-nam-khep-lai-hanh-trinh-olympic-tre-dakar-2026-voi-hai-tam-hcb-20261110111431309.htm",
+      "https://thethaovanhoa.vn/cong-tac-chuan-bi-cho-dai-hoi-the-thao-toan-quoc-2026-san-sang-cho-ngay-hoi-lon-20261110102312622.htm",
+      "https://thethaovanhoa.vn/nu-dai-kien-tuong-hoang-thi-bao-tram-cua-viet-nam-vo-dich-co-chop-dong-nam-a-2026-20261110092909311.htm",
+      "https://thethaovanhoa.vn/mu-chi-co-8-diem-sau-10-vong-ngoai-hang-anh-nguy-co-xuong-hang-ro-nhu-ban-ngay-20261109195515959.htm",
+      "https://thethaovanhoa.vn/vong-11-serie-a-truoc-inter-como-van-chi-la-ga-2026110920024618.htm",
+      "https://thethaovanhoa.vn/vi-sao-harry-kane-gianh-qua-bong-vang-nhung-lai-khong-lot-vao-doi-hinh-tieu-bieu-fifpro-20261110083853776.htm",
+      "https://thethaovanhoa.vn/dalot-la-bieu-tuong-cho-su-kem-coi-cua-mu-20261109195346377.htm",
+      "https://thethaovanhoa.vn/barcelona-duoi-bong-cua-fermin-20261109200122505.htm",
+      "https://thethaovanhoa.vn/hoi-cho-sac-thu-quang-ninh-2026-200-gian-hang-ocop-dac-san-vung-mien-ket-noi-voi-du-lich-20261110111103467.htm",
+      "https://thethaovanhoa.vn/mua-lon-gay-sat-lo-quoc-lo-12c-nhieu-tuyen-duong-o-ha-tinh-bi-chia-cat-20261110093008875.htm",
+      "https://thethaovanhoa.vn/tu-bo-tu-duy-do-loi-de-thich-ung-voi-el-nio-2026111008220204.htm",
+      "https://thethaovanhoa.vn/mua-lon-gay-sat-lo-ngap-cuc-bo-mot-so-tuyen-duong-o-hue-20261110080404659.htm",
+      "https://thethaovanhoa.vn/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-20261110092841935.htm",
+      "https://thethaovanhoa.vn/festival-bao-ton-va-phat-trien-lang-nghe-toan-cau-lan-thu-nhat-hoi-tu-tinh-hoa-lan-toa-gia-tri-20261110070410547.htm",
+      "https://thethaovanhoa.vn/dau-an-tu-nhung-phien-livestream-di-san-ky-1-khi-hoc-sinh-truc-tiep-ke-chuyen-dinh-lang-20261110053955069.htm",
+      "https://thethaovanhoa.vn/quoc-hoi-thao-luan-ve-du-an-luat-phat-trien-cong-nghiep-van-hoa-20261110094604686.htm",
+      "https://thethaovanhoa.vn/thuc-day-kinh-te-the-thao-so-tu-cac-giai-chay-dia-hinh-20261106125213783.htm",
+      "https://thethaovanhoa.vn/le-hoi-thiet-ke-sang-tao-ha-noi-2026-kien-tao-he-sinh-thai-sang-tao-tu-di-san-va-cong-dong-20261106175905516.htm",
+      "https://thethaovanhoa.vn/ban-quyen-dong-luc-phat-trien-cong-nghiep-van-hoa-20261106053408992.htm",
+      "https://thethaovanhoa.vn/ban-do-so-van-hoa-viet-nam-cmap-tu-van-hanh-cong-nghe-den-chien-luoc-du-lieu-song-20261104055314663.htm",
+      "https://thethaovanhoa.vn/ngay-van-hoa-viet-nam-2026-ton-vinh-nhung-gia-tri-tieu-bieu-tu-khong-gian-di-san-co-do-hue-20261109162110466.htm",
+      "https://thethaovanhoa.vn/go-vuong-the-che-hoan-thien-chinh-sach-tao-luc-day-moi-cho-du-lich-20261109055246478.htm",
+      "https://thethaovanhoa.vn/phat-trien-khu-kinh-te-dac-biet-phu-quoc-tro-thanh-mot-cuc-tang-truong-moi-20261109145630693.htm",
+      "https://thethaovanhoa.vn/chien-luoc-mo-rong-thuong-hieu-du-lich-vong-tron-vang-2026110906503002.htm",
+      "https://thethaovanhoa.vn/pho-co-mo-hoi-chao-mung-ngay-van-hoa-viet-nam-20261109054235935.htm",
+      "https://thethaovanhoa.vn/britney-spears-25-nam-nhin-lai-album-danh-dau-buoc-truong-thanh-cua-bieu-tuong-nhac-pop-20261109093834255.htm",
+      "https://thethaovanhoa.vn/chuong-trinh-nghe-thuat-tinh-hoa-van-hoa-viet-nam-hoi-tu-ba-mien-cua-bao-the-thao-va-van-hoa-len-ban-do-so-cmap-2026110915421812.htm",
+      "https://thethaovanhoa.vn/ngoi-sao-bong-chuyen-viet-nam-song-trong-niem-hanh-phuc-ngap-tran-khi-lien-tiep-trai-qua-nhung-khoanh-khac-dang-nho-20261109163103695.htm",
+      "https://thethaovanhoa.vn/xa-thu-han-quoc-bi-gach-ten-khoi-giai-vo-dich-ban-sung-the-gioi-vi-sai-sot-hanh-chinh-20261109165340776.htm",
+      "https://thethaovanhoa.vn/nha-vo-dich-olympic-nguy-kich-sau-vu-hoa-hoan-tai-can-ho-20261110150908379.htm",
+      "https://thethaovanhoa.vn/thu-mon-tung-du-world-cup-va-lai-taxi-kiem-song-lam-tro-ly-o-u19-viet-nam-20261109162444412.htm",
+      "https://thethaovanhoa.vn/cau-thu-ngoai-hang-anh-bi-6-xe-canh-sat-truy-duoi-vi-mang-cung-ten-di-dao-2026110616404264.htm",
+      "https://thethaovanhoa.vn/mua-lon-va-dong-loc-gay-nhieu-thiet-hai-tai-cac-dia-phuong-20261109211547573.htm",
+      "https://thethaovanhoa.vn/mua-lon-gay-ngap-ung-tai-nhieu-khu-dan-cu-xa-nong-cong-thanh-hoa-chu-dong-4-tai-cho-ho-tro-nguoi-dan-20261109150326153.htm",
+      "https://thethaovanhoa.vn/du-bao-thoi-tiet-ngay-10-11-khong-khi-lanh-tang-cuong-bac-bo-ret-14-do-c-trung-bo-mua-rat-to-20261110055433543.htm",
+      "https://thethaovanhoa.vn/hinh-anh-ha-noi-chuyen-ret-20261109085621824.htm",
+      "https://thethaovanhoa.vn/giao-thong-ha-noi-un-u-trong-con-mua-sang-dau-tuan-20261109085114275.htm",
+      "https://thethaovanhoa.vn/bao-luc-hoc-duong-nhung-vet-thuong-khong-nhin-thay-20261110145531761.htm",
+      "https://thethaovanhoa.vn/tinh-tao-xem-truc-tiep-ca-phau-thuat-cua-chinh-minh-trai-nghiem-dac-biet-cua-nam-benh-nhan-iceland-tai-benh-vien-viet-duc-20261110114509972.htm",
+      "https://thethaovanhoa.vn/dot-quy-khong-cho-tuoi-kiem-soat-huyet-ap-tu-hom-nay-20261107194938001.htm",
+      "https://thethaovanhoa.vn/nghi-quyet-57-nq-tw-benh-vien-da-lieu-trung-uong-so-hoa-tung-buoc-kham-20261107005839182.htm",
+      "https://thethaovanhoa.vn/hoan-thien-luat-an-toan-thuc-pham-sua-doi-lang-nghe-doi-tac-quoc-te-huong-toi-dong-thuan-cao-nhat-20261107100643501.htm",
+      "https://thethaovanhoa.vn/hoc-tieng-nhat-cung-nhung-nhan-vat-anime-va-manga-dinh-dam-20261110100059786.htm",
+      "https://thethaovanhoa.vn/lan-dau-tien-mo-dang-ky-tu-do-ten-mien-cap-hai-vn-co-2-ky-tu-20261109111543708.htm",
+      "https://thethaovanhoa.vn/cac-mau-dien-thoai-an-toan-voi-tre-em-20261108071021854.htm",
+      "https://thethaovanhoa.vn/toyota-thoa-man-dam-me-chinh-phuc-dia-hinh-cua-khach-hang-tai-pvoil-voc-2026-20261106151808952.htm",
+      "https://thethaovanhoa.vn/google-doi-mat-vu-kien-lien-quan-den-tac-dong-tieu-cuc-cua-ai-20261106074613121.htm",
+      "https://thethaovanhoa.vn/bao-giay/so-236-7983-thu-ba-10-11-2026-206.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3
+    },
+    "checkedAt": "2026-11-10T09:17:23.206Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thethaovanhoa.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:00:35.108Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://thethaovanhoa.vn/u23-viet-nam-can-them-nhung-nhan-to-moi-de-vuon-tam-20261114213322377.htm",
+      "https://thethaovanhoa.vn/ong-khiev-sameth-lam-chu-tich-lien-doan-bong-da-dong-nam-a-nhiem-ky-thu-3-lien-tiep-20261115195038252.htm"
+    ],
+    "improvedUrls": [
+      "https://thethaovanhoa.vn/chan-sut-cua-hagl-ruc-sang-giup-u23-viet-nam-hoa-u23-qatar-va-vo-dich-gia-lai-vtv-cup-2026-20261113145637615.htm"
+    ],
+    "regressions": 0
+  }
+}

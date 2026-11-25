@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thoibaotaichinhvietnam.vn",
+  "siteId": "thoibaotaichinhvietnam.vn",
+  "registrableDomain": "thoibaotaichinhvietnam.vn",
+  "homepage": "https://thoibaotaichinhvietnam.vn/",
+  "allowedHosts": [
+    "thoibaotaichinhvietnam.vn",
+    "www.thoibaotaichinhvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1.article-detail-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-detail-main",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1.article-detail-title"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-detail-main",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1.article-detail-title"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "thoibaotaichinhvietnam.vn",
+      "siteId": "thoibaotaichinhvietnam.vn",
+      "registrableDomain": "thoibaotaichinhvietnam.vn",
+      "homepage": "https://thoibaotaichinhvietnam.vn/",
+      "allowedHosts": [
+        "thoibaotaichinhvietnam.vn",
+        "www.thoibaotaichinhvietnam.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "strategy": "selector",
+        "selector": "h1.article-detail-title"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".__MASTERCMS_CONTENT",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:52.739Z",
+        "trainingUrls": [
+          "https://thoibaotaichinhvietnam.vn/30-nam-nganh-chung-khoan-viet-nam-vi-the-moi-doi-hoi-mot-the-he-nha-dau-tu-truong-thanh-204562.html",
+          "https://thoibaotaichinhvietnam.vn/81-nam-hai-quan-viet-nam-xay-dung-va-phat-trien-202777-202777.html"
+        ],
+        "holdoutUrls": [
+          "https://thoibaotaichinhvietnam.vn/nganh-tai-chinh-81-nam-xay-dung-va-truong-thanh-yeu-cau-cao-hon-su-menh-lon-hon-203005.html",
+          "https://thoibaotaichinhvietnam.vn/20-nam-vsdc-khang-dinh-vi-the-san-sang-don-van-hoi-moi-cua-thi-truong-chung-khoan-viet-nam-200469.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:37.993Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thoibaotaichinhvietnam.vn/cong-bo-khung-hanh-dong-thuc-day-van-hoa-kinh-doanh-viet-nam-den-2035-206593.html",
+      "https://thoibaotaichinhvietnam.vn/giai-ngan-cac-du-an-phuc-vu-apec-2027-co-ban-bam-sat-tien-do-206592.html",
+      "https://thoibaotaichinhvietnam.vn/chung-khoan-tuan-moi-9-13-11-bat-len-tu-vung-1-700-diem-cho-dong-tien-xac-nhan-206591.html",
+      "https://thoibaotaichinhvietnam.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-206590.html",
+      "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cung-phu-nhan-len-duong-tham-chinh-thuc-nhat-ban-206589.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-nhung-diem-sang-kinh-te-viet-nam-10-thang-nam-2026-qua-cac-con-so-206583.html",
+      "https://thoibaotaichinhvietnam.vn/tang-toc-giai-ngan-khoi-thong-nguon-luc-cac-chuong-trinh-muc-tieu-quoc-gia-206522.html",
+      "https://thoibaotaichinhvietnam.vn/suc-mua-noi-dia-but-toc-hang-viet-can-nang-suc-canh-tranh-206539.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thoibaotaichinhvietnam.vn/",
+    "categories": [
+      "https://thoibaotaichinhvietnam.vn/thong-tin-thoi-tiet",
+      "https://thoibaotaichinhvietnam.vn/thoi-su",
+      "https://thoibaotaichinhvietnam.vn/thoi-su/xay-dung-dang",
+      "https://thoibaotaichinhvietnam.vn/tai-chinh",
+      "https://thoibaotaichinhvietnam.vn/dau-tu",
+      "https://thoibaotaichinhvietnam.vn/thue-hai-quan",
+      "https://thoibaotaichinhvietnam.vn/chung-khoan",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-bao-hiem",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-bao-hiem/lai-suat",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-bao-hiem/gia-vang",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-bao-hiem/ty-gia",
+      "https://thoibaotaichinhvietnam.vn/doanh-nghiep",
+      "https://thoibaotaichinhvietnam.vn/thi-truong",
+      "https://thoibaotaichinhvietnam.vn/bat-dong-san",
+      "https://thoibaotaichinhvietnam.vn/xa-hoi",
+      "https://thoibaotaichinhvietnam.vn/xa-hoi/y-te",
+      "https://thoibaotaichinhvietnam.vn/xa-hoi/giam-ngheo-ben-vung",
+      "https://thoibaotaichinhvietnam.vn/xa-hoi/moi-truong",
+      "https://thoibaotaichinhvietnam.vn/xa-hoi/so-huu-tri-tue",
+      "https://thoibaotaichinhvietnam.vn/phap-luat",
+      "https://thoibaotaichinhvietnam.vn/tai-chinh-quoc-te",
+      "https://thoibaotaichinhvietnam.vn/tai-chinh-quoc-te/finance-plus",
+      "https://thoibaotaichinhvietnam.vn/video",
+      "https://thoibaotaichinhvietnam.vn/podcasts",
+      "https://thoibaotaichinhvietnam.vn/longform",
+      "https://thoibaotaichinhvietnam.vn/infographics"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?thoibaotaichinhvietnam.vn/.*?/.*?(\\d{5,})(.aspx)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thoibaotaichinhvietnam.vn",
+    "checkedAt": "2026-11-09T03:57:31.587Z",
+    "url": "https://thoibaotaichinhvietnam.vn/cong-bo-khung-hanh-dong-thuc-day-van-hoa-kinh-doanh-viet-nam-den-2035-206593.html",
+    "finalUrl": "https://thoibaotaichinhvietnam.vn/cong-bo-khung-hanh-dong-thuc-day-van-hoa-kinh-doanh-viet-nam-den-2035-206593.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3106,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thoibaotaichinhvietnam.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 60,
+    "checkedArticleUrls": 65,
+    "freshArticleChecks": 59,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 60,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 26,
+    "categoriesFreshChecked": 23,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 476,
+        "passed": 60,
+        "distinctHashes": 60
+      },
+      {
+        "name": "video",
+        "discovered": 32,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thoibaotaichinhvietnam.vn/viet-nam-tiep-tuc-tang-cuong-ket-noi-voi-cac-nha-dau-tu-nhat-ban-206671.html",
+      "https://thoibaotaichinhvietnam.vn/canh-bao-nguy-co-bat-dong-san-khoac-ao-van-hoa-206685.html",
+      "https://thoibaotaichinhvietnam.vn/viet-nam-nhat-ban-phan-dau-kim-ngach-thuong-mai-dat-80-ty-usd-vao-nam-2030-206652.html",
+      "https://thoibaotaichinhvietnam.vn/giam-30-thue-thu-nhap-them-tro-luc-cho-ho-kinh-doanh-doanh-nghiep-lon-manh-206615.html",
+      "https://thoibaotaichinhvietnam.vn/no-xau-dang-cao-van-co-nhung-diem-sang-trong-buc-tranh-chat-luong-tai-san-206627-206627.html",
+      "https://thoibaotaichinhvietnam.vn/doanh-thu-phi-bao-hiem-phi-nhan-tho-tang-manh-cuoc-dua-thu-hang-them-soi-dong-206537-206537.html",
+      "https://thoibaotaichinhvietnam.vn/grab-dieu-chinh-phi-du-kien-boi-hoan-3-9-ty-dong-cho-tai-xe-206492.html",
+      "https://thoibaotaichinhvietnam.vn/kho-bac-nha-nuoc-da-thanh-toan-hon-1-84-trieu-ty-dong-ngan-sach-206687.html",
+      "https://thoibaotaichinhvietnam.vn/nganh-thue-trien-khai-thong-nhat-co-che-mot-cua-nang-cao-chat-luong-phuc-vu-nguoi-nop-thue-206663.html",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-nha-nuoc-sap-mua-usd-giao-ngay-gia-25-500-dong-ky-vong-loi-ich-kep-cho-thi-truong-206667.html",
+      "https://thoibaotaichinhvietnam.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-206654.html",
+      "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-kien-chu-tich-ha-vien-va-chu-tich-thuong-vien-nhat-ban-206653.html",
+      "https://thoibaotaichinhvietnam.vn/le-don-tong-bi-thu-chu-tich-nuoc-to-lam-tham-chinh-thuc-nhat-ban-206650.html",
+      "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-phat-bieu-chinh-sach-tai-quoc-hoi-nhat-ban-206648.html",
+      "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-toa-dam-voi-lanh-dao-mot-so-tap-doan-lon-cua-nhat-ban-206636.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-bo-tai-chinh-cap-nhat-2-kich-ban-lam-phat-nam-2026-206680.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-du-toan-thu-ngan-sach-nha-nuoc-nam-2027-hon-3-334-trieu-ty-dong-206673.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-tong-quan-buc-tranh-ngan-sach-nha-nuoc-10-thang-nam-2026-206661.html",
+      "https://thoibaotaichinhvietnam.vn/viet-nam-va-nhat-ban-trao-cac-van-kien-hop-tac-von-vay-va-vien-tro-khong-hoan-lai-206651.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-giai-ngan-cac-du-an-giao-thong-trong-diem-dat-121-486-8-ty-dong-206632.html",
+      "https://thoibaotaichinhvietnam.vn/de-xuat-quy-hoach-to-hop-ga-ngoc-hoi-3-tang-rong-267-ha-ket-noi-ba-he-thong-duong-sat-206674.html",
+      "https://thoibaotaichinhvietnam.vn/du-an-mo-rong-cao-toc-tp-ho-chi-minh-trung-luong-tinh-phuong-an-mua-da-cach-xa-400-km-206631.html",
+      "https://thoibaotaichinhvietnam.vn/ky-vong-chi-phi-lai-vay-truoc-nhip-giam-lai-suat-206518.html",
+      "https://thoibaotaichinhvietnam.vn/don-dong-von-dau-tu-moi-tu-nhat-ban-206609-206609.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-7-548-945-ty-dong-duoc-giai-ngan-cho-cac-du-an-phuc-vu-apec-2027-206598.html",
+      "https://thoibaotaichinhvietnam.vn/hai-quan-khu-vuc-xiv-chu-trong-kiem-soat-hang-hoa-xuat-nhap-khau-co-rui-ro-cao-206681.html",
+      "https://thoibaotaichinhvietnam.vn/hai-quan-tang-kiem-soat-xuat-xu-tri-gia-cau-kien-thep-nhap-khau-tu-trung-quoc-206676.html",
+      "https://thoibaotaichinhvietnam.vn/bac-ninh-5-doanh-nghiep-no-thue-hon-47-ty-dong-bi-hai-quan-cuong-che-tai-khoan-206637.html",
+      "https://thoibaotaichinhvietnam.vn/hai-quan-khu-vuc-ii-thu-hon-147-000-ty-dong-sau-10-thang-206619.html",
+      "https://thoibaotaichinhvietnam.vn/nang-cap-ung-dung-etax-mobile-minh-bach-thong-tin-tang-tien-ich-cho-nguoi-nop-thue-206530.html",
+      "https://thoibaotaichinhvietnam.vn/thi-truong-trai-phieu-chinh-phu-ghi-nhan-luc-cau-tich-cuc-o-ky-han-5-10-nam-trong-tuan-qua-206642.html",
+      "https://thoibaotaichinhvietnam.vn/chung-khoan-ngay-9-11-ap-luc-ban-lan-at-vn-index-lui-ve-sat-vung-ho-tro-206641.html",
+      "https://thoibaotaichinhvietnam.vn/uy-ban-chung-khoan-nha-nuoc-canh-bao-thu-doan-gia-danh-cong-ty-chung-khoan-de-lua-dao-xac-thuc-tai-khoan-206643.html",
+      "https://thoibaotaichinhvietnam.vn/cac-quy-etf-du-kien-giao-dich-gan-1-000-ty-dong-trong-ky-co-cau-thang-11-206639.html",
+      "https://thoibaotaichinhvietnam.vn/khoi-ngoai-ban-rong-823-ty-dong-tap-trung-o-co-phieu-hoa-phat-hpg-206634.html",
+      "https://thoibaotaichinhvietnam.vn/vamc-va-datc-tang-cuong-hop-tac-thuc-day-phat-trien-thi-truong-mua-ban-no-206644.html",
+      "https://thoibaotaichinhvietnam.vn/quy-bao-hiem-xe-co-gioi-dong-hanh-lan-toa-van-hoa-giao-thong-an-toan-trong-sinh-vien-206638.html",
+      "https://thoibaotaichinhvietnam.vn/tin-dung-xay-dung-tang-vot-15-5-trong-quy-iii-tin-dung-kinh-doanh-bat-dong-san-chung-lai-206611.html",
+      "https://thoibaotaichinhvietnam.vn/vietnam-connect-forum-2026-dau-tu-vao-viet-nam-co-hoi-khong-chi-nam-o-dong-von-206640.html",
+      "https://thoibaotaichinhvietnam.vn/tang-cuong-thanh-tra-giam-sat-tin-dung-bat-dong-san-kien-quyet-xu-ly-san-sau-chi-phoi-ngan-hang-206625.html",
+      "https://thoibaotaichinhvietnam.vn/gia-dau-the-gioi-giam-xuong-muc-thap-nhat-ke-tu-cuoi-thang-8-206670.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-8-11-gia-heo-hoi-ca-nuoc-da-tam-chung-lai-sau-dot-tang-manh-206586.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-9-11-gia-heo-hoi-dang-dan-tien-sat-moc-50-000-dong-kg-206601.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-10-11-gia-heo-hoi-tai-mien-nam-lay-lai-da-tang-206657.html",
+      "https://thoibaotaichinhvietnam.vn/chung-khoan-tuan-moi-9-13-11-bat-len-tu-vung-1-700-diem-cho-dong-tien-xac-nhan-206591.html",
+      "https://thoibaotaichinhvietnam.vn/ty-gia-usd-hom-nay-10-11-usd-dong-loat-giam-sau-dxy-lui-duoi-102-diem-khi-thi-truong-cho-cpi-my-206662.html",
+      "https://thoibaotaichinhvietnam.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cung-phu-nhan-len-duong-tham-chinh-thuc-nhat-ban-206589.html",
+      "https://thoibaotaichinhvietnam.vn/gia-vang-hom-nay-ngay-8-11-gia-vang-trong-nuoc-di-ngang-the-gioi-duy-tri-tren-4-000-usd-206588.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-nhung-diem-sang-kinh-te-viet-nam-10-thang-nam-2026-qua-cac-con-so-206583.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-8-11-gia-ca-phe-va-ho-tieu-phien-cuoi-tuan-dong-loat-tang-206587.html",
+      "https://thoibaotaichinhvietnam.vn/giai-ngan-cac-du-an-phuc-vu-apec-2027-co-ban-bam-sat-tien-do-206592.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-9-11-gia-lua-gao-tai-dong-bang-song-cuu-long-on-dinh-sang-dau-tuan-206600.html",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-tang-toc-cho-vay-don-them-du-dia-tu-cac-co-che-tin-dung-dac-thu-206397-206397.html",
+      "https://thoibaotaichinhvietnam.vn/infographics-10-thang-tp-ha-noi-cap-giay-chung-nhan-cho-27-8-nghin-doanh-nghiep-thanh-lap-moi-206645.html",
+      "https://thoibaotaichinhvietnam.vn/chinh-phu-dong-hanh-chia-se-kho-khan-voi-doanh-nghiep-206616.html",
+      "https://thoibaotaichinhvietnam.vn/hoan-thien-the-che-khoi-thong-nguon-luc-cho-thi-truong-von-206277-206277.html",
+      "https://thoibaotaichinhvietnam.vn/phat-trien-kinh-te-bien-mo-khong-gian-tang-truong-moi-tu-doanh-nghiep-va-cong-nghe-206262.html",
+      "https://thoibaotaichinhvietnam.vn/mo-du-dia-huy-dong-von-dai-han-qua-kenh-trai-phieu-chinh-phu-206168-206168.html",
+      "https://thoibaotaichinhvietnam.vn/cai-cach-thue-tu-tu-duy-quan-ly-den-tinh-than-dong-hanh-206162-206162.html",
+      "https://thoibaotaichinhvietnam.vn/lai-suat-trai-phieu-tang-doanh-nghiep-them-ap-luc-huy-dong-von-206090-206090.html",
+      "https://thoibaotaichinhvietnam.vn/nang-chuan-ha-tang-cung-co-suc-hap-dan-cua-thi-truong-chung-khoan-206053.html",
+      "https://thoibaotaichinhvietnam.vn/don-dong-von-fdi-chat-luong-cao-chuyen-manh-tu-tu-duy-den-hanh-dong-205922-205922.html",
+      "https://thoibaotaichinhvietnam.vn/go-nut-that-von-doanh-nghiep-do-phu-nu-lam-chu-205939.html",
+      "https://thoibaotaichinhvietnam.vn/cong-nghe-phai-tro-thanh-dong-luc-chu-yeu-cua-doanh-nghiep-205703-205703.html",
+      "https://thoibaotaichinhvietnam.vn/tang-suc-hut-voi-dong-von-tu-eu-205699-205699.html",
+      "https://thoibaotaichinhvietnam.vn/co-hoi-khoi-thong-dong-von-dai-han-qua-kenh-trai-phieu-205594-205594.html",
+      "https://thoibaotaichinhvietnam.vn/stavian-va-midas-capital-ky-bien-ban-ghi-nho-hop-tac-chien-luoc-dau-tu-phat-trien-ha-tang-cap-quang-bien-va-ha-tang-cong-nghe-so-tai-viet-nam-206623.html",
+      "https://thoibaotaichinhvietnam.vn/cong-bo-khung-hanh-dong-thuc-day-van-hoa-kinh-doanh-viet-nam-den-2035-206593.html",
+      "https://thoibaotaichinhvietnam.vn/ap-dung-ifrs-mo-rong-co-hoi-tiep-can-von-nang-tam-quan-tri-doanh-nghiep-206527-206527.html",
+      "https://thoibaotaichinhvietnam.vn/stavian-hoa-chat-ghi-dau-an-hai-nam-lien-tiep-tai-bang-xep-hang-fortune-southeast-asia-500-206549.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-10-11-gia-bac-lien-tuc-bien-dong-206665.html",
+      "https://thoibaotaichinhvietnam.vn/ngay-10-11-gia-ca-phe-lay-lai-da-tang-ho-tieu-giu-moc-138-000-dong-kg-206658.html",
+      "https://thoibaotaichinhvietnam.vn/ha-noi-dat-muc-tieu-hoan-thanh-giai-phong-mat-bang-duong-70-trong-thang-12-2026-206516.html",
+      "https://thoibaotaichinhvietnam.vn/vi-sao-thu-nhap-10-con-so-moi-nam-khong-bat-kha-thi-khi-ban-bat-dong-san-vinhomes-206456.html",
+      "https://thoibaotaichinhvietnam.vn/ha-noi-dua-14-khu-dat-hon-109-ha-ra-khoi-danh-muc-thi-diem-du-an-nha-o-thuong-mai-206405.html",
+      "https://thoibaotaichinhvietnam.vn/mien-trung-tang-dau-tu-ha-tang-hang-khong-mo-khong-gian-tang-truong-206273-206273.html",
+      "https://thoibaotaichinhvietnam.vn/cam-thuoc-la-tu-the-he-sinh-nam-2010-de-nghi-quyet-ngay-trong-lan-sua-luat-nay-206649.html",
+      "https://thoibaotaichinhvietnam.vn/giai-bong-da-thuong-nien-bo-tai-chinh-huong-ung-ngay-van-hoa-viet-nam-2026-206647.html",
+      "https://thoibaotaichinhvietnam.vn/giam-gia-dien-them-du-dia-kiem-soat-lam-phat-206630-206630.html",
+      "https://thoibaotaichinhvietnam.vn/tuoi-tre-5-truong-dai-hoc-hoc-vien-thang-hoa-tai-san-khau-tim-kiem-tai-nang-nghe-thuat-sinh-vien-2026-206604.html",
+      "https://thoibaotaichinhvietnam.vn/ha-noi-thong-qua-co-che-dac-thu-xu-ly-vi-pham-tai-12-du-an-206045.html",
+      "https://thoibaotaichinhvietnam.vn/xu-phat-cong-ty-tnhh-c-store-viet-nam-75-trieu-dong-206005.html",
+      "https://thoibaotaichinhvietnam.vn/cuc-an-toan-thuc-pham-yeu-cau-shopee-ngung-quang-cao-kinh-doanh-san-pham-sausando-slimming-capsule-205507.html",
+      "https://thoibaotaichinhvietnam.vn/xu-phat-cong-ty-co-phan-traphaco-160-trieu-dong-do-vi-pham-quy-trinh-san-xuat-thuoc-205122.html",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-trung-uong-nhat-ban-tang-lai-suat-thu-hut-dong-von-o-lai-trong-nuoc-204069.html",
+      "https://thoibaotaichinhvietnam.vn/nhom-ngan-hang-the-gioi-huy-dong-von-tu-nhan-o-muc-ky-luc-cho-cac-nuoc-dang-phat-trien-204050.html",
+      "https://thoibaotaichinhvietnam.vn/ngan-hang-trung-uong-anh-giu-nguyen-lai-suat-nhung-canh-bao-ve-ap-luc-lam-phat-203986.html",
+      "https://thoibaotaichinhvietnam.vn/chinh-sach-cua-fed-gay-ap-luc-len-dong-yen-truoc-them-quyet-dinh-lai-suat-cua-boj-203985.html",
+      "https://thoibaotaichinhvietnam.vn/ai-chuyen-tu-cong-cu-ho-tro-sang-nang-luc-tao-gia-tri-cho-doanh-nghiep-204208.html",
+      "https://thoibaotaichinhvietnam.vn/diem-sang-trong-xuat-cap-va-bao-quan-an-toan-hang-du-tru-quoc-gia-200695.html",
+      "https://thoibaotaichinhvietnam.vn/tang-chat-luong-quan-ly-tai-chinh-cong-bang-co-che-phoi-hop-kiem-toan-200190.html",
+      "https://thoibaotaichinhvietnam.vn/doanh-nghiep-dong-tinh-bo-dieu-kien-kinh-doanh-dich-vu-ke-toan-200114.html",
+      "https://thoibaotaichinhvietnam.vn/quy-dinh-moi-ve-muc-phi-le-phi-trong-linh-vuc-ngoai-giao-206305.html",
+      "https://thoibaotaichinhvietnam.vn/huong-den-chinh-sach-quan-ly-thuoc-la-dong-bo-va-hieu-qua-206295.html",
+      "https://thoibaotaichinhvietnam.vn/huong-dan-mau-bieu-bao-cao-ve-cho-vay-lai-von-vay-oda-vay-uu-dai-nuoc-ngoai-cua-chinh-phu-206185.html",
+      "https://thoibaotaichinhvietnam.vn/bo-tai-chinh-bai-bo-mot-so-van-ban-quy-pham-phap-luat-206127.html",
+      "https://thoibaotaichinhvietnam.vn/sabeco-ra-mat-333-triple-pure-qua-khong-gian-trai-nghiem-da-giac-quan-206635.html",
+      "https://thoibaotaichinhvietnam.vn/dbv-va-cmc-cs-hop-tac-toan-dien-ket-noi-cong-nghe-va-bao-hiem-de-gia-tang-gia-tri-cho-khach-hang-205162.html",
+      "https://thoibaotaichinhvietnam.vn/phu-quoc-truoc-thoi-co-vuon-len-thanh-diem-nghi-dong-hang-dau-chau-a-204397.html",
+      "https://thoibaotaichinhvietnam.vn/pv-gas-ky-niem-36-nam-thanh-lap-tiep-lua-khat-vong-vung-buoc-tuong-lai-204148.html",
+      "https://thoibaotaichinhvietnam.vn/can-doi-dong-tien-so-huu-xe-o-to-tu-chinh-sach-don-bay-tai-chinh-cua-mg-203844.html",
+      "https://thoibaotaichinhvietnam.vn/usm-healthcare-co-dong-sang-lap-mua-lai-co-phan-tiep-tuc-dinh-huong-phat-trien-doanh-nghiep-203515.html",
+      "https://thoibaotaichinhvietnam.vn/shinhan-hop-tac-cung-cong-ty-quan-ly-va-kinh-doanh-cho-binh-dien-mo-rong-giai-phap-tai-chinh-cho-thuong-nhan-203468.html",
+      "https://thoibaotaichinhvietnam.vn/thong-bao-ve-viec-duoc-phe-duyet-thay-doi-muc-von-duoc-cap-cua-ngan-hang-mizuho-bank-ltd-chi-nhanh-thanh-pho-ha-noi-203298.html",
+      "https://thoibaotaichinhvietnam.vn/pvfcco-phu-my-vao-top-50-doanh-nghiep-dan-dau-esg-viet-nam-2026-203029.html",
+      "https://thoibaotaichinhvietnam.vn/tong-cong-ty-khoang-san-tkv-ctcp-to-chuc-phien-chao-gia-canh-tranh-de-lua-chon-khach-hang-mua-thach-cao-nhan-tao-203017.html",
+      "https://thoibaotaichinhvietnam.vn/giu-on-dinh-gia-ca-hang-hoa-dich-vu-thiet-yeu-den-het-nam-2026-4665.media",
+      "https://thoibaotaichinhvietnam.vn/ban-tin-tai-chinh-so-1-thang-11-2026-4662.media",
+      "https://thoibaotaichinhvietnam.vn/giam-chi-phi-cho-doanh-nghiep-them-nguon-luc-cho-giao-duc-4663.media"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 5
+    },
+    "checkedAt": "2026-11-10T09:17:26.765Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thoibaotaichinhvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

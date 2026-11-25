@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintuc.net",
+  "siteId": "tintuc.net",
+  "homepage": "https://tintuc.net/",
+  "parserType": "publisher_dispatch",
+  "validatedPublishers": [
+    "vnexpress.net"
+  ],
+  "publisherConfigDirectory": "config/web-sources/news",
+  "identityPolicy": "Use original publisher config, siteId, exact title and original URL. Keep aggregator discovery URL as provenance; reconcile original URLs/native IDs before future writes.",
+  "discovery": {
+    "homepage": "https://tintuc.net/",
+    "categories": [
+      "https://www.tintuc.net/tin-tuc-thoi-su",
+      "https://www.tintuc.net/tin-tuc-the-gioi"
+    ],
+    "reclassifiedArticleUrls": []
+  },
+  "validation": {
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "sampleUrls": [
+      "https://www.tintuc.net/tin-tuc/23-xa-tp-hcm-ra-soat-du-tieu-chi-len-phuong",
+      "https://www.tintuc.net/tin-tuc/tim-thay-nu-hanh-khach-di-lac-hai-ngay-o-nui-hai-van",
+      "https://www.tintuc.net/tin-tuc/nhieu-nguoi-khieng-oto-cuu-nu-sinh-mac-ket-duoi-gam",
+      "https://www.tintuc.net/tin-tuc/pho-thu-tuong-khong-the-tinh-nao-cung-lam-san-bay",
+      "https://www.tintuc.net/tin-tuc/chuyen-gia-dung-de-tp-hcm-tiep-tuc-di-xin-khi-co-luat-do-thi-dac-biet"
+    ],
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/publisher-dispatch/tintuc.net",
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null
+  },
+  "enabled": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "stage": "parser_samples_passed",
+  "parserModule": "src/web/newsPublisherDispatch.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "publisher_dispatch_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:31.093Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/tintuc.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "tintuc.net",
+    "parsedArticles": 17,
+    "distinctHashes": 17,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesAttempted": 13,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 130,
+    "checkedArticleUrls": 17,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 130,
+        "attempted": 17,
+        "passed": 17,
+        "distinctContents": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

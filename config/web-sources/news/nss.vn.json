@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nss.vn",
+  "siteId": "nss.vn",
+  "registrableDomain": "nss.vn",
+  "homepage": "https://nss.vn/",
+  "allowedHosts": [
+    "nss.vn",
+    "www.nss.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "VNPT và Quảng Trị: Từ kết quả chuyển đổi số đến những bài toán phát triển mới",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:59.343Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nss.vn/vnpt-va-quang-tri--tu-ket-qua-chuyen-doi-so-den-nhung-bai-toan-phat-trien-moi-35350.htm",
+      "https://nss.vn/thuc-day-ai-cong-nghiep-va-san-xuat-thong-minh-de-kien-tao-vi-the-moi-cho-viet-nam-35343.htm",
+      "https://nss.vn/ra-mat-chip-vgc-v1-0-va-nen-tang-ban-dan-bao-mat-dau-tien-tai-viet-nam-35342.htm",
+      "https://nss.vn/ha-noi-dan-dau-ve-chi-so-doi-moi-sang-tao-32540.htm",
+      "https://nss.vn/them-2-ngan-hang-doi-tac-chap-nhan-chuyen-khoan-nhanh-qua-zalo-33646.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nss.vn/",
+    "categories": [
+      "https://nss.vn/video"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?nss.vn/.*?n(\\d{4,}).*?(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nss.vn",
+    "checkedAt": "2026-11-09T03:57:21.106Z",
+    "url": "https://nss.vn/vnpt-va-quang-tri--tu-ket-qua-chuyen-doi-so-den-nhung-bai-toan-phat-trien-moi-35350.htm",
+    "finalUrl": "https://nss.vn/vnpt-va-quang-tri--tu-ket-qua-chuyen-doi-so-den-nhung-bai-toan-phat-trien-moi-35350.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7384,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nss.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 28,
+    "parserIssues": 21,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 60,
+        "passed": 14,
+        "distinctHashes": 14
+      },
+      {
+        "name": "video",
+        "discovered": 21,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nss.vn/ra-mat-chip-vgc-v1-0-va-nen-tang-ban-dan-bao-mat-dau-tien-tai-viet-nam-35342.htm",
+      "https://nss.vn/ha-noi-dan-dau-ve-chi-so-doi-moi-sang-tao-32540.htm",
+      "https://nss.vn/them-2-ngan-hang-doi-tac-chap-nhan-chuyen-khoan-nhanh-qua-zalo-33646.htm",
+      "https://nss.vn/mang-di-dong-fpt-trao-hoc-bong-tong-gia-tri-den-480-trieu-dong-33605.htm",
+      "https://nss.vn/samsung-chinh-thuc-ra-mat-galaxy-f36-5g--gia-tu-5-3-trieu-dong-33635.htm",
+      "https://nss.vn/nguoi-dung-chatgpt-gui-toi-2-5-ty-loi-nhac-moi-ngay-33641.htm",
+      "https://nss.vn/ct-uav-duoc-cap-chung-nhan-iso-9001-2015-tren-toan-he-thong-san-xuat-35337.htm",
+      "https://nss.vn/fpt-van-hanh-thu-nghiem-nha-may-kiem-thu-va-dong-goi-chip-ban-dan-35340.htm",
+      "https://nss.vn/vnpt-cloud-dong-hanh-cung-doanh-nghiep-kien-tao-nang-luc-thich-ung-35339.htm",
+      "https://nss.vn/gioi-bao-mat-lai-dau-dau-voi-cach-thuc-tan-cong-apt-moi-cua-lazarus-35338.htm",
+      "https://nss.vn/samsung-solve-for-tomorrow-2026-trao-hai-giai-nhat-cho-du-an-robot-tri-lieu-va-ai-iot-trong-nong-nghiep-35335.htm",
+      "https://nss.vn/motorola-ra-mat-the-he-may-tinh-bang-moto-pad-60-va-pad-70-series-dau-tien-tai-viet-nam-35336.htm",
+      "https://nss.vn/phat-trien-dich-vu-tin-cay-so-xuyen-quoc-gia-de-thuc-day-kinh-te-so-35333.htm",
+      "https://nss.vn/pomahome--nen-tang-dieu-hanh-so-cho-doanh-nghiep-bat-dong-san-35354.htm",
+      "https://nss.vn/ericsson-thiet-lap-nang-luc-r-d-tai-viet-nam--khang-dinh-cam-ket-dai-han-voi-doi-moi-sang-tao-va-chuyen-doi-so-35353.htm",
+      "https://nss.vn/bon-doanh-nghiep-viet-nam-nhat-ban-ky-ket-hop-tac--dong-luc-moi-cho-nong-nghiep-so-viet-nam-35352.htm",
+      "https://nss.vn/vnpt-hop-tac-voi-symphony-cung-cap-dich-vu-truyen-dan-quoc-te-35351.htm",
+      "https://nss.vn/vnpt-va-quang-tri--tu-ket-qua-chuyen-doi-so-den-nhung-bai-toan-phat-trien-moi-35350.htm",
+      "https://nss.vn/ba-uu-tien-chien-luoc-de-thuc-day-xuat-khau-tmdt-viet-nam-trong-nam-2027-35349.htm",
+      "https://nss.vn/nhat-ban-phat-trien-cong-nghe-phat-dien-moi-tan-dung-nuoc-bien-35348.htm",
+      "https://nss.vn/airbus-hop-tac-trien-khai-chuong-trinh-hang-khong-so-va-hop-tac-voi-truong-dai-hoc-35346.htm",
+      "https://nss.vn/trung-tam-an-toan-do-zalo-va-google-hop-tac-thuc-hien-thu-hut-gan-130-nghin-luot-truy-cap-35345.htm",
+      "https://nss.vn/nguoi-dung-viet-nam-da-co-the--nang-cap--trai-nghiem-tro-ly-ai-tv-35344.htm",
+      "https://nss.vn/thuc-day-ai-cong-nghiep-va-san-xuat-thong-minh-de-kien-tao-vi-the-moi-cho-viet-nam-35343.htm",
+      "https://nss.vn/nang-luc-bao-ve-du-lieu--chung-chi--quan-trong-cua-doanh-nghiep-35341.htm",
+      "https://nss.vn/mytv-chinh-thuc-so-huu-ban-quyen-vong-chung-ket-fifa-u-17-world-cup-qatar-2026-35347.htm",
+      "https://nss.vn/nghi-dinh-163--hoan-thien-hanh-lang-phap-ly-viec-cung-cap-3-dich-vu-vien-thong-moi-32526.htm",
+      "https://nss.vn/10-su-kien-ict-tieu-bieu-nam-2024-tu-goc-nhin-cua-gioi-truyen-thong-32521.htm",
+      "https://nss.vn/46-to-chuc--ca-nhan-bi-phat-vi-su-dung-thiet-bi-kich-song-di-dong-32519.htm",
+      "https://nss.vn/viettel-mo-rong-thi-truong-xuat-khau-cap-quang-sang-bac-my-va-chau-au-32493.htm",
+      "https://nss.vn/viet-nam-co-the-di-tien-phong-ve-open-banking-33620.htm",
+      "https://nss.vn/home-credit-nhan-cu-dup-giai-thuong-quoc-te-33636.htm",
+      "https://nss.vn/nganh-ngan-hang-rao-riet-hoan-tat-xac-thuc-sinh-trac-hoc--phong-chong-lua-dao-32527.htm",
+      "https://nss.vn/nha-mang-day-nhanh-toc-do-thuong-mai-hoa-5g-32525.htm",
+      "https://nss.vn/video/bmw-i3-2026-thuan-dien-ra-mat--chay-den-900km-1-lan-sac-34605.htm",
+      "https://nss.vn/video/byd-seal-08-2026-ra-mat--tam-van-hanh-vuot-1-000-km-34596.htm",
+      "https://nss.vn/video/robot-moya-co-than-nhiet-nhu-nguoi--gia-hon-4-ty-dong-34458.htm",
+      "https://nss.vn/video/truc-tiep--le-cong-bo-giai-thuong-sang-tao-tuong-lai-vietfuture-awards-2025-33939.htm",
+      "https://nss.vn/ma-doc-danh-cap-du-lieu-an-trong-cac-vpn-mien-phi-33601.htm",
+      "https://nss.vn/tap-chi-an-ninh-mang-viet-nam-ra-mat-33608.htm",
+      "https://nss.vn/he-thong-dieu-khien-cong-nghiep-nganh-xay-dung-dich-ngam-moi-cua-tin-tac-dong-nam-a-33594.htm",
+      "https://nss.vn/google-gemini-co-the-tro-thanh-cong-cu-lua-dao-cua-hacker-33622.htm",
+      "https://nss.vn/lo-hong-nghiem-trong-trong-wing-ftp-server-dang-bi-tin-tac-khai-thac-33630.htm",
+      "https://nss.vn/microsoft-canh-bao-nguy-co-tan-cong-mang-33629.htm",
+      "https://nss.vn/nhieu-tien-ich-mo-rong-trinh-duyet-chrome-bi-tin-tac-tan-cong-32539.htm",
+      "https://nss.vn/gmail-chong-lai-lan-song-spam-lua-dao-cuoi-nam-nho-ai-32494.htm",
+      "https://nss.vn/fpt-dat-chung-nhan-crest-quoc-te-cho-dich-vu-soc-32504.htm",
+      "https://nss.vn/binance-cong-bo-sang-kien-blockchain-for-vietnam-33616.htm",
+      "https://nss.vn/viettel-tai-tro-phong-thi-nghiem-5g-6g-cho-dh-bach-khoa-ha-noi-32533.htm",
+      "https://nss.vn/fpt-hop-tac-voi-dai-hoc-cong-nghe-petronas--tham-gia-dao-tao-nhan-luc-it-tai-malaysia-32433.htm",
+      "https://nss.vn/fpt-mo-rong-dau-tu-vao-linh-vuc-giao-duc-32528.htm",
+      "https://nss.vn/dong-ho-thong-minh-garmin-venu-x1-ra-mat--gia-tu-21-09-trieu-dong-33639.htm",
+      "https://nss.vn/windows-11-sap-cho-phat-nhac-tren-loa-va-tai-nghe-cung-luc-33628.htm",
+      "https://nss.vn/galaxy-s26-ultra-se-tang-kich-thuoc-man-hinh-33618.htm",
+      "https://nss.vn/samsung-ruc-rich-san-xuat-chip-2nm-cho-galaxy-s27-32537.htm",
+      "https://nss.vn/trung-quoc-co-hon-1-12-ty-nguoi-dung-internet-33645.htm",
+      "https://nss.vn/nhin-lai-2024--qua-zalo--ban-be--ky-niem--nhung-dau-moc-ca-nhan-dang-nho-32538.htm",
+      "https://nss.vn/phong--chong-thien-tai--hon-231-trieu-tin-nhan-zalo-dua-thong-tin-den-nguoi-dan-trong-nam-2024-32530.htm",
+      "https://nss.vn/netflix-ngung-cung-cap-cac-chuong-trinh-truyen-hinh-tai-viet-nam-32512.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 21
+    },
+    "checkedAt": "2026-11-10T09:16:22.552Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nss.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

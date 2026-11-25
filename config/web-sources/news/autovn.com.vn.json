@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autovn.com.vn",
+  "siteId": "autovn.com.vn",
+  "registrableDomain": "autovn.com.vn",
+  "homepage": "https://www.autovn.com.vn/",
+  "allowedHosts": [
+    "www.autovn.com.vn",
+    "autovn.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Green SM tung chương trình ưu đãi \"Mùa đông xanh - Vì tương lai xanh\"",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "[itemprop=\"datePublished\"]",
+    "attribute": "title",
+    "index": 0,
+    "priority": 88
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:14.924Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.autovn.com.vn/2026/11/green-sm-trien-khai-chuong-trinh-uu-dai-mua-dong-xanh-vi-tuong-lai-xanh.html",
+      "https://www.autovn.com.vn/2026/11/mforce-viet-nam-ra-mat-3-mau-xe-moi-gia-tu-98-trieu-dong.html",
+      "https://www.autovn.com.vn/2026/11/ferrari-lac-quan-ve-trien-vong-kinh-doanh-don-hang-kin-den-2028.html",
+      "https://www.autovn.com.vn/2026/11/quen-xe-ga-the-thao-nguoi-dung-thich-thu-voi-vinfast-kinet-vi-boc-ma-van-em.html",
+      "https://www.autovn.com.vn/2026/11/mercedes-benz-muon-bien-moi-tam-kinh-tren-o-to-thanh-man-hinh.html",
+      "https://www.autovn.com.vn/2026/11/porsche-bat-dau-hai-qua-ngot-tu-chien-luoc-tai-cau-truc.html",
+      "https://www.autovn.com.vn/2026/11/mercedes-benz-len-ke-hoach-tai-cau-truc-hoat-dong-toan-cau.html",
+      "https://www.autovn.com.vn/2026/11/honda-trao-tang-mu-bao-hiem-cho-hoc-sinh-lop-1-mien-nam.html",
+      "https://www.autovn.com.vn/2026/11/mercedes-benz-len-ke-hoach-tai-cau-truc-hoat-dong-toan-cau.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.autovn.com.vn/",
+    "categories": [
+      "https://www.autovn.com.vn/search/label/Tin%20T%E1%BB%A9c"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "autovn.com.vn",
+    "checkedAt": "2026-11-09T03:56:48.259Z",
+    "url": "https://www.autovn.com.vn/2026/11/green-sm-trien-khai-chuong-trinh-uu-dai-mua-dong-xanh-vi-tuong-lai-xanh.html",
+    "finalUrl": "https://www.autovn.com.vn/2026/11/green-sm-trien-khai-chuong-trinh-uu-dai-mua-dong-xanh-vi-tuong-lai-xanh.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2153,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:31.283Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/autovn.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "autovn.com.vn",
+    "parsedArticles": 6,
+    "distinctHashes": 6,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 0,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 13,
+    "checkedArticleUrls": 6,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 13,
+        "attempted": 6,
+        "passed": 6,
+        "distinctContents": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

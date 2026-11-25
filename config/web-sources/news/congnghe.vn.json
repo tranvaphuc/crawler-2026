@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congnghe.vn",
+  "siteId": "congnghe.vn",
+  "registrableDomain": "congnghe.vn",
+  "homepage": "https://congnghe.vn/",
+  "allowedHosts": [
+    "congnghe.vn",
+    "www.congnghe.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congnghe.vn/",
+    "categories": [
+      "https://congnghe.vn/muc/cong-nghe-moi-30",
+      "https://congnghe.vn/muc/bao-mat-31",
+      "https://congnghe.vn/muc/cntt-vien-thong-32",
+      "https://congnghe.vn/muc/tieu-diem-33",
+      "https://congnghe.vn/muc/internet-35",
+      "https://congnghe.vn/muc/vien-thong-36",
+      "https://congnghe.vn/muc/kinh-doanh-34",
+      "https://congnghe.vn/muc/thu-thuat-54",
+      "https://congnghe.vn/muc/fintech-57",
+      "https://congnghe.vn/muc/thiet-bi-so-37"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Cuộc đua vũ khí dưới đáy biển đe dọa phá vỡ ưu thế của hải quân Mỹ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "epoch",
+    "strategy": "selector",
+    "selector": "[itemprop=\"datePublished\"]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 88
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": ".post",
+    "selector": "[itemprop=\"articleBody\"] > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:24.187Z",
+    "frozenAt": "2026-11-16T01:58:21.769Z",
+    "trainingUrl": "https://congnghe.vn/muc/cong-nghe-quoc-phong/tin/cuoc-dua-vu-khi-duoi-day-bien-de-doa-pha-vo-uu-the-cua-hai-quan-my-20261116064134963",
+    "independentHoldouts": [
+      "https://congnghe.vn/muc/fintech/tin/trai-phieu-ngan-hang-but-pha-du-muc-lai-suat-thap-20261116001234860",
+      "https://congnghe.vn/muc/bao-mat/tin/chip-bao-mat-vgc-v10-cua-viettel-co-gi-dac-biet-20261105203837844"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congnghe.vn/muc/cong-nghe-quoc-phong/tin/cuoc-dua-vu-khi-duoi-day-bien-de-doa-pha-vo-uu-the-cua-hai-quan-my-20261116064134963",
+      "https://congnghe.vn/muc/fintech/tin/trai-phieu-ngan-hang-but-pha-du-muc-lai-suat-thap-20261116001234860",
+      "https://congnghe.vn/muc/bao-mat/tin/chip-bao-mat-vgc-v10-cua-viettel-co-gi-dac-biet-20261105203837844",
+      "https://congnghe.vn/muc/khoa-hoc-doi-song/tin/nha-kieu-iron-man-tham-vong-moi-cua-startup-nhat-ban-trong-cuoc-dua-robot-20260912125426079",
+      "https://congnghe.vn/muc/cong-nghe-moi-truong/tin/pvcfc-don-luc-cho-3-mui-nhon-20240527155948554",
+      "https://congnghe.vn/muc/o-to-xe-may/tin/bmw-day-manh-dong-hieu-suat-cao-m-tai-viet-nam-20260927122939489",
+      "https://congnghe.vn/muc/o-to-xe-may/tin/toyota-hilux-2023-tang-gia-ban-toi-180-trieu-dong-tai-viet-nam-20230323013630755",
+      "https://congnghe.vn/muc/bao-mat/tin/phat-trien-va-ung-dung-cong-nghe-thong-tin-luong-tu-phan-1-20230623164902674",
+      "https://congnghe.vn/muc/cong-nghe-quoc-phong/tin/nang-luc-san-xuat-vu-khi-cua-serbia-den-dau-20230624101046589",
+      "https://congnghe.vn/muc/bao-mat/tin/cong-bo-xep-hang-an-toan-thong-tin-mang-cua-cac-co-quan-to-chuc-nha-nuoc-nam-2019-20261104154639882",
+      "https://congnghe.vn/muc/bao-mat/tin/lo-dien-hacker-dung-sau-vu-tan-cong-mang-di-dong-t-mobile-cua-my-20261103094418366",
+      "https://congnghe.vn/muc/bao-mat/tin/an-toan-thong-tin-cho-dien-toan-dam-may-muc-tieu-cao-nhat-trong-phat-trien-quoc-gia-so-20261026214343639",
+      "https://congnghe.vn/muc/bao-mat/tin/ung-dung-mat-ma-truc-quan-phong-chong-phishing-trong-dam-bao-an-toan-giao-dich-truc-tuyen-20261026001411208",
+      "https://congnghe.vn/muc/cntt-vien-thong/tin/chu-tich-quoc-hoi-truong-dai-hoc-mo-dia-chat-can-tap-trung-nghien-cuu-cac-linh-vuc-then-chot-20261115204132934",
+      "https://congnghe.vn/muc/cntt-vien-thong/tin/chinh-phu-chap-nhan-rui-ro-khi-dau-tu-cong-nghe-chien-luoc-20261113155345327",
+      "https://congnghe.vn/muc/cntt-vien-thong/tin/4-diem-nghen-lam-cham-giai-ngan-ngan-sach-khoa-hoc-cong-nghe-20261112214035687",
+      "https://congnghe.vn/muc/cntt-vien-thong/tin/chinh-phu-ban-hanh-34-nghi-quyet-cong-bo-dien-tich-3321-don-vi-hanh-chinh-cap-xa-20261109204938629",
+      "https://congnghe.vn/muc/thiet-bi-so/tin/asus-zenbook-14-2026-lua-chon-moi-cho-phan-khuc-laptop-cao-cap-20261113153643230",
+      "https://congnghe.vn/muc/thiet-bi-so/tin/samsung-dua-trai-nghiem-ai-home-vao-khong-gian-luu-tru-tai-kin-wander-20261110175119879",
+      "https://congnghe.vn/muc/thiet-bi-so/tin/honor-x6e-gia-nhap-phan-khuc-7-trieu-dong-20261109181136044",
+      "https://congnghe.vn/muc/khoa-hoc-doi-song/tin/mo-hinh-mo-nao-3d-mo-ra-hy-vong-moi-cho-benh-nhan-alzheimer-20260911195342055",
+      "https://congnghe.vn/muc/khoa-hoc-doi-song/tin/giai-ma-diem-kich-hoat-khien-virus-herpes-thuc-tinh-20260911174403423",
+      "https://congnghe.vn/muc/khoa-hoc-doi-song/tin/ai-tao-nen-cuoc-cach-mang-du-bao-thien-tai-20260911145526911",
+      "https://congnghe.vn/muc/khoa-hoc-doi-song/tin/amazon-co-hon-2700-loai-ca-nuoc-ngot-20260910080342598",
+      "https://congnghe.vn/muc/cong-nghe-quoc-phong/tin/vu-khi-bi-mat-giup-tiem-kich-f-16-ha-guc-uav-geran-4-20261114060505916"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

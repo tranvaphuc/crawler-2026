@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vn.investing.com",
+  "siteId": "vn.investing.com",
+  "registrableDomain": "vn.investing.com",
+  "homepage": "https://vn.investing.com/",
+  "allowedHosts": [
+    "vn.investing.com",
+    "www.vn.investing.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vn.investing.com/",
+    "categories": [
+      "https://vn.investing.com/markets/",
+      "https://vn.investing.com/currencies/",
+      "https://vn.investing.com/currencies/single-currency-crosses",
+      "https://vn.investing.com/currencies/streaming-forex-rates-majors",
+      "https://vn.investing.com/currencies/live-currency-cross-rates",
+      "https://vn.investing.com/currencies/exchange-rates-table",
+      "https://vn.investing.com/currencies/us-dollar-index",
+      "https://vn.investing.com/currencies/fx-futures",
+      "https://vn.investing.com/currencies/forex-options"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "9 cổ phiếu chip có tiềm năng phục hồi sau đợt bán tháo",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article_WYSIWYG__O0uhw.article_articlePage__UMz3q",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:30.456Z",
+    "frozenAt": "2026-11-16T02:01:25.525Z",
+    "trainingUrl": "https://vn.investing.com/analysis/9-co-phieu-chip-co-tiem-nang-phuc-hoi-sau-dot-ban-thao-200457442",
+    "independentHoldouts": [
+      "https://vn.investing.com/analysis/5-co-phieu-dang-chu-y-khi-thang-11-mo-ra-co-hoi-but-pha-moi-200457443",
+      "https://vn.investing.com/analysis/gia-vang-phuc-hoi-hay-chi-la-cu-nay-meo-chet-moc-4000-usd-se-quyet-dinh-xu-huong-tiep-theo-200457430"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vn.investing.com/analysis/5-co-phieu-dang-chu-y-khi-thang-11-mo-ra-co-hoi-but-pha-moi-200457443",
+      "https://vn.investing.com/analysis/9-co-phieu-chip-co-tiem-nang-phuc-hoi-sau-dot-ban-thao-200457442",
+      "https://vn.investing.com/analysis/gia-vang-phuc-hoi-hay-chi-la-cu-nay-meo-chet-moc-4000-usd-se-quyet-dinh-xu-huong-tiep-theo-200457430",
+      "https://vn.investing.com/analysis/7-co-phieu-dang-chu-y-khi-pho-wall-tim-cach-phuc-hoi-sau-dot-ban-thao-hom-thu-sau-200457429",
+      "https://vn.investing.com/analysis/ngan-hang-trung-uong-van-mua-vang-vay-tai-sao-gia-vang-van-chiu-ap-luc-giam-200457279"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

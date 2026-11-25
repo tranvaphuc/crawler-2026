@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "siteName": "emagazine24.net",
+  "siteId": "emagazine24.net",
+  "registrableDomain": "emagazine24.net",
+  "homepage": "https://emagazine24.net/",
+  "allowedHosts": [
+    "emagazine24.net",
+    "www.emagazine24.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Quân A.P giữ chuỗi hoạt động sôi nổi bằng EP “Hóa điên”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:57.229Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://emagazine24.net/quan-a-p-giu-chuoi-hoat-dong-soi-noi-bang-ep-hoa-dien/",
+      "https://emagazine24.net/den-mat-thoi-gian-dai-de-viet-ca-khuc-moi-gui-gam-thong-diep-bao-ve-tre-em-trong-thoi-dai-so/",
+      "https://emagazine24.net/ket-thuc-chang-tai-yen-bai-dan-cast-va-3-khach-moi-2-ngay-1-dem-da-co-mot-bua-tiec-chia-tay-day-xuc-dong/",
+      "https://emagazine24.net/nhan-tinh-bi-an-qua-khu-ngoai-tinh-gay-am-anh-nha-phuong-doi-dau-chong-vi-tieu-thu-tap-doan/",
+      "https://emagazine24.net/thu-thach-giai-ma-chat-lieu-truyen-thong-trong-24h-cua-aquafina-pure-fashion-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://emagazine24.net/",
+    "categories": [
+      "https://emagazine24.net/category/am-nhac/",
+      "https://emagazine24.net/category/am-nhac/nhac-viet/",
+      "https://emagazine24.net/category/am-nhac/nhac-quoc-te/",
+      "https://emagazine24.net/category/am-nhac/cam-nhan-am-nhac/",
+      "https://emagazine24.net/category/am-nhac/ca-khuc-moi/",
+      "https://emagazine24.net/category/tham-do/",
+      "https://emagazine24.net/category/tham-do/scandals/",
+      "https://emagazine24.net/category/tham-do/bi-mat-showbiz/",
+      "https://emagazine24.net/category/tham-do/chuyen-gio-moi-ke/",
+      "https://emagazine24.net/category/truyen-hinh/",
+      "https://emagazine24.net/category/truyen-hinh/tv-show/",
+      "https://emagazine24.net/category/truyen-hinh/sitcom/",
+      "https://emagazine24.net/category/truyen-hinh/phim-truyen-hinh/",
+      "https://emagazine24.net/category/giai-tri/",
+      "https://emagazine24.net/category/giai-tri/webdrama/",
+      "https://emagazine24.net/category/giai-tri/video-clip-hot/",
+      "https://emagazine24.net/category/giai-tri/xem-an-choi/",
+      "https://emagazine24.net/category/giai-tri/phim-chieu-rap/",
+      "https://emagazine24.net/category/phong-cach/",
+      "https://emagazine24.net/category/phong-cach/du-lich/",
+      "https://emagazine24.net/category/phong-cach/lam-dep/",
+      "https://emagazine24.net/category/phong-cach/cong-nghe/",
+      "https://emagazine24.net/category/phong-cach/am-thuc/",
+      "https://emagazine24.net/category/phong-cach/suc-khoe/",
+      "https://emagazine24.net/category/thoi-trang-2/",
+      "https://emagazine24.net/category/thoi-trang-2/san-dien/",
+      "https://emagazine24.net/category/thoi-trang-2/bo-suu-tap/",
+      "https://emagazine24.net/category/thoi-trang-2/tieu-diem-thoi-trang/",
+      "https://emagazine24.net/category/dau-truong-nhan-sac/",
+      "https://emagazine24.net/category/dau-truong-nhan-sac/nguoi-dep/",
+      "https://emagazine24.net/category/dau-truong-nhan-sac/dau-truong-miss/",
+      "https://emagazine24.net/category/dau-truong-nhan-sac/dau-truong-mr/",
+      "https://emagazine24.net/category/the-gioi-nghe-sy/",
+      "https://emagazine24.net/category/the-gioi-nghe-sy/ca-si-tre/",
+      "https://emagazine24.net/category/the-gioi-nghe-sy/dien-vien-trien-vong/",
+      "https://emagazine24.net/category/the-gioi-nghe-sy/guong-mat-online/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "emagazine24.net",
+    "checkedAt": "2026-11-09T04:01:17.709Z",
+    "url": "https://emagazine24.net/quan-a-p-giu-chuoi-hoat-dong-soi-noi-bang-ep-hoa-dien/",
+    "finalUrl": "https://emagazine24.net/quan-a-p-giu-chuoi-hoat-dong-soi-noi-bang-ep-hoa-dien/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3016,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "emagazine24.net",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 45,
+    "checkedArticleUrls": 46,
+    "freshArticleChecks": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 45,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 36,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 693,
+        "passed": 44,
+        "distinctHashes": 44
+      },
+      {
+        "name": "audio",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:20.376Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/emagazine24.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

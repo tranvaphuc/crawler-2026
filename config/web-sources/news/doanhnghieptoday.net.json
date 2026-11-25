@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghieptoday.net",
+  "siteId": "doanhnghieptoday.net",
+  "registrableDomain": "doanhnghieptoday.net",
+  "homepage": "https://doanhnghieptoday.net/",
+  "allowedHosts": [
+    "doanhnghieptoday.net",
+    "www.doanhnghieptoday.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giải 03 môn phối hợp IRONMAN 70.3: điểm đến mới đầy ấn tượng – Vịnh Hạ Long",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "public_feed",
+    "feedUrl": "https://doanhnghieptoday.net/feed/",
+    "sourceKind": "public_feed",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:31.168Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghieptoday.net/2026/11/02/giai-03-mon-phoi-hop-ironman-70-3-diem-den-moi-day-an-tuong-vinh-ha-long/",
+      "https://doanhnghieptoday.net/2026/10/29/dem-nguoc-mot-thang-den-bim-group-ironman-70-3-phu-quoc-2026/",
+      "https://doanhnghieptoday.net/2026/10/28/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-ix-khoi-dong-hanh-trinh-vi-mot-vn-vuot-troi/",
+      "https://doanhnghieptoday.net/2026/10/11/x-run-training-camp-tiep-suc-cong-dong-chay-bo-chinh-phuc-duong-dua-marathon/",
+      "https://doanhnghieptoday.net/2026/10/08/hanh-trinh-15-nam-ket-noi-cung-cau/",
+      "https://doanhnghieptoday.net/2026/10/22/khang-dien-va-vietinbank-ky-ket-hop-dong-cho-vay-du-an-chinh-trang-do-thi-khu-ma-lang-va-cho-ga-gao/",
+      "https://doanhnghieptoday.net/2026/10/23/lotte-va-phat-dat-chinh-thuc-khoi-cong-du-an-lotte-eco-smart-city-thu-thiem/",
+      "https://doanhnghieptoday.net/2026/10/18/ttc-phu-quoc-khai-truong-van-phong-ban-hang-va-nha-mau-tai-tp-hcm/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghieptoday.net/",
+    "categories": [
+      "https://doanhnghieptoday.net/category/tin-tuc/",
+      "https://doanhnghieptoday.net/category/kinh-te/",
+      "https://doanhnghieptoday.net/category/kinh-te/cong-nghiep/",
+      "https://doanhnghieptoday.net/category/kinh-te/nong-nghiep/",
+      "https://doanhnghieptoday.net/category/kinh-te/dau-tu/",
+      "https://doanhnghieptoday.net/category/kinh-te/ngan-hang/",
+      "https://doanhnghieptoday.net/category/kinh-te/chung-khoan/",
+      "https://doanhnghieptoday.net/category/bat-dong-san/",
+      "https://doanhnghieptoday.net/category/thi-truong-tieu-dung/",
+      "https://doanhnghieptoday.net/category/thi-truong-tieu-dung/xe/",
+      "https://doanhnghieptoday.net/category/thi-truong-tieu-dung/dien-tu/",
+      "https://doanhnghieptoday.net/category/thi-truong-tieu-dung/my-pham/",
+      "https://doanhnghieptoday.net/category/thi-truong-tieu-dung/thoi-trang/",
+      "https://doanhnghieptoday.net/category/van-hoa/",
+      "https://doanhnghieptoday.net/category/giao-duc/",
+      "https://doanhnghieptoday.net/category/y-te/",
+      "https://doanhnghieptoday.net/category/du-lich/",
+      "https://doanhnghieptoday.net/category/du-lich/kham-pha/",
+      "https://doanhnghieptoday.net/category/du-lich/am-thuc/",
+      "https://doanhnghieptoday.net/category/du-lich/khach-san/",
+      "https://doanhnghieptoday.net/category/du-lich/resort/",
+      "https://doanhnghieptoday.net/category/du-lich/tour-moi/",
+      "https://doanhnghieptoday.net/category/doanh-nghiep/",
+      "https://doanhnghieptoday.net/category/doanh-nhan/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghieptoday.net",
+    "checkedAt": "2026-11-09T03:57:00.815Z",
+    "url": "https://doanhnghieptoday.net/2026/11/02/giai-03-mon-phoi-hop-ironman-70-3-diem-den-moi-day-an-tuong-vinh-ha-long/",
+    "finalUrl": "https://doanhnghieptoday.net/2026/11/02/giai-03-mon-phoi-hop-ironman-70-3-diem-den-moi-day-an-tuong-vinh-ha-long/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7493,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnghieptoday.net",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 24,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 188,
+        "passed": 32,
+        "distinctHashes": 32
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghieptoday.net/2026/11/02/giai-03-mon-phoi-hop-ironman-70-3-diem-den-moi-day-an-tuong-vinh-ha-long/",
+      "https://doanhnghieptoday.net/2026/10/29/dem-nguoc-mot-thang-den-bim-group-ironman-70-3-phu-quoc-2026/",
+      "https://doanhnghieptoday.net/2026/10/28/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-ix-khoi-dong-hanh-trinh-vi-mot-vn-vuot-troi/",
+      "https://doanhnghieptoday.net/2026/10/11/x-run-training-camp-tiep-suc-cong-dong-chay-bo-chinh-phuc-duong-dua-marathon/",
+      "https://doanhnghieptoday.net/2026/10/08/hanh-trinh-15-nam-ket-noi-cung-cau/",
+      "https://doanhnghieptoday.net/2026/10/22/khang-dien-va-vietinbank-ky-ket-hop-dong-cho-vay-du-an-chinh-trang-do-thi-khu-ma-lang-va-cho-ga-gao/",
+      "https://doanhnghieptoday.net/2026/09/17/ky-nguyen-agentic-ai-va-quan-tri-rui-ro-tu-tri/",
+      "https://doanhnghieptoday.net/2026/08/01/dien-mat-troi-the-he-moi-tiep-theo-giai-phap-solar-battery-cho-gia-dinh-thuong-mai-va-nha-may/",
+      "https://doanhnghieptoday.net/2026/07/29/huu-co-viet-nam-dang-buoc-vao-mot-giai-doan-phat-trien-moi/",
+      "https://doanhnghieptoday.net/2026/07/08/trien-lam-quoc-te-may-moc-thiet-bi-nganh-mia-duong-ket-noi-cong-nghe-thuc-day-chuyen-doi-xanh/",
+      "https://doanhnghieptoday.net/2026/10/23/lotte-va-phat-dat-chinh-thuc-khoi-cong-du-an-lotte-eco-smart-city-thu-thiem/",
+      "https://doanhnghieptoday.net/2026/10/18/ttc-phu-quoc-khai-truong-van-phong-ban-hang-va-nha-mau-tai-tp-hcm/",
+      "https://doanhnghieptoday.net/2026/07/07/le-khoi-cong-du-an-saigon-lighthouse-tai-duong-nguyen-tat-thanh/",
+      "https://doanhnghieptoday.net/2026/06/27/le-vinh-danh-nghe-moi-gioi-bat-dong-san-vars-awards-2026/",
+      "https://doanhnghieptoday.net/2026/05/27/dong-thap-khoi-cong-du-an-khu-nha-o-xa-hoi-duong-nguyen-trai-noi-dai/",
+      "https://doanhnghieptoday.net/2025/10/25/siuf-vietnam-2025-cau-noi-giao-thuong-xu-huong-moi-cua-nganh-noi-y-chau-a/",
+      "https://doanhnghieptoday.net/2025/09/17/ha-noi-voi-du-thao-ve-vung-phat-thai-thap-va-lo-trinh-han-che-xe-o-to-khong-dat-tieu-chuan-khi-thai/",
+      "https://doanhnghieptoday.net/2025/07/31/dong-loat-de-xuat-cach-quan-ly-muc-nhien-lieu-o-to-va-xe-may/",
+      "https://doanhnghieptoday.net/2025/07/25/hoi-nghi-xuat-khau-thuong-mai-dien-tu-2025-cua-amazon/",
+      "https://doanhnghieptoday.net/2025/05/27/o-to-byd-viet-nam-chinh-thuc-cong-bo-hop-tac-cung-grab-viet-nam/",
+      "https://doanhnghieptoday.net/2026/04/19/khi-ban-co-tri-thuc-thi-ai-se-chua-lanh-cung-ban/",
+      "https://doanhnghieptoday.net/2026/02/03/tinh-sultan-kudarat-bo-nhiem-a-hau-miss-cosmo-2025-chelsea-fernandez-dai-su-du-lich/",
+      "https://doanhnghieptoday.net/2025/12/06/hon-70-hoa-hau-quoc-te-dien-ao-dai-deo-sash-xuat-hien-an-tuong-tai-khai-mac-le-hoi-tra-quoc-te/",
+      "https://doanhnghieptoday.net/2025/11/28/phong-cach-thoi-trang-da-dang-hh-phuong-linh-toa-sang-tu-san-bay-den-glamshot-cosmo-2025/",
+      "https://doanhnghieptoday.net/2026/11/03/samsung-va-trung-tam-dmst-quoc-gia-vinh-danh-tai-nang-tre-xuat-sac-tai-giai-samsung-solve-for-tomorow-2026/",
+      "https://doanhnghieptoday.net/2026/05/10/hoi-thao-tu-giang-duong-den-du-an-toan-cau/",
+      "https://doanhnghieptoday.net/2026/04/17/khoi-dong-chuong-trinh-samsung-solve-for-tomorrow-2026-thuc-day-giao-duc-stem-gan-voi-phat-trien-xa-hoi-ben-vung/",
+      "https://doanhnghieptoday.net/2026/04/16/chinh-thuc-khoi-dong-chuong-trinh-dao-tao-nhan-tai-cong-nghe-samsung-innovation-campus-2026/",
+      "https://doanhnghieptoday.net/2025/11/03/samsung-viet-nam-tong-ket-va-cong-bo-ket-qua-cuoc-thi-samsung-solve-for-tomorrow-2025/",
+      "https://doanhnghieptoday.net/2026/03/19/ra-mat-clb-hoc-mai-vn-cau-noi-hoc-thuat-y-khoa-viet-nam-uc/",
+      "https://doanhnghieptoday.net/2026/02/03/gap-lai-ahld-thoi-ky-doi-moi-bac-si-tran-dong-a-trong-dong-chay-lich-su-cua-dat-nuoc/",
+      "https://doanhnghieptoday.net/2025/12/31/le-ra-mat-co-so-02-cua-benh-vien-nhan-dan-gia-dinh/",
+      "https://doanhnghieptoday.net/2025/09/22/ra-mat-chuong-trinh-smile-id-by-ips-e-max/",
+      "https://doanhnghieptoday.net/2025/09/08/so-y-te-tp-hcm-chon-phuong-an-cu-them-bac-si-gioi-ra-con-dao-de-dieu-tri-cho-nguoi-benh-bi-chan-thuong-bung-kin-nang/",
+      "https://doanhnghieptoday.net/2026/09/25/gba-oktoberfest-vietnam-2026-mo-ra-mot-chuong-moi-tai-tp-hcm/",
+      "https://doanhnghieptoday.net/2026/08/28/luot-van-tren-bien-bo-mon-the-thao-dang-trai-nghiem-khi-ghe-tham-bai-dai/",
+      "https://doanhnghieptoday.net/2026/05/04/gio-to-hung-vuong-va-30-4-1-5-trong-9-ngay-tp-hcm-dat-doanh-thu-du-lich-8-700-ty-dong/",
+      "https://doanhnghieptoday.net/2026/04/03/nhung-tia-nang-dau-tien-cua-tinh-dak-lak-cham-rung-om-bien-de-phat-trien-du-lich/",
+      "https://doanhnghieptoday.net/2026/03/30/fairmont-ha-noi-chinh-thuc-khai-truong-don-khach-den-tam-diem-iao-thoa-van-hoa-xa-hoi-moi-cua-vn/",
+      "https://doanhnghieptoday.net/2026/10/05/dot-pha-cn-sac-tich-hop-cua-dat-bike-mang-ve-giai-thuong-giai-phap-thuc-day-chuyen-doi-xanh-tai-better-choice-awards/",
+      "https://doanhnghieptoday.net/2026/07/14/hoi-nghi-sau-rieng-chau-a-lan-thu-hai-va-ket-noi-san-xuat-tieu-thu-sau-rieng-viet-nam/",
+      "https://doanhnghieptoday.net/2026/06/21/qcgl-qua-can-than-nhung-da-tim-ra-anh-sang-o-cuoi-duong-ham-de-giu-lay-su-on-dinh-cho-cty/",
+      "https://doanhnghieptoday.net/2026/05/30/hqcvoi-muc-tieu-vi-mot-trieu-mai-am-gia-dinh-viet-tang-toc-trien-khai-du-an-noxh-de-dat-doanh-thu-12-000-ty-dong/",
+      "https://doanhnghieptoday.net/2026/05/15/hiep-hoi-xay-dung-va-vat-lieu-xay-dung-tp-hcm-35-nam-thanh-lap-voi-nhieu-dau-an-vuot-thoi-gian/",
+      "https://doanhnghieptoday.net/2025/11/27/doanh-nhan-bui-ngoc-quoc-hung-ceo-careerviet-ghi-dau-an-tai-giai-thuong-sao-do-doanh-nhan-tre-viet-nam/",
+      "https://doanhnghieptoday.net/2024/10/19/pham-tien-dung-nhac-si-cua-doanh-nhan/",
+      "https://doanhnghieptoday.net/2024/05/08/vai-tro-cong-dong-doanh-nhan-tri-thuc-nguoi-viet-nam-o-nuoc-ngoai-voi-su-phat-trien-tphcm/",
+      "https://doanhnghieptoday.net/2024/04/02/chuong-trinh-caravan-lan-toa-yeu-thuong-mua-06/",
+      "https://doanhnghieptoday.net/2024/03/28/eurocham-cong-bo-hoi-dong-quan-tri-nam-2024/",
+      "https://doanhnghieptoday.net/2026/01/30/tet-ngay-xua-cua-me/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:04.483Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghieptoday.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hanoitimes.vn",
+  "siteId": "hanoitimes.vn",
+  "registrableDomain": "hanoitimes.vn",
+  "homepage": "https://hanoitimes.vn/",
+  "allowedHosts": [
+    "hanoitimes.vn",
+    "www.hanoitimes.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "enabled": false,
+  "stage": "customer_requested_pending_qualification",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "originalPublicationBlockedReason": "customer_source_not_yet_qualified_20261117",
+  "discovery": {
+    "homepage": "https://hanoitimes.vn/",
+    "categories": []
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T07:40:39.069Z",
+    "sampleUrls": [],
+    "fullSiteCycleVerified": false,
+    "qualificationApproved": false
+  },
+  "customerRequest": {
+    "requestedAt": "2026-11-17",
+    "requestedDomain": "hanoitimes.vn",
+    "requestedUrl": "https://hanoitimes.vn/",
+    "redirectObserved": null,
+    "evidence": "outputs/customer-sites-20261117/audit/hanoitimes.vn/result.json",
+    "reasons": {
+      "access_blocked": 2,
+      "ECONNRESET": 1,
+      "no_working_article_discovery_seed": 1,
+      "insufficient_distinct_verified_articles": 1,
+      "insufficient_independent_http_holdouts": 1
+    },
+    "paidAiCalls": 0
+  }
+}

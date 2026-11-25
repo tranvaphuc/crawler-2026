@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunucuocsong.vn",
+  "siteId": "phunucuocsong.vn",
+  "registrableDomain": "phunucuocsong.vn",
+  "homepage": "https://phunucuocsong.vn/",
+  "allowedHosts": [
+    "phunucuocsong.vn",
+    "www.phunucuocsong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://phunucuocsong.vn/",
+    "categories": [
+      "https://phunucuocsong.vn/tin-tuc",
+      "https://phunucuocsong.vn/giai-tri",
+      "https://phunucuocsong.vn/thoi-trang-va-lam-dep",
+      "https://phunucuocsong.vn/hon-nhan-va-gia-dinh",
+      "https://phunucuocsong.vn/tieu-dung",
+      "https://phunucuocsong.vn/kinh-te-tai-chinh",
+      "https://phunucuocsong.vn/suc-khoe",
+      "https://phunucuocsong.vn/giao-duc"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "VIB Privilege Banking: Linh hoạt, cá nhân hóa, đúng với từng khách hàng ưu tiên",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:14.662Z",
+    "frozenAt": "2026-11-16T01:59:03.343Z",
+    "trainingUrl": "https://phunucuocsong.vn/vib-privilege-banking-linh-hoat-ca-nhan-hoa-dung-voi-tung-khach-hang-uu-tien-62777.html",
+    "independentHoldouts": [
+      "https://phunucuocsong.vn/hdbank-vietjet-va-vikki-dong-hanh-mua-mua-sam-cuoi-nam-tphcm-ket-noi-uu-dai-tai-chinh-hang-khong-du-lich-62806.html",
+      "https://phunucuocsong.vn/vinfast-chinh-thuc-nhan-dat-coc-xe-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong-62807.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://phunucuocsong.vn/vib-privilege-banking-linh-hoat-ca-nhan-hoa-dung-voi-tung-khach-hang-uu-tien-62777.html",
+      "https://phunucuocsong.vn/classic-fine-foods-phat-trien-doi-ngu-on-dinh-nen-tang-cho-tang-truong-ben-vung-62808.html",
+      "https://phunucuocsong.vn/hdbank-vietjet-va-vikki-dong-hanh-mua-mua-sam-cuoi-nam-tphcm-ket-noi-uu-dai-tai-chinh-hang-khong-du-lich-62806.html",
+      "https://phunucuocsong.vn/vinfast-chinh-thuc-nhan-dat-coc-xe-vf-5-va-vf-6-moi-gia-tu-460-va-646-trieu-dong-62807.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

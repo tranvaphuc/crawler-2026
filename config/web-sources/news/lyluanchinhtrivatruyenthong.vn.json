@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "siteName": "lyluanchinhtrivatruyenthong.vn",
+  "siteId": "lyluanchinhtrivatruyenthong.vn",
+  "registrableDomain": "lyluanchinhtrivatruyenthong.vn",
+  "homepage": "https://lyluanchinhtrivatruyenthong.vn/",
+  "allowedHosts": [
+    "lyluanchinhtrivatruyenthong.vn",
+    "www.lyluanchinhtrivatruyenthong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chiến lược hạ tầng công cộng kỹ thuật số của Ấn Độ: “mô hình thứ ba” trong địa chính trị công nghệ và hàm ý chính sách cho Việt Nam",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".jms-meta-dates",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content.content-main",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Bảo đảm an ninh tư tưởng cho đoàn viên, thanh niên góp phần bảo vệ nền tảng tư tưởng của Đảng trong tình hình mới",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".jms-meta-dates",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#print-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:38.850Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://lyluanchinhtrivatruyenthong.vn/chien-luoc-ha-tang-cong-cong-ky-thuat-so-cua-an-do-mo-hinh-thu-ba-trong-dia-chinh-tri-cong-nghe-va-ham-y-chinh-sach-cho-viet-nam-p31512.html",
+      "https://lyluanchinhtrivatruyenthong.vn/bao-dam-an-ninh-tu-tuong-cho-doan-vien,-thanh-nien-gop-phan-bao-ve-nen-tang-tu-tuong-cua-dang-trong-tinh-hinh-moi-p31640.html",
+      "https://lyluanchinhtrivatruyenthong.vn/vai-tro-cua-doi-ngu-giang-vien-ly-luan-chinh-tri-o-lao-trong-giai-doan-hoi-nhap-quoc-te-hien-nay-p29573.html",
+      "https://lyluanchinhtrivatruyenthong.vn/truyen-thong-noi-bo-va-hinh-anh-nu-vien-chuc-hoc-vien-chinh-tri-quoc-gia-ho-chi-minh-trong-ky-nguyen-so-p29598.html",
+      "https://lyluanchinhtrivatruyenthong.vn/hoi-nghi-trung-uong-2-khoa-xiv-cung-co-nen-tang-khoi-thong-dong-luc-thuc-day-phat-trien-ben-vung-p29630.html",
+      "https://lyluanchinhtrivatruyenthong.vn/hop-tac-viet-nam-lao-trong-bao-dam-an-toan-giao-thong-duong-bo-nhin-tu-so-sanh-phap-luat-p29645.html",
+      "https://lyluanchinhtrivatruyenthong.vn/co-so-ly-luan-va-thuc-tien-ve-ky-nguyen-vuon-minh-cua-dan-toc-trong-bao-cao-chinh-tri-dai-hoi-xiv-cua-dang-p29646.html",
+      "https://lyluanchinhtrivatruyenthong.vn/quan-diem-cua-dai-hoi-xiv-ve-xay-dung-nen-van-hoa-viet-nam-va-dinh-huong-xay-dung-van-hoa-chinh-tri-cua-cong-dan-hien-nay-p32106.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://lyluanchinhtrivatruyenthong.vn/",
+    "categories": [
+      "https://lyluanchinhtrivatruyenthong.vn/ly-luan-chinh-tri",
+      "https://lyluanchinhtrivatruyenthong.vn/bao-chi-truyen-thong",
+      "https://lyluanchinhtrivatruyenthong.vn/khoa-hoc-xa-hoi-va-nhan-van",
+      "https://lyluanchinhtrivatruyenthong.vn/tap-chi-in",
+      "https://lyluanchinhtrivatruyenthong.vn/page/ban-bien-tap",
+      "https://lyluanchinhtrivatruyenthong.vn/page/hoi-dong-bien-tap",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban?type=tap-chi-in-thuong-ky",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban?type=tap-chi-dien-tu-tieng-viet",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban?type=tap-chi-in-chuyen-de",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban?type=tap-chi-in-tieng-anh",
+      "https://lyluanchinhtrivatruyenthong.vn/da-xuat-ban?type=tap-chi-dien-tu-tieng-anh",
+      "https://lyluanchinhtrivatruyenthong.vn/page/huong-dan-gui-bai",
+      "https://lyluanchinhtrivatruyenthong.vn/page/dao-duc-xuat-ban",
+      "https://lyluanchinhtrivatruyenthong.vn/page/quy-trinh-xuat-ban",
+      "https://lyluanchinhtrivatruyenthong.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.306Z",
+      "verifiedSeeds": [
+        "https://lyluanchinhtrivatruyenthong.vn/",
+        "https://lyluanchinhtrivatruyenthong.vn/ly-luan-chinh-tri",
+        "https://lyluanchinhtrivatruyenthong.vn/bao-chi-truyen-thong",
+        "https://lyluanchinhtrivatruyenthong.vn/khoa-hoc-xa-hoi-va-nhan-van"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "lyluanchinhtrivatruyenthong.vn",
+    "checkedAt": "2026-11-09T03:57:13.946Z",
+    "url": "https://lyluanchinhtrivatruyenthong.vn/chien-luoc-ha-tang-cong-cong-ky-thuat-so-cua-an-do-mo-hinh-thu-ba-trong-dia-chinh-tri-cong-nghe-va-ham-y-chinh-sach-cho-viet-nam-p31512.html",
+    "finalUrl": "https://lyluanchinhtrivatruyenthong.vn/chien-luoc-ha-tang-cong-cong-ky-thuat-so-cua-an-do-mo-hinh-thu-ba-trong-dia-chinh-tri-cong-nghe-va-ham-y-chinh-sach-cho-viet-nam-p31512.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 18133,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "lyluanchinhtrivatruyenthong.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 3,
+    "freshArticleChecks": 0,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 15,
+    "categoriesUnconfirmed": 15,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:58.376Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/lyluanchinhtrivatruyenthong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "nativeIdPattern": "-p(\\d+)\\.html?$",
+  "runtimeRepairRevision": "native-post-id-is-not-pagination-20261113",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T08:22:26.744Z",
+    "method": "verified_original_calendar_day_without_default_clock",
+    "proofs": [
+      {
+        "url": "https://lyluanchinhtrivatruyenthong.vn/chien-luoc-ha-tang-cong-cong-ky-thuat-so-cua-an-do-mo-hinh-thu-ba-trong-dia-chinh-tri-cong-nghe-va-ham-y-chinh-sach-cho-viet-nam-p31512.html",
+        "contentHash": "c5ae49eea2e2dee17114d4dc131ef053e61b8668b1696d5b8f8f30b3283069cb",
+        "description": "Trong địa chính trị công nghệ, các nước đang phát triển thường được mô tả như đứng trước lựa chọn nhị nguyên giữa mô hình “thị trường - tư nhân dẫn dắt” của Hoa Kỳ và mô hình “nhà nước phát triển kỹ thuật số” của Trung Quốc. Bài viết đề xuất khái niệm “mô hình thứ ba” như một khung phân tích cho trường hợp Ấn Độ, với bốn tiêu chí nhận diện: chủ thể kiến tạo và vận hành hạ tầng, chế độ sở hữu kỹ thuật, cơ chế lan tỏa quốc tế và vị trí của chủ quyền dữ liệu trong kiến trúc. Vận dụng lý thuyết quyền lực cấu trúc (Strange) và quyền lực mềm (Nye), bài viết trả lời ba câu hỏi về năng lực công nghệ nội sinh, ngoại giao số và khả năng chuyển giao mô hình, với trường hợp điển hình là hợp tác công nghệ Việt Nam - Ấn Độ sau tháng 5/2026. Kết quả đối chiếu cho thấy “mô hình thứ ba” được xác lập rõ ở hai tiêu chí kỹ thuật và lan tỏa, song còn tranh cãi ở hai tiêu chí về chủ thể vận hành và chủ quyền dữ liệu. Đối chiếu với khung pháp lý số hiện hành của Việt Nam, bài viết chỉ ra năm hàm ý chính sách cho Việt Nam.",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://lyluanchinhtrivatruyenthong.vn/chien-luoc-ha-tang-cong-cong-ky-thuat-so-cua-an-do-mo-hinh-thu-ba-trong-dia-chinh-tri-cong-nghe-va-ham-y-chinh-sach-cho-viet-nam-p31512.html",
+          "publishedDate": "2026-07-13",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "lyluanchinhtrivatruyenthong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        },
+        "publishedDate": "2026-07-13",
+        "publishedDatePrecision": "day"
+      },
+      {
+        "url": "https://lyluanchinhtrivatruyenthong.vn/vai-tro-cua-doi-ngu-giang-vien-ly-luan-chinh-tri-o-lao-trong-giai-doan-hoi-nhap-quoc-te-hien-nay-p29573.html",
+        "contentHash": "22b5650499fe3bcd9d1cc305b705794e5ce71505945bcb7bd86090e8a3d4e166",
+        "description": "Bài viết nghiên cứu vai trò của đội ngũ giảng viên lý luận chính trị trong bối cảnh hội nhập quốc tế, tập trung vào trường hợp nước Cộng hoà Dân chủ Nhân dân Lào (CHDCND Lào). Thông qua phương pháp phân tích tài liệu, so sánh kinh nghiệm giữa Lào và Việt Nam, nghiên cứu làm rõ bốn vai trò chủ yếu của giảng viên lý luận chính trị: (1) lực lượng trung tâm trong đào tạo, bồi dưỡng lý luận chính trị cho cán bộ; (2) lực lượng xung kích bảo vệ nền tảng tư tưởng của Đảng; (3) nhà nghiên cứu khoa học, tổng kết thực tiễn và tham mưu chính sách; (4) tấm gương sáng về phẩm chất, đạo đức cách mạng. Kết quả nghiên cứu góp phần khẳng định vai trò trung tâm đa diện của đội ngũ giảng viên lý luận chính trị đối với sự nghiệp cách mạng. Đồng thời, đề xuất một số giải pháp nhằm nâng cao chất lượng đội ngũ giảng viên lý luận chính trị giai đoạn mới.",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://lyluanchinhtrivatruyenthong.vn/vai-tro-cua-doi-ngu-giang-vien-ly-luan-chinh-tri-o-lao-trong-giai-doan-hoi-nhap-quoc-te-hien-nay-p29573.html",
+          "publishedDate": "2025-12-04",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "lyluanchinhtrivatruyenthong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        },
+        "publishedDate": "2025-12-04",
+        "publishedDatePrecision": "day"
+      },
+      {
+        "url": "https://lyluanchinhtrivatruyenthong.vn/truyen-thong-noi-bo-va-hinh-anh-nu-vien-chuc-hoc-vien-chinh-tri-quoc-gia-ho-chi-minh-trong-ky-nguyen-so-p29598.html",
+        "contentHash": "06befa795d18ffe68b894b1223a68915f15217b826486b8ec83485bc9b85c64f",
+        "description": "Trong kỷ nguyên chuyển đổi số, truyền thông nội bộ đóng vai trò chiến lược trong việc kiến tạo và lan tỏa hình ảnh nữ viên chức tại Học viện Chính trị quốc gia Hồ Chí Minh. Trên cơ sở tiếp cận truyền thông như một công cụ quản trị và phát triển tổ chức, bài viết chỉ ra sự cần thiết phải chuyển dịch trọng tâm truyền thông nội bộ từ việc chủ yếu tôn vinh các phẩm chất truyền thống sang chủ động xây dựng, khẳng định năng lực trí tuệ, tính chuyên nghiệp và những đóng góp thực chất của nữ viên chức vào sứ mệnh của Học viện. Từ đó, tác giả đề xuất một hệ thống giải pháp đồng bộ, khẳng định truyền thông nội bộ không chỉ góp phần kiến tạo một môi trường làm việc công bằng, bình đẳng, phát huy tối đa tiềm năng của đội ngũ nữ viên chức, mà còn là một đòn bẩy quan trọng thúc đẩy sự phát triển bền vững và nâng cao uy tín của Học viện trong bối cảnh mới.",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://lyluanchinhtrivatruyenthong.vn/truyen-thong-noi-bo-va-hinh-anh-nu-vien-chuc-hoc-vien-chinh-tri-quoc-gia-ho-chi-minh-trong-ky-nguyen-so-p29598.html",
+          "publishedDate": "2026-03-01",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "lyluanchinhtrivatruyenthong.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        },
+        "publishedDate": "2026-03-01",
+        "publishedDatePrecision": "day"
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationDatePolicy": "original_only",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "lyluanchinhtrivatruyenthong.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "publicationTimePolicy": "original_clock_required"
+}

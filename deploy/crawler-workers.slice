@@ -1,0 +1,7 @@
+[Unit]
+Description=Shared memory budget for crawler worker roles
+
+[Slice]
+MemoryHigh=10G
+MemoryMax=12G
+TasksMax=8192

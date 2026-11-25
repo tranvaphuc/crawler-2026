@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "siteName": "marrybaby.vn",
+  "siteId": "marrybaby.vn",
+  "registrableDomain": "marrybaby.vn",
+  "homepage": "https://www.marrybaby.vn/",
+  "allowedHosts": [
+    "www.marrybaby.vn",
+    "marrybaby.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Dấu hiệu bệnh do não mô cầu: Có nên chờ tử ban xuất hiện mới đi khám?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article-page-container-wrapper",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:25.582Z",
+    "sampleCount": 12,
+    "passedSamples": 4,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 6,
+    "sampleUrls": [
+      "https://www.marrybaby.vn/su-phat-trien-cua-tre/suc-khoe-tre-em/van-de-than-kinh-o-tre/dau-hieu-nao-mo-cau/",
+      "https://www.marrybaby.vn/gia-dinh/suc-khoe-gia-dinh/tuoi-tho/",
+      "https://www.marrybaby.vn/gia-dinh/nau-an-ngon/mo-lon/",
+      "https://www.marrybaby.vn/gia-dinh/nau-an-ngon/mo-lon/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.marrybaby.vn/",
+    "categories": [
+      "https://www.marrybaby.vn/mang-thai/",
+      "https://www.marrybaby.vn/spotlight/",
+      "https://www.marrybaby.vn/sau-khi-sinh/",
+      "https://www.marrybaby.vn/chuan-bi-mang-thai/",
+      "https://www.marrybaby.vn/gia-dinh/",
+      "https://www.marrybaby.vn/spotlight/khoe-manh-toan-dien-vi-gia-dinh/",
+      "https://www.marrybaby.vn/health-tools/tinh-ngay-rung-trung/",
+      "https://www.marrybaby.vn/health-tools/cong-cu-tinh-ngay-du-sinh/",
+      "https://www.marrybaby.vn/health-tools/cong-cu-tinh-can-nang-khi-mang-thai/",
+      "https://www.marrybaby.vn/health-tools/cong-cu-theo-doi-lich-tiem-chung-cho-be/",
+      "https://www.marrybaby.vn/health-tools/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?marrybaby.vn/.*?/[\\w-]{30,}[\\w]{1}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "marrybaby.vn",
+    "checkedAt": "2026-11-09T03:57:14.505Z",
+    "url": "https://www.marrybaby.vn/su-phat-trien-cua-tre/suc-khoe-tre-em/van-de-than-kinh-o-tre/dau-hieu-nao-mo-cau/",
+    "finalUrl": "https://www.marrybaby.vn/su-phat-trien-cua-tre/suc-khoe-tre-em/van-de-than-kinh-o-tre/dau-hieu-nao-mo-cau/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8160,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "marrybaby.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 33,
+    "freshArticleChecks": 31,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 10,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 3,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 88,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.marrybaby.vn/expert/thac-si-bac-si-giang-vien-nguyen-van-hoan",
+      "https://www.marrybaby.vn/su-phat-trien-cua-tre/suc-khoe-tre-em/van-de-than-kinh-o-tre/dau-hieu-nao-mo-cau/",
+      "https://www.marrybaby.vn/su-phat-trien-cua-tre/suc-khoe-tre-em/van-de-than-kinh-o-tre/",
+      "https://www.marrybaby.vn/gia-dinh/suc-khoe-gia-dinh/tuoi-tho/",
+      "https://www.marrybaby.vn/gia-dinh/suc-khoe-gia-dinh/",
+      "https://www.marrybaby.vn/expert/ban-tham-van-y-khoa",
+      "https://www.marrybaby.vn/gia-dinh/nau-an-ngon/mo-lon/",
+      "https://www.marrybaby.vn/expert/vo-viet-lan-phuong",
+      "https://www.marrybaby.vn/40-tuan-thai/su-phat-trien-cua-thai-ky-tuan-thai-thu-1"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "original_publication_not_yet_confirmed": 4,
+      "public_inline_state_requires_adapter": 1
+    },
+    "checkedAt": "2026-11-10T09:16:05.240Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/marrybaby.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "siteName": "trungtamcongtacxahoi.hatinh.vn",
+  "siteId": "trungtamcongtacxahoi.hatinh.vn",
+  "registrableDomain": "trungtamcongtacxahoi.hatinh.vn",
+  "homepage": "https://trungtamcongtacxahoi.hatinh.vn/",
+  "allowedHosts": [
+    "trungtamcongtacxahoi.hatinh.vn",
+    "www.trungtamcongtacxahoi.hatinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://trungtamcongtacxahoi.hatinh.vn/",
+    "categories": [
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/",
+      "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/",
+      "https://trungtamcongtacxahoi.hatinh.vn/giao-duc-nghe-nghiep/",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/",
+      "https://trungtamcongtacxahoi.hatinh.vn/giao-duc-nghe-nghiep/tuyen-sinh/",
+      "https://trungtamcongtacxahoi.hatinh.vn/giao-duc-nghe-nghiep/dao-tao/",
+      "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/bang-vang-tai-tro/",
+      "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Chủ động nguồn, nâng chất lượng tuyển chọn nghĩa vụ công an nhân dân",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"datePublished\"]",
+    "attribute": null
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news_column.panel",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:28.899Z",
+    "frozenAt": "2026-11-16T02:00:21.815Z",
+    "trainingUrl": "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/chu-dong-nguon-nang-chat-luong-tuyen-chon-nghia-vu-cong-an-nhan-dan-19119.html",
+    "independentHoldouts": [
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/quy-dinh-moi-ve-so-luong-bien-che-cong-chuc-dieu-kien-dieu-chinh-19120.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/18-nam-dat-thuong-hieu-quoc-gia-va-hanh-trinh-khong-ngung-nang-chuan-cua-vinamilk-18761.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/chu-dong-nguon-nang-chat-luong-tuyen-chon-nghia-vu-cong-an-nhan-dan-19119.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/quy-dinh-moi-ve-so-luong-bien-che-cong-chuc-dieu-kien-dieu-chinh-19120.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/18-nam-dat-thuong-hieu-quoc-gia-va-hanh-trinh-khong-ngung-nang-chuan-cua-vinamilk-18761.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/chung-tay-lam-diem-tua-cho-tre-em-co-hoan-canh-kho-khan-19124.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/nang-cao-nang-luc-cung-cap-dich-vu-cong-tac-xa-hoi-ho-tro-phu-nu-va-tre-em-gai-bi-bao-luc-tren-co-so-gioi-18776.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/to-chuc-tap-huan-nang-cao-nang-luc-ve-cung-cap-dich-vu-cong-tac-xa-hoi-ho-tro-phu-nu-va-tre-em-gai-bi-bao-luc-tren-co-so-gioi-18487.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/chi-doan-trung-tam-cong-tac-xa-hoi-to-chuc-chuong-trinh-dem-ram-trung-thu-cho-con-em-can-bo-vien-chuc-va-nguoi-lao-dong-tai-don-vi-18280.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/sinh-hoat-chuyen-de-neu-cao-tinh-than-hoc-tap-suot-doi-theo-tinh-than-bai-viet-cua-tong-bi-thu-to-lam-quyet-tam-hoan-thanh-tot-nhiem-vu-trong-dieu-kien-moi-18263.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/tham-du-tap-huan-giang-vien-nguon-tot-ve-cung-cap-dich-vu-cong-tac-xa-hoi-cho-phu-nu-va-tre-em-gai-bi-bao-luc-tren-co-so-gioi-18216.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/to-chuc-hoi-nghi-tuyen-truyen-ve-cong-tac-bao-ve-phong-chong-bao-luc-xam-hai-tre-em-tai-xa-ky-anh-18030.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/hoi-nghi-tuyen-truyen-truyen-thong-ve-cong-tac-bao-ve-phong-chong-xam-hai-bao-luc-tre-em-tai-xa-son-giang-17757.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/ctxh/trung-tam-cong-tac-xa-hoi-giao-duc-nghe-nghiep-cho-nguoi-khuyet-tat-to-chuc-hanh-huong-dia-chi-do-tai-nga-ba-dong-loc-nhan-ngay-27-7-17172.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/trao-qua-cho-tre-em-co-hoan-canh-kho-khan-con-ngu-dan-thuoc-du-an-tha-luoi-uoc-mo-do-cong-ty-co-phan-acecook-tai-tro-19094.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/trao-hoc-bong-cho-510-hoc-sinh-ngheo-vuot-kho-hoc-kha-gioi-do-to-chuc-zhishan-tai-tro-18778.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/khanh-thanh-07-thu-vien-than-thien-tai-xa-huong-son-va-khao-sat-nhu-cau-ho-tro-nam-2027-18777.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/am-ap-cac-hoat-dong-cham-lo-trao-qua-tet-trung-thu-nam-2026-cho-tre-em-co-hoan-canh-dac-biet-18361.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/ho-tro-thiet-lap-thu-vien-do-choi-cho-2-truong-tai-xa-huong-son-17721.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/quytreem/trao-500-bo-loc-nuoc-mini-sawyer-cho-cac-ho-gia-dinh-vung-kho-khan-17403.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/daynghe/trung-tam-kiem-tra-hoat-dong-dao-tao-nghe-cho-nguoi-khuyet-tat-khoa-37-nam-hoc-2026-dot-2-18281.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/daynghe/be-giang-cac-lop-dao-tao-nghe-cho-nguoi-khuyet-tat-khoa-36-nam-2026-18050.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/daynghe/to-chuc-di-thuc-te-va-gioi-thieu-viec-lam-cho-hoc-sinh-hoc-nghe-khoa-36-nam-hoc-2026-17627.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/daynghe/salon-toc-ron-ho-tro-cat-toc-mien-phi-cho-hoc-sinh-nguoi-khuyet-tat-khoa-36-nam-2026-17626.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/daynghe/trung-tam-kiem-tra-hoat-dong-dao-tao-nghe-cho-nguoi-khuyet-tat-khoa-37-nam-hoc-2026-17320.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/chu-dong-bao-dam-nguon-dien-cho-san-xuat-cuoi-nam-19123.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/vinfast-se-ra-mat-hai-mau-xe-may-dien-moi-trong-thang-nay-19122.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/hong-linh-ha-tinh-va-bai-toan-phong-ngu-sau-7-vong-dau-19121.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/tin-tuc-su-kien-12/ket-qua-hoat-dong-chuoi-truyen-thong-cho-cap-thcs-tren-dia-ban-toan-tinh-33.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/truyen-thong-cong-dong/ket-qua-hoat-dong-chuoi-truyen-thong-cho-cap-thcs-tren-dia-ban-toan-tinh-33.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/nghien-cuu-trao-doi/quyet-dinh-1929-qd-ttg-ngay-25-thang-11-nam-2020-22.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/tin-tuc-su-kien-12/chuong-trinh-truyen-thong-va-trao-qua-cho-tre-em-co-hoan-canh-kho-khan-tai-thi-xa-hong-linh-32.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/tin-tuc-su-kien-12/truyen-thong-phong-chong-tai-nan-thuong-tich-duoi-nuoc-phong-chong-xam-hai-bao-luc-tre-em-an-toan-tren-khong-gian-mang-va-trao-qua-cho-hoc-sinh-co-hoan-canh-kho-khan-tai-huyen-huong-khe-31.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/truyen-thong-cong-dong/chuong-trinh-truyen-thong-va-trao-qua-cho-tre-em-co-hoan-canh-kho-khan-tai-thi-xa-hong-linh-32.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/truyen-thong-cong-dong/truyen-thong-phong-chong-tai-nan-thuong-tich-duoi-nuoc-phong-chong-xam-hai-bao-luc-tre-em-an-toan-tren-khong-gian-mang-va-trao-qua-cho-hoc-sinh-co-hoan-canh-kho-khan-tai-huyen-huong-khe-31.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/truyen-thong-cong-dong/chuong-trinh-truyen-thong-va-trao-qua-cho-tre-em-co-hoan-canh-dac-biet-kho-khan-vuon-len-trong-hoc-tap-tai-huyen-duc-tho-30.html",
+      "https://trungtamcongtacxahoi.hatinh.vn/cong-tac-xa-hoi/nghien-cuu-trao-doi/quyet-dinh-112-qd-ttg-ngay-22-thang-01-nam-2021-cua-thu-tuong-chinh-phu-ve-viec-ban-hanh-chuong-trinh-phat-trien-cong-tac-xa-hoi-giai-doan-2021-2030-voi-muc-tieu-21.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "strictTimeRepairEvidence": {
+    "frozenAt": "2026-11-16T03:24:12.846Z",
+    "source": "scoped_original_selector",
+    "training": [
+      {
+        "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/khao-sat-cac-gia-dinh-tre-em-co-hoan-canh-dac-biet-kho-khan-tai-cac-dia-phuong-43.html",
+        "date": "2022-07-07T04:27:37.000Z",
+        "raw": "2022-07-07T11:27:37+07:00",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/khao-sat-cac-gia-dinh-tre-em-co-hoan-canh-dac-biet-kho-khan-tai-cac-dia-phuong-43.html",
+          "publishedDate": "2022-07-07T04:27:37.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/lanh-dao-tinh-chung-vui-ngay-hoi-dai-doan-ket-tai-cac-dia-phuong-19109.html",
+        "date": "2026-11-14T23:18:17.000Z",
+        "raw": "2026-11-15T06:18:17+07:00",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://trungtamcongtacxahoi.hatinh.vn/kinh-te-xa-hoi/lanh-dao-tinh-chung-vui-ngay-hoi-dai-doan-ket-tai-cac-dia-phuong-19109.html",
+          "publishedDate": "2026-11-14T23:18:17.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      }
+    ],
+    "independentHoldouts": [
+      {
+        "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/24-tre-em-duoc-phau-thuat-mien-phi-khuyet-tat-van-dong-va-tiet-nieu-44.html",
+        "date": "2022-07-25T01:29:17.000Z",
+        "raw": "2022-07-25T08:29:17+07:00",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/24-tre-em-duoc-phau-thuat-mien-phi-khuyet-tat-van-dong-va-tiet-nieu-44.html",
+          "publishedDate": "2022-07-25T01:29:17.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/phe-duyet-chuong-trinh-cham-soc-suc-khoe-tam-than-tre-em-cham-soc-tre-em-mo-coi-tren-dia-ban-tinh-ha-tinh-giai-doan-2024-2030-47.html",
+        "date": "2024-03-04T00:52:00.000Z",
+        "raw": "2024-03-04T07:52:00+07:00",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://trungtamcongtacxahoi.hatinh.vn/quy-bao-tro-tre-em/hoat-dong-ho-tro-tre-em/phe-duyet-chuong-trinh-cham-soc-suc-khoe-tam-than-tre-em-cham-soc-tre-em-mo-coi-tren-dia-ban-tinh-ha-tinh-giai-doan-2024-2030-47.html",
+          "publishedDate": "2024-03-04T00:52:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock"
+        }
+      }
+    ],
+    "strictValidatorUnchanged": true,
+    "paidAiCalls": 0
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

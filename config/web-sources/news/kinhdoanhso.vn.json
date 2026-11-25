@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhdoanhso.vn",
+  "siteId": "kinhdoanhso.vn",
+  "registrableDomain": "kinhdoanhso.vn",
+  "homepage": "https://kinhdoanhso.vn/",
+  "allowedHosts": [
+    "kinhdoanhso.vn",
+    "www.kinhdoanhso.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://kinhdoanhso.vn/",
+    "categories": [
+      "https://kinhdoanhso.vn/nhip-song-kinh-doanh",
+      "https://kinhdoanhso.vn/hoi-nhap",
+      "https://kinhdoanhso.vn/quoc-te",
+      "https://kinhdoanhso.vn/thi-truong",
+      "https://kinhdoanhso.vn/doi-song",
+      "https://kinhdoanhso.vn/van-hoa-giai-tri"
+    ]
+  },
+  "title": {
+    "value": "Đồng Nai kết nối doanh nghiệp, đưa nông sản vào chuỗi bán lẻ hiện đại",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:49.188Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:42.907Z",
+    "independentHoldouts": [
+      "https://kinhdoanhso.vn/doi-song/hue-to-chuc-dieu-hanh-xe-dap-chao-mung-ngay-van-hoa-viet-nam.html",
+      "https://kinhdoanhso.vn/doi-song/canh-bao-nguy-co-kiet-suc-o-nguoi-luon-om-dien-thoai-sau-gio-lam.html",
+      "https://kinhdoanhso.vn/doi-song/can-bo-cong-doan-hung-yen-giao-luu-the-thao-tang-cuong-doan-ket.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://kinhdoanhso.vn/nhip-cau-tieu-dung/dong-nai-ket-noi-doanh-nghiep-dua-nong-san-vao-chuoi-ban-le-hien-dai.html?categoryId=1642604",
+      "https://kinhdoanhso.vn/doi-song/hue-to-chuc-dieu-hanh-xe-dap-chao-mung-ngay-van-hoa-viet-nam.html",
+      "https://kinhdoanhso.vn/doi-song/canh-bao-nguy-co-kiet-suc-o-nguoi-luon-om-dien-thoai-sau-gio-lam.html",
+      "https://kinhdoanhso.vn/doi-song/can-bo-cong-doan-hung-yen-giao-luu-the-thao-tang-cuong-doan-ket.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

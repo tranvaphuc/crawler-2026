@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepphattrien.vn",
+  "siteId": "doanhnghiepphattrien.vn",
+  "registrableDomain": "doanhnghiepphattrien.vn",
+  "homepage": "https://doanhnghiepphattrien.vn/",
+  "allowedHosts": [
+    "doanhnghiepphattrien.vn",
+    "www.doanhnghiepphattrien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "K-Beauty Expo Vietnam & Saigon Beauty Show 2026 thu hút hơn 24,000 lượt khách",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Xuất khẩu cá tra sang Trung Quốc: Tăng trưởng sáng màu nhưng thiếu cân bằng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:35.263Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiepphattrien.vn/k-beauty-expo-vietnam-saigon-beauty-show-2026-thu-hut-hon-24000-luot-khach/",
+      "https://doanhnghiepphattrien.vn/xuat-khau-ca-tra-sang-trung-quoc-tang-truong-sang-mau-nhung-thieu-can-bang/",
+      "https://doanhnghiepphattrien.vn/phim-ngan-scg-future-express-huong-toi-muc-tieu-doi-tac-chien-luoc-asean/",
+      "https://doanhnghiepphattrien.vn/khach-quoc-te-tang-manh-condotel-truoc-co-hoi-tang-truong-moi/",
+      "https://doanhnghiepphattrien.vn/giai-ba-mon-phoi-hop-ironman-70-3-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepphattrien.vn/",
+    "categories": [
+      "https://doanhnghiepphattrien.vn/kinh-te/",
+      "https://doanhnghiepphattrien.vn/kinh-te/bao-hiem/",
+      "https://doanhnghiepphattrien.vn/kinh-te/ngan-hang/",
+      "https://doanhnghiepphattrien.vn/kinh-te/tai-chinh/",
+      "https://doanhnghiepphattrien.vn/thuong-hieu/",
+      "https://doanhnghiepphattrien.vn/thuong-hieu/doanh-nhan/",
+      "https://doanhnghiepphattrien.vn/thuong-hieu/doanh-nghiep/",
+      "https://doanhnghiepphattrien.vn/thuong-hieu/san-pham/",
+      "https://doanhnghiepphattrien.vn/bat-dong-san/",
+      "https://doanhnghiepphattrien.vn/bat-dong-san/co-hoi-dau-tu/",
+      "https://doanhnghiepphattrien.vn/bat-dong-san/du-an/",
+      "https://doanhnghiepphattrien.vn/cong-nghe/",
+      "https://doanhnghiepphattrien.vn/cong-nghe/san-pham-moi/",
+      "https://doanhnghiepphattrien.vn/cong-nghe/thong-tin-cong-nghe/",
+      "https://doanhnghiepphattrien.vn/van-hoa/",
+      "https://doanhnghiepphattrien.vn/van-hoa/giai-tri/",
+      "https://doanhnghiepphattrien.vn/van-hoa/goc-nhin-van-hoa/",
+      "https://doanhnghiepphattrien.vn/van-hoa/the-gioi-showbiz/",
+      "https://doanhnghiepphattrien.vn/giao-duc/",
+      "https://doanhnghiepphattrien.vn/giao-duc/du-hoc/",
+      "https://doanhnghiepphattrien.vn/giao-duc/thong-tin-giao-duc/",
+      "https://doanhnghiepphattrien.vn/giao-duc/tuyen-sinh/",
+      "https://doanhnghiepphattrien.vn/du-lich/",
+      "https://doanhnghiepphattrien.vn/du-lich/am-thuc/",
+      "https://doanhnghiepphattrien.vn/du-lich/kham-pha/",
+      "https://doanhnghiepphattrien.vn/suc-khoe/",
+      "https://doanhnghiepphattrien.vn/suc-khoe/lam-dep/",
+      "https://doanhnghiepphattrien.vn/suc-khoe/nha-khoa/",
+      "https://doanhnghiepphattrien.vn/suc-khoe/song-khoe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepphattrien.vn",
+    "checkedAt": "2026-11-09T03:57:00.607Z",
+    "url": "https://doanhnghiepphattrien.vn/k-beauty-expo-vietnam-saigon-beauty-show-2026-thu-hut-hon-24000-luot-khach/",
+    "finalUrl": "https://doanhnghiepphattrien.vn/k-beauty-expo-vietnam-saigon-beauty-show-2026-thu-hut-hon-24000-luot-khach/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4618,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnghiepphattrien.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 38,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 38,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 29,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 260,
+        "passed": 38,
+        "distinctHashes": 38
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghiepphattrien.vn/k-beauty-expo-vietnam-saigon-beauty-show-2026-thu-hut-hon-24000-luot-khach/",
+      "https://doanhnghiepphattrien.vn/uy-ban-olympic-viet-nam-phoi-hop-cung-herbalife-viet-nam-to-chuc-tap-huan-dinh-duong-va-hoi-phuc-cho-cac-mon-suc-ben-suc-manh/",
+      "https://doanhnghiepphattrien.vn/fdi-ky-luc-tao-don-bay-cho-doanh-nghiep-viet-buoc-sau-vao-chuoi-gia-tri/",
+      "https://doanhnghiepphattrien.vn/caryn-ra-mat-quan-lot-tham-hang-ngay-xu-ly-van-de-son-tieu-o-nguoi-cao-tuoi/",
+      "https://doanhnghiepphattrien.vn/khoi-cong-goi-thau-dau-tien-trong-du-an-cai-tao-rach-van-thanh/",
+      "https://doanhnghiepphattrien.vn/phim-ngan-scg-future-express-huong-toi-muc-tieu-doi-tac-chien-luoc-asean/",
+      "https://doanhnghiepphattrien.vn/vuong-binh-da-lab-do-bo-pepero-unitour-cung-gen-z-show-your-love-truoc-them-pop-up-store-11-11/",
+      "https://doanhnghiepphattrien.vn/thuong-hieu-kinh-di-dinh-dam-dai-loan-khai-thac-truyen-thuyet-nu-quy-indonesia-chuan-bi-do-bo-rap-viet/",
+      "https://doanhnghiepphattrien.vn/le-khoi-cong-du-an-tu-bo-ton-tao-di-tich-kien-truc-nghe-thuat-dinh-tan-quy-dong-bao-ton-va-phat-huy-gia-tri-di-san-van-hoa-truyen-thong/",
+      "https://doanhnghiepphattrien.vn/khach-quoc-te-tang-manh-condotel-truoc-co-hoi-tang-truong-moi/",
+      "https://doanhnghiepphattrien.vn/sap-nhap-8-truong-cao-dang-trung-cap-tai-4-tinh-thanh/",
+      "https://doanhnghiepphattrien.vn/ngan-hang-se-huong-dong-von-vao-san-xuat-kinh-doanh/",
+      "https://doanhnghiepphattrien.vn/chung-cu-hut-nguoi-tim-mua-vi-sao-giao-dich-van-cham/",
+      "https://doanhnghiepphattrien.vn/siet-thue-nen-tang-xuyen-bien-gioi-mo-rong-uu-dai-cho-doanh-nghiep-viet/",
+      "https://doanhnghiepphattrien.vn/xuat-khau-ca-tra-sang-trung-quoc-tang-truong-sang-mau-nhung-thieu-can-bang/",
+      "https://doanhnghiepphattrien.vn/tp-ho-chi-minh-mo-co-che-uu-dai-de-hut-dau-tu-vao-kinh-te-bien/",
+      "https://doanhnghiepphattrien.vn/vinspeed-tang-toc-thi-cong-tuyen-duong-sat-toc-do-cao-ben-thanh-can-gio/",
+      "https://doanhnghiepphattrien.vn/24hstore-chinh-thuc-mo-ban-iphone-duo-bo-tri-9-may-trai-nghiem-va-du-kien-ban-giao-den-500-khach-hang-trong-3-tuan-dau/",
+      "https://doanhnghiepphattrien.vn/vbap-cong-bo-chuong-trinh-chinh-phuc-gao-giai-thuong-cao-nhat-2-ty-dong/",
+      "https://doanhnghiepphattrien.vn/chon-bo-phu-kien-cho-iphone-duo-tu-nhu-cau-su-dung-thuc-te/",
+      "https://doanhnghiepphattrien.vn/loat-phim-kinh-di-doc-la-khuay-dong-mua-halloween/",
+      "https://doanhnghiepphattrien.vn/giam-tru-thue-chi-phi-giao-duc-gia-dinh-duoc-loi-gi/",
+      "https://doanhnghiepphattrien.vn/vni-education-kien-tao-he-sinh-thai-giao-duc-dap-ung-nhu-cau-hoc-tap-trong-ky-nguyen-so/",
+      "https://doanhnghiepphattrien.vn/4-uu-tien-cua-giao-duc-viet-nam-trong-ung-dung-cong-nghe-chuyen-doi-so/",
+      "https://doanhnghiepphattrien.vn/quang-ninh-trien-khai-nhieu-chuong-trinh-kich-cau-du-lich/",
+      "https://doanhnghiepphattrien.vn/garrya-mu-cang-chai-duoc-vinh-danh-one-michelin-key-dau-moc-moi-cho-hanh-trinh-nghi-duong-an-nhien-giua-tay-bac/",
+      "https://doanhnghiepphattrien.vn/du-lich-tp-ho-chi-minh-soi-dong-thu-gan-4-900-ty-dong-dip-2-9/",
+      "https://doanhnghiepphattrien.vn/giai-ba-mon-phoi-hop-ironman-70-3-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long/",
+      "https://doanhnghiepphattrien.vn/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-thu-9-khoi-dong-kien-tao-gia-tri-vuot-troi/",
+      "https://doanhnghiepphattrien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-tong-thong-phap-emmanuel-macron-chung-kien-buoc-tien-moi-trong-hop-tac-chien-luoc-giua-vnvc-va-sanofi/",
+      "https://doanhnghiepphattrien.vn/covid-19-cuoc-chien-can-bang-quyen-luc-giua-chu-doanh-nghiep-va-nguoi-lao-dong-hoa-ky/",
+      "https://doanhnghiepphattrien.vn/c-tiem-vac-xin-ngua-benh-lay-qua-duong-tinh-duc-cho-gau-koala/",
+      "https://doanhnghiepphattrien.vn/evfta-suc-bat-cho-hop-tac-thuong-mai-dau-tu-trong-boi-canh-binh-thuong-moi/",
+      "https://doanhnghiepphattrien.vn/luoi-dien-truyen-tai-san-sang-don-nguon-dien-gio/",
+      "https://doanhnghiepphattrien.vn/hanh-trinh-tai-sinh-cua-thi-tran-san-xuat-trung-quoc-sau-hai-nam-vang-bong-samsung/",
+      "https://doanhnghiepphattrien.vn/cac-diem-moi-ve-uy-nhiem-lap-hoa-don-dien-tu/",
+      "https://doanhnghiepphattrien.vn/di-tim-thung-lung-lithium-chia-khoa-lam-giau-cho-cac-cong-ty-nang-luong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:03.455Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghiepphattrien.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

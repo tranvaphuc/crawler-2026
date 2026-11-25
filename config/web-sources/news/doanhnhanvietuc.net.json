@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhanvietuc.net",
+  "siteId": "doanhnhanvietuc.net",
+  "registrableDomain": "doanhnhanvietuc.net",
+  "homepage": "https://doanhnhanvietuc.net/",
+  "allowedHosts": [
+    "doanhnhanvietuc.net",
+    "www.doanhnhanvietuc.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnhanvietuc.net/",
+    "categories": [
+      "https://doanhnhanvietuc.net/thoi-su-chuyen-dong.html",
+      "https://doanhnhanvietuc.net/doanh-nhan-viet-uc.html",
+      "https://doanhnhanvietuc.net/phat-trien-doanh-nghiep.html",
+      "https://doanhnhanvietuc.net/tai-chinh-thuong-truong.html",
+      "https://doanhnhanvietuc.net/van-hoa-giai-tri.html",
+      "https://doanhnhanvietuc.net/ho-so-doanh-nghiep.html",
+      "https://doanhnhanvietuc.net/multimedia.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Doanh nhân Việt - Úc Online chúc mừng Ngày Doanh nhân Việt Nam 13/10",
+    "strategy": "selector",
+    "selector": "h2.mb-10.mt-20"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".entry-meta .post-on",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".single-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:16:51.944Z",
+    "frozenAt": "2026-11-16T02:16:46.705Z",
+    "trainingUrl": "https://doanhnhanvietuc.net/doanh-nhan-viet-uc/cong-dong-doanh-nhan/doanh-nhan-viet-uc-online-chuc-mung-ngay-doanh-nhan-viet-nam-1310.html",
+    "independentHoldouts": [
+      "https://doanhnhanvietuc.net/van-hoa-giai-tri/sach-phim-anh-ket-noi/tap-truyen-ngan-chenh-venh-nhung-phan-nguoi-cua-tran-minh-cuong-mot-mien-tay-cua-thoi-chin-tram-hoi-do.html",
+      "https://doanhnhanvietuc.net/ho-so-doanh-nghiep/gan-ket-cong-dong/ket-hop-tien-ich-cong-nghe-voi-hoat-dong-bao-ve-moi-truong-huy-dong-nguon-luc-doanh-nghiep.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnhanvietuc.net/doanh-nhan-viet-uc/cong-dong-doanh-nhan/doanh-nhan-viet-uc-online-chuc-mung-ngay-doanh-nhan-viet-nam-1310.html",
+      "https://doanhnhanvietuc.net/van-hoa-giai-tri/sach-phim-anh-ket-noi/tap-truyen-ngan-chenh-venh-nhung-phan-nguoi-cua-tran-minh-cuong-mot-mien-tay-cua-thoi-chin-tram-hoi-do.html",
+      "https://doanhnhanvietuc.net/ho-so-doanh-nghiep/gan-ket-cong-dong/ket-hop-tien-ich-cong-nghe-voi-hoat-dong-bao-ve-moi-truong-huy-dong-nguon-luc-doanh-nghiep.html",
+      "https://doanhnhanvietuc.net/ho-so-doanh-nghiep/hoat-dong/nam-2026-tphcm-ton-vinh-100-doanh-nghiep-96-doanh-nhan-tieu-bieu.html",
+      "https://doanhnhanvietuc.net/phat-trien-doanh-nghiep/kinh-te-va-thi-truong/nghi-quyet-79-nqtw-phat-huy-vai-tro-dan-dat-cua-kinh-te-nha-nuoc.html",
+      "https://doanhnhanvietuc.net/tai-chinh-thuong-truong/ket-noi-giao-thuong/thu-tuong-chinh-phu-yeu-cau-tang-cuong-xuc-tien-thuong-mai-da-dang-hoa-thi-truong-xuat-khau.html",
+      "https://doanhnhanvietuc.net/thoi-su-chuyen-dong/tin-tuc-viet-nam-uc/tong-bi-thu-to-lam-viet-nam-luon-xem-trong-va-nang-tam-hoi-nhap-quoc-te.html",
+      "https://doanhnhanvietuc.net/doanh-nhan-viet-uc/tro-chuyen-cung-doanh-nhan/kinh-te-tu-nhan-tru-cot-phat-trien-goc-nhin-tu-doanh-nhan-viet-tai-uc-sau-dai-hoi-xiv-cua-dang.html",
+      "https://doanhnhanvietuc.net/thoi-su-chuyen-dong/tin-tuc-quoc-te/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-lanh-dao-dang-cong-san-canada.html",
+      "https://doanhnhanvietuc.net/thoi-su-chuyen-dong/tin-tuc-viet-nam-uc/chu-tich-quoc-hoi-tran-thanh-man-ket-thuc-tot-dep-chuyen-tham-han-quoc-len-duong-tham-mong-co.html",
+      "https://doanhnhanvietuc.net/multimedia/video/bi-quyet-thanh-cong-voi-video-phan-1.html",
+      "https://doanhnhanvietuc.net/multimedia/video/huong-dan-chi-tiet-ve-video-phan-2.html",
+      "https://doanhnhanvietuc.net/multimedia/thu-vien-anh/tin-tuc-moi-nhat-ve-thu-vien-anh-phan-1.html",
+      "https://doanhnhanvietuc.net/tai-chinh-thuong-truong/ket-noi-giao-thuong/uc-siet-kiem-dich-sinh-hoc-phat-tin-hieu-sps-moi-voi-nong-san-nhap-khau.html",
+      "https://doanhnhanvietuc.net/tai-chinh-thuong-truong/ket-noi-giao-thuong/my-cong-bo-muc-thue-so-bo-voi-tom-viet-nam.html",
+      "https://doanhnhanvietuc.net/tai-chinh-thuong-truong/ngan-hang-tai-chinh/lotte-finance-mo-rong-hoat-dong-da-dang-hoa-san-pham-tai-chinh.html",
+      "https://doanhnhanvietuc.net/van-hoa-giai-tri/du-lich-va-kham-pha/saigontourist-group-va-vbaa-bat-tay-hop-tac-chien-luoc.html",
+      "https://doanhnhanvietuc.net/van-hoa-giai-tri/sach-phim-anh-ket-noi/nhan-dip-277-57-cum-rap-phim-tai-tphcm-chieu-phim-mien-phi.html",
+      "https://doanhnhanvietuc.net/phat-trien-doanh-nghiep/kinh-te-va-thi-truong/an-do-mo-cua-thi-truong-cho-sau-rieng-tuoi-viet-nam.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

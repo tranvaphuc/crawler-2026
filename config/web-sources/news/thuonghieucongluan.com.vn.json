@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieucongluan.com.vn",
+  "siteId": "thuonghieucongluan.com.vn",
+  "registrableDomain": "thuonghieucongluan.com.vn",
+  "homepage": "https://thuonghieucongluan.com.vn/",
+  "allowedHosts": [
+    "thuonghieucongluan.com.vn",
+    "www.thuonghieucongluan.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thuonghieucongluan.com.vn/",
+    "categories": [
+      "https://thuonghieucongluan.com.vn/tin-tuc-c10",
+      "https://thuonghieucongluan.com.vn/kinh-te-c3",
+      "https://thuonghieucongluan.com.vn/tai-chinh-chung-khoan-c7",
+      "https://thuonghieucongluan.com.vn/thi-truong-c9",
+      "https://thuonghieucongluan.com.vn/san-xuat-luu-thong-c68",
+      "https://thuonghieucongluan.com.vn/xuat-nhap-khau-thuong-mai-c69"
+    ]
+  },
+  "title": {
+    "value": "Vinamilk lan tỏa thông điệp về phát triển bền vững đến người tiêu dùng qua từng vỏ hộp sữa",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:28.439Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:24.664Z",
+    "independentHoldouts": [
+      "https://thuonghieucongluan.com.vn/vinh-danh-cac-thuong-hieu-manh-viet-nam-2026-a336822.html",
+      "https://thuonghieucongluan.com.vn/siet-quan-ly-thuoc-la-tren-moi-truong-so-ngan-hang-gia-va-nhap-lau-a341314.html",
+      "https://thuonghieucongluan.com.vn/myvib-them-phuong-an-chia-quy-thanh-toan-truc-tuyen-va-chia-se-dac-quyen-san-bay-a341294.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thuonghieucongluan.com.vn/vinamilk-lan-toa-thong-diep-ve-phat-trien-ben-vung-den-nguoi-tieu-dung-qua-tung-vo-hop-sua-a244336.html",
+      "https://thuonghieucongluan.com.vn/vinh-danh-cac-thuong-hieu-manh-viet-nam-2026-a336822.html",
+      "https://thuonghieucongluan.com.vn/siet-quan-ly-thuoc-la-tren-moi-truong-so-ngan-hang-gia-va-nhap-lau-a341314.html",
+      "https://thuonghieucongluan.com.vn/myvib-them-phuong-an-chia-quy-thanh-toan-truc-tuyen-va-chia-se-dac-quyen-san-bay-a341294.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

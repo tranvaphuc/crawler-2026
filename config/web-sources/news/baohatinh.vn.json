@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baohatinh.vn",
+  "siteId": "baohatinh.vn",
+  "registrableDomain": "baohatinh.vn",
+  "homepage": "https://baohatinh.vn/",
+  "allowedHosts": [
+    "baohatinh.vn",
+    "www.baohatinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Đoàn kết để xây dựng đô thị ngày càng văn minh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:57.672Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baohatinh.vn/doan-ket-de-xay-dung-do-thi-ngay-cang-van-minh-post320019.html",
+      "https://baohatinh.vn/thuyen-cho-nguoi-di-cu-trai-phep-gap-nan-o-senegal-21-nguoi-tu-vong-post320015.html",
+      "https://baohatinh.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-post319999.html",
+      "https://baohatinh.vn/ha-tinh-chuan-bi-kich-ban-van-hanh-ho-chua-truoc-du-bao-mua-lon-post319987.html",
+      "https://baohatinh.vn/ha-tang-sac-o-to-dien-tai-ha-tinh-tung-buoc-mo-rong-da-dang-dich-vu-post319979.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baohatinh.vn/",
+    "categories": [
+      "https://baohatinh.vn/tin-moi.html",
+      "https://baohatinh.vn/epaper/",
+      "https://baohatinh.vn/multimedia/",
+      "https://baohatinh.vn/tv/",
+      "https://baohatinh.vn/tv/short-video",
+      "https://baohatinh.vn/chinh-tri/",
+      "https://baohatinh.vn/chinh-tri/xay-dung-dang/",
+      "https://baohatinh.vn/chinh-tri/chinh-quyen/",
+      "https://baohatinh.vn/chinh-tri/quoc-phong-an-ninh/",
+      "https://baohatinh.vn/chinh-tri/doan-the/",
+      "https://baohatinh.vn/kinh-te/",
+      "https://baohatinh.vn/kinh-te/cong-nghiep/",
+      "https://baohatinh.vn/kinh-te/nong-nghiep/",
+      "https://baohatinh.vn/kinh-te/thi-truong/",
+      "https://baohatinh.vn/xa-hoi/",
+      "https://baohatinh.vn/xa-hoi/giao-duc/",
+      "https://baohatinh.vn/xa-hoi/y-te/",
+      "https://baohatinh.vn/xa-hoi/viec-lam/",
+      "https://baohatinh.vn/van-hoa-giai-tri/",
+      "https://baohatinh.vn/phap-luat/",
+      "https://baohatinh.vn/phap-luat/phap-luat-doi-song/",
+      "https://baohatinh.vn/phap-luat/an-ninh-trat-tu/",
+      "https://baohatinh.vn/the-thao/",
+      "https://baohatinh.vn/the-thao/clb-hong-linh-ha-tinh/",
+      "https://baohatinh.vn/the-thao/bong-da/",
+      "https://baohatinh.vn/the-thao/muon-mau-the-thao/",
+      "https://baohatinh.vn/the-gioi/",
+      "https://baohatinh.vn/ve-ha-tinh/",
+      "https://baohatinh.vn/ve-ha-tinh/nui-hong-song-la/",
+      "https://baohatinh.vn/ve-ha-tinh/nguoi-ha-tinh-muon-phuong/",
+      "https://baohatinh.vn/ve-ha-tinh/diem-den/",
+      "https://baohatinh.vn/ve-ha-tinh/am-thuc/",
+      "https://baohatinh.vn/doi-song/",
+      "https://baohatinh.vn/doi-song/gioi-tre/",
+      "https://baohatinh.vn/doi-song/lam-dep/",
+      "https://baohatinh.vn/doi-song/me-va-be/",
+      "https://baohatinh.vn/cong-nghe/",
+      "https://baohatinh.vn/cong-nghe/khoa-hoc/",
+      "https://baohatinh.vn/doi-moi-sang-tao/",
+      "https://baohatinh.vn/cong-nghe/chuyen-doi-so/",
+      "https://baohatinh.vn/cong-nghe/thiet-bi-so/",
+      "https://baohatinh.vn/cong-dong/",
+      "https://baohatinh.vn/cong-dong/phan-hoi-ban-doc/",
+      "https://baohatinh.vn/cong-dong/ban-doc-viet/",
+      "https://baohatinh.vn/cong-dong/dieu-tra-theo-don-thu/",
+      "https://baohatinh.vn/cong-dong/nhip-cau-yeu-thuong/",
+      "https://baohatinh.vn/xe/",
+      "https://baohatinh.vn/thong-tin-huu-ich/",
+      "https://baohatinh.vn/phong-thuy/",
+      "https://baohatinh.vn/tai-chinh-gia-ca/",
+      "https://baohatinh.vn/thong-tin-khac/",
+      "https://baohatinh.vn/ban-can-biet/",
+      "https://baohatinh.vn/ban-can-biet/khac/",
+      "https://baohatinh.vn/ban-can-biet/thiet-bi-di-dong/",
+      "https://baohatinh.vn/ban-can-biet/dien-tu-dien-lanh/",
+      "https://baohatinh.vn/ban-can-biet/nha-dat/",
+      "https://baohatinh.vn/goc-hai/",
+      "https://baohatinh.vn/video/",
+      "https://baohatinh.vn/emagazine/",
+      "https://baohatinh.vn/anh/",
+      "https://baohatinh.vn/podcast/",
+      "https://baohatinh.vn/story/",
+      "https://baohatinh.vn/lens/",
+      "https://baohatinh.vn/infographic/",
+      "https://baohatinh.vn/quiz/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?baohatinh.vn/.*?/.*?/(\\d{6,})(.htm)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baohatinh.vn",
+    "checkedAt": "2026-11-09T03:56:50.329Z",
+    "url": "https://baohatinh.vn/doan-ket-de-xay-dung-do-thi-ngay-cang-van-minh-post320019.html",
+    "finalUrl": "https://baohatinh.vn/doan-ket-de-xay-dung-do-thi-ngay-cang-van-minh-post320019.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5910,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baohatinh.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 84,
+    "checkedArticleUrls": 144,
+    "freshArticleChecks": 73,
+    "parserIssues": 54,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 84,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 70,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 3,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1718,
+        "passed": 79,
+        "distinctHashes": 79
+      },
+      {
+        "name": "audio",
+        "discovered": 22,
+        "passed": 5,
+        "distinctHashes": 5
+      },
+      {
+        "name": "video",
+        "discovered": 48,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baohatinh.vn/tu-ky-uc-cua-cuu-chien-binh-ha-tinh-den-hanh-trinh-tim-kiem-hai-cot-liet-si-o-lao-post320051.html",
+      "https://baohatinh.vn/ban-thuong-vu-tinh-uy-nghe-cho-y-kien-ve-cac-noi-dung-thuoc-tham-quyen-post320093.html",
+      "https://baohatinh.vn/tuoi-tre-ha-tinh-tinh-nguyen-nhap-ngu-san-sang-cong-hien-post320089.html",
+      "https://baohatinh.vn/tang-toc-ve-dich-cac-chien-dich-lam-sach-du-lieu-tai-ha-tinh-post319980.html",
+      "https://baohatinh.vn/tiep-tuc-trien-khai-chuong-trinh-pho-cap-ky-nang-so-tren-nen-tang-binh-dan-hoc-vu-so-post319913.html",
+      "https://baohatinh.vn/day-manh-ket-noi-khai-thac-du-lieu-so-trong-nganh-giao-duc-post319900.html",
+      "https://baohatinh.vn/hoi-nghi-lan-thu-47-ban-thuong-vu-tinh-uy-ha-tinh-post320103.html",
+      "https://baohatinh.vn/can-trong-voi-ga-u-muoi-khong-ro-nguon-goc-post320076.html",
+      "https://baohatinh.vn/doi-ban-tay-gia-nan-dat-thanh-hoa-post319983.html",
+      "https://baohatinh.vn/tai-chinh-thi-truong-ngay-1011-tu-2027-tro-cap-that-nghiep-toi-da-tang-len-285-trieu-dongthang-post320081.html",
+      "https://baohatinh.vn/infographic-chinh-sach-tin-dung-moi-ho-tro-hoc-sinh-sinh-vien-co-hoan-canh-kho-khan-post320008.html",
+      "https://baohatinh.vn/ky-lac-chung-tay-lam-nha-o-cho-nguoi-ngheo-post319874.html",
+      "https://baohatinh.vn/vneid-vua-co-them-tien-ich-giao-thong-post320102.html",
+      "https://baohatinh.vn/ronaldo-van-khien-gioi-cau-thu-ne-phuc-post320097.html",
+      "https://baohatinh.vn/trieu-tien-phong-thu-ngu-loi-bi-an-post320095.html",
+      "https://baohatinh.vn/dac-sac-giao-luu-thuc-hanh-tin-nguong-tho-mau-tam-phu-tai-den-cho-cui-post320092.html",
+      "https://baohatinh.vn/xay-dung-tand-hai-cap-tinh-ha-tinh-trong-sach-vung-manh-siet-chat-dao-duc-cong-vu-post320082.html",
+      "https://baohatinh.vn/dai-bieu-hdnd-tinh-ha-tinh-tiep-xuc-cu-tri-tai-cac-dia-phuong-post320085.html",
+      "https://baohatinh.vn/mo-rong-co-hoi-tiep-can-von-uu-dai-doi-moi-cong-nghe-cho-doanh-nghiep-post320090.html",
+      "https://baohatinh.vn/infographic-80-nam-ban-hien-phap-dau-tien-ngon-duoc-soi-duong-post319973.html",
+      "https://baohatinh.vn/bao-ve-can-bo-dam-nghi-dam-lam-dam-chiu-trach-nhiem-vi-loi-ich-chung-post319777.html",
+      "https://baohatinh.vn/infographic-nhung-moc-son-lich-su-cua-hoi-lien-hiep-thanh-nien-viet-nam-post318787.html",
+      "https://baohatinh.vn/infographic-cac-chu-truong-quan-trong-duoc-thong-qua-tai-hoi-nghi-trung-uong-4-khoa-xiv-post318473.html",
+      "https://baohatinh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-bch-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-post320096.html",
+      "https://baohatinh.vn/nang-cao-nghiep-vu-cho-can-bo-khuyen-hoc-cap-xa-post320071.html",
+      "https://baohatinh.vn/cong-bo-ket-qua-kiem-tra-48-bep-an-noi-tru-ban-tru-truong-hoc-o-ha-tinh-post320060.html",
+      "https://baohatinh.vn/de-xuat-bo-thi-lop-10-chuyen-theo-tung-mon-post320099.html",
+      "https://baohatinh.vn/khi-kol-koc-tro-thanh-dai-su-du-lich-ha-tinh-post320009.html",
+      "https://baohatinh.vn/thon-gia-thien-mien-que-khoi-sac-post319972.html",
+      "https://baohatinh.vn/chua-trieu-son-dau-an-van-hoa-tam-linh-post319957.html",
+      "https://baohatinh.vn/mien-nho-xu-so-bach-duong-post319855.html",
+      "https://baohatinh.vn/thuong-duc-khoi-day-suc-dan-trong-xay-dung-nong-thon-moi-post320072.html",
+      "https://baohatinh.vn/gia-vang-the-gioi-tang-manh-gia-dau-lao-doc-post320083.html",
+      "https://baohatinh.vn/go-diem-nghen-the-che-chu-dong-phong-ngua-rui-ro-post320018.html",
+      "https://baohatinh.vn/da-dang-hinh-thuc-tuyen-truyen-dua-phap-luat-den-gan-nhan-dan-post320032.html",
+      "https://baohatinh.vn/khoi-to-doi-tuong-khong-co-giay-phep-lai-xe-gay-tai-nan-chet-nguoi-post320105.html",
+      "https://baohatinh.vn/nguoi-dan-ha-tinh-don-gio-lanh-dau-dong-post320077.html",
+      "https://baohatinh.vn/lan-toa-suc-manh-dai-doan-ket-o-khu-dan-cu-post319918.html",
+      "https://baohatinh.vn/don-suc-giai-phong-mat-bang-xay-dung-khu-tai-dinh-cu-o-vung-ang-post319872.html",
+      "https://baohatinh.vn/doan-ket-la-nen-tang-de-xay-dung-cong-dong-dan-cu-phat-trien-post320086.html",
+      "https://baohatinh.vn/ron-rang-ngay-hoi-ket-doan-post320037.html",
+      "https://baohatinh.vn/doan-ha-tinh-xuat-quan-tham-du-dai-hoi-the-thao-toan-quoc-lan-thu-x-post320088.html",
+      "https://baohatinh.vn/kane-bi-loai-messi-co-ten-trong-doi-hinh-hay-nhat-nam-post320078.html",
+      "https://baohatinh.vn/trao-kinh-phi-ho-tro-xay-dung-sua-chua-nha-cho-ho-kho-khan-o-ky-khang-post319876.html",
+      "https://baohatinh.vn/chuong-trinh-vong-tay-nhan-ai-bht-ket-noi-se-chia-voi-2-hoan-canh-kho-khan-post319962.html",
+      "https://baohatinh.vn/lanh-tu-toi-cao-iran-ra-chi-thi-moi-ve-cuoc-doi-dau-voi-my-post320079.html",
+      "https://baohatinh.vn/algeria-triet-pha-186-duong-day-ma-tuy-bat-giu-hon-25000-nguoi-post320047.html",
+      "https://baohatinh.vn/du-bao-thoi-tiet-ha-tinh-ngay-1011-co-mua-rao-va-dong-troi-ret-post320056.html",
+      "https://baohatinh.vn/cach-dung-cam-quyt-de-tang-de-khang-post320073.html",
+      "https://baohatinh.vn/kich-pin-ipad-bi-kiet-an-toan-nhanh-chong-post320074.html",
+      "https://baohatinh.vn/xe-may-dien-co-day-dai-an-toan-post320075.html",
+      "https://baohatinh.vn/suv-dien-toan-cau-dau-tien-cua-hang-xe-nhat-chinh-thuc-lo-dien-voi-ten-goi-honda-alpha-post320010.html",
+      "https://baohatinh.vn/chery-trieu-hoi-gan-54000-xe-tai-trung-quoc-do-loi-gay-truc-banh-sau-post319994.html",
+      "https://baohatinh.vn/tran-dau-51-the-do-o-brazil-post319773.html",
+      "https://baohatinh.vn/do-khoc-do-cuoi-vi-vo-chong-trung-ca-ho-lan-ten-post319134.html",
+      "https://baohatinh.vn/qua-bi-ngoi-77-kg-nang-nhat-bac-my-post318501.html",
+      "https://baohatinh.vn/danh-gia-oppo-find-x10-flagship-tieu-chuan-dang-mua-post320057.html",
+      "https://baohatinh.vn/nhung-tinh-huong-kho-xu-ung-vien-co-the-gap-trong-qua-trinh-tuyen-dung-post320045.html",
+      "https://baohatinh.vn/thu-mua-phe-lieu-nhom-gia-cao-vua-phe-lieu-ho-tro-247-thu-gom-tan-noi-post320028.html",
+      "https://baohatinh.vn/ket-hop-tiec-tat-nien-va-nghi-duong-ben-bien-cam-ranh-post320027.html",
+      "https://baohatinh.vn/dia-phuong/phuong-thanh-sen/59.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 6,
+      "unresolved_extraction": 47,
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:14:20.999Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baohatinh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "baohatinh.vn",
+      "siteId": "baohatinh.vn",
+      "registrableDomain": "baohatinh.vn",
+      "homepage": "https://baohatinh.vn/",
+      "allowedHosts": [
+        "baohatinh.vn",
+        "www.baohatinh.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Đoàn kết để xây dựng đô thị ngày càng văn minh",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".cms-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:00.839Z",
+        "trainingUrls": [
+          "https://baohatinh.vn/tai-chinh-thi-truong-ngay-911-nguoi-chan-nuoi-lon-truoc-ap-luc-cung-vuot-cau-post320020.html",
+          "https://baohatinh.vn/tai-chinh-thi-truong-ngay-1011-tu-2027-tro-cap-that-nghiep-toi-da-tang-len-285-trieu-dongthang-post320081.html"
+        ],
+        "holdoutUrls": [
+          "https://baohatinh.vn/tiep-tuc-trien-khai-chuong-trinh-pho-cap-ky-nang-so-tren-nen-tang-binh-dan-hoc-vu-so-post319913.html",
+          "https://baohatinh.vn/day-manh-ket-noi-khai-thac-du-lieu-so-trong-nganh-giao-duc-post319900.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "baohatinh.vn",
+      "siteId": "baohatinh.vn",
+      "registrableDomain": "baohatinh.vn",
+      "homepage": "https://baohatinh.vn/",
+      "allowedHosts": [
+        "baohatinh.vn",
+        "www.baohatinh.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Đoàn kết để xây dựng đô thị ngày càng văn minh",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:00.839Z",
+        "trainingUrls": [
+          "https://baohatinh.vn/podcast-truyen-ngan-con-chau-sum-vay-post319868.html",
+          "https://baohatinh.vn/podcast-tan-van-giao-mua-nho-que-post319867.html",
+          "https://baohatinh.vn/podcast-truyen-ngan-chiec-ghe-cuoi-lop-post319783.html"
+        ],
+        "holdoutUrls": [
+          "https://baohatinh.vn/podcast-truyen-ngan-hien-nha-tro-gio-post319577.html",
+          "https://baohatinh.vn/podcast-tan-van-mua-hoa-da-quy-post319574.html"
+        ]
+      }
+    }
+  ]
+}

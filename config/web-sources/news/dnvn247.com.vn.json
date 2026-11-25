@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dnvn247.com.vn",
+  "siteId": "dnvn247.com.vn",
+  "registrableDomain": "dnvn247.com.vn",
+  "homepage": "https://dnvn247.com.vn/",
+  "allowedHosts": [
+    "dnvn247.com.vn",
+    "www.dnvn247.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá cà phê hôm nay 26-10: Hé lộ của VICOFA về sản lượng vụ mới",
+    "strategy": "selector",
+    "selector": "h1:eq(2)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".detail__time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:30.865Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dnvn247.com.vn/gia-ca-phe-hom-nay-26-10-he-lo-cua-vicofa-ve-san-luong-vu-moi-d132130.html",
+      "https://dnvn247.com.vn/mach-ban-cach-bao-quan-hat-dieu-d131673.html",
+      "https://dnvn247.com.vn/tp-hcm-xu-phat-y-hoc-co-truyen-viet-duc-va-nhieu-ca-nhan-vi-pham-nganh-y-te-d174981.html",
+      "https://dnvn247.com.vn/hon-33-ty-dong-doanh-thu-thau-cong-cua-cong-ty-ho-son-tu-tai-tp-dong-nai-va-bai-toan-nang-luc-ky-3-d173539.html",
+      "https://dnvn247.com.vn/tp-dong-nai-goi-thau-rong-rai-64-ty-chi-co-mot-lien-danh-tham-du-tiet-kiem-nho-giot-ky-2-d173538.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dnvn247.com.vn/",
+    "categories": [
+      "https://dnvn247.com.vn/thi-truong-nong-san/",
+      "https://dnvn247.com.vn/thi-truong-thuc-pham/",
+      "https://dnvn247.com.vn/cham-soc-sac-dep/",
+      "https://dnvn247.com.vn/hang-hoa-tieu-dung/",
+      "https://dnvn247.com.vn/dien-dan/",
+      "https://dnvn247.com.vn/luat-su-247/",
+      "https://dnvn247.com.vn/cho-viet-nam-dnvn/",
+      "https://dnvn247.com.vn/chan-dung-doanh-nhan/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dnvn247.com.vn",
+    "checkedAt": "2026-11-09T03:56:59.914Z",
+    "url": "https://dnvn247.com.vn/gia-ca-phe-hom-nay-26-10-he-lo-cua-vicofa-ve-san-luong-vu-moi-d132130.html",
+    "finalUrl": "https://dnvn247.com.vn/gia-ca-phe-hom-nay-26-10-he-lo-cua-vicofa-ve-san-luong-vu-moi-d132130.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2007,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dnvn247.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 144,
+        "passed": 20,
+        "distinctHashes": 20
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dnvn247.com.vn/tp-hcm-xu-phat-y-hoc-co-truyen-viet-duc-va-nhieu-ca-nhan-vi-pham-nganh-y-te-d174981.html",
+      "https://dnvn247.com.vn/hon-33-ty-dong-doanh-thu-thau-cong-cua-cong-ty-ho-son-tu-tai-tp-dong-nai-va-bai-toan-nang-luc-ky-3-d173539.html",
+      "https://dnvn247.com.vn/tp-dong-nai-goi-thau-rong-rai-64-ty-chi-co-mot-lien-danh-tham-du-tiet-kiem-nho-giot-ky-2-d173538.html",
+      "https://dnvn247.com.vn/nghich-ly-dau-thau-tai-tp-dong-nai-du-an-tien-ty-ngan-sach-tiet-kiem-nho-giot-ky-1-d172807.html",
+      "https://dnvn247.com.vn/goi-thau-duong-bui-thi-xuan-hon-676-ty-dong-chua-nghiem-thu-da-hong-d172801.html",
+      "https://dnvn247.com.vn/thuong-ton-phap-luat-de-nang-cao-hieu-qua-dau-tu-cong-cap-xa-tai-tinh-tay-ninh-ky-5-d169103.html",
+      "https://dnvn247.com.vn/tay-ninh-trach-nhiem-nguoi-dung-dau-va-hieu-qua-kinh-te-tai-xa-long-huu-ky-4-d169097.html",
+      "https://dnvn247.com.vn/xa-long-huu-vai-tro-cua-don-vi-tu-van-va-bai-toan-nguoi-quen-trong-dau-thau-ky-3-d169096.html",
+      "https://dnvn247.com.vn/hat-dieu-tuoi-rang-cui-haiduong-arabi-dam-da-vi-truyen-thong-d168531.html",
+      "https://dnvn247.com.vn/vien-nghien-cuu-phat-trien-phuong-dong-25-nam-lan-toa-gia-tri-khoa-hoc-va-doi-moi-d168525.html",
+      "https://dnvn247.com.vn/truong-dai-hoc-nang-luong-quoc-gia-moscow-nhan-huan-chuong-doc-lap-hang-ba-d168526.html",
+      "https://dnvn247.com.vn/tay-ninh-mo-xe-cac-goi-thau-xay-lap-trong-diem-tai-xa-long-huu-ky-2-d165713.html",
+      "https://dnvn247.com.vn/xa-long-huu-tay-ninh-diem-sang-tiet-kiem-ngan-sach-qua-cac-goi-thau-xay-lap-ky-1-d165114.html",
+      "https://dnvn247.com.vn/ca-phe-chon-dac-biet-so-45-bau-vat-tu-dai-ngan-dak-lak-d164966.html",
+      "https://dnvn247.com.vn/dau-thau-tai-nhiet-dien-duyen-hai-bai-hoc-ve-tinh-minh-bach-va-trach-nhiem-giai-trinh-ky-3-d164583.html",
+      "https://dnvn247.com.vn/cong-ty-dvkt-rong-doi-trung-thau-tai-nhiet-dien-duyen-hai-dat-sau-khi-lam-ro-ho-so-ky-2-d164582.html",
+      "https://dnvn247.com.vn/vinh-long-nhiet-dien-duyen-hai-tiet-kiem-hon-17-ty-dong-tai-goi-thau-vat-tu-ky-1-d164581.html",
+      "https://dnvn247.com.vn/cong-ty-xay-dung-huong-nhi-trung-loat-goi-thau-khi-vang-bong-doi-thu-tai-an-giang-ky-1-d163023.html",
+      "https://dnvn247.com.vn/cong-ty-bao-ngoc-nhan-goi-thau-thi-cong-hon-1-ty-dong-tai-phong-kinh-te-xa-vi-thuy-tp-can-tho-d162971.html",
+      "https://dnvn247.com.vn/benh-vien-quoc-te-hap-bi-phat-132-trieu-dong-va-tuoc-giay-phep-hoat-dong-d161972.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:15:00.064Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dnvn247.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "dnvn247.com.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

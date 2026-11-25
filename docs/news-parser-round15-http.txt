@@ -1,0 +1,29 @@
+NEWS AXIOS — REPAIR ROUND 15 — 10/11/2026
+
+Đã kiểm tra 318/318 nguồn qua 4603 lượt tải Axios. Không browser, không queue, không ghi ES5.
+
+Kết quả cuối bằng cấu hình đã lưu: 13 nguồn qua bộ mẫu kiểm tra lại; 305 nguồn còn lỗi hoặc cần xác nhận.
+
+Nhóm chưa đạt: 203 nguồn có ít nhất 3 bài khác nội dung và bài từ category nhưng còn lỗi ở mẫu khác; 69 nguồn mới parse được một phần hoặc chưa xác nhận đủ category; 33 nguồn chưa có mẫu đạt do HTTP/parser.
+
+Tiêu chí đạt: homepage HTTP 200, category có bài parse đạt, ít nhất 3 bài khác nội dung, không lỗi ở HTML lỗi cũ còn lưu và hợp toàn bộ URL đã thử trong hai lượt Axios. Mẫu đạt không chứng minh một vòng quét hoàn chỉnh.
+
+1447 mẫu bài Axios parse đạt sau audit. Thêm 5 variant tại 5 nguồn, mỗi variant có ít nhất 2 URL holdout độc lập và 2 hash nội dung khác nhau. Variant thiếu bằng chứng không được đưa vào cấu hình.
+
+Loại thêm 4 URL category khỏi cấu hình. Trên cùng tập URL lỗi benchmark cũ của 318 nguồn: bộ lọc trước nhận diện 3036 URL không phải bài; hiện tại 3166, tăng thêm 130. Đây không phải số bài thu thập.
+
+Sửa parser: thêm body MasterCMS, vùng media-box và entry bên trong c-news-detail. Chỉ thử body theo cấu trúc khi NewsArticle xác nhận đúng host/path và tiêu đề của bài; body phải chứa ít nhất 75% ký tự của các đoạn văn chính nhận diện được. Không nhận một section nhỏ làm toàn bộ bài. Bổ sung loại bảng gợi ý dạng chữ khi có ít nhất hai link tiêu đề khác nhau và ít nhất 80% chữ trong bảng thuộc các link đó; giữ bảng thông thường và video gốc. Mọi variant mới vẫn phải có hai bài độc lập kiểm chứng trước khi lưu.
+
+Lọc link: hỗ trợ đồng thời mã bài số, đường dẫn theo tháng và mã hash, cũng như link native media tại những nguồn đã đối chiếu. Loại category không có mã bài tương ứng, topic/ev và các đường dẫn đọc báo in .paper đã xác nhận; giữ link video và longform thật.
+
+Kiểm thử: 148/148 test đạt. 990/990 mẫu cũ vẫn parse đạt bằng chính cấu hình canonical; không có thay đổi ID/ngày/chỉ mục tuần. 5 mẫu có body thay đổi do loại bảng gợi ý bài. Luật URL mới không loại thêm URL nào trong 151852 cặp nguồn/URL từng quét thành công.
+
+Các ca sửa ID/ngày đã ghi nhận ở Round12/13 vẫn cần đối soát master trước bước ghi ES5 về sau. Vòng này không ghi dữ liệu; dẫn chứng lịch sử nằm trong date-corrections-reconciliation-required.json.
+
+Cập nhật metadata/cấu hình của 318 nguồn; không đồng nghĩa với sửa riêng parser cho cả 318 nguồn. Kiểm tra đủ 544 cấu hình đều enabled:false.
+
+13 nguồn qua mẫu: baotuyenquang.com.vn, autobikes.vn, dautuvietnam.com.vn, dautuvakinhdoanh.vn, doisongphapluat.nguoiduatin.vn, kenhhot.vn, kiemsat.vn, kinhtetieudung.vn, langngheviet.com.vn, qltt.vn, techz.vn, tieudungvietnam.vn, vietnamlawmagazine.vn.
+
+Chưa chạy lại toàn bộ URL của một vòng quét; chưa xác nhận thời hạn 15 phút.
+
+Chi tiết: summary.json, resolved-samples.json, remaining-sites.txt/json, remaining-error-groups.json, configuration-changes.json, delivery-verification.json và sites/<domain>/result.json.

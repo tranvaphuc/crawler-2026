@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruongbiz.vn",
+  "siteId": "thitruongbiz.vn",
+  "registrableDomain": "thitruongbiz.vn",
+  "homepage": "https://thitruongbiz.vn/",
+  "allowedHosts": [
+    "thitruongbiz.vn",
+    "www.thitruongbiz.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "SeABank hoàn tất tăng vốn điều lệ lên 34.688 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:36.760Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thitruongbiz.vn/seabank-hoan-tat-tang-von-dieu-le-len-34688-ty-dong-d33994.html",
+      "https://thitruongbiz.vn/gia-dien-giam-2-con-21599-dong-kwh-tu-1-11-d33982.html",
+      "https://thitruongbiz.vn/o-to-nhap-khau-giam-nhe-san-xuat-lap-rap-trong-nuoc-dat-54100-chiec-d34011.html",
+      "https://thitruongbiz.vn/ca-nuoc-da-hoan-thanh-48422-can-nha-o-xa-hoi-nguon-cung-bat-dong-san-cuoi-nam-2026-tang-cao-d34009.html",
+      "https://thitruongbiz.vn/agribank-tang-von-len-hon-51500-ty-dong-d12187.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thitruongbiz.vn/",
+    "categories": [
+      "https://thitruongbiz.vn/tin-tuc/",
+      "https://thitruongbiz.vn/thi-truong/",
+      "https://thitruongbiz.vn/doanh-nghiep/",
+      "https://thitruongbiz.vn/bat-dong-san/",
+      "https://thitruongbiz.vn/tai-chinh/",
+      "https://thitruongbiz.vn/thuong-mai-dien-tu/",
+      "https://thitruongbiz.vn/thuat-ngu-chuyen-nganh/",
+      "https://thitruongbiz.vn/multimedia/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thitruongbiz.vn",
+    "checkedAt": "2026-11-09T03:57:31.280Z",
+    "url": "https://thitruongbiz.vn/seabank-hoan-tat-tang-von-dieu-le-len-34688-ty-dong-d33994.html",
+    "finalUrl": "https://thitruongbiz.vn/seabank-hoan-tat-tang-von-dieu-le-len-34688-ty-dong-d33994.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2338,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thitruongbiz.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "deep_samples_verified",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 339,
+        "passed": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:12:20.277Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/thitruongbiz.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/thitruongbiz.vn.json",
+    "configBeforeSha256": "8df56131676a745126ad8e4b48e26feeb2a2b4653648bb6e7dd5efb17b0262b3",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  },
+  "variants": []
+}

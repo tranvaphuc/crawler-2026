@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "offb.vn",
+  "siteId": "offb.vn",
+  "registrableDomain": "offb.vn",
+  "homepage": "https://offb.com.vn/",
+  "allowedHosts": [
+    "offb.com.vn",
+    "www.offb.com.vn",
+    "offb.vn",
+    "www.offb.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://offb.com.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "Mitsubishi Bán 3.216 Xe Trong Tháng 7/2026, Xforce Và Xpander Cùng Vào Top 4",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:47:17.630Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:47:11.387Z",
+    "independentHoldouts": [
+      "https://offb.vn/li-auto-la-mot-hanh-xe-cong-nghe-tuong-tu-nhu-tesla-26320",
+      "https://offb.vn/thuong-hieu-xe-sang-trung-quoc-li-auto-gia-nhap-thi-truong-viet-nam-26319",
+      "https://offb.vn/ra-mat-subaru-forester-nhap-nhat-voi-muc-gia-gan-1t6-cho-ban-25-e-boxer-hybrid-26318"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://offb.vn/mitsubishi-ban-3216-xe-trong-thang-7-2026-xforce-va-xpander-cung-vao-top-4-26241",
+      "https://offb.vn/li-auto-la-mot-hanh-xe-cong-nghe-tuong-tu-nhu-tesla-26320",
+      "https://offb.vn/thuong-hieu-xe-sang-trung-quoc-li-auto-gia-nhap-thi-truong-viet-nam-26319",
+      "https://offb.vn/ra-mat-subaru-forester-nhap-nhat-voi-muc-gia-gan-1t6-cho-ban-25-e-boxer-hybrid-26318"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "sourceAlias": "offb.com.vn",
+  "officialRedirect": {
+    "from": "https://offb.com.vn/",
+    "to": "https://offb.vn/",
+    "status": 301,
+    "checkedAt": "2026-11-16T02:54:38.554Z"
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

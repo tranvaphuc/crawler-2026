@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchinganhang.gov.vn",
+  "siteId": "tapchinganhang.gov.vn",
+  "registrableDomain": "tapchinganhang.gov.vn",
+  "homepage": "https://tapchinganhang.gov.vn/",
+  "allowedHosts": [
+    "tapchinganhang.gov.vn",
+    "www.tapchinganhang.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hướng dẫn đăng ký mua tin",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Thư tri ân cộng tác viên và bạn đọc Tạp chí điện tử Ngân hàng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-detail-main",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "tapchinganhang.gov.vn",
+      "siteId": "tapchinganhang.gov.vn",
+      "registrableDomain": "tapchinganhang.gov.vn",
+      "homepage": "https://tapchinganhang.gov.vn/",
+      "allowedHosts": [
+        "tapchinganhang.gov.vn",
+        "www.tapchinganhang.gov.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Hướng dẫn đăng ký mua tin",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:43.724Z",
+        "trainingUrls": [
+          "https://tapchinganhang.gov.vn/tac-dong-cua-truyen-mieng-dien-tu-den-y-dinh-mua-cheo-san-pham-dich-vu-tai-cac-ngan-hang-thuong-mai-viet-nam-17329.html"
+        ],
+        "holdoutUrls": [
+          "https://tapchinganhang.gov.vn/ap-dung-bo-chuan-muc-kiem-toan-noi-bo-toan-cau-tai-cac-ngan-hang-thuong-mai-viet-nam-17665.html",
+          "https://tapchinganhang.gov.vn/dam-bao-an-toan-he-sinh-thai-so-bao-ve-khach-hang-su-dung-dich-vu-ngan-hang-tren-khong-gian-mang-17473.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:23.038Z",
+    "sampleCount": 7,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tapchinganhang.gov.vn/nganh-ngan-hang-voi-ky-nguyen-vuon-minh-cua-dan-toc-viet-nam",
+      "https://tapchinganhang.gov.vn/thu-tri-an-cong-tac-vien-va-ban-doc-tap-chi-dien-tu-ngan-hang-17669.html",
+      "https://tapchinganhang.gov.vn/mot-so-van-de-phap-ly-ve-thanh-toan-bang-the-ngan-hang-o-viet-nam-17663.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-bat-on-dia-chinh-tri-den-su-on-dinh-cua-he-thong-ngan-hang-va-vai-tro-cua-cac-chinh-sach-vi-mo-17641.html",
+      "https://tapchinganhang.gov.vn/ap-dung-bo-chuan-muc-kiem-toan-noi-bo-toan-cau-tai-cac-ngan-hang-thuong-mai-viet-nam-17665.html",
+      "https://tapchinganhang.gov.vn/phat-trien-trung-tam-tai-chinh-quoc-te-tai-viet-nam-tu-chien-luoc-den-hanh-dong-17657.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tapchinganhang.gov.vn/",
+    "categories": [
+      "https://tapchinganhang.gov.vn/an-pham-tap-chi-in",
+      "https://tapchinganhang.gov.vn/bai-viet-khoa-hoc-chuyen-sau",
+      "https://tapchinganhang.gov.vn/kinh-te-xa-hoi",
+      "https://tapchinganhang.gov.vn/kinh-te-xa-hoi/thi-dua-yeu-nuoc-nganh-ngan-hang",
+      "https://tapchinganhang.gov.vn/hoat-dong-ngan-hang",
+      "https://tapchinganhang.gov.vn/hoat-dong-ngan-hang/hoat-dong-ngan-hang",
+      "https://tapchinganhang.gov.vn/hoat-dong-ngan-hang/ky-niem-70-nam-thanh-lap-ngan-hang-viet-nam",
+      "https://tapchinganhang.gov.vn/cong-nghe-ngan-hang-so",
+      "https://tapchinganhang.gov.vn/thi-truong-tai-chinh",
+      "https://tapchinganhang.gov.vn/nghien-cuu-trao-doi",
+      "https://tapchinganhang.gov.vn/quoc-te",
+      "https://tapchinganhang.gov.vn/banking"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tapchinganhang.gov.vn",
+    "checkedAt": "2026-11-09T03:57:27.397Z",
+    "url": "https://tapchinganhang.gov.vn/nganh-ngan-hang-voi-ky-nguyen-vuon-minh-cua-dan-toc-viet-nam",
+    "finalUrl": "https://tapchinganhang.gov.vn/nganh-ngan-hang-voi-ky-nguyen-vuon-minh-cua-dan-toc-viet-nam",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 486,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tapchinganhang.gov.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 28,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 14,
+    "parserIssues": 7,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 167,
+        "passed": 28,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tapchinganhang.gov.vn/thu-tri-an-cong-tac-vien-va-ban-doc-tap-chi-dien-tu-ngan-hang-17669.html",
+      "https://tapchinganhang.gov.vn/mot-so-van-de-phap-ly-ve-thanh-toan-bang-the-ngan-hang-o-viet-nam-17663.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-bat-on-dia-chinh-tri-den-su-on-dinh-cua-he-thong-ngan-hang-va-vai-tro-cua-cac-chinh-sach-vi-mo-17641.html",
+      "https://tapchinganhang.gov.vn/ap-dung-bo-chuan-muc-kiem-toan-noi-bo-toan-cau-tai-cac-ngan-hang-thuong-mai-viet-nam-17665.html",
+      "https://tapchinganhang.gov.vn/phat-trien-trung-tam-tai-chinh-quoc-te-tai-viet-nam-tu-chien-luoc-den-hanh-dong-17657.html",
+      "https://tapchinganhang.gov.vn/thu-hut-fdi-ben-vung-qua-mo-hinh-ngan-hang-xanh-kinh-nghiem-tu-trung-quoc-va-ham-y-chinh-sach-cho-viet-nam-17655.html",
+      "https://tapchinganhang.gov.vn/tu-mua-thu-doc-lap-den-nen-tai-chinh-hien-dai-dau-an-nganh-ngan-hang-trong-hanh-trinh-vuon-minh-cua-dat-nuoc-17651.html",
+      "https://tapchinganhang.gov.vn/dam-bao-an-toan-he-sinh-thai-so-bao-ve-khach-hang-su-dung-dich-vu-ngan-hang-tren-khong-gian-mang-17473.html",
+      "https://tapchinganhang.gov.vn/phat-bieu-chi-dao-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-quan-triet-va-trien-khai-nghi-quyet-10-nqtw-17471.html",
+      "https://tapchinganhang.gov.vn/toan-van-phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-truong-doan-tham-du-dien-dan-tuong-lai-asean-2026-17401.html",
+      "https://tapchinganhang.gov.vn/thu-tuong-le-minh-hung-asean-can-huong-toi-ba-tam-voc-chien-luoc-17407.html",
+      "https://tapchinganhang.gov.vn/quy-tin-dung-nhan-dan-truoc-yeu-cau-tai-co-cau-va-chuyen-doi-so-co-hoi-thach-thuc-va-dinh-huong-mo-hinh-phat-trien-trong-giai-doan-moi-17623.html",
+      "https://tapchinganhang.gov.vn/chuyen-doi-so-ngan-hang-an-toan-so-la-nen-tang-cua-niem-tin-17615.html",
+      "https://tapchinganhang.gov.vn/dong-von-ngan-hang-tiep-tuc-huong-toi-doanh-nghiep-nho-va-vua-linh-vuc-uu-tien-dong-luc-tang-truong-17607.html",
+      "https://tapchinganhang.gov.vn/dich-vu-ngan-hang-so-trong-trung-tam-tai-chinh-quoc-te-khung-nang-luc-van-hanh-va-ham-y-cho-viet-nam-17555.html",
+      "https://tapchinganhang.gov.vn/he-sinh-thai-san-pham-dich-vu-ngan-hang-nen-tang-phat-trien-trung-tam-tai-chinh-quoc-te-tai-viet-nam-17553.html",
+      "https://tapchinganhang.gov.vn/su-dich-chuyen-co-cau-dau-tu-cua-cac-quy-huu-tri-toan-cau-va-tac-dong-doi-voi-thi-truong-no-the-gioi-17539.html",
+      "https://tapchinganhang.gov.vn/hoan-thien-yeu-cau-ve-lap-va-trinh-bay-bao-cao-luu-chuyen-tien-te-theo-ias-7-17629.html",
+      "https://tapchinganhang.gov.vn/hoan-thien-mo-hinh-giam-sat-tai-chinh-tai-viet-nam-co-so-ly-luan-kinh-nghiem-quoc-te-va-mot-so-khuyen-nghi-17613.html",
+      "https://tapchinganhang.gov.vn/quy-dinh-ve-uy-ban-kiem-toan-trong-doanh-nghiep-niem-yet-tai-viet-nam-goc-nhin-phap-ly-va-thuc-tien-17577.html",
+      "https://tapchinganhang.gov.vn/dich-vu-tai-chinh-hien-dai-khung-ly-luan-kinh-nghiem-quoc-te-va-dinh-huong-phat-trien-tai-viet-nam-17587.html",
+      "https://tapchinganhang.gov.vn/phat-trien-trung-tam-tai-chinh-quoc-te-tai-viet-nam-vai-tro-kien-tao-cua-ha-tang-thanh-toan-xuyen-bien-gioi-17605.html",
+      "https://tapchinganhang.gov.vn/ung-dung-he-sinh-thai-tri-tue-nhan-tao-va-tu-dong-hoa-trong-chien-luoc-toi-uu-hoa-pheu-chuyen-doi-khach-hang-tai-cac-ngan-hang-thuong-mai-17645.html",
+      "https://tapchinganhang.gov.vn/xay-dung-nang-luc-tu-bao-ve-truoc-rui-ro-tam-ly-va-cong-nghe-cho-the-he-z-trong-boi-canh-thi-diem-thi-truong-tai-san-ma-hoa-tai-viet-nam-17633.html",
+      "https://tapchinganhang.gov.vn/bao-chi-cach-mang-viet-nam-trong-thoi-dai-so-17431.html",
+      "https://tapchinganhang.gov.vn/phat-huy-gia-tri-tinh-than-ngay-304-lich-su-trong-hanh-trinh-vuon-minh-cua-nganh-ngan-hang-viet-nam-17269.html",
+      "https://tapchinganhang.gov.vn/kinh-te-viet-nam-2025-thanh-tuu-but-pha-tren-nen-tang-dieu-hanh-chinh-sach-tien-te-linh-hoat-nhay-ben-16891.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-chi-so-tien-gui-khong-ky-han-den-hieu-qua-hoat-dong-cua-cac-ngan-hang-thuong-mai-viet-nam-17647.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-ti-gia-hoi-doai-den-lam-phat-tai-viet-nam-va-mot-so-ham-y-chinh-sach-17601.html",
+      "https://tapchinganhang.gov.vn/ung-dung-hoc-may-trong-phan-loai-rui-ro-tin-dung-khach-hang-ca-nhan-tai-cac-ngan-hang-thuong-mai-viet-nam-17639.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-tu-do-hoa-can-can-tai-chinh-den-tang-truong-kinh-te-va-on-dinh-tai-chinh-ham-y-chinh-sach-cho-viet-nam-17673.html",
+      "https://tapchinganhang.gov.vn/rui-ro-tin-dung-trong-du-lieu-bang-tai-cac-ngan-hang-viet-nam-tiep-can-fem-voi-sai-so-chuan-driscoll-kraay-gmm-va-du-bao-monte-carlo-16977.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-truyen-mieng-dien-tu-den-y-dinh-mua-cheo-san-pham-dich-vu-tai-cac-ngan-hang-thuong-mai-viet-nam-17329.html",
+      "https://tapchinganhang.gov.vn/nhan-to-anh-huong-den-quyet-dinh-su-dung-the-tin-dung-cua-khach-hang-ca-nhan-tai-cac-ngan-hang-viet-nam-17351.html",
+      "https://tapchinganhang.gov.vn/ung-dung-ai-thuc-day-kinh-te-xanh-va-net-zero-trong-doanh-nghiep-kinh-nghiem-quoc-te-bai-hoc-cho-viet-nam-17635.html",
+      "https://tapchinganhang.gov.vn/dao-duc-trong-nganh-tai-chinh-ngan-hang-huong-toi-phat-trien-ben-vung-tong-quan-ly-thuyet-va-bai-hoc-thuc-tien-17617.html",
+      "https://tapchinganhang.gov.vn/thuc-day-chuyen-doi-chuan-bao-cao-tai-chinh-quoc-te-tai-viet-nam-kinh-nghiem-quoc-te-va-ham-y-chinh-sach-17595.html",
+      "https://tapchinganhang.gov.vn/tang-cuong-lien-ket-kinh-te-giua-doanh-nghiep-va-hop-tac-xa-trong-xuat-khau-duoc-lieu-tai-viet-nam-17597.html",
+      "https://tapchinganhang.gov.vn/he-khuyen-nghi-hoc-lien-ket-xu-huong-phat-trien-trong-ky-nguyen-du-lieu-phan-tan-17631.html",
+      "https://tapchinganhang.gov.vn/dai-hoi-xiv-cua-dang-dai-hoi-cua-niem-tin-va-khat-vong-phat-trien-16925.html",
+      "https://tapchinganhang.gov.vn/phap-luat-lien-minh-chau-au-ve-bao-ve-du-lieu-ca-nhan-trong-hoat-dong-thuong-mai-dien-tu-16769.html",
+      "https://tapchinganhang.gov.vn/infographic-cac-thanh-vien-chinh-phu-nhiem-ky-2026-2031-17197.html",
+      "https://tapchinganhang.gov.vn/vai-tro-cua-quy-bao-dam-an-toan-he-thong-quy-tin-dung-nhan-dan-qua-thuc-tien-hoat-dong-cho-vay-ho-tro-17649.html",
+      "https://tapchinganhang.gov.vn/tac-dong-cua-chuyen-doi-so-ngan-hang-den-nang-luc-canh-tranh-cua-cac-trung-tam-tai-chinh-quoc-te-phan-tich-vi-mo-va-ham-y-cho-viet-nam-17569.html",
+      "https://tapchinganhang.gov.vn/so-sanh-cac-quy-dinh-cua-hoa-ky-va-lien-minh-chau-au-doi-voi-stablecoin-neo-tien-phap-dinh-mot-so-kinh-nghiem-cho-viet-nam-17563.html",
+      "https://tapchinganhang.gov.vn/kinh-nghiem-quoc-te-ve-tu-do-hoa-can-can-tai-chinh-va-bai-hoc-cho-cac-nen-kinh-te-dang-phat-trien-17561.html",
+      "https://tapchinganhang.gov.vn/an-pham-tap-chi-in/chuyen-de-dac-biet-quy-2-nam-2026.paper",
+      "https://tapchinganhang.gov.vn/369.docs",
+      "https://tapchinganhang.gov.vn/371.docs",
+      "https://tapchinganhang.gov.vn/365.docs",
+      "https://tapchinganhang.gov.vn/363.docs",
+      "https://tapchinganhang.gov.vn/353.docs",
+      "https://tapchinganhang.gov.vn/355.docs",
+      "https://tapchinganhang.gov.vn/361.docs",
+      "https://tapchinganhang.gov.vn/351.docs",
+      "https://tapchinganhang.gov.vn/347.docs",
+      "https://tapchinganhang.gov.vn/359.docs",
+      "https://tapchinganhang.gov.vn/hoat-dong-ngan-hang/bao-chi-dong-hanh-cung-su-phat-trien-cua-nganh-ngan-hang-viet-nam"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "unresolved_extraction": 3,
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:17:03.664Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tapchinganhang.gov.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "dateCorrectionEvidence": {
+    "frozenAt": "2026-11-10T06:57:39.474Z",
+    "source": "exact original article:published_time with explicit offset, corroborated by self-owned Article datePublished; visible clock conflicts retained for review",
+    "holdoutUrls": [
+      "https://tapchinganhang.gov.vn/ap-dung-bo-chuan-muc-kiem-toan-noi-bo-toan-cau-tai-cac-ngan-hang-thuong-mai-viet-nam-17665.html",
+      "https://tapchinganhang.gov.vn/thu-hut-fdi-ben-vung-qua-mo-hinh-ngan-hang-xanh-kinh-nghiem-tu-trung-quoc-va-ham-y-chinh-sach-cho-viet-nam-17655.html",
+      "https://tapchinganhang.gov.vn/dam-bao-an-toan-he-sinh-thai-so-bao-ve-khach-hang-su-dung-dich-vu-ngan-hang-tren-khong-gian-mang-17473.html",
+      "https://tapchinganhang.gov.vn/phat-bieu-chi-dao-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-quan-triet-va-trien-khai-nghi-quyet-10-nqtw-17471.html",
+      "https://tapchinganhang.gov.vn/toan-van-phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-truong-doan-tham-du-dien-dan-tuong-lai-asean-2026-17401.html",
+      "https://tapchinganhang.gov.vn/thu-tuong-le-minh-hung-asean-can-huong-toi-ba-tam-voc-chien-luoc-17407.html"
+    ],
+    "requiresHistoricalIndexReconciliation": true
+  }
+}

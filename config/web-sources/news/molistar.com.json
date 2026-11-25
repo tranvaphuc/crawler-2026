@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "siteName": "molistar.com",
+  "siteId": "molistar.com",
+  "registrableDomain": "molistar.com",
+  "homepage": "https://molistar.com/",
+  "allowedHosts": [
+    "molistar.com",
+    "www.molistar.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hiền Mai – Nguyên Vũ tiếp tục làm giám khảo “Hoa hậu Thế giới Doanh nhân Việt Nam 2026”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "listing_unavailable",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:45.825Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://molistar.com/star/hien-mai-nguyen-vu-tiep-tuc-lam-giam-khao-hoa-hau-the-gioi-doanh-nhan-viet-nam-2026/",
+      "https://molistar.com/star/mono-strong-trong-hieu-quynh-anh-shyn-khuay-dong-cu-xa-adidas-voi-thong-diep-huyen-thoai-sinh-ra-tu-san-dau/",
+      "https://molistar.com/star/sau-khi-sinh-con-dau-long-quynh-chau-tro-san-dien-voi-vai-tro-first-face/",
+      "https://molistar.com/star/anh-trai-vuot-ngan-chong-gai-2026-tro-lai-hua-hen-bung-no-voi-nhung-man-tranh-tai-cang-thang-va-quyet-liet/",
+      "https://molistar.com/star/my-nhan-lai-anh-viet-gay-chu-y-tai-vietnams-next-top-model-ghi-danh-miss-grand-vietnam-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/molistar.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null,
+    "complete27Qc": {
+      "checkedAt": "2026-11-22T12:10:28.917Z",
+      "verifiedUrls": [
+        "https://molistar.com/star/hien-mai-nguyen-vu-tiep-tuc-lam-giam-khao-hoa-hau-the-gioi-doanh-nhan-viet-nam-2026/",
+        "https://molistar.com/star/anh-trai-vuot-ngan-chong-gai-2026-tro-lai-hua-hen-bung-no-voi-nhung-man-tranh-tai-cang-thang-va-quyet-liet/",
+        "https://molistar.com/doi-song/hanh-trinh-khong-bo-cuoc-cua-huynh-tu-uyen-trong-viet-cho-nhung-ngay-khong-dam-khoc/",
+        "https://molistar.com/doi-song/tran-bui-bao-khanh-tu-cau-hoc-tro-ha-noi-den-ngoi-vo-dich-olympia-nam-thu-25/",
+        "https://molistar.com/musik/nghe-si-goc-viet-shumo-ag-bat-tay-nhom-nhac-so-huu-gan-500-trieu-luot-stream-tai-indonesia/"
+      ],
+      "holdouts": [
+        "https://molistar.com/doi-song/tran-bui-bao-khanh-tu-cau-hoc-tro-ha-noi-den-ngoi-vo-dich-olympia-nam-thu-25/",
+        "https://molistar.com/musik/nghe-si-goc-viet-shumo-ag-bat-tay-nhom-nhac-so-huu-gan-500-trieu-luot-stream-tai-indonesia/"
+      ],
+      "nativePublicationAdapter": "declared_wordpress_post",
+      "report": "/var/lib/news-flow/qc-complete27-20261122/qualified-sites.json",
+      "originalIdentityPreserved": true
+    },
+    "complete27Routing": {
+      "checkedAt": "2026-11-22T12:17:45.275Z",
+      "proxyIds": [
+        "news-p03",
+        "news-p04"
+      ],
+      "verifiedUrls": [
+        "https://molistar.com/star/hien-mai-nguyen-vu-tiep-tuc-lam-giam-khao-hoa-hau-the-gioi-doanh-nhan-viet-nam-2026/",
+        "https://molistar.com/star/anh-trai-vuot-ngan-chong-gai-2026-tro-lai-hua-hen-bung-no-voi-nhung-man-tranh-tai-cang-thang-va-quyet-liet/",
+        "https://molistar.com/doi-song/hanh-trinh-khong-bo-cuoc-cua-huynh-tu-uyen-trong-viet-cho-nhung-ngay-khong-dam-khoc/",
+        "https://molistar.com/doi-song/tran-bui-bao-khanh-tu-cau-hoc-tro-ha-noi-den-ngoi-vo-dich-olympia-nam-thu-25/",
+        "https://molistar.com/musik/nghe-si-goc-viet-shumo-ag-bat-tay-nhom-nhac-so-huu-gan-500-trieu-luot-stream-tai-indonesia/"
+      ],
+      "report": "/var/lib/news-flow/qc-complete27-20261122/molistar-routing-verified.json"
+    }
+  },
+  "discovery": {
+    "homepage": "https://molistar.com/",
+    "categories": [
+      "https://molistar.com/danh-muc/star/",
+      "https://molistar.com/danh-muc/doi-song",
+      "https://molistar.com/danh-muc/cine",
+      "https://molistar.com/danh-muc/musik/",
+      "https://molistar.com/danh-muc/fashion/",
+      "https://molistar.com/danh-muc/the-thao",
+      "https://molistar.com/danh-muc/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json",
+    "maxConcurrentArticles": 1,
+    "proxyIds": [
+      "news-p03",
+      "news-p04"
+    ]
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 0,
+    "passedSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "molistar.com",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 3,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 7,
+    "categoriesUnconfirmed": 7,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": "http_520",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:04.291Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/molistar.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "nativePublicationAdapter": "declared_wordpress_post"
+}

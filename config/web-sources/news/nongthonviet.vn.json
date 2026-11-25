@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nongthonviet.vn",
+  "siteId": "nongthonviet.vn",
+  "registrableDomain": "nongthonviet.vn",
+  "homepage": "https://nongthonviet.vn/",
+  "allowedHosts": [
+    "nongthonviet.vn",
+    "www.nongthonviet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nongthonviet.vn/",
+    "categories": [
+      "https://nongthonviet.vn/cau-chuyen-nong-nghiep-hom-nay",
+      "https://nongthonviet.vn/goc-nhin-nong-thon-viet",
+      "https://nongthonviet.vn/chuyen-lam-an",
+      "https://nongthonviet.vn/tai-chinh",
+      "https://nongthonviet.vn/nong-nghiep-sinh-thai",
+      "https://nongthonviet.vn/nong-thon-thinh-vuong"
+    ]
+  },
+  "title": {
+    "value": "42 doanh nghiệp Đồng Nai kết nối đưa nông sản vào siêu thị",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:43.203Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:37.828Z",
+    "independentHoldouts": [
+      "https://nongthonviet.vn/tp-hcm-uu-tien-linh-vuc-nao-de-thu-hut-19-ti-usd-von-fdi-46486.html",
+      "https://nongthonviet.vn/sieu-thi-rot-rao-tim-nguon-hang-cho-mua-mua-sam-cuoi-nam-46308.html",
+      "https://nongthonviet.vn/trong-them-5-500-cay-phuc-hoi-he-sinh-thai-rung-ta-kou-46218.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nongthonviet.vn/42-doanh-nghiep-dong-nai-ket-noi-dua-nong-san-vao-sieu-thi-46429.html",
+      "https://nongthonviet.vn/tp-hcm-uu-tien-linh-vuc-nao-de-thu-hut-19-ti-usd-von-fdi-46486.html",
+      "https://nongthonviet.vn/sieu-thi-rot-rao-tim-nguon-hang-cho-mua-mua-sam-cuoi-nam-46308.html",
+      "https://nongthonviet.vn/trong-them-5-500-cay-phuc-hoi-he-sinh-thai-rung-ta-kou-46218.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

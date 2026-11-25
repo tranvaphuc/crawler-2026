@@ -1,0 +1,30 @@
+SỬA TIMEOUT GIẢ DO CODE — 2026-11-13 10:57:36 (UTC+7)
+Đã deploy release /opt/news-flow/releases/20261113-08. 121/121 test pass cả local và VPS; ES5 mapping/proof và 11 proxy đạt deployment check.
+Đối chiếu trước sửa: 33 URL, cùng proxy, HTTP/1.1 và deadline curl 2 giây. Trong 22 URL bị crawler timeout, 20 curl trả 200/304, 2 curl cũng timeout.
+Nguyên nhân đã sửa: HTTP I/O và timer trước đây cùng event loop với SQL, HTML, nén/cache. Main thread bận làm chậm nhận socket/response và abort; guard dựa trên thời gian callback main thread loại cả response lẽ ra đã hoàn tất trước deadline.
+Bản mới tách Axios, proxy CONNECT/TLS, nhận body và timer vào hai worker mạng độc lập. Tối đa 16 request mỗi worker, tổng HTTP vẫn 32; timeout tối đa 2 giây giữ nguyên. Cookie/cache, publisher policy, request-once, ID/field/time/dedup không đổi. Không dùng browser hoặc gọi model.
+Thời gian HTTP được đo monotonic trong worker từ lúc bắt đầu request tới hết body. Queue vào worker và thời gian main thread nhận kết quả được ghi riêng. Không gán timeout chỉ vì main thread xử lý kết quả chậm; body tải quá hạn thật vẫn bị loại.
+Test hồi quy bao gồm main thread bị chặn hơn 2 giây trong khi proxy/server và network worker độc lập, HTTP chậm thật, drip body, CONNECT treo, bounded queue, 304/cookie/redirect/dedup và worker lỗi không fallback trực tiếp.
+Sau 5.09 phút tải thật: seed timeout 51.24% → 16.9%; toàn HTTP 41.89% → 13.72%.
+Seed thành công: 232 → 378.1 URL/phút; lượt thử seed mới 463.8 URL/phút.
+Mẫu mới: 2361 request seed, 1925 thành công, 399 timeout, 37 lỗi khác. Tổng HTTP 4540 request, 623 timeout.
+Thời gian mạng trung bình 1247.75 ms; p50 1140.51 ms. 344 response hợp lệ có thời gian mạng dưới 2 giây nhưng main thread nhận sau mốc tổng 2 giây; bản mới giữ đúng. Response có thời gian mạng >=2 giây được chấp nhận: 0.
+Worker: {"mode":"axios_workers","workers":2,"inFlight":24,"queued":0,"failures":0}. CPU 2.34 core, RAM 2.07 GiB; restart 0.
+Kiểm tra chéo proxy: cùng 6 URL, hai lượt, 12 request/proxy, deadline 2 giây. Chọn p09/p02 vì tỷ lệ timeout live cao, đối chiếu p05. Khác biệt theo nhóm site không đủ để quy mọi timeout cho một proxy.
+news-p09: 12/12 thành công, 0 timeout, trung bình 1.227 giây.
+news-p02: 11/12 thành công, 1 timeout, trung bình 1.262 giây.
+news-p05: 12/12 thành công, 0 timeout, trung bình 1.193 giây.
+Giới hạn: vẫn còn 16.9% timeout seed theo deadline mạng 2 giây. Các cửa sổ trước/sau có thành phần URL khác nhau; phép đo cùng URL/proxy và test main-thread stall bổ sung bằng chứng nguyên nhân. Chưa chứng minh mọi bài mới của 544 site được thu trong 20 phút; với thông lượng thử seed đo được, một lượt unique seed ngoại suy khoảng 29.7 phút và cooldown có thể kéo dài đuôi.
+
+TIMELINE: phút | timeout seed % | seed thành công/phút | timeout toàn HTTP % | mạng trung bình ms
+0 |  | 0 |  | 
+0.51 | 15.6 | 409.1 | 14.08 | 1222.45
+1.02 | 16.87 | 397.2 | 13.38 | 1196.81
+1.53 | 16.31 | 405.8 | 12.59 | 1190.51
+2.03 | 16.02 | 396.3 | 12.31 | 1189.9
+2.54 | 15.05 | 398.7 | 12.02 | 1190.17
+3.05 | 14.8 | 397.1 | 12.36 | 1206.06
+3.56 | 15.6 | 388.9 | 13.32 | 1229.29
+4.07 | 16.4 | 383.4 | 13.87 | 1243.06
+4.58 | 16.34 | 379.4 | 13.54 | 1245.31
+5.09 | 16.9 | 378.1 | 13.72 | 1247.75

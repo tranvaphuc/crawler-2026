@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congngheviet.com",
+  "siteId": "congngheviet.com",
+  "registrableDomain": "congngheviet.com",
+  "homepage": "https://congngheviet.com/",
+  "allowedHosts": [
+    "congngheviet.com",
+    "www.congngheviet.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Đánh giá HONOR Watch 6: Màn hình 3,000 nit, pin 35 ngày và hơn 120 chế độ thể thao",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".cnv-single-post-layout__body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:20.402Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://congngheviet.com/danh-gia-honor-watch-6-man-hinh-3000-nit-pin-35-ngay-va-hon-120-che-do-the-thao/",
+      "https://congngheviet.com/danh-gia-camera-va-hieu-nang-oppo-find-x10-nang-cap-manh-me-cho-goc-nhin-that-nhu-mat-thay/",
+      "https://congngheviet.com/huawei-freebuds-se-5-max-va-soundcore-r60i-nc-duoi-1-trieu-dong-khac-biet-nao-dang-can-nhac/",
+      "https://congngheviet.com/galaxy-z-fold8-vs-iphone-duo-dau-la-lua-chon-toan-dien-hon/",
+      "https://congngheviet.com/siri-ai-se-dieu-khien-duoc-ung-dung-ben-thu-ba-tu-dau-nam-2027/",
+      "https://congngheviet.com/openai-ra-mat-gpt-6-cyber-mo-ra-cuoc-dua-giua-ai-bao-mat-va-tin-tac/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congngheviet.com/",
+    "categories": [
+      "https://congngheviet.com/tin-tuc/ai-cong-nghe-so/",
+      "https://congngheviet.com/tin-tuc/apple/",
+      "https://congngheviet.com/tin-tuc/dien-tu-tieu-dung/",
+      "https://congngheviet.com/tin-tuc/doi-song/",
+      "https://congngheviet.com/khuyen-mai/",
+      "https://congngheviet.com/su-kien-cong-nghe/",
+      "https://congngheviet.com/tin-tuc/thiet-bi-cong-nghe/",
+      "https://congngheviet.com/tin-tuc/ung-dung/",
+      "https://congngheviet.com/trai-nghiem/",
+      "https://congngheviet.com/tin-tuc/mobile/",
+      "https://congngheviet.com/tin-tuc/may-tinh/",
+      "https://congngheviet.com/tin-tuc/nghe-nhin/",
+      "https://congngheviet.com/tin-tuc/may-anh/",
+      "https://congngheviet.com/tin-tuc/xe/",
+      "https://congngheviet.com/tin-tuc/game/",
+      "https://congngheviet.com/luu-tru/",
+      "https://congngheviet.com/tien-ich/",
+      "https://congngheviet.com/chinh-sach-cookie/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congngheviet.com",
+    "checkedAt": "2026-11-09T03:56:56.499Z",
+    "url": "https://congngheviet.com/danh-gia-honor-watch-6-man-hinh-3000-nit-pin-35-ngay-va-hon-120-che-do-the-thao/",
+    "finalUrl": "https://congngheviet.com/danh-gia-honor-watch-6-man-hinh-3000-nit-pin-35-ngay-va-hon-120-che-do-the-thao/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8706,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congngheviet.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 26,
+    "checkedArticleUrls": 31,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 26,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 218,
+        "passed": 26,
+        "distinctHashes": 26
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://congngheviet.com/danh-gia-honor-watch-6-man-hinh-3000-nit-pin-35-ngay-va-hon-120-che-do-the-thao/",
+      "https://congngheviet.com/danh-gia-camera-va-hieu-nang-oppo-find-x10-nang-cap-manh-me-cho-goc-nhin-that-nhu-mat-thay/",
+      "https://congngheviet.com/huawei-freebuds-se-5-max-va-soundcore-r60i-nc-duoi-1-trieu-dong-khac-biet-nao-dang-can-nhac/",
+      "https://congngheviet.com/galaxy-z-fold8-vs-iphone-duo-dau-la-lua-chon-toan-dien-hon/",
+      "https://congngheviet.com/panasonic-trong-5000-cay-ngap-man-tai-dong-nai-chung-tay-bao-ve-moi-truong/",
+      "https://congngheviet.com/meta-trinh-lang-muse-ember-mo-hinh-ai-moi-toi-uu-chi-phi-va-xu-ly-tac-vu-tu-dong/",
+      "https://congngheviet.com/green-sm-ky-mou-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-di-chuyen-xanh-tai-lao/",
+      "https://congngheviet.com/apple-phat-hanh-ios-27-2-1-va-lo-hong-bao-mat-nghiem-trong-tren-imessage-va-bluetooth/",
+      "https://congngheviet.com/visa-thuc-day-ung-dung-ai-trong-thanh-toan-va-ca-nhan-hoa-trai-nghiem-khach-hang-tai-viet-nam/",
+      "https://congngheviet.com/honor-x6e-ra-mat-tai-viet-nam-voi-pin-7500mah-man-hinh-120hz-va-do-ben-sgs-5-sao/",
+      "https://congngheviet.com/siri-ai-se-dieu-khien-duoc-ung-dung-ben-thu-ba-tu-dau-nam-2027/",
+      "https://congngheviet.com/ios-28-va-macos-28-duoc-apple-phat-trien-theo-quy-trinh-moi/",
+      "https://congngheviet.com/green-sm-trien-khai-chuong-trinh-mua-dong-xanh-giam-25-gia-cuoc-cho-khach-hang/",
+      "https://congngheviet.com/openai-ra-mat-gpt-6-cyber-mo-ra-cuoc-dua-giua-ai-bao-mat-va-tin-tac/",
+      "https://congngheviet.com/bosch-rexroth-gioi-thieu-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-tai-vimf-bac-ninh-2026/",
+      "https://congngheviet.com/amazon-dat-muc-tieu-dua-30-thuong-hieu-quoc-gia-viet-nam-len-amazon-nam-2027/",
+      "https://congngheviet.com/viettel-distribution-phan-phoi-thuong-hieu-phu-kien-cong-nghe-mokin-tai-viet-nam/",
+      "https://congngheviet.com/google-du-bao-kinh-te-so-viet-nam-dat-49-ty-usd-trong-nam-2026/",
+      "https://congngheviet.com/roblox-studio-performance-simulator-do-hoa-bo-nho/",
+      "https://congngheviet.com/roblox-tang-khoang-nhin-do-hoa-thap/",
+      "https://congngheviet.com/man-hinh-f3-minecraft-java-cach-bat-va-doc/",
+      "https://congngheviet.com/phan-biet-mod-modpack-datapack-resource-pack-addon-minecraft/",
+      "https://congngheviet.com/dappled-forest-minecraft-cach-tim-va-tai-nguyen/",
+      "https://congngheviet.com/claude-fable-mythos-5-2-ra-mat/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1,
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:42.256Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congngheviet.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

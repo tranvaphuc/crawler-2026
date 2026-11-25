@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dailyxemitsubishi.net",
+  "siteId": "dailyxemitsubishi.net",
+  "registrableDomain": "dailyxemitsubishi.net",
+  "homepage": "https://dailyxemitsubishi.net/",
+  "allowedHosts": [
+    "dailyxemitsubishi.net",
+    "www.dailyxemitsubishi.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://dailyxemitsubishi.net/",
+    "categories": [
+      "https://dailyxemitsubishi.net/tin-tuc/",
+      "https://dailyxemitsubishi.net/tu-van/"
+    ]
+  },
+  "title": {
+    "value": "GIÁ LĂN BÁNH XE MITSUBISHI DESTINATOR TẠI HÀ NỘI",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:17:09.976Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://dailyxemitsubishi.net/gia-xe-mitsubishi-xforce-ultimate/",
+      "https://dailyxemitsubishi.net/thong-ky-thuat-mitsubishi-xforce-luxury/"
+    ],
+    "improvedUrls": [
+      "https://dailyxemitsubishi.net/thong-ky-thuat-xpander-premium/",
+      "https://dailyxemitsubishi.net/gia-xe-mitsubishi-7-cho/",
+      "https://dailyxemitsubishi.net/gia-xe-ban-tai-triton-4x2-at-premium/",
+      "https://dailyxemitsubishi.net/gia-xe-mitsubishi-xforce-ultimate/",
+      "https://dailyxemitsubishi.net/thong-ky-thuat-mitsubishi-xforce-luxury/"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://dailyxemitsubishi.net/gia-lan-banh-xe-destinator-tai-ha-noi",
+      "https://dailyxemitsubishi.net/xe-mitsubishi-gia-tot",
+      "https://dailyxemitsubishi.net/dich-vu-cuu-ho-xe-mitsubishi-24-7/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "GIÁ LĂN BÁNH XE MITSUBISHI DESTINATOR TẠI HÀ NỘI",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-post",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:16:06.407Z",
+        "trainingUrls": [
+          "https://dailyxemitsubishi.net/thong-ky-thuat-xpander-premium/",
+          "https://dailyxemitsubishi.net/gia-xe-mitsubishi-7-cho/",
+          "https://dailyxemitsubishi.net/gia-xe-ban-tai-triton-4x2-at-premium/"
+        ],
+        "holdoutUrls": [
+          "https://dailyxemitsubishi.net/gia-xe-mitsubishi-xforce-ultimate/",
+          "https://dailyxemitsubishi.net/thong-ky-thuat-mitsubishi-xforce-luxury/"
+        ]
+      }
+    }
+  ]
+}

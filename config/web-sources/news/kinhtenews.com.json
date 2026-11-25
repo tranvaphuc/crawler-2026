@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtenews.com",
+  "siteId": "kinhtenews.com",
+  "registrableDomain": "kinhtenews.com",
+  "homepage": "https://www.kinhtenews.com/",
+  "allowedHosts": [
+    "www.kinhtenews.com",
+    "kinhtenews.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những quầy chè đậu hủ dưới chân chùa Thiên Mụ trở thành nét đẹp văn hoá thu hút du khách tại TP. Huế",
+    "strategy": "selector",
+    "selector": ".entry-title"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://www.kinhtenews.com/feeds/posts/default"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:23.771Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html",
+      "https://www.kinhtenews.com/2026/10/3d-hub-iem-hen-gia-inh-noi-nghe-si-gap.html",
+      "https://www.kinhtenews.com/2026/10/vgd-business-community-voi-cac-du-tao.html",
+      "https://www.kinhtenews.com/2026/10/victoria-school-gianh-cu-up-giai-thuong.html",
+      "https://www.kinhtenews.com/2026/10/my-cam-dung-deepseek-trong-he-thong-co.html",
+      "https://www.kinhtenews.com/2026/10/capitaland-development-duoc-ton-vinh-doanh-nghiep-phat-trien-ben-vung.html",
+      "https://www.kinhtenews.com/2026/10/hang-xa-xi-phuong-tay-loay-hoay-giu-cho.html",
+      "https://www.kinhtenews.com/2026/05/e-xuat-thu-nhap-thang-tren-286-trieu.html",
+      "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.kinhtenews.com/",
+    "categories": [
+      "https://www.kinhtenews.com/search/label/Tin%20t%E1%BB%A9c",
+      "https://www.kinhtenews.com/",
+      "https://www.kinhtenews.com/feeds/posts/default"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.301Z",
+      "verifiedSeeds": [
+        "https://www.kinhtenews.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtenews.com",
+    "checkedAt": "2026-11-09T03:57:11.284Z",
+    "url": "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html",
+    "finalUrl": "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4089,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:35.331Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhtenews.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhtenews.com",
+    "parsedArticles": 4,
+    "distinctHashes": 4,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 0,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 12,
+    "checkedArticleUrls": 4,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 12,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "originalPublicationBlockedReason": null,
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".entry-content p"
+  },
+  "nativePublicationAdapter": null,
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T05:47:42.854Z",
+    "method": "https://www.kinhtenews.com/feeds/posts/default",
+    "proofs": [
+      {
+        "url": "https://www.kinhtenews.com/2026/11/nhung-quay-che-au-hu-duoi-chan-chua.html",
+        "contentHash": "2663b99c5e35713473eef0d02800ddb3bf96f116810a5d9852bb2827a92482b4",
+        "description": "KINHTENEWS - Dù là những ngày hè trời nóng như đổ lửa hay vào hôm những tiết lập đông thì những ly chè đậu hũ được các bạn trẻ chuyền tay nhau bên bờ sông Hương thơ mộng đã vô tình tạo nên một chiếc vibe rất Huế.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.kinhtenews.com/2026/11/nhung-quay-che-au-hu-duoi-chan-chua.html",
+          "publishedDate": "2026-11-09T05:30:23.186Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html",
+        "contentHash": "9d2dcf60e3e508bada2dfd44f57cb6996e355a1943e4df22a697aa1462471ed0",
+        "description": "KINHTENEWS - Vừa qua, Bệnh viện Hùng Vương chính thức phát hành phim ngắn “Suýt nữa thì…” tái hiện một ca cấp cứu sản khoa nguy kịch và hành trình giành lại sự sống cho mẹ và bé. Thông qua câu chuyện về năng lực chuyên môn và sự phối hợp của đội ngũ y bác sĩ, bộ phim tiếp tục lan tỏa thông điệp “Phụ Giữ Trọn Một Đời Phụ Nữ”, nhấn mạnh vai trò chăm sóc sức khỏe phụ nữ xuyên suốt các giai đoạn cuộc đời.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.kinhtenews.com/2026/10/ao-dien-rom-ket-hop-cung-benh-vien-hung.html",
+          "publishedDate": "2026-10-28T08:42:08.555Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://www.kinhtenews.com/2026/10/vgd-business-community-voi-cac-du-tao.html",
+        "contentHash": "d35b8400add3dbbc90071275b566a9e5e6c8c80765441a1ef5d66647af269e20",
+        "description": "KINHTENWES - Ngày 20 tháng 10 năm 2026 vừa qua tại TP Hồ Chí Minh, Cộng đồng Doanh nhân Kinh tế Xanh & Kinh tế Số Việt Nam (tên tiếng Anh là VIETNAM GREEN AND DIGITAL ECONOMY BUSINESS COMMUNITY, tên viết tắt là VGD BUSINESS COMMUNITY), đã chính thức ra mắt với định hướng xây dựng một hệ sinh thái hợp tác thực chất, kết nối doanh nhân, doanh nghiệp, nhà đầu tư và chuyên gia; cùng khai thác thế mạnh, chia sẻ nguồn lực và hợp sức triển khai các dự án tạo ra giá trị kinh tế – xã hội bền vững.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://www.kinhtenews.com/2026/10/vgd-business-community-voi-cac-du-tao.html",
+          "publishedDate": "2026-10-24T03:12:07.079Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  }
+}

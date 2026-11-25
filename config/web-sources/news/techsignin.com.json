@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "techsignin.com",
+  "siteId": "techsignin.com",
+  "registrableDomain": "techsignin.com",
+  "homepage": "https://www.techsignin.com/",
+  "allowedHosts": [
+    "www.techsignin.com",
+    "techsignin.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Viettel Distribution chính thức phân phối phụ kiện công nghệ MOKIN tại Việt Nam",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article time.entry-date",
+    "attribute": "datetime"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "script,style,.related,.td-post-source-tags,.td-a-rec"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:29.119Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.techsignin.com/121126-asus-gioi-thieu-zenbook-14-2026",
+      "https://www.techsignin.com/161126-lg-chuong-trinh-bao-hanh-mien-phi",
+      "https://www.techsignin.com/141126-the-gioi-di-dong-tram-tech-2026/",
+      "https://www.techsignin.com/121126-asus-gioi-thieu-zenbook-14-2026/",
+      "https://www.techsignin.com/101126-meta-mo-rong-cong-nghe-uoc-tinh-do-tuoi/",
+      "https://www.techsignin.com/091126-honor-x6e-chinh-thuc-ra-mat-tai-viet-nam/",
+      "https://www.techsignin.com/051126-viettel-distribution-phan-phoi-mokin/",
+      "https://www.techsignin.com/161126-samsung-welcome-to-galaxy-festival/",
+      "https://www.techsignin.com/161126-lg-chuong-trinh-bao-hanh-mien-phi/",
+      "https://www.techsignin.com/121126-microsoft-khai-truong-van-phong-tphcm/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.techsignin.com/",
+    "categories": [
+      "https://www.techsignin.com/",
+      "https://www.techsignin.com/bai-moi/",
+      "https://www.techsignin.com/cong-nghe/",
+      "https://www.techsignin.com/ai-tri-tue-nhan-tao/",
+      "https://www.techsignin.com/apple/"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "techsignin.com",
+    "checkedAt": "2026-11-09T03:57:28.271Z",
+    "url": "https://www.techsignin.com/051126-viettel-distribution-phan-phoi-mokin/",
+    "finalUrl": "https://www.techsignin.com/051126-viettel-distribution-phan-phoi-mokin/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6417,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "techsignin.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 15,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 76,
+        "passed": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.techsignin.com/101126-meta-mo-rong-cong-nghe-uoc-tinh-do-tuoi/",
+      "https://www.techsignin.com/091126-honor-x6e-chinh-thuc-ra-mat-tai-viet-nam/",
+      "https://www.techsignin.com/051126-viettel-distribution-phan-phoi-mokin/",
+      "https://www.techsignin.com/031126-fortune-southeast-asia-500-tphcm/",
+      "https://www.techsignin.com/021126-huawei-freebuds-se-5-max-ban-10-11/",
+      "https://www.techsignin.com/301026-motorola-ra-mat-moto-pad-60-70-series/",
+      "https://www.techsignin.com/091126-visa-thau-hieu-khach-hang/",
+      "https://www.techsignin.com/071126-green-sm-mua-dong-xanh-vi-tuong-lai-xanh/",
+      "https://www.techsignin.com/061126-zalo-doanh-nghiep-ai-tieu-bieu-nam-2026/",
+      "https://www.techsignin.com/061126-bosch-rexroth-vimf-bac-ninh/",
+      "https://www.techsignin.com/281026-kaspersky-chien-dich-apt-lazarus/",
+      "https://www.techsignin.com/241026-fpt-tang-cuong-bao-ve-ngan-hang-so/",
+      "https://www.techsignin.com/231026-kaspersky-su-co-an-ninh-mang-12-thang/",
+      "https://www.techsignin.com/300926-kaspersky-ghi-nhan-gia-tang-cua-ma-doc/",
+      "https://www.techsignin.com/100926-su-kien-kaspersky-ot-secure/",
+      "https://www.techsignin.com/200826-kaspersky-giai-thuong-frost-sullivan/",
+      "https://www.techsignin.com/031126-may-anh-hieu-nang-oppo-find-x10/",
+      "https://www.techsignin.com/021126-huawei-freebuds-se-5-max/",
+      "https://www.techsignin.com/231026-minh-tuan-mobile-iphone-duo/",
+      "https://www.techsignin.com/171026-ngay-phu-nu-viet-nam-20-10-fpt-shop/",
+      "https://www.techsignin.com/201026-vinfast-doanh-thu-quy-ii-tang-truong/",
+      "https://www.techsignin.com/141026-green-sm-dich-vu-taxi-thuan-dien-tai-my/",
+      "https://www.techsignin.com/111026-vinfast-ban-giao-23-624-o-to-dien/",
+      "https://www.techsignin.com/081026-vinfast-an-do-hop-tac-50-dai-ly/",
+      "https://www.techsignin.com/051026-mercedes-benz-viet-nam-trien-lam-xe/",
+      "https://www.techsignin.com/071126-lineage-w-gioi-thieu-class-nhan-vat-moi/",
+      "https://www.techsignin.com/061126-kiem-hiep-tinh-vng-closed-beta-test/",
+      "https://www.techsignin.com/271026-10-nam-vo-lam-truyen-ky-mobile/",
+      "https://www.techsignin.com/230126-cai-dat-su-dung-vi-momo-tren-garmin/",
+      "https://www.techsignin.com/250725-3-cach-loai-bo-ai-google/",
+      "https://www.techsignin.com/070425-windows-pc-truy-cap-tu-xa/",
+      "https://www.techsignin.com/010525-lua-chon-man-hinh-ultrawide/",
+      "https://www.techsignin.com/010425-xu-ly-wi-fi-khong-hoat-dong/",
+      "https://www.techsignin.com/310325-meo-xu-ly-camera-iphone-khong-hoat-dong/",
+      "https://www.techsignin.com/101126-green-sm-mo-rong-lao/",
+      "https://www.techsignin.com/281026-oppo-find-x10/",
+      "https://www.techsignin.com/231026-di-dong-viet-iphone-duo/",
+      "https://www.techsignin.com/091126-game-slg-vnggames/",
+      "https://www.techsignin.com/051126-tam-quoc-chi-chien-ky/",
+      "https://www.techsignin.com/030525-toi-uu-windows-11-pc-cu/",
+      "https://www.techsignin.com/nhung-kenh-youtube-khoa-hoc-hoc-sinh-giao-vien/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:05.307Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/techsignin.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "nativePublicationAdapter": null,
+  "originalPublicationBlockedReason": null,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T04:00:47.372Z",
+    "paidAiCalls": 0,
+    "source": "customer_links_strict_http_repair"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "laichau.gov.vn",
+  "siteId": "laichau.gov.vn",
+  "registrableDomain": "laichau.gov.vn",
+  "homepage": "https://laichau.gov.vn/",
+  "allowedHosts": [
+    "laichau.gov.vn",
+    "www.laichau.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://laichau.gov.vn/",
+    "categories": [
+      "https://laichau.gov.vn/danh-muc/bo-may-to-chuc/ubnd-tinh",
+      "https://laichau.gov.vn/danh-muc/tong-quan-lai-chau/danh-lamg-thang-canh",
+      "https://laichau.gov.vn/danh-muc/tong-quan-lai-chau/di-tich",
+      "https://laichau.gov.vn/danh-muc/tong-quan-lai-chau/cac-dan-toc",
+      "https://laichau.gov.vn/danh-muc/tong-quan-lai-chau/cac-huyen-xa-thuoc-tinh",
+      "https://laichau.gov.vn/tin-tuc-su-kien"
+    ]
+  },
+  "title": {
+    "value": "Hội nghị Báo cáo viên cấp tỉnh tháng 11/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:45.255Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:40.218Z",
+    "independentHoldouts": [
+      "https://laichau.gov.vn/du-khach/diem-den-du-khach/giai-marathon-tinh-lai-chau-lan-thu-iii-loi-goi-dai-ngan-buoc-chan-khat-vong-.html",
+      "https://laichau.gov.vn/tin-tuc-su-kien/hoat-dong-cua-lanh-dao-tinh/doan-cong-tac-cua-bo-tu-lenh-bo-doi-bien-phong-lam-viec-voi-tinh-uy-ubnd-tinh-lai-chau.html",
+      "https://laichau.gov.vn/cong-dan-doanh-nghiep/dien-dan-lang-nghe-dan-noi-.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://laichau.gov.vn/tin-tuc-su-kien/so-nganh-huyen-thanh-pho/hoi-nghi-bao-cao-vien-cap-tinh-thang-11-20262.html",
+      "https://laichau.gov.vn/du-khach/diem-den-du-khach/giai-marathon-tinh-lai-chau-lan-thu-iii-loi-goi-dai-ngan-buoc-chan-khat-vong-.html",
+      "https://laichau.gov.vn/tin-tuc-su-kien/hoat-dong-cua-lanh-dao-tinh/doan-cong-tac-cua-bo-tu-lenh-bo-doi-bien-phong-lam-viec-voi-tinh-uy-ubnd-tinh-lai-chau.html",
+      "https://laichau.gov.vn/cong-dan-doanh-nghiep/dien-dan-lang-nghe-dan-noi-.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

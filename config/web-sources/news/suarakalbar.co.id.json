@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "suarakalbar.co.id",
+  "siteId": "suarakalbar.co.id",
+  "registrableDomain": "suarakalbar.co.id",
+  "homepage": "https://www.suarakalbar.co.id/",
+  "allowedHosts": [
+    "www.suarakalbar.co.id",
+    "suarakalbar.co.id"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.suarakalbar.co.id/",
+    "categories": [
+      "https://www.suarakalbar.co.id/category/daerah/ketapang/",
+      "https://www.suarakalbar.co.id/category/daerah/kubu-raya/",
+      "https://www.suarakalbar.co.id/category/daerah/landak/",
+      "https://www.suarakalbar.co.id/category/daerah/melawi/",
+      "https://www.suarakalbar.co.id/category/daerah/mempawah/",
+      "https://www.suarakalbar.co.id/category/daerah/pontianak/"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Pastikan Pajero Sport Tetap Dijual, Jadi Alternatif Pajero Generasi Baru",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:45.515Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:37.348Z",
+    "independentHoldouts": [
+      "https://www.suarakalbar.co.id/2026/11/dua-guru-besar-kupas-sosialisme-islam-pkb-kalbar-angkat-pemikiran-tjokroaminoto-dan-ali-syariati/",
+      "https://www.suarakalbar.co.id/2026/11/pasar-mempawah-kini-punya-surau-buka-24-jam-full-ac-kopi-gratis-hingga-program-belajar-al-quran/",
+      "https://www.suarakalbar.co.id/2026/11/debut-di-porprov-kalbar-2026-atlet-mma-melawi-jordan-rovel-tio-raih-perak/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.suarakalbar.co.id/2026/09/mitsubishi-pastikan-pajero-sport-tetap-dijual-jadi-alternatif-pajero-generasi-baru",
+      "https://www.suarakalbar.co.id/2026/11/dua-guru-besar-kupas-sosialisme-islam-pkb-kalbar-angkat-pemikiran-tjokroaminoto-dan-ali-syariati/",
+      "https://www.suarakalbar.co.id/2026/11/pasar-mempawah-kini-punya-surau-buka-24-jam-full-ac-kopi-gratis-hingga-program-belajar-al-quran/",
+      "https://www.suarakalbar.co.id/2026/11/debut-di-porprov-kalbar-2026-atlet-mma-melawi-jordan-rovel-tio-raih-perak/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

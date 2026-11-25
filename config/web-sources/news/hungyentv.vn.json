@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hungyentv.vn",
+  "siteId": "hungyentv.vn",
+  "registrableDomain": "hungyentv.vn",
+  "homepage": "https://hungyentv.vn/",
+  "allowedHosts": [
+    "hungyentv.vn",
+    "www.hungyentv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "contentScope": "Dated native /news/ article pages, including their original MP4 media. Legacy /video/ templates remain unverified for exact publication dates and keep the site pending full coverage.",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thu hút đầu tư vào các khu công nghiệp vượt kế hoạch",
+    "strategy": "selector",
+    "selector": ".boxheading h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".boxheading .datetimes",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".boxcontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container",
+    "removeExtra": ".comment,.social_links"
+  },
+  "nativeIdPattern": "^/news/(?:\\d+/)?(\\d{4,})/",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_partial_scope_validated",
+  "validation": {
+    "checkedAt": "2026-11-09T08:10:27.236Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://hungyentv.vn/news/95/16998/thu-hut-dau-tu-vao-cac-khu-cong-nghiep-vuot-ke-hoach",
+      "https://hungyentv.vn/news/95/16997/khu-dan-cu-moi-chua-co-dien-nuoc",
+      "https://hungyentv.vn/news/375/16996/ngay-hoi-dai-doan-ket-toan-dan-toc",
+      "https://hungyentv.vn/news/348/16995/ngay-hoi-dai-doan-ket-toan-dan-toc",
+      "https://hungyentv.vn/news/365/16986/ra-mat-mo-hinh-dang-vien-ket-noi-voi-nguoi-dan",
+      "https://hungyentv.vn/news/95/16998/thu-hut-dau-tu-vao-cac-khu-cong-nghiep-vuot-ke-hoach"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/hungyentv.vn",
+    "contentScope": "Dated native /news/ article pages, including their original MP4 media. Legacy /video/ templates remain unverified for exact publication dates and keep the site pending full coverage.",
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://hungyentv.vn/",
+    "categories": [
+      "https://hungyentv.vn/news",
+      "https://hungyentv.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.293Z",
+      "verifiedSeeds": [
+        "https://hungyentv.vn/",
+        "https://hungyentv.vn/news"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "Dated /news/ subset validated; legacy /video/ dates unresolved",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "partial_scope_validated",
+    "validatedScope": "Dated /news/ pages including original MP4 content",
+    "unverifiedScope": "Legacy /video/ templates lack exact original publication",
+    "previousRoundRuntimeTimeout": true,
+    "currentHttpArticleAndCategorySamplesPassed": true,
+    "runtimeCheckEvidence": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/runtime-checks.json",
+    "fullSourceReady": false,
+    "rssResearchEvidence": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/hungyen-rss-video-research.json",
+    "evidenceFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/scope-gaps/hungyen-unverified-video-dates.json"
+  },
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "hungyentv.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 22,
+    "parserIssues": 15,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 48,
+        "passed": 15,
+        "distinctHashes": 15
+      },
+      {
+        "name": "video",
+        "discovered": 117,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://hungyentv.vn/news/375/16999/trien-khai-quyet-dinh-cua-ban-bi-thu-ve-cong-tac-can-bo",
+      "https://hungyentv.vn/news/349/16994/ngay-hoi-dai-doan-ket-toan-dan-toc",
+      "https://hungyentv.vn/news/365/16989/khu-dan-cu-bang-luong-to-chuc-ngay-hoi-dai-doan-ket-toan-dan-toc-ngay-van-hoa-viet-nam",
+      "https://hungyentv.vn/news/365/17001/boi-duong-kien-thuc-doi-voi-uy-vien-ban-chap-hanh-dang-bo-tinh",
+      "https://hungyentv.vn/news/375/17000/hoi-nghi-ban-chap-hanh-dang-bo-tinh",
+      "https://hungyentv.vn/news/375/16996/ngay-hoi-dai-doan-ket-toan-dan-toc",
+      "https://hungyentv.vn/news/348/16995/ngay-hoi-dai-doan-ket-toan-dan-toc",
+      "https://hungyentv.vn/news/365/16986/ra-mat-mo-hinh-dang-vien-ket-noi-voi-nguoi-dan",
+      "https://hungyentv.vn/news/95/17005/nang-cap-ha-tang-cang-ca-tan-son",
+      "https://hungyentv.vn/news/95/17004/tap-trung-giai-phong-mat-bang-du-an-giao-thong-trong-diem",
+      "https://hungyentv.vn/news/95/17003/tao-san-choi-cho-doanh-nghiep-trong-nuoc",
+      "https://hungyentv.vn/news/95/17002/lan-toa-y-thuc-thuong-ton-phap-luat-trong-doi-song",
+      "https://hungyentv.vn/news/95/16998/thu-hut-dau-tu-vao-cac-khu-cong-nghiep-vuot-ke-hoach",
+      "https://hungyentv.vn/news/95/16997/khu-dan-cu-moi-chua-co-dien-nuoc",
+      "https://hungyentv.vn/news/50/16604/can-xu-ly-nghiem-co-so-xa-thai-ra-moi-truong",
+      "https://hungyentv.vn/news/50/16409/can-trong-voi-cac-hinh-thuc-lua-dao-qua-mang",
+      "https://hungyentv.vn/news/50/16256/canh-bao-tinh-trang-thanh-thieu-nien-vi-pham-phap-luat",
+      "https://hungyentv.vn/news/365/16983/trao-huy-hieu-dang-dot-7-11",
+      "https://hungyentv.vn/news/348/16985/trao-huy-hieu-dang-dot-7-11",
+      "https://hungyentv.vn/news/50/16843/khoi-to-vu-an-buon-lau",
+      "https://hungyentv.vn/video/thoi-su-nhin-tu-pho-hien-thu-hai-ngay-09-11-2026",
+      "https://hungyentv.vn/video/phat-trien-dang-trong-doanh-nghiep-uu-tien-su-doi-moi-sang-tao",
+      "https://hungyentv.vn/video/tre-hoa-benh-co-xuong-khop-anh-huong-chat-luong-cuoc-song",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-hai-ngay-9-11-2026",
+      "https://hungyentv.vn/video/ban-tin-thoi-su-15-phut-ngay-9-11-2026",
+      "https://hungyentv.vn/video/danh-tuong-dinh-dien-va-dau-an-kim-dang",
+      "https://hungyentv.vn/video/vui-hoc-tieng-anh-chu-de-our-name",
+      "https://hungyentv.vn/video/doanh-nghiep-hung-yen-hoi-nhap-ngay-8-11-2026",
+      "https://hungyentv.vn/video/an-toan-giao-thong-ngay-8-11-2026",
+      "https://hungyentv.vn/video/thoi-su-nhin-tu-pho-hien-chu-nhat-ngay-8-11-2026",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-chu-nhat-ngay-8-11-2026",
+      "https://hungyentv.vn/video/ban-tin-thoi-su-15-phut-ngay-8-11-2026",
+      "https://hungyentv.vn/video/thoi-su-nhin-tu-pho-hien-thu-bay-ngay-7-11-2026",
+      "https://hungyentv.vn/video/doc-dao-ngoi-dinh-luu-giu-hon-60-dao-sac-phong",
+      "https://hungyentv.vn/video/nang-cao-nang-luc-lanh-dao-cua-cap-uy-trong-phat-trien-do-thi",
+      "https://hungyentv.vn/video/giai-phap-cong-nghe-so-xay-dung-cong-dan-so",
+      "https://hungyentv.vn/video/giai-phong-mat-bang-dong-hanh-cung-tien-do-du-an",
+      "https://hungyentv.vn/video/hieu-qua-mo-hinh-to-lien-gia-an-toan-phong-chay-chua-chay",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-bay-ngay-7-11-2026",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-sau-ngay-6-11-2026",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-nam-ngay-5-11-2026",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-tu-ngay-4-11-2026",
+      "https://hungyentv.vn/video/thoi-su-hung-yen-thu-ba-ngay-3-11-2026",
+      "https://hungyentv.vn/video/ban-tin-thoi-su-15-phut-ngay-7-11-2026",
+      "https://hungyentv.vn/video/ban-tin-thoi-su-15-phut-ngay-6-11-2026",
+      "https://hungyentv.vn/video/phat-huy-vai-tro-lanh-dao-cua-to-chuc-dang",
+      "https://hungyentv.vn/video/nong-nghiep-xanh-nang-tam-gia-tri-nong-san",
+      "https://hungyentv.vn/video/ha-tang-mo-duong-cho-tang-truong-kinh-te",
+      "https://hungyentv.vn/video/nhung-thach-thuc-cua-nganh-chan-nuoi",
+      "https://hungyentv.vn/video/thap-sang-tai-nang-so-4-thcs-tran-phu-thcs-an-tao-thcs-doan-thi-diem",
+      "https://hungyentv.vn/video/tran-3-thcs-nguyen-van-linh-thcs-le-danh-phuong-thcs-nguyen-duc-canh",
+      "https://hungyentv.vn/video/vong-tranh-tai-giua-3-truong-thcs-vu-thu-thcs-pham-huy-quang-thcs-yen-phu-hytv",
+      "https://hungyentv.vn/video/tran-1-vong-tranh-tai-giua-3-truong-thcs-14-10-thcs-nguyen-tat-thanh-tieu-hoc-va-thcs-quang-trung",
+      "https://hungyentv.vn/video/cong-ty-tnhh-mtv-xang-dau-hung-yen",
+      "https://hungyentv.vn/video/cong-ty-tnhh-thien-son-hung-yen",
+      "https://hungyentv.vn/video/cong-ty-tnhh-dau-tu-ung-dung-san-xuat-bao-bi-viet-vipaco",
+      "https://hungyentv.vn/video/trai-nghiem-thu-hoach-vai-trung",
+      "https://hungyentv.vn/video/tham-quan-nha-tuong-niem-ba-hoang-thi-loan",
+      "https://hungyentv.vn/video/be-trai-nghiem-lam-linh-cuu-hoa",
+      "https://hungyentv.vn/video/gin-giu-lang-nghe-tuong-ban-truyen-thong",
+      "https://hungyentv.vn/video/nhu-quynh-dong-chay-di-san-hoa-cung-nhip-song-hien-dai",
+      "https://hungyentv.vn/video/332/hung-yen-xay-dung-nong-thon-moi",
+      "https://hungyentv.vn/video/dua-khoa-hoc-tu-giang-duong-den-dong-ruong",
+      "https://hungyentv.vn/video/nha-van-hoa-thon-truoc-nhu-cau-moi",
+      "https://hungyentv.vn/video/tu-nhung-cau-lac-bo-nong-dan-bao-ve-moi-truong",
+      "https://hungyentv.vn/video/tiem-phong-chiec-khien-bao-ve-suc-khoe-cho-con",
+      "https://hungyentv.vn/video/nguoi-cao-tuoi-can-phong-tranh-som-benh-co-xuong-khop-nhu-the-nao",
+      "https://hungyentv.vn/video/phat-huy-gia-tri-di-san-van-hoa-trong-doi-song",
+      "https://hungyentv.vn/video/di-tich-truoc-bai-toan-bao-ton-va-phat-huy",
+      "https://hungyentv.vn/video/xay-dung-cac-mien-que-dang-song",
+      "https://hungyentv.vn/video/ai-va-nhung-cau-chuyen-tu-doi-song",
+      "https://hungyentv.vn/video/mo-hinh-cau-lac-bo-the-thao-hoc-duong",
+      "https://hungyentv.vn/video/hung-yen-tich-cuc-chuan-bi-cho-dai-hoi-the-thao-toan-quoc-2026",
+      "https://hungyentv.vn/video/doanh-nghiep-hung-yen-hoi-nhap-ngay-1-11-2026",
+      "https://hungyentv.vn/video/doanh-nghiep-hung-yen-hoi-nhap-ngay-25-10-2026",
+      "https://hungyentv.vn/video/doanh-nghiep-hung-yen-hoi-nhap-ngay-18-10-2026",
+      "https://hungyentv.vn/video/hien-ke-kien-tao-nen-hanh-chinh-so",
+      "https://hungyentv.vn/video/dot-pha-chuyen-doi-so-nganh-giao-duc-va-dao-tao",
+      "https://hungyentv.vn/video/huong-toi-nguoi-dan-chu-dong-thuc-hien-thu-tuc-hanh-chinh",
+      "https://hungyentv.vn/video/giao-vien-phan-khoi-khi-nhieu-hoi-thi-phong-trao-duoc-cat-giam",
+      "https://hungyentv.vn/video/tre-hoa-doi-ngu-can-bo-thon-tao-suc-bat-tu-co-so",
+      "https://hungyentv.vn/video/khac-phuc-benh-thanh-tich-trong-giao-duc",
+      "https://hungyentv.vn/video/hop-thu-truyen-hinh-ngay-20-07-2025",
+      "https://hungyentv.vn/video/hop-thu-truyen-hinh-ngay-13-07-2025",
+      "https://hungyentv.vn/video/hop-thu-truyen-hinh-ngay-29-06-2025",
+      "https://hungyentv.vn/video/hop-thu-truyen-hinh-ngay-22-06-2025",
+      "https://hungyentv.vn/video/tinh-trang-cat-trom-day-cot-dien-chieu-sang",
+      "https://hungyentv.vn/video/o-nhiem-moi-truong-mat-an-toan-ve-sinh-thuc-pham-tai-cac-cho-do-hoat-dong-giet-mo",
+      "https://hungyentv.vn/video/kho-khan-xu-ly-rac-thai-sinh-hoat",
+      "https://hungyentv.vn/video/ong-kinh-phong-vien-ngay-11-8-2026",
+      "https://hungyentv.vn/video/can-giai-phap-ben-vung-cho-cac-bai-rac-qua-tai-tai-xa-ngu-thien",
+      "https://hungyentv.vn/video/vai-tro-giam-sat-cua-hdnd-xa-kien-xuong-trong-giai-doan-moi",
+      "https://hungyentv.vn/video/kenh-tuoi-tieu-thon-tu-cau-bi-lan-chiem-thu-hep-long-kenh",
+      "https://hungyentv.vn/video/kho-khan-khong-ngan-duoc-uoc-mo",
+      "https://hungyentv.vn/video/nghi-luc-tu-tuoi-tho-khong-tron-ven",
+      "https://hungyentv.vn/video/an-toan-tren-moi-hanh-trinh-den-truong",
+      "https://hungyentv.vn/video/tai-nan-thuong-tich-dung-chu-quan",
+      "https://hungyentv.vn/video/truong-chinh-tri-nguyen-van-linh-tinh-hung-yen-hanh-trinh-dat-chuan-muc-1",
+      "https://hungyentv.vn/video/nang-cao-hieu-qua-cac-tram-bien-ap-110kv-mach-nguon-cho-hung-yen-phat-trien",
+      "https://hungyentv.vn/video/doi-moi-giao-duc-de-bat-nhip-cong-nghe",
+      "https://hungyentv.vn/video/dong-thuan-tu-co-so-mo-loi-phat-trien",
+      "https://hungyentv.vn/video/duoi-nuoc-nguy-co-mua-he-va-cach-phong-tranh",
+      "https://hungyentv.vn/video/an-toan-giao-thong-ngay-1-11-2026",
+      "https://hungyentv.vn/video/an-toan-giao-thong-ngay-25-10-2026",
+      "https://hungyentv.vn/video/an-toan-giao-thong-ngay-18-10-2026",
+      "https://hungyentv.vn/video/chao-xuan-2026-hoi-tu-de-phat-trien",
+      "https://hungyentv.vn/video/hay-don-xem-thtt-cau-truyen-hinh-chung-ket-gameshow-thap-sang-tai-nang-2025-vao-14-gio-thu-7-ngay-13-12-2025-tren-kenh-truyen-hinh-va-cac-nen-tang-so-cua-bao-va-ptth-hung-yen",
+      "https://hungyentv.vn/video/nhac-si-doan-bong-va-ca-khuc-que-me-cua-nguoi",
+      "https://hungyentv.vn/video/nhac-si-bui-xuan-the-voi-ca-khuc-giac-mo-nguyet-ho",
+      "https://hungyentv.vn/video/nhac-si-duong-minh-giang-voi-ca-khuc-hung-yen-que-me",
+      "https://hungyentv.vn/video/nsnd-tran-anh-dien-tu-hao-khi-duoc-hoa-than-vao-danh-nhan-van-hoa",
+      "https://hungyentv.vn/video/nhiep-anh-trinh-lap-ky-uc-con-mai-trong-khuon-hinh",
+      "https://hungyentv.vn/video/hoa-si-bui-quoc-toan-sang-trong-ngoc-kinh",
+      "https://hungyentv.vn/video/luu-giu-hon-que-xa-doan-dao",
+      "https://hungyentv.vn/video/khong-chu-quan-voi-cam-lanh",
+      "https://hungyentv.vn/video/khi-phu-nu-lam-dep-lang-que",
+      "https://hungyentv.vn/video/363/ban-tin-thoi-su-15-phut",
+      "https://hungyentv.vn/video/dan-van-tu-nhung-viec-cu-the",
+      "https://hungyentv.vn/video/323/tap-chi-kinh-te-pho-hien",
+      "https://hungyentv.vn/video/phu-nu-chung-suc-lam-kinh-te",
+      "https://hungyentv.vn/video/cong-ty-dien-luc-hung-yen",
+      "https://hungyentv.vn/video/cam-trai-giua-thien-nhien",
+      "https://hungyentv.vn/video/dinh-den-chua-dao-dang",
+      "https://hungyentv.vn/video/329/tap-chi-the-thao-va-cuoc-song",
+      "https://hungyentv.vn/video/san-choi-khong-khoang-cach",
+      "https://hungyentv.vn/video/nhip-san-dau-quan-chung",
+      "https://hungyentv.vn/video/y-kien-cu-tri-ngay-16-9-2026",
+      "https://hungyentv.vn/video/luu-giu-hon-que-xa-binh-thanh",
+      "https://hungyentv.vn/video/luu-giu-hon-que-xa-vu-thu",
+      "https://hungyentv.vn/video/giao-luu-van-hoa-phuong-my-hao",
+      "https://hungyentv.vn/video/co-be-dam-me-ngoai-ngu",
+      "https://hungyentv.vn/video/nhung-co-gai-mo-duong-nam-ay",
+      "https://hungyentv.vn/video/284/thoi-su-nhin-tu-pho-hien"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 15
+    },
+    "checkedAt": "2026-11-10T09:15:40.676Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/hungyentv.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "hungyentv.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "descriptionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "hungyentv.vn",
+    "confirmation": "native_video_empty_description_2026-11-17"
+  },
+  "warning44AdditionalRepair": {
+    "checkedAt": "2026-11-17T15:00:32.964Z",
+    "kind": "verified_same_native_id_and_slug_path_alias",
+    "proofs": [
+      {
+        "url": "https://hungyentv.vn/news/17000/hoi-nghi-ban-chap-hanh-dang-bo-tinh",
+        "publishedDate": "2026-11-09T14:15:00.000Z",
+        "contentHash": "16840b6d2c6a5682513c5b990dba9d0fe56d539e3d2573620e7541aef1678598",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21152009112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/375/17000/hoi-nghi-ban-chap-hanh-dang-bo-tinh",
+          "title": "Hội nghị Ban Chấp hành Đảng bộ tỉnh",
+          "publishedDate": "2026-11-09T14:15:00.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21152009112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/375/17000/hoi-nghi-ban-chap-hanh-dang-bo-tinh",
+          "publishedDate": "2026-11-09T14:15:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/16978/thuong-truc-tinh-uy-giao-ban-voi-cac-dia-phuong",
+        "publishedDate": "2026-11-05T14:11:07.000Z",
+        "contentHash": "7f0a3330d46645c8cddad2580c86011dd26363f3c0824267814a5870d8797db4",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/3_21115105112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/375/16978/thuong-truc-tinh-uy-giao-ban-voi-cac-dia-phuong",
+          "title": "Thường trực Tỉnh ủy giao ban với các địa phương",
+          "publishedDate": "2026-11-05T14:11:07.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/3_21115105112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/375/16978/thuong-truc-tinh-uy-giao-ban-voi-cac-dia-phuong",
+          "publishedDate": "2026-11-05T14:11:07.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/16977/dai-tuong-luong-tam-quang-du-ngay-hoi-dai-doan-ket-toan-dan-toc",
+        "publishedDate": "2026-11-05T14:08:47.000Z",
+        "contentHash": "353c69dbef5da33df41684044c2fed820fc76ecb9233048345b213ca36e79954",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21092505112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/375/16977/dai-tuong-luong-tam-quang-du-ngay-hoi-dai-doan-ket-toan-dan-toc",
+          "title": "Đại tướng Lương Tam Quang dự Ngày hội Đại đoàn kết toàn dân tộc",
+          "publishedDate": "2026-11-05T14:08:47.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21092505112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/375/16977/dai-tuong-luong-tam-quang-du-ngay-hoi-dai-doan-ket-toan-dan-toc",
+          "publishedDate": "2026-11-05T14:08:47.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "warning44Repair": {
+    "kind": "explicitly_confirmed_native_video_without_sapo",
+    "checkedAt": "2026-11-17T13:58:06.499Z",
+    "proofs": [
+      {
+        "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+        "publishedDate": "2026-11-16T14:55:09.000Z",
+        "contentHash": "87c5f467c3ca7a01e9b46195507fff4cf460065dca815e9ccd39a94341bcd59f",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/5ok_21554616112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+          "title": "Cần nâng cao hơn nữa năng lực xử lý rác thải",
+          "publishedDate": "2026-11-16T14:55:09.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/5ok_21554616112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+          "publishedDate": "2026-11-16T14:55:09.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+        "publishedDate": "2026-11-16T14:51:04.000Z",
+        "contentHash": "aae14fe8bf809a0c0ed1b92443f1e99fba03f3841290e32f830d60c4fe93b159",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/4_21515616112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+          "title": "Công an xã Hưng Hà hỗ trợ người dân qua livestream",
+          "publishedDate": "2026-11-16T14:51:04.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/4_21515616112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+          "publishedDate": "2026-11-16T14:51:04.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+        "publishedDate": "2026-11-16T14:44:35.000Z",
+        "contentHash": "3a7cff2129926d3fba4f08ac4c52b2183ada18bf6754d553bdd863c3d9fc31e9",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21450516112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+          "title": "Khi kiến thức bước ra từ trang sách",
+          "publishedDate": "2026-11-16T14:44:35.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21450516112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+          "publishedDate": "2026-11-16T14:44:35.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "pageIdentityPolicy": "hungyen_article_path_alias_v1",
+  "description": {
+    "strategy": "native_text_lead",
+    "scope": "body",
+    "selector": ".boxcontent > .sapo"
+  },
+  "descriptionPolicy": "user_confirmed_native_video_without_sapo_v1",
+  "originalSourceRepair": {
+    "kind": "explicitly_confirmed_native_video_without_sapo",
+    "checkedAt": "2026-11-17T13:58:06.499Z",
+    "proofs": [
+      {
+        "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+        "publishedDate": "2026-11-16T14:55:09.000Z",
+        "contentHash": "87c5f467c3ca7a01e9b46195507fff4cf460065dca815e9ccd39a94341bcd59f",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/5ok_21554616112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+          "title": "Cần nâng cao hơn nữa năng lực xử lý rác thải",
+          "publishedDate": "2026-11-16T14:55:09.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/5ok_21554616112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17046/can-nang-cao-hon-nua-nang-luc-xu-ly-rac-thai",
+          "publishedDate": "2026-11-16T14:55:09.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+        "publishedDate": "2026-11-16T14:51:04.000Z",
+        "contentHash": "aae14fe8bf809a0c0ed1b92443f1e99fba03f3841290e32f830d60c4fe93b159",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/4_21515616112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+          "title": "Công an xã Hưng Hà hỗ trợ người dân qua livestream",
+          "publishedDate": "2026-11-16T14:51:04.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/4_21515616112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17045/cong-an-xa-hung-ha-ho-tro-nguoi-dan-qua-livestream",
+          "publishedDate": "2026-11-16T14:51:04.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+        "publishedDate": "2026-11-16T14:44:35.000Z",
+        "contentHash": "3a7cff2129926d3fba4f08ac4c52b2183ada18bf6754d553bdd863c3d9fc31e9",
+        "description": "",
+        "descriptionStatus": "not_published_by_source",
+        "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21450516112026.mp4",
+        "descriptionOmissionProof": {
+          "version": 1,
+          "policy": "user_confirmed_native_video_without_sapo_v1",
+          "authority": "explicit_user_confirmation",
+          "confirmation": "native_video_empty_description_2026-11-17",
+          "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+          "title": "Khi kiến thức bước ra từ trang sách",
+          "publishedDate": "2026-11-16T14:44:35.000Z",
+          "nativeVideoUrl": "https://media.hungyentv.vn/upload/files/video/2_21450516112026.mp4"
+        },
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://hungyentv.vn/news/95/17043/khi-kien-thuc-buoc-ra-tu-trang-sach",
+          "publishedDate": "2026-11-16T14:44:35.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "hungyentv.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0,
+    "liveHttpVerified": true
+  }
+}

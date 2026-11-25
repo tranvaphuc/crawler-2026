@@ -1,0 +1,6 @@
+import fs from 'node:fs/promises';import * as c from 'cheerio';
+for(const [d,file] of [['forum.gamevn.com','outputs/forum-activity-2026-11-17/forum.gamevn.com-thread-0.html'],['otofun.net','outputs/forum-activity-2026-11-17/otofun.net-thread-0.html'],['dff.vn','outputs/forum-flow-evidence-2026-11-17/dff.vn-detail.html'],['offb.vn','outputs/forum-flow-evidence-2026-11-17/offb.vn-detail.html'],['phunuvietkhoinghiep.vn','outputs/forum-flow-evidence-2026-11-17/phunuvietkhoinghiep.vn-detail.html'],['tctd.vn','outputs/forum-activity-2026-11-17/tctd.vn-extra-6.html']]){
+ const $=c.load(await fs.readFile(file,'utf8'));console.log('\n',d);
+ if(d==='forum.gamevn.com'||d==='otofun.net')console.log($('article.message--post').first().find('.message-attribution,.message-attribution-main,.message-attribution-opposite').map((i,e)=>$(e).prop('outerHTML')).get());
+ else{console.log('authors',$('a[href*="/u/"],a[href*="/author/"],a[href*="/members/"],a[rel=author],[class*="author"],[class*="user-name"]').map((i,e)=>({attrs:e.attribs,text:$(e).text().slice(0,80)})).get().slice(0,12));console.log('article',$('article,.lv-post-detail-001,.dcontent,.detail-content,.post-content').map((i,e)=>({tag:e.tagName,attrs:e.attribs,text:$(e).text().trim().slice(0,80)})).get().slice(0,5));}
+}

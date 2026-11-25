@@ -1,0 +1,467 @@
+{
+  "baohaiquanvietnam.vn": {
+    "date": "p.uppercase,span.text-gray-600.capitalize,span.text-gray-900.capitalize",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "Bản tin tuần số 57 ngày 1/11/2026Failed to load audio0:000:001.590 lượt phát • Ngày 01/11/2026Chia sẻchủ nhật, 01/11/2026 10:20-1.590",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples",
+    "body": ".article-wrapper,audio,main .font-noto-serif.flex.flex-col"
+  },
+  "chatluongvacuocsong.vn": {
+    "date": ".text-secondary.px-1",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "08/11/2026,",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "depviet.net.vn": {
+    "date": ".post-meta",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "08/11/2026 20:00",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "doanhnghiepkinhte.vn": {
+    "date": "#Div2 > div:nth-of-type(2)",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "17:46 | 06/11/2026",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "giaoducvaxahoi.vn": {
+    "date": ".thongKe",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "08/11/2026 - 10:22 Cỡ chữ",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "khoahockiemtoan.vn": {
+    "date": ".mb-3.mt-4",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "Diệu Thúy | 04/11/2026 | 16:33",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "kythuatchonghanggia.vn": {
+    "date": ".diadiem_tacgia.diadiem_tacgia_chitieti",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "PV 14/09/2026 07:13:10",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "tapchigiaoduc.edu.vn": {
+    "date": ".news-heading .list-inline-item:first",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "Triết lý và chính sách giáo dục trong bối cảnh đổi mới sáng tạo và chuyển đổi số 08:00, 04/03/2026 Khoa học giáo dục và xã hội",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "tapchitoaan.vn": {
+    "date": ".post-meta.f-left",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "08/11/2026 05:55",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "thegioidisan.vn": {
+    "date": ".entry-info > span:first",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "Bác Hồ ra đi tìm đường cứu nước và bước ngoặt của cách mạng Việt Nam 04/06/2016 22:06",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "vietnamnews.vn": {
+    "date": ".detail__meta",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": {
+      "trainingSample": "article-1.html",
+      "raw": "November 08, 2026 - 20:44",
+      "consistentTrainingPages": 3
+    },
+    "validation": "proposal_requires_independent_samples"
+  },
+  "xecongnghe.vn": {
+    "date": "#span-ngaydang",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "evidence": "round4-http holdout-2.html: 1/29/2021 3:44:00 PM proves MDY; corroborated November Honda and January CES articles",
+    "validation": "proposal_requires_independent_samples",
+    "title": "h1",
+    "body": ".noi-dung",
+    "dateOrder": "MDY"
+  },
+  "tgs.vn": {
+    "body": "#editor"
+  },
+  "doithoaiphattrien.vn": {
+    "body": "#news-bodyhtml"
+  },
+  "congnghevadoisong.vn": {
+    "body": ".postRickText"
+  },
+  "giaoducthudo.giaoducthoidai.vn": {
+    "body": ".c-news-detail .entry"
+  },
+  "thuonghieusanpham.vn": {
+    "body": "article.entry"
+  },
+  "thuysanvietnam.com.vn": {
+    "body": "#mona-content-custom",
+    "date": ".news-detail-post-time"
+  },
+  "vtimes.com.au": {
+    "body": ".newscontent > ol.comment.disqus",
+    "title": "#detail h1"
+  },
+  "tiim.com.vn": {
+    "body": ".video-player-detail"
+  },
+  "baobariavungtau.com.vn": {
+    "body": "#content",
+    "date": ".date"
+  },
+  "vivumuasam.com": {
+    "date": "p.meta",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "Public article script renders #fulltime with literal GMT+7; article timestamp in p.meta."
+  },
+  "tgnguoinoitieng.com": {
+    "date": "#vinadev-catogeries",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneEvidence": "Article publication line explicitly contains GMT+7."
+  },
+  "cuoi.tuoitre.vn": {
+    "body": ".fck"
+  },
+  "tv.kiemsat.vn": {
+    "body": ".main_vd .desc",
+    "mediaEmbedSelector": "#embedid",
+    "nativeIdPattern": "-([a-z0-9]{8})\\.html$"
+  },
+  "truyenhinh.baobinhduong.vn": {
+    "body": "video",
+    "date": ".date-time-video",
+    "languageHomePaths": [
+      "/en",
+      "/cn"
+    ]
+  },
+  "toancanhbaochi.net": {
+    "title": "h2.contentheading",
+    "body": ".item-page"
+  },
+  "mucnews.com": {
+    "timezone": "UTC",
+    "timezoneEvidence": "Unzoned JSON-LD datePublished matches RSS +0000 pubDate exactly on 4 separate training articles; see round2/mucnews-timezone-evidence.json"
+  },
+  "cherryradio.com.au": {
+    "articleExcludePattern": "/playlist/|/bai-hat/|/nghe-si/",
+    "categoryUrlPattern": "^/chuong-trinh-thoi-su"
+  },
+  "marrybaby.vn": {
+    "articleExcludePattern": "/community/"
+  },
+  "giacavattu.com.vn": {
+    "title": ".subpage_new_title",
+    "body": ".subpage_new_content"
+  },
+  "dautubds.baodautu.vn": {
+    "articleHosts": [
+      "baodautu.vn"
+    ],
+    "canonicalSource": "baodautu.vn",
+    "identityNote": "Subdomain listing links to baodautu.vn articles; deduplicate with the existing baodautu.vn source by URL/legacy ID before any future writes."
+  },
+  "asia.nikkei.com": {
+    "restrictedPreviewSelector": "#paywall-offer",
+    "minimumUnrestrictedBodyLength": 1500
+  },
+  "antoanthongtin.vn": {
+    "categoryUrlPattern": "/chuyen-muc/",
+    "httpAdapter": "antoan_public_listing_api"
+  },
+  "24hmoney.vn": {
+    "categoryUrlPattern": "^/(chung-khoan|bat-dong-san|tai-san-so|deal-ipo-quan-tri)$"
+  },
+  "baoquocte.vn": {
+    "categoryUrlPattern": "^/(thoi-su|the-gioi|tin-moi)(/|$)"
+  },
+  "baokiemtoan.vn": {
+    "categoryUrlPattern": "/chuyen-muc/",
+    "title": "head > title",
+    "date": ".post-datetime, #tab-content-info > div:first-of-type > div:first-child > div:first-child, .article-footer .author-info > span:last-child",
+    "body": ".detail-content, .video-description-text",
+    "additionalMediaSelector": "#my-html5-player",
+    "contentScope": "Native news, video and emagazine HTML. Prefer the article visible publication clock in Vietnam time: schema dates omit offsets and differ by seven hours from visible clocks; do not interpret those schema strings as Vietnam local time. Preserve minute precision where displayed.",
+    "author": ".author-name, .article-footer .author-info > span:first-child",
+    "dateSelectorOnly": true
+  },
+  "cafef.vn": {
+    "categoryUrlPattern": "^/(xa-hoi|vi-mo|kinh-te-so|thi-truong|song|lifestyle)\\.chn$"
+  },
+  "finance.yahoo.com": {
+    "categoryUrlPattern": "^/news"
+  },
+  "icon.com.vn": {
+    "categoryUrlPattern": "/news-lf/"
+  },
+  "dulichvietnam.com.vn": {
+    "categoryUrlPattern": "^/(tin-tong-hop|le-hoi|am-thuc|danh-thang|cam-nang-trong-nuoc)\\.html$"
+  },
+  "nguoi-noi-tieng.com": {
+    "body": ".main-post > div:first-child"
+  },
+  "xe-vietnam.com": {
+    "body": ".entry-content",
+    "allowMediaLinkDensity": true
+  },
+  "saigoneer.com": {
+    "articleExcludePattern": "/support/|/privacy|/terms|/jobs/|/contact|/media-kit",
+    "body": "article.content"
+  },
+  "petrotimes.vn": {
+    "articleExcludePattern": "/tap-chi/|\\.paper$|\\.pdf$",
+    "body": ".boxTextDtails"
+  },
+  "ngaymoisaigon.com": {
+    "date": ".bv-date",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneProvenance": {
+      "kind": "configured_publisher_local_time",
+      "offsetExplicitInArticle": false,
+      "evidenceFile": "outputs/news-parser-rollout-2026-11-09/round3/publisher-evidence.json",
+      "reason": "Publisher declares an editorial address in Vietnam. Treat displayed local publication date/time as Vietnam time; this remains a configuration assumption until offset/UTC data is obtained."
+    }
+  },
+  "vntravellive.com": {
+    "date": ".date",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneProvenance": {
+      "kind": "configured_publisher_local_time",
+      "offsetExplicitInArticle": false,
+      "evidenceFile": "outputs/news-parser-rollout-2026-11-09/round3/publisher-evidence.json",
+      "reason": "Publisher declares an editorial address in Vietnam. Treat displayed local publication date/time as Vietnam time; this remains a configuration assumption until offset/UTC data is obtained."
+    }
+  },
+  "dulichgiaitri.com": {
+    "date": ".td-post-title .td-post-date time",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneProvenance": {
+      "kind": "configured_publisher_local_time",
+      "offsetExplicitInArticle": false,
+      "evidenceFile": "outputs/news-parser-rollout-2026-11-09/round3/publisher-evidence.json",
+      "reason": "Publisher declares an editorial address in Vietnam. Treat displayed local publication date/time as Vietnam time; this remains a configuration assumption until offset/UTC data is obtained."
+    },
+    "title": ".td-post-title h1.entry-title"
+  },
+  "vccinews.com": {
+    "date": ".time",
+    "dateOrder": "MDY",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "timezoneProvenance": {
+      "kind": "configured_publisher_local_time",
+      "offsetExplicitInArticle": false,
+      "evidenceFile": "outputs/news-parser-rollout-2026-11-09/round3/publisher-evidence.json",
+      "reason": "Publisher declares an editorial address in Vietnam. Treat displayed local publication date/time as Vietnam time; this remains a configuration assumption until offset/UTC data is obtained."
+    }
+  },
+  "taichinhso.net.vn": {
+    "ignoreCanonicalIdentity": true,
+    "canonicalEvidence": "Multiple independently titled/full-bodied training and holdout pages declare the same unrelated canonical /tin-tuc/tien-ao-tien-that.html. Use exact requested URL for identity and retain declared canonical only as evidence."
+  },
+  "vietnammedia.vnanet.vn": {
+    "body": ".video-detail__description",
+    "additionalMediaSelector": "#tek4-player"
+  },
+  "world.kbs.co.kr": {
+    "body": ".body_txt",
+    "nativeIdQuery": "Seq_Code",
+    "languageScope": "English news endpoints declared in sitemap_english_news.xml",
+    "categoryUrlPattern": "/service/news_list\\.htm$"
+  },
+  "dienanh.net": {
+    "date": "meta[property=\"article:published_time\"]:eq(1)",
+    "dateEvidence": "Three training pages contain a first published_time that tracks each fetch time, followed by a second explicit-offset publication timestamp matching the article-specific date. Prefer the second value."
+  },
+  "cointelegraph.com": {
+    "body": ".ct-prose",
+    "evidence": "round4-http article-1..6: public SSR article paragraphs in .ct-prose"
+  },
+  "kinhdoanhdoisong.vn": {
+    "clockFormat": "24h_with_meridiem",
+    "evidence": "round4-http article-2.html 13:02:32 PM; holdout-2.html 19:02:39 PM: CMS appends redundant PM to 24-hour clock"
+  },
+  "trangcongnghe.com": {
+    "body": ".full_story",
+    "languageScope": "RSS currently exposes English topics; Vietnamese homepage article dates not exposed"
+  },
+  "tin.skydoor.net": {
+    "excerptOnlySelector": ".sd-value-first__source",
+    "requiresPublisherDispatch": true
+  },
+  "giadinh24h.net": {
+    "body": ".col-md-9 > .time-news-detail + div"
+  },
+  "thoitrang360.net": {
+    "body": ".col-md-9 > .time-news-detail + div"
+  },
+  "vietnamlawmagazine.vn": {
+    "dateOrder": "MDY",
+    "evidence": "round5-http article-1.html: Monday 11/09/2026 is 9 November (Monday), not 11 September (Friday); header and article weekday corroborate MDY."
+  },
+  "thanhtra.gov.vn": {
+    "title": "h1.article-title",
+    "date": ".article-meta",
+    "body": ".article-body",
+    "articlePattern": "[?&][^=]*_baiVietId=\\d+",
+    "nativeIdQueryPattern": "_baiVietId$",
+    "categoryUrlPattern": "^/web/guest/(tin-thanh-tra|tin-tong-hop|tin-tuc-su-kien|cai-cach-hanh-chinh)$",
+    "ignoreCanonicalIdentity": true,
+    "canonicalEvidence": "round5-http: distinct baiVietId values 8083155 and 8083112 have different titles and SHA256 bodies but both declare https://thanhtra.gov.vn/cai-cach-hanh-chinh; use the exact requested URL including native ID query."
+  },
+  "cafeauto.vn": {
+    "httpAdapter": "cafeauto_public_article_api"
+  },
+  "techinsight.com.vn": {
+    "httpAdapter": "wordpress_public_rest_api"
+  },
+  "beforeitsnews.com": {
+    "timezone": "UTC",
+    "timezoneEvidence": "round5-http/beforeitsnews-timezone-evidence.json: all six unzoned article metadata timestamps exactly match the same URLs RSS +0000 publication timestamps."
+  },
+  "goodstock.vn": {
+    "httpAdapter": "wordpress_public_query_api",
+    "categoryUrlPattern": "^/$"
+  },
+  "thv.vn": {
+    "body": "#idContent",
+    "preferCategoryArticles": true,
+    "categoryUrlPattern": "^(?:/tin-tuc/thv-|/chuong-trinh-thuong-hieu$|/so-huu-tri-tue$|/video-clip$)",
+    "contentScope": "News articles only. Native LocalBusiness directory entries are classified separately and skipped; no publication dates are fabricated."
+  },
+  "thuonghieuquocgia.nhandan.vn": {
+    "preferCategoryArticles": true,
+    "categoryUrlPattern": "^/(?:tin-tuc|thuong-hieu)\\.htm$",
+    "contentScope": "Article/NewsArticle product and news posts. Certification company-profile landing pages without Article schema are classified separately and skipped."
+  },
+  "doisongvanhoa.com": {
+    "timezone": "Asia/Ho_Chi_Minh",
+    "date": ".public-info-time",
+    "body": "#content-center .content",
+    "timezoneProvenance": {
+      "kind": "configured_timezone_from_publisher_location",
+      "basis": "Publisher footer declares offices in Hanoi and Ho Chi Minh City; raw article times have no offset.",
+      "sourceEvidence": "round6-http/sites/doisongvanhoa.com/home.html",
+      "offsetNotConfirmedPerArticle": true,
+      "requiresReviewBeforeWrite": true
+    }
+  },
+  "kenhtinxe.com": {
+    "timezone": "Asia/Ho_Chi_Minh",
+    "date": "abbr[itemprop=\"datePublished\"]",
+    "body": ".post-body.entry-content",
+    "timezoneProvenance": {
+      "kind": "configured_vietnam_market_timezone",
+      "basis": "Publisher describes itself as a Vietnam automotive news source; HTML and public RSS expose matching unzoned clocks. Collector uses UTC+7 explicitly, not a publisher-supplied offset.",
+      "sourceEvidence": "round6-http/sites/kenhtinxe.com/home.html",
+      "offsetNotConfirmedPerArticle": true,
+      "requiresReviewBeforeWrite": true
+    },
+    "bodyRemove": "#related-posts,.list_tag_trend"
+  },
+  "vietnamfdi.vn": {
+    "title": "h1.article-title",
+    "date": ".article-body > ul.article-meta",
+    "dateOrder": "MDY",
+    "body": ".article-body > .description",
+    "dateFormatEvidence": "round7-http/vietnamfdi-date-format-evidence.json",
+    "dateSelectorOnly": true,
+    "categoryUrlPattern": "^/[a-z0-9-]+-[1-9]\\d*\\.html$",
+    "homepage": "https://vietnamfdi.vn/"
+  },
+  "otopro.com.vn": {
+    "httpAdapter": "web30_embedded_public_state",
+    "date": "meta[name=\"crawler:created-epoch\"]",
+    "body": ".article-content",
+    "categoryUrlPattern": "^/tin-tuc/?$",
+    "contentScope": "Native public Web30 news detail state (type_page=7), matching QR canonical URL and slug. Creation epoch only; modified/current clock are not publication substitutes."
+  },
+  "cryptonews.com": {
+    "httpAdapter": "wordpress_public_rest",
+    "body": ".article-content",
+    "articlePattern": "^https://(?:www\\.)?cryptonews\\.com/news/[^/]+/?$",
+    "articleExcludePattern": "^/(?!news/)",
+    "categoryUrlPattern": "^/wp-json/wp/v2/posts/?$",
+    "contentScope": "Published public WordPress post records with matching canonical /news/ URLs. date_gmt is original publication; protected/draft/non-post records are rejected. Cryptocurrency product guides are outside the News scope."
+  },
+  "hungyentv.vn": {
+    "title": ".boxheading h1",
+    "date": ".boxheading .datetimes",
+    "dateSelectorOnly": true,
+    "body": ".boxcontent",
+    "bodyRemove": ".comment,.social_links",
+    "nativeIdPattern": "/news/\\d+/(\\d+)/",
+    "articlePattern": "^https://(?:www\\.)?hungyentv\\.vn/news/\\d+/\\d+/",
+    "categoryUrlPattern": "^/news/?$",
+    "preferCategoryArticles": true,
+    "contentScope": "Dated native /news/ article pages, including their original MP4 media. Legacy /video/ templates remain unverified for exact publication dates and keep the site pending full coverage."
+  },
+  "dientutieudung.vn": {
+    "articleHosts": [
+      "dientuungdung.vn"
+    ],
+    "canonicalSource": "dientuungdung.vn",
+    "identityRegistrableDomain": "dientuungdung.vn",
+    "categoryUrlPattern": "^/dien-tu-tieu-dung(?:/[^/]+)?/?$",
+    "contentScope": "Legacy landing explicitly links the Điện tử tiêu dùng section at dientuungdung.vn. Use canonical publisher identity and exact article URLs; deduplicate against the existing dientuungdung.vn source rather than create a second publisher."
+  },
+  "dealstreetasia.com": {
+    "httpAdapter": "anonymous_next_state_with_public_cms_offset",
+    "body": ".article-content",
+    "contentScope": "Anonymous public free stories only. Subscription/research/overlay content is rejected before metadata lookup. Publication date is the native wpData.date plus the CMS fixed offset declared at the public REST index; no lastmod/modified date substitution. Premium coverage remains unavailable, so this source stays pending full coverage.",
+    "timezoneProvenance": {
+      "kind": "publisher_public_cms_setting",
+      "sourceUrl": "https://www.dealstreetasia.com/wp-json/",
+      "gmtOffsetHours": 5.5,
+      "offsetNotConfirmedPerArticle": true,
+      "requiresReviewBeforeWrite": true
+    }
+  },
+  "taynguyen24h.com.vn": {
+    "httpAdapter": "joomla_public_category_rss",
+    "title": ".contentheading",
+    "body": ".article-content",
+    "date": "meta[name=\"crawler:published-date\"], .createdate",
+    "dateSelectorOnly": true,
+    "contentScope": "Native full article HTML with original publication from public Joomla category RSS pubDate, or visible article createdate when outside the RSS window. Match same native ID/slug and exact title across Joomla route aliases; retain the requested URL for legacy identity. Old archive/promotional content is not relabelled as new publication."
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hanoimoi.vn",
+  "siteId": "hanoimoi.vn",
+  "registrableDomain": "hanoimoi.vn",
+  "homepage": "https://hanoimoi.vn/",
+  "allowedHosts": [
+    "hanoimoi.vn",
+    "www.hanoimoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".block-sc-publish-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Kết nối chuyên gia Việt Nam - Nhật Bản, thúc đẩy hợp tác công nghệ chiến lược",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".b-maincontent",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-video-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry.longform",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "hanoimoi.vn",
+      "siteId": "hanoimoi.vn",
+      "registrableDomain": "hanoimoi.vn",
+      "homepage": "https://hanoimoi.vn/",
+      "allowedHosts": [
+        "hanoimoi.vn",
+        "www.hanoimoi.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thượng tôn hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".block-sc-publish-time",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-news-detail .entry",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:56.503Z",
+        "trainingUrls": [
+          "https://hanoimoi.vn/cuoc-tim-kiem-nhung-don-vi-mau-khong-the-thay-the-1765103.html",
+          "https://hanoimoi.vn/new-tashkent-cuoc-dich-chuyen-lon-o-thu-do-uzbekistan-1765023.html",
+          "https://hanoimoi.vn/cha-ca-mon-ngon-goi-gio-dong-ve-1765165.html"
+        ],
+        "holdoutUrls": [
+          "https://hanoimoi.vn/de-xuat-thi-diem-mo-hinh-du-lich-hoat-dong-24-7-tao-suc-song-cho-kinh-te-dem-1764738.html",
+          "https://hanoimoi.vn/bai-hoc-tu-amazon-cua-singapore-gan-ket-ban-sac-dia-phuong-voi-quy-hoach-bo-song-1763342.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:14.700Z",
+    "sampleCount": 9,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://hanoimoi.vn/ket-noi-chuyen-gia-viet-nam-nhat-ban-thuc-day-hop-tac-cong-nghe-chien-luoc-1764940.html",
+      "https://hanoimoi.vn/ha-noi-khong-de-cam-ket-tai-phien-chat-van-dung-lai-o-loi-hua-1764904.html",
+      "https://hanoimoi.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-1764883.html",
+      "https://hanoimoi.vn/mua-hang-tren-san-thuong-mai-dien-tu-lam-gi-de-tranh-rui-ro-1764939.html",
+      "https://hanoimoi.vn/mien-bac-ret-dien-rong-mien-trung-mua-lon-1764922.html",
+      "https://hanoimoi.vn/cong-an-ha-noi-canh-bao-nguy-co-lua-dao-tu-trao-luu-di-chua-online-1764925.html",
+      "https://hanoimoi.vn/ha-noi-cac-cap-chinh-quyen-luon-dong-hanh-thuc-day-tang-truong-1764951.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://hanoimoi.vn/",
+    "categories": [
+      "https://hanoimoi.vn/an-pham",
+      "https://hanoimoi.vn/an-pham/h%C3%A0ng%20ng%C3%A0y",
+      "https://hanoimoi.vn/an-pham/cu%E1%BB%91i%20tu%E1%BA%A7n",
+      "https://hanoimoi.vn/an-pham/ng%C3%A0y%20nay",
+      "https://hanoimoi.vn/tin-moi-nhat",
+      "https://hanoimoi.vn/ban-do-ha-noi",
+      "https://hanoimoi.vn/chinh-tri",
+      "https://hanoimoi.vn/chinh-tri/doi-ngoai",
+      "https://hanoimoi.vn/chinh-tri/nhan-su",
+      "https://hanoimoi.vn/chinh-tri/xay-chong",
+      "https://hanoimoi.vn/chinh-tri/nghi-quyet-va-cuoc-song",
+      "https://hanoimoi.vn/chinh-tri/cai-cach-hanh-chinh",
+      "https://hanoimoi.vn/chinh-tri/bao-ve-nen-tang-tu-tuong-cua-dang",
+      "https://hanoimoi.vn/kinh-te",
+      "https://hanoimoi.vn/kinh-te/thi-truong",
+      "https://hanoimoi.vn/kinh-te/tai-chinh",
+      "https://hanoimoi.vn/kinh-te/dau-tu",
+      "https://hanoimoi.vn/do-thi",
+      "https://hanoimoi.vn/do-thi/bat-dong-san",
+      "https://hanoimoi.vn/do-thi/giao-thong",
+      "https://hanoimoi.vn/do-thi/xay-dung",
+      "https://hanoimoi.vn/do-thi/moi-truong",
+      "https://hanoimoi.vn/do-thi/quy-hoach",
+      "https://hanoimoi.vn/do-thi/kien-truc",
+      "https://hanoimoi.vn/van-hoa",
+      "https://hanoimoi.vn/van-hoa/giai-tri",
+      "https://hanoimoi.vn/van-hoa/van-nghe",
+      "https://hanoimoi.vn/van-hoa/cong-nghiep-van-hoa",
+      "https://hanoimoi.vn/van-hoa/sach",
+      "https://hanoimoi.vn/van-hoa/the-thao",
+      "https://hanoimoi.vn/xa-hoi",
+      "https://hanoimoi.vn/xa-hoi/song-xanh",
+      "https://hanoimoi.vn/xa-hoi/chong-lang-phi",
+      "https://hanoimoi.vn/xa-hoi/lao-dong-viec-lam",
+      "https://hanoimoi.vn/xa-hoi/luong-bao-hiem",
+      "https://hanoimoi.vn/xa-hoi/phong-chay-chua-chay",
+      "https://hanoimoi.vn/xa-hoi/dan-hoi-chinh-quyen-tra-loi",
+      "https://hanoimoi.vn/xa-hoi/trai-tim-nhan-ai",
+      "https://hanoimoi.vn/giao-duc",
+      "https://hanoimoi.vn/giao-duc/tuyen-sinh",
+      "https://hanoimoi.vn/giao-duc/du-hoc",
+      "https://hanoimoi.vn/y-te",
+      "https://hanoimoi.vn/y-te/suc-khoe",
+      "https://hanoimoi.vn/y-te/an-toan-thuc-pham",
+      "https://hanoimoi.vn/multimedia",
+      "https://hanoimoi.vn/video",
+      "https://hanoimoi.vn/emagazine",
+      "https://hanoimoi.vn/infographic",
+      "https://hanoimoi.vn/photo",
+      "https://hanoimoi.vn/the-gioi",
+      "https://hanoimoi.vn/the-gioi/diem-nong",
+      "https://hanoimoi.vn/the-gioi/chuyen-do-day",
+      "https://hanoimoi.vn/the-gioi/ho-so",
+      "https://hanoimoi.vn/the-gioi/nguoi-viet-bon-phuong",
+      "https://hanoimoi.vn/the-gioi/luan-dam-thoi-su",
+      "https://hanoimoi.vn/du-lich",
+      "https://hanoimoi.vn/du-lich/diem-den",
+      "https://hanoimoi.vn/du-lich/am-thuc",
+      "https://hanoimoi.vn/nong-nghiep-nong-thon",
+      "https://hanoimoi.vn/nong-nghiep-nong-thon/nong-nghiep",
+      "https://hanoimoi.vn/nong-nghiep-nong-thon/nong-thon-moi",
+      "https://hanoimoi.vn/nong-nghiep-nong-thon/ocop-ha-noi",
+      "https://hanoimoi.vn/khoa-hoc-cong-nghe",
+      "https://hanoimoi.vn/khoa-hoc-cong-nghe/chuyen-doi-so",
+      "https://hanoimoi.vn/khoa-hoc-cong-nghe/xe",
+      "https://hanoimoi.vn/khoa-hoc-cong-nghe/san-pham-moi",
+      "https://hanoimoi.vn/doi-song",
+      "https://hanoimoi.vn/doi-song/gioi-tre",
+      "https://hanoimoi.vn/doi-song/gia-dinh",
+      "https://hanoimoi.vn/doi-song/ky-nang-song",
+      "https://hanoimoi.vn/ha-noi-ket-noi",
+      "https://hanoimoi.vn/ha-noi-ket-noi/tp-ho-chi-minh",
+      "https://hanoimoi.vn/ha-noi-ket-noi/vung-dong-bang-song-hong",
+      "https://hanoimoi.vn/phap-luat",
+      "https://hanoimoi.vn/phap-luat/an-ninh-trat-tu",
+      "https://hanoimoi.vn/phap-luat/phap-dinh",
+      "https://hanoimoi.vn/phap-luat/tu-van",
+      "https://hanoimoi.vn/hoa-giai-o-co-so",
+      "https://hanoimoi.vn/hoa-giai-o-co-so/guong-sang-hoa-giai",
+      "https://hanoimoi.vn/hoa-giai-o-co-so/to-hoa-giai-5-tot"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "hanoimoi.vn",
+    "checkedAt": "2026-11-09T03:57:06.604Z",
+    "url": "https://hanoimoi.vn/ket-noi-chuyen-gia-viet-nam-nhat-ban-thuc-day-hop-tac-cong-nghe-chien-luoc-1764940.html",
+    "finalUrl": "https://hanoimoi.vn/ket-noi-chuyen-gia-viet-nam-nhat-ban-thuc-day-hop-tac-cong-nghe-chien-luoc-1764940.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5861,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "hanoimoi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 117,
+    "checkedArticleUrls": 130,
+    "freshArticleChecks": 17,
+    "parserIssues": 10,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 117,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 105,
+    "categoriesFreshChecked": 7,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 5,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1697,
+        "passed": 111,
+        "distinctHashes": 111
+      },
+      {
+        "name": "audio",
+        "discovered": 40,
+        "passed": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://hanoimoi.vn/pho-bi-thu-thuong-truc-thanh-uy-ha-noi-nguyen-trong-dong-kien-quyet-dinh-chi-thi-cong-cong-trinh-vi-pham-ve-sinh-moi-truong-1765184.html",
+      "https://hanoimoi.vn/tang-cuong-giao-luu-hop-tac-giua-dang-cong-san-viet-nam-va-dang-cong-san-nhat-ban-1765200.html",
+      "https://hanoimoi.vn/ha-noi-thuc-hanh-theo-bac-bang-hanh-dong-va-do-bang-hieu-qua-thuc-tien-1765205.html",
+      "https://hanoimoi.vn/ha-noi-quyet-liet-giam-50-thu-tuc-hanh-chinh-va-thoi-gian-giai-quyet-1765197.html",
+      "https://hanoimoi.vn/mo-hinh-truong-chuyen-du-kien-thay-the-nao-tu-nam-hoc-2027-2028-1765175.html",
+      "https://hanoimoi.vn/a-hau-2-phuong-nghi-toa-sang-nho-tri-tue-ban-linh-va-trai-tim-nhan-ai-1765210.html",
+      "https://hanoimoi.vn/to-chuc-lai-giao-thong-duong-de-xuan-quan-long-bien-tu-ngay-11-11-1765172.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2,
+      "original_publication_not_yet_confirmed": 2,
+      "unresolved_extraction": 6
+    },
+    "checkedAt": "2026-11-10T09:15:45.710Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/hanoimoi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

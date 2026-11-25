@@ -1,0 +1,2258 @@
+{
+  "checkedAt": "2026-11-12T16:49:07.384Z",
+  "source": "544-site final audit; per-document verification still mandatory",
+  "sites": {
+    "1thegioi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "24h.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "24hmoney.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "2saigon.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "2sao.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "advertisingvietnam.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "afamily.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "alotintuc.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ambcrypto.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "amthucvietnam.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "anhsangvacuocsong.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "anninhthudo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "antoanthongtin.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "antt.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "antv.gov.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "arttimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "asemconnectvietnam.gov.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ashui.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "asia.nikkei.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autobikes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autopro.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autotimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autovina.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autovn.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "autozone.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bantinbuoisang.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bantinnhanh.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bantinsang.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baobariavungtau.com.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "baocaovien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baochinhphu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baodanang.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baodauthau.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baodautu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baodoi.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "baodongnai.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baodongthap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baogialai.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baohaiphong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baohaiquanvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baohatinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baohiemdoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baokiemtoan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baolamdong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baolangson.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Tin tức mới nhất, chính thống, chính xác"
+      ]
+    },
+    "baolaocai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baomoi.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baongoisao.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baoninhbinh.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baophapluat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baoquocte.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baosonla.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baothainguyen.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baothanhhoa.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baotintuc.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baotuyenquang.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baovanhoa.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baove.congly.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baovephapluat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baovinhlong.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baoxaydung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "baoxehoi.net": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "bazaarvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bbw.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "beforeitsnews.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bienphong.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bizreal.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "biztek.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "biztoday.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Biztoday - Tin tức tổng hợp chuyên sâu về kinh tế doanh nghiệp, bất động sản, doanh nhân, tài chính, chứng khoán, ngân hàng và thị trường."
+      ]
+    },
+    "blog.rever.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bnews.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bongda24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bongdaplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "brandx.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "briefs.co": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "bstyle.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "business.cosmolife.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "businesstimes.com.sg": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafeauto.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafebitcoin.org": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafebiz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafedautu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafef.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafeland.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cafetaichinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "camnangdulich.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cand.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ceotoancau.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "chaongaymoi.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "chatluongvacuocsong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cherryradio.com.au": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "chg.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Tin tức chống hàng giả Việt Nam, kiến thức sử dụng sản phẩm, tiêu dùng thông minh, bảo vệ thương hiệu, người tiêu dùng Việt Nam."
+      ]
+    },
+    "chungkhoan123.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "chuyendongthitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cn.sggp.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cnet.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cohoigiaothuong.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "coin68.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "coindesk.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "cointelegraph.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congan.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congdongplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congluan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congly.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congnghevadoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congngheviet.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congnghiepmoitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "congthuong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "consosukien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cosmolife.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cryptonews.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cryptoslate.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cuoi.tuoitre.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cuoituan.tuoitre.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "cuuchienbinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "daibieunhandan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "daidoanket.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dailo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "daklak24h.com.vn": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "danang24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "danhgiaxe.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dantocmiennui.baotintuc.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dantocphattrien.vietnamnet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dantri.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "danviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautu.kinhtechungkhoan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautubds.baodautu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautucophieu.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautudoanhnghiep.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautuvakinhdoanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dautuvietnam.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "daysom.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dealstreetasia.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "decrypt.co": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "deluxevietnam.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "depviet.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dienanh.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dientungaynay.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dientutieudung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dientuungdung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dispatch.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dnvn247.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiep.kinhtechungkhoan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepbiz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepchinhsach.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepcuocsong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiephoinhap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepkinhte.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepphattrien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghieptiepthi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghieptoday.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepvathitruong.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepvathuonghieu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnghiepvn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhan.baophapluat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhancuocsong.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhancuoituan.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhanhoinhap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhansaoviet.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "doanhnhantrevietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhnhanvn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doanhthuong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "docnhanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doisongphapluat.nguoiduatin.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doisongso.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "doisongvanhoa.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "D-Magazine Đời sống Văn Hóa là một ấn phẩm chuyên sâu về các khía cạnh văn hóa, nghệ thuật và lối sống. Tạp chí mang đến cho độc giả những bài viết phong phú về văn hóa truyền thống và hiện đại, các xu hướng nghệ thuật, phong cách sống, du lịch, ẩm thực và nhiều chủ đề hấp dẫn khác. Với đội ngũ biên tập viên giàu kinh nghiệm và đam mê, Đời Sống Văn Hóa không chỉ cung cấp thông tin mà còn truyền cảm hứng, giúp độc giả khám phá và trân trọng những giá trị văn hóa đa dạng."
+      ]
+    },
+    "doithoaiphattrien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "donghanhviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dongvon.doanhnhanvn.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "dttc.sggp.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dulichgiaitri.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "dulichvietnam.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "dzogame.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Trang tin tức - Dzogame Kênh tin tức và thông tin mới nhất về Game, đánh giá các Game hay đang chơi, công nghệ Game trong nước và thế giới cực nhanh, cùng thư viên trò chơi đầy đủ nhất"
+      ]
+    },
+    "e.vnexpress.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "edition.cnn.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "elleman.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "emagazine24.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "en.qdnd.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "en.sggp.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "en.vietnamplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "en.vietstock.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "en.vneconomy.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "etime.danviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "eva.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "fili.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "finance.yahoo.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "finance24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "game8.info": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gamelandvn.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gamen.pro": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "genk.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giacaphe.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giacavattu.com.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "giacngo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giadinh24h.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giadinhonline.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giaidieuxanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gialaitv.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "giaoduc.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giaoducthoidai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giaoducthudo.giaoducthoidai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giaoducvaxahoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "giavang.net": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Giá vàng hôm nay, Vàng sjc, Vàng 9999, vàng doji, vàng Phú quý, vàng bảo tín minh châu"
+      ]
+    },
+    "gioitrengaynay.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gocdoanhnhan.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gocgiaitri.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gocnhinthoidai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "golfandlife.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "golfviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "goodstock.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "gtimes.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "hangthat.thuonghieucongluan.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "hanoimoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "hoahoctro.tienphong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "hoanhap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "homedecorplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "htv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "hungyentv.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Báo và Phát thanh, Truyền hình Hưng Yên"
+      ]
+    },
+    "huongsenviet.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "icon.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ifintech.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "index.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "infonet.vietnamnet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "inlook.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ipick.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kawowo.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenh14.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenhhot.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenhsao.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenhsaoviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenhtinviet.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kenhtinxe.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        ". - KenhTinXe.Com - Trang tin đánh giá ô tô, đánh giá xe máy uy tín nhất hiện nay.Cập nhật bảng giá xe máy, giá xe ô tô mới nhất tại Việt Nam.Cập nhật các mẫu xe ô tô xe máy mới nhất. Chuyên trang ô tô, xe máy, giá xe, thị trường xe máy, thị trường ô tô."
+      ]
+    },
+    "kevesko.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "khoahocdoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "khoahockiemtoan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "khoe365.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "khucongnghiep.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kiemsat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kienthuc.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kientrucvietnam.org.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhdoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhnet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhtieudung.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhtieudung.thuonggiaonline.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhvaphapluat.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhdoanhvaphattrien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtechungkhoan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtedothi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtedouong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtemoitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtenews.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Kinhtenews, Kinh Tế News, Báo Kinh tế news, kinh te news, báo kinh tế, kinh tế việt nam, tin kinh tế, kinh tế"
+      ]
+    },
+    "kinhtenongthon.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhteplus.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtethitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtetieudung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtevadoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtevadulich.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtevn.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "kinhtexahoi.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "kythuatchonghanggia.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "landnet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "langngheviet.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "langsontv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Trang thông tin điện tử của Báo và PTTH Lạng Sơn. Tin tức, sự kiện, bình luận, video, truyền hình trực tuyến 24/7."
+      ]
+    },
+    "laodong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "laodongdongnai.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "laodongthudo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "lecourrier.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Lecourrier.vn - 1er site d'information, Agence vietnamienne d’Information. Les articles du journal et toute l'actualité en continu : International, Vietnam, Société, Economie, Culture, Environnement, Blogs ..."
+      ]
+    },
+    "lifestyle.zingnews.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "luxuo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "lyluanchinhtrivatruyenthong.vn": {
+      "parserCapability": "only_non_article_candidates",
+      "sharedDescriptions": []
+    },
+    "manilatimes.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "marketingai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "markets.businessinsider.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "markettimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "marrybaby.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "mekongasean.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "mevacon.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "migovi.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "mmosite.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "moitruongvaxahoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "molistar.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "money.vtv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "moneyf.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "monngonvn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "msn.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "mucnews.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "mxpress.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Mxpress kecirc;nh thocirc;ng tin thị trường"
+      ]
+    },
+    "nangluongsachvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nangluongvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "navigator.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ndh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "news.bitcoin.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "news.oto-hui.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "news.tuoitre.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ngaymoionline.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ngaymoisaigon.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "ngaynay.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nghean24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nghenhinvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nghetinhplus.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Tin tức Nghệ An, Hà Tĩnh mới nhất về tình hình chính trị, xã hội, an ninh trật tự, văn hóa - giải trí, thể thao"
+      ]
+    },
+    "ngoisao.vnexpress.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ngoisaonhacviet.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "ngoisaovietnam.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "nguoi-noi-tieng.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoidothi.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoiduatin.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoihanoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoimuanha.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoinghe.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguoinoitieng.vn": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "nguoiquansat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nguonluc.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhadautu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhandan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhansac.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [],
+      "sharedContentHashes": [
+        "26f88e50d332821df6f272642bb3735e3992d8ceb4b510ff4f99462504cffb33"
+      ],
+      "repeatedContentEvidence": {
+        "checkedAt": "2026-11-22T03:02:37.236Z",
+        "source": "publisher-declared WordPress original post endpoint",
+        "clusters": [
+          {
+            "hash": "26f88e50d332821df6f272642bb3735e3992d8ceb4b510ff4f99462504cffb33",
+            "pages": [
+              {
+                "url": "https://nhansac.vn/makeup-no-makeup-bi-quyet-tao-lan-da-cang-khoe-tu-nhien/",
+                "title": "Makeup “No Makeup”: Bí Quyết Tạo Làn Da Căng Khỏe Tự Nhiên",
+                "evidence": "/var/lib/news-flow/qc-20261122/evidence/bb982fe3fec7f71c19fdf07a371acbf82aac00e623edcbe52a7dc789d04f7afd.html.gz"
+              },
+              {
+                "url": "https://nhansac.vn/tay-trang-khong-dung-cach-nguyen-nhan-gay-mun-an-va-bit-tac/",
+                "title": "Tẩy Trang Không Đúng Cách: Nguyên Nhân Gây Mụn Ẩn Và Bít Tắc",
+                "evidence": "/var/lib/news-flow/qc-20261122/evidence/5ea6a1db029858290b6e5485f9888694b5d694e981f1e0286cc11273936611f5.html.gz"
+              },
+              {
+                "url": "https://nhansac.vn/bi-quyet-cap-am-cho-da-bi-mat-nuoc-ma-khong-bong-dau/",
+                "title": "Bí Quyết Cấp Ẩm Cho Da Bị Mất Nước Mà Không Bóng Dầu",
+                "evidence": "/var/lib/news-flow/qc-20261122/evidence/55717bab3055c353d9d82b926fd2ca79841542b84968e4f3e0cc35d3d819362e.html.gz"
+              },
+              {
+                "url": "https://nhansac.vn/retinol-bi-quyet-tri-mun-mo-tham-ngua-lao-hoa-va-cach-dung-an-toan/",
+                "title": "Retinol – Bí Quyết Trị Mụn, Mờ Thâm, Ngừa Lão Hóa (Và Cách Dùng An Toàn)",
+                "evidence": "/var/lib/news-flow/qc-20261122/evidence/5c1ec040587454cf7190c8feb761f70271e956471660e334b48b8f863346648c.html.gz"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "nhaquanly.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcaudautu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcaudoanhnghiep.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcaukinhte.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcaunhanong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcauthuonghieu.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipcauthuonghieu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsonghanoi.hanoimoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsongkinhdoanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsongkinhte.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsongnhadat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsongonline.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nhipsongthoidai.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nongnghiepmoitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nongsanviet.nongnghiepmoitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nss.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nudoanhnhan.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "nudoanhnhan.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Doanh nghiệp hội nhập , xuc tien thuong mai - nơi cung cấp thông tin cho cộng đồng doanh nghiệp, doanh nhân Việt Nam"
+      ]
+    },
+    "openstock.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "otopro.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "otoxemay.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "petrotimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phanbonvietnam.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phapluatplus.baophapluat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phaply.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Tạp chí điện tử Pháp lý cập nhật tin tức trong ngày, tin mới nhất hôm nay, tin tức online, tin nóng, tin hot thời sự, pháp luật, video hình ảnh 24/7."
+      ]
+    },
+    "phunuduongthoi.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunugiadinhvn.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunuhiendai.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunumoi.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunuphapluat.nguoiduatin.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunustyle.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Chuyên trang Tin tức"
+      ]
+    },
+    "phunuvagiadinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phunuvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "phuongnam24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "pose.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "prnewswire.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "prvn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "qdnd.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "qltt.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "qptd.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "qptd.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "quangngaitv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "quocphongthudo.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "quocphongthudo.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "reatimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "robbreport.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saigon247.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saigonbiz.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saigondaily.info": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saigoneer.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Saigon’s guide to restaurants, street food, news, bars, culture, events, history, activities, things to do, music & nightlife."
+      ]
+    },
+    "sandien24h.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "sanook.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "sao247.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saoexpress.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "saostar.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "sctv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "seekingalpha.com": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "sggp.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "sidoni.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "soha.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "sohuutritue.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "songdongtunggiay.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "stockbiz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "stylemagazine.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "suckhoecong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "suckhoecongdongonline.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "suckhoedoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "suckhoemoitruong.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "svvn.tienphong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "taichinhcongnghe.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "taichinhdoanhnghiep.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "taichinhso.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tamnhin.kienthuc.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tamnhin.net": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "tapchibitcoin.io": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchicongthuong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchigiaoduc.edu.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchikinhtetaichinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchinganhang.gov.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchisuthat.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchithangmay.vn": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "tapchitoaan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tapchixaydung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "taynguyen24h.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tcn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "techcrunch.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "techinsight.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "techsignin.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "techtimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "techz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tekcafe.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tgnguoinoitieng.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tgs.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thanhhoa24h.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thanhnien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thanhnienviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thanhtra.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thanhtra.gov.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioidienanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioidisan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioihoinhap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioikinhdoanh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioimoitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioinguoinoitieng.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioiphunu.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thegioitiepthi.danviet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "theinvestor.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "theleader.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thethao.congan.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thethao.sggp.org.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thethaovanhoa.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thieunien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thitruongbiz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thitruonghanghoa.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thitruongtaichinhtiente.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thoibaobatdongsan.net": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "thoibaonganhang.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thoibaotaichinhvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thoidai.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thoidaiplus.suckhoedoisong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thoitrang360.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thongbaoluadao.blogspot.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Cập nhật thông tin để không bị mất tiền và mất thời gian vì công ty ALMA."
+      ]
+    },
+    "thuonggiaonline.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuonghieunongnghiep.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuonghieuplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuonghieuquocgia.nhandan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuonghieusanpham.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuonghieuvaphapluat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuongmai360.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuongtruong.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuongtruong24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thuysanvietnam.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "thv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tienphong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tiepthigiadinh.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tiepthigiadinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tieudungplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tieudungso.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tieudungthoinay.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "tieudungvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tiim.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tin.skydoor.net": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "tin2s3h.blogspot.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "tin tức 24h, tin tuc 24h, tin tuc trong ngay, bóng đá, thời trang, cười, tintuc, 24h, tin nhanh , the thao, tin nhanh"
+      ]
+    },
+    "tinhaiphong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tinnongmoingay.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tintuc.net": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "tintucbitcoin.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tintucnong.org": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tintuctoday.net": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "tintucvietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tinxe.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "toancanhbaochi.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "trangcongnghe.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "trangcongnghe.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "travelguide.org.vn": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "treemvietnam.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "trongtrot.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "truyenhinh.baobinhduong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "truyenhinhnghean.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": [
+        "Đài PTTH Nghệ An là đơn vị sự nghiệp thuộc UBND tỉnh Nghệ An, đảm nhiệm 2 tờ báo lớn của tỉnh là báo hình và báo nói, có chức năng thông tin, tuyên truyền chủ trương đường lối, chính sách, pháp luật của Đảng và Nhà nước, quản lý thống nhất kỹ thuật phát thanh truyền hình trên địa bàn tỉnh"
+      ]
+    },
+    "truyenthongg8.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tuoitre.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tv.kiemsat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "tv.nguoiduatin.vn": {
+      "parserCapability": "only_non_article_candidates",
+      "sharedDescriptions": []
+    },
+    "tvo24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vanhienplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vanhoadoanhnghiepvn.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vanhoadoanhnhan.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vanhoanghethuat.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vanhoavaphattrien.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vannghequandoi.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vattunongnghiep.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vccinews.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "vgt.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vhds.baothanhhoa.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "video.afamily.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietbao.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietcetera.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietgiaitri.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnam.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnam.vnanet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnambiz.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamfdi.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "vietnamfinance.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamhoinhap.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamindex.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnaminsiders.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamlawmagazine.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnammedia.vnanet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamnet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamnews.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnamplus.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietnet24h.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": [
+        "Tạp chí điện tử Vietnet24h, hiệp hội doanh nghiệp điện tử việt nam veia, Tạp chí, điện tử, vietnet24h, hiệp hội, doanh nghiệp, tin tức, sự kiện Việt Nam và quốc tế nhanh, chính xác và cập nhật mới online 24/7: Tin VEIA, doanh nhân, công nghệ, hướng dẫn công nghệ, tiêu điểm công nghệ, công nghệ độc lạ, thị trường, máy tính, mạng, thị trường công nghệ, điện tử tiêu dùng, tầm nhìn, tầm nhìn chính sách, tầm nhìn công nghệ, năng lượng và môi trường, tiêu dùng, tiêu dùng thông minh, tư vấn tiêu dùng, kinh tế, tài chính, kinh doanh, xã hội, thời sự"
+      ]
+    },
+    "vietq.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vietstock.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "viettimes.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vinanet.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vinh24h.vn": {
+      "parserCapability": "access_or_discovery_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "vir.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vivumuasam.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vjst.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vnbusiness.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vneconomy.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vnexpress.net": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vnfinance.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vntravellive.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "voh.com.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vov.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vtcnews.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vtimes.com.au": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "vtv.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "webthethao.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "welovecar.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "whatcar.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "world.kbs.co.kr": {
+      "parserCapability": "parser_unconfirmed",
+      "sharedDescriptions": []
+    },
+    "xahoi24h.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xaluan.com": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "xe-vietnam.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xe.baoxaydung.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xecongnghe.vn": {
+      "parserCapability": "extracts_fields_quality_review",
+      "sharedDescriptions": []
+    },
+    "xehay.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xemgame.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xethitruong.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xevathethao.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "xuctiendoanhnghiep.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "yahoo.com": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "yan.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "yeugiadinh.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "yeuthethao.net.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    },
+    "znews.vn": {
+      "parserCapability": "can_parse_confirmed_samples",
+      "sharedDescriptions": []
+    }
+  }
+}

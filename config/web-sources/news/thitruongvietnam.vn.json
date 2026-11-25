@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruongvietnam.vn",
+  "siteId": "thitruongvietnam.vn",
+  "registrableDomain": "thitruongvietnam.vn",
+  "homepage": "https://thitruongvietnam.vn/",
+  "allowedHosts": [
+    "thitruongvietnam.vn",
+    "www.thitruongvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thitruongvietnam.vn/",
+    "categories": [
+      "https://thitruongvietnam.vn/thoi-su-301.html",
+      "https://thitruongvietnam.vn/thuong-mai-291.html",
+      "https://thitruongvietnam.vn/cong-nghiep-331.html",
+      "https://thitruongvietnam.vn/hoi-nhap-341.html",
+      "https://thitruongvietnam.vn/thi-truong-351.html",
+      "https://thitruongvietnam.vn/tai-chinh-361.html",
+      "https://thitruongvietnam.vn/doanh-nghiep-371.html",
+      "https://thitruongvietnam.vn/phap-luat-311.html",
+      "https://thitruongvietnam.vn/cong-nghe-381.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi-391.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Lãi suất hạ nhiệt, dư địa duy trì thời kỳ vốn rẻ đi vào thực tế",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "#ContentPlaceHolder1_DataList2_Labelngaygui1_0",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".catItemIntroText",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:16:20.090Z",
+    "frozenAt": "2026-11-16T02:16:15.469Z",
+    "trainingUrl": "https://thitruongvietnam.vn/tai-chinh/lai-suat-ha-nhiet-du-dia-duy-tri-thoi-ky-von-re-di-vao-thuc-te-915742.html",
+    "independentHoldouts": [
+      "https://thitruongvietnam.vn/thi-truong/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-san-pham-bao-hiem-ket-hop-bao-ve-va-dau-tu-danh-cho-khach-hang-cao-cap-914542.html",
+      "https://thitruongvietnam.vn/doanh-nghiep/anh-kua--dua-dac-san-ca-mau-vuon-ra-the-gioi-916552.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thitruongvietnam.vn/tai-chinh/lai-suat-ha-nhiet-du-dia-duy-tri-thoi-ky-von-re-di-vao-thuc-te-915742.html",
+      "https://thitruongvietnam.vn/thi-truong/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-san-pham-bao-hiem-ket-hop-bao-ve-va-dau-tu-danh-cho-khach-hang-cao-cap-914542.html",
+      "https://thitruongvietnam.vn/doanh-nghiep/anh-kua--dua-dac-san-ca-mau-vuon-ra-the-gioi-916552.html",
+      "https://thitruongvietnam.vn/tai-chinh/tin-dung-tang-manh-tai-nhom-ngan-hang-lon-va-cho-vay-du-an-ha-tang-trong-diem-duoc-mien-room-916482.html",
+      "https://thitruongvietnam.vn/thi-truong/vi-sao-dau-giam-tu-tren-100-usd-xuong-vung-90-usd-van-khong-cuu-my-khoi-lam-phat-916472.html",
+      "https://thitruongvietnam.vn/thoi-su/tong-bi-thu-chu-tich-nuoc-to-lam-can-dua-hop-tac-khoa-hoc-cong-nghe-kinh-te-so-thanh-dong-luc-phat-trien-trong-khong-gian-phap-ngu-916692.html",
+      "https://thitruongvietnam.vn/thuong-mai/ca-mau-cham-dut-hop-tac-voi-mot-doanh-nghiep-thu-mua-lua-gao-916632.html",
+      "https://thitruongvietnam.vn/cong-nghe/phep-thu-lon-doi-voi-thi-truong-ai-va-chuoi-cung-ung-ban-dan-916532.html",
+      "https://thitruongvietnam.vn/thuong-mai/xuat-khau-ho-tieu-va-gia-vi-viet-nam-huong-toi-moc-2-4-ty-usd-nam-2026-916492.html",
+      "https://thitruongvietnam.vn/thoi-su/thu-tuong-yeu-cau-ra-soat-viec-cap-phep-co-quan-bao-chi-thuoc-hoi-916462.html",
+      "https://thitruongvietnam.vn/cong-nghe/tu-an-ninh-mang-den-kha-nang-chong-chiu-cau-hoi-cua-hdqt-trong-ky-nguyen-ai-916682.html",
+      "https://thitruongvietnam.vn/doanh-nghiep/tap-doan-xuan-thien-da-noi-la-lam-da-lam-la-phai-xong-tai-du-an-28-000-ty-dong-916672.html",
+      "https://thitruongvietnam.vn/hoi-nhap/asean-thiet-lap-khuon-kho-phap-ly-chung-cho-nen-kinh-te-so-916662.html",
+      "https://thitruongvietnam.vn/doanh-nghiep/co-phieu-pnJ-mat-moc-15-000-dongcp-con-gai-chu-tich-cao-thi-ngoc-dung-lien-tuc-bi-ban-giai-chap-hang-trieu-co-phieu-916652.html",
+      "https://thitruongvietnam.vn/doanh-nghiep/sep-cu-bamboo-airways-gia-nhap-vietravel-airlines-916642.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/thac-si-tre-ren-luyen-ngoai-ngu-va-ky-nang-nghe-qua-moi-truong-so-916622.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/nguoi-giu-bi-quyet-nhay-lua-916612.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/phuong-hoan-kiem-se-to-chuc-cuong-che-thu-hoi-nha-so-7-dong-xuan-916602.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/vuon-quoc-gia-u-minh-ha-cho-thue-hon-1-318-ha-moi-truong-rung-de-phat-trien-du-lich-sinh-thai-916592.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/phu-tho-nang-tam-thuong-hieu-gao-ngon-phu-xuan-916582.html",
+      "https://thitruongvietnam.vn/van-hoa--xa-hoi/ca-mau-xa-dam-doi-ky-vong-quang-ba-the-manh-nganh-tom-tai-festival-tom-ca-mau-lan-thu-ii-916572.html",
+      "https://thitruongvietnam.vn/thuong-mai/tom-ca-mau-gia-tang-gia-tri-nang-tam-thuong-hieu-916562.html",
+      "https://thitruongvietnam.vn/hoi-nhap/cuoc-gap-giua-lanh-dao-my-trung-quoc-va-nga-ky-vong-mo-ra-kenh-doi-thoai-giua-ba-cuong-quoc-916522.html",
+      "https://thitruongvietnam.vn/cong-nghiep/phai-doan-xuc-tien-thuong-mai-cua-bo-nong-nghiep-hoa-ki-tham-quan-nha-may-sua-cua-vinamilk-916512.html",
+      "https://thitruongvietnam.vn/phap-luat/de-xuat-lam-ro-chung-tu-thanh-toan-khi-doanh-nghiep-mua-hang-tu-ho-kinh-doanh-916502.html",
+      "https://thitruongvietnam.vn/thoi-su/le-ky-niem-950-nam-quoc-tu-giam--quoc-hoc-viet-nam-916282.html",
+      "https://thitruongvietnam.vn/thoi-su/cho-thoi-nhiem-vu-dai-bieu-quoc-hoi-doi-voi-ong-ho-sy-hung-916272.html",
+      "https://thitruongvietnam.vn/thuong-mai/rau-qua-viet-nam-thu-ve-8-29-ti-usd-mot-thi-truong-chiem-gan-23-916362.html",
+      "https://thitruongvietnam.vn/cong-nghiep/chuyen-gia-ngan-hang-it-dong-luc-cho-vay-doanh-nghiep-nho-vi-ngai-rui-ro-916322.html",
+      "https://thitruongvietnam.vn/cong-nghiep/vefta-mo-rong-du-dia-uu-dai-thue-quan-cho-hang-viet-916112.html",
+      "https://thitruongvietnam.vn/hoi-nhap/dua-quan-he-huu-nghi-truyen-thong-hop-tac-toan-dien-viet-nam--cuba-di-vao-chieu-sau-916312.html",
+      "https://thitruongvietnam.vn/thi-truong/thi-truong-bac-doi-mat-nam-thieu-hut-nguon-cung-thu-sau-lien-tiep-916402.html",
+      "https://thitruongvietnam.vn/thi-truong/gia-vang-sang-nay-14112026-tiep-tuc-giam-sau-916392.html",
+      "https://thitruongvietnam.vn/thi-truong/thuong-vu-Jollibee-chuyen-nhuong-11-co-phan-highlands-coffee-chua-hoan-tat-916382.html",
+      "https://thitruongvietnam.vn/thi-truong/gia-dau-vao-ha-nhiet-hang-quan-cham-giam-gia-916302.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

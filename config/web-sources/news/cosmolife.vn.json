@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cosmolife.vn",
+  "siteId": "cosmolife.vn",
+  "registrableDomain": "cosmolife.vn",
+  "homepage": "https://cosmolife.vn/",
+  "allowedHosts": [
+    "cosmolife.vn",
+    "www.cosmolife.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Emirates đi qua một thập kỷ tại Hà Nội, biến Dubai thành “trạm trung chuyển” cho du lịch, thương mại và phong cách sống toàn cầuRecommend",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:23.557Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cosmolife.vn/emirates-di-qua-mot-thap-ky-tai-ha-noi--bien-dubai-thanh--tram-trung-chuyen--cho-du-lich--thuong-mai-va-phong-cach-song-toan-cau-2295.htm",
+      "https://cosmolife.vn/emirates-mo-rong-a350-tai-viet-nam--dua-premium-economy-thanh-lop-trai-nghiem-moi-giua-economy-va-business-2294.htm",
+      "https://cosmolife.vn/gio-hang-dinh-duong-doi-nhip--nguoi-truong-thanh-thanh-thi-tim-giai-phap-gon-hon-de-giu-mot-doi-song-van-muon-nang-dong-2298.htm",
+      "https://cosmolife.vn/a-hau-dang-thi-tan-chia-se-bi-quyet-bat-tu-tin---toa-chat-rieng-2296.htm",
+      "https://cosmolife.vn/hoa-hau-doanh-nhan-viet-nam-toan-cau-2026--le-mai-anh-dan-dat-ban-to-chuc-cung-hanh-nguyen-2297.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cosmolife.vn/",
+    "categories": [],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cosmolife.vn",
+    "checkedAt": "2026-11-09T03:56:56.920Z",
+    "url": "https://cosmolife.vn/emirates-di-qua-mot-thap-ky-tai-ha-noi--bien-dubai-thanh--tram-trung-chuyen--cho-du-lich--thuong-mai-va-phong-cach-song-toan-cau-2295.htm",
+    "finalUrl": "https://cosmolife.vn/emirates-di-qua-mot-thap-ky-tai-ha-noi--bien-dubai-thanh--tram-trung-chuyen--cho-du-lich--thuong-mai-va-phong-cach-song-toan-cau-2295.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5151,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cosmolife.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 15,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 38,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cosmolife.vn/miss-asian-2026--hoang-phuong-anh-tro-ve-trong-vong-tay-fan--chuong-moi-chon-thuong-truong-va-giac-mo-my-2300.htm",
+      "https://cosmolife.vn/sabeco-ra-mat-333-triple-pure--di-san-bia-viet-tim-nhip-tang-truong-moi-qua-trai-nghiem-da-giac-quan-2299.htm",
+      "https://cosmolife.vn/gio-hang-dinh-duong-doi-nhip--nguoi-truong-thanh-thanh-thi-tim-giai-phap-gon-hon-de-giu-mot-doi-song-van-muon-nang-dong-2298.htm",
+      "https://cosmolife.vn/a-hau-dang-thi-tan-chia-se-bi-quyet-bat-tu-tin---toa-chat-rieng-2296.htm",
+      "https://cosmolife.vn/hoa-hau-doanh-nhan-viet-nam-toan-cau-2026--le-mai-anh-dan-dat-ban-to-chuc-cung-hanh-nguyen-2297.htm",
+      "https://cosmolife.vn/emirates-di-qua-mot-thap-ky-tai-ha-noi--bien-dubai-thanh--tram-trung-chuyen--cho-du-lich--thuong-mai-va-phong-cach-song-toan-cau-2295.htm",
+      "https://cosmolife.vn/emirates-mo-rong-a350-tai-viet-nam--dua-premium-economy-thanh-lop-trai-nghiem-moi-giua-economy-va-business-2294.htm",
+      "https://cosmolife.vn/agoda-he-lo-nghich-ly-du-lich-2027--nguoi-viet-dung-ai-nhieu-nhat-chau-a-nhung-van-muon-giu-quyen-quyet-dinh-2293.htm",
+      "https://cosmolife.vn/hoa-hau-doanh-nhan-viet-nam-toan-cau-2026--chu-de-tinh-hoa-dat-to---vuon-tam-nu-doanh-nhan-viet--thang-12-2026-tai-phu-tho-2292.htm",
+      "https://cosmolife.vn/miss-asian-2026--duong-kim-hoa-hau-ban-thi-thu-boi-hoi-trong-man-final-walk-khep-lai-nhiem-ky-ruc-ro-2288.htm",
+      "https://cosmolife.vn/agoda-ra-mat-tro-ly-ai-tai-21-thi-truong--dat-cuoc-vao--connected-trip--de-tai-dinh-hinh-cach-chau-a-len-ke-hoach-du-lich-2260.htm",
+      "https://cosmolife.vn/singapore-bien-du-lich-cham-thanh-loi-the--keo-dai-trai-nghiem-bang-thien-nhien--bien-dao-va-san-bay-2259.htm",
+      "https://cosmolife.vn/agoda-don-lan-song--event-led-travel--tai-bangkok--noi-am-nhac-keo-du-khach-chau-a-vao-mot-cuoi-tuan-city-break-2255.htm",
+      "https://cosmolife.vn/onitsuka-tiger-nang-cap-bieu-tuong-doi-thuong-thanh-tuyen-ngon-thoi-trang-giao-thoa-van-hoa-bac---nam-1022.htm",
+      "https://cosmolife.vn/onitsuka-tiger-x-versace--nhung-doi-giay-giao-thoa-giua-di-san-nhat-va-xa-xi-y-1021.htm",
+      "https://cosmolife.vn/onitsuka-tiger-ra-mat-mexico-66-golf--bien-san-golf-tro-thanh-san-dien-voi-sneaker-hybrid-duong-dai-1020.htm",
+      "https://cosmolife.vn/buoc-chan-binh-ngo-2026--mexico-66-ke-cau-chuyen-tet-nguyen-dan-cua-onitsuka-tiger-1019.htm",
+      "https://cosmolife.vn/truong-dai-hoc-san-khau-dien-anh-thanh-pho-ho-chi-minh--nua-the-ky-vun-dap-tai-nang-va-phat-trien-nghe-thuat-2251.htm",
+      "https://cosmolife.vn/sabeco-nang-giai-thuong--vinh-danh-nguoi-truyen-lua--nam-2026-thanh-nen-tang-ket-noi-cong-dong--the-he-tre-va-sang-kien-xa-hoi-2246.htm",
+      "https://cosmolife.vn/bi-phan-boi--day-xuong-vuc-sau-roi-tro-lai-voi-than-phan-moi--melodrama-thai-day-tinh-yeu-vao-vung-toi-cua-quyen-luc-2244.htm",
+      "https://cosmolife.vn/nguoi-ban-dang-tim-hieu-tren-mang-co-la-ai--5-dau-hieu-de-hoi-lai-truoc-khi-tra-tien-2232.htm",
+      "https://cosmolife.vn/me-ruot-nhan-chinh-con-lam-con-nuoi--phep-thu-voi-quyen-tre-em-o-chau-a-2224.htm",
+      "https://cosmolife.vn/thu-hoi-toan-quoc-mot-loai-duong-the-nivea--lo-hang-bi-thu-hoi-co-anh-huong-suc-khoe-1300.htm",
+      "https://cosmolife.vn/obagi-khai-mo-ky-nguyen-tre-hoa-da-cap-do-te-bao-nu-gen--voi-cong-nghe-tai-tao-nad-1299.htm",
+      "https://cosmolife.vn/onitsuka-tiger-tai-ma-hoa-hmr-peak-1966-bang-da-tron--suede-va-faux-fur--bien-di-san-trekking-thanh-cuoc-choi-new-luxury-cua-utility-boot-2252.htm",
+      "https://cosmolife.vn/san-dien-thoi-trang-goi-lai-xuc-giac-giua-bien-hinh-anh-tri-tue-nhan-tao-ai-2238.htm",
+      "https://cosmolife.vn/paris-fashion-week-xuan-he-2027--dat-su-thoai-mai-vao-thiet-ke-xa-xi-cho-ngay-nong-2231.htm",
+      "https://cosmolife.vn/h-hen-nie-buoc-vao-hanh-trinh-lam-me-moi--tu-lua-chon-khac-biet-den-tieng-noi-ve-dinh-duong-dua-tren-khoa-hoc-2249.htm",
+      "https://cosmolife.vn/65--nguoi-viet-san-sang-tra-them-de-tiet-kiem-thoi-gian---su-thanh-thoi--tro-thanh-mot-kieu-tieu-dung-do-thi-moi-2245.htm",
+      "https://cosmolife.vn/do-thi-gia-hoa-dat-lai-bai-toan-hieu-thao--cham-soc-cha-me-can-them-mot-ha-tang-dich-vu-dang-tin-cay-2234.htm",
+      "https://cosmolife.vn/mua-xuan-thu-hai--va-quyen-duoc-lon-tuoi-theo-cach-cua-rieng-minh-2233.htm",
+      "https://cosmolife.vn/phu-nu-tu-viet-lai-dinh-nghia-ve-thanh-cong--gia-tri-ban-than-va-nhung-gioi-han-tung-duoc-mac-dinh-2229.htm",
+      "https://cosmolife.vn/da-nang-mo-them--phong-thi-nghiem-do-thi--cho-blockchain--tai-chinh-so-va-nhung-y-tuong-cong-nghe-moi-2241.htm",
+      "https://cosmolife.vn/qr--ai-agent-va-vi-du-lich--mot-the-he-san-pham-so-viet-dang-viet-lai-nhip-song-do-thi-bang-cong-nghe-onchain-2237.htm",
+      "https://cosmolife.vn/vmark-vietnam-design-week-2026-quy-tu-30-dien-gia-quoc-te--4-300m-sang-tao-ket-noi-kien-truc--cong-nghe-va-kinh-te-tuan-hoan-867.htm",
+      "https://cosmolife.vn/du-lich-than-thien-phu-nu-hoi-giao-tang-toc-cung-nhu-cau-trai-nghiem-an-toan-va-cong-nghe-so-855.htm",
+      "https://cosmolife.vn/nen-tang-ai-assemble-dua-nhan-luc-viet-buoc-vao-he-sinh-thai-cong-nghe-toan-cau-818.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:14:43.906Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cosmolife.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

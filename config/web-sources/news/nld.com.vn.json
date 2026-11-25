@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nld.com.vn",
+  "siteId": "nld.com.vn",
+  "registrableDomain": "tuoitre.vn",
+  "homepage": "https://tuoitre.vn/nld/index.htm",
+  "allowedHosts": [
+    "nld.com.vn",
+    "www.nld.com.vn",
+    "tuoitre.vn",
+    "www.tuoitre.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "THƯ ĐẢNG ỦY - BAN BIÊN TẬP GỬI BẠN ĐỌC: Những lời gửi lại",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share,related-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "publisherUrlScopes": [
+    {
+      "host": "tuoitre.vn",
+      "pathPrefix": "/nld/"
+    }
+  ],
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "original_only",
+  "publicationTimePolicy": "original_clock_required",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "discovery": {
+    "homepage": "https://tuoitre.vn/nld/index.htm",
+    "categories": [],
+    "requiredArticlePattern": "^https?://(?:www\\.)?tuoitre\\.vn/nld/.+-\\d+\\.htm$"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:02:05.168Z",
+    "sampleUrls": [
+      "https://tuoitre.vn/nld/thu-dang-uy-ban-bien-tap-gui-ban-doc-nhung-loi-gui-lai-196260629212047062.htm",
+      "https://tuoitre.vn/nld/ban-thao-khong-the-nao-quen-196260629204136125.htm",
+      "https://tuoitre.vn/nld/khep-lai-de-nho-buoc-tiep-de-truong-thanh-19626062919301067.htm"
+    ],
+    "fullSiteCycleVerified": false,
+    "archiveOnly": true
+  }
+}

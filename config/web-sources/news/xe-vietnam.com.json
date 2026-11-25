@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xe-vietnam.com",
+  "siteId": "xe-vietnam.com",
+  "registrableDomain": "xe-vietnam.com",
+  "homepage": "https://xe-vietnam.com/",
+  "allowedHosts": [
+    "xe-vietnam.com",
+    "www.xe-vietnam.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chương trình truyền hình XE & XU HƯỚNG – HTV7 – phát sóng ngày 16.3.2025",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "allowMediaLinkDensity": true,
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:46.217Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-16-3-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-9-3-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-2-3-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-23-2-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-16-2-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-9-2-2025/",
+      "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-2-2-2025/",
+      "https://xe-vietnam.com/2024/12/02/land-rover-viet-nam-ra-mat-mau-xe-range-rover-velar-moi-co-phien-ban-hybrid-video/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://xe-vietnam.com/",
+    "categories": [
+      "https://xe-vietnam.com/category/video/",
+      "https://xe-vietnam.com/category/video/xe-viet-nam-tv/",
+      "https://xe-vietnam.com/category/video/su-kien-video/",
+      "https://xe-vietnam.com/category/video/thu-xe/",
+      "https://xe-vietnam.com/category/video/xe-may/",
+      "https://xe-vietnam.com/category/video/tu-van-video/",
+      "https://xe-vietnam.com/category/thong-tin/",
+      "https://xe-vietnam.com/category/thong-tin/tin-trong-nuoc/",
+      "https://xe-vietnam.com/category/thong-tin/tin-quoc-te/",
+      "https://xe-vietnam.com/category/thi-truong/",
+      "https://xe-vietnam.com/category/thi-truong/trong-nuoc/",
+      "https://xe-vietnam.com/category/thi-truong/quoc-te/",
+      "https://xe-vietnam.com/category/thu-xe-2/",
+      "https://xe-vietnam.com/category/thu-xe-2/o-to-thu-xe-2/",
+      "https://xe-vietnam.com/category/thu-xe-2/xe-may-thu-xe-2/",
+      "https://xe-vietnam.com/category/trien-lam/",
+      "https://xe-vietnam.com/category/trien-lam/vietnam-international-motor-show/",
+      "https://xe-vietnam.com/category/trien-lam/vietnam-motorcycle-show/",
+      "https://xe-vietnam.com/category/trien-lam/saigon-autotech-accessories/",
+      "https://xe-vietnam.com/category/trien-lam/vietnam-motor-show/",
+      "https://xe-vietnam.com/category/tu-van/",
+      "https://xe-vietnam.com/category/tu-van/kien-thuc/",
+      "https://xe-vietnam.com/category/tu-van/bao-duong/",
+      "https://xe-vietnam.com/category/hai-banh/",
+      "https://xe-vietnam.com/category/hai-banh/xe-may-xe-may-pkl/",
+      "https://xe-vietnam.com/category/hai-banh/phan-khoi-lon/",
+      "https://xe-vietnam.com/category/khuyen-mai/",
+      "https://xe-vietnam.com/category/gallery/",
+      "https://xe-vietnam.com/category/gallery/nguoi-dep/",
+      "https://xe-vietnam.com/category/gallery/xe-moi/",
+      "https://xe-vietnam.com/category/bang-gia/",
+      "https://xe-vietnam.com/category/bang-gia/o-to/",
+      "https://xe-vietnam.com/category/bang-gia/xe-may-bang-gia/",
+      "https://xe-vietnam.com/category/xe-tai/",
+      "https://xe-vietnam.com/category/tin-doanh-nghiep/",
+      "http://xe-vietnam.com/category/video/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "xe-vietnam.com",
+    "checkedAt": "2026-11-09T03:57:39.904Z",
+    "url": "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-16-3-2025/",
+    "finalUrl": "https://xe-vietnam.com/2025/03/19/chuong-trinh-truyen-hinh-xe-xu-huong-htv7-phat-song-ngay-16-3-2025/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1134,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "xe-vietnam.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 61,
+    "checkedArticleUrls": 65,
+    "freshArticleChecks": 61,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 61,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 35,
+    "categoriesUnconfirmed": 35,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 208,
+        "passed": 54,
+        "distinctHashes": 54
+      },
+      {
+        "name": "video",
+        "discovered": 25,
+        "passed": 7,
+        "distinctHashes": 7
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 4
+    },
+    "checkedAt": "2026-11-10T09:18:35.163Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/xe-vietnam.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

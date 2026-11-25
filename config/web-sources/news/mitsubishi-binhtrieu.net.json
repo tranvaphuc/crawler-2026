@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mitsubishi-binhtrieu.net",
+  "siteId": "mitsubishi-binhtrieu.net",
+  "registrableDomain": "mitsubishi-binhtrieu.net",
+  "homepage": "https://mitsubishi-binhtrieu.net/",
+  "allowedHosts": [
+    "mitsubishi-binhtrieu.net",
+    "www.mitsubishi-binhtrieu.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://mitsubishi-binhtrieu.net/",
+    "categories": [
+      "https://mitsubishi-binhtrieu.net/dong-xe/new-triton/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-attrage/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-destinator/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-outlander/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-pajero-sport/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-xforce/",
+      "https://mitsubishi-binhtrieu.net/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-xpander/",
+      "https://mitsubishi-binhtrieu.net/dong-xe/xpander-cross/",
+      "https://mitsubishi-binhtrieu.net/tin-tuc-xe/",
+      "https://mitsubishi-binhtrieu.net/bang-gia-xe/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.265Z",
+      "verifiedSeeds": [
+        "https://mitsubishi-binhtrieu.net/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/new-triton/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-attrage/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-destinator/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-outlander/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-pajero-sport/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-xforce/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/mitsubishi-xpander/",
+        "https://mitsubishi-binhtrieu.net/dong-xe/xpander-cross/",
+        "https://mitsubishi-binhtrieu.net/tin-tuc-xe/",
+        "https://mitsubishi-binhtrieu.net/bang-gia-xe/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "Giá lăn bánh Mitsubishi Destinator mới nhất – Tháng 11/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#ftwp-postcontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:05.607Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:27:00.085Z",
+    "independentHoldouts": [
+      "https://mitsubishi-binhtrieu.net/gia-lan-banh-mitsubishi-destinator-moi-nhat/",
+      "https://mitsubishi-binhtrieu.net/chi-phi-lan-banh-xe-mitsubishi-triton-moi-nhat/",
+      "https://mitsubishi-binhtrieu.net/gia-lan-banh-mitsubishi-attrage-cap-nhat-moi-nhat/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://mitsubishi-binhtrieu.net/gia-lan-banh-mitsubishi-destinator-moi-nhat",
+      "https://mitsubishi-binhtrieu.net/gia-lan-banh-mitsubishi-destinator-moi-nhat/",
+      "https://mitsubishi-binhtrieu.net/chi-phi-lan-banh-xe-mitsubishi-triton-moi-nhat/",
+      "https://mitsubishi-binhtrieu.net/gia-lan-banh-mitsubishi-attrage-cap-nhat-moi-nhat/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

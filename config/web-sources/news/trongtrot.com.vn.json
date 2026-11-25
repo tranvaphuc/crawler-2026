@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "siteName": "trongtrot.com.vn",
+  "siteId": "trongtrot.com.vn",
+  "registrableDomain": "trongtrot.com.vn",
+  "homepage": "https://trongtrot.com.vn/",
+  "allowedHosts": [
+    "trongtrot.com.vn",
+    "www.trongtrot.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Sơn La: Nâng cao hiệu quả xúc tiến thương mại, mở rộng thị trường tiêu thụ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:48.796Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html",
+      "https://trongtrot.com.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-se-tham-chinh-thuc-nhat-ban.html",
+      "https://trongtrot.com.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-se-tham-chinh-thuc-nhat-ban.html?categoryId=5173253",
+      "https://trongtrot.com.vn/tin-tuc/dai-bieu-quoc-hoi-dong-tinh-mien-thue-cho-don-vi-cung-cap-suat-an-hoc-duong.html?categoryId=5173253",
+      "https://trongtrot.com.vn/tin-tuc/ket-luan-ve-quy-hoach-tong-the-tp-ho-chi-minh-giai-doan-2025-2050-tam-nhin-100-nam.html?categoryId=5173253"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://trongtrot.com.vn/",
+    "categories": [
+      "https://trongtrot.com.vn/tin-tuc",
+      "https://trongtrot.com.vn/cay-trong",
+      "https://trongtrot.com.vn/khuyen-nong",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep?isFeatured=1",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi",
+      "https://trongtrot.com.vn/xa-hoi?isFeatured=1",
+      "https://trongtrot.com.vn/video",
+      "https://trongtrot.com.vn/emagazine",
+      "https://trongtrot.com.vn/cay-trong/ocop",
+      "https://trongtrot.com.vn/doi-song-phap-luat/phap-luat?isFeatured=1",
+      "https://trongtrot.com.vn/doi-song-phap-luat/dia-oc?isFeatured=1",
+      "https://trongtrot.com.vn/doi-song-phap-luat/suc-khoe?isFeatured=1"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "trongtrot.com.vn",
+    "checkedAt": "2026-11-09T03:57:34.915Z",
+    "url": "https://trongtrot.com.vn/giao-thuong-nong-nghiep/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html",
+    "finalUrl": "https://trongtrot.com.vn/giao-thuong-nong-nghiep/son-la-nang-cao-hieu-qua-xuc-tien-thuong-mai-mo-rong-thi-truong-tieu-thu.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7679,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "trongtrot.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 22,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 162,
+        "passed": 15,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 9,
+        "passed": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "longform",
+        "discovered": 4,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://trongtrot.com.vn/tin-tuc/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban.html?categoryId=5173253",
+      "https://trongtrot.com.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-va-thu-tuong-takaichi-sanae-gap-go-bao-chi-va-chung-kien-trao-van-kien-hop-tac-viet-nam.html?categoryId=5173253",
+      "https://trongtrot.com.vn/tin-tuc/ngay-10-11-2026-quoc-hoi-thao-luan-ve-du-an-luat-linh-vuc-van-hoa-bao-chi.html?categoryId=5173253",
+      "https://trongtrot.com.vn/tin-tuc/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-doi-tac-dong-hanh-dong-kien-tao-cung-co-loi-vi-tang-truong-chat-luong-cao-tu-c.html?categoryId=5173253",
+      "https://trongtrot.com.vn/cay-trong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html?categoryId=5173254",
+      "https://trongtrot.com.vn/cay-trong/ban-tin-nong-san-hom-nay-10-11-gia-ca-phe-tang-nhe.html?categoryId=5173254",
+      "https://trongtrot.com.vn/cay-trong/gia-lua-gao-hom-nay-ngay-9-11-2026-gia-it-bien-dong.html?categoryId=5173254",
+      "https://trongtrot.com.vn/cay-trong/ban-tin-nong-san-hom-nay-9-11-gia-ca-phe-dao-dong-trong-khoang-84.000-84.700-dong-kg.html?categoryId=5173254",
+      "https://trongtrot.com.vn/cay-trong/gia-tieu-hom-nay-9-11-2026-lang-song-cao-nhat-137.000-dong-kg.html?categoryId=5173254",
+      "https://trongtrot.com.vn/khuyen-nong/cuu-chien-binh-xa-krong-buk-vuot-kho-lam-giau.html?categoryId=5173255",
+      "https://trongtrot.com.vn/khuyen-nong/bo-doi-giup-dong-bao-mong-o-ban-si-at-on-dinh-cuoc-song.html?categoryId=5173255",
+      "https://trongtrot.com.vn/khuyen-nong/an-giang-gop-suc-giu-nghe-thot-not-nang-sinh-ke-cho-nguoi-dan.html?categoryId=5173255",
+      "https://trongtrot.com.vn/khuyen-nong/lam-giau-chinh-dang-gop-suc-cho-que-huong.html?categoryId=5173255",
+      "https://trongtrot.com.vn/khuyen-nong/gop-phan-tao-sinh-ke-cho-dong-bao-noi-bien-cuong-tay-bac.html?categoryId=5173255",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html?categoryId=5173256",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/thuong-mai-dien-tu-lan-toa-den-tung-xa-phuong.html?categoryId=5173256",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/son-la-dua-thuong-mai-dien-tu-ve-xa-nong-san-them-co-hoi-vuon-xa.html?categoryId=5173256",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/xay-dung-doi-ngu-kol-koc-ban-nong-san-bai-hoc-va-kinh-nghiem-tu-mot-so-mo-hinh.html?categoryId=5173256",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/kol-koc-du-hoi-nghi-dua-thuong-mai-dien-tu-ve-xa-la-ai-.html?categoryId=5173256",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/vietstock-2026-khang-dinh-vai-tro-ket-noi-nganh-chan-nuoi-viet-nam.html?categoryId=5176250",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/gia-heo-hoi-hom-nay-9-11-2026-bien-dong-trai-chieu.html?categoryId=5176250",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/gia-heo-hoi-hom-nay-6-11-2026-bat-tang-den-3.000-dong-kg.html?categoryId=5176250",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/gia-heo-hoi-hom-nay-5-11-2026-tiep-tuc-tang-dong-loat-tai-mien-bac.html?categoryId=5176250",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/gia-heo-hoi-hom-nay-4-11-2026-bat-tang-manh-tai-mien-bac.html?categoryId=5176250",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/thuong-mai-dien-tu-cap-xa-mo-loi-ra-cho-san-pham-lang-nghe.html",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/thuong-mai-dien-tu-lan-toa-den-tung-xa-phuong.html",
+      "https://trongtrot.com.vn/cay-trong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/son-la-dua-thuong-mai-dien-tu-ve-xa-nong-san-them-co-hoi-vuon-xa.html",
+      "https://trongtrot.com.vn/mo-hinh-chan-nuoi/vietstock-2026-khang-dinh-vai-tro-ket-noi-nganh-chan-nuoi-viet-nam.html",
+      "https://trongtrot.com.vn/giao-thuong-nong-nghiep/xay-dung-doi-ngu-kol-koc-ban-nong-san-bai-hoc-va-kinh-nghiem-tu-mot-so-mo-hinh.html",
+      "https://trongtrot.com.vn/tin-tuc/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban.html",
+      "https://trongtrot.com.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-va-thu-tuong-takaichi-sanae-gap-go-bao-chi-va-chung-kien-trao-van-kien-hop-tac-viet-nam.html",
+      "https://trongtrot.com.vn/tin-tuc/ngay-10-11-2026-quoc-hoi-thao-luan-ve-du-an-luat-linh-vuc-van-hoa-bao-chi.html",
+      "https://trongtrot.com.vn/xa-hoi/thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong.html",
+      "https://trongtrot.com.vn/cay-trong/ban-tin-nong-san-hom-nay-10-11-gia-ca-phe-tang-nhe.html",
+      "https://trongtrot.com.vn/nongnghiep360/bo-tri-thoi-vu-hop-ly-bao-ve-san-xuat-dong-xuan.html",
+      "https://trongtrot.com.vn/nongnghiep360/tai-dan-than-trong-kiem-soat-chat-nguy-co-dich-benh.html",
+      "https://trongtrot.com.vn/nongnghiep360/cac-tinh-phia-nam-tap-trung-bao-ve-lua-mua-va-lua-dong-xuan-moi-xuong-giong.html",
+      "https://trongtrot.com.vn/tin-tuc/lam-muoi-o-ninh-diem.html?categoryId=5173253"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 4
+    },
+    "checkedAt": "2026-11-10T09:17:33.363Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/trongtrot.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

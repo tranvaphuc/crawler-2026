@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {pageIssue} from '../src/web/configurableNewsParser.mjs';
+test('cPanel suspended hosting is classified despite HTTP 200',()=>{assert.equal(pageIssue('<head><title>Account Suspended</title><link rel="stylesheet" href="/cgi-sys/css/style.css"></head><body><h1>Account Suspended</h1><p>This Account has been suspended.</p></body>'),'hosting_account_suspended');});
+test('an actual article discussing account suspension is not a suspended hosting page',()=>{const h='<head><title>Account Suspended</title></head><body><article><h1>Account Suspended</h1><p>'+('An original article discusses how account suspension works. '.repeat(10))+'</p></article></body>';assert.equal(pageIssue(h),null);});

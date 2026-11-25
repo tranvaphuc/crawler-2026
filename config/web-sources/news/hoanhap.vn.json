@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "siteName": "hoanhap.vn",
+  "siteId": "hoanhap.vn",
+  "registrableDomain": "hoanhap.vn",
+  "homepage": "https://hoanhap.vn/",
+  "allowedHosts": [
+    "hoanhap.vn",
+    "www.hoanhap.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn Hiến pháp và pháp luật – động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".inner-content-blog",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:15.891Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://hoanhap.vn/chi-tiet/thuong-ton-hien-phap-va-phap-luat---dong-luc-kien-tao-phat-trien-dat-nuoc-51221.html",
+      "https://hoanhap.vn/chi-tiet/tong-bi-thu--chu-tich-nuoc-to-lam-tra-loi-phong-van-hang-truyen-hinh-nhk--nhat-ban--51218.html",
+      "https://hoanhap.vn/chi-tiet/lan-toa-gia-tri-hoa-nhap-qua-chuong-trinh-lam-hoa-lua-thu-cong-doi-tay-det-sac-hoa-51219.html",
+      "https://hoanhap.vn/chi-tiet/xuc-dong-dam-cuoi-bac-cho-10-cap-doi-khuyet-tat-o-khanh-hoa-51215.html",
+      "https://hoanhap.vn/chi-tiet/doanh-nghiep-viet-can-tan-dung-tot-hon-loi-the-tu-cac-fta-de-vuon-ra-the-gioi-51216.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://hoanhap.vn/",
+    "categories": [
+      "https://hoanhap.vn/tin-tuc/thoi-su",
+      "https://hoanhap.vn/tin-tuc/quoc-te",
+      "https://hoanhap.vn/tin-tuc/trong-nuoc",
+      "https://hoanhap.vn/tin-tuc/chuyen-nguoi-linh",
+      "https://hoanhap.vn/tin-tuc/kinh-doanh",
+      "https://hoanhap.vn/tin-tuc/doanh-nghiep",
+      "https://hoanhap.vn/tin-tuc/tai-chinh",
+      "https://hoanhap.vn/tin-tuc/bat-dong-san",
+      "https://hoanhap.vn/tin-tuc/phap-luat",
+      "https://hoanhap.vn/tin-tuc/phap-luat-24h",
+      "https://hoanhap.vn/tin-tuc/ban-doc",
+      "https://hoanhap.vn/tin-tuc/giao-duc",
+      "https://hoanhap.vn/tin-tuc/huong-nghiep",
+      "https://hoanhap.vn/tin-tuc/giao-duc-24h",
+      "https://hoanhap.vn/tin-tuc/hoa-nhap",
+      "https://hoanhap.vn/tin-tuc/doi-song",
+      "https://hoanhap.vn/tin-tuc/moi-truong-suc-khoe",
+      "https://hoanhap.vn/tin-tuc/van-hoa-xa-hoi",
+      "https://hoanhap.vn/tin-tuc/xe-cong-nghe",
+      "https://hoanhap.vn/tin-tuc/video",
+      "https://hoanhap.vn/tin-tuc/video-du-luan-nong",
+      "https://hoanhap.vn/tin-tuc/video-chuyen-kinh-doanh",
+      "https://hoanhap.vn/tin-tuc/video-ky-uc-cuoc-song",
+      "https://hoanhap.vn/tin-tuc/e-magagine",
+      "https://hoanhap.vn/tin-tuc/podcast",
+      "https://hoanhap.vn/tin-tuc/ky-nguyen-vuon-minh",
+      "https://hoanhap.vn/tin-tuc/chinh-sach-nguoi-co-cong"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "hoanhap.vn",
+    "checkedAt": "2026-11-09T03:57:06.811Z",
+    "url": "https://hoanhap.vn/chi-tiet/thuong-ton-hien-phap-va-phap-luat---dong-luc-kien-tao-phat-trien-dat-nuoc-51221.html",
+    "finalUrl": "https://hoanhap.vn/chi-tiet/thuong-ton-hien-phap-va-phap-luat---dong-luc-kien-tao-phat-trien-dat-nuoc-51221.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12345,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "hoanhap.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 36,
+    "checkedArticleUrls": 44,
+    "freshArticleChecks": 15,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 36,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 27,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 776,
+        "passed": 32,
+        "distinctHashes": 32
+      },
+      {
+        "name": "audio",
+        "discovered": 15,
+        "passed": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://hoanhap.vn/chi-tiet/nguoi-lao-dong-du-kien-duoc-nghi-huong-nguyen-luong-ngay-27-7-tu-nam-2027-51227.html",
+      "https://hoanhap.vn/chi-tiet/cong-an-tp-hue-nhan-thu-khen-cua-bo-cong-an-51220.html",
+      "https://hoanhap.vn/chi-tiet/thuong-ton-hien-phap-va-phap-luat---dong-luc-kien-tao-phat-trien-dat-nuoc-51221.html",
+      "https://hoanhap.vn/chi-tiet/podcast-tin-tuc-hoa-nhap-sang-10-11-51235.html",
+      "https://hoanhap.vn/chi-tiet/ha-noi--bao-ve-quyen-loi-nguoi-tieu-dung-trong-nhung-thang-cuoi-nam-2026-51226.html",
+      "https://hoanhap.vn/chi-tiet/ung-pho-mua-lon-keo-dai--hue-van-hanh-dieu-tiet-nuoc-cac-ho-chua-51224.html",
+      "https://hoanhap.vn/chi-tiet/nha-sang-lap-co-gia-tho-xin-tu-nhiem-tai-thuong-hieu-but-bi-thien-long-51232.html",
+      "https://hoanhap.vn/chi-tiet/tong-bi-thu--chu-tich-nuoc-to-lam-tra-loi-phong-van-hang-truyen-hinh-nhk--nhat-ban--51218.html",
+      "https://hoanhap.vn/chi-tiet/doanh-nghiep-nhat-ban-du-kien-mua-5--co-phan-masan-high-tech-materials--gia-khong-thap-hon-doi-tac-m-51241.html",
+      "https://hoanhap.vn/chi-tiet/lai-suat-giam-sau--nhieu-nguoi-van-uu-tien-gui-tiet-kiem-51237.html",
+      "https://hoanhap.vn/chi-tiet/capital-square--suc-hut-dau-tu-tu-toa-do-kim-cuong-ben-song-han-51229.html",
+      "https://hoanhap.vn/chi-tiet/lai-suat-giam--bat-dong-san-van-kho-huong-loi-som--no-xau-chuan-bi-lo-dien-51204.html",
+      "https://hoanhap.vn/chi-tiet/tin-dung-bat-dong-san-dich-chuyen-huong--he-lo-dich-den-cua-dong-tien-51203.html",
+      "https://hoanhap.vn/chi-tiet/gan-nua-so-can-ho-moi-o-tp-hcm-bi-lui-lich-mo-ban-51181.html",
+      "https://hoanhap.vn/chi-tiet/khai-mac-thi-tuyen-dieu-tra-vien-cong-an-tinh-tuyen-quang-nam-20251763870210.html",
+      "https://hoanhap.vn/chi-tiet/ahld-tran-hong-quang-dong-hanh-cung-le-hoi-ruoi-vinh-thuan-2026--lan-toa-tinh-than-trach-nhiem-voi-c-51144.html",
+      "https://hoanhap.vn/chi-tiet/ve-dep-bo-doi-cu-ho-trong-tho-51124.html",
+      "https://hoanhap.vn/chi-tiet/thuong-tuong-nguyen-huy-hieu--tu-chien-truong-den-hanh-trinh-trao-truyen-tri-thuc-51096.html",
+      "https://hoanhap.vn/chi-tiet/tu-nhung-bai-viet-tri-an-cua-thuong-tuong-nguyen-huy-hieu--nghi-ve-trach-nhiem-ra-soat--ton-vinh-cac-51058.html",
+      "https://hoanhap.vn/chi-tiet/ghi-nhan-tai-truong-hoc-o-ninh-binh-truoc-ngay-thong-tu-81-co-hieu-luc-51073.html",
+      "https://hoanhap.vn/chi-tiet/cham---ke--tu-lam-chu-cong-nghe-den-hanh-trinh-lan-toa-tieng-noi-cua-nguoi-khuyet-tat-51184.html",
+      "https://hoanhap.vn/chi-tiet/tu-nhung-bong-hoa-vai-tai-che--mo-them-co-hoi-hoc-nghe-va-hoa-nhap-cho-hoc-sinh-truong-thcs-xa-dan-51171.html",
+      "https://hoanhap.vn/chi-tiet/cong-an-phuong-ha-dong-dong-hanh-cung-vun-art--tiep-suc-nguoi-khuyet-tat-hoa-nhap-cong-dong-51167.html",
+      "https://hoanhap.vn/chi-tiet/vien-vong---de-hieu-rang-the-gioi-cua-nguoi-khiem-thi-khong-he-tam-toi-51162.html",
+      "https://hoanhap.vn/chi-tiet/thai-nguyen--diem-sang-trong-ra-soat--hoan-thien-vi-tri-viec-lam-51243.html",
+      "https://hoanhap.vn/chi-tiet/cuc-csgt-nop-ngan-sach-nha-nuoc-12-500-ty-dong-tu-dau-gia-bien-so-xe-51242.html",
+      "https://hoanhap.vn/chi-tiet/hue-tang-luu-luong-dieu-tiet-2-ho-chua-thuy-dien-51240.html",
+      "https://hoanhap.vn/chi-tiet/hoa-hau-huong-giang-mang-tui-xach-velyniq-den-miss-globe-2026--danh-tang-33-nguoi-dep-quoc-te-va-ong-51239.html",
+      "https://hoanhap.vn/chi-tiet/chi-thi-cua-ban-bi-thu--xu-ly-nghiem-loi-dung-nguoi-khuyet-tat-de-truc-loi-51059.html",
+      "https://hoanhap.vn/chi-tiet/van-phong-luat-su-thao-lan-va-cong-su-to-chuc-tu-van-phap-luat-mien-phi-cho-nguoi-dan-51206.html",
+      "https://hoanhap.vn/chi-tiet/thuc-tien-ap-dung-phap-luat-ve-bao-ho-nhan-hieu-nong-san-va-giai-phap-hoan-thien-51201.html",
+      "https://hoanhap.vn/chi-tiet/nguoi-khuyet-tat-bi-danh-dap--bao-ve-chung-cu-van-ngoi-nhin-51019.html",
+      "https://hoanhap.vn/chi-tiet/731-liet-si-tu-cong-vien-le-thi-rieng-an-nghi-tai-nghia-trang-liet-si-tp-ho-chi-minh-50965.html",
+      "https://hoanhap.vn/chi-tiet/truyen-thong-phong--chong-tac-hai-cua-thuoc-la-toi-sinh-vien-51098.html",
+      "https://hoanhap.vn/chi-tiet/tham-van-bo-quy-tac-ung-xu--thuc-day-viec-lam-hoa-nhap-cho-nguoi-khuyet-tat-51038.html",
+      "https://hoanhap.vn/chi-tiet/bo-cong-an-doi-thoai-voi-nong-dan--dua-chuyen-doi-so-den-gan-hon-voi-nguoi-dan-nong-thon-50999.html",
+      "https://hoanhap.vn/chi-tiet/bac-si-mo-co-tam-nhin-so---pgs-ts-nguyen-sinh-hien-47992.html",
+      "https://hoanhap.vn/chi-tiet/nhung-nguoi-giu-nhip-tho-giua-dai-ngan-cuc-phuong-48293.html",
+      "https://hoanhap.vn/chi-tiet/cua-lo-bon-mua-bien-goi-48042.html",
+      "https://hoanhap.vn/chi-tiet/podcast-tin-tuc-hoa-nhap-sang-09-11-51225.html",
+      "https://hoanhap.vn/chi-tiet/podcast-tin-tuc-hoa-nhap-sang-08-11-51217.html",
+      "https://hoanhap.vn/chi-tiet/podcast-tin-tuc-hoa-nhap-sang-07-11-51213.html",
+      "https://hoanhap.vn/chi-tiet/tphai-phong-ho-tro-tinh-dak-lak-40-ty-dong-ung-pho-voi-mua-lu1763945220.html",
+      "https://hoanhap.vn/chi-tiet/xay-dung-tphai-phong-thanh-diem-den-du-lich-xanh-an-toan-hap-dan-va-than-thien1763945946.html",
+      "https://hoanhap.vn/chi-tiet/tim-lai-huong-vi-va-ky-uc-ngan-nam-o-vung-dat-chua-thay1763866897.html",
+      "https://hoanhap.vn/chi-tiet/moc-chau-khoe-sac-mua-thu1763722691.html",
+      "https://hoanhap.vn/chi-tiet/ket-luan-thanh-tra-cac-du-an-co-kho-khan-vuong-mac-tai-tinh-ninh-binh1763805968.html",
+      "https://hoanhap.vn/chi-tiet/tu-tam-ban-do-ma-sau-den-dai-thang-mua-xuan-chuyen-chua-ke-cua-nguoi-trong-cuoc1745749953.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 8
+    },
+    "checkedAt": "2026-11-10T09:15:39.160Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/hoanhap.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(3)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ]
+}

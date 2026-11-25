@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congthuong.vn",
+  "siteId": "congthuong.vn",
+  "registrableDomain": "congthuong.vn",
+  "homepage": "https://congthuong.vn/",
+  "allowedHosts": [
+    "congthuong.vn",
+    "www.congthuong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thư chúc mừng của Bộ trưởng Lê Mạnh Hùng nhân Ngày Pháp luật Việt Nam 9/11/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:21.130Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://congthuong.vn/thu-chuc-mung-cua-bo-truong-le-manh-hung-nhan-ngay-phap-luat-viet-nam-9-11-2026-480337.html",
+      "https://congthuong.vn/dien-mat-troi-mai-nha-giai-phap-nguon-quan-trong-va-nhanh-nhat-cho-nam-2027-480308.html",
+      "https://congthuong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-480352.html",
+      "https://congthuong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-480346.html",
+      "https://congthuong.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-480333.html",
+      "https://congthuong.vn/nganh-cong-thuong-quang-ngai-day-manh-ho-tro-doanh-nghiep-465308.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congthuong.vn/",
+    "categories": [
+      "https://congthuong.vn/khu-vuc",
+      "https://congthuong.vn/video-ve-bao-cong-thuong.html",
+      "https://congthuong.vn/trao-doi-voi-toa-soan.html",
+      "https://congthuong.vn/ton-chi-muc-dich.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congthuong.vn",
+    "checkedAt": "2026-11-09T03:56:56.580Z",
+    "url": "https://congthuong.vn/thu-chuc-mung-cua-bo-truong-le-manh-hung-nhan-ngay-phap-luat-viet-nam-9-11-2026-480337.html",
+    "finalUrl": "https://congthuong.vn/thu-chuc-mung-cua-bo-truong-le-manh-hung-nhan-ngay-phap-luat-viet-nam-9-11-2026-480337.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 387,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congthuong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 22,
+    "checkedArticleUrls": 27,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 22,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 59,
+        "passed": 17,
+        "distinctHashes": 17
+      },
+      {
+        "name": "video",
+        "discovered": 6,
+        "passed": 4,
+        "distinctHashes": 4
+      },
+      {
+        "name": "longform",
+        "discovered": 0,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://congthuong.vn/bo-truong-bo-van-hoa-the-thao-va-du-lich-giai-trinh-du-an-sua-7-luat-linh-vuc-van-hoa-480591.html",
+      "https://congthuong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-nguyen-chu-tich-lien-minh-nghi-si-huu-nghi-nhat-viet-va-thong-doc-mot-so-dia-phuong-cua-nhat-ban-480586.html",
+      "https://congthuong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-480592.html",
+      "https://congthuong.vn/dien-gio-ngoai-khoi-va-nang-luong-tai-tao-tu-khung-phap-ly-den-trien-khai-thuc-tien-480573.html",
+      "https://congthuong.vn/mien-trung-tay-nguyen-thuc-day-lien-ket-tao-dong-luc-tang-truong-480559.html",
+      "https://congthuong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-tuc-duy-tri-quan-he-hop-tac-dang-cong-san-viet-nam-nhat-ban-480583.html",
+      "https://congthuong.vn/doanh-nghiep-tp-ho-chi-minh-mo-rong-xuat-khau-sang-anh-tu-hai-fta-lon-480571.html",
+      "https://congthuong.vn/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu-480544.html",
+      "https://congthuong.vn/bo-cong-thuong-cong-bo-bao-cao-an-ninh-nang-luong-viet-nam-2026-480537.html",
+      "https://congthuong.vn/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-480541.html",
+      "https://congthuong.vn/nhieu-ket-qua-noi-bat-sau-gan-hai-nam-thuc-hien-nghi-quyet-so-57-480440.html",
+      "https://congthuong.vn/1-005-hai-cot-liet-si-da-duoc-quy-tap-tai-cong-vien-le-thi-rieng-480473.html",
+      "https://congthuong.vn/34-tinh-thanh-pho-phat-trien-xa-thuong-mai-dien-tu-ra-sao-480433.html",
+      "https://congthuong.vn/ngan-hang-tiep-tuc-tim-du-dia-giam-lai-suat-480470.html",
+      "https://congthuong.vn/kol-koc-du-hoi-nghi-dua-thuong-mai-dien-tu-ve-xa-la-ai-480434.html",
+      "https://congthuong.vn/chu-dong-phuong-an-bao-dam-cung-ung-dien-giai-doan-2027-2028-480372.html",
+      "https://congthuong.vn/nghi-quyet-so-71-nq-tw-doi-moi-dao-tao-dap-ung-nhu-cau-nhan-luc-cong-nghiep-480395.html",
+      "https://congthuong.vn/xay-dung-he-sinh-thai-mang-luoi-bao-ve-nguoi-tieu-dung-480397.html",
+      "https://congthuong.vn/cac-truong-dai-hoc-nganh-cong-thuong-tang-dai-ngo-thu-hut-nhan-tai-480378.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1,
+      "unresolved_extraction": 2
+    },
+    "checkedAt": "2026-11-10T09:14:43.375Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congthuong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "congthuong.vn",
+      "siteId": "congthuong.vn",
+      "registrableDomain": "congthuong.vn",
+      "homepage": "https://congthuong.vn/",
+      "allowedHosts": [
+        "congthuong.vn",
+        "www.congthuong.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Thư chúc mừng của Bộ trưởng Lê Mạnh Hùng nhân Ngày Pháp luật Việt Nam 9/11/2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".__MASTERCMS_CONTENT",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:19.240Z",
+        "trainingUrls": [
+          "https://congthuong.vn/e-magazine-vien-cong-nghiep-giay-va-xenluylo-gan-nghien-cuu-khoa-hoc-voi-tinh-than-nghi-quyet-so-57-480376.html",
+          "https://congthuong.vn/dang-bo-bao-cong-thuong-dang-huong-bao-cong-chu-tich-ho-chi-minh-396679.media"
+        ],
+        "holdoutUrls": [
+          "https://congthuong.vn/bo-truong-le-manh-hung-yeu-cau-phat-dong-chien-dich-quan-tri-phu-tai-480384.html",
+          "https://congthuong.vn/tang-cuong-lien-ket-khoi-thong-tiem-nang-mien-trung-tay-nguyen-480555.html"
+        ]
+      }
+    }
+  ]
+}

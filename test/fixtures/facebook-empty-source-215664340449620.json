@@ -1,0 +1,85 @@
+{
+  "require": [
+    [
+      "RelayPrefetchedStreamCache",
+      "next",
+      [],
+      [
+        "ProfileCometTimelineFeedQueryRelayPreloader_fixture",
+        {
+          "__bbox": {
+            "complete": false,
+            "result": {
+              "data": {
+                "user": {
+                  "id": "100075962508723",
+                  "delegate_page": {
+                    "id": "215664340449620"
+                  },
+                  "timeline_list_feed_units": {
+                    "edges": []
+                  },
+                  "profile_pinned_post": null
+                }
+              },
+              "errors": [
+                {
+                  "message": "A server error field_exception occured. Check server logs for details.",
+                  "severity": "ERROR",
+                  "path": [
+                    "user",
+                    "delegate_page",
+                    "ctx_business_adoption_fact_based_benchmark_page_id"
+                  ]
+                },
+                {
+                  "message": "A server error field_exception occured. Check server logs for details.",
+                  "severity": "ERROR",
+                  "path": [
+                    "user",
+                    "delegate_page",
+                    "ctwa_ad4ad_insights"
+                  ]
+                }
+              ],
+              "extensions": {
+                "is_final": false
+              }
+            },
+            "sequence_number": 0
+          }
+        }
+      ]
+    ],
+    [
+      "RelayPrefetchedStreamCache",
+      "next",
+      [],
+      [
+        "ProfileCometTimelineFeedQueryRelayPreloader_fixture",
+        {
+          "__bbox": {
+            "complete": true,
+            "result": {
+              "label": "ProfileCometTimelineFeed_user$defer$ProfileCometTimelineFeed_user_timeline_list_feed_units$page_info",
+              "path": [
+                "user",
+                "timeline_list_feed_units"
+              ],
+              "data": {
+                "page_info": {
+                  "has_next_page": false,
+                  "end_cursor": null
+                }
+              },
+              "extensions": {
+                "is_final": true
+              }
+            },
+            "sequence_number": 1
+          }
+        }
+      ]
+    ]
+  ]
+}

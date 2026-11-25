@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "siteName": "alotintuc.com",
+  "siteId": "alotintuc.com",
+  "registrableDomain": "alotintuc.com",
+  "homepage": "https://www.alotintuc.com/",
+  "allowedHosts": [
+    "www.alotintuc.com",
+    "alotintuc.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nhật Kim Anh: mong muốn “Cuốn truyện bị đốt” mãi là động lực cho cuộc sống",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:45.248Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.alotintuc.com/nhat-kim-anh-mong-muon-cuon-truyen-bi-dot-mai-la-dong-luc-cho-cuoc-song/",
+      "https://www.alotintuc.com/cuu-thanh-vien-sistar-soyou-ket-hop-mc-tran-anh-huy-trong-show-giai-tri-thuong-mai-thich-la-chot/",
+      "https://www.alotintuc.com/nhan-tinh-bi-an-qua-khu-ngoai-tinh-gay-am-anh-nha-phuong-doi-dau-chong-vi-tieu-thu-tap-doan/",
+      "https://www.alotintuc.com/pho-di-bo-da-lat-hoa-thanh-mot-san-khau-nhac-jazz/",
+      "https://www.alotintuc.com/hlv-kim-sang-sik-tu-hao-truoc-su-truong-thanh-cua-top-10-cau-thu-nhi-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.alotintuc.com/",
+    "categories": [
+      "https://www.alotintuc.com/category/news/",
+      "https://www.alotintuc.com/category/entertainment/",
+      "https://www.alotintuc.com/category/backstage/",
+      "https://www.alotintuc.com/category/music/",
+      "https://www.alotintuc.com/category/movie-web-drama/",
+      "https://www.alotintuc.com/category/fashion/",
+      "https://www.alotintuc.com/category/new-face/",
+      "https://www.alotintuc.com/category/technology/",
+      "https://www.alotintuc.com/category/am-nhac/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "alotintuc.com",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://www.alotintuc.com/nhat-kim-anh-mong-muon-cuon-truyen-bi-dot-mai-la-dong-luc-cho-cuoc-song/",
+    "finalUrl": "https://www.alotintuc.com/nhat-kim-anh-mong-muon-cuon-truyen-bi-dot-mai-la-dong-luc-cho-cuoc-song/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3545,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "alotintuc.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 23,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 137,
+        "passed": 23,
+        "distinctHashes": 23
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.alotintuc.com/tien-nguyen-cung-me-di-xem-andrea-bocelli-tai-ha-noi/",
+      "https://www.alotintuc.com/tap-doan-pops-pops-cong-bo-khoan-dau-tu-chien-luoc-va-hop-tac-cung-bandai-namco/",
+      "https://www.alotintuc.com/tran-huy-anh-xuc-dong-ngay-tro-lai-tham-do-dung-chung-voi-than-tuong-hong-dao/",
+      "https://www.alotintuc.com/ryusei-yokohama-suzu-hirose-ke-chuyen-tinh-15-nam-trong-nguoi-tua-mot-vi-sao/",
+      "https://www.alotintuc.com/hoi-chung-ong-co-tay-gay-te-bi-dau-nhuc-ban-tay-nguoi-thuong-xuyen-dung-may-tinh-can-luu-y/",
+      "https://www.alotintuc.com/kien-le-phieu-luu-ke-hanh-trinh-thanh-anh-hung-do-khoc-do-cuoi-cua-hai-chu-kien-ngoc/",
+      "https://www.alotintuc.com/nhac-trinh-xam-va-jazz-cung-hoa-dieu-trong-dem-khep-lai-vietnam-jazz-heritage-festival-2026/",
+      "https://www.alotintuc.com/mic-vang-sinh-vien-2026-chinh-thuc-tro-lai-voi-4-tam-ve-vang-dau-tien-vao-thang-top-50/",
+      "https://www.alotintuc.com/dao-dien-doan-quang-va-hanh-trinh-tu-truyen-hinh-den-dien-anh-day-dam-me/",
+      "https://www.alotintuc.com/nhat-kim-anh-mong-muon-cuon-truyen-bi-dot-mai-la-dong-luc-cho-cuoc-song/",
+      "https://www.alotintuc.com/cuu-thanh-vien-sistar-soyou-ket-hop-mc-tran-anh-huy-trong-show-giai-tri-thuong-mai-thich-la-chot/",
+      "https://www.alotintuc.com/hlv-kim-sang-sik-tu-hao-truoc-su-truong-thanh-cua-top-10-cau-thu-nhi-2026/",
+      "https://www.alotintuc.com/tang-duy-tan-da-biet-khi-xu-mi-la-ai-nhung-quyet-giu-bi-mat/",
+      "https://www.alotintuc.com/sau-tut-van-chua-het-so-vo-bat-luc-khi-doi-dau-voi-dieu-nhi/",
+      "https://www.alotintuc.com/pho-di-bo-da-lat-hoa-thanh-mot-san-khau-nhac-jazz/",
+      "https://www.alotintuc.com/tin-nguyen-bat-khoc-truoc-cau-be-17-tuoi-len-khoc-mot-minh-vi-thuong-me/",
+      "https://www.alotintuc.com/mai-am-gia-dinh-viet-xot-xa-co-be-17-tuoi-vua-hoc-vua-cham-me-benh-ong-ba-gia-yeu/",
+      "https://www.alotintuc.com/thac-si-huynh-thanh-nguyen-pha-san-hai-lan-tro-thanh-thay-giao/",
+      "https://www.alotintuc.com/tu-dan-ca-tay-bac-den-funk-cuong-nhiet-da-lat-mo-man-le-hoi-jazz-quoc-te/",
+      "https://www.alotintuc.com/maiquinn-tro-lai-voi-tinh-tan-khi-buong-bo-cung-la-cach-yeu-thuong-ban-than/",
+      "https://www.alotintuc.com/michael-lang-moi-thay-ngoc-son-cung-ra-mat-ca-khuc-moi-tai-lam-dong/",
+      "https://www.alotintuc.com/quan-a-p-ra-mat-ep-hoa-dien-chay-nuoc-rut-khep-lai-2026/",
+      "https://www.alotintuc.com/den-toi-muon-moi-thu-minh-viet-ra-can-xuat-phat-tu-tam-tu-va-su-quan-sat-cua-chinh-minh/",
+      "https://www.alotintuc.com/nhan-tinh-bi-an-qua-khu-ngoai-tinh-gay-am-anh-nha-phuong-doi-dau-chong-vi-tieu-thu-tap-doan/",
+      "https://www.alotintuc.com/huong-giang-cung-bebe-pham-ngoi-ghe-giam-khao-the-miss-globe-2026/",
+      "https://www.alotintuc.com/sao-viet-dong-loat-check-in-cung-tui-xach-vela-by-velyniq/",
+      "https://www.alotintuc.com/ntk-nguyen-lan-vy-chung-tay-cung-hiep-hoi-van-hoa-ao-dai-viet-nam-nang-tam-quoc-phuc-viet/",
+      "https://www.alotintuc.com/a-hau-doanh-nhan-tai-sac-the-gioi-vuong-oanh-tri-tue-ban-linh-va-khi-chat-doanh-nhan-hien-dai/",
+      "https://www.alotintuc.com/le-khanh-tiet-lo-co-duyen-lam-nu-chinh-cua-quan-a-p-trong-mv-3-phai-6-dung/",
+      "https://www.alotintuc.com/trung-thuc-toi-tran-trong-tung-khoang-khac-trong-cuon-truyen-bi-dot/",
+      "https://www.alotintuc.com/hoang-long-truong-thanh-de-co-the-khang-dinh-minh/",
+      "https://www.alotintuc.com/ovaltine-mo-rong-hanh-trinh-dinh-duong-tai-vn-ra-mat-active-plus-phu-hop-voi-nguoi-truong-thanh-nang-dong/",
+      "https://www.alotintuc.com/tung-bung-khai-truong-khach-san-amerys-phu-quoc/",
+      "https://www.alotintuc.com/chi-sau-3-thang-ra-mat-viettel-tammi-da-can-moc-20-trieu-nguoi-dung/",
+      "https://www.alotintuc.com/nhieu-nghe-si-va-doanh-nhan-den-chuc-mung-le-ra-mat-cong-ty-sai-gon-giai-tri/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:48.932Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/alotintuc.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

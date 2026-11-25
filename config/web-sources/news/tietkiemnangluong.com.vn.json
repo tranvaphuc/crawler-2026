@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tietkiemnangluong.com.vn",
+  "siteId": "tietkiemnangluong.com.vn",
+  "registrableDomain": "tietkiemnangluong.com.vn",
+  "homepage": "https://tietkiemnangluong.com.vn/",
+  "allowedHosts": [
+    "tietkiemnangluong.com.vn",
+    "www.tietkiemnangluong.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "enabled": true,
+  "stage": "customer_requested_pending_qualification",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "publicationDatePolicy": "original_only",
+  "discovery": {
+    "homepage": "https://tietkiemnangluong.com.vn/",
+    "categories": []
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:51:06.680Z",
+    "sampleUrls": [
+      "https://tietkiemnangluong.com.vn/tin-tuc/hoat-dong/t53997/khai-giang-khoa-dao-tao-nguoi-quan-ly-nang-luong-thang-11",
+      "https://tietkiemnangluong.com.vn/tin-tuc/hoat-dong/t53998/khai-giang-khoa-dao-tao-giang-vien-nguon-tot4-thuc-day-thuong-mai-hoa-cong-nghe-trong-linh-vuc-hieu-qua-nang-luong",
+      "https://tietkiemnangluong.com.vn/tin-tuc/hoat-dong/t53988/hop-hoi-dong-giam-khao-cac-giai-thuong-hieu-qua-nang-luong-nam-2026",
+      "https://tietkiemnangluong.com.vn/tin-tuc/hoat-dong/t53992/cong-dong-hieu-qua-nang-luong-viet-nam-dat-850-luot-ket-noi-doanh-nghiep",
+      "https://tietkiemnangluong.com.vn/tin-tuc/hoat-dong/t53974/hinh-thanh-trung-tam-dao-tao-tiet-kiem-nang-luong-mien-trung-tai-hue"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "customerRequest": {
+    "requestedAt": "2026-11-17",
+    "requestedDomain": "tietkiemnangluong.com.vn",
+    "requestedUrl": "https://tietkiemnangluong.com.vn/",
+    "redirectObserved": null,
+    "evidence": "outputs/customer-sites-20261117/audit/tietkiemnangluong.com.vn/result.json",
+    "reasons": {
+      "parser_configuration_missing": 1,
+      "NEWS_PUBLICATION_PRECISION_UNCONFIRMED": 18,
+      "NEWS_TIMEZONE_UNCONFIRMED": 18,
+      "missing_title,missing_published_date,missing_body": 9,
+      "missing_body": 4,
+      "missing_title": 3,
+      "insufficient_distinct_verified_articles": 1,
+      "insufficient_independent_http_holdouts": 1
+    },
+    "paidAiCalls": 0
+  },
+  "title": {
+    "strategy": "selector",
+    "selector": "h1.newsname-detail"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".detaildate"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#NewsContent",
+    "remove": "script,style,.detail-icon-list,.newslist04,.related"
+  },
+  "publicationArticleScope": ".chitiet-content01 .col-md-8",
+  "midnightProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "tietkiemnangluong.com.vn",
+    "confirmation": "original_date_with_midnight_vietnam_2026-11-17",
+    "displayClock": "00:00",
+    "timezone": "Asia/Ho_Chi_Minh"
+  }
+}

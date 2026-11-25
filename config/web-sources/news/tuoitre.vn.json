@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tuoitre.vn",
+  "siteId": "tuoitre.vn",
+  "registrableDomain": "tuoitre.vn",
+  "homepage": "https://tuoitre.vn/tto-saigontimes.htm",
+  "allowedHosts": [
+    "tuoitre.vn",
+    "www.tuoitre.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Biên Phòng lập hat-trick vô địch bóng chuyền quốc gia",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:50.329Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tuoitre.vn/bien-phong-lap-hat-trick-vo-dich-bong-chuyen-quoc-gia-100261108234343385.htm",
+      "https://tuoitre.vn/ong-trump-tuyen-bo-se-tro-lai-che-bau-cu-giua-ky-la-buoc-lui-lich-su-100261108233501619.htm",
+      "https://tuoitre.vn/du-bao-thoi-tiet-tu-8-11-den-14-11-bac-bo-ret-trung-bo-mua-nam-bo-trieu-cuong-100261107165815092.htm",
+      "https://tuoitre.vn/tu-ngay-mai-da-nang-co-mua-lon-keo-dai-3-ngay-100261108075043245.htm",
+      "https://tuoitre.vn/thoi-tiet-hom-nay-8-11-khong-khi-lanh-tran-ve-nuoc-ta-100261107164942599.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tuoitre.vn/tto-saigontimes.htm",
+    "categories": [
+      "https://tuoitre.vn/tin-moi-nhat.htm",
+      "https://tuoitre.vn/short-video.htm",
+      "https://tuoitre.vn/tin-xem-nhieu.htm",
+      "https://tuoitre.vn/video.htm",
+      "https://tuoitre.vn/thoi-su.htm",
+      "https://tuoitre.vn/the-gioi.htm",
+      "https://tuoitre.vn/phap-luat.htm",
+      "https://tuoitre.vn/kinh-doanh.htm",
+      "https://tuoitre.vn/cong-nghe.htm",
+      "https://tuoitre.vn/xe.htm",
+      "https://tuoitre.vn/du-lich.htm",
+      "https://tuoitre.vn/van-hoa.htm",
+      "https://tuoitre.vn/giai-tri.htm",
+      "https://tuoitre.vn/the-thao.htm",
+      "https://tuoitre.vn/giao-duc.htm",
+      "https://tuoitre.vn/nha-dat.htm",
+      "https://tuoitre.vn/suc-khoe.htm",
+      "https://tuoitre.vn/gia-that.htm",
+      "https://tuoitre.vn/cong-dong.htm",
+      "https://tuoitre.vn/video/moi-nhat.htm",
+      "https://tuoitre.vn/video/tin-nong.htm",
+      "https://tuoitre.vn/video/truc-tiep.htm",
+      "https://tuoitre.vn/video/thu-vi.htm",
+      "https://tuoitre.vn/video/the-gioi.htm",
+      "https://tuoitre.vn/video/doi-thuong.htm",
+      "https://tuoitre.vn/video/ban-co-biet.htm",
+      "https://tuoitre.vn/video/the-thao.htm",
+      "https://tuoitre.vn/video/giai-tri.htm",
+      "https://tuoitre.vn/video/hai-huoc.htm",
+      "https://tuoitre.vn/video/30s-nong.htm",
+      "https://tuoitre.vn/video/goc-nhin-trua-nay.htm",
+      "https://tuoitre.vn/video/camera-360.htm",
+      "https://tuoitre.vn/video/suc-khoe.htm",
+      "https://tuoitre.vn/video/cong-nghe.htm",
+      "https://tuoitre.vn/thoi-su/but-bi.htm",
+      "https://tuoitre.vn/thoi-su/xa-hoi.htm",
+      "https://tuoitre.vn/thoi-su/phong-su.htm",
+      "https://tuoitre.vn/thoi-su/binh-luan.htm",
+      "https://tuoitre.vn/the-gioi/binh-luan.htm",
+      "https://tuoitre.vn/the-gioi/kieu-bao.htm",
+      "https://tuoitre.vn/the-gioi/muon-mau.htm",
+      "https://tuoitre.vn/the-gioi/ho-so.htm",
+      "https://tuoitre.vn/bau-cu-tong-thong-my-e587.htm",
+      "https://tuoitre.vn/phap-luat/chuyen-phap-dinh.htm",
+      "https://tuoitre.vn/phap-luat/tu-van.htm",
+      "https://tuoitre.vn/phap-luat/phap-ly.htm",
+      "https://tuoitre.vn/kinh-doanh/tai-chinh.htm",
+      "https://tuoitre.vn/kinh-doanh/doanh-nghiep.htm",
+      "https://tuoitre.vn/kinh-doanh/mua-sam.htm",
+      "https://tuoitre.vn/chung-khoan.htm",
+      "https://tuoitre.vn/gia-vang-e592.htm",
+      "https://tuoitre.vn/cong-nghe/thiet-bi.htm",
+      "https://tuoitre.vn/cong-nghe/chuyen-doi-so.htm",
+      "https://tuoitre.vn/cong-nghe/cau-noi.htm",
+      "https://tuoitre.vn/cong-nghe/nhip-song-so.htm",
+      "https://tuoitre.vn/cong-nghe/trai-nghiem.htm",
+      "https://tuoitre.vn/cong-nghe/thi-truong.htm",
+      "https://tuoitre.vn/cong-nghe/thu-thuat.htm",
+      "https://tuoitre.vn/cong-nghe/gia-dinh-so.htm",
+      "https://tuoitre.vn/cong-nghe/nhip-cau.htm",
+      "https://tuoitre.vn/xe/tin-tuc.htm",
+      "https://tuoitre.vn/xe/tu-van-mua-xe.htm",
+      "https://tuoitre.vn/xe/danh-gia-xe.htm",
+      "https://tuoitre.vn/xe/thi-truong-xe.htm",
+      "https://tuoitre.vn/xe/hoi-dap.htm",
+      "https://tuoitre.vn/xe/ky-thuat.htm",
+      "https://tuoitre.vn/xe/an-toan-giao-thong.htm",
+      "https://tuoitre.vn/du-lich/co-hoi-du-lich.htm",
+      "https://tuoitre.vn/du-lich/di-choi.htm",
+      "https://tuoitre.vn/du-lich/mach-ban.htm",
+      "https://tuoitre.vn/du-lich/que-huong.htm",
+      "https://tuoitre.vn/nhip-song-tre.htm",
+      "https://tuoitre.vn/nhip-song-tre/xu-huong.htm",
+      "https://tuoitre.vn/nhip-song-tre/theo-guong-bac.htm",
+      "https://tuoitre.vn/nhip-song-tre/kham-pha.htm",
+      "https://tuoitre.vn/nhip-song-tre/yeu.htm",
+      "https://tuoitre.vn/nhip-song-tre/nhan-vat.htm",
+      "https://tuoitre.vn/nhip-song-tre/tuoi-tre-start-up-award.htm",
+      "https://tuoitre.vn/van-hoa/nhan-vat.htm",
+      "https://tuoitre.vn/van-hoa/san-dien.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?tuoitre.vn/.*?(\\d{6,})(.html|.htm)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tuoitre.vn",
+    "checkedAt": "2026-11-09T03:57:35.474Z",
+    "url": "https://tuoitre.vn/bien-phong-lap-hat-trick-vo-dich-bong-chuyen-quoc-gia-100261108234343385.htm",
+    "finalUrl": "https://tuoitre.vn/bien-phong-lap-hat-trick-vo-dich-bong-chuyen-quoc-gia-100261108234343385.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2226,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#main-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "tuoitre.vn",
+      "siteId": "tuoitre.vn",
+      "registrableDomain": "tuoitre.vn",
+      "homepage": "https://tuoitre.vn/tto-saigontimes.htm",
+      "allowedHosts": [
+        "tuoitre.vn",
+        "www.tuoitre.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Cuộc hành quân trong đêm của người miền Tây và nỗi lo 'rớt toa'",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:19.533Z",
+        "trainingUrls": [
+          "https://tuoitre.vn/cuoc-hanh-quan-trong-dem-cua-nguoi-mien-tay-va-noi-lo-rot-toa-100261021100422521.htm",
+          "https://tuoitre.vn/tong-giam-doc-tpbank-muon-hut-von-quoc-te-ngan-hang-phai-nang-chuan-quan-tri-100261102103155944.htm"
+        ],
+        "holdoutUrls": [
+          "https://tuoitre.vn/gia-vang-the-gioi-cham-4130-usd-ounce-vang-mieng-sjc-tang-200000-dong-luong-100261109233032307.htm",
+          "https://tuoitre.vn/gia-vang-hom-nay-9-11-vang-the-gioi-tang-manh-dau-tuan-vuot-4100-usd-10026110908193679.htm"
+        ]
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "tuoitre.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 152,
+    "checkedArticleUrls": 162,
+    "freshArticleChecks": 22,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 152,
+    "listingResponsesAtArticleUrls": 9,
+    "categoriesPlanned": 133,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1140,
+        "passed": 132,
+        "distinctHashes": 132
+      },
+      {
+        "name": "video",
+        "discovered": 263,
+        "passed": 20,
+        "distinctHashes": 20
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tuoitre.vn/mua-trut-xuong-trung-tam-tphcm-sau-buoi-sang-oi-nong-chieu-nay-co-combo-mua-lan-trieu-cuong-100261110140625052.htm",
+      "https://tuoitre.vn/mua-lon-song-bien-dang-cao-nha-trang-dung-bang-cam-tam-bien-100261110134252722.htm",
+      "https://tuoitre.vn/dong-thap-lien-tiep-xay-ra-dong-loc-vi-gio-mua-tay-nam-va-dong-bac-va-nhau-100261110120334735.htm",
+      "https://tuoitre.vn/singapore-trien-khai-dich-vu-giu-ho-vang-cho-cac-nuoc-100261110133222868.htm",
+      "https://tuoitre.vn/gia-vang-hom-nay-10-11-vang-the-gioi-tang-57-usd-cho-tin-lam-phat-my-100261110082536932.htm",
+      "https://tuoitre.vn/gia-vang-the-gioi-cham-4130-usd-ounce-vang-mieng-sjc-tang-200000-dong-luong-100261109233032307.htm",
+      "https://tuoitre.vn/loi-nhuan-binh-son-petrolimex-pvoil-dong-loat-tang-manh-khi-gia-dau-len-cao-100261102115415542.htm",
+      "https://tuoitre.vn/xuat-sieu-lap-ky-luc-731-ti-usd-trong-thang-10-khi-nhap-khau-hang-dien-tu-giam-manh-100261104092356805.htm",
+      "https://tuoitre.vn/von-fdi-vao-viet-nam-len-cao-nhat-17-nam-100261104143719986.htm",
+      "https://tuoitre.vn/video/khong-co-tien-tra-cuoc-xe-nguoi-dan-ong-ruot-danh-tai-xe-grab-204275.htm",
+      "https://tuoitre.vn/video/video-hai-chi-em-o-dak-lak-co-6-nguoi-than-la-liet-si-dang-duoc-xac-dinh-danh-tinh-204274.htm",
+      "https://tuoitre.vn/video/video-cong-nhan-thao-do-cac-khung-do-co-lon-tren-cau-di-bo-qua-song-sai-gon-204267.htm",
+      "https://tuoitre.vn/de-nguoi-dan-an-cu-cung-phat-trien-tod-100261108224245985.htm",
+      "https://tuoitre.vn/van-bang-hai-ngon-ngu-anh-bang-cap-co-phan-anh-thuc-luc-100261108120710331.htm",
+      "https://tuoitre.vn/nang-cao-nang-luc-tu-chu-cho-viet-nam-nhat-ban-100261107000701365.htm",
+      "https://tuoitre.vn/hoan-thien-hien-phap-de-kien-tao-nang-luc-phat-trien-moi-100261106130000614.htm",
+      "https://tuoitre.vn/bao-gio-nguoi-mien-tay-thoi-rong-ran-xep-hang-o-cac-benh-vien-tphcm-100261106133311983.htm",
+      "https://tuoitre.vn/buoi-toi-cua-thay-co-100261110134502762.htm",
+      "https://tuoitre.vn/giai-ngan-dau-tu-cong-e1054.htm",
+      "https://tuoitre.vn/dien-dan-kinh-te-mua-thu-e2161.htm",
+      "https://tuoitre.vn/ky-hop-thu-2-quoc-hoi-khoa-xvi-e2154.htm",
+      "https://tuoitre.vn/ngoi-truong-trong-tim-e2164.htm",
+      "https://tuoitre.vn/trai-nghiem-va-danh-gia.htm",
+      "https://tuoitre.vn/cung-luan-ban.htm",
+      "https://tuoitre.vn/el-nino-tro-lai-e1504.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:57.234Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tuoitre.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cadn.com.vn",
+  "siteId": "cadn.com.vn",
+  "registrableDomain": "cadn.com.vn",
+  "homepage": "https://cadn.com.vn/",
+  "allowedHosts": [
+    "cadn.com.vn",
+    "www.cadn.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://cadn.com.vn/",
+    "categories": [
+      "https://cadn.com.vn/thoi-su-1.html",
+      "https://cadn.com.vn/an-ninh-trat-tu-78.html",
+      "https://cadn.com.vn/cong-an-nhan-dan-5.html",
+      "https://cadn.com.vn/phap-luat-6.html",
+      "https://cadn.com.vn/xa-hoi-13.html",
+      "https://cadn.com.vn/phong-su-ky-su-79.html",
+      "https://cadn.com.vn/kinh-te-12.html",
+      "https://cadn.com.vn/van-hoa-15.html",
+      "https://cadn.com.vn/y-te-68.html",
+      "https://cadn.com.vn/giao-duc-27.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Những lợi ích thiết thực khi bỏ thuốc lá",
+    "strategy": "selector",
+    "selector": "h1:eq(2)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time",
+    "attribute": null,
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:01.304Z",
+    "frozenAt": "2026-11-16T01:57:57.224Z",
+    "trainingUrl": "https://cadn.com.vn/nhung-loi-ich-thiet-thuc-khi-bo-thuoc-la-post360325.html",
+    "independentHoldouts": [
+      "https://cadn.com.vn/cong-an-xa-nam-tra-my-ra-mat-mo-hinh-truong-hoc-khong-ma-tuy-khong-thuoc-la-post359372.html",
+      "https://cadn.com.vn/bao-ve-me-va-be-khoi-tac-hai-cua-thuoc-la-post358803.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://cadn.com.vn/nhung-loi-ich-thiet-thuc-khi-bo-thuoc-la-post360325.html",
+      "https://cadn.com.vn/cong-an-xa-nam-tra-my-ra-mat-mo-hinh-truong-hoc-khong-ma-tuy-khong-thuoc-la-post359372.html",
+      "https://cadn.com.vn/bao-ve-me-va-be-khoi-tac-hai-cua-thuoc-la-post358803.html",
+      "https://cadn.com.vn/hoiana-shores-golf-club-dang-cai-giai-vo-dich-golf-nghiep-du-chau-a-%e2%80%93-thai-binh-duong-2027-post360234.html",
+      "https://cadn.com.vn/hon-2100-doanh-nghiep-ho-kinh-doanh-tron-dong-bhxh-bhtn-bhyt-post360238.html",
+      "https://cadn.com.vn/ra-mat-giai-doan-2-du-an-cau-lac-bo-nu-sinh-mo-duong-den-tuong-lai-post359097.html",
+      "https://cadn.com.vn/de-da-nang-dang-song-cho-moi-nguoi-post361061.html",
+      "https://cadn.com.vn/nhung-cong-trinh-vi-dong-doi-vi-nhan-dan-post361059.html",
+      "https://cadn.com.vn/tu-gian-kho-det-nen-ban-sac-cua-yeu-thuong-va-khat-vong-post361049.html",
+      "https://cadn.com.vn/lan-toa-tinh-than-dai-doan-ket-xay-dung-khu-dan-cu-van-hoa-nghia-tinh-post361058.html",
+      "https://cadn.com.vn/lan-toa-suc-manh-dai-doan-ket-tu-co-so-tai-khu-dan-cu-con-mong-post361026.html",
+      "https://cadn.com.vn/lanh-dao-tp-da-nang-du-ngay-hoi-dai-doan-ket-tai-cac-khu-dan-cu-post361029.html",
+      "https://cadn.com.vn/phat-huy-suc-manh-dai-doan-ket-xay-dung-thon-phiem-ai-nghia-tinh-hanh-phuc-post361016.html",
+      "https://cadn.com.vn/90-ngay-dem-thuc-day-phat-trien-cong-dan-so-tai-son-tra-post360971.html",
+      "https://cadn.com.vn/truong-ban-noi-chinh-thanh-uy-vo-cong-chanh-du-trao-huy-hieu-dang-dot-7-11-tai-phuong-thanh-khe-post360586.html",
+      "https://cadn.com.vn/thon-thang-phuoc-phat-huy-noi-luc-xay-dung-cong-dong-nghia-tinh-post361027.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

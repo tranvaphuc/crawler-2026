@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nationthailand.com",
+  "siteId": "nationthailand.com",
+  "registrableDomain": "nationthailand.com",
+  "homepage": "https://www.nationthailand.com/",
+  "allowedHosts": [
+    "www.nationthailand.com",
+    "nationthailand.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.nationthailand.com/",
+    "categories": []
+  },
+  "title": {
+    "value": "Mitsubishi Motors targets 10,000 sales in revived Pajero rollout",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:40.964Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:32.962Z",
+    "independentHoldouts": [
+      "https://www.nationthailand.com/news/tourism/40073523",
+      "https://www.nationthailand.com/news/asean/40073519",
+      "https://www.nationthailand.com/news/general/40073528"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.nationthailand.com/news/40070578",
+      "https://www.nationthailand.com/news/tourism/40073523",
+      "https://www.nationthailand.com/news/asean/40073519",
+      "https://www.nationthailand.com/news/general/40073528"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "__typename": "User",
+  "id": "61587327123544",
+  "name": "Shopee",
+  "delegate_page": { "id": "1000419343151470" },
+  "is_additional_profile_plus": true
+}

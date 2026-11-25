@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vgt.vn",
+  "siteId": "vgt.vn",
+  "registrableDomain": "vgt.vn",
+  "homepage": "https://vgt.vn/",
+  "allowedHosts": [
+    "vgt.vn",
+    "www.vgt.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ba Duyên Nguyễn động thái lạ liên quan đến Long Hour, ẩn ý một điều?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#clip-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Hồ Việt Trung đáp trả khi bị nói cho vợ sinh con ở BV công, nêu rõ 3 lý do?",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".clip-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:52.418Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vgt.vn/ba-duyen-nguyen-dong-thai-la-lien-quan-den-long-hour-an-y-1-dieu-ihyes-20260504t7686780/",
+      "https://vgt.vn/ho-viet-trung-dap-tra-khi-bi-noi-cho-vo-sinh-con-o-bv-cong-neu-ro-3-ly-do-ihyes-20260504t7686811/",
+      "https://vgt.vn/binh-tinh-ra-keo-doi-chat-vu-no-5-ty-chi-ni-tung-bang-chung-kem-tin-nhan-ihyes-20260504t7686808/",
+      "https://vgt.vn/netizen-trung-quoc-soc-tam-ly-xem-chi-dep-ban-viet-sau-cu-no-cua-trang-phap-ihyes-20260504t7686800/",
+      "https://vgt.vn/ngan-hoa-tieu-tam-dang-ghet-nhat-man-anh-viet-he-lo-ban-trai-ngoai-doi-gay-soc-ihyes-20260504t7686670/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vgt.vn/",
+    "categories": [
+      "https://vgt.vn/dien-dan-tv/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vgt.vn",
+    "checkedAt": "2026-11-09T03:57:36.683Z",
+    "url": "https://vgt.vn/ba-duyen-nguyen-dong-thai-la-lien-quan-den-long-hour-an-y-1-dieu-ihyes-20260504t7686780/",
+    "finalUrl": "https://vgt.vn/ba-duyen-nguyen-dong-thai-la-lien-quan-den-long-hour-an-y-1-dieu-ihyes-20260504t7686780/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3839,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:37.375Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/vgt.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "vgt.vn",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 34,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 34,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "siteName": "antv.gov.vn",
+  "siteId": "antv.gov.vn",
+  "registrableDomain": "antv.gov.vn",
+  "homepage": "https://antv.gov.vn/",
+  "allowedHosts": [
+    "antv.gov.vn",
+    "www.antv.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cùng định vị, xác lập khuôn khổ hợp tác Việt Nam-Nhật Bản ở tầm cao mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "TRIỂN KHAI NGHỊ QUYẾT ĐẠI HỘI XIV CỦA ĐẢNG",
+        "strategy": "selector",
+        "selector": "meta[property=\"og:title\"]",
+        "attribute": "content"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".time-published",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "time",
+        "attribute": null,
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:48.974Z",
+    "sampleCount": 9,
+    "passedSamples": 8,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://antv.gov.vn/su-kien/trien-khai-nghi-quyet-dai-hoi-xiv-cua-dang-615614315.html",
+      "https://antv.gov.vn/chinh-tri-2/quan-he-doi-tac-chien-luoc-toan-dien-viet-nam-nhat-ban-cung-co-tin-cay-dong-hanh-phat-trien-18774DD4A.html",
+      "https://antv.gov.vn/chinh-tri-2/-tinh-than-hien-phap-nam-1946-phai-duoc-the-hien-trong-cach-thuc-thi-quyen-luc-tan-tam-phuc-vu-nhan-dan-67889596C.html",
+      "https://antv.gov.vn/phap-luat-3/-dong-nai-triet-pha-chuyen-an-ma-tuy-xuyen-quoc-gia-72205F249.html",
+      "https://antv.gov.vn/ban-doc-10/doan-can-bo-phong-vien-truyen-hinh-cong-an-nhan-dan-va-cac-don-vi-dia-phuong-tham-quan-tai-dai-truyen-hinh-viet-nam-21524C2B3.html",
+      "https://antv.gov.vn/phap-luat-3/giang-ho-mang-hiep-den-dung-chieu-tao-thanh-the-cho-vay-nang-lai-the-nao--F3D605E11.html",
+      "https://antv.gov.vn/the-gioi-7/4-ps-thong-diep-khan-tu-nguoi-dung-dau-lhq-truoc-them-cop31-90A71BBDA.html",
+      "https://antv.gov.vn/chinh-tri-xa-hoi-E3223AB43/an-toan-ve-sinh-lao-dong-trong-cand-chu-dong-phong-ngua-ngay-tu-co-so-189651233.html"
+    ],
+    "datePrecision": [
+      "day",
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://antv.gov.vn/",
+    "categories": [
+      "https://antv.gov.vn/truyen-hinh-truc-tuyen.html",
+      "https://antv.gov.vn/video.html",
+      "https://antv.gov.vn/radio.html",
+      "https://antv.gov.vn/chinh-tri-2.html",
+      "https://antv.gov.vn/phap-luat-3.html",
+      "https://antv.gov.vn/pha-an-184.html",
+      "https://antv.gov.vn/kinh-te-5.html",
+      "https://antv.gov.vn/van-hoa-6.html",
+      "https://antv.gov.vn/xa-hoi-4.html",
+      "https://antv.gov.vn/the-gioi-7.html",
+      "https://antv.gov.vn/clip-hot-8.html",
+      "https://antv.gov.vn/diem-tin-58.html",
+      "https://antv.gov.vn/truy-na-151.html",
+      "https://antv.gov.vn/ban-doc-10.html"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?antv.gov.vn/tin-tuc/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "antv.gov.vn",
+    "checkedAt": "2026-11-09T03:56:47.660Z",
+    "url": "https://antv.gov.vn/su-kien/trien-khai-nghi-quyet-dai-hoi-xiv-cua-dang-615614315.html",
+    "finalUrl": "https://antv.gov.vn/su-kien/trien-khai-nghi-quyet-dai-hoi-xiv-cua-dang-615614315.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 261,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "antv.gov.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 30,
+    "checkedArticleUrls": 37,
+    "freshArticleChecks": 13,
+    "parserIssues": 5,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 30,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 224,
+        "passed": 21,
+        "distinctHashes": 21
+      },
+      {
+        "name": "video",
+        "discovered": 15,
+        "passed": 7,
+        "distinctHashes": 7
+      },
+      {
+        "name": "audio",
+        "discovered": 10,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://antv.gov.vn/clip-hot-8/xac-minh-clip-tai-xe-taxi-bi-danh-sau-va-cham-voi-xe-may-cho-3-142269F36.html",
+      "https://antv.gov.vn/chinh-tri-2/doi-moi-tu-duy-xay-dung-phap-luat-ve-antt-gop-phan-kien-tao-su-phat-trien-513549795.html",
+      "https://antv.gov.vn/the-gioi-7/iran-cong-bo-thong-tin-ve-vu-tan-cong-moi-nhat-cua-my-vao-dao-qeshm-83664CA7F.html",
+      "https://antv.gov.vn/kinh-te-5/chuyen-doi-xanh-de-phat-trien-ben-vung-420571955.html",
+      "https://antv.gov.vn/chinh-tri-2/bo-truong-luong-tam-quang-da-tiep-hieu-truong-dai-hoc-tsukuba-va-chu-tich-tap-doan-sojitz-95393402E.html",
+      "https://antv.gov.vn/chinh-tri-2/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-00420AB81.html",
+      "https://antv.gov.vn/ban-doc-10/doan-can-bo-phong-vien-truyen-hinh-cong-an-nhan-dan-va-cac-don-vi-dia-phuong-tham-quan-tai-dai-truyen-hinh-viet-nam-21524C2B3.html",
+      "https://antv.gov.vn/xa-hoi-4/mua-lon-va-dong-loc-gay-nhieu-thiet-hai-tai-cac-dia-phuong-9664E5526.html",
+      "https://antv.gov.vn/kinh-te-5/cam-kinh-doanh-khi-cuoi-n2o-tu-ngay-1-1-2027-D4BF791E9.html",
+      "https://antv.gov.vn/xa-hoi-4/xe-may-di-vao-lan-o-to-dung-de-thoi-quen-bien-thanh-hiem-hoa-0FAFBB0DD.html",
+      "https://antv.gov.vn/the-gioi-7/trung-quoc-bac-bo-cao-buoc-do-tham-lanh-dao-nvidia-BE46D62BF.html",
+      "https://antv.gov.vn/van-hoa-6/phim-ngan-ai-va-nhung-nguy-co-tren-khong-gian-mang-C27D1C2BB.html",
+      "https://antv.gov.vn/chinh-tri-2/lam-sau-sac-hon-quan-he-doi-tac-chien-luoc-toan-dien-viet-nam-nhat-ban-61CF0EF2F.html",
+      "https://antv.gov.vn/diem-tin-58/tin-tuc-an-ninh-trat-tu-noi-bat-24h-qua--6E3801590.html",
+      "https://antv.gov.vn/phap-luat-3/tp-hcm-quyet-tam-ngan-chan-ma-tuy-xam-nhap-gioi-tre-1D957542B.html",
+      "https://antv.gov.vn/xa-hoi-4/cong-an-cac-tinh-mien-trung-chu-dong-ung-pho-voi-tinh-hinh-mua-lu-6F98E94DC.html",
+      "https://antv.gov.vn/phap-luat-3/khoi-to-cau-tuan-cua-ong-thu-giu-10-khau-sung-tu-che-18A4668FB.html",
+      "https://antv.gov.vn/phap-luat-3/phat-hien-14-nguoi-nuoc-ngoai-nghi-lua-dao-qua-san-chung-khoan-ao-o-tp-ho-chi-minh-816E6A7E7.html",
+      "https://antv.gov.vn/phap-luat-3/khoi-to-35-doi-tuong-trong-duong-day-ma-tuy-hoat-dong-lien-tinh-68F0FC3F3.html",
+      "https://antv.gov.vn/phap-luat-3/-dong-pham-cua-hiep-den-khai-gi-khi-bi-bat-5BD3FA136.html",
+      "https://antv.gov.vn/phap-luat-3/ha-noi-bat-ke-trom-lo-dien-thoai-hon-300-trieu-tai-dien-may-xanh-D3B7905AD.html",
+      "https://antv.gov.vn/xa-hoi-4/bieu-duong-chien-cong-bat-94-doi-tuong-duong-day-toi-pham-xuyen-quoc-gia-16AAFD3DD.html",
+      "https://antv.gov.vn/xa-hoi-4/sap-cau-tan-thanh-o-tay-ninh-nhieu-phuong-tien-roi-xuong-kenh-D0EA45FE8.html",
+      "https://antv.gov.vn/kinh-te-5/de-xuat-tang-han-muc-vay-uu-dai-nha-o-xa-hoi-633B72992.html",
+      "https://antv.gov.vn/the-gioi-7/vu-xa-sung-tai-ba-lan-nghi-pham-tu-vong-phat-hien-them-3-thi-the-26D9EDE40.html",
+      "https://antv.gov.vn/xa-hoi-4/dua-phap-luat-vao-cuoc-song-CEB73D665.html",
+      "https://antv.gov.vn/xa-hoi-4/bo-gd-dt-gui-yeu-cau-quan-trong-toi-8-tinh-thanh-co-mua-lon-647D0BB04.html",
+      "https://antv.gov.vn/xa-hoi-4/day-manh-tuyen-truyen-phong-chong-bao-luc-hoc-duong-va-xam-hai-tre-em-03A2CC32B.html",
+      "https://antv.gov.vn/the-gioi-7/chuan-bi-cho-le-dieu-hanh-ky-niem-100-nam-cua-macy-s-31CE9E4A2.html",
+      "https://antv.gov.vn/the-gioi-7/tuan-le-thoi-trang-tbilisi-khoi-phuc-dong-luc-sang-tao-tai-georgia-C8C2F12D5.html",
+      "https://antv.gov.vn/the-gioi-7/khong-gian-sang-tao-tren-duong-pho-lagos-nigeria-2801B6943.html",
+      "https://antv.gov.vn/video/113-online-16/113-online-ngay-10-11-2026-6EFE2083B.html",
+      "https://antv.gov.vn/video/an-ninh-toan-canh-117/an-ninh-toan-canh-ngay-10-11-2026-201D15BF9.html",
+      "https://antv.gov.vn/video/an-ninh-van-hoa-29/khi-hoi-nhom-mang-xa-hoi-dan-loi-lech-lac-tu-tuong-cua-the-he-tre-4475D7D2F.html",
+      "https://antv.gov.vn/video/phia-sau-ban-an-36/khi-yeu-thuong-hoa-bi-kich-3C688120F.html",
+      "https://antv.gov.vn/video/an-ninh-the-gioi-17/an-ninh-the-gioi-ngay-10-11-2026-01D87F844.html",
+      "https://antv.gov.vn/video/cau-chuyen-cuoi-tuan-183/luat-ly-lich-tu-phap-hoan-thien-the-che-doi-moi-quan-ly-bao-dam-quyen-cong-dan-D440BAF86.html",
+      "https://antv.gov.vn/video/nghi-quyet-12-197/dau-an-cua-nhung-nha-bao-chien-si-cong-an-thu-do-tinh-nhue-11E411609.html",
+      "https://antv.gov.vn/video/an-ninh-voi-cuoc-song-19/sua-luat-phong-chong-tac-hai-cua-thuoc-la-yeu-cau-tu-thuc-tien-552D11B0D.html",
+      "https://antv.gov.vn/video/khat-vong-vuon-minh-41F64B2F2/su-menh-du-lich-viet-nam-trong-ky-nguyen-moi-8596EC7E5.html",
+      "https://antv.gov.vn/video/tin-nhanh-42/tin-nhanh-luc-9h-ngay-10-11-2026-A05FDF914.html",
+      "https://antv.gov.vn/van-hoa-6/hinh-anh-an-tuong-le-be-mac-lien-hoan-truyen-hinh-phat-thanh-dien-anh-cong-an-nhan-dan-lan-thu-xv-5341E9555.html",
+      "https://antv.gov.vn/van-hoa-6/mot-so-hinh-anh-tai-buoi-hop-bao-gioi-thieu-lien-hoan-truyen-hinh-phat-thanh-dien-anh-cand-lan-thu-xv-1CE463C72.html",
+      "https://antv.gov.vn/chinh-tri-2/sua-doi-bo-sung-chuc-nang-nhiem-vu-quyen-han-cua-ban-chi-dao-57-00A8FCFE2.html",
+      "https://antv.gov.vn/chinh-tri-2/80-nam-luc-luong-an-ninh-nhan-dan-ban-hung-ca-vang-mai-18BA7904B.html",
+      "https://antv.gov.vn/chinh-tri-2/luc-luong-an-ninh-nhan-dan-cung-ca-nuoc-buoc-vao-ky-nguyen-phat-trien-moi-7DD1F3F47.html",
+      "https://antv.gov.vn/chinh-tri-2/80-nam-luc-luong-an-ninh-nhan-dan-viet-nam-nhung-dau-moc-lich-su-tieu-bieu-410E52600.html",
+      "https://antv.gov.vn/chinh-tri-2/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-85-doi-vien-tieu-bieu-5FEEA1586.html",
+      "https://antv.gov.vn/van-hoa-6/ngay-hoi-bao-chi-truyen-thong-cand-huong-ve-co-so-vi-binh-yen-ban-lang--A91181DDC.html",
+      "https://antv.gov.vn/chinh-tri-2/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-tap-doan-lon-cua-nhat-ban-B9A92A429.html",
+      "https://antv.gov.vn/chinh-tri-2/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-thu-tuong-nhat-ban-07B6575C5.html",
+      "https://antv.gov.vn/chinh-tri-2/viet-nam-va-nhat-ban-kien-tao-khong-gian-phat-trien-moi-0720A054B.html",
+      "https://antv.gov.vn/chinh-tri-2/viet-nam-va-nhat-ban-tang-cuong-hop-tac-thuc-thi-phap-luat-B71353389.html",
+      "https://antv.gov.vn/chinh-tri-2/mo-rong-khong-gian-hop-tac-giua-viet-nam-va-nhat-ban--4244A8086.html",
+      "https://antv.gov.vn/phap-luat-3/tam-giu-nam-nhan-vien-y-te-o-an-giang-chem-trong-thuong-hieu-truong-A41130801.html",
+      "https://antv.gov.vn/van-hoa-6/thanh-lap-chi-hoi-the-thao-bo-tu-lenh-canh-sat-co-dong-D8FC9CFCA.html",
+      "https://antv.gov.vn/van-hoa-6/ha-noi-to-chuc-chuoi-hoat-dong-huong-ung-ngay-van-hoa-viet-nam-51F62B836.html",
+      "https://antv.gov.vn/van-hoa-6/hon-400-hoat-dong-quy-mo-duoc-to-chuc-nhan-ky-niem-ngay-van-hoa-viet-nam--EA78A4D65.html",
+      "https://antv.gov.vn/ban-doc-10/tu-hoi-tu-den-lan-toa-787F72D22.html",
+      "https://antv.gov.vn/ban-doc-10/kich-ban-so-duyet-khai-mac-lien-hoan-truyen-hinh-phat-thanh-dien-anh-cand-lan-thu-xv-D5B41B677.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3,
+      "selector_or_layout_mismatch": 1,
+      "content_integrity_review": 1
+    },
+    "checkedAt": "2026-11-10T09:13:52.395Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/antv.gov.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

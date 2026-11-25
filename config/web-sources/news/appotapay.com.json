@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "appotapay.com",
+  "siteId": "appotapay.com",
+  "registrableDomain": "appotapay.com",
+  "homepage": "https://appotapay.com/",
+  "allowedHosts": [
+    "appotapay.com",
+    "www.appotapay.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://appotapay.com/",
+    "categories": []
+  },
+  "title": {
+    "value": "Fintech & Thanh toán tháng 9/2026: Những tin tức nổi bật trong nước và quốc tế",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".single-article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:10.134Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:03.778Z",
+    "independentHoldouts": [
+      "https://appotapay.com/appotapay-x-local-giam-20-khi-mua-sim-dang-ky-goi-cuoc-thang-11.html",
+      "https://appotapay.com/appotapay-mi-quang-nha-shin-giam-ngay-100-000-vnd-cho-hoa-don-tu-3-trieu-dong.html",
+      "https://appotapay.com/tu-mot-cua-hang-den-chuoi-kinh-doanh-5-buoc-chuan-bi-de-mo-rong-quy-mo.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://appotapay.com/fintech-thanh-toan-thang-9-2026.html",
+      "https://appotapay.com/appotapay-x-local-giam-20-khi-mua-sim-dang-ky-goi-cuoc-thang-11.html",
+      "https://appotapay.com/appotapay-mi-quang-nha-shin-giam-ngay-100-000-vnd-cho-hoa-don-tu-3-trieu-dong.html",
+      "https://appotapay.com/tu-mot-cua-hang-den-chuoi-kinh-doanh-5-buoc-chuan-bi-de-mo-rong-quy-mo.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

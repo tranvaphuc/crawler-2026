@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bongda24h.vn",
+  "siteId": "bongda24h.vn",
+  "registrableDomain": "bongda24h.vn",
+  "homepage": "https://bongda24h.vn/",
+  "allowedHosts": [
+    "bongda24h.vn",
+    "www.bongda24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nhận định Tavernes vs Valencia (3h00 ngày 11/11): Khó có bất ngờ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".the-article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:05.633Z",
+    "sampleCount": 7,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://bongda24h.vn/nhan-dinh-bong-da/nhan-dinh-tavernes-vs-valencia-3h00-ngay-11-11-kho-co-bat-ngo-344-464335.html",
+      "https://bongda24h.vn/bong-da-anh/gary-neville-len-tieng-bao-ve-arsenal-172-464334.html",
+      "https://bongda24h.vn/truc-tiep/mu-vs-aston-villa-ngoai-hang-anh-hom-nay-372-464322.html",
+      "https://bongda24h.vn/doi-bong/man-utd-va-bai-hoc-tai-thiet-tu-arsenal-da-den-luc-dap-di-xay-lai-405-464312.html",
+      "https://bongda24h.vn/nhan-vat/cam-on-vi-tat-ca-cristiano-chung-toi-da-co-mot-tuoi-tre-that-dep-vi-anh-389-464308.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bongda24h.vn/",
+    "categories": [
+      "https://bongda24h.vn/tin-the-thao-moi-nhat.html",
+      "https://bongda24h.vn/tdp.html",
+      "https://bongda24h.vn/tin-nong-c279-p1.html",
+      "https://bongda24h.vn/bong-da-viet-nam-c168-p1.html",
+      "https://bongda24h.vn/vleague-c291-p1.html",
+      "https://bongda24h.vn/vleague/lich-thi-dau-25.html",
+      "https://bongda24h.vn/u23-viet-nam-c532-p1.html",
+      "https://bongda24h.vn/vleague/ket-qua-25.html",
+      "https://bongda24h.vn/vleague/bang-xep-hang-25.html",
+      "https://bongda24h.vn/doi-tuyen-viet-nam-c292-p1.html",
+      "https://bongda24h.vn/u20-viet-nam-c535-p1.html",
+      "https://bongda24h.vn/doi-tuyen-viet-nam/lich-thi-dau-49.html",
+      "https://bongda24h.vn/doi-tuyen-viet-nam/ket-qua-49.html",
+      "https://bongda24h.vn/futsal-viet-nam-c543-p1.html",
+      "https://bongda24h.vn/cup-quoc-gia-viet-nam-c518-p1.html",
+      "https://bongda24h.vn/u19-viet-nam-c536-p1.html",
+      "https://bongda24h.vn/bong-da-anh-c172-p1.html",
+      "https://bongda24h.vn/ngoai-hang-anh-c557-p1.html",
+      "https://bongda24h.vn/bong-da-anh/lich-thi-dau-1.html",
+      "https://bongda24h.vn/bong-da-anh/ket-qua-1.html",
+      "https://bongda24h.vn/bong-da-anh/bang-xep-hang-1.html",
+      "https://bongda24h.vn/bong-da-anh-c326-p1.html",
+      "https://bongda24h.vn/cup-fa-c501-p1.html",
+      "https://bongda24h.vn/carabao-league-cup-c502-p1.html",
+      "https://bongda24h.vn/bong-da-tay-ban-nha-c180-p1.html",
+      "https://bongda24h.vn/la-liga-c558-p1.html",
+      "https://bongda24h.vn/bong-da-tay-ban-nha/lich-thi-dau-5.html",
+      "https://bongda24h.vn/bong-da-tay-ban-nha/ket-qua-5.html",
+      "https://bongda24h.vn/bong-da-tay-ban-nha/bang-xep-hang-5.html",
+      "https://bongda24h.vn/bong-da-tay-ban-nha-c328-p1.html",
+      "https://bongda24h.vn/bong-da-chau-au-c184-p1.html",
+      "https://bongda24h.vn/c1-uefa-champions-league-c488-p1.html",
+      "https://bongda24h.vn/bong-da-chau-au/lich-thi-dau-7.html",
+      "https://bongda24h.vn/bong-da-chau-au/ket-qua-7.html",
+      "https://bongda24h.vn/bong-da-chau-au/bang-xep-hang-7.html",
+      "https://bongda24h.vn/bong-da-chau-au-c329-p1.html",
+      "https://bongda24h.vn/cup-c2-europa-league-c506-p1.html",
+      "https://bongda24h.vn/bong-da-italia-c176-p1.html",
+      "https://bongda24h.vn/serie-a-c568-p1.html",
+      "https://bongda24h.vn/serie-b-c569-p1.html",
+      "https://bongda24h.vn/bong-da-italia/lich-thi-dau-3.html",
+      "https://bongda24h.vn/bong-da-italia/ket-qua-3.html",
+      "https://bongda24h.vn/bong-da-italia/bang-xep-hang-3.html",
+      "https://bongda24h.vn/bong-da-duc-c193-p1.html",
+      "https://bongda24h.vn/bundesliga-c562-p1.html",
+      "https://bongda24h.vn/bong-da-duc/lich-thi-dau-4.html",
+      "https://bongda24h.vn/bong-da-duc/ket-qua-4.html",
+      "https://bongda24h.vn/bong-da-duc/bang-xep-hang-4.html",
+      "https://bongda24h.vn/bong-da-phap-c197-p1.html",
+      "https://bongda24h.vn/ligue-1-c565-p1.html",
+      "https://bongda24h.vn/bong-da-phap/lich-thi-dau-6.html",
+      "https://bongda24h.vn/bong-da-phap/ket-qua-6.html",
+      "https://bongda24h.vn/bong-da-phap/bang-xep-hang-6.html",
+      "https://bongda24h.vn/the-gioi-c544-p1.html",
+      "https://bongda24h.vn/u20-chau-a-c629-p1.html",
+      "https://bongda24h.vn/sea-games-c423-p1.html",
+      "https://bongda24h.vn/doi-tuyen-thai-lan-c503-p1.html",
+      "https://bongda24h.vn/fifa-club-world-cup-c634-p1.html",
+      "https://bongda24h.vn/vck-u23-chau-a-c489-p1.html",
+      "https://bongda24h.vn/asian-cup-c483-p1.html",
+      "https://bongda24h.vn/world-cup-c498-p1.html",
+      "https://bongda24h.vn/olympic-c513-p1.html",
+      "https://bongda24h.vn/afc-cup-c546-p1.html",
+      "https://bongda24h.vn/afc-champions-league-c545-p1.html",
+      "https://bongda24h.vn/asean-cup-c334-p1.html",
+      "https://bongda24h.vn/euro-c363-p1.html",
+      "https://bongda24h.vn/asiad-c472-p1.html",
+      "https://bongda24h.vn/livescore.html",
+      "https://bongda24h.vn/bong-da/lich-thi-dau.html",
+      "https://bongda24h.vn/bong-da/ket-qua.html",
+      "https://bongda24h.vn/bang-xep-hang.html",
+      "https://bongda24h.vn/bang-xep-hang-fifa-nam.html",
+      "https://bongda24h.vn/binh-luan-c278-p1.html",
+      "https://bongda24h.vn/chuyen-nhuong-c187-p1.html",
+      "https://bongda24h.vn/nhan-dinh-bong-da-c344-p1.html",
+      "https://bongda24h.vn/nhan-dinh-ngoai-hang-anh-c492-p1.html",
+      "https://bongda24h.vn/nhan-dinh-euro-c374-p1.html"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?bongda24h.vn/.*?/.*?(\\d{5,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bongda24h.vn",
+    "checkedAt": "2026-11-09T03:56:52.710Z",
+    "url": "https://bongda24h.vn/nhan-dinh-bong-da/nhan-dinh-tavernes-vs-valencia-3h00-ngay-11-11-kho-co-bat-ngo-344-464335.html",
+    "finalUrl": "https://bongda24h.vn/nhan-dinh-bong-da/nhan-dinh-tavernes-vs-valencia-3h00-ngay-11-11-kho-co-bat-ngo-344-464335.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5126,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:55.375Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/bongda24h.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "bongda24h.vn",
+    "parsedArticles": 114,
+    "distinctHashes": 114,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 163,
+    "categoriesAttempted": 163,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 3020,
+    "checkedArticleUrls": 114,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 2812,
+        "attempted": 103,
+        "passed": 103,
+        "distinctContents": 103,
+        "distinctHashes": 103
+      },
+      {
+        "name": "video",
+        "discovered": 208,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:34.276Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://bongda24h.vn/nhan-dinh-bong-da/nhan-dinh-ofi-crete-vs-leverkusen-europa-league-2026-27-344-462742.html",
+      "https://bongda24h.vn/nhan-dinh-bong-da/nhan-dinh-ac-milan-vs-ferencvaros-europa-league-2026-27-344-463908.html"
+    ],
+    "improvedUrls": [
+      "https://bongda24h.vn/video/meo-tien-tri-tro-tai-du-doan-tran-ba-lan-vs-ha-lan-363-390688.html",
+      "https://bongda24h.vn/video/meo-tien-tri-tro-tai-du-doan-tran-serbia-vs-anh-363-390690.html",
+      "https://bongda24h.vn/video/meo-tien-tri-du-doan-gay-soc-ve-ket-qua-tran-bi-vs-slovakia-363-390776.html",
+      "https://bongda24h.vn/video/ngo-ngang-ket-qua-du-doan-tran-bo-dao-nha-gap-sec-cua-meo-tien-tri-363-390778.html"
+    ],
+    "regressions": 0
+  }
+}

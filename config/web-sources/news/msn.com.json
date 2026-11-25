@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "siteName": "msn.com",
+  "siteId": "msn.com",
+  "registrableDomain": "msn.com",
+  "allowedHosts": [
+    "msn.com",
+    "www.msn.com"
+  ],
+  "httpDependencyHosts": [
+    "assets.msn.com",
+    "www.bing.com"
+  ],
+  "homepage": "https://www.msn.com/vi-vn/news",
+  "parserType": "publisher_dispatch",
+  "nativeIdPattern": "/ar-([A-Za-z0-9]+)",
+  "discovery": {
+    "homepage": "https://www.msn.com/vi-vn/news",
+    "categories": [],
+    "legacyArticlePattern": "/ar-[A-Za-z0-9]+"
+  },
+  "identityPolicy": "Verify the MSN public record and canonical provider, then fetch and write using the registered original publisher; public search RSS is discovery only, never publication-date evidence.",
+  "enabled": true,
+  "stage": "public_discovery_and_original_publishers_verified",
+  "validatedPublishers": [
+    "vnexpress.net",
+    "vietnamplus.vn"
+  ],
+  "validation": {
+    "sampleUrls": [
+      "https://www.msn.com/vi-vn/news/other/phone-duo-v%E1%BA%ABn-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-sau-h%C6%A1n-450000-l%E1%BA%A7n-g%E1%BA%ADp-th%E1%BB%AD-nghi%E1%BB%87m/ar-AA2hvSNB",
+      "https://www.msn.com/vi-vn/news/other/ti%E1%BA%BFng-vi%E1%BB%87t-n%E1%BA%BFp-nh%C3%A0-s%E1%BB%A3i-d%C3%A2y-n%E1%BB%91i-ki%E1%BB%81u-b%C3%A0o-v%E1%BB%9Bi-qu%C3%AA-h%C6%B0%C6%A1ng/ar-AA2hvctr",
+      "https://www.msn.com/vi-vn/news/other/d%E1%BB%B1-%C3%A1n-h%E1%BA%A7m-chui-n%C3%BAt-giao-c%E1%BB%95-linh-ph%E1%BA%A5n-%C4%91%E1%BA%A5u-th%C3%B4ng-xe-k%E1%BB%B9-thu%E1%BA%ADt-tr%C6%B0%E1%BB%9Bc-30-4-2027/ar-AA2hvha0",
+      "https://www.msn.com/vi-vn/news/other/ti%E1%BA%BFp-vi%C3%AAn-h%C3%A0ng-kh%C3%B4ng-ti%E1%BA%BFt-l%E1%BB%99-m%E1%BA%B7t-s%C3%A1ng-v%C3%A0-t%E1%BB%91i-c%E1%BB%A7a-ngh%E1%BB%81/ar-AA2hvm3d",
+      "https://www.msn.com/vi-vn/news/national/b%E1%BB%99-y-t%E1%BA%BF-ban-h%C3%A0nh-quy-ch%E1%BA%BF-qu%E1%BA%A3n-l%C3%BD-khai-th%C3%A1c-v%C3%A0-chia-s%E1%BA%BB-d%E1%BB%AF-li%E1%BB%87u-v%E1%BB%81-d%C6%B0%E1%BB%A3c/ar-AA2huOAi"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:11:08.509Z",
+    "frozenAt": "2026-11-16T04:10:54.416Z",
+    "independentHoldouts": [
+      "https://www.msn.com/vi-vn/news/other/phone-duo-v%E1%BA%ABn-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-sau-h%C6%A1n-450000-l%E1%BA%A7n-g%E1%BA%ADp-th%E1%BB%AD-nghi%E1%BB%87m/ar-AA2hvSNB",
+      "https://www.msn.com/vi-vn/news/other/ti%E1%BA%BFng-vi%E1%BB%87t-n%E1%BA%BFp-nh%C3%A0-s%E1%BB%A3i-d%C3%A2y-n%E1%BB%91i-ki%E1%BB%81u-b%C3%A0o-v%E1%BB%9Bi-qu%C3%AA-h%C6%B0%C6%A1ng/ar-AA2hvctr",
+      "https://www.msn.com/vi-vn/news/other/d%E1%BB%B1-%C3%A1n-h%E1%BA%A7m-chui-n%C3%BAt-giao-c%E1%BB%95-linh-ph%E1%BA%A5n-%C4%91%E1%BA%A5u-th%C3%B4ng-xe-k%E1%BB%B9-thu%E1%BA%ADt-tr%C6%B0%E1%BB%9Bc-30-4-2027/ar-AA2hvha0",
+      "https://www.msn.com/vi-vn/news/other/ti%E1%BA%BFp-vi%C3%AAn-h%C3%A0ng-kh%C3%B4ng-ti%E1%BA%BFt-l%E1%BB%99-m%E1%BA%B7t-s%C3%A1ng-v%C3%A0-t%E1%BB%91i-c%E1%BB%A7a-ngh%E1%BB%81/ar-AA2hvm3d",
+      "https://www.msn.com/vi-vn/news/national/b%E1%BB%99-y-t%E1%BA%BF-ban-h%C3%A0nh-quy-ch%E1%BA%BF-qu%E1%BA%A3n-l%C3%BD-khai-th%C3%A1c-v%C3%A0-chia-s%E1%BA%BB-d%E1%BB%AF-li%E1%BB%87u-v%E1%BB%81-d%C6%B0%E1%BB%A3c/ar-AA2huOAi"
+    ],
+    "paidAiCalls": 0
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezone": "Asia/Ho_Chi_Minh"
+}

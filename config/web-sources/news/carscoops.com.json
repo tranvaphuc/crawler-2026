@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "carscoops.com",
+  "siteId": "carscoops.com",
+  "registrableDomain": "carscoops.com",
+  "homepage": "https://www.carscoops.com/",
+  "allowedHosts": [
+    "www.carscoops.com",
+    "carscoops.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.carscoops.com/",
+    "categories": [
+      "https://www.carscoops.com/latest/",
+      "https://www.carscoops.com/category/news/",
+      "https://www.carscoops.com/category/new-cars/",
+      "https://www.carscoops.com/category/offbeat-news/",
+      "https://www.carscoops.com/category/future-cars/",
+      "https://www.carscoops.com/category/renderings/"
+    ]
+  },
+  "title": {
+    "value": "The Mitsubishi Pajero Is Back, And It Looks Like A Proper Land Cruiser Rival Again",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:08.410Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:58.851Z",
+    "independentHoldouts": [
+      "https://www.carscoops.com/2026/09/mitsubishi-pajero-family-report",
+      "https://www.carscoops.com/2314668/classic-1989-mercedes-benz-300e-w124-review/",
+      "https://www.carscoops.com/2312041/scion-by-toyota-kei-01-low-speed-vehicle-truck/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.carscoops.com/2026/09/mitsubishi-pajero-returns",
+      "https://www.carscoops.com/2026/09/mitsubishi-pajero-family-report",
+      "https://www.carscoops.com/2314668/classic-1989-mercedes-benz-300e-w124-review/",
+      "https://www.carscoops.com/2312041/scion-by-toyota-kei-01-low-speed-vehicle-truck/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "siteName": "whatcar.vn",
+  "siteId": "whatcar.vn",
+  "registrableDomain": "whatcar.vn",
+  "homepage": "https://whatcar.vn/",
+  "allowedHosts": [
+    "whatcar.vn",
+    "www.whatcar.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Green SM ưu đãi 25% cước xe cho khách hàng, chia sẻ tới 100% giá trị cước chuyến đi cho tài xế",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".editorjs-renderer.prose",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Rolls-Royce Ghost Black Badge 2022 giá từ 430.000 USD",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:05.582Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://whatcar.vn/posts/green-sm-uu-dai-25-cuoc-xe-cho-khach-hang-chia-se-toi-100-gia-tri-cuoc-chuyen-di-cho-tai-xe",
+      "https://whatcar.vn/posts/mercedes-amg-sl-63-s-e-performance-giam-900-trieu-dong-tai-dai-ly-gia-con-1139-ty-dong",
+      "https://whatcar.vn/posts/rolls-royce-ghost-black-badge-2022-gia-tu-430000-usd",
+      "https://whatcar.vn/posts/volvo-es90-gia-26-ty-dong-tai-viet-nam-sedan-dien-680-ma-luc-chay-706-km-moi-lan-sac",
+      "https://whatcar.vn/posts/xe-dien-yamaha-xenter-e-manh-ngang-xe-tay-ga-125cc-di-108kmlan-sac-san-xuat-tai-viet-nam"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://whatcar.vn/",
+    "categories": [
+      "https://whatcar.vn/feed",
+      "https://whatcar.vn/explore",
+      "https://whatcar.vn/cars"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "whatcar.vn",
+    "checkedAt": "2026-11-09T03:57:39.601Z",
+    "url": "https://whatcar.vn/posts/green-sm-uu-dai-25-cuoc-xe-cho-khach-hang-chia-se-toi-100-gia-tri-cuoc-chuyen-di-cho-tai-xe",
+    "finalUrl": "https://whatcar.vn/posts/green-sm-uu-dai-25-cuoc-xe-cho-khach-hang-chia-se-toi-100-gia-tri-cuoc-chuyen-di-cho-tai-xe",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2278,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "whatcar.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 13,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 3,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 37,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://whatcar.vn/posts/sedan-hang-sang-chay-dien-cua-byd-thach-thuc-rolls-royce-va-mercedes-maybach-gia-hon-310000-usd",
+      "https://whatcar.vn/posts/rolls-royce-ghost-black-badge-2022-gia-tu-430000-usd",
+      "https://whatcar.vn/posts/mitsubishi-pajero-2027-bat-dau-xuat-khau-sang-nhat-ban-ke-hoach-ban-tai-hon-100-quoc-gia",
+      "https://whatcar.vn/posts/tesla-len-ke-hoach-dung-san-xuat-cybertruck-tu-giua-nam-2027-chuyen-nha-may-sang-lam-taxi-tu-lai",
+      "https://whatcar.vn/posts/hyundai-tucson-blk-edition-san-xuat-tai-viet-nam-xuat-khau-sang-uc-voi-gia-gan-915-trieu-dong",
+      "https://whatcar.vn/posts/mg-urban-sap-ban-tai-viet-nam-lo-xe-dau-tien-da-cap-cang-tphcm",
+      "https://whatcar.vn/posts/land-rover-kien-byd-vi-nghi-hang-xe-trung-quoc-thao-roi-defender-de-sao-chep-cong-nghe",
+      "https://whatcar.vn/posts/mua-xe-ford-duoc-tang-100-le-phi-truoc-ba-co-co-hoi-trung-vang-9999-ngay-trong-thang-11",
+      "https://whatcar.vn/posts/green-sm-uu-dai-25-cuoc-xe-cho-khach-hang-chia-se-toi-100-gia-tri-cuoc-chuyen-di-cho-tai-xe",
+      "https://whatcar.vn/posts/mercedes-amg-sl-63-s-e-performance-giam-900-trieu-dong-tai-dai-ly-gia-con-1139-ty-dong",
+      "https://whatcar.vn/posts/volvo-es90-gia-26-ty-dong-tai-viet-nam-sedan-dien-680-ma-luc-chay-706-km-moi-lan-sac",
+      "https://whatcar.vn/posts/xe-dien-yamaha-xenter-e-manh-ngang-xe-tay-ga-125cc-di-108kmlan-sac-san-xuat-tai-viet-nam",
+      "https://whatcar.vn/posts/byd-yangwang-u9-xtreme-vuot-moc-500-kmh-tro-thanh-o-to-thuong-mai-nhanh-nhat-the-gioi",
+      "https://whatcar.vn/posts/subaru-forester-hybrid-sap-ve-viet-nam-gia-du-kien-16-ty-dong-them-mam-19-inch-va-loa-harman-kardon",
+      "https://whatcar.vn/posts/vinfast-xuat-khau-1879-chiec-toi-my",
+      "https://whatcar.vn/posts/vingroup-trien-khai-vi-tuong-lai-xanh-lan-2-uu-dai-toi-9-khi-doi-xe-xang-sang-o-to-dien",
+      "https://whatcar.vn/posts/honda-sh-2027-ra-mat-mau-den-moi-giam-60-khi-thai-gia-cao-nhat-hon-104-trieu-dong",
+      "https://whatcar.vn/posts/vetc-tam-dung-thu-phi-vi-dien-tu-6600-dongthang-can-nhac-bo-sung-phuong-thuc-thanh-toan",
+      "https://whatcar.vn/posts/ferrari-f50-doi-1997-lap-ky-luc-dau-gia-gan-480-ty-dong-xe-chi-chay-171-km",
+      "https://whatcar.vn/posts/byd-dua-sedan-sieu-sang-yangwang-altior-den-uae-canh-tranh-rolls-royce-ghost",
+      "https://whatcar.vn/posts/ferrari-luce-chua-ban-giao-da-kin-don-hang-khach-mua-moi-phai-cho-den-nam-2028",
+      "https://whatcar.vn/posts/kieu-dang-xe-vespa-se-kho-bi-dao-nhai-hon-nho-quyet-dinh-nay",
+      "https://whatcar.vn/posts/honda-viet-nam-ra-mat-website-mua-ban-o-to-da-qua-su-dung-chinh-hang-them-an-tam-cho-khach-hang",
+      "https://whatcar.vn/posts/nissan-patrol-2026-duoc-chao-ban-khoang-42-ty-dong-khach-muon-nhan-xe-som-phai-tra-them-100-trieu",
+      "https://whatcar.vn/posts/vinfast-dung-thu-4-thi-truong-xe-dien-an-do-vuot-hyundai-va-byd",
+      "https://whatcar.vn/posts/o-dau-cung-duoc-ho-tro-cach-he-thong-hau-mai-vinfast-dong-hanh-cung-chu-xe"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:30.583Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/whatcar.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "siteName": "banker.vn",
+  "siteId": "banker.vn",
+  "registrableDomain": "banker.vn",
+  "homepage": "https://banker.vn/",
+  "allowedHosts": [
+    "banker.vn",
+    "www.banker.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://banker.vn/",
+    "categories": [
+      "https://banker.vn/danh-muc/ngan-hang",
+      "https://banker.vn/danh-muc/kqkd",
+      "https://banker.vn/danh-muc/m-and-a",
+      "https://banker.vn/danh-muc/chinh-sach-tien-te",
+      "https://banker.vn/danh-muc/vi-mo",
+      "https://banker.vn/danh-muc/ty-gia",
+      "https://banker.vn/danh-muc/lai-suat",
+      "https://banker.vn/danh-muc/tin-dung",
+      "https://banker.vn/danh-muc/fintech",
+      "https://banker.vn/danh-muc/blockchain"
+    ]
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tỷ giá trung tâm tăng nhẹ, USD Index lên cao nhất kể từ tháng 4/2025",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article__body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "native_lead",
+    "scope": "article.article",
+    "selector": ".article__body p"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:17:21.244Z",
+    "frozenAt": "2026-11-16T04:17:02.571Z",
+    "trainingUrl": "https://banker.vn/bai-viet/ty-gia-trung-tam-tang-nhe-usd-index-len-cao-nhat-ke-tu-thang-4-2025-963258",
+    "independentHoldouts": [
+      "https://banker.vn/bai-viet/doanh-nghiep-viet-nam-dan-dau-do-lac-quan-thuong-mai-quoc-te-day-manh-ung-dung-ai-trong-quan-tri-cf5dee",
+      "https://banker.vn/bai-viet/thanh-toan-so-gan-ket-cac-dich-vu-thiet-yeu-fcf5ea"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://banker.vn/bai-viet/ty-gia-trung-tam-tang-nhe-usd-index-len-cao-nhat-ke-tu-thang-4-2025-963258",
+      "https://banker.vn/bai-viet/doanh-nghiep-viet-nam-dan-dau-do-lac-quan-thuong-mai-quoc-te-day-manh-ung-dung-ai-trong-quan-tri-cf5dee",
+      "https://banker.vn/bai-viet/vib-privilege-banking-dua-khach-hang-nhin-lai-cau-chuyen-my-thuat-thoi-doi-moi-ab087a",
+      "https://banker.vn/bai-viet/vib-cong-bo-ket-qua-kinh-doanh-9-thang-nam-2026-91c925",
+      "https://banker.vn/bai-viet/hdbank-danh-2-000-ty-dong-cho-doanh-nghiep-do-phu-nu-lam-chu-b2ebdb",
+      "https://banker.vn/bai-viet/thanh-toan-so-gan-ket-cac-dich-vu-thiet-yeu-fcf5ea"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

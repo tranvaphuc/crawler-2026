@@ -1,0 +1,123 @@
+[
+  {
+    "identity_id": "andree-bui-the-anh-1987-06-18",
+    "birth_date": "1987-06-18",
+    "members": [
+      {
+        "source_id": "0s",
+        "expected_name": "Andree"
+      },
+      {
+        "source_id": "bid0",
+        "expected_name": "Andree Right Hand"
+      }
+    ],
+    "source_url": "https://voh.com.vn/tieu-su-sao/andree-right-hand-anh-baus-profile-478800.html",
+    "finding": "Cùng tên thật Bùi Thế Anh, ngày sinh 18/06/1987 và nghệ danh Andree Right Hand; đã đọc cả hai hồ sơ nguồn và đối chiếu chân dung VOH. Không gộp theo tài khoản dùng chung."
+  },
+  {
+    "identity_id": "separate-ag8-bio6",
+    "decision": "keep_separate",
+    "birth_date": "1988-09-07",
+    "members": [
+      {
+        "source_id": "ag8",
+        "expected_name": "Quỳnh Nga"
+      },
+      {
+        "source_id": "bio6",
+        "expected_name": "Quỳnh Nga"
+      }
+    ],
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/quynh-nga/ag8",
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/quynh-nga/bio6"
+    ],
+    "finding": "Tên đầy đủ khác nhau (Phạm Thị Quỳnh Nga và Nguyễn Thị Quỳnh Nga), sự nghiệp diễn viên/ca sĩ và MC khác nhau; không gộp dù trường ngày sinh giống.",
+    "reviewed_at": "2026-11-18T21:47:38.389Z"
+  },
+  {
+    "identity_id": "separate-bhk1-biz4",
+    "decision": "keep_separate",
+    "birth_date": "2001-02-21",
+    "members": [
+      {
+        "source_id": "bhk1",
+        "expected_name": "Minh Thư"
+      },
+      {
+        "source_id": "biz4",
+        "expected_name": "Minh Thư"
+      }
+    ],
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/kol/minh-thu/bhk1",
+      "https://nguoinoitieng.tv/nghe-nghiep/hotface/minh-thu/biz4"
+    ],
+    "finding": "Tiểu sử rất giống nhưng tên đầy đủ Lê Thị Minh Thư và Nguyễn Thị Minh Thư mâu thuẫn; giữ riêng đến khi có căn cứ xác định.",
+    "reviewed_at": "2026-11-18T21:47:38.390Z"
+  },
+  {
+    "identity_id": "separate-be64-bjni",
+    "decision": "keep_separate",
+    "birth_date": "1996-10-17",
+    "members": [
+      {
+        "source_id": "be64",
+        "expected_name": "Thu Hà"
+      },
+      {
+        "source_id": "bjni",
+        "expected_name": "Thu Hà"
+      }
+    ],
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/thu-ha/be64",
+      "https://nguoinoitieng.tv/nghe-nghiep/mc/thu-ha/bjni"
+    ],
+    "finding": "Tên phổ biến, nơi sinh và quá trình nghề nghiệp khác; có khả năng trùng nhưng chưa đủ căn cứ gộp.",
+    "reviewed_at": "2026-11-18T21:47:38.390Z"
+  },
+  {
+    "identity_id": "separate-bhd0-bloz",
+    "decision": "keep_separate",
+    "birth_date": "2000-04-30",
+    "members": [
+      {
+        "source_id": "bhd0",
+        "expected_name": "Hoàng Lan"
+      },
+      {
+        "source_id": "bloz",
+        "expected_name": "Hoàng Lan"
+      }
+    ],
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/hien-tuong-mang/hoang-lan/bhd0",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/hoang-lan/bloz"
+    ],
+    "finding": "Mô tả giọng hát/công việc chung chung và tài khoản khác, chưa có căn cứ gộp hai hồ sơ Hoàng Lan.",
+    "reviewed_at": "2026-11-18T21:47:38.390Z"
+  },
+  {
+    "identity_id": "separate-biov-blp5",
+    "decision": "keep_separate",
+    "birth_date": "1992-03-08",
+    "members": [
+      {
+        "source_id": "biov",
+        "expected_name": "Xuân Đức"
+      },
+      {
+        "source_id": "blp5",
+        "expected_name": "Xuân Đức"
+      }
+    ],
+    "source_urls": [
+      "https://nguoinoitieng.tv/nghe-nghiep/tik-toker/xuan-duc/biov",
+      "https://nguoinoitieng.tv/nghe-nghiep/ca-si/xuan-duc/blp5"
+    ],
+    "finding": "Hồ sơ Xuân Đức mô tả hai quá trình nghề nghiệp, cần đối chiếu thêm danh tính trước khi gộp.",
+    "reviewed_at": "2026-11-18T21:47:38.390Z"
+  }
+]

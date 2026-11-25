@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "lsvn.vn",
+  "siteId": "lsvn.vn",
+  "registrableDomain": "lsvn.vn",
+  "homepage": "https://lsvn.vn/",
+  "allowedHosts": [
+    "lsvn.vn",
+    "www.lsvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://lsvn.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "Đề xuất cảnh báo sức khỏe chiếm 85% bao thuốc lá, siết chặt việc bán thuốc lá cho người dưới 18 tuổi",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:41.878Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:32.233Z",
+    "independentHoldouts": [
+      "https://lsvn.vn/shb-dong-hanh-cung-khat-vong-phat-trien-nhan-tai-tu-chu-cong-nghe-viet-nam-a180931.html",
+      "https://lsvn.vn/uy-vien-bo-chinh-tri-thu-tuong-chinh-phu-le-minh-hung-tham-nha-may-angkormilk-cua-vinamilk-tai-campuchia-a180652.html",
+      "https://lsvn.vn/shb-to-chuc-hoi-nghi-nha-dau-tu-cap-nhat-ke-hoach-kinh-doanh-tiet-lo-dong-luc-but-pha-a181141.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://lsvn.vn/de-xuat-canh-bao-suc-khoe-chiem-85-bao-thuoc-la-siet-chat-viec-ban-thuoc-la-cho-nguoi-duoi-18-tuoi-a181248.html",
+      "https://lsvn.vn/shb-dong-hanh-cung-khat-vong-phat-trien-nhan-tai-tu-chu-cong-nghe-viet-nam-a180931.html",
+      "https://lsvn.vn/uy-vien-bo-chinh-tri-thu-tuong-chinh-phu-le-minh-hung-tham-nha-may-angkormilk-cua-vinamilk-tai-campuchia-a180652.html",
+      "https://lsvn.vn/shb-to-chuc-hoi-nghi-nha-dau-tu-cap-nhat-ke-hoach-kinh-doanh-tiet-lo-dong-luc-but-pha-a181141.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

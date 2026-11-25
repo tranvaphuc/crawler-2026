@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepvathuonghieu.vn",
+  "siteId": "doanhnghiepvathuonghieu.vn",
+  "registrableDomain": "doanhnghiepvathuonghieu.vn",
+  "homepage": "https://doanhnghiepvathuonghieu.vn/",
+  "allowedHosts": [
+    "doanhnghiepvathuonghieu.vn",
+    "www.doanhnghiepvathuonghieu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Điểm thi lại tốt nghiệp THPT ở Chuyên Tuyên Quang: Không có điểm 10, điểm Tiếng Anh trung bình 5,5",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Ghế của Bộ trưởng Chiến tranh Mỹ Hegseth lung lay",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:36.225Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiepvathuonghieu.vn/diem-thi-lai-tot-nghiep-thpt-o-chuyen-tuyen-quang-khong-co-diem-10-diem-tieng-anh-trung-binh-55/",
+      "https://doanhnghiepvathuonghieu.vn/ghe-cua-bo-truong-chien-tranh-my-hegseth-lung-lay/",
+      "https://doanhnghiepvathuonghieu.vn/vinfast-vf-wild-ban-can-thuong-mai-lo-dien-tran-trui-tren-duong-2-tuy-chon-mau-3-kieu-mam-co-chi-tiet-khang-dinh-la-hybrid-cam-sac/",
+      "https://doanhnghiepvathuonghieu.vn/aff-cup-malaysia-nhan-them-tin-du-sau-tran-thua-doi-tuyen-viet-nam/",
+      "https://doanhnghiepvathuonghieu.vn/pnj-khang-dinh-thoai-toan-bo-von-khoi-nguoi-ban-vang-khong-lien-quan-den-chuoi-kim-cuong-cashion-vua-tam-dung-hoat-dong/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepvathuonghieu.vn/",
+    "categories": [
+      "https://doanhnghiepvathuonghieu.vn/category/thong-tin/",
+      "https://doanhnghiepvathuonghieu.vn/category/thong-tin/trong-nuoc/",
+      "https://doanhnghiepvathuonghieu.vn/category/thong-tin/the-gioi/",
+      "https://doanhnghiepvathuonghieu.vn/category/kinh-te/",
+      "https://doanhnghiepvathuonghieu.vn/category/kinh-te/thi-truong/",
+      "https://doanhnghiepvathuonghieu.vn/category/kinh-te/bat-dong-san/",
+      "https://doanhnghiepvathuonghieu.vn/category/kinh-te/tai-chinh/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-gia/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-gia/ceo-viet/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-gia/ceo-the-gioi/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-hieu/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-hieu/giao-duc/",
+      "https://doanhnghiepvathuonghieu.vn/category/thuong-hieu/doanh-nghiep/",
+      "https://doanhnghiepvathuonghieu.vn/category/cuoc-song/",
+      "https://doanhnghiepvathuonghieu.vn/category/cuoc-song/van-hoa/",
+      "https://doanhnghiepvathuonghieu.vn/category/cuoc-song/thoi-trang/",
+      "https://doanhnghiepvathuonghieu.vn/category/cuoc-song/cong-nghe/",
+      "https://doanhnghiepvathuonghieu.vn/category/xe/",
+      "https://doanhnghiepvathuonghieu.vn/category/du-lich/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepvathuonghieu.vn",
+    "checkedAt": "2026-11-09T03:57:01.167Z",
+    "url": "https://doanhnghiepvathuonghieu.vn/diem-thi-lai-tot-nghiep-thpt-o-chuyen-tuyen-quang-khong-co-diem-10-diem-tieng-anh-trung-binh-55/",
+    "finalUrl": "https://doanhnghiepvathuonghieu.vn/diem-thi-lai-tot-nghiep-thpt-o-chuyen-tuyen-quang-khong-co-diem-10-diem-tieng-anh-trung-binh-55/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5405,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doanhnghiepvathuonghieu.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 23,
+    "freshArticleChecks": 8,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 19,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 155,
+        "passed": 20,
+        "distinctHashes": 20
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghiepvathuonghieu.vn/vinfast-vf-wild-ban-can-thuong-mai-lo-dien-tran-trui-tren-duong-2-tuy-chon-mau-3-kieu-mam-co-chi-tiet-khang-dinh-la-hybrid-cam-sac/",
+      "https://doanhnghiepvathuonghieu.vn/diem-thi-lai-tot-nghiep-thpt-o-chuyen-tuyen-quang-khong-co-diem-10-diem-tieng-anh-trung-binh-55/",
+      "https://doanhnghiepvathuonghieu.vn/ghe-cua-bo-truong-chien-tranh-my-hegseth-lung-lay/",
+      "https://doanhnghiepvathuonghieu.vn/aff-cup-malaysia-nhan-them-tin-du-sau-tran-thua-doi-tuyen-viet-nam/",
+      "https://doanhnghiepvathuonghieu.vn/pnj-khang-dinh-thoai-toan-bo-von-khoi-nguoi-ban-vang-khong-lien-quan-den-chuoi-kim-cuong-cashion-vua-tam-dung-hoat-dong/",
+      "https://doanhnghiepvathuonghieu.vn/chu-tich-acb-tran-hung-huy-bat-ngo-khoe-co-bung-6-mui-than-tho-1-dieu/",
+      "https://doanhnghiepvathuonghieu.vn/sau-10-nam-thai-nghen-viet-nam-sap-ra-lo-me-kim-loai-chien-luoc-lam-may-bay-tau-vu-tru-tai-nha-may-18-400-ty-dong/",
+      "https://doanhnghiepvathuonghieu.vn/trung-quoc-lo-thieu-hut-mot-loai-qua-quen-thuoc-cua-nguoi-viet-nam-san-luong-giam-40-nguoi-dan-o-at-chuyen-doi-dien-tich/",
+      "https://doanhnghiepvathuonghieu.vn/cau-ba-dat-2-khoan-dau-tu-124-ty-dong-bo-sung-ket-noi-cho-khu-nam-rach-chiec/",
+      "https://doanhnghiepvathuonghieu.vn/1-truong-dai-hoc-y-duoc-vua-vuot-moc-doanh-thu-1-000-ty-dong-gan-nhu-100-sinh-vien-ra-truong-co-viec-lam-dang-dat-muc-tieu-vao-top-dau-chau-a/",
+      "https://doanhnghiepvathuonghieu.vn/quoc-gia-tieu-thu-lng-lon-nhat-the-gioi-lam-1-viec-thi-truong-khi-dot-toan-cau-lap-tuc-soi-suc/",
+      "https://doanhnghiepvathuonghieu.vn/nhung-ai-dang-cho-thue-bat-dong-san-can-luu-y-thong-tin-moi-nay-tu-cuc-thue-bo-qua-la-mat-quyen-loi/",
+      "https://doanhnghiepvathuonghieu.vn/ba-cach-tan-dung-cong-cu-cua-san-tmdt-de-but-pha-doanh-thu/",
+      "https://doanhnghiepvathuonghieu.vn/confitech-thu-duc-khoi-cong-du-an-cho-luc-luong-cong-an-nhan-dan/",
+      "https://doanhnghiepvathuonghieu.vn/ctcp-yen-sao-nha-trang-dinh-vi-lai-chuoi-gia-tri-voi-chien-luoc-da-nhan-hieu-nest-art-va-nestizen/",
+      "https://doanhnghiepvathuonghieu.vn/hang-tram-san-pham-dia-phuong-mo-rong-tiep-can-khach-hang-tren-san-shopee/",
+      "https://doanhnghiepvathuonghieu.vn/mr-d-i-y-mo-cua-hang-flagship-dau-tien-tai-viet-nam-tang-toc-trong-thi-truong-ban-le-gia-dung/",
+      "https://doanhnghiepvathuonghieu.vn/palm-city-phat-trien-cong-vien-ven-song-dai-gan-3-km-du-kien-hoan-thanh-giai-doan-i-vao-quy-i-2027/",
+      "https://doanhnghiepvathuonghieu.vn/ong-lon-dau-khi-viet-don-tau-khung-dai-bang-2-san-bong-da-suc-cho-hon-61-000-tan/",
+      "https://doanhnghiepvathuonghieu.vn/gia-vang-hom-nay-18-8-vang-sjc-vang-nhan-tiep-tuc-tang-but-pha-chenh-lech-the-gioi-thu-hep/",
+      "https://doanhnghiepvathuonghieu.vn/gia-vang-bac-hom-nay-17-8-bung-no-phu-quy-bao-tin-manh-hai-doji-sjc-dieu-chinh-manh/",
+      "https://doanhnghiepvathuonghieu.vn/cong-ty-do-con-trai-ty-phu-pham-nhat-vuong-dieu-hanh-tang-von-lan-dau-tien-len-hon-9-000-ty-dong/",
+      "https://doanhnghiepvathuonghieu.vn/lo-dien-khoi-tai-san-tri-gia-gan-12-000-ty-do-con-trai-va-con-gai-ong-nguyen-duc-thuy-nam-giu-tai-mot-cong-ty-sap-len-san/",
+      "https://doanhnghiepvathuonghieu.vn/cuu-pho-thu-tuong-duc-goc-viet-dam-nhan-vai-tro-gi-tai-trung-tam-giup-viet-nam-hut-hang-ty-usd/",
+      "https://doanhnghiepvathuonghieu.vn/golf-house-va-lion-golf-khai-truong-showroom-majesty-tai-thi-truong-viet-nam/",
+      "https://doanhnghiepvathuonghieu.vn/viet-nam-sap-co-1-tuyen-duong-sat-dai-477-km-noi-sieu-do-thi-14-trieu-dan-voi-san-bay-336-630-ty-dong-di-qua-7-phuong-xa-du-kien-hoan-thanh-trong-nam-2030/",
+      "https://doanhnghiepvathuonghieu.vn/uae-to-iran-tan-cong-ten-lua-lap-tuc-cat-dut-quan-he-kinh-te/",
+      "https://doanhnghiepvathuonghieu.vn/mot-gen-z-giau-hon-ca-ong-truong-gia-binh-bui-thanh-nhon-tren-san-chung-khoan/",
+      "https://doanhnghiepvathuonghieu.vn/rui-ro-lo-thong-tin-nhay-cam-cach-bao-mat-du-lieu-tren-cac-thiet-bi-dien-thoai-thong-minh/",
+      "https://doanhnghiepvathuonghieu.vn/dong-co-cua-nguoi-to-cao-sai-su-that-vu-nu-sinh-mang-dien-thoai-vao-phong-thi-trong-ky-thi-tot-nghiep-thpt/",
+      "https://doanhnghiepvathuonghieu.vn/4-loai-cay-rat-hop-cho-nguoi-tren-40-tuoi-trong-trong-nha-hay-ngoai-san-deu-co-loi/",
+      "https://doanhnghiepvathuonghieu.vn/uong-ca-phe-theo-cach-nay-de-ton-thuong-tim/",
+      "https://doanhnghiepvathuonghieu.vn/hyundai-creta-2025-tro-thanh-vua-doanh-so-o-mot-thi-truong-suzuki-fronx-sap-ban-o-viet-nam-cung-lot-top-10-ban-chay/",
+      "https://doanhnghiepvathuonghieu.vn/toyota-land-cruiser-tiep-tuc-chay-hang-tai-nhat-ban/",
+      "https://doanhnghiepvathuonghieu.vn/xe-gam-cao-thiet-ke-tre-trung-dong-co-tang-ap-ngang-co-kia-sonet-ma-gia-quy-doi-chi-bang-mot-nua/",
+      "https://doanhnghiepvathuonghieu.vn/da-ro-chinh-sach-ho-tro-chuyen-doi-pin-thue-sang-pin-mua-cho-o-to-dien-vinfast-cao-nhat-270-trieu-dong/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "content_integrity_review": 3
+    },
+    "checkedAt": "2026-11-10T09:15:05.525Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghiepvathuonghieu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

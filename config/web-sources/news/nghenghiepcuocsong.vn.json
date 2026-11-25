@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nghenghiepcuocsong.vn",
+  "siteId": "nghenghiepcuocsong.vn",
+  "registrableDomain": "nghenghiepcuocsong.vn",
+  "homepage": "https://nghenghiepcuocsong.vn/",
+  "allowedHosts": [
+    "nghenghiepcuocsong.vn",
+    "www.nghenghiepcuocsong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nghenghiepcuocsong.vn/",
+    "categories": [
+      "https://nghenghiepcuocsong.vn/chuyen-muc/trao-doi-nghien-cuu/",
+      "https://nghenghiepcuocsong.vn/chuyen-muc/giao-duc-24h/",
+      "https://nghenghiepcuocsong.vn/chuyen-muc/giao-duc-24h/du-hoc/",
+      "https://nghenghiepcuocsong.vn/chuyen-muc/giao-duc-24h/tin-tuc/"
+    ]
+  },
+  "title": {
+    "value": "Trường Đại học Công nghiệp TP.HCM: Kê khai thiếu hơn 112 tỷ đồng thuế, gián đoạn chính sách hỗ trợ sinh viên",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:48:22.606Z",
+    "previousStatus": "chưa xác định",
+    "frozenAt": "2026-11-15T16:48:19.006Z",
+    "independentHoldouts": [
+      "https://nghenghiepcuocsong.vn/truong-cao-dang-ngoai-ngu-cong-nghe-va-truyen-thong-doi-moi-dao-tao-don-dau-nguon-nhan-luc-trong-ky-nguyen-so-2026/",
+      "https://nghenghiepcuocsong.vn/tp-hcm-lap-mang-luoi-xet-nghiem-giam-sat-dich-benh/",
+      "https://nghenghiepcuocsong.vn/karnataka-habba-2026-le-hoi-van-hoa-ket-noi-cong-dong-an-do-va-ban-be-viet-nam-tai-tp-hcm/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nghenghiepcuocsong.vn/truong-dai-hoc-cong-nghiep-tp-hcm-ke-khai-thieu-hon-112-ty-dong-thue-gian-doan-chinh-sach-ho-tro-sinh-vien/",
+      "https://nghenghiepcuocsong.vn/truong-cao-dang-ngoai-ngu-cong-nghe-va-truyen-thong-doi-moi-dao-tao-don-dau-nguon-nhan-luc-trong-ky-nguyen-so-2026/",
+      "https://nghenghiepcuocsong.vn/tp-hcm-lap-mang-luoi-xet-nghiem-giam-sat-dich-benh/",
+      "https://nghenghiepcuocsong.vn/karnataka-habba-2026-le-hoi-van-hoa-ket-noi-cong-dong-an-do-va-ban-be-viet-nam-tai-tp-hcm/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

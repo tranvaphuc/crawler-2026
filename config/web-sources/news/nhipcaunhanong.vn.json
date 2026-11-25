@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipcaunhanong.vn",
+  "siteId": "nhipcaunhanong.vn",
+  "registrableDomain": "nhipcaunhanong.vn",
+  "homepage": "https://nhipcaunhanong.vn/",
+  "allowedHosts": [
+    "nhipcaunhanong.vn",
+    "www.nhipcaunhanong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tăng cường liên kết để phát triển khu, cụm công nghiệp sinh thái",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:56.823Z",
+    "sampleCount": 7,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://nhipcaunhanong.vn/tin-tuc/tang-cuong-lien-ket-de-phat-trien-khu-cum-cong-nghiep-sinh-thai.html?categoryId=5171822",
+      "https://nhipcaunhanong.vn/tin-tuc/xung-dot-keo-dai-ukraine-doi-mat-voi-nguy-co-sup-do-dan-so.html?categoryId=5171822",
+      "https://nhipcaunhanong.vn/chan-nuoi/phuc-hoi-phat-trien-quan-the-chim-yen-o-vung-chua-dao-yen.html",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin/dien-luc-dong-nai-chu-dong-phong-ngua-su-co-bang-cong-nghe.html",
+      "https://nhipcaunhanong.vn/trong-trot/tuyen-quang-xay-dung-thuong-hieu-gung-lung-cu-cho-ba-con-h-mong-giay.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipcaunhanong.vn/",
+    "categories": [
+      "https://nhipcaunhanong.vn/tin-tuc",
+      "https://nhipcaunhanong.vn/trong-trot",
+      "https://nhipcaunhanong.vn/chan-nuoi",
+      "https://nhipcaunhanong.vn/xuat-nhap-khau",
+      "https://nhipcaunhanong.vn/vat-tu-nong-nghiep",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin",
+      "https://nhipcaunhanong.vn/nong-thon-moi",
+      "https://nhipcaunhanong.vn/trai-dat-xanh",
+      "https://nhipcaunhanong.vn/video",
+      "https://nhipcaunhanong.vn/emagazine",
+      "https://nhipcaunhanong.vn/tin-tuc/ocop?isFeatured=1",
+      "https://nhipcaunhanong.vn/nong-thon-moi/mo-hinh-tieu-bieu",
+      "https://nhipcaunhanong.vn/nong-thon-moi/nha-nong-tieu-bieu"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipcaunhanong.vn",
+    "checkedAt": "2026-11-09T03:57:19.684Z",
+    "url": "https://nhipcaunhanong.vn/tin-tuc/tang-cuong-lien-ket-de-phat-trien-khu-cum-cong-nghiep-sinh-thai.html?categoryId=5171822",
+    "finalUrl": "https://nhipcaunhanong.vn/tin-tuc/tang-cuong-lien-ket-de-phat-trien-khu-cum-cong-nghiep-sinh-thai.html?categoryId=5171822",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9796,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipcaunhanong.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 26,
+    "checkedArticleUrls": 26,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 23,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 106,
+        "passed": 23,
+        "distinctHashes": 20
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipcaunhanong.vn/nong-thon-moi/bac-ninh-thon-khuon-trang-dat-ket-qua-noi-bat-trong-xay-dung-nong-thon-moi.html",
+      "https://nhipcaunhanong.vn/chan-nuoi/chuyen-lam-giau-tu-nghe-nuoi-ca-long-tren-bien-va-giot-nuoc-mam-que-o-vung-chua-dao-yen.html",
+      "https://nhipcaunhanong.vn/tin-tuc/san-khau-chuong-trinh-muon-sac-viet-nam-tai-my-dinh-co-gi-dac-biet-.html?categoryId=5171822,5273284,1512383,1512388,5171820,5171823,1512400,1539650,5194501,1,2,5,4,level2,level3,level4",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin/tong-bi-thu-chu-tich-nuoc-du-le-ky-niem-10-nam-hop-tac-vietnam-airlines-va-ana-holdings.html",
+      "https://nhipcaunhanong.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-du-dien-dan-cong-tu-ve-hop-tac-kinh-te-va-khoa-hoc-cong-nghe-viet-nam-nhat-ban.html?categoryId=5171822,5273284,1512383,1512388,5171820,5171823,1512400,1539650,5194501,1,2,5,4,level2,level3,level4",
+      "https://nhipcaunhanong.vn/tin-tuc/san-khau-chuong-trinh-muon-sac-viet-nam-tai-my-dinh-co-gi-dac-biet-.html?categoryId=5171822",
+      "https://nhipcaunhanong.vn/tin-tuc/tong-bi-thu-chu-tich-nuoc-to-lam-du-dien-dan-cong-tu-ve-hop-tac-kinh-te-va-khoa-hoc-cong-nghe-viet-nam-nhat-ban.html?categoryId=5171822",
+      "https://nhipcaunhanong.vn/tin-tuc/quang-ngai-khan-truong-bo-tri-tai-dinh-cu-cho-nguoi-dan-noi-sat-lo.html?categoryId=5171822",
+      "https://nhipcaunhanong.vn/trong-trot/gia-lua-gao-hom-nay-ngay-9-11-2026-gia-it-bien-dong.html?categoryId=1512383",
+      "https://nhipcaunhanong.vn/trong-trot/gia-ca-phe-hom-nay-9-11-2026-di-ngang-cao-nhat-84.500-dong-kg.html?categoryId=1512383",
+      "https://nhipcaunhanong.vn/trong-trot/tuyen-quang-xay-dung-thuong-hieu-gung-lung-cu-cho-ba-con-h-mong-giay.html?categoryId=1512383",
+      "https://nhipcaunhanong.vn/chan-nuoi/gia-heo-hoi-hom-nay-9-11-2026-bien-dong-trai-chieu.html?categoryId=1512388",
+      "https://nhipcaunhanong.vn/chan-nuoi/phuc-hoi-phat-trien-quan-the-chim-yen-o-vung-chua-dao-yen.html",
+      "https://nhipcaunhanong.vn/xuat-nhap-khau/ciie-2026-doanh-nghiep-viet-ghi-nhan-tin-hieu-xuat-khau-tich-cuc.html?categoryId=5171820",
+      "https://nhipcaunhanong.vn/xuat-nhap-khau/senegal-siet-chat-kiem-soat-nhap-khau-gao.html?categoryId=5171820",
+      "https://nhipcaunhanong.vn/xuat-nhap-khau/nong-lam-thuy-san-xuat-sieu-gan-19-ty-usd-tao-luc-day-tang-truong.html",
+      "https://nhipcaunhanong.vn/nong-thon-moi/bo-cong-thuong-huong-dan-quang-ngai-thuc-hien-tieu-chi-nong-thon-moi.html?categoryId=1539650",
+      "https://nhipcaunhanong.vn/nong-thon-moi/chinh-sach-mo-co-hoi-nguoi-dan-chu-dong-hoc-de-phat-trien-sinh-ke.html?categoryId=1539650",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin/tong-bi-thu-chu-tich-nuoc-du-le-ky-niem-10-nam-hop-tac-vietnam-airlines-va-ana-holdings.html?categoryId=1512400",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin/dien-luc-dong-nai-chu-dong-phong-ngua-su-co-bang-cong-nghe.html?categoryId=1512400",
+      "https://nhipcaunhanong.vn/thuong-hieu-uy-tin/evngenco1-san-xuat-hon-3-5-ty-kwh-trong-thang-10-2026.html?categoryId=1512400",
+      "https://nhipcaunhanong.vn/nongnghiep360/to-chuc-vung-nguyen-lieu-che-bien-va-tieu-thu-cho-san-pham-nong-san-.html",
+      "https://nhipcaunhanong.vn/nongnghiep360/mo-rong-vung-nguyen-lieu-phat-trien-thi-truong-cho-dac-san-dua-sap-.html",
+      "https://nhipcaunhanong.vn/nongnghiep360/giai-phap-phat-trien-cac-mo-hinh-thuy-san-tham-canh-tuan-hoan-nuoc-.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:18.636Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipcaunhanong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".article-time.pull-left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baoquangngai.vn",
+  "siteId": "baoquangngai.vn",
+  "registrableDomain": "baoquangngai.vn",
+  "homepage": "https://baoquangngai.vn/",
+  "allowedHosts": [
+    "baoquangngai.vn",
+    "www.baoquangngai.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baoquangngai.vn/",
+    "categories": [
+      "https://baoquangngai.vn/truyen-hinh",
+      "https://baoquangngai.vn/phat-thanh",
+      "https://baoquangngai.vn/bao-in",
+      "https://baoquangngai.vn/multimedia",
+      "https://baoquangngai.vn/multimedia/video",
+      "https://baoquangngai.vn/multimedia/emagazine"
+    ]
+  },
+  "title": {
+    "value": "Đề xuất cấm trưng bày thuốc lá, cấm bán thuốc lá online",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:57.800Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:52.473Z",
+    "independentHoldouts": [
+      "https://baoquangngai.vn/u23-viet-nam-thang-loi-kep-4070216.html",
+      "https://baoquangngai.vn/dong-hanh-huong-thien-giup-pham-nhan-hoan-luong-4070199.html",
+      "https://baoquangngai.vn/truong-thpt-tran-quoc-tuan-to-chuc-van-nghe-tri-an-thay-co-giao-4070214.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baoquangngai.vn/de-xuat-cam-trung-bay-thuoc-la-cam-ban-thuoc-la-online-4069236.html",
+      "https://baoquangngai.vn/u23-viet-nam-thang-loi-kep-4070216.html",
+      "https://baoquangngai.vn/dong-hanh-huong-thien-giup-pham-nhan-hoan-luong-4070199.html",
+      "https://baoquangngai.vn/truong-thpt-tran-quoc-tuan-to-chuc-van-nghe-tri-an-thay-co-giao-4070214.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

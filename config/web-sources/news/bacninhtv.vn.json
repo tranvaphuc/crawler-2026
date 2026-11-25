@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bacninhtv.vn",
+  "siteId": "bacninhtv.vn",
+  "registrableDomain": "bacninhtv.vn",
+  "homepage": "https://bacninhtv.vn/",
+  "allowedHosts": [
+    "bacninhtv.vn",
+    "www.bacninhtv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://bacninhtv.vn/",
+    "categories": [
+      "https://bacninhtv.vn/video/latest",
+      "https://bacninhtv.vn/tin-moi",
+      "https://bacninhtv.vn/video/224/phim-tai-lieu-ky-su",
+      "https://bacninhtv.vn/video/226/thoi-su",
+      "https://bacninhtv.vn/video/248/du-bao-thoi-tiet",
+      "https://bacninhtv.vn/video/251/nha-dep",
+      "https://bacninhtv.vn/video/243/thang-canh-san-vat",
+      "https://bacninhtv.vn/video/237/phong-su-clip"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Vụ thịt bở nhũn 'do lợn bị stress' ở trường mầm non: Thay nhà cung cấp",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:31.633Z",
+    "frozenAt": "2026-11-16T01:57:28.494Z",
+    "trainingUrl": "https://bacninhtv.vn/tin-tuc/11/203001/vu-thit-bo-nhun-do-lon-bi-stress-o-truong-mam-non-thay-nha-cung-cap",
+    "independentHoldouts": [
+      "https://bacninhtv.vn/tin-tuc/240/203283/mat-than-ai-khong-chi-de-phat-nguoi",
+      "https://bacninhtv.vn/tin-tuc/11/203282/tuyen-sinh-dai-hoc-2027-giam-diem-cong-ielts-van-co-loi-the"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://bacninhtv.vn/tin-tuc/11/203001/vu-thit-bo-nhun-do-lon-bi-stress-o-truong-mam-non-thay-nha-cung-cap",
+      "https://bacninhtv.vn/tin-tuc/240/203283/mat-than-ai-khong-chi-de-phat-nguoi",
+      "https://bacninhtv.vn/tin-tuc/11/203282/tuyen-sinh-dai-hoc-2027-giam-diem-cong-ielts-van-co-loi-the",
+      "https://bacninhtv.vn/tin-tuc/205/203281/cac-hoat-dong-tiep-xuc-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-cap-cao-phap-ngu-lan-thu-20",
+      "https://bacninhtv.vn/tin-tuc/205/203280/tang-cuong-hop-tac-nhieu-mat-giua-viet-nam-voi-cac-nuoc",
+      "https://bacninhtv.vn/tin-tuc/4/203279/ton-vinh-150-san-pham-dich-vu-hang-viet-duoc-nguoi-tieu-dung-yeu-thich-nam-2026",
+      "https://bacninhtv.vn/tin-tuc/213/203278/700-hoc-sinh-tranh-tai-tai-vong-chung-ket-cuoc-thi-airoc-2026-khu-vuc-mien-bac",
+      "https://bacninhtv.vn/tin-tuc/9/203277/vay-truc-tuyen-dung-trao-ca-doi-tu",
+      "https://bacninhtv.vn/tin-tuc/190/203276/moi-chuyen-lanh-da-co-nguoi-bi-meo-mieng-liet-mat-nhap-vien",
+      "https://bacninhtv.vn/tin-tuc/16/203275/khoi-to-22-doi-tuong-san-xuat-buon-ban-trai-phep-100-tan-khi-cuoi",
+      "https://bacninhtv.vn/tin-tuc/19/203274/22-thi-sinh-xuat-sac-tranh-tai-tai-vong-chung-ket-cuoc-thi-tim-kiem-ngoi-sao-dien-gia-nhi-toan-quoc",
+      "https://bacninhtv.vn/tin-tuc/205/203273/tong-bi-thu-chu-tich-nuoc-to-lam-gap-lanh-dao-cac-nuoc-du-hoi-nghi-cap-cao-phap-ngu-lan-thu-20",
+      "https://bacninhtv.vn/tin-tuc/240/203272/xuat-hien-ho-tu-than-rong-6m-sau-3m-tai-nha-dan-o-lang-son",
+      "https://bacninhtv.vn/tin-tuc/24/203271/italy-phat-tap-doan-meta-805-trieu-eur-vi-vi-pham-quyen-rieng-tu",
+      "https://bacninhtv.vn/tin-tuc/190/203270/bo-y-te-yeu-cau-chan-chinh-cong-tac-quan-ly-bao-mat-thong-tin-nguoi-nhiem-hiv",
+      "https://bacninhtv.vn/tin-tuc/240/203269/thuc-day-vai-tro-tich-cuc-cua-viet-nam-tai-apec-2026",
+      "https://bacninhtv.vn/tin-tuc/11/203268/de-xuat-thi-lop-10-chuyen-theo-khoi-co-the-bo-sot-hoc-sinh-vuot-troi-o-mot-mon",
+      "https://bacninhtv.vn/tin-tuc/16/203267/bat-giam-nguoi-phu-nu-dung-dau-he-thong-da-cap-bitharvest",
+      "https://bacninhtv.vn/tin-tuc/19/203266/trai-nghiem-sac-mau-van-hoa-dan-toc-dao-o-son-la",
+      "https://bacninhtv.vn/tin-tuc/16/203265/phat-hien-doanh-nghiep-o-hai-phong-tron-chat-cam-vao-thuc-an-nuoi-lon",
+      "https://bacninhtv.vn/tin-tuc/205/203264/thu-tuong-le-minh-hung-du-le-khai-mac-hoi-nghi-cap-cao-asean-49"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

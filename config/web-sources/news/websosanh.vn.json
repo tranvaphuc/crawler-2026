@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "websosanh.vn",
+  "siteId": "websosanh.vn",
+  "registrableDomain": "websosanh.vn",
+  "homepage": "https://websosanh.vn/",
+  "allowedHosts": [
+    "websosanh.vn",
+    "www.websosanh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://websosanh.vn/",
+    "categories": [
+      "https://websosanh.vn/dien-lanh/cat-1867.htm",
+      "https://websosanh.vn/tivi-am-thanh/cat-1.htm",
+      "https://websosanh.vn/dien-thoai-may-tinh-bang/cat-85.htm",
+      "https://websosanh.vn/thiet-bi-y-te-suc-khoe/cat-1942.htm"
+    ]
+  },
+  "title": {
+    "value": "Máy giặt LG AI DD và Toshiba Inverter khác nhau như thế: Câu trả lời ngắn gọn cho người mua",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:27.986Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:23.060Z",
+    "independentHoldouts": [
+      "https://websosanh.vn/tin-tuc/may-hut-am-nao-tot-cho-phong-ngu-giai-dap-chi-tiet-va-luu-y-khi-dung-c92-20261102105533737.htm",
+      "https://websosanh.vn/tin-tuc/noi-com-dien-nao-tot-cho-gia-dinh-6-nguoi-cau-tra-loi-ngan-gon-cho-nguoi-mua-c101-2026110207544141.htm",
+      "https://websosanh.vn/tin-tuc/bep-tu-hafele-danh-gia-chi-tiet-truoc-khi-chon-mua-co-tot-khong-c93-20261102045459686.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://websosanh.vn/tin-tuc/may-giat-lg-ai-dd-va-toshiba-inverter-khac-nhau-nhu-the-cau-tra-loi-ngan-gon-cho-nguoi-mua-c43-20261102125926301.htm",
+      "https://websosanh.vn/tin-tuc/may-hut-am-nao-tot-cho-phong-ngu-giai-dap-chi-tiet-va-luu-y-khi-dung-c92-20261102105533737.htm",
+      "https://websosanh.vn/tin-tuc/noi-com-dien-nao-tot-cho-gia-dinh-6-nguoi-cau-tra-loi-ngan-gon-cho-nguoi-mua-c101-2026110207544141.htm",
+      "https://websosanh.vn/tin-tuc/bep-tu-hafele-danh-gia-chi-tiet-truoc-khi-chon-mua-co-tot-khong-c93-20261102045459686.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

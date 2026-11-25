@@ -1,0 +1,22 @@
+[Unit]
+Description=News HTTP crawl and ES5 outbox
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=news
+WorkingDirectory=/opt/crawler-2026
+Environment=NODE_ENV=production
+Environment=NEWS_PROXY_FILE=/opt/crawler-2026/outputs/news-flow-runtime/proxies.credentials.json
+# Starts dry-run. Add --write after reviewing preflight and reports.
+ExecStart=/usr/bin/node scripts/run_news_flow.mjs
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=180
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

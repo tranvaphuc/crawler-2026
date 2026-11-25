@@ -1,0 +1,14 @@
+/** One bounded follow-up for network failures only; never retry auth/rate/security gates. */
+import fs from 'node:fs/promises';import dotenv from 'dotenv';import path from 'node:path';
+const env=dotenv.parse(await fs.readFile('.env')),base=env.DOMAIN_FOR_API.startsWith('http')?env.DOMAIN_FOR_API:'https://'+env.DOMAIN_FOR_API;
+const root='outputs/proxy-pool-refresh-2026-10-25';const latest=JSON.parse(await fs.readFile(root+'/latest-run.json'));const audit=JSON.parse(await fs.readFile(path.join(latest.out,'report.json')));const report={at:new Date().toISOString(),networkFollowups:[],auth:[],manager:null};
+for(const name of ['threads-source-real','youtube-search-relevance-explicit-real','facebook-user-source-real','facebook-user-metrics-id-real']){
+ const before=audit.results.find(x=>x.name===name);if(!['UPSTREAM_NETWORK_ERROR','NETWORK_ERROR'].includes(before?.reason))continue;
+ const saved=JSON.parse(await fs.readFile(path.join(latest.out,name+'.json'))),req=saved.request;const start=Date.now();
+ try{const r=await fetch(base+req.endpoint,{method:'POST',headers:{authorization:'Bearer '+env.AUTHEN_KEY_FOR_DOMAIN,'content-type':'application/json'},body:JSON.stringify(req.body),signal:AbortSignal.timeout(90000)});const d=await r.json();report.networkFollowups.push({name,http:r.status,status:d.status,reason:d.reason||null,count:d.count??null,transport:d.transport||null,ordering:d.ordering||null,coverage:d.coverage||null,elapsedMs:Date.now()-start});await fs.writeFile(path.join(latest.out,name+'-network-followup.json'),JSON.stringify({request:req,response:d},null,2));}catch(e){report.networkFollowups.push({name,status:'test_error',reason:e.name});}
+ console.log(JSON.stringify({networkFollowup:report.networkFollowups.at(-1)}));
+}
+for(const [name,headers,expected]of [['missing_auth',{},401],['wrong_auth',{authorization:'Bearer invalid-audit-key'},401],['valid_auth',{authorization:'Bearer '+env.AUTHEN_KEY_FOR_DOMAIN},200]]){
+ const r=await fetch(base+'/api/proxy/status',{headers,signal:AbortSignal.timeout(15000)});const d=await r.json();report.auth.push({name,http:r.status,passed:r.status===expected});if(r.status===200){await fs.writeFile(root+'/status-final.json',JSON.stringify(d,null,2));report.manager={keyCount:d.keyCount,readyKeys:d.readyKeys,idleReadyKeys:d.idleReadyKeys,activeLeases:d.activeLeases,totals:d.totals,errors:d.keys.reduce((o,k)=>(k.lastError&&(o[k.lastError]=(o[k.lastError]||0)+1),o),{}),scopes:d.keys.reduce((o,k)=>{for(const [scope,h]of Object.entries(k.scopes||{})){const a=o[scope]||={success:0,failed:0,cooldowns:0,reasons:{}};a.success+=h.success||0;a.failed+=h.failed||0;if(h.cooldownUntil>Date.now())a.cooldowns++;if(h.lastReason)a.reasons[h.lastReason]=(a.reasons[h.lastReason]||0)+1;}return o;},{})};}
+}
+report.finishedAt=new Date().toISOString();await fs.writeFile(root+'/followup.json',JSON.stringify(report,null,2));console.log(JSON.stringify({followupFinished:true,report}));

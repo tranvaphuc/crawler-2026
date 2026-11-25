@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtetieudung.vn",
+  "siteId": "kinhtetieudung.vn",
+  "registrableDomain": "kinhtetieudung.vn",
+  "homepage": "https://kinhtetieudung.vn/",
+  "allowedHosts": [
+    "kinhtetieudung.vn",
+    "www.kinhtetieudung.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá xăng Việt Nam thấp hơn Lào 24.000 đồng/lít",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Giá xăng dầu đồng loạt giảm mạnh từ 15 giờ ngày 5/11/2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:34.270Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhtetieudung.vn/gia-xang-dau-dong-loat-giam-manh-tu-15-gio-ngay-5112026-a31038.html",
+      "https://kinhtetieudung.vn/gia-xang-viet-nam-thap-hon-lao-24000-donglit-a30990.html",
+      "https://kinhtetieudung.vn/ttc-agris-sbt-no-vay-gan-19600-ty-dong-ap-luc-tra-lai-de-nang-dong-tien-kinh-doanh-a31054.html",
+      "https://kinhtetieudung.vn/nghi-dinh-so-3992026nd-cp-quy-dinh-muc-luong-toi-thieu-tu-01012027-a31055.html",
+      "https://kinhtetieudung.vn/da-nang-thuc-tien-do-6-du-an-trong-diem-tong-von-hon-30000-ty-dong-a30781.html",
+      "https://kinhtetieudung.vn/rui-ro-cua-thi-truong-bat-dong-san-se-tac-dong-toi-ngan-hang-a31051.html",
+      "https://kinhtetieudung.vn/hieu-dung-muc-huong-100-bhyt-a31057.html",
+      "https://kinhtetieudung.vn/nhung-nhom-hang-nao-giau-tiem-nang-xuat-khau-trong-nam-2027-a31048.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtetieudung.vn/",
+    "categories": [
+      "https://kinhtetieudung.vn/thi-truong.html",
+      "https://kinhtetieudung.vn/tai-chinh.html",
+      "https://kinhtetieudung.vn/dia-oc.html",
+      "https://kinhtetieudung.vn/tieu-dung.html",
+      "https://kinhtetieudung.vn/doi-song.html",
+      "https://kinhtetieudung.vn/media.html",
+      "https://kinhtetieudung.vn/media/video.html",
+      "https://kinhtetieudung.vn/media/anh.html",
+      "https://kinhtetieudung.vn/media/longform.html",
+      "https://kinhtetieudung.vn/media/infographic.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtetieudung.vn",
+    "checkedAt": "2026-11-09T03:57:12.009Z",
+    "url": "https://kinhtetieudung.vn/gia-xang-dau-dong-loat-giam-manh-tu-15-gio-ngay-5112026-a31038.html",
+    "finalUrl": "https://kinhtetieudung.vn/gia-xang-dau-dong-loat-giam-manh-tu-15-gio-ngay-5112026-a31038.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2932,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:36.979Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhtetieudung.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhtetieudung.vn",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesAttempted": 11,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 189,
+    "checkedArticleUrls": 14,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 189,
+        "attempted": 14,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baohaiquanvietnam.vn",
+  "siteId": "baohaiquanvietnam.vn",
+  "registrableDomain": "baohaiquanvietnam.vn",
+  "homepage": "https://baohaiquanvietnam.vn/",
+  "allowedHosts": [
+    "baohaiquanvietnam.vn",
+    "www.baohaiquanvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bản tin tuần số 58 ngày 8/11/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "p.uppercase,span.text-gray-600.capitalize,span.text-gray-900.capitalize",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-wrapper,audio,main .font-noto-serif.flex.flex-col",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "NƯỚC NGA TRONG TRÁI TIM NGƯỜI LÍNH TÀU NGẦM",
+        "strategy": "selector",
+        "selector": "meta[property=\"og:title\"]",
+        "attribute": "content"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": "p.uppercase,span.text-gray-600.capitalize,span.text-gray-900.capitalize",
+        "attribute": null,
+        "index": 0,
+        "priority": 110
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-wrapper,audio,main .font-noto-serif.flex.flex-col",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-09T04:01:03.502Z",
+    "sampleCount": 14,
+    "passedSamples": 14,
+    "independentSampleCount": 8,
+    "holdoutAttempted": 9,
+    "sampleUrls": [
+      "https://baohaiquanvietnam.vn/podcast/ban-tin-tuan-so-58-ngay-8112026",
+      "https://baohaiquanvietnam.vn/podcast/ban-tin-tuan-so-57-ngay-1112026",
+      "https://baohaiquanvietnam.vn/podcast/ban-tin-tuan-so-56-ngay-25102026",
+      "https://baohaiquanvietnam.vn/podcast/ban-tin-tuan-so-55-ngay-18102026",
+      "https://baohaiquanvietnam.vn/tin-tuc/tu-hien-phap-nam-1946-den-yeu-cau-doi-moi-lap-phap-trong-ky-nguyen-moi",
+      "https://baohaiquanvietnam.vn/tin-tuc/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc",
+      "https://baohaiquanvietnam.vn/longform/nuoc-nga-trong-trai-tim-nguoi-linh-tau-ngam",
+      "https://baohaiquanvietnam.vn/infographics/dai-hoi-dai-bieu-dang-bo-quan-doi-lan-thu-xii-nhiem-ky-2025-2030",
+      "https://baohaiquanvietnam.vn/tin-tuc/hoc-vien-hai-quan-huong-ung-ngay-phap-luat-viet-nam",
+      "https://baohaiquanvietnam.vn/tin-tuc/mang-bai-hoc-phap-luat-den-don-vi-co-so",
+      "https://baohaiquanvietnam.vn/tin-tuc/van-dung-linh-hoat-sat-thuc-tien-tuyen-truyen-bien-dao",
+      "https://baohaiquanvietnam.vn/tin-tuc/am-nhac-lan-toa-tinh-yeu-bien-dao",
+      "https://baohaiquanvietnam.vn/tin-tuc/xay-dung-cong-trinh-vuon-rau-noi-tru",
+      "https://baohaiquanvietnam.vn/podcast/ban-tin-tuan-so-58-ngay-8112026"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "stage": "parser_samples_passed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round4-http/sites/baohaiquanvietnam.vn"
+  },
+  "discovery": {
+    "homepage": "https://baohaiquanvietnam.vn/",
+    "categories": [
+      "https://baohaiquanvietnam.vn/bao-in",
+      "https://baohaiquanvietnam.vn/truyen-hinh-hai-quan",
+      "https://baohaiquanvietnam.vn/danh-muc/chinh-tri",
+      "https://baohaiquanvietnam.vn/danh-muc/quoc-phong-an-ninh",
+      "https://baohaiquanvietnam.vn/danh-muc/vi-chu-quyen-bien-dao",
+      "https://baohaiquanvietnam.vn/danh-muc/kinh-te-xa-hoi",
+      "https://baohaiquanvietnam.vn/danh-muc/doi-ngoai",
+      "https://baohaiquanvietnam.vn/danh-muc/phap-luat",
+      "https://baohaiquanvietnam.vn/da-phuong-tien",
+      "https://baohaiquanvietnam.vn/podcast"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "historicalValidation": {
+    "status": "parser_partial",
+    "browserMode": "see baseline evidence"
+  },
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "sampleCount": 14,
+    "passedSamples": 14,
+    "independentSamples": 8,
+    "checkedAt": "2026-11-09T04:02:41.158Z"
+  },
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baohaiquanvietnam.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 26,
+    "checkedArticleUrls": 41,
+    "freshArticleChecks": 31,
+    "parserIssues": 15,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 26,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 8,
+    "categoriesUnconfirmed": 7,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "audio",
+        "discovered": 10,
+        "passed": 4,
+        "distinctHashes": 4
+      },
+      {
+        "name": "ordinary",
+        "discovered": 178,
+        "passed": 19,
+        "distinctHashes": 19
+      },
+      {
+        "name": "longform",
+        "discovered": 4,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 6,
+      "original_publication_not_yet_confirmed": 9
+    },
+    "checkedAt": "2026-11-10T09:14:10.221Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baohaiquanvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

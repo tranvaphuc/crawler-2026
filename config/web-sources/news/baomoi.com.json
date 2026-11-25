@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baomoi.com",
+  "siteId": "baomoi.com",
+  "registrableDomain": "baomoi.com",
+  "homepage": "https://baomoi.com/",
+  "allowedHosts": [
+    "baomoi.com",
+    "www.baomoi.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Đại biểu Nguyễn Sỹ Hội đề nghị bổ sung ngày 27/7 hằng năm là ngày nghỉ hưởng nguyên lương",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:27.069Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baomoi.com/dai-bieu-nguyen-sy-hoi-de-nghi-bo-sung-ngay-27-7-hang-nam-la-ngay-nghi-huong-nguyen-luong-c56465599.epi",
+      "https://baomoi.com/truong-hoc-o-tphcm-chuyen-minh-voi-thu-vien-so-ren-nang-luc-tu-hoc-cho-hoc-sinh-c56465611.epi",
+      "https://baomoi.com/tu-nam-2027-tro-cap-that-nghiep-cao-nhat-tang-len-28-5-trieu-dong-thang-c56464203.epi",
+      "https://baomoi.com/vong-10-ngoai-hang-anh-man-city-sa-sut-mu-thoat-thua-nghet-tho-c56464543.epi",
+      "https://baomoi.com/ty-phu-jensen-huang-thua-nhan-ngoai-tinh-nvidia-dieu-tra-nghi-van-gian-diep-c56464066.epi"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/baomoi.com"
+  },
+  "discovery": {
+    "homepage": "https://baomoi.com/",
+    "categories": [
+      "https://baomoi.com/tin-moi.epi",
+      "https://baomoi.com/tin-video.epi",
+      "https://baomoi.com/bong-da.epi",
+      "https://baomoi.com/tien-ich.epi",
+      "https://baomoi.com/tien-ich-ket-qua-xo-so.epi",
+      "https://baomoi.com/tien-ich-gia-vang.epi",
+      "https://baomoi.com/tien-ich-thoi-tiet.epi",
+      "https://baomoi.com/tien-ich-lich-van-nien.epi"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?baomoi.com/.*?/c/(\\d{4,})(.epi)$",
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baomoi.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 21,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 17,
+    "parserIssues": 5,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 21,
+    "listingResponsesAtArticleUrls": 3,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 454,
+        "passed": 20,
+        "distinctHashes": 20
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baomoi.com/bo-gd-dt-de-xuat-bo-thi-lop-10-chuyen-theo-tung-mon-c56475938.epi",
+      "https://baomoi.com/quang-tri-giai-cuu-thanh-cong-10-nguoi-dan-bi-mac-ket-giua-vung-mua-lu-c56475832.epi",
+      "https://baomoi.com/tu-ha-vien-den-thuong-vien-bo-truong-chien-tranh-my-se-doi-mat-nhung-cua-ai-luan-toi-nhu-the-nao-c56475646.epi",
+      "https://baomoi.com/ai-manh-nhat-the-gioi-co-ban-nang-cap-kho-tin-c56475867.epi",
+      "https://baomoi.com/tuyen-an-36-bi-cao-vu-cat-da-tim-ngoc-chiem-doat-hon-263-ty-dong-c56476194.epi",
+      "https://baomoi.com/bac-si-tre-ngay-khoac-blouse-toi-chay-grap-c56475878.epi",
+      "https://baomoi.com/nha-dau-tu-san-bds-khi-dong-tien-chuyen-dich-nhung-tieu-chi-giup-tranh-sut-ho-c56476009.epi",
+      "https://baomoi.com/mercedes-benz-tien-ty-nam-xuong-3-thang-vi-chuot-can-day-dien-c56476092.epi",
+      "https://baomoi.com/thuc-day-4-uu-tien-hop-tac-chien-luoc-viet-nam-nhat-ban-c56476952.epi",
+      "https://baomoi.com/chuyen-dong-kinh-doanh-top1490.epi",
+      "https://baomoi.com/ceo-techcombank-noi-ve-vai-tro-cua-vifc-trong-thu-hut-von-ngoai-c56477047.epi",
+      "https://baomoi.com/ngoai-thuong-viet-nam-tu-tang-truong-quy-mo-den-nang-cao-gia-tri-gia-tang-c56476922.epi",
+      "https://baomoi.com/tram-sac-xe-dien-chuan-hoa-co-dong-nghia-chia-se-c56476981.epi",
+      "https://baomoi.com/cac-nha-san-xuat-chip-ai-trung-quoc-lan-dau-bao-co-lai-c56476881.epi",
+      "https://baomoi.com/nha-thau-giao-thong-doi-mat-voi-gia-nhua-duong-khan-hiem-doi-gia-mua-c56476784.epi",
+      "https://baomoi.com/nguoi-bao-tin-ke-phut-nghet-tho-doi-mat-pham-nhan-tron-trai-cuoi-cung-ho-van-tinh-c56473955.epi",
+      "https://baomoi.com/rui-ro-tiem-an-tu-cac-ceo-ngoi-sao-nganh-ai-nhin-tu-vu-be-boi-cua-jensen-huang-c56476783.epi",
+      "https://baomoi.com/vo-tuan-hung-phan-phao-tin-don-voi-duy-manh-buc-xuc-vi-gia-dinh-bi-anh-huong-c56476411.epi",
+      "https://baomoi.com/5-ty-phu-cong-nghe-vuong-song-gio-doi-tu-cac-de-che-kinh-doanh-cung-bi-cuon-vao-c56476525.epi",
+      "https://baomoi.com/chuyen-bo-cong-an-vu-cong-ty-duong-dong-ton-kho-am-123-trieu-lit-xang-dau-c56476813.epi",
+      "https://baomoi.com/ngay-lam-bac-si-toi-chay-xe-om-cong-nghe-c56472448.epi",
+      "https://baomoi.com/chong-mat-som-nguoi-phu-nu-ninh-binh-20-nam-mo-lon-nuoi-10-con-gai-nen-nguoi-c56463643.epi",
+      "https://baomoi.com/cau-be-viet-len-bao-my-nho-san-tay-hoc-tieng-anh-c56461902.epi",
+      "https://baomoi.com/mua-co-hong-duy-nhat-trong-nam-o-da-lat-c56458229.epi",
+      "https://baomoi.com/cuu-thi-sinh-olympia-tot-nghiep-thu-khoa-dai-hoc-bang-diem-toan-a-c56458134.epi",
+      "https://baomoi.com/danh-tinh-nguoi-dan-ong-hanh-hung-tai-xe-o-trung-tam-tphcm-c56477069.epi",
+      "https://baomoi.com/tim-thay-thi-the-be-gai-goc-viet-o-duc-hang-xom-tung-nghe-tieng-keu-cuu-c56475964.epi",
+      "https://baomoi.com/tong-bi-thu-chu-tich-nuoc-to-lam-gap-thong-doc-cac-dia-phuong-cua-nhat-ban-c56477089.epi",
+      "https://baomoi.com/ukraine-noi-ong-zelensky-co-the-gap-ong-putin-o-dau-cung-duoc-nga-bac-de-xuat-dong-bang-xung-dot-c56475883.epi",
+      "https://baomoi.com/ninh-binh-xu-phat-3-to-chuc-hanh-nghe-luat-su-hon-46-trieu-dong-c56477108.epi",
+      "https://baomoi.com/cong-bo-danh-sach-10-ca-nhan-doat-giai-thuong-qua-cau-vang-nam-2026-c56476957.epi",
+      "https://baomoi.com/phat-trien-nganh-robot-asean-trong-chuoi-gia-tri-toan-cau-va-trien-vong-hop-tac-voi-viet-nam-c56476964.epi",
+      "https://baomoi.com/my-phat-trien-tinh-the-kim-cuong-moi-mo-huong-tan-nhiet-cho-chip-the-he-moi-c56476899.epi",
+      "https://baomoi.com/dong-goi-ban-dan-tien-tien-co-hoi-tu-vat-lieu-cho-viet-nam-c56476894.epi",
+      "https://baomoi.com/meta-se-uoc-tinh-do-tuoi-nguoi-dung-tren-instagram-c56476898.epi",
+      "https://baomoi.com/thanh-tra-chinh-phu-canh-bao-tinh-trang-mua-ban-ngang-xang-dau-de-tron-thue-c56477105.epi",
+      "https://baomoi.com/chieu-nay-hon-300-xa-phuong-mien-trung-nguy-co-lu-quet-sat-lo-c56476958.epi",
+      "https://baomoi.com/hien-truong-chay-tau-cho-dau-o-tp-hcm-c56477161.epi",
+      "https://baomoi.com/bac-ninh-phan-dau-7-xa-dat-chuan-nong-thon-moi-trong-nam-2026-c56477330.epi",
+      "https://baomoi.com/giai-cuu-10-nguoi-di-lam-rung-mac-ket-do-nuoc-lu-chay-xiet-o-quang-tri-c56476941.epi",
+      "https://baomoi.com/suv-dien-moi-cua-toyota-xuat-hien-co-net-giong-corolla-cross-c56476728.epi",
+      "https://baomoi.com/man-hinh-tro-thanh-con-ac-mong-moi-cua-cac-nha-san-xuat-oto-c56476700.epi",
+      "https://baomoi.com/can-canh-bo-doi-xe-dien-volvo-ex90-va-es90-ra-mat-tai-viet-nam-gia-tu-2-6-ty-dong-c56476578.epi",
+      "https://baomoi.com/gallery-can-canh-mercedes-benz-g-class-do-doc-ban-gioi-han-chi-50-chiec-c56476373.epi",
+      "https://baomoi.com/cap-nhat-bang-gia-xe-hang-jaguar-moi-nhat-thang-11-2026-c56476376.epi",
+      "https://baomoi.com/chi-pham-thi-hang-sn-1978-chuyen-nham-75-000-000-dong-ong-nguyen-dinh-thai-sn-1961-chuyen-nham-50-000-000-dong-cong-an-vao-cuoc-va-cai-ket-c56476884.epi",
+      "https://baomoi.com/mot-cau-thu-khong-da-v-league-lam-doi-pho-tuyen-viet-nam-c56477214.epi",
+      "https://baomoi.com/yeu-cau-thao-do-leu-quan-o-diem-san-may-song-lung-khung-long-ta-xua-c56476174.epi",
+      "https://baomoi.com/co-dau-40-tuoi-o-ha-noi-duoc-con-gai-dua-ve-nha-chong-sau-17-nam-lam-me-don-than-c56476705.epi",
+      "https://baomoi.com/nha-may-xu-ly-rac-o-quang-ngai-bi-phat-155-trieu-dong-c56477024.epi",
+      "https://baomoi.com/hue-trieu-cuong-song-lon-gay-sat-lo-bo-bien-thuan-an-nhieu-hang-quan-bi-toc-mai-c56477147.epi",
+      "https://baomoi.com/vinh-long-bau-3-tan-pho-chu-tich-ubnd-tinh-nhiem-ky-2026-2031-c56477169.epi",
+      "https://baomoi.com/ha-noi-4-nguoi-roi-khoi-nha-di-lac-tro-ve-an-toan-co-2-tre-nho-c56476762.epi",
+      "https://baomoi.com/khung-gia-dien-mat-troi-2026-cao-nhat-hon-2-120-dong-kwh-nha-dau-tu-nao-co-loi-the-c56477034.epi",
+      "https://baomoi.com/viet-nam-va-nam-phi-thuc-day-hop-tac-thuc-thi-phap-luat-c56477086.epi",
+      "https://baomoi.com/hai-chi-em-vo-si-cung-doat-huy-chuong-vang-c56477032.epi",
+      "https://baomoi.com/ngo-lo-gia-xang-giam-thuc-pham-rau-xanh-chay-y-dung-im-c56476928.epi",
+      "https://baomoi.com/10-nha-khoa-hoc-tre-dat-giai-thuong-qua-cau-vang-2026-c56476975.epi",
+      "https://baomoi.com/wmo-the-gioi-se-nong-bat-thuong-trong-nhung-thang-toi-c56476788.epi",
+      "https://baomoi.com/vu-phat-hien-so-nguoi-sau-truong-dai-hoc-xac-dinh-duoc-gioi-tinh-do-tuoi-nan-nhan-c56475246.epi",
+      "https://baomoi.com/nguoi-phu-nu-tu-vong-sau-vu-chay-phong-tro-nghi-bi-dam-nhieu-nhat-c56476412.epi",
+      "https://baomoi.com/viet-nam-vao-nhom-13-quoc-gia-tren-the-gioi-giu-vung-an-ninh-nang-luong-c56477021.epi",
+      "https://baomoi.com/video-sap-bo-ke-bao-ve-dap-thuy-dien-pakistan-lu-cuon-cuon-cuon-cong-truong-c56476766.epi",
+      "https://baomoi.com/truc-thang-super-puma-cam-dau-xuong-song-khi-chua-chay-rung-o-indonesia-c56476773.epi",
+      "https://baomoi.com/mua-lon-gay-ngap-lut-chia-cat-nhieu-khu-vuc-o-quang-tri-c56476925.epi",
+      "https://baomoi.com/mai-chua-o-tphcm-hon-30-nam-lan-toa-long-tu-bi-cuu-mang-nguoi-gia-neo-don-c56476564.epi",
+      "https://baomoi.com/noi-lo-tai-nan-giao-thong-dip-cuoi-nam-c56476926.epi",
+      "https://baomoi.com/cam-bay-tu-nhung-cuoc-goi-yeu-cau-cap-nhat-ho-khau-dien-tu-c56476726.epi",
+      "https://baomoi.com/lat-tay-thu-doan-thue-o-to-tu-lai-roi-mang-di-cam-co-lay-tien-tieu-xai-c56476703.epi",
+      "https://baomoi.com/quang-ninh-phat-tu-36-bi-cao-trong-vu-lua-dao-cat-da-tim-ngoc-c56476706.epi",
+      "https://baomoi.com/day-manh-hop-tac-nhieu-mat-giua-viet-nam-voi-tinh-gunma-nhat-ban-c56476846.epi",
+      "https://baomoi.com/goc-cong-nghe-top1537.epi",
+      "https://baomoi.com/tieu-diem-xe-top1535.epi"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 5
+    },
+    "checkedAt": "2026-11-10T09:14:18.410Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baomoi.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "baomoi.com",
+      "siteId": "baomoi.com",
+      "registrableDomain": "baomoi.com",
+      "homepage": "https://baomoi.com/",
+      "allowedHosts": [
+        "baomoi.com",
+        "www.baomoi.com"
+      ],
+      "timezone": null,
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Đại biểu Nguyễn Sỹ Hội đề nghị bổ sung ngày 27/7 hằng năm là ngày nghỉ hưởng nguyên lương",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T16:50:31.062Z",
+        "trainingUrls": [
+          "https://baomoi.com/vovinam-ha-noi-va-hanh-trinh-san-vang-tai-dai-hoi-the-thao-toan-quoc-lan-thu-x-c56519830.epi",
+          "https://baomoi.com/buc-tuong-ra-mat-album-moi-hoa-quyen-rock-va-dan-ca-c56519471.epi"
+        ],
+        "holdoutUrls": [
+          "https://baomoi.com/xe-tai-bat-ngo-lat-nghieng-nhieu-khoi-da-lon-roi-xuong-duong-c56519084.epi",
+          "https://baomoi.com/tong-bi-thu-chu-tich-nuoc-to-lam-tham-du-tuan-le-cap-cao-apec-tao-dong-luc-moi-cho-hop-tac-va-lien-ket-kinh-te-khu-vuc-c56519834.epi"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:58:28.562Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://baomoi.com/xe-tai-bat-ngo-lat-nghieng-nhieu-khoi-da-lon-roi-xuong-duong-c56519084.epi",
+      "https://baomoi.com/tong-bi-thu-chu-tich-nuoc-to-lam-tham-du-tuan-le-cap-cao-apec-tao-dong-luc-moi-cho-hop-tac-va-lien-ket-kinh-te-khu-vuc-c56519834.epi"
+    ],
+    "improvedUrls": [
+      "https://baomoi.com/vovinam-ha-noi-va-hanh-trinh-san-vang-tai-dai-hoi-the-thao-toan-quoc-lan-thu-x-c56519830.epi",
+      "https://baomoi.com/buc-tuong-ra-mat-album-moi-hoa-quyen-rock-va-dan-ca-c56519471.epi"
+    ],
+    "regressions": 0
+  },
+  "descriptionPolicy": "user_confirmed_baomoi_media_without_description_v1",
+  "descriptionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baomoi.com",
+    "confirmation": "baomoi_empty_description_media_2026-11-19"
+  },
+  "httpDependencyHosts": [
+    "anninhthudo.vn",
+    "baocamau.vn",
+    "baodongthap.vn",
+    "baogialai.com.vn",
+    "baohatinh.vn",
+    "baoninhbinh.org.vn",
+    "baophutho.vn",
+    "baothanhhoa.vn",
+    "baotuyenquang.com.vn",
+    "c.dhcn.vn",
+    "daibieunhandan.vn",
+    "giaoducthoidai.vn",
+    "hanoionline.vn",
+    "petrovietnam.petrotimes.vn",
+    "thoibaonganhang.vn",
+    "tiepthigiadinh.vn",
+    "xahoi.congly.vn"
+  ]
+}

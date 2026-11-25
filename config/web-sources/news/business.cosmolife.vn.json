@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "siteName": "business.cosmolife.vn",
+  "siteId": "business.cosmolife.vn",
+  "registrableDomain": "cosmolife.vn",
+  "homepage": "https://business.cosmolife.vn/",
+  "allowedHosts": [
+    "business.cosmolife.vn",
+    "www.business.cosmolife.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Premier League siết bản quyền tại châu Á: 2,4 tỷ đồng thu lợi bất chính và cái giá pháp lý của một “doanh nghiệp số” lậuDon’t miss out!",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:07.037Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://business.cosmolife.vn/premier-league-siet-ban-quyen-tai-chau-a--2-4-ty-dong-thu-loi-bat-chinh-va-cai-gia-phap-ly-cua-mot--doanh-nghiep-so--lau-1187.htm",
+      "https://business.cosmolife.vn/ibst-dat-bai-toan-chi-phi-vao-loi-chuyen-doi-xanh-cua-nha-o-xa-hoi-viet-nam-1185.htm",
+      "https://business.cosmolife.vn/lanh-dao-da-nganh-buoc-vao-ky-nguyen-ai--phep-thu-moi-cho-nang-luc-tai-tao-tang-truong-cua-tap-doan-cong-nghe-1186.htm",
+      "https://business.cosmolife.vn/lg-channels-vao-viet-nam--dua-mo-hinh-fast-va-noi-dung-ban-dia-vao-cuoc-dua-he-sinh-thai-tv-thong-minh-chau-a-1184.htm",
+      "https://business.cosmolife.vn/sabeco-duoc-vinh-danh-nha-san-xuat-bia-cua-nam-khu-vuc-chau-a--dua-nang-luc-san-xuat-viet-len-mot-nac-thang-quoc-te-moi-1183.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://business.cosmolife.vn/",
+    "categories": [],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "business.cosmolife.vn",
+    "checkedAt": "2026-11-09T03:56:53.134Z",
+    "url": "https://business.cosmolife.vn/premier-league-siet-ban-quyen-tai-chau-a--2-4-ty-dong-thu-loi-bat-chinh-va-cai-gia-phap-ly-cua-mot--doanh-nghiep-so--lau-1187.htm",
+    "finalUrl": "https://business.cosmolife.vn/premier-league-siet-ban-quyen-tai-chau-a--2-4-ty-dong-thu-loi-bat-chinh-va-cai-gia-phap-ly-cua-mot--doanh-nghiep-so--lau-1187.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4288,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:48.261Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/business.cosmolife.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "business.cosmolife.vn",
+    "parsedArticles": 3,
+    "distinctHashes": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesAttempted": 0,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 26,
+    "checkedArticleUrls": 3,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 26,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

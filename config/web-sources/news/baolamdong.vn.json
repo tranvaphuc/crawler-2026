@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baolamdong.vn",
+  "siteId": "baolamdong.vn",
+  "registrableDomain": "baolamdong.vn",
+  "homepage": "https://baolamdong.vn/",
+  "allowedHosts": [
+    "baolamdong.vn",
+    "www.baolamdong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn Hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Sức sống từ những không gian âm nhạc cộng đồng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".b-maincontent",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 95
+      },
+      "body": {
+        "strategy": "jsonld_media"
+      },
+      "additionalMediaStrategy": "jsonld"
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:36:54.947Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baolamdong.vn/suc-song-tu-nhung-khong-gian-am-nhac-cong-dong-473503.html",
+      "https://baolamdong.vn/tong-ket-va-trao-giai-phan-thi-truc-tiep-em-yeu-bien-dao-que-huong-tai-lam-dong-473502.html",
+      "https://baolamdong.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-473264.html",
+      "https://baolamdong.vn/chanh-an-tand-toi-cao-nguyen-van-quang-du-ngay-hoi-dai-doan-ket-toan-dan-toc-tai-lam-dong-473492.html",
+      "https://baolamdong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-473477.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baolamdong.vn/",
+    "categories": [
+      "https://baolamdong.vn/tin-tuc-24h",
+      "https://baolamdong.vn/an-pham",
+      "https://baolamdong.vn/chinh-tri",
+      "https://baolamdong.vn/chinh-tri/bao-ve-nen-tang-tu-tuong",
+      "https://baolamdong.vn/chinh-tri/hoc-va-lam-theo-bac-ho",
+      "https://baolamdong.vn/chinh-tri/xay-dung-dang",
+      "https://baolamdong.vn/chinh-tri/doan-dai-bieu-quoc-hoi-hdnd",
+      "https://baolamdong.vn/chinh-tri/thong-tin-doi-ngoai",
+      "https://baolamdong.vn/chinh-tri/nghi-quyet-va-cuoc-song",
+      "https://baolamdong.vn/chinh-tri/hoat-dong-cua-he-thong-chinh-tri",
+      "https://baolamdong.vn/thoi-su",
+      "https://baolamdong.vn/thoi-su/thoi-su-lam-dong",
+      "https://baolamdong.vn/thoi-su/dong-chay-thong-tin",
+      "https://baolamdong.vn/thoi-su/tin-tay-nguyen",
+      "https://baolamdong.vn/kinh-te",
+      "https://baolamdong.vn/kinh-te/nong-nghiep-nong-thon",
+      "https://baolamdong.vn/kinh-te/cong-nghiep-xay-dung",
+      "https://baolamdong.vn/kinh-te/thuong-mai-dich-vu",
+      "https://baolamdong.vn/kinh-te/thue-tai-chinh",
+      "https://baolamdong.vn/kinh-te/khoi-nghiep",
+      "https://baolamdong.vn/doi-song",
+      "https://baolamdong.vn/doi-song/thanh-nien",
+      "https://baolamdong.vn/doi-song/y-te-suc-khoe",
+      "https://baolamdong.vn/doi-song/giao-duc-dao-tao",
+      "https://baolamdong.vn/doi-song/viec-tu-te",
+      "https://baolamdong.vn/doi-song/an-sinh-cuoc-song",
+      "https://baolamdong.vn/doi-song/nhip-cau-nhan-ai",
+      "https://baolamdong.vn/doi-song/meo-vat",
+      "https://baolamdong.vn/doi-song/nen-biet",
+      "https://baolamdong.vn/phap-luat",
+      "https://baolamdong.vn/phap-luat/an-ninh-trat-tu",
+      "https://baolamdong.vn/phap-luat/phap-luat-doi-song",
+      "https://baolamdong.vn/phap-luat/nhip-cau-ban-doc",
+      "https://baolamdong.vn/quoc-phong-an-ninh",
+      "https://baolamdong.vn/quoc-phong-an-ninh/quoc-phong-toan-dan",
+      "https://baolamdong.vn/quoc-phong-an-ninh/vi-an-ninh-to-quoc",
+      "https://baolamdong.vn/quoc-phong-an-ninh/vu-khi-trang-bi",
+      "https://baolamdong.vn/van-hoa-giai-tri",
+      "https://baolamdong.vn/van-hoa-giai-tri/bien-dao-viet-nam",
+      "https://baolamdong.vn/van-hoa-giai-tri/tho",
+      "https://baolamdong.vn/van-hoa-giai-tri/dat-nuoc-con-nguoi",
+      "https://baolamdong.vn/van-hoa-giai-tri/truyen-ngan",
+      "https://baolamdong.vn/van-hoa-giai-tri/tan-van",
+      "https://baolamdong.vn/van-hoa-giai-tri/di-san-truyen-thong",
+      "https://baolamdong.vn/van-hoa-giai-tri/sea-games-33",
+      "https://baolamdong.vn/van-hoa-giai-tri/the-thao-360",
+      "https://baolamdong.vn/van-hoa-giai-tri/showbiz",
+      "https://baolamdong.vn/du-lich",
+      "https://baolamdong.vn/du-lich/kham-pha",
+      "https://baolamdong.vn/du-lich/thong-tin-du-lich",
+      "https://baolamdong.vn/du-lich/an-gi-o-dau",
+      "https://baolamdong.vn/du-lich/diem-den",
+      "https://baolamdong.vn/cong-nghe-chuyen-doi-so",
+      "https://baolamdong.vn/cong-nghe-chuyen-doi-so/khoa-hoc-cong-nghe",
+      "https://baolamdong.vn/cong-nghe-chuyen-doi-so/chuyen-doi-so",
+      "https://baolamdong.vn/cong-nghe-chuyen-doi-so/o-to-xe-may",
+      "https://baolamdong.vn/video",
+      "https://baolamdong.vn/video/tin-tuc-lam-dong",
+      "https://baolamdong.vn/video/thoi-su",
+      "https://baolamdong.vn/video/phong-su"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?baolamdong.vn/.*/\\d{6}/.*-\\d{5,}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baolamdong.vn",
+    "checkedAt": "2026-11-09T03:56:50.513Z",
+    "url": "https://baolamdong.vn/suc-song-tu-nhung-khong-gian-am-nhac-cong-dong-473503.html",
+    "finalUrl": "https://baolamdong.vn/suc-song-tu-nhung-khong-gian-am-nhac-cong-dong-473503.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6110,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baolamdong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 74,
+    "checkedArticleUrls": 76,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 74,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 60,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1379,
+        "passed": 74,
+        "distinctHashes": 74
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baolamdong.vn/pho-bi-thu-thuong-truc-tinh-uy-lam-dong-dang-hong-sy-trao-huy-hieu-80-nam-tuoi-dang-cho-dong-chi-nguyen-thi-chi-473721.html",
+      "https://baolamdong.vn/pho-bi-thu-tinh-uy-lam-dong-bui-thang-lam-viec-voi-xa-da-huoai-2-473713.html",
+      "https://baolamdong.vn/dich-vu-cong-truc-tuyen-linh-vuc-dat-dai-tu-thuc-tien-den-giai-phap-473645.html",
+      "https://baolamdong.vn/lam-dong-bam-sat-du-dia-tung-nganh-linh-vuc-de-gom-thoc-vao-tang-truong-473698.html",
+      "https://baolamdong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-473717.html",
+      "https://baolamdong.vn/lam-dong-cu-the-hoa-tung-nhiem-vu-bao-dam-tien-do-thuc-hien-festival-hoa-da-lat-473716.html",
+      "https://baolamdong.vn/lam-dong-ra-soat-toan-dien-du-an-khai-thac-bauxit-cum-nhan-co-473704.html",
+      "https://baolamdong.vn/lam-dong-bao-dam-nguon-cung-vat-lieu-phuc-vu-cac-cong-trinh-du-an-trong-diem-473668.html",
+      "https://baolamdong.vn/hoi-nghi-truc-tuyen-toan-quoc-trien-khai-luat-trach-nhiem-boi-thuong-cua-nha-nuoc-473701.html",
+      "https://baolamdong.vn/lam-dong-tap-huan-chuyen-doi-so-va-co-yeu-trong-cac-co-quan-dang-473702.html",
+      "https://baolamdong.vn/lam-dong-hop-tac-phat-trien-vung-nguyen-lieu-ca-phe-ben-vung-quy-mo-250-000-ha-473715.html",
+      "https://baolamdong.vn/khi-cong-vien-tro-thanh-diem-hen-am-nhac-473653.html",
+      "https://baolamdong.vn/bo-rong-xen-nguoi-linh-gia-giu-nghe-truyen-thong-473652.html",
+      "https://baolamdong.vn/tay-lam-dong-lan-toa-sac-hoa-lam-dep-khong-gian-do-thi-473707.html",
+      "https://baolamdong.vn/xay-dung-van-hoa-con-nguoi-ham-thuan-bac-trong-giai-doan-moi-473725.html",
+      "https://baolamdong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-nguyen-chu-tich-lien-minh-nghi-sy-huu-nghi-nhat-viet-va-thong-doc-mot-so-dia-phuong-cua-nhat-ban-473718.html",
+      "https://baolamdong.vn/tang-cuong-quan-ly-giam-thieu-chat-thai-nhua-473643.html",
+      "https://baolamdong.vn/phan-ri-cua-thu-ngan-sach-vuot-du-toan-473640.html",
+      "https://baolamdong.vn/tuy-duc-tham-chuc-mung-huyen-ou-reang-nhan-quoc-khanh-campuchia-473657.html",
+      "https://baolamdong.vn/xay-dung-gia-dinh-hanh-phuc-tu-su-thau-hieu-se-chia-473708.html",
+      "https://baolamdong.vn/lam-dong-yeu-cau-2-xa-bien-gioi-tap-trung-hoan-thanh-nhiem-vu-nam-2026-473714.html",
+      "https://baolamdong.vn/hon-1-000-van-dong-vien-se-tham-du-giai-chay-quang-truc-half-marathon-2026-473703.html",
+      "https://baolamdong.vn/tu-nong-san-dia-phuong-den-san-pham-ocop-lam-dong-473633.html",
+      "https://baolamdong.vn/cong-an-xa-nam-thanh-bam-sat-co-so-giu-vung-an-ninh-trat-tu-473656.html",
+      "https://baolamdong.vn/chu-dong-tu-som-giu-vung-an-ninh-hang-khong-473654.html",
+      "https://baolamdong.vn/mat-tran-ket-noi-nhung-vong-tay-se-chia-473646.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 2
+    },
+    "checkedAt": "2026-11-10T09:14:17.970Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baolamdong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafeauto.vn",
+  "siteId": "cafeauto.vn",
+  "registrableDomain": "cafeauto.vn",
+  "homepage": "https://cafeauto.vn/",
+  "allowedHosts": [
+    "cafeauto.vn",
+    "www.cafeauto.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ra mắt chưa kịp \"nóng ghế\" Toyota Yaris Cross bản nâng cấp nhận ưu đãi hơn 70 triệu đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "httpAdapter": "cafeauto_public_article_api",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:27.666Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://cafeauto.vn/post/ra-mat-chua-kip-nong-ghe-toyota-yaris-cross-ban-nang-cap-nhan-uu-dai-hon-70-trieu-dong-83760.html",
+      "https://cafeauto.vn/post/ford-territory-giam-truc-tiep-58-trieu-dong-cho-ba-phien-ban-gia-thuc-te-con-tu-761-trieu-dong-83759.html",
+      "https://cafeauto.vn/post/honda-sensing-ride-trinh-lang-cong-nghe-ho-tro-nang-cao-cho-mo-to-hoan-toan-moi-83757.html",
+      "https://cafeauto.vn/post/han-che-xe-xang-vao-vung-phat-thai-thap-de-xuat-khong-de-nguoi-thu-nhap-thap-phai-ganh-chi-phi-doi-xe-83758.html",
+      "https://cafeauto.vn/post/tung-la-suv-hang-sang-tien-ty-lexus-gx-470-doi-2009-duoc-ngan-hang-chao-thanh-ly-tu-563-trieu-dong-83756.html",
+      "https://cafeauto.vn/post/ra-mat-chua-kip-nong-ghe-toyota-yaris-cross-ban-nang-cap-nhan-uu-dai-hon-70-trieu-dong-83760.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/cafeauto.vn"
+  },
+  "discovery": {
+    "homepage": "https://cafeauto.vn/",
+    "categories": [
+      "https://cafeauto.vn/video",
+      "https://cafeauto.vn/yeu-thich",
+      "https://cafeauto.vn/video/yeu-thich",
+      "https://cafeauto.vn/bang-gia-xe",
+      "https://cafeauto.vn/ho-tro-tai-chinh",
+      "https://cafeauto.vn/goi-bao-hiem",
+      "https://cafeauto.vn/trac-nghiem/page-1"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?cafeauto.vn/.*?/.*?(\\d{4,})(.html)$",
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafeauto.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 9,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 14,
+    "parserIssues": 11,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 9,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 8,
+    "categoriesUnconfirmed": 8,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 32,
+        "passed": 9,
+        "distinctHashes": 9
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 6,
+      "original_publication_not_yet_confirmed": 5
+    },
+    "checkedAt": "2026-11-10T09:14:34.535Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafeauto.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

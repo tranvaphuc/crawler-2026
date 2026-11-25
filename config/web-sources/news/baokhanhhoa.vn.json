@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baokhanhhoa.vn",
+  "siteId": "baokhanhhoa.vn",
+  "registrableDomain": "baokhanhhoa.vn",
+  "homepage": "https://baokhanhhoa.vn/",
+  "allowedHosts": [
+    "baokhanhhoa.vn",
+    "www.baokhanhhoa.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baokhanhhoa.vn/",
+    "categories": [
+      "https://baokhanhhoa.vn/chinh-tri/",
+      "https://baokhanhhoa.vn/chinh-tri/giai-bua-liem-vang/",
+      "https://baokhanhhoa.vn/chinh-tri/quoc-hoi-hdnd/",
+      "https://baokhanhhoa.vn/chinh-tri/bao-ve-nen-tang-tu-tuong-cua-dang/",
+      "https://baokhanhhoa.vn/chinh-tri/xay-dung-dang/",
+      "https://baokhanhhoa.vn/chinh-tri/dan-van-kheo/",
+      "https://baokhanhhoa.vn/chinh-tri/hoat-dong-lanh-dao-trung-uong/",
+      "https://baokhanhhoa.vn/chinh-tri/nhan-su-moi/",
+      "https://baokhanhhoa.vn/doi-song/chinh-sach-moi/",
+      "https://baokhanhhoa.vn/chinh-tri/thoi-su-suy-ngam/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Khánh Hòa đạt giải khuyến khích tại cuộc thi tiểu phẩm truyền thông phòng, chống tác hại thuốc lá",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:45.593Z",
+    "frozenAt": "2026-11-16T01:57:40.776Z",
+    "trainingUrl": "https://baokhanhhoa.vn/xa-hoi/202610/khanh-hoa-dat-giai-khuyen-khich-tai-cuoc-thi-tieu-pham-truyen-thong-phong-chong-tac-hai-thuoc-la-a02769d",
+    "independentHoldouts": [
+      "https://baokhanhhoa.vn/kinh-te/nong-nghiep-nong-thon-moi/202610/agris-phan-rang-to-chuc-hoi-nghi-tong-ket-nien-vu-mia-2025-2026-va-dinh-huong-chinh-sach-dau-tu-vu-mia-2026-2027-7d07b7d/",
+      "http://www.baokhanhhoa.vn/xa-hoi/202610/tap-huan-ve-nghien-cuu-tinh-hinh-su-dung-thuoc-la-cho-64-can-bo-y-te-cac-xa-phuong-d8e37a6/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baokhanhhoa.vn/xa-hoi/202610/khanh-hoa-dat-giai-khuyen-khich-tai-cuoc-thi-tieu-pham-truyen-thong-phong-chong-tac-hai-thuoc-la-a02769d",
+      "https://baokhanhhoa.vn/kinh-te/nong-nghiep-nong-thon-moi/202610/agris-phan-rang-to-chuc-hoi-nghi-tong-ket-nien-vu-mia-2025-2026-va-dinh-huong-chinh-sach-dau-tu-vu-mia-2026-2027-7d07b7d/",
+      "http://www.baokhanhhoa.vn/xa-hoi/202610/tap-huan-ve-nghien-cuu-tinh-hinh-su-dung-thuoc-la-cho-64-can-bo-y-te-cac-xa-phuong-d8e37a6/",
+      "http://www.baokhanhhoa.vn/xa-hoi/202609/trao-guinhung-yeu-thuong-c74358e",
+      "http://www.baokhanhhoa.vn/xa-hoi/y-te-suc-khoe/202610/tap-huan-phong-chong-tac-hai-cua-thuoc-la-cho-mang-luoi-cong-tac-vien-d8f56a8/",
+      "https://baokhanhhoa.vn/kinh-te/nong-nghiep-nong-thon-moi/202610/san-luong-duong-nien-vu-2025-2026-cua-agris-ninh-hoa-dat-197614-tan-8d70708/",
+      "https://baokhanhhoa.vn/xa-hoi/202611/lan-toa-loi-song-dep-trong-the-he-tre-4f80923/",
+      "https://baokhanhhoa.vn/kinh-te/202611/cong-nghe-dong-hanh-cung-nha-nong-5d16f90/",
+      "https://baokhanhhoa.vn/xa-hoi/202611/nop-thue-de-xay-dung-dat-nuoc-giau-manh-cuoc-song-am-no-hanh-phuc-thue-co-so-6-tap-trungchuan-hoa-du-lieu-thue-15f591c/",
+      "https://baokhanhhoa.vn/xa-hoi/y-te-suc-khoe/202611/benh-viendakhoakhu-vuc-ninhhoa-so-hoa-de-nangcao-chat-luong-y-te-b805613/",
+      "https://baokhanhhoa.vn/thong-tin-xa-my-son/202611/ho-tro-39-nguoi-dan-toc-thieu-so-o-xa-my-son-thi-sat-hach-giay-phep-lai-xe-mo-to-22310d5/",
+      "https://baokhanhhoa.vn/xa-hoi/202611/ngay-hoi-dai-doan-ket-dan-toc-tai-thon-suoi-lau-xa-suoi-dau-cb841a5/",
+      "https://baokhanhhoa.vn/xa-hoi/202611/khanh-hoa-cong-bo-cong-khai-quy-hoach-chung-do-thi-den-nam-2050-tam-nhin-den-nam-2075-d8f74b5/",
+      "https://baokhanhhoa.vn/kinh-te/cong-nghiep-nang-luong/202611/khu-cong-nghiep-du-longgo-diem-nghen-ha-tang-tao-suc-hut-dau-tu-5033a8b/",
+      "https://baokhanhhoa.vn/chinh-tri/202611/ngay-hoi-dai-doan-ket-toan-dan-toc-tai-lien-khu-dan-cu-thon-suoi-ca-xa-trung-khanh-vinh-ec2292d/",
+      "https://baokhanhhoa.vn/xa-hoi/202611/giao-gan-84ha-dat-thuc-hien-du-an-khu-do-thi-hanh-chinh-dien-khanh-a7a761d/",
+      "https://baokhanhhoa.vn/chinh-tri/quoc-hoi-hdnd/202611/dot-1-ky-hop-thu-2-quoc-hoi-khoa-xvi-cu-the-hoa-bang-hanh-dong-thuc-hien-phuong-cham-chinh-xac-kip-thoi-mo-duong-phat-trien-0cd40d4/",
+      "https://baokhanhhoa.vn/chinh-tri/202611/truong-du-bi-dai-hoc-dan-toc-trung-uong-nha-trang-ky-niem-50-namngay-thanh-lap-c5c600d/",
+      "https://baokhanhhoa.vn/chinh-tri/202611/lien-hoan-nghe-thuat-quan-chung-sac-mau-dai-doan-ket-va-khat-vong-vuon-len-2dd788c/",
+      "https://baokhanhhoa.vn/chinh-tri/quoc-phong/202611/lu-doan-101-ho-tro-truong-thcs-cam-lam-phan-hieu-quang-trung-cung-co-canh-quan-moi-truong-95a3c35/",
+      "https://baokhanhhoa.vn/kinh-te/202611/khanh-hoa-trien-khai-chuong-trinh-binh-on-thi-truong-tet-nguyen-dan-2027-abe635f/",
+      "https://baokhanhhoa.vn/kinh-te/202611/dien-dan-khuyen-nong-ve-giai-phap-nang-cao-gia-tri-chuoi-khai-thac-bao-quan-va-che-bien-hai-san-b8a6c09/",
+      "https://baokhanhhoa.vn/du-lich/202611/bao-singapore-ca-ngoi-cam-lam-la-diem-den-ly-tuong-0e17532/",
+      "https://baokhanhhoa.vn/du-lich/202611/de-khanh-hoa-tro-thanh-diem-dendu-lich-golf-ffb0efc/",
+      "https://baokhanhhoa.vn/du-lich/202611/hoi-thao-xay-dung-moi-truong-khong-khoi-thuoc-tai-cac-diem-tham-quan-va-co-so-luu-tru-du-lich-8de0102/",
+      "https://baokhanhhoa.vn/diem-hen-khanh-hoa/202611/ve-bac-ai-tay-trai-nghiem-van-hoa-raglai-1476c01/",
+      "https://baokhanhhoa.vn/van-hoa/202611/dai-hoi-hoi-bao-ton-di-san-van-hoa-va-du-lich-tam-linh-tinh-khanh-hoalan-thu-iii-dc95ddb/",
+      "https://baokhanhhoa.vn/doi-song/202611/who-canh-bao-tinh-trang-thieu-van-dong-o-nhieu-thanh-thieu-nien-3e71b35/",
+      "https://baokhanhhoa.vn/doi-song/202611/tac-dung-bat-ngo-cua-rau-bi-ngo-voi-gan-va-tieu-hoa-dbc7db3/",
+      "https://baokhanhhoa.vn/doi-song/202611/loi-ich-bat-ngo-khi-van-dong-5-phut-giua-gio-lam-a60187e/",
+      "https://baokhanhhoa.vn/doi-song/202611/xe-dien-co-the-dau-bao-lau-ma-khong-can-sac-lai-pin-d6b1730/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

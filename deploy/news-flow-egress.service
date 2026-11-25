@@ -1,0 +1,14 @@
+[Unit]
+Description=Scoped outbound proxy rules for news-flow
+After=network-pre.target csf.service
+Before=news-flow.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/libexec/news-flow-egress.py
+RemainAfterExit=yes
+NoNewPrivileges=true
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bbw.vn",
+  "siteId": "bbw.vn",
+  "registrableDomain": "bbw.vn",
+  "homepage": "https://bbw.vn/",
+  "allowedHosts": [
+    "bbw.vn",
+    "www.bbw.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bên trong chiêu thức giao dịch ảo (Wash-Trade) tại Indonesia",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-app",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-17T08:57:24.730Z",
+    "sampleCount": 9,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://bbw.vn/ipo-anthropic-nha-dau-tu-chau-a-mua-co-phieu-the-nao-61598.html",
+      "https://bbw.vn/dao-tao-nhan-luc-the-he-moi-viet-nam-can-xac-dinh-nhung-uu-tien-nao-61566.html",
+      "https://bbw.vn/jensen-huang-be-boi-tinh-ai-nghi-van-gian-diep-va-cu-soc-nvidia-61567.html",
+      "https://bbw.vn/viec-jensen-huang-bi-thoi-chuc-ceo-co-y-nghia-gi-doi-voi-nvidia-61550.html",
+      "https://bbw.vn/viet-nam-nen-lua-chon-su-dung-cac-mo-hinh-ai-my-hay-trung-quoc-61546.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bbw.vn/",
+    "categories": [
+      "https://bbw.vn/kinh-doanh",
+      "https://bbw.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.224Z",
+      "verifiedSeeds": [
+        "https://bbw.vn/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bbw.vn",
+    "checkedAt": "2026-11-09T03:56:52.176Z",
+    "url": "https://bbw.vn/viet-nam-hoc-gi-tu-indonesia-de-thu-hut-dau-tu-vao-nang-luong-61383.html",
+    "finalUrl": "https://bbw.vn/viet-nam-hoc-gi-tu-indonesia-de-thu-hut-dau-tu-vao-nang-luong-61383.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 164,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "bbw.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 29,
+    "checkedArticleUrls": 37,
+    "freshArticleChecks": 27,
+    "parserIssues": 8,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 26,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 91,
+        "passed": 29,
+        "distinctHashes": 26
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://bbw.vn/alice-huang-la-ai-nvidia-dieu-tra-moi-quan-he-ngoai-luong-cua-ceo-voi-nghi-van-gian-diep-trung-quoc-61455.html",
+      "https://bbw.vn/nvidia-co-dang-qua-quyen-luc-ceo-jensen-huang-len-tieng-61453.html",
+      "https://bbw.vn/nhan-dien-rui-ro-la-chua-du-doanh-nghiep-viet-con-thieu-gi-de-ung-pho-voi-bien-dong-chuoi-cung-ung-ba-nguyen-da-quyen-giam-doc-cel-chi-ra-nhung-diem-yeu-trong-quan-tri-du-lieu-va-xay-dung-kich-ban-du-phong-tim-hieu-them-tai-vietnam-future-econom-61440.html",
+      "https://bbw.vn/ben-trong-cac-khoang-hang-thuong-gia-moi-cua-singapore-airlines-61431.html",
+      "https://bbw.vn/de-che-musk-mat-130-ty-usd-khi-texas-doi-mau-chinh-tri-61430.html",
+      "https://bbw.vn/chi-phi-khong-lo-de-xay-dung-mot-trung-tam-du-lieu-ai-60925.html",
+      "https://bbw.vn/meta-va-openai-dung-tro-ly-ai-de-thuong-de-thu-hut-nguoi-dung-60932.html",
+      "https://bbw.vn/du-bao-lac-quan-dat-uy-tin-bo-truong-tai-chinh-my-truoc-thu-thach-60826.html",
+      "https://bbw.vn/bien-san-sau-nha-de-xe-thanh-nha-phu-bai-toan-khong-re-tai-my-60752.html",
+      "https://bbw.vn/can-gi-de-duoc-tuyen-dung-vao-spacex-60677.html",
+      "https://bbw.vn/ai-dang-thay-doi-cac-bai-nghien-cuu-tinh-huong-cua-cac-truong-kinh-doanh-60559.html",
+      "https://bbw.vn/chiec-xe-dap-5000-usd-cho-thay-vi-sao-rat-kho-san-xuat-tai-my-60526.html",
+      "https://bbw.vn/lan-song-tay-chay-polyester-da-tro-lai-60460.html",
+      "https://bbw.vn/hormuz-cua-lua-mi-bien-den-tac-nghen-the-gioi-thieu-ngu-coc-60411.html",
+      "https://bbw.vn/can-lam-gi-de-co-duoc-cong-viec-dau-tien-tren-pho-wall-60370.html",
+      "https://bbw.vn/cong-cu-phat-hien-ai-dang-tin-cay-nhat-the-gioi-lai-dang-doi-mat-voi-van-de-tu-con-nguoi-60337.html",
+      "https://bbw.vn/ai-dang-chuyen-doi-gioi-kinh-doanh-gio-day-den-luot-cac-lop-hoc-mba-60305.html",
+      "https://bbw.vn/nhung-ty-phu-dung-sau-con-bung-no-tai-chinh-cua-an-do-59965.html",
+      "https://bbw.vn/cu-dat-cuoc-14-ti-usd-vao-phan-ung-hop-nhan-khong-con-la-du-an-khoa-hoc-60216.html",
+      "https://bbw.vn/suno-dot-pha-moi-hay-co-may-tao-rac-am-nhac-60217.html",
+      "https://bbw.vn/tam-ve-trung-binh-cao-cua-viet-nam-chua-phai-giay-thong-hanh-60157.html",
+      "https://bbw.vn/tu-su-ra-di-cua-nha-may-ecco-den-bai-toan-doi-moi-sang-tao-cua-chuoi-cung-viet-61388.html",
+      "https://bbw.vn/viet-nam-truoc-phep-thu-bao-mat-cua-thi-truong-tien-ma-hoa-61255.html",
+      "https://bbw.vn/sieu-el-nino-dang-den-se-anh-huong-ra-sao-toi-kinh-te-viet-nam-1-61136.html",
+      "https://bbw.vn/nguoi-ham-mo-viet-dang-chi-nhieu-nhat-vao-dau-de-ung-ho-nghe-si-61012.html",
+      "https://bbw.vn/bac-thang-giua-mong-manh-cua-kinh-te-viet-nam-60872.html",
+      "https://bbw.vn/lan-song-ai-van-chua-chung-minh-duoc-kha-nang-sinh-loi-tai-doanh-nghiep-viet-60707.html",
+      "https://bbw.vn/chinh-sach-my-voi-viet-nam-se-bien-dong-nhu-the-nao-sau-bau-cu-giua-ky-61451.html",
+      "https://bbw.vn/ai-phat-hien-them-lo-hong-chua-han-la-tin-hieu-dang-lo-61438.html",
+      "https://bbw.vn/hay-canh-giac-voi-anh-huong-cua-cac-ga-khong-lo-tai-chinh-61420.html",
+      "https://bbw.vn/ai-dang-che-day-nhung-ran-nut-trong-nen-kinh-te-han-quoc-61381.html",
+      "https://bbw.vn/trump-bi-don-vao-the-kho-va-tro-nen-kho-luong-hon-61365.html",
+      "https://bbw.vn/pho-wall-dang-giup-trung-quoc-xay-dung-dong-nhan-dan-te-thanh-dong-tien-toan-cau-61364.html",
+      "https://bbw.vn/khi-ai-khong-the-quen-nhung-gi-doanh-nghiep-muon-xoa-61360.html",
+      "https://bbw.vn/pho-wall-dang-giup-trung-quoc-quoc-te-hoa-nhan-dan-te-61356.html",
+      "https://bbw.vn/lien-minh-maga-cua-ong-trump-vua-tan-ra-1-61342.html",
+      "https://bbw.vn/con-sot-ai-co-the-gieo-mam-cho-mot-cuoc-khung-hoang-tai-chinh-moi-61317.html",
+      "https://bbw.vn/dien-than-tro-lai-o-chau-a-xu-huong-moi-hay-phan-ung-nhat-thoi-61277.html",
+      "https://bbw.vn/lieu-lan-song-chinamaxxing-sap-co-buoc-ngoat-nhu-hang-hoa-nhat-ban-61251.html",
+      "https://bbw.vn/nimby-hay-quy-huu-tri-australia-lam-vo-bong-bong-trung-tam-du-lieu-61224.html",
+      "https://bbw.vn/nhat-ban-co-the-vuot-qua-lan-song-phan-doi-trung-tam-du-lieu-1-61200.html",
+      "https://bbw.vn/kinh-te-chia-se-phai-thich-nghi-voi-nhat-ban-61186.html",
+      "https://bbw.vn/ton-tu-co-con-duong-lui-cho-nganh-sinh-hoc-my-trung-61175.html",
+      "https://bbw.vn/bung-no-ai-mang-lai-co-hoi-moi-cho-malaysia-toa-sang-1-61173.html",
+      "https://bbw.vn/tu-cap-bien-den-trung-tam-du-lieu-ai-kiem-soat-ha-tang-so-61152.html",
+      "https://bbw.vn/spacex-va-tesla-mot-cuoc-sap-nhap-ky-la-nhung-chac-chan-61125.html",
+      "https://bbw.vn/cac-tac-tu-ai-dang-nhom-ngo-nguon-tien-cua-ngan-hang-61121.html",
+      "https://bbw.vn/tu-cong-xuong-den-phat-trien-cong-nghe-viet-nam-can-gi-61389.html",
+      "https://bbw.vn/nhung-nha-vo-dich-chuoi-cung-ung-moi-cua-chau-a-co-the-la-doanh-nghiep-viet-61345.html",
+      "https://bbw.vn/don-bay-nao-cho-cong-nghiep-viet-nam-but-pha-61368.html",
+      "https://bbw.vn/ai-dang-tac-dong-ra-sao-den-thi-truong-lao-dong-viet-nam-1-61330.html",
+      "https://bbw.vn/tu-ngoai-giao-cay-tre-den-ung-dung-ai-linh-hoat-1-61313.html",
+      "https://bbw.vn/dai-dien-ilo-viet-nam-dang-doi-mat-nghich-ly-tong-hop-cua-ai-61278.html",
+      "https://bbw.vn/vifc-hcmc-ky-vong-dong-von-tu-10-thanh-vien-dau-tien-61250.html",
+      "https://bbw.vn/viet-nam-se-co-co-hoi-xay-dung-nen-kinh-te-tac-tu-ai-61218.html",
+      "https://bbw.vn/nang-luong-la-yeu-to-then-chot-thu-hut-nha-dau-tu-ai-vao-viet-nam-61177.html",
+      "https://bbw.vn/tap-doan-nam-long-va-hanh-trinh-kien-tao-xu-the-bat-dong-san-viet-powered-by-tap-doan-nam-long-60977.html",
+      "https://bbw.vn/vi-sao-du-an-nang-luong-quy-mo-lon-kho-vay-von-60060.html",
+      "https://bbw.vn/3-yeu-to-nha-dau-tu-nang-luong-quan-tam-truoc-khi-xuong-tien-60061.html",
+      "https://bbw.vn/lam-sao-bien-tham-vong-nang-luong-thanh-du-an-co-the-cap-von-60013.html",
+      "https://bbw.vn/cai-gia-cua-tang-truong-nong-cat-dien-luan-phien-59927.html",
+      "https://bbw.vn/theo-ong-john-rockhold-viet-nam-dang-dinh-huong-tach-vai-tro-giua-san-xuat-dien-va-luoi-dien-voi-evn-tap-trung-vao-luoi-dien-va-khu-vuc-tu-nhan-dam-nhiem-phat-dien-thong-qua-cac-tong-cong-ty-phat-dien-tuy-nhien-luoi-dien-van-la-diem-nghen-khien-59912.html",
+      "https://bbw.vn/luoi-dien-dang-can-viet-nam-hut-von-vao-ai-va-data-center-59911.html",
+      "https://bbw.vn/thai-do-la-yeu-to-cot-loi-de-thu-hut-cac-von-dau-tu-nuoc-ngoai-vao-khu-cong-nghiep-59900.html",
+      "https://bbw.vn/fdi-chat-luong-cao-dat-ra-chuan-moi-cho-ha-tang-kcn-59832.html",
+      "https://bbw.vn/nha-dau-tu-ngan-ngai-xuong-tien-khi-du-an-chua-san-sang-59754.html",
+      "https://bbw.vn/viet-nam-khong-thieu-von-cho-ha-tang-chi-thieu-du-an-san-sang-1-59742.html",
+      "https://bbw.vn/viet-nam-khong-thieu-von-cho-ha-tang-chi-thieu-du-an-san-sang-59713.html",
+      "https://bbw.vn/bong-bong-ai-co-the-keo-von-ngoai-khoi-viet-nam-59643.html",
+      "https://bbw.vn/vi-sao-vn-index-chua-phan-anh-dung-quy-mo-kinh-te-viet-nam-59614.html",
+      "https://bbw.vn/thi-truong-chung-khoan-nua-cuoi-2026-phan-hoa-manh-rui-ro-tu-ti-gia-59588.html",
+      "https://bbw.vn/thi-truong-van-hap-dan-nhung-dau-tu-can-ky-luat-59423.html",
+      "https://bbw.vn/bo-ba-dan-dat-thi-truong-nua-cuoi-nam-59404.html",
+      "https://bbw.vn/5-yeu-to-khien-von-ngoai-roi-thi-truong-viet-nam-59396.html",
+      "https://bbw.vn/ba-yeu-to-keo-dong-von-ngoai-tro-lai-ty-gia-nguon-hang-moi-fol-59370.html",
+      "https://bbw.vn/doanh-nghiep-viet-nam-xung-dang-voi-muc-dinh-gia-cao-hon-59156.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 6,
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:14:30.676Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/bbw.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "article.bbw-native-video > h1"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".bbw-native-public-body",
+        "remove": "script,style"
+      },
+      "publishedDate": {
+        "strategy": "jsonld"
+      }
+    }
+  ],
+  "publicationDatePolicy": "original_only",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "bbw.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "nativePublicationAdapter": "url_bound_bbw_public_video"
+}

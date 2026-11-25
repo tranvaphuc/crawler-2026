@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "siteName": "diendandoanhnghiep.vn",
+  "siteId": "diendandoanhnghiep.vn",
+  "registrableDomain": "diendandoanhnghiep.vn",
+  "homepage": "https://diendandoanhnghiep.vn/",
+  "allowedHosts": [
+    "diendandoanhnghiep.vn",
+    "www.diendandoanhnghiep.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://diendandoanhnghiep.vn/",
+    "categories": [
+      "https://diendandoanhnghiep.vn/tin-moi-nhat"
+    ]
+  },
+  "title": {
+    "value": "Forbes Việt Nam vinh danh HDBank trong nhóm doanh nghiệp dẫn đầu về ESG năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:00.018Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:55.329Z",
+    "independentHoldouts": [
+      "https://diendandoanhnghiep.vn/hdbank-tiep-tuc-khang-dinh-vi-the-thuong-hieu-quoc-gia-2026-10187437.html",
+      "https://diendandoanhnghiep.vn/vinamilk-gia-nhap-lien-minh-niem-tin-so-chung-tay-bao-ve-tre-em-tren-moi-truong-mang-10186825.html",
+      "https://diendandoanhnghiep.vn/hoan-thien-phap-ly-ve-phat-trien-cong-nghiep-van-hoa-10187484.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://diendandoanhnghiep.vn/forbes-viet-nam-vinh-danh-hdbank-trong-nhom-doanh-nghiep-dan-dau-ve-esg-nam-2026-10187433.html",
+      "https://diendandoanhnghiep.vn/hdbank-tiep-tuc-khang-dinh-vi-the-thuong-hieu-quoc-gia-2026-10187437.html",
+      "https://diendandoanhnghiep.vn/vinamilk-gia-nhap-lien-minh-niem-tin-so-chung-tay-bao-ve-tre-em-tren-moi-truong-mang-10186825.html",
+      "https://diendandoanhnghiep.vn/hoan-thien-phap-ly-ve-phat-trien-cong-nghiep-van-hoa-10187484.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

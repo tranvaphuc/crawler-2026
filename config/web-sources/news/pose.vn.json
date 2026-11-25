@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "siteName": "pose.vn",
+  "siteId": "pose.vn",
+  "registrableDomain": "pose.vn",
+  "homepage": "https://pose.vn/",
+  "allowedHosts": [
+    "pose.vn",
+    "www.pose.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "ORIBEA bắt tay Welcome ENM, kết nối K-Beauty với người tiêu dùng Việt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Tiệc cưới lãng mạn của Hoa hậu Đỗ Thị Hà và doanh nhân Viết Vương – đám cưới cổ tích khiến dân mạng bùng nổ",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".page-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:03.348Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://pose.vn/giai-tri/oribea-bat-tay-welcome-enm-khi-k-beauty-gap-he-sinh-thai-truyen-thong-tai-viet-nam",
+      "https://pose.vn/hoa-hau/tiec-cuoi-lang-man-giua-bao-cua-hoa-hau-do-thi-ha-va-doanh-nhan-viet-vuong",
+      "https://pose.vn/life-style/thuong-hieu-tui-xach-ther-gab-don-sinh-nhat-3-tuoi-voi-nhieu-dau-an-sang-tao",
+      "https://pose.vn/giai-tri/38-tuoi-luu-diec-phi-van-nhu-doi-muoi-nho-dieu-khong-ai-ngo-toi",
+      "https://pose.vn/giai-tri/tran-thanh-dan-show-a-i-la-ai-khi-cong-nghe-va-giai-tri-giao-thoa"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://pose.vn/",
+    "categories": [
+      "https://pose.vn/chuyen-muc/hoa-hau",
+      "https://pose.vn/chuyen-muc/life-style",
+      "https://pose.vn/chuyen-muc/khoe",
+      "https://pose.vn/chuyen-muc/lam-dep",
+      "https://pose.vn/chuyen-muc/thoi-trang",
+      "https://pose.vn/chuyen-muc/giai-tri",
+      "https://pose.vn/chuyen-muc/sao",
+      "https://pose.vn/chuyen-muc/phim-anh",
+      "https://pose.vn/chuyen-muc/tv-show",
+      "https://pose.vn/ve-chung-toi"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "pose.vn",
+    "checkedAt": "2026-11-09T03:57:23.011Z",
+    "url": "https://pose.vn/giai-tri/oribea-bat-tay-welcome-enm-khi-k-beauty-gap-he-sinh-thai-truyen-thong-tai-viet-nam",
+    "finalUrl": "https://pose.vn/giai-tri/oribea-bat-tay-welcome-enm-khi-k-beauty-gap-he-sinh-thai-truyen-thong-tai-viet-nam",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5735,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "pose.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 16,
+    "checkedArticleUrls": 16,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 77,
+        "passed": 16,
+        "distinctHashes": 16
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://pose.vn/life-style/thuong-hieu-tui-xach-ther-gab-don-sinh-nhat-3-tuoi-voi-nhieu-dau-an-sang-tao",
+      "https://pose.vn/hoa-hau/tiec-cuoi-lang-man-giua-bao-cua-hoa-hau-do-thi-ha-va-doanh-nhan-viet-vuong",
+      "https://pose.vn/giai-tri/38-tuoi-luu-diec-phi-van-nhu-doi-muoi-nho-dieu-khong-ai-ngo-toi",
+      "https://pose.vn/giai-tri/tran-thanh-dan-show-a-i-la-ai-khi-cong-nghe-va-giai-tri-giao-thoa",
+      "https://pose.vn/hoa-hau/hoa-hau-do-my-linh-gay-chu-y-voi-chiec-vay-kin-tren-ho-duoi-khoe-ve-dep-quyen-ru-ma-tinh-te",
+      "https://pose.vn/khoe/thuoc-orihiro-nattokinase-4000fu-co-tac-dung-gi",
+      "https://pose.vn/khoe/cong-dung-cua-natto-4000fu-nhat-ban-ho-tro-tuan-hoan-mau-giam-nguy-co-dot-quy",
+      "https://pose.vn/khoe/cach-su-dung-nattokinase-4000fu-dung-de-dat-hieu-qua-toi-uu",
+      "https://pose.vn/khoe/cach-uong-thuoc-chong-dot-quy-nhat-4000fu-dung-chuan",
+      "https://pose.vn/khoe/orihiro-nattokinase-4000fu-gia-bao-nhieu-mua-o-dau-chinh-hang-tai-viet-nam",
+      "https://pose.vn/lam-dep/tay-te-bao-chet-sukin-oil-balancing-giai-phap-diu-nhe-cho-da-dau-mun",
+      "https://pose.vn/giai-tri/oribea-bat-tay-welcome-enm-khi-k-beauty-gap-he-sinh-thai-truyen-thong-tai-viet-nam",
+      "https://pose.vn/hoa-hau/hoa-hau-thuy-tien-nhan-con-mua-loi-khen-voi-vai-dien-dau-tay-linh-mieu",
+      "https://pose.vn/giai-tri/thanh-hang-sang-chanh-khi-ngoi-ghe-giam-khao-miss-universe-vietnam-2024",
+      "https://pose.vn/hoa-hau/vu-thuy-quynh-quyet-tam-tro-lai-miss-universe-vietnam"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:29.029Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/pose.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

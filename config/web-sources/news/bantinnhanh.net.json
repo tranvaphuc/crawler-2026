@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bantinnhanh.net",
+  "siteId": "bantinnhanh.net",
+  "registrableDomain": "bantinnhanh.net",
+  "homepage": "https://bantinnhanh.net/",
+  "allowedHosts": [
+    "bantinnhanh.net",
+    "www.bantinnhanh.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "TPHCM ban hành giá khám bệnh BHYT tại trạm y tế, chỉ hơn 36.000 đồng/ lượt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:26.328Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://bantinnhanh.net/tphcm-ban-hanh-gia-kham-benh-bhyt-tai-tram-y-te-chi-hon-36000-dong-luot-2534.html",
+      "https://bantinnhanh.net/dai-phan-cach-dai-lo-o-ninh-binh-bien-thanh-ruong-dua-chu-dau-tu-yeu-cau-don-bo-2654.html",
+      "https://bantinnhanh.net/can-biet-thu-tren-nui-cua-sieu-mau-dat-gia-nhat-the-gioi-kendall-jenner-2653.html",
+      "https://bantinnhanh.net/nhat-ban-to-chuc-ky-thi-ninja-nhu-trong-naruto-hon-130-nguoi-tu-9-den-76-tuoi-cung-tranh-tai-nguoi-nuoc-ngoai-cung-co-the-dang-ky-2652.html",
+      "https://bantinnhanh.net/mot-benh-vien-cap-cuu-9-ca-uong-thuoc-con-nguyen-vo-canh-bao-nguy-co-thung-ruot-mat-mang-2651.html",
+      "https://bantinnhanh.net/dai-phan-cach-dai-lo-o-ninh-binh-bien-thanh-ruong-dua-chu-dau-tu-yeu-cau-don-bo-2654.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bantinnhanh.net/",
+    "categories": [
+      "https://bantinnhanh.net/sao/",
+      "https://bantinnhanh.net/nhac-phim/",
+      "https://bantinnhanh.net/dep-khoe/",
+      "https://bantinnhanh.net/suc-khoe/",
+      "https://bantinnhanh.net/xa-hoi/",
+      "https://bantinnhanh.net/tam-su/",
+      "https://bantinnhanh.net/du-lich/",
+      "https://bantinnhanh.net/giao-duc/",
+      "https://bantinnhanh.net/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bantinnhanh.net",
+    "checkedAt": "2026-11-09T03:56:48.952Z",
+    "url": "https://bantinnhanh.net/tphcm-ban-hanh-gia-kham-benh-bhyt-tai-tram-y-te-chi-hon-36000-dong-luot-2534.html",
+    "finalUrl": "https://bantinnhanh.net/tphcm-ban-hanh-gia-kham-benh-bhyt-tai-tram-y-te-chi-hon-36000-dong-luot-2534.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2232,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:31.748Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/bantinnhanh.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "bantinnhanh.net",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 126,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 126,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

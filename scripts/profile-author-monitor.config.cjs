@@ -1,0 +1,1 @@
+module.exports={apps:[{name:'reindex-profile-author-monitor',cwd:'/Users/phuctran/Workspace/crawler-2026',script:'scripts/reindex_available_shards.mjs',args:'watch',autorestart:true,stop_exit_codes:[0],restart_delay:30000,time:true,out_file:'output/reindex-profile-author-es711/monitor.log',error_file:'output/reindex-profile-author-es711/monitor-error.log'}]};

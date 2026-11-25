@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baoxehoi.net",
+  "siteId": "baoxehoi.net",
+  "registrableDomain": "baoxehoi.net",
+  "homepage": "https://baoxehoi.net/",
+  "allowedHosts": [
+    "baoxehoi.net",
+    "www.baoxehoi.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "GAC Yue 7 xe SUV địa hình khá hầm hố",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:02.894Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baoxehoi.net/gac-yue-7-xe-suv-dia-hinh-kha-ham-ho/",
+      "https://baoxehoi.net/bentley-torcal-sieu-xe-suv-dien-dac-biet/",
+      "https://baoxehoi.net/do-xe-sang-cua-gioi-dai-gia-giang-ho-ai-chiu-choi-hon/",
+      "https://baoxehoi.net/kia-seltos-hybrid-moi-manh-me-hon/",
+      "https://baoxehoi.net/peugeot-rcz-vision-phuc-hung-dong-xe-coupe-the-thao/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baoxehoi.net/",
+    "categories": [
+      "https://baoxehoi.net/category/tin-tuc-xe-hoi/",
+      "https://baoxehoi.net/category/danh-gia-xe/",
+      "https://baoxehoi.net/category/doi-song/",
+      "https://baoxehoi.net/category/giai-tri/",
+      "https://baoxehoi.net/category/video/",
+      "https://baoxehoi.net/category/kham-pha/",
+      "https://baoxehoi.net/category/xe-may/",
+      "https://baoxehoi.net/category/cong-nghe-xe/",
+      "https://baoxehoi.net/category/xe-hoi-cuoi/",
+      "https://baoxehoi.net/category/xe-o-to-do/",
+      "https://baoxehoi.net/category/gia-xe-o-to-viet-nam/",
+      "https://baoxehoi.net/category/gia-xe-may/",
+      "https://baoxehoi.net/category/tu-van-xe/",
+      "https://baoxehoi.net/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.219Z",
+      "verifiedSeeds": [
+        "https://baoxehoi.net/",
+        "https://baoxehoi.net/category/tin-tuc-xe-hoi/",
+        "https://baoxehoi.net/category/danh-gia-xe/",
+        "https://baoxehoi.net/category/doi-song/",
+        "https://baoxehoi.net/category/giai-tri/",
+        "https://baoxehoi.net/category/video/",
+        "https://baoxehoi.net/category/kham-pha/",
+        "https://baoxehoi.net/category/xe-may/",
+        "https://baoxehoi.net/category/cong-nghe-xe/",
+        "https://baoxehoi.net/category/xe-hoi-cuoi/",
+        "https://baoxehoi.net/category/xe-o-to-do/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baoxehoi.net",
+    "checkedAt": "2026-11-09T03:56:52.115Z",
+    "url": "https://baoxehoi.net/gac-yue-7-xe-suv-dia-hinh-kha-ham-ho/",
+    "finalUrl": "https://baoxehoi.net/gac-yue-7-xe-suv-dia-hinh-kha-ham-ho/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 351,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:43.547Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/baoxehoi.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "baoxehoi.net",
+    "parsedArticles": 18,
+    "distinctHashes": 18,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesAttempted": 13,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 170,
+    "checkedArticleUrls": 18,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 158,
+        "attempted": 15,
+        "passed": 15,
+        "distinctContents": 15,
+        "distinctHashes": 15
+      },
+      {
+        "name": "video",
+        "discovered": 12,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

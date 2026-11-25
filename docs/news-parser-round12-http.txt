@@ -1,0 +1,13 @@
+NEWS AXIOS — REPAIR ROUND 12
+Đã kiểm tra 432/432 nguồn. 82 nguồn qua bộ mẫu kiểm tra lại; 350 nguồn còn lỗi hoặc cần xác nhận.
+Bổ sung 78 variant đã có bằng chứng độc lập ở 73 nguồn. Loại 577 URL category khỏi cấu hình; bộ lọc chặn 4223 URL lỗi cũ là trang danh sách/hồ sơ/tiện ích.
+1620 mẫu bài Axios parse đạt với chính cấu hình đã lưu.
+432 cấu hình cập nhật và vẫn enabled:false. Không queue, không browser, không ghi ES5.
+Chỉ kiểm tra mẫu và các HTML lỗi có sẵn; chưa chạy lại một vòng toàn bộ bài và chưa xác nhận SLA 15 phút.
+Các parser mới: native VTV video attributes; Baodautu direct longform blocks; AMP Story/amp-img; public WordPress REST post declared by the page; JSON-LD media; scoped visible publication date fallback.
+Chi tiết: site-results.json, resolved-samples.json, remaining-sites.json, filtered-link-impact.json, configuration-changes.json và sites/<domain>/result.json.
+
+123/123 tests pass. Hồi quy 994 mẫu: 984 giữ nguyên ID/ngày; 4 mẫu được loại có chủ đích (gated hoặc không phải bài news); 6 mẫu sửa title mã HTML nên ID thay đổi, đã ghi identity-reconciliation-required.json để đối soát master trước ES5. Không có hồi quy ngoài dự kiến.
+Đã đọc lại 544 cấu hình: tất cả enabled:false, không có queueCreated/es5Written.
+
+Nhóm vướng còn lại (mỗi nguồn xếp theo nguyên nhân chính): {"publication_date_or_layout":225,"article_body_or_layout":95,"title_or_independent_validation":12,"category_confirmation":12,"http_unavailable":3,"access_or_restricted":3}

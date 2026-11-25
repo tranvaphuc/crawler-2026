@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafedautu.vn",
+  "siteId": "cafedautu.vn",
+  "registrableDomain": "cafedautu.vn",
+  "homepage": "https://cafedautu.vn/",
+  "allowedHosts": [
+    "cafedautu.vn",
+    "www.cafedautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng trị giá xuất nhập khẩu hàng hóa của Việt Nam tăng mạnh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:11.721Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cafedautu.vn/tong-tri-gia-xuat-nhap-khau-hang-hoa-cua-viet-nam-tang-manh-d15220.html",
+      "https://cafedautu.vn/cartier-ra-mat-cua-hang-moi-tai-trung-tam-thuong-mai-union-square-d15219.html",
+      "https://cafedautu.vn/sieu-to-hop-nghi-duong-11000-ty-dong-lon-nhat-da-nang-chuan-bi-khoi-dong-lai-d15201.html",
+      "https://cafedautu.vn/cham-soc-suc-khoe-cho-tre-khi-thoi-tiet-dien-bien-that-thuong-d15216.html",
+      "https://cafedautu.vn/vang-bitcoin-va-chung-khoan-dat-muc-cao-ky-luc-trong-tuan-d15206.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafedautu.vn/",
+    "categories": [
+      "https://cafedautu.vn/tin-tuc",
+      "https://cafedautu.vn/tai-chinh",
+      "https://cafedautu.vn/bat-dong-san",
+      "https://cafedautu.vn/phan-tich-nhan-dinh",
+      "https://cafedautu.vn/doi-song",
+      "https://cafedautu.vn/thi-truong",
+      "https://cafedautu.vn/doanh-nghiep",
+      "https://cafedautu.vn/cafe-khoi-nghiep"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafedautu.vn",
+    "checkedAt": "2026-11-09T03:56:53.814Z",
+    "url": "https://cafedautu.vn/tong-tri-gia-xuat-nhap-khau-hang-hoa-cua-viet-nam-tang-manh-d15220.html",
+    "finalUrl": "https://cafedautu.vn/tong-tri-gia-xuat-nhap-khau-hang-hoa-cua-viet-nam-tang-manh-d15220.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2259,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafedautu.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "deep_samples_verified",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 16,
+    "freshArticleChecks": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 113,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T08:10:13.434Z",
+    "stage": "443_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/sites/cafedautu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false,
+    "configurationFile": "/Users/phuctran/Workspace/crawler-2026/config/web-sources/news/cafedautu.vn.json",
+    "configBeforeSha256": "1d5cdd21ace2b0b63df325292f784f19efe574e40422eee288322e745b28092c",
+    "haltReason": null,
+    "publisherCrawlPolicy": null,
+    "browserUsed": false,
+    "queueCreated": false,
+    "es5Written": false,
+    "complete": true
+  },
+  "variants": []
+}

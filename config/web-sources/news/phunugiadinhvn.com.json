@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunugiadinhvn.com",
+  "siteId": "phunugiadinhvn.com",
+  "registrableDomain": "phunugiadinhvn.com",
+  "homepage": "https://phunugiadinhvn.com/",
+  "allowedHosts": [
+    "phunugiadinhvn.com",
+    "www.phunugiadinhvn.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Mark Zuckerberg muốn làm siêu nhân: Tạo ra người song trùng AI kiểm soát 70.000 nhân viên Meta",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:37.046Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://phunugiadinhvn.com/mark-zuckerberg-muon-lam-sieu-nhan-tao-ra-nguoi-song-trung-ai-kiem-soat-70000-nhan-vien-meta-1647.html",
+      "https://phunugiadinhvn.com/2-thang-cuoi-nam-dia-phuong-co-34-trieu-dan-se-pha-do-toan-bo-6-toa-nha-xay-dung-tu-nhung-nam-1980-1737.html",
+      "https://phunugiadinhvn.com/ha-noi-moi-goi-nha-dau-tu-lam-bai-xe-ngam-tai-loat-cong-vien-lon-nhu-thong-nhat-tuoi-tre-1736.html",
+      "https://phunugiadinhvn.com/phoi-co-benh-khi-ngu-se-xuat-hien-5-dau-hieu-bat-thuong-kiem-tra-ngay-1735.html",
+      "https://phunugiadinhvn.com/da-tung-rat-yeu-cong-viec-nhung-gio-chi-muon-nghi-7-cach-giup-ban-tim-lai-dong-luc-truoc-khi-quyet-dinh-roi-di-1734.html",
+      "https://phunugiadinhvn.com/2-thang-cuoi-nam-dia-phuong-co-34-trieu-dan-se-pha-do-toan-bo-6-toa-nha-xay-dung-tu-nhung-nam-1980-1737.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phunugiadinhvn.com/",
+    "categories": [
+      "https://phunugiadinhvn.com/sao/",
+      "https://phunugiadinhvn.com/thoi-trang/",
+      "https://phunugiadinhvn.com/nhac-phim/",
+      "https://phunugiadinhvn.com/dep-khoe/",
+      "https://phunugiadinhvn.com/suc-khoe/",
+      "https://phunugiadinhvn.com/xa-hoi/",
+      "https://phunugiadinhvn.com/tam-su/",
+      "https://phunugiadinhvn.com/tuoi-tre/",
+      "https://phunugiadinhvn.com/du-lich/",
+      "https://phunugiadinhvn.com/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunugiadinhvn.com",
+    "checkedAt": "2026-11-09T03:57:22.098Z",
+    "url": "https://phunugiadinhvn.com/mark-zuckerberg-muon-lam-sieu-nhan-tao-ra-nguoi-song-trung-ai-kiem-soat-70000-nhan-vien-meta-1647.html",
+    "finalUrl": "https://phunugiadinhvn.com/mark-zuckerberg-muon-lam-sieu-nhan-tao-ra-nguoi-song-trung-ai-kiem-soat-70000-nhan-vien-meta-1647.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4269,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "phunugiadinhvn.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 9,
+    "checkedArticleUrls": 9,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 9,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 17,
+    "categoriesFreshChecked": 15,
+    "categoriesUnconfirmed": 15,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 7,
+        "passed": 9,
+        "distinctHashes": 9
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phunugiadinhvn.com/mark-zuckerberg-muon-lam-sieu-nhan-tao-ra-nguoi-song-trung-ai-kiem-soat-70000-nhan-vien-meta-1647.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:24.513Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phunugiadinhvn.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

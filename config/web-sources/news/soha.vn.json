@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "siteName": "soha.vn",
+  "siteId": "soha.vn",
+  "registrableDomain": "soha.vn",
+  "homepage": "https://soha.vn/",
+  "allowedHosts": [
+    "soha.vn",
+    "www.soha.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "3 mẹo cọ xoong nồi cháy đen cực hiệu quả cho mọi nhà",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Bà mẹ ở Hà Nội chia sẻ: Tôi từng nghĩ mua căn hộ tầng 1 là “quá tiện” - đến khi sống mới thấy \"hứng đủ\" 4 bất tiện khó nói",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "value": "3 mẹo cọ xoong nồi cháy đen cực hiệu quả cho mọi nhà",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".py-6.text-body-custom",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:49.556Z",
+        "trainingUrls": [
+          "https://soha.vn/ha-noi-mat-17-nam-de-lam-21km-metro-thu-tuong-ra-menh-lenh-10-nam-toi-phai-lam-xong-600km-198260226141204796.htm"
+        ],
+        "holdoutUrls": [
+          "https://soha.vn/chinh-vo-jensen-huang-moi-la-an-so-doc-nhat-vo-nhi-luc-nay-su-khac-thuong-cua-ba-dang-khien-the-gioi-roi-tung-198261112153003371.htm",
+          "https://soha.vn/phat-hien-trung-tam-du-lieu-240-trieu-usd-duoi-day-bien-sau-10-met-trung-quoc-dua-he-thong-may-chu-xuong-giua-dai-duong-198261115131642495.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "3 mẹo cọ xoong nồi cháy đen cực hiệu quả cho mọi nhà",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".pt-8.pb-6",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:49.556Z",
+        "trainingUrls": [
+          "https://soha.vn/day-co-the-la-du-an-dat-do-ky-luc-o-thu-do-hon-6000-ty-km-de-giai-cuu-vanh-dai-buc-boi-bac-nhat-198260302213432813.htm"
+        ],
+        "holdoutUrls": [
+          "https://soha.vn/366-ty-dong-tien-tiet-kiem-cua-42-khach-hang-bong-bay-mau-canh-sat-dieu-tra-bat-giu-9-nguoi-ngan-hang-phai-ung-tien-khac-phuc-hau-qua-198261115145535923.htm",
+          "https://soha.vn/thuc-hu-tin-don-bill-gates-cho-con-gai-350000-usd-moi-tuan-3-ngay-sau-lai-xin-them-198261105135738622.htm"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:12.185Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://soha.vn/3-meo-co-xoong-noi-chay-den-cuc-hieu-qua-cho-moi-nha-198260629180639475.htm",
+      "https://soha.vn/ba-me-o-ha-noi-chia-se-toi-tung-nghi-mua-can-ho-tang-1-la-qua-tien-den-khi-song-moi-thay-hung-du-4-bat-tien-kho-noi-198260409163059403.htm",
+      "https://soha.vn/ngay-trong-nam-2026-gdp-binh-quan-dau-nguoi-cua-viet-nam-se-vuot-qua-dat-nuoc-van-dao-198261108185258258.htm",
+      "https://soha.vn/chi-dao-nong-tai-du-an-sau-2-nam-thi-cong-van-vuong-giai-phong-mat-bang-198261108192726833.htm",
+      "https://soha.vn/tren-hanh-tinh-nay-duy-nhat-nga-hoc-duoc-cach-lam-co-may-cu-dung-het-lai-day-my-va-chau-au-chua-ai-so-huu-198261108190357609.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://soha.vn/",
+    "categories": [
+      "https://soha.vn/house-n-home.html",
+      "https://soha.vn/hanh-trinh-bat-tan.html",
+      "https://soha.vn/soha-special.html",
+      "https://soha.vn/tin-moi-nhat.htm",
+      "https://soha.vn/kien-tao-hanh-phuc.htm",
+      "https://soha.vn/sang-kien-esg.htm",
+      "https://soha.vn/thoi-su-xa-hoi.htm",
+      "https://soha.vn/kinh-doanh.htm",
+      "https://soha.vn/kinh-doanh/bat-dong-san.htm",
+      "https://soha.vn/40-plus.htm",
+      "https://soha.vn/quoc-te.htm",
+      "https://soha.vn/the-thao.htm",
+      "https://soha.vn/nhip-song-moi.htm",
+      "https://soha.vn/giai-tri.htm",
+      "https://soha.vn/phap-luat.htm",
+      "https://soha.vn/song-khoe.htm",
+      "https://soha.vn/xe.htm",
+      "https://soha.vn/cong-nghe.htm",
+      "https://soha.vn/doi-song.htm",
+      "https://soha.vn/tu-hao-viet-nam.html",
+      "https://soha.vn/day-con.html",
+      "https://soha.vn/doi-song/bai-hoc-cuoc-song.htm",
+      "https://soha.vn/the-thao/binh-luan.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?soha.vn/.*?(\\d{6,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "soha.vn",
+    "checkedAt": "2026-11-09T03:57:25.203Z",
+    "url": "https://soha.vn/3-meo-co-xoong-noi-chay-den-cuc-hieu-qua-cho-moi-nha-198260629180639475.htm",
+    "finalUrl": "https://soha.vn/3-meo-co-xoong-noi-chay-den-cuc-hieu-qua-cho-moi-nha-198260629180639475.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 483,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "soha.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 35,
+    "checkedArticleUrls": 40,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 35,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 23,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 465,
+        "passed": 34,
+        "distinctHashes": 34
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://soha.vn/ga-khong-lo-duc-mang-sieu-thiet-bi-320-tan-dang-cap-the-gioi-sang-viet-nam-phuc-vu-cong-trinh-19000-ty-198261110094100894.htm",
+      "https://soha.vn/fbi-vao-cuoc-tong-thong-donald-trump-hoi-thang-jensen-huang-ong-co-biet-nguoi-phu-nu-do-la-gian-diep-khong-198261110113133551.htm",
+      "https://soha.vn/tat-ca-nguoi-dan-lap-camera-chu-y-muc-phat-tu-10-trieu-dong-den-20-trieu-dong-da-duoc-ap-dung-198261110114005011.htm",
+      "https://soha.vn/tat-ca-nguoi-dan-di-hat-karaoke-chu-y-thong-bao-moi-nhat-cua-cong-an-ve-muc-phat-30-trieu-dong-198261110142311739.htm",
+      "https://soha.vn/sao-nga-lam-duoc-kiev-soc-truoc-iskander-dau-hieu-bat-thuong-he-lo-quyet-dinh-quan-su-lon-cua-kremlin-198261110135718203.htm",
+      "https://soha.vn/gia-vang-dot-ngot-giam-dai-gia-gom-mua-ky-luc-675-tan-198261110111138323.htm",
+      "https://soha.vn/tai-xe-o-to-su-dung-ruou-bia-di-sai-phan-duong-khien-2-nguoi-tu-vong-198261110111956253.htm",
+      "https://soha.vn/dang-giup-di-don-tu-nguoi-phu-nu-phat-hien-mon-do-bi-giau-gan-40-nam-chuyen-gia-dinh-gia-gan-80-ty-dong-198261110115334746.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 2,
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:16:49.317Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/soha.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:42.642Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://soha.vn/chinh-vo-jensen-huang-moi-la-an-so-doc-nhat-vo-nhi-luc-nay-su-khac-thuong-cua-ba-dang-khien-the-gioi-roi-tung-198261112153003371.htm",
+      "https://soha.vn/phat-hien-trung-tam-du-lieu-240-trieu-usd-duoi-day-bien-sau-10-met-trung-quoc-dua-he-thong-may-chu-xuong-giua-dai-duong-198261115131642495.htm",
+      "https://soha.vn/366-ty-dong-tien-tiet-kiem-cua-42-khach-hang-bong-bay-mau-canh-sat-dieu-tra-bat-giu-9-nguoi-ngan-hang-phai-ung-tien-khac-phuc-hau-qua-198261115145535923.htm",
+      "https://soha.vn/thuc-hu-tin-don-bill-gates-cho-con-gai-350000-usd-moi-tuan-3-ngay-sau-lai-xin-them-198261105135738622.htm"
+    ],
+    "improvedUrls": [
+      "https://soha.vn/ha-noi-mat-17-nam-de-lam-21km-metro-thu-tuong-ra-menh-lenh-10-nam-toi-phai-lam-xong-600km-198260226141204796.htm",
+      "https://soha.vn/day-co-the-la-du-an-dat-do-ky-luc-o-thu-do-hon-6000-ty-km-de-giai-cuu-vanh-dai-buc-boi-bac-nhat-198260302213432813.htm"
+    ],
+    "regressions": 0
+  }
+}

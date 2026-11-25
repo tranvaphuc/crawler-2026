@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "siteName": "moc.gov.vn",
+  "siteId": "moc.gov.vn",
+  "registrableDomain": "moc.gov.vn",
+  "homepage": "https://moc.gov.vn/vn/Pages/Trangchu.aspx",
+  "allowedHosts": [
+    "moc.gov.vn",
+    "www.moc.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://moc.gov.vn/vn/Pages/Trangchu.aspx",
+    "categories": [
+      "https://moc.gov.vn/vn/Pages/danhsachlanhdao.aspx",
+      "https://moc.gov.vn/vn/Pages/Tochuc.aspx",
+      "https://moc.gov.vn/vn/chuyen-muc/1205/tin-tuc.aspx",
+      "https://moc.gov.vn/vn/chuyen-muc/1173/tin-hoat-dong.aspx",
+      "https://moc.gov.vn/vn/chuyen-muc/1184/tin-tong-hop.aspx",
+      "https://moc.gov.vn/vn/chuyen-muc/1166/tin-cai-cach-hanh-chinh.aspx",
+      "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx",
+      "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx?TypeVB=1",
+      "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx?TypeVB=2",
+      "https://moc.gov.vn/vn/chuyen-muc/1166/tin-cai-cach-hc.aspx",
+      "https://moc.gov.vn/vn/Pages/Trangchu.aspx"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.268Z",
+      "verifiedSeeds": [
+        "https://moc.gov.vn/vn/Pages/Trangchu.aspx",
+        "https://moc.gov.vn/vn/Pages/danhsachlanhdao.aspx",
+        "https://moc.gov.vn/vn/Pages/Tochuc.aspx",
+        "https://moc.gov.vn/vn/chuyen-muc/1205/tin-tuc.aspx",
+        "https://moc.gov.vn/vn/chuyen-muc/1173/tin-hoat-dong.aspx",
+        "https://moc.gov.vn/vn/chuyen-muc/1184/tin-tong-hop.aspx",
+        "https://moc.gov.vn/vn/chuyen-muc/1166/tin-cai-cach-hanh-chinh.aspx",
+        "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx",
+        "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx?TypeVB=1",
+        "https://moc.gov.vn/vn/Pages/Vanbanphapluat.aspx?TypeVB=2",
+        "https://moc.gov.vn/vn/chuyen-muc/1166/tin-cai-cach-hc.aspx"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Sẵn sàng vai trò làm chủ tại các dự án metro",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".brebar_date",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".Around_News_Content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:20.454Z",
+    "frozenAt": "2026-11-16T01:57:12.680Z",
+    "trainingUrl": "https://moc.gov.vn/vn/tin-tuc/1268/97533/san-sang-vai-tro-lam-chu-tai-cac-du-an-metro.aspx",
+    "independentHoldouts": [
+      "http://moc.gov.vn/vn/tin-tuc/1173/98120/khai-mac-chuoi-su-kien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-nganh-xay-dung-nam-2026.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98119/le-be-mac-va-trao-giai-giai-dau-pickleball-nganh-xay-dung-2026.aspx"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://moc.gov.vn/vn/tin-tuc/1268/97533/san-sang-vai-tro-lam-chu-tai-cac-du-an-metro.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98120/khai-mac-chuoi-su-kien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-nganh-xay-dung-nam-2026.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98119/le-be-mac-va-trao-giai-giai-dau-pickleball-nganh-xay-dung-2026.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98116/quoc-hoi-thong-qua-nghi-quyet-ve-duong-ho-chi-minh.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98115/bo-truong-tran-hong-minh-lan-toa-tinh-than-the-thao-tai-giai-pickleball-nganh-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98106/khai-mac-giai-pickleball-nganh-xay-dung-2026-voi-su-tham-gia-cua-gan-500-van-dong-vien.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1184/98117/my-dung-bay-toan-quoc-vi-su-co-lien-lac-vatm-chu-dong-rut-kinh-nghiem-tang-cuong-cac-giai-phap-bao-dam-cong-tac-dieu-hanh-bay-an-toan.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1196/98088/dinh-chinh-van-ban-hop-nhat-so-1272026vbhn-nd-cp-ngay-02102026-cua-bo-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1166/98078/phe-duyet-quy-trinh-noi-bo-giai-quyet-thu-tuc-hanh-chinh-linh-vuc-duong-thuy-noi-dia-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-xay-dung-tpda--.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1179/97826/tra-loi-kien-nghi-cu-tri-tp-da-nang-lien-quan-den-mot-so-van-de-giao-thong-tren-dia-ban.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98096/thu-truong-le-anh-tuan-tiep-giam-doc-dieu-hanh-tap-doan-atlas-air-worldwide.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98095/bo-xay-dung-tiep-tuc-lay-y-kien-hoan-thien-du-an-luat-cap-thoat-nuoc.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98085/bo-xay-dung-coi-cong-tac-tiep-nhan-giai-quyet-va-tra-loi-kien-nghi-cua-cu-tri-la-mot-nhiem-vu-trong-tam.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98083/bo-xay-dung-thuc-day-hop-tac-voi-hoi-dong-ngu-coc-va-san-pham-sinh-hoc-hoa-ky-trong-linh-vuc-giao-thong-xanh-va-nhien-lieu-ben-vung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98075/bo-xay-dung-ban-giao-nguyen-trang-2-truong-cao-dang-ve-ubnd-tp-hai-phong-quan-ly.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98064/bo-truong-tran-hong-minh-chu-tri-hop-ve-quan-ly-su-dung-tai-san-tai-co-quan-don-vi-va-dat-dai-tai-doanh-nghiep.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1173/98111/viet-nam-gioi-thieu-he-sinh-thai-cong-trinh-xanh-va-giao-thong-xanh-tai-cop31.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1184/98118/tong-cong-ty-quan-ly-bay-viet-nam-huong-ung-thang-hanh-dong-vi-binh-dang-gioi-nam-2026.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1184/98114/ubnd-tinh-quang-tri-ra-soat-nguon-cung-vat-lieu-xay-dung-bao-dam-nhu-cau-trien-khai-cac-du-an-trong-diem.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1184/98113/lam-dong-nghien-cuu-kha-thi-trien-khai-du-an-cao-toc-pleiku--buon-ma-thuot--gia-nghia.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1184/98110/lanh-dao-ubnd-tp-bac-ninh-chi-dao-day-nhanh-tien-do-cac-du-an-giao-thong.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1196/98072/thong-tu-quy-dinh-che-do-bao-cao-dinh-ky-thuoc-pham-vi-quan-ly-nha-nuoc-cua-bo-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1196/98050/thong-tu-quy-dinh-tieu-chi-chat-luongcong-tac-kiem-tragiam-satdanh-gianghiem-thu-chat-luong-dich-vu-su-nghiep-cong-quan-lybao-tri-ket-cau-ha-tang--.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1196/97984/thong-tu-cong-bo-vung-nuoc-cang-bien-khu-vuc-hang-hai-thuoc-dia-phan-tinh-quang-ngai-va-khu-vuc-quan-ly-cua-cang-vu-hang-hai-quang-ngai.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1196/97892/thanh-lap-to-soan-thao-xay-dung-de-an-phat-trien-va-chuan-bi-khai-thac-cang-hang-khong-quoc-te-gia-binh.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1166/97986/quyet-dinh-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-trong-linh-vuc-hang-hai-thuoc-pham-vi-chuc-nang-quan-ly-cua-bo-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1166/97832/cong-bo-thu-tuc-hanh-chinh-noi-bo-duoc-ban-hanh-moi-sua-doi-bo-sung-va-bi-bai-bo-linh-vuc-hang-khong-thuoc-pham-vi-quan-ly-cua-bo-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1166/97791/nghe-an-trien-khai-cat-giam-thay-the-ho-so-thu-tuc-hanh-chinh-linh-vuc-xay-dung-bang-du-lieu-dien-tu.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1166/97473/day-manh-cong-tac-cai-cach-thu-tuc-hanh-chinh-tai-cuc-hang-khong-viet-nam.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1179/97739/tra-loi-kien-nghi-cu-tri-tinh-ha-tinh-lien-quan-den-viec-sua-doi-luat-quy-hoach-do-thi-va-nong-thon.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1179/96482/tra-loi-kien-nghi-cua-doan-dai-bieu-quoc-hoi-thanh-pho-ho-chi-minh-ve-viec-thuc-hien-chinh-sachphap-luat-ve-phat-trien-nha-o-xa-hoi-tren-dia-ban-thanh....aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1179/96247/tra-loi-kien-nghi-cua-cu-tri-tinh-tay-ninh-ve-hoan-thien-toan-bo-ho-so-thu-tuc-phap-ly-dam-bao-tien-do-khoi-cong-du-an-dau-tu-nang-cap-quoc-lo-62.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1179/96227/tra-loi-kien-nghi-cu-tri-tp-ho-chi-minh-lien-quan-den-cap-giay-phep-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1176/98088/dinh-chinh-van-ban-hop-nhat-so-1272026vbhn-nd-cp-ngay-02102026-cua-bo-xay-dung.aspx",
+      "http://moc.gov.vn/vn/tin-tuc/1176/98087/truyen-thong-du-thao-thong-tu-sua-doi--bo-sung-thong-tu-so-412026tt-bxd.aspx"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

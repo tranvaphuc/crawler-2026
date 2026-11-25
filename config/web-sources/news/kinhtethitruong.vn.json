@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtethitruong.vn",
+  "siteId": "kinhtethitruong.vn",
+  "registrableDomain": "kinhtethitruong.vn",
+  "homepage": "https://kinhtethitruong.vn/",
+  "allowedHosts": [
+    "kinhtethitruong.vn",
+    "www.kinhtethitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "PTE MAGIC đánh dấu hành trình 10 năm đồng hành cùng người học tiếng Anh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:33.945Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhtethitruong.vn/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh-a200198.html",
+      "https://kinhtethitruong.vn/the-hue-creators-tu-mot-mua-truyen-hinh-den-he-sinh-thai-kinh-te-nha-sang-tao-hue-a200197.html",
+      "https://kinhtethitruong.vn/vuong-khai-ca-quy-ong-hat-tinh-ca-va-con-gio-la-giua-lang-nhac-viet-a200199.html",
+      "https://kinhtethitruong.vn/sabeco-lai-3761-ty-dong-sau-9-thang-tam-ung-co-tuc-tien-mat-30-a200196.html",
+      "https://kinhtethitruong.vn/climb-korea-cung-co-nang-luc-canh-tranh-trong-linh-vuc-leo-nui-the-thao-voi-cac-chung-nhan-quoc-te-a200194.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kinhtethitruong.vn/",
+    "categories": [
+      "https://kinhtethitruong.vn/c/thoi-su",
+      "https://kinhtethitruong.vn/c/bat-dong-san",
+      "https://kinhtethitruong.vn/c/kinh-te",
+      "https://kinhtethitruong.vn/c/van-hoa-du-lich",
+      "https://kinhtethitruong.vn/c/giao-duc-suc-khoe",
+      "https://kinhtethitruong.vn/c/xe-cong-nghe",
+      "https://kinhtethitruong.vn/c/phap-luat",
+      "https://kinhtethitruong.vn/c/doanh-nhan",
+      "https://kinhtethitruong.vn/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kinhtethitruong.vn",
+    "checkedAt": "2026-11-09T03:57:11.788Z",
+    "url": "https://kinhtethitruong.vn/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh-a200198.html",
+    "finalUrl": "https://kinhtethitruong.vn/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh-a200198.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5009,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "kinhtethitruong.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 15,
+    "freshArticleChecks": 8,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 127,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://kinhtethitruong.vn/atera-holdings-chinh-thuc-gioi-thieu-khu-do-thi-phuc-hop-the-he-moi-atera-central-tai-hung-yen-a200094.html",
+      "https://kinhtethitruong.vn/ruc-ro-roadshow-vinhomes-green-paradise-can-gio-danh-thuc-ky-quan-di-san-ngay-83-a200080.html",
+      "https://kinhtethitruong.vn/dan-dau-toan-nganh-hdbank-nhan-bo-giai-thuong-chat-luong-thanh-toan-toan-cau-2025-tu-jp-morgan-chase-a200051.html",
+      "https://kinhtethitruong.vn/hdbank-chot-quyen-chia-gan-30-co-tuc-va-co-phieu-thuong-vao-ngay-ca-nuoc-khoi-cong-khanh-thanh-245-du-an-lon-a200048.html",
+      "https://kinhtethitruong.vn/tphcm-thao-go-du-an-khong-bat-doanh-nghiep-ganh-loi-cua-nha-nuoc-a200139.html",
+      "https://kinhtethitruong.vn/trung-tam-trong-tai-thuong-mai-quoc-te-tgac-lan-toa-niem-tin-kien-tao-gia-tri-nhan-van-a200121.html",
+      "https://kinhtethitruong.vn/thac-si-luat-su-tran-thi-kim-oanh-hanh-lang-phap-ly-la-be-phong-cho-su-sang-tao-so-a200107.html",
+      "https://kinhtethitruong.vn/tphcm-tranh-chap-tai-san-chung-bo-quen-vai-tro-cong-dong-a200060.html",
+      "https://kinhtethitruong.vn/fam-group-tro-thanh-don-vi-phat-trien-can-ho-cao-cap-sendona-viet-tri-a200177.html",
+      "https://kinhtethitruong.vn/tieu-chuan-thuc-pham-chau-au-thuc-day-xu-huong-am-thuc-ben-vung-tai-viet-nam-a200163.html",
+      "https://kinhtethitruong.vn/swiss-eden-gay-tieng-vang-lon-tai-dot-property-vietnam-awards-2026-a200155.html",
+      "https://kinhtethitruong.vn/khach-san-mat-tien-bien-vlasta-sam-son-dieu-gi-tao-nen-gia-tri-cua-dong-tai-san-khai-thac-luu-tru-a200146.html",
+      "https://kinhtethitruong.vn/atera-central-ghi-dau-an-voi-danh-hieu-top-10-du-an-nha-o-thuong-mai-tiem-nang-nhat-viet-nam-a200138.html",
+      "https://kinhtethitruong.vn/sabeco-lai-3761-ty-dong-sau-9-thang-tam-ung-co-tuc-tien-mat-30-a200196.html",
+      "https://kinhtethitruong.vn/climb-korea-cung-co-nang-luc-canh-tranh-trong-linh-vuc-leo-nui-the-thao-voi-cac-chung-nhan-quoc-te-a200194.html",
+      "https://kinhtethitruong.vn/sabeco-duoc-vinh-danh-nha-san-xuat-bia-cua-nam-khu-vuc-chau-a-khang-dinh-nang-luc-san-xuat-bia-viet-nam-tren-truong-quoc-te-a200193.html",
+      "https://kinhtethitruong.vn/truyen-hinh-nam-phuong-va-vio-academy-chinh-thuc-ky-ket-hop-tac-chien-luoc-mou-a200192.html",
+      "https://kinhtethitruong.vn/prudential-nhan-cu-dup-giai-thuong-chau-a-thai-binh-duong-ve-tang-truong-chat-luong-va-quan-tri-kinh-doanh-a200189.html",
+      "https://kinhtethitruong.vn/vuong-khai-ca-quy-ong-hat-tinh-ca-va-con-gio-la-giua-lang-nhac-viet-a200199.html",
+      "https://kinhtethitruong.vn/the-hue-creators-tu-mot-mua-truyen-hinh-den-he-sinh-thai-kinh-te-nha-sang-tao-hue-a200197.html",
+      "https://kinhtethitruong.vn/khi-ve-be-ngoai-thanh-cong-khong-khoa-lap-duoc-khoang-trong-hon-nhan-hanh-trinh-phu-nu-quay-ve-lam-chu-hanh-phuc-tu-than-a200188.html",
+      "https://kinhtethitruong.vn/thoat-khoi-loi-mon-quang-cao-truyen-thong-vi-sao-cac-thuong-hieu-lon-dang-do-don-su-chu-y-vao-ngo-a200174.html",
+      "https://kinhtethitruong.vn/nhieu-phu-nu-chu-dong-tham-kham-dieu-tri-u-xo-tu-cung-tai-benh-vien-phuong-nam-a200173.html",
+      "https://kinhtethitruong.vn/pte-magic-danh-dau-hanh-trinh-10-nam-dong-hanh-cung-nguoi-hoc-tieng-anh-a200198.html",
+      "https://kinhtethitruong.vn/victoria-school-gianh-hai-giai-thuong-tai-asian-innovation-excellence-awards-2026-a200190.html",
+      "https://kinhtethitruong.vn/khi-tieng-anh-huong-toi-tro-thanh-ngon-ngu-thu-hai-nguoi-hoc-can-chuan-bi-gi-a200180.html",
+      "https://kinhtethitruong.vn/diamond-dental-group-gioi-thieu-he-sinh-thai-tich-hop-tai-videc-2026-voi-chu-de-nha-khoa-thong-minh-va-ben-vung-a200170.html",
+      "https://kinhtethitruong.vn/doi-moi-phuong-phap-day-hoc-trong-ky-nguyen-ai-giao-vien-can-chuan-bi-gi-a200157.html",
+      "https://kinhtethitruong.vn/kawasaki-kle500-abs-2026-ra-mat-tai-viet-nam-gia-tu-1749-trieu-dong-a200129.html",
+      "https://kinhtethitruong.vn/growthverse-summit-2026-giai-ma-he-dieu-hanh-tang-truong-moi-cho-doanh-nghiep-viet-a200122.html",
+      "https://kinhtethitruong.vn/samsung-viet-nam-mo-chuong-trinh-cho-nguoi-dung-trai-nghiem-dong-smartphone-samsung-galaxy-s26-series-trong-26-ngay-a200195.html",
+      "https://kinhtethitruong.vn/rakuten-viber-va-happydemics-rut-ngan-khoang-cach-giua-hien-thi-quang-cao-va-nhan-thuc-nguoi-dung-a200097.html",
+      "https://kinhtethitruong.vn/z1100-se-abs-2026-chuan-muc-sugomi-chinh-thuc-ra-mat-tai-viet-nam-voi-muc-gia-409-trieu-a200088.html",
+      "https://kinhtethitruong.vn/ra-soat-toan-dien-cong-tac-van-hanh-nha-chung-cu-ve-pccc-a199938.html",
+      "https://kinhtethitruong.vn/cua-hang-ne-thue-khong-nhan-chuyen-khoan-co-the-bi-xu-ly-a199916.html",
+      "https://kinhtethitruong.vn/don-bay-thuc-day-chuyen-bien-hanh-vi-cua-nguoi-tham-gia-giao-thong-a199902.html",
+      "https://kinhtethitruong.vn/binh-dinh-phat-hien-gan-80-tan-dau-fo-khong-hoa-don-chung-tu-a199893.html",
+      "https://kinhtethitruong.vn/pho-bien-luat-phong-chay-chua-chay-va-cuu-nan-cuu-ho-thi-hanh-tu-17-a199894.html",
+      "https://kinhtethitruong.vn/su-kien-truc-tiep-cua-tai-chinh-24h-tac-dong-cua-khoi-ngoai-den-thi-truong-chung-khoang-viet-nam-a199606.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:54.036Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/kinhtethitruong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

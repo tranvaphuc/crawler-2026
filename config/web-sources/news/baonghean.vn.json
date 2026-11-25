@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baonghean.vn",
+  "siteId": "baonghean.vn",
+  "registrableDomain": "baonghean.vn",
+  "homepage": "https://baonghean.vn/",
+  "allowedHosts": [
+    "baonghean.vn",
+    "www.baonghean.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baonghean.vn/",
+    "categories": [
+      "https://baonghean.vn/an-pham",
+      "https://baonghean.vn/an-pham/cu%E1%BB%91i%20tu%E1%BA%A7n",
+      "https://baonghean.vn/tin-moi-nhat",
+      "https://baonghean.vn/thoi-su",
+      "https://baonghean.vn/thoi-su/dien-dan",
+      "https://baonghean.vn/thoi-su/nhan-su"
+    ]
+  },
+  "title": {
+    "value": "Thuốc lá điện tử và thuốc lá nung nóng: Ẩn họa phía sau những làn khói",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:55.393Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://baonghean.vn/nghe-an-chia-se-nhieu-kinh-nghiem-doi-moi-cong-tac-tham-muu-phuc-vu-doan-dbqh-tai-dia-phuong-10355816.html",
+      "https://baonghean.vn/chu-nhiem-uy-ban-kiem-tra-tinh-uy-du-ngay-hoi-dai-doan-ket-dan-toc-tai-phuong-vinh-phu-10355870.html"
+    ],
+    "improvedUrls": [
+      "https://baonghean.vn/can-bo-quan-ly-truong-hoc-truoc-yeu-cau-giao-tiep-bang-tieng-anh-10355891.html"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baonghean.vn/thuoc-la-dien-tu-va-thuoc-la-nung-nong-an-hoa-phia-sau-nhung-lan-khoi-10354974.html",
+      "https://baonghean.vn/huy-dong-tien-gui-cua-30-ngan-hang-dat-16766-trieu-ty-dong-tang-1019-sau-9-thang-2026-10355626.html",
+      "https://baonghean.vn/hom-nay-21-10-quoc-hoi-thao-luan-cac-du-an-luat-lien-quan-den-y-te-lao-dong-bao-hiem-xa-hoi-10353997.html",
+      "https://baonghean.vn/van-phong-quoc-hoi-lao-va-viet-nam-dang-huong-tuong-niem-chu-tich-ho-chi-minh-tri-an-cac-anh-hung-liet-si-tai-nghe-an-10355906.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Thuốc lá điện tử và thuốc lá nung nóng: Ẩn họa phía sau những làn khói",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-video-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:31.168Z",
+        "trainingUrls": [
+          "https://baonghean.vn/can-bo-quan-ly-truong-hoc-truoc-yeu-cau-giao-tiep-bang-tieng-anh-10355891.html"
+        ],
+        "holdoutUrls": [
+          "https://baonghean.vn/nghe-an-chia-se-nhieu-kinh-nghiem-doi-moi-cong-tac-tham-muu-phuc-vu-doan-dbqh-tai-dia-phuong-10355816.html",
+          "https://baonghean.vn/chu-nhiem-uy-ban-kiem-tra-tinh-uy-du-ngay-hoi-dai-doan-ket-dan-toc-tai-phuong-vinh-phu-10355870.html"
+        ]
+      }
+    }
+  ]
+}

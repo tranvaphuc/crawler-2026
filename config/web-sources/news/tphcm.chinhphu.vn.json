@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tphcm.chinhphu.vn",
+  "siteId": "tphcm.chinhphu.vn",
+  "registrableDomain": "tphcm.chinhphu.vn",
+  "homepage": "https://tphcm.chinhphu.vn/",
+  "allowedHosts": [
+    "tphcm.chinhphu.vn",
+    "www.tphcm.chinhphu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tphcm.chinhphu.vn/",
+    "categories": [
+      "https://tphcm.chinhphu.vn/thoi-su.htm",
+      "https://tphcm.chinhphu.vn/chinh-phu-voi-thanh-pho.htm",
+      "https://tphcm.chinhphu.vn/kinh-te.htm",
+      "https://tphcm.chinhphu.vn/kinh-te/chung-khoan.htm",
+      "https://tphcm.chinhphu.vn/kinh-te/thi-truong.htm",
+      "https://tphcm.chinhphu.vn/kinh-te/doanh-nghiep.htm"
+    ]
+  },
+  "title": {
+    "value": "Tuần lễ kết nối, giới thiệu sản phẩm Việt tại Lotte Mart",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail__content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:46.881Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:39.595Z",
+    "independentHoldouts": [
+      "https://tphcm.chinhphu.vn/tphcm-uu-tien-thu-hut-dong-von-chat-luong-cao-cho-giai-doan-phat-trien-moi-101261013233551892.htm",
+      "https://tphcm.chinhphu.vn/khu-pho-binh-hoa-lan-toa-tinh-than-doan-ket-se-chia-101261114155318176.htm",
+      "https://tphcm.chinhphu.vn/moi-nha-sang-tao-noi-dung-tro-thanh-dai-su-lan-toa-hinh-anh-dep-ve-tphcm-101261114151340838.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tphcm.chinhphu.vn/tuan-le-ket-noi-gioi-thieu-san-pham-viet-tai-lotte-mart-101261008213114551.htm",
+      "https://tphcm.chinhphu.vn/tphcm-uu-tien-thu-hut-dong-von-chat-luong-cao-cho-giai-doan-phat-trien-moi-101261013233551892.htm",
+      "https://tphcm.chinhphu.vn/khu-pho-binh-hoa-lan-toa-tinh-than-doan-ket-se-chia-101261114155318176.htm",
+      "https://tphcm.chinhphu.vn/moi-nha-sang-tao-noi-dung-tro-thanh-dai-su-lan-toa-hinh-anh-dep-ve-tphcm-101261114151340838.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

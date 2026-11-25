@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "siteName": "haiquanonline.com.vn",
+  "siteId": "haiquanonline.com.vn",
+  "registrableDomain": "thuehaiquan.tapchikinhtetaichinh.vn",
+  "homepage": "https://thuehaiquan.tapchikinhtetaichinh.vn/",
+  "allowedHosts": [
+    "haiquanonline.com.vn",
+    "www.haiquanonline.com.vn",
+    "thuehaiquan.tapchikinhtetaichinh.vn",
+    "www.thuehaiquan.tapchikinhtetaichinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "EMAGAZINE: Doanh nghiệp càng tuân thủ tốt - càng được hưởng lợi nhiều",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".__MASTERCMS_CONTENT",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "discovery": {
+    "homepage": "https://thuehaiquan.tapchikinhtetaichinh.vn/",
+    "categories": []
+  },
+  "publisherMigration": {
+    "requestedDomain": "haiquanonline.com.vn",
+    "canonicalPublisherHost": "thuehaiquan.tapchikinhtetaichinh.vn",
+    "verifiedAt": "2026-11-17T09:03:16.525Z"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T09:03:16.625Z",
+    "sampleUrls": [
+      "https://thuehaiquan.tapchikinhtetaichinh.vn/hai-quan-khu-vuc-vi-cai-cach-thu-tuc-tao-thuan-loi-cho-doanh-nghiep-172761.html",
+      "https://thuehaiquan.tapchikinhtetaichinh.vn/giam-tac-hai-thuoc-la-tu-chinh-sach-thue-den-kiem-soat-diem-ban-172748.html",
+      "https://thuehaiquan.tapchikinhtetaichinh.vn/so-hoa-nghiep-vu-doi-moi-phuong-thuc-phuc-vu-tai-chi-cuc-hai-quan-khu-vuc-vii-172732.html",
+      "https://thuehaiquan.tapchikinhtetaichinh.vn/thu-tuc-hai-quan-doi-voi-hang-hoa-chat-phat-sinh-nhieu-vuong-mac-172743.html",
+      "https://thuehaiquan.tapchikinhtetaichinh.vn/lam-ro-ly-do-vi-sao-chua-mien-toan-bo-to-khai-trang-cho-nguoi-nop-thue-03-06-172684.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Hải quan khu vực VI: Cải cách thủ tục, tạo thuận lợi cho doanh nghiệp",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      }
+    }
+  ]
+}

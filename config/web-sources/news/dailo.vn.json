@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dailo.vn",
+  "siteId": "dailo.vn",
+  "registrableDomain": "dailo.vn",
+  "homepage": "https://dailo.vn/",
+  "allowedHosts": [
+    "dailo.vn",
+    "www.dailo.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Loạt ô tô ưu đãi tháng 10/2026: Ford “mạnh tay” tung ưu đãi lớn",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-row-15",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:25.811Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dailo.vn/loat-o-to-uu-dai-thang-102026-ford-manh-tay-tung-uu-dai-lon.html",
+      "https://dailo.vn/tu-2010-csgt-xu-phat-xe-chay-cham-bam-lan-trai-tren-cao-toc-cau-gie-cao-bo.html",
+      "https://dailo.vn/dai-uy-truong-anh-hung-lang-tham-gieo-nhung-dieu-tu-te.html",
+      "https://dailo.vn/gia-vang-trong-nuoc-giam-sjc-ve-nguong-1433-trieu-dong-moi-luong.html",
+      "https://dailo.vn/ap-dung-quy-chuan-ve-dong-co-acquy-mo-to-xe-may-dien-de-nang-cao-an-toan.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dailo.vn/",
+    "categories": [
+      "https://dailo.vn/giao-thong-van-tai",
+      "https://dailo.vn/an-toan-giao-thong",
+      "https://dailo.vn/doi-song-xa-hoi",
+      "https://dailo.vn/kinh-te",
+      "https://dailo.vn/phap-luat",
+      "https://dailo.vn/the-thao-van-hoa"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dailo.vn",
+    "checkedAt": "2026-11-09T03:56:57.655Z",
+    "url": "https://dailo.vn/loat-o-to-uu-dai-thang-102026-ford-manh-tay-tung-uu-dai-lon.html",
+    "finalUrl": "https://dailo.vn/loat-o-to-uu-dai-thang-102026-ford-manh-tay-tung-uu-dai-lon.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2571,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dailo.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 15,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 41,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dailo.vn/loat-o-to-uu-dai-thang-102026-ford-manh-tay-tung-uu-dai-lon.html",
+      "https://dailo.vn/dai-uy-truong-anh-hung-lang-tham-gieo-nhung-dieu-tu-te.html",
+      "https://dailo.vn/gia-vang-trong-nuoc-giam-sjc-ve-nguong-1433-trieu-dong-moi-luong.html",
+      "https://dailo.vn/tu-2010-csgt-xu-phat-xe-chay-cham-bam-lan-trai-tren-cao-toc-cau-gie-cao-bo.html",
+      "https://dailo.vn/ap-dung-quy-chuan-ve-dong-co-acquy-mo-to-xe-may-dien-de-nang-cao-an-toan.html",
+      "https://dailo.vn/de-nghi-xu-ly-xe-o-to-31-lan-vuot-tram-tron-phi.html",
+      "https://dailo.vn/quy-chuan-tram-sac-dien-moi-o-viet-nam-phai-tuong-thich-voi-nhieu-loai-xe-dien.html",
+      "https://dailo.vn/ap-dung-quy-chuan-moi-ve-dong-co-acquy-mo-to-xe-may-dien-de-nang-cao-an-toan.html",
+      "https://dailo.vn/dong-nai-xu-phat-338-truong-hop-vi-pham-nong-do-con-tren-quoc-lo-1.html",
+      "https://dailo.vn/cuc-csgt-de-xuat-xe-di-lan-1-cao-toc-phai-tren-toc-do-toi-thieu.html",
+      "https://dailo.vn/lai-xe-taxi-khong-bang-lai-tai-xe-va-chu-xe-bi-xu-phat-hon-114-trieu-dong.html",
+      "https://dailo.vn/cuc-duong-bo-de-nghi-cuc-csgt-thong-tin-cac-tuyen-cao-toc-phat-loi-khong-giu-khoang-cach.html",
+      "https://dailo.vn/csgt-ha-noi-tuoc-gplx-phat-tien-tai-xe-lam-hong-can-chan-duong-sa.html",
+      "https://dailo.vn/tai-nan-khi-hoc-vien-tap-lai-ai-chiu-trach-nhiem-khi-giao-vien-tu-vong.html",
+      "https://dailo.vn/tuyen-an-tu-chung-than-5-bi-cao-lua-dao-chiem-doat-tai-san-cua-hon-7000-nguoi.html",
+      "https://dailo.vn/loat-o-to-dien-do-thi-sap-ra-mat-tai-viet-nam-voi-gia-chi-tu-123-trieu-dong.html",
+      "https://dailo.vn/so-sanh-nhanh-thong-so-vinfast-wild-va-ford-ranger.html",
+      "https://dailo.vn/dong-nai-csgt-xu-phat-hon-2000-truong-hop-vi-pham-tren-quoc-lo-1.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:47.135Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dailo.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

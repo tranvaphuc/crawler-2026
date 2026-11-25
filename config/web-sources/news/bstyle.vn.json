@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bstyle.vn",
+  "siteId": "bstyle.vn",
+  "registrableDomain": "bstyle.vn",
+  "homepage": "https://bstyle.vn/",
+  "allowedHosts": [
+    "bstyle.vn",
+    "www.bstyle.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những Nguyên Nhân Khiến Quảng Cáo Facebook Không Hiệu Quả",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:06.756Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://bstyle.vn/nhung-nguyen-nhan-khien-quang-cao-facebook-khong-hieu-qua.html",
+      "https://bstyle.vn/kham-pha-dich-vu-vay-tien-tu-jeff-viet-nam.html",
+      "https://bstyle.vn/mai-huong-cuoc-doi-day-thang-tram-va-tam-hon-nghe-si.html",
+      "https://bstyle.vn/the-ghi-no-kham-pha-nhung-tiem-nang-thanh-toan-moi.html",
+      "https://bstyle.vn/nhung-cau-noi-hay-cua-steve-jobs.html",
+      "https://bstyle.vn/dich-vu-thanh-lap-doanh-nghiep-gia-re.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bstyle.vn/",
+    "categories": [
+      "https://bstyle.vn/kinh-doanh",
+      "https://bstyle.vn/kinh-doanh/khoi-nghiep",
+      "https://bstyle.vn/kinh-doanh/y-tuong-kinh-doanh",
+      "https://bstyle.vn/kinh-doanh/pr-marketing",
+      "https://bstyle.vn/kinh-doanh/ban-hang",
+      "https://bstyle.vn/kinh-doanh/luat-kinh-doanh",
+      "https://bstyle.vn/kinh-doanh/ke-hoach-chien-luoc",
+      "https://bstyle.vn/kinh-doanh/van-hoa-kinh-doanh",
+      "https://bstyle.vn/kinh-doanh/quan-tri-doanh-nghiep",
+      "https://bstyle.vn/kinh-doanh/lam-giau",
+      "https://bstyle.vn/tai-chinh",
+      "https://bstyle.vn/tai-chinh/tai-chinh-ca-nhan",
+      "https://bstyle.vn/tai-chinh/tai-chinh-doanh-nghiep",
+      "https://bstyle.vn/tai-chinh/bao-hiem",
+      "https://bstyle.vn/tai-chinh/ngan-hang",
+      "https://bstyle.vn/tai-chinh/tien-dien-tu",
+      "https://bstyle.vn/dau-tu/bat-dong-san",
+      "https://bstyle.vn/dau-tu/chung-khoan/kien-thuc-chung-khoan",
+      "https://bstyle.vn/dau-tu/bat-dong-san/du-an",
+      "https://bstyle.vn/dau-tu/chung-khoan",
+      "https://bstyle.vn/dau-tu/chung-khoan/thi-truong",
+      "https://bstyle.vn/doanh-nhan",
+      "https://bstyle.vn/doanh-nhan/doanh-nhan-viet-nam",
+      "https://bstyle.vn/doanh-nhan/doanh-nhan-the-gioi",
+      "https://bstyle.vn/doanh-nhan/cau-chuyen-doanh-nhan",
+      "https://bstyle.vn/top-thuong-hieu",
+      "https://bstyle.vn/sach-hay"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?bstyle.vn/.*?(\\d{3,}).*?(.html)$",
+    "reclassifiedArticleUrls": [
+      "https://bstyle.vn/10-cong-ty-diet-con-trung-uy-tin-tai-da-nang.html",
+      "https://bstyle.vn/thong-tin-vay-tien-dinh-cao-tu-banktopvn.html"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bstyle.vn",
+    "checkedAt": "2026-11-09T03:56:52.995Z",
+    "url": "https://bstyle.vn/nhung-nguyen-nhan-khien-quang-cao-facebook-khong-hieu-qua.html",
+    "finalUrl": "https://bstyle.vn/nhung-nguyen-nhan-khien-quang-cao-facebook-khong-hieu-qua.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3524,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:49.017Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/bstyle.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "bstyle.vn",
+    "parsedArticles": 23,
+    "distinctHashes": 23,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 29,
+    "categoriesAttempted": 29,
+    "categoriesRemoved": 2,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 142,
+    "checkedArticleUrls": 23,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 142,
+        "attempted": 21,
+        "passed": 21,
+        "distinctContents": 21,
+        "distinctHashes": 21
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congdoanvietnam.vn",
+  "siteId": "congdoanvietnam.vn",
+  "registrableDomain": "congdoanvietnam.vn",
+  "homepage": "https://congdoanvietnam.vn/",
+  "allowedHosts": [
+    "congdoanvietnam.vn",
+    "www.congdoanvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congdoanvietnam.vn/",
+    "categories": [
+      "https://congdoanvietnam.vn/giao-luu-truc-tuyen",
+      "https://congdoanvietnam.vn/y-kien-doan-vien",
+      "https://congdoanvietnam.vn/hoi-dap",
+      "https://congdoanvietnam.vn/co-quan-tld",
+      "https://congdoanvietnam.vn/to-chuc-dang-doan-the",
+      "https://congdoanvietnam.vn/he-thong-to-chuc-cdvn"
+    ]
+  },
+  "title": {
+    "value": "Phiên việc làm có 4.371 chỉ tiêu tuyển dụng lao động trình độ trung cấp - công nhân kỹ thuật",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:59.550Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:49.707Z",
+    "independentHoldouts": [
+      "https://congdoanvietnam.vn/thoi-su/viet-nam-luon-dong-hanh-tao-dieu-kien-cho-doanh-nghiep-dau-tu-kinh-doanh-tai-campuchia-46284.tld",
+      "https://congdoanvietnam.vn/quan-he-lao-dong/dua-di-san-van-hoa-ca-mau-den-gan-hon-voi-nguoi-lao-dong-48392.tld",
+      "https://congdoanvietnam.vn/cham-lo-doan-vien/dong-vien-nguoi-lao-dong-hung-yen-yen-tam-san-xuat-dip-cuoi-nam-48403.tld"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congdoanvietnam.vn/tin-tuc-viec-lam/phien-viec-lam-co-4371-chi-tieu-tuyen-dung-lao-dong-trinh-do-trung-cap-cong-nhan-ky-thuat-47588.tld",
+      "https://congdoanvietnam.vn/thoi-su/viet-nam-luon-dong-hanh-tao-dieu-kien-cho-doanh-nghiep-dau-tu-kinh-doanh-tai-campuchia-46284.tld",
+      "https://congdoanvietnam.vn/quan-he-lao-dong/dua-di-san-van-hoa-ca-mau-den-gan-hon-voi-nguoi-lao-dong-48392.tld",
+      "https://congdoanvietnam.vn/cham-lo-doan-vien/dong-vien-nguoi-lao-dong-hung-yen-yen-tam-san-xuat-dip-cuoi-nam-48403.tld"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

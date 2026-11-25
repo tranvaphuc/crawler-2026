@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnamhoinhap.vn",
+  "siteId": "vietnamhoinhap.vn",
+  "registrableDomain": "vietnamhoinhap.vn",
+  "homepage": "https://vietnamhoinhap.vn/",
+  "allowedHosts": [
+    "vietnamhoinhap.vn",
+    "www.vietnamhoinhap.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn Hiến pháp và pháp luật - Động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:50.415Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://vietnamhoinhap.vn/vi/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-57570.htm",
+      "https://vietnamhoinhap.vn/vi/cong-nghiep-van-hoa-mot-trong-nhung--chia-khoa--cho-tang-truong-hai-con-so-cua-viet-nam-57568.htm",
+      "https://vietnamhoinhap.vn/vi/viet-nam-truoc-co-hoi-don-dong-tai-san-toan-cau--nang-tam-vi-the-trong-mang-luoi-trung-tam-tai-san-chau-a-thai-binh-duong-57560.htm",
+      "https://vietnamhoinhap.vn/vi/esg-chia-khoa-mo-dong-von-xanh--nang-tam-nang-luc-canh-tranh-cua-doanh-nghiep-viet-nam-57534.htm",
+      "https://vietnamhoinhap.vn/vi/giam-chi-phi-nang-luong--don-bay-kiem-soat-lam-phat-va-cung-co-dong-luc-tang-truong-57517.htm",
+      "https://vietnamhoinhap.vn/vi/ban-hang-qua-livestream--ai-chiu-trach-nhiem-khi-quang-cao-sai-su-that--kinh-doanh-hang-gia-57549.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietnamhoinhap.vn/",
+    "categories": [
+      "https://vietnamhoinhap.vn/vi/video",
+      "https://vietnamhoinhap.vn/tin-moi-nhat",
+      "https://vietnamhoinhap.vn/emagazine.htm",
+      "https://vietnamhoinhap.vn/page/ty-gia.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietnamhoinhap.vn",
+    "checkedAt": "2026-11-09T03:57:37.326Z",
+    "url": "https://vietnamhoinhap.vn/vi/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-57570.htm",
+    "finalUrl": "https://vietnamhoinhap.vn/vi/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-57570.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11582,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "vietnamhoinhap.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 91,
+        "passed": 12,
+        "distinctHashes": 12
+      },
+      {
+        "name": "longform",
+        "discovered": 16,
+        "passed": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "video",
+        "discovered": 21,
+        "passed": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietnamhoinhap.vn/vi/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-57570.htm",
+      "https://vietnamhoinhap.vn/vi/cong-nghiep-van-hoa-mot-trong-nhung--chia-khoa--cho-tang-truong-hai-con-so-cua-viet-nam-57568.htm",
+      "https://vietnamhoinhap.vn/vi/viet-nam-truoc-co-hoi-don-dong-tai-san-toan-cau--nang-tam-vi-the-trong-mang-luoi-trung-tam-tai-san-chau-a-thai-binh-duong-57560.htm",
+      "https://vietnamhoinhap.vn/vi/esg-chia-khoa-mo-dong-von-xanh--nang-tam-nang-luc-canh-tranh-cua-doanh-nghiep-viet-nam-57534.htm",
+      "https://vietnamhoinhap.vn/vi/giam-chi-phi-nang-luong--don-bay-kiem-soat-lam-phat-va-cung-co-dong-luc-tang-truong-57517.htm",
+      "https://vietnamhoinhap.vn/vi/doi-moi-tu-duy-phap-luat-dat-dai--lay-cuoc-song-nguoi-dan-lam-trung-tam-57501.htm",
+      "https://vietnamhoinhap.vn/vi/doi-moi-quan-tri-nguon-luc-khoa-hoc--cong-nghe--tu-giai-ngan-den-hieu-qua-thuc-chat-57473.htm",
+      "https://vietnamhoinhap.vn/vi/vefta-mo-rong-khong-gian-phat-trien--tu-co-hoi-thi-truong-den-nang-tam-doanh-nghiep-viet-nam-57453.htm",
+      "https://vietnamhoinhap.vn/vi/tu-cam-ket-quoc-te-den-nguon-luc-phat-trien--doi-moi-tu-duy-hoi-nhap-trong-van-hoa--xa-hoi-va-giao-duc-57434.htm",
+      "https://vietnamhoinhap.vn/vi/ket-noi-nguon-luc--mo-duong-cho-doanh-nghiep-viet-nam-vuon-ra-thi-truong-toan-cau-57429.htm",
+      "https://vietnamhoinhap.vn/vi/hoi-chu-thap-do-tinh-hung-yen--ket-noi-nguon-luc-cong-dong--doi-moi-va-phat-trien-ben-vung-57577.htm",
+      "https://vietnamhoinhap.vn/vi/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-57576.htm",
+      "https://vietnamhoinhap.vn/vi/hoi-chu-thap-do-tinh-cao-bang--toan-dien-trong-cong-tac-hoi-va-phong-trao-thi-dua-nhan-dao-57578.htm",
+      "https://vietnamhoinhap.vn/vi/quoc-hoi-thong-qua-phuong-an-phan-bo-ngan-sach-trung-uong-nam-2027--uu-tien-dau-tu-trong-diem--cung-co-an-toan-tai-chinh-quoc-gia-57575.htm",
+      "https://vietnamhoinhap.vn/vi/shb-ra-mat-shb-rewards-phien-ban-moi--tich-diem-linh-hoat--doi-qua-da-dang-57574.htm",
+      "https://vietnamhoinhap.vn/vi/emagazine/mb--nang-tam-gia-tri-thuong-hieu-tu-nen-tang-tai-chinh-va-chuyen-doi-so-57510.htm",
+      "https://vietnamhoinhap.vn/vi/emagazine/mb-vuot-moc-100-000-ty-dong-von-dieu-le--tu-nen-tang-tai-chinh-den-nang-luc-tang-truong-57500.htm",
+      "https://vietnamhoinhap.vn/vi/emagazine/dang-cong-san-viet-nam-qua-cac-ky-dai-hoi-54372.htm",
+      "https://vietnamhoinhap.vn/vi/video/chau-doc-chuyen-minh-tren-hanh-trinh-kinh-te-so-va-xa-hoi-so-57508.htm",
+      "https://vietnamhoinhap.vn/vi/video/cai-cach-hanh-chinh-cong-kien-tao-nen-hanh-chinh-hien-dai-57507.htm",
+      "https://vietnamhoinhap.vn/vi/video/viet-nam-dong-gop-tich-cuc--trach-nhiem-vao-cac-no-luc-cua-lien-hop-quoc-57459.htm",
+      "https://vietnamhoinhap.vn/vi/video/chau-doc-dot-pha-chinh-quyen-so-57497.htm",
+      "https://vietnamhoinhap.vn/vi/photo/nua-the-ky-thanh-pho-mang-ten-bac-56339.htm",
+      "https://vietnamhoinhap.vn/vi/nhung-nghi-quyet-chien-luoc-dua-viet-nam-buoc-vao-ky-nguyen-moi-54948.htm",
+      "https://vietnamhoinhap.vn/vi/kinh-te-viet-nam-truoc-co-hoi-but-pha--nhung-dong-luc-moi-cho-muc-tieu-tang-truong-hai-con-so-57543.htm",
+      "https://vietnamhoinhap.vn/vi/shb-va-cuc-thue-phoi-hop-thuc-day-chuyen-doi-so--tao-thuan-loi-thuc-hien-nghia-vu-thue-57536.htm",
+      "https://vietnamhoinhap.vn/vi/xuat-nhap-khau-but-pha--khoi-thong-dong-luc-hoi-nhap-va-tang-truong-ben-vung-57528.htm",
+      "https://vietnamhoinhap.vn/vi/ban-hang-qua-livestream--ai-chiu-trach-nhiem-khi-quang-cao-sai-su-that--kinh-doanh-hang-gia-57549.htm",
+      "https://vietnamhoinhap.vn/vi/du-lieu-ca-nhan-truoc-nguy-co-bi-xam-pham--nguoi-dan-can-lam-gi-de-tu-bao-ve-57535.htm",
+      "https://vietnamhoinhap.vn/vi/nhung-van-de-nguoi-dan-can-biet-ve-dat-dai--thue-kinh-doanh-va-giao-dich-bat-dong-san-57523.htm",
+      "https://vietnamhoinhap.vn/vi/nang-cao-chat-luong-xay-dung-phap-luat-tu-chuong-trinh-lap-phap-nam-2027-57487.htm",
+      "https://vietnamhoinhap.vn/vi/minh-bach-phi--le-phi-ngoai-giao--hoan-thien-chinh-sach-phuc-vu-cong-dan-va-thuc-day-hoi-nhap-quoc-te-57563.htm",
+      "https://vietnamhoinhap.vn/vi/chuyen-gia-quoc-te--mo-hinh-do-thi-tich-hop-toan-dien-cua-vinhomes--doc-nhat-the-gioi-57556.htm",
+      "https://vietnamhoinhap.vn/vi/mb-economic-insights-2026--khoi-thong-nguon-von--thich-ung-nhanh-truoc-bien-dong-sap-dien-ra-tai-tp-ho-chi-minh-57547.htm",
+      "https://vietnamhoinhap.vn/vi/cac-chinh-sach-dang-chu-y-co-hieu-luc-tu-thang-11-2026-57491.htm",
+      "https://vietnamhoinhap.vn/vi/chu-dau-tu-tam-vung---tam-manh-moi-du-suc-ho-tro-dai-ly--nuoi-quan-57484.htm",
+      "https://vietnamhoinhap.vn/vi/doi-moi-phuong-thuc-tiep-nhan-hoc-sinh-dau-cap--giam-ap-luc-thi-vao-lop-10--huong-toi-cong-bang-trong-giao-duc-57456.htm",
+      "https://vietnamhoinhap.vn/vi/da-nang-huong-toi-do-thi-giau-ban-sac-hang-dau-chau-a--tam-nhin-dai-han-cho-mot-cuc-tang-truong-moi-57436.htm",
+      "https://vietnamhoinhap.vn/vi/cuoc-lot-xac-ngoan-muc-sau-2-nam-cua-dai-do-thi-sun-group-cua-ngo-nam-ha-noi-57546.htm",
+      "https://vietnamhoinhap.vn/vi/ca-phe-viet-nam--chuyen-dich-chuoi-gia-tri--nang-tam-vi-the-quoc-te-57524.htm",
+      "https://vietnamhoinhap.vn/vi/sun-property-duoc-vinh-danh--nha-phat-trien-bds-tieu-bieu-viet-nam--voi-loat-du-an-cao-cap-57520.htm",
+      "https://vietnamhoinhap.vn/vi/danko-royal-dau-an-quy-hoach--chat-song-khac-biet-57471.htm",
+      "https://vietnamhoinhap.vn/vi/ecopark-ra-mat-rung-hong---trung-tam-cua-mua-le-hoi-tai-eco-retreat-57468.htm",
+      "https://vietnamhoinhap.vn/vi/sun-group-va-nhung-gia-tri-o-lai-voi-vung-dat-57432.htm",
+      "https://vietnamhoinhap.vn/vi/quan-tri-chat-che-tai-san-cong--khoi-thong-nguon-luc--ngan-ngua-that-thoat--lang-phi-57551.htm",
+      "https://vietnamhoinhap.vn/vi/phu-quoc-tang-toc-cac-cong-trinh-apec-2027--dau-an-tu-co-che-quan-ly-dac-thu-57529.htm",
+      "https://vietnamhoinhap.vn/vi/chu-dong-ung-pho-el-ni--o--nang-cao-nang-luc-quan-tri-rui-ro-thien-tai-tu-som--tu-xa-57518.htm",
+      "https://vietnamhoinhap.vn/vi/doi-ngoai-toan-dien-o-tam-cao-moi--tu-tu-duy-chien-luoc-den-hieu-qua-thuc-tien-57492.htm",
+      "https://vietnamhoinhap.vn/vi/hoan-thien-he-thong-vi-tri-viec-lam--nang-cao-hieu-qua-quan-ly-va-su-dung-nhan-luc-trong-he-thong-chinh-tri-57454.htm",
+      "https://vietnamhoinhap.vn/vi/trien-khai-dong-bo-luat-ve-nguoi-lao-dong-viet-nam-di-lam-viec-o-nuoc-ngoai--day-manh-phan-cap--quan-ly-bang-du-lieu-57417.htm",
+      "https://vietnamhoinhap.vn/vi/doi-moi-quan-tri-moi-truong-gan-voi-phat-trien-kinh-te-tuan-hoan-o-ha-noi-57479.htm",
+      "https://vietnamhoinhap.vn/vi/du-an-3r--tu-phuc-hoi-rung-den-xay-dung-sinh-ke-ben-vung-cho-mien-nui-phia-bac-57461.htm",
+      "https://vietnamhoinhap.vn/vi/xay-dung-nganh-lam-nghiep-da-gia-tri--chuyen-tu-khai-thac-tai-nguyen-sang-kien-tao-gia-tri-xanh-ben-vung-57435.htm",
+      "https://vietnamhoinhap.vn/vi/tieng-noi-xanh-mua-4-lap-ky-luc-voi-hon-15-000-y-tuong-du-thi-57414.htm",
+      "https://vietnamhoinhap.vn/vi/tu-dong-hoa-quan-ly-thue-thuong-mai-dien-tu--go-nut-that-thu-tuc--thuc-day-kinh-doanh-so-minh-bach-57564.htm",
+      "https://vietnamhoinhap.vn/vi/hoan-thien-quy-dinh-hai-quan--chuan-hoa-thu-tuc--nang-cao-hieu-qua-giam-sat-57527.htm",
+      "https://vietnamhoinhap.vn/vi/hien-dai-hoa-benh-vien--khoang-cach-tu-so-huu-cong-nghe-den-nang-luc-van-hanh-57494.htm",
+      "https://vietnamhoinhap.vn/vi/thanh-hoa-doi-moi-giao-duc-di-san-tu-nhung-trai-nghiem-sang-tao-57483.htm",
+      "https://vietnamhoinhap.vn/vi/lang-nghe-ha-noi-danh-thuc-gia-tri-truyen-thong-bang-cong-nghe-so-57478.htm",
+      "https://vietnamhoinhap.vn/vi/hoi-chu-thap-do-tinh-dien-bien--diem-tua-vung-chac-cua-dong-bao-vung-cao-bien-gioi-57573.htm",
+      "https://vietnamhoinhap.vn/vi/ngon-lua-nhan-ai-tren-vung-cao-tay-bac---dau-an-tu-phong-trao-chu-thap-do-tinh-lao-cai-57572.htm",
+      "https://vietnamhoinhap.vn/vi/khen-thuong-noi-bo-phai-thuc-chat--co-trong-tam-va-bam-sat-thuc-tien-57558.htm",
+      "https://vietnamhoinhap.vn/vi/sa-loong--quang-ngai-doi-moi-tu-duy--kien-tao-khat-vong-vuon-len-cho-nong-nghiep-vung-bien-57554.htm",
+      "https://vietnamhoinhap.vn/vi/kinh-te-viet-nam-10-thang-nam-2026--nhung-diem-sang-tao-da-but-pha-cuoi-nam-57541.htm",
+      "https://vietnamhoinhap.vn/vi/chuan-hoa-danh-gia--doi-moi-tiep-nhan-hoc-sinh--huong-toi-nen-giao-duc-thuc-chat-va-giam-ap-luc-thi-cu-57502.htm",
+      "https://vietnamhoinhap.vn/vi/mo-rong-khong-gian-phat-trien-cho-thanh-nien--dong-luc-thuc-day-khoi-nghiep-va-doi-moi-sang-tao-57421.htm",
+      "https://vietnamhoinhap.vn/vi/an-ninh-du-lieu-trong-ky-nguyen-so--yeu-cau-dat-ra-tu-thuc-tien-quan-tri-va-bao-ve-du-lieu-57561.htm",
+      "https://vietnamhoinhap.vn/vi/viet-nam-lam-chu-chip-bao-mat--buoc-tien-chien-luoc-tren-hanh-trinh-xay-dung-chu-quyen-so-57540.htm",
+      "https://vietnamhoinhap.vn/vi/dot-pha-chuyen-doi-so-o-an-hao--tu-tu-duy-nghi-quyet-den-hoi-tho-cuoc-song-co-so-57530.htm",
+      "https://vietnamhoinhap.vn/vi/chuyen-doi-so-o-vung-cao--tu-truyen-tai-thong-tin-den-ket-noi-chinh-quyen-voi-nguoi-dan-57519.htm",
+      "https://vietnamhoinhap.vn/vi/mb-tien-phong-ky-so--tram-lan-ky-tay---nay-chi-1-cham-57514.htm",
+      "https://vietnamhoinhap.vn/vi/an-ninh-van-hoa-tren-khong-gian-mang--nhan-dien-thach-thuc-va-giai-phap-bao-dam-trong-boi-canh-chuyen-doi-so-o-viet-nam-57566.htm",
+      "https://vietnamhoinhap.vn/vi/the-che-giao-duc-dai-hoc-viet-nam-trong-ky-nguyen-moi--dot-pha-tu-luat-giao-duc-dai-hoc-so-125-2025-qh15-57557.htm",
+      "https://vietnamhoinhap.vn/vi/chuyen-doi-tu-quan-ly-xa-hoi-sang-quan-tri-xa-hoi-cach-tiep-can-va-nguyen-tac-57386.htm",
+      "https://vietnamhoinhap.vn/vi/xay-dung-van-hoa-ung-xu-trong-truong-dang-dap-ung-yeu-cau-chuyen-doi-so-va-hoi-nhap-hien-nay-57382.htm",
+      "https://vietnamhoinhap.vn/vi/phat-trien-kinh-te-van-hoa-phat-huy-suc-manh-noi-sinh-kien-tao-dat-nuoc-phat-trien-nhanh--ben-vung-57364.htm",
+      "https://vietnamhoinhap.vn/vi/yeu-cau-ve-dao-duc--van-hoa-giao-tiep-va-ung-xu-cua-cong-chuc-trong-boi-canh-quan-tri-xa-hoi-so-57354.htm",
+      "https://vietnamhoinhap.vn/vi/ths--bsck-ii-luu-quoc-khai-dau-an-y-duc-cua-nguoi-thay-thuoc-tan-tam-va-giau-long-nhan-ai-57562.htm",
+      "https://vietnamhoinhap.vn/vi/ths-bs--nguyen-van-long--tam-toa-sang-trong-mau-ao-blouse-57552.htm",
+      "https://vietnamhoinhap.vn/vi/bai-toan-ket-noi-he-sinh-thai-doi-moi-sang-tao-57548.htm",
+      "https://vietnamhoinhap.vn/vi/bsckii--tran-dinh-bao-thang--tam-huyet-voi-nghe--vung-vang-chuyen-mon-57538.htm",
+      "https://vietnamhoinhap.vn/vi/bac-si--luong-y-dam-thanh-toan--giu--lua--tien-nhan-gui-tam-vao-y-dao-57525.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:17:59.092Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietnamhoinhap.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

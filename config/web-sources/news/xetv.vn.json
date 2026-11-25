@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xetv.vn",
+  "siteId": "xetv.vn",
+  "registrableDomain": "xetv.vn",
+  "homepage": "https://xetv.vn/",
+  "allowedHosts": [
+    "xetv.vn",
+    "www.xetv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://xetv.vn/",
+    "categories": [
+      "https://xetv.vn/forums/",
+      "https://xetv.vn/whats-new/posts/1127470/",
+      "https://xetv.vn/advancedsearch/",
+      "https://xetv.vn/whats-new/",
+      "https://xetv.vn/featured/",
+      "https://xetv.vn/whats-new/latest-activity",
+      "https://xetv.vn/ewr-porta/page-69",
+      "https://xetv.vn/ewr-porta/page-2"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Tin xe Xe Ấn Độ vào Việt Nam 2026: Tata và Mahindra có cơ hội chen chân không?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://xetv.vn/forums/-/index.rss",
+    "sourceKind": "public_publication_feed"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:10.227Z",
+    "frozenAt": "2026-11-16T02:01:02.294Z",
+    "trainingUrl": "https://xetv.vn/threads/xe-an-do-vao-viet-nam-2026-tata-va-mahindra-co-co-hoi-chen-chan-khong.9199/",
+    "independentHoldouts": [
+      "https://xetv.vn/threads/mitsubishi-destinator-vs-geely-okavango-xe-7-cho-duoi-800-trieu-chon-cai-nao.7215",
+      "https://xetv.vn/threads/binh-xang-xe-may-dinh-nuoc-nhan-biet-va-tu-xu-ly-khong-ton-tien.9150/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://xetv.vn/threads/xe-an-do-vao-viet-nam-2026-tata-va-mahindra-co-co-hoi-chen-chan-khong.9199/",
+      "https://xetv.vn/threads/mitsubishi-destinator-vs-geely-okavango-xe-7-cho-duoi-800-trieu-chon-cai-nao.7215",
+      "https://xetv.vn/threads/binh-xang-xe-may-dinh-nuoc-nhan-biet-va-tu-xu-ly-khong-ton-tien.9150/",
+      "https://xetv.vn/threads/bugi-xe-may-bao-lau-thay-mot-lan-va-dau-hieu-nao-cho-thay-bugi-da-hong.9149/",
+      "https://xetv.vn/threads/toyota-bz4x-tai-viet-nam-co-chinh-thuc-ban-khong-va-gia-bao-nhieu.9148/",
+      "https://xetv.vn/threads/xe-bi-keo-tren-cau-de-lat-nhung-sai-lam-ky-thuat-can-tranh-ngay.9147/",
+      "https://xetv.vn/threads/hero-xtreme-125r-stealth-edition-con-tay-125cc-man-tft-abs-2-kenh-gia-32-trieu-co-dang-mua.9146/",
+      "https://xetv.vn/threads/mot-lan-dung-xe-phat-34-trieu-3-loi-lai-xe-o-to-ai-cung-co-the-mac.9145/",
+      "https://xetv.vn/threads/gap-loc-xoay-khi-dang-lai-xe-an-nau-o-dau-va-tuyet-doi-khong-lam-gi.9144/",
+      "https://xetv.vn/threads/lai-xe-sau-khi-uong-thuoc-nhung-loai-thuoc-nao-gay-buon-ngu-va-nguy-hiem.9143/",
+      "https://xetv.vn/threads/xe-bi-thieu-lai-va-thua-lai-khi-vao-cua-nhan-biet-va-xu-ly-dung-cach.9142/",
+      "https://xetv.vn/threads/tinh-nang-tu-dong-do-xe-tren-o-to-xe-nao-co-va-thuc-su-dung-duoc-khong.9141/",
+      "https://xetv.vn/threads/ung-dung-tim-cho-do-xe-tai-tp-hcm-va-ha-noi-cai-nao-thuc-su-dung-duoc.9140/",
+      "https://xetv.vn/threads/gia-xang-dau-viet-nam-tang-giam-theo-co-che-nao-ky-dieu-chinh-ra-sao.9138/",
+      "https://xetv.vn/threads/duong-vanh-dai-4-ha-noi-di-qua-dau-va-bao-gio-hoan-thanh.9137/",
+      "https://xetv.vn/threads/bridgestone-michelin-hay-yokohama-lop-xe-nao-tot-nhat-cho-xe-gia-dinh-viet-nam.9136/",
+      "https://xetv.vn/threads/ppf-va-ceramic-coating-khac-gi-nhau-dan-cai-nao-bao-ve-son-o-to-tot-hon.9135/",
+      "https://xetv.vn/threads/den-gam-led-o-to-lap-xong-co-phai-dang-kiem-lai-khong-mau-nao-hop-phap.9134/",
+      "https://xetv.vn/threads/camera-hanh-trinh-o-to-2026-top-5-loai-tot-nhat-tam-1-3-trieu-va-cach-lap-dat.9133/",
+      "https://xetv.vn/threads/boc-ghe-da-o-to-da-that-hay-da-pu-tong-hop-ben-va-de-ve-sinh-hon.9132/",
+      "https://xetv.vn/threads/dan-film-cach-nhiet-o-to-3m-llumar-hay-v-kool-loai-nao-dang-tien-nhat.9131/",
+      "https://xetv.vn/threads/tesla-sap-vao-viet-nam-co-thuc-su-dau-voi-vinfast-khong.9130/",
+      "https://xetv.vn/threads/honda-sh-150i-special-limited-edition-hrc-2026-da-ve-viet-nam-rebel-motor-chinh-thuc-ra-mat-trong-tuan-toi.9171/",
+      "https://xetv.vn/threads/subaru-forester-2-5-chinh-thuc-ban-tai-viet-nam-co-ban-strong-hybrid-gia-tu-1-299-ty-dong.9139/",
+      "https://xetv.vn/threads/volvo-es90-chinh-thuc-ra-mat-tai-viet-nam-sedan-dien-hang-sang-680-ma-luc-chay-706-km-gia-2-6-ty-dong.9050/",
+      "https://xetv.vn/threads/volvo-ex90-chinh-thuc-ra-mat-tai-viet-nam-suv-dien-hang-sang-680-ma-luc-gia-3-5-ty-dong.9049/",
+      "https://xetv.vn/threads/mforce-vietnam-ky-niem-1-nam-hoat-dong-ra-mat-3-mau-xe-moi-voi-gia-tu-98-trieu-dong.9034/",
+      "https://xetv.vn/threads/tram-xang-sap-dong-cua-vi-xe-dien-thuc-te-o-viet-nam-co-xay-ra-khong.9198/",
+      "https://xetv.vn/threads/thi-truong-xe-dien-dong-nam-a-2026-viet-nam-dang-dung-o-dau.9197/",
+      "https://xetv.vn/threads/bo-chay-csgt-phong-98km-h-roi-say-ruou-tai-xe-linh-phat-96-5-trieu-va-mat-bang-11-thang.9196/",
+      "https://xetv.vn/threads/xe-o-to-tu-lai-cap-do-3-tai-viet-nam-khi-nao-moi-duoc-phep-luu-thong.9195/",
+      "https://xetv.vn/threads/vinfast-xuat-khau-xe-dien-sang-nhung-nuoc-nao-trong-nam-2026.9194/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "strictTimeRepairEvidence": {
+    "frozenAt": "2026-11-16T03:25:39.116Z",
+    "source": "url_bound_original_publication_feed",
+    "training": [
+      {
+        "url": "https://xetv.vn/threads/phanh-dong-co-khi-xuong-doc-co-thuc-su-lam-hai-may-khong.9200/",
+        "date": "2026-11-16T03:15:40.000Z",
+        "raw": "Mon, 16 Nov 2026 03:15:40 +0000",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://xetv.vn/threads/phanh-dong-co-khi-xuong-doc-co-thuc-su-lam-hai-may-khong.9200/",
+          "publishedDate": "2026-11-16T03:15:40.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://xetv.vn/threads/xe-an-do-vao-viet-nam-2026-tata-va-mahindra-co-co-hoi-chen-chan-khong.9199/",
+        "date": "2026-11-16T01:45:11.000Z",
+        "raw": "Mon, 16 Nov 2026 01:45:11 +0000",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://xetv.vn/threads/xe-an-do-vao-viet-nam-2026-tata-va-mahindra-co-co-hoi-chen-chan-khong.9199/",
+          "publishedDate": "2026-11-16T01:45:11.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "independentHoldouts": [
+      {
+        "url": "https://xetv.vn/threads/tram-xang-sap-dong-cua-vi-xe-dien-thuc-te-o-viet-nam-co-xay-ra-khong.9198/",
+        "date": "2026-11-16T00:15:08.000Z",
+        "raw": "Mon, 16 Nov 2026 00:15:08 +0000",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://xetv.vn/threads/tram-xang-sap-dong-cua-vi-xe-dien-thuc-te-o-viet-nam-co-xay-ra-khong.9198/",
+          "publishedDate": "2026-11-16T00:15:08.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://xetv.vn/threads/thi-truong-xe-dien-dong-nam-a-2026-viet-nam-dang-dung-o-dau.9197/",
+        "date": "2026-11-15T22:45:10.000Z",
+        "raw": "Sun, 15 Nov 2026 22:45:10 +0000",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://xetv.vn/threads/thi-truong-xe-dien-dong-nam-a-2026-viet-nam-dang-dung-o-dau.9197/",
+          "publishedDate": "2026-11-15T22:45:10.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "strictValidatorUnchanged": true,
+    "paidAiCalls": 0
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

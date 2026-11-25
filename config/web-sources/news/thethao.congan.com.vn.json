@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thethao.congan.com.vn",
+  "siteId": "thethao.congan.com.vn",
+  "registrableDomain": "congan.com.vn",
+  "homepage": "https://thethao.congan.com.vn/",
+  "allowedHosts": [
+    "thethao.congan.com.vn",
+    "www.thethao.congan.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khán giả trông chờ trận chung kết kịch tính, hấp dẫn giữa hai đội Công an TPHCM và Biên Phòng MB",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[name=\"pubdate\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article_content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:35.331Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thethao.congan.com.vn/tin-tuc/khan-gia-trong-cho-tran-chung-ket-kich-tinh-hap-dan-giua-hai-doi-cong-an-tphcm-va-bien-phong-mb_199697.html",
+      "https://thethao.congan.com.vn/tin-tuc/doi-cong-an-tphcm-ban-linh-xuat-sac-loi-nguoc-dong-loai-tan-cang-the-cong-de-vao-chung-ket_199686.html",
+      "https://thethao.congan.com.vn/tin-tuc/soi-noi-giai-pickleball-chao-mung-ngay-truyen-thong-canh-sat-thi-hanh-an-hinh-su-va-ho-tro-tu-phap_199653.html",
+      "https://thethao.congan.com.vn/tin-tuc/giai-bong-chuyen-vdqg-cac-clb-nam-2026-doi-cong-an-tphcm-quyet-tam-vuot-qua-ban-ket_199625.html",
+      "https://thethao.congan.com.vn/tin-tuc/can-canh-pha-va-cham-manh-khien-cau-thu-jesus-de-miguel-qua-doi-o-tay-ban-nha_199540.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thethao.congan.com.vn/",
+    "categories": [
+      "https://thethao.congan.com.vn/tin-tuc",
+      "https://thethao.congan.com.vn/bong-da",
+      "https://thethao.congan.com.vn/tennis",
+      "https://thethao.congan.com.vn/cac-mon-khac"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thethao.congan.com.vn",
+    "checkedAt": "2026-11-09T03:57:30.935Z",
+    "url": "https://thethao.congan.com.vn/tin-tuc/khan-gia-trong-cho-tran-chung-ket-kich-tinh-hap-dan-giua-hai-doi-cong-an-tphcm-va-bien-phong-mb_199697.html",
+    "finalUrl": "https://thethao.congan.com.vn/tin-tuc/khan-gia-trong-cho-tran-chung-ket-kich-tinh-hap-dan-giua-hai-doi-cong-an-tphcm-va-bien-phong-mb_199697.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3855,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:23.243Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thethao.congan.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thethao.congan.com.vn",
+    "parsedArticles": 6,
+    "distinctHashes": 6,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesAttempted": 4,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 29,
+    "checkedArticleUrls": 6,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 29,
+        "attempted": 6,
+        "passed": 6,
+        "distinctContents": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

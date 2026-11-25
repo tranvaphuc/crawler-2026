@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunuvietnam.vn",
+  "siteId": "phunuvietnam.vn",
+  "registrableDomain": "phunuvietnam.vn",
+  "homepage": "https://phunuvietnam.vn/",
+  "allowedHosts": [
+    "phunuvietnam.vn",
+    "www.phunuvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn hiến pháp và pháp luật - động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:02.987Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://phunuvietnam.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-238261108141121315.htm",
+      "https://phunuvietnam.vn/chu-tich-quoc-hoi-tran-thanh-man-du-le-khanh-thanh-cong-trinh-tai-khu-di-tich-quoc-gia-dac-biet-tan-trao-23826110811513838.htm",
+      "https://phunuvietnam.vn/pho-thu-tuong-pham-thi-thanh-tra-chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-238261107215425213.htm",
+      "https://phunuvietnam.vn/dai-bieu-tran-lan-phuong-mo-rong-khuyen-khich-doanh-nghiep-lu-hanh-lien-ket-cong-dong-dan-cu-cung-ung-san-pham-du-lich-238261107164244246.htm",
+      "https://phunuvietnam.vn/dai-bieu-quoc-hoi-dong-khach-chua-du-du-lich-phai-khien-khach-muon-quay-lai-238261107162109048.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phunuvietnam.vn/",
+    "categories": [
+      "https://phunuvietnam.vn/thoi-cuoc.htm",
+      "https://phunuvietnam.vn/thoi-cuoc/chinh-tri.htm",
+      "https://phunuvietnam.vn/thoi-cuoc/mat-tran.htm",
+      "https://phunuvietnam.vn/thoi-cuoc/quoc-te.htm",
+      "https://phunuvietnam.vn/thoi-cuoc/su-kien-binh-luan.htm",
+      "https://phunuvietnam.vn/gioi-phat-trien.htm",
+      "https://phunuvietnam.vn/gioi-phat-trien/hoat-dong-hoi.htm",
+      "https://phunuvietnam.vn/gioi-phat-trien/binh-dang-gioi.htm",
+      "https://phunuvietnam.vn/gioi-phat-trien/du-an-de-an.htm",
+      "https://phunuvietnam.vn/kinh-te.htm",
+      "https://phunuvietnam.vn/kinh-te/chung-khoan.htm",
+      "https://phunuvietnam.vn/kinh-te/bat-dong-san.htm",
+      "https://phunuvietnam.vn/kinh-te/doanh-nghiep-doanh-nhan.htm",
+      "https://phunuvietnam.vn/kinh-te/kinh-te-gia-dinh.htm",
+      "https://phunuvietnam.vn/xa-hoi.htm",
+      "https://phunuvietnam.vn/xa-hoi/doi-song.htm",
+      "https://phunuvietnam.vn/xa-hoi/lao-dong-viec-lam.htm",
+      "https://phunuvietnam.vn/xa-hoi/nhip-song-so.htm",
+      "https://phunuvietnam.vn/gia-dinh.htm",
+      "https://phunuvietnam.vn/gia-dinh/thanh-tam-tu-van.htm",
+      "https://phunuvietnam.vn/gia-dinh/tinh-yeu-hon-nhan.htm",
+      "https://phunuvietnam.vn/gia-dinh/lam-cha-me.htm",
+      "https://phunuvietnam.vn/suc-khoe.htm",
+      "https://phunuvietnam.vn/suc-khoe/song-khoe.htm",
+      "https://phunuvietnam.vn/suc-khoe/me-be.htm",
+      "https://phunuvietnam.vn/suc-khoe/phong-chua-benh.htm",
+      "https://phunuvietnam.vn/tieu-dung.htm",
+      "https://phunuvietnam.vn/tieu-dung/gia-ca-thi-truong.htm",
+      "https://phunuvietnam.vn/tieu-dung/tieu-dung-thong-thai.htm",
+      "https://phunuvietnam.vn/tieu-dung/quyen-loi-nguoi-tieu-dung.htm",
+      "https://phunuvietnam.vn/van-hoa.htm",
+      "https://phunuvietnam.vn/van-hoa/nguon-coi.htm",
+      "https://phunuvietnam.vn/van-hoa/van-hoc.htm",
+      "https://phunuvietnam.vn/van-hoa/nghe-thuat.htm",
+      "https://phunuvietnam.vn/van-hoa/showbiz.htm",
+      "https://phunuvietnam.vn/giao-duc.htm",
+      "https://phunuvietnam.vn/giao-duc/hoc-duong.htm",
+      "https://phunuvietnam.vn/giao-duc/tuyen-sinh.htm",
+      "https://phunuvietnam.vn/du-lich.htm",
+      "https://phunuvietnam.vn/du-lich/kham-pha-trai-nghiem.htm",
+      "https://phunuvietnam.vn/du-lich/cam-nang-du-lich.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu/phong-cach.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu/lam-dep.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu/thoi-trang.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu/dam-dang.htm",
+      "https://phunuvietnam.vn/the-gioi-phu-nu/tu-dien-dan-ong.htm",
+      "https://phunuvietnam.vn/vi-cong-dong.htm",
+      "https://phunuvietnam.vn/vi-cong-dong/song-dep.htm",
+      "https://phunuvietnam.vn/vi-cong-dong/nhip-cau-nhan-ai.htm",
+      "https://phunuvietnam.vn/phap-luat-ban-doc.htm",
+      "https://phunuvietnam.vn/phap-luat-ban-doc/luat-doi.htm",
+      "https://phunuvietnam.vn/phap-luat-ban-doc/tu-van-phap-luat.htm",
+      "https://phunuvietnam.vn/phap-luat-ban-doc/theo-don-thu-ban-doc.htm",
+      "https://phunuvietnam.vn/phap-luat-ban-doc/quy-dinh-moi.htm",
+      "https://phunuvietnam.vn/multimedia.htm",
+      "https://phunuvietnam.vn/video.htm",
+      "https://phunuvietnam.vn/video/tin-tuc.htm",
+      "https://phunuvietnam.vn/video/phim-tai-lieu.htm",
+      "https://phunuvietnam.vn/video/su-ke.htm",
+      "https://phunuvietnam.vn/podcast.htm",
+      "https://phunuvietnam.vn/magazine.htm",
+      "https://phunuvietnam.vn/tin-moi-nhat.htm",
+      "https://phunuvietnam.vn/gioi-phat-trien",
+      "https://phunuvietnam.vn/v%C4%83n-hoa.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunuvietnam.vn",
+    "checkedAt": "2026-11-09T03:57:22.825Z",
+    "url": "https://phunuvietnam.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-238261108141121315.htm",
+    "finalUrl": "https://phunuvietnam.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-238261108141121315.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12764,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "phunuvietnam.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 159,
+    "checkedArticleUrls": 176,
+    "freshArticleChecks": 52,
+    "parserIssues": 15,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 159,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 66,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1274,
+        "passed": 152,
+        "distinctHashes": 152
+      },
+      {
+        "name": "audio",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "video",
+        "discovered": 40,
+        "passed": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phunuvietnam.vn/go-nut-that-phap-ly-cho-huong-dan-vien-du-lich-238261110121108952.htm",
+      "https://phunuvietnam.vn/dai-bieu-quoc-hoi-de-nghi-tap-trung-nguon-luc-vao-3-linh-vuc-de-phat-trien-cong-nghiep-van-hoa-238261110132226111.htm",
+      "https://phunuvietnam.vn/mo-rong-luoi-an-sinh-cho-phu-nu-va-lao-dong-vung-cao-238261110102750213.htm",
+      "https://phunuvietnam.vn/bo-truong-y-te-dao-hong-lan-chua-du-can-cu-cam-thuoc-la-theo-the-he-238261109193256353.htm",
+      "https://phunuvietnam.vn/quy-dinh-bao-bi-thuoc-la-can-cu-huych-manh-tay-tu-luat-238261109195210736.htm",
+      "https://phunuvietnam.vn/hoi-nghi-cop31-khong-the-co-cong-ly-khi-hau-neu-khong-co-binh-dang-gioi-238261110113052229.htm",
+      "https://phunuvietnam.vn/hue-trieu-cuong-song-lon-gay-sat-lo-bo-bien-thuan-an-nhieu-hang-quan-bi-toc-mai-238261110115504724.htm",
+      "https://phunuvietnam.vn/sinh-vien-kho-khan-va-gia-dinh-hao-hung-don-nhan-tin-vui-238261109210049372.htm",
+      "https://phunuvietnam.vn/be-giang-lop-boi-duong-cho-can-bo-mat-tran-lao-xay-dung-dat-nuoc-nam-2026-23826110916563622.htm",
+      "https://phunuvietnam.vn/thay-doi-nep-nghi-cach-lam-o-quang-ngai-bai-2-chuyen-trong-nha-duoc-noi-o-viec-lang-238261108100743327.htm",
+      "https://phunuvietnam.vn/nhin-tu-dong-tien-3-doanh-nghiep-bat-dong-san-tien-nghin-ty-suc-khoe-tai-chinh-ra-sao-238261105221350181.htm",
+      "https://phunuvietnam.vn/giu-dien-thoai-cua-nguoi-lao-dong-de-lam-tin-bi-khoi-to-toi-cuong-doat-tai-san-238261109091114575.htm",
+      "https://phunuvietnam.vn/el-nio-de-doa-sinh-ke-gia-tang-nguy-co-tao-hon-23826110905445972.htm",
+      "https://phunuvietnam.vn/tro-chuyen-cung-thanh-tam-con-duoc-day-do-bang-yeu-thuong-khong-trach-mang-238261108051104184.htm",
+      "https://phunuvietnam.vn/goi-giai-phap-gan-3000-ty-dong-cua-grab-va-quyen-loi-nguoi-lao-dong-trong-nen-kinh-te-so-238261107103959099.htm",
+      "https://phunuvietnam.vn/nhung-hinh-anh-an-tuong-tai-dai-hoi-dai-bieu-phat-giao-toan-quoc-lan-thu-x-238261108130551021.htm",
+      "https://phunuvietnam.vn/podcast-hut-nguoi-nghe-bang-chieu-sau-va-su-ket-noi-23826110510465476.htm",
+      "https://phunuvietnam.vn/bat-ghen-phat-tan-clip-nhay-cam-ranh-gioi-nao-cho-su-tuc-gian-238261107062004194.htm",
+      "https://phunuvietnam.vn/sua-luat-binh-dang-gioi-can-tap-trung-go-diem-nghen-thieu-du-lieu-phan-tach-theo-gioi-238261105131350426.htm",
+      "https://phunuvietnam.vn/bien-nha-dat-tho-tu-thanh-cua-rieng-long-tham-lam-mat-tinh-ruot-thit-238261103150821537.htm",
+      "https://phunuvietnam.vn/nhung-nguoi-ke-su-ba-le-thi-xuyen-chu-tich-dau-tien-cua-hoi-lien-hiep-phu-nu-viet-nam-23826110523542824.htm",
+      "https://phunuvietnam.vn/doanh-nghiep-bat-dong-san-truoc-phep-thu-tiep-can-von-ngan-hang-238261104202824573.htm",
+      "https://phunuvietnam.vn/loi-nhuan-pvcombank-tang-35-nho-kinh-doanh-cai-thien-hay-giam-trich-lap-du-phong-238261105161511976.htm",
+      "https://phunuvietnam.vn/lan-song-nu-quyen-bung-no-trong-bau-cu-giua-ky-o-my-238261104215303492.htm",
+      "https://phunuvietnam.vn/co-be-ong-nghiem-dau-tien-cua-viet-nam-sinh-con-dau-long-23826110419104202.htm",
+      "https://phunuvietnam.vn/bau-cu-giua-ky-o-my-3-yeu-to-cot-loi-lam-nen-chien-thang-cua-dang-dan-chu-238261104153229448.htm",
+      "https://phunuvietnam.vn/thuc-day-hop-tac-va-chia-se-kinh-nghiem-vi-su-tien-bo-cua-phu-nu-duoi-mai-nha-chung-acwo-238261104093452703.htm",
+      "https://phunuvietnam.vn/phu-nu-asean-mo-rong-mang-luoi-tang-cuong-tieng-noi-chung-238261103172641751.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 15
+    },
+    "checkedAt": "2026-11-10T09:16:40.123Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phunuvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "phunuvietnam.vn",
+      "siteId": "phunuvietnam.vn",
+      "registrableDomain": "phunuvietnam.vn",
+      "homepage": "https://phunuvietnam.vn/",
+      "allowedHosts": [
+        "phunuvietnam.vn",
+        "www.phunuvietnam.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Trò chuyện cùng Thanh Tâm: Con được dạy dỗ bằng yêu thương, không trách mắng",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:28.464Z",
+        "trainingUrls": [
+          "https://phunuvietnam.vn/tro-chuyen-cung-thanh-tam-con-duoc-day-do-bang-yeu-thuong-khong-trach-mang-238261108051104184.htm",
+          "https://phunuvietnam.vn/nhung-bong-hoa-hop-tac-xa-thuc-day-truyen-cam-hung-phat-trien-kinh-te-cua-phu-nu-20251119212021155.htm",
+          "https://phunuvietnam.vn/thanh-tam-ke-chuyen-cha-me-ly-hon-con-dau-suot-doi-238260410111712482.htm",
+          "https://phunuvietnam.vn/toa-dam-phong-chong-tac-hai-thuoc-la-bao-ve-suc-khoe-cong-dong-ngan-khoi-thuoc-thu-dong-tu-moi-gia-dinh-238261105145904731.htm",
+          "https://phunuvietnam.vn/nu-tieu-thuong-cho-dong-xuan-thich-ung-de-khong-bi-bo-lai-phia-sau-238261101172847963.htm"
+        ],
+        "holdoutUrls": [
+          "https://phunuvietnam.vn/buoc-doanh-nghiep-tron-dong-bhxh-boi-thuong-cho-nguoi-lao-dong-238261109173902255.htm",
+          "https://phunuvietnam.vn/de-xuat-cam-vinh-vien-nguoi-sinh-tu-nam-2010-khong-duoc-mua-thuoc-la-238261109184331418.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Thượng tôn hiến pháp và pháp luật - động lực kiến tạo phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content_detail_emagazine",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:28.076Z",
+        "trainingUrls": [
+          "https://phunuvietnam.vn/mo-hinh-me-va-con-gai-ket-noi-yeu-thuong-giua-nhung-the-he-phu-nu-238260805125735439.htm",
+          "https://phunuvietnam.vn/anh-hung-lao-dong-thai-huong-va-nhung-tran-tro-ve-de-xuat-xay-dung-luat-dinh-duong-hoc-duong-238260805161346238.htm",
+          "https://phunuvietnam.vn/nhin-lai-ky-hop-khong-thuong-le-thu-nhat-nhung-quyet-sach-tu-thuc-tien-cuoc-song-238260826162131304.htm"
+        ],
+        "holdoutUrls": [
+          "https://phunuvietnam.vn/phu-nu-toc-bac-khoi-nghiep-bang-kinh-nghiem-va-tao-gia-tri-kinh-te-238260911185136931.htm",
+          "https://phunuvietnam.vn/chuyen-huong-sau-hai-tuan-gan-bo-voi-stem-suot-25-nam-238260923143325101.htm"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:35.281Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://phunuvietnam.vn/phu-nu-toc-bac-khoi-nghiep-bang-kinh-nghiem-va-tao-gia-tri-kinh-te-238260911185136931.htm",
+      "https://phunuvietnam.vn/chuyen-huong-sau-hai-tuan-gan-bo-voi-stem-suot-25-nam-238260923143325101.htm"
+    ],
+    "improvedUrls": [
+      "https://phunuvietnam.vn/mo-hinh-me-va-con-gai-ket-noi-yeu-thuong-giua-nhung-the-he-phu-nu-238260805125735439.htm",
+      "https://phunuvietnam.vn/anh-hung-lao-dong-thai-huong-va-nhung-tran-tro-ve-de-xuat-xay-dung-luat-dinh-duong-hoc-duong-238260805161346238.htm",
+      "https://phunuvietnam.vn/nhin-lai-ky-hop-khong-thuong-le-thu-nhat-nhung-quyet-sach-tu-thuc-tien-cuoc-song-238260826162131304.htm",
+      "https://phunuvietnam.vn/phu-nu-toc-bac-khoi-nghiep-bang-kinh-nghiem-va-tao-gia-tri-kinh-te-238260911185136931.htm",
+      "https://phunuvietnam.vn/chuyen-huong-sau-hai-tuan-gan-bo-voi-stem-suot-25-nam-238260923143325101.htm"
+    ],
+    "regressions": 0
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafef.vn",
+  "siteId": "cafef.vn",
+  "registrableDomain": "cafef.vn",
+  "homepage": "https://cafef.vn/",
+  "allowedHosts": [
+    "cafef.vn",
+    "www.cafef.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gần 90 CTCK nhưng “miếng bánh” thuộc về số ít: Thị trường đang có quá nhiều “zombie”?",
+    "strategy": "selector",
+    "selector": "h1.title"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".contentdetail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:20.553Z",
+    "sampleCount": 10,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 7,
+    "sampleUrls": [
+      "https://cafef.vn/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie-188261108231012929.chn",
+      "https://cafef.vn/hon-mot-thap-ky-truoc-quy-mo-gdp-cua-viet-nam-tung-di-sau-thai-lan-7-nam-singapore-4-nam-khoang-cach-nay-se-thay-doi-ra-sao-trong-nam-nay-188261109000418396.chn",
+      "https://cafef.vn/chuyen-gia-chi-ten-mot-nhom-co-phieu-dinh-gia-re-co-the-dan-song-thi-truong-thoi-gian-toi-188261108160801059.chn",
+      "https://cafef.vn/chung-khoan-phat-tin-hieu-moi-chuyen-gia-tiet-lo-thoi-diem-nen-manh-tay-xuong-tien-188261108162804361.chn",
+      "https://cafef.vn/tap-doan-cong-nghiep-60-nam-tuoi-doanh-thu-gan-150000-ty-dong-chon-viet-nam-san-xuat-vat-lieu-cong-nghe-cao-188261108112029463.chn",
+      "https://cafef.vn/hoa-hau-viet-nam-2026-noi-gi-ve-tranh-cai-nhan-sac-chuyen-phau-thuat-tham-my-188261108230221415.chn",
+      "https://cafef.vn/hoa-hau-viet-nam-2026-noi-gi-ve-tranh-cai-nhan-sac-chuyen-phau-thuat-tham-my-188261108230221415.chn"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafef.vn/",
+    "categories": [
+      "https://cafef.vn/xa-hoi.chn",
+      "https://cafef.vn/kinh-te-so.chn",
+      "https://cafef.vn/thi-truong.chn",
+      "https://cafef.vn/song.chn",
+      "https://cafef.vn/lifestyle.chn",
+      "https://cafef.vn/google-news-sitemap.xml"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?cafef.vn/.*?\\d{6,}(.chn)",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafef.vn",
+    "checkedAt": "2026-11-09T03:56:53.845Z",
+    "url": "https://cafef.vn/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie-188261108231012929.chn",
+    "finalUrl": "https://cafef.vn/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie-188261108231012929.chn",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6070,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafef.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 89,
+    "checkedArticleUrls": 99,
+    "freshArticleChecks": 40,
+    "parserIssues": 9,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 89,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 201,
+        "passed": 89,
+        "distinctHashes": 89
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cafef.vn/nguyen-thu-truong-bng-pham-quang-vinh-tam-ho-chieu-dac-biet-de-doanh-nghiep-viet-ngang-tam-chaebol-188261110135428634.chn",
+      "https://cafef.vn/phien-10-11-khoi-ngoai-mua-rong-manh-tay-gan-500-ty-dong-co-phieu-nao-duoc-gom-nhieu-nhat-188261110152534078.chn",
+      "https://cafef.vn/petrolimex-tung-lon-gap-doi-mb-nay-bang-1-4-vinamilk-tung-gap-15-lan-vingroup-nay-bang-1-16-10-nam-viet-lai-ban-do-ty-do-tren-ttck-188261109224125049.chn",
+      "https://cafef.vn/ts-dao-minh-tu-nguoi-dan-minh-it-ai-gui-tien-ky-han-vai-nam-ma-chi-do-mot-nam-thoi-nhung-ngan-hang-cho-vay-dai-han-toi-5-nam-10-nam-va-hon-nua-188261109230834075.chn",
+      "https://cafef.vn/cu-chot-cua-nu-tuong-mai-kieu-lien-va-qua-ngot-nhung-nguoi-bo-ra-53-trieu-dong-mua-vinamilk-gio-co-hon-12-ty-188261108183324202.chn",
+      "https://cafef.vn/ambience-noi-chat-cang-tien-phong-hoa-nhip-song-toan-cau-188261107181630486.chn",
+      "https://cafef.vn/vo-chong-bau-kien-van-deu-dan-nhan-hang-tram-ty-dong-moi-nam-tu-acb-188261109230112292.chn",
+      "https://cafef.vn/trong-khi-102-177-nuoc-tren-the-gioi-lao-dao-viet-nam-lai-la-quoc-gia-hiem-hoi-tao-ra-ky-tich-du-phai-chiu-cu-soc-lon-nhat-trong-nhieu-thap-ky-18826111010403185.chn",
+      "https://cafef.vn/mot-doanh-nghiep-gay-choang-voi-ke-hoach-co-tuc-tien-mat-241-va-thuong-co-phieu-183-co-phieu-lap-tuc-tim-lim-188261110100953996.chn",
+      "https://cafef.vn/5000-ty-bien-mat-khoi-danh-muc-tu-doanh-ctck-sau-mot-quy-dieu-gi-dang-dien-ra-188261109225759707.chn",
+      "https://cafef.vn/sau-14-nam-gia-dinh-bau-kien-van-so-huu-hon-10-ngan-hang-acb-tri-gia-tren-12000-ty-dong-he-lo-me-vo-dai-gia-nhan-vat-bi-an-va-khoan-co-tuc-hang-tram-ty-188261110120013802.chn",
+      "https://cafef.vn/be-gai-goc-viet-tu-vong-sau-khi-mat-tich-5-ngay-o-duc-nghi-pham-song-cach-nha-nan-nhan-chua-day-800-met-188261110111902569.chn",
+      "https://cafef.vn/tu-nhung-khoan-vay-ty-usd-den-dong-thai-moi-cua-ngan-hang-nha-nuoc-he-thong-ngan-hang-xoay-xo-voi-bai-toan-vua-giam-lai-suat-vua-tang-tin-dung-188261109113324061.chn",
+      "https://cafef.vn/trung-quoc-mat-gan-15-nam-ha-lan-mat-gan-20-nam-de-tao-ra-mot-mo-vang-100-ty-usd-viet-nam-thi-sao-188261107145942074.chn",
+      "https://cafef.vn/phat-hien-viet-nam-co-mot-canh-cua-xuat-khau-moi-tri-gia-hang-ty-usd-ty-phu-pham-nhat-vuong-cung-hang-loat-ong-lon-don-dap-di-xay-thi-truong-188261106063540332.chn",
+      "https://cafef.vn/tuan-sau-mot-ngan-hang-chot-quyen-tra-co-tuc-bang-tien-mat-188250607201827866.chn",
+      "https://cafef.vn/khoi-ngoai-mo-dau-thang-6-voi-tuan-ban-rong-dot-bien-gan-2000-ty-dong-dau-la-tam-diem-188250607001446402.chn",
+      "https://cafef.vn/bau-duc-nhac-den-hoang-anh-gia-lai-la-cu-nhac-den-no-188250606212549889.chn",
+      "https://cafef.vn/ong-trinh-van-quyet-cung-hai-em-gai-da-khac-phuc-toan-bo-thiet-hai-gan-2500-ty-dong-188250607134343889.chn",
+      "https://cafef.vn/top-10-ngan-hang-co-von-dieu-le-va-tong-tai-san-lon-nhat-188250607140323832.chn",
+      "https://cafef.vn/mo-hang-chuc-tai-khoan-ngan-hang-de-cho-toi-pham-rua-tien-thue-188250607181330643.chn",
+      "https://cafef.vn/cong-ty-con-cua-novaland-cham-thanh-toan-hon-2172-ty-dong-goc-lai-trai-phieu-188250607090514981.chn",
+      "https://cafef.vn/hai-container-mac-ket-o-cang-va-hanh-trinh-dua-hapaco-len-san-chung-khoan-cua-mot-nguoi-thay-giao-188261104230910607.chn",
+      "https://cafef.vn/30-nam-chung-khoan-viet-nam.html",
+      "https://cafef.vn/thi-truong-chung-khoan.chn",
+      "https://cafef.vn/vi-mo-dau-tu.chn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 9
+    },
+    "checkedAt": "2026-11-10T09:14:40.491Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafef.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "cafef.vn",
+      "siteId": "cafef.vn",
+      "registrableDomain": "cafef.vn",
+      "homepage": "https://cafef.vn/",
+      "allowedHosts": [
+        "cafef.vn",
+        "www.cafef.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Mai Kiều Liên",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T16:51:08.985Z",
+        "trainingUrls": [
+          "https://cafef.vn/cu-chot-cua-nu-tuong-mai-kieu-lien-va-qua-ngot-nhung-nguoi-bo-ra-53-trieu-dong-mua-vinamilk-gio-co-hon-12-ty-188261108183324202.chn"
+        ],
+        "holdoutUrls": [
+          "https://cafef.vn/tu-chiec-ly-an-duoc-den-duong-sat-cao-toc-ong-pham-nhat-vuong-ba-nguyen-thi-phuong-thao-va-cac-ty-phu-da-lam-gi-voi-cuoc-song-cua-chung-ta-188261113234819332.chn",
+          "https://cafef.vn/de-viet-nam-thuc-hien-hoa-tham-vong-lon-chua-tung-co-trong-lich-su-pgsts-tran-dinh-thien-nhan-manh-chung-ta-phai-thoat-chinh-chung-ta-1882611122248247.chn"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:58:41.681Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://cafef.vn/tu-chiec-ly-an-duoc-den-duong-sat-cao-toc-ong-pham-nhat-vuong-ba-nguyen-thi-phuong-thao-va-cac-ty-phu-da-lam-gi-voi-cuoc-song-cua-chung-ta-188261113234819332.chn",
+      "https://cafef.vn/de-viet-nam-thuc-hien-hoa-tham-vong-lon-chua-tung-co-trong-lich-su-pgsts-tran-dinh-thien-nhan-manh-chung-ta-phai-thoat-chinh-chung-ta-1882611122248247.chn"
+    ],
+    "improvedUrls": [
+      "https://cafef.vn/cu-chot-cua-nu-tuong-mai-kieu-lien-va-qua-ngot-nhung-nguoi-bo-ra-53-trieu-dong-mua-vinamilk-gio-co-hon-12-ty-188261108183324202.chn",
+      "https://cafef.vn/van-co-he-sinh-thai-vietcombank-bidv-techcombank-mb-vpbank-dang-co-gi-trong-tay-188261115113043344.chn",
+      "https://cafef.vn/tu-chiec-ly-an-duoc-den-duong-sat-cao-toc-ong-pham-nhat-vuong-ba-nguyen-thi-phuong-thao-va-cac-ty-phu-da-lam-gi-voi-cuoc-song-cua-chung-ta-188261113234819332.chn"
+    ],
+    "regressions": 0
+  }
+}

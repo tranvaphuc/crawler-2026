@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baocantho.com.vn",
+  "siteId": "baocantho.com.vn",
+  "registrableDomain": "baocantho.com.vn",
+  "homepage": "https://baocantho.com.vn/",
+  "allowedHosts": [
+    "baocantho.com.vn",
+    "www.baocantho.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baocantho.com.vn/",
+    "categories": [
+      "https://baocantho.com.vn/news/",
+      "https://baocantho.com.vn/khmer/",
+      "https://baocantho.com.vn/thoi-su/",
+      "https://baocantho.com.vn/chinh-tri/",
+      "https://baocantho.com.vn/kinh-te/",
+      "https://baocantho.com.vn/xa-hoi-phap-luat/",
+      "https://baocantho.com.vn/quoc-phong-an-ninh/",
+      "https://baocantho.com.vn/the-gioi/",
+      "https://baocantho.com.vn/giao-duc/",
+      "https://baocantho.com.vn/y-te/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Khởi công Trung tâm thương mại GO! Rạch Giá",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://baocantho.com.vn/rss/cate/giao-duc/",
+    "sourceKind": "public_publication_feed"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#newscontents",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:39.304Z",
+    "frozenAt": "2026-11-16T01:57:32.115Z",
+    "trainingUrl": "https://baocantho.com.vn/khoi-cong-trung-tam-thuong-mai-go-rach-gia-a219415.html",
+    "independentHoldouts": [
+      "https://baocantho.com.vn/thuong-hieu-viet-chat-luong-va-niem-tin-tren-hanh-trinh-ra-bien-lon-a220221.html",
+      "https://baocantho.com.vn/phat-dong-san-choi-hat-ca-cung-lof-matcha--a219797.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baocantho.com.vn/khoi-cong-trung-tam-thuong-mai-go-rach-gia-a219415.html",
+      "https://baocantho.com.vn/thuong-hieu-viet-chat-luong-va-niem-tin-tren-hanh-trinh-ra-bien-lon-a220221.html",
+      "https://baocantho.com.vn/phat-dong-san-choi-hat-ca-cung-lof-matcha--a219797.html",
+      "https://baocantho.com.vn/can-tho-s-n-sang-cho-ngay-hoi-lon-cua-hat-ngoc-viet-a221400.html",
+      "https://baocantho.com.vn/tp-can-tho-cong-dien-vo-cai-luong-tieng-ho-song-hau-chao-mung-ngay-van-hoa-viet-nam-a221384.html",
+      "https://baocantho.com.vn/tp-can-tho-1-227-nguoi-trung-cu-truong-ap-truong-khu-vuc-nhiem-ky-2026-2031-a221381.html",
+      "https://baocantho.com.vn/hoi-nghi-cap-cao-asean-lan-thu-49-dinh-huong-hop-tac-ung-pho-voi-cac-thach-thuc-a221375.html",
+      "https://baocantho.com.vn/hon-436-vo-sinh-tham-gia-ky-thi-thang-dang-taekwondo-tai-can-tho-a221370.html",
+      "https://baocantho.com.vn/hoi-thao-khoa-hoc-ve-co-dien-tu-va-tu-dong-hoa-tri-tue-nhan-tao-va-robot-dan-dat-cong-nghiep-thong--a221369.html",
+      "https://baocantho.com.vn/tp-can-tho-ron-rang-khong-khi-bau-cu-truong-ap-truong-khu-vuc-a221361.html",
+      "https://baocantho.com.vn/pho-bi-thu-thanh-uy-ho-thi-cam-dao-kiem-tra-cong-tac-bau-cu-truong-khu-vuc-tai-phuong-soc-trang-a221357.html",
+      "https://baocantho.com.vn/kickboxing-can-tho-gianh-2-hcv-tai-dai-hoi-the-thao-toan-quoc-2026-a221337.html",
+      "https://baocantho.com.vn/-infographics-bang-khen-cua-bo-ban-nganh-tinh-a221201.html",
+      "https://baocantho.com.vn/-infographics-tieu-chuan-xet-tang-bang-khen-cua-thu-tuong-chinh-phu--a221084.html",
+      "https://baocantho.com.vn/-infographics-danh-hieu-chien-si-thi-dua-bo-ban-nganh-tinh-va-co-so-a220981.html",
+      "https://baocantho.com.vn/ong-lam-van-man-du-le-trao-tang-cong-trinh-dan-sinh-tai-xa-phu-tam-a221372.html",
+      "https://baocantho.com.vn/lich-chi-tiet-cac-ky-nghi-le-tet-trong-nam-2027-a221345.html",
+      "https://baocantho.com.vn/thoi-tiet-ngay-15-11-bac-bo-sang-som-troi-lanh-nam-bo-ngay-nang-nong-a221331.html",
+      "https://baocantho.com.vn/-dan-biet-dan-ban-dan-giam-sat-trong-cai-cach-thu-tuc-hanh-chinh-gop-phan-tang-muc-do-hai-long--a221299.html",
+      "https://baocantho.com.vn/xay-dung-dang-bo-xa-an-lac-thon-trong-sach-vung-manh-a221405.html",
+      "https://baocantho.com.vn/quy-dinh-ve-to-chuc-danh-gia-cuoi-ky-doi-voi-nhiem-vu-doi-moi-sang-tao-a221388.html",
+      "https://baocantho.com.vn/cong-nghe-dan-loi-nong-nghiep-can-tho-tang-truong-a221399.html",
+      "https://baocantho.com.vn/san-xuat-nong-nghiep-dat-nhieu-ket-qua-tich-cuc-a221398.html",
+      "https://baocantho.com.vn/tp-can-tho-cung-ung-gan-737-000-tan-thuy-san-nuoi-moi-nam-a221396.html",
+      "https://baocantho.com.vn/phuong-an-binh-hoan-thanh-dua-vao-su-dung-nhieu-cong-trinh-phuc-vu-phat-trien-kinh-te-xa-hoi-a221121.html",
+      "https://baocantho.com.vn/de-moi-chuyen-xe-buyt-can-tho-than-thien-va-sach-se-a221030.html",
+      "https://baocantho.com.vn/-infographics-phat-trien-do-thi-thong-minh-quoc-gia-tam-nhin-den-nam-2035-a220816.html",
+      "https://baocantho.com.vn/thong-tin-tuyen-xe-buyt-so-02-phuong-o-mon-xa-co-do-ct-02--a220740.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "strictTimeRepairEvidence": {
+    "frozenAt": "2026-11-16T03:17:00.635Z",
+    "source": "url_bound_original_publication_feed",
+    "training": [
+      {
+        "url": "https://baocantho.com.vn/hoi-thao-nghien-cuu-quoc-te-ve-tiep-thu-ngon-ngu-giang-day-va-giao-duc-tieng-anh--a221390.html",
+        "date": "2026-11-16T03:16:57.000Z",
+        "raw": "Mon, 16 Nov 2026 10:16:57 +0700",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baocantho.com.vn/hoi-thao-nghien-cuu-quoc-te-ve-tiep-thu-ngon-ngu-giang-day-va-giao-duc-tieng-anh--a221390.html",
+          "publishedDate": "2026-11-16T03:16:57.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://baocantho.com.vn/hoi-thao-khoa-hoc-ve-co-dien-tu-va-tu-dong-hoa-tri-tue-nhan-tao-va-robot-dan-dat-cong-nghiep-thong--a221369.html",
+        "date": "2026-11-16T03:16:57.000Z",
+        "raw": "Mon, 16 Nov 2026 10:16:57 +0700",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baocantho.com.vn/hoi-thao-khoa-hoc-ve-co-dien-tu-va-tu-dong-hoa-tri-tue-nhan-tao-va-robot-dan-dat-cong-nghiep-thong--a221369.html",
+          "publishedDate": "2026-11-16T03:16:57.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "independentHoldouts": [
+      {
+        "url": "https://baocantho.com.vn/bon-doi-moi-trong-tuyen-sinh-dai-hoc-nam-2027-a221354.html",
+        "date": "2026-11-16T03:16:57.000Z",
+        "raw": "Mon, 16 Nov 2026 10:16:57 +0700",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baocantho.com.vn/bon-doi-moi-trong-tuyen-sinh-dai-hoc-nam-2027-a221354.html",
+          "publishedDate": "2026-11-16T03:16:57.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://baocantho.com.vn/sap-xep-mang-luoi-dao-tao-gan-phat-trien-nguon-nhan-luc-voi-nhu-cau-thuc-tien-a221352.html",
+        "date": "2026-11-16T03:16:57.000Z",
+        "raw": "Mon, 16 Nov 2026 10:16:57 +0700",
+        "proof": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://baocantho.com.vn/sap-xep-mang-luoi-dao-tao-gan-phat-trien-nguon-nhan-luc-voi-nhu-cau-thuc-tien-a221352.html",
+          "publishedDate": "2026-11-16T03:16:57.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ],
+    "strictValidatorUnchanged": true,
+    "paidAiCalls": 0
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "siteName": "otoxemay.vn",
+  "siteId": "otoxemay.vn",
+  "registrableDomain": "otoxemay.vn",
+  "homepage": "https://otoxemay.vn/",
+  "allowedHosts": [
+    "otoxemay.vn",
+    "www.otoxemay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lượng ô tô, xe máy Honda tiêu thụ tăng giảm trái chiều trong tháng 10/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".clearfix.new_detail_m",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:43.504Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026",
+      "https://otoxemay.vn/tin-moi/toyota-viet-nam-ban-6357-o-to-den-tay-nguoi-dung-trong-thang-102026",
+      "https://otoxemay.vn/xe-xanh/volvo-ex90-va-es90-ra-mat-viet-nam-khi-cong-nghe-dien-hoa-tiep-noi-di-san-an-toan",
+      "https://otoxemay.vn/xe-xanh/volvo-es90-ra-mat-viet-nam-sedan-dien-680-ma-luc-di-duoc-706-km-moi-lan-sac",
+      "https://otoxemay.vn/xe-doi-song/35-trieu-xe-may-moi-duoc-dua-ra-thi-truong-trong-10-thang-dau-nam-2026",
+      "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026",
+      "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://otoxemay.vn/",
+    "categories": [
+      "https://otoxemay.vn/magazine",
+      "https://otoxemay.vn/tin-tuc/tin-moi",
+      "https://otoxemay.vn/tin-tuc/xe-xanh",
+      "https://otoxemay.vn/tin-tuc/thu-xe",
+      "https://otoxemay.vn/tin-tuc/xe-doi-song",
+      "https://otoxemay.vn/tin-tuc/cong-nghe",
+      "https://otoxemay.vn/tin-tuc/moi-truong",
+      "https://otoxemay.vn/tin-tuc/tu-van",
+      "https://otoxemay.vn/tin-tuc/duong-dua"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?otoxemay.vn/.*?/[\\w-]{30,}[\\w]{1}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "otoxemay.vn",
+    "checkedAt": "2026-11-09T03:57:21.506Z",
+    "url": "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026",
+    "finalUrl": "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2748,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "otoxemay.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 17,
+    "parserIssues": 11,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 135,
+        "passed": 19,
+        "distinctHashes": 19
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://otoxemay.vn/tin-moi/loi-gay-truc-banh-sau-khien-chery-phai-trieu-hoi-gan-54000-xe",
+      "https://otoxemay.vn/tin-moi/luong-o-to-xe-may-honda-tieu-thu-tang-giam-trai-chieu-trong-thang-102026",
+      "https://otoxemay.vn/xe-doi-song/chum-anh-hai-mau-xe-tay-ga-malaysia-gia-thap-da-ve-viet-nam-la-lua-chon-ben-canh-honda-adv-va-yamaha-xmax",
+      "https://otoxemay.vn/xe-doi-song/ban-tai-thuan-dien-cybertruck-co-the-bi-tesla-khai-tu",
+      "https://otoxemay.vn/xe-doi-song/xe-hop-gu-hau-mai-dai-han-vinfast-thuyet-phuc-dan-cong-so-chuyen-sang-xe-dien",
+      "https://otoxemay.vn/xe-xanh/volvo-ex90-va-es90-ra-mat-viet-nam-khi-cong-nghe-dien-hoa-tiep-noi-di-san-an-toan",
+      "https://otoxemay.vn/xe-doi-song/toyota-tiep-tuc-xep-dau-danh-sach-thuong-hieu-oto-gia-tri-nhat-the-gioi",
+      "https://otoxemay.vn/xe-doi-song/xe-thuan-dien-lan-dau-vuot-o-to-chay-xang-diesel-ve-doanh-so-tai-chau-au",
+      "https://otoxemay.vn/xe-doi-song/xe-trung-quoc-dang-pha-vo-cong-thuc-canh-tranh-cua-xe-nhat-duc-nhu-the-nao",
+      "https://otoxemay.vn/xe-doi-song/honda-vinfast-dan-dau-thi-truong-xe-may-viet-nam-ve-doanh-so-va-toc-do-tang-truong",
+      "https://otoxemay.vn/xe-doi-song/giai-thuong-o-to-cua-nam-tai-chau-au-vang-bong-xe-trung-quoc",
+      "https://otoxemay.vn/xe-xanh/volvo-es90-ra-mat-viet-nam-sedan-dien-680-ma-luc-di-duoc-706-km-moi-lan-sac",
+      "https://otoxemay.vn/cong-nghe/byd-techweek-2026-chinh-thuc-khoi-dong-chuoi-su-kien-trai-nghiem-cong-nghe-va-toc-do-voi-quy-mo-lon-nhat-nam",
+      "https://otoxemay.vn/xe-doi-song/35-trieu-xe-may-moi-duoc-dua-ra-thi-truong-trong-10-thang-dau-nam-2026",
+      "https://otoxemay.vn/xe-doi-song/vinfast-vf-9-dam-nhiem-vai-tro-van-phong-di-dong-cho-doanh-nhan-ban-ron",
+      "https://otoxemay.vn/xe-doi-song/hai-long-voi-xe-dang-so-huu-nguoi-dung-viet-chon-them-xe-may-dien-vinfast-cho-con",
+      "https://otoxemay.vn/xe-doi-song/vinfast-evo-doi-pin-giai-bai-toan-sac-xe-cho-nguoi-o-tro-chung-cu-cu",
+      "https://otoxemay.vn/cong-nghe/honda-trinh-lang-cong-nghe-an-toan-sensing-ride-danh-cho-mo-to-voi-10-tinh-nang-thong-minh"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 11
+    },
+    "checkedAt": "2026-11-10T09:16:23.737Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/otoxemay.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

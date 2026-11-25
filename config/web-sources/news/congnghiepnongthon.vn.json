@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congnghiepnongthon.vn",
+  "siteId": "congnghiepnongthon.vn",
+  "registrableDomain": "congnghiepnongthon.vn",
+  "homepage": "https://congnghiepnongthon.vn/",
+  "allowedHosts": [
+    "congnghiepnongthon.vn",
+    "www.congnghiepnongthon.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congnghiepnongthon.vn/",
+    "categories": [
+      "https://congnghiepnongthon.vn/j/cnnt",
+      "https://congnghiepnongthon.vn/photos",
+      "https://congnghiepnongthon.vn/video",
+      "https://congnghiepnongthon.vn/magazine"
+    ]
+  },
+  "title": {
+    "value": "Chứng khoán ngày 12/10: VN-Index giảm hơn 14 điểm, nhóm bất động sản chịu áp lực lớn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article__body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:36.851Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:28.842Z",
+    "independentHoldouts": [
+      "https://congnghiepnongthon.vn/bac-ninh-dieu-chinh-quy-hoach--giam-dien-tich-khu-cong-nghiep-tien-son-6499.htm",
+      "https://congnghiepnongthon.vn/da-co-nha-nhung-xa-noi-lam-viec--lao-dong-tu-do-tai-ha-noi-xin-xac-nhan-the-nao-de-mua-nha-o-xa-hoi-6498.htm",
+      "https://congnghiepnongthon.vn/ai-tu-dong-thanh-toan-tren-10-trieu-dong--truong-hop-nao-bi-xep-vao-nhom-rui-ro-cao-6497.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congnghiepnongthon.vn/chung-khoan-ngay-12-10--vn-index-giam-hon-14-diem--nhom-bat-dong-san-chiu-ap-luc-lon-5681.htm",
+      "https://congnghiepnongthon.vn/bac-ninh-dieu-chinh-quy-hoach--giam-dien-tich-khu-cong-nghiep-tien-son-6499.htm",
+      "https://congnghiepnongthon.vn/da-co-nha-nhung-xa-noi-lam-viec--lao-dong-tu-do-tai-ha-noi-xin-xac-nhan-the-nao-de-mua-nha-o-xa-hoi-6498.htm",
+      "https://congnghiepnongthon.vn/ai-tu-dong-thanh-toan-tren-10-trieu-dong--truong-hop-nao-bi-xep-vao-nhom-rui-ro-cao-6497.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

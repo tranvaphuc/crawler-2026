@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioidienanh.vn",
+  "siteId": "thegioidienanh.vn",
+  "registrableDomain": "thegioidienanh.vn",
+  "homepage": "https://thegioidienanh.vn/",
+  "allowedHosts": [
+    "thegioidienanh.vn",
+    "www.thegioidienanh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lê Khánh Linh: Từ mẫu ảnh trẻ trung đến cô gái mang số 371 đầy ám ảnh trong 'Trại buôn người'",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".hna-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:32.182Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thegioidienanh.vn/le-khanh-linh-tu-mau-anh-tre-trung-den-co-gai-mang-so-371-day-am-anh-trong-trai-buon-nguoi-90587.html",
+      "https://thegioidienanh.vn/chi-chi-em-em-3-can-moc-tram-ty-dong-giua-lan-song-tranh-cai-90603.html",
+      "https://thegioidienanh.vn/huong-giang-cung-bebe-pham-ngoi-ghe-giam-khao-the-miss-globe-2026-90594.html",
+      "https://thegioidienanh.vn/andrew-koji-ke-thach-thuc-hollywood-bang-nam-dam-va-dien-xuat-90580.html",
+      "https://thegioidienanh.vn/ca-si-bao-kun-trai-long-ve-chiec-may-quay-20-nam-va-bai-hoc-tuoi-tho-tu-nguoi-cha-nghe-si-90596.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioidienanh.vn/",
+    "categories": [
+      "https://thegioidienanh.vn/moi-nhat",
+      "https://thegioidienanh.vn/dien-anh",
+      "http://thegioidienanh.vn/dien-anh/dien-anh-han-quoc",
+      "http://thegioidienanh.vn/dien-anh/dien-anh-hoa-ngu",
+      "http://thegioidienanh.vn/dien-anh/dien-anh-viet-nam",
+      "http://thegioidienanh.vn/dien-anh/dien-anh-the-gioi",
+      "http://thegioidienanh.vn/dien-anh/dien-anh-hollywood",
+      "https://thegioidienanh.vn/truyen-hinh",
+      "http://thegioidienanh.vn/truyen-hinh/truyen-hinh-hoa-ngu",
+      "http://thegioidienanh.vn/truyen-hinh/truyen-hinh-the-gioi",
+      "http://thegioidienanh.vn/truyen-hinh/truyen-hinh-viet-nam",
+      "http://thegioidienanh.vn/truyen-hinh/truyen-hinh-han-quoc",
+      "https://thegioidienanh.vn/sao",
+      "http://thegioidienanh.vn/sao/guong-mat",
+      "http://thegioidienanh.vn/sao/hau-truong-sao",
+      "https://thegioidienanh.vn/van-hoa-giai-tri",
+      "http://thegioidienanh.vn/van-hoa-giai-tri/tin-tuc",
+      "http://thegioidienanh.vn/van-hoa-giai-tri/showbiz-360",
+      "https://thegioidienanh.vn/trai-nghiem-song",
+      "http://thegioidienanh.vn/trai-nghiem-song/di-trai-nghiem",
+      "http://thegioidienanh.vn/trai-nghiem-song/phong-cach-song",
+      "http://thegioidienanh.vn/trai-nghiem-song/tam-su-chia-se",
+      "https://thegioidienanh.vn/duong-toi-kich-ban",
+      "http://thegioidienanh.vn/photos",
+      "http://thegioidienanh.vn/video"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?thegioidienanh.vn/.*?view\\=article\\&id\\=(\\d{3,}).*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioidienanh.vn",
+    "checkedAt": "2026-11-09T03:57:29.730Z",
+    "url": "https://thegioidienanh.vn/le-khanh-linh-tu-mau-anh-tre-trung-den-co-gai-mang-so-371-day-am-anh-trong-trai-buon-nguoi-90587.html",
+    "finalUrl": "https://thegioidienanh.vn/le-khanh-linh-tu-mau-anh-tre-trung-den-co-gai-mang-so-371-day-am-anh-trong-trai-buon-nguoi-90587.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1536,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thegioidienanh.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 25,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 262,
+        "passed": 30,
+        "distinctHashes": 30
+      },
+      {
+        "name": "video",
+        "discovered": 24,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thegioidienanh.vn/e-kip-hoang-hau-tai-hon-mua-trang-suc-gia-re-tren-temu-cho-dien-vien-90634.html",
+      "https://thegioidienanh.vn/bo-sua-bay-tung-mv-canh-hat-cua-vo-dien-gia-huy-90637.html",
+      "https://thegioidienanh.vn/100-days-of-deception-cua-kim-yoo-jung-vuot-moc-rating-10-90632.html",
+      "https://thegioidienanh.vn/dan-sao-nu-lam-dau-nha-tai-phiet-giau-co-nhat-han-quoc-90633.html",
+      "https://thegioidienanh.vn/dao-dien-vu-ngoc-dang-giua-luc-man-anh-ngap-tran-bom-tan-ngay-con-con-me-dung-di-nhu-mot-bua-com-nha-am-ap-90640.html",
+      "https://thegioidienanh.vn/angels-wish-kids-fashion-show-2026-nguyen-vu-catwalk-phan-thi-mo-chay-show-tu-mien-tay-dong-thien-duc-song-ca-voi-be-gabi-90638.html",
+      "https://thegioidienanh.vn/xom-nho-tap-14-bi-mat-tram-song-chung-voi-phong-bi-lo-90630.html",
+      "https://thegioidienanh.vn/hoa-hau-le-hoang-phuong-nhan-bang-thac-si-dat-diem-bao-ve-luan-van-cao-nhat-hoi-dong-90629.html",
+      "https://thegioidienanh.vn/dau-chan-nguoi-chien-si-17785.media",
+      "https://thegioidienanh.vn/trailer-phim-phia-ben-kia-thanh-pho-17737.media",
+      "https://thegioidienanh.vn/album-vol-5-noi-nho-nguoi-thuongst-le-ba-thuongcs-nguyen-han-17629.media",
+      "https://thegioidienanh.vn/trailer-kappa-ac-linh-duoi-day-ho-17284.media",
+      "https://thegioidienanh.vn/trailer-phim-nhung-chang-duong-bui-bam-17246.media",
+      "https://thegioidienanh.vn/trailer-phim-cha-toi-nguoi-o-lai-17245.media",
+      "https://thegioidienanh.vn/trailer-superman-2025-nguoi-dan-ong-thep-tro-lai-17206.media",
+      "https://thegioidienanh.vn/trailer-thanh-mai-truc-ma-17039.media",
+      "https://thegioidienanh.vn/don-xem-phim-tinh-nguoi-duyen-ma-phien-ban-truyen-hinh-tren-todaytv-16969.media",
+      "https://thegioidienanh.vn/trailer-phim-sao-kim-ban-tim-sao-hoa-16916.media",
+      "https://thegioidienanh.vn/trailer-mufasa-vua-su-tu-16859.media",
+      "https://thegioidienanh.vn/captain-boy-mong-em-se-co-quen-official-mv-lyrics-16796.media",
+      "https://thegioidienanh.vn/trailer-phim-nguoi-mot-nha-16792.media",
+      "https://thegioidienanh.vn/trailer-phim-tram-cuu-ho-trai-tim-16749.media"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:17:11.120Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thegioidienanh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

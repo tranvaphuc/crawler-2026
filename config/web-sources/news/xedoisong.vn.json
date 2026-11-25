@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xedoisong.vn",
+  "siteId": "xedoisong.vn",
+  "registrableDomain": "xedoisong.vn",
+  "homepage": "https://xedoisong.vn/",
+  "allowedHosts": [
+    "xedoisong.vn",
+    "www.xedoisong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://xedoisong.vn/",
+    "categories": [
+      "https://xedoisong.vn/tin-tuc",
+      "https://xedoisong.vn/thu-xe",
+      "https://xedoisong.vn/xe-moi",
+      "https://xedoisong.vn/xe-dien",
+      "https://xedoisong.vn/cong-nghe",
+      "https://xedoisong.vn/thi-truong",
+      "https://xedoisong.vn/nhip-song",
+      "https://xedoisong.vn/top-list"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "4 mẫu xe Mitsubishi cùng lọt TOP 10 xe ICE bán chạy nhất tháng 8, bán tải Triton đột phá chưa từng có",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time",
+    "attribute": null,
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:04.075Z",
+    "frozenAt": "2026-11-16T02:01:01.368Z",
+    "trainingUrl": "https://xedoisong.vn/4-mau-xe-mitsubishi-cung-lot-top-10-xe-ice-ban-chay-nhat-thang-8-ban-tai-triton-dot-pha-chua-tung-co",
+    "independentHoldouts": [
+      "https://xedoisong.vn/phan-khuc-xe-dia-hinh-hang-trung-tiep-tuc-nong-len-tung-ngay-nissan-de-lo-terrano-so-gang-dau-mitsubishi-pajero-toyota-land-cruiser-prado-va-ford-everest",
+      "https://xedoisong.vn/khi-ve-viet-nam-mitsubishi-pajero-se-o-khoang-gia-giua-ford-everest-va-toyota-land-cruiser-prado"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://xedoisong.vn/4-mau-xe-mitsubishi-cung-lot-top-10-xe-ice-ban-chay-nhat-thang-8-ban-tai-triton-dot-pha-chua-tung-co",
+      "https://xedoisong.vn/phan-khuc-xe-dia-hinh-hang-trung-tiep-tuc-nong-len-tung-ngay-nissan-de-lo-terrano-so-gang-dau-mitsubishi-pajero-toyota-land-cruiser-prado-va-ford-everest",
+      "https://xedoisong.vn/khi-ve-viet-nam-mitsubishi-pajero-se-o-khoang-gia-giua-ford-everest-va-toyota-land-cruiser-prado",
+      "https://xedoisong.vn/sau-pajero-vua-ra-mat-hom-qua-mitsubishi-se-con-hoi-sinh-ca-pajero-sport-va-pajero-mini",
+      "https://xedoisong.vn/thi-truong-o-to-viet-thang-52024-qua-top-10-xe-ban-chay-toyota-chiem-toi-gan-nua-bang-hyundai-accent-don-kho-van-khong-lot-top-3",
+      "https://xedoisong.vn/top-10-o-to-ban-chay-nhat-viet-nam-thang-42024-toyota-gop-mat-toi-3-dai-dien",
+      "https://xedoisong.vn/top-10-xe-hoi-ban-chay-nhat-viet-nam-thang-22024-thi-truong-giam-manh-ranger-len-ngoi-dau",
+      "https://xedoisong.vn/top-10-xe-hoi-ban-chay-nhat-thang-12024-mitsubishi-xpander-de-pa-gan-1300-xe",
+      "https://xedoisong.vn/lai-thu-2-mau-suv-dien-hoa-hyundai-turbo-hybrid-all-new-palisade-va-tucson",
+      "https://xedoisong.vn/doi-suv-may-dau-gan-bo-14-nam-sang-vinfast-vf-mpv-7-chu-xe-khang-dinh-nhe-dau-hon-han-cam-giac-duoc-phuc-vu-dung-nghia",
+      "https://xedoisong.vn/bridgestone-viet-nam-ra-mat-lop-potenza-adrenalin-re005-moi-trai-nghiem-an-tuong-cung-volkswagen-golf-r-va-gti",
+      "https://xedoisong.vn/thay-gi-sau-chuyen-lang-thang-gan-600km-voi-vespa-sprint-80th-180-trai-nghiem-la-dolce-vita-nhan-nha-voi-may-180cc-cong-nghe-cao-va-thiet-ke-bieu-tuong-y",
+      "https://xedoisong.vn/trai-nghiem-xe-dien-m6-trong-hanh-trinh-non-xanh-cua-byd-toi-nong-trai-tho-mong-o-bao-loc",
+      "https://xedoisong.vn/doanh-so-ford-giam-hon-30-trong-thang-10-ranger-mat-gan-mot-nua-luong-ban",
+      "https://xedoisong.vn/quyet-giu-ngoi-vuong-xe-sang-toan-cau-bmw-se-tung-ca-chuc-xe-moi-trong-nam-2027",
+      "https://xedoisong.vn/kia-sportage-mo-nhat-trong-nhom-c-suv-doanh-so-thang-10-giam-14",
+      "https://xedoisong.vn/lynk-co-chinh-thuc-ra-mat-suv-hang-sang-co-lon-900-l",
+      "https://xedoisong.vn/benelli-tranh-dau-voi-yamaha-mt-07-tung-naked-bike-tnt700-dong-co-2-xi-lanh-thang-hang",
+      "https://xedoisong.vn/mazda-cx-5-the-he-moi-lo-chi-tiet-tai-viet-nam-dong-co-25l-co-toi-4-phien-ban",
+      "https://xedoisong.vn/can-canh-honda-sh160i-2027-phien-ban-aura-black-edition-2027-thuc-te-tai-dai-ly",
+      "https://xedoisong.vn/thang-truoc-vua-duoc-ra-mat-thang-nay-honda-city-facelift-da-co-khuyen-mai-kich-cau-tai-viet-nam",
+      "https://xedoisong.vn/vinfast-vf-6-facelift-chinh-thuc-xuat-hien-2-phien-ban-gia-tu-646-trieu-dong",
+      "https://xedoisong.vn/sieu-xe-bay-roadster-con-lau-moi-mo-ban-nhung-tesla-da-bat-dau-ban-xe-tu-lai-toan-phan-khong-vo-lang-khong-chan-gaphanh-toi-tay-khach-hang",
+      "https://xedoisong.vn/lai-co-hang-mo-to-y-lam-xe-phuot-phan-khoi-lon-hang-trung-dang-rally-gia-chac-chan-mem-hon-aprilia-tuareg-660-va-ducati-desertx",
+      "https://xedoisong.vn/xe-hybrid-chiem-14-doanh-so-toyota-trong-thang-10-nhung-thi-phan-da-thu-hep",
+      "https://xedoisong.vn/toyota-bat-dau-he-lo-innova-cross-truoc-ngay-ra-mat-vao-tuan-sau-xac-nhan-thay-doi-o-den-pha",
+      "https://xedoisong.vn/honda-dem-cong-nghe-hop-so-von-chi-co-tren-coupe-the-thao-hang-sang-dau-bang-prelude-sang-hr-v-2027-ban-cao-cap",
+      "https://xedoisong.vn/vinfast-evo-grand-premia-thiet-ke-co-dien-ket-hop-nhieu-tien-ich-di-pho",
+      "https://xedoisong.vn/sau-thoi-gian-dai-vang-bong-benelli-sap-tro-lai-lam-naked-bike-3-xi-lanh-phan-khoi-lon-voi-tornado-naked-tre-903-so-gang-triumph-street-triple-va-yamaha-mt-09",
+      "https://xedoisong.vn/doanh-so-xe-suv-hang-b-tai-viet-nam-bien-dong-manh-trong-thang-10-vinfast-vf-6-tiep-tuc-noi-rong-khoang-cach",
+      "https://xedoisong.vn/vinfast-vf-9-thu-hut-doanh-nhan-bang-thiet-ke-sang-trong-tien-nghi-cao-cap",
+      "https://xedoisong.vn/len-doi-o-to-rong-rai-cho-ca-nha-chu-xe-vinfast-bat-ngo-vi-hoa-don-nho-hon-xe-cu",
+      "https://xedoisong.vn/vinfast-vf-2-xe-nho-di-pho-nhieu-trang-bi-thiet-thuc-cho-gia-dinh",
+      "https://xedoisong.vn/mitsubishi-pajero-the-he-moi-da-len-tau-xuat-khau-chuan-bi-toi-viet-nam-vao-nua-sau-2027",
+      "https://xedoisong.vn/lynk-co-cong-bo-anh-ngoai-that-chinh-thuc-cua-suv-hang-sang-co-lon-900-l-trong-nhu-range-rover-ra-mat-ngay-1011-toi"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

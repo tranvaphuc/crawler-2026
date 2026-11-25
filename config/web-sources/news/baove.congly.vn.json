@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baove.congly.vn",
+  "siteId": "baove.congly.vn",
+  "registrableDomain": "congly.vn",
+  "homepage": "https://baove.congly.vn/",
+  "allowedHosts": [
+    "baove.congly.vn",
+    "www.baove.congly.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lĩnh 18 tháng tù về tội hủy hoại rừng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".l-content.bg-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Xử phạt Trường Cao đẳng Lý Tự Trọng 284 triệu đồng do hàng loạt vi phạm",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-news-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-video-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "title": {
+        "value": "Lĩnh 18 tháng tù về tội hủy hoại rừng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-news-detail .entry",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:49:12.199Z",
+        "trainingUrls": [
+          "https://baove.congly.vn/giai-ngan-du-an-giao-thong-trong-diem-dat-40-7-541609.html"
+        ],
+        "holdoutUrls": [
+          "https://baove.congly.vn/son-la-quyet-liet-xu-ly-vu-an-vu-viec-va-tai-san-cong-ton-dong-541739.html",
+          "https://baove.congly.vn/day-nhanh-tien-do-giai-ngan-cac-du-an-thuc-hien-duoi-40-541608.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:01.977Z",
+    "sampleCount": 7,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://baove.congly.vn/chanh-an-tand-tinh-lai-chau-du-sinh-hoat-chi-bo-tai-xa-pa-u-546730.html",
+      "https://baove.congly.vn/linh-18-thang-tu-ve-toi-huy-hoai-rung-546273.html",
+      "https://baove.congly.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-phu-nhan-bat-dau-tham-chinh-thuc-nhat-ban-546733.html",
+      "https://baove.congly.vn/xu-phat-truong-cao-dang-ly-tu-trong-284-trieu-dong-do-hang-loat-vi-pham-546709.html",
+      "https://baove.congly.vn/khoi-to-bat-tam-giam-hiep-den-va-13-doi-tuong-lien-quan-546692.html",
+      "https://baove.congly.vn/khoi-to-bat-tam-giam-bi-can-dam-nguoi-sau-mau-thuan-tai-dam-gio-546731.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://baove.congly.vn/",
+    "categories": [
+      "https://baove.congly.vn/toa-an-voi-cong-dan",
+      "https://baove.congly.vn/van-de-va-su-kien",
+      "https://baove.congly.vn/phong-chong-tham-nhung",
+      "https://baove.congly.vn/nhip-cau-cong-ly",
+      "https://baove.congly.vn/cong-ly-va-doi-song",
+      "https://baove.congly.vn/media"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baove.congly.vn",
+    "checkedAt": "2026-11-09T03:56:51.961Z",
+    "url": "https://baove.congly.vn/chanh-an-tand-tinh-lai-chau-du-sinh-hoat-chi-bo-tai-xa-pa-u-546730.html",
+    "finalUrl": "https://baove.congly.vn/chanh-an-tand-tinh-lai-chau-du-sinh-hoat-chi-bo-tai-xa-pa-u-546730.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3108,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "baove.congly.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 58,
+    "checkedArticleUrls": 65,
+    "freshArticleChecks": 24,
+    "parserIssues": 6,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 58,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 2,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 189,
+        "passed": 58,
+        "distinctHashes": 58
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://baove.congly.vn/ngay-10-11-quoc-hoi-tiep-tuc-ngay-lam-viec-voi-nhieu-du-an-luat-quan-trong-546974.html",
+      "https://baove.congly.vn/chanh-an-tand-tinh-dien-bien-nhan-huy-hieu-30-nam-tuoi-dang-547023.html",
+      "https://baove.congly.vn/de-xuat-cam-the-he-sinh-tu-nam-2010-mua-thuoc-la-suot-doi-546975.html",
+      "https://baove.congly.vn/pho-co-ha-noi-don-cong-chung-tai-10-khong-gian-di-san-547025.html",
+      "https://baove.congly.vn/chu-dong-ung-pho-mua-lu-tai-khu-vuc-trung-bo-546856.html",
+      "https://baove.congly.vn/ha-noi-xa-thu-lam-phan-dau-hoan-thanh-54-tieu-chi-vao-nam-2035-547040.html",
+      "https://baove.congly.vn/chung-khoan-hoa-binh-tiep-tuc-bi-hose-ngat-ket-noi-giao-dich-547028.html",
+      "https://baove.congly.vn/ha-noi-da-co-gan-1-000-xe-buyt-xanh-547027.html",
+      "https://baove.congly.vn/khoi-to-them-5-bi-can-trong-vu-danh-bac-gan-6-ty-dong-547006.html",
+      "https://baove.congly.vn/truong-chinh-tri-tinh-lao-cai-don-nhan-huan-chuong-lao-dong-hang-nhat-546976.html",
+      "https://baove.congly.vn/son-la-ra-soat-tung-nganh-kinh-te-quyet-tam-dat-grdp-tang-8-546928.html",
+      "https://baove.congly.vn/son-la-kien-toan-nhan-su-bo-sung-pho-chu-tich-uy-ban-mttq-viet-nam-tinh-546926.html",
+      "https://baove.congly.vn/tand-khu-vuc-6-lao-cai-xet-xu-luu-dong-hai-vu-an-ma-tuy-546923.html",
+      "https://baove.congly.vn/tam-giu-nhan-vien-y-te-chem-hieu-truong-bi-thuong-546887.html",
+      "https://baove.congly.vn/lanh-dao-thanh-pho-bac-ninh-du-ngay-hoi-dai-doan-ket-toan-dan-toc-546886.html",
+      "https://baove.congly.vn/ky-thi-hoc-sinh-gioi-quoc-gia-2026-2027-ha-noi-san-sang-tham-du-14-mon-546885.html",
+      "https://baove.congly.vn/ha-noi-con-24-o-dich-sot-xuat-huyet-dang-hoat-dong-546884.html",
+      "https://baove.congly.vn/khan-truong-dieu-tra-vu-29-nguoi-nhap-vien-tai-tay-ninh-546883.html",
+      "https://baove.congly.vn/ton-vinh-nhung-danh-nho-gop-cong-truyen-nghe-viet-546868.html",
+      "https://baove.congly.vn/dien-bien-khen-thuong-12-ho-lan-toa-phong-trao-trong-ca-phe-mac-ca-546866.html",
+      "https://baove.congly.vn/khoi-to-cau-tuan-cua-ong-lien-quan-cac-video-xem-boi-tren-mang-xa-hoi-546858.html",
+      "https://baove.congly.vn/dai-bieu-quoc-hoi-de-xuat-bo-sung-27-7-la-ngay-nghi-huong-nguyen-luong-546857.html",
+      "https://baove.congly.vn/tand-khu-vuc-3-phu-tho-dau-an-trong-chuyen-doi-so-va-hoa-giai-546784.html",
+      "https://baove.congly.vn/chanh-an-tand-tinh-lai-chau-du-sinh-hoat-chi-bo-tai-xa-pa-u-546730.html",
+      "https://baove.congly.vn/canh-tinh-bao-luc-hoc-duong-tu-phien-toa-gia-dinh-546647.html",
+      "https://baove.congly.vn/mot-so-quy-dinh-cua-luat-an-toan-ve-sinh-lao-dong-545354.html",
+      "https://baove.congly.vn/gop-von-di-don-hang-ranh-gioi-phap-ly-phia-sau-loi-hua-loi-nhuan-545345.html",
+      "https://baove.congly.vn/dau-hoi-phap-ly-quanh-cong-trinh-san-pickleball-tai-xa-tam-duong-phu-tho-537076.html",
+      "https://baove.congly.vn/dac-khu-cat-hai-hai-phong-can-xu-ly-triet-de-vi-pham-lan-dat-cong-535614.html",
+      "https://baove.congly.vn/mot-cong-ty-thanh-vien-cua-novaland-cho-duoc-thi-hanh-an-de-tai-khoi-dong-du-an-nghin-ty-tai-tp-ho-chi-minh-531353.html",
+      "https://baove.congly.vn/thanh-tra-diem-ten-loat-vi-pham-tai-dai-hoc-quoc-gia-ha-noi-545846.html",
+      "https://baove.congly.vn/thanh-tra-chi-ro-xi-mang-tan-thang-vi-pham-hon-41-000-m-dat-cong-545443.html",
+      "https://baove.congly.vn/son-la-cong-khai-hoat-dong-giam-sat-va-phong-chong-tham-nhung-545184.html",
+      "https://baove.congly.vn/hung-yen-tang-toc-giai-ngan-von-dau-tu-cong-542356.html",
+      "https://baove.congly.vn/het-thang-9-giai-ngan-cac-sieu-du-an-giao-thong-dat-42-7-ke-hoach-542064.html",
+      "https://baove.congly.vn/xa-phuc-thinh-ha-noi-phat-huy-loi-the-phat-trien-logistics-va-du-lich-van-hoa-547041.html",
+      "https://baove.congly.vn/chanh-an-tandtc-nguyen-van-quang-trao-huy-hieu-80-nam-tuoi-dang-tai-tinh-lam-dong-546763.html",
+      "https://baove.congly.vn/niem-tin-cong-ly-so-9-hoa-giai-doi-thoai-tai-toa-an-tu-tranh-chap-thanh-dong-thuan-phan-2-546269.html",
+      "https://baove.congly.vn/trao-tang-ky-niem-chuong-vi-su-nghiep-toa-an-546208.html",
+      "https://baove.congly.vn/ban-giao-chuc-trach-nhiem-vu-bi-thu-dang-uy-chinh-uy-btl-vung-canh-sat-bien-4-546161.html",
+      "https://baove.congly.vn/tand-khu-vuc-13-an-giang-phoi-hop-bao-cong-ly-day-manh-cong-tac-tuyen-truyen-545800.html",
+      "https://baove.congly.vn/be-mac-hoi-nghi-tap-huan-trien-khai-nen-tang-danh-gia-can-bo-cong-chuc-vien-chuc-nguoi-lao-dong-tand-545795.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 6
+    },
+    "checkedAt": "2026-11-10T09:14:27.315Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baove.congly.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

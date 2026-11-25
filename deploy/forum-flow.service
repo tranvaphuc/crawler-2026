@@ -1,0 +1,29 @@
+[Unit]
+Description=Forum seed discovery and topic/comment collector
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=forum-flow
+Group=forum-flow
+WorkingDirectory=/opt/forum-flow/current
+Environment=NODE_ENV=production
+ExecStart=/opt/forum-flow/node/bin/node scripts/run_forum_flow.mjs --continuous --output /var/lib/forum-flow/runtime --max-topics-per-site 4 --max-thread-pages 10
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=90
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/forum-flow
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=512M
+CPUQuota=50%
+CPUWeight=30
+TasksMax=32
+
+[Install]
+WantedBy=multi-user.target

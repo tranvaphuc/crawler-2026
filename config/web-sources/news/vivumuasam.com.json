@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vivumuasam.com",
+  "siteId": "vivumuasam.com",
+  "registrableDomain": "vivumuasam.com",
+  "homepage": "https://www.vivumuasam.com/",
+  "allowedHosts": [
+    "www.vivumuasam.com",
+    "vivumuasam.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Saigon Co.op khai trương Co.opmart Pro 230 Nguyễn Trãi tại khu phức hợp Lancaster Legacy, TP.HCM",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "p.meta",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:42:08.168Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.vivumuasam.com/16519/saigon-co.op-khai-truong-co.opmart-pro-230-nguyen-trai-tai-khu-phuc-hop-lancaster-legacy-tp.hcm",
+      "https://www.vivumuasam.com/16517/central-retail-viet-nam-khai-truong-sieu-thi-go-binh-long",
+      "https://www.vivumuasam.com/16514/asus-chinh-thuc-mo-ban-laptop-do-hoa-proart-p16-voi-rtx-spark-chuyen-cho-agentic-ai-tai-viet-nam",
+      "https://www.vivumuasam.com/16516/central-retail-viet-nam-tiep-tuc-duoc-vietnam-report-vinh-danh-o-vi-tri-so-1-trong-top-10-cong-ty-uy-tin-nganh-ban-le-nam-2026",
+      "https://www.vivumuasam.com/16518/cong-ty-phu-my-hung-va-quy-dinh-thien-ly-trao-tang-hoc-bong-tri-gia-11-4-ty-dong",
+      "https://www.vivumuasam.com/16515/saigon-co.op-tung-khuyen-mai-quy-mo-lon-khuay-dong-mua-mua-sam-cuoi-nam",
+      "https://www.vivumuasam.com/16513/tu-hao-thuong-hieu-quoc-gia-2026-co.opmart-tang-diem-thuong-tri-an-khach-hang",
+      "https://www.vivumuasam.com/16512/duoc-nguoi-viet-tin-yeu-saigon-co.op-tiep-tuc-ghi-dau-an-voi-nhieu-danh-hieu-danh-gia"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.vivumuasam.com/",
+    "categories": [
+      "https://www.vivumuasam.com/tieu-dung-24h",
+      "https://www.vivumuasam.com/khuyen-mai",
+      "https://www.vivumuasam.com/du-lich",
+      "https://www.vivumuasam.com/am-thuc",
+      "https://www.vivumuasam.com/ban-doc",
+      "https://www.vivumuasam.com/tu-hao-hang-viet-nam",
+      "https://www.vivumuasam.com/video",
+      "http://www.vivumuasam.com/video"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vivumuasam.com",
+    "checkedAt": "2026-11-09T03:57:38.822Z",
+    "url": "https://www.vivumuasam.com/16519/saigon-co.op-khai-truong-co.opmart-pro-230-nguyen-trai-tai-khu-phuc-hop-lancaster-legacy-tp.hcm",
+    "finalUrl": "https://www.vivumuasam.com/16519/saigon-co.op-khai-truong-co.opmart-pro-230-nguyen-trai-tai-khu-phuc-hop-lancaster-legacy-tp.hcm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8100,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vivumuasam.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 40,
+    "freshArticleChecks": 28,
+    "parserIssues": 21,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 120,
+        "passed": 19,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 24,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "http://www.vivumuasam.com/16519/saigon-co.op-khai-truong-co.opmart-pro-230-nguyen-trai-tai-khu-phuc-hop-lancaster-legacy-tp.hcm",
+      "http://www.vivumuasam.com/16517/central-retail-viet-nam-khai-truong-sieu-thi-go-binh-long",
+      "http://www.vivumuasam.com/16515/saigon-co.op-tung-khuyen-mai-quy-mo-lon-khuay-dong-mua-mua-sam-cuoi-nam",
+      "http://www.vivumuasam.com/16518/cong-ty-phu-my-hung-va-quy-dinh-thien-ly-trao-tang-hoc-bong-tri-gia-11-4-ty-dong",
+      "http://www.vivumuasam.com/16516/central-retail-viet-nam-tiep-tuc-duoc-vietnam-report-vinh-danh-o-vi-tri-so-1-trong-top-10-cong-ty-uy-tin-nganh-ban-le-nam-2026",
+      "http://www.vivumuasam.com/16514/asus-chinh-thuc-mo-ban-laptop-do-hoa-proart-p16-voi-rtx-spark-chuyen-cho-agentic-ai-tai-viet-nam",
+      "http://www.vivumuasam.com/16513/tu-hao-thuong-hieu-quoc-gia-2026-co.opmart-tang-diem-thuong-tri-an-khach-hang",
+      "http://www.vivumuasam.com/16512/duoc-nguoi-viet-tin-yeu-saigon-co.op-tiep-tuc-ghi-dau-an-voi-nhieu-danh-hieu-danh-gia",
+      "http://www.vivumuasam.com/16511/thang-cua-nang-saigon-co.op-tang-ngan-uu-dai-hap-dan",
+      "http://www.vivumuasam.com/16510/saigon-co.op-them-gia-tri-cho-gio-hang-viet-tu-hang-nhan-rieng",
+      "http://www.vivumuasam.com/16509/co.opmart-trien-khai-mo-hinh-bep-suat-an-hoc-duong-duoc-kiem-soat-chat-che-an-toan-chat-luong-va-dinh-duong-cho-hoc-sinh",
+      "http://www.vivumuasam.com/16508/nhung-hinh-anh-ron-rang-va-ngap-tran-niem-vui-tai-ngay-hoi-trung-thu-phu-my-hung-2026",
+      "http://www.vivumuasam.com/16507/khai-mac-tuan-le-viet-nam-tai-thai-lan-2026",
+      "http://www.vivumuasam.com/16506/2.000-phan-qua-danh-cho-cac-be-tai-ngay-hoi-trung-thu-phu-my-hung-2026",
+      "http://www.vivumuasam.com/16505/mung-tuu-truong-don-trung-thu-saigon-co.op-tang-qua-khach-hang-tren-toan-quoc",
+      "http://www.vivumuasam.com/16504/chon-go-tron-gu-cho-mua-doan-vien",
+      "http://www.vivumuasam.com/16160/hon-1.000-san-pham-hang-nhan-rieng-co.op-giam-gia-den-50-mung-ngay-quoc-te-hop-tac-xa",
+      "http://www.vivumuasam.com/16156/edena-giam-gia-chan-ra-goi-nem-cuc-lon-len-den-85",
+      "http://www.vivumuasam.com/16147/co.opmart-co.opxtra-giam-gia-manh-cac-san-pham-dac-trung-dip-tet-doan-ngo",
+      "http://www.vivumuasam.com/15686/dich-vu-du-lich-buoc-dem-cho-nhieu-tinh-thanh-phat-trien",
+      "http://www.vivumuasam.com/15502/duong-hoa-nguyen-hue-tet-nam-2022-voi-nhieu-dieu-moi-la-va-dac-biet",
+      "http://www.vivumuasam.com/15455/tp.hcm-to-chuc-ngay-hoi-du-lich-thanh-pho-truc-tuyen-voi-hang-tram-khuyen-mai-lon",
+      "http://www.vivumuasam.com/15755/khong-chi-bot-ngot-ajinomoto-con-duoc-yeu-men-voi-hang-loat-san-pham-khac",
+      "http://www.vivumuasam.com/15688/nhieu-chuong-trinh-hap-dan-cung-uu-dai-lon-tai-khach-san-eastin-grand-sa-i-go-n",
+      "http://www.vivumuasam.com/15057/an-tam-cham-soc-dinh-duong-cho-me-va-be-voi-phan-mem-xay-dung-thuc-don-tu-bo-y-te",
+      "http://www.vivumuasam.com/16242/15-nam-thuc-hien-cuoc-van-dong-nguoi-viet-nam-uu-tien-dung-hang-viet-nam",
+      "http://www.vivumuasam.com/16241/buoc-nhay-vot-cua-hang-viet-vuon-tam-the-gioi-chinh-phuc-moi-thi-truong",
+      "http://www.vivumuasam.com/16240/hang-viet-tao-suc-hut-lon-trong-online-friday-2024",
+      "http://www.vivumuasam.com/video/the-emerald-garden-view-co-hoi-cuoi-cung-giup-khach-hang-de-dang-so-huu-to-am-uoc-mo-tai-tp.hcm",
+      "http://www.vivumuasam.com/video/chuong-trinh-di-bo-tu-thien-dinh-thien-ly-lan-thu-21-se-dien-ra-vao-ngay-24.1.2026",
+      "http://www.vivumuasam.com/video/dan-sao-viet-hoi-tu-trong-mv-tet-cua-truc-nhan",
+      "http://www.vivumuasam.com/video/canh-bao-viec-su-dung-dau-an-chan-nuoi-ho-bien-thanh-thuc-pham-cho-nguoi",
+      "http://www.vivumuasam.com/video/hang-chuc-nghin-tan-dau-lam-thuc-an-chan-nuoi-lai-bien-thanh-thuc-pham-cho-nguoi"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 21
+    },
+    "checkedAt": "2026-11-10T09:18:15.821Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vivumuasam.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

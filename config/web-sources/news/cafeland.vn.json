@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafeland.vn",
+  "siteId": "cafeland.vn",
+  "registrableDomain": "cafeland.vn",
+  "homepage": "https://cafeland.vn/",
+  "allowedHosts": [
+    "cafeland.vn",
+    "www.cafeland.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chính phủ yêu cầu báo cáo toàn cảnh thị trường bất động sản ngay trong tháng 11",
+    "strategy": "selector",
+    "selector": "h1.sevenPostTitle a"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:12.190Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cafeland.vn/tin-tuc/chinh-phu-yeu-cau-bao-cao-toan-canh-thi-truong-bat-dong-san-ngay-trong-thang-11-156595.html",
+      "https://cafeland.vn/tin-tuc/da-nang-de-xuat-quy-hoach-tod-quanh-ga-duong-sat-pham-vi-nao-dat-dai-se-duoc-bo-tri-ra-sao-156586.html",
+      "https://cafeland.vn/tin-tuc/van-xuan-group-dau-tu-lon-cho-su-kien-ket-noi-va-gioi-thieu-happy-one-elite-156594.html",
+      "https://cafeland.vn/xu-huong/nha-5-tang-trong-hem-sau-ha-noi-hai-gieng-troi-doi-luu-va-mat-tien-gach-gom-xanh-156597.html",
+      "https://cafeland.vn/tin-tuc/da-nang-dinh-huong-pho-di-bo-hung-vuong-9-tuyen-va-doan-pho-se-chinh-trang-ra-sao-156589.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafeland.vn/",
+    "categories": [
+      "https://cafeland.vn/tin-tuc/",
+      "https://cafeland.vn/tin-tuc/thi-truong/1/",
+      "https://cafeland.vn/quy-hoach/",
+      "https://cafeland.vn/tin-tuc/ha-tang/49/",
+      "https://cafeland.vn/tin-tuc/tai-chinh/3/",
+      "https://cafeland.vn/tin-tuc/the-gioi/6/",
+      "https://cafeland.vn/tin-tuc/doanh-nghiep/8/",
+      "https://cafeland.vn/doanh-nhan/",
+      "https://cafeland.vn/phan-tich/",
+      "https://cafeland.vn/video/",
+      "https://cafeland.vn/vat-lieu-xay-dung/",
+      "https://cafeland.vn/vat-lieu-xay-dung/vat-lieu-co-ban/57/",
+      "https://cafeland.vn/vat-lieu-xay-dung/vat-lieu-moi-cong-nghe-moi/58/",
+      "https://cafeland.vn/vat-lieu-xay-dung/trang-thiet-bi-noi-ngoai-that/59/",
+      "https://cafeland.vn/vat-lieu-xay-dung/bang-gia-vlxd/60/",
+      "https://cafeland.vn/du-an/",
+      "https://cafeland.vn/du-an/can-ho-chung-cu/",
+      "https://cafeland.vn/du-an/nha-o-xa-hoi/",
+      "https://cafeland.vn/du-an/khu-do-thi/",
+      "https://cafeland.vn/du-an/bat-dong-san-nghi-duong/",
+      "https://cafeland.vn/du-an/dat-nen-du-an/",
+      "https://cafeland.vn/du-an/nha-pho-biet-thu/",
+      "https://cafeland.vn/du-an/khu-cong-nghiep/",
+      "https://cafeland.vn/du-an/loai-hinh-khac/",
+      "https://cafeland.vn/xu-huong/",
+      "https://cafeland.vn/xu-huong/phong-thuy/17/",
+      "https://cafeland.vn/xu-huong/kham-pha/16/",
+      "https://cafeland.vn/xu-huong/noi-ngoai-that/13/",
+      "https://cafeland.vn/xu-huong/khong-gian-song/12/",
+      "https://cafeland.vn/hinh-anh/",
+      "https://cafeland.vn/kien-thuc/",
+      "https://cafeland.vn/kien-thuc/tu-van-hoi-dap/18/",
+      "https://cafeland.vn/kien-thuc/kien-thuc-bat-dong-san/47/",
+      "https://cafeland.vn/kien-thuc/bao-cao-phan-tich/",
+      "https://cafeland.vn/kien-thuc/van-ban-phap-luat/",
+      "https://cafeland.vn/kien-thuc/mau-van-ban/",
+      "https://cafeland.vn/bang-gia-du-an/",
+      "https://cafeland.vn/kien-thuc/bang-gia-dat/",
+      "https://cafeland.vn/mxh/",
+      "https://cafeland.vn/ho-tro/",
+      "https://cafeland.vn/ho-tro/quy-dinh-su-dung-88.html",
+      "https://cafeland.vn/ho-tro/chinh-sach-bao-mat-89.html"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?cafeland.vn/.*?(\\d{3,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafeland.vn",
+    "checkedAt": "2026-11-09T03:56:54.165Z",
+    "url": "https://cafeland.vn/tin-tuc/chinh-phu-yeu-cau-bao-cao-toan-canh-thi-truong-bat-dong-san-ngay-trong-thang-11-156595.html",
+    "finalUrl": "https://cafeland.vn/tin-tuc/chinh-phu-yeu-cau-bao-cao-toan-canh-thi-truong-bat-dong-san-ngay-trong-thang-11-156595.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5824,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafeland.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 71,
+    "checkedArticleUrls": 74,
+    "freshArticleChecks": 13,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 71,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 43,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 825,
+        "passed": 63,
+        "distinctHashes": 63
+      },
+      {
+        "name": "video",
+        "discovered": 48,
+        "passed": 8,
+        "distinctHashes": 8
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cafeland.vn/tin-tuc/setiabecamex-tri-an-khach-hang-du-an-the-glamour-va-valley-of-dreams-ii-luxury-156656.html",
+      "https://cafeland.vn/kien-thuc/tphcm-ban-hanh-khung-gia-quan-ly-chung-cu-moi-cao-nhat-gan-25000-dongm2thang-156658.html",
+      "https://cafeland.vn/quy-hoach/khu-do-thi-140-ha-o-ha-noi-chuan-bi-dieu-chinh-quy-hoach-sau-gan-2-thap-ky-156651.html",
+      "https://cafeland.vn/tin-tuc/lo-dien-sieu-to-hop-cang-2537-ha-tai-tphcm-von-dau-tu-gan-8-ty-usd-156652.html",
+      "https://cafeland.vn/tin-tuc/can-tho-bo-sung-quy-mo-dau-tu-du-an-nang-cap-quoc-lo-91-xuat-hien-duong-xay-moi-rong-20m-156649.html",
+      "https://cafeland.vn/tin-tuc/gia-lai-chap-thuan-cang-can-250-ty-dong-du-kien-khoi-cong-trong-thang-12-156638.html",
+      "https://cafeland.vn/phan-tich/gia-nha-thu-cap-ha-nhiet-thi-truong-bat-dong-san-xuat-hien-dien-bien-moi-155778.html",
+      "https://cafeland.vn/phan-tich/chuyen-gia-chi-cach-dem-den-de-nhan-dien-bat-dong-san-gia-tri-that-155089.html",
+      "https://cafeland.vn/phan-tich/kich-ban-phan-phoi-lai-dong-tien-bat-dong-san-quanh-cac-ga-metro-ha-noi-153125.html",
+      "https://cafeland.vn/phan-tich/quang-ninh-huong-toi-thanh-pho-truc-thuoc-trung-uong-thi-truong-bat-dong-san-co-the-bung-no-ra-sao-152237.html",
+      "https://cafeland.vn/phan-tich/giac-mo-pho-tu-nhung-mach-ngam-cong-nghe-148901.html",
+      "https://cafeland.vn/kien-thuc/tu-1211-dak-lak-ap-dung-quy-trinh-moi-ve-nghia-vu-tai-chinh-dat-dai-nguoi-dan-can-luu-y-gi-156554.html",
+      "https://cafeland.vn/kien-thuc/95-xa-phuong-dong-nai-ap-dung-han-muc-giao-dat-moi-noi-toi-da-5000m2-noi-toi-20ha-156361.html",
+      "https://cafeland.vn/kien-thuc/tu-7112026-vinh-long-ap-dung-quy-dinh-moi-ve-tach-thua-dat-156351.html",
+      "https://cafeland.vn/doanh-nhan/doanh-nhan/sunshine-homes-thay-ceo-sau-hon-1-nam-28939.html",
+      "https://cafeland.vn/doanh-nhan/doanh-nhan/ket-qua-giai-golf-cafeland-2026-16-nam-ket-noi-thi-truong-bat-dong-san-28938.html",
+      "https://cafeland.vn/doanh-nhan/doanh-nhan/ngan-hang-ocb-co-tong-giam-doc-moi-28937.html",
+      "https://cafeland.vn/doanh-nhan/doanh-nhan/doanh-nhan-gia-dinh-va-thanh-my-tay-trao-500-trieu-dong-ho-tro-an-sinh-xa-hoi-28936.html",
+      "https://cafeland.vn/video/view/con-loc-ha-tang-do-bo-khu-tay-tphcm-dau-la-diem-sang-13070.html",
+      "https://cafeland.vn/video/view/san-bay-long-thanh-sap-van-hanh-bat-dong-san-khu-vuc-nao-duoc-nha-dau-tu-san-don-13057.html",
+      "https://cafeland.vn/video/view/do-thi-ven-song-waterpoint-don-dau-ha-tang-but-pha-13056.html",
+      "https://cafeland.vn/video/view/dieu-gi-khien-thi-truong-bat-dong-san-phia-dong-tphcm-nong-len-13055.html",
+      "https://cafeland.vn/tin-tuc/can-tho-duyet-thu-hoi-dat-cho-hai-khu-do-thi-156632.html",
+      "https://cafeland.vn/tin-tuc/tphcm-ra-soat-191-khu-dat-phat-trien-nha-o-xa-hoi-156625.html",
+      "https://cafeland.vn/tin-tuc/dong-thap-vua-co-chi-dao-moi-lien-quan-den-viec-xay-dung-bang-gia-dat-156599.html",
+      "https://cafeland.vn/tin-tuc/metro-gan-89000-ty-tod-va-loat-du-an-giao-thong-lon-toan-canh-ha-tang-tuan-qua-156582.html",
+      "https://cafeland.vn/phan-tich/mbs-chung-cu-co-the-ap-dung-thoi-han-su-dung-doanh-nghiep-so-huu-du-an-lau-dai-hut-dong-tien-154062.html",
+      "https://cafeland.vn/phan-tich/hsbc-vi-kinh-te-viet-nam-nhu-duong-len-dinh-olympia-dan-diem-sau-hai-phan-thi-chang-kho-nhat-con-o-phia-truoc-153447.html",
+      "https://cafeland.vn/xu-huong/nha-5-tang-trong-hem-sau-ha-noi-hai-gieng-troi-doi-luu-va-mat-tien-gach-gom-xanh-156597.html",
+      "https://cafeland.vn/xu-huong/cai-tao-nha-lien-ke-tai-ha-noi-hai-gieng-troi-lay-sang-va-he-vo-nhom-can-nang-156569.html",
+      "https://cafeland.vn/xu-huong/nha-be-tong-46m2-trong-hem-nho-tai-tphcm-giai-tron-bai-toan-on-ao-va-thieu-rieng-tu-156543.html",
+      "https://cafeland.vn/xu-huong/cam-hung-nha-nghi-duong-quang-ninh-tuong-cong-om-bep-am-va-lau-thien-tren-mat-nuoc-156462.html",
+      "https://cafeland.vn/kien-thuc/lam-dong-ban-hanh-quy-dinh-moi-ve-quan-ly-su-dung-nha-chung-cu-156460.html",
+      "https://cafeland.vn/kien-thuc/chinh-sach-dat-dai-noi-bat-co-hieu-luc-tu-thang-112026-156339.html",
+      "https://cafeland.vn/kien-thuc/tay-ninh-quy-dinh-dieu-kien-tach-khu-dat-thanh-du-an-doc-lap-155951.html",
+      "https://cafeland.vn/kien-thuc/loat-chinh-sach-moi-co-hieu-luc-tu-thang-102026-nguoi-dan-can-biet-155525.html",
+      "https://cafeland.vn/kien-thuc/dieu-kien-thu-tuc-de-chu-dau-tu-duoc-mo-ban-nha-o-hinh-thanh-trong-tuong-lai-155302.html",
+      "https://cafeland.vn/du-an/dragon-homes-my-hanh-tay-ninh-6233.html",
+      "https://cafeland.vn/du-an/malibu-walk-phan-khu-shophouse-tai-masteri-waterfront-ha-noi-6102.html",
+      "https://cafeland.vn/du-an/the-prive-du-an-can-ho-chung-cu-tai-tphcm-4483.html",
+      "https://cafeland.vn/ho-tro/thuc-hien-bai-viet-pr-179.html",
+      "https://cafeland.vn/ho-tro/thong-bao-su-kien-sap-dien-ra-180.html",
+      "https://cafeland.vn/ho-tro/dat-logo-doanh-nghiep-noi-bat-trang-chu-175.html",
+      "https://cafeland.vn/danh-ba/vat-lieu-xay-dung/cong-ty-co-phan-xay-dung-viet-cong-minh-3734.html",
+      "https://cafeland.vn/danh-ba/dau-tu-du-an/bim-land-thuoc-tap-doan-bim-group-1734.html",
+      "https://cafeland.vn/danh-ba/dau-tu-du-an/cong-ty-co-phan-bat-dong-san-seaholdings-1457.html",
+      "https://cafeland.vn/danh-ba/thi-cong-xay-dung/cong-ty-co-phan-setiabecamex-345.html",
+      "https://cafeland.vn/du-an/can-ho-bcons-riverside-phu-dinh-6285.html",
+      "https://cafeland.vn/du-an/the-collection-688-du-an-can-ho-tai-tphcm-5922.html",
+      "https://cafeland.vn/du-an/tara-maison-du-an-can-ho-tai-ha-noi-6224.html",
+      "https://cafeland.vn/du-an/sun-saphia-residence-du-an-can-ho-du-lich-tai-da-nang-6204.html",
+      "https://cafeland.vn/du-an/ehomes-bien-hoa-nha-o-xa-hoi-thuoc-izumi-city-6184.html",
+      "https://cafeland.vn/du-an/the-cityon-ocean-park-3-hung-yen-6181.html",
+      "https://cafeland.vn/du-an/happy-one-elite-vi-tri-phap-ly-gia-ban-du-an-6072.html",
+      "https://cafeland.vn/du-an/sk-residences-mao-dien-du-an-nha-o-xa-hoi-tai-hai-phong-5808.html",
+      "https://cafeland.vn/du-an/arlington-home-du-an-nha-o-xa-hoi-tai-ha-noi-6164.html",
+      "https://cafeland.vn/du-an/happy-home-di-an-du-an-nha-o-xa-hoi-tai-tphcm-6155.html",
+      "https://cafeland.vn/du-an/vinhomes-green-paradise-khu-do-thi-lan-bien-can-gio-4510.html",
+      "https://cafeland.vn/du-an/fresia-riverside-du-an-can-ho-tai-bien-hoa-4405.html",
+      "https://cafeland.vn/du-an/the-emerald-garden-view-du-an-can-ho-tai-tphcm-4750.html",
+      "https://cafeland.vn/du-an/khu-can-ho-the-opus-one-vinhomes-grand-park-4311.html",
+      "https://cafeland.vn/du-an/khu-do-thi-ramond-urbaniz-hai-phong-5309.html",
+      "https://cafeland.vn/du-an/eurowindow-light-city-khu-do-thi-tai-thanh-hoa-5263.html",
+      "https://cafeland.vn/danh-ba/dau-tu-du-an/gamuda-land-viet-nam-353.html",
+      "https://cafeland.vn/du-an/vinhomes-hai-van-bay-to-hop-nghi-duong-tai-da-nang-4607.html",
+      "https://cafeland.vn/du-an/masteri-grand-coast-phan-khu-can-ho-thuoc-ocean-park-2-hung-yen-5323.html",
+      "https://cafeland.vn/du-an/an-huy-my-viet-du-an-khu-do-thi-tai-tay-ninh-5321.html",
+      "https://cafeland.vn/du-an/vinhomes-green-city-du-an-khu-do-thi-tai-long-an-4465.html",
+      "https://cafeland.vn/du-an/imperia-sky-park-du-an-can-ho-tai-ha-noi-5269.html",
+      "https://cafeland.vn/du-an/vinhomes-wonder-city-du-an-khu-do-thi-tai-dan-phuong-4449.html",
+      "https://cafeland.vn/du-an/atera-central-to-hop-thuong-mai-dich-vu-va-can-ho-tai-hung-yen-5297.html",
+      "https://cafeland.vn/du-an/lusso-saigon-phan-khu-can-ho-thuoc-la-pura-tphcm-5296.html",
+      "https://cafeland.vn/du-an/vinhomes-golden-city-du-an-khu-do-thi-tai-hai-phong-4503.html",
+      "https://cafeland.vn/chu-de-nong/chinh-sach-bat-dong-san-2026-3849/",
+      "https://cafeland.vn/chu-de-nong/xu-huong-thiet-ke-noi-ngoai-that-2026-3837/",
+      "https://cafeland.vn/chu-de-nong/tin-tuc-thi-truong-bat-dong-san-2026-3816/",
+      "https://cafeland.vn/chu-de-nong/luat-thue-tieu-thu-dac-biet-3880/",
+      "https://cafeland.vn/chu-de-nong/gia-vat-lieu-xay-dung-2026-3823/",
+      "https://cafeland.vn/chu-de-nong/thi-truong-bat-dong-san-2026-3816/",
+      "https://cafeland.vn/chu-de-nong/lam-sach-co-so-du-lieu-dat-dai-3586/",
+      "https://cafeland.vn/chu-de-nong/dieu-kien-thu-tuc-ho-so-mua-nha-o-xa-hoi-moi-nhat-3524/",
+      "https://cafeland.vn/chu-de-nong/cach-hoa-giai-huong-nha-xau-2699/",
+      "https://cafeland.vn/chu-de-nong/tin-tuc-bat-dong-san-khanh-hoa-550/",
+      "https://cafeland.vn/chu-de-nong/tin-tuc-bat-dong-san-thai-nguyen-981/",
+      "https://cafeland.vn/chu-de-nong/tin-tuc-bat-dong-san-vinh-long-985/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 3
+    },
+    "checkedAt": "2026-11-10T09:14:41.391Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafeland.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "cafeland.vn",
+      "siteId": "cafeland.vn",
+      "registrableDomain": "cafeland.vn",
+      "homepage": "https://cafeland.vn/",
+      "allowedHosts": [
+        "cafeland.vn",
+        "www.cafeland.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Chính phủ yêu cầu báo cáo toàn cảnh thị trường bất động sản ngay trong tháng 11",
+        "strategy": "selector",
+        "selector": "h1.sevenPostTitle a"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#sevenBoxNewContentInfo",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:18.487Z",
+        "trainingUrls": [
+          "https://cafeland.vn/video/view/con-loc-ha-tang-do-bo-khu-tay-tphcm-dau-la-diem-sang-13070.html",
+          "https://cafeland.vn/video/view/san-bay-long-thanh-sap-van-hanh-bat-dong-san-khu-vuc-nao-duoc-nha-dau-tu-san-don-13057.html",
+          "https://cafeland.vn/video/view/do-thi-ven-song-waterpoint-don-dau-ha-tang-but-pha-13056.html",
+          "https://cafeland.vn/video/view/dieu-gi-khien-thi-truong-bat-dong-san-phia-dong-tphcm-nong-len-13055.html",
+          "https://cafeland.vn/video/view/dau-la-diem-sang-moi-cua-bat-dong-san-khu-tay-tphcm-13067.html",
+          "https://cafeland.vn/video/view/lo-dien-tram-trung-chuyen-moi-phia-tay-nam-tphcm-dau-la-tam-diem-dau-tu-13066.html"
+        ],
+        "holdoutUrls": [
+          "https://cafeland.vn/video/view/san-bay-cao-toc-lo-dien-bat-dong-san-khu-vuc-nay-cua-tphcm-duoc-san-don-13065.html",
+          "https://cafeland.vn/video/view/don-dau-song-metro-he-lo-tam-diem-dau-tu-tai-cua-ngo-phia-tay-tphcm-13062.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "cafeland.vn",
+      "siteId": "cafeland.vn",
+      "registrableDomain": "cafeland.vn",
+      "homepage": "https://cafeland.vn/",
+      "allowedHosts": [
+        "cafeland.vn",
+        "www.cafeland.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Dragon Homes Mỹ Hạnh Tây Ninh",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".info-date.right",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".page-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:18.487Z",
+        "trainingUrls": [
+          "https://cafeland.vn/du-an/dragon-homes-my-hanh-tay-ninh-6233.html",
+          "https://cafeland.vn/du-an/can-ho-bcons-riverside-phu-dinh-6285.html",
+          "https://cafeland.vn/du-an/khu-nha-o-xa-hoi-van-xuan-thai-nguyen-6210.html",
+          "https://cafeland.vn/du-an/intercentral-du-an-khu-do-thi-tai-ha-noi-6170.html",
+          "https://cafeland.vn/du-an/quan-the-du-lich-nghi-duong-giai-tri-nui-u-bo-ho-thac-chuoi-quang-tri-6206.html",
+          "https://cafeland.vn/du-an/centa-diamond-riverside-quang-tri-6200.html",
+          "https://cafeland.vn/du-an/izumi-gardenia-izumi-city-dong-nai-6309.html",
+          "https://cafeland.vn/du-an/da-nang-downtown-khu-thuong-mai-dich-vu-vui-choi-giai-tri-tai-da-nang-6075.html",
+          "https://cafeland.vn/du-an/la-casta-gallery-du-an-trung-tam-thuong-mai-va-van-phong-tai-ha-noi-5582.html"
+        ],
+        "holdoutUrls": [
+          "https://cafeland.vn/tin-tuc/gia-lai-chap-thuan-cang-can-250-ty-dong-du-kien-khoi-cong-trong-thang-12-156638.html",
+          "https://cafeland.vn/tin-tuc/can-tho-duyet-thu-hoi-dat-cho-hai-khu-do-thi-156632.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "cafeland.vn",
+      "siteId": "cafeland.vn",
+      "registrableDomain": "cafeland.vn",
+      "homepage": "https://cafeland.vn/",
+      "allowedHosts": [
+        "cafeland.vn",
+        "www.cafeland.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Malibu Walk: Phân khu shophouse tại Masteri Waterfront Hà Nội",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".info-date.right",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".sevenPostContent.sevenPostContentDuan",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:18.487Z",
+        "trainingUrls": [
+          "https://cafeland.vn/du-an/malibu-walk-phan-khu-shophouse-tai-masteri-waterfront-ha-noi-6102.html",
+          "https://cafeland.vn/du-an/diamond-sky-phan-khu-can-ho-thuoc-van-phuc-city-tphcm-5354.html",
+          "https://cafeland.vn/du-an/vinhomes-the-gallery-giang-vo-khu-phuc-hop-tai-ha-noi-4515.html"
+        ],
+        "holdoutUrls": [
+          "https://cafeland.vn/phan-tich/chuyen-gia-chi-cach-dem-den-de-nhan-dien-bat-dong-san-gia-tri-that-155089.html",
+          "https://cafeland.vn/phan-tich/kich-ban-phan-phoi-lai-dong-tien-bat-dong-san-quanh-cac-ga-metro-ha-noi-153125.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "cafeland.vn",
+      "siteId": "cafeland.vn",
+      "registrableDomain": "cafeland.vn",
+      "homepage": "https://cafeland.vn/",
+      "allowedHosts": [
+        "cafeland.vn",
+        "www.cafeland.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Giá vàng hôm nay 10-11: Vàng SJC giữ mốc 141,2 triệu đồng/lượng, vàng thế giới duy trì trên 4.100 USD/ounce",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-post",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:18.487Z",
+        "trainingUrls": [
+          "https://cafeland.vn/mxh/gia-vang-hom-nay-10-11-vang-sjc-giu-moc-1412-trieu-dongluong-vang-the-gioi-duy-tri-tren-4100-usdounce-133310.html"
+        ],
+        "holdoutUrls": [
+          "https://cafeland.vn/xu-huong/phong-thuy-phong-khach-bo-tri-hop-ly-ruoc-tai-loc-vao-nha-111442.html",
+          "https://cafeland.vn/xu-huong/phong-thuy-phong-bep-va-nhung-dieu-kieng-ky-nen-biet-111441.html"
+        ]
+      }
+    }
+  ]
+}

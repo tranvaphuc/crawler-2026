@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodienbienphu.vn",
+  "siteId": "baodienbienphu.vn",
+  "registrableDomain": "baodienbienphu.vn",
+  "homepage": "https://baodienbienphu.vn/",
+  "allowedHosts": [
+    "baodienbienphu.vn",
+    "www.baodienbienphu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baodienbienphu.vn/",
+    "categories": []
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baodienbienphu.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "value": "Không có loại thuốc lá nào là an toàn cho sức khỏe",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:15:30.761Z",
+    "frozenAt": "2026-11-16T02:15:27.066Z",
+    "trainingUrl": "https://baodienbienphu.vn/tin-bai/y-te/khong-co-loai-thuoc-la-nao-la-an-toan-cho-suc-khoe",
+    "independentHoldouts": [
+      "https://baodienbienphu.vn/tin-bai/xa-hoi/kien-toan-doi-ngu-truong-thon-ban",
+      "https://baodienbienphu.vn/tin-bai/quoc-phong/giu-vung-the-tran-phong-chong-ma-tuy-noi-bien-gioi"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baodienbienphu.vn/tin-bai/y-te/khong-co-loai-thuoc-la-nao-la-an-toan-cho-suc-khoe",
+      "https://baodienbienphu.vn/tin-bai/xa-hoi/kien-toan-doi-ngu-truong-thon-ban",
+      "https://baodienbienphu.vn/tin-bai/quoc-phong/giu-vung-the-tran-phong-chong-ma-tuy-noi-bien-gioi",
+      "https://baodienbienphu.vn/tin-bai/chinh-tri/thanh-xuong-vui-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam",
+      "https://baodienbienphu.vn/tin-bai/an-ninh-trat-tu/dien-bien-cam-32-bien-canh-bao-khu-vuc-cam-han-che-bay",
+      "https://baodienbienphu.vn/tin-bai/kinh-te/thanh-nien-dien-bien-khoi-nghiep-tren-que-huong",
+      "https://baodienbienphu.vn/tin-bai/kinh-te/nang-tam-gao-muong-thanh-dua-mat-pu-lau",
+      "https://baodienbienphu.vn/tin-bai/xa-hoi/dau-tu-nang-cap-co-so-vat-chat-van-hoa"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

@@ -1,0 +1,19 @@
+import fs from 'node:fs/promises';import * as c from 'cheerio';
+const root='outputs/forum-activity-2026-11-17';const rows=JSON.parse(await fs.readFile(root+'/results.json','utf8'));
+const custom={'bovagau.vn':['17/11/2026','Bài của Hải Nguyễn hiển thị 13 phút trước; Anhtuan invest 37 phút trước.'],'dff.vn':['17/11/2026','Hoàng Phúc và Văn Lược đăng 1 giờ trước.'],'pantip.com':['17/11/2026','Tiêu đề thời gian 17 พฤศจิกายน 2569 (17/11/2026); topic/44287538 có 53 phản hồi hiển thị.'],'tinhte.vn':['17/11/2026','Dữ liệu __NEXT_DATA__: post_id 67334922, post_create_date 1794910721; nội dung phản hồi: Có hàng cho tất dòng điện thoại.'],'tctd.vn':['17/11/2026','Bài a11059: article:published_time 2026-11-17T14:06:58+07:00.'],'vietnambusinessinsider.vn':['16/11/2026','Bài a56893: article:published_time 2026-11-16T09:54:06+07:00.']};
+const start=Date.parse('2026-10-01T00:00:00+07:00'),end=Date.parse('2026-11-18T00:00:00+07:00');
+function parse(v){if(/^\d{10}$/.test(v))return Number(v)*1000;if(/^\d{4}-/.test(v))return Date.parse(v);const m=v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);return m?Date.parse(`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}T00:00:00+07:00`):NaN;}
+const out=[];for(const r of rows){const valid=r.pages.flatMap(p=>(p.dates||[]).map(d=>({...d,page:p.url,t:parse(d.value)}))).filter(d=>d.t>=start&&d.t<end).sort((a,b)=>b.t-a.t);const d=valid[0];const item={domain:r.domain,status:d||custom[r.domain]?'confirmed_activity':'unverified',date:custom[r.domain]?.[0]||(d?new Date(d.t+7*3600000).toISOString().slice(0,10).split('-').reverse().join('/'):'—'),evidence:custom[r.domain]?.[1]||(d?`${d.text}; ${d.context}`:''),url:d?.url?new URL(d.url,d.page).href:d?.page||r.pages[0]?.url,notes:''};
+if(r.domain==='phunuvietkhoinghiep.vn')item.notes='Bài mới phần lớn mang dạng spam quảng cáo dược phẩm; có bài mới không chứng minh thảo luận chất lượng.';
+if(r.domain==='otofun.net')item.notes='Chuyển hướng sang www.otofun.net.vn.';
+if(r.domain==='6giay.vn')item.notes='www chuyển sang thamdinh.com.vn; không xác nhận forum cũ.';
+if(r.domain==='ddth.com')item.notes='Trang đỗ tên miền: Do Not Sell or Share My Personal Information.';
+if(r.domain==='raovatsomot.com')item.notes='Đổi sang WordPress có tiêu đề slot gacor 2026; không còn giao diện forum cũ.';
+if(r.domain==='vietmobile.vn')item.notes='Trang mặc định/đỗ tên miền.';
+if(r.domain==='diendanchungkhoan.vn')item.notes='Chuyển sang chungsy.vn; nội dung feed cần JavaScript/đăng nhập để xác minh.';
+if(!item.evidence)item.evidence=[...new Set(r.pages.map(p=>p.error).filter(Boolean))].join(', ')||'Đọc được trang nhưng chưa xác minh ngày bài/phản hồi trong khoảng yêu cầu.';
+out.push(item);}
+out.sort((a,b)=>a.domain.localeCompare(b.domain));await fs.writeFile(root+'/summary.json',JSON.stringify(out,null,2));
+const yes=out.filter(x=>x.status==='confirmed_activity'),no=out.filter(x=>x.status!=='confirmed_activity');
+const table=a=>'| Domain | Ngày hoạt động quan sát | Bằng chứng / ghi chú |\n|---|---|---|\n'+a.map(x=>`| [${x.domain}](${x.url}) | ${x.date} | ${(x.evidence+' '+x.notes).replaceAll('|','/')} |`).join('\n');
+await fs.writeFile(root+'/report.txt',`KIỂM TRA TƯƠNG TÁC FORUM — 17/11/2026 (UTC+7)\nPhạm vi: 49 nguồn; từ 01/10/2026 đến lúc kiểm tra 17/11/2026.\nTương tác được tính khi có bài đăng hoặc phản hồi mới; không yêu cầu phải có cả hai. Không dùng ngày trong thân bài, bản quyền hoặc ngày cấp phép để xác nhận. Đây là kiểm tra mẫu công khai, không phải thống kê đầy đủ lịch sử. Nguồn chưa xác minh không đồng nghĩa ngừng hoạt động.\nKhông gọi API AI trả phí.\n\nĐÃ XÁC NHẬN: ${yes.length}\n${table(yes)}\n\nCHƯA XÁC NHẬN: ${no.length}\n${table(no)}\n\nHTML và JSON bằng chứng lưu cùng thư mục.\n`);console.log(JSON.stringify({confirmed:yes.length,unverified:no.length,confirmedRows:yes.map(x=>({domain:x.domain,date:x.date}))}));

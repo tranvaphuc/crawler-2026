@@ -1,0 +1,5 @@
+import 'dotenv/config';import fs from 'node:fs/promises';
+const command=process.argv[2]||'status',file=process.argv[3];if(!['status','reload','keys','settings','recheck'].includes(command))throw Error('Use: status | reload | keys <json-file> | settings <json-file> | recheck <key-id>');
+const url=new URL(process.env.PROXY_MANAGER_URL||'http://127.0.0.1:3810');if(url.protocol!=='https:'&&!(url.protocol==='http:'&&['127.0.0.1','localhost','[::1]'].includes(url.hostname)))throw Error('Private loopback HTTP or HTTPS required');
+let body=command==='status'?undefined:command==='recheck'?{keyId:file}:['keys','settings'].includes(command)?JSON.parse(await fs.readFile(file,'utf8')):{};
+const r=await fetch(new URL('/v1/'+command,url),{method:body===undefined?'GET':'POST',headers:{authorization:'Bearer '+(command==='status'?process.env.PROXY_MANAGER_AUTH_KEY:process.env.PROXY_MANAGER_ADMIN_KEY||process.env.PROXY_MANAGER_AUTH_KEY),'content-type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)}),signal:AbortSignal.timeout(15000)});const result=await r.json();console.log(JSON.stringify(result,null,2));if(!r.ok)process.exitCode=1;

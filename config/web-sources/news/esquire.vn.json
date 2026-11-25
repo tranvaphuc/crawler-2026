@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "esquire.vn",
+  "siteId": "esquire.vn",
+  "registrableDomain": "esquire.vn",
+  "homepage": "https://esquire.vn/",
+  "allowedHosts": [
+    "esquire.vn",
+    "www.esquire.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://esquire.vn/",
+    "categories": [
+      "https://esquire.vn/category/style/",
+      "https://esquire.vn/category/entertainment/",
+      "https://esquire.vn/category/lifestyle/",
+      "https://esquire.vn/category/sports/",
+      "https://esquire.vn/category/watches/"
+    ]
+  },
+  "title": {
+    "value": "RIMOWA cùng Joe Alwyn đưa sắc màu hội họa vào bộ sưu tập Essential và Groove",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".col-span-2.elementor-widget-theme-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:24.873Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:18.196Z",
+    "independentHoldouts": [
+      "https://esquire.vn/review-godzilla-minus-zero-hoanh-trang-hon-va-nhung-cau-hoi-chua-co-loi-giai/",
+      "https://esquire.vn/review-bo-sua-bay-chat-tho-moc-chau-nang-canh-mot-cau-chuyen-ky-ao/",
+      "https://esquire.vn/tinh-ha-say-hi-concert-dem-3-mo-man-dai-nhac-hoi/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://esquire.vn/rimowa-cung-joe-alwyn-dua-sac-mau-hoi-hoa-vao-bo-suu-tap-essential-va-groove/",
+      "https://esquire.vn/review-godzilla-minus-zero-hoanh-trang-hon-va-nhung-cau-hoi-chua-co-loi-giai/",
+      "https://esquire.vn/review-bo-sua-bay-chat-tho-moc-chau-nang-canh-mot-cau-chuyen-ky-ao/",
+      "https://esquire.vn/tinh-ha-say-hi-concert-dem-3-mo-man-dai-nhac-hoi/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

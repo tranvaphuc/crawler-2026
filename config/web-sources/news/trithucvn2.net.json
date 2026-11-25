@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "trithucvn2.net",
+  "siteId": "trithucvn2.net",
+  "registrableDomain": "trithucvn2.net",
+  "homepage": "https://trithucvn2.net/",
+  "allowedHosts": [
+    "trithucvn2.net",
+    "www.trithucvn2.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://trithucvn2.net/",
+    "categories": [
+      "https://trithucvn2.net/cat/tin-tuc-vn",
+      "https://trithucvn2.net/cat/tin-tuc-vn/thoi-su",
+      "https://trithucvn2.net/cat/tin-tuc-vn/phap-luat",
+      "https://trithucvn2.net/cat/tin-tuc-vn/giao-duc",
+      "https://trithucvn2.net/cat/tin-tuc-vn/moi-truong",
+      "https://trithucvn2.net/cat/tin-tuc-vn/phan-tich-binh-luan"
+    ]
+  },
+  "title": {
+    "value": "Đề xuất cấm trưng bày thuốc lá, bán thuốc lá trên mạng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:00.551Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:54.460Z",
+    "independentHoldouts": [
+      "https://trithucvn2.net/tin-tuc-vn/nha-o-xa-hoi-co-the-van-duoc-ban-theo-gia-thi-truong-sau-5-nam.html",
+      "https://trithucvn2.net/kinh-te/megaspeed-ba-hoang-lac-nguoi-co-quan-he-voi-ong-jensen-huang-da-roi-cong-ty-tu-thang-8-2025.html",
+      "https://trithucvn2.net/tin-tuc-vn/vinh-long-dat-muc-tieu-xuat-khau-dua-700-trieu-den-1-ty-usd-moi-nam.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://trithucvn2.net/tin-tuc-vn/de-xuat-cam-trung-bay-thuoc-la-ban-thuoc-la-tren-mang.html",
+      "https://trithucvn2.net/tin-tuc-vn/nha-o-xa-hoi-co-the-van-duoc-ban-theo-gia-thi-truong-sau-5-nam.html",
+      "https://trithucvn2.net/kinh-te/megaspeed-ba-hoang-lac-nguoi-co-quan-he-voi-ong-jensen-huang-da-roi-cong-ty-tu-thang-8-2025.html",
+      "https://trithucvn2.net/tin-tuc-vn/vinh-long-dat-muc-tieu-xuat-khau-dua-700-trieu-den-1-ty-usd-moi-nam.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

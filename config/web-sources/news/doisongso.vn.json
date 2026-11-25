@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doisongso.vn",
+  "siteId": "doisongso.vn",
+  "registrableDomain": "doisongso.vn",
+  "homepage": "https://doisongso.vn/",
+  "allowedHosts": [
+    "doisongso.vn",
+    "www.doisongso.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "NASA hé lộ máy bay thử nghiệm X-70 Fractal đầy bí ẩn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Sốt xuất huyết vượt 170.000 ca, chuyên gia cảnh báo không thể chỉ trông chờ diệt muỗi",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:39.857Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doisongso.vn/so-hoa/nasa-he-lo-may-bay-thu-nghiem-x-70-fractal-day-bi-an.html",
+      "https://doisongso.vn/suc-khoe/sot-xuat-huyet-vuot-170.000-ca-chuyen-gia-canh-bao-khong-the-chi-trong-cho-diet-muoi.html",
+      "https://doisongso.vn/kham-pha/125-tac-pham-my-thuat-ket-noi-ban-sac-va-sang-tao-duong-dai.html",
+      "https://doisongso.vn/van-hoa/giu-sac-hoa-mao-ga-trong-doi-song-nguoi-cong-o-muong-cha.html",
+      "https://doisongso.vn/giao-duc/dieu-chinh-thoi-diem-kiem-tra-chuyen-nganh-giam-ap-luc-cho-nha-truong.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doisongso.vn/",
+    "categories": [
+      "https://doisongso.vn/thoi-su",
+      "https://doisongso.vn/emagazine",
+      "https://doisongso.vn/giao-duc",
+      "https://doisongso.vn/kinh-doanh",
+      "https://doisongso.vn/ocop?isFeatured=1",
+      "https://doisongso.vn/kinh-doanh/doanh-nghiep",
+      "https://doisongso.vn/giai-tri",
+      "https://doisongso.vn/the-thao",
+      "https://doisongso.vn/so-hoa",
+      "https://doisongso.vn/kham-pha",
+      "https://doisongso.vn/kham-pha/du-lich",
+      "https://doisongso.vn/van-hoa",
+      "https://doisongso.vn/van-hoa/doi-song",
+      "https://doisongso.vn/moi-truong",
+      "https://doisongso.vn/suc-khoe",
+      "https://doisongso.vn/video",
+      "https://doisongso.vn/kinh-doanh/bat-dong-san"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doisongso.vn",
+    "checkedAt": "2026-11-09T03:57:02.713Z",
+    "url": "https://doisongso.vn/so-hoa/nasa-he-lo-may-bay-thu-nghiem-x-70-fractal-day-bi-an.html",
+    "finalUrl": "https://doisongso.vn/so-hoa/nasa-he-lo-may-bay-thu-nghiem-x-70-fractal-day-bi-an.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1894,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "doisongso.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 34,
+    "checkedArticleUrls": 38,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 20,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 193,
+        "passed": 32,
+        "distinctHashes": 25
+      },
+      {
+        "name": "longform",
+        "discovered": 4,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 12,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doisongso.vn/giao-duc/hang-nghin-hoc-sinh-tai-tp-hue-nghi-hoc-de-ung-pho-mua-lon-va-ngap-lut.html",
+      "https://doisongso.vn/kham-pha/trien-lam-quoc-tu-giam-thang-long-lan-toa-gia-tri-dao-hoc-trong-cong-dong.html",
+      "https://doisongso.vn/giao-duc/truong-chuyen-sap-bo-tuyen-sinh-theo-tung-mon-hoc-sinh-duoc-chon-mon-chuyen-sau-sau-mot-hoc-ky.html",
+      "https://doisongso.vn/giao-duc/dai-hoc-quang-binh-can-tap-trung-dao-tao-nguon-nhan-luc-chat-luong-cao.html",
+      "https://doisongso.vn/thoi-su/trien-khai-hieu-qua-trao-doi-ly-luan-thuong-xuyen-giua-dang-cong-san-viet-nam-va-dang-cong-san-nhat-ban.html",
+      "https://doisongso.vn/kham-pha/duong-sat-tung-uu-dai-giam-gia-ve-nhieu-doan-tau-du-lich.html",
+      "https://doisongso.vn/van-hoa/nguoi-dan-ha-noi-mac-ao-mua-chan-gio-co-ro-trong-cai-ret-dau-mua.html",
+      "https://doisongso.vn/giai-tri/forbes-neu-ten-nghe-si-giau-thu-3-the-gioi.html",
+      "https://doisongso.vn/kinh-doanh/thuc-pham-nhap-khau-sap-thoat-canh-nam-cho-o-cua-khau-doanh-nghiep-nao-duoc-uu-tien-.html",
+      "https://doisongso.vn/thoi-su/trung-quoc-gia-han-dinh-chien-thuong-mai-voi-my-them-hai-thang.html",
+      "https://doisongso.vn/giai-tri/forbes-neu-ten-nghe-si-giau-thu-3-the-gioi.html?categoryId=1642247",
+      "https://doisongso.vn/giai-tri/dac-sac-chuong-trinh-nghe-thuat-ky-niem-950-nam-quoc-tu-giam.html",
+      "https://doisongso.vn/giai-tri/khoi-chieu-phim-co-kinh-phi-500-trieu-usd-ve-thien-su-thi-ramayana-.html",
+      "https://doisongso.vn/giai-tri/ai-nhai-giong-nghe-si-ranh-gioi-nao-cho-su-sang-tao-.html",
+      "https://doisongso.vn/giai-tri/dem-nghe-thuat-ky-niem-195-nam-ngay-thanh-lap-tinh-lang-son-ban-sac-hoi-tu-va-khat-vong-vuon-xa-.html",
+      "https://doisongso.vn/the-thao/-diem-bao-man-utd-xuong-hang-sau-52-nam.html?categoryId=1642246",
+      "https://doisongso.vn/the-thao/hlv-dau-tien-mat-viec-o-ngoai-hang-anh-mua-nay.html?categoryId=1642246",
+      "https://doisongso.vn/the-thao/u23-viet-nam-bien-dong-nhan-su-truoc-them-gia-lai-vtv-cup-2026.html?categoryId=1642246",
+      "https://doisongso.vn/the-thao/u17-bi-gay-sot-voi-doi-hinh-nhieu-sao-tre.html?categoryId=1642246",
+      "https://doisongso.vn/the-thao/sunderland-thang-chelsea-3-tran-lien-tiep-sau-25-nam.html?categoryId=1642246",
+      "https://doisongso.vn/van-hoa/nguoi-dan-ha-noi-mac-ao-mua-chan-gio-co-ro-trong-cai-ret-dau-mua.html?categoryId=1642243",
+      "https://doisongso.vn/van-hoa/lao-cai-chu-dong-ung-pho-ret-dam-ret-hai-bao-ve-nguoi-dan-va-vat-nuoi.html?categoryId=1642243",
+      "https://doisongso.vn/van-hoa/mo-rong-dien-dong-bao-hiem-xa-hoi-bat-buoc-tranh-tang-ganh-nang-cho-lao-dong-thu-nhap-bap-benh.html?categoryId=1642243",
+      "https://doisongso.vn/van-hoa/mua-lon-lam-sap-mo-cau-tren-tuyen-giao-thong-huyet-mach-o-thanh-hoa.html?categoryId=1642243",
+      "https://doisongso.vn/van-hoa/giu-sac-hoa-mao-ga-trong-doi-song-nguoi-cong-o-muong-cha.html?categoryId=1642243",
+      "https://doisongso.vn/suc-khoe/de-xuat-dung-tien-thue-ruou-bia-thuoc-la-de-kham-sang-loc-benh-cho-nguoi-dan.html",
+      "https://doisongso.vn/suc-khoe/dan-van-phong-dang-dau-doc-doi-mat-moi-ngay-8-tieng-truoc-man-hinh-ma-khong-biet.html",
+      "https://doisongso.vn/suc-khoe/who-canh-bao-chung-coronavirus-moi-pj.2.1-de-nham-lan-voi-cum.html?categoryId=1642242",
+      "https://doisongso.vn/suc-khoe/sot-xuat-huyet-vuot-170.000-ca-chuyen-gia-canh-bao-khong-the-chi-trong-cho-diet-muoi.html",
+      "https://doisongso.vn/suc-khoe/loat-thuc-pham-cai-thien-chung-hay-quen-o-phu-nu-trung-nien.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 4
+    },
+    "checkedAt": "2026-11-10T09:15:15.079Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doisongso.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhanhoinhap.vn",
+  "siteId": "doanhnhanhoinhap.vn",
+  "registrableDomain": "doanhnhanhoinhap.vn",
+  "homepage": "https://doanhnhanhoinhap.vn/",
+  "allowedHosts": [
+    "doanhnhanhoinhap.vn",
+    "www.doanhnhanhoinhap.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Sau đỉnh lãi suất, điều gì quyết định sức hấp dẫn của tài sản?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:37.562Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnhanhoinhap.vn/sau-dinh-lai-suat-dieu-gi-quyet-dinh-suc-hap-dan-cua-tai-san/",
+      "https://doanhnhanhoinhap.vn/chuyen-co-phieu-tren-hnx-ve-hose-co-hoi-moi-cua-dong-tien-va-thanh-khoan/",
+      "https://doanhnhanhoinhap.vn/siet-hang-lau-tren-khong-gian-mang/",
+      "https://doanhnhanhoinhap.vn/giai-ba-mon-phoi-hop-ironman-70-3-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long/",
+      "https://doanhnhanhoinhap.vn/dien-dan-kinh-te-tu-nhan-viet-nam-2026-ket-noi-noi-luc-vung-dong-luc-de-doanh-nghiep-viet-but-pha/"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnhanhoinhap.vn/",
+    "categories": [
+      "https://doanhnhanhoinhap.vn/category/dau-tu/",
+      "https://doanhnhanhoinhap.vn/category/nhip-cau-tieu-dung/",
+      "https://doanhnhanhoinhap.vn/category/nguoi-tieu-dung/",
+      "https://doanhnhanhoinhap.vn/category/kinh-te/",
+      "https://doanhnhanhoinhap.vn/category/doanh-nhan/",
+      "https://doanhnhanhoinhap.vn/category/doi-song/",
+      "https://doanhnhanhoinhap.vn/category/du-lich/",
+      "https://doanhnhanhoinhap.vn/bat-dong-san/",
+      "https://doanhnhanhoinhap.vn/category/van-hoa-giao-duc/",
+      "https://doanhnhanhoinhap.vn/category/cong-nghe/",
+      "https://doanhnhanhoinhap.vn/category/giai-tri/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnhanhoinhap.vn",
+    "checkedAt": "2026-11-09T03:57:01.690Z",
+    "url": "https://doanhnhanhoinhap.vn/sau-dinh-lai-suat-dieu-gi-quyet-dinh-suc-hap-dan-cua-tai-san/",
+    "finalUrl": "https://doanhnhanhoinhap.vn/sau-dinh-lai-suat-dieu-gi-quyet-dinh-suc-hap-dan-cua-tai-san/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9302,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:07.952Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnhanhoinhap.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnhanhoinhap.vn",
+    "parsedArticles": 12,
+    "distinctHashes": 12,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesAttempted": 11,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 140,
+    "checkedArticleUrls": 12,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 140,
+        "attempted": 12,
+        "passed": 12,
+        "distinctContents": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

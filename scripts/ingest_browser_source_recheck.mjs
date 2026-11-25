@@ -1,0 +1,31 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const root = new URL('../outputs/source-audit-2026-10-22/', import.meta.url);
+const input = process.argv[2];
+assert(input, 'Pass the downloaded Facebook JSONL path');
+const queue = JSON.parse(await fs.readFile(new URL('facebook-browser-remaining.json', root), 'utf8'));
+const byIndex = new Map(queue.map(row => [row.index, row]));
+const log = new URL('browser-recheck.jsonl', root);
+const old = (await fs.readFile(log, 'utf8')).split('\n').filter(Boolean).map(JSON.parse);
+const fingerprint = row => JSON.stringify([row.index, row.checkedAt, row.keys]);
+const seen = new Set(old.map(fingerprint));
+const rows = (await fs.readFile(input, 'utf8')).split('\n').filter(Boolean).map(JSON.parse);
+const accepted = [];
+const fields = ['index','keys','channel','originalLink','name','id','url','type','status','note','identityEvidence','checkedAt','browserMethod'];
+for (const row of rows) {
+  const expected = byIndex.get(row.index);
+  assert(expected, 'Downloaded row is outside the approved queue');
+  assert.equal(row.channel, 'Facebook');
+  assert.equal(row.originalLink, expected.originalLink);
+  assert.deepEqual(row.keys, expected.keys);
+  assert(['live','die','chưa xác định'].includes(row.status));
+  assert(!row.id || typeof row.id === 'string' && /^\d+$/.test(row.id));
+  if (row.url) assert(/(^|\.)facebook\.com$/.test(new URL(row.url).hostname));
+  assert(Number.isFinite(Date.parse(row.checkedAt)));
+  if (seen.has(fingerprint(row))) continue;
+  seen.add(fingerprint(row));
+  accepted.push(Object.fromEntries(fields.filter(k => Object.hasOwn(row,k)).map(k => [k,row[k]])));
+}
+if (accepted.length) await fs.appendFile(log, accepted.map(row => JSON.stringify(row)).join('\n')+'\n');
+const stats = {downloaded:rows.length, added:accepted.length, live:rows.filter(r=>r.status==='live').length, withId:rows.filter(r=>r.id).length, unknown:rows.filter(r=>r.status==='chưa xác định').length};
+console.log(JSON.stringify(stats));

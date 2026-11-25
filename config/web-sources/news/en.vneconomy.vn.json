@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "siteName": "en.vneconomy.vn",
+  "siteId": "en.vneconomy.vn",
+  "registrableDomain": "vneconomy.vn",
+  "homepage": "https://en.vneconomy.vn/",
+  "allowedHosts": [
+    "en.vneconomy.vn",
+    "www.en.vneconomy.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Greater favor for bilateral trade",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail__content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:59.605Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://en.vneconomy.vn/greater-favor-for-bilateral-trade.htm",
+      "https://en.vneconomy.vn/elevating-cooperation-further.htm",
+      "https://en.vneconomy.vn/respect-for-the-constitution-and-law-a-driver-of-national-development.htm",
+      "https://en.vneconomy.vn/top-leader-and-spouse-depart-for-official-visit-to-japan.htm",
+      "https://en.vneconomy.vn/vietnam-elected-to-key-intellectual-property-leadership-posts-at-wipo-and-apec.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://en.vneconomy.vn/",
+    "categories": [
+      "https://en.vneconomy.vn/vet-exclusive.htm",
+      "https://en.vneconomy.vn/vietnam-today.htm",
+      "https://en.vneconomy.vn/investment.htm",
+      "https://en.vneconomy.vn/green-economy.htm",
+      "https://en.vneconomy.vn/business.htm",
+      "https://en.vneconomy.vn/digital-biz.htm",
+      "https://en.vneconomy.vn/banking-finance.htm",
+      "https://en.vneconomy.vn/property.htm",
+      "https://en.vneconomy.vn/biz-traveler.htm",
+      "https://en.vneconomy.vn/society.htm",
+      "https://en.vneconomy.vn/interactive.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "en.vneconomy.vn",
+    "checkedAt": "2026-11-09T03:57:04.024Z",
+    "url": "https://en.vneconomy.vn/greater-favor-for-bilateral-trade.htm",
+    "finalUrl": "https://en.vneconomy.vn/greater-favor-for-bilateral-trade.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7620,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:14.071Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/en.vneconomy.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "en.vneconomy.vn",
+    "parsedArticles": 15,
+    "distinctHashes": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesAttempted": 11,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 88,
+    "checkedArticleUrls": 15,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 86,
+        "attempted": 13,
+        "passed": 13,
+        "distinctContents": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "longform",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "siteName": "qltt.vn",
+  "siteId": "qltt.vn",
+  "registrableDomain": "qltt.vn",
+  "homepage": "https://qltt.vn/",
+  "allowedHosts": [
+    "qltt.vn",
+    "www.qltt.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tăng cường chống buôn lậu và gian lận thương mại mặt hàng đường cát",
+    "strategy": "selector",
+    "selector": "h1.article-detail-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-detail.fw",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:14:02.088Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://qltt.vn/tang-cuong-chong-buon-lau-va-gian-lan-thuong-mai-mat-hang-duong-cat-103261.html",
+      "https://qltt.vn/vdv-cuc-quan-ly-va-phat-trien-thi-truong-trong-nuoc-dat-giai-cao-tai-moit-pickleball-championship-2025-103260.html",
+      "https://qltt.vn/phu-tho-tieu-huy-gan-6000-doi-giay-gia-mao-nhan-hieu-nike-adidas-103259.html",
+      "https://qltt.vn/gia-xang-bat-tang-tro-lai-ron-95-vuot-20000-donglit-103258.html",
+      "https://qltt.vn/bo-cong-thuong-ban-hanh-thong-tu-sua-doi-bo-sung-bai-bo-mot-so-quy-dinh-ve-kinh-doanh-xang-dau-103257.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://qltt.vn/",
+    "categories": [
+      "https://qltt.vn/bao-ve-nen-tang-tu-tuong-dang",
+      "https://qltt.vn/tin-tuc",
+      "https://qltt.vn/tin-tuc/hoat-dong",
+      "https://qltt.vn/tin-tuc/trong-nuoc",
+      "https://qltt.vn/tin-tuc/quoc-te",
+      "https://qltt.vn/cong-thuong",
+      "https://qltt.vn/cong-thuong/cong-nghiep-thuong-mai",
+      "https://qltt.vn/cong-thuong/thuong-mai-dien-tu",
+      "https://qltt.vn/cong-thuong/gia-ca-hang-hoa",
+      "https://qltt.vn/quan-ly-thi-truong-24h",
+      "https://qltt.vn/quan-ly-thi-truong-24h/xay-dung-luc-luong",
+      "https://qltt.vn/quan-ly-thi-truong-24h/kiem-soat-thi-truong",
+      "https://qltt.vn/nguoi-tot-viec-tot",
+      "https://qltt.vn/nguoi-tot-viec-tot/dien-hinh-tien-tien",
+      "https://qltt.vn/bao-ve-nguoi-tieu-dung",
+      "https://qltt.vn/bao-ve-nguoi-tieu-dung/doanh-nghiep-nguoi-dan",
+      "https://qltt.vn/bao-ve-nguoi-tieu-dung/an-toan-thuc-pham",
+      "https://qltt.vn/kinh-te",
+      "https://qltt.vn/chinh-sach-phap-luat",
+      "https://qltt.vn/chinh-sach-phap-luat/tu-van-chinh-sach",
+      "https://qltt.vn/chinh-sach-phap-luat/van-ban-chinh-sach",
+      "https://qltt.vn/media",
+      "https://qltt.vn/media/tin-video",
+      "https://qltt.vn/media/ban-tin-qltt",
+      "https://qltt.vn/media/ban-tin-cong-thuong",
+      "https://qltt.vn/media/van-hoa-xa-hoi"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "qltt.vn",
+    "checkedAt": "2026-11-09T03:57:23.361Z",
+    "url": "https://qltt.vn/tang-cuong-chong-buon-lau-va-gian-lan-thuong-mai-mat-hang-duong-cat-103261.html",
+    "finalUrl": "https://qltt.vn/tang-cuong-chong-buon-lau-va-gian-lan-thuong-mai-mat-hang-duong-cat-103261.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3019,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:00.496Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/qltt.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "qltt.vn",
+    "parsedArticles": 9,
+    "distinctHashes": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 26,
+    "categoriesAttempted": 26,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 316,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 276,
+        "attempted": 5,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "video",
+        "discovered": 40,
+        "attempted": 6,
+        "passed": 6,
+        "distinctContents": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(9)"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 95
+      },
+      "body": {
+        "strategy": "jsonld_media"
+      },
+      "additionalMediaStrategy": "jsonld"
+    }
+  ]
+}

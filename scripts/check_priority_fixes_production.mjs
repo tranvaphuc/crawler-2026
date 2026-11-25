@@ -1,0 +1,13 @@
+import 'dotenv/config';import fs from 'node:fs/promises';
+const base=process.env.DOMAIN_FOR_API.startsWith('http')?process.env.DOMAIN_FOR_API:'https://'+process.env.DOMAIN_FOR_API;const out='outputs/production-api-fixes-2026-10-24',results=[];
+const cases=[
+ ['instagram-source-resolve','/api/social/resource/resolve',{url:'https://www.instagram.com/shopmichaelangelos/',kind:'source'}],
+ ['instagram-source-url','/api/social/source/posts',{url:'https://www.instagram.com/shopmichaelangelos/',count:2,limit:2}],
+ ['instagram-source-id','/api/social/source/posts',{id:'6920202806',platform:'instagram',type:'snsTopic',index:'master202641',count:2,limit:2}],
+ ['facebook-page-source','/api/social/source/posts',{url:'https://www.facebook.com/1794121197534939',sourceType:'page',count:2,limit:2}],
+ ['facebook-user-source','/api/social/source/posts',{url:'https://www.facebook.com/100060118693168',sourceType:'user',count:2,limit:2}],
+ ['facebook-group-source','/api/social/source/posts',{url:'https://www.facebook.com/groups/1035763806507733',sourceType:'group',count:2,limit:2}],
+ ['facebook-comments','/api/social/post/comments',{url:'https://www.facebook.com/100201629178552/posts/1131594819369667',count:3,limit:3,includeReplies:true,order:'oldest'}],
+ ['facebook-comment-info','/api/social/comment/info',{id:'1131594819369667_2162351674698872',platform:'facebook',type:'fbPageComment',index:'master202643'}],
+];const blocked=new Set();
+try{for(const[name,endpoint,body]of cases){if(process.env.PRIORITY_PLATFORM&&!name.startsWith(process.env.PRIORITY_PLATFORM))continue;const platform=name.split('-')[0];if(blocked.has(platform)){results.push({name,status:'unstarted',reason:'PLATFORM_GATE'});continue;}const start=Date.now();const res=await fetch(base+endpoint,{method:'POST',headers:{authorization:'Bearer '+process.env.AUTHEN_KEY_FOR_DOMAIN,'content-type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(130000)}),d=await res.json();const record={name,httpStatus:res.status,status:d.status,reason:d.reason||null,id:d.id||d.source?.id||d.comment?.id||null,count:d.count??null,source:d.source||null,authorIds:[...new Set((d.items||[]).map(x=>x.author?.id).filter(Boolean))],systemIdentity:d.systemIdentity||null,coverage:d.coverage||null,ordering:d.ordering||null,transport:d.transport||null,elapsedMs:Date.now()-start};results.push(record);await fs.writeFile(out+'/'+name+'-production.json',JSON.stringify(d,null,2));await fs.writeFile(out+'/priority-production-'+(process.env.PRIORITY_PLATFORM||'all')+'-report.json',JSON.stringify({checkedAt:new Date().toISOString(),results},null,2));console.log(JSON.stringify(record));if(['auth_required','security_checkpoint','rate_limited'].includes(d.status))blocked.add(platform);}}finally{}

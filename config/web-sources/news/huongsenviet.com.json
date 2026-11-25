@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "siteName": "huongsenviet.com",
+  "siteId": "huongsenviet.com",
+  "registrableDomain": "huongsenviet.com",
+  "homepage": "https://huongsenviet.com/",
+  "allowedHosts": [
+    "huongsenviet.com",
+    "www.huongsenviet.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article > h1"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://huongsenviet.com/feed/"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#publisher-full-rss-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:31.110Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://huongsenviet.com/bao-dam-lo-trinh-mo-rong-bao-phu-bhxh-phu-hop/",
+      "https://huongsenviet.com/cuc-an-ninh-mang-canh-bao-thong-tin-suy-dien-ve-du-tru-nhu-yeu-pham-trong-72-gio/",
+      "https://huongsenviet.com/nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-2026/",
+      "https://huongsenviet.com/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027/",
+      "https://huongsenviet.com/lay-nguoi-dan-lam-trung-tam-trong-cong-tac-truyen-thong-chinh-sach/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/huongsenviet.com"
+  },
+  "discovery": {
+    "homepage": "https://huongsenviet.com/feed/",
+    "categories": [
+      "https://huongsenviet.com/category/tin-nong/",
+      "https://huongsenviet.com/category/dien-dan/",
+      "https://huongsenviet.com/category/cau-chuyen/",
+      "https://huongsenviet.com/category/chong-dbhb/",
+      "https://huongsenviet.com/category/ly-luan/",
+      "https://huongsenviet.com/category/video/",
+      "https://huongsenviet.com/category/doi-thoai/",
+      "https://huongsenviet.com/category/sach-hay/",
+      "https://huongsenviet.com/photoshop-online/",
+      "https://huongsenviet.com/category/quoc-hoi/",
+      "https://huongsenviet.com/category/kinh-te-xa-hoi/",
+      "https://huongsenviet.com/category/bac-ho/",
+      "https://huongsenviet.com/category/dai-hoi-xiv/",
+      "https://huongsenviet.com/feed/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "huongsenviet.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 14,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 14,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 148,
+        "passed": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://huongsenviet.com/quoc-hoi-thao-luan-ve-du-an-luat-phat-trien-cong-nghiep-van-hoa/",
+      "https://huongsenviet.com/phu-nhan-tong-bi-thu-chu-tich-nuoc-du-cac-hoat-dong-giao-luu-van-hoa-nghe-thuat-tai-nhat-ban/",
+      "https://huongsenviet.com/chuyen-tham-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tao-da-cho-hop-tac-viet-nam-nhat-ban/",
+      "https://huongsenviet.com/bao-dam-lo-trinh-mo-rong-bao-phu-bhxh-phu-hop/",
+      "https://huongsenviet.com/cuc-an-ninh-mang-canh-bao-thong-tin-suy-dien-ve-du-tru-nhu-yeu-pham-trong-72-gio/",
+      "https://huongsenviet.com/bao-dam-tinh-thong-nhat-kha-thi-cua-luat-dat-dai-sua-doi/",
+      "https://huongsenviet.com/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban/",
+      "https://huongsenviet.com/san-bay-long-thanh-buoc-vao-giai-doan-nuoc-rut-truoc-ngay-khai-thac/",
+      "https://huongsenviet.com/ky-hop-thu-2-quoc-hoi-khoa-xvi-hoan-thien-mang-luoi-duong-bo-cao-toc-theo-quy-hoach/",
+      "https://huongsenviet.com/thuong-truc-ban-bi-thu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026/",
+      "https://huongsenviet.com/vinh-danh-34-nha-giao-tieu-bieu-tai-chuong-trinh-chia-se-cung-thay-co/",
+      "https://huongsenviet.com/to-cong-nghe-so-cong-dong-pho-cap-ky-nang-so-den-nguoi-dan-toc-thieu-so-va-mien-nui/",
+      "https://huongsenviet.com/lop-hoc-dac-biet-o-vung-bien-quang-tri-62-tuoi-lan-dau-tap-viet-ten-minh/",
+      "https://huongsenviet.com/lan-toa-nhung-viec-lam-thiet-thuc/",
+      "https://huongsenviet.com/tiep-tuc-lan-toa-tinh-than-nhan-ai-ket-noi-them-nhieu-nguoi-cung-tham-gia-hien-mau-hoa-hop-phenotype/",
+      "https://huongsenviet.com/minh-chung-dung-dan-ve-duong-loi-lanh-dao-va-cong-tac-can-bo/",
+      "https://huongsenviet.com/tu-duy-chien-luoc-moi-ve-bao-dam-quyen-con-nguoi/",
+      "https://huongsenviet.com/vi-the-uy-tin-viet-nam-gia-tang-tren-truong-quoc-te-bac-bo-luan-dieu-xuyen-tac-ve-duong-loi-doi-ngoai-cua-dang/",
+      "https://huongsenviet.com/thuc-tien-sinh-dong-luon-la-cau-tra-loi-thiet-thuc-nhat/",
+      "https://huongsenviet.com/khong-de-tinh-trang-duong-loi-dung-nhung-thuc-thi-meo-mo/",
+      "https://huongsenviet.com/van-dung-phuong-phap-ho-chi-minh-kien-dinh-nguyen-tac-sau-sat-thuc-tien/",
+      "https://huongsenviet.com/lay-xay-lam-goc-quan-tri-chu-dong-de-bao-ve-nen-tang-tu-tuong-cua-dang/",
+      "https://huongsenviet.com/xay-dung-mo-hinh-chi-bo-tham-muu-chien-luoc-kieu-mau-trong-dang-bo/",
+      "https://huongsenviet.com/bai-hoc-cach-mang-thang-muoi-nga-qua-tac-pham-duong-kach-menh/",
+      "https://huongsenviet.com/chi-thi-07-ct-tw-tiep-noi-va-phat-huy-gia-tri-di-san-ho-chi-minh-trong-giai-doan-moi/",
+      "https://huongsenviet.com/viet-nam-lao-thuc-day-hop-tac-chuyen-doi-xanh-kinh-te-so/",
+      "https://huongsenviet.com/dak-lak-ho-tro-100-muc-dong-bhyt-cho-nguoi-cao-tuoi/",
+      "https://huongsenviet.com/phuong-vinh-yen-xay-dung-phong-cach-lam-viec-khoa-hoc-gan-dan-va-vi-dan/",
+      "https://huongsenviet.com/cac-mo-hinh-ung-dung-cong-nghe-thay-doi-tu-duy-san-xuat-mien-nui/",
+      "https://huongsenviet.com/ket-noi-adn-than-nhan-tim-lai-danh-tinh-liet-si/",
+      "https://huongsenviet.com/khanh-hoa-don-cac-anh-hung-liet-si-tro-ve-trong-long-dat-me/",
+      "https://huongsenviet.com/lam-dong-xa-ham-thuan-nam-xay-dung-nha-cho-ho-ngheo/",
+      "https://huongsenviet.com/phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-le-ky-niem-30-nam-ngay-thanh-lap-hoi-dong-ly-luan-trung-uong/",
+      "https://huongsenviet.com/hoi-dong-ly-luan-trung-uong-30-nam-ket-tinh-tri-tue-gop-phan-nang-tam-cong-tac-ly-luan-cua-dang/",
+      "https://huongsenviet.com/thuc-hanh-dao-duc-liem-chinh-tu-chi-bo-suc-de-khang-noi-sinh-cua-dang-trong-ky-nguyen-moi/",
+      "https://huongsenviet.com/moi-tac-pham-du-thi-la-mot-tieng-noi-khang-dinh-niem-tin-ly-tuong-cach-mang/",
+      "https://huongsenviet.com/thuong-truc-ban-bi-thu-du-le-trao-giai-cuoc-thi-chinh-luan-ve-bao-ve-nen-tang-tu-tuong-cua-dang-lan-thu-sau/",
+      "https://huongsenviet.com/tu-do-ngon-luan-phai-di-cung-trach-nhiem/",
+      "https://huongsenviet.com/gan-80-nam-tuoi-dang-lang-le-gieo-mam-am-tham-truyen-lua/",
+      "https://huongsenviet.com/mot-nam-san-duoi-binh-minh-o-cau-ba-son/",
+      "https://huongsenviet.com/ngay-hoi-viet-phuc-bach-hoa-bo-hanh-ruc-ro-sac-mau-di-san/",
+      "https://huongsenviet.com/hon-ba-lam-dong-vien-ngoc-hoang-so-giua-bien-xanh/",
+      "https://huongsenviet.com/len-voi-nam-nghiep-ban-mong-tren-dinh-troi-tay-bac/",
+      "https://huongsenviet.com/viet-nam-lot-top-4-nhung-quoc-gia-co-nen-am-thuc-hap-dan-nhat-the-gioi-2025/",
+      "https://huongsenviet.com/thu-doan-danh-trao-khai-niem-vo-nghia-va-lac-long/",
+      "https://huongsenviet.com/khong-the-phu-nhan-ban-chat-nhan-van-cua-cac-chinh-sach-an-sinh/",
+      "https://huongsenviet.com/dung-danh-trao-khai-niem-de-xuyen-tac-chu-truong-vi-dan/",
+      "https://huongsenviet.com/hoc-gia-indonesia-dinh-vi-vai-tro-moi-cua-viet-nam-tren-cau-truc-an-ninh-chau-a/",
+      "https://huongsenviet.com/thuc-tien-phat-trien-cua-viet-nam-phan-bac-danh-gia-ve-tu-do-bao-chi/",
+      "https://huongsenviet.com/boc-tran-luan-dieu-xuyen-tac-chinh-sach-thue-la-tan-thu/",
+      "https://huongsenviet.com/lan-toa-gia-tri-ly-luan-tu-cuon-sach-cua-co-chu-tich-nuoc-tran-dai-quang/",
+      "https://huongsenviet.com/nhung-noi-dung-co-ban-trong-van-kien-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiv-cua-dang-hoi-va-dap/",
+      "https://huongsenviet.com/ra-mat-cuon-sach-suc-manh-cua-dan-toc-viet-nam-trong-su-nghiep-xay-dung-va-bao-ve-to-quoc-cua-dai-tuong-luong-cuong/",
+      "https://huongsenviet.com/tu-nghi-quyet-71-den-yeu-cau-doi-moi-toan-dien-dao-tao-nhan-luc-nghe/",
+      "https://huongsenviet.com/so-huu-toan-dan-ve-dat-dai-tat-yeu-lich-su-voi-viet-nam/",
+      "https://huongsenviet.com/kien-dinh-quan-diem-dat-dai-thuoc-so-huu-toan-dan-do-nha-nuoc-dai-dien-quan-ly-khong-phai-la-su-thut-lui-lich-su-2/",
+      "https://huongsenviet.com/nhan-dien-va-dau-tranh-voi-quan-diem-sai-trai-ve-so-huu-dat-dai/",
+      "https://huongsenviet.com/nhin-lai-chuyen-tham-viet-nam-cua-tong-thong-hoa-ky-joe-biden/",
+      "https://huongsenviet.com/chuong-moi-trong-quan-he-viet-nam-hoa-ky-2/",
+      "https://huongsenviet.com/nhung-mai-am-tu-su-se-chia/",
+      "https://huongsenviet.com/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-ky-niem-80-nam-ngay-truyen-thong-luc-luong-vu-trang-quan-khu-2/",
+      "https://huongsenviet.com/doi-ngoai-la-nhiem-vu-trong-yeu-thuong-xuyen-gan-lien-voi-quoc-phong-va-an-ninh/",
+      "https://huongsenviet.com/hoc-bac-moi-ngay-co-che-thong-thoang-hon-thi-kiem-soat-quyen-luc-phai-chat-che-hon/",
+      "https://huongsenviet.com/dai-hoi-xiv-cua-dang-dau-moc-quan-trong-trong-tien-trinh-phat-trien-dat-nuoc/",
+      "https://huongsenviet.com/tong-bi-thu-nguyen-phu-trong-trong-tim-nguoi-dan-dong-hoi/",
+      "https://huongsenviet.com/nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-2026/",
+      "https://huongsenviet.com/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027/",
+      "https://huongsenviet.com/lay-nguoi-dan-lam-trung-tam-trong-cong-tac-truyen-thong-chinh-sach/",
+      "https://huongsenviet.com/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-noi-di-san-lap-hien-xay-dung-dat-nuoc-phon-vinh-van-minh-hanh-phuc/",
+      "https://huongsenviet.com/ky-hop-thu-2-quoc-hoi-khoa-xvi-day-manh-phan-cap-phan-quyen-trong-lua-chon-nha-thau/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:41.358Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/huongsenviet.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "httpAdapter": "declared_public_wordpress_post_required",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.366Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://huongsenviet.com/tu-tuong-ho-chi-minh-soi-sang-hanh-trinh-phat-trien-dat-nuoc/",
+      "https://huongsenviet.com/ket-luan-114-kl-tw-thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong/",
+      "https://huongsenviet.com/thu-tuong-le-minh-hung-tham-gia-tra-loi-chat-van-tai-quoc-hoi/"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  },
+  "nativePublicationAdapter": "owned_wordpress_full_rss",
+  "description": {
+    "strategy": "native_lead",
+    "scope": "article",
+    "selector": "#publisher-full-rss-content p"
+  },
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T06:43:22.221Z",
+    "method": "publisher_full_content_encoded_rss",
+    "proofs": [
+      {
+        "url": "https://huongsenviet.com/hoi-sinh-song-nhue-thanh-truc-canh-quan-huyet-mach/",
+        "contentHash": "ab15508017d7dbdfb02178179aff03fe133ee7f78adea9265235175d9c2a5b74",
+        "description": "Sau nhiều năm ô nhiễm nghiêm trọng, sông Nhuệ được TP Hà Nội lên kế hoạch cải tạo với tổng vốn hơn 75.000 tỷ đồng, kỳ vọng hồi sinh dòng sông thành trục cảnh quan, hạ tầng và không gian phát triển mới của Thủ đô.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://huongsenviet.com/hoi-sinh-song-nhue-thanh-truc-canh-quan-huyet-mach/",
+          "publishedDate": "2026-11-17T04:38:44.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        },
+        "feedUrl": "https://huongsenviet.com/feed/",
+        "feedSha256": "1a4d3bcfbb36839a90c5896f47e5a8a24942af272b15f2ea45b075f9e5951fa9",
+        "bodyLength": 6080
+      },
+      {
+        "url": "https://huongsenviet.com/chuyen-doi-cong-nang-xu-ly-nhieu-co-so-nha-dat-doi-du/",
+        "contentHash": "23a8647db843690dc4eece9fde21b9b1163be4f77821f528ddf2becfc3c14404",
+        "description": "Thực hiện chỉ đạo của Thủ tướng Chính phủ về sắp xếp, xử lý và khai thác hiệu quả các cơ sở nhà, đất dôi dư sau sắp xếp đơn vị hành chính, UBND thành phố Đà Nẵng có chủ trương triển khai các phương án bố trí, chuyển đổi công năng, sử dụng một số khu đất, công sở.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://huongsenviet.com/chuyen-doi-cong-nang-xu-ly-nhieu-co-so-nha-dat-doi-du/",
+          "publishedDate": "2026-11-17T04:34:35.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        },
+        "feedUrl": "https://huongsenviet.com/feed/",
+        "feedSha256": "1a4d3bcfbb36839a90c5896f47e5a8a24942af272b15f2ea45b075f9e5951fa9",
+        "bodyLength": 3551
+      },
+      {
+        "url": "https://huongsenviet.com/tong-bi-thu-chu-tich-nuoc-to-lam-den-trung-quoc-bat-dau-tham-du-tuan-le-cap-cao-apec-lan-thu-33/",
+        "contentHash": "92009ce9080ca03f101ecb319f9b91a0606fb10bd39ff1e5c16900cb3b713bc5",
+        "description": "Sáng 17/11/2026, Tổng Bí thư, Chủ tịch nước Tô Lâm cùng Phu nhân Ngô Phương Ly và Đoàn đại biểu cấp cao Việt Nam đến thành phố Thâm Quyến, bắt đầu tham dự Tuần lễ cấp cao Diễn đàn Hợp tác kinh tế châu Á – Thái Bình Dương (APEC) lần thứ 33.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://huongsenviet.com/tong-bi-thu-chu-tich-nuoc-to-lam-den-trung-quoc-bat-dau-tham-du-tuan-le-cap-cao-apec-lan-thu-33/",
+          "publishedDate": "2026-11-17T04:30:05.000Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        },
+        "feedUrl": "https://huongsenviet.com/feed/",
+        "feedSha256": "1a4d3bcfbb36839a90c5896f47e5a8a24942af272b15f2ea45b075f9e5951fa9",
+        "bodyLength": 4516
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null
+}

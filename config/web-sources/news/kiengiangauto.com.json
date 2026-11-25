@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kiengiangauto.com",
+  "siteId": "kiengiangauto.com",
+  "registrableDomain": "kiengiangauto.com",
+  "homepage": "https://kiengiangauto.com/",
+  "allowedHosts": [
+    "kiengiangauto.com",
+    "www.kiengiangauto.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://kiengiangauto.com/",
+    "categories": []
+  },
+  "title": {
+    "value": "Mitsubishi Destinator",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:24.959Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:15.484Z",
+    "independentHoldouts": [
+      "https://kiengiangauto.com/mitsubishi-kien-giang-truoc-ba-thang-10-2026/",
+      "https://kiengiangauto.com/mitsubishi-triton-premium-len-doi-2-cau-them-7-che-do-lai/",
+      "https://kiengiangauto.com/dai-ly-3s-mitsubishi-kien-giang/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://kiengiangauto.com/mitsubishi-destinator",
+      "https://kiengiangauto.com/mitsubishi-kien-giang-truoc-ba-thang-10-2026/",
+      "https://kiengiangauto.com/mitsubishi-triton-premium-len-doi-2-cau-them-7-che-do-lai/",
+      "https://kiengiangauto.com/dai-ly-3s-mitsubishi-kien-giang/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

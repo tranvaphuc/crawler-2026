@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giacaphe.com",
+  "siteId": "giacaphe.com",
+  "registrableDomain": "giacaphe.com",
+  "homepage": "https://giacaphe.com/",
+  "allowedHosts": [
+    "giacaphe.com",
+    "www.giacaphe.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Vĩnh Hiệp dẫn đầu xuất khẩu cà phê nhân niên vụ 2025/26",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:08.862Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://giacaphe.com/90976/vinh-hiep-dan-dau-xuat-khau-ca-phe-nhan-nien-vu-2025-26/",
+      "https://giacaphe.com/90964/bau-duc-duoc-cap-phep-du-an-ca-phe-hon-29-trieu-usd-tai-lao/",
+      "https://giacaphe.com/90982/le-hoi-ca-phe-buon-ma-thuot-2027-khang-dinh-vi-the-thu-phu-ca-phe-robusta-the-gioi/",
+      "https://giacaphe.com/90973/xuat-khau-ca-phe-viet-nam-lap-ky-luc-85-ty-usd-trong-nien-vu-2025-26/",
+      "https://giacaphe.com/32915/bao-gia-ca-phe-tu-140000d-thang/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://giacaphe.com/",
+    "categories": [
+      "https://giacaphe.com/thi-truong-ca-phe/",
+      "https://giacaphe.com/thi-truong-ca-phe/tim-hieu-thi-truong-ca-phe/",
+      "https://giacaphe.com/ca-phe-viet-nam/",
+      "https://giacaphe.com/cong-dong-y5cafe/",
+      "https://giacaphe.com/hoi-dap/",
+      "https://giacaphe.com/cong-dong-y5cafe/chia-se/",
+      "https://giacaphe.com/ca-phe-viet-nam/dien-tich-san-luong/",
+      "https://giacaphe.com/cham-soc-che-bien/cham-soc/",
+      "https://giacaphe.com/cham-soc-che-bien/che-bien/",
+      "https://giacaphe.com/hang-hoa-nong-san/",
+      "https://giacaphe.com/nong-nghiep/",
+      "https://giacaphe.com/cafe-hong-hot/",
+      "https://giacaphe.com/giao-thuong/",
+      "https://giacaphe.com/gia-ca-phe-noi-dia/",
+      "https://giacaphe.com/gia-ca-phe-truc-tuyen/",
+      "https://giacaphe.com/gia-ca-phe-brazil/",
+      "https://giacaphe.com/gia-tieu-hom-nay/",
+      "https://giacaphe.com/gia-tieu-truc-tuyen/",
+      "https://giacaphe.com/gia-cao-su-truc-tuyen/",
+      "https://giacaphe.com/gia-ca-cao-truc-tuyen/",
+      "https://giacaphe.com/gia-vang/",
+      "https://giacaphe.com/ty-gia-ngoai-te/",
+      "https://giacaphe.com/tinh-gia-arabica-sang-usd-tan/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/",
+      "https://giacaphe.com/kham-pha-ca-phe/",
+      "https://giacaphe.com/moi-cap-nhat/",
+      "https://giacaphe.com/gia-phan-bon/",
+      "https://giacaphe.com/giao-dich/tinh-muc-gia-stop-loss-khi-giao-dich-tren-vfm/",
+      "https://giacaphe.com/cong-dong-y5cafe/bao-chi-noi-ve-y5cafe/",
+      "https://giacaphe.com/bai-viet-luu-tru-y5cafe/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?giacaphe.com/(\\d{3,})/.*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "giacaphe.com",
+    "checkedAt": "2026-11-09T03:57:05.017Z",
+    "url": "https://giacaphe.com/90976/vinh-hiep-dan-dau-xuat-khau-ca-phe-nhan-nien-vu-2025-26/",
+    "finalUrl": "https://giacaphe.com/90976/vinh-hiep-dan-dau-xuat-khau-ca-phe-nhan-nien-vu-2025-26/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3064,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "giacaphe.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 34,
+    "checkedArticleUrls": 45,
+    "freshArticleChecks": 26,
+    "parserIssues": 11,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 34,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 30,
+    "categoriesFreshChecked": 11,
+    "categoriesUnconfirmed": 9,
+    "categoriesWithoutParsedArticle": 2,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 214,
+        "passed": 33,
+        "distinctHashes": 33
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://giacaphe.com/90989/it-ai-biet-starbucks-ban-dau-chi-ban-hat-ca-phe-khong-phuc-vu-do-uong/",
+      "https://giacaphe.com/90982/le-hoi-ca-phe-buon-ma-thuot-2027-khang-dinh-vi-the-thu-phu-ca-phe-robusta-the-gioi/",
+      "https://giacaphe.com/90976/vinh-hiep-dan-dau-xuat-khau-ca-phe-nhan-nien-vu-2025-26/",
+      "https://giacaphe.com/32915/bao-gia-ca-phe-tu-140000d-thang/",
+      "https://giacaphe.com/41512/chuan-trong-mua-ban-ca-phe-la-bao-nhieu/",
+      "https://giacaphe.com/80185/thi-truong-phai-sinh-ca-phe-la-gi/",
+      "https://giacaphe.com/90973/xuat-khau-ca-phe-viet-nam-lap-ky-luc-85-ty-usd-trong-nien-vu-2025-26/",
+      "https://giacaphe.com/90970/son-la-day-manh-phat-trien-thuong-hieu-ca-phe-arabica/",
+      "https://giacaphe.com/90964/bau-duc-duoc-cap-phep-du-an-ca-phe-hon-29-trieu-usd-tai-lao/",
+      "https://giacaphe.com/90932/rang-ca-phe-bang-nang-luong-mat-troi-xu-huong-moi-giup-giam-phat-thai/",
+      "https://giacaphe.com/90942/coffea-canephora-la-gi-ca-phe-robusta-va-conilon-khac-nhau-nhu-the-nao/",
+      "https://giacaphe.com/90957/xuat-khau-ca-phe-dat-66-ty-usd-sau-9-thang/",
+      "https://giacaphe.com/90960/nghien-cuu-tren-gan-355-000-nguoi-uong-ca-phe-co-lien-quan-den-nguy-co-benh-gan-thap-hon/",
+      "https://giacaphe.com/90954/nghien-cuu-moi-tiet-lo-anh-huong-cua-ca-phe-den-duong-ruot-va-nao-bo/",
+      "https://giacaphe.com/90949/thoi-diem-uong-ca-phe-giup-bao-ve-tim-mach-giam-nguy-co-tu-vong/",
+      "https://giacaphe.com/gia-vang/gia-vang-tang-manh-khi-usd-suy-yeu-va-loi-suat-giam-da-di-len-chua-dung-lai/",
+      "https://giacaphe.com/gia-vang/gia-vang-co-the-tiep-tuc-giam-trong-ngan-han/",
+      "https://giacaphe.com/gia-vang/gia-vang-co-the-tiep-tuc-tang-du-thi-truong-vua-trai-qua-nhip-ban-manh/",
+      "https://giacaphe.com/gia-vang/nha-dau-tu-bat-day-vang-du-du-lieu-viec-lam-my-tang-manh/",
+      "https://giacaphe.com/gia-vang/vang-va-bac-on-dinh-khi-tam-ly-thi-truong-bot-mao-hiem/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/hop-dong-mo-open-interest-la-gi/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/truoc-khi-dau-tu-hang-hoa-phai-sinh-ban-da-biet-nhung-dieu-nay-chua/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/ban-khong-khi-giao-dich-hang-hoa-phai-sinh-co-hoi-va-rui-ro/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/phan-biet-so-giao-dich-hang-hoa-va-san-thuong-mai-dien-tu/",
+      "https://giacaphe.com/blog/ngan-hang-siet-no-mot-doanh-nghiep-ca-phe-co-tieng/",
+      "https://giacaphe.com/blog/quang-ba-thuong-hieu-ca-phe-buon-ma-thuot-bang-truyen-thong-so/",
+      "https://giacaphe.com/blog/vicofa-chi-ra-3-xu-huong-khien-gia-ca-phe-tang/",
+      "https://giacaphe.com/blog/vien-nghien-cuu-va-phat-trien-ca-phe-ai/",
+      "https://giacaphe.com/blog/trong-ca-phe-tha-dot-tu-ho-ngheo-nay-thu-nhap-nua-ty-moi-nam/",
+      "https://giacaphe.com/dich-vu/xem-bang-gia-truc-tuyen/",
+      "https://giacaphe.com/10/ai-da-phat-hien-ra-ca-phe/",
+      "https://giacaphe.com/hang-hoa-phai-sinh/san-giao-dich-hang-hoa-ice/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 2,
+      "original_publication_not_yet_confirmed": 6,
+      "selector_or_layout_mismatch": 1,
+      "public_inline_state_requires_adapter": 2
+    },
+    "checkedAt": "2026-11-10T09:15:32.361Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/giacaphe.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Vĩnh Hiệp dẫn đầu xuất khẩu cà phê nhân niên vụ 2025/26",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:35.993Z",
+        "trainingUrls": [
+          "https://giacaphe.com/67666/chuc-mung-nam-moi-2023/"
+        ],
+        "holdoutUrls": [
+          "https://giacaphe.com/90932/rang-ca-phe-bang-nang-luong-mat-troi-xu-huong-moi-giup-giam-phat-thai/",
+          "https://giacaphe.com/90989/it-ai-biet-starbucks-ban-dau-chi-ban-hat-ca-phe-khong-phuc-vu-do-uong/"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:37.490Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://giacaphe.com/90932/rang-ca-phe-bang-nang-luong-mat-troi-xu-huong-moi-giup-giam-phat-thai/",
+      "https://giacaphe.com/90989/it-ai-biet-starbucks-ban-dau-chi-ban-hat-ca-phe-khong-phuc-vu-do-uong/"
+    ],
+    "improvedUrls": [
+      "https://giacaphe.com/67666/chuc-mung-nam-moi-2023/"
+    ],
+    "regressions": 0
+  }
+}

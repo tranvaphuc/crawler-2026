@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congan.lamdong.gov.vn",
+  "siteId": "congan.lamdong.gov.vn",
+  "registrableDomain": "congan.lamdong.gov.vn",
+  "homepage": "https://congan.lamdong.gov.vn/",
+  "allowedHosts": [
+    "congan.lamdong.gov.vn",
+    "www.congan.lamdong.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://congan.lamdong.gov.vn/",
+    "categories": [
+      "https://congan.lamdong.gov.vn/Tin-moi.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-tinh-lam-dong-N164.aspx",
+      "https://congan.lamdong.gov.vn/lich-su-cong-an-binh-thuan.aspx",
+      "https://congan.lamdong.gov.vn/chidaodieuhanh.aspx",
+      "https://congan.lamdong.gov.vn/Cua-lanh-dao-Bo-Cong-an.aspx",
+      "https://congan.lamdong.gov.vn/Cua-Lanh-dao-Cong-an-tinh.aspx",
+      "https://congan.lamdong.gov.vn/tin-tuc-su-kien.aspx",
+      "https://congan.lamdong.gov.vn/Hoat-dong-cua-Bo-Cong-an.aspx",
+      "https://congan.lamdong.gov.vn/Bau-cu-Quoc-hoi-va-HDND-cac-cap.aspx"
+    ]
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "congan.lamdong.gov.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "value": "Cảnh báo tác hại của thuốc lá điện tử và “Pod Chill”, những hành vi vi phạm pháp luật liên quan",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "time",
+    "attribute": null,
+    "index": 1,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": "#Col_2",
+    "selector": "article > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:16:55.412Z",
+    "frozenAt": "2026-11-16T04:16:51.266Z",
+    "trainingUrl": "https://congan.lamdong.gov.vn/canh-bao-tac-hai-cua-thuoc-la-dien-tu-va-pod-chill-nhung-hanh-vi-vi-pham-phap-luat-lien-quan-N11114.aspx",
+    "independentHoldouts": [
+      "https://congan.lamdong.gov.vn/tuyen-truyen-phap-luat-ve-an-toan-giao-thong-cho-hoc-sinh-truong-yersin-da-lat-N10550.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-tinh-lam-dong-giu-vung-an-ninh-tu-cao-nguyen-den-mien-bien-ket-qua-cong-tac-noi-bat-thang-10-va-nhiem-vu-trong-tam-thang-112026-N11789.aspx"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://congan.lamdong.gov.vn/tuyen-truyen-phap-luat-ve-an-toan-giao-thong-cho-hoc-sinh-truong-yersin-da-lat-N10550.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-tinh-lam-dong-giu-vung-an-ninh-tu-cao-nguyen-den-mien-bien-ket-qua-cong-tac-noi-bat-thang-10-va-nhiem-vu-trong-tam-thang-112026-N11789.aspx",
+      "https://congan.lamdong.gov.vn/thanh-vien-luc-luong-bao-ve-an-ninh-trat-tu-o-co-so-nhat-duoc-dien-thoai-tra-lai-nguoi-danh-roi-N12086.aspx",
+      "https://congan.lamdong.gov.vn/xa-duc-an-nang-cao-ky-nang-pccc-tu-co-so-chu-dong-phong-ngua-chay-no-N12083.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-phuong-tien-thanh-tang-cuong-kiem-tra-quan-ly-luu-tru-cua-nguoi-nuoc-ngoai-N12091.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-tinh-lam-dong-tuyen-truyen-phap-luat-ve-giao-thong-duong-bo-cho-lao-dong-trung-quoc-tai-nha-may-nhiet-dien-bot-vinh-tan-1-N12089.aspx",
+      "https://congan.lamdong.gov.vn/doan-kiem-tra-so-6-cong-an-tinh-lam-dong-kiem-tra-toan-dien-cac-mat-cong-tac-tai-cong-an-xa-truong-xuan-N11291.aspx",
+      "https://congan.lamdong.gov.vn/boi-duong-ly-luan-chinh-tri-nang-cao-ban-linh-cho-55-dang-vien-du-bi-cong-an-tinh-lam-dong-N10968.aspx",
+      "https://congan.lamdong.gov.vn/danh-gia-cong-tac-bao-dam-antt-quy-iii-va-9-thang-dau-nam-tai-cum-cong-an-cap-xa-do-dong-chi-dai-ta-nguyen-van-dung-pho-giam-doc-cong-an-tinh-phu-trach-N10815.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-xa-dak-wil-tham-gia-dien-tap-chien-dau-phong-thu-nam-2026-N10389.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-tinh-lam-dong-thao-go-kho-khan-nang-cao-hieu-qua-cong-tac-quan-ly-hanh-chinh-ve-trat-tu-xa-hoi-N10351.aspx",
+      "https://congan.lamdong.gov.vn/gan-800-can-bo-chien-si-cong-an-tinh-lam-dong-duoc-tap-huan-cong-nghe-thong-tin-boi-duong-ky-nang-so-N9976.aspx",
+      "https://congan.lamdong.gov.vn/cong-an-lam-dong-trien-khai-tiep-cong-dan-truc-tuyen-tao-thuan-loi-cho-nguoi-dan-N9853.aspx"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xomdautu.vn",
+  "siteId": "xomdautu.vn",
+  "registrableDomain": "xomdautu.vn",
+  "homepage": "https://xomdautu.vn/",
+  "allowedHosts": [
+    "xomdautu.vn",
+    "www.xomdautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://xomdautu.vn/",
+    "categories": [
+      "https://xomdautu.vn/label/breaking",
+      "https://xomdautu.vn/category/chung-khoan-viet-nam",
+      "https://xomdautu.vn/category/kinh-doanh-viet-nam",
+      "https://xomdautu.vn/category/regulations",
+      "https://xomdautu.vn/category/institutional"
+    ]
+  },
+  "title": {
+    "value": "Binance nắm giữ lượng Ethereum thấp nhất kể từ năm 2021",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".font-geist.leading-7:eq(1)",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:17:01.237Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://xomdautu.vn/ceo-doan-van-hieu-em-tiet-lo-buoc-ngoat-moi-sau-gan-20-nam-ban-dien-thoai-tivi",
+      "https://xomdautu.vn/nhung-doanh-nghiep-van-thanh-cong-du-khong-con-ceo-huyen-thoai"
+    ],
+    "improvedUrls": [
+      "https://xomdautu.vn/chuyen-gia-thanh-khoan-chung-khoan-co-the-dat-60-000-70-000-ty-dong-moi-phien",
+      "https://xomdautu.vn/khoi-ngoai-ban-rong-gan-nghin-ty-trong-tuan-9-13-11-mot-co-phieu-bi-xa-gan-900",
+      "https://xomdautu.vn/hut-7-400-ty-dong-trai-phieu-voi-lai-suat-chi-5-nam-tokenbay-dat-cuoc-lon-vao",
+      "https://xomdautu.vn/ceo-doan-van-hieu-em-tiet-lo-buoc-ngoat-moi-sau-gan-20-nam-ban-dien-thoai-tivi",
+      "https://xomdautu.vn/nhung-doanh-nghiep-van-thanh-cong-du-khong-con-ceo-huyen-thoai"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://xomdautu.vn/binance-nam-giu-luong-ethereum-thap-nhat-ke-tu-nam-2021",
+      "https://xomdautu.vn/ca-voi-hyperliquid-tung-mat-10-trieu-usd-gio-dat-cuoc-vao-solana",
+      "https://xomdautu.vn/cac-chuyen-gia-phap-ly-cho-rang-ai-agent-can-xac-thuc-danh-tinh-tren-blockchain",
+      "https://xomdautu.vn/hyperliquid-hype-token-the-hien-suc-bat-khi-thi-truong-crypto-lao-doc-manh"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Binance nắm giữ lượng Ethereum thấp nhất kể từ năm 2021",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".font-geist.leading-7:eq(0)",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:43.824Z",
+        "trainingUrls": [
+          "https://xomdautu.vn/chuyen-gia-thanh-khoan-chung-khoan-co-the-dat-60-000-70-000-ty-dong-moi-phien",
+          "https://xomdautu.vn/khoi-ngoai-ban-rong-gan-nghin-ty-trong-tuan-9-13-11-mot-co-phieu-bi-xa-gan-900",
+          "https://xomdautu.vn/hut-7-400-ty-dong-trai-phieu-voi-lai-suat-chi-5-nam-tokenbay-dat-cuoc-lon-vao"
+        ],
+        "holdoutUrls": [
+          "https://xomdautu.vn/ceo-doan-van-hieu-em-tiet-lo-buoc-ngoat-moi-sau-gan-20-nam-ban-dien-thoai-tivi",
+          "https://xomdautu.vn/nhung-doanh-nghiep-van-thanh-cong-du-khong-con-ceo-huyen-thoai"
+        ]
+      }
+    }
+  ]
+}

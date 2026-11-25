@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "siteName": "finhay.com.vn",
+  "siteId": "finhay.com.vn",
+  "registrableDomain": "finhay.com.vn",
+  "homepage": "https://www.finhay.com.vn/",
+  "allowedHosts": [
+    "finhay.com.vn",
+    "www.finhay.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.finhay.com.vn/",
+    "categories": [
+      "https://www.finhay.com.vn/esg",
+      "https://www.finhay.com.vn/nguon-nhan-luc",
+      "https://www.finhay.com.vn/blog/chinh-sach-bien-tap-cua-finhay",
+      "https://www.finhay.com.vn/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.236Z",
+      "verifiedSeeds": [
+        "https://www.finhay.com.vn/",
+        "https://www.finhay.com.vn/esg",
+        "https://www.finhay.com.vn/nguon-nhan-luc",
+        "https://www.finhay.com.vn/blog/chinh-sach-bien-tap-cua-finhay"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Bản tin chứng khoán 12/10: VN-Index lùi về đáy 2 tháng, \"Họ Vingroup\" đè chỉ số",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:24.906Z",
+    "frozenAt": "2026-11-16T01:58:21.969Z",
+    "trainingUrl": "https://www.finhay.com.vn/ban-tin-chung-khoan-12-10",
+    "independentHoldouts": [
+      "https://www.finhay.com.vn/ban-tin-chung-khoan-08-10",
+      "https://www.finhay.com.vn/chinh-sach-su-dung-cua-website-finhay"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.finhay.com.vn/ban-tin-chung-khoan-12-10",
+      "https://www.finhay.com.vn/ban-tin-chung-khoan-08-10",
+      "https://www.finhay.com.vn/chinh-sach-su-dung-cua-website-finhay",
+      "https://www.finhay.com.vn/policy-chinh-sach-bien-tap-cua-finhay"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

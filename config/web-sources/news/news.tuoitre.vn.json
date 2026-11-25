@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.tuoitre.vn",
+  "siteId": "news.tuoitre.vn",
+  "registrableDomain": "tuoitre.vn",
+  "homepage": "https://news.tuoitre.vn/",
+  "allowedHosts": [
+    "news.tuoitre.vn",
+    "www.news.tuoitre.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "From world stages to home: Vietnam’s acclaimed bamboo circus hits Hanoi with regular shows",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-cmain",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Vietnamese rising talent claims YONEX BTY Junior International Series 2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#main-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:50.022Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://news.tuoitre.vn/vietnamese-rising-talent-claims-yonex-bty-junior-international-series-2026-10326110819584278.htm",
+      "https://news.tuoitre.vn/misplaced-concrete-poles-risk-fishing-boat-accidents-in-southern-vietnam-waterways-103261108185702422.htm",
+      "https://news.tuoitre.vn/from-world-stages-to-home-vietnams-acclaimed-bamboo-circus-hits-hanoi-with-regular-shows-103261108212146538.htm",
+      "https://news.tuoitre.vn/intl-experts-tout-ho-chi-minh-citys-biosphere-reserve-as-potential-global-model-103261108233758366.htm",
+      "https://news.tuoitre.vn/suspected-scrap-collector-invades-ho-chi-minh-city-expressway-nearly-causes-disaster-with-metal-bar-103261108212949206.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-man-arrested-over-426000-overseas-property-scam-central-region-braces-for-700mm-torrential-rain-103261108172312045.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-us-to-send-largest-ever-agricultural-trade-mission-to-vietnam-weak-passwords-of-nearly-19-million-bank-accounts-103261107162038702.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://news.tuoitre.vn/",
+    "categories": [
+      "https://news.tuoitre.vn/vietnam-news.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-city.htm",
+      "https://news.tuoitre.vn/travel.htm",
+      "https://news.tuoitre.vn/economy.htm",
+      "https://news.tuoitre.vn/education.htm",
+      "https://news.tuoitre.vn/expat-life.htm",
+      "https://news.tuoitre.vn/world.htm",
+      "https://news.tuoitre.vn/video.htm",
+      "https://news.tuoitre.vn/photo.htm"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?tuoitrenews.vn/.*?/[\\w-]{30,}[\\w]{1}$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "news.tuoitre.vn",
+    "checkedAt": "2026-11-09T03:57:16.327Z",
+    "url": "https://news.tuoitre.vn/vietnamese-rising-talent-claims-yonex-bty-junior-international-series-2026-10326110819584278.htm",
+    "finalUrl": "https://news.tuoitre.vn/vietnamese-rising-talent-claims-yonex-bty-junior-international-series-2026-10326110819584278.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1567,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "news.tuoitre.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 27,
+    "checkedArticleUrls": 31,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 104,
+        "passed": 24,
+        "distinctHashes": 24
+      },
+      {
+        "name": "video",
+        "discovered": 21,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://news.tuoitre.vn/heavy-downpours-hit-central-vietnam-but-miss-the-hydropower-dams-that-need-them-most-103261110141523338.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-city-considers-financial-support-for-workers-switching-to-electric-vehicles-10326111011091921.htm",
+      "https://news.tuoitre.vn/another-vietnamese-province-reports-meningococcal-cases-as-earlier-outbreak-site-ends-monitoring-10326111011373845.htm",
+      "https://news.tuoitre.vn/da-nang-advises-visitors-to-postpone-son-tra-peninsula-treks-amid-heavy-rain-forecast-103261110133954955.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-man-arrested-over-426000-overseas-property-scam-central-region-braces-for-700mm-torrential-rain-103261108172312045.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-us-to-send-largest-ever-agricultural-trade-mission-to-vietnam-weak-passwords-of-nearly-19-million-bank-accounts-103261107162038702.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-response-to-emergency-stockpiling-recommendations-grab-to-cut-fees-and-refund-drivers-103261106161243932.htm",
+      "https://news.tuoitre.vn/vietnam-spotlight-podcast-vietnam-airlines-announces-new-rules-for-passengers-flying-to-us-registered-fdi-in-vietnam-hits-17-year-high-103261105151234553.htm",
+      "https://news.tuoitre.vn/overnight-journey-of-mekong-delta-patients-and-the-fear-of-missed-prescriptions-103261103211303823.htm",
+      "https://news.tuoitre.vn/same-country-different-realities-which-vietnam-are-you-navigating-103261109214000126.htm",
+      "https://news.tuoitre.vn/from-world-stages-to-home-vietnams-acclaimed-bamboo-circus-hits-hanoi-with-regular-shows-103261108212146538.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-city-sets-sights-on-becoming-global-city-under-100-year-master-plan-103261106184201529.htm",
+      "https://news.tuoitre.vn/vietnam-has-opportunity-to-strengthen-us-trade-ties-amid-washingtons-post-midterm-policy-shift-ex-ambassador-103261105210315142.htm",
+      "https://news.tuoitre.vn/from-gourmet-meals-to-private-rooms-how-cats-live-like-royalty-in-vietnam-103261101153858809.htm",
+      "https://news.tuoitre.vn/vietnams-mekong-delta-seeks-to-create-better-paying-stable-jobs-to-stem-worker-outflow-103261030133749442.htm",
+      "https://news.tuoitre.vn/big-name-gyms-are-closing-their-doors-in-vietnam-whats-behind-the-shake-up-103261030103234597.htm",
+      "https://news.tuoitre.vn/vietnam-lawmakers-urge-bold-cultural-reforms-citing-harry-potter-and-gaming-boom-103261110145425934.htm",
+      "https://news.tuoitre.vn/foreign-tourists-delight-in-da-nangs-towering-waves-despite-rough-weather-103261110143410752.htm",
+      "https://news.tuoitre.vn/vietnam-japan-agree-to-deepen-economic-ties-target-80-billion-trade-by-2030-103261110144821703.htm",
+      "https://news.tuoitre.vn/japan-to-call-for-limiting-kids-exposure-to-social-media-103261110140243178.htm",
+      "https://news.tuoitre.vn/vietnamese-grandmaster-claims-double-gold-at-southeast-asian-chess-championships-103261110134049586.htm",
+      "https://news.tuoitre.vn/us-agriculture-businesses-eye-bigger-share-of-vietnams-fast-growing-market-103261110131536858.htm",
+      "https://news.tuoitre.vn/vietnams-first-lady-attends-cultural-exchanges-in-japan-103261110130629277.htm",
+      "https://news.tuoitre.vn/honda-to-spend-3-billion-dollars-to-build-new-plant-in-ohio-103261110113532589.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-city-invites-aichi-businesses-to-expand-manufacturing-investments-10326111010574404.htm",
+      "https://news.tuoitre.vn/missing-13-year-old-vietnamese-origin-girl-found-dead-in-germany-103261110103735364.htm",
+      "https://news.tuoitre.vn/japan-commits-over-431bn-yen-for-two-projects-in-vietnam-103261110101819741.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-city-to-host-4-day-countdown-event-for-2027-at-nguyen-hue-promenade-103261109204609107.htm",
+      "https://news.tuoitre.vn/green-vietnam-festival-2026-shows-how-used-fishing-nets-are-given-a-second-life-instead-of-becoming-ocean-trash-103261109163139335.htm",
+      "https://news.tuoitre.vn/ho-chi-minh-citys-largest-canal-project-to-displace-over-6100-households-103261109155620267.htm",
+      "https://news.tuoitre.vn/14-foreign-nationals-suspected-of-running-fake-stock-trading-platform-in-ho-chi-minh-city-10326110911473777.htm",
+      "https://news.tuoitre.vn/intl-experts-tout-ho-chi-minh-citys-biosphere-reserve-as-potential-global-model-103261108233758366.htm",
+      "https://news.tuoitre.vn/thread/voice-of-the-news-1071536.htm",
+      "https://news.tuoitre.vn/video/imagine-getting-from-hanois-airport-to-city-center-in-30-minutes-instead-of-an-hour-5960.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:16:09.062Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/news.tuoitre.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

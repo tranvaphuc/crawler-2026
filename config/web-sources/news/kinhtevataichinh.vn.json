@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtevataichinh.vn",
+  "siteId": "kinhtevataichinh.vn",
+  "registrableDomain": "kinhtevataichinh.vn",
+  "homepage": "https://kinhtevataichinh.vn/",
+  "allowedHosts": [
+    "kinhtevataichinh.vn",
+    "www.kinhtevataichinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://kinhtevataichinh.vn/",
+    "categories": [
+      "https://kinhtevataichinh.vn/category/tin-tuc",
+      "https://kinhtevataichinh.vn/category/kinh-doanh",
+      "https://kinhtevataichinh.vn/category/van-hoa-giai-tri",
+      "https://kinhtevataichinh.vn/category/doanh-nghiep-doanh-nhan",
+      "https://kinhtevataichinh.vn/category/trend"
+    ]
+  },
+  "title": {
+    "value": "NAPAS giới thiệu giải pháp thanh toán số tại Sóng Festival 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:48.649Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:41.394Z",
+    "independentHoldouts": [
+      "https://kinhtevataichinh.vn/daiichi-life-viet-nam-ra-mat-san-pham-bao-hiem-danh-cho-doanh-nghiep.html",
+      "https://kinhtevataichinh.vn/vib-khoi-dong-chuong-trinh-sieu-tiec-dang-gia-voi-da-tang-uu-dai-cho-chu-the.html",
+      "https://kinhtevataichinh.vn/cake-by-vpbank-gianh-giai-vang-quoc-te-nho-mo-hinh-ai-first.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://kinhtevataichinh.vn/napas-gioi-thieu-giai-phap-thanh-toan-so-tai-song-festival-2026.html",
+      "https://kinhtevataichinh.vn/daiichi-life-viet-nam-ra-mat-san-pham-bao-hiem-danh-cho-doanh-nghiep.html",
+      "https://kinhtevataichinh.vn/vib-khoi-dong-chuong-trinh-sieu-tiec-dang-gia-voi-da-tang-uu-dai-cho-chu-the.html",
+      "https://kinhtevataichinh.vn/cake-by-vpbank-gianh-giai-vang-quoc-te-nho-mo-hinh-ai-first.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "siteName": "forum.autodaily.vn",
+  "siteId": "forum.autodaily.vn",
+  "registrableDomain": "forum.autodaily.vn",
+  "homepage": "https://forum.autodaily.vn/",
+  "allowedHosts": [
+    "forum.autodaily.vn",
+    "www.forum.autodaily.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://forum.autodaily.vn/",
+    "categories": [
+      "https://forum.autodaily.vn/forums/danh-gia-xe-o-to/",
+      "https://forum.autodaily.vn/forums/danh-gia-xe-so-sanh-xe/",
+      "https://forum.autodaily.vn/forums/xe-xanh/",
+      "https://forum.autodaily.vn/forums/cham-soc-xe-o-to/",
+      "https://forum.autodaily.vn/forums/kinh-nghiem-sua-xe-o-to/",
+      "https://forum.autodaily.vn/forums/tin-tuc/",
+      "https://forum.autodaily.vn/forums/xe-moi-xe-may/",
+      "https://forum.autodaily.vn/forums/racing.43/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Mitsubishi ghi dấu ấn với 3 mẫu xe lọt top 10 bán chạy nhất nửa đầu năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:29.214Z",
+    "frozenAt": "2026-11-16T01:58:23.149Z",
+    "trainingUrl": "https://forum.autodaily.vn/threads/mitsubishi-ghi-dau-an-voi-3-mau-xe-lot-top-10-ban-chay-nhat-nua-dau-nam-2026.57155",
+    "independentHoldouts": [
+      "https://forum.autodaily.vn/threads/gan-200-000-chu-xe-mitsubishi-cham-soc-o-to-de-dang-hon-nho-tro-ly-so-thong-minh.57118",
+      "https://forum.autodaily.vn/threads/mitsubishi-destinator-dat-moc-7-000-xe-ban-ra-trien-khai-uu-dai-len-toi-60-trieu-dong-trong-thang-6.56915"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://forum.autodaily.vn/threads/mitsubishi-ghi-dau-an-voi-3-mau-xe-lot-top-10-ban-chay-nhat-nua-dau-nam-2026.57155",
+      "https://forum.autodaily.vn/threads/gan-200-000-chu-xe-mitsubishi-cham-soc-o-to-de-dang-hon-nho-tro-ly-so-thong-minh.57118",
+      "https://forum.autodaily.vn/threads/mitsubishi-destinator-dat-moc-7-000-xe-ban-ra-trien-khai-uu-dai-len-toi-60-trieu-dong-trong-thang-6.56915",
+      "https://forum.autodaily.vn/threads/mitsubishi-tung-uu-dai-lon-thang-7-xpander-giam-toi-85-trieu-dong.57095",
+      "https://forum.autodaily.vn/threads/mitsubishi-pajero-the-he-moi-cap-ben-thai-lan-cho-ve-viet-nam.57630",
+      "https://forum.autodaily.vn/threads/can-canh-5-mau-ngoai-that-cua-mitsubishi-pajero-2027-anh-em-ung-mau-nao-nhat.57638",
+      "https://forum.autodaily.vn/threads/mitsubishi-pajero-the-he-moi-ban-tam-trung-gsr-2wd-tai-thai-lan-co-gi-dang-chu-y.57632",
+      "https://forum.autodaily.vn/threads/chi-tiet-mitsubishi-pajero-the-he-moi-ban-cao-cap-nhat-tai-thai-lan.57631",
+      "https://forum.autodaily.vn/threads/mitsubishi-pajero-2027-ban-mau-den-cuc-ngau.57634",
+      "https://forum.autodaily.vn/threads/gia-du-kien-quy-doi-tu-1-23-ty-dong-mitsubishi-pajero-the-he-moi-co-gi-de-canh-tranh-voi-cac-doi-thu.57633/latest",
+      "https://forum.autodaily.vn/threads/vi-sao-mitsubishi-pajero-the-he-moi-khong-con-lop-du-phong-treo-phia-sau.57539",
+      "https://forum.autodaily.vn/threads/mitsubishi-pajero-the-he-moi-khac-phuc-mot-trong-nhung-van-de-gay-kho-chiu-nhat-tren-o-to-hien-dai.57533",
+      "https://forum.autodaily.vn/threads/ket-qua-phan-hang-chang-4-msbk-2026-huu-tri-18-xuat-phat-p6.57952/",
+      "https://forum.autodaily.vn/threads/honda-city-moi-duoc-uu-dai-toi-75-trieu-dong-trong-thang-11.57951/",
+      "https://forum.autodaily.vn/threads/giu-vung-vi-the-top-3-vama-mitsubishi-mo-rong-uu-dai-cho-xpander-va-xforce-dip-cuoi-nam.57950/",
+      "https://forum.autodaily.vn/threads/mitsubishi-outlander-2028-ban-off-road-moi-co-gi-dang-chu-y.57949/",
+      "https://forum.autodaily.vn/threads/chang-cuoi-msbk-2026-huu-tri-18-dung-truoc-co-hoi-khep-lai-mua-giai-trong-top-3.57948/",
+      "https://forum.autodaily.vn/threads/day-co-the-la-honda-cr-v-2027-ngoai-hinh-sac-sao-hien-dai-hon.57947/",
+      "https://forum.autodaily.vn/threads/hyundai-palisade-2027-ra-mat-bo-sung-ban-hybrid-cao-cap-dieu-chinh-gia-ban.57946/",
+      "https://forum.autodaily.vn/threads/hyundai-elantra-2027-ruc-rich-ra-mat-tai-my-lot-xac-thiet-ke-dong-co-hybrid-tiet-kiem-hon.57945/",
+      "https://forum.autodaily.vn/threads/toyota-fortuner-2027-tiep-tuc-lo-dien-tren-duong-thu-hua-hen-nhieu-nang-cap-dang-chu-y.57944/",
+      "https://forum.autodaily.vn/threads/honda-hr-v-trailsport-sap-ra-mat-thi-truong-dna-dien-mao-dam-chat-the-thao.57942/",
+      "https://forum.autodaily.vn/threads/phat-trien-ben-vung-trong-nganh-xe-may-lua-chon-lau-dai-tu-tu-duy-san-xuat-co-trach-nhiem.57924/",
+      "https://forum.autodaily.vn/threads/honda-cr-v-the-he-moi-tung-anh-nha-hang-chi-con-ban-hybrid-tiet-kiem-nhien-lieu-hon-10.57941/",
+      "https://forum.autodaily.vn/threads/nissan-patrol-ky-niem-75-nam-tai-xuat-tai-my-ra-mat-ban-dac-biet-gioi-han-1-951-xe.57940/",
+      "https://forum.autodaily.vn/threads/gia-gan-1-6-ty-dong-subaru-forester-2-5-e-boxer-hybrid-co-gi-dac-biet.57939/",
+      "https://forum.autodaily.vn/threads/chang-4-msbk-2026-huu-tri-18-khep-lai-mua-giai-voi-vi-tri-top-4-chung-cuoc.57958/",
+      "https://forum.autodaily.vn/threads/can-canh-hyundai-tucson-n-line-the-he-moi-ban-mau-xam-cuc-chat.57957/",
+      "https://forum.autodaily.vn/threads/race-2-chang-4-msbk-2026-huu-tri-18-ap-sat-top-dau-dang-tiec-dung-cuoc-dua-som.57956/",
+      "https://forum.autodaily.vn/threads/them-anh-phac-hoa-mau-d-suv-honda-avancier-thiet-ke-nhu-nay-de-thanh-hang-hot.57955/",
+      "https://forum.autodaily.vn/threads/race-1-chang-cuoi-msbk-2026-huu-tri-18-canh-tranh-manh-me-top-dau-tiec-nuoi-o-lap-cuoi.57954/",
+      "https://forum.autodaily.vn/threads/anh-thuc-te-honda-sh160i-aura-black-edition-2027-gia-104-49-trieu-dong.57953/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

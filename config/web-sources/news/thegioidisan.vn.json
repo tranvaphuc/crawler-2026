@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioidisan.vn",
+  "siteId": "thegioidisan.vn",
+  "registrableDomain": "thegioidisan.vn",
+  "homepage": "https://thegioidisan.vn/vi?q=%2F",
+  "allowedHosts": [
+    "thegioidisan.vn",
+    "www.thegioidisan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bác Hồ ra đi tìm đường cứu nước và bước ngoặt của cách mạng Việt Nam",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".entry-info > span:first",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".artcl-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:48.275Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://thegioidisan.vn/vi/ky-niem-105-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc-0561911-0562016-bac-ho-ra-di-tim-duong-cuu-nuoc-va-buoc-ngoat-cua-cach-mang-viet-nam.html",
+      "https://thegioidisan.vn/vi/an-ninh-tai-chinh-so-xay-dung-la-chan-vung-chac-bao-ve-he-sinh-thai-kinh-te-so-viet-nam.html",
+      "https://thegioidisan.vn/vi/dien-dan-an-ninh-tai-chinh-so-2026-dat-trong-tam-vao-moi-lien-he-giua-an-ninh-mang-an-toan-du-lieu-bao-ve-tai-san-va-niem-tin-cua-nguoi-dung.html",
+      "https://thegioidisan.vn/vi/unesco-ghi-danh-them-2-di-san-tu-lieu-cua-viet-nam.html",
+      "https://thegioidisan.vn/vi/khai-mac-khong-gian-trung-bay-gia-toc-ho-vi-va-that-toc-tho-ty-lang-son-tai-ban-chu-xa-khuat-xa.html",
+      "https://thegioidisan.vn/vi/giai-bao-chi-toan-quoc-vi-su-nghiep-phat-trien-van-hoa-viet-nam-nam-2026-108-tac-pham-xuat-sac-duoc-chon-vao-vong-cham-chung-khao.html",
+      "https://thegioidisan.vn/vi/dien-dan-an-ninh-tai-chinh-so-2026-ai-va-niem-tin-so-kien-tao-la-chan-an-ninh-tai-chinh-viet-nam.html",
+      "https://thegioidisan.vn/vi/tang-cuong-suc-de-khang-tu-tuong-cho-can-bo-nguoi-lao-dong-tai-vietinbank-chi-nhanh-thanh-xuan-tren-khong-gian-mang-trong-ky-nguyen-moi.html",
+      "https://thegioidisan.vn/vi/dien-dan-an-ninh-tai-chinh-so-2026-ai-va-niem-tin-so-kien-tao-la-chan-an-ninh-tai-chinh-viet-nam.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioidisan.vn/vi?q=%2F",
+    "categories": [
+      "https://thegioidisan.vn/vi/c-theo-dong-thoi-su",
+      "https://thegioidisan.vn/vi/c-diem-hen",
+      "https://thegioidisan.vn/vi/c-am-thuc",
+      "https://thegioidisan.vn/vi/c-dan-toc-thieu-so",
+      "https://thegioidisan.vn/vi/c-bao-ton-phat-trien",
+      "https://thegioidisan.vn/vi/c-lang-nghe",
+      "https://thegioidisan.vn/vi/c-dien-dan"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioidisan.vn",
+    "checkedAt": "2026-11-09T03:57:29.825Z",
+    "url": "https://thegioidisan.vn/vi/ky-niem-105-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc-0561911-0562016-bac-ho-ra-di-tim-duong-cuu-nuoc-va-buoc-ngoat-cua-cach-mang-viet-nam.html",
+    "finalUrl": "https://thegioidisan.vn/vi/ky-niem-105-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc-0561911-0562016-bac-ho-ra-di-tim-duong-cuu-nuoc-va-buoc-ngoat-cua-cach-mang-viet-nam.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7318,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:22.252Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thegioidisan.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thegioidisan.vn",
+    "parsedArticles": 9,
+    "distinctHashes": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesAttempted": 7,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 197,
+    "checkedArticleUrls": 9,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 197,
+        "attempted": 9,
+        "passed": 9,
+        "distinctContents": 9,
+        "distinctHashes": 9
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "thegioidisan.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

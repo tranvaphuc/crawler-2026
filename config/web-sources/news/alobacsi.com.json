@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "alobacsi.com",
+  "siteId": "alobacsi.com",
+  "registrableDomain": "alobacsi.com",
+  "homepage": "https://alobacsi.com/",
+  "allowedHosts": [
+    "alobacsi.com",
+    "www.alobacsi.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://alobacsi.com/",
+    "categories": [
+      "https://alobacsi.com/video",
+      "https://alobacsi.com/tin-tuc",
+      "https://alobacsi.com/chat-voi-bac-si",
+      "https://alobacsi.com/cam-nang-suc-khoe",
+      "https://alobacsi.com/kham-benh-online",
+      "https://alobacsi.com/dich-vu-y"
+    ]
+  },
+  "title": {
+    "value": "Từ tuổi 50, chủ động chăm sóc sức khỏe bằng nguồn sữa giàu dinh dưỡng cho giai đoạn hoàng kim",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail_content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:42.509Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:34.766Z",
+    "independentHoldouts": [
+      "https://alobacsi.com/thuoc-la-va-vape-dung-de-phut-to-mo-danh-mat-tuong-lai.html",
+      "https://alobacsi.com/who-de-xuat-tang-canh-bao-suc-khoe-tren-bao-thuoc-la-tai-viet-nam-tu-50-len-it-nhat-85.html",
+      "https://alobacsi.com/khoi-thuoc-la-vape-khien-nao-bo-hoc-sinh-hoat-dong-nhu-cpu-qua-nhiet.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://alobacsi.com/tu-tuoi-50-chu-dong-cham-soc-suc-khoe-bang-nguon-sua-giau-dinh-duong-cho-giai-doan-hoang-kim.html",
+      "https://alobacsi.com/thuoc-la-va-vape-dung-de-phut-to-mo-danh-mat-tuong-lai.html",
+      "https://alobacsi.com/who-de-xuat-tang-canh-bao-suc-khoe-tren-bao-thuoc-la-tai-viet-nam-tu-50-len-it-nhat-85.html",
+      "https://alobacsi.com/khoi-thuoc-la-vape-khien-nao-bo-hoc-sinh-hoat-dong-nhu-cpu-qua-nhiet.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

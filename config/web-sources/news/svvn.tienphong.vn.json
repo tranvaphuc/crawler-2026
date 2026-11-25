@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "siteName": "svvn.tienphong.vn",
+  "siteId": "svvn.tienphong.vn",
+  "registrableDomain": "tienphong.vn",
+  "homepage": "https://svvn.tienphong.vn/",
+  "allowedHosts": [
+    "svvn.tienphong.vn",
+    "www.svvn.tienphong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "34 giáo viên vùng khó khăn nhận sổ tiết kiệm 10 triệu đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:16.164Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://svvn.tienphong.vn/34-giao-vien-vung-kho-khan-nhan-so-tiet-kiem-10-trieu-dong-post1892595.tpo",
+      "https://svvn.tienphong.vn/sinh-vien-duoc-huong-dan-quan-ly-tien-tranh-bay-no-va-lua-dao-truc-tuyen-post1892106.tpo",
+      "https://svvn.tienphong.vn/nu-sinh-su-pham-dang-quang-hoa-hau-viet-nam-2026-toi-muon-giu-gin-ve-dep-tu-nhien-va-tiep-tuc-viec-hoc-post1892503.tpo",
+      "https://svvn.tienphong.vn/dem-chung-ket-toan-quoc-hoa-hau-viet-nam-2026-ruc-ro-sac-mau-di-san-khang-dinh-vi-the-cuoc-thi-nhan-sac-hang-dau-post1892059.tpo",
+      "https://svvn.tienphong.vn/co-giao-vung-cao-dua-cong-nghe-so-den-hoc-sinh-post1891887.tpo"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://svvn.tienphong.vn/",
+    "categories": [
+      "https://svvn.tienphong.vn/svvn-doan-hoi/",
+      "https://svvn.tienphong.vn/svvn-song-tre/",
+      "https://svvn.tienphong.vn/svvn-giao-duc/",
+      "https://svvn.tienphong.vn/svvn-goc-nhin/",
+      "https://svvn.tienphong.vn/svvn-yeu/",
+      "https://svvn.tienphong.vn/svvn-giai-tri/",
+      "https://svvn.tienphong.vn/svvn-guong-mat-sinh-vien/",
+      "https://svvn.tienphong.vn/svvn-cong-nghe/",
+      "https://svvn.tienphong.vn/svvn-video/",
+      "https://svvn.tienphong.vn/svvn-song-tich-cuc/",
+      "https://svvn.tienphong.vn/svvn-mua-ban/",
+      "https://svvn.tienphong.vn/svvn-can-biet/",
+      "https://svvn.tienphong.vn/ban-doc-lam-bao.tpo",
+      "https://svvn.tienphong.vn/toa-soan.tpo",
+      "https://svvn.tienphong.vn/nhat-bao/",
+      "https://svvn.tienphong.vn/quang-cao.tpo"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "svvn.tienphong.vn",
+    "checkedAt": "2026-11-09T03:57:26.401Z",
+    "url": "https://svvn.tienphong.vn/34-giao-vien-vung-kho-khan-nhan-so-tiet-kiem-10-trieu-dong-post1892595.tpo",
+    "finalUrl": "https://svvn.tienphong.vn/34-giao-vien-vung-kho-khan-nhan-so-tiet-kiem-10-trieu-dong-post1892595.tpo",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2851,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "svvn.tienphong.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 29,
+    "checkedArticleUrls": 29,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 29,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesFreshChecked": 4,
+    "categoriesUnconfirmed": 4,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 312,
+        "passed": 29,
+        "distinctHashes": 29
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://svvn.tienphong.vn/co-giao-vuot-hai-con-deo-di-120km-moi-ngay-den-truong-post1893030.tpo",
+      "https://svvn.tienphong.vn/nam-sinh-18-tuoi-danh-niem-say-me-cho-nhung-hinh-tuong-van-hoa-viet-post1892761.tpo",
+      "https://svvn.tienphong.vn/nguyen-yen-trang-hanh-trinh-tu-co-gai-nhut-nhat-den-ngoi-vi-danh-gia-hoa-hau-viet-nam-2026-post1892066.tpo",
+      "https://svvn.tienphong.vn/vi-sao-nguoi-ta-nho-mai-ve-a-quan-nguyen-huy-quang-minh-sau-chung-ket-olympia-2026-post1892160.tpo",
+      "https://svvn.tienphong.vn/xang-dien-cung-giam-gia-tui-tien-sinh-vien-nhe-di-bao-nhieu-post1891777.tpo",
+      "https://svvn.tienphong.vn/cheo-thuyen-tren-con-song-day-ray-ca-sau-tai-olympic-2032-post1892690.tpo",
+      "https://svvn.tienphong.vn/thu-truong-bo-gd-dt-xuc-dong-truoc-chia-se-cua-34-giao-vien-vung-kho-post1892895.tpo",
+      "https://svvn.tienphong.vn/chaeryeong-itzy-khoi-dau-hanh-trinh-moi-vao-hom-nay-post1892680.tpo",
+      "https://svvn.tienphong.vn/het-ca-map-bukang-i-gio-lai-co-ca-heo-anmok-i-post1892592.tpo",
+      "https://svvn.tienphong.vn/huong-sac-va-hoc-van-an-tuong-cua-top-3-hoa-hau-viet-nam-2026-post1892041.tpo",
+      "https://svvn.tienphong.vn/minh-hang-gay-an-tuong-voi-man-trinh-dien-man-tai-man-nhan-trong-dem-chung-ket-hoa-hau-viet-nam-2026-post1892018.tpo",
+      "https://svvn.tienphong.vn/van-mai-huong-xung-danh-vocalist-hang-dau-v-pop-voi-man-trinh-dien-cuon-hut-trong-dem-chung-ket-hoa-hau-viet-nam-2026-post1892020.tpo",
+      "https://svvn.tienphong.vn/a-quan-nguyen-huy-quang-minh-tung-thua-mot-thi-sinh-olympia-tu-nam-lop-muoi-coi-dan-anh-la-dong-luc-co-gang-post1892164.tpo",
+      "https://svvn.tienphong.vn/sinh-vien-duoc-huong-dan-quan-ly-tien-tranh-bay-no-va-lua-dao-truc-tuyen-post1892106.tpo",
+      "https://svvn.tienphong.vn/danh-tinh-cua-chu-hai-cau-dat-10-trieu-luot-xem-post1891877.tpo",
+      "https://svvn.tienphong.vn/tu-co-sinh-vien-nhut-nhat-den-a-khoi-2-va-hanh-trinh-truong-thanh-qua-nhung-lan-thu-suc-post1892879.tpo",
+      "https://svvn.tienphong.vn/tu-san-khau-tuoi-tho-den-hanh-trinh-chinh-phuc-uoc-mo-lam-bien-tap-vien-cua-nu-sinh-nganh-truyen-thong-post1892816.tpo",
+      "https://svvn.tienphong.vn/dai-su-du-lich-va-moi-truong-ta-thi-hoa-biet-on-truong-dh-khoa-hoc-dh-thai-nguyen-da-chap-canh-uoc-mo-post1892926.tpo",
+      "https://svvn.tienphong.vn/nu-sinh-marketing-tu-dien-dan-asean-den-danh-hieu-sinh-vien-tieu-bieu-trong-hoat-dong-giao-luu-quoc-te-post1892136.tpo",
+      "https://svvn.tienphong.vn/tung-duong-bat-ngo-chuyen-huong-am-nhac-quyet-theo-duoi-my-nhan-kem-18-tuoi-post1892992.tpo",
+      "https://svvn.tienphong.vn/huyen-thoai-dien-anh-robert-de-niro-tai-xuat-the-loai-phim-rom-com-sau-15-nam-post1892897.tpo",
+      "https://svvn.tienphong.vn/sau-12-nam-ho-ngoc-ha-he-lo-dieu-dac-biet-trong-su-nghiep-post1893061.tpo",
+      "https://svvn.tienphong.vn/hong-dao-xuc-dong-mang-ky-uc-bao-benh-len-phim-roi-nuoc-mat-nhin-thay-bong-dang-con-gai-ruot-qua-anh-mat-phuong-anh-dao-post1892869.tpo",
+      "https://svvn.tienphong.vn/nct-dream-mo-man-ky-niem-10-nam-hoat-dong-cua-nct-post1892679.tpo",
+      "https://svvn.tienphong.vn/van-dong-vien-nguyen-trong-lam-buoc-xuong-buc-nhan-huy-chuong-la-minh-coi-nhu-tro-ve-con-so-0-post1892892.tpo",
+      "https://svvn.tienphong.vn/lan-dau-co-sinh-vien-vao-chung-ket-hoa-hau-viet-nam-truong-dh-khoa-hoc-dh-thai-nguyen-se-khen-thuong-bat-ke-ket-qua-post1892292.tpo",
+      "https://svvn.tienphong.vn/hoc-vien-cong-nghe-buu-chinh-vien-thong-tiep-suc-nu-sinh-pham-le-ai-linh-tai-chung-ket-hoa-hau-viet-nam-2026-post1892294.tpo",
+      "https://svvn.tienphong.vn/tin-don-hen-ho-giua-v-va-jennie-lai-duoc-thoi-bung-len-post1892581.tpo",
+      "https://svvn.tienphong.vn/tu-ban-hoc-tai-mit-den-ban-doi-post1891782.tpo",
+      "https://svvn.tienphong.vn/cau-chuyen-tinh-yeu-cua-cac-chang-trai-rapper-post1890193.tpo",
+      "https://svvn.tienphong.vn/sinh-vien-dh-phenikaa-lan-toa-loi-song-trach-nhiem-voi-moi-truong-tu-nhung-hanh-dong-thiet-thuc-post1889501.tpo",
+      "https://svvn.tienphong.vn/phap-kieu-coolkid-cung-dan-nghe-si-khuay-dao-hang-ngan-khan-gia-tai-dem-nhac-cham-viet-nam-2-post1888540.tpo",
+      "https://svvn.tienphong.vn/vu-dao-sinh-vien-khuay-dong-ngay-hoi-thanh-toan-so-viet-nam-2026-post1888317.tpo",
+      "https://svvn.tienphong.vn/a-hau-chau-anh-nhan-vai-tro-moi-dai-su-ngay-thanh-toan-so-viet-nam-2026-lan-toa-thong-diep-song-xanh-den-gioi-tre-post1883357.tpo",
+      "https://svvn.tienphong.vn/co-can-doc-sach-nua-khong-khi-hoi-gi-ai-cung-tra-loi-duoc-post1875269.tpo",
+      "https://svvn.tienphong.vn/tai-hien-le-truyen-lo-nghi-thuc-vinh-danh-hien-tai-duoi-trieu-nguyen-post1872236.tpo",
+      "https://svvn.tienphong.vn/duong-pho-rop-co-hoa-mung-doi-tuyen-viet-nam-gianh-chuc-vo-dich-asean-cup-post1871544.tpo",
+      "https://svvn.tienphong.vn/thi-sinh-hoa-hau-viet-nam-2026-bat-dau-hanh-trinh-moi-tai-nha-chung-post1866785.tpo",
+      "https://svvn.tienphong.vn/tu-giang-duong-den-noi-lam-ra-nhung-la-co-viet-nam-trai-nghiem-kho-quen-cua-sinh-vien-quoc-te-post1872951.tpo",
+      "https://svvn.tienphong.vn/ban-tre-trai-nghiem-hoa-than-thanh-chien-si-ve-quoc-doan-xuyen-khong-ve-ha-noi-nam-1946-post1866568.tpo",
+      "https://svvn.tienphong.vn/nhung-giot-nuoc-mat-cua-nha-vo-dich-tre-tuoi-nhat-lich-su-post1892728.tpo",
+      "https://svvn.tienphong.vn/ba-noi-quoc-dan-va-cau-chuyen-cuoc-doi-khong-bao-gio-dai-va-gay-go-post1892588.tpo",
+      "https://svvn.tienphong.vn/hinh-anh-am-long-noi-vach-qua-duong-post1891878.tpo",
+      "https://svvn.tienphong.vn/openai-ra-mat-image-26-post1891875.tpo",
+      "https://svvn.tienphong.vn/iphone-duo-lai-tro-thanh-tam-diem-ve-hien-thi-ung-dung-pho-bien-post1891785.tpo",
+      "https://svvn.tienphong.vn/cac-sieu-thi-tai-9-quoc-gia-chau-au-bi-tan-cong-mang-post1891218.tpo",
+      "https://svvn.tienphong.vn/ha-noi-xu-ly-hang-loat-cua-hang-ban-hoa-qua-nhap-khau-post1470229.tpo",
+      "https://svvn.tienphong.vn/gia-vang-bat-ngo-bat-tang-post1469189.tpo",
+      "https://svvn.tienphong.vn/xang-dau-se-dong-loat-giam-gia-manh-vao-ngay-mai-post1468711.tpo",
+      "https://svvn.tienphong.vn/nhat-ban-doi-mat-voi-tinh-trang-gau-do-thi-post1892692.tpo",
+      "https://svvn.tienphong.vn/lay-nhung-thuc-pham-nay-ra-khoi-tu-lanh-ngay-lap-tuc-post1892594.tpo",
+      "https://svvn.tienphong.vn/cho-nghiep-vu-xuat-hien-trong-cac-truong-hoc-nhat-ban-post1892591.tpo",
+      "https://svvn.tienphong.vn/mang-tri-thuc-tu-the-gioi-ve-giai-bai-toan-lu-ngap-o-viet-nam-post1872745.tpo",
+      "https://svvn.tienphong.vn/tan-thu-khoa-mang-tri-thuc-tu-giang-duong-vao-giai-nhung-bai-toan-cua-dat-nuoc-post1872334.tpo",
+      "https://svvn.tienphong.vn/thi-sinh-hoa-hau-viet-nam-2026-ke-chuyen-que-huong-lan-toa-tinh-yeu-dat-nuoc-post1872109.tpo"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:57.699Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/svvn.tienphong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".cms-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchikientruc.com.vn",
+  "siteId": "tapchikientruc.com.vn",
+  "registrableDomain": "tapchikientruc.com.vn",
+  "homepage": "https://www.tapchikientruc.com.vn/",
+  "allowedHosts": [
+    "www.tapchikientruc.com.vn",
+    "tapchikientruc.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.tapchikientruc.com.vn/",
+    "categories": [
+      "https://www.tapchikientruc.com.vn/category/tin-tuc",
+      "https://www.tapchikientruc.com.vn/category/tin-tuc/tin-hoi-kts-viet-nam",
+      "https://www.tapchikientruc.com.vn/category/tckt",
+      "https://www.tapchikientruc.com.vn/category/cuoc-thi/cuoc-thi-tckt-to-chuc",
+      "https://www.tapchikientruc.com.vn/category/tckt/hoi-thao-toa-dam-tckt-to-chuc",
+      "https://www.tapchikientruc.com.vn/category/tin-tuc/the-gioi"
+    ]
+  },
+  "title": {
+    "value": "Vibe 2026: Từ nhịp tăng trưởng của ngành nội thất đến hệ sinh thái không gian sống Việt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:01.838Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:55.492Z",
+    "independentHoldouts": [
+      "https://www.tapchikientruc.com.vn/tckt/hop-bao-cong-bo-le-hoi-thiet-ke-sang-tao-ha-noi-2026-hon-150-hoat-dong-voi-chu-de-thang-long-ke-nghe.html",
+      "https://www.tapchikientruc.com.vn/tin-tuc/khai-mac-le-hoi-thiet-ke-sang-tao-ha-noi-nam-2026-voi-chu-de-thang-long-ke-nghe-kinh-te-sang-tao.html",
+      "https://www.tapchikientruc.com.vn/tin-tuc/le-trao-giai-cuoc-thi-thiet-ke-khong-gian-sang-tao-ha-noi-2026-voi-chu-de-ha-noi-danh-thuc-khong-gian-do-thi.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.tapchikientruc.com.vn/tin-tuc/vibe-2026-tu-nhip-tang-truong-cua-nganh-noi-that-den-he-sinh-thai-khong-gian-song-viet.html",
+      "https://www.tapchikientruc.com.vn/tckt/hop-bao-cong-bo-le-hoi-thiet-ke-sang-tao-ha-noi-2026-hon-150-hoat-dong-voi-chu-de-thang-long-ke-nghe.html",
+      "https://www.tapchikientruc.com.vn/tin-tuc/khai-mac-le-hoi-thiet-ke-sang-tao-ha-noi-nam-2026-voi-chu-de-thang-long-ke-nghe-kinh-te-sang-tao.html",
+      "https://www.tapchikientruc.com.vn/tin-tuc/le-trao-giai-cuoc-thi-thiet-ke-khong-gian-sang-tao-ha-noi-2026-voi-chu-de-ha-noi-danh-thuc-khong-gian-do-thi.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

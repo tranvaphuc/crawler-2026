@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tgnguoinoitieng.com",
+  "siteId": "tgnguoinoitieng.com",
+  "registrableDomain": "tgnguoinoitieng.com",
+  "homepage": "https://tgnguoinoitieng.com/",
+  "allowedHosts": [
+    "tgnguoinoitieng.com",
+    "www.tgnguoinoitieng.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bản giao hưởng thời trang: Nơi nhan sắc Sài Gòn hòa quyện cùng phong vị Retro vượt thời gian",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "#vinadev-catogeries",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#vinasol-wrapper-content > table.contentpaneopen:has(td > p)",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:41:52.155Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tgnguoinoitieng.com/thoi-trang/ban-giao-huong-thoi-trang-noi-nhan-sac-sai-gon-hoa-quyen-cung-phong-vi-retro-vuot-thoi-gian.html",
+      "https://tgnguoinoitieng.com/thoi-trang/cong-tri-ton-vinh-lua-lanh-my-a-trong-bo-suu-tap-moi.html",
+      "https://tgnguoinoitieng.com/xe/ngan-hang-thanh-ly-hang-loat-xe-sang-gia-khoi-diem-vai-tram-trieu-dong.html",
+      "https://tgnguoinoitieng.com/lang-sao/ca-si-anh-sha-hanh-trinh-tro-ve-voi-dam-me-bang-am-nhac.html",
+      "https://tgnguoinoitieng.com/giai-tri/sy-luan-me-man-vi-thanh-chuong-len-tong-hai-lan-van-phoi-phoi-nhu-bang-kieu.html",
+      "https://tgnguoinoitieng.com/giai-tri/dong-hanh-cung-ban-doi-tren-hanh-trinh-phat-trien-su-nghiep.html",
+      "https://tgnguoinoitieng.com/lang-sao/duong-trieu-quy-su-luc-va-hanh-trinh-giai-ma-nhung-bi-an-giua-thoi-dai-duong.html",
+      "https://tgnguoinoitieng.com/nguoi-noi-tieng/dao-dien-khoa-nguyen-va-hanh-phuc-cua-nguoi-gieo-hat.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tgnguoinoitieng.com/",
+    "categories": [
+      "https://tgnguoinoitieng.com/phong-cach/",
+      "https://tgnguoinoitieng.com/thoi-trang/",
+      "https://tgnguoinoitieng.com/nguoi-mau/",
+      "https://tgnguoinoitieng.com/nha-thiet-ke/",
+      "https://tgnguoinoitieng.com/the-gioi-sao/",
+      "https://tgnguoinoitieng.com/lang-sao/",
+      "https://tgnguoinoitieng.com/hoa-hau/",
+      "https://tgnguoinoitieng.com/nguoi-noi-tieng/",
+      "https://tgnguoinoitieng.com/duong-den-ngoi-sao/",
+      "https://tgnguoinoitieng.com/thuong-truong/",
+      "https://tgnguoinoitieng.com/doanh-nghiep/",
+      "https://tgnguoinoitieng.com/doanh-nhan/",
+      "https://tgnguoinoitieng.com/khoe-dep/",
+      "https://tgnguoinoitieng.com/san-pham-dich-vu/",
+      "https://tgnguoinoitieng.com/giai-tri/",
+      "https://tgnguoinoitieng.com/diem-den/",
+      "https://tgnguoinoitieng.com/trang-chu.html",
+      "https://www.tgnguoinoitieng.com/nguoi-noi-tieng/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tgnguoinoitieng.com",
+    "checkedAt": "2026-11-09T03:57:28.648Z",
+    "url": "https://tgnguoinoitieng.com/thoi-trang/ban-giao-huong-thoi-trang-noi-nhan-sac-sai-gon-hoa-quyen-cung-phong-vi-retro-vuot-thoi-gian.html",
+    "finalUrl": "https://tgnguoinoitieng.com/thoi-trang/ban-giao-huong-thoi-trang-noi-nhan-sac-sai-gon-hoa-quyen-cung-phong-vi-retro-vuot-thoi-gian.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5463,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tgnguoinoitieng.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 27,
+    "checkedArticleUrls": 30,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 377,
+        "passed": 27,
+        "distinctHashes": 27
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tgnguoinoitieng.com/lang-sao/ca-si-anh-sha-hanh-trinh-tro-ve-voi-dam-me-bang-am-nhac.html",
+      "https://tgnguoinoitieng.com/giai-tri/sy-luan-me-man-vi-thanh-chuong-len-tong-hai-lan-van-phoi-phoi-nhu-bang-kieu.html",
+      "https://tgnguoinoitieng.com/giai-tri/dong-hanh-cung-ban-doi-tren-hanh-trinh-phat-trien-su-nghiep.html",
+      "https://tgnguoinoitieng.com/lang-sao/duong-trieu-quy-su-luc-va-hanh-trinh-giai-ma-nhung-bi-an-giua-thoi-dai-duong.html",
+      "https://tgnguoinoitieng.com/nguoi-noi-tieng/dao-dien-khoa-nguyen-va-hanh-phuc-cua-nguoi-gieo-hat.html",
+      "https://tgnguoinoitieng.com/hoa-hau/van-pham-sau-dang-quang-miss-tourism-queen-international-2026-hanh-trinh-ban-linh-vuot-gioi-han-de-cham-toi-giac-mo.html",
+      "https://tgnguoinoitieng.com/giai-tri/kinh-da-chieu-gia-vi-viet-tu-huong-vi-mon-an-den-bi-quyet-duong-sinh-dan-gian.html",
+      "https://tgnguoinoitieng.com/thoi-trang/ban-giao-huong-thoi-trang-noi-nhan-sac-sai-gon-hoa-quyen-cung-phong-vi-retro-vuot-thoi-gian.html",
+      "https://tgnguoinoitieng.com/thoi-trang/cong-tri-ton-vinh-lua-lanh-my-a-trong-bo-suu-tap-moi.html",
+      "https://tgnguoinoitieng.com/thoi-trang/hh-thanh-hang-a-sieu-mau-minh-chau-nguon-cam-hung-bat-tan-trong-bst-con-mua-mau-xanh.html",
+      "https://tgnguoinoitieng.com/thoi-trang/ngam-ve-dep-co-xua-cua-nhung-an-trien-tren-ao-dai-vu-viet-ha.html",
+      "https://tgnguoinoitieng.com/lang-sao/cuoc-song-cua-khoi-my-sau-8-nam-ket-hon-va-roi-xa-showbiz.html",
+      "https://tgnguoinoitieng.com/lang-sao/nsnd-le-khanh-ke-nhung-ky-niem-kho-quen-voi-nhac-si-phu-quang.html",
+      "https://tgnguoinoitieng.com/lang-sao/nicole-nguyen-hoa-gai-tay-goc-viet-tu-tin-song-hien-dai-nhung-khong-quen-goc-viet.html",
+      "https://tgnguoinoitieng.com/lang-sao/nu-dien-vien-vo-danh-doi-doi-nho-phim-dien-anh-doanh-thu-8000-ty-dong.html",
+      "https://tgnguoinoitieng.com/nguoi-noi-tieng/nha-bao-nguyen-dinh-khai-hanh-trinh-tu-nguoi-giu-lua-nganh-y-den-dau-an-truyen-thong-vi-cong-dong.html",
+      "https://tgnguoinoitieng.com/xe/ngan-hang-thanh-ly-hang-loat-xe-sang-gia-khoi-diem-vai-tram-trieu-dong.html",
+      "https://tgnguoinoitieng.com/xe/xe-dien-lexus-dau-tien-o-viet-nam-lo-dien-day-pin-chay-440km-sac-nua-tieng-di-duoc-hon-350km.html",
+      "https://tgnguoinoitieng.com/xe/honda-dream-2027-ra-mat-den-led-dan-ao-moi-gia-tiem-can-sh.html",
+      "https://tgnguoinoitieng.com/xe/vinfast-kinet-dang-the-thao-kich-thuoc-vua-van-voi-nguoi-viet.html",
+      "https://tgnguoinoitieng.com/xe/honda-wave-co-ban-dac-biet-dat-nhu-sh-khac-biet-chu-yeu-nam-o-dan-ao.html",
+      "https://tgnguoinoitieng.com/du-lich/du-lich-khanh-hoa-tim-cach-thu-hut-khach-nga-trong-mua-thap-diem-khach-noi.html",
+      "https://tgnguoinoitieng.com/du-lich/tu-check-in-den-check-deep-nguoi-tre-gio-muon-gi-tu-nhung-chuyen-di.html",
+      "https://tgnguoinoitieng.com/du-lich/nhu-cau-du-lich-quy-ii2026-nguoi-viet-uu-tien-nhung-diem-den-gan.html",
+      "https://tgnguoinoitieng.com/du-lich/du-lich-viet-nam-bat-tay-voi-ong-lon-nganh-dich-vu-thi-thuc.html",
+      "https://tgnguoinoitieng.com/du-lich/sun-executive-lounge-phu-quoc-trai-nghiem-doc-ban-trong-hoc-vien-hang-khong.html",
+      "https://tgnguoinoitieng.com/san-pham-dich-vu/top-3-mui-huong-elixir-dinh-dam-trong-bo-suu-tap-landscape-cua-loewe.html",
+      "https://tgnguoinoitieng.com/doanh-nghiep/vietjet-va-cfm-phat-trien-nang-luc-bao-duong-dong-co-the-he-moi-tai-viet-nam.html",
+      "https://tgnguoinoitieng.com/doanh-nhan/tu-tam-danh-thiep-den-thuong-vu-vgef-dat-muc-tieu-gi-tai-caexpo-2026.html",
+      "https://tgnguoinoitieng.com/doanh-nghiep/pho-thu-tuong-thuong-truc-pham-gia-tuc-tiep-chu-tich-china-eximbank.html",
+      "https://tgnguoinoitieng.com/san-pham-dich-vu/venezia-a-oriente-khi-huong-thom-tro-thanh-cau-noi-van-hoa.html",
+      "https://tgnguoinoitieng.com/giai-tri/nghe-si-tu-quyen-he-lo-chuyen-hau-truong-san-khau-cai-luong-chi-von-ven-4-met-vuong.html",
+      "https://tgnguoinoitieng.com/giai-tri/ca-si-ho-le-thu-nghe-si-thuc-thu-phai-song-tron-tam-hon-trong-tung-cau-hat.html",
+      "https://tgnguoinoitieng.com/giai-tri/ca-si-nguyen-kieu-oanh-dam-nhan-vi-tri-doi-truong-trong-an-so-toa-sang-2026.html",
+      "https://tgnguoinoitieng.com/giai-tri/vanessa-le-bo-bang-thac-si-tai-chinh-chon-song-voi-dam-me-nghe-thuat.html",
+      "https://tgnguoinoitieng.com/giai-tri/quan-quan-sao-mai-huyen-trang-nhan-giai-tai-hy-lap.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:17:06.678Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tgnguoinoitieng.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationArticleScope": "#vinasol-wrapper-content",
+  "description": {
+    "scope": "#vinasol-wrapper-content",
+    "strategy": "native_lead",
+    "selector": "table.contentpaneopen td p"
+  }
+}

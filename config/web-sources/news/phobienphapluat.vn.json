@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phobienphapluat.vn",
+  "siteId": "phobienphapluat.vn",
+  "registrableDomain": "phobienphapluat.vn",
+  "homepage": "https://phobienphapluat.vn/",
+  "allowedHosts": [
+    "phobienphapluat.vn",
+    "www.phobienphapluat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://phobienphapluat.vn/",
+    "categories": [
+      "https://phobienphapluat.vn/tin-tuc.html",
+      "https://phobienphapluat.vn/tin-tuc/ky-nguyen-moi.html",
+      "https://phobienphapluat.vn/tin-tuc/ban-tin-tu-phap.html",
+      "https://phobienphapluat.vn/pho-bien-phap-luat.html",
+      "https://phobienphapluat.vn/pho-bien-phap-luat/phap-luat-doi-song.html",
+      "https://phobienphapluat.vn/pho-bien-phap-luat/phap-luat-va-kinh-doanh.html"
+    ]
+  },
+  "title": {
+    "value": "SHB đồng hành cùng Ngày Thanh toán số Việt Nam 2026, thúc đẩy trải nghiệm thanh toán số",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:15.462Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:09.370Z",
+    "independentHoldouts": [
+      "https://phobienphapluat.vn/hoan-tien-den-200000-dong-khi-thanh-toan-hoa-don-tu-dong-tren-shb-saha-a6492.html",
+      "https://phobienphapluat.vn/shb-to-chuc-hoi-nghi-nha-dau-tu-cap-nhat-ke-hoach-kinh-doanh-tiet-lo-dong-luc-but-pha-a6630.html",
+      "https://phobienphapluat.vn/thue-suat-thue-tieu-thu-dac-biet-doi-voi-xang-dau-xuong-0-tu-0h-sang-1112026-a6717.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://phobienphapluat.vn/shb-dong-hanh-cung-ngay-thanh-toan-so-viet-nam-2026-thuc-day-trai-nghiem-thanh-toan-so-a6670.html",
+      "https://phobienphapluat.vn/hoan-tien-den-200000-dong-khi-thanh-toan-hoa-don-tu-dong-tren-shb-saha-a6492.html",
+      "https://phobienphapluat.vn/shb-to-chuc-hoi-nghi-nha-dau-tu-cap-nhat-ke-hoach-kinh-doanh-tiet-lo-dong-luc-but-pha-a6630.html",
+      "https://phobienphapluat.vn/thue-suat-thue-tieu-thu-dac-biet-doi-voi-xang-dau-xuong-0-tu-0h-sang-1112026-a6717.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

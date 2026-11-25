@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodoi.com",
+  "siteId": "baodoi.com",
+  "registrableDomain": "baodoi.com",
+  "homepage": "https://www.baodoi.com/",
+  "allowedHosts": [
+    "www.baodoi.com",
+    "baodoi.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Việt Nam là đối tác không thể thiếu của Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_passed_category_unverified",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:27.384Z",
+    "sampleCount": 12,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 6,
+    "sampleUrls": [
+      "https://www.baodoi.com/r.php?id=R4rYJ",
+      "https://www.baodoi.com/r.php?id=XGVlM",
+      "https://www.baodoi.com/r.php?id=bxq85",
+      "https://www.baodoi.com/r.php?id=rg8Qb",
+      "https://tuoitre.vn/petrovietnam-xep-thu-11-bang-xep-hang-fortune-southeast-asia-500-nam-2026-100261106222406451.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": false,
+    "reason": "net::ERR_CONNECTION_REFUSED at https://www.baodoi.com/r.php?id=2Wybd | net::ERR_CONNECTION_REFUSED at https://www.baodoi.com/r.php?id=kwlnm | net::ERR_CONNECTION_REFUSED at https://www.baodoi.com/r.php?id=xzo6o | ECONNREFUSED"
+  },
+  "discovery": {
+    "homepage": "https://www.baodoi.com/",
+    "categories": [
+      "https://www.baodoi.com/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?baodoi.com/.*?[\\w-]{30,}[\\w]{1}(.html)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.249Z",
+      "verifiedSeeds": [
+        "https://www.baodoi.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_passed_category_unverified",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "baodoi.com",
+    "checkedAt": "2026-11-09T03:56:49.678Z",
+    "url": "https://www.baodoi.com/r.php?id=R4rYJ",
+    "finalUrl": "https://tuoitre.vn/viet-nam-la-doi-tac-khong-the-thieu-cua-nhat-ban-2026012721352127.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2617,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "baodoi.com",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 5,
+    "checkedArticleUrls": 13,
+    "freshArticleChecks": 12,
+    "parserIssues": 0,
+    "transportUnconfirmed": 8,
+    "distinctHashes": 5,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 64,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.baodoi.com/r.php?id=kwlnm",
+      "https://www.baodoi.com/r.php?id=9QA1v",
+      "https://www.baodoi.com/r.php?id=vzDA0",
+      "https://www.baodoi.com/r.php?id=5KmaK",
+      "https://www.baodoi.com/r.php?id=xzpqJ",
+      "https://www.baodoi.com/r.php?id=A1gnN",
+      "https://www.baodoi.com/r.php?id=mA96L",
+      "https://www.baodoi.com/r.php?id=A1gmr",
+      "https://www.baodoi.com/r.php?id=zzR6m",
+      "https://www.baodoi.com/r.php?id=pay4X",
+      "https://www.baodoi.com/r.php?id=WxrGB",
+      "https://www.baodoi.com/r.php?id=XG89r",
+      "https://www.baodoi.com/r.php?id=DoYB9",
+      "https://www.baodoi.com/r.php?id=bxq85",
+      "https://www.baodoi.com/r.php?id=76KJJ",
+      "https://www.baodoi.com/r.php?id=Qqymp",
+      "https://www.baodoi.com/r.php?id=0a56p",
+      "https://www.baodoi.com/r.php?id=EvA7G",
+      "https://www.baodoi.com/r.php?id=B7Aqn",
+      "https://www.baodoi.com/r.php?id=zzpdr",
+      "https://www.baodoi.com/r.php?id=8KovL",
+      "https://www.baodoi.com/r.php?id=4mkab",
+      "https://www.baodoi.com/r.php?id=NW9g9",
+      "https://www.baodoi.com/r.php?id=1xlLk",
+      "https://www.baodoi.com/r.php?id=lMko0",
+      "https://www.baodoi.com/r.php?id=rg8Qb",
+      "https://www.baodoi.com/r.php?id=nQ5Vr",
+      "https://www.baodoi.com/r.php?id=xzo6o",
+      "https://www.baodoi.com/r.php?id=yzwBr",
+      "https://www.baodoi.com/r.php?id=4m8v5",
+      "https://www.baodoi.com/r.php?id=GX2pR",
+      "https://www.baodoi.com/r.php?id=ZYwbo",
+      "https://www.baodoi.com/r.php?id=KJxWR",
+      "https://www.baodoi.com/r.php?id=XGVRL",
+      "https://www.baodoi.com/r.php?id=wzVgO",
+      "https://www.baodoi.com/r.php?id=A1AqV",
+      "https://www.baodoi.com/r.php?id=ogl1R",
+      "https://www.baodoi.com/r.php?id=XGVlM",
+      "https://www.baodoi.com/r.php?id=9QVkX",
+      "https://www.baodoi.com/r.php?id=Qqy6J",
+      "https://www.baodoi.com/r.php?id=ZYDlX",
+      "https://www.baodoi.com/r.php?id=bxMV0",
+      "https://www.baodoi.com/r.php?id=76AQY",
+      "https://www.baodoi.com/r.php?id=2WnOE",
+      "https://www.baodoi.com/r.php?id=R4rYJ",
+      "https://www.baodoi.com/r.php?id=yzVKQ",
+      "https://www.baodoi.com/r.php?id=QqAGY",
+      "https://www.baodoi.com/r.php?id=lMb6o",
+      "https://www.baodoi.com/r.php?id=5Kmx2",
+      "https://www.baodoi.com/r.php?id=LOAG9",
+      "https://www.baodoi.com/r.php?id=vzogp",
+      "https://www.baodoi.com/r.php?id=9QVd0",
+      "https://www.baodoi.com/r.php?id=5K1V6",
+      "https://www.baodoi.com/r.php?id=GXAWE",
+      "https://www.baodoi.com/r.php?id=WxoNv",
+      "https://www.baodoi.com/r.php?id=bxqWK",
+      "https://www.baodoi.com/r.php?id=76KYD",
+      "https://www.baodoi.com/r.php?id=d12zb",
+      "https://www.baodoi.com/r.php?id=Ev6XZ",
+      "https://www.baodoi.com/r.php?id=VxKXZ",
+      "https://www.baodoi.com/r.php?id=nQNo5",
+      "https://www.baodoi.com/r.php?id=B7amm",
+      "https://www.baodoi.com/r.php?id=0aY88",
+      "https://www.baodoi.com/r.php?id=LOLJN"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:59.464Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/baodoi.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "parserType": "publisher_dispatch",
+  "dispatchRepair": {
+    "checkedAt": "2026-11-17T05:12:27.984Z",
+    "proofs": [
+      {
+        "url": "https://www.baodoi.com/r.php?id=R4rYJ",
+        "publisherUrl": "https://tuoitre.vn/viet-nam-la-doi-tac-khong-the-thieu-cua-nhat-ban-2026012721352127.htm",
+        "title": "Việt Nam là đối tác không thể thiếu của Nhật Bản",
+        "publishedDate": "2026-01-27T15:28:00.000Z",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tuoitre.vn/viet-nam-la-doi-tac-khong-the-thieu-cua-nhat-ban-2026012721352127.htm",
+          "publishedDate": "2026-01-27T15:28:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://www.baodoi.com/r.php?id=DoYB9",
+        "publisherUrl": "https://tuoitre.vn/one-battle-after-another-va-sinners-thong-tri-de-cu-giai-bafta-20260127213754306.htm",
+        "title": "'One Battle After Another' và 'Sinners' thống trị đề cử giải BAFTA",
+        "publishedDate": "2026-01-27T16:03:00.000Z",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tuoitre.vn/one-battle-after-another-va-sinners-thong-tri-de-cu-giai-bafta-20260127213754306.htm",
+          "publishedDate": "2026-01-27T16:03:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://www.baodoi.com/r.php?id=VxKXZ",
+        "publisherUrl": "https://tuoitre.vn/tong-lanh-su-trung-quoc-duong-lap-tp-hcm-chac-chan-hien-thuc-hoa-muc-tieu-sieu-do-thi-quoc-te-20260127223532205.htm",
+        "title": "Tổng lãnh sự Trung Quốc Đường Lập: 'TP.HCM chắc chắn hiện thực hóa mục tiêu siêu đô thị quốc tế'",
+        "publishedDate": "2026-01-27T15:53:00.000Z",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://tuoitre.vn/tong-lanh-su-trung-quoc-duong-lap-tp-hcm-chac-chan-hien-thuc-hoa-muc-tieu-sieu-do-thi-quoc-te-20260127223532205.htm",
+          "publishedDate": "2026-01-27T15:53:00.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      }
+    ]
+  },
+  "identityPolicy": "Use configured original publisher and original URL; retain aggregate URL only as discovery provenance."
+}

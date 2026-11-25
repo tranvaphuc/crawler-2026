@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnammoi.vn",
+  "siteId": "vietnammoi.vn",
+  "registrableDomain": "vietnammoi.vn",
+  "homepage": "https://vietnammoi.vn/",
+  "allowedHosts": [
+    "vietnammoi.vn",
+    "www.vietnammoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vietnammoi.vn/",
+    "categories": []
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Dự báo thời tiết ngày mai 17/11 Hà Nội tăng nhiệt 3 độ, TP HCM nắng 34 độ, Đà Nẵng nóng lên 33 độ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:45.278Z",
+    "frozenAt": "2026-11-16T02:00:40.869Z",
+    "trainingUrl": "https://vietnammoi.vn/du-bao-thoi-tiet-ngay-mai-1711-ha-noi-tang-nhiet-3-do-tp-hcm-nang-34-do-da-nang-nong-len-33-do-2026111521220606.htm",
+    "independentHoldouts": [
+      "https://vietnammoi.vn/nhin-lai-20-nam-thuduc-house-duoi-thoi-ong-le-chi-hieu-20220211173951921.htm",
+      "https://vietnammoi.vn/nhung-khu-dat-co-the-xay-them-cong-trinh-cao-tang-o-le-van-luong-le-van-luong-keo-dai-bai-11-khu-phuc-hop-sym-cantavil-complex-o-nut-giao-vanh-dai-35-202289143452639.htm"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vietnammoi.vn/du-bao-thoi-tiet-ngay-mai-1711-ha-noi-tang-nhiet-3-do-tp-hcm-nang-34-do-da-nang-nong-len-33-do-2026111521220606.htm",
+      "https://vietnammoi.vn/nhin-lai-20-nam-thuduc-house-duoi-thoi-ong-le-chi-hieu-20220211173951921.htm",
+      "https://vietnammoi.vn/nhung-khu-dat-co-the-xay-them-cong-trinh-cao-tang-o-le-van-luong-le-van-luong-keo-dai-bai-11-khu-phuc-hop-sym-cantavil-complex-o-nut-giao-vanh-dai-35-202289143452639.htm",
+      "https://vietnammoi.vn/gia-lai-se-co-trung-tam-thuong-mai-go-pleiku-20261068430528.htm",
+      "https://vietnammoi.vn/hinh-anh-vanh-dai-25-doan-trung-kinh-tran-duy-hung-sau-hon-thang-thong-xe-ky-thuat-20261115202824882.htm",
+      "https://vietnammoi.vn/cau-tu-lien-duc-dam-cau-dan-phia-noi-do-20261113823310.htm",
+      "https://vietnammoi.vn/quang-tri-go-vuong-cho-khu-cong-nghiep-cua-lien-danh-vsip-2026111515343893.htm",
+      "https://vietnammoi.vn/ke-hoach-phat-trien-nha-o-cho-thue-cua-da-nang-muc-tieu-10400-can-ho-uu-tien-gan-voi-tod-20261115101319490.htm",
+      "https://vietnammoi.vn/tien-do-cao-toc-vinh-thanh-thuy-202611157943104.htm",
+      "https://vietnammoi.vn/moi-thue-moi-truong-rung-vuon-quoc-gia-u-minh-ha-phat-trien-du-lich-sinh-thai-nghi-duong-20261115112651989.htm",
+      "https://vietnammoi.vn/chuyen-gia-mbs-danh-gia-cao-co-phieu-cua-nhung-doanh-nghiep-phat-trien-quy-dat-gan-tod-20261113173348901.htm",
+      "https://vietnammoi.vn/hai-phong-lan-luot-dau-gia-dat-bac-song-cam-lam-loat-du-an-hon-34500-ty-dong-2026111413384833.htm",
+      "https://vietnammoi.vn/doanh-nghiep-dau-tu-truc-dai-lo-canh-quan-song-hong-lai-hon-nghin-ty-dong-2026111384944773.htm",
+      "https://vietnammoi.vn/tap-doan-mat-troi-lai-sau-thue-722-ty-dong-nua-dau-nam-2026111114407659.htm",
+      "https://vietnammoi.vn/dig-nhan-hon-4500-ty-dong-tien-khach-hang-dat-cho-mua-bat-dong-san-2026118133624680.htm",
+      "https://vietnammoi.vn/phien-thao-luan-3-capital-market-2027-dong-von-moi-cau-truc-moi-co-hoi-dau-tu-moi-2026111217913273.htm",
+      "https://vietnammoi.vn/fireside-chat-khi-the-gioi-dinh-gia-lai-thi-truong-von-viet-nam-20261112165938230.htm",
+      "https://vietnammoi.vn/chinh-thuc-cong-bo-10-cong-ty-chung-khoan-co-dich-vu-ban-le-tot-nhat-viet-nam-best-retail-brokers-2026-202611121696624.htm",
+      "https://vietnammoi.vn/khu-do-thi-aic-hon-13000-ty-dong-o-me-linh-lan-luot-don-chuyen-bien-phap-ly-lay-ten-moi-la-diamond-flora-202611142274442.htm",
+      "https://vietnammoi.vn/chan-dung-nha-dau-tu-sap-lam-du-an-du-lich-sinh-thai-tai-ho-nuoc-ngot-lon-thu-hai-viet-nam-2026102915541852.htm",
+      "https://vietnammoi.vn/thanh-vien-kinh-bac-dau-tu-them-du-an-bat-dong-san-cong-nghiep-o-gia-lai-2026102612546546.htm",
+      "https://vietnammoi.vn/duong-linh-nam-mo-rong-bat-dau-tham-nhua-20261110205013197.htm",
+      "https://vietnammoi.vn/hinh-anh-tien-do-vanh-dai-25-qua-phuong-thanh-xuan-2026117134435116.htm",
+      "https://vietnammoi.vn/phan-lon-nha-dan-ven-duong-da-di-doi-cho-pha-do-de-mo-rong-ql1a-qua-phuong-chuong-duong-20261171463419.htm",
+      "https://vietnammoi.vn/khu-dat-hai-mat-tien-38-bich-cau-cua-doanh-nghiep-nganh-mo-va-nhung-chuyen-dong-sau-khi-vinachem-thoai-von-2026921767368.htm",
+      "https://vietnammoi.vn/toan-canh-khu-dat-mat-tien-metro-cat-linh-ha-dong-sap-duoc-fcc-phat-trien-to-hop-nha-o-4350-ty-dong-2026824103021532.htm",
+      "https://vietnammoi.vn/nang-luc-fcc-cong-ty-thuc-pham-sap-dau-tu-to-hop-nha-o-4300-ty-tai-ha-dong-2026822135155632.htm",
+      "https://vietnammoi.vn/nha-o-xa-hoi-du-kien-van-duoc-ban-lai-theo-gia-thi-truong-sau-5-nam-2026111674759376.htm",
+      "https://vietnammoi.vn/gia-lai-sap-co-khu-cong-nghiep-hon-4300-ty-dong-tren-duong-ven-bien-phu-my-dong-2026111521612631.htm",
+      "https://vietnammoi.vn/de-xuat-dau-tu-duong-sat-tp-hcm-can-tho-hon-199000-ty-dong-20261115154015908.htm",
+      "https://vietnammoi.vn/tp-hcm-de-xuat-tang-thoi-gian-mien-tien-thue-dat-cho-nhieu-du-an-2026111510351613.htm",
+      "https://vietnammoi.vn/dien-mao-bon-duong-huyet-mach-thu-thiem-sap-hoan-thanh-20261114104647291.htm",
+      "https://vietnammoi.vn/sun-world-sap-khoi-cong-khu-do-thi-so-1-mang-den-20261114131331140.htm",
+      "https://vietnammoi.vn/ninh-binh-dau-gia-21-lo-dat-tai-phuong-nam-hoa-lu-khoi-diem-tu-11-trieu-dongm2-2026111321210554.htm",
+      "https://vietnammoi.vn/ninh-binh-dau-gia-60-lo-dat-tai-phuong-tam-diep-khoi-diem-tu-4-trieu-dongm2-20261113194112966.htm",
+      "https://vietnammoi.vn/ninh-binh-dau-gia-89-lo-dat-o-tai-phuong-le-ho-khoi-diem-tu-43-trieu-dongm2-20261112221140920.htm"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

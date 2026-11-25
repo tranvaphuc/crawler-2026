@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonggiaonline.vn",
+  "siteId": "thuonggiaonline.vn",
+  "registrableDomain": "thuonggiaonline.vn",
+  "homepage": "https://thuonggiaonline.vn/",
+  "allowedHosts": [
+    "thuonggiaonline.vn",
+    "www.thuonggiaonline.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Doanh nghiệp VACOD-HBA thích ứng, đón cơ hội từ làn sóng chính sách mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:38.715Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thuonggiaonline.vn/doanh-nghiep-vacod-hba-thich-ung-don-co-hoi-tu-lan-song-chinh-sach-moi-post574220.html",
+      "https://thuonggiaonline.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-post574218.html",
+      "https://thuonggiaonline.vn/nhon-nhip-thi-truong-thiet-bi-massage-co-vai-gay-post574192.html",
+      "https://thuonggiaonline.vn/4-lieu-thuoc-cho-nen-kinh-te-cuoi-nam-post574196.html",
+      "https://thuonggiaonline.vn/luong-hon-60-trieu-dong-moi-thang-banker-tao-ra-bao-nhieu-loi-nhuan-cho-ngan-hang-post574178.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuonggiaonline.vn/",
+    "categories": [
+      "https://thuonggiaonline.vn/thoi-cuoc/",
+      "https://thuonggiaonline.vn/kinh-doanh/",
+      "https://thuonggiaonline.vn/kinh-doanh/ngan-hang/",
+      "https://thuonggiaonline.vn/kinh-doanh/chung-khoan/",
+      "https://thuonggiaonline.vn/kinh-doanh/khoi-nghiep/",
+      "https://thuonggiaonline.vn/kinh-doanh/bat-dong-san/",
+      "https://thuonggiaonline.vn/kinh-doanh/thi-truong/",
+      "https://thuonggiaonline.vn/kinh-doanh/cong-nghe/",
+      "https://thuonggiaonline.vn/kinh-doanh/xe-plus/",
+      "https://thuonggiaonline.vn/quan-tri/",
+      "https://thuonggiaonline.vn/thuong-hieu/",
+      "https://thuonggiaonline.vn/the-gioi-thuong-gia/",
+      "https://thuonggiaonline.vn/the-gioi-thuong-gia/guong-mat-noi-bat/",
+      "https://thuonggiaonline.vn/the-gioi-thuong-gia/quoc-te/",
+      "https://thuonggiaonline.vn/suc-khoe/",
+      "https://thuonggiaonline.vn/trai-nghiem/",
+      "https://thuonggiaonline.vn/trai-nghiem/du-lich/",
+      "https://thuonggiaonline.vn/trai-nghiem/thoi-trang/",
+      "https://thuonggiaonline.vn/trai-nghiem/doi-song/",
+      "https://thuonggiaonline.vn/multimedia/",
+      "https://thuonggiaonline.vn/infographic/",
+      "https://thuonggiaonline.vn/video/",
+      "https://thuonggiaonline.vn/emagazine/",
+      "https://thuonggiaonline.vn/epaper/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuonggiaonline.vn",
+    "checkedAt": "2026-11-09T03:57:31.997Z",
+    "url": "https://thuonggiaonline.vn/doanh-nghiep-vacod-hba-thich-ung-don-co-hoi-tu-lan-song-chinh-sach-moi-post574220.html",
+    "finalUrl": "https://thuonggiaonline.vn/doanh-nghiep-vacod-hba-thich-ung-don-co-hoi-tu-lan-song-chinh-sach-moi-post574220.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9805,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thuonggiaonline.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 35,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 35,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 24,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 547,
+        "passed": 35,
+        "distinctHashes": 35
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thuonggiaonline.vn/thi-truong-chung-khoan-suy-yeu-chuyen-gia-khuyen-nghi-giam-su-dung-don-bay-post574243.html",
+      "https://thuonggiaonline.vn/lam-moi-diem-den-danh-thuc-suc-hut-du-lich-mua-dong-2026-post574233.html",
+      "https://thuonggiaonline.vn/quoc-hoi-thong-qua-nghi-quyet-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-post574229.html",
+      "https://thuonggiaonline.vn/gia-vang-tuan-nay-chiu-tac-dong-tu-nhung-yeu-to-nao-post574224.html",
+      "https://thuonggiaonline.vn/cong-ty-chung-khoan-dong-loat-canh-bao-rui-ro-nha-dau-tu-chua-nen-voi-bat-day-post574222.html",
+      "https://thuonggiaonline.vn/tu-doanh-bao-mon-loi-nhuan-cong-ty-chung-khoan-post574251.html",
+      "https://thuonggiaonline.vn/gia-vang-the-gioi-tang-manh-trong-nuoc-cung-nhich-nhe-post574246.html",
+      "https://thuonggiaonline.vn/cach-lam-chu-siri-ai-voi-nhung-thiet-lap-va-tinh-nang-dang-chu-y-post574257.html",
+      "https://thuonggiaonline.vn/cuoc-khung-hoang-do-am-khien-lan-da-bong-troc-nut-ne-khi-troi-chuyen-lanh-post574259.html",
+      "https://thuonggiaonline.vn/honor-x6e-mo-ban-tai-viet-nam-gia-khoi-diem-gan-7-trieu-dong-post574260.html",
+      "https://thuonggiaonline.vn/sua-luat-an-toan-thuc-pham-tuoc-co-hoi-cua-quang-cao-no-tang-cuong-bao-ve-nguoi-tieu-dung-post574252.html",
+      "https://thuonggiaonline.vn/nhung-ngan-hang-bom-tien-manh-nhat-he-thong-trong-9-thang-dau-nam-2026-post574256.html",
+      "https://thuonggiaonline.vn/tang-lop-trung-luu-an-do-vay-no-de-theo-duoi-cuoc-song-sung-tuc-post574255.html",
+      "https://thuonggiaonline.vn/nen-kinh-te-lam-dep-do-bo-trung-tam-do-thi-my-post574254.html",
+      "https://thuonggiaonline.vn/tuong-lai-nvidia-bi-dat-dau-hoi-truoc-nguy-co-thieu-nguoi-ke-nhiem-jensen-huang-post574250.html",
+      "https://thuonggiaonline.vn/ty-gia-usdvnd-hom-nay-ngay-1011-dong-bac-xanh-chiu-suc-ep-tu-trien-vong-hoa-dam-my-iran-post574249.html",
+      "https://thuonggiaonline.vn/gia-nong-san-hom-nay-1011-gia-ca-phe-dao-dong-tu-8450085300-dongkg-thit-lon-hoi-dien-bien-trai-chieu-post574247.html",
+      "https://thuonggiaonline.vn/nhieu-hoat-dong-chao-mung-ngay-van-hoa-viet-nam-tren-ca-nuoc-post574240.html",
+      "https://thuonggiaonline.vn/dow-jones-bat-tang-hon-1000-diem-gia-dau-lai-sut-gan-6-post574245.html",
+      "https://thuonggiaonline.vn/dau-tu-thua-lo-tien-ty-con-dau-muon-ban-dat-nha-chong-tra-no-post574242.html",
+      "https://thuonggiaonline.vn/vnpt-mo-rong-khai-thac-ha-tang-truyen-dan-quoc-te-qua-hop-tac-voi-symphony-post574244.html",
+      "https://thuonggiaonline.vn/diem-danh-nhung-loai-ca-phe-cho-nguoi-co-he-tieu-hoa-nhay-cam-post574236.html",
+      "https://thuonggiaonline.vn/chinh-phu-yeu-cau-giu-on-dinh-gia-hang-hoa-dich-vu-do-nha-nuoc-quan-ly-den-het-nam-2026-post574235.html",
+      "https://thuonggiaonline.vn/tong-bi-thu-chu-tich-nuoc-to-lam-toa-dam-voi-lanh-dao-mot-so-tap-doan-lon-cua-nhat-ban-post574234.html",
+      "https://thuonggiaonline.vn/san-thuong-mai-dien-tu-va-chien-luoc-dip-1111-giam-gia-khong-con-la-loi-the-duy-nhat-post574232.html",
+      "https://thuonggiaonline.vn/bi-quyet-ve-sinh-lo-vi-song-sach-bong-khu-mui-hieu-qua-post574230.html",
+      "https://thuonggiaonline.vn/sumi-hanel-ky-niem-30-nam-thanh-lap-don-nhan-bang-khen-cua-chu-tich-ubnd-thanh-pho-ha-noi-post574228.html",
+      "https://thuonggiaonline.vn/van-hoa-kinh-doanh-tu-chuan-muc-ung-xu-den-nang-luc-canh-tranh-quoc-gia-post574223.html",
+      "https://thuonggiaonline.vn/ty-gia-usdvnd-hom-nay-ngay-911-usd-quoc-te-phuc-hoi-ty-gia-trong-nuoc-tiep-tuc-ha-post574227.html",
+      "https://thuonggiaonline.vn/ford-viet-nam-tung-uu-dai-thang-11-ho-tro-100-le-phi-truoc-ba-mua-xe-co-co-hoi-trung-vang-9999-post574225.html",
+      "https://thuonggiaonline.vn/gia-nong-san-hom-nay-911-gia-ca-phe-lao-doc-thit-lon-hoi-dan-tien-moc-50000-dongkg-post574226.html",
+      "https://thuonggiaonline.vn/vay-ngan-hang-mua-chung-cu-chu-nha-ganh-no-2-ty-dong-vi-tinh-sai-bai-post574215.html",
+      "https://thuonggiaonline.vn/mat-dat-xung-quanh-rung-chuyen-nha-may-thep-bi-sap-khi-vu-no-bung-phat-post574253.html",
+      "https://thuonggiaonline.vn/dang-lay-nuoc-phuc-vu-cuu-hoa-truc-thang-tu-tu-cam-dau-xuong-song-post574248.html",
+      "https://thuonggiaonline.vn/xe-phan-khoi-lon-bung-chay-du-doi-khien-tai-xe-co-gio-bo-chay-post574221.html",
+      "https://thuonggiaonline.vn/duong-kinh-tai-nhieu-thang-tram-cua-dai-gia-duong-cong-minh-post574161.html",
+      "https://thuonggiaonline.vn/ba-mai-kieu-lien-duoc-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a-tai-hoi-nghi-thuong-dinh-fortune-post574151.html",
+      "https://thuonggiaonline.vn/chan-dung-tan-tong-giam-doc-sunshine-homes-post574003.html",
+      "https://thuonggiaonline.vn/cha-de-tiktok-tro-lai-vi-tri-nguoi-giau-nhat-trung-quoc-post573917.html",
+      "https://thuonggiaonline.vn/cuoc-choi-bat-dong-san-cua-ba-chu-king-coffee-post573822.html",
+      "https://thuonggiaonline.vn/dau-chan-dia-oc-cua-ong-trum-ca-phe-dang-le-nguyen-vu-post573811.html",
+      "https://thuonggiaonline.vn/vi-dai-gia-quyen-luc-khien-nguoi-giau-nhat-the-gioi-va-nguoi-giau-nhat-viet-nam-deu-phai-bat-tay-post573810.html",
+      "https://thuonggiaonline.vn/dai-gia-lap-di-dang-le-nguyen-vu-choi-sieu-xe-ngua-dua-o-an-trong-hang-leo-lai-de-che-ngan-ty-post573640.html",
+      "https://thuonggiaonline.vn/beachtro-tower-kien-tao-cuoc-song-dam-chat-dien-anh-giua-pho-bien-blanca-city-post574262.html",
+      "https://thuonggiaonline.vn/don-dau-co-hoi-kinh-doanh-tai-do-thi-bien-cua-lo-post574175.html",
+      "https://thuonggiaonline.vn/kien-tao-su-hai-hoa-tu-nhung-thai-cuc-khi-y-tuong-doc-ban-dinh-hinh-luat-choi-quoc-te-post574155.html",
+      "https://thuonggiaonline.vn/them-xe-dien-cho-ca-nha-amio-s2-va-evo-lite-hap-dan-hon-voi-uu-dai-2-trieu-dong-post574239.html",
+      "https://thuonggiaonline.vn/byd-khoi-dong-techweek-2026-tai-viet-nam-gioi-thieu-byd-sealion-5-dm-i-va-loat-uu-dai-mua-xe-post574212.html",
+      "https://thuonggiaonline.vn/gio-mua-ve-tu-do-cong-so-chuong-ao-len-mong-post574241.html",
+      "https://thuonggiaonline.vn/le-hoi-van-hoa-am-thuc-quoc-te-ha-noi-bung-vi-nam-chau-2026-post574238.html",
+      "https://thuonggiaonline.vn/thiet-bi-massage-co-vai-gay-khong-phai-cu-de-chiu-la-co-loi-post574193.html",
+      "https://thuonggiaonline.vn/bien-thanh-khong-gian-song-cu-dan-vinhomes-green-paradise-khong-phai-roi-thanh-pho-de-tim-thien-nhien-post574263.html",
+      "https://thuonggiaonline.vn/khi-cam-xuc-va-am-nhac-tro-thanh-ngon-ngu-chien-luoc-tpbank-kien-tao-gan-ket-ben-vung-voi-tung-the-he-khach-hang-post574237.html",
+      "https://thuonggiaonline.vn/vinamilk-tiep-tuc-tang-truong-doanh-thu-va-dat-nhieu-vinh-danh-trong-nuoc-lan-quoc-te-post574231.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:23.734Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thuonggiaonline.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "thuonggiaonline.vn",
+      "siteId": "thuonggiaonline.vn",
+      "registrableDomain": "thuonggiaonline.vn",
+      "homepage": "https://thuonggiaonline.vn/",
+      "allowedHosts": [
+        "thuonggiaonline.vn",
+        "www.thuonggiaonline.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Doanh nghiệp VACOD-HBA thích ứng, đón cơ hội từ làn sóng chính sách mới",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:56.197Z",
+        "trainingUrls": [
+          "https://thuonggiaonline.vn/honda-sh-2027-dap-ung-tieu-chuan-euro-4-ra-mat-tai-viet-nam-gia-tu-7809-trieu-dong-post573912.html"
+        ],
+        "holdoutUrls": [
+          "https://thuonggiaonline.vn/tong-bi-thu-chu-tich-nuoc-to-lam-toa-dam-voi-lanh-dao-mot-so-tap-doan-lon-cua-nhat-ban-post574234.html",
+          "https://thuonggiaonline.vn/ford-viet-nam-tung-uu-dai-thang-11-ho-tro-100-le-phi-truoc-ba-mua-xe-co-co-hoi-trung-vang-9999-post574225.html"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "siteName": "htv.vn",
+  "siteId": "htv.vn",
+  "registrableDomain": "htv.vn",
+  "homepage": "https://htv.vn/doanhnhansaigon/",
+  "allowedHosts": [
+    "htv.vn",
+    "www.htv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Doanh Nhân Sài Gòn - Hành trình 25 năm còn mãi",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Thượng tôn Hiến pháp và pháp luật là động lực phát triển đất nước",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "htv.vn",
+      "siteId": "htv.vn",
+      "registrableDomain": "htv.vn",
+      "homepage": "https://htv.vn/doanhnhansaigon/",
+      "allowedHosts": [
+        "htv.vn",
+        "www.htv.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Doanh Nhân Sài Gòn - Hành trình 25 năm còn mãi",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".detail-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:49.464Z",
+        "trainingUrls": [
+          "https://htv.vn/tram-radio-so-sai-khi-lam-me-cung-binh-thuong-thoi-222261110091110634.htm",
+          "https://htv.vn/tram-radio-cuoc-goi-nham-luc-11g-dem-222261106164209854.htm",
+          "https://htv.vn/tram-radio-moi-tinh-nam-ay-222261103103323762.htm"
+        ],
+        "holdoutUrls": [
+          "https://htv.vn/tram-radio-khi-ban-tay-ngay-ay-can-mot-ban-tay-222261031091329965.htm",
+          "https://htv.vn/tram-radio-truyen-ngan-chuyen-xe-buyt-cuoi-cung-222261030084918016.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Doanh Nhân Sài Gòn - Hành trình 25 năm còn mãi",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:50:23.637Z",
+        "trainingUrls": [
+          "https://htv.vn/doanhnhansaigon/tro-ve-mua-thu-ha-noi-nam-1945-321825.html"
+        ],
+        "holdoutUrls": [
+          "https://htv.vn/doanhnhansaigon/luc-luong-manh-ho-va-nhung-toi-ac-bi-che-giau-trong-chien-tranh-viet-nam-321547.html",
+          "https://htv.vn/doanhnhansaigon/thien-su-va-em-be-5-tuoi-cung-bai-hoc-de-lang-diu-kho-dau-321280.html"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:17.085Z",
+    "sampleCount": 9,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://htv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-thuong-ton-hien-phap-va-phap-luat-la-dong-luc-phat-trien-dat-nuoc-222261108092657804.htm",
+      "https://htv.vn/bang-tong-sap-huy-chuong-ngay-8-11-dai-hoi-the-thao-toan-quoc-2026-222261108201810657.htm",
+      "https://htv.vn/doanhnhansaigon/doanh-nhan-sai-gon-hanh-trinh-25-nam-con-mai-337561.html",
+      "https://htv.vn/doanhnhansaigon/to-bao-tu-te-va-chin-chu-337528.html",
+      "https://htv.vn/doanhnhansaigon/tieu-dung-chi-co-the-tang-truong-ben-vung-khi-nguon-cung-lien-tuc-duoc-doi-moi-337560.html",
+      "https://htv.vn/doanhnhansaigon/tp-hcm-se-khoi-cong-loat-du-an-cong-trinh-trong-diem-nhan-ky-niem-50-nam-thanh-pho-mang-ten-bac-337550.html",
+      "https://htv.vn/doanhnhansaigon/hinh-thanh-he-sinh-thai-kinh-te-cuoi-tuan-nang-cao-chat-luong-song-cua-nguoi-dan-tp-hcm-337558.html",
+      "https://htv.vn/doanhnhansaigon/doan-ket-va-tu-te-la-nen-tang-doanh-nghiep-ben-vung-337564.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://htv.vn/doanhnhansaigon/",
+    "categories": [
+      "https://htv.vn/doanhnhansaigon/toan-canh",
+      "https://htv.vn/doanhnhansaigon/doanh-nhan",
+      "https://htv.vn/doanhnhansaigon/quan-tri-va-doi-moi",
+      "https://htv.vn/doanhnhansaigon/chuyen-kinh-doanh",
+      "https://htv.vn/doanhnhansaigon/tai-chinh-ngan-hang",
+      "https://htv.vn/doanhnhansaigon/phong-cach-va-van-hoa",
+      "https://htv.vn/doanhnhansaigon/su-kien-doanh-nghiep",
+      "https://htv.vn/doanhnhansaigon/song-can-bang",
+      "https://htv.vn/doanhnhansaigon/multimedia",
+      "https://htv.vn/doanhnhansaigon/van-hoa-giai-tri-du-lich",
+      "https://htv.vn/doanhnhansaigon/xuan-2026"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?doanhnhansaigon.vn/.*?/(\\d{4,})$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "htv.vn",
+    "checkedAt": "2026-11-09T03:57:06.831Z",
+    "url": "https://htv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-thuong-ton-hien-phap-va-phap-luat-la-dong-luc-phat-trien-dat-nuoc-222261108092657804.htm",
+    "finalUrl": "https://htv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-thuong-ton-hien-phap-va-phap-luat-la-dong-luc-phat-trien-dat-nuoc-222261108092657804.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 11540,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "htv.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 49,
+    "checkedArticleUrls": 53,
+    "freshArticleChecks": 11,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 49,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 488,
+        "passed": 49,
+        "distinctHashes": 49
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://htv.vn/doanhnhansaigon/doanh-nhan-sai-gon-hanh-trinh-25-nam-con-mai-337561.html",
+      "https://htv.vn/doanhnhansaigon/to-bao-tu-te-va-chin-chu-337528.html",
+      "https://htv.vn/doanhnhansaigon/tieu-dung-chi-co-the-tang-truong-ben-vung-khi-nguon-cung-lien-tuc-duoc-doi-moi-337560.html",
+      "https://htv.vn/doanhnhansaigon/tp-hcm-se-khoi-cong-loat-du-an-cong-trinh-trong-diem-nhan-ky-niem-50-nam-thanh-pho-mang-ten-bac-337550.html",
+      "https://htv.vn/doanhnhansaigon/hinh-thanh-he-sinh-thai-kinh-te-cuoi-tuan-nang-cao-chat-luong-song-cua-nguoi-dan-tp-hcm-337558.html",
+      "https://htv.vn/doanhnhansaigon/doan-ket-va-tu-te-la-nen-tang-doanh-nghiep-ben-vung-337564.html",
+      "https://htv.vn/doanhnhansaigon/chinh-truc-kien-tri-phung-su-ba-gia-tri-lam-nen-doanh-nghiep-ben-vung-337563.html",
+      "https://htv.vn/doanhnhansaigon/dung-di-tim-bac-thay-dau-xa-bac-ho-chinh-la-nguoi-thay-lon-337537.html",
+      "https://htv.vn/doanhnhansaigon/tai-va-duc-chinh-la-cai-goc-giup-doanh-nghiep-ben-sau-337536.html",
+      "https://htv.vn/doanhnhansaigon/phia-sau-mot-chuong-ky-cuoi-337565.html",
+      "https://htv.vn/doanhnhansaigon/moi-tham-gia-khao-sat-ve-tich-hop-ai-va-chuyen-doi-so-ben-vung-trong-doanh-nghiep-vua-va-nho-337566.html",
+      "https://htv.vn/doanhnhansaigon/thu-quyet-dinh-mot-con-nguoi-se-di-xa-den-dau-337461.html",
+      "https://htv.vn/doanhnhansaigon/hai-startup-dai-hoc-viet-gianh-suat-uom-tao-tai-singapore-337441.html",
+      "https://htv.vn/doanhnhansaigon/kinh-te-cuoi-tuan-dong-luc-moi-thuc-day-tieu-dung-dich-vu-va-phat-trien-du-lich-tp-hcm-337547.html",
+      "https://htv.vn/doanhnhansaigon/mot-so-mo-hinh-phat-trien-kinh-te-cuoi-tuan-va-kinh-nghiem-cho-tp-hcm-337546.html",
+      "https://htv.vn/doanhnhansaigon/dinh-huong-cac-giai-phap-khai-thac-hieu-qua-kinh-te-cuoi-tuan-dong-gop-vao-tang-truong-kinh-te-hai-con-so-337541.html",
+      "https://htv.vn/doanhnhansaigon/50-nam-thanh-pho-mang-ten-bac-khi-tu-tuong-chu-tich-ho-chi-minh-tro-thanh-triet-ly-quan-tri-doanh-nghiep-337514.html",
+      "https://htv.vn/doanhnhansaigon/dinh-vi-dung-nganh-go-va-noi-that-trong-nen-kinh-te-337464.html",
+      "https://htv.vn/doanhnhansaigon/lien-ket-chuoi-gia-tri-de-nang-tam-nang-luc-canh-tranh-337459.html",
+      "https://htv.vn/doanhnhansaigon/cai-thien-ha-tang-phap-ly-nen-mong-cho-nang-luc-canh-tranh-doanh-nghiep-337447.html",
+      "https://htv.vn/doanhnhansaigon/thau-hieu-nguoi-tieu-dung-bi-quyet-tao-nen-ky-tich-lich-su-cua-thuong-hieu-sua-viet-337559.html",
+      "https://htv.vn/doanhnhansaigon/nam-a-bank-ket-noi-thuc-day-phat-trien-kinh-te-truc-dong-tay-337523.html",
+      "https://htv.vn/doanhnhansaigon/tu-thiet-ke-dep-den-thiet-ke-de-song-masterise-homes-dinh-chuan-song-hang-hieu-tai-giai-thuong-kien-truc-chau-a-337521.html",
+      "https://htv.vn/doanhnhansaigon/toyota-yaris-cross-chinh-phuc-nguoi-tre-khi-tieu-dung-thong-minh-thay-the-tu-duy-mua-xe-truyen-thong-337500.html",
+      "https://htv.vn/doanhnhansaigon/thi-truong-tiep-tuc-phan-hoa-khoi-ngoai-ban-rong-hon-1-100-ty-dong-337562.html",
+      "https://htv.vn/doanhnhansaigon/bluechip-chung-lai-dong-tien-tim-co-hoi-o-co-phieu-vua-va-nho-337556.html",
+      "https://htv.vn/doanhnhansaigon/chung-khoan-my-dong-loat-tang-manh-dow-jones-lap-dinh-moi-337553.html",
+      "https://htv.vn/doanhnhansaigon/chung-khoan-chau-a-khoi-sac-nho-tin-hieu-ha-nhiet-cang-thang-my-iran-337533.html",
+      "https://htv.vn/doanhnhansaigon/mot-nam-co-nghi-quyet-68-moi-doi-tu-duy-chua-but-pha-336199.html",
+      "https://htv.vn/doanhnhansaigon/de-kinh-te-tu-nhan-thuc-su-la-dong-luc-quan-trong-nhat-cua-nen-kinh-te-333107.html",
+      "https://htv.vn/doanhnhansaigon/doanh-nhan-viet-nam-trong-ky-nguyen-vuon-minh-van-hoa-doanh-nhan-trong-nen-kinh-te-phat-trien-ben-vung-bai-4-332325.html",
+      "https://htv.vn/doanhnhansaigon/doanh-nhan-viet-nam-trong-ky-nguyen-vuon-minh-the-che-kien-tao-niem-tin-dau-tu-bai-3-332324.html",
+      "https://htv.vn/doanhnhansaigon/food-tour-tiem-nang-chua-duoc-danh-thuc-337125.html",
+      "https://htv.vn/doanhnhansaigon/la-chan-cua-ban-quyen-my-thuat-337126.html",
+      "https://htv.vn/doanhnhansaigon/gin-giu-ky-uc-my-thuat-viet-nam-trong-ky-nguyen-so-337103.html",
+      "https://htv.vn/doanhnhansaigon/ra-mat-sach-dan-than-cung-nghe-bao-cua-nha-bao-tien-si-to-dinh-tuan-337141.html",
+      "https://htv.vn/doanhnhansaigon/ra-mat-sach-doi-doi-lan-lung-tung-cua-nha-van-nguyen-dong-thuc-337106.html",
+      "https://htv.vn/doanhnhansaigon/dung-phat-hanh-thu-hoi-sach-chuyen-voi-thanh-loi-ke-moi-ve-anh-sang-337023.html",
+      "https://htv.vn/doanhnhansaigon/aqua-4-nam-tang-truong-manh-cung-lazada-337568.html",
+      "https://htv.vn/doanhnhansaigon/vietjet-fpt-vinamilk-gop-mat-trong-top-doanh-nghiep-esg-viet-nam-xanh-2026-337567.html",
+      "https://htv.vn/doanhnhansaigon/satra-buoc-tien-tu-top-10-doanh-nghiep-esg-viet-nam-xanh-den-bieu-tuong-ban-le-ben-vung-337535.html",
+      "https://htv.vn/doanhnhansaigon/ton-vinh-nhung-khoanh-khac-lan-toa-tinh-than-the-thao-viet-qua-cuoc-thi-anh-pickleball-ket-noi-dam-me-337492.html",
+      "https://htv.vn/doanhnhansaigon/144-golfer-tranh-tai-tai-giai-golf-tranh-cup-vtv-times-lan-thu-ii-337320.html",
+      "https://htv.vn/doanhnhansaigon/sap-dien-ra-giai-tennis-va-pickleball-doanh-nhan-bizlink-championship-2026-tranh-cup-victory-hotel-337165.html",
+      "https://htv.vn/doanhnhansaigon/xuan-2026/doanh-nhan-tu-kien-tao-den-kien-quoc"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:15:41.347Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/htv.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

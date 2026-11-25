@@ -1,0 +1,3 @@
+import fs from 'node:fs';import * as c from 'cheerio';
+const root='outputs/forum-activity-2026-11-17/';
+for(const d of ['tctd.vn','vietnambusinessinsider.vn','vnf.info.vn','raovat321.com','raovatsomot.com','gamehub.vn','pantip.com','tinhte.vn']){const r=JSON.parse(fs.readFileSync(root+d+'.audit.json'));console.log('\n'+d);for(const p of r.pages.slice(0,1)){const $=c.load(fs.readFileSync(root+p.evidence,'utf8'));console.log('text',p.text.slice(0,800));console.log('date markup',$.html().match(/.{0,100}(?:2026-11-\d\d|17\/11\/2026|2569|data-utime|post_create_date|datePublished|timestamp|timeago).{0,130}/g)?.slice(0,5));console.log('links',$('a[href]').map((i,e)=>({u:$(e).attr('href'),t:$(e).text().trim().slice(0,50)})).get().filter(x=>x.t.length>20).slice(0,6));}}

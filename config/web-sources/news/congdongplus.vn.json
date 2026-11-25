@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congdongplus.vn",
+  "siteId": "congdongplus.vn",
+  "registrableDomain": "congdongplus.vn",
+  "homepage": "https://congdongplus.vn/",
+  "allowedHosts": [
+    "congdongplus.vn",
+    "www.congdongplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Sắp diễn ra chương trình \"Những ngày Hà Nội tại TP.HCM\"",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:19.324Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://congdongplus.vn/threads/sap-dien-ra-chuong-trinh-nhung-ngay-ha-noi-tai-tp-hcm.12761/post-12892",
+      "https://congdongplus.vn/threads/co-quan-thue-cuong-che-de-thu-thue-doi-voi-cong-ty-smc.12800/post-12944",
+      "https://congdongplus.vn/threads/chung-chi-so-cap-quan-tri-kinh-doanh-van-tai-duong-bo-0979868612.12812/",
+      "https://congdongplus.vn/threads/dao-tao-chung-chi-so-cap-chuyen-nganh-van-tai-cap-toc-0979868612.12811/",
+      "https://congdongplus.vn/threads/khu-dat-39-39b-ben-van-don-la-moc-lich-su-cua-ba-loan-truoc-khi-bi-tam-giam.12752/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congdongplus.vn/",
+    "categories": [
+      "https://congdongplus.vn/forums/",
+      "https://congdongplus.vn/whats-new/",
+      "https://congdongplus.vn/ewr-porta/page-213",
+      "https://congdongplus.vn/ewr-porta/page-2"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congdongplus.vn",
+    "checkedAt": "2026-11-09T03:56:56.173Z",
+    "url": "https://congdongplus.vn/threads/sap-dien-ra-chuong-trinh-nhung-ngay-ha-noi-tai-tp-hcm.12761/post-12892",
+    "finalUrl": "https://congdongplus.vn/threads/sap-dien-ra-chuong-trinh-nhung-ngay-ha-noi-tai-tp-hcm.12761/#post-12892",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3411,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congdongplus.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 13,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 57,
+        "passed": 15,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:14:40.400Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congdongplus.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

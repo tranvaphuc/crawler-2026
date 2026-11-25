@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "brandsvietnam.com",
+  "siteId": "brandsvietnam.com",
+  "registrableDomain": "brandsvietnam.com",
+  "homepage": "https://www.brandsvietnam.com/",
+  "allowedHosts": [
+    "www.brandsvietnam.com",
+    "brandsvietnam.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.brandsvietnam.com/",
+    "categories": [
+      "https://www.brandsvietnam.com/featured/",
+      "https://www.brandsvietnam.com/page/brand-updates/",
+      "https://www.brandsvietnam.com/page/agency-world/",
+      "https://www.brandsvietnam.com/page/quan-diem/",
+      "https://www.brandsvietnam.com/page/kien-thuc/"
+    ]
+  },
+  "title": {
+    "value": "Từ hàng nghìn chiếc thẻ cũ đến tác phẩm Kỷ lục Việt Nam: Câu chuyện phía sau tinh thần “ONE là ĐỦ” của VIB One Card",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".container.main-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:04.686Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:58.997Z",
+    "independentHoldouts": [
+      "https://www.brandsvietnam.com/trai-nghiem-di-concert-khac-biet-cua-chu-the-sacombank-visa",
+      "https://www.brandsvietnam.com/be-muon-trac-tro-duong-doi-de-khang-dinh-su-hien-dien-trong-doi-song-nguoi-viet",
+      "https://www.brandsvietnam.com/campaign/omg-3q-va-bai-toan-lam-moi-tuong-dai-sau-9-nam-dong-hanh-cung-game-thu-viet"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.brandsvietnam.com/one-la-du-vib-one-card",
+      "https://www.brandsvietnam.com/trai-nghiem-di-concert-khac-biet-cua-chu-the-sacombank-visa",
+      "https://www.brandsvietnam.com/be-muon-trac-tro-duong-doi-de-khang-dinh-su-hien-dien-trong-doi-song-nguoi-viet",
+      "https://www.brandsvietnam.com/campaign/omg-3q-va-bai-toan-lam-moi-tuong-dai-sau-9-nam-dong-hanh-cung-game-thu-viet"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

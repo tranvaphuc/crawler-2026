@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "botruong.bocongan.gov.vn",
+  "siteId": "botruong.bocongan.gov.vn",
+  "registrableDomain": "botruong.bocongan.gov.vn",
+  "homepage": "https://botruong.bocongan.gov.vn/",
+  "allowedHosts": [
+    "botruong.bocongan.gov.vn",
+    "www.botruong.bocongan.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://botruong.bocongan.gov.vn/",
+    "categories": [
+      "https://botruong.bocongan.gov.vn/chuyen-muc/chi-dao-dieu-hanh",
+      "https://botruong.bocongan.gov.vn/chuyen-muc/bai-viet-phat-bieu"
+    ]
+  },
+  "title": {
+    "value": "Việt Nam - Nhật Bản tăng cường hợp tác thực thi pháp luật",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:38.736Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:01:32.475Z",
+    "independentHoldouts": [
+      "https://botruong.bocongan.gov.vn/bai-viet/mo-rong-khong-gian-hop-tac-giua-viet-nam-va-nhat-ban-1794209105",
+      "https://botruong.bocongan.gov.vn/bai-viet/bo-kiem-tra-nghiem-thu-ve-phong-chay-chua-chay-van-bao-dam-kiem-soat-xu-ly-trach-nhiem-1793885568",
+      "https://botruong.bocongan.gov.vn/bai-viet/nang-cao-chat-luong-cong-tac-phoi-hop-hoan-thien-the-che-ve-cong-tac-dan-toc-1793796432"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://botruong.bocongan.gov.vn/bai-viet/viet-nam-nhat-ban-tang-cuong-hop-tac-thuc-thi-phap-luat-1794218209",
+      "https://botruong.bocongan.gov.vn/bai-viet/mo-rong-khong-gian-hop-tac-giua-viet-nam-va-nhat-ban-1794209105",
+      "https://botruong.bocongan.gov.vn/bai-viet/bo-kiem-tra-nghiem-thu-ve-phong-chay-chua-chay-van-bao-dam-kiem-soat-xu-ly-trach-nhiem-1793885568",
+      "https://botruong.bocongan.gov.vn/bai-viet/nang-cao-chat-luong-cong-tac-phoi-hop-hoan-thien-the-che-ve-cong-tac-dan-toc-1793796432"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

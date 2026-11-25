@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnet24h.vn",
+  "siteId": "vietnet24h.vn",
+  "registrableDomain": "vietnet24h.vn",
+  "homepage": "https://vietnet24h.vn/",
+  "allowedHosts": [
+    "vietnet24h.vn",
+    "www.vietnet24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "IEAE Hanoi 2026 khai mạc tại VEC: Doanh nghiệp Việt khẳng định năng lực trong chuỗi cung ứng điện tử toàn cầu - Vietnet24h",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".published-date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".block.content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Hai dự án hỗ trợ 16 doanh nghiệp công nghiệp",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".published-date",
+        "attribute": null,
+        "index": 0,
+        "priority": 65
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".block.content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:58.085Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vietnet24h.vn/tin-veia/ieae-hanoi-2026-khai-mac-tai-vec-doanh-nghiep-viet-khang-dinh-nang-luc-trong-chuoi-cung-ung-dien-tu-toan-cau",
+      "https://vietnet24h.vn/tin-veia/samsung-ho-tro-16-doanh-nghiep-viet-nam-phat-trien-nha-may-thong-minh-va-khuon-mau-thong-minh",
+      "https://vietnet24h.vn/thi-truong/dien-tu-tieu-dung/qualcomm-du-bao-thi-truong-smartphone-di-ngang-nam-2027-dat-cuoc-lon-vao-chip-trung-tam-du-lieu-ai",
+      "https://vietnet24h.vn/cong-nghe/qualcomm-gianh-hop-dong-cung-cap-chip-tram-goc-5g-cho-spacex-mo-duong-tien-vao-ha-tang-6g",
+      "https://vietnet24h.vn/tieu-dung/tu-van-tieu-dung/iphone-duo-buoc-dot-pha-man-hinh-gap-cua-apple-van-chua-du-suc-thuyet-phuc"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietnet24h.vn/",
+    "categories": [
+      "https://vietnet24h.vn/tin-veia",
+      "https://vietnet24h.vn/tin-veia/tin-hoat-dong",
+      "https://vietnet24h.vn/tin-veia/doanh-nghiep",
+      "https://vietnet24h.vn/tin-veia/doanh-nhan",
+      "https://vietnet24h.vn/cong-nghe",
+      "https://vietnet24h.vn/cong-nghe/huong-dan-cong-nghe",
+      "https://vietnet24h.vn/cong-nghe/tieu-diem-cong-nghe",
+      "https://vietnet24h.vn/cong-nghe/cong-nghe-doc-la",
+      "https://vietnet24h.vn/thi-truong",
+      "https://vietnet24h.vn/thi-truong/may-tinh-mang",
+      "https://vietnet24h.vn/thi-truong/thi-truong-cong-nghe",
+      "https://vietnet24h.vn/thi-truong/dien-tu-tieu-dung",
+      "https://vietnet24h.vn/tam-nhin",
+      "https://vietnet24h.vn/tam-nhin/tam-nhin-chinh-sach",
+      "https://vietnet24h.vn/tam-nhin/tam-nhin-cong-nghe",
+      "https://vietnet24h.vn/tam-nhin/moi-truong-nang-luong",
+      "https://vietnet24h.vn/tieu-dung",
+      "https://vietnet24h.vn/tieu-dung/tieu-dung-thong-minh",
+      "https://vietnet24h.vn/tieu-dung/tu-van-tieu-dung",
+      "https://vietnet24h.vn/kinh-te",
+      "https://vietnet24h.vn/kinh-te/tai-chinh-kinh-doanh",
+      "https://vietnet24h.vn/kinh-te/thoi-su-xa-hoi",
+      "https://vietnet24h.vn/kinh-te/van-hoa-the-thao",
+      "https://vietnet24h.vn/quang-cao"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietnet24h.vn",
+    "checkedAt": "2026-11-09T03:57:38.079Z",
+    "url": "https://vietnet24h.vn/tin-veia/ieae-hanoi-2026-khai-mac-tai-vec-doanh-nghiep-viet-khang-dinh-nang-luc-trong-chuoi-cung-ung-dien-tu-toan-cau",
+    "finalUrl": "https://vietnet24h.vn/tin-veia/ieae-hanoi-2026-khai-mac-tai-vec-doanh-nghiep-viet-khang-dinh-nang-luc-trong-chuoi-cung-ung-dien-tu-toan-cau",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8818,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:45.605Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/vietnet24h.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "vietnet24h.vn",
+    "parsedArticles": 27,
+    "distinctHashes": 24,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 24,
+    "categoriesAttempted": 24,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 461,
+    "checkedArticleUrls": 27,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 461,
+        "attempted": 27,
+        "passed": 27,
+        "distinctContents": 24,
+        "distinctHashes": 24
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

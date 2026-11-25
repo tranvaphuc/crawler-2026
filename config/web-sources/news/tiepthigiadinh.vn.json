@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tiepthigiadinh.vn",
+  "siteId": "tiepthigiadinh.vn",
+  "registrableDomain": "tiepthigiadinh.vn",
+  "homepage": "https://tiepthigiadinh.vn/",
+  "allowedHosts": [
+    "tiepthigiadinh.vn",
+    "www.tiepthigiadinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Mỗi cán bộ, công chức, viên chức được nhận 2 triệu đồng/tháng: Ai đủ điều kiện được hưởng?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "HAA tổ chức thành công Hội nghị Ban Chấp hành lần thứ 3, nhiệm kỳ 2025–2030",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:42.763Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tiepthigiadinh.vn/haa-to-chuc-thanh-cong-hoi-nghi-ban-chap-hanh-lan-thu-3-nhiem-ky-20252030-d36501.html",
+      "https://tiepthigiadinh.vn/moi-can-bo-cong-chuc-vien-chuc-duoc-nhan-2000000-dong-thang-ai-du-dieu-kien-duoc-huong-d37216.html",
+      "https://tiepthigiadinh.vn/so-huu-co-ngoi-nghin-ty-vua-ca-phe-dang-le-nguyen-vu-van-dung-doi-giay-75000-dong-d37281.html",
+      "https://tiepthigiadinh.vn/vietbaby-hanoi-2026-thu-hut-23000-luot-khach-tham-quan-d37334.html",
+      "https://tiepthigiadinh.vn/can-tet-canh-giac-tham-my-chui-bien-chung-nang-va-chieu-tro-thue-muon-phong-mo-d37372.html",
+      "https://tiepthigiadinh.vn/may-loc-nuoc-de-ban-va-may-loc-nuoc-am-tu-bep-nen-chon-loai-nao-cho-gia-dinh-d37259.html",
+      "https://tiepthigiadinh.vn/8-kieu-tiet-kiem-tuong-giup-giu-tien-nhung-co-the-khien-ban-ton-kem-hon-d37339.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tiepthigiadinh.vn/",
+    "categories": [
+      "https://tiepthigiadinh.vn/vaa",
+      "https://tiepthigiadinh.vn/tieu-diem",
+      "https://tiepthigiadinh.vn/goc-nhin",
+      "https://tiepthigiadinh.vn/xu-huong-quang-cao",
+      "https://tiepthigiadinh.vn/hoc-tu-chuyen-gia",
+      "https://tiepthigiadinh.vn/tu-van-tieu-dung",
+      "https://tiepthigiadinh.vn/danh-gia-san-pham",
+      "https://tiepthigiadinh.vn/tieu-dung-thong-minh",
+      "https://tiepthigiadinh.vn/xu-huong-thi-truong",
+      "https://tiepthigiadinh.vn/tai-chinh--ngan-hang",
+      "https://tiepthigiadinh.vn/dia-oc",
+      "https://tiepthigiadinh.vn/xe-so",
+      "https://tiepthigiadinh.vn/du-lich",
+      "https://tiepthigiadinh.vn/media",
+      "https://tiepthigiadinh.vn/podcast",
+      "https://tiepthigiadinh.vn/emagazine",
+      "https://tiepthigiadinh.vn/video",
+      "https://tiepthigiadinh.vn/infographic",
+      "https://tiepthigiadinh.vn/photo",
+      "https://tiepthigiadinh.vn/gia-dinh",
+      "https://tiepthigiadinh.vn/can-biet",
+      "https://tiepthigiadinh.vn/case-study",
+      "https://tiepthigiadinh.vn/huong-dan-mua-sam",
+      "https://tiepthigiadinh.vn/doanh-nghiep",
+      "https://tiepthigiadinh.vn/san-pham-dich-vu"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tiepthigiadinh.vn",
+    "checkedAt": "2026-11-09T03:57:33.066Z",
+    "url": "https://tiepthigiadinh.vn/haa-to-chuc-thanh-cong-hoi-nghi-ban-chap-hanh-lan-thu-3-nhiem-ky-20252030-d36501.html",
+    "finalUrl": "https://tiepthigiadinh.vn/haa-to-chuc-thanh-cong-hoi-nghi-ban-chap-hanh-lan-thu-3-nhiem-ky-20252030-d36501.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1876,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tiepthigiadinh.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 34,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 9,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 34,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 25,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 339,
+        "passed": 30,
+        "distinctHashes": 30
+      },
+      {
+        "name": "audio",
+        "discovered": 12,
+        "passed": 2,
+        "distinctHashes": 2
+      },
+      {
+        "name": "longform",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tiepthigiadinh.vn/goi-vay-120000-ty-dong-mua-nha-o-xa-hoi-nguoi-duoi-35-tuoi-duoc-uu-dai-lai-suat-the-nao-d37440.html",
+      "https://tiepthigiadinh.vn/mua-kich-cau-cuoi-nam-sieu-thi-hang-thiet-yeu-va-cuoc-choi-he-sinh-thai-mua-sam-30000-ty-dong-d37431.html",
+      "https://tiepthigiadinh.vn/mien-phi-ten-mien-vn-giai-doan-20272030-cu-hich-cho-ho-kinh-doanh-online-co-thuong-hieu-so-d37424.html",
+      "https://tiepthigiadinh.vn/gia-vang-neo-gan-dinh-lich-su-cuoi-2026-tam-ly-tich-tru-va-cai-dau-lanh-cua-moi-gia-dinh-d37437.html",
+      "https://tiepthigiadinh.vn/lai-vay-mua-nha-van-1215-no-xau-ngan-hang-nhich-len-gia-dinh-dang-tra-no-can-doc-gi-tu-con-so-nay-d37438.html",
+      "https://tiepthigiadinh.vn/chuyen-nhuong-nha-dat-duy-nhat-nhung-dieu-kien-can-biet-de-duoc-mien-thue-thu-nhap-ca-nhan-d37405.html",
+      "https://tiepthigiadinh.vn/phu-nu-dang-tieu-tien-tinh-tao-hon-va-ca-thi-truong-phai-hoc-lai-d37417.html",
+      "https://tiepthigiadinh.vn/vinfast-va-loat-ong-lon-do-don-dau-tu-vao-thi-truong-xuat-khau-oto-hang-ty-usd-nay-d37394.html",
+      "https://tiepthigiadinh.vn/ra-mat-cong-dong-thuong-hieu-lan-toa-content-tich-cuc-d37449.html",
+      "https://tiepthigiadinh.vn/quan-ao-cho-con-len-san-thoi-trang-tre-em-online-tang-65-bo-me-viet-chi-dam-hon-cho-moi-bo-do-d37410.html",
+      "https://tiepthigiadinh.vn/nguoi-tre-khong-mua-do-ho-mot-cho-de-thuoc-ve-d37415.html",
+      "https://tiepthigiadinh.vn/tin-dung-2026-ha-muc-tieu-ve-15-siet-van-bat-dong-san-nguoi-mua-nha-doc-duoc-gi-d37441.html",
+      "https://tiepthigiadinh.vn/canh-giac-bay-lua-dao-mao-danh-lien-ket-dinh-danh-dien-tu-tai-khoan-chung-khoan-d37426.html",
+      "https://tiepthigiadinh.vn/tu-15-11-moi-lo-thuc-pham-phai-truy-duoc-nguon-goc-trong-24-gio-bua-com-gia-dinh-duoc-bao-chung-the-nao-d37422.html",
+      "https://tiepthigiadinh.vn/the-bhyt-nam-2027-co-the-bi-gian-doan-neu-chua-lam-viec-nay-d37360.html",
+      "https://tiepthigiadinh.vn/california-tiep-tuc-dong-cua-phong-tap-ca-nuoc-chi-con-mot-chi-nhanh-d37386.html",
+      "https://tiepthigiadinh.vn/tin-vui-cho-tat-ca-nguoi-dung-grab-grabbike-grabcar-dong-loat-giam-gia-phi-tu-10-11-d37391.html",
+      "https://tiepthigiadinh.vn/vingroup-cua-ong-pham-nhat-vuong-dong-gop-96-muc-tang-loi-nhuan-nganh-bat-dong-san-d37389.html",
+      "https://tiepthigiadinh.vn/mua-smartphone-gia-re-dung-voi-mung-chuyen-gia-canh-bao-rui-ro-d37367.html",
+      "https://tiepthigiadinh.vn/cong-an-phat-thong-bao-quan-trong-lien-quan-den-giay-phep-lai-xe-duoc-tich-hop-tren-vnetraffic-d37354.html",
+      "https://tiepthigiadinh.vn/messenger-may-tinh-duoc-nguoi-viet-hoi-sinh-voi-tinh-nang-la-d37267.html",
+      "https://tiepthigiadinh.vn/ngan-hang-canh-bao-chieu-lua-dao-moi-qua-loa-thong-bao-chuyen-khoan-chu-cua-hang-can-dac-biet-canh-giac-d37349.html",
+      "https://tiepthigiadinh.vn/cong-an-canh-bao-trao-luu-di-chua-online-coi-chung-mat-tien-d37366.html",
+      "https://tiepthigiadinh.vn/tu-2027-di-kham-benh-chi-can-can-cuoc-co-gi-dac-biet-d37207.html",
+      "https://tiepthigiadinh.vn/nguoi-ban-hang-online-chu-y-viet-nam-sap-co-su-kien-tu-van-ban-hang-tu-van-thue-mo-cua-mien-phi-d37345.html",
+      "https://tiepthigiadinh.vn/honda-sh-2027-co-gi-dang-mua-ma-ai-cung-muon-so-huu-d37301.html",
+      "https://tiepthigiadinh.vn/hang-nghin-iphone-duo-bi-vo-man-hinh-apple-thua-nhan-loi-nhung-chua-cong-bo-nguyen-nhan-d37317.html",
+      "https://tiepthigiadinh.vn/vi-sao-viet-nam-cam-nhap-khau-dien-thoai-laptop-may-anh-cu-tu-2027-d37316.html",
+      "https://tiepthigiadinh.vn/nguoi-dan-ca-nuoc-duoc-tham-gia-hang-loat-su-kien-mien-phi-nhan-ngay-van-hoa-viet-nam-d37347.html",
+      "https://tiepthigiadinh.vn/gia-dien-kinh-doanh-gio-cao-diem-gap-gan-3-lan-ai-chiu-tac-dong-d37336.html",
+      "https://tiepthigiadinh.vn/xiaomi-viet-nam-chinh-thuc-len-tieng-sau-vu-dien-thoai-cua-hang-hien-thi-sai-ban-do-viet-nam-d37348.html",
+      "https://tiepthigiadinh.vn/bang-xep-hang-thuong-hieu-o-to-gia-tri-nhat-the-gioi-nam-2026-toyota-dan-dau-tesla-lao-doc-manh-d37310.html",
+      "https://tiepthigiadinh.vn/luong-huu-co-the-bi-khau-tru-20-thang-ai-thuoc-dien-ap-dung-d37294.html",
+      "https://tiepthigiadinh.vn/tat-ca-nguoi-dung-samsung-can-phai-biet-nhung-dieu-sau-khi-su-dung-dien-thoai-trong-luc-lai-xe-d37320.html",
+      "https://tiepthigiadinh.vn/hang-loat-smartphone-trung-quoc-hien-thi-ban-do-duong-luoi-bo-bi-go-khoi-ke-tai-viet-nam-d37315.html",
+      "https://tiepthigiadinh.vn/thoi-quen-xanh-tu-chiec-tui-di-cho-d37274.html",
+      "https://tiepthigiadinh.vn/viet-nam-vua-ha-thuy-sieu-tau-dai-hon-111m-co-bai-dap-truc-thang-va-khoang-chua-robot-duoi-nuoc-d37262.html",
+      "https://tiepthigiadinh.vn/freeship-0d-va-dong-chu-nho-bi-nuot-mat-truoc-1111-nguoi-tieu-dung-doc-duoc-gi-tu-hai-an-phat-d37450.html",
+      "https://tiepthigiadinh.vn/mot-cau-noi-mot-khung-hinh-co-the-khien-thuong-hieu-lao-dao-dung-xem-nhe-dinh-kien-gioi-trong-quang-cao-d37380.html",
+      "https://tiepthigiadinh.vn/sieu-sale-1111-va-cai-bay-gio-hang-khi-gia-dinh-ban-luon-tieu-nhieu-hon-du-tinh-d31947.html",
+      "https://tiepthigiadinh.vn/nguoi-viet-chi-66-trieu-ty-dong-trong-10-thang-suc-mua-tang-that-hay-chi-tang-vi-gia-d37416.html",
+      "https://tiepthigiadinh.vn/deo-kinh-ap-trong-thuong-xuyen-dung-bo-qua-7-meo-cham-soc-mat-nay-d37395.html",
+      "https://tiepthigiadinh.vn/lam-dep-dan-dau-gio-hang-online-nguoi-viet-chi-3-ty-usd-moi-nam-cho-son-phan-va-cham-soc-ca-nhan-d37409.html",
+      "https://tiepthigiadinh.vn/5-mau-laptop-co-cau-hinh-dang-thu-cho-dan-thiet-ke-d37385.html",
+      "https://tiepthigiadinh.vn/mua-sam-online-cuoi-nam-7-meo-san-sale-tiet-kiem-tranh-mat-tien-oan-d37342.html",
+      "https://tiepthigiadinh.vn/nocal-thuc-day-chuyen-doi-so-tai-doai-phuong-tu-nhung-hoat-dong-ho-tro-truc-tiep-d37411.html",
+      "https://tiepthigiadinh.vn/pichi-mot-thap-ky-giu-vi-quen-xay-thuong-hieu-viet-d37403.html",
+      "https://tiepthigiadinh.vn/muon-dien-mao-bung-sang-trong-mua-thu-phu-nu-ngoai-40-dung-bo-qua-4-gam-mau-nay-d37333.html",
+      "https://tiepthigiadinh.vn/khoai-tay-hay-khoai-lang-giam-can-tot-hon-su-that-co-the-khien-ban-doi-thuc-don-d37361.html",
+      "https://tiepthigiadinh.vn/truong-dai-hoc-luat-ha-noi-thap-sang-thanh-xuan-chao-don-tan-sinh-vien-k51-d37382.html",
+      "https://tiepthigiadinh.vn/series/bat-nhao-dich-vu-hut-mo-giam-can-46"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:17:28.987Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tiepthigiadinh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

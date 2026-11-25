@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xahoi24h.vn",
+  "siteId": "xahoi24h.vn",
+  "registrableDomain": "xahoi24h.vn",
+  "homepage": "https://xahoi24h.vn/",
+  "allowedHosts": [
+    "xahoi24h.vn",
+    "www.xahoi24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Trong bếp trường mầm non Phương Liệt có thịt lợn bở và nhũn: Nhà cung cấp nói 'do lợn bị stress'",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:05.896Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://xahoi24h.vn/trong-bep-truong-mam-non-phuong-liet-co-thit-lon-bo-va-nhun-nha-cung-cap-noi-do-lon-bi-stress-a37877.html",
+      "https://xahoi24h.vn/chay-lon-khu-hoc-tam-gan-truong-tieu-hoc-kim-lien-a-a37824.html",
+      "https://xahoi24h.vn/spotlight-2026-khoi-phong-cung-cam-nhan-ban-hoa-ca-a37952.html",
+      "https://xahoi24h.vn/bat-tam-giam-giang-ho-mang-hiep-den-cung-13-doi-tuong-lien-quan-a37914.html",
+      "https://xahoi24h.vn/ban-ket-hypercreative-2026-va-hanh-trinh-chinh-phuc-cua-doi-ngao-ngo-a37907.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://xahoi24h.vn/",
+    "categories": [
+      "https://xahoi24h.vn/c/xa-hoi",
+      "https://xahoi24h.vn/c/doi-song",
+      "https://xahoi24h.vn/c/kinh-te",
+      "https://xahoi24h.vn/c/bat-dong-san",
+      "https://xahoi24h.vn/c/phap-luat",
+      "https://xahoi24h.vn/c/cong-nghe-1",
+      "https://xahoi24h.vn/c/o-to-xe-may",
+      "https://xahoi24h.vn/c/the-thao",
+      "https://xahoi24h.vn/c/giai-tri",
+      "https://xahoi24h.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.367Z",
+      "verifiedSeeds": [
+        "https://xahoi24h.vn/",
+        "https://xahoi24h.vn/c/xa-hoi",
+        "https://xahoi24h.vn/c/doi-song",
+        "https://xahoi24h.vn/c/kinh-te",
+        "https://xahoi24h.vn/c/bat-dong-san",
+        "https://xahoi24h.vn/c/phap-luat",
+        "https://xahoi24h.vn/c/cong-nghe-1",
+        "https://xahoi24h.vn/c/o-to-xe-may",
+        "https://xahoi24h.vn/c/the-thao",
+        "https://xahoi24h.vn/c/giai-tri"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "xahoi24h.vn",
+    "checkedAt": "2026-11-09T03:57:39.642Z",
+    "url": "https://xahoi24h.vn/trong-bep-truong-mam-non-phuong-liet-co-thit-lon-bo-va-nhun-nha-cung-cap-noi-do-lon-bi-stress-a37877.html",
+    "finalUrl": "https://xahoi24h.vn/trong-bep-truong-mam-non-phuong-liet-co-thit-lon-bo-va-nhun-nha-cung-cap-noi-do-lon-bi-stress-a37877.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2476,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:56.056Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/xahoi24h.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "xahoi24h.vn",
+    "parsedArticles": 13,
+    "distinctHashes": 13,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 188,
+    "checkedArticleUrls": 13,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 186,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

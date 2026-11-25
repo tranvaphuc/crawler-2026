@@ -1,0 +1,141 @@
+PROXY MANAGER CHUNG — HƯỚNG DẪN VẬN HÀNH
+
+1. Kiến trúc
+- crawler-proxy-manager: service nội bộ tại 127.0.0.1:3810, giữ key nhà cung cấp và cấp lease.
+- crawler-api: dùng HTTP manager; không tự gọi NCC, không tự fallback sang kết nối trực tiếp khi manager lỗi.
+- Các API Facebook, Threads, Instagram, YouTube hiện có đều đi qua manager khi PROXY_MANAGER_URL được cấu hình.
+- Runtime lấy dữ liệu bằng HTTP ẩn danh qua proxy; browser chỉ dùng để khám phá request lúc phát triển.
+- Không ghi ES5/ES7/Mongo/Redis. Manager lưu cấu hình và trạng thái trong thư mục riêng trên filesystem.
+
+2. Số lượng key động
+- Số lượng được tính từ mảng keys; không có cấu hình count=100 và không chia key cố định cho nền tảng.
+- Có thể thêm, bớt, thay key mà không restart API hoặc manager. Reload file được thực hiện ở lượt cấp lease và tick nền.
+- Danh sách rỗng tạm dừng cấp lượt mới; lease đang dùng vẫn được hoàn tất.
+- Key bị gỡ sẽ draining: không cấp mới nhưng không cắt ngay lượt đang dùng.
+- Mỗi key được cấp độc quyền cho một lease; endpoint proxy trùng đang có lease không được cấp đồng thời.
+- Key là số slot cấu hình, không phải cam kết từng ấy IP thoát độc nhất/hoạt động tốt.
+- File JSON sai trong lúc sửa: giữ pool hợp lệ trước đó và báo configError, không âm thầm xóa pool.
+
+Mẫu file JSON, cần thay bằng key thật:
+{"keys":["THAY_BANG_KEY_THUC_TE_1","THAY_BANG_KEY_THUC_TE_2"]}
+
+3. Thay danh sách key trên production
+Dùng file riêng có quyền 600, không gửi key vào URL hoặc command line.
+
+Xem trạng thái:
+sudo /opt/crawler-node/bin/node --env-file=/etc/crawler-api/proxy-manager.env /opt/crawler-api/current/scripts/proxy_manager_admin.mjs status
+
+Thay toàn bộ danh sách (mảng mới là danh sách có hiệu lực):
+sudo /opt/crawler-node/bin/node --env-file=/etc/crawler-api/proxy-manager.env /opt/crawler-api/current/scripts/proxy_manager_admin.mjs keys /duong-dan/keys-moi.json
+
+Reload file nếu chỉnh trực tiếp:
+sudo /opt/crawler-node/bin/node --env-file=/etc/crawler-api/proxy-manager.env /opt/crawler-api/current/scripts/proxy_manager_admin.mjs reload
+
+Key được gia hạn/sửa sau khi bị NCC báo không hợp lệ: dùng keyId đã băm từ status:
+sudo /opt/crawler-node/bin/node --env-file=/etc/crawler-api/proxy-manager.env /opt/crawler-api/current/scripts/proxy_manager_admin.mjs recheck KEY_ID_TU_STATUS
+
+4. API và quyền truy cập
+- GET /api/proxy/status trên domain production: dùng Bearer AUTHEN_KEY_FOR_DOMAIN hiện có. Chỉ có trạng thái đã lọc, không có key hay proxy credentials.
+- Manager chỉ listen loopback. Nếu cần worker ở server khác, phải triển khai reverse proxy TLS trên mạng riêng, dùng key worker riêng.
+- Manager worker token: PROXY_MANAGER_AUTH_KEY, cho acquire/heartbeat/permit/report/release/status.
+- Manager admin token: PROXY_MANAGER_ADMIN_KEY, chỉ dùng quản lý keys/settings/reload/recheck. Worker token không được sửa key hoặc policy.
+- Không gắn manager admin routes ra domain API công khai.
+
+Các route manager:
+POST /v1/acquire {"scope":"facebook.comments","minRemainingMs":30000}
+POST /v1/heartbeat {"leaseId":"..."}
+POST /v1/permit {"leaseId":"..."}
+POST /v1/report {"leaseId":"...","result":{"status":"rate_limited","reason":"FACEBOOK_RATE_LIMITED","retryAfterMs":900000}}
+POST /v1/release {"leaseId":"..."}
+GET /v1/status
+POST /v1/keys {"keys":[...]}
+POST /v1/settings {"apiPolicies":{...}}
+POST /v1/reload {}
+POST /v1/recheck {"keyId":"..."}
+
+5. Trạng thái và thời gian theo API
+Scope đang dùng:
+- facebook.source_page, facebook.source_group, facebook.source_user
+- facebook.comments, facebook.metrics, facebook.post_info, facebook.comment_info
+- facebook.resolve_source, facebook.resolve_post, facebook.share, facebook.post_details
+- threads.source/comments/metrics/post_info/comment_info/resolve_source/resolve_post/search
+- instagram.source/comments/metrics/post_info/comment_info/resolve_source/resolve_post
+- youtube.source/comments/metrics/post_info/comment_info/resolve_source/resolve_post/search
+
+Các bước phân giải ID/source có thể tạo scope resolve_source/resolve_post trước bước lấy dữ liệu.
+
+Mẫu policy, đơn vị milliseconds:
+{"apiPolicies":{"facebook.comments":{"minIntervalMs":1000,"rateCooldownMs":900000},"facebook.source_group":{"minIntervalMs":500},"youtube.search":{"minIntervalMs":2000,"rateCooldownMs":120000}}}
+
+Cập nhật policy:
+sudo /opt/crawler-node/bin/node --env-file=/etc/crawler-api/proxy-manager.env /opt/crawler-api/current/scripts/proxy_manager_admin.mjs settings /duong-dan/policy.json
+
+- minIntervalMs được kiểm tra trước từng request nền tảng qua permit, không chỉ lúc cấp lease.
+- Retry-After hợp lệ được tôn trọng; rateCooldownMs là fallback khi upstream không trả thời gian. rateCooldownMs cấu hình tối thiểu 1.000 ms; minIntervalMs có thể bằng 0. Thời gian chờ upstream dài hơn policy không bị rút ngắn.
+- Lỗi comment không tự khóa metrics hoặc toàn bộ nền tảng. Cùng key có thể dùng API khác sau khi lease được trả.
+- Một lượt đã rate limit không tự đổi key để thử lại: binding của cursor giữ thời gian chờ.
+- Lỗi auth/security là terminal cho lượt đó; không xoay proxy để vượt yêu cầu.
+- Lỗi network không được biến thành rate limit. Backoff kết nối được ghi riêng theo API.
+- Manager giữ scopeBlocks cho các giới hạn toàn API/nền tảng đã biết; các deadline cũ được nhập khi chuyển hệ thống và không bị reset bởi deploy.
+
+6. TTL theo NCC, giữ phiên và phục hồi
+- Đọc lifetime thực của proxy từ phản hồi NCC; ngày hết hạn key thuê không phải TTL của IP.
+- Không đoán 20 phút khi thiếu TTL. Trạng thái PROXY_TTL_UNKNOWN cần kiểm tra NCC/parser.
+- Tick nền chỉ chuẩn bị proxy mới cho key rảnh khi gần hết TTL. Không xoay key đang có lease.
+- Heartbeat chỉ giữ quyền thuê, không gia hạn TTL do NCC cấp.
+- Trong một cursor chain, giữ cùng lease và HTTP session/cookie jar ở RAM khi proxy còn hợp lệ.
+- Khi TTL hết hoặc lease hết hạn, đóng phiên cũ; lấy lease mới, bootstrap mới, quét bù từ đầu và dedup với seen IDs đã giữ. Không tái sử dụng mù cursor/expansion context ràng buộc với phiên cũ.
+- Tự phục hồi tối đa một lần trong một HTTP API call nếu còn ngân sách thời gian; nếu chưa thể cấp mới, giữ state và trả retryCursor/trạng thái lỗi rõ ràng.
+- transport.proxySessionChanged, sessionEpoch, resumeStrategy=rebootstrap_dedup và coverage.recoveries giúp theo dõi việc phục hồi.
+- Giữ số lượng đã trả, dữ liệu đang gom và seen IDs khi phục hồi; không tuyên bố đủ dữ liệu chỉ vì proxy đã đổi.
+- Buffer chỉ trả dữ liệu đã có thì trả lease sớm. Khi đủ count/since hoặc xong native pagination cũng trả lease.
+- Cursor hiện tại vẫn ở RAM của crawler-api, TTL 30 phút. Restart crawler-api làm mất cursor; đổi danh sách key không cần restart nên không gây điều này.
+- Phiên idle giữ tối đa khoảng 2 phút rồi được trả; lần dùng cursor sau có thể cần bootstrap lại và dedup.
+
+7. File và monitor
+Production:
+- /var/lib/crawler-proxy-manager/keys.json: danh sách key, quyền 600.
+- /var/lib/crawler-proxy-manager/settings.json: policy theo API, quyền 600.
+- /var/lib/crawler-proxy-manager/state.json: lease, TTL và health; có proxy credentials, quyền 600. Không chia sẻ file này.
+- /etc/crawler-api/proxy-manager.env: worker/admin secrets cho manager, root 600.
+- /etc/crawler-api/runtime.env: worker có manager token nhưng không có admin token.
+
+Status có keyCount, readyKeys, idleReadyKeys, activeLeases, draining, generation, proxyExpiresAt và thống kê theo scope.
+Dùng keyId đã băm để tra cứu; status không trả key gốc, host/user/password proxy.
+Deploy sau không đè danh sách key/policy đang vận hành. Manager restart có thể phục hồi lease chưa hết hạn từ state; API restart không phục hồi HTTP cookie jar/cursor.
+
+8. Giới hạn vận hành
+- Một manager process là coordinator duy nhất trên host. Không chạy nhiều process manager trên cùng file state.
+- Chưa triển khai HA đa máy. Với nhiều host, tất cả phải trỏ về cùng manager qua TLS nội bộ. Với ProxyVN còn cần whitelist IP thoát của từng worker ở NCC; chỉ bảo vệ kết nối RPC bằng TLS chưa làm proxy được phép dùng từ máy khác.
+- Việc tập trung proxy và giữ phiên không bảo đảm hết rate limit của Facebook/YouTube/Meta.
+
+9. Key hết hạn và trạng thái chưa có proxy
+- PROXY_API_KEY_EXPIRED: NCC xác nhận key hết hạn; key bị disabled, không thử lại nền liên tục. Gia hạn rồi recheck keyId hoặc thay danh sách key.
+- PROXY_KEYS_UNAVAILABLE: có key cấu hình nhưng không còn key đủ điều kiện cấp lease.
+- PROXY_POOL_EMPTY: danh sách không có key bật.
+- PROXY_TTL_UNKNOWN: không xác minh được tuổi thọ IP; không cấp proxy dựa trên phỏng đoán 20 phút.
+- PROXY_PROVIDER_COOLDOWN: chờ NCC cho phép đổi IP.
+- PROXY_SCOPE_COOLDOWN: giới hạn đúng API đã được ghi nhận.
+- PROXY_RETRY_LATER: backoff kết nối; không đồng nghĩa rate limit của nền tảng.
+- Khi manager chưa cấp được proxy: transport.manager=true, proxyUsed=false, requests=0. Nghĩa là chưa gửi request tới nền tảng, không phải hệ thống tự chuyển sang mạng trực tiếp.
+
+
+Cập nhật 2026-10-28: vòng key crawler 23/23, API riêng 4 key
+
+Production giữ 4 key API riêng và 46 key crawler. Cấu hình backgroundActiveKeyCount=23 bật chế độ vòng; API chỉ nhận key dành riêng. 23 key crawler nhận lease mới, 23 key còn lại chờ lượt; key có lease cũ vẫn có thể đang drain trong hàng chờ. maxLeasesPerKey=10 giữ nguyên, do đó sức chứa nhận lease mới của crawler tối đa 230 (backgroundMaxLeases=400 chỉ là trần cấu hình).
+
+Khi crawler báo status rate_limited hoặc reason RATE_LIMIT/HTTP_429, manager đánh dấu cần thay đúng generation, không áp scope cooldown/generation block cho crawler. Không suy limit thành khóa cả nền tảng. Nếu chưa lấy được proxy thay, vẫn nhận lease trên proxy cũ khi TTL còn trên 60 giây. API giữ chính sách cooldown/pacing hiện hành.
+
+Tick xét lần lượt key hàng chờ: bỏ qua key đang giữ lease, đang lấy proxy, bị vô hiệu, hoặc chưa đủ cooldown nhà cung cấp. Key được chọn phải gọi NCC lấy proxy mới, không dùng lại proxy cache trong hàng chờ. Lấy thành công với TTL trên 60 giây mới thay key cũ trong pool; key cũ về cuối hàng chờ và không nhận lease mới. Lease cũ tiếp tục heartbeat/permit đến khi kết thúc hoặc hết TTL. Chỉ lấy IP mới trên key khi toàn bộ lease đã kết thúc.
+
+Proxy khỏe giữ đến TTL NCC; còn <=60 giây không cấp lease crawler mới, kể cả chưa có proxy thay. Lúc ấy manager đợi/retry bổ sung. Pacing theo key+scope vẫn giữ nguyên. Thứ tự vòng, yêu cầu thay, các lease và generation được lưu bền qua restart. Khi chuyển từ pool cũ, giữ các IP/lease đã có để không xoay IP giữa job; chỉ 23 key được tiếp tục nhận lease mới.
+
+Mã chính: src/services/backgroundProxyRing.js, src/services/proxyManager.js.
+Kiểm thử: 80/80 local; 56/56 staging API; 80/80 staging tích hợp crawler với HTTP route manager production. Các test không gọi NCC thật. Kiểm tra production xin/trả lease dùng token API/background thật, kiểm tra phân bổ, TTL và generation.
+Backup production: /var/lib/crawler-proxy-manager/ring-backup-iloed8i1. Nếu rollback, khôi phục mã manager và settings cũ; ưu tiên giữ state lease mới nhất để không mất dấu lease đang chạy (manager cũ bỏ qua trường backgroundRing).
+
+Xác nhận production lúc 18:23–18:25 ngày 28/10/2026 (UTC+7): service manager/API/crawler đều active, không restart lỗi. Bốn mẫu trong 60,635 giây luôn có 4 API + 46 crawler, 23 active/23 waiting, 23 proxy admission sẵn sàng; 20 lần lấy proxy NCC thành công, không tăng lỗi NCC hay lease expired. Kiểm tra vai trò và generation lease đều pass; ES5 tiếp tục ghi lúc 18:25:03. Có 1 job facebook-group-source PROXY_PACING_WAIT sau triển khai; giữ nguyên pacing theo cấu hình. Chi tiết: outputs/proxy-ring-2026-10-28/summary.json.
+
+Cập nhật tiếp lúc 18:30 ngày 28/10/2026: theo yêu cầu operator, bật unrestrictedSharing=true. Manager không áp minIntervalMs, không xếp hàng permit giữa các lease cùng key/scope, không giới hạn số lease/key hay tổng lease crawler. Các cấu hình maxLeasesPerKey/backgroundMaxLeases cũ không còn hiệu lực khi bật chế độ này; status trả null cho hai trần tương ứng. Số worker vẫn theo cấu hình riêng từng luồng. Giữ nguyên 4 key API riêng, 46 key crawler, vòng admission 23/23, cooldown NCC, cutoff TTL 60 giây và không xoay key còn lease. API vẫn xử lý rate limit thật theo policy; pacing nội bộ được bỏ.
+
+83/83 test local và 83/83 test staging tích hợp pass. Production xin permit 25 lần liên tiếp trên một lease của mỗi role API/background: tổng 50 permit trong 332ms, không pacing. Bốn job lỗi PROXY_PACING_WAIT từ lúc chuyển pool được phục hồi ticket từ checkpoint Mongo và đưa lại vào queue, có audit flow_pacing_recovery operation remove-proxy-pacing-2026-10-28. Backup trước đổi: /var/lib/crawler-proxy-manager/no-pacing-backup-ks2l_tge. Bằng chứng: outputs/proxy-unrestricted-2026-10-28/.

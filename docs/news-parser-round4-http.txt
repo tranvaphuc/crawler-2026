@@ -1,0 +1,87 @@
+KẾT QUẢ NEWS HTTP / AXIOS — 2026-11-09T04:02:41.158Z
+
+Transport: Axios, keep-alive, tối đa 8 socket; timeout 15s; HTML tối đa 4MB (CNN: 16MB). Không chạy Chrome/Puppeteer, không có render fallback. TLS được kiểm tra bình thường.
+Tất cả 544 cấu hình vẫn enabled:false. Không queue, không ghi ES5.
+
+39 SITE CÒN LỖI: 5 site đạt kiểm chứng bài độc lập + category; 34 site còn cần xử lý.
+- baohaiquanvietnam.vn: 14/14 mẫu đạt, 8 holdout độc lập.
+- cointelegraph.com: 12/12 mẫu đạt, 2 holdout độc lập.
+- kinhdoanhdoisong.vn: 9/9 mẫu đạt, 2 holdout độc lập.
+- trangcongnghe.com: 10/11 mẫu đạt, 2 holdout độc lập.
+- xecongnghe.vn: 8/9 mẫu đạt, 4 holdout độc lập.
+
+PHẠM VI CHƯA HOÀN TẤT:
+- taynguyen24h.com.vn: Only dated archive articles passed. Five prominent current homepage advertising articles expose no publication date; current coverage remains incomplete.
+- thuonghieuquocgia.nhandan.vn: Ordinary article pages passed; five custom company profile/longform landing pages still expose no usable publication date or supported article body.
+
+CÒN LẠI — lý do chi tiết:
+- advertisingvietnam.com: access_blocked
+- asia.nikkei.com: publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview
+- baobariavungtau.com.vn: Image notices and video can be extracted, but old article URLs return 404 and distinct holdouts remain insufficient. Visible date is labelled updated; original publication time is unconfirmed.
+- beforeitsnews.com: missing_published_date
+- cafeauto.vn: missing_published_date
+- cryptonews.com: access_blocked
+- danhgiaxe.com: missing_published_date
+- dealstreetasia.com: missing_published_date
+- dientutieudung.vn: not_found
+- doisongvanhoa.com: missing_published_date
+- giacavattu.com.vn: missing_published_date | missing_title
+- giadinh24h.net: missing_body
+- goodstock.vn: not_found
+- hungyentv.vn: missing_published_date | missing_body
+- kenhtinxe.com: missing_published_date
+- laodongdongnai.vn: empty_page
+- msn.com: empty_page
+- ngoisaovietnam.vn: not_found
+- nhansac.vn: Multiple distinct native posts return the same body. Only one distinct holdout body; source content quality problem remains.
+- otopro.com.vn: missing_published_date
+- tamnhin.net: not_found
+- taynguyen24h.com.vn: Only dated archive articles passed. Five prominent current homepage advertising articles expose no publication date; current coverage remains incomplete.
+- techinsight.com.vn: missing_published_date
+- thanhtra.gov.vn: missing_published_date | missing_body | not_found
+- thoibaobatdongsan.net: No article candidate in homepage/category
+- thoitrang360.net: missing_body
+- thuonghieuquocgia.nhandan.vn: Ordinary article pages passed; five custom company profile/longform landing pages still expose no usable publication date or supported article body.
+- thv.vn: access_blocked
+- tin.skydoor.net: Aggregator excerpts are rejected as incomplete. Redirect links require original publisher configuration and identity dispatch.
+- tintuc.net: missing_published_date
+- tintuctoday.net: missing_published_date
+- toancanhbaochi.net: missing_published_date
+- travelguide.org.vn: missing_published_date
+- vietnamfdi.vn: ECONNABORTED
+
+RÀ 505 SITE ĐÃ ĐẠT CŨ: 483 site parse được 1 bài lấy mới bằng HTTP; 22 chưa xác nhận HTTP. Đây là kiểm tra tương thích một bài, chưa phải kiểm chứng toàn bộ site.
+- antoanthongtin.vn: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- ceotoancau.vn: access_blocked
+- bienphong.com.vn: empty_page
+- baomoi.com: empty_page
+- coindesk.com: rate_limited
+- chg.vn: missing_published_date
+- huongsenviet.com: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- baokiemtoan.vn: http_502
+- finance.yahoo.com: HPE_HEADER_OVERFLOW
+- icon.com.vn: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- laodong.vn: empty_page
+- molistar.com: http_520
+- lecourrier.vn: missing_published_date
+- kinhtevn.com.vn: access_blocked
+- sctv.vn: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- tamnhin.kienthuc.net.vn: ENOTFOUND
+- en.qdnd.vn: ERR_FR_TOO_MANY_REDIRECTS
+- openstock.vn: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- xaluan.com: ECONNRESET
+- nghenhinvietnam.vn: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+- vietnamlawmagazine.vn: missing_published_date
+- qdnd.vn: ERR_FR_TOO_MANY_REDIRECTS
+
+Tổng parser mẫu đạt theo bằng chứng cũ + mới: 510/544. Tổng có bài lấy mới qua HTTP parse được: 488/544. Hai số đo có phạm vi khác nhau.
+Kiểm thử: 47 tests passed. VOZ và Tinhte: HTTP feed bị chặn. Chưa xác minh chu kỳ toàn bộ News trong 15 phút.
+
+TIẾP THEO: xử lý 22 site chưa tương thích HTTP (ưu tiên TLS/DNS/timeout và selector SSR); với 34 site còn lại cần bổ sung nguồn ngày đăng công khai, parser layout đặc biệt hoặc xác nhận nguồn đã đóng. Skydoor cần dispatcher sang báo gốc; bài paywall và nội dung trùng không được coi là lấy đủ bài. Chưa triển khai queue.
+
+LỆNH CHẠY LẠI
+node scripts/test_news_site_article.mjs --site cointelegraph.com
+node scripts/test_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round4-http --config-dir outputs/news-parser-rollout-2026-11-09/round4-http/configs --domains DOMAIN
+node scripts/replay_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round4-http --config-dir outputs/news-parser-rollout-2026-11-09/round4-http/configs
+node scripts/finalize_news_parser_rollout.mjs --round4-http
+Các evidence browser cũ được giữ nguyên trong round3 và baseline; round4-http chỉ chứa evidence HTTP.

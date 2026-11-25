@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaxe-mitsubishi.vn",
+  "siteId": "giaxe-mitsubishi.vn",
+  "registrableDomain": "giaxe-mitsubishi.vn",
+  "homepage": "https://giaxe-mitsubishi.vn/",
+  "allowedHosts": [
+    "giaxe-mitsubishi.vn",
+    "www.giaxe-mitsubishi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://giaxe-mitsubishi.vn/",
+    "categories": [
+      "https://giaxe-mitsubishi.vn/xe-destinator",
+      "https://giaxe-mitsubishi.vn/mitsubishi-xforce",
+      "https://giaxe-mitsubishi.vn/xe-mitsubishi-xpander",
+      "https://giaxe-mitsubishi.vn/xe-triton",
+      "https://giaxe-mitsubishi.vn/xe-attrage"
+    ]
+  },
+  "title": {
+    "value": "So sánh Mitsubishi Destinator và Hyundai Tucson nên chọn mẫu xe nào.",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".main-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:40.495Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:12.785Z",
+    "independentHoldouts": [
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-xe-mitsubishi-triton-tai-ha-noi-moi-nhat-2026",
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-mitsubishi-destinator-tai-ha-noi",
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-xe-mitsubishi-xforce-2025-bao-nhieu-tien"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://giaxe-mitsubishi.vn/so-sanh-mitsubishi-destinator-va-hyundai-tucson",
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-xe-mitsubishi-triton-tai-ha-noi-moi-nhat-2026",
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-mitsubishi-destinator-tai-ha-noi",
+      "https://giaxe-mitsubishi.vn/gia-lan-banh-xe-mitsubishi-xforce-2025-bao-nhieu-tien"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autolifethailand.tv",
+  "siteId": "autolifethailand.tv",
+  "registrableDomain": "autolifethailand.tv",
+  "homepage": "https://autolifethailand.tv/",
+  "allowedHosts": [
+    "autolifethailand.tv",
+    "www.autolifethailand.tv"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://autolifethailand.tv/",
+    "categories": [
+      "https://autolifethailand.tv/category/%e0%b9%81%e0%b8%9a%e0%b8%a3%e0%b8%99%e0%b8%94%e0%b9%8c%e0%b8%a3%e0%b8%96%e0%b8%a2%e0%b8%99%e0%b8%95%e0%b9%8c/",
+      "https://autolifethailand.tv/category/%e0%b9%81%e0%b8%9a%e0%b8%a3%e0%b8%99%e0%b8%94%e0%b9%8c%e0%b8%a3%e0%b8%96%e0%b8%a2%e0%b8%99%e0%b8%95%e0%b9%8c/audi/",
+      "https://autolifethailand.tv/category/%e0%b9%81%e0%b8%9a%e0%b8%a3%e0%b8%99%e0%b8%94%e0%b9%8c%e0%b8%a3%e0%b8%96%e0%b8%a2%e0%b8%99%e0%b8%95%e0%b9%8c/bentley/",
+      "https://autolifethailand.tv/category/%e0%b9%81%e0%b8%9a%e0%b8%a3%e0%b8%99%e0%b8%94%e0%b9%8c%e0%b8%a3%e0%b8%96%e0%b8%a2%e0%b8%99%e0%b8%95%e0%b9%8c/bmw/",
+      "https://autolifethailand.tv/category/%e0%b9%81%e0%b8%9a%e0%b8%a3%e0%b8%99%e0%b8%94%e0%b9%8c%e0%b8%a3%e0%b8%96%e0%b8%a2%e0%b8%99%e0%b8%95%e0%b9%8c/chevrolet/",
+      "https://autolifethailand.tv/category/ducati/"
+    ]
+  },
+  "title": {
+    "value": "เปิดสเป็คเต็ม – ภาพรถคันจริง เวอร์ชั่นไทย All NEW Mitsubishi PAJERO ราคาคาดการณ์ 1.6x – 1.9x ล้านบาท !",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:01.188Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:45.886Z",
+    "independentHoldouts": [
+      "https://autolifethailand.tv/photo-spec-gsr-2wd-all-new-mitsubishi-pajero-thailand",
+      "https://autolifethailand.tv/nevo-q06-show-in-changan-booth-motor-expo-2026/",
+      "https://autolifethailand.tv/official-start-produced-lepas-l6-in-thailand/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://autolifethailand.tv/photo-spec-all-new-mitsubishi-pajero-th-version",
+      "https://autolifethailand.tv/photo-spec-gsr-2wd-all-new-mitsubishi-pajero-thailand",
+      "https://autolifethailand.tv/nevo-q06-show-in-changan-booth-motor-expo-2026/",
+      "https://autolifethailand.tv/official-start-produced-lepas-l6-in-thailand/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

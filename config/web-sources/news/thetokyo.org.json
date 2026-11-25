@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thetokyo.org",
+  "siteId": "thetokyo.org",
+  "registrableDomain": "thetokyo.org",
+  "homepage": "https://thetokyo.org/",
+  "allowedHosts": [
+    "thetokyo.org",
+    "www.thetokyo.org"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thetokyo.org/",
+    "categories": [
+      "https://thetokyo.org/news",
+      "https://thetokyo.org/news/category/local",
+      "https://thetokyo.org/news/category/safety",
+      "https://thetokyo.org/news/category/schools",
+      "https://thetokyo.org/news/category/business"
+    ]
+  },
+  "title": {
+    "value": "Retro Japan in Photos: Trains have been climbing Hakone's steep slopes since 1919",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:52.598Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:46.792Z",
+    "independentHoldouts": [
+      "https://thetokyo.org/news/japans-sole-steam-locomotive-maker-awaits-orders-with-desire-to-preserve-skills",
+      "https://thetokyo.org/news/retro-japan-hakone-railway-conquers-steep-mountain-terrain-with-switchbacks-sharp-curves",
+      "https://thetokyo.org/news/japan-ruling-ldp-vows-to-heed-opposition-views-on-consumption-tax-cut-bill"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thetokyo.org/news/retro-japan-in-photos-trains-have-been-climbing-hakones-steep-slopes-since-1919",
+      "https://thetokyo.org/news/japans-sole-steam-locomotive-maker-awaits-orders-with-desire-to-preserve-skills",
+      "https://thetokyo.org/news/retro-japan-hakone-railway-conquers-steep-mountain-terrain-with-switchbacks-sharp-curves",
+      "https://thetokyo.org/news/japan-ruling-ldp-vows-to-heed-opposition-views-on-consumption-tax-cut-bill"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

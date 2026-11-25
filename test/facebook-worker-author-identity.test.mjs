@@ -1,0 +1,51 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {facebookAuthorIdentity,collectFacebookCommentAuthorIdentities,facebookCommentAuthorIdentity} from '../src/services/facebookAuthorIdentity.js';
+import {createFacebookAuthorResolver} from '../src/services/facebookAuthorResolution.js';
+import {createAnonymousFacebookGraphqlRequest} from '../src/services/facebookAnonymousGraphql.js';
+import {normalizeComment} from '../scripts/facebook_comments.js';
+const story=(opaque='pfbidGenericAlias',id='100003566428341',post='123')=>({post_id:post,id:Buffer.from('S:_I'+id+':VK:'+post).toString('base64'),actors:[{__typename:'User',id:opaque,name:'Owner'}],tracking:JSON.stringify({top_level_post_id:post,content_owner_id_new:id,profile_id:id})});
+const node=(opaque='pfbidGenericAlias')=>({__typename:'Comment',legacy_fbid:'456',author:{__typename:'User',id:opaque,name:'Actor'},created_time:1793050000});
+test('opaque author IDs are not mapped from prior user-confirmed cache entries',async()=>{
+ const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/facebook-opaque-author-nodes.json',import.meta.url)))[0],actor={authorOpaqueId:fixture.node.author.id};assert.equal(facebookAuthorIdentity(fixture.node.author).id,null);await createFacebookAuthorResolver({store:{getMany:async()=>[{_id:actor.authorOpaqueId,id:'100004016502455',evidence:'user_confirmed.actor_opaque_id'}]}})([actor],null);assert.equal(actor.authorId,undefined);
+});
+test('joins a numeric tracking owner only to the same opaque actor, for any author',()=>{
+ const comment=node(),root={story:story(),comment},ids=collectFacebookCommentAuthorIdentities([],root);assert.equal(facebookCommentAuthorIdentity(comment,ids).id,'100003566428341');assert.match(ids.get('456').evidence,/same_actor/);
+ for(const modified of [story('pfbidDifferent'),{...story(),actors:[...story().actors,{id:'pfbidAnother',__typename:'User'}]},{...story(),tracking:JSON.stringify({top_level_post_id:'999',content_owner_id_new:'100003566428341'})},{...story(),id:Buffer.from('S:_I999:VK:123').toString('base64')}])assert.equal(facebookCommentAuthorIdentity(comment,collectFacebookCommentAuthorIdentities([],{story:modified,comment})).id,null);
+ const parentOnly={comment:{...comment,parent_post_story:{id:story().id}}};assert.equal(facebookCommentAuthorIdentity(parentOnly.comment,collectFacebookCommentAuthorIdentities([],parentOnly)).id,null);
+});
+test('conflicting native actor projections are rejected',()=>{
+ const otherStory=story('pfbidGenericAlias','999');const ids=collectFacebookCommentAuthorIdentities([],{story:story(),otherStory,comment:node()});assert.equal(facebookCommentAuthorIdentity(node(),ids).id,null);
+});
+test('worker request exposes bootstrap aliases to root comment and reply before ES5 enqueue',async()=>{
+ const html='<script type="application/json">'+JSON.stringify({require:[['LSD',[],{token:'anonymous-test'}],['CurrentUserInitialData',[],{USER_ID:'0'}]],story:story()})+'</script>';
+ let calls=0;const request=createAnonymousFacebookGraphqlRequest({request:async()=>{calls++;return{html,httpStatus:200,finalUrl:'https://www.facebook.com/123'};}},{bootstrapUrl:'https://www.facebook.com/123'});
+ for(const parentId of ['123','777']){const c=normalizeComment(node(),{idPost:'123',idGetComment:parentId});assert.equal(c.authorId,null);await request.resolveResponseAuthors([c]);assert.equal(c.authorId,'100003566428341');}assert.equal(calls,1);
+});
+test('original Jin/Nguyen response nodes remain unresolved without numeric response proof',()=>{
+ const fixtures=JSON.parse(fs.readFileSync(new URL('./fixtures/facebook-opaque-author-nodes.json',import.meta.url)));
+ for(const fixture of fixtures.slice(0,2)){const ids=collectFacebookCommentAuthorIdentities([],{node:fixture.node});assert.equal(normalizeComment(fixture.node,{idPost:fixture.postId,idGetComment:fixture.postId,authorIdentities:ids}).authorId,null);}
+});
+test('real HTTP worker reader returns mapped comment and reply DTOs before import',async t=>{
+ const {mkdtemp,writeFile,rm}=await import('node:fs/promises'),{tmpdir}=await import('node:os'),{join}=await import('node:path'),{createFacebookContentHttpReader}=await import('../src/services/facebookContentHttp.js'),{createFacebookCommentFetcher,DEFAULT_COMMENT_INTENT}=await import('../scripts/facebook_comments.js');
+ const dir=await mkdtemp(join(tmpdir(),'author-worker-'));t.after(()=>rm(dir,{recursive:true,force:true}));const harPath=join(dir,'fixture.har');await writeFile(harPath,JSON.stringify({log:{entries:[{request:{url:'https://www.facebook.com/api/graphql/',headers:[],postData:{text:new URLSearchParams({lsd:'fixture',variables:'{}',__user:'0',av:'0'}).toString()}}}]}}));
+ const html='<script type="application/json">'+JSON.stringify({require:[['LSD',[],{token:'anonymous-test'}]],story:story()})+'</script>';
+ const reader=createFacebookContentHttpReader({maxPages:2,getProxy:async()=>({server:'http://proxy.test:8888'}),createCommentFetcher:opts=>createFacebookCommentFetcher({...opts,harPath}),makeSession:()=>({requests:0,close(){},async request(url,opts){if(!opts?.method)return{html,httpStatus:200,finalUrl:url};const variables=JSON.parse(new URLSearchParams(opts.body).get('variables')),reply=Buffer.from(variables.id,'base64').toString().includes('_'),n={...node(),legacy_fbid:reply?'789':'456',feedback:{replies_fields:{total_count:reply?0:1}}},connection={edges:[{node:n}],page_info:{has_next_page:false,has_previous_page:false,end_cursor:null,start_cursor:null}},feedback=reply?{id:variables.id,replies_connection:connection}:{id:variables.id,comment_rendering_instance_for_feed_location:{selected_intent:{intent_token:DEFAULT_COMMENT_INTENT},comments:connection}};return{html:JSON.stringify({data:{node:feedback}}),httpStatus:200,finalUrl:url};}})});
+ const result=await reader({platform:'facebook',operation:'comments',sourceType:'group',id:'123',url:'https://www.facebook.com/12_123',limit:100,includeReplies:true});assert.ok(result.items.length,JSON.stringify(result));assert.deepEqual(result.items.map(x=>({type:x.type,id:x.author.id})),[{type:'comment',id:'100003566428341'},{type:'reply',id:'100003566428341'}]);for(const item of result.items)assert.match(item.author.idEvidence,/same_actor/);
+});
+test('bootstrap enrichment preserves the established anonymous-group post-ID policy',async()=>{
+ const anon={__typename:'Comment',legacy_fbid:'456',author:{__typename:'GroupAnonAuthorProfile',id:'999',name:'Anonymous'}},html='<script type="application/json">'+JSON.stringify({require:[['LSD',[],{token:'anonymous-test'}]],comment:anon})+'</script>',request=createAnonymousFacebookGraphqlRequest({request:async()=>({html,httpStatus:200,finalUrl:'https://www.facebook.com/123'})},{bootstrapUrl:'https://www.facebook.com/123'}),c=normalizeComment(anon,{idPost:'123',idGetComment:'123',sourceType:'group'});await request.resolveResponseAuthors([c]);assert.equal(c.authorId,'123');assert.equal(c.authorIdEvidence,'response.group_anonymous_post_id');
+});
+test('source post workers use response tracking before DTO creation for every source type',async()=>{
+ const {normalizePost}=await import('../scripts/facebook_posts.js');for(const type of ['page','group','user'])assert.equal(normalizePost(story(),{groupId:'100003566428341',type}).authorId,'100003566428341');
+});
+test('source post mapping rejects conflicting response actor identities',async()=>{
+ const {normalizePost}=await import('../scripts/facebook_posts.js');const conflicting={...story(),attached_story:story('pfbidGenericAlias','999')};assert.equal(normalizePost(conflicting,{groupId:'12',type:'group'}).authorId,null);
+});
+test('captures the originating native request and raw response when a worker cannot map an author',async t=>{
+ const {mkdtemp,writeFile,rm}=await import('node:fs/promises'),{tmpdir}=await import('node:os'),{join}=await import('node:path'),{createFacebookContentHttpReader}=await import('../src/services/facebookContentHttp.js'),{createFacebookCommentFetcher,DEFAULT_COMMENT_INTENT}=await import('../scripts/facebook_comments.js');
+ const dir=await mkdtemp(join(tmpdir(),'author-capture-'));t.after(()=>rm(dir,{recursive:true,force:true}));const harPath=join(dir,'fixture.har');await writeFile(harPath,JSON.stringify({log:{entries:[{request:{url:'https://www.facebook.com/api/graphql/',headers:[],postData:{text:new URLSearchParams({lsd:'test',variables:'{}'}).toString()}}}]}}));const samples=[],raw=JSON.stringify({data:{node:{id:Buffer.from('feedback:123').toString('base64'),comment_rendering_instance_for_feed_location:{selected_intent:{intent_token:DEFAULT_COMMENT_INTENT},comments:{edges:[{node:{...node('pfbidMissingProof'),feedback:{replies_fields:{total_count:0}}}}],page_info:{has_next_page:false,has_previous_page:false,end_cursor:null,start_cursor:null}}}}}});
+ const reader=createFacebookContentHttpReader({bootstrapFacebook:false,onFacebookAuthorResponse:s=>samples.push(s),getProxy:async()=>({server:'http://proxy.test:8888'}),createCommentFetcher:opts=>createFacebookCommentFetcher({...opts,harPath}),makeSession:()=>({requests:0,close(){},request:async()=>({html:raw,httpStatus:200,finalUrl:'https://www.facebook.com/api/graphql/'})})});const result=await reader({platform:'facebook',operation:'comments',sourceType:'page',id:'123',url:'https://www.facebook.com/12_123',limit:100,includeReplies:false});assert.equal(result.items[0].author.id,null);assert.equal(samples.length,1);assert.equal(samples[0].response.text,raw);assert.equal(samples[0].request.operation,'CommentListComponentsRootQuery');assert.equal(samples[0].request.variables.focusCommentID,null);assert.equal(samples[0].unresolved[0].id,'456');assert.equal(samples[0].unresolved[0].opaqueId,'pfbidMissingProof');assert.equal(samples[0].request.headers,undefined);
+});
+test('reel source aliases bind the video ID separately from the post ID',async()=>{
+ const {normalizePost}=await import('../scripts/facebook_posts.js');const s={...story(),post_id:'456',short_form_video_context:{video:{id:'123',owner:{id:'100003566428341'}}}};assert.equal(normalizePost(s,{groupId:'100003566428341',type:'user'}).authorId,'100003566428341');assert.equal(normalizePost({...s,short_form_video_context:{video:{id:'999',owner:{id:'100003566428341'}}}},{groupId:'12',type:'group'}).authorId,'pfbidGenericAlias');
+});

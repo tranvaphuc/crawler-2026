@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phapluatplus.baophapluat.vn",
+  "siteId": "phapluatplus.baophapluat.vn",
+  "registrableDomain": "baophapluat.vn",
+  "homepage": "https://phapluatplus.baophapluat.vn/",
+  "allowedHosts": [
+    "phapluatplus.baophapluat.vn",
+    "www.phapluatplus.baophapluat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Không chỉ hưởng ứng một ngày, phải chuyển hóa thành hành động mỗi ngày",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:00.788Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://phapluatplus.baophapluat.vn/khong-chi-huong-ung-mot-ngay-phai-chuyen-hoa-thanh-hanh-dong-moi-ngay-3583934b.html",
+      "https://phapluatplus.baophapluat.vn/khong-chi-huong-ung-mot-ngay-phai-chuyen-hoa-thanh-hanh-dong-moi-ngay-021ebaa2.html",
+      "https://phapluatplus.baophapluat.vn/tu-1-11-2022-bo-tai-nguyen-va-moi-truong-khong-con-4-tong-cuc-56885.html",
+      "https://phapluatplus.baophapluat.vn/dinh-chinh-bai-viet-ve-cong-ty-bi-xu-phat-tai-my-56886.html",
+      "https://phapluatplus.baophapluat.vn/trang-trong-le-huong-ung-ngay-phap-luat-viet-nam-2026-8cc0979a.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phapluatplus.baophapluat.vn/",
+    "categories": [
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/hoat-dong-tu-phap.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/dien-dan-luat-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/dieu-tra",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/ban-doc.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/tu-van-phap-luat.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/xet-xu",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/phap-luat-ve-kinh-te.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/dau-thau.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/kinh-doanh-thuong-mai.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/tai-chinh-ngan-hang.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/san-pham-hang-hoa-dich-vu.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/bat-dong-san.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/hinh-su-to-tung-hinh-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/to-tung-hinh-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/hinh-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/dan-su-to-tung-dan-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/to-tung-dan-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/dan-su.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/hanh-chinh-to-tung-hanh-chinh.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/to-tung-hanh-chinh.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/hanh-chinh.html",
+      "https://phapluatplus.baophapluat.vn/chuyen-muc/cai-chinh.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phapluatplus.baophapluat.vn",
+    "checkedAt": "2026-11-09T03:57:21.752Z",
+    "url": "https://phapluatplus.baophapluat.vn/khong-chi-huong-ung-mot-ngay-phai-chuyen-hoa-thanh-hanh-dong-moi-ngay-3583934b.html",
+    "finalUrl": "https://phapluatplus.baophapluat.vn/khong-chi-huong-ung-mot-ngay-phai-chuyen-hoa-thanh-hanh-dong-moi-ngay-3583934b.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 26791,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "phapluatplus.baophapluat.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 33,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 31,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 22,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 306,
+        "passed": 33,
+        "distinctHashes": 31
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phapluatplus.baophapluat.vn/thanh-tra-chinh-phu-phat-hien-vi-pham-thue-hang-nghin-ty-dong-tai-260-doanh-nghiep-xang-dau.html",
+      "https://phapluatplus.baophapluat.vn/thong-nhat-mot-dau-moi-quan-ly-an-toan-thuc-pham-tu-trung-uong-den-dia-phuong.html",
+      "https://phapluatplus.baophapluat.vn/canh-bao-nguy-co-lu-quet-sat-lo-dat-tai-8-tinh-thanh-pho.html",
+      "https://phapluatplus.baophapluat.vn/uy-vien-uy-ban-kiem-tra-trung-uong-tran-quoc-binh-duoc-chi-dinh-lam-pho-bi-thu-tinh-uy-hung-yen.html",
+      "https://phapluatplus.baophapluat.vn/kham-xet-noi-o-cau-tuan-cua-ong-phat-hien-10-khau-sung-tu-che.html",
+      "https://phapluatplus.baophapluat.vn/thoi-tiet-dot-ngot-tro-lanh-dung-de-dot-quy-tro-thanh-moi-nguy-bat-ngo-7975bdee.html",
+      "https://phapluatplus.baophapluat.vn/dac-sac-12-phim-dai-tranh-giai-tai-lien-hoan-phim-quoc-te-ha-noi-lan-thu-viii-goc-dien-anh-196.html",
+      "https://phapluatplus.baophapluat.vn/80-nam-hien-phap-va-dau-an-doi-moi-phap-luat-nam-2026.html",
+      "https://phapluatplus.baophapluat.vn/ban-tin-tong-hop-08-11-huong-ung-ngay-phap-luat-viet-nam-xay-dung-van-hoa-thuong-ton-hien-phap-va-phap-luat-trong-toan-xa-hoi.html",
+      "https://phapluatplus.baophapluat.vn/diem-tin-phap-luat-ngay-07-11-thu-giu-25-4kg-can-sa-va-hon-400-cay-thuoc-la-nung-nong-o-noi-bai.html",
+      "https://phapluatplus.baophapluat.vn/seo-ye-ji-tai-xuat-man-anh-rong-sau-5-nam-voi-du-an-kinh-di-geumwoldo-goc-dien-anh-195.html",
+      "https://phapluatplus.baophapluat.vn/ban-tin-tong-hop-05-11-hoan-thien-phap-luat-phong-chong-tac-hai-thuoc-la-siet-quan-ly-mo-rong-moi-truong-khong-khoi-thuoc.html",
+      "https://phapluatplus.baophapluat.vn/nha-san-xuat-phim-viet-gianh-giai-lien-hoan-phim-quoc-te-singapore-lan-thu-37-goc-dien-anh-194.html",
+      "https://phapluatplus.baophapluat.vn/diem-tin-phap-luat-03-11-tim-thay-chau-be-bi-du-do-di-lam-viec-nhe-luong-cao.html",
+      "https://phapluatplus.baophapluat.vn/quoc-hoi-bo-tri-80-400-ty-dong-cho-cai-cach-tien-luong-nam-2027.html",
+      "https://phapluatplus.baophapluat.vn/quang-ninh-day-manh-chuyen-doi-so-trong-pho-bien-giao-duc-phap-luat.html",
+      "https://phapluatplus.baophapluat.vn/huong-ung-ngay-phap-luat-viet-nam-2026-gieo-y-thuc-thuong-ton-phap-luat-qua-phien-toa-gia-dinh.html",
+      "https://phapluatplus.baophapluat.vn/nguoi-dan-co-phai-doi-giay-chung-nhan-quyen-su-dung-dat-moi-sau-khi-xoa-dang-ky-the-chap.html",
+      "https://phapluatplus.baophapluat.vn/thang-10-2026-giao-dich-tren-thi-truong-chung-khoan-phai-sinh-giam-manh.html",
+      "https://phapluatplus.baophapluat.vn/chi-so-gia-vang-do-la-my-cung-tang.html",
+      "https://phapluatplus.baophapluat.vn/quang-ninh-tang-toc-giai-ngan-dau-tu-cong-voi-muc-tieu-hoan-thanh-100-chi-tieu-truoc-15-12-2026.html",
+      "https://phapluatplus.baophapluat.vn/huong-ung-ngay-phap-luat-viet-nam-xay-dung-van-hoa-thuong-ton-hien-phap-va-phap-luat-trong-toan-xa-hoi-05d6bec4.html",
+      "https://phapluatplus.baophapluat.vn/tien-do-7-cau-lon-vuot-song-hong-gio-ra-sao.html",
+      "https://phapluatplus.baophapluat.vn/lan-toa-van-hoa-doc-qua-nhung-tac-pham-ve-khoi-nghiep-va-phap-luat.html",
+      "https://phapluatplus.baophapluat.vn/hoan-thien-cac-giai-phap-quan-tri-thuong-mai-da-dang-hoa-thi-truong-xuat-nhap-khau.html",
+      "https://phapluatplus.baophapluat.vn/lan-toa-tinh-yeu-nghe-gom-tu-nhung-trai-nghiem-thuc-te.html",
+      "https://phapluatplus.baophapluat.vn/triet-pha-duong-day-chua-mai-dam-tai-cac-co-so-massage-khoi-to-10-doi-tuong.html",
+      "https://phapluatplus.baophapluat.vn/tu-vu-danh-bac-gan-6-ty-dong-cua-thanh-nien-2k2-khoi-to-them-5-bi-can-o-hung-yen.html",
+      "https://phapluatplus.baophapluat.vn/khoi-to-hai-tai-xe-lien-quan-vu-tai-nan-nghiem-trong-khien-mot-chau-be-tu-vong-o-quang-ninh.html",
+      "https://phapluatplus.baophapluat.vn/cong-an-xac-minh-vu-tai-xe-taxi-bi-hanh-hung-dap-pha-tai-san-sau-va-cham.html",
+      "https://phapluatplus.baophapluat.vn/ha-noi-kiem-tra-an-toan-dien-pccc-tai-100-nha-va-cong-trinh-su-dung-dien.html",
+      "https://phapluatplus.baophapluat.vn/quy-dinh-moi-ve-trinh-tu-thu-tuc-giam-sat-hoat-dong-phong-chong-rua-tien-co-hieu-luc-tu-thang-12-2026.html",
+      "https://phapluatplus.baophapluat.vn/khac-phuc-tinh-trang-dem-diem-thay-cho-danh-gia-chat-luong-giang-day-bi-xem-nhe.html",
+      "https://phapluatplus.baophapluat.vn/khach-quoc-te-den-viet-nam-tang-13-8-dat-19-5-trieu-luot-trong-10-thang-dau-nam-2026.html",
+      "https://phapluatplus.baophapluat.vn/cong-an-xa-cong-chinh-kip-thoi-cuu-giup-hai-nguoi-dan-bi-nuoc-cuon-troi-o-thanh-hoa.html",
+      "https://phapluatplus.baophapluat.vn/cong-an-thanh-pho-dong-nai-quyet-tam-hoan-thanh-cac-chi-tieu-nhiem-vu-nam.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:25.315Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phapluatplus.baophapluat.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

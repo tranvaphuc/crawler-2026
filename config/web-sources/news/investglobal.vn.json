@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "siteName": "investglobal.vn",
+  "siteId": "investglobal.vn",
+  "registrableDomain": "investglobal.vn",
+  "homepage": "https://investglobal.vn/",
+  "allowedHosts": [
+    "investglobal.vn",
+    "www.investglobal.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://investglobal.vn/",
+    "categories": [
+      "https://investglobal.vn/article.html",
+      "https://investglobal.vn/article/khung-phap-ly.html",
+      "https://investglobal.vn/article/moi-truong-dau-tu.html",
+      "https://investglobal.vn/article/tai-chinh-tin-dung.html",
+      "https://investglobal.vn/article/tin-tuc-khoi-nghiep",
+      "https://investglobal.vn/article/quoc-te.html",
+      "https://investglobal.vn/article/y-kien-chuyen-gia.html",
+      "https://investglobal.vn/article/doi-song.html",
+      "https://investglobal.vn/article/tin-tuc-khoi-nghiep.html",
+      "https://investglobal.vn/project/Du-an-khoi-nghiep.html"
+    ]
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "investglobal.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "strategy": "selector",
+    "selector": "h1.uk-panel-title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".uk-panel-body > .meta > span"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".uk-panel-body > .content"
+  },
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:17:20.712Z",
+    "frozenAt": "2026-11-16T04:17:18.378Z",
+    "trainingUrl": "https://investglobal.vn/article/detail/chu-nhan-thuc-su-cua-melia-metropole-daewoo-nhung-khach-san-5-sao-noi-tieng-nhat-ha-noi-la-ai.html",
+    "independentHoldouts": [
+      "https://investglobal.vn/article/detail/quy-dau-tu-tang-ty-trong-tien-mat.html",
+      "https://investglobal.vn/article/detail/doanh-nghiep-doi-mat-suc-ep-phi-carbon.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://investglobal.vn/article/detail/chu-nhan-thuc-su-cua-melia-metropole-daewoo-nhung-khach-san-5-sao-noi-tieng-nhat-ha-noi-la-ai.html",
+      "https://investglobal.vn/article/detail/quy-dau-tu-tang-ty-trong-tien-mat.html",
+      "https://investglobal.vn/article/detail/doanh-nghiep-doi-mat-suc-ep-phi-carbon.html",
+      "https://investglobal.vn/article/detail/tao-luc-day-cho-doanh-nghiep-tren-hanh-trinh-net-zero.html",
+      "https://investglobal.vn/article/detail/dau-tu-cong-chay-nuoc-rut-cuoi-nam.html",
+      "https://investglobal.vn/article/detail/quan-chuc-fed-bat-dong-ve-thoi-diem-cuong-do-tang-lai-suat.html",
+      "https://investglobal.vn/article/detail/ngan-hang-doi-moi-phuong-thuc-cho-vay-theo-dong-tien.html",
+      "https://investglobal.vn/article/detail/nang-suc-canh-tranh-bat-dong-san-cong-nghiep-bang-lien-ket-fdi-va-doanh-nghiep-viet.html",
+      "https://investglobal.vn/article/detail/pho-wall-chao-dao-truoc-cu-soc-nvidia.html",
+      "https://investglobal.vn/article/detail/ceo-jensen-huang-tu-chuc-nvidia-mat-gan-1-000-ty-usd-von-hoa-trong-thang-11.html",
+      "https://investglobal.vn/article/detail/usd-tien-sat-dinh-1-thang-nho-ky-vong-fed-tang-lai-suat-trien-vong-van-kho-luong.html",
+      "https://investglobal.vn/article/detail/bong-bong-ai-truoc-hai-phep-thu-bau-cu-my-va-be-boi-nvidia.html",
+      "https://investglobal.vn/article/detail/sua-doi-36-thu-tuc-cap-c-o-go-nut-that-xuat-xu-mo-duong-cho-hang-viet-tan-dung-fta.html",
+      "https://investglobal.vn/article/detail/quy-dinh-bao-bi-moi-cua-eu-doanh-nghiep-xuat-khau-can-chu-dong-thich-ung.html",
+      "https://investglobal.vn/article/detail/chinh-phu-trinh-luat-rieng-quan-ly-thi-truong-giao-dich-7-500-ty-dong-ngay.html",
+      "https://investglobal.vn/article/detail/quy-dinh-moi-ve-chuc-nang-nhiem-vu-cua-bao-hiem-xa-hoi-viet-nam.html",
+      "https://investglobal.vn/article/detail/bo-tai-chinh-quy-dinh-chuc-nang-nhiem-vu-moi-cua-vu-dau-tu-va-phat-trien-ha-tang.html",
+      "https://investglobal.vn/article/detail/ket-noi-trung-tam-tai-chinh-quoc-te-voi-thi-truong-von-trong-nuoc.html",
+      "https://investglobal.vn/article/detail/duong-sat-toc-do-cao-chon-cong-nghe-gi-doanh-nghiep-viet-lam-cong-doan-nao.html",
+      "https://investglobal.vn/article/detail/trai-phieu-doanh-nghiep-thang-10-lai-suat-len-12-5-ap-luc-dao-han-gan-45-000-ty-dong.html",
+      "https://investglobal.vn/article/detail/lai-suat-cao-nen-phan-bo-dau-tu-ra-sao.html",
+      "https://investglobal.vn/article/detail/hoan-doi-ngoai-te-da-co-gan-50-nghin-ty-dong-duoc-cung-ung-cho-he-thong-ngan-hang.html",
+      "https://investglobal.vn/article/detail/phan-ung-cua-thi-truong-sau-khi-hoan-doi-va-mo-kenh-mua-ngoai-te.html",
+      "https://investglobal.vn/article/detail/phat-hien-2-nguoi-phu-nu-viet-nam-cung-co-111-nghin-ty.html",
+      "https://investglobal.vn/article/detail/lan-dau-tien-co-cong-ty-viet-nam-bo-nhiem-ai-lam-truong-ban-chien-luoc-tuyen-them-22-nhan-vien-ai-phai-thu-viec-2-thang-khong-dat-se-bi-loai.html",
+      "https://investglobal.vn/article/detail/phat-hien-chuyen-vo-ly-sau-mot-chiec-can-nhua-ceo-ibas-tu-my-ve-viet-nam-tim-thay-co-hoi-lam-an-trong-nganh-4-6-ty-usd.html",
+      "https://investglobal.vn/article/detail/hai-anh-em-gen-z-giau-nhat-san-chung-khoan-kiem-285-ty-dong-trong-mot-buoi-sang-sau-khi-mat-gan-4-700-ty.html",
+      "https://investglobal.vn/article/detail/lan-song-ceo-tuoi-20-dao-nguoc-quy-luat-khoi-nghiep-ty-do.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

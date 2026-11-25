@@ -1,0 +1,23 @@
+[Unit]
+Description=Verify newly observed news sections and admit missing article links
+After=network-online.target news-flow-egress.service
+Requires=news-flow-egress.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/news-flow/current
+ExecStart=/usr/bin/flock --exclusive --nonblock --no-fork /var/lib/news-flow/locks/category-maintenance.lock /usr/local/libexec/run-news-category-maintenance.sh
+MemoryMax=5G
+CPUQuota=200%
+CPUWeight=10
+Nice=10
+TasksMax=100
+TimeoutStartSec=3h
+TimeoutStopSec=30
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

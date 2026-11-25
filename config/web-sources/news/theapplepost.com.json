@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "theapplepost.com",
+  "siteId": "theapplepost.com",
+  "registrableDomain": "theapplepost.com",
+  "homepage": "https://www.theapplepost.com/",
+  "allowedHosts": [
+    "www.theapplepost.com",
+    "theapplepost.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.theapplepost.com/",
+    "categories": [
+      "https://www.theapplepost.com/category/news/",
+      "https://www.theapplepost.com/category/analysis/",
+      "https://www.theapplepost.com/category/guides/",
+      "https://www.theapplepost.com/category/how-tos/",
+      "https://www.theapplepost.com/category/tips-tricks/",
+      "https://www.theapplepost.com/plus/"
+    ]
+  },
+  "title": {
+    "value": "Apple Home Collection orders open for new cameras and smart accessories",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post_content_wrapper",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:48:56.074Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:48:44.017Z",
+    "independentHoldouts": [
+      "https://www.theapplepost.com/2026/11/16/74397/apple-says-over-200000-apps-are-now-optimized-for-iphone-duo/",
+      "https://www.theapplepost.com/2026/11/16/74394/apple-homeview-delivery-dates-slip-into-january-as-stock-runs-low/",
+      "https://www.theapplepost.com/2026/11/16/74392/apple-brings-face-unlock-to-iphone-duo-with-ios-27-3/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.theapplepost.com/2026/11/13/74183/apple-home-collection-orders-open-for-new-cameras-and-smart-accessories",
+      "https://www.theapplepost.com/2026/11/16/74397/apple-says-over-200000-apps-are-now-optimized-for-iphone-duo/",
+      "https://www.theapplepost.com/2026/11/16/74394/apple-homeview-delivery-dates-slip-into-january-as-stock-runs-low/",
+      "https://www.theapplepost.com/2026/11/16/74392/apple-brings-face-unlock-to-iphone-duo-with-ios-27-3/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

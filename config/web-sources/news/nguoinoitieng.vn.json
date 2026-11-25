@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoinoitieng.vn",
+  "siteId": "nguoinoitieng.vn",
+  "registrableDomain": "nguoinoitieng.vn",
+  "homepage": "https://nguoinoitieng.vn/",
+  "allowedHosts": [
+    "nguoinoitieng.vn",
+    "www.nguoinoitieng.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "MC Bích Thủy – ‘Đại sứ văn hóa’ kết nối Việt Nam và thế giới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:53.518Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nguoinoitieng.vn/tieu-su/mc-bich-thuy-dai-su-van-hoa-ket-noi-viet-nam-va-the-gioi.html",
+      "https://nguoinoitieng.vn/tieu-su/thien-dung-nhac-si-tre-tai-nang-den-tu-ca-doan-nha-tho.html",
+      "https://nguoinoitieng.vn/doanh-nghiep/0111194978-cong-ty-co-phan-giai-phap-giao-duc-toan-cau-unishine.html",
+      "https://nguoinoitieng.vn/doanh-nghiep/0310061757-cong-ty-tnhh-elken-international-viet-nam.html",
+      "https://nguoinoitieng.vn/doanh-nghiep/0110272648-cong-ty-tnhh-mos-entertainment.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nguoinoitieng.vn/",
+    "categories": [
+      "https://nguoinoitieng.vn/tieu-su",
+      "https://nguoinoitieng.vn/showbiz-24h",
+      "https://nguoinoitieng.vn/scandal",
+      "https://nguoinoitieng.vn/birthday-star",
+      "https://nguoinoitieng.vn/top-list",
+      "https://nguoinoitieng.vn/doi-song",
+      "https://nguoinoitieng.vn/voices",
+      "https://nguoinoitieng.vn/tuoi-20",
+      "https://nguoinoitieng.vn/tuoi-20/lo-quen-uoc-mo.html",
+      "https://nguoinoitieng.vn/giao-duc",
+      "https://nguoinoitieng.vn/doi-song/am-nhac",
+      "https://nguoinoitieng.vn/mach-ban",
+      "https://nguoinoitieng.vn/suc-khoe",
+      "https://nguoinoitieng.vn/doanh-nghiep",
+      "https://nguoinoitieng.vn/kinh-doanh",
+      "https://nguoinoitieng.vn/song-dep",
+      "https://nguoinoitieng.vn/am-thuc",
+      "https://nguoinoitieng.vn/doi-song/hon-nhan",
+      "https://nguoinoitieng.vn/tho-hay-24h",
+      "https://nguoinoitieng.vn/lam-dep",
+      "https://nguoinoitieng.vn/y-kien-quan-diem"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?nguoinoitieng.vn/.*?(\\d{5,})$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nguoinoitieng.vn",
+    "checkedAt": "2026-11-09T03:57:18.699Z",
+    "url": "https://nguoinoitieng.vn/tieu-su/mc-bich-thuy-dai-su-van-hoa-ket-noi-viet-nam-va-the-gioi.html",
+    "finalUrl": "https://nguoinoitieng.vn/tieu-su/mc-bich-thuy-dai-su-van-hoa-ket-noi-viet-nam-va-the-gioi.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7189,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nguoinoitieng.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 4,
+    "freshArticleChecks": 4,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 21,
+    "categoriesFreshChecked": 21,
+    "categoriesUnconfirmed": 21,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": null,
+    "homeListingError": "listing_links_unconfirmed",
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4
+    },
+    "checkedAt": "2026-11-10T09:16:12.595Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nguoinoitieng.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

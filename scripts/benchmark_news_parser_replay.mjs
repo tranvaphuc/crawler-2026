@@ -1,0 +1,14 @@
+import {articleKey} from '../src/newsFlow/identity.mjs';
+import {DatabaseSync} from 'node:sqlite';import {gunzipSync} from 'node:zlib';import {pathToFileURL} from 'node:url';import path from 'node:path';import {isDeepStrictEqual} from 'node:util';import {NewsRepairPool} from '../src/web/newsRepairPool.mjs';import {loadNewsRegistry} from '../src/newsFlow/registry.mjs';
+const registry=await loadNewsRegistry(),db=new DatabaseSync('/var/lib/news-flow/news-flow-runtime/write.sqlite',{readOnly:true});
+for(const r of db.prepare('SELECT site,config FROM parser_overlays').all()){const s=registry.sources.get(r.site);if(s)s.config=JSON.parse(r.config);}
+const samples=[],counts=new Map(),records=db.prepare('SELECT site,url,kind,html FROM review_samples ORDER BY at DESC LIMIT 2000').all();
+const control=db.prepare('SELECT parse_status,error FROM article_links WHERE parse_key=?');
+for(const [kind,limit]of [['good',20],['fail',10]]){let selected=0;for(const r of records){if(r.kind!==kind)continue;if(kind==='good'){const a=control.get(articleKey(r.url));if(a?.parse_status!=='done'||a.error)continue;}const source=registry.sources.get(r.site),key=r.site+'|'+kind,n=counts.get(key)||0;if(!source||n>=2)continue;let html;try{html=gunzipSync(r.html).toString();}catch{continue;}samples.push({sample:{domain:r.site,url:r.url,kind:'article',html},config:source.config,context:{},learn:false});counts.set(key,n+1);if(++selected>=limit)break;}}
+db.close();if(samples.length<10)throw Error('NEWS_PARSER_REPLAY_EVIDENCE_TOO_SMALL');
+const oldUrl=pathToFileURL(path.resolve(process.argv[2])),newUrl=new URL('../src/web/newsDeepAuditWorker.mjs',import.meta.url);let oldPool,newPool;const stats={samples:samples.length,domains:new Set(samples.map(v=>v.sample.domain)).size,oldMs:0,newMs:0,mismatches:[],parsed:0,errors:0};
+function core(v){const r=JSON.parse(JSON.stringify(Object.fromEntries(['error','kind','policyConflict','parsed','fields','quality'].map(k=>[k,v[k]]))));if(r.parsed?._source)delete r.parsed._source.insertedDate;return r;}
+try{oldPool=new NewsRepairPool(1,oldUrl,{fatalOnFailure:true,maxOldGenerationSizeMb:512});newPool=new NewsRepairPool(1,newUrl,{fatalOnFailure:true,maxOldGenerationSizeMb:512});
+ for(const input of samples){let at=performance.now();const a=await oldPool.run(input);stats.oldMs+=performance.now()-at;at=performance.now();const b=await newPool.run(input);stats.newMs+=performance.now()-at;if(a.parsed)stats.parsed++;else stats.errors++;if(!isDeepStrictEqual(core(a),core(b)))stats.mismatches.push({domain:input.sample.domain,fields:Object.keys(core(a)).filter(k=>!isDeepStrictEqual(core(a)[k],core(b)[k]))});}
+ stats.oldMs=Math.round(stats.oldMs);stats.newMs=Math.round(stats.newMs);console.log(JSON.stringify(stats));if(stats.parsed<10)throw Error('NEWS_PARSER_REPLAY_TOO_FEW_PARSED_CONTROLS');if(stats.mismatches.length)throw Error('NEWS_PARSER_REPLAY_CHANGED');
+}finally{await oldPool?.close();await newPool?.close();}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepxanh.com.vn",
+  "siteId": "doanhnghiepxanh.com.vn",
+  "registrableDomain": "doanhnghiepxanh.com.vn",
+  "homepage": "https://doanhnghiepxanh.com.vn/",
+  "allowedHosts": [
+    "doanhnghiepxanh.com.vn",
+    "www.doanhnghiepxanh.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnghiepxanh.com.vn/",
+    "categories": [
+      "https://doanhnghiepxanh.com.vn/thi-truong",
+      "https://doanhnghiepxanh.com.vn/doanh-nghiep",
+      "https://doanhnghiepxanh.com.vn/doanh-nhan",
+      "https://doanhnghiepxanh.com.vn/khoi-nghiep",
+      "https://doanhnghiepxanh.com.vn/cong-nghe-so",
+      "https://doanhnghiepxanh.com.vn/dau-tu"
+    ]
+  },
+  "title": {
+    "value": "Masan 'bắt tay' với đối tác Nhật Bản phát triển chuỗi cung ứng vật liệu công nghệ cao",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:12.862Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:37.026Z",
+    "independentHoldouts": [
+      "https://doanhnghiepxanh.com.vn/cuu-doanh-nghiep-lu-hanh-bang-cac-giai-phap-thuc-te-2490.html",
+      "https://doanhnghiepxanh.com.vn/nong-san-khong-ai-mua-ho-lam-ra-banh-bo-tinh-dau-mac-ca-savib-san-vat-ba-mien-4226.html",
+      "https://doanhnghiepxanh.com.vn/hsg-thiet-lap-ky-luc-xuat-khau-moi-san-luong-vuot-moc-120-nghin-tan-thang-doanh-thu-vuot-1-2376.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnghiepxanh.com.vn/cuu-doanh-nghiep-lu-hanh-bang-cac-giai-phap-thuc-te-2490.html",
+      "https://doanhnghiepxanh.com.vn/nong-san-khong-ai-mua-ho-lam-ra-banh-bo-tinh-dau-mac-ca-savib-san-vat-ba-mien-4226.html",
+      "https://doanhnghiepxanh.com.vn/hsg-thiet-lap-ky-luc-xuat-khau-moi-san-luong-vuot-moc-120-nghin-tan-thang-doanh-thu-vuot-1-2376.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

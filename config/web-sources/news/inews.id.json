@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "siteName": "inews.id",
+  "siteId": "inews.id",
+  "registrableDomain": "inews.id",
+  "homepage": "https://www.inews.id/",
+  "allowedHosts": [
+    "www.inews.id",
+    "inews.id"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.inews.id/",
+    "categories": [
+      "https://www.inews.id/news",
+      "https://www.inews.id/regional",
+      "https://www.inews.id/inews-tv",
+      "https://www.inews.id/finance",
+      "https://www.inews.id/sport",
+      "https://www.inews.id/lifestyle"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Pajero Terbaru Debut Global, Begini Tanggapan MMKSI",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".bodyArticleWrapper",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:58.134Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://www.inews.id/sport/soccer/timnas-indonesia-vs-bali-united-disiarkan-di-mana-kick-off-malam-ini",
+      "https://www.inews.id/sport/all-sport/malaysia-jawab-kritik-indonesia-soal-cabor-sea-games-2027-11-negara-sepakat"
+    ],
+    "improvedUrls": [
+      "https://www.inews.id/inews-tv/buletin/rudal-houthi-sasar-riyadh-gedung-aramco-mengalami-kerusakan"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.inews.id/otomotif/mobil/mitsubishi-pajero-terbaru-debut-global-begini-tanggapan-mmksi",
+      "https://www.inews.id/news/megapolitan/pramono-ungkap-potensi-besar-konser-bts-di-jakarta-30000-penonton-wna-selama-3-hari",
+      "https://www.inews.id/news/nasional/gempa-terkini-m54-guncang-gorontalo-utara-malam-ini-bmkg-tak-berpotensi-tsunami",
+      "https://www.inews.id/sport/soccer/timnas-indonesia-vs-bali-united-tanpa-pemenang-bintang-persija-cetak-gol"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Mitsubishi Pajero Terbaru Debut Global, Begini Tanggapan MMKSI",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".bodyArticleWrapper",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:39.960Z",
+        "trainingUrls": [
+          "https://www.inews.id/inews-tv/buletin/rudal-houthi-sasar-riyadh-gedung-aramco-mengalami-kerusakan"
+        ],
+        "holdoutUrls": [
+          "https://www.inews.id/sport/soccer/timnas-indonesia-vs-bali-united-disiarkan-di-mana-kick-off-malam-ini",
+          "https://www.inews.id/sport/all-sport/malaysia-jawab-kritik-indonesia-soal-cabor-sea-games-2027-11-negara-sepakat"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+import fs from 'node:fs/promises';
+import axios from 'axios';
+import * as cheerio from 'cheerio';
+const root='outputs/news-forum-research-2026-11-09';
+const r=await axios.get('http://antt.vn/',{timeout:25000,headers:{'User-Agent':'Mozilla/5.0','Accept-Language':'vi,en;q=0.9'},proxy:false});
+const html=r.data;await fs.writeFile(root+'/pilot-home.html',html);const $=cheerio.load(html);const links=[...new Map($('a[href]').toArray().map(a=>{try{const u=new URL($(a).attr('href'),'http://antt.vn/');return [u.href,{url:u.href,text:$(a).text().replace(/\s+/g,' ').trim()}];}catch{return ['',null];}}).filter(x=>x[1])).values()];
+console.log(JSON.stringify({status:r.status,title:$('title').text(),articleLinks:links.filter(l=>/\d+\.htm/.test(l.url)).slice(0,8),navigation:links.filter(l=>! /\d+\.htm/.test(l.url)&&/antt\.vn/.test(l.url)).slice(0,65)},null,2));
+const article=links.find(l=>/\d+\.htm/.test(l.url));if(article){const a=await axios.get(article.url,{timeout:25000,proxy:false,headers:{'User-Agent':'Mozilla/5.0'}});await fs.writeFile(root+'/pilot-article.html',a.data);const d=cheerio.load(a.data);console.log(JSON.stringify({url:article.url,title:d('title').text(),h1:d('h1').map((i,x)=>({class:d(x).attr('class'),text:d(x).text()})).get(),meta:d('meta').map((i,x)=>({name:d(x).attr('name')||d(x).attr('property'),content:d(x).attr('content')})).get().filter(x=>x.name),bodyClasses:d('[class]').toArray().filter(x=>/content|detail|author|time|date|sapo|descrip/i.test(d(x).attr('class'))).map(x=>({tag:x.tagName,class:d(x).attr('class'),length:d(x).text().length,text:d(x).text().replace(/\s+/g,' ').trim().slice(0,140)})).slice(0,60)},null,2));}

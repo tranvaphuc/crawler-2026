@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thoitrang360.net",
+  "siteId": "thoitrang360.net",
+  "registrableDomain": "thoitrang360.net",
+  "homepage": "https://thoitrang360.net/",
+  "allowedHosts": [
+    "thoitrang360.net",
+    "www.thoitrang360.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Lời tiên tri của Thùy Tiên dành cho bản thân thành sự thật, nghe mà thấm",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".col-md-9 > .time-news-detail + div",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:33.942Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thoitrang360.net/loi-tien-tri-cua-thuy-tien-danh-cho-ban-than-thanh-su-that-nghe-ma-tham/",
+      "https://thoitrang360.net/nu-nghe-si-viet-bi-quay-roi-van-nan-tu-san-khau-den-doi-tu/",
+      "https://thoitrang360.net/hy-sac-lac-hong-dau-an-van-hoa-viet-qua-trang-phuc-cuoi-tho-cam/",
+      "https://thoitrang360.net/6-bi-quyet-phoi-do-sanh-dieu-chuan-khong-can-chinh-dep-nhu-fashionista-ban-nen-copy-ngay/",
+      "https://thoitrang360.net/5-cach-mix-so-mi-khong-bao-gio-loi-mot-phu-hop-cho-nhung-dip-di-choi-dao-pho-hay-di-du-lich/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/thoitrang360.net"
+  },
+  "discovery": {
+    "homepage": "https://thoitrang360.net/",
+    "categories": [
+      "https://thoitrang360.net/category/thoi-trang/",
+      "https://thoitrang360.net/category/vui-cuoi/",
+      "https://thoitrang360.net/category/giai-tri/",
+      "https://thoitrang360.net/category/lam-dep/",
+      "https://thoitrang360.net/category/tam-cung-chi-em/",
+      "https://thoitrang360.net/category/giao-duc/",
+      "https://thoitrang360.net/category/thoi-su/",
+      "https://thoitrang360.net/category/the-thao/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thoitrang360.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 22,
+    "freshArticleChecks": 11,
+    "parserIssues": 4,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 73,
+        "passed": 18,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thoitrang360.net/loi-tien-tri-cua-thuy-tien-danh-cho-ban-than-thanh-su-that-nghe-ma-tham/",
+      "https://thoitrang360.net/nu-nghe-si-viet-bi-quay-roi-van-nan-tu-san-khau-den-doi-tu/",
+      "https://thoitrang360.net/hy-sac-lac-hong-dau-an-van-hoa-viet-qua-trang-phuc-cuoi-tho-cam/",
+      "https://thoitrang360.net/6-bi-quyet-phoi-do-sanh-dieu-chuan-khong-can-chinh-dep-nhu-fashionista-ban-nen-copy-ngay/",
+      "https://thoitrang360.net/5-cach-mix-so-mi-khong-bao-gio-loi-mot-phu-hop-cho-nhung-dip-di-choi-dao-pho-hay-di-du-lich/",
+      "https://thoitrang360.net/nganh-hang-khong-toan-cau-doi-mat-khung-hoang-50-ty-usd-boc-hoi-nam-2026/",
+      "https://thoitrang360.net/ngay-cang-nhieu-nguoi-tre-bi-ung-thu-dai-truc-trang-benh-vien-nhan-dan-115-dua-ra-khuyen-cao-khn/",
+      "https://thoitrang360.net/cap-nhat-cac-moc-thoi-gian-thi-sinh-can-nho-de-khong-bi-truot-dai-hoc-cao-dang-nam-2025/",
+      "https://thoitrang360.net/nguoi-dan-kham-chua-benh-vao-thu-7-chu-nhat-co-duoc-bao-hiem-y-te-thanh-toan-khong/",
+      "https://thoitrang360.net/le-ruoc-bang-di-tich-lich-su-dinh-gia-thuong-va-den-rung/",
+      "https://thoitrang360.net/chau-ngoai-3-thang-tuoi-cua-nsnd-thanh-lam-lai-chiem-spotlight/",
+      "https://thoitrang360.net/nhung-nam-mc-noi-tieng-vbiz-tran-thanh-da-tai/",
+      "https://thoitrang360.net/hoa-hau-thuy-tien-bi-tam-hoan-xuat-canh-60-ngay-thuy-tien-lien-quan-gi-toi-vu-quang-linh-vlogs-hang-du-muc/",
+      "https://thoitrang360.net/cuoc-song-cua-ngoc-trinh-hien-tai-nhu-the-nao/",
+      "https://thoitrang360.net/nuoc-soi-lua-bong-sau-tuan-trang-mat-cua-hlv-doi-tuyen-viet-nam/",
+      "https://thoitrang360.net/tranh-cai-ve-mon-ca-phe-trung-luoc-bang-nuoc-tieu-be-trai-tai-trung-quoc/",
+      "https://thoitrang360.net/3-con-giap-cham-hoc-se-doi-van-de-dang-trong-cuoc-song-nam-2026/",
+      "https://thoitrang360.net/35-tuoi-nghi-huu-voi-tai-san-hon-70-ty-dong-cuu-nhan-vien-cong-ty-cong-nghe-tiet-lo-cu-dau-tu-2-kenh-nay-dam-bao-thang-lon/",
+      "https://thoitrang360.net/tuong-da-kiem-soat-viem-gan-b-nguoi-dan-ong-bat-ngo-mac-ung-thu-gan/",
+      "https://thoitrang360.net/10-nam-o-thue-day-toi-5-bai-hoc-xuong-mau-luc-di-mua-nha-moi-thay-tham-thia-neu-khong-biet-chac-chan-gio-hoi-han/",
+      "https://thoitrang360.net/nhac-si-dinh-dam-viet-nam-toi-con-song-nhung-bi-nham-la-da-mat/",
+      "https://thoitrang360.net/su-that-buc-anh-hoa-hau-thuy-tien-tieu-tuy-trong-benh-vien-giua-on-ao-keo-kera/",
+      "https://thoitrang360.net/toi-la-me-chong-ma-hang-ngay-lai-so-con-dau/",
+      "https://thoitrang360.net/nhung-loai-trai-cay-tuyet-doi-khong-dung-ngay-sau-bua-an/",
+      "https://thoitrang360.net/ubnd-quan-len-tieng-vu-hang-loat-giao-vien-bi-doi-lai-tien-thu-nhap-tang-them/",
+      "https://thoitrang360.net/chap-nhan-lo-fan-viet-nhuong-suat-mua-ve-ban-gay-co-vu-blackpink/",
+      "https://thoitrang360.net/bo-cong-an-noi-gi-viec-duc-ngung-cap-visa-vao-ho-chieu-pho-thong-mau-moi/",
+      "https://thoitrang360.net/emery-se-bat-cong-neu-noi-villarreal-phong-ngu-tieu-cuc/",
+      "https://thoitrang360.net/4-loai-rau-cu-la-vua-thai-doc-cho-co-the-duong-da-sach-gan-giam-mo-mau-cho-viet-bay-la-liet/",
+      "https://thoitrang360.net/nguoi-dan-ong-chi-110-trieu-dong-mua-bao-hiem-5-nam-sau-muon-rut-thi-duoc-thong-bao-anh-chi-duoc-hoan-tra-38-trieu-dong/",
+      "https://thoitrang360.net/be-gai-so-sinh-bi-bo-roi-kem-la-thu-khong-bao-gio-tim-lai-con-cua-nguoi-me/",
+      "https://thoitrang360.net/bien-ba-ca-phe-thanh-san-pham-co-trong-moi-nha/",
+      "https://thoitrang360.net/vu-giao-duc-dai-hoc-co-tan-pho-vu-truong/",
+      "https://thoitrang360.net/mark-zuckerberg-phat-trien-ai-ho-tro-dieu-hanh-de-che-1-500-ty-usd-cua-meta/",
+      "https://thoitrang360.net/tam-trang-lam-dep-da-tri-mun-bang-la-tia-to-tin-duoc-khong/",
+      "https://thoitrang360.net/men-gan-tang-hon-11-lan-do-tu-y-dieu-tri-benh-bang-thuoc-nam/",
+      "https://thoitrang360.net/cuu-song-nam-thanh-nien-bi-vo-tim-nguy-kich/",
+      "https://thoitrang360.net/uong-nuoc-ep-ca-chua-moi-ngay-co-tac-dung-gi/",
+      "https://thoitrang360.net/ba-la-doi-chan-cho-con/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 4
+    },
+    "checkedAt": "2026-11-10T09:17:20.331Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thoitrang360.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

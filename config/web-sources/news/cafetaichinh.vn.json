@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cafetaichinh.vn",
+  "siteId": "cafetaichinh.vn",
+  "registrableDomain": "cafetaichinh.vn",
+  "homepage": "https://cafetaichinh.vn/",
+  "allowedHosts": [
+    "cafetaichinh.vn",
+    "www.cafetaichinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Từ 1/11/2026, thuế suất thuế tiêu thụ đặc biệt đối với xăng dầu là 0%",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Đồng Tháp bước vào mùa hội, hơn 15.500 runner đổ về check- in VPBank Đất Sen Hồng Music Marathon 2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:12.513Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cafetaichinh.vn/tu-1112026-thue-suat-thue-tieu-thu-dac-biet-doi-voi-xang-dau-la-0-a74948.html",
+      "https://cafetaichinh.vn/tphcm-tai-thiet-do-thi-nha-pho-gian-xay-tai-dai-do-thi-phia-tay-bac-mo-loi-an-cu-moi-a74984.html",
+      "https://cafetaichinh.vn/dong-thap-buoc-vao-mua-hoi-hon-15500-runner-do-ve-check-in-vpbank-dat-sen-hong-music-marathon-2026-a74835.html",
+      "https://cafetaichinh.vn/day-manh-su-dung-dien-tiet-kiem-hieu-qua-trong-san-xuat-kinh-doanh-sinh-hoat-a74988.html",
+      "https://cafetaichinh.vn/quoc-hoi-bieu-quyet-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-a74985.html",
+      "https://cafetaichinh.vn/mua-nha-dat-bang-giay-tay-nguoi-dan-tphcm-co-the-duoc-boi-thuong-den-100-a74991.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cafetaichinh.vn/",
+    "categories": [
+      "https://cafetaichinh.vn/thi-truong",
+      "https://cafetaichinh.vn/su-kien-nhan-vat",
+      "https://cafetaichinh.vn/tai-chinh-ngan-hang",
+      "https://cafetaichinh.vn/doanh-nghiep-doanh-nhan",
+      "https://cafetaichinh.vn/bat-dong-san",
+      "https://cafetaichinh.vn/tin-tuc-doi-song",
+      "https://cafetaichinh.vn/kien-thuc-dau-tu",
+      "https://cafetaichinh.vn/video",
+      "https://cafetaichinh.vn/photo",
+      "https://cafetaichinh.vn/podcast",
+      "https://cafetaichinh.vn/infographic",
+      "https://cafetaichinh.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cafetaichinh.vn",
+    "checkedAt": "2026-11-09T03:56:54.199Z",
+    "url": "https://cafetaichinh.vn/tu-1112026-thue-suat-thue-tieu-thu-dac-biet-doi-voi-xang-dau-la-0-a74948.html",
+    "finalUrl": "https://cafetaichinh.vn/tu-1112026-thue-suat-thue-tieu-thu-dac-biet-doi-voi-xang-dau-la-0-a74948.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1591,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "cafetaichinh.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 155,
+        "passed": 20,
+        "distinctHashes": 20
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://cafetaichinh.vn/dong-thap-buoc-vao-mua-hoi-hon-15500-runner-do-ve-check-in-vpbank-dat-sen-hong-music-marathon-2026-a74835.html",
+      "https://cafetaichinh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-toa-dam-voi-lanh-dao-mot-so-tap-doan-lon-cua-nhat-ban-a74997.html",
+      "https://cafetaichinh.vn/quoc-hoi-thong-qua-nghi-quyet-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-a74992.html",
+      "https://cafetaichinh.vn/green-sm-hop-tac-voi-10-doi-tac-chien-luoc-mo-rong-he-sinh-thai-tai-lao-a75002.html",
+      "https://cafetaichinh.vn/mua-nha-dat-bang-giay-tay-nguoi-dan-tphcm-co-the-duoc-boi-thuong-den-100-a74991.html",
+      "https://cafetaichinh.vn/day-manh-su-dung-dien-tiet-kiem-hieu-qua-trong-san-xuat-kinh-doanh-sinh-hoat-a74988.html",
+      "https://cafetaichinh.vn/chuyen-bo-cong-an-7-vu-viec-co-dau-hieu-vi-pham-phap-luat-hinh-su-trong-kinh-doanh-xang-dau-a75001.html",
+      "https://cafetaichinh.vn/bo-truong-bo-y-te-minh-bach-gia-thuoc-thiet-bi-y-te-tranh-tang-gia-day-gia-a75000.html",
+      "https://cafetaichinh.vn/ho-kinh-doanh-them-tro-luc-tai-chinh-tu-vpbank-vung-vang-don-mua-mua-sam-cuoi-nam-a74999.html",
+      "https://cafetaichinh.vn/gia-vang-hom-nay-1011-vang-the-gioi-but-toc-keo-trong-nuoc-di-len-a74998.html",
+      "https://cafetaichinh.vn/con-duong-that-rieng-cua-ct-homes-a74996.html",
+      "https://cafetaichinh.vn/ha-tang-khu-nam-mo-rong-du-dia-bat-dong-san-an-phuoc-riverside-don-co-hoi-phat-trien-a74995.html",
+      "https://cafetaichinh.vn/gia-vang-hom-nay-ngay-911-vang-tiep-tuc-tang-1-trieu-dongluong-a74994.html",
+      "https://cafetaichinh.vn/caex-cung-okx-tham-gia-dien-dan-an-ninh-tai-chinh-so-viet-nam-2026-a74983.html",
+      "https://cafetaichinh.vn/tphcm-tai-thiet-do-thi-nha-pho-gian-xay-tai-dai-do-thi-phia-tay-bac-mo-loi-an-cu-moi-a74984.html",
+      "https://cafetaichinh.vn/vpbank-gianh-cu-dup-giai-thuong-ve-quan-ly-dong-tien-tai-the-euromoney-transaction-banking-awards-a74987.html",
+      "https://cafetaichinh.vn/so-sanh-thu-nhap-nhan-vien-ngan-hang-nha-bang-nao-chiu-chi-nhat-a74993.html",
+      "https://cafetaichinh.vn/ngan-hang-manh-tay-tung-uu-dai-lai-suat-thuc-nhan-vuot-9nam-a74989.html",
+      "https://cafetaichinh.vn/vib-no-xau-tang-hon-1550-ty-dong-trong-quy-iii-ty-le-bao-phu-giam-a74986.html",
+      "https://cafetaichinh.vn/vpbank-mang-toi-co-hoi-tiep-can-nguon-von-nhanh-cho-ho-kinh-doanh-a74975.html",
+      "https://cafetaichinh.vn/vi-sao-cac-nha-dau-tu-do-xo-mua-vang-a74972.html",
+      "https://cafetaichinh.vn/co-hoi-trung-can-ho-thu-2-gan-8-ty-dong-khi-mua-diamond-sky-a74974.html",
+      "https://cafetaichinh.vn/can-ho-the-emerald-68-chao-don-nhung-cu-dan-dau-tien-ve-to-am-a74970.html",
+      "https://cafetaichinh.vn/chuyen-nhuong-bat-dong-san-ke-khai-thue-trung-thuc-de-tranh-rui-ro-a74966.html",
+      "https://cafetaichinh.vn/uu-dai-khi-mua-diamond-sky-co-hoi-trung-can-ho-thu-2-gan-8-ty-dong-a74963.html",
+      "https://cafetaichinh.vn/nhieu-dia-phuong-hoan-thanh-vuot-chi-tieu-nha-o-xa-hoi-trong-nam-2026-a74960.html",
+      "https://cafetaichinh.vn/co-500-trieu-dong-tien-nhan-roi-lam-gi-de-tien-sinh-loi-a74990.html",
+      "https://cafetaichinh.vn/di-nuoc-ngoai-nen-mang-tien-mat-hay-su-dung-the-ngan-hang-a74973.html",
+      "https://cafetaichinh.vn/ngan-hang-co-duoc-tu-choi-yeu-cau-rut-tien-cua-khach-hang-a74946.html",
+      "https://cafetaichinh.vn/mat-the-tin-dung-ai-chiu-trach-nhiem-voi-giao-dich-phat-sinh-sau-do-a74934.html",
+      "https://cafetaichinh.vn/di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-a74909.html",
+      "https://cafetaichinh.vn/hang-chuc-nghin-nguoi-ham-mo-dot-nong-khong-khi-tai-svd-my-dinh-trong-hai-ngay-doi-vong-tay-check-in-a74907.html",
+      "https://cafetaichinh.vn/phat-dong-thang-cao-diem-vi-nguoi-ngheo-nam-2026-a74873.html",
+      "https://cafetaichinh.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-mot-so-doanh-nghiep-tap-doan-tai-canada-a74771.html",
+      "https://cafetaichinh.vn/day-manh-phan-cap-don-gian-hoa-thu-tuc-gan-voi-nang-cao-hieu-qua-su-dung-ngan-sach-dau-tu-cong-a74979.html",
+      "https://cafetaichinh.vn/viet-nam-hoa-ky-thuc-day-hop-tac-khac-phuc-hau-qua-chien-tranh-a74977.html",
+      "https://cafetaichinh.vn/the-horizon-of-vienna-2026-vpbank-private-tiep-noi-hanh-trinh-ton-vinh-di-san-am-nhac-va-nhung-gia-tri-thinh-vuong-vuot-thoi-gian-a74976.html",
+      "https://cafetaichinh.vn/quoc-hoi-bieu-quyet-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-a74985.html",
+      "https://cafetaichinh.vn/khan-truong-bo-sung-tram-sac-dien-cung-cap-nhien-lieu-xanh-tren-cac-tram-dung-nghi-cao-toc-a74980.html",
+      "https://cafetaichinh.vn/hoc-sinh-sinh-vien-kho-khan-duoc-vay-den-8-trieu-dongthang-a74978.html",
+      "https://cafetaichinh.vn/loi-the-canh-tranh-moi-cua-nganh-tai-chinh-a74981.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:36.230Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/cafetaichinh.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

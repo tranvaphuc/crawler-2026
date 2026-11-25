@@ -1,0 +1,40 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createRequire} from 'node:module';
+import {createFlowRetention,referencedSourceRounds,FLOW_RETENTION} from '../src/services/flowRetention.js';
+const require=createRequire(import.meta.url),sift=createRequire(require.resolve('mongoose/package.json'))('sift'),DAY=86400000,now=Date.UTC(2026,10,9),ago=n=>new Date(now-n*DAY);
+function fixture(seed={}){
+ const data=structuredClone(seed),writes=[],calls=[],logKeys=new Set(['bull:crawler-flow-youtube-source:orphan:logs','bull:crawler-flow-youtube-source:live:logs','bull:crawler-flow-youtube-source:new:logs','bull:crawler-flow-find-uid:old:logs']),liveKeys=new Set(['bull:crawler-flow-youtube-source:live']);
+ const db={collection(name){data[name]||=[];const collection={
+  find(filter={}){let rows=data[name].filter(sift(filter));const cursor={sort(sort){const [field,direction]=Object.entries(sort)[0];rows.sort((a,b)=>(a[field]>b[field]?1:a[field]<b[field]?-1:0)*direction);return cursor;},hint(){return cursor;},limit(n){rows=rows.slice(0,n);return cursor;},async toArray(){return structuredClone(rows);}};return cursor;},
+  async findOne(filter){return structuredClone(data[name].find(sift(filter))||null);},async createIndex(){return 'index';},async createIndexes(){return ['index'];},
+  async deleteMany(filter){assert.notEqual(name,'sources','source inventory is immutable');assert.notEqual(name,'flow_jobs','jobs, including UID failures, are immutable');writes.push({name,filter});const removed=data[name].filter(sift(filter));data[name]=data[name].filter(x=>!removed.includes(x));return{deletedCount:removed.length};},
+  async updateOne(filter,update){const row=data[name].find(sift(filter));if(!row)return{modifiedCount:0};writes.push({name,filter,update});Object.assign(row,update.$set||{});for(const[k,v]of Object.entries(update.$inc||{}))row[k]=(row[k]||0)+v;return{modifiedCount:1};}
+ };return collection;}};
+ const redis={async xtrim(key){calls.push(['trim',key]);return 0;},async scan(){return['0',[...logKeys]];},async object(_op,key){return key.includes(':new:')?1:8*86400;},async eval(_lua,_n,key,job){if(liveKeys.has(job))return 0;return logKeys.delete(key)?1:0;}};
+ const queues=new Map(['youtube-source','find-uid'].map(name=>[name,{toKey:s=>'bull:crawler-flow-'+name+':'+s,async clean(_age,_limit,type){calls.push(['clean',name,type]);return[];}}]));
+ return{data,writes,calls,logKeys,db,redis,queues,retention:createFlowRetention({db,redis,queues,now:()=>now})};
+}
+test('expired non-UID error history is removed, while recent errors, UID failures and source inventory survive',async()=>{
+ const seed={sources:[{_id:'source-1',url:'native-source'}],flow_jobs:[{_id:'uid-failed',queue:'find-uid',state:'failed'}],flow_error_events:[{_id:'old',at:ago(8),queue:'youtube-source'},{_id:'recent',at:ago(1),queue:'youtube-source'},{_id:'uid',at:ago(100),queue:'find-uid'}]},f=fixture(seed),out=await f.retention.run();assert.equal(out.errorsDeleted,1);assert.deepEqual(f.data.flow_error_events.map(x=>x._id),['recent','uid']);assert.deepEqual(f.data.sources,seed.sources);assert.deepEqual(f.data.flow_jobs,seed.flow_jobs);await f.retention.close();
+});
+test('only unreferenced completed round details age out; live, recent and failed-job referenced rounds are preserved',async()=>{
+ const ids=['old','recent','running','loading','referenced','parent-ref'],f=fixture({flow_source_rounds:ids.map(_id=>({_id,state:_id==='running'?'running':_id==='loading'?'loading':'completed',finishedAt:ago(_id==='recent'?1:4),summary:{success:1}})),flow_source_round_items:ids.map(roundId=>({_id:roundId+'-item',roundId})),flow_source_round_results:ids.map(roundId=>({_id:roundId+'-result',roundId})),flow_jobs:[{_id:'failed',state:'failed',sourceRoundId:'referenced'},{_id:'nested',state:'queued',data:{parent:{sourceRoundId:'parent-ref'}}}]});
+ const out=await f.retention.run();assert.equal(out.roundItemsDeleted,1);assert.equal(out.roundResultsDeleted,1);assert.equal(out.roundsDetailedPurged,1);assert.deepEqual(f.data.flow_source_round_items.map(x=>x.roundId),ids.slice(1));const old=f.data.flow_source_rounds.find(x=>x._id==='old');assert.ok(old.detailsPurgedAt);assert.deepEqual(old.summary,{success:1});assert.equal(f.data.flow_source_rounds.length,6);await f.retention.close();
+});
+test('partial cleanup is bounded and a new job reference protects the rest on the next pass',async()=>{
+ const f=fixture({flow_source_rounds:[{_id:'old',state:'completed',finishedAt:ago(4)}],flow_source_round_items:[{_id:'one',roundId:'old'},{_id:'two',roundId:'old'}],flow_source_round_results:[{_id:'result',roundId:'old'}]});await f.retention.close();const r=createFlowRetention({...f,now:()=>now,roundLimit:1,batchSize:1});const first=await r.run();assert.equal(first.roundItemsDeleted,1);assert.equal(f.data.flow_source_rounds[0].detailsPurgedAt,undefined);f.data.flow_jobs.push({_id:'retry',state:'failed',data:{sourceRoundId:'old'}});const second=await r.run();assert.equal(second.roundItemsDeleted,0);assert.equal(f.data.flow_source_round_items.length,1);assert.equal(f.data.flow_source_round_results.length,1);await r.close();
+});
+test('old summaries are removed only after details were purged, never when a job references them',async()=>{
+ const f=fixture({flow_source_rounds:[{_id:'unreferenced',state:'completed',finishedAt:ago(31),detailsPurgedAt:ago(20)},{_id:'held',state:'completed',finishedAt:ago(40),detailsPurgedAt:ago(20)}],flow_jobs:[{_id:'failed',state:'failed',sourceRoundId:'held'}]});const out=await f.retention.run();assert.equal(out.roundSummariesDeleted,1);assert.deepEqual(f.data.flow_source_rounds.map(x=>x._id),['held']);await f.retention.close();
+});
+test('Redis cleanup excludes UID and all failed jobs, keeps live/fresh logs, and removes only aged orphan logs',async()=>{
+ const f=fixture();const out=await f.retention.run();assert.equal(out.redisOrphanLogsDeleted,1);assert.equal(f.logKeys.has('bull:crawler-flow-youtube-source:orphan:logs'),false);for(const key of ['bull:crawler-flow-youtube-source:live:logs','bull:crawler-flow-youtube-source:new:logs','bull:crawler-flow-find-uid:old:logs'])assert.ok(f.logKeys.has(key));assert.deepEqual(f.calls,[['clean','youtube-source','completed'],['trim','bull:crawler-flow-youtube-source:events']]);await f.retention.close();
+});
+test('concurrent invocations share a single cleanup and close prevents future writes',async()=>{
+ const f=fixture({flow_error_events:[{_id:'one',at:ago(8),queue:'youtube-source'}]});const a=f.retention.run(),b=f.retention.run();assert.equal(a,b);await a;await f.retention.close();const before=f.writes.length;await f.retention.run();assert.equal(f.writes.length,before);assert.equal(FLOW_RETENTION.roundDetailDays,2);assert.deepEqual([...referencedSourceRounds([{sourceRoundId:'a',data:{sourceRoundId:'b',parent:{sourceRoundId:'c'}}}])],['a','b','c']);
+});
+test('a reference arriving after the candidate snapshot prevents detail deletion',async()=>{
+ const f=fixture({flow_source_rounds:[{_id:'old',state:'completed',finishedAt:ago(4)}],flow_source_round_items:[{_id:'keep',roundId:'old'}]});await f.retention.close();const collection=f.db.collection.bind(f.db);let inserted=false;f.db.collection=name=>{const c=collection(name);if(name==='flow_jobs'){const findOne=c.findOne;c.findOne=async filter=>{if(!inserted){f.data.flow_jobs.push({_id:'late',state:'queued',sourceRoundId:'old'});inserted=true;}return findOne(filter);};}return c;};const r=createFlowRetention({...f,now:()=>now});await r.run();assert.equal(f.data.flow_source_round_items.length,1);assert.equal(f.data.flow_source_rounds[0].detailsPurgedAt,undefined);await r.close();
+});
+test('scheduled cleanup runs again and close stops the schedule',async()=>{
+ const f=fixture();await f.retention.close();let passes=0;const r=createFlowRetention({...f,now:()=>now,intervalMs:10,onResult:()=>passes++});r.start();await new Promise(resolve=>setTimeout(resolve,35));assert.ok(passes>=2);await r.close();const stopped=passes;await new Promise(resolve=>setTimeout(resolve,20));assert.equal(passes,stopped);
+});

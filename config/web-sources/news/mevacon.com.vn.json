@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mevacon.com.vn",
+  "siteId": "mevacon.com.vn",
+  "registrableDomain": "mevacon.com.vn",
+  "homepage": "https://mevacon.com.vn/",
+  "allowedHosts": [
+    "mevacon.com.vn",
+    "www.mevacon.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cách xin lỗi người yêu là con trai hiệu quả, nhưng vẫn không bị mất “giá”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:41.846Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://mevacon.com.vn/cach-xin-loi-nguoi-yeu-la-con-trai/",
+      "https://mevacon.com.vn/quang-ganh-lo-di-ma-vui-song/",
+      "https://mevacon.com.vn/salad-rau-bau-dat-sot-mu-tat-cho-bua-com-thanh-dam/",
+      "https://mevacon.com.vn/vi-sao-khong-duoc-buoc-qua-chan-ba-bau/",
+      "https://mevacon.com.vn/tu-cham-soc-ban-than/",
+      "https://mevacon.com.vn/trang-trai-cuoc-song/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://mevacon.com.vn/",
+    "categories": [
+      "https://mevacon.com.vn/1001-chuyen-cua-me/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/chi-tieu-thong-minh/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/chuyen-gia-dinh/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/dieu-me-nghi/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/goc-vo-chong/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/khoanh-khac-cua-ban/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/khong-gian-song/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/muon-mau-cong-so/",
+      "https://mevacon.com.vn/1001-chuyen-cua-me/tam-su-chia-se/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/be-khoe-me-vui/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/goc-chuyen-gia/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/kich-thich-nao-bo/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/trac-nghiem-tam-ly/",
+      "https://mevacon.com.vn/chuyen-gia-ben-ban/tu-van-truc-tuyen/",
+      "https://mevacon.com.vn/emagazine/",
+      "https://mevacon.com.vn/me-va-con/",
+      "https://mevacon.com.vn/me-va-con/cho-bau/",
+      "https://mevacon.com.vn/me-va-con/cho-con/",
+      "https://mevacon.com.vn/me-va-con/cho-giadinh/",
+      "https://mevacon.com.vn/me-va-con/cho-me/",
+      "https://mevacon.com.vn/me-va-con/cuoc-thi-anh/",
+      "https://mevacon.com.vn/me-va-con/doc-bao-cung-ban/",
+      "https://mevacon.com.vn/me-va-con/san-choi-me-va-con/",
+      "https://mevacon.com.vn/moi-ngay-1-hat-mam/",
+      "https://mevacon.com.vn/moi-ngay-1-hat-mam/nguoi-truyen-cam-hung/",
+      "https://mevacon.com.vn/moi-ngay-1-hat-mam/tieu-diem-trong-thang/",
+      "https://mevacon.com.vn/moi-ngay-1-hat-mam/y-tuong-cua-me/",
+      "https://mevacon.com.vn/song-hanh-phuc/",
+      "https://mevacon.com.vn/song-hanh-phuc/boi-vui/",
+      "https://mevacon.com.vn/song-hanh-phuc/du-lich/",
+      "https://mevacon.com.vn/song-hanh-phuc/giac-ngu/",
+      "https://mevacon.com.vn/song-hanh-phuc/giai-tri/",
+      "https://mevacon.com.vn/song-hanh-phuc/lam-dep/",
+      "https://mevacon.com.vn/song-hanh-phuc/mua-sam/",
+      "https://mevacon.com.vn/song-hanh-phuc/nau-an/",
+      "https://mevacon.com.vn/video/",
+      "https://mevacon.com.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.262Z",
+      "verifiedSeeds": [
+        "https://mevacon.com.vn/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/chi-tieu-thong-minh/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/chuyen-gia-dinh/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/dieu-me-nghi/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/goc-vo-chong/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/khoanh-khac-cua-ban/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/khong-gian-song/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/muon-mau-cong-so/",
+        "https://mevacon.com.vn/1001-chuyen-cua-me/tam-su-chia-se/",
+        "https://mevacon.com.vn/chuyen-gia-ben-ban/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "mevacon.com.vn",
+    "checkedAt": "2026-11-09T03:57:14.739Z",
+    "url": "https://mevacon.com.vn/cach-xin-loi-nguoi-yeu-la-con-trai/",
+    "finalUrl": "https://mevacon.com.vn/cach-xin-loi-nguoi-yeu-la-con-trai/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8858,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".datetime",
+        "attribute": null,
+        "index": 0,
+        "priority": 65
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "mevacon.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 50,
+    "checkedArticleUrls": 52,
+    "freshArticleChecks": 12,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 50,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 37,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 358,
+        "passed": 50,
+        "distinctHashes": 50
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://mevacon.com.vn/tre-so-sinh-bi-soi-bung-me-nen-an-gi/",
+      "https://mevacon.com.vn/cuoc-song-doi-khi-phai-co-chut-xao/",
+      "https://mevacon.com.vn/truoc-khi-di-kham-phu-khoa-can-luu-y-gi/",
+      "https://mevacon.com.vn/cac-luu-y-me-can-biet-khi-cham-soc-tre-so-sinh-0-6-thang/",
+      "https://mevacon.com.vn/4-benh-vien-phu-san-uy-tin-tai-tp-hcm/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:16:07.014Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/mevacon.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

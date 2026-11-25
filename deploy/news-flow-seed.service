@@ -1,0 +1,38 @@
+[Unit]
+Description=News flow seed queue
+Wants=network-online.target
+Requires=news-flow-egress.service
+After=network-online.target news-flow-egress.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=notify
+NotifyAccess=all
+WatchdogSec=90s
+User=news-flow
+Group=news-flow
+Slice=news-flow.slice
+WorkingDirectory=/opt/news-flow/current
+Environment=NODE_ENV=production
+Environment=NEWS_N1=40
+Environment=NEWS_N2=152
+Environment=NEWS_PROXY_FILE=/etc/news-flow/proxies.json
+ExecStart=/usr/bin/flock --exclusive --nonblock --no-fork /var/lib/news-flow/locks/seed.lock /opt/news-flow/node/bin/node --max-old-space-size=512 scripts/run_news_three_flow.mjs seed
+Restart=on-failure
+RestartSec=2
+TimeoutStartSec=120
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/news-flow
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=3G
+CPUQuota=400%
+TasksMax=64
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "siteName": "game8.info",
+  "siteId": "game8.info",
+  "registrableDomain": "game8.info",
+  "homepage": "https://game8.info/",
+  "allowedHosts": [
+    "game8.info",
+    "www.game8.info"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Liên Quân 10Fest ngày 2 qua ảnh: sân khấu 11.000 khán giả và Đại sảnh Danh vọng trước giờ đại nhạc hội",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:23.189Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://game8.info/lien-quan-10fest-ngay-2-qua-anh-san-khau-11000-khan-gia/",
+      "https://game8.info/khong-khi-ngay-2-lien-quan-10fest-khu-trai-nghiem-dem-nguoc-dai-nhac-hoi/",
+      "https://game8.info/lien-quan-10fest-ngay-1-qua-anh-fpt-polytechnic-nang-cup/",
+      "https://game8.info/fpt-polytechnic-vo-dich-dau-truong-danh-vong-mua-dong-2026/",
+      "https://game8.info/tieu-doi-quay-ma-garena-cbt-12-11/",
+      "https://game8.info/lien-quan-10fest-ngay-2-qua-anh-san-khau-11000-khan-gia/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://game8.info/",
+    "categories": [
+      "https://game8.info/game/lien-quan-mobile/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "game8.info",
+    "checkedAt": "2026-11-09T03:57:04.550Z",
+    "url": "https://game8.info/lien-quan-10fest-ngay-2-qua-anh-san-khau-11000-khan-gia/",
+    "finalUrl": "https://game8.info/lien-quan-10fest-ngay-2-qua-anh-san-khau-11000-khan-gia/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5228,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:15.773Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/game8.info/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "game8.info",
+    "parsedArticles": 5,
+    "distinctHashes": 5,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 31,
+    "checkedArticleUrls": 5,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 31,
+        "attempted": 5,
+        "passed": 5,
+        "distinctContents": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

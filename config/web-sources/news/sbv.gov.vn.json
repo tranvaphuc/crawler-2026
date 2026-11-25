@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "sbv.gov.vn",
+  "siteId": "sbv.gov.vn",
+  "registrableDomain": "sbv.gov.vn",
+  "homepage": "https://sbv.gov.vn/vi/trang-chu",
+  "allowedHosts": [
+    "sbv.gov.vn",
+    "www.sbv.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "sbv.gov.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "#print-content > h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "#print-content time.author-time",
+    "attribute": "datetime"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#print-content > .article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationDatePolicy": "original_only",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "publicationArticleScope": "#print-content",
+  "discovery": {
+    "homepage": "https://sbv.gov.vn/vi/trang-chu",
+    "categories": [
+      "https://sbv.gov.vn/vi/tin-tuc-su-kien",
+      "https://sbv.gov.vn/"
+    ],
+    "requiredArticlePattern": "^https://sbv\\.gov\\.vn/(?:vi/)?w/.+"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T09:23:51.449Z",
+    "sampleUrls": [
+      "https://sbv.gov.vn/vi/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-ph%E1%BA%A1m-quang-d%C5%A9ng-%C4%91%C6%B0%E1%BB%A3c-ch%E1%BB%89-%C4%91%E1%BB%8Bnh-gi%E1%BB%AF-ch%E1%BB%A9c-b%C3%AD-th%C6%B0-%C4%91%E1%BA%A3ng-%E1%BB%A7y-vcci-nhi%E1%BB%87m-k%E1%BB%B3-2025-2030",
+      "https://sbv.gov.vn/vi/w/%C4%91%E1%BA%A3ng-%E1%BB%A7y-nhnn-th%E1%BB%B1c-hi%E1%BB%87n-%C4%91%E1%BA%A9y-m%E1%BA%A1nh-h%E1%BB%8Dc-t%E1%BA%ADp-th%E1%BB%B1c-h%C3%A0nh-t%C6%B0-t%C6%B0%E1%BB%9Fng-%C4%91%E1%BA%A1o-%C4%91%E1%BB%A9c-%C2%A0ph%C6%B0%C6%A1ng-ph%C3%A1p-phong-c%C3%A1ch-h",
+      "https://sbv.gov.vn/vi/w/%C4%91%E1%BA%A3ng-%E1%BB%A7y-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-tri%E1%BB%83n-khai-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-c%C3%B4ng-t%C3%A1c-t%C6%B0-t%C6%B0%E1%BB%9Fng%C2%A0trong-b%E1%BB%91i-c%E1%BA%A3nh-m%E1%BB%9Bi",
+      "https://sbv.gov.vn/vi/w/%C4%91%E1%BA%A3ng-%E1%BB%A7y-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-%C4%91%E1%BA%A9y-m%E1%BA%A1nh-tuy%C3%AAn-truy%E1%BB%81n-tri%E1%BB%83n-khai-th%E1%BB%B1c-hi%E1%BB%87n-ch%E1%BB%89-th%E1%BB%8B-s%E1%BB%91-14-ct/tw-c%E1%BB%A7a-ban-b%C3%AD-th%C6%B0-v"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "pageIdentityPolicy": "sbv_vietnamese_locale_article_alias"
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "english.vov.vn",
+  "siteId": "english.vov.vn",
+  "registrableDomain": "vov.vn",
+  "homepage": "https://english.vov.vn/en/",
+  "allowedHosts": [
+    "english.vov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Vietnamese firms look beyond exports to expand global footprint",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "discovery": {
+    "homepage": "https://english.vov.vn/en/",
+    "categories": [
+      "https://english.vov.vn/en/politics",
+      "https://english.vov.vn/en/economy",
+      "https://english.vov.vn/en/society",
+      "https://english.vov.vn/en/culture",
+      "https://english.vov.vn/en/travel",
+      "https://english.vov.vn/en/sports",
+      "https://english.vov.vn/en/photos",
+      "https://english.vov.vn/en/your-vietnam"
+    ],
+    "requiredArticlePattern": "^https://english\\.vov\\.vn/en/.+-post\\d+\\.vov$"
+  },
+  "validation": {
+    "checkedAt": "2026-11-18T02:21:48.893Z",
+    "sampleUrls": [
+      "https://english.vov.vn/en/economy/vietnamese-firms-look-beyond-exports-to-expand-global-footprint-post1351123.vov",
+      "https://english.vov.vn/en/politics/diplomacy/vietnam-puts-forward-mekong-japan-smart-supply-chain-initiative-post1350961.vov",
+      "https://english.vov.vn/en/economy/chinese-firms-wish-to-expand-investment-in-vietnam-with-apec-2027-ai-opportunities-post1350831.vov",
+      "https://english.vov.vn/en/politics/diplomacy/vietnam-proposes-regional-cooperation-on-oil-and-gas-reserves-and-supply-post1350928.vov",
+      "https://english.vov.vn/en/politics/diplomacy/pm-le-minh-hung-calls-for-stronger-economic-and-trade-links-under-asean3-post1350853.vov"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

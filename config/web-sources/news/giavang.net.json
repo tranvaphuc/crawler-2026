@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giavang.net",
+  "siteId": "giavang.net",
+  "registrableDomain": "giavang.net",
+  "homepage": "https://giavang.net/",
+  "allowedHosts": [
+    "giavang.net",
+    "www.giavang.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Mốc 4.000 USD chỉ là bẫy dụ NĐT? Kịch bản đẫm máu CPI thứ Ba tới có thể kích hoạt đợt bán tháo kinh hoàng!",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:12.255Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://giavang.net/moc-4-000-usd-chi-la-bay-du-ndt-kich-ban-dam-mau-cpi-thu-ba-toi-co-the-kich-hoat-dot-ban-thao-kinh-hoang/",
+      "https://giavang.net/du-bao-usd-tuan-sau-dong-bac-xanh-tru-vung-sau-bau-cu-cpi-my-quyet-dinh-xu-huong/",
+      "https://giavang.net/du-bao-gia-vang-tuan-9-13-11-chuyen-gia-pho-wall-chia-re-sau-sac-nha-dau-tu-nho-le-o-at-dat-cuoc-moc-4-200-usd/",
+      "https://giavang.net/vang-va-usd-tiep-tuc-nin-tho-truoc-ong-trump-va-fed-chuyen-gia-he-lo-kich-ban-bat-ngo/",
+      "https://giavang.net/tuan-qua-dau-brent-roi-16-wti-tut-gan-13-vang-van-tang-4-du-chiu-ap-luc-tu-tin-nfp/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://giavang.net/",
+    "categories": [
+      "https://giavang.net/bang-gia-vang-trong-nuoc/",
+      "https://giavang.net/bieu-do-gia-vang-the-gioi-spot-gold/",
+      "https://giavang.net/lich-kinh-te/",
+      "https://giavang.net/tien-dien-tu-bitcoin/",
+      "https://giavang.net/tin-nhanh-thi-truong-the-gioi-tieng-anh/",
+      "https://giavang.net/category/vang/",
+      "https://giavang.net/category/tin-moi-nhat/",
+      "https://giavang.net/category/phan-tich/",
+      "https://giavang.net/category/vang-the-gioi/",
+      "https://giavang.net/category/vang-trong-nuoc-2/",
+      "https://giavang.net/category/tien-te-ty-gia/",
+      "https://giavang.net/category/kinh-nghiem/",
+      "https://giavang.net/category/kien-thuc/",
+      "https://giavang.net/giavang-ai/",
+      "https://giavang.net/category/goc-nhin-gia-vang/",
+      "https://giavang.net/feed",
+      "https://giavang.net/category/livestream-thi-truong-vang/",
+      "https://giavang.net/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://giavang.net/app-dau-tu-vang-rong-viet-cung-cap-thong-tin-chuyen-nghiep-cho-nha-dau-tu-vang/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.238Z",
+      "verifiedSeeds": [
+        "https://giavang.net/",
+        "https://giavang.net/bang-gia-vang-trong-nuoc/",
+        "https://giavang.net/bieu-do-gia-vang-the-gioi-spot-gold/",
+        "https://giavang.net/lich-kinh-te/",
+        "https://giavang.net/tien-dien-tu-bitcoin/",
+        "https://giavang.net/tin-nhanh-thi-truong-the-gioi-tieng-anh/",
+        "https://giavang.net/category/vang/",
+        "https://giavang.net/category/tin-moi-nhat/",
+        "https://giavang.net/category/phan-tich/",
+        "https://giavang.net/category/vang-the-gioi/",
+        "https://giavang.net/category/vang-trong-nuoc-2/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "giavang.net",
+    "checkedAt": "2026-11-09T03:57:05.598Z",
+    "url": "https://giavang.net/moc-4-000-usd-chi-la-bay-du-ndt-kich-ban-dam-mau-cpi-thu-ba-toi-co-the-kich-hoat-dot-ban-thao-kinh-hoang/",
+    "finalUrl": "https://giavang.net/moc-4-000-usd-chi-la-bay-du-ndt-kich-ban-dam-mau-cpi-thu-ba-toi-co-the-kich-hoat-dot-ban-thao-kinh-hoang/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4217,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "time[datetime]",
+        "attribute": "datetime",
+        "index": 0,
+        "priority": 75
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "giavang.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 20,
+    "freshArticleChecks": 9,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 16,
+    "categoriesUnconfirmed": 16,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 103,
+        "passed": 16,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 9,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:15:36.122Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/giavang.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,13 @@
+queue.oneforsl.net {
+    header {
+        Strict-Transport-Security "max-age=31536000"
+        X-Content-Type-Options "nosniff"
+        -Server
+    }
+    reverse_proxy 127.0.0.1:3806 {
+        transport http {
+            dial_timeout 5s
+            response_header_timeout 30s
+        }
+    }
+}

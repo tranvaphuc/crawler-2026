@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "newatlas.com",
+  "siteId": "newatlas.com",
+  "registrableDomain": "newatlas.com",
+  "homepage": "https://newatlas.com/",
+  "allowedHosts": [
+    "newatlas.com",
+    "www.newatlas.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://newatlas.com/",
+    "categories": [
+      "https://newatlas.com/engineering/",
+      "https://newatlas.com/architecture/",
+      "https://newatlas.com/energy/",
+      "https://newatlas.com/manufacturing/",
+      "https://newatlas.com/materials/",
+      "https://newatlas.com/military/"
+    ]
+  },
+  "title": {
+    "value": "7-seat ladder-frame Mitsubishi Pajero is back to combat 4x4 status quo",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:42.682Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:35.266Z",
+    "independentHoldouts": [
+      "https://newatlas.com/military/strike-drones-historic-launch-british-aircraft-carrier/",
+      "https://newatlas.com/exposure-triangle-photography-guide/48143/",
+      "https://newatlas.com/tiny-houses/modern-farmhouse-sweet-haus/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://newatlas.com/automotive/mitsubishi-pajero-2027",
+      "https://newatlas.com/military/strike-drones-historic-launch-british-aircraft-carrier/",
+      "https://newatlas.com/exposure-triangle-photography-guide/48143/",
+      "https://newatlas.com/tiny-houses/modern-farmhouse-sweet-haus/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

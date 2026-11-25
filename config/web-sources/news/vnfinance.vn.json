@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vnfinance.vn",
+  "siteId": "vnfinance.vn",
+  "registrableDomain": "vnfinance.vn",
+  "homepage": "https://vnfinance.vn/",
+  "allowedHosts": [
+    "vnfinance.vn",
+    "www.vnfinance.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá xăng giảm sâu, E10 RON 95 còn 21.150 đồng/lít",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:01.851Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vnfinance.vn/gia-xang-giam-sau-e10-ron-95-con-21150-dong-lit-74159.html",
+      "https://vnfinance.vn/xuat-nhap-khau-vuot-1000-ty-usd-nang-gia-tri-viet-nam-trong-chuoi-cung-ung-toan-cau-74130.html",
+      "https://vnfinance.vn/bidv-sap-chi-hon-8000-ty-dong-mua-lai-truoc-han-3-lo-trai-phieu-loi-nhuan-9-thang-vuot-29000-ty-74163.html",
+      "https://vnfinance.vn/von-dieu-le-quoc-cuong-gia-lai-sap-vuot-3000-ty-dong-tu-phat-hanh-co-phieu-tra-co-tuc-nam-2021-74154.html",
+      "https://vnfinance.vn/gia-vang-thuong-tang-sau-cac-cuoc-bau-cu-giua-nhiem-ky-cua-my-74153.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vnfinance.vn/",
+    "categories": [
+      "https://vnfinance.vn/thoi-su/",
+      "https://vnfinance.vn/bat-dong-san/",
+      "https://vnfinance.vn/tai-chinh-ngan-hang/",
+      "https://vnfinance.vn/doanh-nghiep-247/",
+      "https://vnfinance.vn/chung-khoan/",
+      "https://vnfinance.vn/tieu-dung/",
+      "https://vnfinance.vn/xe-va-cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vnfinance.vn",
+    "checkedAt": "2026-11-09T03:57:39.050Z",
+    "url": "https://vnfinance.vn/gia-xang-giam-sau-e10-ron-95-con-21150-dong-lit-74159.html",
+    "finalUrl": "https://vnfinance.vn/gia-xang-giam-sau-e10-ron-95-con-21150-dong-lit-74159.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2809,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:51.416Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/vnfinance.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "vnfinance.vn",
+    "parsedArticles": 17,
+    "distinctHashes": 17,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesAttempted": 7,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 139,
+    "checkedArticleUrls": 17,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 139,
+        "attempted": 15,
+        "passed": 17,
+        "distinctContents": 12,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "vnfinance.vn",
+      "siteId": "vnfinance.vn",
+      "registrableDomain": "vnfinance.vn",
+      "homepage": "https://vnfinance.vn/",
+      "allowedHosts": [
+        "vnfinance.vn",
+        "www.vnfinance.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Giá xăng giảm sâu, E10 RON 95 còn 21.150 đồng/lít",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#content_detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:21.816Z",
+        "trainingUrls": [
+          "https://vnfinance.vn/deo-ca-noi-bien-ngoc-om-nui-va-doan-tau-di-giua-troi-xanh-72642.html",
+          "https://vnfinance.vn/bi-an-le-hoi-nhay-lua-cua-nguoi-pa-then-72641.html",
+          "https://vnfinance.vn/phong-su-anh-pv-drilling-i-dau-an-gian-khoan-bien-dau-tien-cua-pv-drilling-72541.html"
+        ],
+        "holdoutUrls": [
+          "https://vnfinance.vn/von-dieu-le-quoc-cuong-gia-lai-sap-vuot-3000-ty-dong-tu-phat-hanh-co-phieu-tra-co-tuc-nam-2021-74154.html",
+          "https://vnfinance.vn/gia-vang-thuong-tang-sau-cac-cuoc-bau-cu-giua-nhiem-ky-cua-my-74153.html"
+        ]
+      }
+    }
+  ]
+}

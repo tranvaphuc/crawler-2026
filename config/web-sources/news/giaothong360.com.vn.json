@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giaothong360.com.vn",
+  "siteId": "giaothong360.com.vn",
+  "registrableDomain": "giaothong360.com.vn",
+  "homepage": "https://giaothong360.com.vn/",
+  "allowedHosts": [
+    "giaothong360.com.vn",
+    "www.giaothong360.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://giaothong360.com.vn/",
+    "categories": [
+      "https://giaothong360.com.vn/dan-sinh-xa-hoi",
+      "https://giaothong360.com.vn/tieu-diem",
+      "https://giaothong360.com.vn/doi-song",
+      "https://giaothong360.com.vn/suc-khoe",
+      "https://giaothong360.com.vn/giao-thong-van-tai",
+      "https://giaothong360.com.vn/an-toan-giao-thong",
+      "https://giaothong360.com.vn/giao-thong",
+      "https://giaothong360.com.vn/phap-luat-giao-thong",
+      "https://giaothong360.com.vn/chuyen-doc-duong",
+      "https://giaothong360.com.vn/dau-tu-ha-tang"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Thanh toán không dùng tiền mặt là động lực thúc đẩy tài chính toàn diện",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".post-time.cl99",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:40.163Z",
+    "frozenAt": "2026-11-16T01:58:36.180Z",
+    "trainingUrl": "https://giaothong360.com.vn/tai-chinh/thanh-toan-khong-dung-tien-mat-la-dong-luc-thuc-day-tai-chinh-toan-dien-tintuc76315",
+    "independentHoldouts": [
+      "https://giaothong360.com.vn/xay-dung-giao-thong/ha-noi-bo-sung-hon-18600-ti-dong-dau-tu-cong-uu-tien-5-tuyen-duong-sat-do-thi-tintuc76344",
+      "https://giaothong360.com.vn/bat-dong-san/tiep-tuc-trien-khai-goi-tin-dung-120000-ti-dong-cho-nguoi-tre-duoi-35-tuoi-mua-nha-o-xa-hoi-tintuc76357"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://giaothong360.com.vn/tai-chinh/thanh-toan-khong-dung-tien-mat-la-dong-luc-thuc-day-tai-chinh-toan-dien-tintuc76315",
+      "https://giaothong360.com.vn/xay-dung-giao-thong/ha-noi-bo-sung-hon-18600-ti-dong-dau-tu-cong-uu-tien-5-tuyen-duong-sat-do-thi-tintuc76344",
+      "https://giaothong360.com.vn/bat-dong-san/tiep-tuc-trien-khai-goi-tin-dung-120000-ti-dong-cho-nguoi-tre-duoi-35-tuoi-mua-nha-o-xa-hoi-tintuc76357",
+      "https://giaothong360.com.vn/thi-truong/tu-1111-khung-gia-phat-dien-pin-luu-tru-nang-luong-toi-da-la-320998-dongkwh-tintuc76354",
+      "https://giaothong360.com.vn/thi-truong/de-xuat-giai-phap-bao-dam-cung-ung-dien-giai-doan-20272028-tintuc76350",
+      "https://giaothong360.com.vn/tieu-diem/mot-so-chinh-sach-kinh-te-xa-hoi-noi-bat-co-hieu-luc-tu-thang-102026-tintuc76306",
+      "https://giaothong360.com.vn/phap-luat-giao-thong/tu-16112026-ap-dung-quy-dinh-moi-ve-tieu-chuan-dinh-muc-su-dung-xe-o-to-cong-tintuc76307",
+      "https://giaothong360.com.vn/thi-truong/bo-cong-thuong-ban-hanh-bieu-gia-ban-le-dien-moi-ap-dung-tu-ngay-1112026-tintuc76348",
+      "https://giaothong360.com.vn/moi-truong/chinh-phu-giam-thue-tieu-thu-dac-biet-voi-xang-ve-0-den-het-thang-32027-tintuc76338",
+      "https://giaothong360.com.vn/xe-va-cuoc-song/bai-bo-thong-tu-042021-ve-bao-hiem-trach-nhiem-dan-su-cua-chu-xe-co-gioi-tu-1512-tintuc76343",
+      "https://giaothong360.com.vn/xe-va-cuoc-song/bieu-gia-kiem-dinh-o-to-toi-da-len-toi-518200-dong-tintuc76337",
+      "https://giaothong360.com.vn/giao-thong/bo-xay-dung-yeu-cau-kiem-tra-doanh-nghiep-van-tai-da-tang-gia-cuoc-tintuc76356",
+      "https://giaothong360.com.vn/xay-dung-giao-thong/de-xuat-5-nhom-co-che-dac-thu-cho-cao-toc-moc-chau-son-la-dien-bien-tintuc76353",
+      "https://giaothong360.com.vn/thi-truong/du-bao-gia-xang-dau-co-the-tiep-tuc-giam-tintuc76351",
+      "https://giaothong360.com.vn/xay-dung-giao-thong/tao-nen-tang-phat-trien-cong-nghiep-hang-hai-viet-nam-hien-dai-dong-bo-va-tu-chu-tintuc76347",
+      "https://giaothong360.com.vn/thi-truong/bo-cong-thuong-xay-dung-3-kich-ban-dieu-hanh-thi-truong-xang-dau-nam-2027-tintuc76358",
+      "https://giaothong360.com.vn/doi-song/com-ha-noi-tu-dac-san-lang-nghe-den-di-san-van-hoa-phi-vat-the-tintuc76339",
+      "https://giaothong360.com.vn/tieu-diem/thu-phi-vi-dien-tu-can-cong-khai-minh-bach-chinh-sach-de-tao-dong-thuan-tintuc76326",
+      "https://giaothong360.com.vn/tieu-diem/thu-tuong-khong-de-loi-ich-nganh-loi-ich-nhom-chi-phoi-trong-xay-dung-phap-luat-tintuc76303",
+      "https://giaothong360.com.vn/doi-song/tu-chiec-xe-lan-den-nhung-phuong-tien-giup-nguoi-khuyet-tat-chu-dong-di-lai-tintuc76294",
+      "https://giaothong360.com.vn/doi-song/nhung-chuyen-xe-noi-dai-yeu-thuong-trong-mua-trung-thu-tintuc76295",
+      "https://giaothong360.com.vn/giao-thong/ha-noi-de-xuat-viec-ho-tro-ho-ngheo-doi-xe-dien-phai-co-thong-tin-cu-tru-tren-vneid-tintuc76340",
+      "https://giaothong360.com.vn/an-toan-giao-thong/man-hinh-led-doc-vanh-dai-2-ha-noi-an-toan-giao-thong-phai-dat-len-hang-dau-tintuc76327",
+      "https://giaothong360.com.vn/phap-luat-giao-thong/cuc-duong-bo-de-nghi-xac-dinh-cac-doan-cao-toc-phat-loi-khong-giu-khoang-cach-an-toan-tintuc76301",
+      "https://giaothong360.com.vn/xay-dung-giao-thong/ben-song-trang-bieu-tuong-giao-thong-moi-tren-dong-huong-xu-hue-tintuc76325",
+      "https://giaothong360.com.vn/xay-dung-giao-thong/cuc-hang-khong-chap-thuan-ke-hoach-bay-kiem-tra-hieu-chuan-tai-san-bay-long-thanh-tintuc76321",
+      "https://giaothong360.com.vn/moi-truong/huong-tra-chuyen-minh-huong-toi-do-thi-xanh-ben-vung-tintuc76323",
+      "https://giaothong360.com.vn/moi-truong/ha-noi-dinh-huong-moi-tuyen-pho-trong-mot-loai-cay-chu-dao-tintuc76322",
+      "https://giaothong360.com.vn/khi-hau/thu-tuong-chi-dao-chu-dong-ung-pho-mua-lu-bao-dam-an-toan-tinh-mang-va-tai-san-nhan-dan-tintuc76285",
+      "https://giaothong360.com.vn/moi-truong/rac-thai-lan-chiem-via-he-diem-nghen-moi-truong-giao-thong-thu-do-tintuc76255",
+      "https://giaothong360.com.vn/moi-truong/khuyen-khich-nguoi-dan-chu-dong-chuyen-doi-phuong-tien-giao-thong-xanh-tintuc76352",
+      "https://giaothong360.com.vn/bat-dong-san/bo-xay-dung-noi-ve-giai-phap-de-nguoi-dan-tiep-can-nha-o-xa-hoi-tintuc76346",
+      "https://giaothong360.com.vn/giao-thong-360/nuoc-mam-nam-o-bau-vat-cua-lang-chai-co-tintuc76342",
+      "https://giaothong360.com.vn/giao-thong-360/cau-vuot-bien-thuan-an-bieu-tuong-moi-noi-cua-ngo-bien-hue-tintuc76253",
+      "https://giaothong360.com.vn/giao-thong-360/lo-lo-chai-tu-ban-lang-vung-cao-den-lang-du-lich-tot-nhat-the-gioi-tintuc76240"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

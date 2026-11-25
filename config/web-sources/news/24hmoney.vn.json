@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "siteName": "24hmoney.vn",
+  "siteId": "24hmoney.vn",
+  "registrableDomain": "24hmoney.vn",
+  "homepage": "https://24hmoney.vn/",
+  "allowedHosts": [
+    "24hmoney.vn",
+    "www.24hmoney.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "TikToker 'Cậu Tuấn Cửa Ông' bị bắt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".news-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:13.458Z",
+    "sampleCount": 9,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 5,
+    "sampleUrls": [
+      "https://24hmoney.vn/news/tiktoker-cau-tuan-cua-ong-bi-bat-c26a2855853.html?from_source=social",
+      "https://24hmoney.vn/news/chot-gia-vang-hom-nay-ngay-8-11-tang-rat-manh-nguoi-mua-van-lo-c25a2855848.html?from_source=social",
+      "https://24hmoney.vn/news/bsr-lai-hop-nhat-gan-25-000-ty-dong-sau-9-thang-c2a2855064.html",
+      "https://24hmoney.vn/news/nganh-thep-chia-hai-thai-cuc-hoa-phat-but-toc-nhieu-doanh-nghiep-hut-hoi-c1a2854702.html",
+      "https://24hmoney.vn/news/khong-can-dong-nhan-su-cong-ty-nay-van-co-400-ty-dong-gui-ngan-hang-c1a2854677.html",
+      "https://24hmoney.vn/news/hdpe-la-ngon-luon-nhung-su-ngon-den-tu-mot-van-de-co-tinh-he-thong-lon-hon-c30a2855034.html",
+      "https://24hmoney.vn/news/bsr-lai-hop-nhat-gan-25-000-ty-dong-sau-9-thang-c2a2855064.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://24hmoney.vn/",
+    "categories": [
+      "https://24hmoney.vn/bat-dong-san",
+      "https://24hmoney.vn/chung-khoan"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "24hmoney.vn",
+    "checkedAt": "2026-11-09T03:56:46.954Z",
+    "url": "https://24hmoney.vn/news/tiktoker-cau-tuan-cua-ong-bi-bat-c26a2855853.html?from_source=social",
+    "finalUrl": "https://24hmoney.vn/news/tiktoker-cau-tuan-cua-ong-bi-bat-c26a2855853.html?from_source=social",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1887,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "24hmoney.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 14,
+    "freshArticleChecks": 8,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 109,
+        "passed": 13,
+        "distinctHashes": 13
+      },
+      {
+        "name": "short_video",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://24hmoney.vn/news/chu-thuong-hieu-choco-pie-muon-xay-them-nha-may-o-viet-nam-huong-toi-doanh-thu-680-trieu-usd-c2a2856694.html?from_source=social",
+      "https://24hmoney.vn/news/so-phan-so-hong-tai-12-du-an-muong-thanh-chua-cap-moi-hang-loat-giay-chung-nhan-cu-da-bi-huy-bo-c3a2856710.html?from_source=social",
+      "https://24hmoney.vn/shorts/chat-vat-tim-cho-gui-o-to-mua-xe-de-nhung-do-o-dau-c74a2856679.html?from_source=social",
+      "https://24hmoney.vn/news/he-lo-10-ngan-hang-co-nguon-thu-khung-nhat-9-thang-2026-c4a2856479.html",
+      "https://24hmoney.vn/news/311-100-ty-dong-loi-nhuan-ngan-hang-nao-dang-thang-lon-c4a2856461.html",
+      "https://24hmoney.vn/news/10-ngan-hang-co-ty-le-no-xau-thap-nhat-quy-3-c4a2856445.html",
+      "https://24hmoney.vn/news/vinamilk-dat-doanh-thu-18-465-ty-dong-quy-3-cung-cac-vinh-danh-trong-va-ngoai-nuoc-c2a2856143.html",
+      "https://24hmoney.vn/news/10-ngan-hang-cho-vay-khach-hang-nhieu-nhat-9-thang-c1a2855995.html",
+      "https://24hmoney.vn/news/nhieu-nguoi-dau-tu-vao-cong-nghe-moi-da-kem-hieu-qua-trong-trong-dai-han-c30a2855486.html",
+      "https://24hmoney.vn/news/giao-dich-lang-le-tay-xa-khong-thuong-tiec-c30a2856187.html",
+      "https://24hmoney.vn/news/muon-co-ket-qua-moi-dung-lap-lai-cach-lam-cu-c30a2856039.html",
+      "https://24hmoney.vn/news/vuong-lao-ly-hon-mot-thap-ky-bau-kien-van-huong-so-tien-hang-tram-ty-moi-nam-c30a2855298.html",
+      "https://24hmoney.vn/news/ppi-my-tang-6-3-cpi-tang-3-7-ai-dang-phai-tra-gia-phan-chenh-lech-2-6-c30a2856029.html",
+      "https://24hmoney.vn/news/bao-cao-nhanh-thoa-thuan-hop-tac-chien-luoc-giua-masan-high-tech-materials-msr-va-tap-doan-sojitz-c30a2856112.html",
+      "https://24hmoney.vn/news/nua-so-diem-mat-sang-nay-nam-o-vic-c30a2856071.html",
+      "https://24hmoney.vn/news/hdb--loi-nhuan-9-thang-tang-24-ky-vong-but-pha-tu-he-sinh-thai-tai-chinh-c30a2856008.html",
+      "https://24hmoney.vn/news/top-3-co-phieu-trien-vong-tuan-sau-c30a2855842.html",
+      "https://24hmoney.vn/news/tch-quy-iii-2026-bat-dau-hach-toan-dai-du-an-c30a2856170.html",
+      "https://24hmoney.vn/news/tch-du-an-bat-dau-ban-giao-gia-co-phieu-da-phan-anh-c30a2855812.html",
+      "https://24hmoney.vn/news/bien-loi-nhuan-ky-luc-cua-doanh-nghiep-dang-doi-mat-voi-mot-cu-soc-chi-phi-moi-c30a2855944.html",
+      "https://24hmoney.vn/news/thi-truong-hien-tai-kha-nhay-cam-voi-2-yeu-to-lai-suat-fed-va-gia-dau-cao-c30a2856063.html",
+      "https://24hmoney.vn/news/tan-binh-upcom-vua-tom-giong-viet-uc-kinh-doanh-ra-sao-c2a2856700.html?from_source=social",
+      "https://24hmoney.vn/shorts/vi-sao-viet-nam-chon-phu-quoc-thay-vi-ha-noi-hay-tp-hcm-cho-apec-2027-c74a2856520.html?from_source=social",
+      "https://24hmoney.vn/news/he-sinh-thai-vingroup-chiem-gan-10-du-no-stb-c4a2856706.html?from_source=social",
+      "https://24hmoney.vn/news/vi-tien-so-ngu-dong-11-nam-thoat-cu-hack-hut-4-6-trieu-usd-c80a2856702.html?from_source=social",
+      "https://24hmoney.vn/news/het-thoi-bung-no-chuoi-tra-sua-mixue-bat-ngo-dong-cua-hang-loat-chi-nhanh-c2a2856696.html?from_source=social",
+      "https://24hmoney.vn/news/hang-tram-ty-dong-do-vao-co-dat-khoi-ngoai-dang-tinh-gi-c1a2856698.html?from_source=social",
+      "https://24hmoney.vn/news/li-auto-gia-nhap-thi-truong-viet-nam-ra-mat-4-mau-suv-dien-va-reev-truoc-tet-c68a2856690.html?from_source=social",
+      "https://24hmoney.vn/news/idc-nguoi-than-lanh-dao-dang-ky-mua-4-4-trieu-co-phieu-co-nen-mua-theo-c30a2856683.html?from_source=social",
+      "https://24hmoney.vn/news/ca-thi-truong-bung-tinh-sac-xanh-phu-kin-bang-dien-c1a2856689.html?from_source=social",
+      "https://24hmoney.vn/news/xu-ly-sai-pham-tai-12-du-an-muong-thanh-bao-ve-nguoi-dan-mua-nha-hop-phap-c3a2856681.html?from_source=social",
+      "https://24hmoney.vn/news/tin-vui-lai-suat-vay-mua-nha-giam-xuong-9-nam-c4a2856048.html",
+      "https://24hmoney.vn/news/vcb-ctg-va-bid-sap-buoc-vao-mua-tang-toc-cho-vay-c4a2855056.html",
+      "https://24hmoney.vn/news/pho-thong-doc-nhnn-thong-tin-ve-viec-giam-lai-suat-c4a2854209.html",
+      "https://24hmoney.vn/news/lan-song-ha-lai-suat-lan-rong-c4a2850341.html",
+      "https://24hmoney.vn/news/lai-suat-ngan-hang-10-2026-lai-suat-tiet-kiem-dang-the-nao-sau-chi-dao-cua-ngan-hang-nha-nuoc-c4a2850207.html",
+      "https://24hmoney.vn/news/chuyen-dong-moi-tai-dat-vang-227-ly-thuong-kiet-thuong-vu-dang-do-15-nam-giua-hdtc-va-tap-doan-ssg-c3a2856670.html?from_source=social",
+      "https://24hmoney.vn/news/chan-dung-nguoi-vo-41-nam-gan-bo-voi-jensen-huang-ceo-nvidia-la-ky-su-thiet-ke-vi-mach-hon-chong-2-tuoi-c2a2856667.html?from_source=social",
+      "https://24hmoney.vn/news/lo-dieu-khoan-dac-biet-trong-thuong-vu-125-trieu-usd-cua-masan-voi-doi-tac-my-c1a2856675.html?from_source=social",
+      "https://24hmoney.vn/news/thanh-tra-260-doanh-nghiep-xang-dau-thanh-tra-chinh-phu-dua-ra-kien-nghi-dang-chu-y-ve-quy-binh-on-gia-c26a2856672.html?from_source=social",
+      "https://24hmoney.vn/news/dgw-cap-nhat-cuoc-hop-ndt-5-11-2026-c30a2856649.html?from_source=social",
+      "https://24hmoney.vn/news/tphcm-tang-gia-quan-ly-chung-cu-len-gap-doi-cao-nhat-13-700-dong-m-c3a2856626.html?from_source=social",
+      "https://24hmoney.vn/news/thanh-tra-chinh-phu-chuyen-bo-cong-an-7-vu-viec-co-dau-hieu-hinh-su-trong-kinh-doanh-xang-dau-c26a2856659.html?from_source=social"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:48.195Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/24hmoney.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

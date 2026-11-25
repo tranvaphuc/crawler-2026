@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "t2vn.net",
+  "siteId": "t2vn.net",
+  "registrableDomain": "t2vn.net",
+  "homepage": "https://t2vn.net/",
+  "allowedHosts": [
+    "t2vn.net",
+    "www.t2vn.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://t2vn.net/",
+    "categories": [
+      "https://t2vn.net/tin-tuc",
+      "https://t2vn.net/tin-tuc/thoi-su",
+      "https://t2vn.net/tin-tuc/the-gioi",
+      "https://t2vn.net/tin-tuc/kinh-doanh"
+    ]
+  },
+  "title": {
+    "value": "Bảo đảm chính sách hỗ trợ người lao động đúng, thuận lợi",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:26.370Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:21.633Z",
+    "independentHoldouts": [
+      "https://t2vn.net/tin-tuc/bai/tong-bi-thu-chu-tich-nuoc-to-lam-gap-thu-tuong-vuong-quoc-maroc-fatima-ezzahra-el-mansouri",
+      "https://t2vn.net/tin-tuc/bai/huong-den-trung-tam-logistics-hien-dai-thong-minh",
+      "https://t2vn.net/tin-tuc/bai/chinh-phu-luon-dong-hanh-tao-dieu-kien-thuan-loi-cho-nha-dau-tu"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://t2vn.net/tin-tuc/bai/bao-dam-chinh-sach-ho-tro-nguoi-lao-dong-dung-thuan-loi",
+      "https://t2vn.net/tin-tuc/bai/tong-bi-thu-chu-tich-nuoc-to-lam-gap-thu-tuong-vuong-quoc-maroc-fatima-ezzahra-el-mansouri",
+      "https://t2vn.net/tin-tuc/bai/huong-den-trung-tam-logistics-hien-dai-thong-minh",
+      "https://t2vn.net/tin-tuc/bai/chinh-phu-luon-dong-hanh-tao-dieu-kien-thuan-loi-cho-nha-dau-tu"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

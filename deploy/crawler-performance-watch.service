@@ -1,0 +1,21 @@
+[Unit]
+Description=Crawler health, source SLA and bounded automatic recovery
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/crawler-v8/current
+EnvironmentFile=/etc/crawler-v8/runtime.env
+ExecStart=/opt/crawler-node/bin/node /opt/crawler-v8/current/scripts/crawler_performance_watch.mjs
+TimeoutStartSec=50
+MemoryMax=512M
+CPUQuota=50%
+Nice=10
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/crawler-v8
+

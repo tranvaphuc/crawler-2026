@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vtcnews.vn",
+  "siteId": "vtcnews.vn",
+  "registrableDomain": "vtcnews.vn",
+  "homepage": "https://vtcnews.vn/",
+  "allowedHosts": [
+    "vtcnews.vn",
+    "www.vtcnews.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bảng xếp hạng Ngoại Hạng Anh vòng 10: Man Utd xuống thứ 18",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:03.069Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vtcnews.vn/ket-qua-ngoai-hang-anh-2026-2027-vong-10-bang-xep-hang-moi-nhat-ar1049958.html",
+      "https://vtcnews.vn/cap-nhat-ket-qua-man-utd-vs-aston-villa-ngay-8-11-ty-so-moi-nhat-ar1050098.html",
+      "https://vtcnews.vn/hai-doan-tau-dam-nhau-o-ai-cap-hon-90-nguoi-thuong-vong-ar1050094.html",
+      "https://vtcnews.vn/khoanh-khac-nga-phong-ve-tinh-quan-su-sua-khong-gian-phat-sang-bau-troi-ar1050088.html",
+      "https://vtcnews.vn/concert-bigbang-o-thai-lan-bi-huy-giua-chung-ar1050091.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vtcnews.vn/",
+    "categories": [
+      "https://vtcnews.vn/tin-moi-hom-nay.html",
+      "https://vtcnews.vn/xem-nhieu.html",
+      "https://vtcnews.vn/binh-luan-nhieu.html",
+      "https://vtcnews.vn/thoi-su-28.html",
+      "https://vtcnews.vn/truyen-hinh-27.html",
+      "https://vtcnews.vn/kinh-te-29.html",
+      "https://vtcnews.vn/the-thao-34.html",
+      "https://vtcnews.vn/the-gioi-30.html",
+      "https://vtcnews.vn/giao-duc-31.html",
+      "https://vtcnews.vn/phap-luat-32.html",
+      "https://vtcnews.vn/giai-tri-33.html",
+      "https://vtcnews.vn/suc-khoe-35.html",
+      "https://vtcnews.vn/gia-dinh-78.html",
+      "https://vtcnews.vn/oto-xe-may-37.html",
+      "https://vtcnews.vn/khoa-hoc-cong-nghe-82.html",
+      "https://vtcnews.vn/song-xanh-266.html",
+      "https://vtcnews.vn/gia-vang-hom-nay.html",
+      "https://vtcnews.vn/lich-van-nien.html",
+      "https://vtcnews.vn/du-bao-thoi-tiet.html",
+      "https://vtcnews.vn/xo-so-261.html",
+      "https://vtcnews.vn/hinh-anh.html",
+      "https://vtcnews.vn/audio.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vtcnews.vn",
+    "checkedAt": "2026-11-09T03:57:39.305Z",
+    "url": "https://vtcnews.vn/ket-qua-ngoai-hang-anh-2026-2027-vong-10-bang-xep-hang-moi-nhat-ar1049958.html",
+    "finalUrl": "https://vtcnews.vn/ket-qua-ngoai-hang-anh-2026-2027-vong-10-bang-xep-hang-moi-nhat-ar1049958.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4652,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vtcnews.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 37,
+    "checkedArticleUrls": 39,
+    "freshArticleChecks": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 37,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 22,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 585,
+        "passed": 34,
+        "distinctHashes": 34
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vtcnews.vn/mat-ngu-di-hoc-va-dem-trang-bam-theo-bong-quai-xe-xe-toac-man-dem-ha-noi-ar1047929.html",
+      "https://vtcnews.vn/ngo-lo-gia-xang-giam-thuc-pham-rau-xanh-chay-y-dung-im-ar1050409.html",
+      "https://vtcnews.vn/bo-mac-benh-xuong-thuy-tinh-hai-con-di-tat-chan-duoc-bac-si-giup-do-ar1049746.html",
+      "https://vtcnews.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-ar1050436.html",
+      "https://vtcnews.vn/hoi-sinh-thu-phu-tom-hum-o-dak-lak-dung-chi-cuu-mot-vu-tom-ar1047586.html",
+      "https://vtcnews.vn/chieu-nay-hon-300-xa-phuong-mien-trung-nguy-co-lu-quet-sat-lo-ar1050427.html",
+      "https://vtcnews.vn/bo-gd-dt-de-xuat-bo-thi-lop-10-chuyen-theo-tung-mon-ar1050412.html",
+      "https://vtcnews.vn/ukraine-thu-nghiem-vu-khi-moi-tim-cach-danh-chan-ten-lua-oreshnik-ar1050441.html",
+      "https://vtcnews.vn/50-nam-cuoc-doi-toi-chua-tung-duoc-thay-to-pho-giam-gia-ar1050362.html",
+      "https://vtcnews.vn/bo-doi-giang-day-dua-nguoi-dan-vuot-suoi-di-tranh-sat-lo-ar1050457.html",
+      "https://vtcnews.vn/nguoi-tra-gan-1-5-ty-dong-m-dat-nong-thon-o-ninh-binh-xin-lai-tien-dat-coc-ar1050459.html",
+      "https://vtcnews.vn/dua-tieng-anh-thanh-ngon-ngu-thu-hai-hieu-truong-va-hieu-pho-can-dap-ung-gi-ar1050444.html",
+      "https://vtcnews.vn/tau-o-tp-hcm-boc-chay-ngun-ngut-ar1050452.html",
+      "https://vtcnews.vn/15-doanh-nghiep-xang-dau-chua-nop-ngan-sach-khoang-6-500-ty-dong-ar1050453.html",
+      "https://vtcnews.vn/phat-hien-188-doanh-nghiep-xang-dau-co-dau-hieu-gam-hang-ar1050461.html",
+      "https://vtcnews.vn/cung-co-ho-so-xu-ly-nguoi-dan-ong-danh-tai-xe-xe-cong-nghe-o-tp-hcm-ar1050450.html",
+      "https://vtcnews.vn/lo-dien-doi-truong-moi-cua-tuyen-viet-nam-ar1050442.html",
+      "https://vtcnews.vn/bi-ban-be-co-lap-keo-dai-nu-sinh-mac-tram-cam-ar1050208.html",
+      "https://vtcnews.vn/video-hien-truong-no-nha-may-thep-o-tho-nhi-ky-17-cong-nhan-thiet-mang-ar1050451.html",
+      "https://vtcnews.vn/clip-song-nho-que-xanh-nhu-ngoc-giua-trung-may-khien-dan-mang-cuong-di-phuot-ar1050383.html",
+      "https://vtcnews.vn/hoa-khoi-the-thao-dang-quang-nam-16-tuoi-tung-la-mc-noi-tieng-cua-vtv-ar1050360.html",
+      "https://vtcnews.vn/sai-lam-khi-lau-man-hinh-laptop-co-the-khien-nguoi-dung-phai-tra-gia-ar1050250.html",
+      "https://vtcnews.vn/tin-nong-the-gioi-hom-nay-10-11-bo-truong-pete-hegseth-doi-mat-suc-ep-luan-toi-ar1050398.html",
+      "https://vtcnews.vn/bat-ngo-danh-tinh-nhom-nguoi-dung-sau-phim-ai-12-ty-luot-xem-o-trung-quoc-ar1050353.html",
+      "https://vtcnews.vn/video-sap-bo-ke-bao-ve-dap-thuy-dien-pakistan-lu-cuon-cuon-cuon-cong-truong-ar1050425.html",
+      "https://vtcnews.vn/tung-duong-lan-dau-dong-canh-tinh-tu-voi-ban-dien-kem-18-tuoi-ar1050327.html",
+      "https://vtcnews.vn/hang-nghin-hoc-sinh-o-hue-nghi-hoc-do-mua-lu-nhieu-noi-ngap-cuc-bo-ar1050415.html",
+      "https://vtcnews.vn/xu-ly-sai-pham-tai-12-du-an-muong-thanh-bao-ve-nguoi-dan-mua-nha-hop-phap-ar1050407.html",
+      "https://vtcnews.vn/tim-thay-thi-the-be-gai-goc-viet-o-duc-hang-xom-tung-nghe-tieng-keu-cuu-ar1050405.html",
+      "https://vtcnews.vn/phat-nghiem-chua-du-lam-gi-de-ngan-tai-nan-giao-thong-ar1050268.html",
+      "https://vtcnews.vn/vi-pham-ve-bao-ve-quyen-loi-nguoi-tieu-dung-be-group-bi-phat-625-trieu-dong-ar1050411.html",
+      "https://vtcnews.vn/vu-phat-hien-nghi-so-nguoi-sau-truong-dai-hoc-o-tp-hcm-cong-an-thong-tin-ar1050401.html",
+      "https://vtcnews.vn/trao-5-000-con-ga-giong-tiep-suc-nguoi-dan-lang-nu-khoi-phuc-sinh-ke-ar1050422.html",
+      "https://vtcnews.vn/thai-nguyen-doi-moi-tuyen-truyen-xay-dung-the-tran-phong-chong-ma-tuy-tu-co-so-ar1050446.html",
+      "https://vtcnews.vn/vietjet-mo-rong-cau-noi-viet-nam-nhat-ban-voi-duong-bay-moi-da-nang-osaka-ar1050447.html",
+      "https://vtcnews.vn/xsbtr-10-11-ket-qua-xo-so-ben-tre-hom-nay-ngay-10-thang-11-ar1050217.html",
+      "https://vtcnews.vn/vinhomes-green-paradise-dua-dai-duong-vao-nhip-song-moi-ngay-cua-cu-dan-tp-hcm-ar1050440.html",
+      "https://vtcnews.vn/xsmn-10-11-ket-qua-xo-so-kien-thiet-mien-nam-ngay-10-thang-11-ar1050223.html",
+      "https://vtcnews.vn/xsvt-10-11-ket-qua-xo-so-vung-tau-hom-nay-10-11-2026-ar1050220.html",
+      "https://vtcnews.vn/xsbl-10-11-ket-qua-xo-so-bac-lieu-ngay-10-thang-11-ar1049738.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:22.987Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vtcnews.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "vtcnews.vn",
+      "siteId": "vtcnews.vn",
+      "registrableDomain": "vtcnews.vn",
+      "homepage": "https://vtcnews.vn/",
+      "allowedHosts": [
+        "vtcnews.vn",
+        "www.vtcnews.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Bảng xếp hạng Ngoại Hạng Anh vòng 10: Man Utd xuống thứ 18",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "jsonld_media"
+      },
+      "additionalMediaStrategy": "jsonld",
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:25.297Z",
+        "trainingUrls": [
+          "https://vtcnews.vn/viet-nam-ket-noi-nguon-luc-toan-cau-thuc-day-hop-tac-khoa-hoc-cong-nghe-ar1050145.html"
+        ],
+        "holdoutUrls": [
+          "https://vtcnews.vn/de-xuat-boi-thuong-cho-nguoi-tieu-dung-neu-phat-hien-do-luong-gian-lan-ar1036667.html",
+          "https://vtcnews.vn/de-xuat-xu-ly-nghiem-cam-hanh-nghe-don-vi-gian-lan-so-lieu-quan-trac-moi-truong-ar1041094.html"
+        ]
+      }
+    }
+  ]
+}

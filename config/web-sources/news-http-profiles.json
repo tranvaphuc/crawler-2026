@@ -1,0 +1,66 @@
+{
+  "ceotoancau.vn": {
+    "name": "standard_public_user_agent",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "evidence": "round5-http/probes/ceotoancau.vn-standard-ua.html: public page returns 200; research bot UA returns 403. No authentication or challenge execution."
+  },
+  "kinhtevn.com.vn": {
+    "name": "standard_public_user_agent",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "evidence": "round5-http/probes/kinhtevn.com.vn-standard-ua.html: public page returns 200; research bot UA returns 403. No authentication or challenge execution."
+  },
+  "thv.vn": {
+    "name": "standard_public_user_agent",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "evidence": "round5-http/probes/thv.vn-standard-ua.html: public homepage returns HTTP 200 with standard UA, no authentication or script execution."
+  },
+  "vietnamfdi.vn": {
+    "name": "standard_public_user_agent_connection_close",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "connectionClose": true,
+    "evidence": "round11-http/probes/vietnamfdi-category-standard-close.json and vietnamfdi-category-explicit-page.json: actual public category HTML returned 200 in under 9 seconds; no authentication, JavaScript or TLS bypass."
+  },
+  "kenh14.vn": {
+    "name": "public_http_connection_close",
+    "connectionClose": true,
+    "evidence": "outputs/news-flow-preparation-2026-11-12/deep-verification/kenh14.vn/transport-recheck.json: all 39 prior ECONNRESET URLs recovered with HTTP 200 in an independent connection-close round; all 19 article URLs parsed with no independent field flags."
+  },
+  "afamily.vn": {
+    "name": "public_http_connection_close",
+    "connectionClose": true,
+    "evidence": "outputs/news-flow-preparation-2026-11-12/deep-verification/afamily.vn/transport-recheck.json: 49/49 transient transport failures recovered with HTTP 200; 21 article samples passed independent field checks."
+  },
+  "tuoitre.vn": {
+    "name": "public_http_connection_close",
+    "connectionClose": true,
+    "evidence": "outputs/news-flow-preparation-2026-11-12/deep-verification/tuoitre.vn/transport-recheck.json: 22/22 transient transport failures recovered with HTTP 200; 14 article samples passed independent field checks. Parser failures remain separate."
+  },
+  "suckhoedoisong.vn": {
+    "name": "public_http_connection_close",
+    "connectionClose": true,
+    "evidence": "outputs/news-flow-preparation-2026-11-12/deep-verification/suckhoedoisong.vn/transport-recheck.json: 37/37 transient transport failures recovered with HTTP 200; 15 article samples passed independent field checks."
+  },
+  "phunuvietnam.vn": {
+    "name": "public_http_connection_close",
+    "connectionClose": true,
+    "evidence": "outputs/news-flow-preparation-2026-11-12/deep-verification/phunuvietnam.vn/transport-recheck.json: 40/40 transient transport failures recovered with HTTP 200; 10 article samples passed independent field checks. Parser/quality failures remain separate."
+  },
+  "bnews.vn": {
+    "name": "public_http_identity_connection_close",
+    "acceptEncoding": "identity",
+    "connectionClose": true,
+    "evidence": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/supplements/bnews.vn/result.json"
+  },
+  "molistar.com": {
+    "name": "verified_standard_public_user_agent",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "evidence": "QC complete27: five full native articles with two independent holdouts; public publisher HTML and declared WordPress API publication fields verified.",
+    "verifiedAt": "2026-11-22T12:10:29.293Z"
+  },
+  "saoexpress.vn": {
+    "name": "verified_standard_public_user_agent",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "evidence": "QC complete27: five full native articles with two independent holdouts; paired same-proxy controls: default UA 403, standard UA 200.",
+    "verifiedAt": "2026-11-22T12:10:29.293Z"
+  }
+}

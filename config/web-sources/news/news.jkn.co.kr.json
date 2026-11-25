@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.jkn.co.kr",
+  "siteId": "news.jkn.co.kr",
+  "registrableDomain": "news.jkn.co.kr",
+  "homepage": "https://news.jkn.co.kr/",
+  "allowedHosts": [
+    "news.jkn.co.kr",
+    "www.news.jkn.co.kr"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://news.jkn.co.kr/",
+    "categories": [
+      "https://news.jkn.co.kr/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.274Z",
+      "verifiedSeeds": [
+        "https://news.jkn.co.kr/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "국민의힘, 미래대응기금 예산 전면 재검토 촉구",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:37.664Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:29.473Z",
+    "independentHoldouts": [
+      "https://news.jkn.co.kr/post/1095731",
+      "https://news.jkn.co.kr/post/1095729",
+      "https://news.jkn.co.kr/post/1095689"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://news.jkn.co.kr/post/1095780",
+      "https://news.jkn.co.kr/post/1095731",
+      "https://news.jkn.co.kr/post/1095729",
+      "https://news.jkn.co.kr/post/1095689"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

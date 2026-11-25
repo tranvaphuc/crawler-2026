@@ -1,0 +1,37 @@
+# 36 nguồn chưa đưa vào crawl: 6 loại theo quyền truy cập + 30 chưa xác minh. Không đồng nghĩa 36 site đều bắt login.
+https://36kr.com/	DISABLE_UNVERIFIED	Chưa có bài Tesla mẫu xác minh được.
+https://www.bhaskar.com:443/	DISABLE_UNVERIFIED	Công cụ bị robots.txt chặn
+https://section.blog.naver.com/BlogHome.naver	DISABLE_UNVERIFIED	Công cụ bị robots.txt chặn
+https://top.cafe.daum.net/	DISABLE_UNVERIFIED	Search cafe Daum chưa truy cập được; chưa có bài Tesla mẫu.
+https://section.cafe.naver.com/ca-fe/	DISABLE_UNVERIFIED	Quyền cafe tùy thành viên/công khai; chưa kiểm tra được search Tesla.
+https://www.caixin.com/	DISABLE_AUTH	Nội dung thu phí cần tài khoản có đúng gói theo FAQ Caixin; loại toàn nguồn theo quy tắc không login.
+https://www.chosun.com/	DISABLE_UNVERIFIED	Bài mẫu chỉ trả một iframe, không có nội dung bài.
+https://economictimes.indiatimes.com/	DISABLE_AUTH	HTML bài Tesla chứa các luồng yêu cầu đăng nhập để đọc tiếp và ETPrime. Loại thận trọng theo quy tắc; chưa xác minh modal nào thực sự bật trong trình duyệt.
+https://www.ifeng.com/	DISABLE_UNVERIFIED	Chưa có bài Tesla mẫu xác minh được.
+https://inc42.com/	DISABLE_AUTH	Bài Tesla chứa yêu cầu đăng nhập/đăng ký để đọc tiếp, bao gồm chế độ private. Loại toàn nguồn.
+https://www.livemint.com/	DISABLE_AUTH	Mẫu được gắn nhãn Mint Premium và gifted; không coi quyền đọc từ bản tặng/cache là truy cập công khai ổn định.
+https://news.163.com/	DISABLE_UNVERIFIED	Không có mẫu trên news.163.com trong lượt tìm; không đại diện toàn bộ www.163.com.
+https://news.naver.com/	DISABLE_UNVERIFIED	Công cụ bị robots.txt chặn
+https://news.qq.com/	DISABLE_UNVERIFIED	Search và bài mẫu chưa xác minh; trang chủ chỉ trả iframe.
+https://news.sina.com.cn/	DISABLE_UNVERIFIED	Tìm được trang tag Tesla nhưng chưa có bài mẫu hợp lệ trong lượt chọn; search chưa mở được.
+https://news.sohu.com/	DISABLE_UNVERIFIED	Timeout
+https://www.people.com.cn/	DISABLE_UNVERIFIED	Kết quả trả về không đủ phù hợp làm bài mẫu; các bài ở subdomain chưa kiểm thử.
+https://www.sedaily.com/	DISABLE_UNVERIFIED	Chưa tìm được mẫu Tesla phù hợp qua công cụ; không kết luận site không có bài.
+https://www.thehindu.com/	DISABLE_UNVERIFIED	Công cụ bị robots.txt chặn
+https://tieba.baidu.com/	DISABLE_UNVERIFIED	403
+https://weibo.com/	DISABLE_UNVERIFIED	Profile Tesla trả bio và bài từ dữ liệu cache khoảng 4 tháng; search Tesla chưa xác minh. Chưa chốt crawler live.
+https://www.bilibili.com/	DISABLE_UNVERIFIED	HTTP status không mong đợi
+https://www.caixinglobal.com/	DISABLE_AUTH	Bài mẫu yêu cầu đăng ký để đọc; loại toàn nguồn.
+https://www.clien.net/	DISABLE_UNVERIFIED	Công cụ bị robots.txt chặn
+https://www.consumercomplaints.in/	DISABLE_UNVERIFIED	Không tìm được bài Tesla mẫu qua công cụ; không chứng minh không có nội dung.
+https://www.dcinside.com/	DISABLE_UNVERIFIED	Truy vấn giới hạn www.dcinside.com không đại diện các bài ở gall.dcinside.com; search thử chưa mở được.
+https://www.douyin.com/	DISABLE_UNVERIFIED	Trang search và video không có nội dung đọc được; chưa phân biệt JS và login.
+https://www.hankookilbo.com/	DISABLE_UNVERIFIED	Cache miss
+https://www.instagram.com/	DISABLE_UNVERIFIED	Chưa có bài Tesla mẫu xác minh được.
+https://www.nate.com/	DISABLE_UNVERIFIED	Truy vấn giới hạn www.nate.com không đại diện news.nate.com; chưa kiểm thử được search.
+https://www.naver.com/	DISABLE_UNVERIFIED	Không có kết quả mẫu trên host trang chủ; search Naver Tesla chưa mở được.
+https://www.ppomppu.co.kr/	DISABLE_UNVERIFIED	403
+https://www.quora.com/	DISABLE_UNVERIFIED	Cache miss
+https://www.toutiao.com/	DISABLE_UNVERIFIED	Bài không có nội dung đọc được; trang chủ yêu cầu JavaScript.
+https://www.rednote.com/	DISABLE_AUTH	Root và Explore chuyển sang trang login trong lượt kiểm tra trước; không vào luồng search không-login.
+https://www.zhihu.com/signin?next=%2F	DISABLE_UNVERIFIED	URL ban đầu là signin; search Tesla không truy cập được, bài mẫu timeout. Chưa đủ bằng chứng xác định login của toàn site.

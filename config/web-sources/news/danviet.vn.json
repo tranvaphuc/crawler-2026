@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "siteName": "danviet.vn",
+  "siteId": "danviet.vn",
+  "registrableDomain": "danviet.vn",
+  "homepage": "https://danviet.vn/",
+  "allowedHosts": [
+    "danviet.vn",
+    "www.danviet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chính phủ đề xuất hơn 63.453 tỉ đồng phòng, chống ma túy và tội phạm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".dt-content.mb-20",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:27.950Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://danviet.vn/chinh-phu-de-xuat-hon-63453-ti-dong-phong-chong-ma-tuy-va-toi-pham-d1472643.html",
+      "https://danviet.vn/ha-noi-duyet-chi-hon-42846-ti-dong-trien-khai-5-du-an-khan-cap-lam-duong-sat-cau-vuot-co-linh-d1472315.html",
+      "https://danviet.vn/hon-1500-nguoi-tranh-nhau-can-nha-68m2-co-gia-42000-dong-d1473364.html",
+      "https://danviet.vn/video-huy-dong-nhieu-may-xuc-pha-tuong-quan-karaoke-nu-hoang-tao-loi-cho-canh-sat-dap-lua-d1473494.html",
+      "https://danviet.vn/mua-lon-don-dap-lanh-dao-tp-da-nang-tinh-gia-lai-giao-nhiem-vu-khan-cho-chu-tich-xa-phuong-cung-loat-so-d1473446.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://danviet.vn/",
+    "categories": [
+      "https://danviet.vn/dv-thoi-su/",
+      "https://danviet.vn/the-gioi/",
+      "https://danviet.vn/nha-nong/",
+      "https://danviet.vn/hoi-va-cuoc-song/",
+      "https://danviet.vn/dai-doan-ket-dan-toc/",
+      "https://danviet.vn/kinh-te/",
+      "https://danviet.vn/the-thao/",
+      "https://danviet.vn/van-hoa-giai-tri/",
+      "https://danviet.vn/dv-xa-hoi/",
+      "https://danviet.vn/ban-doc/",
+      "https://danviet.vn/nha-dat/",
+      "https://danviet.vn/dv-media/",
+      "https://danviet.vn/chuyen-dong-sai-gon/",
+      "https://danviet.vn/phap-luat/",
+      "https://danviet.vn/dan-viet-tro-chuyen/",
+      "https://danviet.vn/dv-gia-dinh/",
+      "https://danviet.vn/dong-tay-kim-co/",
+      "https://danviet.vn/khoa-hoc-cong-nghe/",
+      "https://danviet.vn/radio-nong-dan/",
+      "https://danviet.vn/dv-doanh-nghiep/",
+      "https://danviet.vn/clip.html",
+      "https://danviet.vn/infographic.html",
+      "https://danviet.vn/emagazine.html",
+      "https://danviet.vn/tin-moi/",
+      "https://danviet.vn/tin-nong/",
+      "https://danviet.vn/kinh-da-trong/",
+      "https://danviet.vn/dv-chinh-tri/",
+      "https://danviet.vn/nong-24-7/",
+      "https://danviet.vn/ho-so-tu-lieu-dv/",
+      "https://danviet.vn/bao-ve-nen-tang-tu-tuong-cua-dang/",
+      "https://danviet.vn/cong-dong-viet/",
+      "https://danviet.vn/diem-nong/",
+      "https://danviet.vn/goc-chuyen-gia/",
+      "https://danviet.vn/vu-khi-quan-su/",
+      "https://danviet.vn/ho-so-nguoi-noi-tieng/",
+      "https://danviet.vn/tin-nong-nghiep/",
+      "https://danviet.vn/muon-cach-lam-giau/",
+      "https://danviet.vn/ngon-sach-la/",
+      "https://danviet.vn/thuc-pham-xanh-song-an-lanh/",
+      "https://danviet.vn/kinh-te-nong-nghiep/",
+      "https://danviet.vn/nong-thon-moi/",
+      "https://danviet.vn/khuyen-nong/",
+      "https://danviet.vn/dan-toc-va-mien-nui/",
+      "https://danviet.vn/moi-truong-xanh/",
+      "https://danviet.vn/chung-suc-xay-dung-nong-thon-moi/",
+      "https://danviet.vn/dv-nong-dan-gui-tam-tu-toi-thu-tuong/",
+      "https://danviet.vn/tin-hoat-dong-hoi/",
+      "https://danviet.vn/lang-nghe-nong-dan/",
+      "https://danviet.vn/doi-song-nong-thon/",
+      "https://danviet.vn/chan-dung-can-bo-hoi/",
+      "https://danviet.vn/kinh-te-tap-the/",
+      "https://danviet.vn/dv-dau-tu-tai-chinh/",
+      "https://danviet.vn/dv-thi-truong/",
+      "https://danviet.vn/nang-luong-moi/",
+      "https://danviet.vn/dv-giao-thong-xay-dung/",
+      "https://danviet.vn/bao-chi-du-lieu/",
+      "https://danviet.vn/dia-oc/",
+      "https://danviet.vn/du-an/",
+      "https://danviet.vn/kien-truc/",
+      "https://danviet.vn/vat-lieu-moi/",
+      "https://danviet.vn/asiad-2026/",
+      "https://danviet.vn/fifa-asean-cup-2026/",
+      "https://danviet.vn/bong-chuyen/",
+      "https://danviet.vn/bong-da/",
+      "https://danviet.vn/chuyen-nhuong/",
+      "https://danviet.vn/ben-le/",
+      "https://danviet.vn/cac-mon-khac/",
+      "https://danviet.vn/phia-sau-san-co/",
+      "https://danviet.vn/phap-dinh/",
+      "https://danviet.vn/an-ninh-trat-tu/",
+      "https://danviet.vn/ho-so-vu-an/",
+      "https://danviet.vn/chuyen-cua-sao/",
+      "https://danviet.vn/thoi-trang/",
+      "https://danviet.vn/phim-anh/",
+      "https://danviet.vn/am-nhac/",
+      "https://danviet.vn/doi-song-van-hoa/",
+      "https://danviet.vn/y-te/",
+      "https://danviet.vn/giao-duc/",
+      "https://danviet.vn/lao-dong-viec-lam/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?danviet.vn/.*?(\\d{4,})(.html|.htm|.chn)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "danviet.vn",
+    "checkedAt": "2026-11-09T03:56:57.983Z",
+    "url": "https://danviet.vn/chinh-phu-de-xuat-hon-63453-ti-dong-phong-chong-ma-tuy-va-toi-pham-d1472643.html",
+    "finalUrl": "https://danviet.vn/chinh-phu-de-xuat-hon-63453-ti-dong-phong-chong-ma-tuy-va-toi-pham-d1472643.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5239,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "danviet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 305,
+    "checkedArticleUrls": 311,
+    "freshArticleChecks": 291,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 302,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 114,
+    "categoriesFreshChecked": 107,
+    "categoriesUnconfirmed": 90,
+    "categoriesWithoutParsedArticle": 17,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 7500,
+        "passed": 298,
+        "distinctHashes": 295
+      },
+      {
+        "name": "video",
+        "discovered": 12,
+        "passed": 5,
+        "distinctHashes": 5
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "audio",
+        "discovered": 60,
+        "passed": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://danviet.vn/sieu-do-thi-vinhomes-global-gate-ha-long-tang-toc-thi-cong-vincons-tuyen-them-10000-cong-nhan-d1473917.html",
+      "https://danviet.vn/lao-nong-can-tho-nuoi-hang-tram-con-cua-dinh-trong-thau-nhua-sau-mot-thang-ban-250000-dong-con-d1473613.html",
+      "https://danviet.vn/tinh-uy-tay-ninh-lam-viec-voi-2-tap-doan-de-heus-hung-nhon-ve-chuoi-du-an-chan-nuoi-tri-gia-18300-ti-dong-d1473655.html",
+      "https://danviet.vn/chu-tich-ubnd-tp-can-tho-du-ngay-hoi-dai-doan-ket-toan-dan-toc-gan-voi-ngay-van-hoa-viet-nam-tai-phuong-thoi-an-dong-d1473396.html",
+      "https://danviet.vn/chu-tich-quoc-hoi-tran-thanh-man-day-manh-chuyen-doi-so-tao-thuan-loi-cho-dan-khi-giai-quyet-thu-tuc-hanh-chinh-d1473188.html",
+      "https://danviet.vn/nu-trung-ta-cua-cuc-canh-sat-hinh-su-bo-cong-an-chi-ra-5-thu-doan-lua-dao-nguoi-dan-can-canh-giac-d1473052.html",
+      "https://danviet.vn/tu-nhung-mo-hinh-lam-giau-o-hue-den-cau-chuyen-nong-dan-giup-nhau-thoat-ngheo-d1473544.html",
+      "https://danviet.vn/quy-ho-tro-nong-dan-tinh-khanh-hoa-giai-ngan-450-trieu-dong-cho-9-hoi-vien-xa-hoa-tri-d1473236.html",
+      "https://danviet.vn/con-dac-san-nay-ham-an-chuoi-chin-chao-ca-ro-phi-mot-nguoi-binh-dinh-nay-la-tinh-gia-lai-nuoi-thanh-cong-kha-gia-hon-d1473314.html",
+      "https://danviet.vn/dien-dan-chu-tich-hoi-nong-dan-viet-nam-bo-truong-bo-nong-nghiep-va-moi-truong-lang-nghe-nong-dan-noi-dien-ra-ngay-17-11-d1473634.html",
+      "https://danviet.vn/can-canh-khong-gian-moi-phia-dong-ho-guom-sau-khi-thao-do-rao-chan-d1473856.html",
+      "https://danviet.vn/ben-trong-san-van-dong-vinfast--trong-dong-co-suc-chua-lon-nhat-the-gioi-4-khan-dai-xay-toi-tang-5-d1473279.html",
+      "https://danviet.vn/can-canh-12-du-an-thu-hut-du-luan-cua-tap-doan-muong-thanh-tai-ha-noi-d1473246.html",
+      "https://danviet.vn/can-canh-tuyen-duong-du-kien-mang-ten-co-bi-thu-thanh-uy-da-nang-nguyen-ba-thanh-d1472770.html",
+      "https://danviet.vn/video-nhieu-o-to-xe-may-van-danh-lieu-di-vao-lan-khan-cap-duong-vanh-dai-3-tren-cao-d1473160.html",
+      "https://danviet.vn/dien-dan-lang-nghe-nong-dan-noi-sau-hon-40-nam-lam-ruong-lan-dau-tien-nguoi-dan-phu-tho-phai-dong-phi-thuy-loi-d1473800.html",
+      "https://danviet.vn/nu-chu-tich-cua-sen-tai-thu-va-dong-pham-sap-hau-toa-trong-vu-an-lua-dao-988-ti-dong-d1473903.html",
+      "https://danviet.vn/mua-lon-o-dak-lak-nhieu-noi-ngap-sau-mot-nguoi-dan-di-xe-may-bi-nuoc-cuon-troi-d1473844.html",
+      "https://danviet.vn/gia-vang-hom-nay-moi-nhat-10-11-tang-giam-that-thuong-nha-vang-dong-loat-vang-khach-d1473870.html",
+      "https://danviet.vn/mot-cuu-sinh-vien-dinh-dam-cua-dai-hoc-kinh-te-quoc-dan-tang-truong-305-ty-dong-va-xe-o-to-the-he-moi-la-ai-d1473822.html",
+      "https://danviet.vn/ha-noi-lay-y-kien-du-an-cau-kinh-ngam-canh-o-do-cao-1100m-trong-vuon-quoc-gia-ba-vi-d1473915.html",
+      "https://danviet.vn/phan-minh-huyen-tiet-lo-dieu-thu-vi-ve-moi-quan-he-voi-duy-hung-o-hau-truong-phim-can-nha-khong-mai-che-d1473904.html",
+      "https://danviet.vn/vi-sao-chu-vuon-ca-phe-o-dak-lak-khong-muon-nhan-cong-hai-nhanh-d1473786.html",
+      "https://danviet.vn/hoc-tro-21-tuoi-len-thang-dt-viet-nam-hlv-van-sy-son-nhan-nhu-dieu-gi-d1473816.html",
+      "https://danviet.vn/dong-cua-hang-nhieu-nam-no-thue-phinh-to-vcci-de-xuat-nguong-xoa-no-50-trieu-dong-d1473837.html",
+      "https://danviet.vn/moi-chuyen-se-toi-te-ukraine-lo-lang-dung-ngoi-khong-yen-ve-dong-thai-cua-ong-trump-truoc-them-dam-phan-o-abu-dhabi-d1473876.html",
+      "https://danviet.vn/nha-o-xa-hoi-tphcm-nguoi-mua-co-the-chiu-thiet-neu-muon-ban-lai-can-ho-sau-5-nam-d1473862.html",
+      "https://danviet.vn/dong-co-dot-trong-nao-giup-bat-dong-san-viet-nam-tranh-vong-xoay-khung-hoang-trung-quoc-nhat-ban-d1473828.html",
+      "https://danviet.vn/ha-noi-giao-hon-4500m-dat-xay-dung-2-du-an-nha-o-xa-hoi-tai-dan-phuong-son-dong-d1473758.html",
+      "https://danviet.vn/gio-giat-nga-xe-may-tren-cau-thuan-phuoc-hanh-dong-bat-ngo-cua-dan-o-to-gay-xuc-dong-d1473853.html",
+      "https://danviet.vn/hoi-nong-dan-quang-ngai-giup-nong-dan-dua-nong-san-len-cho-so-d1473823.html",
+      "https://danviet.vn/gia-lai-dao-tao-nghe-cho-738-lao-dong-nong-thon-dat-951-chi-tieu-sau-hon-20-ngay-trien-khai-d1473865.html",
+      "https://danviet.vn/vu-hiep-den-su-nghiem-tri-cho-nhung-ao-tuong-quyen-luc-tren-mang-d1473331.html",
+      "https://danviet.vn/gsts-hoang-anh-tien-vuot-qua-chiec-bong-cua-gia-dinh-blouse-trang-tu-tim-loi-di-rieng-d1473307.html",
+      "https://danviet.vn/don-doc-dvtc-ngay-9-11-gs-nganh-y-tre-nhat-vn-2025-vuot-qua-chiec-bong-cua-gia-dinh-tu-tim-loi-di-rieng-d1473179.html",
+      "https://danviet.vn/vn-index-tang-gan-29-diem-khoi-ngoai-bat-ngo-mua-rong-hon-475-ti-dong-d1473905.html",
+      "https://danviet.vn/bat-dong-san-phat-dat-va-novaland-nhung-khoan-vay-nghin-ti-dong-voi-lai-suat-13-16-nam-d1473501.html",
+      "https://danviet.vn/sau-gan-hai-nam-thuc-hien-nghi-quyet-57-nhung-con-so-an-tuong-ve-khoa-hoc-cong-nghe-viet-nam-d1473692.html",
+      "https://danviet.vn/trung-quoc-ho-bien-thu-phu-khoai-tay-thanh-de-che-ai-am-tham-tai-dinh-hinh-ban-do-cong-nghe-toan-cau-d1473747.html",
+      "https://danviet.vn/giai-bao-chi-toan-quoc-ve-nong-nghiep-nong-dan-nong-thon-nam-2026-toi-hoc-hoi-duoc-nhieu-dieu-moi-qua-cac-tac-pham-d1471992.html",
+      "https://danviet.vn/ban-chi-dao-ban-to-chuc-hdck-giai-bao-chi-toan-quoc-ve-nong-nghiep-nong-dan-nong-thon-hop-quyet-dinh-cac-giai-thuong-d1471916.html",
+      "https://danviet.vn/hon-40-benh-vien-tphcm-tuyen-bac-si-noi-tru-co-noi-can-toi-90-nguoi-d1473899.html",
+      "https://danviet.vn/lan-dau-cong-bo-bao-vat-quoc-gia-nghin-nam-tuoi-chiem-nguong-hop-dung-xa-li-thap-nhan-tai-nghe-an-d1473819.html",
+      "https://danviet.vn/quang-ngai-tau-hang-mac-can-khan-cap-di-doi-dan-vung-nguy-co-sat-lo-d1473896.html",
+      "https://danviet.vn/mac-benh-ly-hiem-gap-be-2-tuoi-o-quang-ngai-mang-khoi-u-to-nhu-ban-tay-trong-bung-d1473888.html",
+      "https://danviet.vn/anh-trai-co-van-tong-thong-zelensky-tu-tran-khi-chien-dau-cho-phia-nga-chong-lai-ukraine-d1473897.html",
+      "https://danviet.vn/song-kon-dua-chinh-sach-den-voi-dong-bao-co-tu-khoi-day-y-chi-vuon-len-thoat-ngheo-d1473889.html",
+      "https://danviet.vn/bac-ninh-dot-pha-chuyen-doi-co-cau-vat-nuoi-mo-chia-khoa-giup-nguoi-dan-vuon-len-lam-giau-ben-vung-d1473534.html",
+      "https://danviet.vn/sang-se-lanh-o-ha-noi-nguoi-dan-khoac-ao-am-quang-khan-khi-ra-duong-d1473861.html",
+      "https://danviet.vn/my-nhan-tvb-hoi-han-vi-yeu-nguoi-co-vo-d1473868.html",
+      "https://danviet.vn/toan-rau-cu-nhung-lam-duoc-mon-ngon-thom-phuc-thanh-ngot-khong-so-ngan-cung-chang-ngai-beo-d1473449.html",
+      "https://danviet.vn/tphcm-to-chuc-dai-nhac-hoi-countdown-3-diem-cau-nhieu-chuong-trinh-suot-4-ngay-d1473885.html",
+      "https://danviet.vn/dak-lak-vao-mua-ca-phe-chin-do-nguoi-tat-bat-thu-hoach-nguoi-tranh-thu-check-in-d1473801.html",
+      "https://danviet.vn/vi-sao-truoc-nam-1658-thanh-mo-xoai-vung-dong-nai-da-thuoc-bien-canh-cua-viet-nam-ten-sai-gon-xuat-hien-nam-nao-d1473910.html",
+      "https://danviet.vn/sap-nhap-thanh-cong-ben-tre-tra-vinh-nay-tinh-vinh-long-co-nganh-kinh-te-gi-dong-gop-40-50-trong-co-cau-grdp-d1473858.html",
+      "https://danviet.vn/ong-ba-tan-truong-thon-zen-z-moi-ngoai-20-tuoi-o-da-nang-gom-tinh-quang-nam-cu-nghe-dien-thoai-tuong-chay-may-d1473842.html",
+      "https://danviet.vn/bo-nuoi-tom-chuyen-sang-ca-chim-vay-vang-nong-dan-xa-nay-o-ha-tinh-thu-hang-tram-trieu-moi-nam-d1470844.html",
+      "https://danviet.vn/mang-cach-trong-lua-mien-nam-ra-mien-bac-ong-nong-dan-hai-phong-lam-nen-co-nghiep-tren-gan-100-mau-ruong-d1473141.html",
+      "https://danviet.vn/bi-thu-thanh-uy-bac-ninh-nguyen-hong-thai-goi-mo-khi-lam-viec-voi-8-xa-khu-vuc-son-dong-dia-phan-tinh-bac-giang-cu-d1472580.html",
+      "https://danviet.vn/bi-thu-dac-khu-phu-quoc-dinh-van-noi-ghi-nhan-gia-dinh-tu-nguyen-tra-lai-gan-1900m-dat-rung-bi-lan-chiem-d1473804.html",
+      "https://danviet.vn/bo-chinh-tri-ket-thuc-viec-thuc-hien-quan-ly-nha-nuoc-ve-an-toan-thuc-pham-cua-2-bo-to-chuc-lai-cuc-an-toan-thuc-pham-d1473760.html",
+      "https://danviet.vn/thuong-truc-ban-bi-thu-tran-cam-tu-chi-dao-ve-viec-to-chuc-cac-giai-bao-chi-nam-2026-d1473829.html",
+      "https://danviet.vn/sep-lon-evn-de-xuat-giao-chi-tieu-lap-dat-dien-mat-troi-den-tung-co-quan-khu-cong-nghiep-d1473880.html",
+      "https://danviet.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-ban-chap-hanh-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-d1473882.html",
+      "https://danviet.vn/bo-truong-lam-thi-phuong-thanh-bao-ve-ban-quyen-la-van-de-mau-chot-de-phat-trien-cong-nghiep-van-hoa-d1473852.html",
+      "https://danviet.vn/3-giam-doc-so-duoc-bau-lam-pho-chu-tich-ubnd-tinh-vinh-long-d1473813.html",
+      "https://danviet.vn/thu-mon-le-giang-patrik-tin-do-ca-phe-dich-thuc-14-nam-khong-an-sang-d1473788.html",
+      "https://danviet.vn/truoc-tin-don-dan-dat-ha-noi-fc-hlv-gong-oh-kyun-bat-ngo-chia-se-cong-viec-moi-d1473824.html",
+      "https://danviet.vn/tin-nong-24-gio-qua-dieu-tra-vu-phat-hien-nhieu-xuong-nghi-cua-nguoi-nhan-vien-y-te-truong-hoc-chem-hieu-truong-d1473744.html",
+      "https://danviet.vn/bi-xu-vang-mat-cuu-giam-doc-seabank-hai-ba-trung-viet-thu-gui-toa-d1473578.html",
+      "https://danviet.vn/vu-mr-pips-mr-hunter-trai-giam-so-1--cong-an-ha-noi-huy-dong-hon-2600-luot-can-bo-chien-si-dam-bao-an-ninh-d1473520.html",
+      "https://danviet.vn/cuu-pho-thu-tuong-duc-goc-viet-se-gop-mat-trong-phim-quang-ba-hinh-anh-quoc-gia-d1473746.html",
+      "https://danviet.vn/nhip-song-nong-thon-moi-mot-vu-dua-hai-noi-lo-giua-dai-lo-nghin-ty-d1472477.html",
+      "https://danviet.vn/nhip-song-nong-thon-moi-gia-xang-dien-cung-giam-nong-dan-van-meo-mat-vi-dau-d1471233.html",
+      "https://danviet.vn/nhip-song-nong-thon-moi-nhung-nguoi-thoi-tu-va-tuoi-doi-muoi-d1471023.html",
+      "https://danviet.vn/ngay-doc-than-11-11-tan-man-ve-logic-tinh-yeu-cua-nguoi-tre-d1473038.html",
+      "https://danviet.vn/con-so-may-man-hom-nay-10-11-suu-coi-chung-duoc-it-mat-nhieu-thin-to-tinh-thanh-cong-mui-lam-gi-cung-vuong-d1473748.html",
+      "https://danviet.vn/tu-vi-12-con-giap-ngay-mai-10-11-4-nguoi-gap-may-man-trong-cuoi-nam-2026-vi-tien-day-ap-cuoc-song-ngot-ngao-d1473506.html",
+      "https://danviet.vn/thanh-tra-chinh-phu-188-doanh-nghiep-xang-dau-gam-hang-trong-nhieu-ngay-d1473863.html",
+      "https://danviet.vn/tinh-huong-phap-ly-vu-dat-nong-thon-dau-gia-15-ty-dong-m2-roi-bo-coc-o-ninh-binh-d1473832.html",
+      "https://danviet.vn/thanh-tra-chinh-phu-giam-doc-cong-ty-xang-dau-nhan-481-nghin-ti-dong-vao-tai-khoan-ca-nhan-tu-cong-ty-ma-d1473814.html",
+      "https://danviet.vn/bidv--cau-noi-tai-chinh-gop-phan-thuc-day-hop-tac-chien-luoc-viet-nam--nhat-ban-d1473810.html",
+      "https://danviet.vn/canh-tac-ca-phe-thong-minh-o-ea-ktur-ung-dung-so-hoa-giup-tang-hieu-qua-canh-tac-d1473653.html",
+      "https://danviet.vn/le-hoi-bia-ha-noi-2026-tro-lai-an-tuong-tai-truong-dua-f1-my-dinh-d1473683.html",
+      "https://danviet.vn/ahllvtnd-que-hung-yen-18-tuoi-tham-gia-tham-gia-chien-dich-dien-bien-phu-bat-song-tuong-de-castries-d1473811.html",
+      "https://danviet.vn/thong-diep-vuot-thoi-gian-tren-82-tam-bia-o-van-mieu--quoc-tu-giam-co-gi-dac-biet-d1473644.html",
+      "https://danviet.vn/hoac-nguyen-giap-va-ly-tieu-long-ai-moi-la-thien-ha-vo-dich-ngoai-doi-thuc-d1473650.html",
+      "https://danviet.vn/pho-thu-tuong-ho-quoc-dung-chuong-trinh-muc-tieu-quoc-gia-phai-thuc-hien-ngay-khong-cho-huong-dan-them-thu-tuc-d1472733.html",
+      "https://danviet.vn/o-lai-chau-thu-vi-nguoi-trong-1000-cay-go-quy-lam-qua-cho-con-gai-nguoi-nhan-giong-tao-sinh-ke-cho-dan-vung-cao-d1466397.html",
+      "https://danviet.vn/thu-tuong-le-minh-hung-ket-qua-dau-ra-hieu-qua-su-dung-von-lam-can-cu-danh-gia-chi-dao-dieu-hanh-cac-nam-sau-d1467391.html",
+      "https://danviet.vn/chu-tich-luong-quoc-doan/",
+      "https://danviet.vn/thi-viet-tim-hieu-truyen-thong-95-nam-hoi-nong-dan-viet-nam/",
+      "https://danviet.vn/giai-bao-chi-nong-nghiep-nong-dan-nong-thon/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 2,
+      "content_integrity_review": 1
+    },
+    "checkedAt": "2026-11-10T09:15:34.323Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/danviet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "danviet.vn",
+      "siteId": "danviet.vn",
+      "registrableDomain": "danviet.vn",
+      "homepage": "https://danviet.vn/",
+      "allowedHosts": [
+        "danviet.vn",
+        "www.danviet.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Video: Khu đô thị Ciputra ngập úng sau mưa lớn, cửa chống ngập tự động kích hoạt",
+        "strategy": "selector",
+        "selector": ".article-title"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:30.823Z",
+        "trainingUrls": [
+          "https://danviet.vn/video-khu-do-thi-ciputra-ngap-ung-sau-mua-lon-cua-chong-ngap-tu-dong-kich-hoat-d1460115.html"
+        ],
+        "holdoutUrls": [
+          "https://danviet.vn/video-buoi-tap-dau-tien-cua-tuyen-viet-nam-sau-khi-tro-ve-tu-thai-lan-d1454117.html",
+          "https://danviet.vn/video-song-thap-thom-tai-chung-cu-25-nam-tuoi-o-da-nang-truoc-mua-mua-bao-d1449693.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "danviet.vn",
+      "siteId": "danviet.vn",
+      "registrableDomain": "danviet.vn",
+      "homepage": "https://danviet.vn/",
+      "allowedHosts": [
+        "danviet.vn",
+        "www.danviet.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "PAN Group đưa gạo Việt từ “bán nhiều” sang “bán giá trị cao” và tham vọng 100.000 ha lúa phát thải thấp",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:30.823Z",
+        "trainingUrls": [
+          "https://danviet.vn/pan-group-dua-gao-viet-tu-ban-nhieu-sang-ban-gia-tri-cao-va-tham-vong-100000-ha-lua-phat-thai-thap-d1430146.html"
+        ],
+        "holdoutUrls": [
+          "https://danviet.vn/lao-cai-khoi-suc-dan-vun-dap-long-tin-tu-mo-hinh-diem-den-suc-lan-toa-trong-cong-dong-ky-cuoi-d1466411.html",
+          "https://danviet.vn/lao-cai-khoi-suc-dan-vun-dap-long-tin-dua-y-dang-ve-tan-ban-lang-ky-2-d1466392.html"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Chính phủ đề xuất hơn 63.453 tỉ đồng phòng, chống ma túy và tội phạm",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".dt-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:14:35.162Z",
+        "trainingUrls": [
+          "https://danviet.vn/truc-tiep-dt-viet-nam-vs-dt-pakistan-16h00-d1464118.html"
+        ],
+        "holdoutUrls": [
+          "https://danviet.vn/ho-so-vu-an-gay-chan-dong-ve-cuu-tru-tri-noi-tieng-thieu-lam-tu-d1412176.html",
+          "https://danviet.vn/cong-an-tphue-dot-kich-cong-xuong-che-tao-sung-giua-rung-cao-su-d1430032.html"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:38.127Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://danviet.vn/ho-so-vu-an-gay-chan-dong-ve-cuu-tru-tri-noi-tieng-thieu-lam-tu-d1412176.html",
+      "https://danviet.vn/cong-an-tphue-dot-kich-cong-xuong-che-tao-sung-giua-rung-cao-su-d1430032.html"
+    ],
+    "improvedUrls": [
+      "https://danviet.vn/truc-tiep-dt-viet-nam-vs-dt-pakistan-16h00-d1464118.html"
+    ],
+    "regressions": 0
+  }
+}

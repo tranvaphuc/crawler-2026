@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "siteName": "gocdoanhnhan.net",
+  "siteId": "gocdoanhnhan.net",
+  "registrableDomain": "gocdoanhnhan.net",
+  "homepage": "https://gocdoanhnhan.net/",
+  "allowedHosts": [
+    "gocdoanhnhan.net",
+    "www.gocdoanhnhan.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cuộc sống ở Mỹ của nam NSƯT là giám đốc công ty: Tự giặt đồ, đi ăn 1 mình",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:32.654Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://gocdoanhnhan.net/cuoc-song-o-my-cua-nam-nsut-la-giam-doc-cong-ty-tu-giat-do-di-an-1-minh-1297.html",
+      "https://gocdoanhnhan.net/vu-goi-y-thi-sinh-cho-ban-xem-bai-thi-tot-nghiep-thpt-ky-luat-3-giam-thi-1296.html",
+      "https://gocdoanhnhan.net/luu-bich-phuong-dong-hanh-tai-toa-dam-cap-cao-thao-go-nut-that-co-che-kien-tao-tuong-lai-cho-cong-nghiep-am-nhac-va-sang-tao-1295.html",
+      "https://gocdoanhnhan.net/nghich-ly-cua-30s-di-xin-viec-kinh-nghiem-10-nam-van-phai-chung-minh-minh-con-tre-u-1294.html",
+      "https://gocdoanhnhan.net/4-con-giap-kho-truoc-suong-sau-phat-len-sau-tuoi-40-tai-san-tich-luy-khong-thua-kem-ai-1293.html",
+      "https://gocdoanhnhan.net/cuoc-song-o-my-cua-nam-nsut-la-giam-doc-cong-ty-tu-giat-do-di-an-1-minh-1297.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://gocdoanhnhan.net/",
+    "categories": [
+      "https://gocdoanhnhan.net/sao/",
+      "https://gocdoanhnhan.net/thoi-trang/",
+      "https://gocdoanhnhan.net/nhac-phim/",
+      "https://gocdoanhnhan.net/suc-khoe/",
+      "https://gocdoanhnhan.net/xa-hoi/",
+      "https://gocdoanhnhan.net/tam-su/",
+      "https://gocdoanhnhan.net/tuoi-tre/",
+      "https://gocdoanhnhan.net/giao-duc/",
+      "https://gocdoanhnhan.net/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "gocdoanhnhan.net",
+    "checkedAt": "2026-11-09T03:57:05.931Z",
+    "url": "https://gocdoanhnhan.net/cuoc-song-o-my-cua-nam-nsut-la-giam-doc-cong-ty-tu-giat-do-di-an-1-minh-1297.html",
+    "finalUrl": "https://gocdoanhnhan.net/cuoc-song-o-my-cua-nam-nsut-la-giam-doc-cong-ty-tu-giat-do-di-an-1-minh-1297.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2000,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:24.362Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/gocdoanhnhan.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "gocdoanhnhan.net",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesAttempted": 9,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 81,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 81,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

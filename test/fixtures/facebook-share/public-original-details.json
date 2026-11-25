@@ -1,0 +1,123 @@
+{
+  "query": "adp_CometSinglePostDialogContentQueryRelayPreloader_6ada3e321fd1e5326405119",
+  "result": {
+    "data": {
+      "node_v2": {
+        "__typename": "Story",
+        "id": "UzpfSTYxNTg3MzI3MTIzNTQ0OjEyMjEzODk0MjkzMTI0NDIzNzoxMjIxMzg5NDI5MzEyNDQyMzc=",
+        "post_id": "122138942931244237",
+        "permalink_url": "https://www.facebook.com/ShopeeKH.Official/posts/pfbid0qxmthGSn5SjAqFMfcDf3yMAzGZvAWHFbz1rYfRLZcQpoya8qqJNLwpLs6PJjzSE7l",
+        "creation_time": 1790842163,
+        "attached_story": null,
+        "actors": [
+          {
+            "id": "61587327123544",
+            "name": "Shopee",
+            "url": "https://www.facebook.com/ShopeeKH.Official",
+            "__typename": "User"
+          }
+        ],
+        "attachments": [
+          {
+            "media": {
+              "__typename": "Photo",
+              "id": "122138942799244237"
+            },
+            "styles": {
+              "__typename": "StoryAttachmentPhotoStyleRenderer",
+              "attachment": {
+                "media": {
+                  "__typename": "Photo",
+                  "id": "122138942799244237",
+                  "url": "https://www.facebook.com/photo/?fbid=122138942799244237&set=a.122111585679244237",
+                  "photo_image": {
+                    "uri": "https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/830492723_122138942805244237_2519139861225833206_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=p526x296&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b6Xdf_7CbvQQ7kNvwFxWPyc&_nc_oc=AdrAqXLgeP9POej8SdylggXVpcwgkA7pUw7PciGZuKF_SrbKwUX9Nqt88fuz-r-2H9PDvooBRYtVlkZgKR6MBI8N&_nc_zt=23&_nc_ht=scontent.fsgn16-1.fna&_nc_gid=mEtHOno9YoxmpQI7I2sFgg&_nc_ss=7020f&oh=00_AQM1ItUJD6dsB-7YAhU6Ifot3W5fdtO5S0tW7tXc_ZWIFg&oe=6AE008CB",
+                    "width": 526,
+                    "height": 526
+                  },
+                  "accessibility_caption": "May be an image of text"
+                }
+              }
+            }
+          }
+        ],
+        "comet_sections": {
+          "content": {
+            "story": {
+              "message": {
+                "text": "🎁 ជ្រើសរើសកាដូថ្ងៃបុណ្យភ្ជុំបិណ្ឌរបស់អ្នក និងឈ្នះរង្វាន់!\n\nបុណ្យភ្ជុំបិណ្ឌនេះ ជ្រើសរើសកាដូពិសេសពី Shopee Mall សម្រាប់មនុស្សជាទីស្រឡាញ់របស់អ្នក — អ្នកនឹងមានឱកាសឈ្នះវ៉ូឈឺបញ្ចុះតម្លៃ ១០០%! 🧡\n\nរបៀបចូលរួម៖\n1. Like និង Share ផុសនេះជាសាធារណៈ (Public) លើ Facebook \n2. បើកកម្មវិធី Shopee ហើយជ្រើសរើសទំនិញដែលមានស្លាកសញ្ញា Mall ដែលអ្នកចង់ទិញធ្វើជាកាដូបុណ្យភ្ជុំបិណ្ឌ\n3. ថតរូបអេក្រង់ (Screenshot) កាដូដែលអ្នកបានជ្រើសរើស\n4. Comment រូបភាពនោះនៅខាងក្រោម រួច Tag មនុស្សដែលអ្នកចង់ជូនកាដូ + បញ្ចូលឈ្មោះគណនី Shopee (Shopee Username) របស់អ្នក ជាមួយហែសថេក #ShopeeCambodia\n\n🎉 អ្នកចូលរួមដែលមានសំណាងចំនួន ១០ នាក់ នឹងទទួលបានវ៉ូឈឺបញ្ចុះតម្លៃ ១០០% ចុះច្រើនបំផុត ១០,០០០៛ ដោយមិនកំណត់ការចំណាយអប្បបរមា!\n📅 ចូលរួមបានចាប់ពីថ្ងៃទី ១ ដល់ ថ្ងៃទី ៨ ខែតុលា ឆ្នាំ ២០២៦\n\nតើអ្នកចង់ផ្តល់ភាពភ្ញាក់ផ្អើលដល់នរណានាឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ? ជ្រើសរើសកាដូរបស់អ្នក រួច Tag ពួកគាត់នៅខាងក្រោម! 🎁\n\n👉 ចូលមើល Shopee Mall ហើយជ្រើសរើសកាដូថ្ងៃនេះ https://shopeekh.com/mall"
+              }
+            }
+          },
+          "feedback": {
+            "story": {
+              "story_ufi_container": {
+                "story": {
+                  "feedback_context": {
+                    "feedback_target_with_context": {
+                      "comet_ufi_summary_and_actions_renderer": {
+                        "feedback": {
+                          "reaction_count": {
+                            "count": 544
+                          },
+                          "share_count": {
+                            "count": 494
+                          },
+                          "comment_rendering_instance": {
+                            "comments": {
+                              "total_count": 506
+                            }
+                          },
+                          "top_reactions": {
+                            "count": 5,
+                            "edges": [
+                              {
+                                "node": {
+                                  "id": "1635855486666999",
+                                  "localized_name": "Like"
+                                },
+                                "reaction_count": 305
+                              },
+                              {
+                                "node": {
+                                  "id": "1678524932434102",
+                                  "localized_name": "Love"
+                                },
+                                "reaction_count": 215
+                              },
+                              {
+                                "node": {
+                                  "id": "613557422527858",
+                                  "localized_name": "Care"
+                                },
+                                "reaction_count": 21
+                              },
+                              {
+                                "node": {
+                                  "id": "478547315650144",
+                                  "localized_name": "Wow"
+                                },
+                                "reaction_count": 2
+                              },
+                              {
+                                "node": {
+                                  "id": "115940658764963",
+                                  "localized_name": "Haha"
+                                },
+                                "reaction_count": 1
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

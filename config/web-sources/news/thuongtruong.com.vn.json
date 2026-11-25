@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuongtruong.com.vn",
+  "siteId": "thuongtruong.com.vn",
+  "registrableDomain": "thuongtruong.com.vn",
+  "homepage": "https://thuongtruong.com.vn/",
+  "allowedHosts": [
+    "thuongtruong.com.vn",
+    "www.thuongtruong.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Dự báo thời tiết đêm nay và ngày mai 9/11: Hà Nội và các khu vực trên cả nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:41.258Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thuongtruong.com.vn/news/du-bao-thoi-tiet-dem-nay-va-ngay-mai-911-ha-noi-va-cac-khu-vuc-tren-ca-nuoc-171751.html",
+      "https://thuongtruong.com.vn/news/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-171750.html",
+      "https://thuongtruong.com.vn/news/doanh-nghiep-ban-le-can-chu-dong-nguon-hang-tang-khuyen-mai-va-binh-on-thi-truong-tet-2027-171711.html",
+      "https://thuongtruong.com.vn/news/gia-vang-lien-tuc-doi-chieu-nguoi-mua-trong-nuoc-doi-dien-rui-ro-gi-171694.html",
+      "https://thuongtruong.com.vn/news/bai-2-go-nut-that-dau-ra-cho-hang-viet-can-co-che-ket-noi-thuc-chat-giua-nha-san-xuat-va-nha-ban-le-171683.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thuongtruong.com.vn/",
+    "categories": [
+      "https://thuongtruong.com.vn/tieu-diem",
+      "https://thuongtruong.com.vn/tieu-diem/chong-lang-phi",
+      "https://thuongtruong.com.vn/tin-tuc/cai-chinh-va-xin-loi",
+      "https://thuongtruong.com.vn/tieu-diem/dai-hoi-dang-xiv",
+      "https://thuongtruong.com.vn/kinh-te",
+      "https://thuongtruong.com.vn/kinh-te/tai-chinh-ngan-hang",
+      "https://thuongtruong.com.vn/kinh-te/bat-dong-san",
+      "https://thuongtruong.com.vn/kinh-te/chung-khoan",
+      "https://thuongtruong.com.vn/kinh-te/thuong-mai",
+      "https://thuongtruong.com.vn/thi-truong",
+      "https://thuongtruong.com.vn/thi-truong/thi-truong-24h",
+      "https://thuongtruong.com.vn/thi-truong/thuong-mai-dien-tu",
+      "https://thuongtruong.com.vn/doanh-nghiep",
+      "https://thuongtruong.com.vn/doanh-nghiep/doanh-nghiep",
+      "https://thuongtruong.com.vn/doanh-nghiep/doanh-nhan",
+      "https://thuongtruong.com.vn/doanh-nghiep/chuyen-thuong-truong",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/tieu-dung-thong-minh",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/oto-xe-may",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/bao-ve-ntd",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/du-lich",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/suc-khoe",
+      "https://thuongtruong.com.vn/doi-song-tieu-dung/giao-duc",
+      "https://thuongtruong.com.vn/thong-tin-hay-lua-chon-tot",
+      "https://thuongtruong.com.vn/thong-tin-hay-lua-chon-tot/nha-sang-noi-that-dep",
+      "https://thuongtruong.com.vn/thong-tin-hay-lua-chon-tot/mua-sam-dich-vu",
+      "https://thuongtruong.com.vn/thong-tin-hay-lua-chon-tot/suc-khoe-lam-dep",
+      "https://thuongtruong.com.vn/thong-tin-hay-lua-chon-tot/thuoc-thuc-pham-bvsk",
+      "https://thuongtruong.com.vn/hiep-hoi-va-thanh-vien",
+      "https://thuongtruong.com.vn/goc-nhin",
+      "https://thuongtruong.com.vn/doanh-nghiep/thuong-hieu-san-pham-ban-le"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thuongtruong.com.vn",
+    "checkedAt": "2026-11-09T03:57:32.640Z",
+    "url": "https://thuongtruong.com.vn/news/du-bao-thoi-tiet-dem-nay-va-ngay-mai-911-ha-noi-va-cac-khu-vuc-tren-ca-nuoc-171751.html",
+    "finalUrl": "https://thuongtruong.com.vn/news/du-bao-thoi-tiet-dem-nay-va-ngay-mai-911-ha-noi-va-cac-khu-vuc-tren-ca-nuoc-171751.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2473,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:31.234Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/thuongtruong.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "thuongtruong.com.vn",
+    "parsedArticles": 36,
+    "distinctHashes": 36,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesAttempted": 34,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 797,
+    "checkedArticleUrls": 36,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 786,
+        "attempted": 33,
+        "passed": 33,
+        "distinctContents": 33,
+        "distinctHashes": 33
+      },
+      {
+        "name": "video",
+        "discovered": 11,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ]
+}

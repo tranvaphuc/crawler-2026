@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vimaxasia.com",
+  "siteId": "vimaxasia.com",
+  "registrableDomain": "vimaxasia.com",
+  "homepage": "https://vimaxasia.com/",
+  "allowedHosts": [
+    "vimaxasia.com",
+    "www.vimaxasia.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vimaxasia.com/",
+    "categories": [
+      "https://vimaxasia.com/en/home",
+      "https://vimaxasia.com/cat/dich-vu",
+      "https://vimaxasia.com/nganh-kinh-te-nh-va-tt-von.html",
+      "https://vimaxasia.com/en/cat/services",
+      "https://vimaxasia.com/nganh-kt.html"
+    ]
+  },
+  "title": {
+    "value": "“Quét sạch” thành quả 3 phiên tăng, VN-Index giảm mạnh thử thách đáy ngắn hạn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:49.674Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:44.647Z",
+    "independentHoldouts": [
+      "https://vimaxasia.com/nhieu-quy-lon-tiep-tuc-tang-ty-trong-tien-mat-phong-ngua-thi-truong-nhieu-bien-dong.html",
+      "https://vimaxasia.com/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-chung-khoan.html",
+      "https://vimaxasia.com/trien-vong-lai-suat-fed-cao-hon-lau-hon-khien-nhieu-nha-dau-tu-lao-dao-vi-mua-trai-phieu-kho-bac-my.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vimaxasia.com/quet-sach-thanh-qua-3-phien-tang-vn-index-giam-manh-thu-thach-day-ngan-han.html",
+      "https://vimaxasia.com/nhieu-quy-lon-tiep-tuc-tang-ty-trong-tien-mat-phong-ngua-thi-truong-nhieu-bien-dong.html",
+      "https://vimaxasia.com/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-chung-khoan.html",
+      "https://vimaxasia.com/trien-vong-lai-suat-fed-cao-hon-lau-hon-khien-nhieu-nha-dau-tu-lao-dao-vi-mua-trai-phieu-kho-bac-my.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

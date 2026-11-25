@@ -1,0 +1,21 @@
+DÂN TRÍ — KIỂM TRA KỸ VÀ SỬA PARSER
+
+Kết luận: dữ liệu có sẵn. Nhãn “thiếu” trước đó phản ánh parser chưa lấy được trường dữ liệu, chưa mô tả đúng nguyên nhân của từng layout.
+
+1. DMagazine: H1 là ảnh/không có text, còn tiêu đề đầy đủ nằm trong NewsArticle JSON-LD. Đã thêm variant lấy headline JSON-LD và body .e-magazine__body. Có 3 URL độc lập ngoài mẫu huấn luyện xác nhận, với nội dung khác nhau.
+
+2. DT360: HTML chứa JSON literal window.DT_GLOBAL.article và window.wDataLayer. Đã đọc title, sapo đầy đủ, published_date có múi giờ, tác giả và thông tin video. Chỉ JSON.parse dữ liệu công khai, không thực thi JavaScript nguồn. Kiểm tra ID/path/canonical trước khi parse; không suy ra ngày từ timestamp trong URL.
+
+3. AMACCAO: publisher khai báo page_type=cate và không có item_id. Đây là trang chuyên đề, đã chuyển sang category và vẫn lấy bài trong trang này.
+
+4. Category DT360: giao diện dùng API công khai recent-by-cate với zone/offset trên HTML. Adapter Axios đọc đúng API này, kiểm tra ID/path của từng link. Đã phát hiện được 6 link bài trong lần kiểm tra.
+
+20/20 bài lấy lại/kiểm tra độc lập parse đạt: 7 DT360, 4 DMagazine, phần còn lại là bài thường/video. Có 1 URL chuyên đề được loại khỏi luồng article, giữ ở category.
+
+Đã kiểm tra lại toàn bộ 7 URL cũ bị báo lỗi: 6 bài lấy được dữ liệu, 1 URL là category. 4/4 playlist trả HTTP 200, nội dung HLS hợp lệ; không tải video.
+
+154/154 test đạt; 990/990 mẫu hồi quy vẫn parse đạt, không đổi ID/ngày/chỉ mục tuần/nội dung. Tất cả 544 cấu hình vẫn enabled:false. Chưa làm queue, chưa ghi ES5.
+
+Dân Trí hiện đạt bộ mẫu kiểm tra này; chưa chạy toàn bộ vòng quét và chưa xác nhận thời hạn 15 phút. Danh sách lỗi hiện tại còn 304 nguồn; các nguồn khác không được quét lại trong lần kiểm tra riêng này.
+
+Bằng chứng: result.json, final-results.json, training-proof.json, dt360-category-checks.json, manifest-checks.json, config-validated.json, final-tests.tap và positive-current-after-summary.json. Bảng hiện tại: current/site-errors-table.html.

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "torquecafe.com",
+  "siteId": "torquecafe.com",
+  "registrableDomain": "torquecafe.com",
+  "homepage": "https://torquecafe.com/",
+  "allowedHosts": [
+    "torquecafe.com",
+    "www.torquecafe.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://torquecafe.com/",
+    "categories": []
+  },
+  "title": {
+    "value": "2027 Mitsubishi Pajero price and specs: New-gen 4x4 up to $20,000 more than predecessor",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:47.340Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:40.081Z",
+    "independentHoldouts": [
+      "https://torquecafe.com/aston-martin-star-wars-partnership/",
+      "https://torquecafe.com/car-news-lexus-is-takata-airbag-recall-fix/",
+      "https://torquecafe.com/car-news-volkswagen-t-roc-r-2027-teased/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://torquecafe.com/car-news-2027-mitsubishi-pajero-price-specs-australia",
+      "https://torquecafe.com/aston-martin-star-wars-partnership/",
+      "https://torquecafe.com/car-news-lexus-is-takata-airbag-recall-fix/",
+      "https://torquecafe.com/car-news-volkswagen-t-roc-r-2027-teased/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

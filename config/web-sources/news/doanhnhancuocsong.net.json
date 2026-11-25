@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhancuocsong.net",
+  "siteId": "doanhnhancuocsong.net",
+  "registrableDomain": "doanhnhancuocsong.net",
+  "homepage": "https://doanhnhancuocsong.net/",
+  "allowedHosts": [
+    "doanhnhancuocsong.net",
+    "www.doanhnhancuocsong.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "GIẢI MARATHON QUỐC TẾ THÀNH PHỐ HỒ CHÍ MINH TECHCOMBANK MÙA THỨ 9 KHỞI ĐỘNG HÀNH TRÌNH VÌ MỘT VIỆT NAM KHỎE MẠNH",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:37.057Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnhancuocsong.net/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-thu-9-khoi-dong-hanh-trinh-vi-mot-viet-nam-khoe-manh/",
+      "https://doanhnhancuocsong.net/aire-sutileza-elixir-dien-giai-day-suc-song-cua-mot-bieu-tuong-loewe/",
+      "https://doanhnhancuocsong.net/maison-crivelli-private-party-dem-hoi-cua-nhung-trai-nghiem-khuu-giac-doc-ban/",
+      "https://doanhnhancuocsong.net/creed-aventus-leave-your-mark-khi-mot-dau-an-duoc-tao-nen-tu-khi-chat-rieng/",
+      "https://doanhnhancuocsong.net/impadia-hinh-anh-paris-duoi-goc-nhin-nghe-thuat/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnhancuocsong.net/",
+    "categories": [
+      "https://doanhnhancuocsong.net/category/doanh-nghiep/",
+      "https://doanhnhancuocsong.net/category/bat-dong-san/",
+      "https://doanhnhancuocsong.net/category/startup/",
+      "https://doanhnhancuocsong.net/category/chan-dung-ceo/",
+      "https://doanhnhancuocsong.net/category/cong-nghe/",
+      "https://doanhnhancuocsong.net/category/tai-chinh-ngan-hang/",
+      "https://doanhnhancuocsong.net/category/thuong-truong/",
+      "https://doanhnhancuocsong.net/category/song-dep/",
+      "https://doanhnhancuocsong.net/category/giao-duc/",
+      "https://doanhnhancuocsong.net/category/giai-tri/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnhancuocsong.net",
+    "checkedAt": "2026-11-09T03:57:01.639Z",
+    "url": "https://doanhnhancuocsong.net/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-thu-9-khoi-dong-hanh-trinh-vi-mot-viet-nam-khoe-manh/",
+    "finalUrl": "https://doanhnhancuocsong.net/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-thu-9-khoi-dong-hanh-trinh-vi-mot-viet-nam-khoe-manh/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7230,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:07.522Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnhancuocsong.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnhancuocsong.net",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesAttempted": 10,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 63,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 63,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

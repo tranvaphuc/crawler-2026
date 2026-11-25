@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhipcaudautu.vn",
+  "siteId": "nhipcaudautu.vn",
+  "registrableDomain": "nhipcaudautu.vn",
+  "homepage": "https://nhipcaudautu.vn/",
+  "allowedHosts": [
+    "nhipcaudautu.vn",
+    "www.nhipcaudautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gọng kìm châu Á của ngành nhựa",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".info-detail .date-post"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail .tdInfo"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:56.362Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+      "https://nhipcaudautu.vn/kinh-doanh/ngan-hang-day-song-tang-von-3366007/",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-899-3366012",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-899-3366015",
+      "https://nhipcaudautu.vn/bat-dong-san/hoi-nghi-dau-tu-kien-tao-chat-luong-song-3366037/"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nhipcaudautu.vn/",
+    "categories": [
+      "https://nhipcaudautu.vn/kinh-doanh/",
+      "https://nhipcaudautu.vn/cong-nghe/",
+      "https://nhipcaudautu.vn/doanh-nhan/",
+      "https://nhipcaudautu.vn/tai-chinh/",
+      "https://nhipcaudautu.vn/bat-dong-san/",
+      "https://nhipcaudautu.vn/phong-cach-song/",
+      "https://nhipcaudautu.vn/the-gioi/",
+      "https://nhipcaudautu.vn/kieu-bao/",
+      "https://nhipcaudautu.vn/nguoi-tien-phong/",
+      "https://nhipcaudautu.vn/doanh-nghiep/",
+      "https://nhipcaudautu.vn/multimedia/",
+      "https://nhipcaudautu.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?nhipcaudautu.vn/.*?(\\d{5,})$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.320Z",
+      "verifiedSeeds": [
+        "https://nhipcaudautu.vn/",
+        "https://nhipcaudautu.vn/kinh-doanh/",
+        "https://nhipcaudautu.vn/cong-nghe/",
+        "https://nhipcaudautu.vn/doanh-nhan/",
+        "https://nhipcaudautu.vn/tai-chinh/",
+        "https://nhipcaudautu.vn/bat-dong-san/",
+        "https://nhipcaudautu.vn/phong-cach-song/",
+        "https://nhipcaudautu.vn/the-gioi/",
+        "https://nhipcaudautu.vn/kieu-bao/",
+        "https://nhipcaudautu.vn/nguoi-tien-phong/",
+        "https://nhipcaudautu.vn/doanh-nghiep/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nhipcaudautu.vn",
+    "checkedAt": "2026-11-09T03:57:19.398Z",
+    "url": "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+    "finalUrl": "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8125,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nhipcaudautu.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 20,
+    "checkedArticleUrls": 25,
+    "freshArticleChecks": 12,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 219,
+        "passed": 20,
+        "distinctHashes": 19
+      },
+      {
+        "name": "longform",
+        "discovered": 3,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+      "https://nhipcaudautu.vn/cong-nghe/ai-tang-toc-nhan-luc-hut-hoi-3366015/",
+      "https://nhipcaudautu.vn/kinh-doanh/ngan-hang-day-song-tang-von-3366007/",
+      "https://nhipcaudautu.vn/bat-dong-san/hoi-nghi-dau-tu-kien-tao-chat-luong-song-3366037/",
+      "https://nhipcaudautu.vn/kieu-bao/ket-noi-cong-dong-nguoi-viet-tai-chau-au-giu-gin-ban-sac-va-hop-tac-phat-trien-3366060/",
+      "https://nhipcaudautu.vn/kieu-bao/hoi-nghi-nguoi-viet-nam-o-nuoc-ngoai-toan-the-gioi-lan-thu-5-se-dien-ra-vao-thang-122026-3365897/",
+      "https://nhipcaudautu.vn/kieu-bao/dien-dan-doanh-nghiep-viet-nam--vuong-quoc-anh-huong-toi-tang-truong-gia-tri-cao-3365856/",
+      "https://nhipcaudautu.vn/kinh-doanh/hang-va-dich-vu-cong-nghiep-phuc-hoi-3366006/",
+      "https://nhipcaudautu.vn/kinh-doanh/kich-hoat-dong-tien-phong-thu-3365819/",
+      "https://nhipcaudautu.vn/cong-nghe/thi-truong-robot-voi-nut-that-nang-luc-ban-dia-hoa-3366024/",
+      "https://nhipcaudautu.vn/cong-nghe/dassault-systemes-thuc-day-ai-cong-nghiep-va-san-xuat-thong-minh-3366072/",
+      "https://nhipcaudautu.vn/cong-nghe/mot-toa-nha-hieu-suat-cao-duoc-danh-gia-nhu-the-nao-trong-ky-nguyen-esg-va-net-zero-3365976/",
+      "https://nhipcaudautu.vn/cong-nghe/edtech-ai-va-cuoc-dua-vao-dai-hoc-hang-dau-3365926/",
+      "https://nhipcaudautu.vn/phong-cach-song/di-san-tau-lua-hoi-nuoc-cua-deo-hai-van-3366020/",
+      "https://nhipcaudautu.vn/phong-cach-song/vuot-ngoai-lich-trinh-hoi-nghi--kham-pha-singapore-theo-cach-rieng-3366029/",
+      "https://nhipcaudautu.vn/phong-cach-song/singapore-ngoai-phong-hop-ba-hanh-trinh-ngan-dang-kham-pha-3366011/",
+      "https://nhipcaudautu.vn/bat-dong-san/su-yen-tinh-sang-trong-khi-kien-truc-nuoi-duong-su-truong-tho-3366105/",
+      "https://nhipcaudautu.vn/bat-dong-san/tu-chat-luong-san-pham-den-he-nang-luc-dan-dat-gia-tri-khi-chuan-muc-tro-thanh-loi-the-canh-tranh-cot-loi-3366073/",
+      "https://nhipcaudautu.vn/bat-dong-san/di-tim-chat-song-vang-giua-long-nam-sai-gon-3366084/",
+      "https://nhipcaudautu.vn/phat-trien-ben-vung/tu-bao-bi-sau-su-dung-den-chuoi-gia-tri-moi-cach-unilever-viet-nam-tiep-can-kinh-te-tuan-hoan-3365340/",
+      "https://nhipcaudautu.vn/doanh-nhan/kts-nguyen-thai-thuat-hien-thiet-ke-luxury-khong-nam-o-cai-tran-dat-vang-hay-dat-bac-3365252/",
+      "https://nhipcaudautu.vn/doanh-nhan/chu-tich-vinfmgroup-mo-hinh-bac-si-gia-dinh-la-mot-dai-duong-xanh-3365431/",
+      "https://nhipcaudautu.vn/doanh-nhan/richard-craik--30-nam-theo-dau-chim-troi-3364471/",
+      "https://nhipcaudautu.vn/doanh-nhan/cach-standard-chartered-thich-ung-voi-nhu-cau-tai-chinh-moi-cua-khach-hang-viet-3363975/",
+      "https://nhipcaudautu.vn/doanh-nhan/pnj-cong-bo-ke-hoach-chuyen-giao-vi-tri-tong-giam-doc-3364567/",
+      "https://nhipcaudautu.vn/doanh-nhan/tong-giam-doc-amway-viet-nam-tien-phong-trong-chien-luoc-cham-soc-suc-khoe-chu-dong-3363816/",
+      "https://nhipcaudautu.vn/tai-chinh/chi-6-nguoi-viet-da-hoan-thien-ke-hoach-chuyen-giao-di-san-va-chia-se-voi-nguoi-thua-ke-3366121/",
+      "https://nhipcaudautu.vn/tai-chinh/ceo-techcombank-tu-bai-toan-von-1100-ty-usd-den-vai-tro-cua-vifc-va-cac-dinh-che-tai-chinh-viet-nam-3366120/",
+      "https://nhipcaudautu.vn/tai-chinh/di-cung-f0/quan-tri-tai-san-va-nghich-ly-cua-niem-tin-3365371/",
+      "https://nhipcaudautu.vn/tai-chinh/duong-den-niem-yet/vdsc-thi-truong-chua-san-sang-cho-mot-nhip-hoi-phuc-nhanh-3364845/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/cau-chuyen-35-nam-dong-hanh-cua-heineken-viet-nam-3366122/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/vietjet-mo-rong-cau-noi-viet-nam--nhat-ban-voi-duong-bay-moi-da-nang--osaka-3366119/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/dua-ban-sac-viet-vao-hanh-trinh-ket-noi-van-hoa-qua-tra-3366117/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/vinaliving-tu-tu-duy-dau-tu-den-nang-luc-kien-tao-gia-tri-3366089/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/khi-am-thuc-thang-hoa-cung-phep-mau-mua-le-hoi-tai-hotel-des-arts-saigon-3366118/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/caex-chia-se-tam-nhin-ket-noi-thi-truong-tai-san-ma-hoa-toan-cau-voi-ha-tang-tai-chinh-viet-nam-3366088/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/sabeco-gioi-thieu-bia-333-triple-pure-qua-khong-gian-trai-nghiem-da-giac-quan-3366116/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/caryn-ra-mat-quan-lot-tham-hang-ngay-3366115/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/heineken-viet-nam-ra-mat-chuoi-phim-viet-nam--niem-vui-gan-ket-3366071/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/panasonic-phat-dong-cuoc-thi-cung-em-sang-tao-stem-mua-4-voi-chu-de-nuoc-va-su-song-3366064/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/the-upper-east-saigon-gianh-giai-ngay-lan-dau-tham-du-vietnam-property-awards-2026-3365966/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/lg-electronics-tang-559-loi-nhuan-hoat-dong-sau-9-thang-3366051/",
+      "https://nhipcaudautu.vn/the-gioi/hang-khong-toan-cau-can-hon-24-trieu-nhan-luc-3365947/",
+      "https://nhipcaudautu.vn/the-gioi/fast-retailing-mo-rong-dong-luc-tang-truong-toan-cau-3365904/",
+      "https://nhipcaudautu.vn/the-gioi/chau-a--thai-binh-duong-can-19120-may-bay-moi-trong-20-nam-toi-3365736/",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-900-3366098",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-900-3366102",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-900-3366091",
+      "https://nhipcaudautu.vn/magazine/tap-chi-so-ra-900-3366090",
+      "https://nhipcaudautu.vn/MegaStory/phong-su-anh-hoi-nghi-dau-tu-2026-kien-tao-chat-luong-song.html",
+      "https://nhipcaudautu.vn/MegaStory/tu-trai-dua-den-dong-luc-tang-truong-moi-cho-nong-nghiep-viet.html",
+      "https://nhipcaudautu.vn/MegaStory/iki-village-can-ho-2-mat-song-co-vuon-rieng-giua-tang-khong.html",
+      "https://nhipcaudautu.vn/tai-chinh/goc-nhin-chuyen-gia/tranh-bay-dau-tu-trong-ky-nguyen-mot-cham-3365576/",
+      "https://nhipcaudautu.vn/tai-chinh/goc-nhin-chuyen-gia/cong-thuc-phan-bo-danh-muc-tu-tong-giam-doc-vdam-3365284/",
+      "https://nhipcaudautu.vn/tai-chinh/goc-nhin-chuyen-gia/kinh-te-viet-nam-2026-no-luc-duy-tri-tang-truong-truoc-con-gio-nguoc-3365010/",
+      "https://nhipcaudautu.vn/kinh-doanh/ecco-truot-chan-3366098/",
+      "https://nhipcaudautu.vn/tai-chinh/nghich-ly-nang-hang-3366090/",
+      "https://nhipcaudautu.vn/phong-cach-song/the-he-kho-dinh-gia-3366014/",
+      "https://nhipcaudautu.vn/cong-nghe/tinh-roi-cho-token-3366016/",
+      "https://nhipcaudautu.vn/phat-trien-ben-vung/ai-khat-dien-3366021/",
+      "https://nhipcaudautu.vn/kinh-doanh/tai-dinh-danh-robusta-3366013/",
+      "https://nhipcaudautu.vn/phong-cach-song/sinh-it-chi-nhieu-3366091/",
+      "https://nhipcaudautu.vn/phat-trien-ben-vung/danh-thuc-vang-xanh-3366102/",
+      "https://nhipcaudautu.vn/su-kien-doanh-nghiep/",
+      "https://nhipcaudautu.vn/quang-ba-san-pham-dich-vu/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3,
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:16:18.013Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhipcaudautu.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "nhipcaudautu.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:08:41.504Z",
+    "proofs": [
+      {
+        "url": "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+        "publisherUrl": "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+        "contentHash": "a9662fb2559740bf0f8c9d67d14ee13c9e48060315284ea082296410a0355d02",
+        "description": "Mắc kẹt giữa Trung Quốc và Thái Lan, ngành nhựa hơn 34 tỷ USD của Việt Nam tìm đường thoát hiểm.",
+        "publishedDate": "2026-11-04T00:30:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nhipcaudautu.vn/kinh-doanh/gong-kim-chau-a-cua-nganh-nhua-3366012/",
+          "publishedDate": "2026-11-04T00:30:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nhipcaudautu.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nhipcaudautu.vn/tai-chinh/tien-gui-vs-tien-dau-tu-3366100/",
+        "publisherUrl": "https://nhipcaudautu.vn/tai-chinh/tien-gui-vs-tien-dau-tu-3366100/",
+        "contentHash": "502556bc250fb795b33bdca2d0d32bcb16bef38ed0567072c8b3df7be6cf249c",
+        "description": "Dư địa hạ lãi suất trong nước bị bó hẹp buộc các công ty bất động sản phải tìm cách tối ưu dòng tiền.",
+        "publishedDate": "2026-11-17T00:30:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nhipcaudautu.vn/tai-chinh/tien-gui-vs-tien-dau-tu-3366100/",
+          "publishedDate": "2026-11-17T00:30:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nhipcaudautu.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://nhipcaudautu.vn/kinh-doanh/shopee-doi-dau-rau-tuoi-3366099/",
+        "publisherUrl": "https://nhipcaudautu.vn/kinh-doanh/shopee-doi-dau-rau-tuoi-3366099/",
+        "contentHash": "de7145f586120c6dd8442d32195089aae19968685ab26b70ed2e3a5f010430a3",
+        "description": "Các chuỗi bán lẻ kháng cự đà bùng nổ của e-commerce nhờ biên lợi nhuận lập đỉnh.",
+        "publishedDate": "2026-11-16T00:30:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://nhipcaudautu.vn/kinh-doanh/shopee-doi-dau-rau-tuoi-3366099/",
+          "publishedDate": "2026-11-16T00:30:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "nhipcaudautu.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock"
+}

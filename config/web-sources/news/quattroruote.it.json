@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "quattroruote.it",
+  "siteId": "quattroruote.it",
+  "registrableDomain": "quattroruote.it",
+  "homepage": "https://www.quattroruote.it/",
+  "allowedHosts": [
+    "www.quattroruote.it",
+    "quattroruote.it"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.quattroruote.it/",
+    "categories": [
+      "https://www.quattroruote.it/",
+      "https://www.quattroruote.it/abbonamenti.html",
+      "https://www.quattroruote.it/area-personale/profilo-utente",
+      "https://www.quattroruote.it/area-personale/servizi/auto/",
+      "https://www.quattroruote.it/area-personale/servizi/quotazioni/"
+    ]
+  },
+  "title": {
+    "value": "\"Preoccupazioni per la sicurezza\": Germania, stop alle auto cinesi nelle basi militari",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-text",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:21.728Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:27:07.896Z",
+    "independentHoldouts": [
+      "https://www.quattroruote.it/news/aziende/2026/10/27/ayvens_svela_il_nuovo_piano_strategico-_ecco_tutti_gli_obiettivi.html",
+      "https://www.quattroruote.it/news/primo_contatto/2026/11/03/polestar_5_long_range-_prime_impressioni_di_guida.html",
+      "https://www.quattroruote.it/news/primo_contatto/2026/10/22/bmw_x5-_come_e_fatta_e_come_va_la_quinta_generazione_della_sav.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.quattroruote.it/news/industria-finanza/2026/11/13/germania-_le_forze_armate_vietano_auto_e_droni_cinesi_nelle_caserme.html",
+      "https://www.quattroruote.it/news/aziende/2026/10/27/ayvens_svela_il_nuovo_piano_strategico-_ecco_tutti_gli_obiettivi.html",
+      "https://www.quattroruote.it/news/primo_contatto/2026/11/03/polestar_5_long_range-_prime_impressioni_di_guida.html",
+      "https://www.quattroruote.it/news/primo_contatto/2026/10/22/bmw_x5-_come_e_fatta_e_come_va_la_quinta_generazione_della_sav.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

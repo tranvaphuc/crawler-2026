@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "siteName": "saigonbiz.com",
+  "siteId": "saigonbiz.com",
+  "registrableDomain": "saigonbiz.com",
+  "homepage": "https://saigonbiz.com/vn/",
+  "allowedHosts": [
+    "saigonbiz.com",
+    "www.saigonbiz.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khám phá “vũ trụ tiếp thị số” cùng Heading for The Future: Digital Marketing Mùa 4",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:09.086Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://saigonbiz.com/vn/kham-pha-vu-tru-tiep-thi-so-cung-heading-for-the-future-digital-marketing-mua-4/",
+      "https://saigonbiz.com/vn/bosch-rexroth-mang-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-den-vimf-bac-ninh-2026/",
+      "https://saigonbiz.com/vn/zalo-duoc-vinh-danh-doanh-nghiep-ai-tieu-bieu-giai-thuong-tri-tue-nhan-tao-viet-nam-2026/",
+      "https://saigonbiz.com/vn/ghi-lai-ve-dep-an-huy-qua-nhung-buc-anh-mua-nhiep-anh-an-huy-2026-khep-lai/",
+      "https://saigonbiz.com/vn/tap-doan-muyuan-foods-doanh-nghiep-hang-dau-the-gioi-trong-linh-vuc-chan-nuoi-lon-gioi-thieu-cac-giai-phap-chan-nuoi-lon-thong-minh-va-phat-trien-xanh-tai-eurotier-2026/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://saigonbiz.com/vn/",
+    "categories": [
+      "https://saigonbiz.com/vn/kinh-te/",
+      "https://saigonbiz.com/vn/doi-song/",
+      "https://saigonbiz.com/vn/du-lich/",
+      "https://saigonbiz.com/vn/cong-nghe/",
+      "https://saigonbiz.com/vn/pr-newswire/",
+      "https://saigonbiz.com/vn/globe-newswire/",
+      "https://saigonbiz.com/vn/kinh-te",
+      "https://saigonbiz.com/vn/doi-song",
+      "https://saigonbiz.com/vn/du-lich",
+      "https://saigonbiz.com/vn/cong-nghe",
+      "https://saigonbiz.com/vn/pr-newswire",
+      "https://saigonbiz.com/vn/globe-newswire",
+      "https://saigonbiz.com/vn/ve-chung-toi-2",
+      "https://saigonbiz.com/vn/quy-dinh"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "saigonbiz.com",
+    "checkedAt": "2026-11-09T03:57:23.957Z",
+    "url": "https://saigonbiz.com/vn/kham-pha-vu-tru-tiep-thi-so-cung-heading-for-the-future-digital-marketing-mua-4/",
+    "finalUrl": "https://saigonbiz.com/vn/kham-pha-vu-tru-tiep-thi-so-cung-heading-for-the-future-digital-marketing-mua-4/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3731,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "saigonbiz.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 19,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 8,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 114,
+        "passed": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://saigonbiz.com/vn/bao-cao-cua-cision-he-lo-nhung-xu-huong-tieu-dung-an-giua-tim-kiem-mang-xa-hoi-va-ai/",
+      "https://saigonbiz.com/vn/huawei-duoc-gartner-cong-nhan-la-leader-trong-bao-cao-gartner-magic-quadrant-2026-ve-dich-vu-tieu-thu-nen-tang-ha-tang/",
+      "https://saigonbiz.com/vn/harley-davidson-chon-horizon-global-lam-doi-tac-tang-truong/",
+      "https://saigonbiz.com/vn/lua-xe-duyen-dua-gia-tri-lua-to-sen-phung-xa-den-gan-hon-voi-the-he-tre/",
+      "https://saigonbiz.com/vn/ford-viet-nam-tung-loat-uu-dai-lon-trong-thang-11/",
+      "https://saigonbiz.com/vn/amazon-dat-muc-tieu-dua-30-thuong-hieu-quoc-gia-viet-nam-ra-the-gioi/",
+      "https://saigonbiz.com/vn/kham-pha-vu-tru-tiep-thi-so-cung-heading-for-the-future-digital-marketing-mua-4/",
+      "https://saigonbiz.com/vn/bosch-rexroth-mang-giai-phap-tu-dong-hoa-va-ket-noi-nha-may-den-vimf-bac-ninh-2026/",
+      "https://saigonbiz.com/vn/bosch-rexroth-bat-tay-doi-tac-thuc-day-cong-nghe-tu-dong-hoa-va-thuy-luc-tai-viet-nam/",
+      "https://saigonbiz.com/vn/mm-mega-market-vie%cc%a3t-nam-day-manh-kenh-mua-sam-truc-tuyen/",
+      "https://saigonbiz.com/vn/the-coral-villas-dau-an-thuong-luu-tu-cu-bat-tay-giua-eurostyle-va-roberto-cavalli-home-interiors/",
+      "https://saigonbiz.com/vn/vnpt-vinaphone-khanh-thanh-cong-trinh-truong-mam-non-thon-sin-chai-a/",
+      "https://saigonbiz.com/vn/doanh-nghiep-hinh-mau-cu%cc%89a-nam-duoc-vinh-danh-tai-gala-esg-trung-quoc-2026-muyuan-thuc-day-phat-trien-nong-nghiep-chat-luong-cao-thong-qua-esg/",
+      "https://saigonbiz.com/vn/bi-mat-hut-khach-cua-banh-trung-thu-thu-cong-vinpearl-luxury-landmark-81/",
+      "https://saigonbiz.com/vn/trip-com-tung-uu-dai-ve-may-bay-quoc-te-tu-999-000-dong-trong-mega-sale-11-11-lan-dau-co-uu-dai-mung-ngay-van-hoa-viet-nam/",
+      "https://saigonbiz.com/vn/ngoi-nha-co-bo-bien-rieng-sat-trung-tam-dac-quyen-chi-co-tai-vinhomes-green-paradise/",
+      "https://saigonbiz.com/vn/thuong-thuc-tinh-hoa-am-thuc-the-gioi-tai-le-hoi-ruou-vang-am-thuc-hong-kong/",
+      "https://saigonbiz.com/vn/chuyen-la-o-ky-quan-hoang-da-tren-dao-ngoc-mai-moi-cho-chim-quy-do-vet-gay-chan/",
+      "https://saigonbiz.com/vn/mot-diem-den-van-niem-vui-loi-giai-cho-ky-nghi-cuoi-tuan-tai-vinhomes-sai-gon-park/",
+      "https://saigonbiz.com/vn/tam-nhin-mat-nuoc-va-vi-tri-kho-tai-tao-tao-gia-tri-truong-ton-cho-biet-thu-bien-vinhomes-green-paradise/",
+      "https://saigonbiz.com/vn/zalo-duoc-vinh-danh-doanh-nghiep-ai-tieu-bieu-giai-thuong-tri-tue-nhan-tao-viet-nam-2026/",
+      "https://saigonbiz.com/vn/cadence-ra-mat-bo-mo-hinh-ai-chuyen-biet-cho-thiet-ke-chip-va-he-thong/",
+      "https://saigonbiz.com/vn/dieu-gi-khien-tam-quoc-chi-chien-ky-hut-hon-game-thu-du-chua-ra-mat/",
+      "https://saigonbiz.com/vn/accuweather-hien-thi-sai-chu-quyen-bien-dao-viet-nam-khien-nhieu-thuong-hieu-dien-thoai-bi-go-khoi-he-thong-trung-bay-ban-le/",
+      "https://saigonbiz.com/vn/taape-2026-nang-cap-chuong-trinh-khach-mua-quoc-te-tang-cuong-ket-noi-doanh-nghiep-dong-nam-a/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:39.283Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/saigonbiz.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "article.post",
+    "selector": ".entry-content p",
+    "onlyIfMissing": true
+  }
+}

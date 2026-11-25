@@ -1,0 +1,50 @@
+[
+  {
+    "commentId": "2768198463660263",
+    "postId": "2767365023743607",
+    "node": {
+      "__typename": "Comment",
+      "id": "Y29tbWVudDoyNzY3MzY1MDIzNzQzNjA3XzI3NjgxOTg0NjM2NjAyNjM=",
+      "legacy_fbid": "2768198463660263",
+      "created_time": 1793064691,
+      "author": {
+        "__typename": "User",
+        "id": "pfbid02HJJsm1ds6UmmEufUtom6qCT81yreAVFMsg6iJCgr1hkNUBZ3aawVkkSkNiVMVi9Fl",
+        "name": "Jin Trần"
+      }
+    },
+    "provenance": "Extracted from raw permalink HTML 2026-10-27; author UID supplied by user."
+  },
+  {
+    "commentId": "1849519176486910",
+    "postId": "1611010357730405",
+    "node": {
+      "__typename": "Comment",
+      "id": "Y29tbWVudDoxNjExMDEwMzU3NzMwNDA1XzE4NDk1MTkxNzY0ODY5MTA=",
+      "legacy_fbid": "1849519176486910",
+      "created_time": 1793076175,
+      "author": {
+        "__typename": "User",
+        "id": "pfbid02xq4kvauHSwAELQTo2UdRdbfG61gvCYTTqZH2ufHENHchpzkfaq8ujuZzstxNfXnxl",
+        "name": "Nguyen Van Anh"
+      }
+    },
+    "provenance": "Extracted from raw permalink HTML 2026-10-27; author UID supplied by user."
+  },
+  {
+    "commentId": "2969386920126552",
+    "postId": "2969131140152130",
+    "node": {
+      "__typename": "Comment",
+      "id": "Y29tbWVudDoyOTY5MTMxMTQwMTUyMTMwXzI5NjkzODY5MjAxMjY1NTI=",
+      "legacy_fbid": "2969386920126552",
+      "created_time": 1793075384,
+      "author": {
+        "__typename": "User",
+        "id": "pfbid0fXKK362rEXkSN3xYx8WEuZdqaMFjkdHubLTGzujBs8UMTPKAbwwS3HGt67aCKvwSl",
+        "name": "Xuka Hoang"
+      }
+    },
+    "provenance": "Extracted from raw permalink HTML 2026-10-27; author UID supplied by user."
+  }
+]

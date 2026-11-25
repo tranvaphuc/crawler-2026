@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "siteName": "diendantieudung.net",
+  "siteId": "diendantieudung.net",
+  "registrableDomain": "diendantieudung.net",
+  "homepage": "https://diendantieudung.net/",
+  "allowedHosts": [
+    "diendantieudung.net",
+    "www.diendantieudung.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://diendantieudung.net/",
+    "categories": [
+      "https://diendantieudung.net/c/tin-tuc",
+      "https://diendantieudung.net/c/tiep-thi-and-tieu-dung",
+      "https://diendantieudung.net/c/bat-dong-san",
+      "https://diendantieudung.net/c/doanh-nghiep-doanh-nhan",
+      "https://diendantieudung.net/c/xe-cong-nghe",
+      "https://diendantieudung.net/c/van-hoa-giai-tri",
+      "https://diendantieudung.net/video",
+      "https://diendantieudung.net/infographic",
+      "https://diendantieudung.net/emagazine"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Kao Việt Nam kỷ niệm 30 năm hoạt động tại Việt Nam và công bố Chương trình “Tăng cường chăm sóc y tế” (Care within Reach)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "index": 0
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:29.304Z",
+    "frozenAt": "2026-11-16T02:01:24.203Z",
+    "trainingUrl": "https://www.diendantieudung.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a524509.html",
+    "independentHoldouts": [
+      "https://diendantieudung.net/nguoi-dan-ha-long-hao-hung-kham-pha-cua-hang-uniqlo-dau-tien-tai-quang-ninh-a532036.html",
+      "https://diendantieudung.net/uniqlo-tien-vao-ha-long-voi-mat-bang-rong-1000-m2-nang-tong-so-cua-hang-tai-viet-nam-len-34-a531866.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.diendantieudung.net/kao-viet-nam-ky-niem-30-nam-hoat-dong-tai-viet-nam-va-cong-bo-chuong-trinh-tang-cuong-cham-soc-y-te-care-within-reach-a524509.html",
+      "https://diendantieudung.net/nguoi-dan-ha-long-hao-hung-kham-pha-cua-hang-uniqlo-dau-tien-tai-quang-ninh-a532036.html",
+      "https://diendantieudung.net/uniqlo-tien-vao-ha-long-voi-mat-bang-rong-1000-m2-nang-tong-so-cua-hang-tai-viet-nam-len-34-a531866.html",
+      "https://diendantieudung.net/tu-tam-nhin-cua-tadashi-yanai-den-the-gioi-lifewear-cua-uniqlo-a531659.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

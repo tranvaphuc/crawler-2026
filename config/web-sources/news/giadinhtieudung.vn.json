@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "siteName": "giadinhtieudung.vn",
+  "siteId": "giadinhtieudung.vn",
+  "registrableDomain": "giadinhtieudung.vn",
+  "homepage": "https://www.giadinhtieudung.vn/",
+  "allowedHosts": [
+    "www.giadinhtieudung.vn",
+    "giadinhtieudung.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.giadinhtieudung.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "Ngân hàng VIB: Sau cuộc gọi tặng điểm thưởng, khách hàng gánh ngay khoản nợ 60 triệu đồng",
+    "strategy": "selector",
+    "selector": ".entry-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "abbr.published[title]",
+    "attribute": "title",
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:44.003Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:35.055Z",
+    "independentHoldouts": [
+      "https://www.giadinhtieudung.vn/2026/10/uy-vien-bo-chinh-tri-thu-tuong-chinh.html",
+      "https://www.giadinhtieudung.vn/2026/11/noi-bo-nvidia-day-song-nhan-vien-keu.html",
+      "https://www.giadinhtieudung.vn/2026/11/black-friday-sap-toi-cach-so-gia-e.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.giadinhtieudung.vn/2026/11/ngan-hang-vib-sau-cuoc-goi-tang-iem.html",
+      "https://www.giadinhtieudung.vn/2026/10/uy-vien-bo-chinh-tri-thu-tuong-chinh.html",
+      "https://www.giadinhtieudung.vn/2026/11/noi-bo-nvidia-day-song-nhan-vien-keu.html",
+      "https://www.giadinhtieudung.vn/2026/11/black-friday-sap-toi-cach-so-gia-e.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

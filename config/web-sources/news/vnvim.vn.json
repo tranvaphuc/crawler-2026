@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vnvim.vn",
+  "siteId": "vnvim.vn",
+  "registrableDomain": "vnvim.vn",
+  "homepage": "https://vnvim.vn/",
+  "allowedHosts": [
+    "vnvim.vn",
+    "www.vnvim.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vnvim.vn/",
+    "categories": [
+      "https://vnvim.vn/tin-tuc-su-kien/",
+      "https://vnvim.vn/nghien-cuu-dao-tao/",
+      "https://vnvim.vn/bao-chi-doanh-nghiep/",
+      "https://vnvim.vn/du-an-cuoc-song/",
+      "https://vnvim.vn/khoa-hoc-cong-nghe/",
+      "https://vnvim.vn/nghien-cuu-truyen-thong-ngan-hang/",
+      "https://vnvim.vn/hop-tac-quoc-te/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Thanh toán số phát triển bứt phá",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".col-md-6.col-sm-12",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:48.217Z",
+    "frozenAt": "2026-11-16T02:00:46.704Z",
+    "trainingUrl": "https://vnvim.vn/thanh-toan-so-phat-trien-but-pha-n2967.html",
+    "independentHoldouts": [
+      "https://vnvim.vn/trung-tam-phat-thanh-truyen-hinh-quan-doi-trao-qua-tet-cho-quan-nhan-kho-khan-su-doan-5-n256.html",
+      "https://vnvim.vn/tang-tinh-linh-hoat-chu-dong-trong-dieu-hanh-chinh-sach-tien-te-ty-gia-n512.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vnvim.vn/thanh-toan-so-phat-trien-but-pha-n2967.html",
+      "https://vnvim.vn/trung-tam-phat-thanh-truyen-hinh-quan-doi-trao-qua-tet-cho-quan-nhan-kho-khan-su-doan-5-n256.html",
+      "https://vnvim.vn/tang-tinh-linh-hoat-chu-dong-trong-dieu-hanh-chinh-sach-tien-te-ty-gia-n512.html",
+      "https://vnvim.vn/thu-tuong-pham-minh-chinh-day-manh-chuyen-doi-so-de-ho-tro-giam-sat-ngan-hang-phong-chong-rua-tien-n768.html",
+      "https://vnvim.vn/28-website-gia-mao-ngan-hang-de-lua-dao-ban-can-biet-n1024.html",
+      "https://vnvim.vn/xac-thuc-van-ban-hop-nhat-nghi-dinh-quy-dinh-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-n1280.html",
+      "https://vnvim.vn/co-opbank-trien-khai-cfeam-dich-vu-dinh-danh-tai-khoan-chinh-xac-thuan-tien-n1536.html",
+      "https://vnvim.vn/xay-dung-cac-nghi-dinh-phan-cap-phan-quyen-gan-voi-mo-hinh-chinh-quyen-dia-phuong-2-cap-trong-linh-vuc-tai-chinh-ngan-hang-n1792.html",
+      "https://vnvim.vn/to-chuc-le-mo-ky-cong-uoc-lien-hop-quoc-ve-chong-toi-pham-mang-tai-ha-noi-vao-ngay-25-26-10-n2048.html",
+      "https://vnvim.vn/ai-trong-bao-chi-sang-tao-va-gioi-han-khong-the-vuot-qua-n2304.html",
+      "https://vnvim.vn/bao-ve-nen-tang-tu-tuong-cua-dang-linh-hoat-nhung-khong-buong-long-nguyen-tac-n2560.html",
+      "https://vnvim.vn/hoat-dong-hang-hai-duong-thuy-noi-dia-manh-ghep-de-tro-thanh-quoc-gia-bien-manh-n3007.html",
+      "https://vnvim.vn/truyen-thong-chinh-sach-gop-phan-bao-ve-nen-tang-tu-tuong-cua-dang-trong-nganh-ngan-hang-n3005.html",
+      "https://vnvim.vn/nuoc-rut-cuoi-nam-2026-khai-thac-toi-da-du-dia-don-luc-dua-tang-truong-gdp-vuot-moc-10-n3004.html",
+      "https://vnvim.vn/tang-truong-hai-con-so-nam-2027-dong-luc-va-du-dia-n2996.html",
+      "https://vnvim.vn/danh-thuc-nguon-luc-ban-dia-bang-cong-nghe-don-bay-dua-kinh-te-vung-cao-but-pha-trong-ky-nguyen-moi-n2992.html",
+      "https://vnvim.vn/chinh-thuc-giam-30-thue-thu-nhap-doi-voi-ca-nhan-kinh-doanh-doanh-thu-duoi-10-ty-dong-n2988.html",
+      "https://vnvim.vn/tin-dung-dong-hanh-thuc-day-tang-truong-n3012.html",
+      "https://vnvim.vn/canh-bao-lua-dao-qua-loa-thanh-toan-ho-kinh-doanh-tieu-thuong-can-dac-biet-canh-giac-n3011.html",
+      "https://vnvim.vn/viet-nam-xep-thu-37-the-gioi-ve-nang-luc-canh-tranh-so-va-tri-tue-nhan-tao-n3010.html",
+      "https://vnvim.vn/doanh-nghiep-can-gi-de-thuc-su-huong-loi-tu-cai-cach-va-chinh-sach-ho-tro-n3009.html",
+      "https://vnvim.vn/phat-trien-cong-nghiep-van-hoa-phai-bat-dau-tu-nhung-y-tuong-tiem-nang-n3008.html",
+      "https://vnvim.vn/tao-nen-tang-de-cong-nghiep-van-hoa-vua-tao-gia-tri-kinh-te-vua-gin-giu-ban-sac-n3006.html",
+      "https://vnvim.vn/gioi-han-phuong-thuc-xet-tuyen-dai-hoc-co-hoi-lua-chon-truong-se-bi-han-che-n2959.html",
+      "https://vnvim.vn/tre-mam-non-5-6-tuoi-thuoc-dien-pho-cap-duoc-mien-giam-hoc-phi-va-ho-tro-chi-phi-hoc-tap-n2943.html",
+      "https://vnvim.vn/bo-giao-duc-va-dao-tao-chot-chuong-trinh-khai-giang-nam-hoc-2026-2027-tren-toan-quoc-n2933.html",
+      "https://vnvim.vn/loat-chinh-sach-giao-duc-moi-co-hieu-luc-tu-thang-9-nha-giao-nghi-huu-co-the-tiep-tuc-dung-lop-n2925.html",
+      "https://vnvim.vn/lam-ro-mo-hinh-truong-chinh-phan-hieu-diem-truong-sau-sap-xep-n2922.html",
+      "https://vnvim.vn/minh-bach-quan-tri-chia-khoa-mo-cua-dong-von-cho-doanh-nghiep-nho-va-vua-n2997.html",
+      "https://vnvim.vn/chinh-sach-ho-tro-ngay-cang-nhieu-vi-sao-doanh-nghiep-nho-va-vua-van-kho-tiep-can-n2985.html",
+      "https://vnvim.vn/chinh-sach-ho-tro-ngay-cang-nhieu-vi-sao-doanh-nghiep-nho-va-vua-van-kho-tiep-can-n2981.html",
+      "https://vnvim.vn/dong-von-tiep-tuc-huong-manh-vao-doanh-nghiep-nho-va-vua-n2976.html",
+      "https://vnvim.vn/tat-song-2g-tu-ngay-15-9-khep-lai-mot-chuong-lich-su-mo-ra-ky-nguyen-kien-tao-xa-hoi-so-n2948.html",
+      "https://vnvim.vn/cong-ty-xi-mang-long-son-chuc-mung-quoc-khanh-ngay-2-9--n2918.html",
+      "https://vnvim.vn/danh-gia-su-phu-hop-voi-thiet-bi-an-toan-cho-tre-em-tren-oto-n2799.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

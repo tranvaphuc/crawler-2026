@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kampucheathmey.com",
+  "siteId": "kampucheathmey.com",
+  "registrableDomain": "kampucheathmey.com",
+  "homepage": "https://www.kampucheathmey.com/",
+  "allowedHosts": [
+    "www.kampucheathmey.com",
+    "kampucheathmey.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.kampucheathmey.com/",
+    "categories": [
+      "https://www.kampucheathmey.com/category/local-news",
+      "https://www.kampucheathmey.com/category/security",
+      "https://www.kampucheathmey.com/category/traffic",
+      "https://www.kampucheathmey.com/category/global-news",
+      "https://www.kampucheathmey.com/category/commentary",
+      "https://www.kampucheathmey.com/category/politics"
+    ]
+  },
+  "title": {
+    "value": "នាយករដ្ឋមន្ត្រី​វៀតណាម៖ Angkormilk ជា​ភស្តុតាង​នៃ​ភាពជោគជ័យ​របស់​អាជីវកម្ម​វៀតណាម​នៅ​កម្ពុជា",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#mvp-content-main",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:50.085Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:44.248Z",
+    "independentHoldouts": [
+      "https://www.kampucheathmey.com/local-news/1214690",
+      "https://www.kampucheathmey.com/local-news/1214674",
+      "https://www.kampucheathmey.com/security/1214575"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.kampucheathmey.com/local-news/1197619",
+      "https://www.kampucheathmey.com/local-news/1214690",
+      "https://www.kampucheathmey.com/local-news/1214674",
+      "https://www.kampucheathmey.com/security/1214575"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

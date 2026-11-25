@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vda.org.vn",
+  "siteId": "vda.org.vn",
+  "registrableDomain": "vda.org.vn",
+  "homepage": "https://vda.org.vn/",
+  "allowedHosts": [
+    "vda.org.vn",
+    "www.vda.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vda.org.vn/thu-tuc-gia-nhap-hiep-hoi/",
+    "categories": []
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Đẩy mạnh hợp tác thương mại nông nghiệp với Mỹ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:18:33.451Z",
+    "frozenAt": "2026-11-16T04:18:22.395Z",
+    "trainingUrl": "https://vda.org.vn/day-manh-hop-tac-thuong-mai-nong-nghiep-voi-my/",
+    "independentHoldouts": [
+      "https://vda.org.vn/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-4-luat-thuoc-linh-vuc-thuong-mai-voi-da-so-dai-bieu-tan-thanh/",
+      "https://vda.org.vn/50-nam-vinamilk-suc-ben-cua-mot-thuong-hieu-khong-ngung-doi-moi"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vda.org.vn/day-manh-hop-tac-thuong-mai-nong-nghiep-voi-my/",
+      "https://vda.org.vn/sua-dau-nanh-hoc-duong-den-voi-hoc-sinh-dong-thap/",
+      "https://vda.org.vn/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-4-luat-thuoc-linh-vuc-thuong-mai-voi-da-so-dai-bieu-tan-thanh/",
+      "https://vda.org.vn/50-nam-vinamilk-suc-ben-cua-mot-thuong-hieu-khong-ngung-doi-moi",
+      "https://vda.org.vn/gan-ba-thap-ky-dem-chuong-di-danh-xu-nguoi-cua-vinamilk",
+      "https://vda.org.vn/vinamilk-ket-noi-nguoi-tieu-dung-voi-hanh-trinh-tai-sinh-bao-bi",
+      "https://vda.org.vn/thuong-hieu-viet-chat-luong-va-niem-tin-thuoc-do-ra-bien-lon",
+      "https://vda.org.vn/danh-sach-thuong-vu-ban-chap-hanh-hiep-hoi-sua-viet-nam-khoa-iii-2022-2027/",
+      "https://vda.org.vn/danh-sach-ban-kiem-tra-hiep-hoi-sua-viet-nam-khoa-iii-nhiem-ky-2022-2027/",
+      "https://vda.org.vn/danh-sach-ban-chap-hanh-hiep-hoi-sua-viet-nam-khoa-iii-nhiem-ky-2022-2027/",
+      "https://vda.org.vn/hoi-nghi-hoi-dong-cong-dong-kinh-te-asean-lan-thu-28/",
+      "https://vda.org.vn/phu-huynh-thoi-nay-chu-dong-tim-kiem-kien-thuc-cham-soc-dinh-duong-cho-con/",
+      "https://vda.org.vn/thu-tuong-le-minh-hung-de-xuat-xay-dung-danh-muc-uu-tien-ha-tang-chien-luoc-asean-den-nam-2040/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

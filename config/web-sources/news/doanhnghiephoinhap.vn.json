@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiephoinhap.vn",
+  "siteId": "doanhnghiephoinhap.vn",
+  "registrableDomain": "doanhnghiephoinhap.vn",
+  "homepage": "https://doanhnghiephoinhap.vn/",
+  "allowedHosts": [
+    "doanhnghiephoinhap.vn",
+    "www.doanhnghiephoinhap.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "VCCI đề xuất loạt giải pháp gỡ áp lực chi phí cho doanh nghiệp kinh doanh trên sàn số",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:35.001Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiephoinhap.vn/vcci-de-xuat-loat-giai-phap-go-ap-luc-chi-phi-cho-doanh-nghiep-kinh-doanh-tren-san-so-153754.html",
+      "https://doanhnghiephoinhap.vn/dai-bieu-nguyen-van-than-de-xuat-ho-tro-truc-tiep-tien-an-cho-nguoi-thu-huong-153728.html",
+      "https://doanhnghiephoinhap.vn/hon-500-ty-usd-tai-san-cong-va-nhung-canh-cua-dong-kin-153745.html",
+      "https://doanhnghiephoinhap.vn/doanh-nghiep-nho-va-vua-can-lam-gi-de-chuyen-doi-so-hieu-qua-va-phong-ngua-rui-ro-phap-ly-153746.html",
+      "https://doanhnghiephoinhap.vn/ha-noi-hang-nghin-nha-o-sinh-vien-chua-co-nguoi-thue-nha-o-xa-hoi-gan-kin-cho-153756.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiephoinhap.vn/",
+    "categories": [
+      "https://doanhnghiephoinhap.vn/hoat-dong-hoi",
+      "https://doanhnghiephoinhap.vn/thoi-cuoc",
+      "https://doanhnghiephoinhap.vn/thoi-cuoc/chinh-tri",
+      "https://doanhnghiephoinhap.vn/thoi-cuoc/kinh-te-vi-mo",
+      "https://doanhnghiephoinhap.vn/thoi-cuoc/quoc-te",
+      "https://doanhnghiephoinhap.vn/thoi-cuoc/lang-kinh",
+      "https://doanhnghiephoinhap.vn/kinh-doanh",
+      "https://doanhnghiephoinhap.vn/kinh-doanh/dau-tu-ca-nhan",
+      "https://doanhnghiephoinhap.vn/kinh-doanh/khoi-nghiep",
+      "https://doanhnghiephoinhap.vn/kinh-doanh/kien-thuc-quan-tri",
+      "https://doanhnghiephoinhap.vn/thuong-hieu",
+      "https://doanhnghiephoinhap.vn/doanh-nghiep-doanh-nhan",
+      "https://doanhnghiephoinhap.vn/doanh-nghiep-doanh-nhan/the-future-of-business",
+      "https://doanhnghiephoinhap.vn/doanh-nghiep-doanh-nhan/guong-mat-doanh-nhan",
+      "https://doanhnghiephoinhap.vn/doanh-nghiep-doanh-nhan/ho-so-doanh-nghiep",
+      "https://doanhnghiephoinhap.vn/bat-dong-san",
+      "https://doanhnghiephoinhap.vn/bat-dong-san/du-an",
+      "https://doanhnghiephoinhap.vn/bat-dong-san/quy-hoach",
+      "https://doanhnghiephoinhap.vn/thi-truong",
+      "https://doanhnghiephoinhap.vn/thi-truong/hang-hoa",
+      "https://doanhnghiephoinhap.vn/thi-truong/trong-nuoc",
+      "https://doanhnghiephoinhap.vn/thi-truong/quoc-te",
+      "https://doanhnghiephoinhap.vn/thi-truong/co-hoi-giao-thuong",
+      "https://doanhnghiephoinhap.vn/thi-truong/gia-ca",
+      "https://doanhnghiephoinhap.vn/tai-chinh",
+      "https://doanhnghiephoinhap.vn/tai-chinh/ngan-hang",
+      "https://doanhnghiephoinhap.vn/tai-chinh/tien-te",
+      "https://doanhnghiephoinhap.vn/tai-chinh/tu-van",
+      "https://doanhnghiephoinhap.vn/tai-chinh/thue",
+      "https://doanhnghiephoinhap.vn/doanh-nhan-toan-cau",
+      "https://doanhnghiephoinhap.vn/khat-vong-viet-nam",
+      "https://doanhnghiephoinhap.vn/goc-nhin-chuyen-gia",
+      "https://doanhnghiephoinhap.vn/kinh-te-so",
+      "https://doanhnghiephoinhap.vn/kinh-te-so/cong-nghe",
+      "https://doanhnghiephoinhap.vn/kinh-te-so/chuyen-doi-so",
+      "https://doanhnghiephoinhap.vn/phap-luat",
+      "https://doanhnghiephoinhap.vn/phap-luat/kinh-doanh-phap-luat",
+      "https://doanhnghiephoinhap.vn/phap-luat/tu-van-phap-luat",
+      "https://doanhnghiephoinhap.vn/phap-luat/chinh-sach-moi",
+      "https://doanhnghiephoinhap.vn/phap-luat/hop-thu-ban-doc",
+      "https://doanhnghiephoinhap.vn/phap-luat/van-ban-luat",
+      "https://doanhnghiephoinhap.vn/loi-song",
+      "https://doanhnghiephoinhap.vn/loi-song/suc-khoe-doanh-nhan",
+      "https://doanhnghiephoinhap.vn/loi-song/hoi-tho-cuoc-song",
+      "https://doanhnghiephoinhap.vn/loi-song/phong-cach",
+      "https://doanhnghiephoinhap.vn/nghien-cuu-du-lieu",
+      "https://doanhnghiephoinhap.vn/nghien-cuu-du-lieu/xa-hoi",
+      "https://doanhnghiephoinhap.vn/nghien-cuu-du-lieu/dia-phuong",
+      "https://doanhnghiephoinhap.vn/nghien-cuu-du-lieu/viec-lam",
+      "https://doanhnghiephoinhap.vn/cai-chinh-thong-tin",
+      "https://doanhnghiephoinhap.vn/video",
+      "https://doanhnghiephoinhap.vn/video/podcast",
+      "https://doanhnghiephoinhap.vn/nong",
+      "https://doanhnghiephoinhap.vn/moi-nhat"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiephoinhap.vn",
+    "checkedAt": "2026-11-09T03:57:00.455Z",
+    "url": "https://doanhnghiephoinhap.vn/vcci-de-xuat-loat-giai-phap-go-ap-luc-chi-phi-cho-doanh-nghiep-kinh-doanh-tren-san-so-153754.html",
+    "finalUrl": "https://doanhnghiephoinhap.vn/vcci-de-xuat-loat-giai-phap-go-ap-luc-chi-phi-cho-doanh-nghiep-kinh-doanh-tren-san-so-153754.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7076,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:07.215Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnghiephoinhap.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnghiephoinhap.vn",
+    "parsedArticles": 57,
+    "distinctHashes": 57,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 54,
+    "categoriesAttempted": 54,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 1207,
+    "checkedArticleUrls": 58,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1176,
+        "attempted": 50,
+        "passed": 51,
+        "distinctContents": 46,
+        "distinctHashes": 51
+      },
+      {
+        "name": "video",
+        "discovered": 29,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 4,
+        "distinctHashes": 4
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".videos-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "doanhnghiephoinhap.vn",
+      "siteId": "doanhnghiephoinhap.vn",
+      "registrableDomain": "doanhnghiephoinhap.vn",
+      "homepage": "https://doanhnghiephoinhap.vn/",
+      "allowedHosts": [
+        "doanhnghiephoinhap.vn",
+        "www.doanhnghiephoinhap.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Những người giữ hồn khí nhạc Việt",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".__MASTERCMS_CONTENT",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:32.964Z",
+        "trainingUrls": [
+          "https://doanhnghiephoinhap.vn/nhung-nguoi-giu-hon-khi-nhac-viet-127687.html",
+          "https://doanhnghiephoinhap.vn/banh-chung-xanh-cau-chuyen-giu-tet-giua-doi-song-hien-dai-127678.html",
+          "https://doanhnghiephoinhap.vn/nam-2026-khi-doi-moi-sang-tao-tro-thanh-ky-luat-quan-tri-cua-doanh-nghiep-viet-127693.html"
+        ],
+        "holdoutUrls": [
+          "https://doanhnghiephoinhap.vn/he-lo-danh-tinh-tap-doan-nhat-mua-5-co-phan-cua-cong-ty-so-huu-mo-vonfram-lon-nhat-viet-nam-153841.html",
+          "https://doanhnghiephoinhap.vn/co-phieu-nvidia-giam-427-giua-thong-tin-dieu-tra-lien-quan-ceo-jensen-huang-153856.html"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "siteName": "taichinhdoanhnghiep.net.vn",
+  "siteId": "taichinhdoanhnghiep.net.vn",
+  "registrableDomain": "taichinhdoanhnghiep.net.vn",
+  "homepage": "https://taichinhdoanhnghiep.net.vn/",
+  "allowedHosts": [
+    "taichinhdoanhnghiep.net.vn",
+    "www.taichinhdoanhnghiep.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "article.article #getTitle"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article.article .bx-time"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.article .chuyentintuc"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "MB vươn lên Top 3, lợi nhuận vượt mốc 20.000 tỷ đồng",
+        "strategy": "selector",
+        "selector": "meta[property=\"og:title\"]",
+        "attribute": "content"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": ".webpage-container > .menu-emagazine.emaGa .bx-time"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".webpage-container > article > #content_detail.emanazine",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "publicationArticleScope": ".webpage-container"
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:18.778Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+      "https://taichinhdoanhnghiep.net.vn/thue-thanh-hoa-hoan-thanh-du-toan-thu-ngan-sach-2026-voi-hon-33400-ty-dong-d71145.html",
+      "https://taichinhdoanhnghiep.net.vn/mb-vuon-len-top-3-loi-nhuan-vuot-moc-20000-ty-dong-d69091.html",
+      "https://taichinhdoanhnghiep.net.vn/thi-truong-trai-phieu-huy-dong-hon-427000-ty-dong-sau-10-thang-d71162.html",
+      "https://taichinhdoanhnghiep.net.vn/de-xuat-mien-thue-tndn-4-nam-giam-50-trong-9-nam-voi-du-an-du-lich-chien-luoc-d71164.html",
+      "https://taichinhdoanhnghiep.net.vn/thuong-ton-hien-phap-va-phap-luat--dong-luc-kien-tao-phat-trien-dat-nuoc-d71175.html",
+      "https://taichinhdoanhnghiep.net.vn/thong-qua-de-an-dieu-chinh-dia-gioi-don-vi-hanh-chinh-giua-ha-noi-va-phu-tho-d71169.html",
+      "https://taichinhdoanhnghiep.net.vn/toan-canh-muc-tieu-tang-truong-grdp-cua-34-tinh-thanh-pho-i71170.html",
+      "https://taichinhdoanhnghiep.net.vn/du-kien-hoan-thanh-gan-17-nghin-can-nha-o-cho-thue-trong-nam-2026-d71174.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://taichinhdoanhnghiep.net.vn/",
+    "categories": [
+      "https://taichinhdoanhnghiep.net.vn/tin-tuc/",
+      "https://taichinhdoanhnghiep.net.vn/thue-cuoc-song/",
+      "https://taichinhdoanhnghiep.net.vn/tai-chinh/",
+      "https://taichinhdoanhnghiep.net.vn/bat-dong-san/",
+      "https://taichinhdoanhnghiep.net.vn/chung-khoan/",
+      "https://taichinhdoanhnghiep.net.vn/thi-truong/",
+      "https://taichinhdoanhnghiep.net.vn/phap-luat-tai-chinh/",
+      "https://taichinhdoanhnghiep.net.vn/tai-chinh-phap-luat/",
+      "https://taichinhdoanhnghiep.net.vn/hoi--dap/",
+      "https://taichinhdoanhnghiep.net.vn/tai-chinh-quoc-te/",
+      "https://taichinhdoanhnghiep.net.vn/so-dac-biet-xuan-binh-ngo-2026/",
+      "https://taichinhdoanhnghiep.net.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.324Z",
+      "verifiedSeeds": [
+        "https://taichinhdoanhnghiep.net.vn/",
+        "https://taichinhdoanhnghiep.net.vn/tin-tuc/",
+        "https://taichinhdoanhnghiep.net.vn/thue-cuoc-song/",
+        "https://taichinhdoanhnghiep.net.vn/tai-chinh/",
+        "https://taichinhdoanhnghiep.net.vn/bat-dong-san/",
+        "https://taichinhdoanhnghiep.net.vn/chung-khoan/",
+        "https://taichinhdoanhnghiep.net.vn/thi-truong/",
+        "https://taichinhdoanhnghiep.net.vn/phap-luat-tai-chinh/",
+        "https://taichinhdoanhnghiep.net.vn/tai-chinh-phap-luat/",
+        "https://taichinhdoanhnghiep.net.vn/hoi--dap/",
+        "https://taichinhdoanhnghiep.net.vn/tai-chinh-quoc-te/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "taichinhdoanhnghiep.net.vn",
+    "checkedAt": "2026-11-09T03:57:26.555Z",
+    "url": "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+    "finalUrl": "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5177,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "taichinhdoanhnghiep.net.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 25,
+    "freshArticleChecks": 12,
+    "parserIssues": 5,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 220,
+        "passed": 19,
+        "distinctHashes": 19
+      },
+      {
+        "name": "photo",
+        "discovered": 6,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://taichinhdoanhnghiep.net.vn/ngan-hang-nha-nuoc-mua-25500-dong-usd-thuc-hien-hai-phien-moi-tuan-d71222.html",
+      "https://taichinhdoanhnghiep.net.vn/xang-dau-thanh-binh-su-dung-12-doanh-nghiep-ma-hop-thuc-hoa-46000-ty-dong-d71219.html",
+      "https://taichinhdoanhnghiep.net.vn/vinamilk-dat-doanh-thu-18465-ty-dong-d71208.html",
+      "https://taichinhdoanhnghiep.net.vn/mb-vuon-len-top-3-loi-nhuan-vuot-moc-20000-ty-dong-d69091.html",
+      "https://taichinhdoanhnghiep.net.vn/thi-truong-trai-phieu-huy-dong-hon-427000-ty-dong-sau-10-thang-d71162.html",
+      "https://taichinhdoanhnghiep.net.vn/quoc-hoi-chinh-phu-xem-xet-thao-go-vuong-mac-trong-lam-sach-ma-so-thue-d71214.html",
+      "https://taichinhdoanhnghiep.net.vn/nha-o-xa-hoi-ha-noi-co-can-gia-hon-720-trieu-dong-ai-duoc-mua-d71221.html",
+      "https://taichinhdoanhnghiep.net.vn/chuyen-cac-giai-bao-chi-toan-quoc-chuyen-nganh-thanh-giai-chuyen-de-cua-giai-bao-chi-quoc-gia-d71218.html",
+      "https://taichinhdoanhnghiep.net.vn/viet-nam--nhat-ban-ky-ket-11-van-kien-d71220.html",
+      "https://taichinhdoanhnghiep.net.vn/tap-doan-duong-dong-lo-dau-hieu-tron-thue-mua-ban-xang-dau-khong-hoa-don-d71217.html",
+      "https://taichinhdoanhnghiep.net.vn/dai-bieu-de-nghi-uu-dai-thue-cho-van-hoa-can-trong-diem-do-luat-dinh-d71230.html",
+      "https://taichinhdoanhnghiep.net.vn/vasep-de-xuat-bo-han-ngach-thue-quan-mo-duong-cho-tom-viet-nam-vao-han-quoc-voi-thue-suat-0-d71228.html",
+      "https://taichinhdoanhnghiep.net.vn/canada-gia-han-mien-thue-doi-ung-voi-hang-hoa-my-den-giua-nam-2028-d71216.html",
+      "https://taichinhdoanhnghiep.net.vn/tphcm-tiep-tuc-tinh-gon-bo-may-sap-xep-lai-truong-hoc-va-benh-vien-d71226.html",
+      "https://taichinhdoanhnghiep.net.vn/tuyen-bo-tam-nhin-chung-viet-nam--nhat-ban-doi-tac-dong-hanh-dong-kien-tao-vi-tang-truong-chat-luong-cao-d71225.html",
+      "https://taichinhdoanhnghiep.net.vn/thanh-tra-260-doanh-nghiep-xang-dau-phat-hien-vi-pham-thue-hang-nghin-ty-dong-d71215.html",
+      "https://taichinhdoanhnghiep.net.vn/gia-vang-the-gioi-tang-trong-nuoc-giam-nua-trieu-luong-d71205.html",
+      "https://taichinhdoanhnghiep.net.vn/du-kien-khoang-1-trieu-ty-dong-chi-thuong-xuyen-nam-2027-d71213.html",
+      "https://taichinhdoanhnghiep.net.vn/bo-xay-dung-phai-bao-cao-thu-tuong-ve-tong-the-thi-truong-bat-dong-san-trong-thang-11-d71185.html",
+      "https://taichinhdoanhnghiep.net.vn/tphcm-mua-dat-giay-viet-tay-nguoi-dan-duoc-ho-tro-boi-thuong-the-nao-d71179.html",
+      "https://taichinhdoanhnghiep.net.vn/du-kien-hoan-thanh-gan-17-nghin-can-nha-o-cho-thue-trong-nam-2026-d71174.html",
+      "https://taichinhdoanhnghiep.net.vn/ton-vinh-doanh-nhan-tphcm-tu-suc-ben-den-chu-tin-d70454.html",
+      "https://taichinhdoanhnghiep.net.vn/thanh-cong-cua-doanh-nghiep-chinh-la-thanh-cong-cua-nghe-an-d70450.html",
+      "https://taichinhdoanhnghiep.net.vn/doanh-nghiep-phai-lon-len-bang-uy-tin-va-niem-tin-d70445.html",
+      "https://taichinhdoanhnghiep.net.vn/chu-tich-tap-doan-th-ai-esg-va-kinh-te-tuan-hoan-la-dong-luc-nang-tam-thuong-hieu-viet-d70442.html",
+      "https://taichinhdoanhnghiep.net.vn/doanh-nhan-nguyen-thi-dien-toi-khong-nghi-an-phuoc-se-lon-nhu-ngay-hom-nay-d70283.html",
+      "https://taichinhdoanhnghiep.net.vn/ton-vinh-nhung-doanh-nhan-kien-tao-gia-tri-cho-nen-kinh-te-d70420.html",
+      "https://taichinhdoanhnghiep.net.vn/hang-trieu-ma-so-thue-ton-dong-go-vuong-tu-chinh-sach-den-quan-ly-d71147.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-dien-dan-chuyen-dich-chuoi-cung-ung-toan-cau-va-co-hoi-cho-doanh-nghiep-viet-nam-i69828.html",
+      "https://taichinhdoanhnghiep.net.vn/toan-canh-muc-tieu-tang-truong-grdp-cua-34-tinh-thanh-pho-i71170.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-dien-dan-chuyen-dich-chuoi-cung-ung-toan-cau-va-co-hoi-cho-doanh-nghiep-viet-nam-i.html",
+      "https://taichinhdoanhnghiep.net.vn/f88-bi-phat-150-trieu-dong-do-cong-bo-thong-tin-sai-lech-d71211.html",
+      "https://taichinhdoanhnghiep.net.vn/vn-index-mat-hon-11-diem-co-phieu-chung-khoan-lao-doc-d71201.html",
+      "https://taichinhdoanhnghiep.net.vn/vi-pham-cong-bo-thong-tin-trai-phieu-cong-ty-dau-tu-gia-san-iwealth-bi-phat-d71176.html",
+      "https://taichinhdoanhnghiep.net.vn/quan-ly-dau-tu-phuc-khang-bo-cong-bo-bao-cao-trai-phieu-tu-nam-2022-den-2025-d71158.html",
+      "https://taichinhdoanhnghiep.net.vn/thanh-tra-chi-ra-bat-cap-trong-quan-ly-su-dung-quy-binh-on-xang-dau-d71227.html",
+      "https://taichinhdoanhnghiep.net.vn/vietjet-mo-duong-bay-da-nang--osaka-d71210.html",
+      "https://taichinhdoanhnghiep.net.vn/yeu-cau-giam-gia-cuoc-van-tai-khi-chi-phi-nhien-lieu-ha-nhiet-d71197.html",
+      "https://taichinhdoanhnghiep.net.vn/quang-tri-ky-vong-tu-hoi-nghi-ket-noi-nguon-luc-kien-tao-tuong-lai-d71188.html",
+      "https://taichinhdoanhnghiep.net.vn/xuat-khau-sau-rieng-vuot-345-ty-usd-gan-96-phu-thuoc-thi-truong-trung-quoc-d71181.html",
+      "https://taichinhdoanhnghiep.net.vn/xuat-hien-chieu-lua-dao-moi-duoi-danh-nghia-cap-nhat-ho-khau-dien-tu-d71212.html",
+      "https://taichinhdoanhnghiep.net.vn/soi-phu-bai-bi-phat-ve-thue-gan-546-trieu-dong-d71207.html",
+      "https://taichinhdoanhnghiep.net.vn/hoa-don-tren-5-trieu-dong-thanh-toan-mot-phan-tien-mat-co-duoc-khau-tru-thue-khong-d71203.html",
+      "https://taichinhdoanhnghiep.net.vn/nvidia-dieu-tra-ceo-jensen-huang-co-phieu-cong-nghe-them-suc-ep-d71200.html",
+      "https://taichinhdoanhnghiep.net.vn/trung-quoc-tiep-tuc-hoan-ap-thue-24-voi-hang-hoa-my-them-2-thang-d71199.html",
+      "https://taichinhdoanhnghiep.net.vn/gia-dau-giam-truoc-dien-bien-ha-nhiet-cang-thang-tai-trung-dong-d71194.html",
+      "https://taichinhdoanhnghiep.net.vn/tai-san-cua-ong-elon-musk-giam-hon-92-ty-usd-sau-mot-tuan-d71152.html",
+      "https://taichinhdoanhnghiep.net.vn/tap-chi-tai-chinh-doanh-nghiep-so-thang-10-2026-i115.html",
+      "https://taichinhdoanhnghiep.net.vn/tap-chi-tai-chinh-doanh-nghiep-so-thang-9-2026-i113.html",
+      "https://taichinhdoanhnghiep.net.vn/tap-chi-tai-chinh-doanh-nghiep-so-thang-8-2026-i112.html",
+      "https://taichinhdoanhnghiep.net.vn/danh-gia-kha-nang-gia-nhap-vao-chuoi-san-xuat-toan-cau-cua-cac-doanh-nghiep-nho-va-vua-tai-viet-nam-d70710.html",
+      "https://taichinhdoanhnghiep.net.vn/anh-huong-cua-cong-nghe-theo-khong-gian-den-nang-suat-cua-nganh-cong-nghiep-che-bien-che-tao-viet-nam-d70715.html",
+      "https://taichinhdoanhnghiep.net.vn/cac-yeu-to-anh-huong-toi-xuat-khau-gao-cua-viet-nam-d70723.html",
+      "https://taichinhdoanhnghiep.net.vn/tac-dong-cua-sai-lech-ty-gia-toi-tang-truong-kinh-te-o-viet-nam-d70726.html",
+      "https://taichinhdoanhnghiep.net.vn/tac-dong-cua-video-ngan-den-quyet-dinh-mua-hang-cua-sinh-vien-tren-tiktok-d71112.html",
+      "https://taichinhdoanhnghiep.net.vn/cac-yeu-to-tac-dong-den-y-dinh-tieu-dung-thoi-trang-xanh-cua-khach-hang-tre-tai-thanh-pho-ho-chi-minh-d70736.html",
+      "https://taichinhdoanhnghiep.net.vn/xay-dung-he-thong-kpi-trong-quan-tri-chinh-quyen-dia-phuong-kinh-nghiem-quoc-te-va-de-xuat-khung-kpi-cho-viet-nam-d70733.html",
+      "https://taichinhdoanhnghiep.net.vn/bao-cao-cua-chinh-phu-ve-tinh-hinh-thuc-hien-kinh-te-xa-hoi-d62148.html",
+      "https://taichinhdoanhnghiep.net.vn/toan-van-du-thao-bao-cao-chinh-tri-dai-hoi-dang-lan-thu-14-d62000.html",
+      "https://taichinhdoanhnghiep.net.vn/nghi-quyet-so-71-nq-tw-cua-bo-chinh-tri-ve-dot-pha-phat-trien-giao-duc-va-dao-tao-d60887.html",
+      "https://taichinhdoanhnghiep.net.vn/danh-thue-02-dat-bo-hoang-dai-bieu-de-nghi-ro-tieu-chi-bo-truong-noi-can-phoi-hop-hai-co-quan-d71137.html",
+      "https://taichinhdoanhnghiep.net.vn/thu-tuong-gia-dien-giam-sau-nhieu-nam-ngan-sach-phai-chia-se-voi-nguoi-dan-doanh-nghiep-d71060.html",
+      "https://taichinhdoanhnghiep.net.vn/xoa-no-thue-cho-doanh-nghiep-bo-quen-dong-ma-so-thue-tu-kien-nghi-thuc-tien-den-de-xuat-chinh-sach-d70961.html",
+      "https://taichinhdoanhnghiep.net.vn/de-xuat-mien-toan-bo-thue-lien-quan-den-nong-nghiep-d70771.html",
+      "https://taichinhdoanhnghiep.net.vn/bai-4-thue-phai-du-suc-thay-doi-hanh-vi-su-dung-dat-d70373.html",
+      "https://taichinhdoanhnghiep.net.vn/ong-giang-van-hien-lam-truong-thue-dong-thap-d71171.html",
+      "https://taichinhdoanhnghiep.net.vn/mong-doanh-nghiep-nhat-nhin-viet-nam-khong-chi-la-mot-cong-xuong-san-xuat-tho-thi-truong-tieu-thu-tiem-nang-d71209.html",
+      "https://taichinhdoanhnghiep.net.vn/doanh-nghiep-chan-nuoi-lo-bi-truy-thu-thue-5-nam-vi-thay-doi-ma-hs-d71182.html",
+      "https://taichinhdoanhnghiep.net.vn/chuyen-dich-chuoi-cung-ung-toan-cau-co-hoi-cho-doanh-nghiep-viet-nam-d69913.html",
+      "https://taichinhdoanhnghiep.net.vn/recap-dien-dan-chuyen-dich-chuoi-cung-ung-toan-cau-va-co-hoi-cho-doanh-nghiep-viet-nam-d69876.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-thao-quan-tri-rui-ro-thue-thuong-mai-dien-tu-i68803.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-nghi-thuong-nien-nam-2026-va-hoi-thao-chuyen-de-phat-trien-dai-ly-thue-trong-ky-nguyen-so-i66952.html",
+      "https://taichinhdoanhnghiep.net.vn/du-toan-ngan-sach-nha-nuoc-nam-2027-tong-thu-hon-33-trieu-ty-chi-hon-4-trieu-ty-dong-i70768.html",
+      "https://taichinhdoanhnghiep.net.vn/buc-tranh-tang-truong-va-dong-gop-nsnn-cua-top-tap-doan-tu-nhan-viet-nam-i70452.html",
+      "https://taichinhdoanhnghiep.net.vn/18-nam-vtca-canh-tay-noi-dai-cua-nganh-thue-truoc-buoc-ngoat-ky-nguyen-so-d66827.html",
+      "https://taichinhdoanhnghiep.net.vn/tu-big5-den-moc-2-trieu-ty-dong-tai-san-tham-vong-tang-toc-cua-mb-d66709.html",
+      "https://taichinhdoanhnghiep.net.vn/tinh-hinh-kinh-te--xa-hoi-9-thang-nam-2026-i70195.html",
+      "https://taichinhdoanhnghiep.net.vn/tang-truong-grdp-cua-34-tinh-thanh-pho-trong-9-thang-dau-nam-i70143.html",
+      "https://taichinhdoanhnghiep.net.vn/tinh-hinh-kinh-te--xa-hoi-8-thang-i69460.html",
+      "https://taichinhdoanhnghiep.net.vn/hoan-thue-gtgt-tang-32-se-trien-khai-tu-dong-tu-thang-12-i69162.html",
+      "https://taichinhdoanhnghiep.net.vn/viet-nam-huong-loi-tu-chuyen-dich-chuoi-cung-ung-toan-cau-d69855.html",
+      "https://taichinhdoanhnghiep.net.vn/quan-ly-thue-bang-du-lieu-khi-dong-tien-khong-con-di-rieng-d69202.html",
+      "https://taichinhdoanhnghiep.net.vn/go-vuong-xuat-hoa-don-ban-hang-d68998.html",
+      "https://taichinhdoanhnghiep.net.vn/ho-kinh-doanh-thanh-lap-nam-2024-co-ca-ma-thue-888-va-001-thi-xu-ly-nhu-the-nao-d68997.html",
+      "https://taichinhdoanhnghiep.net.vn/thue-ai-va-duong-chay-binh-ngo-2026-cua-ceo-chatbot-viet-nam-d64654.html",
+      "https://taichinhdoanhnghiep.net.vn/vtca-lan-toa-gia-tri-tiep-suc-doanh-nghiep-tuan-thu-thue-d64569.html",
+      "https://taichinhdoanhnghiep.net.vn/chinh-sach-thue-phi-giam-chi-phi-tang-dong-luc-cho-nong-dan-trong-hanh-trinh-nong-thon-moi-d62602.html",
+      "https://taichinhdoanhnghiep.net.vn/5-nam-xay-dung-nong-thon-moi-6000-xa-dat-chuan-thu-nhap-nong-thon-tang-14-lan-d62469.html",
+      "https://taichinhdoanhnghiep.net.vn/huong-dan-quyet-toan-thue-tncn-tren-etax-mobile-i65415.html",
+      "https://taichinhdoanhnghiep.net.vn/mot-so-hinh-anh-toa-dam-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-thue-khoan-sang-ke-khai-huong-toi-doanh-nghiep-i63029.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-le-dieu-binh-dieu-hanh-2-9-voi-quy-mo-lon-lan-dau-tien-co-dieu-binh-tren-bien-i60976.html",
+      "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-nghi-thi-dua-khen-thuong-va-le-ky-niem-17-nam-thanh-lap-vtca-i59489.html",
+      "https://taichinhdoanhnghiep.net.vn/ba-ngo-thi-van-hanh-lam-chu-tich-yeah1-d71135.html",
+      "https://taichinhdoanhnghiep.net.vn/ba-nguyen-thi-kieu-anh-lam-quyen-tong-giam-doc-sacombank-d70986.html",
+      "https://taichinhdoanhnghiep.net.vn/ba-tran-thi-minh-thuy-lam-tong-giam-doc-mik-group-d70812.html",
+      "https://taichinhdoanhnghiep.net.vn/ngan-hang-ocb-co-tong-giam-doc-moi-d70673.html",
+      "https://taichinhdoanhnghiep.net.vn/biwase-to-chuc-giai-tennis-mo-rong-quyen-gop-cho-nguoi-ngheo-d71190.html",
+      "https://taichinhdoanhnghiep.net.vn/hawee-leaders-forum-2026-dat-nhung-lua-chon-kho-cua-lanh-dao-len-ban-doi-thoai-d71101.html",
+      "https://taichinhdoanhnghiep.net.vn/da-nang-va-foody-hop-tac-thuc-day-phat-trien-kinh-te-du-lich-am-thuc-d71077.html",
+      "https://taichinhdoanhnghiep.net.vn/thuy-dien-buon-kuop-ban-giao-nha-sua-chua-cho-gia-dinh-thuong-binh-tai-dak-lak-d71128.html",
+      "https://taichinhdoanhnghiep.net.vn/herbalife-viet-nam-phoi-hop-voc-vff-nang-cao-kien-thuc-dinh-duong-the-thao-d71015.html",
+      "https://taichinhdoanhnghiep.net.vn/aqua-city-hut-su-quan-tam-cua-hang-ngan-khach-hang-ngay-khi-khoi-dong-giai-doan-kinh-doanh-moi-d70959.html",
+      "https://taichinhdoanhnghiep.net.vn/daiichi-life-viet-nam-ra-mat-thuong-hieu-moi-khai-truong-van-phong-d70933.html",
+      "https://taichinhdoanhnghiep.net.vn/ung-dung-ai-de-nang-cao-nang-suat-va-tao-du-dia-tang-truong-cho-doanh-nghiep-nho-va-vua-d70921.html",
+      "https://taichinhdoanhnghiep.net.vn/the-whispering-pillow-tu-cau-chuyen-cua-mot-du-hoc-sinh-viet-den-khong-gian-lang-nghe-nhung-tam-hon-d70927.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3,
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:16:59.895Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/taichinhdoanhnghiep.net.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "taichinhdoanhnghiep.net.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:08:41.511Z",
+    "proofs": [
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+        "contentHash": "afed22a6615cacf6fbaea0dc0dc91bd1cccd5ddae38e06221fb04f3fa25d1065",
+        "description": "Ba dự án gồm: Cao tốc Bảo Hà - Lai Châu (đoạn Bảo Hà - Tân Phong), cao tốc Quảng Ngãi - Kon Tum, cao tốc Mộc Châu - Sơn La - Điện Biên (địa phận tỉnh Sơn La).",
+        "publishedDate": "2026-11-07T07:15:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/chinh-phu-de-xuat-lam-3-cao-toc-hon-162000-ty-dong-d71165.html",
+          "publishedDate": "2026-11-07T07:15:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/hon-720000-oto-bmw-doi-mat-nguy-co-chap-dien-chay-xe-d71399.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/hon-720000-oto-bmw-doi-mat-nguy-co-chap-dien-chay-xe-d71399.html",
+        "contentHash": "921390479b11de2b982874f27697dc681c61114ce0495bb2cddb03aed9f599aa",
+        "description": "BMW triệu hồi gần 721.000 ôtô tại Mỹ do lỗi bơm nước làm mát, cảnh báo nguy cơ chập điện và cháy xe. Đáng chú ý, một số phương tiện từng được sửa chữa trong đợt triệu hồi năm 2024 nhưng vẫn có nguy cơ tái diễn sự cố.",
+        "publishedDate": "2026-11-17T03:50:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/hon-720000-oto-bmw-doi-mat-nguy-co-chap-dien-chay-xe-d71399.html",
+          "publishedDate": "2026-11-17T03:50:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/huong-dan-doanh-nghiep-nhap-khau-kinh-doanh-linh-kien-dien-tu-thuc-hien-quy-dinh-thue-d71395.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/huong-dan-doanh-nghiep-nhap-khau-kinh-doanh-linh-kien-dien-tu-thuc-hien-quy-dinh-thue-d71395.html",
+        "contentHash": "d2df4ef19ed85f93db3b1add4fdc5f6b0ce00ddc27950b88028ed1e625cb10dd",
+        "description": "Thuế Cần Thơ cho biết, doanh nghiệp nhập khẩu, kinh doanh linh kiện điện tử cần thực hiện đầy đủ nghĩa vụ thuế gồm thuế nhập khẩu, thuế GTGT, TNDN và các loại thuế khác; bảo đảm quy định về hóa đơn điện tử, chứng từ, sổ sách kế toán...",
+        "publishedDate": "2026-11-17T03:17:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/huong-dan-doanh-nghiep-nhap-khau-kinh-doanh-linh-kien-dien-tu-thuc-hien-quy-dinh-thue-d71395.html",
+          "publishedDate": "2026-11-17T03:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "backfillLayoutRepair": {
+    "checkedAt": "2026-11-17T11:32:46.280Z",
+    "kind": "native_original_clock",
+    "proofs": [
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/mot-so-hinh-anh-toa-dam-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-thue-khoan-sang-ke-khai-huong-toi-doanh-nghiep-i63029.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/mot-so-hinh-anh-toa-dam-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-thue-khoan-sang-ke-khai-huong-toi-doanh-nghiep-i63029.html",
+        "contentHash": "4bdc77f95197adcec9515484f23c791e1d053d5cc26ca44e79af43aa2fe05d2d",
+        "description": "Sáng 28/11, tại Hà Nội, Tạp chí Tài chính Doanh nghiệp, Hội Tư vấn Thuế Việt Nam phối hợp với Cục Thuế, Thuế Hà Nội và các đơn vị liên quan tổ chức buổi Tọa đàm “Đồng hành cùng hộ kinh doanh chuyển đổi từ thuế khoán sang kê khai, hướng tới doanh nghiệp”.",
+        "publishedDate": "2025-11-28T15:37:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/mot-so-hinh-anh-toa-dam-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-thue-khoan-sang-ke-khai-huong-toi-doanh-nghiep-i63029.html",
+          "publishedDate": "2025-11-28T15:37:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/huong-dan-quyet-toan-thue-tncn-tren-etax-mobile-i65415.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/huong-dan-quyet-toan-thue-tncn-tren-etax-mobile-i65415.html",
+        "contentHash": "faa653d54c6e9c9c155c7bdcbe5556c51f5e4a27004c19aa6516bbecb68e3aa8",
+        "description": "Cục Thuế Hà Nội cho biết, để thực hiện quyết toán thuế TNCN trên ứng dụng Etax Mobile, người nộp thuế cần phải đăng ký tài khoản, cập nhật thông tin, liên kết ngân hàng, lập tờ khai quyết toán thuế TNCN...",
+        "publishedDate": "2026-03-20T03:45:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/huong-dan-quyet-toan-thue-tncn-tren-etax-mobile-i65415.html",
+          "publishedDate": "2026-03-20T03:45:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-nghi-thuong-nien-nam-2026-va-hoi-thao-chuyen-de-phat-trien-dai-ly-thue-trong-ky-nguyen-so-i66952.html",
+        "publisherUrl": "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-nghi-thuong-nien-nam-2026-va-hoi-thao-chuyen-de-phat-trien-dai-ly-thue-trong-ky-nguyen-so-i66952.html",
+        "contentHash": "947936316e0fa5cbdbae05006c13e2eb97b91a7be30b28b53d7429315731bdc7",
+        "description": "Sáng nay (22/5), tại Nha Trang, Hội Tư vấn Thuế Việt Nam (VTCA) tổ chức Hội nghị thường niên năm 2026 kết hợp Hội thảo chuyên đề “Phát triển Đại lý thuế trong kỷ nguyên số”. Hội nghị có sự tham dự của gần 200 đại biểu.",
+        "publishedDate": "2026-05-23T02:17:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/chum-anh-hoi-nghi-thuong-nien-nam-2026-va-hoi-thao-chuyen-de-phat-trien-dai-ly-thue-trong-ky-nguyen-so-i66952.html",
+          "publishedDate": "2026-05-23T02:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "activationPending": true,
+    "paidAiCalls": 0
+  },
+  "nativePublicationAdapter": "url_bound_tcdn_native_photo",
+  "warning44Repair": {
+    "kind": "native_longform_original_publication_bar",
+    "checkedAt": "2026-11-17T14:08:06.733Z",
+    "proofs": [
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/mb-vuon-len-top-3-loi-nhuan-vuot-moc-20000-ty-dong-d69091.html",
+        "publishedDate": "2026-08-21T08:39:00.000Z",
+        "contentHash": "c69804e39ac6d77931bcd476e3f5c15625a697f510003d51618540bb69fc17d1",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/mb-vuon-len-top-3-loi-nhuan-vuot-moc-20000-ty-dong-d69091.html",
+          "publishedDate": "2026-08-21T08:39:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/18-nam-vtca-canh-tay-noi-dai-cua-nganh-thue-truoc-buoc-ngoat-ky-nguyen-so-d66827.html",
+        "publishedDate": "2026-05-19T00:01:00.000Z",
+        "contentHash": "18621d678c152f571e8d51863c99318dd2dca64f578480fa3061b46e0891d33f",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/18-nam-vtca-canh-tay-noi-dai-cua-nganh-thue-truoc-buoc-ngoat-ky-nguyen-so-d66827.html",
+          "publishedDate": "2026-05-19T00:01:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://taichinhdoanhnghiep.net.vn/tu-big5-den-moc-2-trieu-ty-dong-tai-san-tham-vong-tang-toc-cua-mb-d66709.html",
+        "publishedDate": "2026-05-14T02:35:00.000Z",
+        "contentHash": "f6709c912248c590f0ce90d2b109bb8018ce3f68debdb331ee42f7b85d583e26",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://taichinhdoanhnghiep.net.vn/tu-big5-den-moc-2-trieu-ty-dong-tai-san-tham-vong-tang-toc-cua-mb-d66709.html",
+          "publishedDate": "2026-05-14T02:35:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "taichinhdoanhnghiep.net.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  }
+}

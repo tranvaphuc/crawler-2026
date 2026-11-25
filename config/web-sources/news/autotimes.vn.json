@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autotimes.vn",
+  "siteId": "autotimes.vn",
+  "registrableDomain": "autotimes.vn",
+  "homepage": "https://autotimes.vn/",
+  "allowedHosts": [
+    "autotimes.vn",
+    "www.autotimes.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tại Hội nghị Internet Thế giới ở Ô Trấn, các công ty Trung Quốc giới thiệu những robot đảm nhận nhiều công việc trong cuộc sống",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:51.197Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://autotimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+      "https://autotimes.vn/media-outreach/2026/11/06/499977/unionpay-international-ky-ket-bien-ban-ghi-nho-voi-tenpay-global-thuoc-tencent-de-hop-tac-trong-linh-vuc-chuyen-tien-xuyen-bien-gioi/",
+      "https://autotimes.vn/media-outreach/2026/11/06/499991/cong-nghe-hybrid-thong-minh-i-hev-cua-geely-mo-ra-huong-di-moi-cho-cac-dong-xe-su-dung-dong-co-xang/",
+      "https://autotimes.vn/media-outreach/2026/11/05/499830/dien-dan-dau-tu-va-von-cyberport-cvcf-2026-ket-thuc-thanh-cong-voi-hon-600-thuong-vu-duoc-ky-ket/",
+      "https://autotimes.vn/media-outreach/2026/11/05/499802/dien-dan-chu-tich-dai-hoc-toan-cau-2026-tai-hong-kong-thu-hut-khoang-20-dai-dien-den-tu-top-50-dai-hoc-hang-dau-the-gioi-tham-du/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://autotimes.vn/",
+    "categories": [
+      "https://autotimes.vn/tin-xe/",
+      "https://autotimes.vn/tu-van/",
+      "https://autotimes.vn/danh-gia-xe/",
+      "https://autotimes.vn/doi-song/",
+      "https://autotimes.vn/pr-newswire/",
+      "https://autotimes.vn/media-outreach-newswire/",
+      "https://autotimes.vn/globenewswire/",
+      "https://autotimes.vn/mua-ban/",
+      "https://autotimes.vn/thi-truong/",
+      "https://autotimes.vn/phuong-tien-giao-thong-7/",
+      "https://autotimes.vn/phuong-tien-giao-thong-6/",
+      "https://autotimes.vn/phuong-tien-giao-thong-5/",
+      "https://autotimes.vn/phuong-tien-giao-thong-4/",
+      "https://autotimes.vn/phuong-tien-giao-thong-3/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://autotimes.vn/ford-ranger-va-phan-con-lai/"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "autotimes.vn",
+    "checkedAt": "2026-11-09T04:01:17.539Z",
+    "url": "https://autotimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+    "finalUrl": "https://autotimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7719,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "autotimes.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "http_unconfirmed",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 16,
+    "freshArticleChecks": 8,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 5,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 139,
+        "passed": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://autotimes.vn/media-outreach/2026/11/09/500320/torras-ra-mat-bo-sac-thong-minh-usb-c-flasheye-dot-co-the-nhan-dien-dong-may-iphone-trang-thai-pin-de-dieu-chinh-cong-suat-sac/",
+      "https://autotimes.vn/media-outreach/2026/11/09/500313/nexawork-ai-malaysia-ra-mat-giai-phap-phan-mem-tuy-chinh-cho-doanh-nghiep-vua-va-nho-co-gia-tu-19-900-rm-khoang-4-900-usd/",
+      "https://autotimes.vn/media-outreach/2026/11/09/500285/ddpai-gioi-thieu-dong-camera-hanh-trinh-z100-series-gom-z100-z100-pro-va-phien-ban-cao-cap-nhat-la-z100-master/",
+      "https://autotimes.vn/media-outreach/2026/11/09/500264/dien-dan-doanh-nghiep-ireland-tai-chau-a-thai-binh-duong-nam-2026-se-dien-ra-trong-2-ngay-19-va-20-11-tai-hong-kong/",
+      "https://autotimes.vn/media-outreach/2026/11/07/500047/giao-su-nancy-ip-hieu-truong-hkust-duoc-trao-giai-thuong-quoc-te-unesco-guinea-xich-dao-nam-2026-ve-nghien-cuu-khoa-hoc-su-song/",
+      "https://autotimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+      "https://autotimes.vn/media-outreach/2026/11/06/499977/unionpay-international-ky-ket-bien-ban-ghi-nho-voi-tenpay-global-thuoc-tencent-de-hop-tac-trong-linh-vuc-chuyen-tien-xuyen-bien-gioi/",
+      "https://autotimes.vn/media-outreach/2026/11/06/499991/cong-nghe-hybrid-thong-minh-i-hev-cua-geely-mo-ra-huong-di-moi-cho-cac-dong-xe-su-dung-dong-co-xang/",
+      "https://autotimes.vn/media-outreach/2026/11/05/499830/dien-dan-dau-tu-va-von-cyberport-cvcf-2026-ket-thuc-thanh-cong-voi-hon-600-thuong-vu-duoc-ky-ket/",
+      "https://autotimes.vn/media-outreach/2026/11/05/499802/dien-dan-chu-tich-dai-hoc-toan-cau-2026-tai-hong-kong-thu-hut-khoang-20-dai-dien-den-tu-top-50-dai-hoc-hang-dau-the-gioi-tham-du/",
+      "https://autotimes.vn/media-outreach/2026/11/04/499767/arrow-electronics-gioi-thieu-cac-cong-nghe-thuc-day-su-phat-trien-cua-robot-thong-minh-di-chuyen-va-co-so-ha-tang-ky-thuat-so/",
+      "https://autotimes.vn/media-outreach/2026/11/04/499781/cong-ty-jungheinrich-duc-chinh-thuc-thanh-lap-don-vi-ban-hang-truc-tiep-tai-han-quoc/",
+      "https://autotimes.vn/ai-robot-thong-minh-va-tim-nguon-cung-truc-tiep-dinh-hinh-xu-huong-tai-hoi-cho-qua-tang-trung-quoc-thang-10/",
+      "https://autotimes.vn/bao-cao-cua-cision-he-lo-nhung-xu-huong-tieu-dung-an-giua-tim-kiem-mang-xa-hoi-va-ai/",
+      "https://autotimes.vn/sata-va-sailun-that-chat-quan-he-doi-tac-chien-luoc-nham-thuc-day-tang-truong-toan-cau/",
+      "https://autotimes.vn/ghi-lai-ve-dep-an-huy-qua-nhung-buc-anh-mua-nhiep-anh-an-huy-2026-khep-lai/",
+      "https://autotimes.vn/tap-doan-muyuan-foods-doanh-nghiep-hang-dau-the-gioi-trong-linh-vuc-chan-nuoi-lon-gioi-thieu-cac-giai-phap-chan-nuoi-lon-thong-minh-va-phat-trien-xanh-tai-eurotier-2026/",
+      "https://autotimes.vn/walovi-ra-mat-x-hero-tai-hoi-nghi-thuong-dinh-fortune-southeast-asia-500-lan-thu-nhat-viet-nam-noi-len-la-dong-luc-tang-truong-cua-dong-nam-a/",
+      "https://autotimes.vn/luyuan-va-lyva-lan-dau-ra-mat-o-chau-au-tai-eicma-2026-gioi-thieu-nam-mau-xe-y-tuong-va-chien-luoc-di-chuyen-thong-minh-toan-cau/",
+      "https://autotimes.vn/hilo-wave-tro-thanh-tam-diem-tai-korea-derma-2026-voi-bon-chuong-trinh-dac-biet/",
+      "https://autotimes.vn/lang-changjiang-mot-thap-ky-chuyen-minh/",
+      "https://autotimes.vn/cung-kien-tao-tuong-lai-do-thi-ung-dung-ai-dahua-technology-gioi-thieu-cac-giai-phap-aiot-thuc-tien-tai-scewc-2026/",
+      "https://autotimes.vn/manpowergroup-duoc-vinh-danh-trong-danh-sach-nha-tuyen-dung-hang-dau-chau-a-thai-binh-duong-nam-2027-cua-time/",
+      "https://autotimes.vn/bmw-dang-che-tao-chiec-xe-mui-tran-chay-dien-ma-moi-nguoi-khac-deu-bo-cuoc/",
+      "https://autotimes.vn/chiec-ferrari-sf90-cua-nguoi-co-anh-huong-da-bi-chia-doi-va-anh-ay-da-bo-di-de-dang-bai-ve-no/",
+      "https://autotimes.vn/honda-civic-hybrid-2026-la-mot-chiec-xe-thuc-su-tuyet-voi-voi-mot-con-so-khien-no-chim-dam/",
+      "https://autotimes.vn/subaru-thua-nhan-nhung-chiec-xe-hieu-suat-cua-minh-da-tro-nen-nham-chan-ra-mat-bo-phan-moi-de-khac-phuc-no/",
+      "https://autotimes.vn/doi-song/media-outreach-newswire/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:55.169Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/autotimes.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "httpAdapter": "declared_public_wordpress_post"
+    }
+  ]
+}

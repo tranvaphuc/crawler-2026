@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tinnongmoingay.com",
+  "siteId": "tinnongmoingay.com",
+  "registrableDomain": "tinnongmoingay.com",
+  "homepage": "https://tinnongmoingay.com/",
+  "allowedHosts": [
+    "tinnongmoingay.com",
+    "www.tinnongmoingay.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giao ma túy 100 lần, chồng lĩnh án tử hình, vợ chung thân",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:45.759Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://tinnongmoingay.com/phap-luat/giao-ma-tuy-100-lan-chong-linh-an-tu-hinh-vo-chung-than.html",
+      "https://tinnongmoingay.com/phap-luat/nguoi-danh-chu-nha-hang-han-quoc-tu-vong-ke-thu-pham-khai-khong-tinh-tao-khi-gay-an.html",
+      "https://tinnongmoingay.com/phap-luat/ceo-xoilactv-cakhiatv-bi-dieu-tra-vi-lap-du-an-phat-lau-lua-du-nguoi-choi-ca-cuoc.html",
+      "https://tinnongmoingay.com/phap-luat/cong-chung-bat-dong-san-sap-khong-bi-gioi-han-dia-gioi-hanh-chinh.html",
+      "https://tinnongmoingay.com/phap-luat/nan-nhan-cuoi-cung-trong-vu-tham-sat-dong-nai-vuot-qua-con-nguy-kich.html",
+      "https://tinnongmoingay.com/kinh-doanh/bitcoin-vuot-vang-tin-hieu-thay-doi-trong-chien-luoc-dau-tu-toan-cau.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tinnongmoingay.com/",
+    "categories": [
+      "https://tinnongmoingay.com/kinh-doanh/index.html",
+      "https://tinnongmoingay.com/thoi-su/index.html",
+      "https://tinnongmoingay.com/the-gioi/index.html",
+      "https://tinnongmoingay.com/cong-nghe/index.html",
+      "https://tinnongmoingay.com/the-thao/index.html",
+      "https://tinnongmoingay.com/giai-tri/index.html",
+      "https://tinnongmoingay.com/doi-song/index.html",
+      "https://tinnongmoingay.com/phap-luat/index.html",
+      "https://tinnongmoingay.com/ban-bien-tap.html",
+      "https://tinnongmoingay.com/chinh-sach-quang-cao.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tinnongmoingay.com",
+    "checkedAt": "2026-11-09T03:57:34.180Z",
+    "url": "https://tinnongmoingay.com/phap-luat/giao-ma-tuy-100-lan-chong-linh-an-tu-hinh-vo-chung-than.html",
+    "finalUrl": "https://tinnongmoingay.com/phap-luat/giao-ma-tuy-100-lan-chong-linh-an-tu-hinh-vo-chung-than.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3948,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "tinnongmoingay.com",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 19,
+    "checkedArticleUrls": 19,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 19,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 96,
+        "passed": 19,
+        "distinctHashes": 19
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tinnongmoingay.com/doi-song/nguoi-ve-huu-o-can-tho-tim-lai-niem-vui-song-va-thu-nhap-them-nho-cham-soc-nguoi-gia.html",
+      "https://tinnongmoingay.com/kinh-doanh/bitcoin-vuot-vang-tin-hieu-thay-doi-trong-chien-luoc-dau-tu-toan-cau.html",
+      "https://tinnongmoingay.com/kinh-doanh/gan-95-000-doanh-nghiep-dong-ma-so-thue-trong-8-thang-dau-nam.html",
+      "https://tinnongmoingay.com/kinh-doanh/gia-nang-luong-lap-ky-luc-moi-gay-kho-khan-cho-chinh-sach-cua-tong-thong-trump.html",
+      "https://tinnongmoingay.com/kinh-doanh/gia-vang-mieng-rot-manh-giam-1-trieu-dong-trong-mot-ngay.html",
+      "https://tinnongmoingay.com/thoi-su/ba-me-con-thoat-nan-khi-lua-bung-phat-tai-can-ho-tang-9.html",
+      "https://tinnongmoingay.com/thoi-su/bo-gd-dt-se-hoan-thien-de-an-sap-nhap-dai-hoc-trong-thang-9.html",
+      "https://tinnongmoingay.com/thoi-su/bo-xay-dung-day-nhanh-tien-do-cao-toc-ben-luc-long-thanh-de-thong-xe-trong-thang-9.html",
+      "https://tinnongmoingay.com/thoi-su/du-an-duong-1-000-ty-o-can-tho-cham-tien-do-sau-4-nam-thi-cong.html",
+      "https://tinnongmoingay.com/the-gioi/canh-sat-an-do-danh-nghi-pham-giet-ban-gai-trong-hien-truong.html",
+      "https://tinnongmoingay.com/the-gioi/con-duong-gian-nan-cua-ong-hung-cao-de-tro-thanh-bo-truong-hai-quan-my.html",
+      "https://tinnongmoingay.com/the-gioi/con-gai-ong-kim-jong-un-xuat-hien-tai-le-bien-che-chien-ham-toi-tan-cua-trieu-tien.html",
+      "https://tinnongmoingay.com/the-gioi/cua-khau-trung-quoc-bien-thanh-vung-dat-chet-sau-tran-lu-quet-tan-khoc.html",
+      "https://tinnongmoingay.com/cong-nghe/13-trieu-sim-di-dong-bi-khoa-vi-chua-xac-nhan-chinh-chu.html",
+      "https://tinnongmoingay.com/cong-nghe/cong-ty-ban-dan-trung-quoc-cong-bo-6-thiet-bi-chip-moi-trong-mot-ngay.html",
+      "https://tinnongmoingay.com/cong-nghe/cuoc-thi-rnd-to-startup-2026-san-choi-cho-y-tuong-kinh-doanh-cua-sinh-vien.html",
+      "https://tinnongmoingay.com/cong-nghe/elon-musk-robot-hinh-nguoi-se-tu-san-xuat-chung-trong-10-nam-toi.html",
+      "https://tinnongmoingay.com/the-thao/arteta-doi-dau-alonso-cuoc-chien-chien-thuat-se-dinh-hinh-ngoai-hang-anh.html",
+      "https://tinnongmoingay.com/the-thao/arteta-vs-alonso-tu-ban-than-thuo-nho-den-nhung-ong-ke-o-premier-league.html",
+      "https://tinnongmoingay.com/the-thao/elon-musk-co-vua-se-bi-ai-giai-hoan-toan-nhung-tranh-cai-lai-no-ra.html",
+      "https://tinnongmoingay.com/the-thao/haaland-thua-nhan-sai-lam-khien-man-city-gap-kho-truoc-coventry.html",
+      "https://tinnongmoingay.com/giai-tri/5-series-han-quoc-khong-nen-bo-lo-trong-thang-9.html",
+      "https://tinnongmoingay.com/giai-tri/bach-lan-thanh-nho-nhung-ky-niem-voi-tham-thuy-hang-tren-san-khau-bong-hong.html",
+      "https://tinnongmoingay.com/giai-tri/bao-ngoc-toi-binh-tinh-don-nhan-moi-ket-qua-tai-miss-world.html",
+      "https://tinnongmoingay.com/giai-tri/co-thien-lac-bi-kien-doi-no-hon-19-trieu-usd.html",
+      "https://tinnongmoingay.com/doi-song/53-nam-gio-tay-len-troi-hanh-trinh-khac-ky-cua-nguoi-dan-ong-an-do.html",
+      "https://tinnongmoingay.com/doi-song/ba-mien-viet-nam-tuong-nho-chu-tich-ho-chi-minh-nhan-dip-quoc-khanh-2-9.html",
+      "https://tinnongmoingay.com/doi-song/con-kho-day-som-truoc-khai-giang-bi-quyet-cha-me-khong-nen-bo-qua.html",
+      "https://tinnongmoingay.com/doi-song/hien-tuong-kiet-suc-luc-3h-chieu-cua-dan-van-phong-nguyen-nhan-nao-dang-sau.html",
+      "https://tinnongmoingay.com/phap-luat/12-thanh-thieu-nien-bi-khoi-to-vi-ruot-duoi-hung-han-tren-pho-dem.html",
+      "https://tinnongmoingay.com/phap-luat/9-nam-mat-tich-bi-an-duoc-bat-mi-khi-thi-the-duoc-tim-thay-sau-buc-tuong.html",
+      "https://tinnongmoingay.com/phap-luat/ceo-xoilactv-cakhiatv-bi-dieu-tra-vi-lap-du-an-phat-lau-lua-du-nguoi-choi-ca-cuoc.html",
+      "https://tinnongmoingay.com/phap-luat/co-quan-cong-an-mo-rong-dieu-tra-vu-an-huan-hoa-hong-phu-le-hai-sapa-tv.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:28.145Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tinnongmoingay.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

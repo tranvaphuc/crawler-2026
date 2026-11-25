@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintucvietnam.vn",
+  "siteId": "tintucvietnam.vn",
+  "registrableDomain": "tintucvietnam.vn",
+  "homepage": "https://tintucvietnam.vn/",
+  "allowedHosts": [
+    "tintucvietnam.vn",
+    "www.tintucvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Giá xăng giảm sâu, E10 RON 95 còn 21.150 đồng/lít",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:47.106Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tintucvietnam.vn/gia-xang-giam-sau-e10-ron-95-con-21150-donglit-d291752",
+      "https://tintucvietnam.vn/gia-xang-dau-dong-loat-tang-diesel-vuot-30000-donglit-d291734",
+      "https://tintucvietnam.vn/nguoi-thiet-ke-le-dai-doc-lap-ngay-291945-d291580",
+      "https://tintucvietnam.vn/bac-bo-chuan-bi-don-khong-khi-lanh-co-noi-duoi-13-do-c-d291754",
+      "https://tintucvietnam.vn/quoc-hoi-my-doi-chieu-chinh-sach-doi-ngoai-cua-ong-trump-truoc-suc-ep-moi-d291753"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tintucvietnam.vn/",
+    "categories": [
+      "https://tintucvietnam.vn/nha-dat",
+      "https://tintucvietnam.vn/suc-khoe-new",
+      "https://tintucvietnam.vn/thoi-su",
+      "https://tintucvietnam.vn/the-gioi-new",
+      "https://tintucvietnam.vn/bong-da-moi",
+      "https://tintucvietnam.vn/van-hoa"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tintucvietnam.vn",
+    "checkedAt": "2026-11-09T03:57:34.554Z",
+    "url": "https://tintucvietnam.vn/gia-xang-giam-sau-e10-ron-95-con-21150-donglit-d291752",
+    "finalUrl": "https://tintucvietnam.vn/gia-xang-giam-sau-e10-ron-95-con-21150-donglit-d291752",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2942,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "tintucvietnam.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 87,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tintucvietnam.vn/gia-xang-giam-sau-e10-ron-95-con-21150-donglit-d291752",
+      "https://tintucvietnam.vn/nguoi-thiet-ke-le-dai-doc-lap-ngay-291945-d291580",
+      "https://tintucvietnam.vn/ukraine-mat-dien-dien-rong-truoc-them-cac-cuoc-dam-phan-hoa-binh-tai-abu-dhabi-d291757",
+      "https://tintucvietnam.vn/thi-truong-dau-mo-toan-cau-bat-ngo-chuyen-sang-du-cung-d291756",
+      "https://tintucvietnam.vn/bac-bo-chuan-bi-don-khong-khi-lanh-co-noi-duoi-13-do-c-d291754",
+      "https://tintucvietnam.vn/quoc-hoi-my-doi-chieu-chinh-sach-doi-ngoai-cua-ong-trump-truoc-suc-ep-moi-d291753",
+      "https://tintucvietnam.vn/ba-mai-kieu-lien-cung-vinamilk-ba-nam-lien-gop-mat-trong-hai-bang-xep-hang-danh-gia-cua-fortune-d291750",
+      "https://tintucvietnam.vn/lam-phat-thue-quan-va-chien-tranh-iran-ba-gong-kim-khien-dang-cong-hoa-thua-cuoc-d291751",
+      "https://tintucvietnam.vn/vinamilk-dong-hanh-cung-ngay-hoi-tri-an-nguoi-tieu-dung-2026-d291747",
+      "https://tintucvietnam.vn/lanh-tu-toi-cao-iran-dong-y-dam-phan-voi-my-thi-truong-dau-phan-ung-manh-d291746",
+      "https://tintucvietnam.vn/the-gioi-dich-chuyen-sang-quy-dao-nang-luong-moi-d291283",
+      "https://tintucvietnam.vn/dau-an-moi-trong-quan-he-giua-dang-cong-san-viet-nam-va-mat-tran-giai-phong-dan-toc-sandino-d291529",
+      "https://tintucvietnam.vn/vi-sao-nut-giao-an-phu-tphcm-tiep-tuc-lui-tien-do-den-quy-iii2027-d291460",
+      "https://tintucvietnam.vn/vietjet-mo-rong-cau-noi-viet-nam-nhat-ban-voi-duong-bay-moi-da-nang-osaka-gop-phan-thuc-day-nam-hop-tac-du-lich-2027-2028-d291755",
+      "https://tintucvietnam.vn/gia-xang-dau-dong-loat-giam-manh-sau-dieu-chinh-d291748",
+      "https://tintucvietnam.vn/herbalife-viet-nam-dong-hanh-cung-bao-suc-khoe-va-doi-song-to-chuc-cuoc-thi-toi-khoe-dep-hon-lan-thu-5-de-khuyen-khich-moi-nguoi-tro-thanh-phien-ban-tot-hon-cua-chinh-minh-d291494",
+      "https://tintucvietnam.vn/bi-kich-mang-thai-tuoi-hoc-duong-d291439",
+      "https://tintucvietnam.vn/herbalife-viet-nam-dong-hanh-cung-bao-suc-khoe-va-doi-song-to-chuc-ngay-dinh-duong-cong-dong-viet-nam-lan-6-d291338",
+      "https://tintucvietnam.vn/herbalife-tiep-lua-bong-da-viet-nam-d291565",
+      "https://tintucvietnam.vn/phuong-xuan-dinh-hon-100-van-dong-vien-tranh-tai-tai-giai-pickleball-ky-niem-1-nam-thanh-lap-d291455",
+      "https://tintucvietnam.vn/tap-chi-nguoi-xay-dung-gianh-huy-chuong-bac-giai-pickleball-bao-chi-truyen-hinh-toan-quoc-nam-2026-d291416",
+      "https://tintucvietnam.vn/quy-chuan-quoc-gia-ve-dong-co-va-ac-quy-cho-xe-mo-to-dien-xe-may-dien-moi-nhat-d291256",
+      "https://tintucvietnam.vn/ha-noi-yeu-cau-cac-hang-xe-cong-nghe-xay-dung-lo-trinh-chuyen-doi-sang-xe-nang-luong-xanh-d291199",
+      "https://tintucvietnam.vn/nhung-truong-hop-co-so-dang-kiem-se-bi-tam-dinh-hoat-dong-theo-quy-dinh-moi-d291206",
+      "https://tintucvietnam.vn/tu-ngay-1-7-2027-chinh-thuc-kiem-dinh-khi-thai-xe-may-tai-ha-noi-va-tphcm-d291226",
+      "https://tintucvietnam.vn/dai-nhac-hoi-revolution-2026-ban-hoa-ca-nghe-thuat-tiep-lua-cho-tan-sinh-vien-ajc-d291733",
+      "https://tintucvietnam.vn/nhat-ky-20-2026-hang-tram-tan-thu-hao-hung-tham-gia-buoi-tuyen-chon-thanh-vien-cho-vung-dat-moi-arcadia-d291604",
+      "https://tintucvietnam.vn/ngua-xanh-va-nhung-khat-vong-dau-xuan-d291074",
+      "https://tintucvietnam.vn/diem-danh-cac-doanh-nhan-tuoi-ngo-noi-bat-cua-viet-nam-d291080"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:31.199Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tintucvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

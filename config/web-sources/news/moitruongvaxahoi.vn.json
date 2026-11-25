@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "siteName": "moitruongvaxahoi.vn",
+  "siteId": "moitruongvaxahoi.vn",
+  "registrableDomain": "moitruongvaxahoi.vn",
+  "homepage": "https://moitruongvaxahoi.vn/",
+  "allowedHosts": [
+    "moitruongvaxahoi.vn",
+    "www.moitruongvaxahoi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tạp chí Môi trường và Xã hội phối hợp, hỗ trợ Trao tặng 2 căn nhà “Mái ấm bình yên” cho hộ dân khó khăn tại xã Cái Nhum tỉnh Vĩnh Long",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".divTimes",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:42.567Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-ho-tro-trao-tang-2-can-nha-mai-am-binh-yen-cho-ho-dan-kho-khan-tai-xa-cai-nhum-tinh-vinh-long-252630582.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-ket-noi-yeu-thuong-ho-tro-ba-con-vung-lu-2071493333.html",
+      "https://moitruongvaxahoi.vn/dong-chay-tri-tue-qua-cac-the-he-chu-tich-lien-hiep-hoi-viet-nam-1474732737.html",
+      "https://moitruongvaxahoi.vn/thu-moi-toa-dam-chuyen-de-bao-ve-moi-truong-trong-ky-nguyen-vuon-minh-cua-dat-nuoc-chung-tay-nang-cao-hieu-qua-thu-gom-xu-ly-rac-thai-tren-dia-ban-tinh-bac-ninh-1162992175.html",
+      "https://moitruongvaxahoi.vn/tong-bi-thu-to-lam-duoc-bau-cu-giu-vi-tri-chu-tich-nuoc-nhiem-ky-20262031-1987831858.html",
+      "https://moitruongvaxahoi.vn/xuan-am-ap-den-voi-nhung-phan-doi-kho-khan-o-xa-nam-da-1737205060.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-clb-viet-thai-va-cong-ty-co-phan-tong-hop-dich-vu-hung-yen-trao-5-tan-gao-ung-ho-dong-bao-vung-lu-tai-thai-nguyen-va-bac-ninh-1734531923.html",
+      "https://moitruongvaxahoi.vn/bi-thu-luong-nguyen-minh-triet-se-no-luc-cung-dak-lak-phat-trien-nhanh-va-ben-vung-1315707890.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://moitruongvaxahoi.vn/",
+    "categories": [
+      "https://moitruongvaxahoi.vn/van-de-su-kien.html",
+      "https://moitruongvaxahoi.vn/tai-nguyen-moi-truong.html",
+      "https://moitruongvaxahoi.vn/nghien-cuu-trao-doi.html",
+      "https://moitruongvaxahoi.vn/khoa-hoc-cong-nghe.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "moitruongvaxahoi.vn",
+    "checkedAt": "2026-11-09T03:57:15.181Z",
+    "url": "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-ho-tro-trao-tang-2-can-nha-mai-am-binh-yen-cho-ho-dan-kho-khan-tai-xa-cai-nhum-tinh-vinh-long-252630582.html",
+    "finalUrl": "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-ho-tro-trao-tang-2-can-nha-mai-am-binh-yen-cho-ho-dan-kho-khan-tai-xa-cai-nhum-tinh-vinh-long-252630582.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5143,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "moitruongvaxahoi.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 16,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 8,
+    "parserIssues": 0,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 16,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 53,
+        "passed": 16,
+        "distinctHashes": 16
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://moitruongvaxahoi.vn/dong-chay-tri-tue-qua-cac-the-he-chu-tich-lien-hiep-hoi-viet-nam-1474732737.html",
+      "https://moitruongvaxahoi.vn/thu-moi-toa-dam-chuyen-de-bao-ve-moi-truong-trong-ky-nguyen-vuon-minh-cua-dat-nuoc-chung-tay-nang-cao-hieu-qua-thu-gom-xu-ly-rac-thai-tren-dia-ban-tinh-bac-ninh-1162992175.html",
+      "https://moitruongvaxahoi.vn/tong-bi-thu-to-lam-duoc-bau-cu-giu-vi-tri-chu-tich-nuoc-nhiem-ky-20262031-1987831858.html",
+      "https://moitruongvaxahoi.vn/xuan-am-ap-den-voi-nhung-phan-doi-kho-khan-o-xa-nam-da-1737205060.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-clb-viet-thai-va-cong-ty-co-phan-tong-hop-dich-vu-hung-yen-trao-5-tan-gao-ung-ho-dong-bao-vung-lu-tai-thai-nguyen-va-bac-ninh-1734531923.html",
+      "https://moitruongvaxahoi.vn/bi-thu-luong-nguyen-minh-triet-se-no-luc-cung-dak-lak-phat-trien-nhanh-va-ben-vung-1315707890.html",
+      "https://moitruongvaxahoi.vn/nhieu-y-kien-gop-y-cho-du-thao-luat-bao-chi-sua-doi-751235327.html",
+      "https://moitruongvaxahoi.vn/dak-lak-gap-mat-cac-co-quan-bao-chi-nhan-ky-niem-99-nam-ngay-bao-chi-cach-mang-viet-nam-481389618.html",
+      "https://moitruongvaxahoi.vn/dak-lak-toa-an-nhan-dan-tinh-dak-lak-co-chanh-an-moi-139172621.html",
+      "https://moitruongvaxahoi.vn/chung-tay-trao-tang-2000-cuon-sach-cho-huyen-dao-phu-quy-1673801499.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-phoi-hop-ho-tro-trao-tang-2-can-nha-mai-am-binh-yen-cho-ho-dan-kho-khan-tai-xa-cai-nhum-tinh-vinh-long-252630582.html",
+      "https://moitruongvaxahoi.vn/xay-dung-ke-hoach-hoat-dong-khoa-hoc-o-co-so-giao-duc-dai-hoc-hien-nay-mot-so-van-de-tu-thuc-tien-hoc-vien-bao-chi-va-tuyen-truyen-1500028112.html",
+      "https://moitruongvaxahoi.vn/tap-chi-thanh-nien-64-nam-xay-dung-phat-trien-dong-hanh-cung-thanh-thieu-nien-viet-nam-15101962-15102026-1318472451.html",
+      "https://moitruongvaxahoi.vn/nghia-cu-cao-dep-cua-cong-an-xa-xuan-cam-cung-voi-toa-soan-moi-truong-va-xa-hoi-2051951536.html",
+      "https://moitruongvaxahoi.vn/trung-thu-cho-em-mang-yeu-thuong-den-tre-tho-dlie-ya-957368762.html",
+      "https://moitruongvaxahoi.vn/tac-dong-cua-rac-thai-nhua-den-he-sinh-thai-bien-tai-viet-nam-1420744967.html",
+      "https://moitruongvaxahoi.vn/trao-giai-cuoc-thi-thanh-nien-hanh-dong-huong-toi-loai-bo-benh-dai-va-hoat-dong-buon-ban-giet-mo-cho-meo-982203977.html",
+      "https://moitruongvaxahoi.vn/xay-dung-va-phat-trien-nen-doi-ngoai-ngoai-giao-viet-nam-trong-ky-nguyen-vuon-minh-cua-dan-toc-840223842.html",
+      "https://moitruongvaxahoi.vn/chao-nam-moi-2026-tap-chi-thanh-nien-cung-tuoi-tre-viet-nam-tu-hao-vung-tin-theo-dang-1210519454.html",
+      "https://moitruongvaxahoi.vn/tieng-noi-cua-bao-chi-khoa-hoc-o-dau-1185359906.html",
+      "https://moitruongvaxahoi.vn/cong-ty-tnhh-van-tai-nghi-son-to-chuc-cong-bo-chung-nhan-iso-90012015-1357556325.html",
+      "https://moitruongvaxahoi.vn/vien-cong-nghe-va-suc-khoe-don-nhan-bang-khen-cua-lien-hiep-hoi-viet-nam-1464458791.html",
+      "https://moitruongvaxahoi.vn/trien-lam-quoc-te-dien-tu-thiet-bi-thong-minh-viet-nam-ieae-1366521079.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-ket-noi-yeu-thuong-ho-tro-ba-con-vung-lu-2071493333.html",
+      "https://moitruongvaxahoi.vn/dak-lak-tap-chi-moi-truong-va-xa-hoi-trao-yeu-thuong-tiep-suc-cung-em-toi-truong-2074346849.html",
+      "https://moitruongvaxahoi.vn/hai-tien-ninh-binh-tap-chi-moi-truong-va-xa-hoi-dong-hanh-cung-hoc-sinh-truong-thcs-hai-tien-trong-ngay-khai-giang-nam-hoc-moi-1757110082.html",
+      "https://moitruongvaxahoi.vn/tap-chi-moi-truong-va-xa-hoi-ho-tro-khoi-cong-2-mai-am-binh-yen-ho-tro-ho-dan-kho-khan-ve-nha-o-tai-xa-cai-nhum-vinh-long-2001350593.html",
+      "https://moitruongvaxahoi.vn/scdi-gap-go-cong-dong-2025-434784764.html",
+      "https://moitruongvaxahoi.vn/khai-mac-hoi-nghi-hoi-dong-nuoc-chau-a-lan-thu-23-va-hoi-thao-ky-thuat-awc-2025-379891469.html",
+      "https://moitruongvaxahoi.vn/thuc-tien-bao-ve-moi-truong-trong-giao-thong-o-nuoc-ta-hien-nay-va-giai-phap-86512314.html",
+      "https://moitruongvaxahoi.vn/khoi-day-ngon-lua-ha-huy-tap-trong-ky-nguyen-phat-trien-moi-1766273509.html",
+      "https://moitruongvaxahoi.vn/dien-dan-nang-suat-quoc-gia-nam-2023-day-nhanh-cong-cuoc-phat-trien-cua-viet-nam-voi-dong-luc-nang-suat-417234176.html",
+      "https://moitruongvaxahoi.vn/hoi-thao-khoa-hoc-chieu-sang-toan-quoc-nam-2023-chieu-sang-viet-nam-trong-phat-trien-va-ung-dung-cong-nghe-moi-362276736.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:04.356Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/moitruongvaxahoi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

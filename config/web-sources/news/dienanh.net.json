@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dienanh.net",
+  "siteId": "dienanh.net",
+  "registrableDomain": "dienanh.net",
+  "homepage": "https://www.dienanh.net/",
+  "allowedHosts": [
+    "www.dienanh.net",
+    "dienanh.net"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Đại tiệc trăng máu 8 dịp lễ 30/4: Bi hài chuyện làm phim",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "span.time.f-16.sub-text-white"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:24:33.749Z",
+    "sampleCount": 9,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 6,
+    "sampleUrls": [
+      "https://www.dienanh.net/review-phim-dai-tiec-trang-mau-8-dip-le-30-4-bi-hai-chuyen-lam-phim-63047.html",
+      "https://www.dienanh.net/con-ke-ba-nghe-kieu-minh-tuan-dien-xuat-thang-hoa-co-vai-dien-de-doi-63037.html",
+      "https://www.dienanh.net/review-con-ke-ba-nghe-mot-bo-phim-co-the-khien-ban-khoc-63036.html",
+      "https://www.dienanh.net/thu-trang-dong-canh-bi-xuat-sac-trong-ai-thuong-ai-men-63034.html",
+      "https://www.dienanh.net/review-phim-domino-loi-thoat-cuoi-cung-mang-phong-cach-hollywood-62898.html",
+      "https://www.dienanh.net/review-phim-dai-tiec-trang-mau-8-dip-le-30-4-bi-hai-chuyen-lam-phim-63047.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.dienanh.net/",
+    "categories": [
+      "https://www.dienanh.net/forums",
+      "https://www.dienanh.net/review-phim-2",
+      "https://www.dienanh.net/phim-chieu-rap-13",
+      "https://www.dienanh.net/blog-phim-11",
+      "https://www.dienanh.net/blog-sao-12",
+      "https://www.dienanh.net/cafe-danner-3",
+      "https://www.dienanh.net/gameshow-4",
+      "https://www.dienanh.net/blog-nhac-14",
+      "https://www.dienanh.net/rinh-sao-5",
+      "https://www.dienanh.net/tong-hop-giai-tri-chau-a-15",
+      "https://www.dienanh.net/cuong-phim-han-trung-16",
+      "https://www.dienanh.net/dmtp"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dienanh.net",
+    "checkedAt": "2026-11-09T03:56:59.218Z",
+    "url": "https://www.dienanh.net/review-phim-dai-tiec-trang-mau-8-dip-le-30-4-bi-hai-chuyen-lam-phim-63047.html",
+    "finalUrl": "https://www.dienanh.net/review-phim-dai-tiec-trang-mau-8-dip-le-30-4-bi-hai-chuyen-lam-phim-63047.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4050,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dienanh.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 31,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 13,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 31,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 1,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 113,
+        "passed": 31,
+        "distinctHashes": 31
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.dienanh.net/review-phim-dai-tiec-trang-mau-8-dip-le-30-4-bi-hai-chuyen-lam-phim-63047.html",
+      "https://www.dienanh.net/con-ke-ba-nghe-kieu-minh-tuan-dien-xuat-thang-hoa-co-vai-dien-de-doi-63037.html",
+      "https://www.dienanh.net/review-con-ke-ba-nghe-mot-bo-phim-co-the-khien-ban-khoc-63036.html",
+      "https://www.dienanh.net/thu-trang-dong-canh-bi-xuat-sac-trong-ai-thuong-ai-men-63034.html",
+      "https://www.dienanh.net/forums/dai-tiec-trang-mau-8-miu-le-cong-khai-xin-vai-ngay-tren-facebook-63044.html",
+      "https://www.dienanh.net/forums/holy-night-doi-san-quy-khong-chi-la-phim-ma-la-mot-tran-chien-62960.html",
+      "https://www.dienanh.net/forums/dien-xuat-cua-le-khanh-trong-phim-chi-nga-em-nang-63025.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:58.121Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dienanh.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "dienanh.net",
+      "siteId": "dienanh.net",
+      "registrableDomain": "dienanh.net",
+      "homepage": "https://www.dienanh.net/",
+      "allowedHosts": [
+        "www.dienanh.net",
+        "dienanh.net"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Đại tiệc trăng máu 8 dịp lễ 30/4: Bi hài chuyện làm phim",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "span.time.f-16.sub-text-white"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:25.273Z",
+        "trainingUrls": [
+          "https://www.dienanh.net/forums/dai-tiec-trang-mau-8-miu-le-cong-khai-xin-vai-ngay-tren-facebook-63044.html",
+          "https://www.dienanh.net/forums/holy-night-doi-san-quy-khong-chi-la-phim-ma-la-mot-tran-chien-62960.html",
+          "https://www.dienanh.net/forums/dien-xuat-cua-le-khanh-trong-phim-chi-nga-em-nang-63025.html"
+        ],
+        "holdoutUrls": [
+          "https://www.dienanh.net/thu-trang-dong-canh-bi-xuat-sac-trong-ai-thuong-ai-men-63034.html",
+          "https://www.dienanh.net/tap-4-vi-me-anh-phan-chia-tay-muu-do-cau-sau-lo-ro-63046.html"
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "dienanh.net",
+      "siteId": "dienanh.net",
+      "registrableDomain": "dienanh.net",
+      "homepage": "https://www.dienanh.net/",
+      "allowedHosts": [
+        "www.dienanh.net",
+        "dienanh.net"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Đại tiệc trăng máu 8 dịp lễ 30/4: Bi hài chuyện làm phim",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "span.time.f-16.sub-text-white"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:25.273Z",
+        "trainingUrls": [
+          "https://www.dienanh.net/dmtp/dmtp-2022-11-thang-5-ngay-tro-thanh-kich-ban-duoc-yeu-thich-nhat-58530.html"
+        ],
+        "holdoutUrls": [
+          "https://www.dienanh.net/dmtp/dmtp-2022-cap-doi-khach-moi-cua-11-thang-5-ngay-duoc-yeu-thich-nhat-58507.html",
+          "https://www.dienanh.net/dmtp/vai-phu-duoc-yeu-thich-nhat-dmtp-2022-goi-ten-doan-quoc-dam-thu-quynh-58487.html"
+        ]
+      }
+    }
+  ],
+  "publicationStabilityReview": {
+    "state": "unconfirmed_original_publication",
+    "reviewFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-deep-followup-443-2026-11-10/final/publication-stability-review.json"
+  }
+}

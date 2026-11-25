@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kinhtevn.com.vn",
+  "siteId": "kinhtevn.com.vn",
+  "registrableDomain": "kinhtevn.com.vn",
+  "homepage": "https://kinhtevn.com.vn/",
+  "allowedHosts": [
+    "kinhtevn.com.vn",
+    "www.kinhtevn.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cập nhật giá cà phê Tây Nguyên hôm nay mới nhất",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Cây Linh Sam Hợp Với Người Mệnh Gì, Tuổi Nào Mang Đến Phú Quý?",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "[itemprop=\"articleBody\"]",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:31.626Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kinhtevn.com.vn/gia-ca-phe-tay-nguyen-hom-nay",
+      "https://kinhtevn.com.vn/cay-linh-sam-hop-voi-nguoi-menh-gi.html",
+      "https://kinhtevn.com.vn/cong-ty-bao-hiem-aia-lua-dao.html",
+      "https://kinhtevn.com.vn/menh-kim-hop-voi-da-phong-thuy-nao.html",
+      "https://kinhtevn.com.vn/lich-su-clb-bong-da-tphcm.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/kinhtevn.com.vn"
+  },
+  "discovery": {
+    "homepage": "https://kinhtevn.com.vn/",
+    "categories": [
+      "https://kinhtevn.com.vn/nong-nghiep",
+      "https://kinhtevn.com.vn/nong-nghiep/chan-nuoi",
+      "https://kinhtevn.com.vn/nong-nghiep/trong-trot",
+      "https://kinhtevn.com.vn/nong-nghiep/khoa-hoc-cong-nghe",
+      "https://kinhtevn.com.vn/nong-nghiep/thu-y",
+      "https://kinhtevn.com.vn/ty-gia-ngoai-te-hom-nay",
+      "https://kinhtevn.com.vn/kham-pha",
+      "https://kinhtevn.com.vn/tin-tuc"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://kinhtevn.com.vn/gia-ca-phe",
+      "https://kinhtevn.com.vn/gia-ca-phe-truc-tuyen",
+      "https://kinhtevn.com.vn/gia-ca-phe-tay-nguyen-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-dak-lak-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-lam-dong-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-gia-lai-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-dak-nong-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-kom-tum-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-robusta",
+      "https://kinhtevn.com.vn/gia-ca-phe-arabica",
+      "https://kinhtevn.com.vn/gia-ca-phe-nhan",
+      "https://kinhtevn.com.vn/gia-ca-phe-tuoi-hom-nay",
+      "https://kinhtevn.com.vn/gia-ca-phe-noi-dia",
+      "https://kinhtevn.com.vn/gia-tieu-hom-nay",
+      "https://kinhtevn.com.vn/gia-tieu-truc-tuyen",
+      "https://kinhtevn.com.vn/gia-tieu-hom-nay-dak-lak",
+      "https://kinhtevn.com.vn/gia-vang"
+    ]
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:39.182Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kinhtevn.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kinhtevn.com.vn",
+    "parsedArticles": 30,
+    "distinctHashes": 30,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 25,
+    "categoriesAttempted": 25,
+    "categoriesRemoved": 17,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 150,
+    "checkedArticleUrls": 30,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 150,
+        "attempted": 14,
+        "passed": 14,
+        "distinctContents": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

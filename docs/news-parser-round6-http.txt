@@ -1,0 +1,59 @@
+NEWS / AXIOS — ROUND 6 — 2026-11-09T05:19:03.170Z
+
+Kiểm tra đủ 30 site: 5/26 site đạt kiểm chứng parser theo phạm vi/cấu hình dưới đây; 21 còn vướng. HTTP: 0/4 khôi phục, 4 còn vướng.
+
+PARSER ĐÃ ĐẠT:
+- doisongvanhoa.com: 6/6 mẫu; 2 holdout độc lập. UTC+7 được cấu hình, offset chưa được publisher xác nhận trên bài.
+- goodstock.vn: 7/7 mẫu; 2 holdout độc lập.
+- kenhtinxe.com: 6/6 mẫu; 2 holdout độc lập. UTC+7 được cấu hình, offset chưa được publisher xác nhận trên bài.
+- thuonghieuquocgia.nhandan.vn: 6/6 mẫu; 2 holdout độc lập. Phạm vi News; hồ sơ doanh nghiệp được phân loại riêng.
+- thv.vn: 8/8 mẫu; 4 holdout độc lập. Phạm vi News; hồ sơ doanh nghiệp được phân loại riêng.
+
+PHẠM VI VÀ CHẤT LƯỢNG DỮ LIỆU:
+- Goodstock: permalink và /wp-json trả 404 nhưng REST query ?rest_route=/wp/v2/posts trả public post publish với full content, date_gmt, native ID, author/featured media. API taxonomy được kiểm chứng riêng; không nhận private/protected content. Raw 404 landing và raw 200 API đều được giữ làm evidence. Phạm vi là toàn bộ content mà Goodstock lưu; có bài dẫn nguồn Vietstock chỉ 126 ký tự, không tự coi đó là toàn văn bài Vietstock gốc.
+- THV: sửa lấy full #idContent thay cho đoạn giới thiệu trong schema. Đã kiểm chứng thêm hai bài hiện trên trang chủ có body dài trên 1.000 ký tự, bên cạnh các bài trong category; xem thv-current-fullbody-evidence.json. THV và Thương Hiệu Quốc Gia Nhân Dân được kiểm chứng trên bài Article/NewsArticle. 10 trang danh bạ LocalBusiness/hồ sơ chứng nhận đã được chụp HTTP độc lập và phân loại ngoài luồng News. Xem excluded-non-news-documents.json. Không chế ngày xuất bản cho các bản ghi này.
+- Đời Sống Văn Hóa: UTC+7 dựa theo địa chỉ tòa soạn Hà Nội/TP.HCM. Kênh Tin Xe: UTC+7 là cấu hình collector cho nguồn thị trường Việt Nam. Cả hai giữ timezoneProvenance.offsetNotConfirmedPerArticle và requiresReviewBeforeWrite; đây không phải offset mà publisher đã công bố. Kênh Tin Xe được tách related-posts/tag-list khỏi body, giữ đúng video-only article, không nới link-density.
+- Toàn Cảnh Báo Chí: RSS category trả 13 pubDate có +0700; giờ trên RSS lệch 7h với created clock hiển thị ở các URL trùng. Đã chuẩn bị context để parse theo RSS công bố và giữ cả hai raw evidence, nhưng stage publisher_date_conflict vẫn chưa đạt. Không tự sửa giờ. Xem publisher-date-conflicts.json.
+- Lao Động Đồng Nai: REST query báo wp_die / Error establishing a database connection. Các permalink được thử trên HTTP/HTTPS của Ngôi Sao Việt Nam, Điện Tử Tiêu Dùng, Tầm Nhìn vẫn trả 404.
+- MSN: ID article trong URL master đã thử trả 410 tại public content service; HTML chỉ là app shell. Chưa xác nhận được bài hiện tại đủ nội dung.
+- CoinDesk: RSS chính thức có 25 item nhưng content:encoded rỗng, description chỉ là tóm tắt. Bài mới lấy từ RSS vẫn trả 429; chưa tính feed summary là full article.
+
+PARSER / DỮ LIỆU NGUỒN CÒN VƯỚNG:
+- advertisingvietnam.com: access_blocked
+- asia.nikkei.com: publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview
+- baobariavungtau.com.vn: Video/image bodies are distinguished correctly. Visible time is labelled updated; the declared RSS is 404, so original publication time remains unconfirmed.
+- cryptonews.com: access_blocked
+- danhgiaxe.com: missing_published_date
+- dealstreetasia.com: missing_published_date
+- dientutieudung.vn: not_found
+- giacavattu.com.vn: Only a timestamp labelled updated is exposed; an original publication timestamp is unconfirmed.
+- hungyentv.vn: missing_published_date | missing_body
+- laodongdongnai.vn: Public WordPress REST query and article requests return HTTP 500; REST reports Error establishing a database connection.
+- msn.com: Tested native master article ID returns HTTP 410 from the public content service. HTML is an article app shell; a complete current article has not been verified.
+- ngoisaovietnam.vn: not_found
+- nhansac.vn: Different native post IDs still return the same 390-character body; source content quality prevents distinct-body validation.
+- otopro.com.vn: missing_published_date
+- tamnhin.net: not_found
+- taynguyen24h.com.vn: Dated archive articles parse; prominent current advertisement pages still have no original publication date.
+- thoibaobatdongsan.net: No article candidate in homepage/category
+- tintuctoday.net: missing_published_date
+- toancanhbaochi.net: Category RSS supplies pubDate with +0700, but its clock differs by seven hours from the visible created clock on matching URLs. Both are retained; date policy is not silently corrected.
+- travelguide.org.vn: missing_published_date
+- vietnamfdi.vn: missing_published_date
+
+HTTP CÒN VƯỚNG:
+- baokiemtoan.vn: HTTP 502 persists with standard User-Agent; www alias does not expose the source content.
+- coindesk.com: Official RSS works and exposes 25 links/pubDates, but content:encoded is empty and a fresh article still returns HTTP 429. RSS description is not counted as full content.
+- molistar.com: HTTP 520 persists, including standard User-Agent; response requests Retry-After 60 seconds.
+- tamnhin.kienthuc.net.vn: DNS resolution remains unavailable.
+
+Toàn bộ 544 nguồn: 519 có mẫu bài HTTP/dispatcher parse đạt theo cấu hình; 516 có cả category. 25 còn cần xử lý. Các nguồn ngoài vòng này chủ yếu giữ bằng chứng HTTP một bài từ vòng trước; chưa phải quét hoàn chỉnh toàn site.
+6 cấu hình đang dùng timezone chưa có offset xác nhận ở từng bài: doisongvanhoa.com, dulichgiaitri.com, kenhtinxe.com, ngaymoisaigon.com, vccinews.com, vntravellive.com. Giữ cờ review trước mọi ghi dữ liệu tương lai.
+67 tests pass, có source-hash proof trong validation-tests.json. Tất cả 544 cấu hình enabled:false. Không khởi chạy Puppeteer/browser, không tạo queue, không ghi ES5. Chưa xác minh chu kỳ đủ toàn bộ nguồn trong 15 phút.
+
+TIẾP THEO: ưu tiên các nguồn còn thiếu ngày đăng/offset hoặc có mốc thời gian mâu thuẫn; giữ nguồn lỗi database, 404, duplicate body và paywall ở trạng thái chưa sẵn sàng. Bốn HTTP còn lại cần origin/rate-limit/DNS phục hồi hoặc một nguồn public đủ full content được xác minh. Chưa triển khai queue.
+
+CHẠY LẠI:
+node scripts/test_news_site_article.mjs --site goodstock.vn
+node scripts/test_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round6-http --config-dir outputs/news-parser-rollout-2026-11-09/round6-http/configs --domains DOMAIN
+node scripts/finalize_news_parser_rollout.mjs --round6-http

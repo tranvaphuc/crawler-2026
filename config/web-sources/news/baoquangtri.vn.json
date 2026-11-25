@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baoquangtri.vn",
+  "siteId": "baoquangtri.vn",
+  "registrableDomain": "baoquangtri.vn",
+  "homepage": "https://baoquangtri.vn/",
+  "allowedHosts": [
+    "baoquangtri.vn",
+    "www.baoquangtri.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baoquangtri.vn/",
+    "categories": [
+      "https://baoquangtri.vn/thoi-su/",
+      "https://baoquangtri.vn/thoi-su/quoc-te/",
+      "https://baoquangtri.vn/thoi-su/trong-nuoc/",
+      "https://baoquangtri.vn/thoi-su/trong-tinh/",
+      "https://baoquangtri.vn/chinh-tri/",
+      "https://baoquangtri.vn/chinh-tri/chinh-quyen/",
+      "https://baoquangtri.vn/chinh-tri/doan-the/",
+      "https://baoquangtri.vn/chinh-tri/doi-ngoai/",
+      "https://baoquangtri.vn/chinh-tri/xay-dung-dang/",
+      "https://baoquangtri.vn/kinh-te/"
+    ]
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baoquangtri.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "strategy": "selector",
+    "selector": "h2.title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".list-inline-item:contains(\"/\"):not(:has(script))"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content"
+  },
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:16:53.371Z",
+    "frozenAt": "2026-11-16T04:16:50.812Z",
+    "trainingUrl": "https://baoquangtri.vn/phap-luat/202611/chan-chinh-viec-chap-hanh-phap-luat-tai-mot-so-doanh-nghiep-0ac4a60",
+    "independentHoldouts": [
+      "https://baoquangtri.vn/phap-luat/202610/phat-doanh-nghiep-950-trieu-dong-vi-ban-dat-nen-khi-chua-du-dieu-kien-b3c383c/",
+      "https://baoquangtri.vn/xa-hoi/202609/khong-de-benh-nhan-ngheo-bi-bo-lai-phia-sau-5812a8e"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://baoquangtri.vn/phap-luat/202611/chan-chinh-viec-chap-hanh-phap-luat-tai-mot-so-doanh-nghiep-0ac4a60",
+      "https://baoquangtri.vn/phap-luat/202610/phat-doanh-nghiep-950-trieu-dong-vi-ban-dat-nen-khi-chua-du-dieu-kien-b3c383c/",
+      "https://baoquangtri.vn/xa-hoi/202609/khong-de-benh-nhan-ngheo-bi-bo-lai-phia-sau-5812a8e",
+      "https://baoquangtri.vn/chinh-tri/202611/vun-dap-suc-manh-doan-ket-5d36805/",
+      "https://baoquangtri.vn/thoi-su/202611/doan-dai-bieu-tinh-leningrad-tham-quan-tim-hieu-di-tich-du-an-tai-quang-tri-66636a9/",
+      "https://baoquangtri.vn/thoi-su/202611/cac-dong-chi-lanh-dao-trung-uong-va-cua-tinh-chung-vui-ngay-hoi-dai-doan-ket-tai-thon-an-tuyen-f552e88/",
+      "https://baoquangtri.vn/thoi-su/202611/phat-huy-suc-manh-dai-doan-ket-xay-dung-que-huong-ngay-cang-giau-dep-59120eb/",
+      "https://baoquangtri.vn/thoi-su/202611/dong-chi-pho-chu-tich-ubnd-tinh-kiem-tra-tien-do-thuc-hien-cac-du-an-2890524/",
+      "https://baoquangtri.vn/xa-hoi/202611/lich-chi-tiet-cac-ky-nghi-le-tet-trong-nam-2027-03f66b9/",
+      "https://baoquangtri.vn/chinh-tri/202611/cac-hoat-dong-tiep-xuc-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-cap-cao-phap-ngu-lan-thu-20-8d96d5c/",
+      "https://baoquangtri.vn/suc-khoe/202611/bo-y-te-yeu-cau-chan-chinh-quan-ly-bao-mat-thong-tin-nguoi-nhiem-hiv-44767f3/",
+      "https://baoquangtri.vn/kinh-te/202611/quan-ly-suc-khoe-cay-trong-chu-luc-06f671f/",
+      "https://baoquangtri.vn/chinh-tri/202611/doi-moi-phuc-vu-nhan-dan-c5d690c/",
+      "https://baoquangtri.vn/giao-duc/202611/nang-cao-chat-luong-giao-duc-6136a41/",
+      "https://baoquangtri.vn/xa-hoi/202611/cho-dua-vung-chac-cua-hoi-vien-phu-nu-7b96b21/",
+      "https://baoquangtri.vn/phong-su-ky-su/phong-su-anh/202611/khoang-troi-uom-mam-xanh-25a4ec8/",
+      "https://baoquangtri.vn/phong-su-ky-su/phong-su-anh/202610/nhung-dau-an-dau-tien-cua-chuong-trinh-chinh-phuc-2026-9886669/",
+      "https://baoquangtri.vn/multimedia/202611/dai-hoi-the-thao-toan-quoc-lan-thu-x-nam-2026-8496e65/",
+      "https://baoquangtri.vn/multimedia/truyen-hinh/202611/sinh-ke-ben-vung-tu-lien-ket-trong-cay-duoc-lieu-6ee4cea/",
+      "https://baoquangtri.vn/multimedia/infographic/202611/doi-moi-xay-dung-va-thi-hanh-phap-luat-dot-pha-cua-dot-pha-dua-viet-nam-vuon-minh-8065b12/",
+      "https://baoquangtri.vn/multimedia/truyen-hinh/202611/nhip-giao-thuong-noi-cua-ngo-lao-bao-8097c20/",
+      "https://baoquangtri.vn/multimedia/emagazine/202611/ca-phe-khe-sanh-hanh-trinh-tram-nam-6f7461f/",
+      "https://baoquangtri.vn/chinh-tri/202611/nguyen-lam-la-chan-xanh-bb91434/",
+      "https://baoquangtri.vn/kinh-te/202611/phat-trien-vat-nuoi-co-gia-tri-679678f/",
+      "https://baoquangtri.vn/kinh-te/202611/doi-moi-de-thich-ung-va-phat-trien-3a21a32/",
+      "https://baoquangtri.vn/kinh-te/202611/bo-tai-chinh-thuc-hien-thu-tuc-hanh-chinh-khong-phu-thuoc-dia-gioi-hanh-chinh-fc7235e/",
+      "https://baoquangtri.vn/du-lich/202611/tuan-van-hoa-du-lich-quang-tri-2026voichu-de-ruc-ro-mien-ky-quan-linh-thieng-vung-dat-lua-d282979/",
+      "https://baoquangtri.vn/multimedia/truyen-hinh/202611/chungtay-xay-dung-bien-gioi-hoa-binh-huu-nghi-6832299/",
+      "https://baoquangtri.vn/xa-hoi/202611/62-nam-mot-ky-uc-bi-trang-8156abc/",
+      "https://baoquangtri.vn/quoc-phong-an-ninh/202611/xay-la-chan-thep-noi-phen-dau-7403c1c/",
+      "https://baoquangtri.vn/quoc-phong-an-ninh/202611/bo-quoc-phong-kiem-tra-cong-tac-1389-tai-quang-tri-aa859ef/",
+      "https://baoquangtri.vn/chinh-tri/202611/dong-chi-bi-thu-tinh-uy-tham-gia-tuan-tra-song-phuong-bien-gioi-viet-nam-lao-9080604/",
+      "https://baoquangtri.vn/quoc-phong-an-ninh/202611/xay-dung-nong-thon-hien-dai-5494795/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,56 @@
+NEWS / AXIOS — ROUND 8 — 2026-11-09T05:53:08.306Z
+
+Kiểm tra đủ 24 site: 1/20 site còn vướng parser đã đạt kiểm chứng HTTP mới; 19 còn vướng. HTTP: 1/4 khôi phục, 3 còn vướng.
+
+PARSER HTTP MỚI ĐẠT:
+- cryptonews.com: 6/6 mẫu (có thể gồm bài kiểm chứng category trùng URL); 2 holdout độc lập.
+
+HTTP KHÔI PHỤC VÀ PARSE ĐẠT:
+- baokiemtoan.vn: 6/6 mẫu (có thể gồm bài kiểm chứng category trùng URL); 2 holdout độc lập.
+
+CHI TIẾT KIỂM CHỨNG:
+- VietnamFDI được ưu tiên: trang chủ HTTP/HTTPS và www vẫn timeout 15 giây; URL bài từng parse được trả 404 trên HTTP, HTTPS timeout. Bản sửa ngày MDY và selector article-meta vẫn parse đạt 6 HTML archive từ vòng trước, nhưng chưa có bằng chứng live mới nên vẫn chưa sẵn sàng. Không tính cached replay thành HTTP pass. Xem probes/vietnamfdi-* và vietnamfdi-cached-replay.
+- Cryptonews: trang bài có thể trả 403, nhưng WordPress REST công khai trả post publish / content.protected=false, full content, native ID và date_gmt. Parser chỉ nhận canonical /news/ URL khớp, không dùng modified_gmt, không nhận protected/draft. Tác giả lấy từ embedded author hoặc Yoast Article cùng URL (user embed có thể trả rest_no_route). 5 bài khác nhau đạt, gồm 2 holdout; body khoảng 3.847–6.651 ký tự. Category taxonomy public đã xác nhận với listing >=2 bài và article parse đạt. Raw 403 landing, raw 200 REST và normalized evidence đều được giữ. Phạm vi là News /news/, không gồm các trang so sánh sản phẩm affiliate /cryptocurrency/.
+- Báo Kiểm toán: HTTPS đã truy cập lại được, gồm 5 bài khác nhau / 2 holdout và category /vi/chuyen-muc/thoi-su. Đã sửa đủ mẫu bài thường, video và emagazine; giữ source MP4 của video, không lấy related video cards làm body. Đã xác định schema bỏ offset và có clock thấp hơn giờ hiển thị 7h: dùng publication clock hiển thị tại từng bài, timezone Việt Nam, chính xác đến phút. Không tự gắn timezone địa phương cho schema, không bịa giây. Strict selector không fallback sang schema/header/sidebar nếu clock của bài vắng. Ưu tiên byline người viết thay author tổ chức trong schema. Category từng timeout rồi kiểm chứng được; HTTP còn có tính gián đoạn, không cam kết ổn định toàn bộ site. Xem baokiemtoan-publication-evidence.json.
+- DealStreetAsia: JSON Next.js của bài public có 3 bài free đầy đủ body (1.899–8.598 ký tự) và date gốc dạng không offset. Bài premium trả body rỗng/overlay. Đã lưu native ID, date và phạm vi nội dung để cấu hình tiếp, nhưng chưa tự gán UTC/SGT nên vẫn pending. Không lấy teaser/premium làm toàn văn. Xem dealstreetasia-public-state-research.json.
+- Toàn Cảnh Báo Chí: Atom published cũng trùng clock RSS cũ, có +0700 và chậm 7h so với HTML created clock. Khác Baokiemtoan (schema không có offset), đây là mâu thuẫn với offset được publisher ghi rõ; giữ pending và raw clocks, không chỉnh âm thầm. Xem publisher-date-conflicts.json.
+- Danhgiaxe: sitemap public 2 MB chỉ có lastmod, không publication_date. Travelguide sitemap và Baobaria index.rss đều 404. Hungyen script public chỉ bộc lộ lịch/đếm view/comment, không xác minh được ngày gốc chính xác. Giacavattu chỉ có updated clock và robots khai báo crawl-delay dài, không gọi dồn thêm endpoint.
+- Các nguyên nhân nguồn vẫn giữ: Nhansac hiện timeout (trước đó duplicate body); Lao Động Đồng Nai 500; Điện Tử Tiêu Dùng/Ngôi Sao Việt Nam/Tầm Nhìn có permalink 404; AdvertisingVietnam bị chặn; Nikkei/DSA có nội dung giới hạn; MSN app shell; Thoibaobatdongsan không có bài hợp lệ. Baobaria/Taynguyen vẫn bị giữ vì chưa chứng minh publication date cho các mẫu hiện tại.
+
+PARSER / DỮ LIỆU NGUỒN CÒN VƯỚNG:
+- advertisingvietnam.com: access_blocked
+- asia.nikkei.com: publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview | publisher_restricted_preview
+- baobariavungtau.com.vn: Video/image bodies are distinguished correctly. Visible time is labelled updated; the declared RSS is 404, so original publication time remains unconfirmed.
+- danhgiaxe.com: missing_published_date
+- dealstreetasia.com: Native Next.js public state supplies full content for three free articles and original date strings without offset/timezone. Premium articles have empty bodies/overlays. Native publication timezone remains unconfirmed; no full-site pass.
+- dientutieudung.vn: not_found
+- giacavattu.com.vn: Only a timestamp labelled updated is exposed; an original publication timestamp is unconfirmed.
+- hungyentv.vn: missing_published_date | missing_body
+- laodongdongnai.vn: Fresh article requests return HTTP 500. Prior public REST query reported Error establishing a database connection; no origin recovery verified.
+- msn.com: Tested native master article ID returns HTTP 410 from the public content service. HTML is an article app shell; a complete current article has not been verified.
+- ngoisaovietnam.vn: not_found
+- nhansac.vn: Current HTTP and HTTPS homepage requests time out. Prior fetched distinct native IDs returned duplicate 390-character bodies; no current full distinct articles verified.
+- tamnhin.net: not_found
+- taynguyen24h.com.vn: Dated archive articles parse; prominent current advertisement pages still have no original publication date.
+- thoibaobatdongsan.net: No article candidate in homepage/category
+- tintuctoday.net: missing_published_date
+- toancanhbaochi.net: Fresh Atom published and prior RSS pubDate both have +0700 but clocks seven hours behind visible HTML created clock on matching URLs. No silent correction; evidence retained.
+- travelguide.org.vn: missing_published_date
+- vietnamfdi.vn: Publication selector and MDY date order validated unchanged on six archived HTTP articles (three holdouts); current homepage requests time out and tested article returns 404. Cached parser success is not a live HTTP pass.
+
+HTTP CÒN VƯỚNG:
+- coindesk.com: Current HTTP remains 429. Prior official RSS exposed links/pubDates but empty content:encoded; feed summaries are not full article content.
+- molistar.com: HTTP 520 persists, including standard User-Agent; response requests Retry-After 60 seconds.
+- tamnhin.kienthuc.net.vn: DNS resolution remains unavailable.
+
+Toàn bộ 544 nguồn: 522 có mẫu bài HTTP/dispatcher parse đạt theo cấu hình; 519 có cả category. 22 còn cần xử lý. Nguồn ngoài vòng này giữ bằng chứng các vòng trước; đây chưa phải quét toàn bộ site.
+6 site dùng timezone chưa có offset xác nhận trên từng bài: doisongvanhoa.com, dulichgiaitri.com, kenhtinxe.com, ngaymoisaigon.com, vccinews.com, vntravellive.com; giữ cờ review trước ghi dữ liệu.
+78 tests pass; validation-tests.json lưu SHA256 source được kiểm tra. Tất cả 544 cấu hình enabled:false. Không browser/Puppeteer, không queue, không ghi ES5. Chưa xác minh chu kỳ đủ toàn bộ nguồn trong 15 phút.
+
+TIẾP THEO: VietnamFDI cần HTTP phục hồi để kiểm chứng live. DealStreetAsia cần timezone publisher xác nhận và chỉ scope public; Toancanh cần quyết định chính sách sau xác minh clock. Các nguồn thiếu ngày gốc/duplicate phải giữ pending; Molistar/CoinDesk/Tamnhin Kienthuc cần origin/rate limit/DNS phục hồi. Chưa triển khai queue.
+
+CHẠY LẠI:
+node scripts/test_news_site_article.mjs --site cryptonews.com
+node scripts/test_news_site_article.mjs --site baokiemtoan.vn
+node scripts/test_news_parsers_batch.mjs --output-root outputs/news-parser-rollout-2026-11-09/round8-http --config-dir outputs/news-parser-rollout-2026-11-09/round8-http/configs --domains DOMAIN
+node scripts/finalize_news_parser_rollout.mjs --round8-http

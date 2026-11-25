@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "siteName": "kiemsat.vn",
+  "siteId": "kiemsat.vn",
+  "registrableDomain": "kiemsat.vn",
+  "homepage": "https://kiemsat.vn/",
+  "allowedHosts": [
+    "kiemsat.vn",
+    "www.kiemsat.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "VKSND tối cao kết nối Hội nghị tập huấn sử dụng Cổng kê khai, tổng hợp vị trí việc làm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".noidung",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:27.080Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-77590.html",
+      "https://kiemsat.vn/quoc-hoi-cho-y-kien-ve-du-thao-nghi-quyet-cua-quoc-hoi-ve-thuc-hien-thi-diem-co-che-thu-hoi-va-xu-ly-tai-san-lien-quan-den-toi-pham-khong-qua-ket-toi-77566.html",
+      "https://kiemsat.vn/mot-so-vuong-mac-trong-dieu-tra-cac-vu-an-lien-quan-den-dao-co-tinh-sat-thuong-cao-77599.html",
+      "https://kiemsat.vn/cong-bo-va-trao-quyet-dinh-bo-nhiem-chuc-vu-pho-vien-truong-vksnd-toi-cao-vien-truong-vksqs-trung-uong-77600.html",
+      "https://kiemsat.vn/quoc-hoi-thao-luan-nhieu-noi-dung-lon-trong-du-thao-bo-luat-to-tung-hinh-su-sua-doi-77565.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://kiemsat.vn/",
+    "categories": [
+      "https://kiemsat.vn/su-kien-van-de",
+      "https://kiemsat.vn/kiem-sat-24h",
+      "https://kiemsat.vn/luat-cuoc-song",
+      "https://kiemsat.vn/phap-luat-nghiep-vu",
+      "https://kiemsat.vn/ban-can-biet",
+      "https://kiemsat.vn/chung-toi-la-kiem-sat-vien",
+      "https://kiemsat.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.299Z",
+      "verifiedSeeds": [
+        "https://kiemsat.vn/",
+        "https://kiemsat.vn/su-kien-van-de",
+        "https://kiemsat.vn/kiem-sat-24h",
+        "https://kiemsat.vn/luat-cuoc-song",
+        "https://kiemsat.vn/phap-luat-nghiep-vu",
+        "https://kiemsat.vn/ban-can-biet",
+        "https://kiemsat.vn/chung-toi-la-kiem-sat-vien"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "kiemsat.vn",
+    "checkedAt": "2026-11-09T03:57:09.407Z",
+    "url": "https://kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-77590.html",
+    "finalUrl": "https://kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-77590.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3186,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:33.094Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/kiemsat.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "kiemsat.vn",
+    "parsedArticles": 10,
+    "distinctHashes": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesAttempted": 6,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 148,
+    "checkedArticleUrls": 14,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 148,
+        "attempted": 11,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T06:01:40.487Z",
+    "method": "scoped_visible_clock_with_url_bound_original_jsonld",
+    "proofs": [
+      {
+        "url": "https://kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-77590.html",
+        "contentHash": "5c73738ef29e522923efaf9e81f251d3cdeac4692152008d5c746d966c6fb40e",
+        "description": "(Kiemsat.vn) - Sáng 4/11/2026, VKSND tối cao kết nối điểm cầu tới Hội nghị tập huấn sử dụng Cổng kê khai, tổng hợp vị trí việc làm trực tuyến theo Kế hoạch số 80-KH/BTCTW của Ban Tổ chức Trung ương.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kiemsat.vn/vksnd-toi-cao-ket-noi-hoi-nghi-tap-huan-su-dung-cong-ke-khai-tong-hop-vi-tri-viec-lam-77590.html",
+          "publishedDate": "2026-11-04T14:18:01.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://kiemsat.vn/vien-truong-nguyen-huy-tien-tinh-than-dai-doan-ket-se-tiep-tuc-duoc-vun-dap-lan-toa-77630.html",
+        "contentHash": "816582c621e4db0ffea5c0eaa1b56a9853c2c007370c17904392af590aea456c",
+        "description": "(Kiemsat.vn) - Chiều ngày 15/11, tại thôn An Tuyền, xã Hiếu Giang, tỉnh Quảng Trị, đồng chí Nguyễn Huy Tiến, Ủy viên Trung ương Đảng, Viện trưởng VKSND tối cao dự Ngày hội đại đoàn kết toàn dân tộc (18/11) và Ngày Văn hóa Việt Nam năm 2026 (24/11).",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kiemsat.vn/vien-truong-nguyen-huy-tien-tinh-than-dai-doan-ket-se-tiep-tuc-duoc-vun-dap-lan-toa-77630.html",
+          "publishedDate": "2026-11-16T11:09:01.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://kiemsat.vn/bo-nhiem-dong-chi-do-van-thuong-giu-chuc-vu-vien-truong-vien-khoa-hoc-kiem-sat-vksnd-toi-cao-77621.html",
+        "contentHash": "05961babaf94812724dae8901593143a7ff21c400fa80d60d97c5d40a8876a10",
+        "description": "(Kiemsat.vn) - Sáng ngày 13/11/2026, VKSND tối cao tổ chức Lễ công bố và trao quyết định bổ nhiệm đồng chí Đỗ Văn Thường giữ chức vụ Viện trưởng Viện Khoa học kiểm sát VKSND tối cao. Đồng chí Nguyễn Duy Giảng, Phó Viện trưởng VKSND tối cao dự và chỉ đạo buổi Lễ.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://kiemsat.vn/bo-nhiem-dong-chi-do-van-thuong-giu-chuc-vu-vien-truong-vien-khoa-hoc-kiem-sat-vksnd-toi-cao-77621.html",
+          "publishedDate": "2026-11-13T11:00:01.000Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null
+}

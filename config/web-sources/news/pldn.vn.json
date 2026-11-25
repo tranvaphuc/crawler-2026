@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "siteName": "pldn.vn",
+  "siteId": "pldn.vn",
+  "registrableDomain": "pldn.vn",
+  "homepage": "https://pldn.vn/",
+  "allowedHosts": [
+    "pldn.vn",
+    "www.pldn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://pldn.vn/",
+    "categories": [
+      "https://pldn.vn/phap-luat/",
+      "https://pldn.vn/doanh-nghiep/",
+      "https://pldn.vn/kinh-te/cong-nghiep/",
+      "https://pldn.vn/kinh-te/du-lich/",
+      "https://pldn.vn/",
+      "https://pldn.vn/kinh-te/",
+      "https://pldn.vn/kinh-te/nong-nghiep-nong-thon/",
+      "https://pldn.vn/kinh-te/tai-chinh/",
+      "https://pldn.vn/the-thao/",
+      "https://pldn.vn/van-hoa-xa-hoi/",
+      "https://pldn.vn/van-hoa-xa-hoi/cong-nghe/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.286Z",
+      "verifiedSeeds": [
+        "https://pldn.vn/",
+        "https://pldn.vn/phap-luat/",
+        "https://pldn.vn/doanh-nghiep/",
+        "https://pldn.vn/kinh-te/",
+        "https://pldn.vn/kinh-te/cong-nghiep/",
+        "https://pldn.vn/kinh-te/du-lich/",
+        "https://pldn.vn/kinh-te/nong-nghiep-nong-thon/",
+        "https://pldn.vn/kinh-te/tai-chinh/",
+        "https://pldn.vn/the-thao/",
+        "https://pldn.vn/van-hoa-xa-hoi/",
+        "https://pldn.vn/van-hoa-xa-hoi/cong-nghe/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "value": "SHB đồng hành cùng khát vọng phát triển nhân tài, tự chủ công nghệ Việt Nam",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:25.294Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:17.976Z",
+    "independentHoldouts": [
+      "https://pldn.vn/tuan-thi-dau-tien-cuoc-thi-tim-hieu-phap-luat-ve-tu-phap-nguoi-chua-thanh-nien-co-hon-4-400-nguoi-tham-gia/",
+      "https://pldn.vn/cong-an-tinh-dak-lak-keu-goi-nguoi-dan-phan-anh-bat-cap-ve-ha-tang-giao-thong/",
+      "https://pldn.vn/cong-nhan-161-don-vi-dien-hinh-tien-tien-trong-phong-trao-phong-chay-chua-chay/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://pldn.vn/shb-dong-hanh-cung-khat-vong-phat-trien-nhan-tai-tu-chu-cong-nghe-viet-nam",
+      "https://pldn.vn/tuan-thi-dau-tien-cuoc-thi-tim-hieu-phap-luat-ve-tu-phap-nguoi-chua-thanh-nien-co-hon-4-400-nguoi-tham-gia/",
+      "https://pldn.vn/cong-an-tinh-dak-lak-keu-goi-nguoi-dan-phan-anh-bat-cap-ve-ha-tang-giao-thong/",
+      "https://pldn.vn/cong-nhan-161-don-vi-dien-hinh-tien-tien-trong-phong-trao-phong-chay-chua-chay/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

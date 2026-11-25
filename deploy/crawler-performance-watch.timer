@@ -1,0 +1,11 @@
+[Unit]
+Description=Check crawler health and source coverage every minute
+
+[Timer]
+OnBootSec=60s
+OnUnitInactiveSec=60s
+AccuracySec=5s
+Unit=crawler-performance-watch.service
+
+[Install]
+WantedBy=timers.target

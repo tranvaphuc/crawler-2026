@@ -1,0 +1,31 @@
+[Unit]
+Description=Crawler V8 October backfill to Mongo and ES5
+After=network-online.target docker.service crawler-proxy-manager.service
+Wants=network-online.target crawler-proxy-manager.service
+Requires=docker.service
+[Service]
+Type=simple
+User=crawler-v8
+Group=crawler-api
+WorkingDirectory=/opt/crawler-v8/current
+EnvironmentFile=/etc/crawler-v8/runtime.env
+ExecStart=/opt/crawler-node/bin/node --max-old-space-size=10000 /opt/crawler-v8/current/scripts/crawler_v8.mjs run
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=120
+UMask=0077
+ReadWritePaths=/var/lib/crawler-v8
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+LimitNOFILE=65536
+MemoryMax=12G
+TasksMax=1024
+[Install]
+WantedBy=multi-user.target

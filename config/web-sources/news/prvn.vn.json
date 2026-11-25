@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "siteName": "prvn.vn",
+  "siteId": "prvn.vn",
+  "registrableDomain": "prvn.vn",
+  "homepage": "https://prvn.vn/",
+  "allowedHosts": [
+    "prvn.vn",
+    "www.prvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "An Nhơn Trà tổ chức chương trình giao lưu văn hóa Việt – Nhật",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:04.709Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://prvn.vn/6251/an-nhon-tra-to-chuc-chuong-trinh-giao-luu-van-hoa-viet-nhat/",
+      "https://prvn.vn/6236/california-fitness-yoga-cong-bo-chien-luoc-tai-cau-truc-co-chon-loc-huong-toi-nen-tang-song-khoe-chu-dong/",
+      "https://prvn.vn/6178/nong-nghiep-thong-minh-viet-nam-israel-2026/",
+      "https://prvn.vn/6126/bao-cao-an-ninh-mang-wordpress-hang-loat-lo-hong-moi-de-doa-he-thong-website-doanh-nghiep/",
+      "https://prvn.vn/5486/hanh-trinh-tu-trai-tim-tiep-tuc-cung-trung-nguyen-legend-den-moi-mien-to-quoc/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://prvn.vn/",
+    "categories": [
+      "https://prvn.vn/martech/",
+      "https://prvn.vn/pr-trending/",
+      "https://prvn.vn/goc-nhin-pr/",
+      "https://prvn.vn/kien-thuc-pr/",
+      "https://prvn.vn/kinh-doanh/",
+      "https://prvn.vn/thong-cao-bao-chi/",
+      "https://prvn.vn/pr-newswire/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "prvn.vn",
+    "checkedAt": "2026-11-09T03:57:23.205Z",
+    "url": "https://prvn.vn/6251/an-nhon-tra-to-chuc-chuong-trinh-giao-luu-van-hoa-viet-nhat/",
+    "finalUrl": "https://prvn.vn/6251/an-nhon-tra-to-chuc-chuong-trinh-giao-luu-van-hoa-viet-nhat/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3087,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "body": {
+        "strategy": "selector",
+        "selector": ".entry-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "independent_http_holdouts_passed",
+        "frozenAt": "2026-11-12T15:48:32.532Z",
+        "trainingUrl": "https://prvn.vn/6251/an-nhon-tra-to-chuc-chuong-trinh-giao-luu-van-hoa-viet-nhat/",
+        "holdoutUrls": [
+          "https://prvn.vn/6146/case-study-tu-entrepreneur-den-luxury-travel-magazine-dau-an-bac-nha-trang-va-vega-city-tren-truyen-thong-bat-dong-san-quoc-te/",
+          "https://prvn.vn/6104/cong-nghe-chua-lanh-trung-quoc-khi-cam-xuc-tro-thanh-chien-luoc-canh-tranh-moi/"
+        ]
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "prvn.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 12,
+    "checkedArticleUrls": 12,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 12,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 54,
+        "passed": 12,
+        "distinctHashes": 12
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://prvn.vn/6251/an-nhon-tra-to-chuc-chuong-trinh-giao-luu-van-hoa-viet-nhat/",
+      "https://prvn.vn/6178/nong-nghiep-thong-minh-viet-nam-israel-2026/",
+      "https://prvn.vn/6126/bao-cao-an-ninh-mang-wordpress-hang-loat-lo-hong-moi-de-doa-he-thong-website-doanh-nghiep/",
+      "https://prvn.vn/5486/hanh-trinh-tu-trai-tim-tiep-tuc-cung-trung-nguyen-legend-den-moi-mien-to-quoc/",
+      "https://prvn.vn/5423/ong-lon-tmdt-trung-quoc-vung-tien-de-danh-chiem-toan-cau/",
+      "https://prvn.vn/5331/sacombank-muon-thay-ten-tai-dinh-vi-chien-luoc/",
+      "https://prvn.vn/6172/ai-search-dang-giet-chet-seo-ra-sao/",
+      "https://prvn.vn/6132/ra-mat-wordpress-7-0-armstrong-tich-hop-ai/",
+      "https://prvn.vn/6111/google-chinh-thuc-khai-tu-faq-rich-results-website-seo-se-bi-anh-huong-the-nao/",
+      "https://prvn.vn/5946/ky-nguyen-post-search-pr-tra-phi-len-ngoi-nhung-khong-the-thay-the-uy-tin-thuong-hieu/",
+      "https://prvn.vn/5929/dung-chatgpt-giup-dat-roi-gap-5-lan-chi-trong-10-ngay/",
+      "https://prvn.vn/5923/lam-gi-khi-khach-hoi-co-nen-dung-chatgpt-khong/",
+      "https://prvn.vn/5899/lam-sao-de-tang-traffic-website-nhanh-nhat/",
+      "https://prvn.vn/6160/phan-mem-quan-ly-pr-nao-tot-nhat-cho-doanh-nghiep-viet-nam/",
+      "https://prvn.vn/6146/case-study-tu-entrepreneur-den-luxury-travel-magazine-dau-an-bac-nha-trang-va-vega-city-tren-truyen-thong-bat-dong-san-quoc-te/",
+      "https://prvn.vn/6104/cong-nghe-chua-lanh-trung-quoc-khi-cam-xuc-tro-thanh-chien-luoc-canh-tranh-moi/",
+      "https://prvn.vn/6099/chien-dich-phuc-hoi-cua-intel-khi-ga-khong-lo-chip-tim-lai-vi-the-trong-ky-nguyen-ai/",
+      "https://prvn.vn/6093/thay-gi-qua-viec-mrbeast-muon-ai-thay-the-minh/",
+      "https://prvn.vn/6063/opc-vs-freelancer-vs-solopreneur-3-mo-hinh-de-nham-nhat-trong-thoi-dai-ai/",
+      "https://prvn.vn/6046/opc-la-gi-khi-mot-nguoi-ai-co-the-van-hanh-ca-mot-doanh-nghiep/",
+      "https://prvn.vn/6029/imc-marketing-agency-vietnam-2026/",
+      "https://prvn.vn/6001/xu-huong-ai-trong-truyen-thong-viet-nam-2026/",
+      "https://prvn.vn/6236/california-fitness-yoga-cong-bo-chien-luoc-tai-cau-truc-co-chon-loc-huong-toi-nen-tang-song-khoe-chu-dong/",
+      "https://prvn.vn/6038/thay-gi-tu-openclaw-va-trao-luu-cong-ty-mot-nguoi-o-trung-quoc/",
+      "https://prvn.vn/5906/co-nen-vay-tien-online-2026-khong/",
+      "https://prvn.vn/6117/pinterest-traffic-co-thuc-su-bi-lang-quen-chien-luoc-vang-cho-blogger-nam-2026/",
+      "https://prvn.vn/4621/doanh-nghiep-viet-cung-co-noi-luc-truoc-them-ky-nguyen-vuon-minh/",
+      "https://prvn.vn/4540/them-co-hoi-du-hoc-nganh-ban-dan-chat-luong-cao-cho-sinh-vien/",
+      "https://prvn.vn/4584/tlai-band-am-nhac-la-anh-sang-hanh-trinh-danh-thuc-trai-tim/",
+      "https://prvn.vn/4417/ban-chi-thien-tam-guong-phan-chieu-xa-hoi-tu-mot-nguoi-thay-cua-lang-bao/",
+      "https://prvn.vn/4401/infographic-tich-hop-toan-bo-dich-cong-truc-tuyen-ve-dau-moi-duy-nhat-cong-dich-vu-cong-quoc-gia/",
+      "https://prvn.vn/4331/ninh-binh-oi-khi-am-nhac-ke-chuyen-que-huong/",
+      "https://prvn.vn/4253/phat-dong-cuoc-thi-thiet-ke-bo-nhan-dien-thuong-hieu-hue-times-square/",
+      "https://prvn.vn/4160/co-the-vua-xem-tin-tuc-da-phuong-tien-vua-san-sale-tren-htvm/",
+      "https://prvn.vn/3915/talkshow-ung-dung-cong-nghe-lam-dep-hieu-qua/",
+      "https://prvn.vn/6202/starbucks-korea-tank/",
+      "https://prvn.vn/6214/paperclip-maximizer/",
+      "https://prvn.vn/5935/ai-xep-hang-noi-dung-the-nao/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:30.384Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/prvn.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "remainingErrorsRepair": {
+    "checkedAt": "2026-11-12T15:48:35.981Z",
+    "evidence": "outputs\\news-flow-preparation-2026-11-12\\remaining-errors-recheck\\repairs\\prvn.vn\\result.json",
+    "approvedVariants": 1,
+    "scope": "Only independently proven layouts; prior unresolved URLs retained; no production data writes"
+  }
+}

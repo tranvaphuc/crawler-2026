@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "diaocnet.vn",
+  "siteId": "diaocnet.vn",
+  "registrableDomain": "diaocnet.vn",
+  "homepage": "https://diaocnet.vn/",
+  "allowedHosts": [
+    "diaocnet.vn",
+    "www.diaocnet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://diaocnet.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "Cho vay kinh doanh bất động sản giảm tốc, SHB vẫn ghi nhận lợi nhuận tăng gần 60%",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:19.579Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:15.254Z",
+    "independentHoldouts": [
+      "https://diaocnet.vn/vib-va-hai-nhip-tang-truong-khac-biet-cua-tin-dung-bat-dong-san-trong-nam-2026-7855.htm",
+      "https://diaocnet.vn/du-an-khu-do-thi-aic-rong-gan-90ha-o-me-linh-doi-ten-khi--ve-tay--hoa-thu-do-7878.htm",
+      "https://diaocnet.vn/thi-truong-chung-cu-tp-hcm-thang-10-2026--giao-dich-tang-tro-lai--xuat-hien-du-an-co-gia-chao-len-toi-hon-520-trieu-dong-m2-7874.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://diaocnet.vn/cho-vay-kinh-doanh-bat-dong-san-giam-toc--shb-van-ghi-nhan-loi-nhuan-tang-gan-60-7839.htm",
+      "https://diaocnet.vn/vib-va-hai-nhip-tang-truong-khac-biet-cua-tin-dung-bat-dong-san-trong-nam-2026-7855.htm",
+      "https://diaocnet.vn/du-an-khu-do-thi-aic-rong-gan-90ha-o-me-linh-doi-ten-khi--ve-tay--hoa-thu-do-7878.htm",
+      "https://diaocnet.vn/thi-truong-chung-cu-tp-hcm-thang-10-2026--giao-dich-tang-tro-lai--xuat-hien-du-an-co-gia-chao-len-toi-hon-520-trieu-dong-m2-7874.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

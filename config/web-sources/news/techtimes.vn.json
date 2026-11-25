@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "siteName": "techtimes.vn",
+  "siteId": "techtimes.vn",
+  "registrableDomain": "techtimes.vn",
+  "homepage": "https://www.techtimes.vn/",
+  "allowedHosts": [
+    "www.techtimes.vn",
+    "techtimes.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tại Hội nghị Internet Thế giới ở Ô Trấn, các công ty Trung Quốc giới thiệu những robot đảm nhận nhiều công việc trong cuộc sống",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:29.596Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.techtimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+      "https://www.techtimes.vn/media-outreach/2026/11/06/499977/unionpay-international-ky-ket-bien-ban-ghi-nho-voi-tenpay-global-thuoc-tencent-de-hop-tac-trong-linh-vuc-chuyen-tien-xuyen-bien-gioi/",
+      "https://www.techtimes.vn/media-outreach/2026/11/07/500047/giao-su-nancy-ip-hieu-truong-hkust-duoc-trao-giai-thuong-quoc-te-unesco-guinea-xich-dao-nam-2026-ve-nghien-cuu-khoa-hoc-su-song/",
+      "https://www.techtimes.vn/media-outreach/2026/11/06/499991/cong-nghe-hybrid-thong-minh-i-hev-cua-geely-mo-ra-huong-di-moi-cho-cac-dong-xe-su-dung-dong-co-xang/",
+      "https://www.techtimes.vn/laptop-mong-nhe-cao-cap-tro-thanh-khoang-dau-tu-hop-ly-trong-thoi-bao-gia/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.techtimes.vn/",
+    "categories": [
+      "https://www.techtimes.vn/tin-tuc/",
+      "https://www.techtimes.vn/may-tinh/",
+      "https://www.techtimes.vn/di-dong/",
+      "https://www.techtimes.vn/khoa-hoc/",
+      "https://www.techtimes.vn/web/",
+      "https://www.techtimes.vn/bao-mat/",
+      "https://www.techtimes.vn/dien-tu-dieu-dung/",
+      "https://www.techtimes.vn/o-to-xe-may/",
+      "https://www.techtimes.vn/khoi-nghiep/",
+      "https://www.techtimes.vn/pr-newswire/",
+      "https://www.techtimes.vn/media-outreach-newswire/",
+      "https://www.techtimes.vn/en/globenewswire/",
+      "https://www.techtimes.vn/danh-gia/",
+      "https://www.techtimes.vn/doi-song-so/",
+      "https://www.techtimes.vn/kinh-nghiem/",
+      "https://www.techtimes.vn/may-anh/",
+      "https://www.techtimes.vn/feed"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://www.techtimes.vn/chinh-sach-quyen-rieng-tu/"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "techtimes.vn",
+    "checkedAt": "2026-11-09T03:57:28.372Z",
+    "url": "https://www.techtimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+    "finalUrl": "https://www.techtimes.vn/media-outreach/2026/11/06/500033/tai-hoi-nghi-internet-the-gioi-o-o-tran-cac-cong-ty-trung-quoc-gioi-thieu-nhung-robot-dam-nhan-nhieu-cong-viec-trong-cuoc-song/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7885,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:21.084Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/techtimes.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "techtimes.vn",
+    "parsedArticles": 15,
+    "distinctHashes": 15,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesAttempted": 18,
+    "categoriesRemoved": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 306,
+    "checkedArticleUrls": 15,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 261,
+        "attempted": 6,
+        "passed": 6,
+        "distinctContents": 6,
+        "distinctHashes": 6
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      },
+      {
+        "name": "video",
+        "discovered": 4,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      },
+      {
+        "name": "language_variant",
+        "discovered": 39,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Tại Hội nghị Internet Thế giới ở Ô Trấn, các công ty Trung Quốc giới thiệu những robot đảm nhận nhiều công việc trong cuộc sống",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".col-8.main-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:05.320Z",
+        "trainingUrls": [
+          "https://www.techtimes.vn/google-ra-mat-gemini-4-hydrogen-mo-hinh-ai-nhanh-hon-cho-cong-viec-hang-ngay/"
+        ],
+        "holdoutUrls": [
+          "https://www.techtimes.vn/en/linearb-launches-agentic-studio-to-give-enterprise-engineering-leaders-and-coding-agents-the-context-to-ship-better-software-faster/",
+          "https://www.techtimes.vn/startup-so-ban-hang-goi-von-thanh-cong-4-trieu-usd/"
+        ]
+      }
+    }
+  ],
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:48.856Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://www.techtimes.vn/en/linearb-launches-agentic-studio-to-give-enterprise-engineering-leaders-and-coding-agents-the-context-to-ship-better-software-faster/",
+      "https://www.techtimes.vn/startup-so-ban-hang-goi-von-thanh-cong-4-trieu-usd/"
+    ],
+    "improvedUrls": [
+      "https://www.techtimes.vn/google-ra-mat-gemini-4-hydrogen-mo-hinh-ai-nhanh-hon-cho-cong-viec-hang-ngay/"
+    ],
+    "regressions": 0
+  }
+}

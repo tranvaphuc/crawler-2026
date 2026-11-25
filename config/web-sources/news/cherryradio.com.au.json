@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cherryradio.com.au",
+  "siteId": "cherryradio.com.au",
+  "registrableDomain": "cherryradio.com.au",
+  "homepage": "https://cherryradio.com.au/",
+  "allowedHosts": [
+    "cherryradio.com.au",
+    "www.cherryradio.com.au"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Chương trình Tin tức thứ Sáu, 06/11/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#txtcontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:11:22.301Z",
+    "sampleCount": 16,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 10,
+    "sampleUrls": [
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-06112026-rd2306296",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-nam-05112026-rd2306295",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-tu-04112026-rd2306294",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-ba-03112026-rd2306293",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-hai-02112026-rd2306292",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-06112026-rd2306296",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-06112026-rd2306296",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-30102026-rd2306291",
+      "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-nam-29102026-rd2306290"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cherryradio.com.au/#google_vignette",
+    "categories": [
+      "https://cherryradio.com.au/chuong-trinh-thoi-su"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?cherryradio.com.au/.*?(\\d{7,}).*?$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cherryradio.com.au",
+    "checkedAt": "2026-11-09T03:56:55.081Z",
+    "url": "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-06112026-rd2306296",
+    "finalUrl": "https://cherryradio.com.au/chuong-trinh-tin-tuc-thu-sau-06112026-rd2306296",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 1991,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:50.745Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/cherryradio.com.au/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "cherryradio.com.au",
+    "parsedArticles": 5,
+    "distinctHashes": 5,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesAttempted": 1,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 21,
+    "checkedArticleUrls": 5,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 21,
+        "attempted": 5,
+        "passed": 5,
+        "distinctContents": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

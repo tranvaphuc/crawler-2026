@@ -1,0 +1,34 @@
+[Unit]
+Description=News ES5 create-only outbox importer
+Wants=network-online.target
+Requires=news-flow-egress.service
+After=network-online.target news-flow-egress.service
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=news-flow
+Group=news-flow
+Slice=news-flow.slice
+WorkingDirectory=/opt/news-flow/current
+Environment=NODE_ENV=production
+ExecStart=/opt/news-flow/node/bin/node scripts/run_news_writer.mjs --proof /etc/news-flow/identity-proof.json --state /var/lib/news-flow/news-flow-runtime/write.sqlite --batch-size 30 --poll-ms 1000
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=180
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/news-flow
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=768M
+CPUQuota=100%
+CPUWeight=50
+TasksMax=32
+
+[Install]
+WantedBy=multi-user.target

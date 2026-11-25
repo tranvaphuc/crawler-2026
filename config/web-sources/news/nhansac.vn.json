@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nhansac.vn",
+  "siteId": "nhansac.vn",
+  "registrableDomain": "nhansac.vn",
+  "homepage": "https://nhansac.vn/",
+  "allowedHosts": [
+    "nhansac.vn",
+    "www.nhansac.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Mỹ Phẩm Thuần Chay (Vegan): Hiểu Đúng Trước Khi Theo Xu Hướng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "time[datetime]",
+    "attribute": "datetime",
+    "index": 0,
+    "priority": 75
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_partial",
+  "validation": {
+    "checkedAt": "2026-11-09T08:10:27.411Z",
+    "sampleCount": 5,
+    "passedSamples": 4,
+    "independentSampleCount": 1,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nhansac.vn/my-pham-thuan-chay-vegan-hieu-dung-truoc-khi-theo-xu-huong/",
+      "https://nhansac.vn/tay-trang-khong-dung-cach-nguyen-nhan-gay-mun-an-va-bit-tac/",
+      "https://nhansac.vn/foundation-danh-cho-da-dau-8-lua-chon-kiem-dau-hieu-qua/",
+      "https://nhansac.vn/skincare-routine-chuan-cho-nguoi-moi-bat-dau-sang-toi/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/nhansac.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://nhansac.vn/",
+    "categories": [
+      "https://nhansac.vn/tac-gia-pham-thai-an/",
+      "https://nhansac.vn/blog/",
+      "https://nhansac.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?nhansac.vn/.*?(.html|.htm)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.318Z",
+      "verifiedSeeds": [
+        "https://nhansac.vn/",
+        "https://nhansac.vn/tac-gia-pham-thai-an/",
+        "https://nhansac.vn/blog/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 5,
+    "passedSamples": 4,
+    "independentSamples": 1,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "sourceDataQuality": {
+    "status": "native_rest_duplicate_content_confirmed",
+    "requiresSourceContentRepair": true,
+    "evidenceFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/nhansac-native-content-quality.json"
+  },
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "nhansac.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 8,
+    "checkedArticleUrls": 8,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 2,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 8,
+        "passed": 8,
+        "distinctHashes": 2
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://nhansac.vn/foundation-danh-cho-da-dau-8-lua-chon-kiem-dau-hieu-qua/",
+      "https://nhansac.vn/my-pham-thuan-chay-vegan-hieu-dung-truoc-khi-theo-xu-huong/",
+      "https://nhansac.vn/skincare-routine-chuan-cho-nguoi-moi-bat-dau-sang-toi/",
+      "https://nhansac.vn/makeup-no-makeup-bi-quyet-tao-lan-da-cang-khoe-tu-nhien/",
+      "https://nhansac.vn/da-bi-mun-an-nguyen-nhan-va-huong-xu-ly-khong-bao-mon-da/",
+      "https://nhansac.vn/bi-quyet-cap-am-cho-da-bi-mat-nuoc-ma-khong-bong-dau/",
+      "https://nhansac.vn/tay-trang-khong-dung-cach-nguyen-nhan-gay-mun-an-va-bit-tac/",
+      "https://nhansac.vn/retinol-bi-quyet-tri-mun-mo-tham-ngua-lao-hoa-va-cach-dung-an-toan/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:15.375Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nhansac.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "afu.id",
+  "siteId": "afu.id",
+  "registrableDomain": "afu.id",
+  "homepage": "https://afu.id/",
+  "allowedHosts": [
+    "afu.id",
+    "www.afu.id"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://afu.id/",
+    "categories": [
+      "https://afu.id/nasional",
+      "https://afu.id/ekonomi",
+      "https://afu.id/hukum-kriminal",
+      "https://afu.id/nusantara",
+      "https://afu.id/humaniora"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishi Pajero Terguling Usai Tabrak Kijang dan Grandmax di Tol Purbaleunyi, 4 Orang Luka",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:20.609Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:13.004Z",
+    "independentHoldouts": [
+      "https://afu.id/olahraga/megawati-hangestri-cetak-17-poin-hyundai-hillstate-justru-kalah-03-dari-expressway-hipass-di-korean-vleague-20262027",
+      "https://afu.id/nasional/pesawat-kepresidenan-baru-prabowo-jadi-sorotan-airbus-a320-sewaan-dengan-registrasi-san-marino-dinilai-pengamat-penerbangan-alvin-lie-tak-pantas",
+      "https://afu.id/olahraga/jadwal-uefa-nations-league-malam-ini-senin-16-november-2026-matchday-terakhir-fase-grup-dimulai"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://afu.id/hukum-kriminal/mitsubishi-pajero-terguling-usai-tabrak-kijang-dan-grandmax-di-tol-purbaleunyi-4-orang-luka",
+      "https://afu.id/olahraga/megawati-hangestri-cetak-17-poin-hyundai-hillstate-justru-kalah-03-dari-expressway-hipass-di-korean-vleague-20262027",
+      "https://afu.id/nasional/pesawat-kepresidenan-baru-prabowo-jadi-sorotan-airbus-a320-sewaan-dengan-registrasi-san-marino-dinilai-pengamat-penerbangan-alvin-lie-tak-pantas",
+      "https://afu.id/olahraga/jadwal-uefa-nations-league-malam-ini-senin-16-november-2026-matchday-terakhir-fase-grup-dimulai"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tinnhanhchungkhoan.vn",
+  "siteId": "tinnhanhchungkhoan.vn",
+  "registrableDomain": "tinnhanhchungkhoan.vn",
+  "homepage": "https://www.tinnhanhchungkhoan.vn/",
+  "allowedHosts": [
+    "www.tinnhanhchungkhoan.vn",
+    "tinnhanhchungkhoan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.tinnhanhchungkhoan.vn/",
+    "categories": [
+      "https://www.tinnhanhchungkhoan.vn/chung-khoan/",
+      "https://www.tinnhanhchungkhoan.vn/nhan-dinh/",
+      "https://www.tinnhanhchungkhoan.vn/ck-quoc-te/",
+      "https://www.tinnhanhchungkhoan.vn/trai-phieu/",
+      "https://www.tinnhanhchungkhoan.vn/phai-sinh/",
+      "https://www.tinnhanhchungkhoan.vn/ben-le/"
+    ]
+  },
+  "title": {
+    "value": "Tổng giám đốc Fideco (FDC) bị khởi tố bắt tạm giam",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:26.700Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:22.160Z",
+    "independentHoldouts": [
+      "https://www.tinnhanhchungkhoan.vn/them-nhieu-can-bo-thue-bi-xu-ly-lien-quan-sai-pham-thuduc-house-post330315.html",
+      "https://www.tinnhanhchungkhoan.vn/tong-giam-doc-nha-thu-duc-tdh-xin-tu-nhiem-post343077.html",
+      "https://www.tinnhanhchungkhoan.vn/thuduc-house-tdh-duoc-go-toan-bo-cuong-che-thue-khep-lai-nut-that-phap-ly-keo-dai-post389255.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.tinnhanhchungkhoan.vn/tong-giam-doc-fideco-fdc-bi-khoi-to-bat-tam-giam-post285905.html",
+      "https://www.tinnhanhchungkhoan.vn/them-nhieu-can-bo-thue-bi-xu-ly-lien-quan-sai-pham-thuduc-house-post330315.html",
+      "https://www.tinnhanhchungkhoan.vn/tong-giam-doc-nha-thu-duc-tdh-xin-tu-nhiem-post343077.html",
+      "https://www.tinnhanhchungkhoan.vn/thuduc-house-tdh-duoc-go-toan-bo-cuong-che-thue-khep-lai-nut-that-phap-ly-keo-dai-post389255.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

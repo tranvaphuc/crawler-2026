@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "diariodolitoral.com.br",
+  "siteId": "diariodolitoral.com.br",
+  "registrableDomain": "diariodolitoral.com.br",
+  "homepage": "https://www.diariodolitoral.com.br/",
+  "allowedHosts": [
+    "www.diariodolitoral.com.br",
+    "diariodolitoral.com.br"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.diariodolitoral.com.br/",
+    "categories": [
+      "https://www.diariodolitoral.com.br/bertioga/",
+      "https://www.diariodolitoral.com.br/cubatao/",
+      "https://www.diariodolitoral.com.br/guaruja/",
+      "https://www.diariodolitoral.com.br/itanhaem/",
+      "https://www.diariodolitoral.com.br/mongagua/",
+      "https://www.diariodolitoral.com.br/peruibe/"
+    ]
+  },
+  "title": {
+    "value": "Novo Mitsubishi Pajero é confirmado para o Brasil com motor diesel e sete lugares",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:22.880Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:13.281Z",
+    "independentHoldouts": [
+      "https://www.diariodolitoral.com.br/cotidiano/ultimo-feriado-prolongado-do-ano-antes-do-natal-e-ano-novo-pode-liberar-quase-40-milhoes-de-brasileiros-para-curtir-3-dias-de-folga/",
+      "https://www.diariodolitoral.com.br/variedades/por-voce-bela-acolhe-josi-keli-em-caso-extremo-de-conselho-tutelar-veja-o-resumo-de-16-a-21-de-novembro/",
+      "https://www.diariodolitoral.com.br/variedades/la-na-minha-terra-rosenda-decide-ir-a-sao-paulo-e-negocia-venda-de-cabras-veja-o-resumo-de-16-a-21-de-novembro/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.diariodolitoral.com.br/variedades/automotor/novo-mitsubishi-pajero-e-confirmado-para-o-brasil-com-motor-diesel-e-sete-lugares",
+      "https://www.diariodolitoral.com.br/cotidiano/ultimo-feriado-prolongado-do-ano-antes-do-natal-e-ano-novo-pode-liberar-quase-40-milhoes-de-brasileiros-para-curtir-3-dias-de-folga/",
+      "https://www.diariodolitoral.com.br/variedades/por-voce-bela-acolhe-josi-keli-em-caso-extremo-de-conselho-tutelar-veja-o-resumo-de-16-a-21-de-novembro/",
+      "https://www.diariodolitoral.com.br/variedades/la-na-minha-terra-rosenda-decide-ir-a-sao-paulo-e-negocia-venda-de-cabras-veja-o-resumo-de-16-a-21-de-novembro/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

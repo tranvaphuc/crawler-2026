@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thegioihoinhap.vn",
+  "siteId": "thegioihoinhap.vn",
+  "registrableDomain": "thegioihoinhap.vn",
+  "homepage": "https://thegioihoinhap.vn/",
+  "allowedHosts": [
+    "thegioihoinhap.vn",
+    "www.thegioihoinhap.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "2/12, Mekong Connect 2026: Kết nối nguồn lực tài chính từ TP.HCM, thúc đẩy kinh tế biển và ứng dụng KHCN cho ĐBSCL",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:24:35.532Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-tap-doan-lac-vuong/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-xuat-nhap-khau-ktk-ktk-corp/",
+      "https://thegioihoinhap.vn/172164-2/",
+      "https://thegioihoinhap.vn/hang-buon-nhat-noi-trong-nguy-co-co-sau-khi-dan-chu-thang-bau-cu-giua-ky-o-my/",
+      "https://thegioihoinhap.vn/doc-sach-melinda-french-gates-ngay-hom-sau/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-xa-phong-ha-noi/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-ngu-coc-truong-tho/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://thegioihoinhap.vn/",
+    "categories": [
+      "https://thegioihoinhap.vn/category/ban-tin-thi-truong/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-19-25-10-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-12-18-10-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-5-11-10-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-28-9-4-10-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-21-27-9-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-14-20-9-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-7-13-9-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-31-8-6-9-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-17-23-8-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-10-16-8-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-3-9-8-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-27-7-2-8-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-20-27-7-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-20-26-7-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-13-20-7-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-6-12-7-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-29-6-5-7-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-22-28-6-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-15-21-6-2026/",
+      "https://thegioihoinhap.vn/category/goc-nhin/",
+      "https://thegioihoinhap.vn/category/thoi-su/",
+      "https://thegioihoinhap.vn/category/hoi-nhap/",
+      "https://thegioihoinhap.vn/category/kinh-doanh/",
+      "https://thegioihoinhap.vn/category/mua-sam/",
+      "https://thegioihoinhap.vn/category/cong-nghe/",
+      "https://thegioihoinhap.vn/category/nong-nghiep-4-0/",
+      "https://thegioihoinhap.vn/category/van-hoa/",
+      "https://thegioihoinhap.vn/category/mekong-connect/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-26-10-1-11-2026/",
+      "https://thegioihoinhap.vn/di-cho-the-gioi-tu-2-8-11-2026/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "thegioihoinhap.vn",
+    "checkedAt": "2026-11-09T03:57:29.846Z",
+    "url": "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-tap-doan-lac-vuong/",
+    "finalUrl": "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-tap-doan-lac-vuong/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3308,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thegioihoinhap.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 71,
+    "checkedArticleUrls": 74,
+    "freshArticleChecks": 24,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 71,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 31,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 310,
+        "passed": 71,
+        "distinctHashes": 71
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thegioihoinhap.vn/172164-2/",
+      "https://thegioihoinhap.vn/startup-nhat-mo-rong-cung-ung-lanh-tai-viet-nam-va-malaysia/",
+      "https://thegioihoinhap.vn/nong-dan-uc-phat-trien-nong-san-sinh-thai-voi-chuoi-bo-va-du-du/",
+      "https://thegioihoinhap.vn/viet-nam-diem-du-lich-cuoi-moi-cua-gioi-sieu-giau-an-do/",
+      "https://thegioihoinhap.vn/temu-va-jd-com-bien-hinh-de-vuot-cac-rao-can-cua-chau-au/",
+      "https://thegioihoinhap.vn/mon-lap-cua-lao-se-duoc-unesco-cong-nhan-di-san-van-hoa-phi-vat-the/",
+      "https://thegioihoinhap.vn/hang-buon-nhat-noi-trong-nguy-co-co-sau-khi-dan-chu-thang-bau-cu-giua-ky-o-my/",
+      "https://thegioihoinhap.vn/doc-sach-melinda-french-gates-ngay-hom-sau/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-xa-phong-ha-noi/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-ngu-coc-truong-tho/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-thucpham-com/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2026-cong-ty-tnhh-muoi-thanh-tam-nha-trang/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-tan-thanh-long-group/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-tm-dv-xnk-phat-tam-phat-tam-foods/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-tap-doan-lac-vuong/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-xuat-nhap-khau-ktk-ktk-corp/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-king-car-viet-nam/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-co-phan-huu-co-ninh-binh-dong-hanh-cung-nen-nong-nghiep-xanh-sach-ben-vung/",
+      "https://thegioihoinhap.vn/ung-vien-hvnclc-2027-cong-ty-giay-binh-minh/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 3
+    },
+    "checkedAt": "2026-11-10T09:17:14.794Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thegioihoinhap.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

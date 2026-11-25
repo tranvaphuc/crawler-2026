@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "siteName": "coindesk.com",
+  "siteId": "coindesk.com",
+  "registrableDomain": "coindesk.com",
+  "homepage": "https://www.coindesk.com/",
+  "allowedHosts": [
+    "www.coindesk.com",
+    "coindesk.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "What the election results mean for crypto: State of Crypto",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#ot-pc-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "listing_unavailable",
+  "variants": [
+    {
+      "title": {
+        "value": "Stablecoin growth has stalled. The payments boom hasn't",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:24.102Z",
+    "sampleCount": 12,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 9,
+    "sampleUrls": [
+      "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+      "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+      "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
+      "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
+      "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
+      "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/coindesk.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "https://www.coindesk.com/",
+    "categories": [
+      "https://www.coindesk.com/latest-crypto-news",
+      "https://www.coindesk.com/markets",
+      "https://www.coindesk.com/business",
+      "https://www.coindesk.com/tech",
+      "https://www.coindesk.com/policy",
+      "https://www.coindesk.com/focus",
+      "https://www.coindesk.com/newsletters",
+      "https://www.coindesk.com/newsletters/coindesk-headlines",
+      "https://www.coindesk.com/newsletters/daybook-us",
+      "https://www.coindesk.com/newsletters/state-of-crypto",
+      "https://www.coindesk.com/newsletters/crypto-long-short",
+      "https://www.coindesk.com/newsletters/crypto-for-advisors",
+      "https://www.coindesk.com/newsletters/tokenization-weekly",
+      "https://www.coindesk.com/newsletters/coindesk-insider",
+      "https://www.coindesk.com/tag/bitcoin",
+      "https://www.coindesk.com/tag/ethereum",
+      "https://www.coindesk.com/tag/xrp",
+      "https://www.coindesk.com/tag/solana",
+      "https://www.coindesk.com/videos",
+      "https://www.coindesk.com/videos/coindesk-daily",
+      "https://www.coindesk.com/videos/coindesk-spotlight",
+      "https://www.coindesk.com/videos/markets-outlook",
+      "https://www.coindesk.com/videos/public-keys-at-nyse",
+      "https://www.coindesk.com/videos/shorts",
+      "https://www.coindesk.com/videos/the-policy-protocol",
+      "https://www.coindesk.com/podcasts",
+      "https://www.coindesk.com/podcasts/coindesk-podcast-network",
+      "https://www.coindesk.com/podcasts/markets-daily",
+      "https://www.coindesk.com/podcasts/public-keys-at-nyse",
+      "https://www.coindesk.com/podcasts/the-policy-protocol",
+      "https://www.coindesk.com/price",
+      "https://www.coindesk.com/price/bitcoin",
+      "https://www.coindesk.com/price/ethereum",
+      "https://www.coindesk.com/price/xrp",
+      "https://www.coindesk.com/price/solana",
+      "https://www.coindesk.com/price/hype",
+      "https://www.coindesk.com/price/stock",
+      "https://www.coindesk.com/price/stock/spy",
+      "https://www.coindesk.com/price/stock/blsh",
+      "https://www.coindesk.com/price/stock/crcl",
+      "https://www.coindesk.com/price/stock/coin",
+      "https://www.coindesk.com/price/stock/mstr",
+      "https://www.coindesk.com/research",
+      "https://www.coindesk.com/partner/hub/zcash",
+      "https://www.coindesk.com/events",
+      "https://www.coindesk.com/sponsored-content"
+    ],
+    "legacyArticlePattern": null,
+    "publicRss": "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml",
+    "rssDiscoveryVerified": true,
+    "rssFullContentVerified": false,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 0,
+    "passedSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "coindesk.com",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 3,
+    "freshArticleChecks": 3,
+    "parserIssues": 0,
+    "transportUnconfirmed": 3,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 46,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 41,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": "rate_limited",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:14:38.336Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/coindesk.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

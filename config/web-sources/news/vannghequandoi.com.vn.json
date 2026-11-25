@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vannghequandoi.com.vn",
+  "siteId": "vannghequandoi.com.vn",
+  "registrableDomain": "vannghequandoi.com.vn",
+  "homepage": "https://vannghequandoi.com.vn/",
+  "allowedHosts": [
+    "vannghequandoi.com.vn",
+    "www.vannghequandoi.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Người viết giai điệu mới của \"Bài ca năm tấn\"",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".day-info > span.f12"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:51.931Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay/nguoi-viet-giai-dieu-moi-cua-bai-ca-nam-tan_18954.html",
+      "https://vannghequandoi.com.vn/dong-chay/tong-cuc-chinh-tri-duyet-xuat-ban-bo-sach-ve-8-nha-van-giai-thuong-ho-chi-minh_18955.html",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/van-nghe-quan-doi-so-1096-dau-thang-112026_18932.html",
+      "https://vannghequandoi.com.vn/tho/tho-du-thi-cua-truong-minh-hieu_18968.html",
+      "https://vannghequandoi.com.vn/tho/tho-du-thi-cua-nguyen-thanh-nga_18967.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vannghequandoi.com.vn/",
+    "categories": [
+      "https://vannghequandoi.com.vn/dong-chay",
+      "https://vannghequandoi.com.vn/binh-luan-van-nghe",
+      "https://vannghequandoi.com.vn/van-xuoi",
+      "https://vannghequandoi.com.vn/tho",
+      "https://vannghequandoi.com.vn/nguoi-linh",
+      "https://vannghequandoi.com.vn/the-gioi",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi",
+      "https://vannghequandoi.com.vn/binh-luan-van-nghe/diem-sach",
+      "https://vannghequandoi.com.vn/binh-luan-van-nghe/phe-binh-van-nghe",
+      "https://vannghequandoi.com.vn/binh-luan-van-nghe/dien-dan-van-nghe",
+      "https://vannghequandoi.com.vn/binh-luan-van-nghe/trao-doi",
+      "https://vannghequandoi.com.vn/van-xuoi/sang-tac",
+      "https://vannghequandoi.com.vn/van-xuoi/nua-the-ki-van-xuoi",
+      "https://vannghequandoi.com.vn/van-xuoi/tac-gia-tac-pham",
+      "https://vannghequandoi.com.vn/van-xuoi/but-ki-phong-su",
+      "https://vannghequandoi.com.vn/van-xuoi/truyen-ngan-du-thi",
+      "https://vannghequandoi.com.vn/tho/sang-tac",
+      "https://vannghequandoi.com.vn/tho/tac-gia-tac-pham",
+      "https://vannghequandoi.com.vn/tho/tho-tren-ban-bien-tap",
+      "https://vannghequandoi.com.vn/tho/tho-du-thi",
+      "https://vannghequandoi.com.vn/nguoi-linh/chuyen-dong",
+      "https://vannghequandoi.com.vn/nguoi-linh/giai-tri",
+      "https://vannghequandoi.com.vn/nguoi-linh/chien-si",
+      "https://vannghequandoi.com.vn/nguoi-linh/hom-qua-hom-nay",
+      "https://vannghequandoi.com.vn/nguoi-linh/camera-cua-toi",
+      "https://vannghequandoi.com.vn/van-hoc-nuoc-ngoai/chan-dung",
+      "https://vannghequandoi.com.vn/van-hoc-nuoc-ngoai/sang-tac",
+      "https://vannghequandoi.com.vn/van-hoc-nuoc-ngoai/phe-binh-van-hoc",
+      "https://vannghequandoi.com.vn/van-hoc-nuoc-ngoai/tin-tuc",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/thu-toa-soan",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/vnqd-so-moi",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/van-hoc-nha-truong",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay",
+      "https://vannghequandoi.com.vn/vnqd-ket-noi/tu-lieu-vnqd",
+      "https://vannghequandoi.com.vn/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?vannghequandoi.com.vn/.*-\\d{5,}(.html)$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.349Z",
+      "verifiedSeeds": [
+        "https://vannghequandoi.com.vn/",
+        "https://vannghequandoi.com.vn/dong-chay",
+        "https://vannghequandoi.com.vn/binh-luan-van-nghe",
+        "https://vannghequandoi.com.vn/van-xuoi",
+        "https://vannghequandoi.com.vn/tho",
+        "https://vannghequandoi.com.vn/nguoi-linh",
+        "https://vannghequandoi.com.vn/the-gioi",
+        "https://vannghequandoi.com.vn/vnqd-ket-noi",
+        "https://vannghequandoi.com.vn/binh-luan-van-nghe/diem-sach",
+        "https://vannghequandoi.com.vn/binh-luan-van-nghe/phe-binh-van-nghe",
+        "https://vannghequandoi.com.vn/binh-luan-van-nghe/dien-dan-van-nghe"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vannghequandoi.com.vn",
+    "checkedAt": "2026-11-09T03:57:36.156Z",
+    "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay/nguoi-viet-giai-dieu-moi-cua-bai-ca-nam-tan_18954.html",
+    "finalUrl": "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay/nguoi-viet-giai-dieu-moi-cua-bai-ca-nam-tan_18954.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 9699,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vannghequandoi.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 94,
+    "checkedArticleUrls": 100,
+    "freshArticleChecks": 96,
+    "parserIssues": 6,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 94,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 34,
+    "categoriesFreshChecked": 34,
+    "categoriesUnconfirmed": 34,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 266,
+        "passed": 94,
+        "distinctHashes": 94
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2,
+      "unresolved_extraction": 4
+    },
+    "checkedAt": "2026-11-10T09:17:50.104Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vannghequandoi.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T06:24:38.217Z",
+    "method": "scoped_original_day_info_clock",
+    "proofs": [
+      {
+        "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay/nguoi-viet-giai-dieu-moi-cua-bai-ca-nam-tan_18954.html",
+        "contentHash": "d48ddb7f09a47926e6e15a6d2ac949784a74f7bd2debedbc1cb6f3b5784be9cf",
+        "description": "Mang bản lĩnh người lính Cụ Hồ vào thương trường, AHLĐ Trần Mạnh Báo đã \"xé rào\" thời bao cấp, kiến tạo thương hiệu hạt gạo Việt Nam từ chính đồng...",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/nhan-vat-tuan-nay/nguoi-viet-giai-dieu-moi-cua-bai-ca-nam-tan_18954.html",
+          "publishedDate": "2026-11-07T00:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/van-nghe-quan-doi-so-1097-cuoi-thang-112026_19010.html",
+        "contentHash": "2b5475a02f5f342a77b875f01f96eebd57920852926b9bcf8f7ba2876459ccff",
+        "description": "Văn nghệ Quân đội số 1097 tiếp tục mang đến cho bạn đọc những trang viết đa dạng về con người, cuộc sống, lịch sử và những vấn đề đặt ra trong đời...",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/van-nghe-quan-doi-so-1097-cuoi-thang-112026_19010.html",
+          "publishedDate": "2026-11-16T00:09:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/van-nghe-quan-doi-so-1096-dau-thang-112026_18932.html",
+        "contentHash": "4c9d67dde4a95c06103e465cb9eb97a9c1e230aa797d7616615faefa81cc636f",
+        "description": "Mở đầu Tạp chí số mới là bài đối thoại Dưới mái trường nơi đầu sóng giữa các nhà văn Tạp chí Văn nghệ Quân đội với Chuẩn Đô đốc Nguyễn Hữu Thoan - Bí...",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://vannghequandoi.com.vn/vnqd-ket-noi/van-nghe-quan-doi-so-1096-dau-thang-112026_18932.html",
+          "publishedDate": "2026-10-31T01:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null
+}

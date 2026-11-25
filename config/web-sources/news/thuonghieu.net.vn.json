@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thuonghieu.net.vn",
+  "siteId": "thuonghieu.net.vn",
+  "registrableDomain": "thuonghieu.net.vn",
+  "homepage": "https://thuonghieu.net.vn/",
+  "allowedHosts": [
+    "thuonghieu.net.vn",
+    "www.thuonghieu.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thuonghieu.net.vn/",
+    "categories": [
+      "https://thuonghieu.net.vn/thuong-hieu",
+      "https://thuonghieu.net.vn/van-hoa",
+      "https://thuonghieu.net.vn/giai-tri",
+      "https://thuonghieu.net.vn/am-nhac",
+      "https://thuonghieu.net.vn/thoi-trang",
+      "https://thuonghieu.net.vn/the-thao",
+      "https://thuonghieu.net.vn/du-lich",
+      "https://thuonghieu.net.vn/xa-hoi",
+      "https://thuonghieu.net.vn/khoa-hoc",
+      "https://thuonghieu.net.vn/giao-duc"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Nữ doanh nhân Việt Nam: Bản lĩnh kiến tạo, trách nhiệm phụng sự",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".detail__meta",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail__content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:57.898Z",
+    "frozenAt": "2026-11-16T01:59:55.445Z",
+    "trainingUrl": "https://thuonghieu.net.vn/doanh-nhan/nu-doanh-nhan-viet-nam-ban-linh-kien-tao-trach-nhiem-phung-su",
+    "independentHoldouts": [
+      "https://thuonghieu.net.vn/ngan-hang/seabank-lai-1315-ty-dong-trong-quy-iii2026-tang-375-cung-kytong-tai-san-vuot-429376-ty-dong",
+      "https://thuonghieu.net.vn/ngan-hang/mb-lan-dau-vuot-moc-10000-ty-dong-nop-ngan-sach-cung-co-vi-the-ngan-hang-hang-dau-viet-nam"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thuonghieu.net.vn/doanh-nhan/nu-doanh-nhan-viet-nam-ban-linh-kien-tao-trach-nhiem-phung-su",
+      "https://thuonghieu.net.vn/ngan-hang/seabank-lai-1315-ty-dong-trong-quy-iii2026-tang-375-cung-kytong-tai-san-vuot-429376-ty-dong",
+      "https://thuonghieu.net.vn/ngan-hang/mb-lan-dau-vuot-moc-10000-ty-dong-nop-ngan-sach-cung-co-vi-the-ngan-hang-hang-dau-viet-nam",
+      "https://thuonghieu.net.vn/thi-truong/viet-nam-len-ke-hoach-xay-dung-lang-outlet-quy-mo-toi-50000-m",
+      "https://thuonghieu.net.vn/xa-hoi/khai-mac-agroviet-2026-thuc-day-nong-nghiep-xanh-mo-rong-ket-noi-giao-thuong",
+      "https://thuonghieu.net.vn/ngan-hang/vpbank-va-visa-ra-mat-skyone-visa-tien-phong-doi-moi-trai-nghiem-dong-the-du-lich-tai-viet-nam",
+      "https://thuonghieu.net.vn/doanh-nghiep/hanh-vi-mua-sam-thay-doi-doanh-nghiep-ban-le-phai-thich-ung-voi-ai",
+      "https://thuonghieu.net.vn/ngan-hang/dien-dan-mb-economic-insights-12th-2026-khoi-thong-nguon-von-thich-ung-nhanh-truoc-bien-dong",
+      "https://thuonghieu.net.vn/anh/festival-hoa-da-lat-hon-20-nam-de-hoa-thanh-thuong-hieu",
+      "https://thuonghieu.net.vn/bat-dong-san/eurowindow-light-city-gia-tri-khac-biet-cua-lien-keshophouse-phan-khu-mat-troi",
+      "https://thuonghieu.net.vn/kinh-te/ninh-binh-phat-huy-cac-thanh-phan-kinh-te-khoi-thong-nguon-luc-cho-phat-trien",
+      "https://thuonghieu.net.vn/doanh-nhan/ba-mai-kieu-lien-duoc-fortune-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a",
+      "https://thuonghieu.net.vn/video/xuat-hien-bien-may-trang-tran-tren-nui-ba-den-canh-dep-sieu-thuc-gay-sot-mxh",
+      "https://thuonghieu.net.vn/video/nhung-trai-nghiem-tam-linh-dac-biet-chi-co-o-thanh-dia-hanh-huong-nui-ba-den",
+      "https://thuonghieu.net.vn/video/pho-xuat-hien-trong-trailer-lhp-quoc-te-ha-noi-lan-vi",
+      "https://thuonghieu.net.vn/video/video-khoanh-khac-do224n-thi234n-194n-duoc-xuong-t234n-v224o-top-20-miss-grand-internatinal-2022",
+      "https://thuonghieu.net.vn/kinh-te/tu-truy-xuat-nguon-goc-den-nang-tam-nong-san-ha-noi",
+      "https://thuonghieu.net.vn/kinh-te/viet-nam-don-du-an-nha-may-san-xuat-vat-lieu-co-do-cung-vuot-troi-tu-my",
+      "https://thuonghieu.net.vn/kinh-te/ceo-cang-hang-khong-quoc-te-gia-binh-tra-loi-phong-van-flight-global-ben-le-routes-world-2026",
+      "https://thuonghieu.net.vn/kinh-te/vincons-ghi-dau-an-manh-tai-cac-sieu-du-an-ty-do-khang-dinh-vi-the-tong-thau-xay-dung-hang-dau-viet-nam",
+      "https://thuonghieu.net.vn/kinh-te/vinfast-vf-mpv-7-gia-6825-trieu-dong-nhieu-cong-nghe-tien-ich-cho-gia-dinh",
+      "https://thuonghieu.net.vn/kinh-te/robot-viet-don-co-hoi-tren-duong-dua-ngan-ty-usd",
+      "https://thuonghieu.net.vn/kinh-te/ca-phe-khe-sanh-100-nam-tu-vung-dat-lich-su-den-khat-vong-vuon-tam-quoc-te",
+      "https://thuonghieu.net.vn/kinh-te/pgsts-bui-quang-tuan-cong-nghiep-ho-tro-viet-nam-dung-truoc-co-hoi-chuyen-minh-ve-chat-cung-dau-tau-vingroup",
+      "https://thuonghieu.net.vn/thuong-hieu/inochi-ba-lan-lien-tiep-khang-dinh-gia-tri-thuong-hieu",
+      "https://thuonghieu.net.vn/thuong-hieu/vpbank-gianh-cu-dup-giai-thuong-ve-quan-ly-dong-tien-tai-the-euromoney-transaction-banking-awards",
+      "https://thuonghieu.net.vn/thuong-hieu/htx-nong-cong-nghiep-va-thuong-mai-du-lich-than-uyen-nang-tam-dac-san-ca-lang-lai-chau",
+      "https://thuonghieu.net.vn/thuong-hieu/dien-quang-hon-50-nam-doi-moi-9-lan-dat-thuong-hieu-quoc-gia",
+      "https://thuonghieu.net.vn/thuong-hieu/sua-cong-thuc-tre-em-vinamilk-optimum-gold-duoc-vinh-danh-thuong-hieu-cua-nam-tai-le-trao-giai-thuong-hieu-the-gioi-2026-2027",
+      "https://thuonghieu.net.vn/thuong-hieu/halobeco-gan-40-nam-xay-dung-thuong-hieu-bia-tu-vung-dat-di-san",
+      "https://thuonghieu.net.vn/thuong-hieu/hanh-trinh-tu-san-vat-dia-phuong-den-bieu-tuong-thuong-hieu-quoc-gia",
+      "https://thuonghieu.net.vn/thuong-hieu/canifa-25-nam-xay-dung-thuong-hieu-thoi-trang-viet-tu-chat-luong-va-doi-moi",
+      "https://thuonghieu.net.vn/thuong-hieu/hon-dao-giua-ho-nui-coc-tro-thanh-tuyet-tac-nghe-thuat-duong-dai-giua-thien-nhien"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

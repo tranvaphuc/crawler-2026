@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "siteName": "index.vn",
+  "siteId": "index.vn",
+  "registrableDomain": "index.vn",
+  "homepage": "https://index.vn/",
+  "allowedHosts": [
+    "index.vn",
+    "www.index.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "9 ngân hàng lên kế hoạch thành lập ngân hàng con tại VIFC",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-detail.ck-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:22.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://index.vn/tin-tuc/9-ngan-hang-len-ke-hoach-thanh-lap-ngan-hang-con-tai-vifc",
+      "https://index.vn/tin-tuc/de-xuat-goi-ho-tro-doanh-nghiep-chuyen-doi-xanh-mo-rong-thi-truong-giai-doan-2026-2030",
+      "https://index.vn/tin-tuc/goc-nhin-ky-thuat-phien-giao-dich-ngay-9-11-nhieu-kha-nang-tiep-tuc-co-rung-lac",
+      "https://index.vn/tin-tuc/cong-ty-dung-sau-chatbot-claude-van-muon-len-san-truoc-le-ta-on-nham-muc-tieu-huy-dong-100-ty-usd",
+      "https://index.vn/tin-tuc/hai-ky-giai-ngan-quan-trong-cua-ftse-dang-den-gan-nhom-vingroup-dan-dau-cuoc-dua-hut-von-ty-usd"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://index.vn/",
+    "categories": [
+      "https://index.vn/tin-tuc",
+      "https://index.vn/cong-dong",
+      "https://index.vn/lich-kinh-te"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "index.vn",
+    "checkedAt": "2026-11-09T03:57:07.281Z",
+    "url": "https://index.vn/tin-tuc/9-ngan-hang-len-ke-hoach-thanh-lap-ngan-hang-con-tai-vifc",
+    "finalUrl": "https://index.vn/tin-tuc/9-ngan-hang-len-ke-hoach-thanh-lap-ngan-hang-con-tai-vifc",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2827,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "index.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 3,
+    "categoriesFreshChecked": 3,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 67,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:46.133Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/index.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

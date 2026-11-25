@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "siteName": "finance.yahoo.com",
+  "siteId": "finance.yahoo.com",
+  "registrableDomain": "yahoo.com",
+  "homepage": "https://finance.yahoo.com/",
+  "allowedHosts": [
+    "finance.yahoo.com",
+    "www.finance.yahoo.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "The SAVE plan is gone. Here's what student loan borrowers need to do next.",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:29.939Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://finance.yahoo.com/personal-finance/student-loans/article/when-do-student-loans-resume-203115948.html",
+      "https://finance.yahoo.com/personal-finance/student-loans/article/do-i-qualify-for-student-loan-forgiveness-194501496.html",
+      "https://finance.yahoo.com/personal-finance/student-loans/article/paying-off-student-loans-184751746.html",
+      "https://finance.yahoo.com/personal-finance/insurance/article/types-of-car-insurance-175724082.html",
+      "https://finance.yahoo.com/personal-finance/insurance/article/car-insurance-discounts-212732172.html",
+      "https://finance.yahoo.com/personal-finance/student-loans/article/when-do-student-loans-resume-203115948.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/finance.yahoo.com"
+  },
+  "discovery": {
+    "homepage": "https://finance.yahoo.com/",
+    "categories": [
+      "https://finance.yahoo.com/news/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "finance.yahoo.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 59,
+        "passed": 12,
+        "distinctHashes": 12
+      },
+      {
+        "name": "video",
+        "discovered": 4,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://finance.yahoo.com/technology/article/nvidia-ceo-jensen-huangs-affair-with-a-reported-chinese-spy-damages-this-key-investing-factor-201922852.html",
+      "https://finance.yahoo.com/economy/policy/articles/top-senate-democrat-takes-aim-230931403.html",
+      "https://finance.yahoo.com/technology/articles/trump-says-fbi-investigating-huang-220621540.html",
+      "https://finance.yahoo.com/markets/stocks/article/nvidia-has-a-deep-bench-if-jensen-huang-steps-aside-tech-investor-says-181907948.html",
+      "https://finance.yahoo.com/markets/stocks/article/musk-says-tesla-on-the-hook-for-cybertruck-deposits-after-cancellation-162604829.html",
+      "https://finance.yahoo.com/economy/policy/articles/china-set-record-trade-surplus-041024856.html",
+      "https://finance.yahoo.com/energy/articles/nonsense-rate-inside-weeks-turmoil-000102205.html",
+      "https://finance.yahoo.com/personal-finance/investing/article/vanguard-and-fidelity-have-a-warning-for-retirement-savers-195925771.html",
+      "https://finance.yahoo.com/technology/ai/articles/anthropic-reportedly-plans-move-forward-012712359.html",
+      "https://finance.yahoo.com/small-business/articles/more-gen-zs-ditching-entry-233601363.html",
+      "https://finance.yahoo.com/technology/articles/uber-engineering-leader-robotaxis-delivery-214041534.html",
+      "https://finance.yahoo.com/technology/article/ai-is-not-popular-right-now-but-the-us-has-to-lead-sierra-co-founder-bret-taylor-224639941.html",
+      "https://finance.yahoo.com/personal-finance/investing/article/social-security-tax-by-state-230754092.html",
+      "https://finance.yahoo.com/technology/ai/articles/jensen-huang-wife-co-trustee-220000019.html",
+      "https://finance.yahoo.com/markets/stocks/articles/musk-says-many-cybertruck-buyers-203036713.html",
+      "https://finance.yahoo.com/economy/articles/unrest-france-looks-pretty-big-090000487.html",
+      "https://finance.yahoo.com/news/fidelity-vanguard-issue-same-sobering-121500246.html",
+      "https://finance.yahoo.com/economy/policy/articles/court-blocks-california-enforcing-climate-205008962.html",
+      "https://finance.yahoo.com/small-business/articles/meet-23-old-college-dropout-164038235.html",
+      "https://finance.yahoo.com/technology/ai/articles/spacex-spcx-lands-45-billion-220638884.html",
+      "https://finance.yahoo.com/video/why-the-jensen-huang-scandal-is-a-net-loss-for-china-221329322.html",
+      "https://finance.yahoo.com/video/jensen-huangs-stance-against-cutting-china-off-from-us-chips-holds-a-lot-less-weight-213031755.html",
+      "https://finance.yahoo.com/video/nvidia-vs-amd-why-lisa-170000159.html",
+      "https://finance.yahoo.com/video/berkshire-hathaway-latest-q3-earnings-top-5-holdings-record-stock-buyback--more-150507713.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:15:27.410Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/finance.yahoo.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "runtimeRepairRevision": "bounded-response-headers64k-20261113",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.369Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://finance.yahoo.com/technology/live/nvidia-live-updates-following-jensen-huangs-resignation-as-ceo-allegations-of-a-third-affair-emerge-195535310.html",
+      "https://finance.yahoo.com/personal-finance/student-loans/article/when-do-student-loans-resume-203115948.html",
+      "https://finance.yahoo.com/personal-finance/student-loans/article/do-i-qualify-for-student-loan-forgiveness-194501496.html"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  }
+}

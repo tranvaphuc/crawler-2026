@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cardekho.com",
+  "siteId": "cardekho.com",
+  "registrableDomain": "cardekho.com",
+  "homepage": "https://www.cardekho.com/",
+  "allowedHosts": [
+    "www.cardekho.com",
+    "cardekho.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.cardekho.com/",
+    "categories": [
+      "https://www.cardekho.com/newcars",
+      "https://www.cardekho.com/maruti/e-vitara",
+      "https://www.cardekho.com/mahindra/xev-9e",
+      "https://www.cardekho.com/tata/punch-ev",
+      "https://www.cardekho.com/tata/tiago-ev",
+      "https://www.cardekho.com/mg/windsor-ev"
+    ]
+  },
+  "title": {
+    "value": "The Mitsubishi Pajero Is Back For 2026!",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:16.085Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:50.180Z",
+    "independentHoldouts": [
+      "https://www.cardekho.com/car-videos/maruti-baleno-2026-variants-compared-best-value-revealed-6910.htm",
+      "https://www.cardekho.com/car-videos/hyundai-bayon-first-drive-review-will-make-sense-later-6909.htm",
+      "https://www.cardekho.com/car-videos/maruti-jimny-vs-mahindra-xuv-7xo-vs-land-rover-defender-which-one-will-win-6900.htm",
+      "https://www.cardekho.com/car-videos/maruti-jimny-vs-mahindra-xuv-7xo-vs-land-rover-defender-which-one-will-win-6899.htm"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.cardekho.com/car-videos/maruti-baleno-2026-variants-compared-best-value-revealed-6910.htm",
+      "https://www.cardekho.com/car-videos/hyundai-bayon-first-drive-review-will-make-sense-later-6909.htm",
+      "https://www.cardekho.com/car-videos/maruti-jimny-vs-mahindra-xuv-7xo-vs-land-rover-defender-which-one-will-win-6900.htm",
+      "https://www.cardekho.com/car-videos/maruti-jimny-vs-mahindra-xuv-7xo-vs-land-rover-defender-which-one-will-win-6899.htm"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

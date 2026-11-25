@@ -1,0 +1,11 @@
+import 'dotenv/config';
+import fs from 'node:fs';import {spawn} from 'node:child_process';
+const h=new URL(process.env.SSH_CRAWL_HOST.includes('://')?process.env.SSH_CRAWL_HOST:'ssh://'+process.env.SSH_CRAWL_HOST);
+const mode=process.argv[2],local=process.argv[3],remote=process.argv[4];
+if(!['exec','put','get'].includes(mode))throw Error('exec <local-shell-file> | put <local-file> <remote-path>');
+const command=mode==='exec'?'bash -c '+"'"+('echo '+Buffer.from(fs.readFileSync(local)).toString('base64')+' | base64 -d | bash').replaceAll("'","'\\''")+"'":'';
+const args=mode==='exec'?['/usr/bin/ssh','-o','StrictHostKeyChecking=yes','-o','ConnectTimeout=20','-o','PreferredAuthentications=password,keyboard-interactive','-o','PubkeyAuthentication=no','-p',h.port||'22',process.env.SSH_CRAWL_NAME+'@'+h.hostname,command]:['/usr/bin/scp','-q','-o','StrictHostKeyChecking=yes','-o','ConnectTimeout=20','-o','PreferredAuthentications=password,keyboard-interactive','-o','PubkeyAuthentication=no','-P',h.port||'22',...(mode==='get'?[process.env.SSH_CRAWL_NAME+'@'+h.hostname+':'+remote,local]:[local,process.env.SSH_CRAWL_NAME+'@'+h.hostname+':'+remote])];
+const tcl='set timeout 300\nlog_user 0\nspawn -noecho {*}[split $env(CRAWL_SSH_ARGS) \x1f]\nlog_user 1\nexpect {\n -re "(?i)password:" {log_user 0; send -- "$env(SSH_CRAWL_PASS)\\r"; log_user 1; exp_continue}\n timeout {exit 124}\n eof {set r [wait];exit [lindex $r 3]}\n}';
+const child=spawn('/usr/bin/expect',['-c',tcl],{env:{...process.env,CRAWL_SSH_ARGS:args.join('\x1f')},stdio:['ignore','pipe','pipe']});
+for(const s of [child.stdout,child.stderr])s.on('data',b=>{let x=String(b);for(const k of ['SSH_CRAWL_PASS','AUTHEN_KEY_FOR_DOMAIN','PROXY_MANAGER_AUTH_KEY','PROXY_MANAGER_ADMIN_KEY'])if(process.env[k])x=x.replaceAll(process.env[k],'[REDACTED]');process.stdout.write(x);});
+child.on('exit',c=>process.exitCode=c??1);

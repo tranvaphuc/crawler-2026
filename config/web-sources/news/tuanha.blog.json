@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tuanha.blog",
+  "siteId": "tuanha.blog",
+  "registrableDomain": "tuanha.blog",
+  "homepage": "https://www.tuanha.blog/",
+  "allowedHosts": [
+    "www.tuanha.blog",
+    "tuanha.blog"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.tuanha.blog/",
+    "categories": []
+  },
+  "title": {
+    "value": "LG hỗ trợ sửa chữa thiết bị điện tử chính hãng bị hư do ngập lụt",
+    "strategy": "selector",
+    "selector": ".entry-title"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:46:38.611Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:46:26.254Z",
+    "independentHoldouts": [
+      "https://www.tuanha.blog/2026/11/vivo-V80-va-V80-FE-sap-ra-mat-tai-Viet-Nam.html",
+      "https://www.tuanha.blog/2026/11/realme-mo-rong-san-choi-Esports-va-cong-nghe-tai-Ha-Noi-va-TP.HCM.html",
+      "https://www.tuanha.blog/2026/11/Cisco-cong-bo-giai-phap-kiem-thu-tan-cong-gia-lap-va-giam-sat-tac-nhan-AI.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.tuanha.blog/2026/11/LG-ho-tro-sua-chua-thiet-bi-dien-tu-chinh-hang-bi-hu-do-ngap-lut.html",
+      "https://www.tuanha.blog/2026/11/vivo-V80-va-V80-FE-sap-ra-mat-tai-Viet-Nam.html",
+      "https://www.tuanha.blog/2026/11/realme-mo-rong-san-choi-Esports-va-cong-nghe-tai-Ha-Noi-va-TP.HCM.html",
+      "https://www.tuanha.blog/2026/11/Cisco-cong-bo-giai-phap-kiem-thu-tan-cong-gia-lap-va-giam-sat-tac-nhan-AI.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

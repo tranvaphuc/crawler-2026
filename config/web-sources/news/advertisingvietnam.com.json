@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "siteName": "advertisingvietnam.com",
+  "siteId": "advertisingvietnam.com",
+  "registrableDomain": "advertisingvietnam.com",
+  "homepage": "https://advertisingvietnam.com/",
+  "allowedHosts": [
+    "advertisingvietnam.com",
+    "www.advertisingvietnam.com"
+  ],
+  "domain": "advertisingvietnam.com",
+  "enabled": false,
+  "stage": "runtime_cached_http_holdouts_passed",
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:24.025Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSampleCount": 0,
+    "categoryVerified": false,
+    "fullSiteCycleVerified": false,
+    "reason": "access_blocked",
+    "stage": "listing_unavailable",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/advertisingvietnam.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 0,
+    "passedSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "advertisingvietnam.com",
+    "previousStatus": "http_unconfirmed",
+    "status": "http_unconfirmed",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 0,
+    "freshArticleChecks": 0,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 0,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [],
+    "homeError": "access_blocked",
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:45.809Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/advertisingvietnam.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Từ McDonald’s đến bài toán tài trợ thể thao: Sự chú ý của hàng tỷ khán giả đáng giá bao nhiêu?",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.370Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://advertisingvietnam.com/article/tu-mcdonalds-den-bai-toan-tai-tro-the-thao-su-chu-y-cua-hang-ty-khan-gia-dang-gia-bao-nhieu",
+      "https://advertisingvietnam.com/article/nowtrending-giai-ma-nhung-lan-song-viral-tren-mang-xa-hoi-tuan-16-3110",
+      "https://advertisingvietnam.com/article/moi-10-nam-da-thanh-ngay-xua-thuong-hieu-co-dang-buoc-vao-thoi-dai-nostalgia-tang-toc"
+    ],
+    "evidence": "previously_fetched_public_http_html",
+    "fullSiteCycleVerified": false
+  }
+}

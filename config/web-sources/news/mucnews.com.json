@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mucnews.com",
+  "siteId": "mucnews.com",
+  "registrableDomain": "mucnews.com",
+  "homepage": "https://mucnews.com/",
+  "allowedHosts": [
+    "mucnews.com",
+    "www.mucnews.com"
+  ],
+  "timezone": "UTC",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Một ngày làm việc của nữ shipper và những người xa lạ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "UTC",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:28.433Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://mucnews.com/mot-ngay-lam-viec-cua-nu-shipper-va-nhung-nguoi-xa-la-248044.html",
+      "https://mucnews.com/gan-50-trieu-dong-tich-gop-cua-gia-dinh-bat-ngo-that-lac-248030.html",
+      "https://mucnews.com/giam-doc-cong-ty-tc79-duong-day-cho-vay-nang-lai-246329.html",
+      "https://mucnews.com/xac-minh-danh-tinh-nu-sinh-lop-11-tu-vong-tren-song-cau-243266.html",
+      "https://mucnews.com/khoi-to-nguoi-dan-ong-dung-dao-dam-chet-hang-xom-o-lao-cai-248042.html",
+      "https://mucnews.com/ha-noi-mo-rong-7-tuyen-duong-xen-via-he-248021.html",
+      "https://mucnews.com/ket-noi-san-vat-dia-phuong-voi-du-lich-va-thi-truong-248014.html",
+      "https://mucnews.com/gia-vang-phuc-hoi-nhung-van-chiu-suc-ep-tu-lai-suat-my-248024.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://mucnews.com/",
+    "categories": [
+      "https://mucnews.com/cat/thoi-su",
+      "https://mucnews.com/cat/the-gioi",
+      "https://mucnews.com/cat/doi-song",
+      "https://mucnews.com/cat/giai-tri",
+      "https://mucnews.com/feed",
+      "https://mucnews.com/bao-mat",
+      "https://mucnews.com/ban-quyen"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "mucnews.com",
+    "checkedAt": "2026-11-09T03:57:15.518Z",
+    "url": "https://mucnews.com/mot-ngay-lam-viec-cua-nu-shipper-va-nhung-nguoi-xa-la-248044.html",
+    "finalUrl": "https://mucnews.com/mot-ngay-lam-viec-cua-nu-shipper-va-nhung-nguoi-xa-la-248044.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2529,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "mucnews.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 62,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://mucnews.com/mua-lon-gay-thiet-hai-237-xa-phuong-co-nguy-co-lu-quet-248169.html",
+      "https://mucnews.com/mot-nhom-nguoi-lam-gia-can-cuoc-gan-chip-va-bang-dai-hoc-so-luong-lon-248155.html",
+      "https://mucnews.com/hoc-sinh-tu-thay-doi-thong-so-xe-dien-de-tang-cong-suat-248112.html",
+      "https://mucnews.com/u23-viet-nam-buoc-vao-phep-thu-voi-luc-luong-moi-248143.html",
+      "https://mucnews.com/chay-toa-nha-cao-tang-14-nguoi-thiet-mang-248137.html",
+      "https://mucnews.com/khoi-to-nguoi-cha-dung-gay-danh-hai-con-gai-vi-mai-dung-dien-thoai-248129.html",
+      "https://mucnews.com/de-xuat-ha-tuoi-huong-tro-cap-huu-tri-xa-hoi-xuong-70-248124.html",
+      "https://mucnews.com/khong-khi-lanh-tiep-tuc-mo-rong-mien-bac-chuyen-ret-248134.html",
+      "https://mucnews.com/mua-lon-thanh-hoa-nguy-co-ngap-lut-lu-quet-sat-lo-248113.html",
+      "https://mucnews.com/va-cham-tren-quoc-lo-7-xe-may-mac-tren-noc-o-to-248120.html",
+      "https://mucnews.com/nghe-an-camera-ghi-canh-nu-giup-viec-tho-bao-voi-cu-ba-liet-giuong-248104.html",
+      "https://mucnews.com/ong-trump-thay-doi-nhan-su-nha-trang-sau-that-bai-bau-cu-giua-ky-248078.html",
+      "https://mucnews.com/giam-doc-cong-ty-tc79-duong-day-cho-vay-nang-lai-246329.html",
+      "https://mucnews.com/xac-minh-danh-tinh-nu-sinh-lop-11-tu-vong-tren-song-cau-243266.html",
+      "https://mucnews.com/cong-an-giai-cuu-4-nu-sinh-nghi-bi-khong-che-giam-giu-tai-ha-noi-247983.html",
+      "https://mucnews.com/gia-dau-lao-doc-khi-nguy-co-du-cung-va-xung-dot-van-hien-huu-247946.html",
+      "https://mucnews.com/gan-50-trieu-dong-tich-gop-cua-gia-dinh-bat-ngo-that-lac-248030.html",
+      "https://mucnews.com/ha-noi-giu-khan-cap-nguoi-dan-ong-sam-so-phu-nu-65-tuoi-gan-benh-vien-bach-mai-247966.html",
+      "https://mucnews.com/nguyen-van-tuan-bi-khoi-to-bat-tam-giam-248077.html",
+      "https://mucnews.com/trau-bo-chet-o-huu-kiem-nghe-an-chua-ro-nguyen-nhan-247993.html",
+      "https://mucnews.com/mot-ngay-lam-viec-cua-nu-shipper-va-nhung-nguoi-xa-la-248044.html",
+      "https://mucnews.com/ha-noi-mo-rong-7-tuyen-duong-xen-via-he-248021.html",
+      "https://mucnews.com/xe-dau-keo-gay-tai-nan-chet-nguoi-15-thang-tu-treo-247958.html",
+      "https://mucnews.com/thanh-hoa-nu-sinh-15-tuoi-mat-lien-lac-khi-tan-hoc-cong-an-thong-bao-tim-kiem-248013.html",
+      "https://mucnews.com/mat-trom-o-to-quang-ninh-csgt-khong-che-doi-tuong-247988.html",
+      "https://mucnews.com/cong-hoa-my-doi-thay-doi-ngu-sau-that-bai-bau-cu-giua-ky-247900.html",
+      "https://mucnews.com/dang-dan-chu-chuan-bi-dieu-tra-cac-thuong-vu-cua-gia-dinh-ong-trump-247801.html",
+      "https://mucnews.com/chinh-sach-cua-my-voi-iran-sau-bau-cu-giua-ky-247767.html",
+      "https://mucnews.com/tap-kich-dao-qeshm-ong-trump-247642.html",
+      "https://mucnews.com/an-sang-bang-khoai-lang-nguoi-tieu-duong-can-luu-y-gi-248066.html",
+      "https://mucnews.com/vo-trung-nho-luu-dau-doi-song-tu-hon-3-000-nam-truoc-248074.html",
+      "https://mucnews.com/ba-giao-lang-u74-lay-mat-ban-go-lam-bang-day-toan-hut-trieu-luot-xem-247852.html",
+      "https://mucnews.com/voi-rong-khong-lo-bat-ngo-xuat-hien-tren-vung-bien-hai-phong-247864.html",
+      "https://mucnews.com/uong-nuoc-hat-chia-moi-ngay-co-the-thay-doi-the-nao-247680.html",
+      "https://mucnews.com/doi-tuyen-viet-nam-thu-suc-voi-nhieu-guong-mat-moi-248061.html",
+      "https://mucnews.com/nguoi-huyet-ap-cao-can-lam-gi-sau-khi-thuc-day-de-phong-dot-quy-247870.html",
+      "https://mucnews.com/ronaldo-khep-lai-23-nam-khoac-ao-tuyen-bo-dao-nha-247833.html",
+      "https://mucnews.com/ronaldo-chia-tay-tuyen-bo-dao-nha-sau-23-nam-khep-lai-hanh-trinh-day-cam-xuc-247738.html",
+      "https://mucnews.com/tu-nhung-chuyen-xe-dap-15km-den-tam-ve-vang-cua-nu-sinh-thanh-hoa-247693.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:16:05.613Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/mucnews.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

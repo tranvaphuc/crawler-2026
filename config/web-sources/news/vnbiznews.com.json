@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vnbiznews.com",
+  "siteId": "vnbiznews.com",
+  "registrableDomain": "vnbiznews.com",
+  "homepage": "https://vnbiznews.com/",
+  "allowedHosts": [
+    "vnbiznews.com",
+    "www.vnbiznews.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vnbiznews.com/",
+    "categories": [
+      "https://vnbiznews.com/tin-moi",
+      "https://vnbiznews.com/ban-tin-sang",
+      "https://vnbiznews.com/chi-so",
+      "https://vnbiznews.com/gia-vang",
+      "https://vnbiznews.com/lai-suat",
+      "https://vnbiznews.com/lich-kinh-te"
+    ]
+  },
+  "title": {
+    "value": "ĐHĐCĐ AgriS 2025-2026: hoàn thiện nền tảng quản trị, sẵn sàng cho giai đoạn phát triển mới",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:27.986Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:22.893Z",
+    "independentHoldouts": [
+      "https://vnbiznews.com/xu-phat-ttc-land-pid1989599663",
+      "https://vnbiznews.com/linda-ngo-truong-thanh-la-khong-can-phai-chon-giua-nhung-dieu-minh-yeu-pid1989599526",
+      "https://vnbiznews.com/ttc-land-thong-tin-ve-lo-trai-phieu-vua-bi-uy-ban-chung-khoan-nha-nuoc-xu-phat-pid1989599716"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vnbiznews.com/dhdcd-agris-2025-2026-hoan-thien-nen-tang-quan-tri-san-sang-cho-giai-doan-phat-trien-moi-pid1989594574",
+      "https://vnbiznews.com/xu-phat-ttc-land-pid1989599663",
+      "https://vnbiznews.com/linda-ngo-truong-thanh-la-khong-can-phai-chon-giua-nhung-dieu-minh-yeu-pid1989599526",
+      "https://vnbiznews.com/ttc-land-thong-tin-ve-lo-trai-phieu-vua-bi-uy-ban-chung-khoan-nha-nuoc-xu-phat-pid1989599716"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

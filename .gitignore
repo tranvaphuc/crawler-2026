@@ -9,6 +9,7 @@ dist/
 *.credentials.txt
 token*.txt
 pageFB.txt
+omachi.md
 
 # Generated/runtime data
 .cache/
@@ -23,3 +24,7 @@ test/page-posts-2026-no-api.json
 
 # OS/editor files
 .DS_Store
+
+# Python bytecode caches
+__pycache__/
+*.py[cod]

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "taisancong.vn",
+  "siteId": "taisancong.vn",
+  "registrableDomain": "taisancong.vn",
+  "homepage": "https://taisancong.vn/",
+  "allowedHosts": [
+    "taisancong.vn",
+    "www.taisancong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://taisancong.vn/",
+    "categories": [
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau",
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau/thong-tin-ban-dau-gia",
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau/thong-tin-dau-thau",
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau/thong-tin-niem-yet-gia",
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau/thong-tin-ban-chi-dinh",
+      "http://taisancong.vn/niem-yet-gia-dau-gia-dau-thau/thong-tin-ket-qua"
+    ]
+  },
+  "title": {
+    "value": "Cắt giảm thủ tục hành chính hướng đến hoàn thiện Luật Phòng, chống tác hại của thuốc lá",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".__MASTERCMS_CONTENT",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:39.307Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:30.688Z",
+    "independentHoldouts": [
+      "https://taisancong.vn/xu-ly-nha-dat-doi-du-noi-xu-ly-gan-xong-noi-van-con-nhieu-206900-57340.html",
+      "https://taisancong.vn/ha-noi-phe-duyet-dieu-chinh-tong-the-quy-hoach-phan-khu-do-thi-song-hong-ty-le-1-5000-57338.html",
+      "https://taisancong.vn/truong-mam-non-binh-hang-trung-tinh-dong-thap-thong-bao-ket-qua-lua-chon-doi-tac-lien-ket-thuc-hien-chuc-nang-nhiem-vu-cua-nha-truong-trong-viec-to-chuc-cho-tre-mau-giao-lam-quen-voi-tieng-anh-va-hoat-dong-giao-duc-aerobic-ngoai-gio-chinh-khoa-trong-na-57334.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://taisancong.vn/cat-giam-thu-tuc-hanh-chinh-huong-den-hoan-thien-luat-phong-chong-tac-hai-cua-thuoc-la-56564.html",
+      "https://taisancong.vn/xu-ly-nha-dat-doi-du-noi-xu-ly-gan-xong-noi-van-con-nhieu-206900-57340.html",
+      "https://taisancong.vn/ha-noi-phe-duyet-dieu-chinh-tong-the-quy-hoach-phan-khu-do-thi-song-hong-ty-le-1-5000-57338.html",
+      "https://taisancong.vn/truong-mam-non-binh-hang-trung-tinh-dong-thap-thong-bao-ket-qua-lua-chon-doi-tac-lien-ket-thuc-hien-chuc-nang-nhiem-vu-cua-nha-truong-trong-viec-to-chuc-cho-tre-mau-giao-lam-quen-voi-tieng-anh-va-hoat-dong-giao-duc-aerobic-ngoai-gio-chinh-khoa-trong-na-57334.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

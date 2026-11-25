@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thepaypers.com",
+  "siteId": "thepaypers.com",
+  "registrableDomain": "thepaypers.com",
+  "homepage": "https://thepaypers.com/",
+  "allowedHosts": [
+    "thepaypers.com",
+    "www.thepaypers.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thepaypers.com/",
+    "categories": [
+      "https://thepaypers.com/",
+      "https://thepaypers.com/news",
+      "https://thepaypers.com/payments",
+      "https://thepaypers.com/fraud-and-fincrime",
+      "https://thepaypers.com/fintech",
+      "https://thepaypers.com/crypto-web3-and-cbdc",
+      "https://thepaypers.com/regulations",
+      "https://thepaypers.com/mergers-aquisitions-and-investments"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.291Z",
+      "verifiedSeeds": [
+        "https://thepaypers.com/",
+        "https://thepaypers.com/news",
+        "https://thepaypers.com/payments",
+        "https://thepaypers.com/fraud-and-fincrime",
+        "https://thepaypers.com/fintech",
+        "https://thepaypers.com/crypto-web3-and-cbdc",
+        "https://thepaypers.com/regulations",
+        "https://thepaypers.com/mergers-aquisitions-and-investments"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "script,style,aside"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "discovery_only_publication_evidence_pending",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:48:27.135Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:48:01.017Z",
+    "independentHoldouts": [
+      "https://thepaypers.com/payments/news/mambu-and-mastercard-extend-cross-border-payments-partnership-to-apac",
+      "https://thepaypers.com/payments/news/thunes-expands-real-time-payouts-to-bhutan",
+      "https://thepaypers.com/fintech/news/vilja-partners-with-b2metric-to-add-ai-customer-data-tools-for-banks"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thepaypers.com/payments/expert-views/a2a-payments-five-different-regional-approaches-to-one-technology",
+      "https://thepaypers.com/payments/news/mambu-and-mastercard-extend-cross-border-payments-partnership-to-apac",
+      "https://thepaypers.com/payments/news/thunes-expands-real-time-payouts-to-bhutan",
+      "https://thepaypers.com/fintech/news/vilja-partners-with-b2metric-to-add-ai-customer-data-tools-for-banks"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "originalPublicationBlockedReason": null,
+  "nativePublicationAdapter": "url_bound_thepaypers_nuxt",
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T05:47:42.859Z",
+    "method": "url_bound_public_nuxt_published_at_and_visible_richtext",
+    "proofs": [
+      {
+        "url": "https://thepaypers.com/payments/news/samsung-and-shopeepay-expand-partnership-on-qr-and-wallet-payments",
+        "contentHash": "6bb27b37f230bd921fdf411e0e4042cf56c239b1abd23015d62b3ed4b776e096",
+        "description": "Samsung Electronics has expanded its partnership with ShopeePay, adding ShopeePay QR payments to Samsung Wallet and Samsung Pay to Shopee’s checkout.",
+        "bodyChars": 2150,
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thepaypers.com/payments/news/samsung-and-shopeepay-expand-partnership-on-qr-and-wallet-payments",
+          "publishedDate": "2026-11-12T16:32:20.926Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://thepaypers.com/payments/expert-views/a2a-payments-five-different-regional-approaches-to-one-technology",
+        "contentHash": "7c207fea03073c61448543f3a759adfc2e1909fb1b50cb6c82c1447e1d97a46f",
+        "description": "Francesco Burelli, Partner at Arkwright Consulting, on why A2A payments diverge across markets, and why operating models now matter more than rails.",
+        "bodyChars": 14587,
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thepaypers.com/payments/expert-views/a2a-payments-five-different-regional-approaches-to-one-technology",
+          "publishedDate": "2026-11-16T09:54:59.648Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      },
+      {
+        "url": "https://thepaypers.com/payments/news/mambu-and-mastercard-extend-cross-border-payments-partnership-to-apac",
+        "contentHash": "28411b0d741718f283cdeada5b75be2a7fb0c1028376b82fad94e16e5a8d4c9b",
+        "description": "Mambu and Mastercard have expanded their collaboration to Asia-Pacific, letting banks on Mambu offer cross-border payments to customers.",
+        "bodyChars": 2124,
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://thepaypers.com/payments/news/mambu-and-mastercard-extend-cross-border-payments-partnership-to-apac",
+          "publishedDate": "2026-11-16T16:56:39.813Z",
+          "precision": "second",
+          "source": "url_bound_original_jsonld"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  }
+}

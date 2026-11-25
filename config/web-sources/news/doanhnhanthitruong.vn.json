@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhanthitruong.vn",
+  "siteId": "doanhnhanthitruong.vn",
+  "registrableDomain": "doanhnhanthitruong.vn",
+  "homepage": "https://doanhnhanthitruong.vn/",
+  "allowedHosts": [
+    "doanhnhanthitruong.vn",
+    "www.doanhnhanthitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnhanthitruong.vn/",
+    "categories": [
+      "https://doanhnhanthitruong.vn/tin-tuc/",
+      "https://doanhnhanthitruong.vn/tin-tuc/the-thao-trong-nuoc/",
+      "https://doanhnhanthitruong.vn/tin-tuc/tin-trong-nuoc-tin-tuc/",
+      "https://doanhnhanthitruong.vn/doanh-nghiep/"
+    ]
+  },
+  "title": {
+    "value": "MKL Green Nature: “Mảnh ghép thiên nhiên” Nuôi dưỡng làn da mỗi ngày",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:48:20.451Z",
+    "previousStatus": "chưa xác định",
+    "frozenAt": "2026-11-15T16:48:16.065Z",
+    "independentHoldouts": [
+      "https://doanhnhanthitruong.vn/34773-2/",
+      "https://doanhnhanthitruong.vn/hoa-hau-minh-chau-khoe-sac-rang-ro-trong-tiec-tri-an/",
+      "https://doanhnhanthitruong.vn/herbalife-viet-nam-dong-hanh-cung-uy-ban-olympic-viet-nam-va-lien-doan-bong-da-viet-nam-to-chuc-chuoi-tap-huan-dinh-duong-the-thao/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnhanthitruong.vn/33916-2/",
+      "https://doanhnhanthitruong.vn/34773-2/",
+      "https://doanhnhanthitruong.vn/hoa-hau-minh-chau-khoe-sac-rang-ro-trong-tiec-tri-an/",
+      "https://doanhnhanthitruong.vn/herbalife-viet-nam-dong-hanh-cung-uy-ban-olympic-viet-nam-va-lien-doan-bong-da-viet-nam-to-chuc-chuoi-tap-huan-dinh-duong-the-thao/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

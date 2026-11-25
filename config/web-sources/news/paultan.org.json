@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "siteName": "paultan.org",
+  "siteId": "paultan.org",
+  "registrableDomain": "paultan.org",
+  "homepage": "https://paultan.org/",
+  "allowedHosts": [
+    "paultan.org",
+    "www.paultan.org"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://paultan.org/",
+    "categories": [
+      "https://paultan.org/research/",
+      "https://paultan.org/used-cars/",
+      "https://paultan.org/research/ev/"
+    ]
+  },
+  "title": {
+    "value": "2027 Mitsubishi Pajero detailed for Australia – Triton-based 4×4 fr RM199k, more expensive than Ford Everest",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:05.997Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:56.263Z",
+    "independentHoldouts": [
+      "https://paultan.org/2026/09/04/mitsubishi-pajero-lineup-to-be-expanded-with-two-smaller-models-including-kei-car-china-rivalling-compact-suv",
+      "https://paultan.org/2026/10/19/honda-city-hatchback-facelift-2026-malaysia-launch/",
+      "https://paultan.org/2026/09/01/bufori-cs8-malaysian-review-810-hp-v8-from-rm2-19-million-has-kepong-built-a-world-class-sports-car/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://paultan.org/2026/09/03/2027-mitsubishi-pajero-detailed-for-australia-triton-based-4x4-fr-rm199k-more-expensive-than-ford-everest",
+      "https://paultan.org/2026/09/04/mitsubishi-pajero-lineup-to-be-expanded-with-two-smaller-models-including-kei-car-china-rivalling-compact-suv",
+      "https://paultan.org/2026/10/19/honda-city-hatchback-facelift-2026-malaysia-launch/",
+      "https://paultan.org/2026/09/01/bufori-cs8-malaysian-review-810-hp-v8-from-rm2-19-million-has-kepong-built-a-world-class-sports-car/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mitsubishi-hungyen.vn",
+  "siteId": "mitsubishi-hungyen.vn",
+  "registrableDomain": "mitsubishi-hungyen.vn",
+  "homepage": "https://mitsubishi-hungyen.vn/",
+  "allowedHosts": [
+    "mitsubishi-hungyen.vn",
+    "www.mitsubishi-hungyen.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://mitsubishi-hungyen.vn/",
+    "categories": [
+      "https://mitsubishi-hungyen.vn/xpander-cross/"
+    ]
+  },
+  "title": {
+    "value": "Ưu đãi Mitsubishi tháng 8/2026 tại Hưng Yên",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:20.494Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:11.630Z",
+    "independentHoldouts": [
+      "https://mitsubishi-hungyen.vn/uu-dai-mitsubishi-thang-8-2026-hung-yen/",
+      "https://mitsubishi-hungyen.vn/trai-he-an-dan-group-2026-tai-thien-cam-mitsubishi-hung-yen/",
+      "https://mitsubishi-hungyen.vn/uu-dai-khach-hang-dac-biet-mitsubishi-thang-7-2026-tai-hung-yen/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://mitsubishi-hungyen.vn/uu-dai-mitsubishi-thang-8-2026-hung-yen",
+      "https://mitsubishi-hungyen.vn/uu-dai-mitsubishi-thang-8-2026-hung-yen/",
+      "https://mitsubishi-hungyen.vn/trai-he-an-dan-group-2026-tai-thien-cam-mitsubishi-hung-yen/",
+      "https://mitsubishi-hungyen.vn/uu-dai-khach-hang-dac-biet-mitsubishi-thang-7-2026-tai-hung-yen/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

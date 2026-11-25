@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dientungaynay.vn",
+  "siteId": "dientungaynay.vn",
+  "registrableDomain": "dientungaynay.vn",
+  "homepage": "https://dientungaynay.vn/",
+  "allowedHosts": [
+    "dientungaynay.vn",
+    "www.dientungaynay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Hơn 23.200 cú sét đánh ở miền Bắc rạng sáng nay",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".box-share-video .video-created"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".clear.node-body"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "5G dẫn đầu tiến bộ của tương lai công nghệ số",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "day",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".current-date.left",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".clear.node-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-09T02:24:34.351Z",
+    "sampleCount": 9,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+      "https://dientungaynay.vn/vien-thong/viettel-trien-khai-thanh-cong-mang-5g-doc-lap-dau-tien-tai-viet-nam",
+      "https://dientungaynay.vn/vien-thong/5g-dan-dau-tien-bo-cua-tuong-lai-cong-nghe-so",
+      "https://dientungaynay.vn/goc-nhin-chuyen-gia/5g-va-cac-thach-thuc-trong-thiet-ke-he-thong-iot-cong-nghiep",
+      "https://dientungaynay.vn/chuyen-doi-so/dak-lak-tiep-nhan-ho-so-ba-du-an-dien-gio-co-de-xuat-cua-bcg-energy",
+      "https://dientungaynay.vn/doanh-nghiep-so/tay-ban-nha-huy-dong-222-trieu-eur-bo-sung-pin-luu-tru-cho-dien-mat-troi",
+      "https://dientungaynay.vn/nang-luong-so/eo-bien-hormuz-lam-thay-doi-tu-duy-an-ninh-nang-luong-toan-cau",
+      "https://dientungaynay.vn/bao-mat/chip-bao-mat-vgc-v10-cua-viettel-co-gi-dac-biet"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dientungaynay.vn/",
+    "categories": [
+      "https://dientungaynay.vn/chuyen-doi-so",
+      "https://dientungaynay.vn/chuyen-doi-so/bao-mat",
+      "https://dientungaynay.vn/chuyen-doi-so/chuyen-dong-so",
+      "https://dientungaynay.vn/chuyen-doi-so/chinh-phu-dien-tu",
+      "https://dientungaynay.vn/chuyen-doi-so/doanh-nghiep-so",
+      "https://dientungaynay.vn/chuyen-doi-so/nong-nghiep-so",
+      "https://dientungaynay.vn/xa-hoi-so",
+      "https://dientungaynay.vn/xa-hoi-so/cuoc-song-so",
+      "https://dientungaynay.vn/xa-hoi-so/chinh-sach-so",
+      "https://dientungaynay.vn/xa-hoi-so/van-hoa-so",
+      "https://dientungaynay.vn/xa-hoi-so/giao-duc",
+      "https://dientungaynay.vn/san-pham-cong-nghe",
+      "https://dientungaynay.vn/san-pham-cong-nghe/mobile",
+      "https://dientungaynay.vn/san-pham-cong-nghe/vien-thong",
+      "https://dientungaynay.vn/san-pham-cong-nghe/dien-tu-tieu-dung",
+      "https://dientungaynay.vn/san-pham-cong-nghe/cong-nghe-thong-tin",
+      "https://dientungaynay.vn/san-pham-cong-nghe/meo-hay-cong-nghe",
+      "https://dientungaynay.vn/trai-nghiem",
+      "https://dientungaynay.vn/trai-nghiem/the-gioi-quanh-ta",
+      "https://dientungaynay.vn/trai-nghiem/diem-den",
+      "https://dientungaynay.vn/trai-nghiem/hanh-trinh",
+      "https://dientungaynay.vn/kinh-te-so",
+      "https://dientungaynay.vn/kinh-te-so/khoi-nghiep-sang-tao",
+      "https://dientungaynay.vn/kinh-te-so/thuong-mai-dien-tu",
+      "https://dientungaynay.vn/kinh-te-so/tai-chinh-fintech",
+      "https://dientungaynay.vn/kinh-te-so/thi-truong",
+      "https://dientungaynay.vn/truyen-thong",
+      "https://dientungaynay.vn/truyen-thong/phat-thanh-truyen-hinh",
+      "https://dientungaynay.vn/truyen-thong/media",
+      "https://dientungaynay.vn/xe-nghe-nhin",
+      "https://dientungaynay.vn/xe-nghe-nhin/xe",
+      "https://dientungaynay.vn/xe-nghe-nhin/hi-end",
+      "https://dientungaynay.vn/tuong-tac",
+      "https://dientungaynay.vn/tuong-tac/goc-nhin-chuyen-gia",
+      "https://dientungaynay.vn/tuong-tac/chan-dung-cong-nghe",
+      "https://dientungaynay.vn/khoa-hoc",
+      "https://dientungaynay.vn/khoa-hoc/kham-pha-khoa-hoc",
+      "https://dientungaynay.vn/khoa-hoc/cong-trinh-khoa-hoc",
+      "https://dientungaynay.vn/khoa-hoc/thuat-ngu-chuyen-nganh",
+      "https://dientungaynay.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.273Z",
+      "verifiedSeeds": [
+        "https://dientungaynay.vn/",
+        "https://dientungaynay.vn/chuyen-doi-so",
+        "https://dientungaynay.vn/chuyen-doi-so/bao-mat",
+        "https://dientungaynay.vn/chuyen-doi-so/chuyen-dong-so",
+        "https://dientungaynay.vn/chuyen-doi-so/chinh-phu-dien-tu",
+        "https://dientungaynay.vn/chuyen-doi-so/doanh-nghiep-so",
+        "https://dientungaynay.vn/chuyen-doi-so/nong-nghiep-so",
+        "https://dientungaynay.vn/xa-hoi-so",
+        "https://dientungaynay.vn/xa-hoi-so/cuoc-song-so",
+        "https://dientungaynay.vn/xa-hoi-so/chinh-sach-so",
+        "https://dientungaynay.vn/xa-hoi-so/van-hoa-so"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dientungaynay.vn",
+    "checkedAt": "2026-11-09T03:56:59.317Z",
+    "url": "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+    "finalUrl": "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7872,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:03.377Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/dientungaynay.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "dientungaynay.vn",
+    "parsedArticles": 48,
+    "distinctHashes": 48,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 39,
+    "categoriesAttempted": 39,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 665,
+    "checkedArticleUrls": 48,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 644,
+        "attempted": 39,
+        "passed": 39,
+        "distinctContents": 39,
+        "distinctHashes": 39
+      },
+      {
+        "name": "video",
+        "discovered": 16,
+        "attempted": 4,
+        "passed": 4,
+        "distinctContents": 4,
+        "distinctHashes": 4
+      },
+      {
+        "name": "photo",
+        "discovered": 2,
+        "attempted": 2,
+        "passed": 2,
+        "distinctContents": 2,
+        "distinctHashes": 2
+      },
+      {
+        "name": "audio",
+        "discovered": 3,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "dientungaynay.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:08:41.506Z",
+    "proofs": [
+      {
+        "url": "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+        "publisherUrl": "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+        "contentHash": "a2a7ee784610212de1051222a741ab1bbbbd7236ca2793c1ebf67e930e6bffbf",
+        "description": "Mưa to kèm theo hàng chục nghìn cú sét giội xuống miền Bắc, đặc biệt là khu vực trung du Bắc Bộ và các tỉnh thành phố Hải Phòng, Hải Dương, Thái Bình, Nam Định trong đêm qua và rạng sáng nay.",
+        "publishedDate": "2025-04-25T07:30:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dientungaynay.vn/cuoc-song-so/hon-23200-cu-set-danh-o-mien-bac-rang-sang-nay",
+          "publishedDate": "2025-04-25T07:30:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dientungaynay.vn/thuong-mai-dien-tu/aeon-khai-truong-trung-tam-thuong-mai-130000-m2-tai-quang-ninh",
+        "publisherUrl": "https://dientungaynay.vn/thuong-mai-dien-tu/aeon-khai-truong-trung-tam-thuong-mai-130000-m2-tai-quang-ninh",
+        "contentHash": "15881a11893a6a5b45ce31c4ef556497d3d371917188aa2fc08f093aed618fcd",
+        "description": "Quy tụ khoảng 140 cửa hàng, cùng hệ thống mua sắm, ẩm thực và giải trí đa dạng, AEON MALL Hạ Long mở thêm lựa chọn tiêu dùng, vui chơi cho người dân và du khách.",
+        "publishedDate": "2026-11-16T07:09:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dientungaynay.vn/thuong-mai-dien-tu/aeon-khai-truong-trung-tam-thuong-mai-130000-m2-tai-quang-ninh",
+          "publishedDate": "2026-11-16T07:09:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dientungaynay.vn/xe-nghe-nhin/top-10-xe-xang-dau-ban-chay-thang-102026",
+        "publisherUrl": "https://dientungaynay.vn/xe-nghe-nhin/top-10-xe-xang-dau-ban-chay-thang-102026",
+        "contentHash": "de2cefe81f67a79b9c101799621960aa1c54162b58ce1b5f9a4c9b98680e1455",
+        "description": "Mazda CX-5 vươn lên dẫn đầu doanh số xe xăng dầu tháng 10/2026, trong khi Ford Ranger và Mitsubishi Xpander cùng rời top 10. Biến động này hé lộ cuộc cạnh tranh ngày càng gay gắt giữa các mẫu ô tô tại Việt Nam.",
+        "publishedDate": "2026-11-13T04:17:00.000Z",
+        "publishedDatePrecision": "minute",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dientungaynay.vn/xe-nghe-nhin/top-10-xe-xang-dau-ban-chay-thang-102026",
+          "publishedDate": "2026-11-13T04:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "publicationArticleScope": ".left-site.left:has(.clear.node-body)",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "backfillLayoutRepair": {
+    "checkedAt": "2026-11-17T11:32:46.279Z",
+    "kind": "mixed_original_day_and_clock",
+    "proofs": [
+      {
+        "url": "https://dientungaynay.vn/media/toan-canh-xac-lap-ky-luc-ban-do-viet-nam-duoc-xep-tu-nhieu-xe-o-to-nhat-nam-2022",
+        "publisherUrl": "https://dientungaynay.vn/media/toan-canh-xac-lap-ky-luc-ban-do-viet-nam-duoc-xep-tu-nhieu-xe-o-to-nhat-nam-2022",
+        "contentHash": "ed53368247d2bfaf550106185fdefc847268d7599f52c5d63855a99c2bbf7ca5",
+        "description": "Tối ngày 9/7/2022, Tổ chức Kỷ lục Việt Nam (VietKings) chính thức trao cho Công ty Cổ phần OTV Media và Công ty TNHH Kinh doanh Thương mai và Dịch vụ VinFast quyết định về việc xác lập kỷ lục với nội dung “Bản đồ Việt Nam được xếp từ nhiều xe ô tô nhất”.",
+        "publishedDate": "2022-07-10",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://dientungaynay.vn/media/toan-canh-xac-lap-ky-luc-ban-do-viet-nam-duoc-xep-tu-nhieu-xe-o-to-nhat-nam-2022",
+          "publishedDate": "2022-07-10",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dientungaynay.vn/media/5g-thay-doi-tuong-lai-cua-ban-nhu-the-nao",
+        "publisherUrl": "https://dientungaynay.vn/media/5g-thay-doi-tuong-lai-cua-ban-nhu-the-nao",
+        "contentHash": "a4edb85e3e26f0b48feea5c4b9a35fbca0fcb5ab0f371bbf4c4e29469e352278",
+        "description": "Hãy tưởng tượng khi chơi một game tương tác cao như Fortnite Battle Royale hay PUBG với kính thực tế ảo. Tất cả trải nghiệm đều sống động trong thời gian thực chỉ cần chiếc điện thoại thông minh. Viễn cảnh được du lịch trên những chiếc xe tự lái được vận hành an toàn và nhanh chóng. Những giấc mơ về nền công nghiệp tự động hóa mà ở đó các thiết bị đều được điều khiển không dây. Hãy ngồi thật vững! Bởi thế giới sẽ thay đổi mãi mãi khi thế hệ mạng di động 5G chính thức xuất hiện!",
+        "publishedDate": "2019-07-26",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://dientungaynay.vn/media/5g-thay-doi-tuong-lai-cua-ban-nhu-the-nao",
+          "publishedDate": "2019-07-26",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dientungaynay.vn/mobile/sep-nha-ban-le-lam-lo-ngay-ban-iphone-11",
+        "publisherUrl": "https://dientungaynay.vn/mobile/sep-nha-ban-le-lam-lo-ngay-ban-iphone-11",
+        "contentHash": "b53d4cef2b1c291607f11b2c50c4d54acceda58e8b3fb32f47d79562d4d043ec",
+        "description": "Chủ tịch nhà mạng SoftBank Ken Miyauchi vừa tiết lộ những chi tiết quan trọng, qua đó gợi ý về việc iPhone 11 sẽ lên kệ vào ngày 20/9.",
+        "publishedDate": "2019-08-06",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://dientungaynay.vn/mobile/sep-nha-ban-le-lam-lo-ngay-ban-iphone-11",
+          "publishedDate": "2019-08-06",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dientungaynay.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "activationPending": true,
+    "paidAiCalls": 0
+  },
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "dientungaynay.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  }
+}

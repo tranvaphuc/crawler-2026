@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-18T21:35:53.907Z",
+  "archive_listing_and_sitemap_pages_checked": 10279,
+  "career_directories": 572,
+  "unique_valid_referenced_urls": 112810,
+  "missing_references": [],
+  "career_pagination_gaps": [],
+  "queue": [
+    {
+      "kind": "listing",
+      "status": "done",
+      "n": 10271
+    },
+    {
+      "kind": "profile",
+      "status": "done",
+      "n": 102709
+    },
+    {
+      "kind": "profile",
+      "status": "resolved_source_reference",
+      "n": 37
+    },
+    {
+      "kind": "sitemap",
+      "status": "done",
+      "n": 8
+    }
+  ],
+  "resolved_source_references": 37,
+  "coverage_scope": "All valid profile and listing links in archived career/province listing pages and published sitemaps, plus consecutive discovered career pagination. Hidden/unlinked pages and future updates cannot be proven from these archives."
+}

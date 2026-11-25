@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "siteName": "phunumoi.net.vn",
+  "siteId": "phunumoi.net.vn",
+  "registrableDomain": "phunumoi.net.vn",
+  "homepage": "https://phunumoi.net.vn/",
+  "allowedHosts": [
+    "phunumoi.net.vn",
+    "www.phunumoi.net.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những tiêu chí tuyển chọn nhà khoa học trẻ Việt Nam dự đại hội tại Nga",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://phunumoi.net.vn/sitemapnew-news.xml"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".fck_detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:02.189Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://phunumoi.net.vn/nhung-tieu-chi-tuyen-chon-nha-khoa-hoc-tre-viet-nam-du-dai-hoi-tai-nga-d384563.html",
+      "https://phunumoi.net.vn/cac-nha-khoa-hoc-ban-ve-gioi-han-cua-ai-trong-giao-duc-d384431.html",
+      "https://phunumoi.net.vn/dai-dien-duy-nhat-cua-viet-nam-duoc-vinh-danh-tai-hang-muc-sua-cong-thuc-tre-em-o-world-branding-awards-20262027-d384098.html",
+      "https://phunumoi.net.vn/gan-150000-cu-dan-va-dong-khach-tap-nap-tao-suc-cau-thuc-li-giai-suc-bat-thanh-khoan-tai-ocean-city-d383236.html",
+      "https://phunumoi.net.vn/thuc-day-binh-dang-gioi-tu-chinh-sach-chuyen-doi-so-d384293.html",
+      "https://phunumoi.net.vn/dau-thau-y-te-bao-ve-nguoi-thuc-hien-dung-kiem-soat-theo-muc-do-rui-ro-d384274.html",
+      "https://phunumoi.net.vn/gstskh-ha-huy-khoi-va-nhung-dong-gop-dat-nen-mong-cho-nganh-dinh-duong-viet-nam-d384262.html",
+      "https://phunumoi.net.vn/viet-nam-du-kien-cu-toi-da-30-nha-khoa-hoc-tre-du-dai-hoi-khoa-hoc-tai-nga-d384163.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://phunumoi.net.vn/",
+    "categories": [
+      "https://phunumoi.net.vn/nu-tri-thuc/",
+      "https://phunumoi.net.vn/ung-dung-doi-moi-sang-tao/",
+      "https://phunumoi.net.vn/nhin-ra-the-gioi/",
+      "https://phunumoi.net.vn/tri-thuc-ky-nang-song/",
+      "https://phunumoi.net.vn/binh-dang-gioi/",
+      "https://phunumoi.net.vn/multimedia/",
+      "https://phunumoi.net.vn/thong-tin-doanh-nghiep/",
+      "https://phunumoi.net.vn/sitemapnew-news.xml"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "phunumoi.net.vn",
+    "checkedAt": "2026-11-09T03:57:22.388Z",
+    "url": "https://phunumoi.net.vn/nhung-tieu-chi-tuyen-chon-nha-khoa-hoc-tre-viet-nam-du-dai-hoi-tai-nga-d384563.html",
+    "finalUrl": "https://phunumoi.net.vn/nhung-tieu-chi-tuyen-chon-nha-khoa-hoc-tre-viet-nam-du-dai-hoi-tai-nga-d384563.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3814,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "phunumoi.net.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 22,
+    "checkedArticleUrls": 26,
+    "freshArticleChecks": 12,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 22,
+    "listingResponsesAtArticleUrls": 1,
+    "categoriesPlanned": 7,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 212,
+        "passed": 21,
+        "distinctHashes": 21
+      },
+      {
+        "name": "photo",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://phunumoi.net.vn/dai-dien-duy-nhat-cua-viet-nam-duoc-vinh-danh-tai-hang-muc-sua-cong-thuc-tre-em-o-world-branding-awards-20262027-d384098.html",
+      "https://phunumoi.net.vn/hoi-nu-tri-thuc-viet-nam-bao-cao-cong-tac-chuan-bi-dai-hoi-lan-thu-iv-voi-hoi-lhpn-viet-nam-d384755.html",
+      "https://phunumoi.net.vn/khoa-hoc-cong-nghe-phai-tro-thanh-dong-luc-truc-tiep-thuc-day-tang-truong-nong-nghiep-d384722.html",
+      "https://phunumoi.net.vn/nhung-tieu-chi-tuyen-chon-nha-khoa-hoc-tre-viet-nam-du-dai-hoi-tai-nga-d384563.html",
+      "https://phunumoi.net.vn/thuc-day-binh-dang-gioi-tu-chinh-sach-chuyen-doi-so-d384293.html",
+      "https://phunumoi.net.vn/dau-thau-y-te-bao-ve-nguoi-thuc-hien-dung-kiem-soat-theo-muc-do-rui-ro-d384274.html",
+      "https://phunumoi.net.vn/tu-nam-2027-bac-si-phai-qua-ky-kiem-tra-nang-luc-hanh-nghe-toan-quoc-d384511.html",
+      "https://phunumoi.net.vn/du-kien-bo-nhiem-giao-su-pho-giao-su-theo-vi-tri-viec-lam-nang-luc-d384317.html",
+      "https://phunumoi.net.vn/ban-hanh-chuan-dau-ra-ve-nang-luc-so-va-ngoai-ngu-trong-dao-tao-giao-vien-d383994.html",
+      "https://phunumoi.net.vn/nhung-chinh-sach-giao-duc-co-hieu-luc-tu-thang-11-d384006.html",
+      "https://phunumoi.net.vn/co-hoi-cho-nguoi-tot-nghiep-cao-dang-tro-len-muon-lam-giao-vien-d383825.html",
+      "https://phunumoi.net.vn/tong-bi-thu-chu-tich-nuoc-gap-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-d384593.html",
+      "https://phunumoi.net.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-d384575.html",
+      "https://phunumoi.net.vn/doan-dai-bieu-hoi-nu-tri-thuc-viet-nam-trinh-bay-bao-cao-cua-hoi-quoc-gia-tai-hoi-nghi-apnn-2026-d384129.html",
+      "https://phunumoi.net.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-nguoi-viet-tai-bi-va-luxembourg-d382430.html",
+      "https://phunumoi.net.vn/ba-mai-kieu-lien-duoc-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a-tai-hoi-nghi-thuong-dinh-fortune-d384110.html",
+      "https://phunumoi.net.vn/pgsts-pham-thanh-huyen-va-nhung-nghien-cuu-xuc-tac-huong-toi-cong-nghe-xanh-d383785.html",
+      "https://phunumoi.net.vn/ts-ton-nu-quynh-trang-theo-duoi-vat-lieu-nano-cho-nang-luong-sach-va-giam-sat-moi-truong-d380513.html",
+      "https://phunumoi.net.vn/ts-nguyen-thi-van-anh-nghien-cuu-dieu-khien-thong-minh-cho-robot-va-he-thong-tu-dong-d380321.html",
+      "https://phunumoi.net.vn/ba-mai-kieu-lien-ba-nam-lien-tiep-duoc-fortune-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a-d379374.html",
+      "https://phunumoi.net.vn/gstskh-ha-huy-khoi-va-nhung-dong-gop-dat-nen-mong-cho-nganh-dinh-duong-viet-nam-d384262.html",
+      "https://phunumoi.net.vn/nsut-quynh-lien-dung-am-nhac-va-long-trac-an-de-lan-toa-nhung-gia-tri-tot-dep-d384241.html",
+      "https://phunumoi.net.vn/lien-hoan-am-thuc-quoc-te-2026-ke-chuyen-van-hoa-qua-nhung-mon-an-d384109.html",
+      "https://phunumoi.net.vn/viet-nam-co-bai-hat-duoc-xem-hon-100-trieu-lan-nghe-si-tu-trung-quoc-my-phan-lan-deu-hat-lai-gioi-chuyen-mon-the-gioi-het-loi-khen-chac-chan-ai-cung-tung-nghe-1-lan-d384268.html",
+      "https://phunumoi.net.vn/lieu-phap-moi-giup-xoa-sach-va-ngan-ung-thu-nao-tai-phat-tren-chuot-d384719.html",
+      "https://phunumoi.net.vn/trung-quoc-phat-trien-ban-chai-danh-rang-tu-tao-dien-de-diet-vi-khuan-rang-mieng-d384550.html",
+      "https://phunumoi.net.vn/han-quoc-ung-dung-ai-phat-trien-san-pham-ho-tro-phong-ngua-suy-nhuoc-o-nguoi-cao-tuoi-d384272.html",
+      "https://phunumoi.net.vn/nasa-nghien-cuu-giai-phap-bao-ve-phi-hanh-gia-truoc-bui-min-tren-sao-hoa-d384133.html",
+      "https://phunumoi.net.vn/trung-quoc-ra-mat-mo-hinh-ai-ve-tinh-canh-bao-thoi-tiet-cuc-doan-d383233.html",
+      "https://phunumoi.net.vn/hai-nha-khoa-hoc-nu-duoc-vinh-danh-tai-giai-thuong-qua-cau-vang-2026-d384799.html",
+      "https://phunumoi.net.vn/phat-huy-nguon-luc-tri-thuc-viet-nam-tai-hungary-trong-phat-trien-khoa-hoc-cong-nghe-d384759.html",
+      "https://phunumoi.net.vn/cac-nha-khoa-hoc-ban-ve-gioi-han-cua-ai-trong-giao-duc-d384431.html",
+      "https://phunumoi.net.vn/hon-1500-chuyen-gia-nha-khoa-hoc-dang-ky-ho-tro-hoc-sinh-nghien-cuu-khoa-hoc-ky-thuat-d384424.html",
+      "https://phunumoi.net.vn/ra-mat-ovoffice-bo-ung-dung-van-phong-hoan-toan-mien-phi-tich-hop-ai-danh-cho-nguoi-viet-d383468.html",
+      "https://phunumoi.net.vn/nha-khoa-hoc-dung-sau-cong-nghe-loc-nuoc-gia-re-toi-thuc-su-nguong-mo-tam-nhin-cua-vinfuture-d382581.html",
+      "https://phunumoi.net.vn/hai-nu-giang-vien-cung-nguoi-lo-lo-lam-moi-nghe-theu-cho-du-lich-d379914.html",
+      "https://phunumoi.net.vn/coban-va-flo-giup-dien-cuc-pin-natri-ion-on-dinh-hon-khi-sac-xa-d373474.html",
+      "https://phunumoi.net.vn/doanh-nhan-pham-phuong-thao-dua-garden-market-tu-phien-cho-cuoi-tuan-den-nen-tang-thuc-pham-huu-co-d372878.html",
+      "https://phunumoi.net.vn/trien-lam-anh-mang-ri-hoi-tho-giua-dai-ngan-d383073.html",
+      "https://phunumoi.net.vn/ha-noi-man-nhan-voi-nhung-man-trinh-dien-phao-hoa-dinh-cao-do-sun-group-tai-tro-tai-ba-tran-dia-d380066.html",
+      "https://phunumoi.net.vn/can-canh-cac-tran-dia-phao-hoa-hoanh-trang-do-sun-group-tai-tro-mung-72-nam-ngay-giai-phong-thu-do-d379951.html",
+      "https://phunumoi.net.vn/hon-1000-ca-heo-ca-voi-bat-ngo-do-bo-vung-bien-phu-quy-khien-dan-ban-dia-thang-thot-tu-nho-gio-moi-gap-nhieu-den-vay-v379392.html",
+      "https://phunumoi.net.vn/ba-vi-noi-dai-ngan-danh-thuc-nhung-uoc-mo-v376370.html",
+      "https://phunumoi.net.vn/gioi-tre-sot-xinh-xich-voi-con-duong-la-vang-mua-thu-tai-ba-na-hills-d384322.html",
+      "https://phunumoi.net.vn/muc-so-thi-tam-giac-mach-khoe-sac-hoa-xac-phao-tim-diem-to-dinh-fansipan-d383225.html",
+      "https://phunumoi.net.vn/bat-mi-nhung-trai-nghiem-mua-thu-chat-lu-ma-khong-phai-ai-cung-biet-d381769.html",
+      "https://phunumoi.net.vn/ca-linh-mon-qua-tu-mua-nuoc-noi-mien-tay-d376968.html",
+      "https://phunumoi.net.vn/nhieu-nguoi-khong-ngo-6-thuc-pham-quen-thuoc-nay-lai-khien-duong-huyet-tang-nhanh-d383974.html",
+      "https://phunumoi.net.vn/4-loai-ngu-coc-quen-mat-tren-ban-an-co-the-la-thu-thach-voi-chiec-da-day-cua-ban-d383942.html",
+      "https://phunumoi.net.vn/7-thuc-pham-giup-chong-viem-bi-quyet-khoe-dep-co-the-bat-dau-tu-mam-com-d381782.html",
+      "https://phunumoi.net.vn/nhan-xanh-noi-gi-va-nguoi-mua-can-hieu-the-nao-cho-dung-d380651.html",
+      "https://phunumoi.net.vn/phat-dong-thang-hanh-dong-vi-binh-dang-gioi-nam-2026-huong-toi-thu-hep-khoang-cach-trong-lao-dong-d383963.html",
+      "https://phunumoi.net.vn/45-nha-nghien-cuu-khoa-hoc-o-viet-nam-la-nu-nhung-nu-gioi-quyet-dinh-chinh-sach-khoa-hoc-chiem-ty-le-thap-d383234.html",
+      "https://phunumoi.net.vn/doi-thoai-tai-noi-lam-viec-them-chinh-sach-cham-lo-cho-lao-dong-nu-d382948.html",
+      "https://phunumoi.net.vn/viec-lam-xanh-o-viet-nam-mo-rong-co-hoi-phat-trien-cho-phu-nu-d382945.html",
+      "https://phunumoi.net.vn/dua-tieng-anh-thanh-ngon-ngu-thu-hai-trong-truong-hoc-trien-khai-the-nao-d384816.html",
+      "https://phunumoi.net.vn/chuong-trinh-giao-duc-pho-thong-se-mon-hoc-tieng-muong-tieng-co-tu-cap-o-cap-tieu-hoc-d384135.html",
+      "https://phunumoi.net.vn/bang-xep-hang-dai-hoc-chau-a-2027-co-33-truong-cua-viet-nam-d383862.html",
+      "https://phunumoi.net.vn/ca-nuoc-da-giam-110-co-so-giao-duc-nghe-nghiep-cong-lap-du-kien-giam-tiep-gan-48-d383636.html",
+      "https://phunumoi.net.vn/goi-la-kon-tum-mon-an-doc-dao-mang-dau-an-huong-vi-dai-ngan-d384727.html",
+      "https://phunumoi.net.vn/vinh-tien-manh-ghep-hoi-tu-chuan-song-quoc-te-cua-ung-vien-7-ky-quan-do-thi-tuong-lai-d384661.html",
+      "https://phunumoi.net.vn/doc-dao-mon-banh-cuon-tay-son-va-che-tuyet-ngo-cua-nghe-nhan-ta-thi-kim-oanh-d384145.html",
+      "https://phunumoi.net.vn/herbalife-viet-nam-va-tap-huan-ve-dinh-duong-su-khac-biet-trong-uu-tien-dinh-duong-va-hoi-phuc-d384870.html",
+      "https://phunumoi.net.vn/bay-chua-lanh-khi-loi-khuyen-tich-cuc-tro-thanh-ap-luc-d384234.html",
+      "https://phunumoi.net.vn/nghien-cuu-moi-he-lo-moi-lien-he-giua-estrogen-va-suc-khoe-mach-mau-nao-o-phu-nu-d384225.html",
+      "https://phunumoi.net.vn/kham-suc-khoe-toan-dan-tphcm-tap-trung-nguon-luc-giai-doan-cuoi-nam-d383716.html",
+      "https://phunumoi.net.vn/nghi-quyet-171-mo-duong-cho-quy-dat-lieu-co-giai-duoc-bai-toan-nguon-cung-nha-o-d384792.html",
+      "https://phunumoi.net.vn/horea-kien-nghi-cho-phep-ban-lai-nha-o-xa-hoi-trong-5-nam-tranh-day-nguoi-mua-vao-the-kho-d384812.html",
+      "https://phunumoi.net.vn/winmart-ra-mat-hoi-vien-winx-moi-voi-nhieu-uu-dai-mua-sam-d383822.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 3
+    },
+    "checkedAt": "2026-11-10T09:16:27.114Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/phunumoi.net.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".show767.metadate",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      }
+    }
+  ]
+}

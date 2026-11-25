@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dzogame.vn",
+  "siteId": "dzogame.vn",
+  "registrableDomain": "dzogame.vn",
+  "homepage": "https://dzogame.vn/",
+  "allowedHosts": [
+    "dzogame.vn",
+    "www.dzogame.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "#MainContent_tilte_post > .titleWrapper2"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "#MainContent_info_author .datetime"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#MainContent_content_post"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:11.198Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+      "https://dzogame.vn/game-mobile/bom-tan-nhap-vai-the-gioi-mo-silver-palace-chinh-thuc-chot-lich-ra-mat-vao-ngay-1412-25694-17.html",
+      "https://dzogame.vn/game-mobile/tai-sao-tam-quoc-chi-chien-ky-xung-dang-duoc-game-thu-mong-doi-25697-17.html",
+      "https://dzogame.vn/game-mobile/kiem-hiep-tinh-vng-cong-bo-closed-beta-test-vao-ngay-611-du-an-ap-u-hon-20-nam-chinh-thuc-trinh-lang-25695-17.html",
+      "https://dzogame.vn/pcweb/crossfire-mo-dau-thang-11-ngap-tran-qua-tang-voi-bo-doi-kho-bau-hoang-gia-va-bingo-25696-57.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dzogame.vn/",
+    "categories": [
+      "https://dzogame.vn/dzonews",
+      "https://dzogame.vn/job",
+      "https://dzogame.vn/huong-dan",
+      "https://dzogame.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.282Z",
+      "verifiedSeeds": [
+        "https://dzogame.vn/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dzogame.vn",
+    "checkedAt": "2026-11-09T03:57:03.202Z",
+    "url": "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+    "finalUrl": "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5208,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dzogame.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 13,
+    "checkedArticleUrls": 13,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 13,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 3,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 22,
+        "passed": 13,
+        "distinctHashes": 13
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dzogame.vn/game-mobile/game-thu-da-co-the-tham-gia-dang-ky-truoc-tam-quoc-chi-chien-ky-ngay-bay-gio-25699-17.html",
+      "https://dzogame.vn/game-mobile/lineage-w-game-thu-se-thoa-suc-tung-hoanh-trong-world-moi-cung-class-nhan-vat-moi-va-ngap-tran-qua-tang-25698-17.html",
+      "https://dzogame.vn/game-mobile/tai-sao-tam-quoc-chi-chien-ky-xung-dang-duoc-game-thu-mong-doi-25697-17.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:16.522Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dzogame.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "pageIdentityPolicy": "dzogame_quoted_slug_alias",
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:26:31.965Z",
+    "proofs": [
+      {
+        "url": "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+        "publisherUrl": "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+        "contentHash": "3970f236d4cbad67ae8cf0e004b1a17d51bd0583d281e27d117445b8e8183135",
+        "description": "Sự kết hợp giữa hai thế giới hứa hẹn mang đến những trải nghiệm mới mẻ, góp phần làm phong phú thêm hành trình phiêu lưu của các Nhà Thám Hiểm tại Sword x Staff trong ngày 4/11. Sáng ngày 4/11, Sword x Staff – tựa game nhập vai màn hình dọc đến từ BOLTRAY GAMES – chính thức ra mắt tại Đông Nam Á, trong đó có Việt Nam, với sự đồng hành phát hành của Funtap Games. Từng thu hút hơn 10 triệu người chơi trên toàn cầu, Sword x Staff gây chú ý với đồ họa chibi bắt mắt, lối chơi phát triển nhân vật nhàn rỗi cùng hệ thống chiến đấu đòi hỏi tính chiến thuật. Đặc biệt, dịp ra mắt lần này còn đi kèm chuỗi sự kiện và nhiều phần thưởng hấp dẫn, sẵn sàng chào đón cộng đồng Nhà Thám Hiểm bước vào hành trình mới.",
+        "publishedDate": "2026-11-03T09:30:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dzogame.vn/game-mobile/sword-x-staff-sieu-pham-rpg-nha-boltray-games-chinh-thuc-cap-ben-viet-nam-ngay-411-25693-17.html",
+          "publishedDate": "2026-11-03T09:30:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dzogame.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dzogame.vn/game-mobile/modern-jet-fighters-online-dau-truong-khong-chien-thoi-gian-thuc-5v5-cuc-man-nhan-tren-di-dong-25705-17.html",
+        "publisherUrl": "https://dzogame.vn/game-mobile/modern-jet-fighters-online-dau-truong-khong-chien-thoi-gian-thuc-5v5-cuc-man-nhan-tren-di-dong-25705-17.html",
+        "contentHash": "edea125de658e63d52cf76405a2d030ef02b9175df7521f491518a51f0e85ad2",
+        "description": "Sau giai đoạn thử nghiệm thành công tại Canada hồi tháng 05/2026, hãng MicroProse đã chính thức phát hành toàn cầu tựa game hành động không chiến Modern Jet Fighters Online trên cả hai nền tảng Android và iOS. Trò chơi hứa hẹn mang đến những màn không chiến tốc độ cao với cơ chế điều khiển mượt mà, lược bỏ hoàn toàn sự rườm rà của các dòng game mô phỏng truyền thống.",
+        "publishedDate": "2026-11-15T12:30:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dzogame.vn/game-mobile/modern-jet-fighters-online-dau-truong-khong-chien-thoi-gian-thuc-5v5-cuc-man-nhan-tren-di-dong-25705-17.html",
+          "publishedDate": "2026-11-15T12:30:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dzogame.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://dzogame.vn/game-mobile/lineage-w-chinh-thuc-gioi-thieu-class-loi-vu-game-thu-ru-nhau-di-%E2%80%9Cmua-quat%E2%80%9D-25704-17.html",
+        "publisherUrl": "https://dzogame.vn/game-mobile/lineage-w-chinh-thuc-gioi-thieu-class-loi-vu-game-thu-ru-nhau-di-mua-quat-25704-17.html",
+        "contentHash": "05bd2a76525ba65fe18e8603e220865d809ba2066b4fe0ef56c5a19e242a7732",
+        "description": "Lineage W – sản phẩm game bom tấn vừa ra mắt thị trường Việt Nam vào cuối tháng 5 vừa qua đã chính thức tung ra Thế giới mới Gillean (cụm máy chủ mới) cùng Class mới Lôi Vũ vào trưa ngày 11/11. Đây là một loạt cập nhật quan trọng và đầy ý nghĩa của game, mang đến cơ hội tuyệt vời để người chơi trải nghiệm hành trình mới. Đặc biệt, Lôi Vũ là class nhân vật mới nhất vừa ra mắt ở bản global nay đã được cập nhật ngay cho bản SEA, giúp cộng đồng game thủ nhanh chóng bắt nhịp và chinh phục những nội dung đỉnh cao.",
+        "publishedDate": "2026-11-15T12:00:00.000Z",
+        "publishedDatePrecision": "second",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://dzogame.vn/game-mobile/lineage-w-chinh-thuc-gioi-thieu-class-loi-vu-game-thu-ru-nhau-di-mua-quat-25704-17.html",
+          "publishedDate": "2026-11-15T12:00:00.000Z",
+          "precision": "second",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "dzogame.vn",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": "#MainContent_content_post p"
+  },
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "dzogame.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "publicationArticleScope": ".postWrapper"
+}

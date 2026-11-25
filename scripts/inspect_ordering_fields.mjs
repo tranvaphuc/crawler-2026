@@ -1,0 +1,6 @@
+import {createHttpExecutor}from'../src/services/socialHttpTransport.js';import{snapshotPayloads,assignedJson}from'../src/services/socialMetrics.js';import{walkContent}from'../src/services/socialContent.js';
+const run=createHttpExecutor();for(const[platform,url]of[['instagram','https://www.instagram.com/hapas.vn/'],['youtube','https://www.youtube.com/@vtv24/videos?hl=en']]){
+ console.log(JSON.stringify({platform,...await run({platform},async session=>{const s=await session.request(url);const rows=[];for(const root of [...snapshotPayloads(s.html),assignedJson(s.html,'ytInitialData')].filter(Boolean))walkContent(root,(v,p)=>{
+  if(v.polaris_ordered_timeline_connection){const n=v.polaris_ordered_timeline_connection.edges?.[0]?.node;rows.push({kind:'IG_source',keys:Object.keys(n||{}),nested:Object.fromEntries(Object.entries(n||{}).filter(([k,x])=>x&&typeof x==='object'&&!Array.isArray(x)).map(([k,x])=>[k,Object.keys(x)]))});}
+  if(/chip|sort/i.test(p)&&rows.length<12) {if(v.text?.content||v.text?.simpleText||v.title?.content||v.chipText)rows.push({path:p,keys:Object.keys(v),label:v.text?.content||v.text?.simpleText||v.title?.content||v.chipText,selected:v.isSelected??v.selected??v.isActive??null});}
+ });return{status:'checked',httpStatus:s.httpStatus,rows:rows.slice(0,12)};})}));}

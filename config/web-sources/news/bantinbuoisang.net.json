@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bantinbuoisang.net",
+  "siteId": "bantinbuoisang.net",
+  "registrableDomain": "bantinbuoisang.net",
+  "homepage": "https://bantinbuoisang.net/",
+  "allowedHosts": [
+    "bantinbuoisang.net",
+    "www.bantinbuoisang.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Từ nay đến hết 31/12/2025: Người sinh vào 3 năm này được hưởng một quyền lợi đặc biệt",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:26.040Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://bantinbuoisang.net/tu-nay-den-het-31122025-nguoi-sinh-vao-3-nam-nay-duoc-huong-mot-quyen-loi-dac-biet-1234.html",
+      "https://bantinbuoisang.net/chuyen-gia-sophia-sai-lam-khong-phai-la-khong-hieu-thi-truong-ma-la-nghi-minh-da-hieu-no-1366.html",
+      "https://bantinbuoisang.net/bat-ngo-nhieu-doanh-nghiep-xin-tra-ma-so-vung-trong-sau-rieng-1365.html",
+      "https://bantinbuoisang.net/bang-xep-hang-cholesterol-gay-soc-trung-bi-oan-vi-tri-so-1-moi-dang-chu-y-1364.html",
+      "https://bantinbuoisang.net/benh-vien-nhi-trung-uong-moi-ngay-keo-gian-1-milimet-tung-buoc-thay-doi-khuon-mat-tre-mac-di-tat-so-mat-1363.html",
+      "https://bantinbuoisang.net/chuyen-gia-sophia-sai-lam-khong-phai-la-khong-hieu-thi-truong-ma-la-nghi-minh-da-hieu-no-1366.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://bantinbuoisang.net/",
+    "categories": [
+      "https://bantinbuoisang.net/sao/",
+      "https://bantinbuoisang.net/thoi-trang/",
+      "https://bantinbuoisang.net/nhac-phim/",
+      "https://bantinbuoisang.net/dep-khoe/",
+      "https://bantinbuoisang.net/suc-khoe/",
+      "https://bantinbuoisang.net/xa-hoi/",
+      "https://bantinbuoisang.net/tam-su/",
+      "https://bantinbuoisang.net/tuoi-tre/",
+      "https://bantinbuoisang.net/du-lich/",
+      "https://bantinbuoisang.net/cong-nghe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "bantinbuoisang.net",
+    "checkedAt": "2026-11-09T03:56:48.780Z",
+    "url": "https://bantinbuoisang.net/tu-nay-den-het-31122025-nguoi-sinh-vao-3-nam-nay-duoc-huong-mot-quyen-loi-dac-biet-1234.html",
+    "finalUrl": "https://bantinbuoisang.net/tu-nay-den-het-31122025-nguoi-sinh-vao-3-nam-nay-duoc-huong-mot-quyen-loi-dac-biet-1234.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2840,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:31.706Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/bantinbuoisang.net/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "bantinbuoisang.net",
+    "parsedArticles": 10,
+    "distinctHashes": 10,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesAttempted": 10,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 81,
+    "checkedArticleUrls": 10,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 81,
+        "attempted": 10,
+        "passed": 10,
+        "distinctContents": 10,
+        "distinctHashes": 10
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

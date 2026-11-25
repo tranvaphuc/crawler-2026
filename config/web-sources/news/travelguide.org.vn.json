@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "siteName": "travelguide.org.vn",
+  "siteId": "travelguide.org.vn",
+  "registrableDomain": "travelguide.org.vn",
+  "homepage": "https://travelguide.org.vn/",
+  "allowedHosts": [
+    "travelguide.org.vn",
+    "www.travelguide.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "domain": "travelguide.org.vn",
+  "enabled": false,
+  "stage": "parser_failed",
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:42.276Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSampleCount": 0,
+    "categoryVerified": false,
+    "fullSiteCycleVerified": false,
+    "reason": "missing_published_date",
+    "stage": "parser_failed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/travelguide.org.vn",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "travelguide.org.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 72,
+    "freshArticleChecks": 72,
+    "parserIssues": 72,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 26,
+    "categoriesFreshChecked": 26,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 23,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 370,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://travelguide.org.vn/d3673/phien-cho-giang-sinh-four-points-by-sheraton-da-nang-2026-cuoc-hen-mua-le-hoi-tro-lai-mang-theo-phep-mau-tuyet-roi.html",
+      "https://travelguide.org.vn/d3677/asia-travel-magazine--doi-tac-truyen-thong-dong-hanh-cung-hoa-hau-du-lich-viet-nam-2028.html",
+      "https://travelguide.org.vn/d3674/four-points-by-sheraton-danang-gioi-thieu-chuoi-trai-nghiem-chao-don-giang-sinh-va-nam-moi-2026--2027.html",
+      "https://travelguide.org.vn/d3661/khoa-du-lich-%E2%80%93-nha-hang-%E2%80%93-khach-san-truong-dai-hoc-hoa-sen-noi-dao-tao-nguon-nhan-luc-du-lich-chat-luong-cao-hoi-nhap-quoc-te.html",
+      "https://travelguide.org.vn/d3653/amber-hills-golf-&-resort-%E2%80%93-diem-hen-ly-tuong-danh-cho-moi-golfer.html",
+      "https://travelguide.org.vn/d3636/kham-pha-hon-yen-voi-nhung-ran-san-ho-noi-lo-thien-doc-dao-o-dak-lak.html",
+      "https://travelguide.org.vn/d3627/kyoto-va-nhung-khoang-lang-ngung-dong-.html",
+      "https://travelguide.org.vn/d3625/hon-110.000-suat-nuoc-uong-banh-my-phuc-vu-khach-vieng-lang-bac-dip-le-lon.html",
+      "https://travelguide.org.vn/d3675/khoi-dong-hoa-hau-du-lich-viet-nam-2028-huong-toi-dau-an-20-nam-nam-du-lich-quoc-gia-quang-tri-2027-chinh-thuc-dang-cai-mua-giai-moi.html",
+      "https://travelguide.org.vn/d3671/sam-tuyen-lam-autumn-championship-2026-khep-lai-mot-ngay-tranh-tai-dang-nho-giua-mua-trang-da-lat.html",
+      "https://travelguide.org.vn/d3587/cac-tour-trung-quoc-hut-khach-dip-le-30-4-nam-nay.html",
+      "https://travelguide.org.vn/d3581/du-lich-le-30-4-khach-viet-chuyen-huong-san-combo-gia-re.html",
+      "https://travelguide.org.vn/d2257/acfc-super-sale-2022-chao-he-cung-sieu-sale-lon-nhat-nam-danh-cho-tin-do-me-hang-hieu.html",
+      "https://travelguide.org.vn/d3624/bao-tang-thien-nhien-viet-nam-%E2%80%93-noi-luu-giu-bo-suu-tap-mau-vat-quoc-gia.html",
+      "https://travelguide.org.vn/d3365/nha-hang-a-kien-quan-nho-ven-bien-mang-tron-huong-vi-quang-binh.html",
+      "https://travelguide.org.vn/d3603/loi-khuyen-tu-nguoi-uong-starbucks-lau-nam-khong-ap-dung-thi-chi-co-%E2%80%9Cdot-tien%E2%80%9D.html",
+      "https://travelguide.org.vn/d3601/top-ung-dung-theo-doi-chuyen-bay-tot-nhat-cho-dan-du-lich-.html",
+      "https://travelguide.org.vn/d3528/khai-giang-lop-nghiep-vu-du-lich-theo-tieu-chuan-ky-nang-nghe-du-lich-viet-nam.html",
+      "https://travelguide.org.vn/d3463/giai-golf-arkansas-championship-2025-bi-huy-bo-vi-ly-do-thoi-tiet.html",
+      "https://travelguide.org.vn/d3452/rory-mcilroy-vo-dich-giai-golf-irish-open-2025.html",
+      "https://travelguide.org.vn/d3517/loat-san-pham-du-lich-moi-ra-mat-co-tour-gan-131-trieu-dong.html",
+      "https://travelguide.org.vn/d3509/bay-vietjet-mua-sam-tai-lotte-duty-free-han-quoc-de-nhan-uu-dai-sieu-hap-dan.html",
+      "https://travelguide.org.vn/d3476/%E2%80%9Ccong-thuc%E2%80%9D-san-hang-hieu-dip-10.10-cua-cac-tin-do-mua-sam-online.html",
+      "https://travelguide.org.vn/d3537/giai-thuong-mice-asean-2026-tro-thanh-mon-qua-khai-xuan-day-tu-hao-cho-nganh-du-lich-su-kien-viet-nam.html",
+      "https://travelguide.org.vn/d3474/thong-tin-du-lich-noi-bat-thang-9-2025-giai-thuong-du-lich-viet-nam-2025-vinh-danh-113-doanh-nghiep-don-vi-tieu-bieu.html",
+      "https://travelguide.org.vn/d3451/tp-hcm-nhan-giai-thuong-tiep-thi-du-lich-xuat-sac.html",
+      "https://travelguide.org.vn/d3511/ninh-binh-nang-cao-chat-luong-xuc-tien-du-lich.html",
+      "https://travelguide.org.vn/d3459/thuc-day-xuc-tien-du-lich-mo-rong-thi-truong-san-pham-cho-du-lich-nang-cao-chat-luong-phat-trien-du-lich.html",
+      "https://travelguide.org.vn/d3333/tp.-ho-chi-minh-mo-rong-du-lich-duong-thuy-them-nhieu-tuyen-moi-ket-noi-dong-nam-bo-va-mien-tay.html",
+      "https://travelguide.org.vn/d3633/lao-cai--diem-den-4-mua.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "parser_not_configured": 72
+    },
+    "checkedAt": "2026-11-10T09:17:36.554Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/travelguide.org.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "discovery": {
+    "homepage": "https://travelguide.org.vn/",
+    "categories": [
+      "https://travelguide.org.vn/",
+      "https://travelguide.org.vn/c1/tin-tuc-",
+      "https://travelguide.org.vn/c57/lu-hanh",
+      "https://travelguide.org.vn/c37/van-hoa-&-giai-tri",
+      "https://travelguide.org.vn/c2/diem-den-an-tuong",
+      "https://travelguide.org.vn/c10/di-san",
+      "https://travelguide.org.vn/c17/lich-su",
+      "https://travelguide.org.vn/c9/le-hoi-&-tro-choi-dan-gian",
+      "https://travelguide.org.vn/c8/tinh-hoa-am-thuc"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.341Z",
+      "verifiedSeeds": [
+        "https://travelguide.org.vn/",
+        "https://travelguide.org.vn/c1/tin-tuc-",
+        "https://travelguide.org.vn/c57/lu-hanh",
+        "https://travelguide.org.vn/c37/van-hoa-&-giai-tri",
+        "https://travelguide.org.vn/c2/diem-den-an-tuong",
+        "https://travelguide.org.vn/c10/di-san",
+        "https://travelguide.org.vn/c17/lich-su",
+        "https://travelguide.org.vn/c9/le-hoi-&-tro-choi-dan-gian",
+        "https://travelguide.org.vn/c8/tinh-hoa-am-thuc"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  }
+}

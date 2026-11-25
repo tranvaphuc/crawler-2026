@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "siteName": "quasa.io",
+  "siteId": "quasa.io",
+  "registrableDomain": "quasa.io",
+  "homepage": "https://quasa.io/",
+  "allowedHosts": [
+    "quasa.io",
+    "www.quasa.io"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://quasa.io/",
+    "categories": [
+      "https://quasa.io/projects",
+      "https://quasa.io/rewards",
+      "https://quasa.io/quasa-connect",
+      "https://quasa.io/qua",
+      "https://quasa.io/future-of-work",
+      "https://quasa.io/practical-guides"
+    ]
+  },
+  "title": {
+    "value": "Ways to Improve Resource Allocation Across Business Departments",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".prose.prose-neutral",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:16.147Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:04.459Z",
+    "independentHoldouts": [
+      "https://quasa.io/stories/instagram-opens-ai-story-effects-to-us-adults-and-links-every-reuse-back",
+      "https://quasa.io/stories/openai-puts-astra-into-cad-but-engineers-still-fix-manufacturing-gaps",
+      "https://quasa.io/stories/rumble-offers-partners-up-to-90-of-ad-revenue-but-entry-is-invite-only"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://quasa.io/stories/ways-to-improve-resource-allocation-across-business-departments",
+      "https://quasa.io/stories/instagram-opens-ai-story-effects-to-us-adults-and-links-every-reuse-back",
+      "https://quasa.io/stories/openai-puts-astra-into-cad-but-engineers-still-fix-manufacturing-gaps",
+      "https://quasa.io/stories/rumble-offers-partners-up-to-90-of-ad-revenue-but-entry-is-invite-only"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "http": {
+    "maxConcurrentArticles": 2,
+    "maxConcurrentSeeds": 1
+  }
+}

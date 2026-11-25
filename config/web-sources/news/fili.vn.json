@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "siteName": "fili.vn",
+  "siteId": "fili.vn",
+  "registrableDomain": "fili.vn",
+  "homepage": "https://fili.vn/",
+  "allowedHosts": [
+    "fili.vn",
+    "www.fili.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:01.286Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://fili.vn/2026/11/nha-san-xuat-bo-day-dien-thuoc-tap-doan-nhat-tamura-koma-lap-phap-nhan-tai-khu-che-xuat-linh-trung-768-1512834.htm",
+      "https://fili.vn/2026/11/uu-tien-von-lam-duong-sat-noi-san-bay-gia-binh-noi-bai-voi-trung-tam-ha-noi-768-1512822.htm",
+      "https://fili.vn/2026/11/lam-the-nao-de-du-bao-su-sup-do-cua-thi-truong-hay-lang-nghe-nha-dau-tu-tre-paul-tudor-jones-3355-1510756.htm",
+      "https://fili.vn/2026/11/nen-kinh-te-thong-tin-van-hanh-boi-cac-tac-nhan-ai-775-1509765.htm",
+      "https://fili.vn/2026/11/ai-cung-co-the-tham-gia-cuoc-dua-ve-cong-nghe-768-1511580.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://fili.vn/",
+    "categories": [
+      "https://fili.vn/kinh-te.htm",
+      "https://fili.vn/kinh-te/vi-mo.htm",
+      "https://fili.vn/kinh-te/kinh-te-dau-tu.htm",
+      "https://fili.vn/thoi-su.htm",
+      "https://fili.vn/chung-khoan.htm",
+      "https://fili.vn/chung-khoan/co-phieu.htm",
+      "https://fili.vn/chung-khoan/thi-truong-trai-phieu.htm",
+      "https://fili.vn/chung-khoan/chung-khoan-phai-sinh.htm",
+      "https://fili.vn/chung-khoan/etf-va-cac-quy.htm",
+      "https://fili.vn/ngan-hang-bao-hiem.htm",
+      "https://fili.vn/tai-chinh/ngan-hang.htm",
+      "https://fili.vn/tai-chinh/bao-hiem.htm",
+      "https://fili.vn/tai-chinh/thue-va-ngan-sach.htm",
+      "https://fili.vn/doanh-nghiep.htm",
+      "https://fili.vn/doanh-nghiep/nhan-vat.htm",
+      "https://fili.vn/doanh-nghiep/hoat-dong-kinh-doanh.htm",
+      "https://fili.vn/bat-dong-san.htm",
+      "https://fili.vn/bat-dong-san/du-an.htm",
+      "https://fili.vn/bat-dong-san/thi-truong-nha-dat.htm",
+      "https://fili.vn/bat-dong-san/quy-hoach-ha-tang.htm",
+      "https://fili.vn/the-gioi.htm",
+      "https://fili.vn/the-gioi/chung-khoan-the-gioi.htm",
+      "https://fili.vn/the-gioi/tai-chinh-quoc-te.htm",
+      "https://fili.vn/tai-chinh-ca-nhan.htm",
+      "https://fili.vn/tai-chinh-ca-nhan/lam-chu-dong-tien.htm",
+      "https://fili.vn/tai-chinh-ca-nhan/tieu-dung-va-cuoc-song.htm",
+      "https://fili.vn/hang-hoa.htm",
+      "https://fili.vn/tai-chinh/tai-san-so.htm",
+      "https://fili.vn/tai-chinh-ca-nhan/xe-cong-nghe.htm",
+      "https://fili.vn/san-giao-dich-tai-chinh.htm",
+      "https://fili.vn/the-gioi/tien-ky-thuat-so.htm",
+      "https://fili.vn/multimedia.htm",
+      "https://fili.vn/multimedia/tin-anh.htm",
+      "https://fili.vn/multimedia/long-form.htm",
+      "https://fili.vn/multimedia/quizz.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "fili.vn",
+    "checkedAt": "2026-11-09T03:57:04.405Z",
+    "url": "https://fili.vn/2026/11/nha-san-xuat-bo-day-dien-thuoc-tap-doan-nhat-tamura-koma-lap-phap-nhan-tai-khu-che-xuat-linh-trung-768-1512834.htm",
+    "finalUrl": "https://fili.vn/2026/11/nha-san-xuat-bo-day-dien-thuoc-tap-doan-nhat-tamura-koma-lap-phap-nhan-tai-khu-che-xuat-linh-trung-768-1512834.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2621,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "fili.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 43,
+    "checkedArticleUrls": 45,
+    "freshArticleChecks": 9,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 43,
+    "listingResponsesAtArticleUrls": 2,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 260,
+        "passed": 43,
+        "distinctHashes": 43
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://fili.vn/2026/11/lai-suat-huy-dong-giam-dien-rong-va-bai-toan-nhu-cau-von-mua-cuoi-nam-757-1512942.htm",
+      "https://fili.vn/2026/11/doanh-nghiep-cao-su-lai-lon-nho-gia-mu-va-tien-boi-thuong-dat-737-1512985.htm",
+      "https://fili.vn/2026/11/giam-30-70-phat-thue-ton-dong-coi-troi-chi-phi-tuan-thu-khoi-thong-nguon-luc-kinh-te-758-1512841.htm",
+      "https://fili.vn/2026/11/nguy-co-voi-nvidia-khi-qua-nhieu-quyen-luc-tap-trung-vao-ghe-ceo-772-1513383.htm",
+      "https://fili.vn/2026/11/tuan-09-1311-noi-bat-cac-khoan-co-tuc-ngan-ty-738-1512787.htm",
+      "https://fili.vn/2026/11/dai-quang-minh-lai-dot-bien-gap-hon-6-lan-cung-ky-tai-san-tien-sat-99000-ty-dong-737-1513503.htm",
+      "https://fili.vn/2026/11/bo-xay-dung-phai-bao-cao-thu-tuong-chinh-phu-ve-tong-the-tinh-hinh-thi-truong-bds-trong-thang-11-4220-1512852.htm",
+      "https://fili.vn/2026/11/be-boi-cua-jensen-huang-dat-nvidia-truoc-bai-toan-chua-tung-co-ai-se-ke-nhiem-ong-773-1513336.htm",
+      "https://fili.vn/2026/11/nha-may-trang-suc-lon-nhat-the-gioi-tai-tphcm-ganh-hon-13-cong-suat-pandora-du-bao-bien-loi-nhuan-2027-giam-sau-768-1512794.htm",
+      "https://fili.vn/2026/11/ngan-hang-nha-nuoc-mua-ngoai-te-giao-ngay-them-kenh-cung-ung-tien-vnd-on-dinh-lai-suat-757-1513287.htm",
+      "https://fili.vn/2026/11/loi-nhuan-berkshire-hathaway-giam-28-chi-96-ty-usd-mua-lai-co-phieu-773-1512792.htm",
+      "https://fili.vn/2026/11/tap-doan-bds-cong-nghiep-lon-nhat-chau-au-tinh-chi-500-trieu-usd-mua-danh-muc-kho-bai-slp-tai-viet-nam-4221-1513157.htm",
+      "https://fili.vn/2026/11/de-xuat-danh-thue-02-dat-bo-hoang-tac-dong-rong-den-nguoi-su-dung-dat-4266-1511210.htm",
+      "https://fili.vn/2026/11/vu-hack-binance-63-ty-usd-khi-san-tien-so-om-dom-quyen-luc-ngan-hang-4309-1512915.htm",
+      "https://fili.vn/2026/11/tai-san-so-co-hoi-dau-tu-di-cung-nhung-cam-bay-kho-luong-16312-1512758.htm",
+      "https://fili.vn/2026/11/chu-cau-noi-hdpe-la-ngon-luon-bi-cao-buoc-tron-thue-758-1512783.htm",
+      "https://fili.vn/2026/11/chi-tiet-vi-tri-19-ga-metro-thanh-pho-moi-binh-duong-8211-suoi-tien-di-qua-loat-khu-do-thi-khu-cong-nghiep-va-dat-quy-hoach-tod-4221-1511328.htm",
+      "https://fili.vn/2026/10/trung-quoc-khong-con-chi-xuat-khau-hang-gia-re-775-1509798.htm",
+      "https://fili.vn/2026/11/chu-thuong-hieu-choco-pie-muon-xay-them-nha-may-o-viet-nam-huong-toi-doanh-thu-680-trieu-usd-768-1513460.htm",
+      "https://fili.vn/2026/11/tin-hieu-moi-ve-325-co-phan-stb-lien-quan-ong-tram-be-757-1513439.htm",
+      "https://fili.vn/2026/11/nhip-dap-thi-truong-1011-thanh-khoan-duoc-cai-thien-da-tang-duoc-noi-dai-1636-1513359.htm",
+      "https://fili.vn/2026/11/kinh-doanh-thua-lo-thuduc-house-tinh-mo-rong-sang-ban-buon-hang-det-may-giay-dep-737-1513391.htm",
+      "https://fili.vn/2026/11/ly-do-chuoi-benh-vien-tnh-chap-nhan-tra-lai-trai-phieu-16nam-737-1513371.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:27.803Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/fili.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "fili.vn",
+      "siteId": "fili.vn",
+      "registrableDomain": "fili.vn",
+      "homepage": "https://fili.vn/",
+      "allowedHosts": [
+        "fili.vn",
+        "www.fili.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Nhà sản xuất bó dây điện thuộc tập đoàn Nhật Tamura Koma lập pháp nhân tại Khu chế xuất Linh Trung | Fili",
+        "strategy": "selector",
+        "selector": "meta[property=\"og:title\"]",
+        "attribute": "content"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:41.636Z",
+        "trainingUrls": [
+          "https://fili.vn/2026/10/trung-quoc-khong-con-chi-xuat-khau-hang-gia-re-775-1509798.htm",
+          "https://fili.vn/2026/10/spacex-va-tesla-so-gang-hai-de-che-ngan-ty-usd-cua-elon-musk-773-1507352.htm"
+        ],
+        "holdoutUrls": [
+          "https://fili.vn/2026/11/tuan-09-1311-noi-bat-cac-khoan-co-tuc-ngan-ty-738-1512787.htm",
+          "https://fili.vn/2026/11/nha-may-trang-suc-lon-nhat-the-gioi-tai-tphcm-ganh-hon-13-cong-suat-pandora-du-bao-bien-loi-nhuan-2027-giam-sau-768-1512794.htm"
+        ]
+      }
+    }
+  ]
+}

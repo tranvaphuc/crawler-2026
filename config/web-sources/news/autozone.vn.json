@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autozone.vn",
+  "siteId": "autozone.vn",
+  "registrableDomain": "autozone.vn",
+  "homepage": "https://autozone.vn/",
+  "allowedHosts": [
+    "autozone.vn",
+    "www.autozone.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Kim Long X9 16 chỗ: Thông số và chi phí khai thác thực tế",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:52.332Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://autozone.vn/can-canh-xe-minibus-noi-dia-kim-long-x9-tai-viet-nam/",
+      "https://autozone.vn/can-canh-toyota-land-cruiser-prado-250-ban-my/",
+      "https://autozone.vn/gia-xe-lan-banh-la-sao-cac-khoan-phi-can-biet-2026/",
+      "https://autozone.vn/top-5-sai-lam-thuong-gap-ve-thi-truong-o-to-viet-nam/",
+      "https://autozone.vn/top-10-sai-lam-thuong-gap-ve-kinh-nghiem-lai-bao-duong-xe/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://autozone.vn/",
+    "categories": [
+      "https://autozone.vn/category/danh-gia-xe/",
+      "https://autozone.vn/category/gia-xe-lan-banh/",
+      "https://autozone.vn/category/kinh-nghiem-lai-xe/",
+      "https://autozone.vn/category/so-sanh-xe/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "autozone.vn",
+    "checkedAt": "2026-11-09T03:56:48.295Z",
+    "url": "https://autozone.vn/can-canh-xe-minibus-noi-dia-kim-long-x9-tai-viet-nam/",
+    "finalUrl": "https://autozone.vn/can-canh-xe-minibus-noi-dia-kim-long-x9-tai-viet-nam/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6978,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "autozone.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 14,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 14,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 23,
+        "passed": 14,
+        "distinctHashes": 14
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://autozone.vn/gia-xe-may-lan-banh-la-gi-cac-khoan-phi-can-biet/",
+      "https://autozone.vn/cach-tinh-gia-lan-banh-xe-o-to-cac-khoan-phi-can-biet/",
+      "https://autozone.vn/gia-xe-lan-banh-la-sao-cac-khoan-phi-can-biet-2026/",
+      "https://autozone.vn/top-5-sai-lam-thuong-gap-ve-thi-truong-o-to-viet-nam/",
+      "https://autozone.vn/top-10-sai-lam-thuong-gap-ve-kinh-nghiem-lai-bao-duong-xe/",
+      "https://autozone.vn/top-7-kinh-nghiem-doc-danh-gia-xe-de-khong-mua-nham/",
+      "https://autozone.vn/so-sanh-xe-5-cau-hoi-can-tra-loi-truoc-khi-xuong-tien/",
+      "https://autozone.vn/top-7-xu-huong-thi-truong-o-to-2026-nen-theo-doi-gi/",
+      "https://autozone.vn/tu-viet-tool-doi-soat-chuyen-khoan-hay-dung-dich-vu-san/",
+      "https://autozone.vn/tu-dung-postfix-hay-thue-api-gui-email-giao-dich/",
+      "https://autozone.vn/7-kinh-nghiem-thuc-te-ve-so-sanh-xe-truoc-khi-xuong-tien/",
+      "https://autozone.vn/top-5-xu-huong-xe-moi-nam-2026-dang-chu-y-tai-viet-nam/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:13:55.786Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/autozone.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

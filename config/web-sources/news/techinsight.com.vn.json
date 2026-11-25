@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "siteName": "techinsight.com.vn",
+  "siteId": "techinsight.com.vn",
+  "registrableDomain": "techinsight.com.vn",
+  "homepage": "https://techinsight.com.vn/",
+  "allowedHosts": [
+    "techinsight.com.vn",
+    "www.techinsight.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "4 ứng dụng thực tế của Chatbot thông minh được xây dựng trên nền tảng FPT.AI mà bạn phải biết",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "httpAdapter": "wordpress_public_rest_api",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:33.265Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://techinsight.com.vn/4-ung-dung-thuc-te-cua-chatbot-thong-minh-duoc-xay-dung-tren-nen-tang-fpt-ai-ma-ban-phai-biet/",
+      "https://techinsight.com.vn/tai-lieu-huong-dan-su-dung-api-vietnam-ai-hackathon/",
+      "https://techinsight.com.vn/nguyen-ly-lap-trinh-va-luyen-tap-ngon-ngu-c/",
+      "https://techinsight.com.vn/ma-doc-moi-nguy-hai-muon-hinh-van-trang/",
+      "https://techinsight.com.vn/ban-cap-nhat-firefox-57-quantum-con-bai-dau-tien-trong-hanh-trinh-lat-do-google-chrome-cua-mozilla/",
+      "https://techinsight.com.vn/4-ung-dung-thuc-te-cua-chatbot-thong-minh-duoc-xay-dung-tren-nen-tang-fpt-ai-ma-ban-phai-biet/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/techinsight.com.vn"
+  },
+  "discovery": {
+    "homepage": "https://techinsight.com.vn/",
+    "categories": [
+      "https://techinsight.com.vn/category/chuyen-gia-viet/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/artificial-intelligence/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/cloud-computing-vi/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/internet-of-things/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/mobility/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/security-vi/",
+      "https://techinsight.com.vn/category/chuyen-gia-viet/khac/",
+      "https://techinsight.com.vn/category/cong-nghe-quanh-ta/",
+      "https://techinsight.com.vn/category/goc-nhin-ban-doc/",
+      "https://techinsight.com.vn/category/tai-lieu/",
+      "https://techinsight.com.vn/category/su-kien/",
+      "https://techinsight.com.vn/category/du-an/",
+      "https://techinsight.com.vn/page/2/",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=24&per_page=20",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=26&per_page=20",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=27&per_page=20",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=17&per_page=20",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=25&per_page=20",
+      "https://techinsight.com.vn/wp-json/wp/v2/posts?categories=1&per_page=20",
+      "https://techinsight.com.vn/undefined/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:20.109Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/techinsight.com.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "techinsight.com.vn",
+    "parsedArticles": 7,
+    "distinctHashes": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 20,
+    "categoriesAttempted": 17,
+    "categoriesRemoved": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 23,
+    "checkedArticleUrls": 7,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 23,
+        "attempted": 7,
+        "passed": 7,
+        "distinctContents": 7,
+        "distinctHashes": 7
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

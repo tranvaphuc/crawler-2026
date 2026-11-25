@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepchinhsach.vn",
+  "siteId": "doanhnghiepchinhsach.vn",
+  "registrableDomain": "doanhnghiepchinhsach.vn",
+  "homepage": "https://doanhnghiepchinhsach.vn/",
+  "allowedHosts": [
+    "doanhnghiepchinhsach.vn",
+    "www.doanhnghiepchinhsach.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Khám phá “đại lộ thanh âm” tại sân khấu “Wings Up 2026: Vĩnh Ân”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "day",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".panel-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:34.624Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghiepchinhsach.vn/Tin-tuc/kham-pha-dai-lo-thanh-am-tai-san-khau-wings-up-2026-vinh-an-659.html",
+      "https://doanhnghiepchinhsach.vn/Tin-tuc/vanh-dai-phia-tay-can-tho-doi-von-2-600-ty-thach-thuc-lon-ve-quy-hoach-va-thuc-thi-656.html",
+      "https://doanhnghiepchinhsach.vn/kinh-doanh/pho-thu-tuong-gia-nha-van-vuot-kha-nang-chi-tra-cua-dai-da-so-nguoi-dan-636.html",
+      "https://doanhnghiepchinhsach.vn/tin-trong-nuoc/fdi-the-he-moi-can-cung-viet-nam-tao-ra-gia-tri-moi-nang-luc-moi-vi-the-moi-492.html",
+      "https://doanhnghiepchinhsach.vn/tin-trong-nuoc/bo-sung-cac-co-che-de-ngay-van-hoa-viet-nam-thanh-ngay-hoi-kich-cau-cong-nghiep-van-hoa-488.html"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghiepchinhsach.vn/",
+    "categories": [
+      "https://doanhnghiepchinhsach.vn/Tin-tuc/",
+      "https://doanhnghiepchinhsach.vn/tin-trong-nuoc/",
+      "https://doanhnghiepchinhsach.vn/tin-chinh-phu/",
+      "https://doanhnghiepchinhsach.vn/nhin-ra-the-gioi/",
+      "https://doanhnghiepchinhsach.vn/kinh-doanh/",
+      "https://doanhnghiepchinhsach.vn/thuong-hieu/",
+      "https://doanhnghiepchinhsach.vn/tai-chinh/",
+      "https://doanhnghiepchinhsach.vn/cong-nghe/",
+      "https://doanhnghiepchinhsach.vn/de-tai-nghien-cuu/",
+      "https://doanhnghiepchinhsach.vn/feeds/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghiepchinhsach.vn",
+    "checkedAt": "2026-11-09T03:57:00.291Z",
+    "url": "https://doanhnghiepchinhsach.vn/Tin-tuc/kham-pha-dai-lo-thanh-am-tai-san-khau-wings-up-2026-vinh-an-659.html",
+    "finalUrl": "https://doanhnghiepchinhsach.vn/Tin-tuc/kham-pha-dai-lo-thanh-am-tai-san-khau-wings-up-2026-vinh-an-659.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3605,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:03.402Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doanhnghiepchinhsach.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doanhnghiepchinhsach.vn",
+    "parsedArticles": 12,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesAttempted": 10,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 197,
+    "checkedArticleUrls": 12,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 197,
+        "attempted": 12,
+        "passed": 12,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

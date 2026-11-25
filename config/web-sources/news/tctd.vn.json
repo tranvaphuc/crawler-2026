@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tctd.vn",
+  "siteId": "tctd.vn",
+  "registrableDomain": "tctd.vn",
+  "homepage": "https://tctd.vn/",
+  "allowedHosts": [
+    "tctd.vn",
+    "www.tctd.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tctd.vn/",
+    "categories": []
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Uỷ viên Bộ Chính trị - Thủ tướng Chính phủ Lê Minh Hưng thăm Angkomilk, dấu ấn đầu tư Quốc tế của Vinamilk",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:38.139Z",
+    "frozenAt": "2026-11-16T01:59:33.761Z",
+    "trainingUrl": "https://tctd.vn/uy-vien-bo-chinh-tri-thu-tuong-chinh-phu-le-minh-hung-tham-angkomilk-dau-an-dau-tu-quoc-te-cua-vinamilk-a10488.html",
+    "independentHoldouts": [
+      "https://tctd.vn/mbbank-bao-lai-hon-30500-ty-dong-sau-9-thang-nhung-no-xau-tang-manh-53-vuot-21400-ty-dong-a11015.html",
+      "https://tctd.vn/nam-2027-du-kien-thu-hon-666000-ty-dong-tien-su-dung-dat-nguon-thu-tu-nha-dat-vuot-775000-ty-dong-a10928.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tctd.vn/uy-vien-bo-chinh-tri-thu-tuong-chinh-phu-le-minh-hung-tham-angkomilk-dau-an-dau-tu-quoc-te-cua-vinamilk-a10488.html",
+      "https://tctd.vn/mbbank-bao-lai-hon-30500-ty-dong-sau-9-thang-nhung-no-xau-tang-manh-53-vuot-21400-ty-dong-a11015.html",
+      "https://tctd.vn/nam-2027-du-kien-thu-hon-666000-ty-dong-tien-su-dung-dat-nguon-thu-tu-nha-dat-vuot-775000-ty-dong-a10928.html",
+      "https://tctd.vn/ha-noi-chinh-thuc-dieu-chinh-quy-hoach-hon-11400-ha-ven-song-hong-loat-khu-do-thi-moi-sap-hinh-thanh-a11004.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

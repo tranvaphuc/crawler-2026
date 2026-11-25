@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "siteName": "congnghevadoisong.vn",
+  "siteId": "congnghevadoisong.vn",
+  "registrableDomain": "congnghevadoisong.vn",
+  "homepage": "https://congnghevadoisong.vn/",
+  "allowedHosts": [
+    "congnghevadoisong.vn",
+    "www.congnghevadoisong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nghị quyết Phiên họp Chính phủ thường kỳ tháng 10/2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".postRickText",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:37:05.797Z",
+    "sampleCount": 11,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 5,
+    "sampleUrls": [
+      "https://congnghevadoisong.vn/nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-102026-d93064.html",
+      "https://congnghevadoisong.vn/van-hoa-doanh-nghiep-chuyen-hoa-gia-tri-van-hoa-thanh-suc-manh-phat-trien-quoc-gia-d93087.html",
+      "https://congnghevadoisong.vn/dau-an-kinh-te-the-gioi-tuan-tu-ngay-1-7112026-bau-cu-o-my-cuoc-phuc-hoi-ngoan-muc-cua-gia-vang-cu-roi-khoi-moc-100-usdthung-cua-gia-dau-d93059.html",
+      "https://congnghevadoisong.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-d93085.html",
+      "https://congnghevadoisong.vn/dau-an-chinh-phu-tuan-qua-nhung-no-luc-cao-nhat-tap-trung-cao-do-hoan-thanh-nhiem-vu-nam-2026-d93086.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://congnghevadoisong.vn/",
+    "categories": [
+      "https://congnghevadoisong.vn/thoi-su--tin-tuc--su-kien-c4/",
+      "https://congnghevadoisong.vn/think-tank-c38/",
+      "https://congnghevadoisong.vn/tin-tuc-c85/",
+      "https://congnghevadoisong.vn/hoat-dong-cua-VAIP-c87/",
+      "https://congnghevadoisong.vn/cong-nghe--doi-song-c5/",
+      "https://congnghevadoisong.vn/san-pham-cong-nghe-c14/",
+      "https://congnghevadoisong.vn/cong-nghe-c23/",
+      "https://congnghevadoisong.vn/An-ninh-bao-mat-c74/",
+      "https://congnghevadoisong.vn/giao-duc-dao-tao-c162/",
+      "https://congnghevadoisong.vn/y-te-so-c188/",
+      "https://congnghevadoisong.vn/dao-tao-c3/",
+      "https://congnghevadoisong.vn/chinh-phu-so-c15/",
+      "https://congnghevadoisong.vn/do-thi-thong-minh-c16/",
+      "https://congnghevadoisong.vn/kinh-te-so-c187/",
+      "https://congnghevadoisong.vn/nguon-nhan-luc-c189/",
+      "https://congnghevadoisong.vn/nhin-ra-the-gioi-c10/",
+      "https://congnghevadoisong.vn/tin-the-gioi-c179/",
+      "https://congnghevadoisong.vn/san-pham-cong-nghe-c180/",
+      "https://congnghevadoisong.vn/chinh-sach--phap-luat-c2/",
+      "https://congnghevadoisong.vn/giai-phap-c176/",
+      "https://congnghevadoisong.vn/thuong-hieu-c49/",
+      "https://congnghevadoisong.vn/doanh-nghiep-c160/",
+      "https://congnghevadoisong.vn/truyen-thong-so-c193/",
+      "https://congnghevadoisong.vn/doanh-nhan-c197/",
+      "https://congnghevadoisong.vn/tin-hoc-nha-truong-c196/",
+      "https://congnghevadoisong.vn/truyen-hinh-internet--ott-v6/",
+      "https://congnghevadoisong.vn/tong-hop-v24/",
+      "https://congnghevadoisong.vn/chan-dong-v25/",
+      "https://congnghevadoisong.vn/thoi-su-v26/",
+      "https://congnghevadoisong.vn/vui---hai-huoc-v39/",
+      "https://congnghevadoisong.vn/ban-doc-viet-c174/",
+      "https://congnghevadoisong.vn/kinh-te--xa-hoi-c36/",
+      "https://congnghevadoisong.vn/nhan-ai-c31/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "congnghevadoisong.vn",
+    "checkedAt": "2026-11-09T03:56:56.499Z",
+    "url": "https://congnghevadoisong.vn/nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-102026-d93064.html",
+    "finalUrl": "https://congnghevadoisong.vn/nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-102026-d93064.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8818,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "congnghevadoisong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 31,
+    "checkedArticleUrls": 44,
+    "freshArticleChecks": 19,
+    "parserIssues": 12,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 31,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 33,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 571,
+        "passed": 31,
+        "distinctHashes": 31
+      },
+      {
+        "name": "video",
+        "discovered": 2,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 11,
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:42.774Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/congnghevadoisong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

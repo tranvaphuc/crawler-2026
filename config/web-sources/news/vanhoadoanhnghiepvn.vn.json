@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vanhoadoanhnghiepvn.vn",
+  "siteId": "vanhoadoanhnghiepvn.vn",
+  "registrableDomain": "vanhoadoanhnghiepvn.vn",
+  "homepage": "https://vanhoadoanhnghiepvn.vn/",
+  "allowedHosts": [
+    "vanhoadoanhnghiepvn.vn",
+    "www.vanhoadoanhnghiepvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tăng cường cung cấp thông tin, tạo đồng thuận phát triển",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#detail-news",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "sampleUrls": [
+      "https://vanhoadoanhnghiepvn.vn/cong-ty-cp-athena-group-khai-truong-du-thuyen-nghi-duong-6-sao-athena-premium/",
+      "https://vanhoadoanhnghiepvn.vn/ts-phan-bich-thien-tu-mai-am-viet-hungary-den-nhung-nhip-cau-quoc-te/",
+      "https://vanhoadoanhnghiepvn.vn/nsnd-nguyen-cong-nhac-nguoi-thay-ben-bi-truyen-lua-cho-nhieu-the-he-nghe-si-mua-viet-nam/",
+      "https://vanhoadoanhnghiepvn.vn/ninh-binh-tao-da-but-pha-tu-thu-hut-dau-tu-phat-trien-cong-nghiep-ben-vung/",
+      "https://vanhoadoanhnghiepvn.vn/nghe-an-hoi-tu-sac-mau-van-hoa-lan-toa-suc-manh-dai-doan-ket/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "discovery": {
+    "homepage": "https://vanhoadoanhnghiepvn.vn/rss",
+    "categories": [
+      "https://vanhoadoanhnghiepvn.vn/tin-tuc/",
+      "https://vanhoadoanhnghiepvn.vn/tin-tuc-24h/",
+      "https://vanhoadoanhnghiepvn.vn/van-hoa-doanh-nghiep/",
+      "https://vanhoadoanhnghiepvn.vn/van-hoa-doanh-nghiep/van-hoa-doanh-nghiep-viet-nam/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/doanh-nhan/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/kinh-doanh/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/thi-truong/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/chan-dung-doanh-nhan/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep/nu-doanh-nhan/",
+      "https://vanhoadoanhnghiepvn.vn/thuong-hieu-san-pham/",
+      "https://vanhoadoanhnghiepvn.vn/van-nghe-doanh-nhan/",
+      "https://vanhoadoanhnghiepvn.vn/van-nghe-doanh-nhan/doi-song/",
+      "https://vanhoadoanhnghiepvn.vn/nong-nghiep/nghe-nhan-cay-canh/",
+      "https://vanhoadoanhnghiepvn.vn/xa-hoi/",
+      "https://vanhoadoanhnghiepvn.vn/doanh-nghiep-cong-dong/",
+      "https://vanhoadoanhnghiepvn.vn/phap-luat-cuoc-song/",
+      "https://vanhoadoanhnghiepvn.vn/kinh-te-xa-hoi/",
+      "https://vanhoadoanhnghiepvn.vn/tai-chinh-ngan-hang/",
+      "https://vanhoadoanhnghiepvn.vn/quan-ly-thi-truong/",
+      "https://vanhoadoanhnghiepvn.vn/bao-hiem-xa-hoi/",
+      "https://vanhoadoanhnghiepvn.vn/xa-hoi/moi-truong/",
+      "https://vanhoadoanhnghiepvn.vn/thu-ban-doc/",
+      "https://vanhoadoanhnghiepvn.vn/van-hoa-giai-tri/the-thao/",
+      "https://vanhoadoanhnghiepvn.vn/media-van-hoa-doanh-nghiep/",
+      "https://vanhoadoanhnghiepvn.vn/tu-tuong-ho-chi-minh-voi-van-hoa-kinh-doanh/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [
+      "https://vanhoadoanhnghiepvn.vn/kinh-doanh-trong-moi-truong-da-van-hoa/"
+    ]
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vanhoadoanhnghiepvn.vn",
+    "checkedAt": "2026-11-09T03:57:35.734Z",
+    "url": "https://vanhoadoanhnghiepvn.vn/tang-cuong-cung-cap-thong-tin-tao-dong-thuan-phat-trien/",
+    "finalUrl": "https://vanhoadoanhnghiepvn.vn/tang-cuong-cung-cap-thong-tin-tao-dong-thuan-phat-trien/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4454,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vanhoadoanhnghiepvn.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 80,
+    "checkedArticleUrls": 80,
+    "freshArticleChecks": 75,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 80,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 27,
+    "categoriesFreshChecked": 26,
+    "categoriesUnconfirmed": 26,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 275,
+        "passed": 80,
+        "distinctHashes": 80
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:17:46.415Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vanhoadoanhnghiepvn.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:17:51.455Z",
+    "frozenAt": "2026-11-16T04:17:48.985Z",
+    "trainingUrl": null,
+    "independentHoldouts": [
+      "https://vanhoadoanhnghiepvn.vn/cong-ty-cp-athena-group-khai-truong-du-thuyen-nghi-duong-6-sao-athena-premium/",
+      "https://vanhoadoanhnghiepvn.vn/ts-phan-bich-thien-tu-mai-am-viet-hungary-den-nhung-nhip-cau-quoc-te/"
+    ],
+    "paidAiCalls": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "siteName": "plo.vn",
+  "siteId": "plo.vn",
+  "registrableDomain": "tuoitre.vn",
+  "homepage": "https://tuoitre.vn/plo/index.htm",
+  "allowedHosts": [
+    "plo.vn",
+    "www.plo.vn",
+    "tuoitre.vn",
+    "www.tuoitre.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "36 NĂM CÙNG BẠN ĐỌC, TỪ ĐÂY... KHÉP LẠI",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share,related-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "learned_requires_independent_validation",
+  "publisherUrlScopes": [
+    {
+      "host": "tuoitre.vn",
+      "pathPrefix": "/plo/"
+    }
+  ],
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "original_only",
+  "publicationTimePolicy": "original_clock_required",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "discovery": {
+    "homepage": "https://tuoitre.vn/plo/index.htm",
+    "categories": [],
+    "requiredArticlePattern": "^https?://(?:www\\.)?tuoitre\\.vn/plo/.+-\\d+\\.htm$"
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:02:05.019Z",
+    "sampleUrls": [
+      "https://tuoitre.vn/plo/36-nam-cung-ban-doc-tu-day-khep-lai-109913390.htm",
+      "https://tuoitre.vn/plo/36-nam-bao-phap-luat-tphcm-cam-xuc-cong-ly-la-ban-sac-cua-chung-toi-109913343.htm",
+      "https://tuoitre.vn/plo/36-nam-phap-luat-tphcm-hay-giu-mai-chat-nguoi-phap-luat-109913376.htm",
+      "https://tuoitre.vn/plo/phap-luat-tphcm-36-nam-di-cung-cuoc-song-109913362.htm"
+    ],
+    "fullSiteCycleVerified": false,
+    "archiveOnly": true
+  }
+}

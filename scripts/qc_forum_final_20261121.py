@@ -1,0 +1,5 @@
+import sqlite3,json,time,subprocess
+db=sqlite3.connect('file:/var/lib/forum-flow/runtime/state.sqlite?mode=ro',uri=True);db.row_factory=sqlite3.Row
+start=1795279708000
+out={'at':time.time(),'services':subprocess.check_output(['systemctl','show','forum-flow','forum-flow-writer','-p','Id,MainPID,ActiveState,NRestarts'],text=True),'neverAttempted':[dict(r) for r in db.execute('SELECT site,count(*) n FROM forum_urls WHERE next_at=0 GROUP BY site')],'documents':[dict(r) for r in db.execute('SELECT export_state,export_reason,count(*) n FROM forum_documents GROUP BY export_state,export_reason')],'eventsSinceFix':[dict(r) for r in db.execute('SELECT kind,count(*) n,count(DISTINCT url) urls FROM forum_events WHERE at>? GROUP BY kind',(start,))],'unresolvedParents':[dict(r) for r in db.execute("SELECT p.export_state,p.export_reason,count(*) n FROM forum_documents c LEFT JOIN forum_documents p ON p.site=c.site AND p.role='forumTopic' AND p.thread_id=c.thread_id WHERE c.export_reason='FORUM_PARENT_NOT_RECONCILED' GROUP BY p.export_state,p.export_reason")],'since':start}
+print(json.dumps(out,indent=2))

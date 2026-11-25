@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thitruong365.com",
+  "siteId": "thitruong365.com",
+  "registrableDomain": "thitruong365.com",
+  "homepage": "https://thitruong365.com/",
+  "allowedHosts": [
+    "thitruong365.com",
+    "www.thitruong365.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://thitruong365.com/",
+    "categories": [
+      "https://thitruong365.com/tai-chinh",
+      "https://thitruong365.com/tai-chinh/ngan-hang",
+      "https://thitruong365.com/tai-chinh/bao-hiem",
+      "https://thitruong365.com/bat-dong-san",
+      "https://thitruong365.com/doanh-nghiep",
+      "https://thitruong365.com/xe"
+    ]
+  },
+  "title": {
+    "value": "Ngân hàng Shinhan mở rộng thanh toán số, tăng tiện ích và bảo mật",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:59.406Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:48.856Z",
+    "independentHoldouts": [
+      "https://thitruong365.com/agribank-cho-vay-uu-dai-30000-ty-dong-nha-o-xa-hoi",
+      "https://thitruong365.com/shb-hoan-tien-200000-dong-thanh-toan-hoa-don-tu-dong",
+      "https://thitruong365.com/sun-life-khao-sat-ke-hoach-chuyen-giao-di-san-viet-nam"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://thitruong365.com/ngan-hang-shinhan-mo-rong-thanh-toan-so",
+      "https://thitruong365.com/agribank-cho-vay-uu-dai-30000-ty-dong-nha-o-xa-hoi",
+      "https://thitruong365.com/shb-hoan-tien-200000-dong-thanh-toan-hoa-don-tu-dong",
+      "https://thitruong365.com/sun-life-khao-sat-ke-hoach-chuyen-giao-di-san-viet-nam"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

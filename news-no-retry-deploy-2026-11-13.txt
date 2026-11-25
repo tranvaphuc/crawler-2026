@@ -1,0 +1,79 @@
+Da deploy release 20261113-12 len VPS, news-flow.service active, NRestarts=0.
+- URL seed/bai/request phu loi: luu vao url_failures, bo qua o luong thuong. Khong tu retry o vong moi, het cooldown, restart hoac doi config parser.
+- URL loi duoc giu de check rieng sau; hien khong chay checker tu dong.
+- HTML bai hop le: discover va persist link bai vao queue truoc publication feed, parse noi dung, field/time verification va ES. Category/nonarticle khong de quy mo rong.
+- Seed HTML thanh cong enqueue link ngay sau trich link; healthy seed tiep tuc polling o cac vong sau.
+- Giu timeout HTTP max 2000ms, 80 seed slots +16 article slots, 6 network workers, 2 parser workers, spacing >=3s/host, cooldown rieng publisher, 4 CPU/4GiB.
+- URL chua request do cooldown van cho; khong danh dong thanh URL loi da request.
+- ES outbox van retry/doi soat doc lap. ID/schema/field/time va create-only ES5 khong doi.
+- 136/136 tests pass ca local va VPS; SQLite quick_check=ok; ES5 cluster/mapping read-only check passed; source SHA256 tren VPS khop local.
+- Backup truoc migration: /var/lib/news-flow/backups/write-before-no-url-retry-20261113.sqlite (root600).
+
+Mau do ban12 sau deploy (khong phai phep do du 20 phut):
+{
+  "checkedAt": "2026-11-13T05:12:21.801749+00:00",
+  "minutes": 3.13,
+  "seedAttempts": 2908,
+  "uniqueSeeds": 2908,
+  "seedPerMinute": 930.4,
+  "equivalentFullPassMinutes": 14.81,
+  "seedTimeouts": 104,
+  "seedTimeoutPercent": 3.58,
+  "lateSuccessfulResponses": 0,
+  "failedURLsRequestedAgain": 0,
+  "failedURLsStillActive": 0,
+  "reviewQueue": [
+    {
+      "role": "article",
+      "n": 20681
+    },
+    {
+      "role": "seed",
+      "n": 2090
+    }
+  ],
+  "articleEarlyDiscoveryEvents": 391,
+  "esResults": [
+    {
+      "state": "created",
+      "n": 13
+    },
+    {
+      "state": "existing",
+      "n": 11
+    }
+  ],
+  "pending": [
+    {
+      "role": "article",
+      "state": "pending",
+      "n": 361878
+    },
+    {
+      "role": "seed",
+      "state": "pending",
+      "n": 7268
+    },
+    {
+      "role": "article",
+      "state": "running",
+      "n": 16
+    },
+    {
+      "role": "seed",
+      "state": "running",
+      "n": 80
+    }
+  ],
+  "service": {
+    "MainPID": "3257032",
+    "NRestarts": "0",
+    "MemoryCurrent": "2041167872",
+    "ActiveState": "active",
+    "SubState": "running"
+  }
+}
+
+Ket qua du 20 phut cua ban11 truoc deploy12:
+13.543/13.778 seed URL duy nhat duoc request (98,3%). Con235 URL: gialaitv.vn80, seekingalpha.com74, coindesk.com45, emagazine24.net35, giacavattu.com.vn1. Cac site nay co access/rate/crawl-delay cooldown. Cua so 11:43:10-12:03:10, ngay13/11/2026 UTC+7.
+Thong luong seed khong dong nghia bai se parse/import trong20 phut: article queue hien con hon361.000 task pending. URL loi bo qua duoc tach rieng khoi normal polling.

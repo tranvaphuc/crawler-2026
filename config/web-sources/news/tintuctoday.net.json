@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tintuctoday.net",
+  "siteId": "tintuctoday.net",
+  "registrableDomain": "tintuctoday.net",
+  "homepage": "https://tintuctoday.net/",
+  "allowedHosts": [
+    "tintuctoday.net",
+    "www.tintuctoday.net"
+  ],
+  "domain": "tintuctoday.net",
+  "enabled": false,
+  "stage": "parser_failed",
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:42.004Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSampleCount": 0,
+    "categoryVerified": false,
+    "fullSiteCycleVerified": false,
+    "reason": "missing_published_date",
+    "stage": "parser_failed",
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round11-http/sites/tintuctoday.net",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_failed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "status": "needs_work",
+    "checkedAt": "2026-11-09T08:15:00.924Z",
+    "sampleCount": 6,
+    "passedSamples": 0,
+    "independentSamples": 0,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": false,
+    "newsOnlyScope": false
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "tintuctoday.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 0,
+    "checkedArticleUrls": 41,
+    "freshArticleChecks": 41,
+    "parserIssues": 41,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 35,
+    "categoriesUnconfirmed": 25,
+    "categoriesWithoutParsedArticle": 10,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 248,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://tintuctoday.net/ha-noi-ngap-tran-sac-do-sao-vang-chao-mung-quoc-khanh-29-82522.html",
+      "https://tintuctoday.net/ung-dung-a80-tu-hao-viet-nam-gay-sot-truoc-them-quoc-khanh-29-82521.html",
+      "https://tintuctoday.net/an-mot-qua-chuoi-moi-ngay-vao-bua-sang-mang-lai-dieu-gi-82520.html",
+      "https://tintuctoday.net/3-buoc-don-gian-kiem-tra-tuyen-giap-ngay-tai-nha-82519.html",
+      "https://tintuctoday.net/loi-phat-day-ve-dao-lam-nguoi-82514.html",
+      "https://tintuctoday.net/co-gai-suy-kiet-vi-chiec-coc-nam-im-7-thang-di-vien-khong-lay-duoc-canh-bao-cho-chi-em-87020.html",
+      "https://tintuctoday.net/3-dau-hieu-bat-thuong-o-vung-co-canh-bao-k-nhieu-nguoi-chu-quan-da-qua-muon-87018.html",
+      "https://tintuctoday.net/loai-rau-pha-huy-hon-90-te-bao-ut-trong-vong-48h-ma-nguoi-viet-cu-ngo-la-rau-dai-moc-day-duong-86987.html",
+      "https://tintuctoday.net/7-mon-ban-tuyet-doi-khong-nen-mua-trong-sieu-thi-nhan-vien-bat-mi-mon-thu-2-du-giam-gia-cung-dung-dong-86947.html",
+      "https://tintuctoday.net/3-cau-nen-nham-khan-khi-thap-huong-de-thanh-loc-tam-hon-cau-gi-duoc-nay-86402.html",
+      "https://tintuctoday.net/khi-met-moi-hay-chan-nan-hay-lang-nghe-3-loi-nay-de-tim-lai-binh-an-83004.html",
+      "https://tintuctoday.net/vi-sao-nhieu-phu-nu-tot-van-khong-duoc-chong-yeu-thuong-83003.html",
+      "https://tintuctoday.net/dan-ong-hay-vung-tay-te-bac-voi-vo-tam-ly-hoc-giai-ma-nguyen-nhan-83002.html",
+      "https://tintuctoday.net/loi-phat-day-ve-quan-niem-su-chet-82513.html",
+      "https://tintuctoday.net/loi-phat-day-chi-doc-tung-kinh-chua-the-mang-lai-giai-thoat-82512.html",
+      "https://tintuctoday.net/duc-phat-ve-tham-vua-cha-lan-cuoi-va-su-chung-ngo-a-la-han-cua-vua-tinh-phan-82511.html",
+      "https://tintuctoday.net/duc-phat-hoa-giai-tranh-chap-rohini-trong-xung-dot-khong-the-tim-thay-an-lac-82510.html",
+      "https://tintuctoday.net/nhung-tinh-xa-duc-phat-tho-nhan-tai-kosambi-82509.html",
+      "https://tintuctoday.net/6-thay-doi-nho-giup-day-lui-gan-nhiem-mo-chi-trong-90-ngay-82508.html",
+      "https://tintuctoday.net/nuoc-la-oi-thuc-uong-dan-gian-mang-lai-nhieu-loi-ich-bat-ngo-cho-suc-khoe-82507.html",
+      "https://tintuctoday.net/can-than-khi-dung-dua-sai-cach-co-the-gay-nguy-hiem-cho-suc-khoe-82506.html",
+      "https://tintuctoday.net/3-nhan-vien-ngan-hang-cau-ket-voi-toi-pham-trong-duong-day-rua-tien-30-nghin-ty-nhu-the-nao-82482.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "parser_not_configured": 41
+    },
+    "checkedAt": "2026-11-10T09:17:31.310Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/tintuctoday.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "discovery": {
+    "homepage": "https://tintuctoday.net/",
+    "categories": [
+      "https://tintuctoday.net/",
+      "https://tintuctoday.net/sao",
+      "https://tintuctoday.net/tin-tuc"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.334Z",
+      "verifiedSeeds": [
+        "https://tintuctoday.net/",
+        "https://tintuctoday.net/sao",
+        "https://tintuctoday.net/tin-tuc"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  }
+}

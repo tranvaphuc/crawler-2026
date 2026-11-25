@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mitsubishikimlienquangbinh.vn",
+  "siteId": "mitsubishikimlienquangbinh.vn",
+  "registrableDomain": "mitsubishikimlienquangbinh.vn",
+  "homepage": "https://mitsubishikimlienquangbinh.vn/",
+  "allowedHosts": [
+    "mitsubishikimlienquangbinh.vn",
+    "www.mitsubishikimlienquangbinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://mitsubishikimlienquangbinh.vn/",
+    "categories": [
+      "https://mitsubishikimlienquangbinh.vn/san-pham/mitsubishi-xfc-concept-2023",
+      "https://mitsubishikimlienquangbinh.vn/san-pham/xpander-cross-2023",
+      "https://mitsubishikimlienquangbinh.vn/san-pham/new-outlander",
+      "https://mitsubishikimlienquangbinh.vn/san-pham/triton-athlete",
+      "https://mitsubishikimlienquangbinh.vn/san-pham/attrage"
+    ]
+  },
+  "title": {
+    "value": "Mua Mitsubishi Destinator nên chọn bản nào? Đối chiếu từng bản tại Mitsubishi Kim Liên Quảng Bình",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:08.471Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:27:00.880Z",
+    "independentHoldouts": [
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-attrage-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html",
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-triton-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html",
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-xforce-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://mitsubishikimlienquangbinh.vn/mua-mitsubishi-destinator-nen-chon-ban-nao-doi-chieu-tung-ban-tai-mitsubishi-kim-lien-quang-binh.html",
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-attrage-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html",
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-triton-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html",
+      "https://mitsubishikimlienquangbinh.vn/mitsubishi-xforce-hop-voi-ai-ba-nhom-khach-hay-chon-dong-nay.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

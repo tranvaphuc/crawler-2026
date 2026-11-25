@@ -1,0 +1,18 @@
+Parser News — cách test local, chưa có queue hoặc ghi ES5
+
+node scripts/test_news_site_article.mjs --site doanhnghieptoday.net
+node scripts/test_news_site_article.mjs --site world.kbs.co.kr
+node scripts/test_news_site_article.mjs --site tiim.com.vn
+Có thể thêm --url <URL-bài>. Puppeteer luôn headless, profile tạm riêng.
+Kết quả gồm HTML/metadata/context và parsed.json trong outputs/news-parser-rollout-2026-11-09/round3/runtime/.
+
+parseConfiguredArticle(html, exactArticleUrl, config, publicationContext)
+- public_feed: runtime cần đọc lại feed URL trong config.publishedDate (hoặc variant), gọi parsePublicPublicationFeed rồi truyền context. Áp dụng RSS/Atom hoặc news sitemap. Chỉ ghép theo đúng URL bài và timestamp có offset. Không dùng updated/lastmod hoặc ngày trong master làm ngày đăng.
+- Feed không chứa bài thì trả lỗi thiếu ngày; không lấy ngày của bài khác. Feed/sitemap có thể chỉ bao phủ các bài gần đây; chưa chứng minh bao phủ toàn bộ source hoặc SLA 15 phút.
+- WordPress category JSON là nguồn discovery URL canonical; nội dung mẫu vẫn được lấy và test từ trang bài. Chỉ nhận post đã publish và link cùng publisher.
+- URL trong base[href] được dùng để resolve link tương đối nếu thuộc host được phép.
+- data-src/source và embed công khai được giữ; chữ UI của video player bị loại khỏi nội dung. Bài media-only có content Images/Video cùng metadata media.
+- taichinhso.net.vn có canonical chung sai cho nhiều bài: dùng exact requested URL, giữ declaredCanonicalUrl làm chứng cứ. ID legacy vẫn MD5 latin1(registrableDomain + title + exact URL).
+- Bốn profile ngaymoisaigon.com, vntravellive.com, dulichgiaitri.com, vccinews.com dùng múi giờ theo địa chỉ publisher tại Việt Nam. timezoneProvenance ghi rõ đây là giả định cấu hình, chưa phải offset xác nhận ở từng bài. Vccinews dùng thứ tự ngày MDY theo định dạng hiển thị.
+
+Cấu hình mới đều enabled=false; cần đối chiếu URL/native ID với master trước lần ghi thật. Không chạy/import source eastdata Node 0.12.

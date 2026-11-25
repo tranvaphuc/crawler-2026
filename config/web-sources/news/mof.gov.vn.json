@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "httpDependencyHosts": [],
+  "siteName": "mof.gov.vn",
+  "siteId": "mof.gov.vn",
+  "registrableDomain": "mof.gov.vn",
+  "homepage": "https://mof.gov.vn/",
+  "allowedHosts": [
+    "www.mof.gov.vn",
+    "mof.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://mof.gov.vn/",
+    "categories": []
+  },
+  "title": {
+    "value": "BẢN TIN THỊ TRƯỜNG BẢO HIỂM THÁNG 10.2025",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:01:43.697Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-16T02:01:30.120Z",
+    "independentHoldouts": [
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/hoc-vien-tai-chinh-hoi-tu-suc-manh-doan-ket-lan-toa-gia-tri-van-hoa-ket-noi-co-hoi-nghe-nghiep",
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/khai-mac-giai-bong-da-thuong-nien-thanh-nien-bo-tai-chinh-lan-thu-32-nam-2026",
+      "https://mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/thong-bao/bo-tai-chinh-tang-cuong-trao-doi-chinh-sach-voi-quy-tien-te-quoc-te-imf.",
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/bo-tai-chinh-tang-cuong-trao-doi-chinh-sach-voi-quy-tien-te-quoc-te-imf"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/hoc-vien-tai-chinh-hoi-tu-suc-manh-doan-ket-lan-toa-gia-tri-van-hoa-ket-noi-co-hoi-nghe-nghiep",
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/khai-mac-giai-bong-da-thuong-nien-thanh-nien-bo-tai-chinh-lan-thu-32-nam-2026",
+      "https://mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/thong-bao/bo-tai-chinh-tang-cuong-trao-doi-chinh-sach-voi-quy-tien-te-quoc-te-imf.",
+      "https://mof.gov.vn/tin-tuc-tai-chinh/tin-tuc-su-kien-8/bo-tai-chinh-tang-cuong-trao-doi-chinh-sach-voi-quy-tien-te-quoc-te-imf"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16"
+}

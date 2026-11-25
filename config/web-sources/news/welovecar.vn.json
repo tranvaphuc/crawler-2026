@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "siteName": "welovecar.vn",
+  "siteId": "welovecar.vn",
+  "registrableDomain": "welovecar.vn",
+  "homepage": "https://welovecar.vn/",
+  "allowedHosts": [
+    "welovecar.vn",
+    "www.welovecar.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Citroën 2 CV hồi sinh bản điện: Dài 3,76 m, giá dự kiến 450 triệu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:53.222Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://welovecar.vn/citroen-2cv-concept-xe-dien-133980.html",
+      "https://welovecar.vn/yamaha-nmax-e-xenter-e-san-xuat-tai-viet-nam-133966.html",
+      "https://welovecar.vn/fiat-multiplay-multiplina-concept-paris-2026-133978.html",
+      "https://welovecar.vn/nguoi-di-bo-tren-cao-toc-tai-xe-co-chiu-trach-nhiem-133934.html",
+      "https://welovecar.vn/honda-sensing-ride-10-tinh-nang-radar-dct-133960.html",
+      "https://welovecar.vn/citroen-2cv-concept-xe-dien-133980.html",
+      "https://welovecar.vn/citroen-2cv-concept-xe-dien-133980.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://welovecar.vn/",
+    "categories": [
+      "https://welovecar.vn/quy-che-hoat-dong",
+      "https://welovecar.vn/lien-quang-cao",
+      "https://welovecar.vn/o-to",
+      "https://welovecar.vn/xe-may",
+      "https://welovecar.vn/tin-xe",
+      "https://welovecar.vn/danh-gia-xe",
+      "https://welovecar.vn/giao-thong",
+      "https://welovecar.vn/nhip-song",
+      "https://welovecar.vn/tin-xe/bang-gia-xe"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "welovecar.vn",
+    "checkedAt": "2026-11-09T03:57:39.468Z",
+    "url": "https://welovecar.vn/citroen-2cv-concept-xe-dien-133980.html",
+    "finalUrl": "https://welovecar.vn/citroen-2cv-concept-xe-dien-133980.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4446,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "domain": "welovecar.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 18,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 18,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 2,
+    "categoriesUnconfirmed": 2,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 71,
+        "passed": 18,
+        "distinctHashes": 18
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://welovecar.vn/mercedes-amg-sl-63-giam-900-trieu-dai-ly-134011.html",
+      "https://welovecar.vn/ktm-1390-super-duke-gt-evo-2027-hop-so-amt-chuyen-so-khong-can-bop-con-134183.html",
+      "https://welovecar.vn/mercedes-g-580-eq-mat-gia-368-trieu-134210.html",
+      "https://welovecar.vn/nissan-navara-pro-phev-philippines-gia-134089.html",
+      "https://welovecar.vn/omoda-c5-jaecoo-j5-giam-gia-thang-11-2026-134208.html",
+      "https://welovecar.vn/xe-7-cho-duoi-800-trieu-thang-11-2026-134057.html",
+      "https://welovecar.vn/byd-yangwang-altior-trinh-lang-sedan-dien-sieu-sang-chay-hon-1-000-km-canh-tranh-rolls-royce-ghost-134168.html",
+      "https://welovecar.vn/tesla-khai-tu-cybertruck-giua-2027-134005.html",
+      "https://welovecar.vn/toc-do-toi-thieu-tren-cao-toc-bi-phat-134026.html",
+      "https://welovecar.vn/li-auto-4-suv-ve-viet-nam-134079.html",
+      "https://welovecar.vn/mg-urban-ve-viet-nam-byd-dolphin-va-geely-ex2-co-them-doi-thu-134159.html",
+      "https://welovecar.vn/f1-sao-paulo-2026-norris-mercedes-vo-dich-134094.html",
+      "https://welovecar.vn/yamaha-nmax-e-xenter-e-san-xuat-tai-viet-nam-133966.html",
+      "https://welovecar.vn/honda-sensing-ride-10-tinh-nang-radar-dct-133960.html",
+      "https://welovecar.vn/ford-tung-102-giai-thuong-vang-9999-de-kich-cau-mua-xe-cuoi-nam-134128.html",
+      "https://welovecar.vn/mitsubishi-thu-cu-doi-moi-thang-11-2026-133796.html",
+      "https://welovecar.vn/mercedes-amg-gt-suv-thuan-dien-dau-tien-trinh-lang-manh-hon-1-150-ma-luc-134142.html",
+      "https://welovecar.vn/mitsubishi-outlander-the-he-moi-cap-cang-se-ra-mat-viet-nam-vao-thang-12-134117.html",
+      "https://welovecar.vn/nguoi-di-bo-tren-cao-toc-tai-xe-co-chiu-trach-nhiem-133934.html",
+      "https://welovecar.vn/chery-trieu-hoi-53882-xe-omoda-loi-cau-sau-133917.html",
+      "https://welovecar.vn/mercedes-trieu-hoi-3207-xe-loi-khoa-cua-133764.html",
+      "https://welovecar.vn/thu-hoi-dang-ky-bien-so-xe-ban-phe-lieu-133430.html",
+      "https://welovecar.vn/dung-qua-vach-den-do-phat-vuot-den-do-133308.html",
+      "https://welovecar.vn/6-mau-dong-ho-co-mang-dna-nhung-chiec-sieu-xe-hang-dau-the-gioi-133725.html",
+      "https://welovecar.vn/rolls-royce-escapism-ii-bo-suu-tap-danh-cho-nhung-chuyen-di-ngau-hung-133400.html",
+      "https://welovecar.vn/lego-tai-hien-ferrari-f1-va-koenigsegg-ty-le-11-133254.html",
+      "https://welovecar.vn/moto-pad-60-va-pad-70-series-ra-mat-viet-nam-chu-trong-cong-nghe-man-hinh-bao-ve-mat-nguoi-dung-133262.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:30.554Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/welovecar.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tuyenquangtv.vn",
+  "siteId": "tuyenquangtv.vn",
+  "registrableDomain": "tuyenquangtv.vn",
+  "homepage": "https://tuyenquangtv.vn/",
+  "allowedHosts": [
+    "tuyenquangtv.vn",
+    "www.tuyenquangtv.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tuyenquangtv.vn/",
+    "categories": [
+      "https://tuyenquangtv.vn/truyen-hinh",
+      "https://tuyenquangtv.vn/phat-thanh",
+      "https://tuyenquangtv.vn/bao-in",
+      "https://tuyenquangtv.vn/short-video",
+      "https://tuyenquangtv.vn/english",
+      "https://tuyenquangtv.vn/thoi-su-chinh-tri",
+      "https://tuyenquangtv.vn/thoi-su-chinh-tri/tin-trong-tinh",
+      "https://tuyenquangtv.vn/thoi-su-chinh-tri/tin-trong-nuoc",
+      "https://tuyenquangtv.vn/thoi-su-chinh-tri/bao-ve-nen-tang-tu-tuong-cua-dang",
+      "https://tuyenquangtv.vn/thoi-su-chinh-tri/doi-ngoai"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "VIB huy động 285 triệu USD, hướng tới 1 tỷ USD vốn quốc tế",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:33.929Z",
+    "frozenAt": "2026-11-16T02:00:30.209Z",
+    "trainingUrl": "https://tuyenquangtv.vn/vib-huy-dong-285-trieu-usd-huong-toi-1-ty-usd-von-quoc-te-52319.html",
+    "independentHoldouts": [
+      "https://tuyenquangtv.vn/ket-noi-cung-cau-va-tieu-thu-san-pham-tinh-tuyen-quang-voi-he-thong-go-toan-quoc-53957.html",
+      "https://tuyenquangtv.vn/tuyen-quang-phan-dau-tang-truong-kinh-te-nam-2027-dat-2-con-so-55725.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tuyenquangtv.vn/vib-huy-dong-285-trieu-usd-huong-toi-1-ty-usd-von-quoc-te-52319.html",
+      "https://tuyenquangtv.vn/ket-noi-cung-cau-va-tieu-thu-san-pham-tinh-tuyen-quang-voi-he-thong-go-toan-quoc-53957.html",
+      "https://tuyenquangtv.vn/tuyen-quang-phan-dau-tang-truong-kinh-te-nam-2027-dat-2-con-so-55725.html",
+      "https://tuyenquangtv.vn/bi-thu-tinh-uy-hau-a-lenh-du-ngay-hoi-dai-doan-ket-toan-dan-toc-ngay-van-hoa-viet-nam-o-thon-quang-v-55707.html",
+      "https://tuyenquangtv.vn/bi-thu-tinh-uy-hau-a-lenh-tham-kiem-tra-tien-do-chuan-bi-du-an-tu-bo-di-tich-lich-su-quoc-gia-dac-bi-55704.html",
+      "https://tuyenquangtv.vn/doi-moi-tu-duy-phan-dau-tang-truong-kinh-te-nam-2027-dat-10-5-55689.html",
+      "https://tuyenquangtv.vn/xay-dung-truong-cao-dang-tuyen-quang-thanh-trung-tam-dao-tao-nghe-nong-cot-chat-luong-cao-55684.html",
+      "https://tuyenquangtv.vn/quoc-hoi-tien-hanh-phien-chat-van-dau-tien-cua-nhiem-ky-khoa-xvi-55602.html",
+      "https://tuyenquangtv.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-55277.html",
+      "https://tuyenquangtv.vn/chu-tich-quoc-hoi-tran-thanh-man-dang-huong-tai-khu-di-tich-quoc-gia-dac-biet-tan-trao-55270.html",
+      "https://tuyenquangtv.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-dang-lam-55265.html",
+      "https://tuyenquangtv.vn/toan-van-phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-dien-dan-doanh-nghiep-phap-ngu-ve-doi-mo-55923.html",
+      "https://tuyenquangtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-don-chinh-thuc-truong-doan-cac-nuoc-du-hoi-nghi-cap-cao-phap--55877.html",
+      "https://tuyenquangtv.vn/chu-tich-hoi-dong-nhan-dan-tinh-nguyen-van-son-chung-vui-ngay-hoi-dai-doan-ket-toan-dan-toc-cung-nha-55856.html",
+      "https://tuyenquangtv.vn/dong-chi-truong-ban-tuyen-giao-trung-uong-trinh-van-quyet-dang-huong-tai-di-tich-ban-tuyen-huan-trun-55840.html",
+      "https://tuyenquangtv.vn/hoi-nghi-ban-thuong-vu-tinh-uy-chuyen-de-55795.html",
+      "https://tuyenquangtv.vn/chu-tich-hdnd-tinh-nguyen-van-son-lam-viec-voi-cac-xa-khu-vuc-bac-me-55589.html",
+      "https://tuyenquangtv.vn/tong-bi-thu-chu-tich-nuoc-to-lam-de-nghi-cac-tap-doan-nhat-ban-tiep-tuc-dong-hanh-cung-su-phat-trien-55533.html",
+      "https://tuyenquangtv.vn/can-thuc-hien-tot-nhiem-vu-chinh-tri-trong-tam-la-dao-tao-nghien-cuu-va-ung-dung-55466.html",
+      "https://tuyenquangtv.vn/de-xuat-giam-tuoi-huong-tro-cap-huu-tri-xa-hoi-bo-y-te-noi-gi-50129.html",
+      "https://tuyenquangtv.vn/thi-cong-du-an-cao-toc-tuyen-quang-ha-giang-quyet-liet-khong-ne-tranh-trach-nhiem-50116.html",
+      "https://tuyenquangtv.vn/tuyen-an-44-bi-cao-trong-vu-mua-ban-trai-phep-gan-74-000-hoa-don-khong-lua-dao-chiem-doat-tai-san-va-50675.html",
+      "https://tuyenquangtv.vn/tang-cuong-phoi-hop-gan-ket-giua-chinh-phu-va-nghi-vien-cac-quoc-gia-thanh-vien-asean-55925.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

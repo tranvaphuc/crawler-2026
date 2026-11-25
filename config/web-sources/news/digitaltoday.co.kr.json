@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "siteName": "digitaltoday.co.kr",
+  "siteId": "digitaltoday.co.kr",
+  "registrableDomain": "digitaltoday.co.kr",
+  "homepage": "https://www.digitaltoday.co.kr/",
+  "allowedHosts": [
+    "www.digitaltoday.co.kr",
+    "digitaltoday.co.kr"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://www.digitaltoday.co.kr/",
+    "categories": [
+      "https://www.digitaltoday.co.kr/en/list?view_type=sm",
+      "https://www.digitaltoday.co.kr/jp/list?view_type=sm",
+      "https://www.digitaltoday.co.kr/cn/list?view_type=sm",
+      "https://www.digitaltoday.co.kr/vn/list?view_type=sm",
+      "https://www.digitaltoday.co.kr/news/articleList.html?sc_section_code=S1N7&view_type=sm"
+    ]
+  },
+  "title": {
+    "value": "LG CNS hoàn thành trung tâm dữ liệu AI 30MW tại Indonesia",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:23:49.252Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:23:04.487Z",
+    "independentHoldouts": [
+      "https://www.digitaltoday.co.kr/vn/view/119383/lg-electronics-launches-stem-drawer-freezer-ice-water-purifier-refrigerator",
+      "https://www.digitaltoday.co.kr/vn/view/119243/lg-uplus-launches-u-tv-today-life-to-check-weather-news-and-financial-information"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.digitaltoday.co.kr/vn/view/122437/lg-cns-completes-30-mw-ai-data-centre-in-indonesia-first-overseas-build",
+      "https://www.digitaltoday.co.kr/vn/view/119383/lg-electronics-launches-stem-drawer-freezer-ice-water-purifier-refrigerator",
+      "https://www.digitaltoday.co.kr/vn/view/119243/lg-uplus-launches-u-tv-today-life-to-check-weather-news-and-financial-information"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "siteName": "etime.danviet.vn",
+  "siteId": "etime.danviet.vn",
+  "registrableDomain": "danviet.vn",
+  "homepage": "https://etime.danviet.vn/",
+  "allowedHosts": [
+    "etime.danviet.vn",
+    "www.etime.danviet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Huế rót gần 49.400 tỉ đồng đầu tư công trong 5 năm: Lĩnh vực nào được \"rót\" nhiều nhất?",
+    "strategy": "selector",
+    "selector": "h1:eq(2)"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:59.784Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://etime.danviet.vn/hue-rot-gan-49400-ti-dong-dau-tu-cong-trong-5-nam-linh-vuc-nao-duoc-rot-nhieu-nhat-d1473378.html",
+      "https://etime.danviet.vn/gia-lai-hut-hon-237000-ti-dong-von-dau-tu-2-thang-cuoi-nam-co-gi-dang-chu-y-d1472637.html",
+      "https://etime.danviet.vn/quang-ngai-go-nut-that-nguon-da-xay-dung-se-bo-sung-du-an-duoc-mua-da-tai-mo-an-hoi-d1473374.html",
+      "https://etime.danviet.vn/yeah1-trao-quyen-cho-nhung-bong-hong-moi-kich-hoat-tham-vong-thuong-mai-hoa-d1473243.html",
+      "https://etime.danviet.vn/chi-phi-leo-thang-bop-nghet-nong-dan-doanh-nghiep-van-tai-cung-lao-dao-d1473144.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://etime.danviet.vn/",
+    "categories": [
+      "https://etime.danviet.vn/tieu-diem/",
+      "https://etime.danviet.vn/tai-chinh-nong-nghiep/",
+      "https://etime.danviet.vn/thi-truong/",
+      "https://etime.danviet.vn/toi-la-nong-dan/",
+      "https://etime.danviet.vn/etime-tai-chinh/",
+      "https://etime.danviet.vn/ngan-hang/",
+      "https://etime.danviet.vn/bao-hiem/",
+      "https://etime.danviet.vn/etime-chung-khoan/",
+      "https://etime.danviet.vn/etime-bat-dong-san/",
+      "https://etime.danviet.vn/etime-kinh-doanh-phap-luat/",
+      "https://etime.danviet.vn/doanh-nghiep/",
+      "https://etime.danviet.vn/doanh-nhan/",
+      "https://etime.danviet.vn/chuyen-dong-doanh-nghiep/",
+      "https://etime.danviet.vn/khoi-nghiep/",
+      "https://etime.danviet.vn/nhip-song-mien-trung/",
+      "https://etime.danviet.vn/etime-goc-nhin/",
+      "https://etime.danviet.vn/hang-hoa/",
+      "https://etime.danviet.vn/etime-kinh-te-xanh/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "etime.danviet.vn",
+    "checkedAt": "2026-11-09T03:57:04.209Z",
+    "url": "https://etime.danviet.vn/hue-rot-gan-49400-ti-dong-dau-tu-cong-trong-5-nam-linh-vuc-nao-duoc-rot-nhieu-nhat-d1473378.html",
+    "finalUrl": "https://etime.danviet.vn/hue-rot-gan-49400-ti-dong-dau-tu-cong-trong-5-nam-linh-vuc-nao-duoc-rot-nhieu-nhat-d1473378.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5527,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "etime.danviet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 35,
+    "freshArticleChecks": 9,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 33,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 18,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 1382,
+        "passed": 32,
+        "distinctHashes": 32
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://etime.danviet.vn/cao-toc-khanh-hoa--buon-ma-thuot-chay-nuoc-rut-phan-dau-hoan-thanh-truoc-cuoi-thang-12-2026-d1473583.html",
+      "https://etime.danviet.vn/de-xuat-chuyen-chuyen-bay-quoc-te-tu-san-bay-noi-bai-ve-gia-binh-ga-gia-lam-lam-dau-moi-trung-chuyen-d1472377.html",
+      "https://etime.danviet.vn/hue-giao-dat-cho-doanh-nghiep-lam-du-an-nha-o-xa-hoi-1430-ti-dong-d1473699.html",
+      "https://etime.danviet.vn/du-an-nang-luong-o-mien-trung-tay-nguyen-bo-cong-thuong-chi-ro-nhung-diem-nghen-can-thao-go-d1473728.html",
+      "https://etime.danviet.vn/da-nang-rot-hon-105-ti-dong-xay-khu-tai-dinh-cu-rong-38ha-phuc-vu-cao-toc-hoa-lien--tuy-loan-d1473773.html",
+      "https://etime.danviet.vn/xa-mang-den-quang-ngai-ra-quyet-dinh-cuong-che-vu-lan-dat-nha-nuoc-d1473720.html",
+      "https://etime.danviet.vn/sau-hon-10-nam-dap-chieu-du-an-khu-dan-cu-xuan-thieu-duoc-da-nang-thao-go-vuong-mac-d1473778.html",
+      "https://etime.danviet.vn/chu-tich-tp-hue-chot-huong-khai-thac-pho-co-gia-hoi-duong-bach-dang-duoc-uu-tien-d1473802.html",
+      "https://etime.danviet.vn/de-xuat-xay-them-duong-bang-san-bay-phu-bai-tphue-d1473621.html",
+      "https://etime.danviet.vn/chi-phi-leo-thang-bop-nghet-nong-dan-doanh-nghiep-van-tai-cung-lao-dao-d1473144.html",
+      "https://etime.danviet.vn/den-pleiku-tan-mat-chung-kien-ben-trong-hanh-trinh-bien-hat-ca-phe-gia-lai-thanh-dac-san-khac-biet-d1473007.html",
+      "https://etime.danviet.vn/doanh-thu-tang-7-vi-sao-dam-ca-mau-tu-tin-nang-loi-nhuan-toi-83-d1472761.html",
+      "https://etime.danviet.vn/nhung-cuoc-tan-sat-khoc-liet-nhat-lich-su-can-quet-thi-truong-bitcoin-vang-bac-doi-mat-cu-soc-moi-tu-fed-d1473104.html",
+      "https://etime.danviet.vn/so-gang-quy-mo-big4-vietinbank-but-toc-ap-sat-vietcombank-d1472857.html",
+      "https://etime.danviet.vn/shb-hop-tac-cung-benh-vien-bach-mai-ket-noi-nguon-luc-tai-chinh-va-y-te-d1472630.html",
+      "https://etime.danviet.vn/thang-11-co-xac-suat-tang-diem-len-toi-70-du-bao-2-kich-ban-cua-vn-index-d1473553.html",
+      "https://etime.danviet.vn/datvietvac-co-phieu-dvv-giam-hon-5-phien-len-san-hose-nam-giu-1800-ty-dong-tien-va-tien-gui-d1472007.html",
+      "https://etime.danviet.vn/chu-tich-vietcap-nguyen-thanh-phuong-va-dan-sep-lon-chi-tien-gom-co-phieu-bvbank-d1470897.html",
+      "https://etime.danviet.vn/da-nang-xay-dung-khu-tai-dinh-cu-huong-tra-gan-366-ti-dong-phuc-vu-du-an-duong-sat-toc-do-cao-bac--nam-d1473649.html",
+      "https://etime.danviet.vn/he-lo-cum-cong-nghiep-1100-ti-dong-rong-75ha-tai-2-xa-phuong-o-gia-lai-d1473168.html",
+      "https://etime.danviet.vn/thanh-tra-6-trang-trai-chan-nuoi-heo-phat-hien-nhieu-bat-cap-d1473418.html",
+      "https://etime.danviet.vn/vua-bi-phat-925-trieu-idj-viet-nam-tiep-tuc-bi-truy-thu-va-xu-phat-thue-hon-214-ti-dong-d1473000.html",
+      "https://etime.danviet.vn/thao-tung-co-phieu-cua-tap-doan-kido-bang-61-tai-khoan-ba-ca-nhan-bi-phat-45-ty-dong-d1472009.html",
+      "https://etime.danviet.vn/nhua-binh-minh-bmp-chot-ngay-chia-co-tuc-ty-le-65-tien-mat-d1473241.html",
+      "https://etime.danviet.vn/yeah1-trao-quyen-cho-nhung-bong-hong-moi-kich-hoat-tham-vong-thuong-mai-hoa-d1473243.html",
+      "https://etime.danviet.vn/gia-vang-doi-mat-con-bao-moi-d1473103.html",
+      "https://etime.danviet.vn/evn-nhap-khau-bao-nhieu-dien-trong-10-thang-qua-d1472031.html",
+      "https://etime.danviet.vn/hue-du-kien-chi-52-ti-dong-ho-tro-nguoi-dan-lap-dien-mat-troi-mai-nha-d1471893.html",
+      "https://etime.danviet.vn/thay-gi-tu-thuong-vu-hoan-doi-2-ti-usd-d1472616.html",
+      "https://etime.danviet.vn/ket-giua-bao-gia-va-lai-suat-doanh-nghiep-thuy-san-vat-lieu-chat-vat-tim-loi-thoat-d1471423.html",
+      "https://etime.danviet.vn/bai-tam-cong-dong-vua-dua-vao-su-dung-da-sat-lo-quang-tri-chi-hon-18-ty-dong-khac-phuc-d1468592.html",
+      "https://etime.danviet.vn/du-an-nha-may-dien-gio-7700-ti-dong-tai-gia-lai-co-gi-dac-biet-d1473150.html",
+      "https://etime.danviet.vn/chu-tich-tp-hue-khao-sat-3-dia-diem-dac-biet-tinh-chuyen-phat-trien-cong-nghiep-van-hoa-kinh-te-dem-d1472860.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 2
+    },
+    "checkedAt": "2026-11-10T09:15:25.190Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/etime.danviet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

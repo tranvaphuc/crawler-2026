@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepvathuongmai.vn",
+  "siteId": "doanhnghiepvathuongmai.vn",
+  "registrableDomain": "doanhnghiepvathuongmai.vn",
+  "homepage": "https://doanhnghiepvathuongmai.vn/",
+  "allowedHosts": [
+    "doanhnghiepvathuongmai.vn",
+    "www.doanhnghiepvathuongmai.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnghiepvathuongmai.vn/",
+    "categories": [
+      "https://doanhnghiepvathuongmai.vn/danh-muc/moi-truong-chinh-sach-6.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/thoi-su-57.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/xay-dung-dang-94.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/chinh-sach-moi.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/tin-tuc-vasi-69.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/cong-nghiep-ho-tro-100.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/phap-luat-31.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/kinh-doanh-thuong-truong-84.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/thuong-mai.phtml",
+      "https://doanhnghiepvathuongmai.vn/danh-muc/cong-nghiep.phtml"
+    ]
+  },
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "strategy": "selector",
+    "selector": ".header-single h2"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".header-single .header-meta > .row > div:first-child",
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnghiepvathuongmai.vn/bai-viet/tinh-gia-lai-trao-giay-chung-nhan-dang-ky-dau-tu-du-an-trung-tam-thuong-mai-go-pleiku.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/vinamilk-va-bai-toan-giu-niem-tin-nguoi-tieu-dung-qua-nhieu-the-he.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/mot-big-4-co-hon-62000-ty-dong-du-no-cho-vay-mua-nha-sap-chuyen-sang-lai-suat-tha-noi-tang-them-2-3.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/thi-truong-chung-cu-tphcm-thang-102026-giao-dich-tang-tro-lai-xuat-hien-du-an-co-gia-chao-len-toi-hon-520-trieu-dongm2.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/vefta-doanh-nghiep-viet-co-co-hoi-tiep-can-thi-truong-co-suc-mua-cao.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/van-hoa-kinh-doanh-nen-tang-nang-cao-suc-canh-tranh-doanh-nghiep-viet-nam.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/thu-tuong-chu-tri-phien-hop-chinh-phu-thuong-ky-thang-10-quyet-liet-thuc-hien-cac-giai-phap-tang-toc-ve-dich-nam-2026.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/kim-ngach-xuat-nhap-khau-lan-dau-tien-vuot-moc-1000-ty-usd.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/ngan-hang-nha-nuoc-khuyen-khich-cac-to-chuc-tin-dung-ho-tro-doanh-nghiep.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/doanh-so-tren-cac-san-thuong-mai-dien-tu-tang-manh.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/dien-dan-kinh-te-mua-thu-2026-thu-tuong-chinh-phu-gui-thong-diep-chuyen-tu-dau-tu-tai-viet-nam-sang-dau-tu-cung-viet-nam.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/thuong-mai-dien-tu-viet-nam-co-hoi-cho-nhieu-doanh-nghiep-tang-truong-but-toc.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/xay-dung-thanh-pho-dien-bien-phu-tro-thanh-do-thi-loai-ii.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/500-gian-hang-cua-350-don-vi-se-tham-du-trien-lam-quoc-te-chuyen-nganh-y-duoc-viet-nam-nam-2023.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/xuat-khau-hang-hoa-tang-manh-trong-nua-cuoi-thang-3.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/benh-vien-phuong-dong-dat-tieu-chuan-quoc-te-ve-xet-nghiem.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/phan-bon-ca-mau-dong-hanh-cung-nhung-buoc-chay-ben-bi-noi-cuc-nam-to-quoc.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/vws-truoc-buoc-chuyen-minh-xanh-dot-rac-phat-dien-giam-chon-lap-tang-tai-che.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/du-an-khu-do-thi-aic-rong-gan-90ha-o-me-linh-doi-ten-khi-ve-tay-hoa-thu-do.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/phuong-nenh-thanh-pho-bac-ninh-tu-loi-the-cong-nghiep-den-dong-luc-tang-truong-moi.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/phan-bon-ca-mau-trao-tang-46-ty-dong-tiep-suc-hanh-trinh-xanh-hoa-truong-sa.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/pv-gas-to-chuc-hoi-thao-pccccnch-nam-2026-nang-cao-ban-linh-tang-cuong-phoi-hop.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/tap-huan-nang-cao-nghiep-vu-to-chuc-bua-an-ban-tru-cho-hoc-sinh-tieu-hoc-tai-lam-dong.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/shb-duoc-forbes-viet-nam-vinh-danh-trong-top-10-thuong-hieu-dan-dau-nam-2026.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/chu-tich-tan-hoang-minh-do-anh-dung-bi-tam-hoan-xuat-canh.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/bac-ninh-dong-hanh-cung-doanh-nghiep-fdi-thuc-day-mo-rong-san-xuat.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/bac-ninh-thuc-day-hop-tac-dau-tu-voi-doanh-nghiep-nha-dau-tu-trung-quoc.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/daiichi-life-viet-nam-ra-mat-giai-phap-bao-hiem-nhom-phuc-loi-toan-dien.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/asus-zenbook-14-ux3480-than-may-ceraluminum-11kg-hai-gam-mau-moi-tre-trung-nang-dong.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/thuc-day-dua-thuc-pham-viet-vao-he-thong-phan-phoi-hien-dai.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/bi-thu-ha-noi-lan-thu-hai-thuc-sumitomo-day-nhanh-tien-do-du-an-thanh-pho-thong-minh-42-ty-usd.phtml",
+      "https://doanhnghiepvathuongmai.vn/bai-viet/techcombank-vuot-mb-vpbank-va-cac-ngan-hang-quoc-doanh-dan-dau-he-thong-ve-von-dieu-le.phtml"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationEvidencePolicy": {
+    "kind": "doanhnghiep_owned_explicit_clock_v1"
+  }
+}

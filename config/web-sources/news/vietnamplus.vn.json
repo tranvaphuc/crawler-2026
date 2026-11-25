@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnamplus.vn",
+  "siteId": "vietnamplus.vn",
+  "registrableDomain": "vietnamplus.vn",
+  "homepage": "https://www.vietnamplus.vn/",
+  "allowedHosts": [
+    "www.vietnamplus.vn",
+    "vietnamplus.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nghị quyết 24-NQ/TW: Lắng nghe để hành động, đối thoại để đồng lòng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:57.860Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://www.vietnamplus.vn/nghi-quyet-24-nqtw-lang-nghe-de-hanh-dong-doi-thoai-de-dong-long-post1146868.vnp",
+      "https://www.vietnamplus.vn/mo-co-che-khoi-day-nguon-luc-phat-trien-kinh-te-tu-nhan-cho-dang-vien-post1146131.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-can-bo-nhan-vien-cac-co-quan-dai-dien-va-cong-dong-nguoi-viet-nam-tai-nhat-ban-post1146970.vnp",
+      "https://www.vietnamplus.vn/chu-tich-quoc-hoi-tran-thanh-man-du-le-khanh-thanh-cong-trinh-tai-khu-di-tich-quoc-gia-dac-biet-tan-trao-post1146930.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-post1146984.vnp"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.vietnamplus.vn/",
+    "categories": [
+      "https://www.vietnamplus.vn/so-huu-tri-tue.vnp",
+      "https://www.vietnamplus.vn/quy-dinh-su-dung.vnp",
+      "https://www.vietnamplus.vn/ho-tro.vnp",
+      "https://www.vietnamplus.vn/dich-vu-tin.vnp",
+      "https://www.vietnamplus.vn/quang-cao.vnp",
+      "https://www.vietnamplus.vn/chinhtri/",
+      "https://www.vietnamplus.vn/thegioi/",
+      "https://www.vietnamplus.vn/thegioi/asean/",
+      "https://www.vietnamplus.vn/thegioi/chaua-tbd/",
+      "https://www.vietnamplus.vn/thegioi/trungdong/",
+      "https://www.vietnamplus.vn/thegioi/chauau/",
+      "https://www.vietnamplus.vn/thegioi/chaumy/",
+      "https://www.vietnamplus.vn/thegioi/chauphi/",
+      "https://www.vietnamplus.vn/kinhte/",
+      "https://www.vietnamplus.vn/kinhte/kinhdoanh/",
+      "https://www.vietnamplus.vn/kinhte/taichinh/",
+      "https://www.vietnamplus.vn/kinhte/tindung/",
+      "https://www.vietnamplus.vn/kinhte/chungkhoan/",
+      "https://www.vietnamplus.vn/kinhte/batdongsan/",
+      "https://www.vietnamplus.vn/kinhte/doanhnghiep/",
+      "https://www.vietnamplus.vn/kinhte/thong-tin-doanh-nghiep/",
+      "https://www.vietnamplus.vn/kinhte/thong-cao-bao-chi/",
+      "https://www.vietnamplus.vn/xahoi/",
+      "https://www.vietnamplus.vn/xahoi/giaoduc/",
+      "https://www.vietnamplus.vn/xahoi/yte/",
+      "https://www.vietnamplus.vn/xahoi/phapluat/",
+      "https://www.vietnamplus.vn/xahoi/giaothong/",
+      "https://www.vietnamplus.vn/xahoi/vietkieu/",
+      "https://www.vietnamplus.vn/doisong/",
+      "https://www.vietnamplus.vn/doisong/phongcach/",
+      "https://www.vietnamplus.vn/doisong/suckhoe/",
+      "https://www.vietnamplus.vn/doisong/lamdep/",
+      "https://www.vietnamplus.vn/doisong/amthuc/",
+      "https://www.vietnamplus.vn/doisong/littleheroes/",
+      "https://www.vietnamplus.vn/vanhoa/",
+      "https://www.vietnamplus.vn/vanhoa/dienanh/",
+      "https://www.vietnamplus.vn/vanhoa/amnhac/",
+      "https://www.vietnamplus.vn/vanhoa/thoitrang/",
+      "https://www.vietnamplus.vn/vanhoa/nhac-phim-sach/",
+      "https://www.vietnamplus.vn/vanhoa/truyenthong/",
+      "https://www.vietnamplus.vn/thethao/",
+      "https://www.vietnamplus.vn/thethao/bongda/",
+      "https://www.vietnamplus.vn/multimedia/",
+      "https://www.vietnamplus.vn/photo/"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?vietnamplus.vn/.*?(\\d{5,})(.html|.htm|.chn|.vnp)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietnamplus.vn",
+    "checkedAt": "2026-11-09T03:57:38.043Z",
+    "url": "https://www.vietnamplus.vn/nghi-quyet-24-nqtw-lang-nghe-de-hanh-dong-doi-thoai-de-dong-long-post1146868.vnp",
+    "finalUrl": "https://www.vietnamplus.vn/nghi-quyet-24-nqtw-lang-nghe-de-hanh-dong-doi-thoai-de-dong-long-post1146868.vnp",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7267,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vietnamplus.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 87,
+    "checkedArticleUrls": 87,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 87,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 76,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 5,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 2041,
+        "passed": 87,
+        "distinctHashes": 87
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.vietnamplus.vn/sua-luat-du-lich-go-vuong-tu-thuc-tien-bao-dam-quyen-hanh-nghe-post1147400.vnp",
+      "https://www.vietnamplus.vn/sua-luat-bao-ve-moi-truong-phan-cap-manh-chuyen-tu-tien-kiem-sang-hau-kiem-post1147381.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-post1147377.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tham-tap-doan-meiko-post1147415.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake-post1147380.vnp",
+      "https://www.vietnamplus.vn/viet-nam-philippines-thuc-day-quan-he-doi-tac-chien-luoc-tang-cuong-post1147407.vnp",
+      "https://www.vietnamplus.vn/nhat-ban-trao-tang-huan-chuong-mat-troi-moc-hang-nhat-dai-thap-tu-cho-nguyen-thu-tuong-pham-minh-chinh-post1147409.vnp",
+      "https://www.vietnamplus.vn/thang-12027-nhieu-chu-the-duoc-ho-tro-dinh-gia-tai-san-tri-tue-post1147352.vnp",
+      "https://www.vietnamplus.vn/cong-bo-danh-sach-10-ca-nhan-doat-giai-thuong-qua-cau-vang-nam-2026-post1147402.vnp",
+      "https://www.vietnamplus.vn/thanh-hoa-chung-tay-dua-hai-cot-liet-sy-ve-an-tang-tai-que-nha-post1147408.vnp",
+      "https://www.vietnamplus.vn/asean-trong-chuoi-gia-tri-robot-toan-cau-va-trien-vong-hop-tac-viet-nam-malaysia-post1147406.vnp",
+      "https://www.vietnamplus.vn/ket-qua-bau-cu-giua-nhiem-ky-dat-quan-he-my-trung-truoc-nhung-dieu-chinh-moi-post1146340.vnp",
+      "https://www.vietnamplus.vn/viet-nam-an-mung-chien-thang-gianh-huy-chuong-vang-tai-asiad-2026-post1138941.vnp",
+      "https://www.vietnamplus.vn/asiad-2026-duong-thuy-vi-gianh-huy-chuong-dong-post1137951.vnp",
+      "https://www.vietnamplus.vn/2000-nguoi-cao-tuoi-ha-noi-dong-dien-lap-ky-luc-viet-nam-post1136739.vnp",
+      "https://www.vietnamplus.vn/ban-cau-anh-sang-bieu-tuong-moi-ben-dong-tra-khuc-post1132314.vnp",
+      "https://www.vietnamplus.vn/nhat-ban-thap-lua-asiad-2026-post1130906.vnp",
+      "https://www.vietnamplus.vn/ninh-binh-mo-lop-day-nghe-theo-don-dat-hang-giup-lao-dong-ngheo-co-viec-lam-ngay-post1146574.vnp",
+      "https://www.vietnamplus.vn/quang-tri-phoi-hop-ung-pho-mua-lu-bao-dam-an-toan-tren-dia-ban-bien-gioi-post1147396.vnp",
+      "https://www.vietnamplus.vn/pho-thu-tuong-le-tien-chau-tiep-thong-doc-tinh-gunma-cua-nhat-ban-post1147379.vnp",
+      "https://www.vietnamplus.vn/quang-ngai-khan-cap-di-doi-dan-ra-khoi-vung-sat-lo-post1147382.vnp",
+      "https://www.vietnamplus.vn/quang-tri-mua-lon-gay-sat-lo-duong-nhieu-ngam-tran-ngap-gay-chia-cat-post1147375.vnp",
+      "https://www.vietnamplus.vn/lam-dong-trao-tang-huy-hieu-cho-nhieu-dang-vien-lao-thanh-post1147374.vnp",
+      "https://www.vietnamplus.vn/quang-tri-giai-cuu-thanh-cong-10-nguoi-dan-bi-mac-ket-giua-vung-mua-lu-post1147368.vnp",
+      "https://www.vietnamplus.vn/chuyen-bo-cong-an-7-vu-viec-co-dau-hieu-hinh-su-trong-kinh-doanh-xang-dau-post1147367.vnp",
+      "https://www.vietnamplus.vn/viet-nam-thuoc-nhom-quoc-gia-tien-bo-dang-ke-ve-ha-tang-chat-luong-post1147420.vnp",
+      "https://www.vietnamplus.vn/tuyen-bo-tam-nhin-chung-viet-nam-nhat-ban-post1147411.vnp",
+      "https://www.vietnamplus.vn/tiep-suc-de-tinh-hoa-lang-nghe-viet-vuon-xa-the-gioi-post1147182.vnp",
+      "https://www.vietnamplus.vn/tay-ninh-khoi-cong-mo-rong-quoc-lo-50-noi-cua-ngo-voi-thanh-pho-ho-chi-minh-post1147383.vnp",
+      "https://www.vietnamplus.vn/thanh-pho-ho-chi-minh-dap-tat-dam-chay-tren-tau-vo-sat-post1147395.vnp",
+      "https://www.vietnamplus.vn/tp-ho-chi-minh-phat-huy-hieu-qua-nguon-luc-sau-sap-xep-co-so-giao-duc-cong-lap-post1147370.vnp",
+      "https://www.vietnamplus.vn/gia-lai-chap-thuan-dau-tu-3-du-an-nang-luong-tai-tao-hon-3800-ty-dong-post1147412.vnp",
+      "https://www.vietnamplus.vn/tu-chu-nang-luong-nen-tang-cho-muc-tieu-tang-truong-hai-con-so-post1147364.vnp",
+      "https://www.vietnamplus.vn/hai-quan-thu-ngan-sach-dat-992-du-toan-day-manh-chong-buon-lau-cuoi-nam-post1147424.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake-post1147332.vnp",
+      "https://www.vietnamplus.vn/phat-bieu-chinh-sach-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-quoc-hoi-nhat-ban-post1147205.vnp",
+      "https://www.vietnamplus.vn/ocop-da-nang-tim-loi-ra-bien-lon-bang-cong-nghe-va-chuan-hoa-vung-nguyen-lieu-post1147008.vnp",
+      "https://www.vietnamplus.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-post1146864.vnp",
+      "https://www.vietnamplus.vn/thuc-day-hon-nua-quan-he-huu-nghi-va-hop-tac-giua-viet-nam-nhat-ban-post1144975.vnp",
+      "https://www.vietnamplus.vn/nhieu-vi-tri-duong-bo-tai-thanh-hoa-va-quang-tri-bi-chia-cat-do-mua-lon-post1147422.vnp",
+      "https://www.vietnamplus.vn/vinh-long-xu-ly-o-dich-sau-vu-9-nguoi-bi-cho-dai-can-o-xa-giao-long-post1147421.vnp",
+      "https://www.vietnamplus.vn/hue-khan-truong-khac-phuc-sat-lo-tai-3-tuyen-duong-huyet-mach-post1147416.vnp",
+      "https://www.vietnamplus.vn/no-nha-may-thep-o-tho-nhi-ky-nhieu-nguoi-thuong-vong-va-mac-ket-post1147219.vnp",
+      "https://www.vietnamplus.vn/lang-huong-quang-phu-cau-giu-nhip-nghe-tram-nam-vuon-minh-thanh-diem-hen-du-lich-van-hoa-post1147316.vnp",
+      "https://www.vietnamplus.vn/vff-va-herbalife-tap-huan-dinh-duong-the-thao-nang-cao-chat-luong-bong-da-viet-nam-post1147389.vnp",
+      "https://www.vietnamplus.vn/anh-nong-dan-tham-lang-va-duong-giu-an-toan-cho-nhung-tuyen-duong-nong-thon-post1147296.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-chung-kien-le-trao-chung-nhan-dai-su-dac-biet-viet-nam-nhat-ban-post1147335.vnp",
+      "https://www.vietnamplus.vn/quang-tri-noi-lo-bo-bien-bi-xam-thuc-mua-mua-bao-post1147322.vnp",
+      "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-tiep-nguyen-chu-tich-lien-minh-nghi-sy-huu-nghi-nhat-ban-viet-nam-post1147333.vnp",
+      "https://www.vietnamplus.vn/thuc-day-giao-luu-giao-duc-moi-truong-va-van-hoa-viet-nam-han-quoc-post1147384.vnp",
+      "https://www.vietnamplus.vn/dien-bien-gin-giu-mach-nguon-van-hoa-cac-dan-toc-noi-vung-bien-muong-nhe-post1147323.vnp",
+      "https://www.vietnamplus.vn/phat-trien-cong-nghiep-van-hoa-go-diem-nghen-tu-chuoi-gia-tri-va-ban-quyen-post1147320.vnp",
+      "https://www.vietnamplus.vn/luat-phat-trien-cong-nghiep-van-hoa-khi-ban-sac-buoc-vao-duong-dua-kinh-te-post1147419.vnp",
+      "https://www.vietnamplus.vn/luat-phat-trien-cong-nghiep-van-hoa-mo-duong-cho-van-hoa-tro-thanh-suc-manh-kinh-te-post1147378.vnp",
+      "https://www.vietnamplus.vn/ninh-binh-vuc-day-lang-nghe-tu-du-lich-trai-nghiem-post1147360.vnp",
+      "https://www.vietnamplus.vn/isom-apec-2027-don-bay-nang-tam-du-lich-va-nong-san-ocop-gia-lai-post1147401.vnp",
+      "https://www.vietnamplus.vn/tre-tu-5-17-tuoi-nen-hoat-dong-the-luc-bao-lau-moi-tuan-post1147273.vnp",
+      "https://www.vietnamplus.vn/u23-viet-nam-co-quan-bai-gi-de-san-sang-nghenh-chien-thai-lan-post1147128.vnp",
+      "https://www.vietnamplus.vn/giai-pickleball-vtv-cup-2026-co-tong-gia-tri-giai-thuong-hon-1-ty-dong-post1147211.vnp",
+      "https://www.vietnamplus.vn/vong-7-v-league-nam-dinh-xay-chac-ngoi-dau-the-cong-chim-sau-vao-khung-hoang-post1146988.vnp",
+      "https://www.vietnamplus.vn/fpt-gioi-thieu-chien-luoc-bonsai-ai-phat-trien-chip-chuyen-dung-tai-nhat-ban-post1147404.vnp",
+      "https://www.vietnamplus.vn/nghi-quyet-so-57-nqtw-tay-ninh-don-dau-co-hoi-ket-noi-thi-truong-uav-post1147318.vnp",
+      "https://www.vietnamplus.vn/khoanh-khac-phat-hien-ra-vu-chay-khoi-lan-mit-mu-tren-mai-ton-truong-thcs-kim-lien-post1146384.vnp",
+      "https://www.vietnamplus.vn/can-canh-hien-truong-vu-chay-tai-khu-vuc-truong-trung-hoc-co-so-kim-lien-post1146365.vnp",
+      "https://www.vietnamplus.vn/khoanh-khac-may-bay-lao-xuong-dat-nhu-ten-lua-o-my-khien-9-nguoi-thiet-mang-post1145876.vnp",
+      "https://www.vietnamplus.vn/can-canh-nguoi-dan-tp-ho-chi-minh-chat-vat-gio-tan-tam-vi-trieu-cuong-post1144494.vnp",
+      "https://www.vietnamplus.vn/hang-nghin-nguoi-dan-xuc-dong-tien-dua-731-anh-hung-liet-si-ve-nghia-trang-liet-si-thanh-pho-ho-chi-minh-post1141854.vnp",
+      "https://www.vietnamplus.vn/hoi-nghi-chu-ky-khoa-hoc-phap-ngu-chau-a-tbd-lan-thu-nhat-dien-ra-tai-campuchia-post1147330.vnp",
+      "https://www.vietnamplus.vn/nguoi-hut-thuoc-la-co-nguy-co-sa-sut-tri-tue-cao-hon-31-post1147279.vnp",
+      "https://www.vietnamplus.vn/cong-ty-anthropic-ra-mat-cac-mo-hinh-ai-moi-truoc-them-ipo-post1147290.vnp"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:11.937Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietnamplus.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "amp-story",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".article.longform",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "siteName": "vietnamplus.vn",
+      "siteId": "vietnamplus.vn",
+      "registrableDomain": "vietnamplus.vn",
+      "homepage": "https://www.vietnamplus.vn/",
+      "allowedHosts": [
+        "www.vietnamplus.vn",
+        "vietnamplus.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Nghị quyết 24-NQ/TW: Lắng nghe để hành động, đối thoại để đồng lòng",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:21.454Z",
+        "trainingUrls": [
+          "https://www.vietnamplus.vn/toan-canh-vu-sat-lo-nghiem-trong-vui-lap-ca-thon-lang-nu-post977446.vnp"
+        ],
+        "holdoutUrls": [
+          "https://www.vietnamplus.vn/hon-1000-ho-dan-o-thanh-hoa-bi-ngap-nhieu-noi-nuoc-ngang-bung-post1147356.vnp",
+          "https://www.vietnamplus.vn/ong-trump-up-mo-kha-nang-ukraine-phai-danh-doi-cho-thoa-thuan-hoa-binh-post1147158.vnp"
+        ]
+      }
+    }
+  ]
+}

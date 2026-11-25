@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dongvon.doanhnhanvn.vn",
+  "siteId": "dongvon.doanhnhanvn.vn",
+  "registrableDomain": "dongvon.doanhnhanvn.vn",
+  "homepage": "https://dongvon.doanhnhanvn.vn/",
+  "allowedHosts": [
+    "dongvon.doanhnhanvn.vn",
+    "www.dongvon.doanhnhanvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "'Ngân hàng đang quá tải', chuyên gia chỉ ra hướng khơi thông dòng vốn dài hạn",
+    "strategy": "selector",
+    "selector": "article.main-article > header h2.title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": "article.main-article > header ul.details > li:not(:has(a))",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "precision": "minute"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article.main-article .main",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:13:52.147Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dongvon.doanhnhanvn.vn/ngan-hang-dang-qua-tai-chuyen-gia-chi-ra-huong-khoi-thong-dong-von-dai-han-42202611621131710.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-vietcombank-hom-nay-611-dong-loat-giam-manh-euro-va-dola-uc-sut-hon-100-dong-42202611695352292.htm",
+      "https://dongvon.doanhnhanvn.vn/lanh-dao-kafi-he-lo-ke-hoach-chao-ban-co-phieu-giua-luc-thi-truong-tram-lang-422026118193340964.htm",
+      "https://dongvon.doanhnhanvn.vn/vinacapital-ly-giai-vi-sao-vn-index-di-ngang-va-chi-ra-chat-xuc-tac-cho-nhip-tang-moi-422026118145252821.htm",
+      "https://dongvon.doanhnhanvn.vn/loi-nhuan-doanh-nghiep-phan-hoa-nganh-nao-se-co-co-hoi-cuoi-nam-42202611894946534.htm",
+      "https://dongvon.doanhnhanvn.vn/mot-ca-nhan-bi-phat-15-ty-dong-cam-giao-dich-2-nam-vi-thao-tung-co-phieu-bce-422026118142448616.htm",
+      "https://dongvon.doanhnhanvn.vn/khoi-ngoai-rut-rong-gan-48-ty-usd-tu-dau-nam-mot-ma-chung-khoan-tro-thanh-tam-diem-hut-tien-trong-tuan-qua-422026117141554676.htm",
+      "https://dongvon.doanhnhanvn.vn/duong-se-mo-o-phuong-yen-tu-tp-quang-ninh-432026118204235181.htm"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dongvon.doanhnhanvn.vn/",
+    "categories": [
+      "https://dongvon.doanhnhanvn.vn/tin-dung-lai-suat.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-tien-te.htm",
+      "https://dongvon.doanhnhanvn.vn/co-phieu-co-phan.htm",
+      "https://dongvon.doanhnhanvn.vn/ipo-niem-yet.htm",
+      "https://dongvon.doanhnhanvn.vn/ha-tang.htm",
+      "https://dongvon.doanhnhanvn.vn/du-an.htm",
+      "https://dongvon.doanhnhanvn.vn/co-hoi-dau-tu.htm",
+      "https://dongvon.doanhnhanvn.vn/tu-van.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dongvon.doanhnhanvn.vn",
+    "checkedAt": "2026-11-09T03:57:03.128Z",
+    "url": "https://dongvon.doanhnhanvn.vn/ngan-hang-dang-qua-tai-chuyen-gia-chi-ra-huong-khoi-thong-dong-von-dai-han-42202611621131710.htm",
+    "finalUrl": "https://dongvon.doanhnhanvn.vn/ngan-hang-dang-qua-tai-chuyen-gia-chi-ra-huong-khoi-thong-dong-von-dai-han-42202611621131710.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6819,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dongvon.doanhnhanvn.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 6,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 23,
+    "parserIssues": 19,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 6,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 6,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 6,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 83,
+        "passed": 6,
+        "distinctHashes": 6
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dongvon.doanhnhanvn.vn/lo-tai-khoan-chung-khoan-bi-khoa-vi-chua-xac-thuc-nha-dau-tu-co-the-sap-bay-lua-dao-42202611107505998.htm",
+      "https://dongvon.doanhnhanvn.vn/dragon-capital-tro-lai-ghe-co-dong-lon-dxg-sau-gan-4-thang-422026119225817442.htm",
+      "https://dongvon.doanhnhanvn.vn/hose-ngat-ket-noi-giao-dich-voi-mot-cong-ty-chung-khoan-422026111071354350.htm",
+      "https://dongvon.doanhnhanvn.vn/tu-doanh-ban-rong-gan-500-ty-dong-ma-nao-chiu-ap-luc-4220261191713721.htm",
+      "https://dongvon.doanhnhanvn.vn/khoi-ngoai-dao-chieu-ban-rong-hon-800-ty-dong-hpg-bi-ban-manh-nhat-422026119152738736.htm",
+      "https://dongvon.doanhnhanvn.vn/duong-se-mo-o-phuong-hoang-que-tp-quang-ninh-4320261110123649646.htm",
+      "https://dongvon.doanhnhanvn.vn/dat-co-quy-hoach-o-phuong-hoang-que-tp-quang-ninh-4320261110122443711.htm",
+      "https://dongvon.doanhnhanvn.vn/ban-do-quy-hoach-giao-thong-phuong-hoang-que-tp-quang-ninh-thoi-ky-2021-2030-432026111012516763.htm",
+      "https://dongvon.doanhnhanvn.vn/ban-do-quy-hoach-su-dung-dat-phuong-hoang-que-tp-quang-ninh-thoi-ky-2021-2030-432026111011594996.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-vietcombank-hom-nay-1011-quay-dau-bat-tang-manh-o-phan-lon-ngoai-te-422026111094334925.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-vietcombank-hom-nay-911-dong-loat-giam-manh-bang-anh-va-euro-mat-hon-200-dong-42202611992546432.htm",
+      "https://dongvon.doanhnhanvn.vn/ngan-hang-dang-qua-tai-chuyen-gia-chi-ra-huong-khoi-thong-dong-von-dai-han-42202611621131710.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-vietcombank-hom-nay-611-dong-loat-giam-manh-euro-va-dola-uc-sut-hon-100-dong-42202611695352292.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-vietcombank-hom-nay-511-giam-o-phan-lon-ngoai-te-dola-uc-nhich-nhe-4220261151072777.htm",
+      "https://dongvon.doanhnhanvn.vn/lanh-dao-kafi-he-lo-ke-hoach-chao-ban-co-phieu-giua-luc-thi-truong-tram-lang-422026118193340964.htm",
+      "https://dongvon.doanhnhanvn.vn/vng-lai-tinh-chuyen-niem-yet-o-my-nham-muc-dinh-gia-3-ty-usd-422026115791945.htm",
+      "https://dongvon.doanhnhanvn.vn/chung-khoan-hd-chot-gia-ipo-38900-dongcp-quy-mo-doanh-nghiep-gan-2-ty-usd-42202611410626768.htm",
+      "https://dongvon.doanhnhanvn.vn/doanh-nghiep-cua-bau-duc-chot-ngay-len-upcom-gia-tham-chieu-60600-dongco-phieu-42202611315543661.htm",
+      "https://dongvon.doanhnhanvn.vn/tcbs-khoi-dong-phuong-an-chao-ban-5000-ty-dong-trai-phieu-42202631212644707.htm",
+      "https://dongvon.doanhnhanvn.vn/ubck-yeu-cau-ra-soat-tu-cach-cong-ty-dai-chung-mot-so-dnnn-co-the-doi-mat-nguy-co-huy-niem-yet-42202622783324863.htm",
+      "https://dongvon.doanhnhanvn.vn/dong-von-gan-12000-ty-dong-sap-chay-vao-chung-khoan-vps-42202512210045943.htm",
+      "https://dongvon.doanhnhanvn.vn/dnse-chao-ban-1000-ty-dong-trai-phieu-ra-cong-chung-422025106112211609.htm",
+      "https://dongvon.doanhnhanvn.vn/vsdc-he-lo-lo-trinh-van-hanh-ccp-nen-tang-cong-nghe-du-kien-san-sang-dau-thang-32027-4220261197346793.htm",
+      "https://dongvon.doanhnhanvn.vn/phia-sau-chuoi-giam-san-cua-kos-bai-2-hang-chuc-cong-ty-chung-khoan-lien-quan-va-cau-hoi-ve-rui-ro-thu-hoi-no-422026102821453721.htm",
+      "https://dongvon.doanhnhanvn.vn/phia-sau-chuoi-giam-san-cua-kos-bai-1-ai-dang-mac-ket-o-phia-ban-422026102814587144.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "content_integrity_review": 19
+    },
+    "checkedAt": "2026-11-10T09:15:15.989Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dongvon.doanhnhanvn.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "description": {
+    "strategy": "selector",
+    "selector": ".sapo",
+    "scope": "article.main-article"
+  },
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.363Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://dongvon.doanhnhanvn.vn/can-canh-vi-tri-du-kien-lam-ga-metro-so-14-o-phia-bac-khu-do-thi-ciputra-4320261110142559910.htm",
+      "https://dongvon.doanhnhanvn.vn/ty-gia-euro-ngay-1211-euro-tiep-tuc-mat-gia-sau-422026111292814563.htm",
+      "https://dongvon.doanhnhanvn.vn/nhieu-co-phieu-ve-vung-dinh-gia-thap-nhat-5-nam-co-hoi-giai-ngan-dang-xuat-hien-422026111220312331.htm"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "dongvon.doanhnhanvn.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

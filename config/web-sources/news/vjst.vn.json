@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vjst.vn",
+  "siteId": "vjst.vn",
+  "registrableDomain": "vjst.vn",
+  "homepage": "https://vjst.vn/",
+  "allowedHosts": [
+    "vjst.vn",
+    "www.vjst.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Việt Nam vào nhóm quốc gia cải thiện đáng kể về hạ tầng chất lượng theo công bố của UNIDO",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:59.945Z",
+    "sampleCount": 8,
+    "passedSamples": 6,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://vjst.vn/viet-nam-vao-nhom-quoc-gia-cai-thien-dang-ke-ve-ha-tang-chat-luong-theo-cong-bo-cua-unido-103975.html",
+      "https://vjst.vn/trung-quoc-day-manh-sang-kien-ai-trong-ke-hoach-5-nam-lan-thu-15-103976.html",
+      "https://vjst.vn/doanh-nghiep-viet-lam-chu-cong-nghe-san-xuat-vat-lieu-nen-tien-polymer-103974.html",
+      "https://vjst.vn/thi-truong-cong-nghe-blockchain-cong-khai-tang-truong-nho-tai-san-so-103971.html",
+      "https://vjst.vn/19-de-tai-dat-giai-nhat-giai-thuong-kh-cn-sinh-vien-nam-2026-103987.html",
+      "https://a.vjst.vn/nguon-nhan-luc-so-chia-khoa-de-viet-nam-but-pha-trong-ky-nguyen-so-103888.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vjst.vn/",
+    "categories": [
+      "https://vjst.vn/gui-bai",
+      "https://vjst.vn/dien-dan",
+      "https://vjst.vn/dien-dan/chinh-sach-va-quan-ly",
+      "https://vjst.vn/dien-dan/y-kien-chuyen-gia",
+      "https://vjst.vn/dien-dan/xu-huong-du-bao",
+      "https://vjst.vn/khoa-hoc-cong-nghe/khcn-dia-phuong",
+      "https://vjst.vn/doi-moi-sang-tao",
+      "https://vjst.vn/chuyen-doi-so",
+      "https://vjst.vn/media",
+      "https://vjst.vn/truyen-thong",
+      "https://vjst.vn/envjst"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vjst.vn",
+    "checkedAt": "2026-11-09T03:57:38.848Z",
+    "url": "https://vjst.vn/viet-nam-vao-nhom-quoc-gia-cai-thien-dang-ke-ve-ha-tang-chat-luong-theo-cong-bo-cua-unido-103975.html",
+    "finalUrl": "https://vjst.vn/viet-nam-vao-nhom-quoc-gia-cai-thien-dang-ke-ve-ha-tang-chat-luong-theo-cong-bo-cua-unido-103975.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3027,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    },
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "audio",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "vjst.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 25,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 25,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 11,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 1,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 267,
+        "passed": 21,
+        "distinctHashes": 21
+      },
+      {
+        "name": "audio",
+        "discovered": 15,
+        "passed": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vjst.vn/hai-nam-thuc-hien-nghi-quyet-57-nq-tw-dau-an-but-pha-cua-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-104014.html"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:18:14.684Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vjst.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-11-25T09:22:58.359Z",
+  "state": "finished",
+  "input_people": 13804,
+  "people_with_requested_platform": 13802,
+  "people_only_other_platform": 2,
+  "input_link_occurrences": 13820,
+  "unique_accounts": 13369,
+  "counts": {
+    "resolved": 9406,
+    "unresolved": 3963
+  },
+  "by_platform": {
+    "facebook": {
+      "unique_accounts": 13066,
+      "resolved": 9177,
+      "unresolved": 3889,
+      "pending": 0
+    },
+    "instagram": {
+      "unique_accounts": 276,
+      "resolved": 226,
+      "unresolved": 50,
+      "pending": 0
+    },
+    "tiktok": {
+      "unique_accounts": 24,
+      "resolved": 0,
+      "unresolved": 24,
+      "pending": 0
+    },
+    "youtube": {
+      "unique_accounts": 3,
+      "resolved": 3,
+      "unresolved": 0,
+      "pending": 0
+    },
+    "threads": {
+      "unique_accounts": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "pending": 0
+    }
+  },
+  "people_all_ids_found": 9715,
+  "people_any_id_found": 9721,
+  "notes": [
+    "ID là chuỗi để tránh làm tròn số. Handle không được coi là native ID.",
+    "Facebook profile_id và page_id khác nhau; giữ riêng nếu có bằng chứng. id_type cho biết cột id đang chứa loại nào.",
+    "ID lấy từ cấu trúc URL không chứng minh tài khoản còn hoạt động; cache có thời điểm quan sát riêng.",
+    "Kết quả không xác minh tài khoản chính chủ của người trong nguoinoitieng.tv.",
+    "Không thêm người không có link; Twitter/X nằm ngoài 5 nền tảng được yêu cầu."
+  ]
+}

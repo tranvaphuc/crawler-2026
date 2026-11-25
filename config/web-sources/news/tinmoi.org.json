@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tinmoi.org",
+  "siteId": "tinmoi.org",
+  "registrableDomain": "tinmoi.org",
+  "homepage": "https://tinmoi.org/",
+  "allowedHosts": [
+    "tinmoi.org",
+    "www.tinmoi.org"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tinmoi.org/",
+    "categories": [
+      "https://tinmoi.org/category/thoi-su",
+      "https://tinmoi.org/category/chinh-tri",
+      "https://tinmoi.org/category/xa-hoi",
+      "https://tinmoi.org/category/kinh-te",
+      "https://tinmoi.org/category/cong-nghe",
+      "https://tinmoi.org/category/khoa-hoc"
+    ]
+  },
+  "title": {
+    "value": "Báo Mới: ACB tăng lợi nhuận quý III/2026, nợ xấu 9 tháng vượt 9.000 tỷ đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".prose-lem",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:06.428Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:58.764Z",
+    "independentHoldouts": [
+      "https://tinmoi.org/tin-tuc/dien-thoai-boc-khoi-phat-no-tai-phong-kham-nhi-khoa-o-an-do",
+      "https://tinmoi.org/tin-tuc/mr-pips-xin-duoc-ket-hon-trong-tu-luat-su-phan-tich-quyen-co-ban-khong-bi-tuoc-bo",
+      "https://tinmoi.org/tin-tuc/fermin-lopez-tro-thanh-ngoi-sao-100-trieu-euro-barca-thang-atletico-2-1"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tinmoi.org/tin-tuc/bao-moi-acb-tang-loi-nhuan-quy-iii-2026-no-xau-9-thang-vuot-9-000-ty-dong",
+      "https://tinmoi.org/tin-tuc/dien-thoai-boc-khoi-phat-no-tai-phong-kham-nhi-khoa-o-an-do",
+      "https://tinmoi.org/tin-tuc/mr-pips-xin-duoc-ket-hon-trong-tu-luat-su-phan-tich-quyen-co-ban-khong-bi-tuoc-bo",
+      "https://tinmoi.org/tin-tuc/fermin-lopez-tro-thanh-ngoi-sao-100-trieu-euro-barca-thang-atletico-2-1"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

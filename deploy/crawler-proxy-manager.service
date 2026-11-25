@@ -1,0 +1,34 @@
+[Unit]
+Description=Private shared proxy lease manager
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=crawler-proxy
+Group=crawler-api
+WorkingDirectory=/opt/crawler-api/current
+EnvironmentFile=/etc/crawler-api/proxy-manager.env
+ExecStart=/opt/crawler-node/bin/node /opt/crawler-api/current/scripts/proxy_manager.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+UMask=0077
+StateDirectory=crawler-proxy-manager
+StateDirectoryMode=0700
+ReadWritePaths=/var/lib/crawler-proxy-manager
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+MemoryMax=512M
+TasksMax=64
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target

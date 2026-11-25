@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tapchihangkhong.vn",
+  "siteId": "tapchihangkhong.vn",
+  "registrableDomain": "tapchihangkhong.vn",
+  "homepage": "https://tapchihangkhong.vn/",
+  "allowedHosts": [
+    "tapchihangkhong.vn",
+    "www.tapchihangkhong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tapchihangkhong.vn/",
+    "categories": [
+      "https://tapchihangkhong.vn/tin-tuc/",
+      "https://tapchihangkhong.vn/an-toan/",
+      "https://tapchihangkhong.vn/vaba/",
+      "https://tapchihangkhong.vn/vuon-xa/",
+      "https://tapchihangkhong.vn/kinh-doanh/",
+      "https://tapchihangkhong.vn/tai-chinh/"
+    ]
+  },
+  "title": {
+    "value": "Ngày đôi 11/11, săn vé máy bay giá rẻ ở đâu?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:39.174Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:34.126Z",
+    "independentHoldouts": [
+      "https://tapchihangkhong.vn/vu-roi-may-bay-learjet-60-o-my-giai-ma-cu-roi-bi-an-tu-do-cao-37000-feet-d15246.html",
+      "https://tapchihangkhong.vn/nasa-tuyen-phi-hanh-gia-luong-164395-usd-nam-d15398.html",
+      "https://tapchihangkhong.vn/he-thong-hang-khong-toan-nuoc-my-te-liet-do-loi-nha-thau-d15476.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tapchihangkhong.vn/ngay-doi-11-11-san-ve-may-bay-gia-re-o-dau-d15385.html",
+      "https://tapchihangkhong.vn/vu-roi-may-bay-learjet-60-o-my-giai-ma-cu-roi-bi-an-tu-do-cao-37000-feet-d15246.html",
+      "https://tapchihangkhong.vn/nasa-tuyen-phi-hanh-gia-luong-164395-usd-nam-d15398.html",
+      "https://tapchihangkhong.vn/he-thong-hang-khong-toan-nuoc-my-te-liet-do-loi-nha-thau-d15476.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

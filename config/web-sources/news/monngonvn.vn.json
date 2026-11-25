@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "siteName": "monngonvn.vn",
+  "siteId": "monngonvn.vn",
+  "registrableDomain": "monngonvn.vn",
+  "homepage": "https://monngonvn.vn/",
+  "allowedHosts": [
+    "monngonvn.vn",
+    "www.monngonvn.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "WinCommerce Lãi 670 Tỷ Đồng Sau 9 Tháng: Mở Rộng Quy Mô Cùng Lợi Nhuận",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".entry-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:46.172Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://monngonvn.vn/thuong-hieu-uy-tin/wincommerce-lai-670-ty-dong-sau-9-thang-mo-rong-quy-mo-cung-loi-nhuan/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-consumer-tang-truong-nhanh-nhat-ba-nam-khi-thuong-hieu-va-mang-luoi-phan-phoi-cung-phat-huy-loi-the/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-ra-mat-thi-diem-cua-hang-tien-loi-mang-thuong-hieu-win-on/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/phuc-long-lam-moi-trai-nghiem-tu-chiec-ly-an-duoc-den-du-thuyen-giua-ho-sen/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-consumer-duy-tri-da-tang-truong-doanh-thu-hai-chu-so/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://monngonvn.vn/",
+    "categories": [
+      "https://monngonvn.vn/thuong-hieu-uy-tin/",
+      "https://monngonvn.vn/am-thuc-4-phuong/",
+      "https://monngonvn.vn/bua-an-tieu-chuan/",
+      "https://monngonvn.vn/che-do-dac-biet/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "monngonvn.vn",
+    "checkedAt": "2026-11-09T03:57:15.473Z",
+    "url": "https://monngonvn.vn/thuong-hieu-uy-tin/wincommerce-lai-670-ty-dong-sau-9-thang-mo-rong-quy-mo-cung-loi-nhuan/",
+    "finalUrl": "https://monngonvn.vn/thuong-hieu-uy-tin/wincommerce-lai-670-ty-dong-sau-9-thang-mo-rong-quy-mo-cung-loi-nhuan/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3717,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "monngonvn.vn",
+    "previousStatus": "http_unconfirmed",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 22,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 24,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 22,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesFreshChecked": 5,
+    "categoriesUnconfirmed": 3,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 54,
+        "passed": 22,
+        "distinctHashes": 22
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://monngonvn.vn/thuong-hieu-uy-tin/wincommerce-lai-670-ty-dong-sau-9-thang-mo-rong-quy-mo-cung-loi-nhuan/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-consumer-tang-truong-nhanh-nhat-ba-nam-khi-thuong-hieu-va-mang-luoi-phan-phoi-cung-phat-huy-loi-the/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-ra-mat-thi-diem-cua-hang-tien-loi-mang-thuong-hieu-win-on/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/phuc-long-lam-moi-trai-nghiem-tu-chiec-ly-an-duoc-den-du-thuyen-giua-ho-sen/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/masan-consumer-duy-tri-da-tang-truong-doanh-thu-hai-chu-so/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/doanh-nghiep-tieu-dung-hang-dau-viet-nam-san-sang-cho-cuoc-dua-ipo/",
+      "https://monngonvn.vn/hom-nay-an-gi/nhung-mon-viet-trong-danh-sach-100-mon-tu-gao-ngon-nhat-chau-a/",
+      "https://monngonvn.vn/am-thuc-4-phuong/tra-sua-quoc-dan-phuc-long-ra-mat-thiet-ke-moi-nang-cao-gia-tri-cho-khach-hang/",
+      "https://monngonvn.vn/am-thuc-4-phuong/nuoc-mam-bi-quyet-gay-thuong-nho-cua-am-thuc-viet/",
+      "https://monngonvn.vn/am-thuc-4-phuong/goi-cuon-15-met-va-huong-vi-dac-san-ly-son-hut-thuc-khach/",
+      "https://monngonvn.vn/hom-nay-an-gi/cac-mon-ngon-de-lam-chieu-dai-gia-dinh-tai-nha-chi-em-nen-hoc-ngay/",
+      "https://monngonvn.vn/hom-nay-an-gi/nhung-mon-ngon-cuoi-tuan-de-lam-cho-cac-chi-em-tro-tai/",
+      "https://monngonvn.vn/hom-nay-an-gi/goi-y-7-mon-ngon-nha-lam-hap-dan-vi-giac-nhat/",
+      "https://monngonvn.vn/hom-nay-an-gi/ga-bo-xoi-mini-mon-ngon-cuoi-tuan-cho-be/",
+      "https://monngonvn.vn/hom-nay-an-gi/cac-mon-ngon-dai-tiec-de-lam-khien-dong-nghiep-va-gia-dinh-tram-tro/",
+      "https://monngonvn.vn/hom-nay-an-gi/nhung-mon-an-sang-ngon-bo-duong-cho-ngay-moi/",
+      "https://monngonvn.vn/thuong-hieu-uy-tin/ben-trong-nhung-thung-go-khong-lo-o-phu-quoc/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/12-thang-rong-hon-26-000-tan-ca-hang-trieu-chai-nuoc-mam-chin-su-nam-ngu-moi-nam/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/su-dung-hat-nem-dung-cach-de-tranh-hau-qua-ve-sau/",
+      "https://monngonvn.vn/am-thuc-4-phuong/cac-mon-ngon-de-nau-tai-nha-la-mieng-cuc-ky-bat-com/",
+      "https://monngonvn.vn/hom-nay-an-gi/bua-an-tieu-chuan/nhung-mon-an-sang-ngon-de-an-cho-ban/",
+      "https://monngonvn.vn/am-thuc-4-phuong/am-thuc/phong-vi-dac-trung-cua-mien-trung-viet-nam-tho-moc-nhung-tinh-te/",
+      "https://monngonvn.vn/hom-nay-an-gi/che-do-an-dac-biet/thuc-don-mon-ngon-de-nau-cho-be-tu-2-den-4-tuoi/",
+      "https://monngonvn.vn/am-thuc-4-phuong/goi-y-nhung-mon-ngon-cuoi-tuan-de-lam-vao-cuoi-nam/",
+      "https://monngonvn.vn/hom-nay-an-gi/bua-an-tieu-chuan/cac-mon-ngon-de-nau-voi-thit-ga/",
+      "https://monngonvn.vn/am-thuc-4-phuong/cac-mon-ngon-dai-tiec-de-lam-cho-gia-dinh-ban/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/thong-tin/suc-mua-thit-heo-sach-ga-tuoi-tang-manh-sau-chi-thi-gian-cach-tp-hcm/",
+      "https://monngonvn.vn/hom-nay-an-gi/bua-an-tieu-chuan/thuc-don-moi-la-theo-khau-vi-mien-bac/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/u-mat-tieu-chi-lua-chon-thit-tuoi-ngon-theo-chuan-chau-au/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/ceo-patricia-marques-phuc-long-la-mot-nguoi-tre-30-tuoi-san-sang-don-nhan-dieu-moi-me/",
+      "https://monngonvn.vn/hom-nay-an-gi/mot-doanh-nghiep-ban-le-muon-mo-3-cua-hang-moi-ngay/",
+      "https://monngonvn.vn/kien-thuc-dinh-duong/gia-thit-lon-tang-ky-luc-doanh-nghiep-chan-nuoi-gap-thoi/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:16:05.915Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/monngonvn.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

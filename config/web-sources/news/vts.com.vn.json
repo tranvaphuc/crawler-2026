@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vts.com.vn",
+  "siteId": "vts.com.vn",
+  "registrableDomain": "vts.com.vn",
+  "homepage": "https://vts.com.vn/",
+  "allowedHosts": [
+    "vts.com.vn",
+    "www.vts.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://vts.com.vn/",
+    "categories": [
+      "https://vts.com.vn/dai-hoi-co-dong.html",
+      "https://vts.com.vn/cong-bo-thong-tin.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Sau đối tác Mỹ, tập đoàn Sojitz của Nhật Bản dự kiến mua 5% cổ phần MSR",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".article-container .meta-info .text-danger",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": "article",
+    "selector": ".article-content > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:16:39.401Z",
+    "frozenAt": "2026-11-16T02:16:37.662Z",
+    "trainingUrl": "https://vts.com.vn/sau-doi-tac-my-tap-doan-sojitz-cua-nhat-ban-du-kien-mua-5-co-phan-msr.html",
+    "independentHoldouts": [
+      "https://vts.com.vn/chinh-phu-cho-phep-cac-doanh-nghiep-tu-vay-tu-tra-von-nuoc-ngoai-toi-da-10-ty-usdnam.html",
+      "https://vts.com.vn/no-xau-ngan-hang-quy-3-tang-ap-luc-chat-luong-tai-san-don-ve-cuoi-nam.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://vts.com.vn/sau-doi-tac-my-tap-doan-sojitz-cua-nhat-ban-du-kien-mua-5-co-phan-msr.html",
+      "https://vts.com.vn/chinh-phu-cho-phep-cac-doanh-nghiep-tu-vay-tu-tra-von-nuoc-ngoai-toi-da-10-ty-usdnam.html",
+      "https://vts.com.vn/no-xau-ngan-hang-quy-3-tang-ap-luc-chat-luong-tai-san-don-ve-cuoi-nam.html",
+      "https://vts.com.vn/bai-toan-chuyen-giao-tai-san-khi-nguoi-thua-ke-khong-muon-dieu-hanh.html",
+      "https://vts.com.vn/thanh-khoan-ngan-hang-cai-thien-xung-luc-moi-cho-thi-truong-chung-khoan.html",
+      "https://vts.com.vn/amy-duoc-chap-thuan-niem-yet-tren-hose-chao-san-ngay-2011-voi-von-hoa-gan-7900-ty.html",
+      "https://vts.com.vn/chuyen-gia-goi-y-ke-hoach-phan-bo-von-cho-1-nam-toi-diem-mau-chot-la-danh-gia-tong-the-nang-luc-tai-chinh.html",
+      "https://vts.com.vn/bang-gia-dat-duoc-giu-on-dinh-3-nam-tai-san-bao-dam-lai-co-them-mot-muc-tran.html",
+      "https://vts.com.vn/kinh-te-truong-vinacapital-phi-toan-cau-hoa-dam-bao-von-fdi-chay-manh-vao-viet-nam-hon-10-nam-toi.html",
+      "https://vts.com.vn/dong-nai-goi-dau-tu-4-khu-dat-hon-24ha-von-tren-8200-ty.html",
+      "https://vts.com.vn/chung-cu-dat-nen-thanh-khoan-giam-tang-toc-lam-nha-o-xa-hoi-va-cho-thue.html",
+      "https://vts.com.vn/hai-phong-dat-muc-tieu-giai-ngan-100-von-dau-tu-cong-ngay-trong-thang-11.html",
+      "https://vts.com.vn/thu-tuong-le-minh-hung-nam-2027-can-huy-dong-toi-64-trieu-ty-dong-von-dau-tu.html",
+      "https://vts.com.vn/nong-jensen-huang-tu-chuc-ceo-nvidia-va-roi-hdqt-gia-co-phieu-lao-doc-10.html",
+      "https://vts.com.vn/fed-bat-dong-ve-toc-do-tang-lai-suat-de-kiem-soat-lam-phat.html",
+      "https://vts.com.vn/ctcp-cang-rau-qua.html",
+      "https://vts.com.vn/bien-ban-va-nghi-quyet-dai-hoi-dong-co-dong-thuong-nien-2026.html",
+      "https://vts.com.vn/tai-lieu-dai-hoi-co-dong-thuong-nien-nam-2026.html",
+      "https://vts.com.vn/thong-bao-moi-hop-dai-hoi-dong-co-dong-thuong-nien-2026.html",
+      "https://vts.com.vn/thong-bao-ngay-dang-ky-cuoi-cung-tham-du-dhdcd-thuong-nien-2026.html",
+      "https://vts.com.vn/cong-bo-bien-ban-kiem-phieu-lay-y-kien-co-dong-bang-van-ban-va-nghi-quyet-dhdcd.html",
+      "https://vts.com.vn/phieu-lay-y-kien-co-dong-bang-van-ban.html",
+      "https://vts.com.vn/cong-bo-nghi-quyet-hdqt-ve-viec-lay-y-kien-co-dong-bang-van-ban.html",
+      "https://vts.com.vn/dai-hoi-co-dong-thuong-nien-2025.html",
+      "https://vts.com.vn/thong-bao-moi-hop-dai-hoi-dong-co-dong-thuong-nien-2025.html",
+      "https://vts.com.vn/danh-muc-chung-khoan-thuc-hien-ky-quy-thang-10-nam-2026.html",
+      "https://vts.com.vn/danh-muc-chung-khoan-du-kien-giao-dich-ky-quy-quy-iv-nam-2026.html",
+      "https://vts.com.vn/danh-muc-chung-khoan-thuc-hien-ky-quy-thang-09-nam-2026.html",
+      "https://vts.com.vn/thong-bao-thay-doi-ke-toan-truong.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

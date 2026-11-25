@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "siteName": "1thegioi.vn",
+  "siteId": "1thegioi.vn",
+  "registrableDomain": "1thegioi.vn",
+  "homepage": "https://1thegioi.vn/",
+  "allowedHosts": [
+    "1thegioi.vn",
+    "www.1thegioi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp mặt cộng đồng người Việt Nam tại Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:03:42.952Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://1thegioi.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-cong-dong-nguoi-viet-nam-tai-nhat-ban-261151.html",
+      "https://1thegioi.vn/phat-bieu-chi-dao-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-hoi-nghi-toan-quoc-quan-triet-trien-khai-thuc-hien-nghi-quyet-trung-uong-4-261148.html",
+      "https://1thegioi.vn/dien-thoai-trung-quoc-bi-rut-khoi-quay-trung-bay-sau-su-co-thong-tin-chu-quyen-261155.html",
+      "https://1thegioi.vn/ths-luu-duc-quang-mot-cu-nhap-chuot-cai-gia-phap-ly-khong-he-ao-261150.html",
+      "https://1thegioi.vn/75-000-phim-bi-go-hon-1-500-tai-khoan-bi-xu-ly-trung-quoc-siet-chat-phim-ngan-ai-261149.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://1thegioi.vn/",
+    "categories": [
+      "https://1thegioi.vn/thoi-su",
+      "https://1thegioi.vn/nhip-dap-cong-nghe",
+      "https://1thegioi.vn/ai",
+      "https://1thegioi.vn/tai-san-ma-hoa",
+      "https://1thegioi.vn/kinh-te",
+      "https://1thegioi.vn/cuoc-song-so",
+      "https://1thegioi.vn/van-hoa-doi-song",
+      "https://1thegioi.vn/ban-doc",
+      "https://1thegioi.vn/media",
+      "https://1thegioi.vn/lang-kinh",
+      "https://1thegioi.vn/bao-xuan-2026",
+      "https://1thegioi.vn/ca-phe-mot-the-gioi"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "1thegioi.vn",
+    "checkedAt": "2026-11-09T03:56:46.953Z",
+    "url": "https://1thegioi.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-cong-dong-nguoi-viet-nam-tai-nhat-ban-261151.html",
+    "finalUrl": "https://1thegioi.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-cong-dong-nguoi-viet-nam-tai-nhat-ban-261151.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2386,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "1thegioi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 38,
+    "checkedArticleUrls": 39,
+    "freshArticleChecks": 20,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 38,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 321,
+        "passed": 38,
+        "distinctHashes": 38
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://1thegioi.vn/phi-san-thuong-mai-dien-tu-an-gan-het-lai-nguoi-ban-lam-sao-song-noi-261229.html",
+      "https://1thegioi.vn/ai-tao-anh-khien-cac-cau-thu-nam-mang-tieng-cau-thu-nu-ton-thuong-261233.html",
+      "https://1thegioi.vn/de-xuat-cho-ban-nha-o-xa-hoi-theo-gia-thi-truong-sau-5-nam-261231.html",
+      "https://1thegioi.vn/tu-windows-1-0-den-tac-tu-ai-hanh-trinh-hon-40-nam-thay-doi-cach-dung-may-tinh-261227.html",
+      "https://1thegioi.vn/festival-lua-gao-quoc-te-can-tho-2026-tang-toc-quang-ba-gao-xanh-261232.html",
+      "https://1thegioi.vn/lan-song-ai-thuc-day-hoi-nhap-kinh-te-asean-mo-them-co-hoi-cho-viet-nam-261228.html",
+      "https://1thegioi.vn/dau-la-tam-khien-bao-ve-de-cac-nha-khoa-hoc-dam-dan-than-vao-de-tai-gai-goc-261222.html",
+      "https://1thegioi.vn/quan-he-nvidia-trump-bi-soi-xet-khi-jensen-huang-vuong-nghi-van-tinh-bao-trung-quoc-261221.html",
+      "https://1thegioi.vn/da-nang-thong-nhat-phuong-an-tuyen-duong-mang-ten-co-tong-bi-thu-nguyen-phu-trong-261219.html",
+      "https://1thegioi.vn/phap-mo-cuoc-dieu-tra-thu-pham-tan-cong-he-thong-tu-dong-lanh-trong-sieu-thi-261224.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:13:50.100Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/1thegioi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

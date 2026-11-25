@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cohoidautu.vn",
+  "siteId": "cohoidautu.vn",
+  "registrableDomain": "cohoidautu.vn",
+  "homepage": "https://cohoidautu.vn/",
+  "allowedHosts": [
+    "cohoidautu.vn",
+    "www.cohoidautu.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://cohoidautu.vn/",
+    "categories": [
+      "https://cohoidautu.vn/dau-tu",
+      "https://cohoidautu.vn/kinh-te",
+      "https://cohoidautu.vn/the-gioi",
+      "https://cohoidautu.vn/chung-khoan2",
+      "https://cohoidautu.vn/thong-tin-thi-truong",
+      "https://cohoidautu.vn/tai-chinh"
+    ]
+  },
+  "title": {
+    "value": "Cùng NAPAS thanh toán thông minh, tận hưởng ưu đãi ngập tràn tại Ngày Thanh toán số Việt Nam 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:25:38.226Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:25:31.489Z",
+    "independentHoldouts": [
+      "https://cohoidautu.vn/thong-tin-thi-truong/gia-vang-sang-nay-14-11-2026-tiep-tuc-giam-sau.html",
+      "https://cohoidautu.vn/thong-tin-thi-truong/usd-huong-toi-tuan-tang-manh-nhat-trong-hai-thang-yen-ap-sat-moc-160.html",
+      "https://cohoidautu.vn/thong-tin-thi-truong/gia-bac-the-gioi-sut-manh-boc-hoi-hon-16-gia-tri-chi-trong-vong-mot-thang-qua.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://cohoidautu.vn/tai-chinh/cung-napas-thanh-toan-thong-minh-tan-huong-uu-dai-ngap-tran-tai-ngay-thanh-toan-so-viet-nam-2026.html",
+      "https://cohoidautu.vn/thong-tin-thi-truong/gia-vang-sang-nay-14-11-2026-tiep-tuc-giam-sau.html",
+      "https://cohoidautu.vn/thong-tin-thi-truong/usd-huong-toi-tuan-tang-manh-nhat-trong-hai-thang-yen-ap-sat-moc-160.html",
+      "https://cohoidautu.vn/thong-tin-thi-truong/gia-bac-the-gioi-sut-manh-boc-hoi-hon-16-gia-tri-chi-trong-vong-mot-thang-qua.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

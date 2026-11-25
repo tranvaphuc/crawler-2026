@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "siteName": "world.kbs.co.kr",
+  "siteId": "world.kbs.co.kr",
+  "registrableDomain": "world.kbs.co.kr",
+  "homepage": "https://world.kbs.co.kr/service/index.htm?lang=e",
+  "allowedHosts": [
+    "world.kbs.co.kr",
+    "www.world.kbs.co.kr"
+  ],
+  "timezone": null,
+  "languageScope": "English news endpoints declared in sitemap_english_news.xml",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Southern Regions and Jeju to See Showers on Monday",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://world.kbs.co.kr/rss/rss_news.htm?lang=e"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body_txt",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "nativeIdQuery": "Seq_Code",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:45.65Z",
+    "sampleCount": 11,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205427",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205426",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205425",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205424",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205427"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://world.kbs.co.kr/service/index.htm?lang=e",
+    "categories": [
+      "https://world.kbs.co.kr/service/news_list.htm?lang=e",
+      "https://world.kbs.co.kr/service/index.htm?lang=e",
+      "https://world.kbs.co.kr/rss/rss_news.htm?lang=e"
+    ],
+    "legacyArticlePattern": "^(http(s)?://).*\\.?world.kbs.co.kr/vietnamese/.*?/.*?(\\d{5,}).*?$",
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.365Z",
+      "verifiedSeeds": [
+        "https://world.kbs.co.kr/service/index.htm?lang=e",
+        "https://world.kbs.co.kr/service/news_list.htm?lang=e"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "world.kbs.co.kr",
+    "checkedAt": "2026-11-09T03:57:39.642Z",
+    "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205427",
+    "finalUrl": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205427",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 986,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "world.kbs.co.kr",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 5,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 26,
+    "parserIssues": 23,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 5,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 66,
+        "passed": 5,
+        "distinctHashes": 5
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=learnkorean&id=&board_seq=472675",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=culture&id=&board_seq=472602",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=northkorea&id=&board_seq=472562",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=learnkorean&id=&board_seq=472503",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=culture&id=&board_seq=472435",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=culture&id=&board_seq=472426",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=northkorea&id=&board_seq=472365",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=learnkorean&id=&board_seq=472310",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=culture&id=&board_seq=472235",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&id=&board_seq=472673",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472655",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472542&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&id=&board_seq=472514&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472496&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472421&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472420&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472419&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472418&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&id=&board_seq=472412&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&id=&board_seq=472378&page=",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&id=&board_seq=472672",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&id=&board_seq=472591",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205467",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205475",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205472",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205476",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205474",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205473",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205471",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205470",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205469",
+      "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205468",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=wh_hyerim",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=korea_24",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=tmusic",
+      "https://world.kbs.co.kr/service/program_contents.htm?lang=e&board_code=korea_today&menu_cate=northkorea",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=korea_today",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=kpop_conn",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=culture&board_seq=472435",
+      "https://world.kbs.co.kr/service/program_contents.htm?lang=e&menu_cate=artist&board_code=wh_hyerim",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=artist&board_seq=472378",
+      "https://world.kbs.co.kr/service/contents_view.htm?lang=e&menu_cate=enternews&board_seq=472542",
+      "https://world.kbs.co.kr/service/program_contents.htm?lang=e&board_code=wh_hyerim&menu_cate=artist",
+      "https://world.kbs.co.kr/service/about_notice_view.htm?lang=e&no=50983",
+      "https://world.kbs.co.kr/service/about_notice_view.htm?lang=e&no=50344",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=news",
+      "https://world.kbs.co.kr/service/program_contents.htm?lang=e&board_code=drama_plus&menu_cate=learnkorean",
+      "https://world.kbs.co.kr/service/program_main.htm?lang=e&procode=drama_plus",
+      "https://world.kbs.co.kr/service/program_contents.htm?lang=e&board_code=tmusic&menu_cate=culture",
+      "https://world.kbs.co.kr/service/about_notice_view.htm?lang=e&no=49745"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 22,
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:18:32.08Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/world.kbs.co.kr/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "timezone": "Asia/Seoul",
+      "publicationArticleScope": "section.comp_view_default#ele1",
+      "title": {
+        "strategy": "selector",
+        "selector": "section.comp_view_default#ele1 > .title_area > h1"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": "section.comp_view_default#ele1 > .title_area > p.date"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "section.comp_view_default#ele1 .body_txt",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "description": {
+        "strategy": "native_text_lead",
+        "scope": "section.comp_view_default#ele1",
+        "selector": ".body_txt"
+      }
+    }
+  ],
+  "originalFeedRepair": {
+    "checkedAt": "2026-11-17T05:12:27.983Z",
+    "authority": "https://world.kbs.co.kr/service/about_rss.htm?lang=e",
+    "proofs": [
+      {
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205624",
+        "description": "Aircraft takeoffs and landings will be temporarily suspended at airports nationwide during the English listening section of this year's College Scholastic Ability Test(CSAT) on Thursday.",
+        "contentHash": "05ea2b761bceca624d1302eedf38defc8946c4bd671d1ddbf6e02a33125aed07",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205624",
+          "publishedDate": "2026-11-17T04:41:48Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205623",
+        "description": "The Cabinet has passed a motion to promulgate a special counsel bill targeting allegations of malicious prosecution under the Yoon Suk Yeol administration.",
+        "contentHash": "181bcbc7dcb753054a550b9567e3fff3ded2281d38c1ce58ca4a36fe5c7cdf70",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205623",
+          "publishedDate": "2026-11-17T04:35:12Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      },
+      {
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205622",
+        "description": "Multiple Russian military aircraft entered South Korea’s air defense identification zone, or KADIZ, early Tuesday, prompting the Air Force to deploy fighter jets in response.",
+        "contentHash": "4a6040533ec40a44c5b8ab78f535b8bdc81536b1297d363155ed1ce964a0bd82",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205622",
+          "publishedDate": "2026-11-17T02:23:34Z",
+          "precision": "second",
+          "source": "url_bound_publication_feed"
+        }
+      }
+    ]
+  },
+  "description": {
+    "strategy": "native_text_lead",
+    "scope": "section.comp_view_default",
+    "selector": ".body_txt"
+  }
+}

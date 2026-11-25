@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "siteName": "voz.vn",
+  "siteId": "voz.vn",
+  "registrableDomain": "voz.vn",
+  "homepage": "https://voz.vn/",
+  "allowedHosts": [
+    "voz.vn",
+    "www.voz.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://voz.vn/",
+    "categories": [
+      "https://voz.vn/whats-new/posts/6686155/",
+      "https://voz.vn/feeds/hot",
+      "https://voz.vn/feeds/hot",
+      "https://voz.vn/feeds/trending",
+      "https://voz.vn/feeds/new",
+      "https://voz.vn/whats-new/",
+      "https://voz.vn/whats-new/profile-posts/6686156/",
+      "https://voz.vn/whats-new/latest-activity"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "thảo luận Manchester United FC - Bàn luận mùa giải 26/27",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T04:18:19.765Z",
+    "frozenAt": "2026-11-16T04:18:17.302Z",
+    "trainingUrl": null,
+    "independentHoldouts": [
+      "https://voz.vn/t/nguoi-cung-mot-nha-van-bi-youtube-huy-goi-gia-dinh.1275997/?utm_source=rss&utm_medium=rss",
+      "https://voz.vn/t/tuc-tuan-tang-trong-cung-dinh-trung-quoc-bat-dau-tu-thoi-nao-va-ket-thuc-duoi-trieu-dai-nao.1298492/?utm_source=rss&utm_medium=rss"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://voz.vn/t/nguoi-cung-mot-nha-van-bi-youtube-huy-goi-gia-dinh.1275997/?utm_source=rss&utm_medium=rss",
+      "https://voz.vn/t/tuc-tuan-tang-trong-cung-dinh-trung-quoc-bat-dau-tu-thoi-nao-va-ket-thuc-duoi-trieu-dai-nao.1298492/?utm_source=rss&utm_medium=rss",
+      "https://voz.vn/t/bon-hieu-truong-truong-tieu-hoc-o-tp-hue-gui-don-xin-tu-chuc.1297597/?utm_source=rss&utm_medium=rss",
+      "https://voz.vn/t/vi-sao-phim-ca-nhac-chieu-mang-huy-ben-xe-khien-nhieu-dien-vien-bi-bat.1298270/?utm_source=rss&utm_medium=rss",
+      "https://voz.vn/t/nha-cung-cap-thit-dua-vao-bep-an-ban-tru-nhun-bo-vi-lon-bi-stress.1295669",
+      "https://voz.vn/t/tien-chay-ra-nuoc-ngoai-tu-cac-ung-dung-phim-ngan-ai-trung-quoc.1296613/",
+      "https://voz.vn/t/viet-nam-sap-mo-rong-thanh-toan-qr-o-nhat-ban-an-do-malaysia.1283275"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing",
+  "publicationValidationPolicy": "strict_native_publication_v1"
+}

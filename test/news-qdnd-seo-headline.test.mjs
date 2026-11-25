@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import * as ch from 'cheerio';
+import {publicationHeadlinesMatch} from '../src/web/newsPublicationPageIdentity.mjs';
+const url='https://www.qdnd.vn/chinh-tri/tin-tuc/full-story-1065750',title='Full native story headline',seo='Short SEO headline';
+function fixture({host='www.qdnd.vn',ogTitle=seo,ogUrl=url,description=title,headings=1}={}){const $=ch.load(`<head><meta property="og:title" content="${ogTitle}"><meta property="og:url" content="${ogUrl}"></head><body><div class="article-detail">${'<h1>'+title+'</h1>'}${headings===2?'<h1>Other heading</h1>':''}</div></body>`);return {$,article:{'@type':'NewsArticle',headline:seo,description,mainEntityOfPage:{'@id':url.replace('www.qdnd.vn',host)}}};}
+test('QDND shorter SEO title binds only through matching OG URL/title and native description/headline',()=>{const {$,article}=fixture();assert(publicationHeadlinesMatch($,seo,title,article));});
+test('different URLs, titles, descriptions, publishers and duplicate headlines remain unbound',()=>{for(const changes of [{host:'other.vn'},{ogTitle:'Unrelated'},{ogUrl:url.replace('1065750','1065751')},{description:'Unrelated'},{headings:2}]){const {$,article}=fixture(changes);assert.equal(publicationHeadlinesMatch($,seo,title,article),false);}});

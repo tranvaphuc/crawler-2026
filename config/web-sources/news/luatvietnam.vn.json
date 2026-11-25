@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "luatvietnam.vn",
+  "siteId": "luatvietnam.vn",
+  "registrableDomain": "luatvietnam.vn",
+  "homepage": "https://luatvietnam.vn/",
+  "allowedHosts": [
+    "luatvietnam.vn",
+    "www.luatvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://luatvietnam.vn/",
+    "categories": [
+      "https://luatvietnam.vn/dich-vu/phan-tich-van-ban.html",
+      "https://luatvietnam.vn/dich-vu-dich-thuat.html",
+      "https://luatvietnam.vn/dich-vu-tong-dai-tu-van.html",
+      "https://luatvietnam.vn/van-ban-moi.html"
+    ]
+  },
+  "title": {
+    "value": "Người bán được từ chối bán thuốc lá nếu khách không chứng minh đủ tuổi (đề xuất)",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".the-article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:24:34.340Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:24:25.109Z",
+    "independentHoldouts": [
+      "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html",
+      "https://luatvietnam.vn/tin-van-ban-moi/7-thu-tuc-ve-ho-kinh-doanh-thuc-hien-khong-phu-thuoc-dia-gioi-hanh-chinh-tren-toan-quoc-186-115711-article.html",
+      "https://luatvietnam.vn/tin-phap-luat/cach-nhan-biet-hieu-lenh-cua-canh-sat-giao-thong-230-17306-article.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://luatvietnam.vn/tin-van-ban-moi/nguoi-ban-duoc-tu-choi-ban-thuoc-la-neu-khach-khong-chung-minh-du-tuoi-186-114499-article.html",
+      "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html",
+      "https://luatvietnam.vn/tin-van-ban-moi/7-thu-tuc-ve-ho-kinh-doanh-thuc-hien-khong-phu-thuoc-dia-gioi-hanh-chinh-tren-toan-quoc-186-115711-article.html",
+      "https://luatvietnam.vn/tin-phap-luat/cach-nhan-biet-hieu-lenh-cua-canh-sat-giao-thong-230-17306-article.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

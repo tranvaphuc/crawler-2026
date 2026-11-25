@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "siteName": "thanhtra.gov.vn",
+  "siteId": "thanhtra.gov.vn",
+  "registrableDomain": "thanhtra.gov.vn",
+  "homepage": "https://thanhtra.gov.vn/",
+  "allowedHosts": [
+    "thanhtra.gov.vn",
+    "www.thanhtra.gov.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1.article-title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".article-meta"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body"
+  },
+  "ignoreCanonicalIdentity": true,
+  "canonicalEvidence": "round5-http: distinct baiVietId values 8083155 and 8083112 have different titles and SHA256 bodies but both declare https://thanhtra.gov.vn/cai-cach-hanh-chinh; use the exact requested URL including native ID query.",
+  "nativeIdQueryPattern": "baiVietId$",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:33.881Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084422&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8083155&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728603",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8083112&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728603",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8083838&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8082845&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8083838&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/thanhtra.gov.vn"
+  },
+  "discovery": {
+    "homepage": "https://thanhtra.gov.vn/",
+    "categories": [
+      "https://thanhtra.gov.vn/web/guest/tin-tuc-su-kien",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh",
+      "https://thanhtra.gov.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.328Z",
+      "verifiedSeeds": [
+        "https://thanhtra.gov.vn/",
+        "https://thanhtra.gov.vn/web/guest/tin-tong-hop",
+        "https://thanhtra.gov.vn/web/guest/tin-thanh-tra",
+        "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "thanhtra.gov.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 18,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 4,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 97,
+        "passed": 17,
+        "distinctHashes": 17
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8085945&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8085902&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8085623&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8085402&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8085063&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084922&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084824&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084714&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8083838&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8080616&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8080295&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8079335&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8077022&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8066029&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8065438&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8081781&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8080955&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8080671&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8079882&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8079486&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8074749&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8073169&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8063467&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8063399&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8060225&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/khieu-nai-to-cao?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8060144&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=3083450",
+      "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084855&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+      "https://thanhtra.gov.vn/web/guest/tin-tong-hop?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_baiVietId=8074349&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tlfm_chuyenMucId=7728590",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8074694&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8074625&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+      "https://thanhtra.gov.vn/web/guest/cong-khai-ve-tiet-kiem-chong-lang-phi"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1
+    },
+    "checkedAt": "2026-11-10T09:17:10.331Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/thanhtra.gov.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "pageIdentityPolicy": "thanhtra_liferay_article_identity",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "thanhtra.gov.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:32:03.802Z",
+    "proofs": [
+      {
+        "url": "https://thanhtra.gov.vn/web/guest/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084422&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+        "publisherUrl": "https://thanhtra.gov.vn/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084422&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+        "contentHash": "e4a91ce95409ef5f54e5e9ab18621e217026704b4004f85003c9cf2430e5fcbc",
+        "description": "Chiều 6/11, tại Hà Nội, Thanh tra Chính phủ tổ chức hội nghị công bố các quyết định của Tổng Thanh tra Chính phủ về công tác cán bộ. Đồng chí Lê Tiến Đạt, Phó Tổng Thanh tra Chính phủ dự và phát biểu giao nhiệm vụ.",
+        "publishedDate": "2026-11-06",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://thanhtra.gov.vn/tin-thanh-tra?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8084422&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728584",
+          "publishedDate": "2026-11-06",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "thanhtra.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088679&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+        "publisherUrl": "https://thanhtra.gov.vn/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088679&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+        "contentHash": "286a5cae30fe1873c87e907860425fa3925aac247910e72617da3c0489cb6ecf",
+        "description": "Ngày 16/11, tại Manila, Philippines, trong khuôn khổ Hội nghị Cấp cao ASEAN lần thứ 49 và các Hội nghị Cấp cao liên quan, Thủ tướng Chính phủ Lê Minh Hưng cùng lãnh đạo các nước ASEAN và Tổng Thư ký Liên hợp quốc António Guterres tham dự Hội nghị Cấp cao ASEAN - Liên hợp quốc lần thứ 16.",
+        "publishedDate": "2026-11-16",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://thanhtra.gov.vn/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088679&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+          "publishedDate": "2026-11-16",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "thanhtra.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://thanhtra.gov.vn/web/guest/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088610&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+        "publisherUrl": "https://thanhtra.gov.vn/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088610&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+        "contentHash": "cd7848ba1ae95c6df3d341a5020ae2bba99c478d26875e1ff7d37b788c108a38",
+        "description": "Tại Phiên Đối thoại lần thứ 15, Thủ tướng Lê Minh Hưng khẳng định sự đồng hành, phối hợp chặt chẽ, hiệu quả giữa Chính phủ và Nghị viện các quốc gia thành viên là nền tảng, động lực quan trọng để ASEAN hiện thực hóa Tầm nhìn về một Cộng đồng đoàn kết, tự cường, năng động và lấy người dân làm trung tâm.",
+        "publishedDate": "2026-11-16",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://thanhtra.gov.vn/cai-cach-hanh-chinh?p_p_id=portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku&p_p_lifecycle=0&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_mvcPath=%2Fview_bai_viet.jsp&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_baiVietId=8088610&_portal_cms_tintuc_PortalCmsTintucPortlet_INSTANCE_tjku_chuyenMucId=7728597",
+          "publishedDate": "2026-11-16",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "thanhtra.gov.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": ".article-page-container.chitiet",
+    "selector": ".article-lead"
+  },
+  "publicationTimePolicy": "original_clock_required",
+  "publicationArticleScope": ".article-page-container.chitiet"
+}

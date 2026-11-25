@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "siteName": "stockbiz.vn",
+  "siteId": "stockbiz.vn",
+  "registrableDomain": "stockbiz.vn",
+  "homepage": "https://stockbiz.vn/",
+  "allowedHosts": [
+    "stockbiz.vn",
+    "www.stockbiz.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gần 90 CTCK nhưng “miếng bánh” thuộc về số ít: Thị trường đang có quá nhiều “zombie”?",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:46.618Z",
+    "sampleCount": 7,
+    "passedSamples": 7,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://stockbiz.vn/tin-tuc/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie/42691719",
+      "https://stockbiz.vn/tin-tuc/can-trong-song-co-phieu-van-tai-bien/42691720",
+      "https://stockbiz.vn/tin-tuc/nha-dau-tu-nho-lai-bai-hoc-kinh-dien-khi-co-phieu-ai-lao-doc/42691435",
+      "https://stockbiz.vn/tin-tuc/cap-nhat-khoi-tai-san-rong-5-nu-ti-phu-giau-nhat-the-gioi/42691716",
+      "https://stockbiz.vn/tin-tuc/vietcombank-vietinbank-bidv-agribank-techcombank-mb-acb-se-tu-dong-dong-tai-khoan-khach-hang-trong-truong-hop-sau/42691713",
+      "https://stockbiz.vn/en/news/caution-over-the-shipping-stock-rally/42691720",
+      "https://stockbiz.vn/tin-tuc/can-trong-song-co-phieu-van-tai-bien/42691720"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://stockbiz.vn/",
+    "categories": [
+      "https://stockbiz.vn/thi-truong",
+      "https://stockbiz.vn/doanh-nghiep",
+      "https://stockbiz.vn/nguoi-va-tien",
+      "https://stockbiz.vn/tai-chinh-ca-nhan",
+      "https://stockbiz.vn/the-gioi",
+      "https://stockbiz.vn/video",
+      "https://stockbiz.vn/thi-truong/lich-su-kien",
+      "https://stockbiz.vn/hoi-stockbiz",
+      "https://stockbiz.vn/thi-truong/dong-tien",
+      "https://stockbiz.vn/thi-truong/phai-sinh",
+      "https://stockbiz.vn/thi-truong/chung-quyen",
+      "https://stockbiz.vn/thi-truong/bao-cao-phan-tich",
+      "https://stockbiz.vn/theo-doi"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?stockbiz.vn/.*?(\\d{3,}).*?(.html|.htm|.chn|.aspx)$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "stockbiz.vn",
+    "checkedAt": "2026-11-09T03:57:25.661Z",
+    "url": "https://stockbiz.vn/tin-tuc/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie/42691719",
+    "finalUrl": "https://stockbiz.vn/tin-tuc/gan-90-ctck-nhung-mieng-banh-thuoc-ve-so-it-thi-truong-dang-co-qua-nhieu-zombie/42691719",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 6222,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "stockbiz.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 37,
+    "checkedArticleUrls": 48,
+    "freshArticleChecks": 27,
+    "parserIssues": 11,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 37,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 13,
+    "categoriesFreshChecked": 12,
+    "categoriesUnconfirmed": 9,
+    "categoriesWithoutParsedArticle": 3,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 259,
+        "passed": 37,
+        "distinctHashes": 37
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://stockbiz.vn/tin-tuc/sau-2-phien-lao-doc-vn-index-bat-ngo-dao-chieu-tang-gan-29-diem/42721929",
+      "https://stockbiz.vn/tin-tuc/quy-dinh-moi-ve-tai-khoan-chung-khoan-phai-xac-thuc-vneid-nha-dau-tu-can-trong-voi-bay-lua-dao-moi/42719702",
+      "https://stockbiz.vn/tin-tuc/thi-truong-von-hoi-nhap-sau-rong-va-ben-vung-trong-giai-doan-moi/42719059",
+      "https://stockbiz.vn/tin-tuc/kho-bac-nha-nuoc-da-thanh-toan-hon-184-trieu-ty-dong-ngan-sach/42721969",
+      "https://stockbiz.vn/tin-tuc/ha-noi-day-nhanh-tien-do-cac-khu-do-thi-da-muc-tieu/42721962",
+      "https://stockbiz.vn/tin-tuc/du-no-cho-vay-bat-dong-san-tai-12-ngan-hang-tang-gan-22/42721931",
+      "https://stockbiz.vn/tin-tuc/bo-xay-dung-ra-deadline-bao-cao-dau-viec-chuan-bi-khai-thac-san-bay-longthanh/42721913",
+      "https://stockbiz.vn/tin-tuc/dong-usd-nhan-duoc-su-ho-tro-truoc-them-cong-bo-so-lieu-lam-phat-cua-my/42721819",
+      "https://stockbiz.vn/tin-tuc/tdh-thuduc-house-muon-lan-san-sang-linh-vuc-kinh-doanh-hang-may-mac/42721453",
+      "https://stockbiz.vn/tin-tuc/sma-phat-hien-mot-co-phieu-dang-tang-nong-gan-75-tu-day-bat-ngo-quay-xe-giam-san/42721193",
+      "https://stockbiz.vn/tin-tuc/ong-trump-du-bao-xung-dot-iran-som-ket-thuc-my-muon-thoa-thuan-lau-dai/42717498",
+      "https://stockbiz.vn/tin-tuc/thuong-vu-lien-quan-sieu-cang-can-gio-gan-129000-ti-dong-duoc-chap-thuan-co-dieu-kien/42721899",
+      "https://stockbiz.vn/tin-tuc/bo-truong-bo-chien-tranh-my-se-to-chuc-hop-bao-truoc-nguy-co-bi-luan-toi/42721869",
+      "https://stockbiz.vn/tin-tuc/gia-vang-dao-chieu-sut-giam-tam-ly-thi-truong-chua-dong-nhat/42721855",
+      "https://stockbiz.vn/tin-tuc/bo-tai-chinh-siet-chat-an-toan-bao-dam-ket-noi-va-chia-se-du-lieu-quoc-gia/42721841",
+      "https://stockbiz.vn/tin-tuc/sua-luat-dat-dai-chi-dao-cua-pho-thu-tuong-ve-he-so-dieu-chinh-gia-dat/42721833",
+      "https://stockbiz.vn/tin-tuc/thi-truong-nha-o-my-tiep-tuc-tri-tre-du-nguon-cung-tang-manh/42721829",
+      "https://stockbiz.vn/tin-tuc/ceo-techcombank-tu-bai-toan-von-1100-ty-usd-den-vai-tro-cua-vifc-va-cac-dinh-che-tai-chinh-viet-nam/42721814",
+      "https://stockbiz.vn/tin-tuc/co-phieu-mch-pvd-bsr-ba-trien-vong-ba-muc-dinh-gia/42710155",
+      "https://stockbiz.vn/tin-tuc/luc-mua-lan-toa-vn-index-tang-hon-22-diem-trong-phien-sang-1011/42716786",
+      "https://stockbiz.vn/tin-tuc/von-hoa-chung-khoan-viet-nam-tang-hon-23-lan-sau-gan-20-nam/42714718",
+      "https://stockbiz.vn/tin-tuc/tong-giam-doc-chung-khoan-mirae-asset-muon-hut-dong-von-ngoai-dai-han-thi-truong-chung-khoan-viet-nam-can-giai-quyet-3-khoang-trong/42714169",
+      "https://stockbiz.vn/tin-tuc/de-nghi-dieu-tra-vu-cong-ty-cp-tap-doan-duong-dong-hach-toan-am-123-trieu-lit-xang-dau/42721463",
+      "https://stockbiz.vn/tin-tuc/cre-cen-land-huy-dong-thanh-cong-620-ty-dong-tu-kenh-trai-phieu/42721423",
+      "https://stockbiz.vn/tin-tuc/nam-giu-luong-lon-co-phieu-ngan-hang-nhom-co-dong-huong-co-tuc-hang-tram-ty-dong-moi-nam/42721230",
+      "https://stockbiz.vn/tin-tuc/hai-dai-dien-sojitz-chinh-thuc-vao-hdqt-taseco-airs-voi-ty-le-phieu-bau-hon-99-doanh-nghiep-tam-ung-co-tuc-20/42721171",
+      "https://stockbiz.vn/tin-tuc/de-xuat-chi-tam-hoan-xuat-canh-khi-thong-bao-hop-le-nhung-nguoi-nop-thue-chay-y/42721610",
+      "https://stockbiz.vn/tin-tuc/co-may-xuat-khau-trung-quoc-pha-ky-luc-the-gioi-them-suc-ep/42721466",
+      "https://stockbiz.vn/tin-tuc/ngoai-thuong-viet-nam-tu-tang-truong-quy-mo-den-nang-cao-gia-tri-gia-tang/42720589",
+      "https://stockbiz.vn/tin-tuc/nganh-chan-nuoi-heo-9-thang-2026-doanh-nghiep-mo-rong-loi-nhuan-chiu-suc-ep/42497939",
+      "https://stockbiz.vn/tin-tuc/psd---tang-truong-but-pha-lieu-dong-tien-co-theo-kip-loi-nhuan-/42325936",
+      "https://stockbiz.vn/tin-tuc/von-fdi-han-quoc-2026-dich-chuyen-sang-chip-nang-luong-va-nghien-cuu-nhung-phan-lon-dong-von-fdi-cua-han-quoc-dang-nghieng-ve-my/42325104",
+      "https://stockbiz.vn/tin-tuc/theo-nhom-dang-dan-dat-hay-nhom-vua-hoi-tu-day-vi-sao-nha-dau-tu-de-doi-huong-giua-chung/42325101",
+      "https://stockbiz.vn/tin-tuc/trung-quoc-day-manh-phat-trien-cao-su-dat-hiem-cho-xe-dien/42721782",
+      "https://stockbiz.vn/tin-tuc/nguoi-my-lo-that-nghiep-tang-fed-co-them-ly-do-than-trong-voi-lai-suat/42721444",
+      "https://stockbiz.vn/tin-tuc/lanh-dao-g7-tap-trung-thao-luan-cac-van-de-lon/42721303",
+      "https://stockbiz.vn/tin-tuc/kenh-dao-panama-tang-luu-luong-tau-sau-han-han-do-el-nino/42719223",
+      "https://stockbiz.vn/tin-tuc/emagazine-dong-long-ha-lai-suat-tiep-suc-muc-tieu-tang-truong/42704353",
+      "https://stockbiz.vn/tin-tuc/vhm-vinhomes-khep-lai-cuoc-dua-gom-dat-don-luc-cho-nhung-du-an-ty-usd/42704258",
+      "https://stockbiz.vn/tin-tuc/emagazine-chu-tich-bao-tin-capital-chi-ra-ba-ly-do-de-dau-tu-dai-han-vao-chung-khoan-viet/42689443",
+      "https://stockbiz.vn/tin-tuc/infographics-bo-tai-chinh-cap-nhat-2-kich-ban-lam-phat-nam-2026/42717483",
+      "https://stockbiz.vn/tin-tuc/xuat-khau-nong-lam-thuy-san-dat-hon-63-ty-usd-trong-10-thang-nam-2026/42712372",
+      "https://stockbiz.vn/tin-tuc/infographic-gan-62-doanh-nghiep-bao-hiem-niem-yet-tang-lai-sau-9-thang/42721801",
+      "https://stockbiz.vn/tin-tuc/de-xuat-bai-bo-17-van-ban-quy-pham-phap-luat-ve-hoat-dong-ngan-hang/42721769",
+      "https://stockbiz.vn/tin-tuc/dien-bien-thi-truong-tai-chinh---tien-te-quoc-te-sang-1011/42719209",
+      "https://stockbiz.vn/tin-tuc/ngan-hang-nha-nuoc-kich-hoat-kenh-mua-usd-mo-them-van-bom-tien-dong/42719111",
+      "https://stockbiz.vn/tin-tuc/nguoi-tra-gan-15-ty-dongm-dat-nong-thon-o-ninh-binh-xin-lai-tien-dat-coc/42721604",
+      "https://stockbiz.vn/tin-tuc/can-co-che-cho-phep-nha-o-xa-hoi-duoc-tu-do-mua-ban/42720683",
+      "https://stockbiz.vn/tin-tuc/nha-dau-tu-san-bds-khi-dong-tien-chuyen-dich-nhung-tieu-chi-giup-tranh-sut-ho/42716846",
+      "https://stockbiz.vn/tin-tuc/nghi-quyet-171-tac-dong-the-nao-den-nguon-cung-va-gia-nha-o-thuong-mai/42716816",
+      "https://stockbiz.vn/tin-tuc/fpt-gioi-thieu-chien-luoc-bonsai-ai-phat-trien-chip-chuyen-dung-tai-nhat-ban/42720000",
+      "https://stockbiz.vn/tin-tuc/ong-lon-ngan-hang-nhat-ban-tiep-tuc-rot-them-tien-vao-vietcombank/42719829",
+      "https://stockbiz.vn/tin-tuc/bon-dn-duoc-de-xuat-tham-gia-mo-rong-cao-toc-bac---nam-von-dau-tu-hon-178000-ty/42714617",
+      "https://stockbiz.vn/tin-tuc/mot-chi-nhanh-cua-ssi-bi-xu-phat-vi-pham-hanh-chinh-ve-thue/42710065",
+      "https://stockbiz.vn/ca-nhan/nguyen-thi-phuong-thao/32613"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 2,
+      "public_inline_state_requires_adapter": 9
+    },
+    "checkedAt": "2026-11-10T09:16:52.867Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/stockbiz.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "stockbiz.vn",
+      "siteId": "stockbiz.vn",
+      "registrableDomain": "stockbiz.vn",
+      "homepage": "https://stockbiz.vn/",
+      "allowedHosts": [
+        "stockbiz.vn",
+        "www.stockbiz.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Gần 90 CTCK nhưng “miếng bánh” thuộc về số ít: Thị trường đang có quá nhiều “zombie”?",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "article",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:53:38.123Z",
+        "trainingUrls": [
+          "https://stockbiz.vn/tin-tuc/tin-chung-khoan-cap-nhat-moi-nhat-ty-le-nam-giu-cua-khoi-ngoai-tai-3-ngan-hang-big-four/42695893",
+          "https://stockbiz.vn/tin-tuc/rui-ro-co-the-dao-chieu-ky-vong-thi-truong-chung-khoan-thang-11/42692436",
+          "https://stockbiz.vn/tin-tuc/bo-1-ty-dong-mua-bluechip-nam-2007-gan-20-nam-sau-tai-san-nha-dau-tu-se-ra-sao/42695556",
+          "https://stockbiz.vn/tin-tuc/bfc-binh-dien-doanh-thu-tang-manh-loi-nhuan-van-di-lui-lai-vay-phinh-to/42708072",
+          "https://stockbiz.vn/tin-tuc/von-hoa-chung-khoan-viet-nam-tang-hon-23-lan-sau-gan-20-nam/42714718"
+        ],
+        "holdoutUrls": [
+          "https://stockbiz.vn/tin-tuc/nha-dau-tu-san-bds-khi-dong-tien-chuyen-dich-nhung-tieu-chi-giup-tranh-sut-ho/42716846",
+          "https://stockbiz.vn/tin-tuc/nghi-quyet-171-tac-dong-the-nao-den-nguon-cung-va-gia-nha-o-thuong-mai/42716816"
+        ]
+      }
+    }
+  ]
+}

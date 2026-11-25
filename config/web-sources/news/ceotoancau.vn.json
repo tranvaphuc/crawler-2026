@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "siteName": "ceotoancau.vn",
+  "siteId": "ceotoancau.vn",
+  "registrableDomain": "ceotoancau.vn",
+  "homepage": "https://ceotoancau.vn/",
+  "allowedHosts": [
+    "ceotoancau.vn",
+    "www.ceotoancau.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gặp Gỡ Các Tướng Lĩnh,Cán Bộ Chiến sĩ Quân Đội Nhân Dân Việt Nam Tiêu Biểu Tiến Tới Kỷ niệm Ngày Thành Lập Quân Đội Nhân Dân Việt Nam (22/12/1944-22/12/2026)",
+    "strategy": "selector",
+    "selector": "meta[property=\"og:title\"]",
+    "attribute": "content"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "small.text-muted",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:28.571Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://ceotoancau.vn/gap-go-cac-tuong-linhcan-bo-chien-si-quan-doi-nhan-dan-viet-nam-tieu-bieu-tien-toi-ky-niem-ngay-thanh-lap-quan-doi-nhan-dan-viet-nam-22121944-22122026",
+      "https://ceotoancau.vn/hon-14500-van-dong-vien-tu-57-quoc-gia-va-vung-lanh-tho-tao-nen-ky-luc-moi-tai-marathon-quoc-te-ha-noi-techcombank-mua-thu-5",
+      "https://ceotoancau.vn/giao-dich-hang-hoa-phai-sinh-hieu-luat-truoc-khi-dat-lenh",
+      "https://ceotoancau.vn/giai-ba-mon-phoi-hop-ironman-703-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long",
+      "https://ceotoancau.vn/truong-dai-hoc-van-hien-hanh-trinh-gan-ba-thap-ky-kien-tao-tri-thuc-huong-den-dau-moc-30-nam-thanh-lap"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/ceotoancau.vn"
+  },
+  "discovery": {
+    "homepage": "https://ceotoancau.vn/",
+    "categories": [
+      "https://ceotoancau.vn/post-category/doanh-nhan-toan-cau",
+      "https://ceotoancau.vn/post-category/quy-dinh-su-dung"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "ceotoancau.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 15,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 9,
+    "parserIssues": 1,
+    "transportUnconfirmed": 1,
+    "distinctHashes": 15,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 382,
+        "passed": 15,
+        "distinctHashes": 15
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://ceotoancau.vn/giao-dich-hang-hoa-phai-sinh-hieu-luat-truoc-khi-dat-lenh",
+      "https://ceotoancau.vn/giai-ba-mon-phoi-hop-ironman-703-den-voi-diem-den-moi-day-an-tuong-vinh-ha-long",
+      "https://ceotoancau.vn/truong-dai-hoc-van-hien-hanh-trinh-gan-ba-thap-ky-kien-tao-tri-thuc-huong-den-dau-moc-30-nam-thanh-lap",
+      "https://ceotoancau.vn/khu-pho-45-phuong-binh-loi-trung-to-chuc-hoi-nghi-bau-truong-khu-pho-va-thanh-vien-ban-thanh-tra-nhan-dan-nhiem-ky-2026-2031",
+      "https://ceotoancau.vn/ha-noi-khai-truong-cau-lac-bo-ho-tran-quan-dong-da",
+      "https://ceotoancau.vn/hoa-khoi-doanh-nhan-viet-nam-do-thanh-yen-nhi-ceo-anni-coffee",
+      "https://ceotoancau.vn/tap-doan-ever-nhat-ban-to-chuc-toa-dam-cac-lieu-phap-y-te-tai-sinh-va-tham-my-cong-nghe-cao-hang-dau-nhat-ban-tai-tphcm",
+      "https://ceotoancau.vn/nghe-si-hoai-vuong-va-tam-tinh-tron-doi-voi-que-huong",
+      "https://ceotoancau.vn/nhung-cau-noi-hay-truyen-cam-hung-ve-ngay-moi-truong-the-gioi-56",
+      "https://ceotoancau.vn/gvc-sky-pickleball-dau-an-the-thao-tren-khong-ket-noi-cong-dong-va-nang-tam-chuan-song",
+      "https://ceotoancau.vn/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-thu-9-khoi-dong-kien-tao-gia-tri-vuot-troi",
+      "https://ceotoancau.vn/quy-dinh-su-dung-ceotoancauvn-phan-2",
+      "https://ceotoancau.vn/quy-dinh-su-dung-ceotoancauvn-phan-1",
+      "https://ceotoancau.vn/dieu-khoan-su-dung-ceotoancauvn"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:38.330Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/ceotoancau.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

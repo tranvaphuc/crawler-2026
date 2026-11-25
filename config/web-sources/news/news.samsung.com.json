@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "siteName": "news.samsung.com",
+  "siteId": "news.samsung.com",
+  "registrableDomain": "news.samsung.com",
+  "homepage": "https://news.samsung.com/global/",
+  "allowedHosts": [
+    "news.samsung.com",
+    "www.news.samsung.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://news.samsung.com/global/",
+    "categories": [
+      "https://news.samsung.com/global/",
+      "https://news.samsung.com/global/category/corporate",
+      "https://news.samsung.com/global/category/corporate/people-culture",
+      "https://news.samsung.com/global/category/corporate/technology",
+      "https://news.samsung.com/global/category/corporate/design",
+      "https://news.samsung.com/global/category/corporate/corporateothers",
+      "https://news.samsung.com/global/category/products",
+      "https://news.samsung.com/global/category/products/mobile",
+      "https://news.samsung.com/global/category/products/tv-audio",
+      "https://news.samsung.com/global/category/products/home-appliances"
+    ]
+  },
+  "title": {
+    "value": "Samsung và ShopeePay tăng cường hợp tác, nâng cao trải nghiệm thanh toán liền mạch tại Đông Nam Á",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".single_contents",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T03:48:10.829Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-17T03:47:49.221Z",
+    "independentHoldouts": [
+      "https://news.samsung.com/global/finding-the-perfect-tv-a-guide-to-samsung-tvs",
+      "https://news.samsung.com/global/hands-on-comfort-convenience-and-more-a-day-with-galaxy-buds-on",
+      "https://news.samsung.com/global/inside-dakar-2026-how-galaxy-innovation-shaped-the-athlete-experience"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://news.samsung.com/vn/samsung-va-shopeepay-tang-cuong-hop-tac-nang-cao-trai-nghiem-thanh-toan-lien-mach-tai-dong-nam-a",
+      "https://news.samsung.com/global/finding-the-perfect-tv-a-guide-to-samsung-tvs",
+      "https://news.samsung.com/global/hands-on-comfort-convenience-and-more-a-day-with-galaxy-buds-on",
+      "https://news.samsung.com/global/inside-dakar-2026-how-galaxy-innovation-shaped-the-athlete-experience"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only"
+}

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "siteName": "en.qdnd.vn",
+  "siteId": "en.qdnd.vn",
+  "registrableDomain": "qdnd.vn",
+  "homepage": "https://en.qdnd.vn/",
+  "allowedHosts": [
+    "en.qdnd.vn",
+    "www.en.qdnd.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Military units pro-actively prepare for natural disasters",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".detail-post .post-subinfo #Date"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T04:36:29.134Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://en.qdnd.vn/military/public-relations/military-units-pro-actively-prepare-for-natural-disasters-596945",
+      "https://en.qdnd.vn/military/news/affirming-skills-and-professionalism-of-mr9-s-staff-and-training-officers-596947",
+      "https://en.qdnd.vn/vietnam-s-seas-and-islands/lighting-up-truong-sa-2026-brings-support-to-islanders-596718",
+      "https://en.qdnd.vn/vietnam-s-seas-and-islands/ho-chi-minh-city-mobilizes-support-to-protect-viet-nam-s-maritime-sovereignty-596040",
+      "https://en.qdnd.vn/vietnam-s-seas-and-islands/east-sea-conference-calls-for-stronger-rules-cooperation-to-maintain-regional-stability-595925"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "scopeIssue": null,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round5-http/sites/en.qdnd.vn"
+  },
+  "discovery": {
+    "homepage": "https://en.qdnd.vn/",
+    "categories": [
+      "https://en.qdnd.vn/military",
+      "https://en.qdnd.vn/military/news",
+      "https://en.qdnd.vn/military/intl-relations-and-cooperation",
+      "https://en.qdnd.vn/military/public-relations",
+      "https://en.qdnd.vn/military/war-files",
+      "https://en.qdnd.vn/politics",
+      "https://en.qdnd.vn/politics/news",
+      "https://en.qdnd.vn/politics/editorials-features",
+      "https://en.qdnd.vn/economy",
+      "https://en.qdnd.vn/economy/news",
+      "https://en.qdnd.vn/economy/military-businesses",
+      "https://en.qdnd.vn/economy/international-cooperation",
+      "https://en.qdnd.vn/economy/special-reports",
+      "https://en.qdnd.vn/social-affairs",
+      "https://en.qdnd.vn/social-affairs/news",
+      "https://en.qdnd.vn/social-affairs/special-reports",
+      "https://en.qdnd.vn/ovs",
+      "https://en.qdnd.vn/ovs/news",
+      "https://en.qdnd.vn/ovs/ovs-homeland",
+      "https://en.qdnd.vn/culture-sports",
+      "https://en.qdnd.vn/culture-sports/culture",
+      "https://en.qdnd.vn/culture-sports/sports",
+      "https://en.qdnd.vn/travel",
+      "https://en.qdnd.vn/travel/news",
+      "https://en.qdnd.vn/travel/people-and-land",
+      "https://en.qdnd.vn/asean-community",
+      "https://en.qdnd.vn/asean-community/asean-news",
+      "https://en.qdnd.vn/asean-community/vietnam-and-asean",
+      "https://en.qdnd.vn/foreign-affairs",
+      "https://en.qdnd.vn/foreign-affairs/bilateral-relations",
+      "https://en.qdnd.vn/foreign-affairs/multilateral-relations",
+      "https://en.qdnd.vn/foreign-affairs/foreigners-in-vietnam",
+      "https://en.qdnd.vn/vietnam-s-seas-and-islands",
+      "https://en.qdnd.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.232Z",
+      "verifiedSeeds": [
+        "https://en.qdnd.vn/",
+        "https://en.qdnd.vn/military",
+        "https://en.qdnd.vn/military/news",
+        "https://en.qdnd.vn/military/intl-relations-and-cooperation",
+        "https://en.qdnd.vn/military/public-relations",
+        "https://en.qdnd.vn/military/war-files",
+        "https://en.qdnd.vn/politics",
+        "https://en.qdnd.vn/politics/news",
+        "https://en.qdnd.vn/politics/editorials-features",
+        "https://en.qdnd.vn/economy",
+        "https://en.qdnd.vn/economy/news"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed",
+    "checkedAt": "2026-11-09T04:38:16.655Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSamples": 2,
+    "scope": "fresh HTTP articles, per-site frozen parser/dispatcher and distinct holdouts; complete site cycle not verified"
+  },
+  "identityReconciliationRequired": true,
+  "fullSiteCycleVerified": false,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "en.qdnd.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 44,
+    "checkedArticleUrls": 81,
+    "freshArticleChecks": 76,
+    "parserIssues": 21,
+    "transportUnconfirmed": 16,
+    "distinctHashes": 44,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 33,
+    "categoriesFreshChecked": 33,
+    "categoriesUnconfirmed": 33,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 286,
+        "passed": 44,
+        "distinctHashes": 44
+      },
+      {
+        "name": "photo",
+        "discovered": 12,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "video",
+        "discovered": 12,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 13,
+      "unresolved_extraction": 8
+    },
+    "checkedAt": "2026-11-10T09:15:24.274Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/en.qdnd.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "originalApiRepair": {
+    "checkedAt": "2026-11-17T06:21:57.967Z",
+    "method": "owned_post_clock_with_explicit_gmt7",
+    "proofs": [
+      {
+        "url": "https://en.qdnd.vn/foreign-affairs/bilateral-relations/viet-nam-seeks-to-strengthen-cooperation-with-african-countries-597217",
+        "contentHash": "3f44157c8f6a3adc0e0e82ae78bcf75699be44a84f8a3bef5d3a342fa7d53b2f",
+        "description": "PANO - On November 15, on the sidelines of the 20th Francophonie Summit in Phnom Penh, Cambodia, Politburo member and Minister of Foreign Affairs Le Hoai Trung held meetings with Côte d Ivoire’s Minister of State, Minister of Foreign Affairs and International Cooperation Nialé Kaba, Angola’s Minister of Foreign Affairs Téte Antonio, and Cameroon’s",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://en.qdnd.vn/foreign-affairs/bilateral-relations/viet-nam-seeks-to-strengthen-cooperation-with-african-countries-597217",
+          "publishedDate": "2026-11-16T08:09:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://en.qdnd.vn/vietnam-s-seas-and-islands/lighting-up-truong-sa-2026-brings-support-to-islanders-596718",
+        "contentHash": "c4f2be54c841f0ed2e92a8281de70854ed508dedfe0f4de1b0e73a49c1b16bfa",
+        "description": "PANO - A delegation from the Ha Noi Red Cross Society, together with representatives of organizations, businesses, and benefactors, visited Brigades 101 and 146 of Naval Region 4 on October 31 to encourage troops and present them with equipment under the “Lighting up Truong Sa 2026” program.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://en.qdnd.vn/vietnam-s-seas-and-islands/lighting-up-truong-sa-2026-brings-support-to-islanders-596718",
+          "publishedDate": "2026-11-01T12:01:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      },
+      {
+        "url": "https://en.qdnd.vn/vietnam-s-seas-and-islands/ho-chi-minh-city-mobilizes-support-to-protect-viet-nam-s-maritime-sovereignty-596040",
+        "contentHash": "d5a2184446bdd2784ce2672ed02a5069971174d90578ff42021f731339290309",
+        "description": "PANO - Ho Chi Minh City has actively mobilized social resources to support residents and service members in border, coastal, and island areas through practical programs and initiatives. These efforts help improve living conditions, strengthen military-civilian solidarity, and contribute to national defense and social welfare.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "https://en.qdnd.vn/vietnam-s-seas-and-islands/ho-chi-minh-city-mobilizes-support-to-protect-viet-nam-s-maritime-sovereignty-596040",
+          "publishedDate": "2026-10-12T16:35:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock"
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "originalPublicationBlockedReason": null
+}

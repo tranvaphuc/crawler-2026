@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vietnammedia.vnanet.vn",
+  "siteId": "vietnammedia.vnanet.vn",
+  "registrableDomain": "vnanet.vn",
+  "homepage": "https://vietnammedia.vnanet.vn/",
+  "allowedHosts": [
+    "vietnammedia.vnanet.vn",
+    "www.vietnammedia.vnanet.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp gỡ đại diện chuyên gia, trí thức Việt Nam tại Nhật Bản",
+    "strategy": "selector",
+    "selector": "h1:eq(1)"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".video-detail__description",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "additionalMediaSelector": "#tek4-player",
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T02:05:55.069Z",
+    "sampleCount": 10,
+    "passedSamples": 10,
+    "independentSampleCount": 3,
+    "holdoutAttempted": 4,
+    "sampleUrls": [
+      "https://vietnammedia.vnanet.vn/video/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-208216.htm",
+      "https://vietnammedia.vnanet.vn/video/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-kieu-bao-tai-nhat-ban-208209.htm",
+      "https://vietnammedia.vnanet.vn/video/co-hoi-vang-cho-hop-tac-viet-nam-italy-trong-linh-vuc-robot-208217.htm",
+      "https://vietnammedia.vnanet.vn/video/-tram-tin-so-toi-08-11-tong-bi-thu-chu-tich-nuoc-to-lam-gap-mat-cong-dong-nguoi-viet-nam-tai-nhat-ban-208214.htm",
+      "https://vietnammedia.vnanet.vn/video/cac-bi-cao-noi-loi-sau-cung-tai-phien-toa-208215.htm",
+      "https://vietnammedia.vnanet.vn/video/ngu-dan-quang-tri-chu-dong-neo-dau-tau-thuyen-ung-pho-voi-dot-mua-lon-208213.htm",
+      "https://vietnammedia.vnanet.vn/video/ngay-van-hoa-viet-nam-ket-noi-cong-dong-tai-perth-208208.htm",
+      "https://vietnammedia.vnanet.vn/video/-tram-tin-so-chieu-08-11-tong-bi-thu-chu-tich-nuoc-to-lam-tham-chinh-thuc-nhat-ban-208199.htm",
+      "https://vietnammedia.vnanet.vn/video/dieu-chinh-thoi-gian-hoan-thanh-cac-cong-trinh-dich-vu-san-bay-long-thanh-208207.htm",
+      "https://vietnammedia.vnanet.vn/video/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-208216.htm"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vietnammedia.vnanet.vn/",
+    "categories": [
+      "https://vietnammedia.vnanet.vn/chinh-tri.htm",
+      "https://vietnammedia.vnanet.vn/chinh-tri/noi-chinh.htm",
+      "https://vietnammedia.vnanet.vn/chinh-tri/chinh-tri-ngoai-giao.htm",
+      "https://vietnammedia.vnanet.vn/chinh-tri/an-ninh-quoc-phong.htm",
+      "https://vietnammedia.vnanet.vn/chinh-tri/ky-nguyen-moi.htm",
+      "https://vietnammedia.vnanet.vn/the-gioi.htm",
+      "https://vietnammedia.vnanet.vn/the-gioi/thoi-su-quoc-te.htm",
+      "https://vietnammedia.vnanet.vn/the-gioi/quan-su.htm",
+      "https://vietnammedia.vnanet.vn/the-gioi/phan-tich-binh-luan.htm",
+      "https://vietnammedia.vnanet.vn/the-gioi/nguoi-viet-nam-chau.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te/kinh-te-so.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te/bat-dong-san.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te/tai-chinh-kinh-doanh.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te/thi-truong-tieu-dung.htm",
+      "https://vietnammedia.vnanet.vn/kinh-te/doanh-nghiep-doanh-nhan.htm",
+      "https://vietnammedia.vnanet.vn/van-hoa-giai-tri.htm",
+      "https://vietnammedia.vnanet.vn/van-hoa-giai-tri/gia-tri-viet.htm",
+      "https://vietnammedia.vnanet.vn/van-hoa-giai-tri/am-nhac.htm",
+      "https://vietnammedia.vnanet.vn/van-hoa-giai-tri/dien-anh.htm",
+      "https://vietnammedia.vnanet.vn/van-hoa-giai-tri/thoi-trang.htm",
+      "https://vietnammedia.vnanet.vn/xa-hoi.htm",
+      "https://vietnammedia.vnanet.vn/xa-hoi/doi-song.htm",
+      "https://vietnammedia.vnanet.vn/xa-hoi/giao-thong-do-thi.htm",
+      "https://vietnammedia.vnanet.vn/xa-hoi/do-thi.htm",
+      "https://vietnammedia.vnanet.vn/phap-luat.htm",
+      "https://vietnammedia.vnanet.vn/phap-luat/an-ninh-trat-tu.htm",
+      "https://vietnammedia.vnanet.vn/phap-luat/vu-an.htm",
+      "https://vietnammedia.vnanet.vn/phap-luat/phap-dinh.htm",
+      "https://vietnammedia.vnanet.vn/giao-duc.htm",
+      "https://vietnammedia.vnanet.vn/giao-duc/dao-tao.htm",
+      "https://vietnammedia.vnanet.vn/giao-duc/tuyen-sinh.htm",
+      "https://vietnammedia.vnanet.vn/giao-duc/du-hoc.htm",
+      "https://vietnammedia.vnanet.vn/giao-duc/huong-nghiep.htm",
+      "https://vietnammedia.vnanet.vn/y-te.htm",
+      "https://vietnammedia.vnanet.vn/y-te/suc-khoe.htm",
+      "https://vietnammedia.vnanet.vn/y-te/gioi-tinh.htm",
+      "https://vietnammedia.vnanet.vn/y-te/dia-chi-vang.htm",
+      "https://vietnammedia.vnanet.vn/y-te/la-ban.htm",
+      "https://vietnammedia.vnanet.vn/du-lich.htm",
+      "https://vietnammedia.vnanet.vn/du-lich/diem-den.htm",
+      "https://vietnammedia.vnanet.vn/du-lich/nghi-duong.htm",
+      "https://vietnammedia.vnanet.vn/du-lich/am-thuc.htm",
+      "https://vietnammedia.vnanet.vn/du-lich/kham-pha.htm",
+      "https://vietnammedia.vnanet.vn/moi-truong.htm",
+      "https://vietnammedia.vnanet.vn/moi-truong-cong-nghe/moi-truong.htm",
+      "https://vietnammedia.vnanet.vn/moi-truong/nang-luong-xanh.htm",
+      "https://vietnammedia.vnanet.vn/moi-truong/doi-song-xanh.htm",
+      "https://vietnammedia.vnanet.vn/the-thao.htm",
+      "https://vietnammedia.vnanet.vn/the-thao/bong-da.htm",
+      "https://vietnammedia.vnanet.vn/the-thao/pickleball.htm",
+      "https://vietnammedia.vnanet.vn/the-thao/tennis.htm",
+      "https://vietnammedia.vnanet.vn/the-thao/golf.htm",
+      "https://vietnammedia.vnanet.vn/cong-nghe.htm",
+      "https://vietnammedia.vnanet.vn/cong-nghe/ai-internet.htm",
+      "https://vietnammedia.vnanet.vn/cong-nghe/chuyen-doi-so.htm",
+      "https://vietnammedia.vnanet.vn/cong-nghe/doi-song-cong-nghe.htm",
+      "https://vietnammedia.vnanet.vn/cong-nghe/san-pham-cong-dong.htm",
+      "https://vietnammedia.vnanet.vn/podcast.htm",
+      "https://vietnammedia.vnanet.vn/vodcast.htm",
+      "https://vietnammedia.vnanet.vn/longform.htm",
+      "https://vietnammedia.vnanet.vn/infographic.htm",
+      "https://vietnammedia.vnanet.vn/net-zero",
+      "https://vietnammedia.vnanet.vn/video/dong-chay-cong-nghe.htm",
+      "https://vietnammedia.vnanet.vn/ttxvn-toan-cau.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vietnammedia.vnanet.vn",
+    "checkedAt": "2026-11-09T03:57:37.712Z",
+    "url": "https://vietnammedia.vnanet.vn/video/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-208216.htm",
+    "finalUrl": "https://vietnammedia.vnanet.vn/video/tong-bi-thu-chu-tich-nuoc-to-lam-gap-go-dai-dien-chuyen-gia-tri-thuc-viet-nam-tai-nhat-ban-208216.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 246,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vietnammedia.vnanet.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 76,
+    "checkedArticleUrls": 88,
+    "freshArticleChecks": 19,
+    "parserIssues": 7,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 76,
+    "listingResponsesAtArticleUrls": 5,
+    "categoriesPlanned": 66,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "video",
+        "discovered": 370,
+        "passed": 61,
+        "distinctHashes": 61
+      },
+      {
+        "name": "ordinary",
+        "discovered": 81,
+        "passed": 12,
+        "distinctHashes": 12
+      },
+      {
+        "name": "audio",
+        "discovered": 5,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vietnammedia.vnanet.vn/video/thuc-day-hop-tac-nghi-vien-va-dao-tao-nhan-luc-chien-luoc-viet-nam-nhat-ban-208345.htm",
+      "https://vietnammedia.vnanet.vn/video/doi-moi-phuong-thuc-quan-ly-day-va-hoc-tu-mo-hinh-truong-hoc-so-208337.htm",
+      "https://vietnammedia.vnanet.vn/video/tram-tin-so-trua-10-11-quoc-hoi-thao-luan-o-hoi-truong-ve-du-an-luat-phat-trien-cong-nghiep-van-hoa-208360.htm",
+      "https://vietnammedia.vnanet.vn/video/lu-tren-cac-song-o-hue-dang-len-cao-208362.htm",
+      "https://vietnammedia.vnanet.vn/video/quang-tri-khac-phuc-su-co-dut-day-neo-tau-cho-60000-tan-than-208361.htm",
+      "https://vietnammedia.vnanet.vn/video/bo-truong-chien-tranh-my-doi-mat-nguy-co-bi-luan-toi-208364.htm",
+      "https://vietnammedia.vnanet.vn/video/duc-that-chat-an-ninh-khu-vuc-toa-nha-quoc-hoi-208365.htm",
+      "https://vietnammedia.vnanet.vn/video/phap-de-xuat-cam-su-dung-ai-neu-de-doa-suc-khoe-tam-than-tre-em-208366.htm",
+      "https://vietnammedia.vnanet.vn/video/tong-thong-my-nhan-dinh-co-dong-luc-tich-cuc-cham-dut-xung-dot-voi-iran-208367.htm",
+      "https://vietnammedia.vnanet.vn/video/dam-phan-3-ben-nga-my-ukraine-208355.htm",
+      "https://vietnammedia.vnanet.vn/video/cuba-thuc-day-doi-moi-sang-tao-de-phat-trien-kinh-te-xa-hoi-208356.htm",
+      "https://vietnammedia.vnanet.vn/news/thuc-day-hop-tac-tai-chinh-xanh-va-nguon-von-quoc-te-viet-nhat-qua-cau-noi-vpbank-smbc-208353.htm",
+      "https://vietnammedia.vnanet.vn/video/ung-dung-cong-nghe-moi-trong-hoat-dong-logistics-do-thi-208354.htm",
+      "https://vietnammedia.vnanet.vn/video/le-don-tau-nghien-cuu-khoa-hoc-akademik-ma-lavrentyev-208347.htm",
+      "https://vietnammedia.vnanet.vn/video/khoi-thong-nguon-von-thuc-day-hop-tac-xa-phat-trien-208346.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "public_inline_state_requires_adapter": 7
+    },
+    "checkedAt": "2026-11-10T09:18:08.691Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vietnammedia.vnanet.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "vietnammedia.vnanet.vn",
+      "siteId": "vietnammedia.vnanet.vn",
+      "registrableDomain": "vnanet.vn",
+      "homepage": "https://vietnammedia.vnanet.vn/",
+      "allowedHosts": [
+        "vietnammedia.vnanet.vn",
+        "www.vietnammedia.vnanet.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp gỡ đại diện chuyên gia, trí thức Việt Nam tại Nhật Bản",
+        "strategy": "selector",
+        "selector": "h1:eq(1)"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".podcast-detail__wrapper",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "additionalMediaSelector": "#tek4-player",
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:54:19.427Z",
+        "trainingUrls": [
+          "https://vietnammedia.vnanet.vn/news/bao-gio-ha-noi-la-nha--208147.htm",
+          "https://vietnammedia.vnanet.vn/news/podcast-the-gioi-xua-nay-trieu-tien-suc-manh-cua-su-bi-an-196914.htm",
+          "https://vietnammedia.vnanet.vn/news/podcast-the-gioi-xua-va-nay-greenland-phan-chim-cua-tang-bang-195073.htm",
+          "https://vietnammedia.vnanet.vn/news/podcast-the-gioi-xua-nay-cuba-chiec-chia-khoa-va-nhung-nghich-ly-192876.htm"
+        ],
+        "holdoutUrls": [
+          "https://vietnammedia.vnanet.vn/news/so-15-robot-ai-tro-thu-so-tai-bo-phan-mot-cua-205886.htm",
+          "https://vietnammedia.vnanet.vn/news/the-gioi-xua-va-nay-singapore-tram-trung-chuyen-hay-so-chi-huy-kinh-te-dia-chinh-tri-203500.htm"
+        ]
+      }
+    },
+    {
+      "title": {
+        "value": "Phát triển OCOP nâng giá trị nông sản và mở rộng sinh kế",
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "additionalMediaSelector": "#tek4-player",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T07:52:41.028Z",
+        "trainingUrls": [
+          "https://vietnammedia.vnanet.vn/news/phat-trien-ocop-nang-gia-tri-nong-san-va-mo-rong-sinh-ke-207123.htm",
+          "https://vietnammedia.vnanet.vn/news/nang-thuoc-do-dong-von-fdi-203572.htm"
+        ],
+        "holdoutUrls": [
+          "https://vietnammedia.vnanet.vn/news/loi-ich-lon-tu-nhung-cu-cham-nho-198951.htm",
+          "https://vietnammedia.vnanet.vn/news/khong-de-lang-phi-nguon-nhan-luc-sau-khi-ve-nuoc-202284.htm"
+        ]
+      }
+    }
+  ]
+}

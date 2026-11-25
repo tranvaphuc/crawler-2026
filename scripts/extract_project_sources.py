@@ -8,13 +8,14 @@ NS={'m':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 RID='{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id'
 URL_RE=re.compile(r'(?:https?://|www\.)[^\s<>"\x00]+',re.I)
 DOMAIN_RE=re.compile(r'(?<![@\w])(?:[a-z0-9-]{1,63}\.){1,6}(?:com|vn|net|org|io|ai|tv)(?:/[^\s<>"\x00]*)?',re.I)
-def read_book(path):
+def read_book(path, sheet_filter=None):
  z=zipfile.ZipFile(path)
  ss=[]
  if 'xl/sharedStrings.xml' in z.namelist():
   ss=[''.join(n.itertext()) for n in ET.fromstring(z.read('xl/sharedStrings.xml'))]
  rel={r.get('Id'):r.get('Target') for r in ET.fromstring(z.read('xl/_rels/workbook.xml.rels'))}
  for sheet in ET.fromstring(z.read('xl/workbook.xml')).find('m:sheets',NS):
+  if sheet_filter is not None and not sheet_filter(sheet.get('name')):continue
   target=rel[sheet.get(RID)];target=target.lstrip('/') if target.startswith('/') else posixpath.normpath('xl/'+target)
   root=ET.fromstring(z.read(target));rows={};cells={}
   for c in root.findall('.//m:sheetData/m:row/m:c',NS):

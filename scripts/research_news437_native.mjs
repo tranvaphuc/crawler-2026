@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {NewsRepairPool} from '../src/web/newsRepairPool.mjs';
+const root=path.resolve('outputs/news-repair-437-2026-11-10'),read=async p=>JSON.parse(await fs.readFile(p,'utf8')),pool=new NewsRepairPool(3,new URL('../src/web/newsDeepAuditWorker.mjs',import.meta.url));
+const specs={
+ 'thoibaotaichinhvietnam.vn':{title:{strategy:'selector',selector:'h1.article-detail-title'}},
+ 'langngheviet.com.vn':{title:{strategy:'selector',selector:'h1.article-detail-title'}},
+ 'vietq.vn':{title:{strategy:'selector',selector:'h1.detail-title'},publishedDate:{strategy:'selector',selector:'.vi-sharing .left'},body:{strategy:'selector',selector:'#main-detail'}},
+ 'dienanh.net':{timezone:'Asia/Ho_Chi_Minh',publishedDate:{strategy:'selector',selector:'span.time.f-16.sub-text-white'}},
+ 'doanhnhan.baophapluat.vn':{publishedDate:{strategy:'selector',selector:'.main-article > .breadcrumb-and-date'}},
+ 'thuonghieuvaphapluat.vn':{publishedDate:{strategy:'selector',selector:'.time_detail_news'}}
+};await fs.writeFile(path.join(root,'native-candidate-specs.json'),JSON.stringify(specs,null,2));
+try{for(const [domain,spec] of Object.entries(specs)){const config=await read(path.join(root,'configs-baseline',domain+'.json')),prev=await read(path.resolve('outputs/news-deep-followup-443-2026-11-10/final/sites',domain,'result.json')),live=await read(path.join(root,'live/sites',domain,'result.json')).catch(()=>({articles:[]}));let n=0;for(const a of prev.articles.filter(a=>a.htmlPath&&['content_integrity_review','extraction_unconfirmed'].includes(a.state)).slice(0,3)){const sample={domain,url:a.url,htmlPath:a.htmlPath,kind:'article'},before=await pool.run({sample,config}),after=await pool.run({sample,config:{...config,...spec,variants:[]}}),fresh=live.articles.find(x=>x.url===a.url&&x.htmlPath),r=fresh?await pool.run({sample:{...sample,htmlPath:fresh.htmlPath},config:{...config,...spec,variants:[]}}):null;console.log(JSON.stringify({domain,url:a.url,before:{error:before.error,q:before.quality,title:before.parsed?._source.title,date:before.parsed?._source.publishedDate},after:{error:after.error,q:after.quality,title:after.parsed?._source.title,date:after.parsed?._source.publishedDate,selectors:after.configuredSelectorEvidence,clock:after.parsed?.extracted.dateEvidence,body:after.parsed?.extracted.bodyLength},fresh:r?{error:r.error,q:r.quality,date:r.parsed?._source.publishedDate}:null}));}}
+}finally{await pool.close();}

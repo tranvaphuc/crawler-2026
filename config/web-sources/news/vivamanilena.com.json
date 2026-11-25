@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vivamanilena.com",
+  "siteId": "vivamanilena.com",
+  "registrableDomain": "vivamanilena.com",
+  "homepage": "https://www.vivamanilena.com/",
+  "allowedHosts": [
+    "vivamanilena.com",
+    "www.vivamanilena.com"
+  ],
+  "timezone": "Asia/Manila",
+  "identityEncoding": "latin1",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationTimePolicy": "original_clock_required",
+  "publicationDatePolicy": "original_only",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "title": {
+    "strategy": "selector",
+    "selector": ".post-title"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-body.entry-content",
+    "remove": "script,style,.related,.post-footer"
+  },
+  "publishedDate": {
+    "strategy": "public_feed",
+    "feedUrl": "https://www.vivamanilena.com/feeds/posts/default?alt=rss"
+  },
+  "discovery": {
+    "homepage": "https://www.vivamanilena.com/",
+    "categories": [
+      "https://www.vivamanilena.com/"
+    ],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:19:12.298Z",
+      "verifiedSeeds": [
+        "https://www.vivamanilena.com/"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://www.vivamanilena.com/2026/11/lg-unveils-canvas-of-possibilities-next.html",
+      "https://www.vivamanilena.com/2026/11/maya-blacks-hyperpop-music-video.html",
+      "https://www.vivamanilena.com/2026/11/dti-showcases-over-300-msmes-at.html",
+      "https://www.vivamanilena.com/2026/11/non-stop-power-with-huawei-freebuds-se.html",
+      "https://www.vivamanilena.com/2026/11/basil-valdez-marks-75th-birthday-with.html",
+      "https://www.vivamanilena.com/2026/11/get-exclusive-online-offers-with-honor.html"
+    ]
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-17T04:00:47.377Z",
+    "paidAiCalls": 0,
+    "source": "customer_links_strict_http_repair"
+  }
+}

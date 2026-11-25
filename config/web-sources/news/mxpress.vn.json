@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "siteName": "mxpress.vn",
+  "siteId": "mxpress.vn",
+  "registrableDomain": "mxpress.vn",
+  "homepage": "https://mxpress.vn/",
+  "allowedHosts": [
+    "mxpress.vn",
+    "www.mxpress.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": ".b-article > .b-article-title"
+  },
+  "publishedDate": {
+    "strategy": "selector",
+    "selector": ".b-article > .b-meta > .b-meta-date"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".post-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:46.614Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+      "https://mxpress.vn/tin-tuc/-ai-thuc-chien-mua-2-techcombank-tiep-tuc-tai-tro-giai-thuong-dieu-ky-dieu-toi-1-trieu-usd-tien-si-ai-pham-hy-hieu-truc-tiep-lam-ban-giam-khao",
+      "https://mxpress.vn/tin-tuc/vietravel-airlines-mo-rong-duong-bay-noi-dia-va-quoc-te-trong-dip-he",
+      "https://mxpress.vn/tin-tuc/meraki-land-hop-tac-ihg-phat-trien-du-an-nghi-duong-cao-cap-o-viet-nam-",
+      "https://mxpress.vn/tin-tuc/viief-2026-mo-rong-ket-noi-giao-thuong-viet-nam-trung-quoc",
+      "https://mxpress.vn/tin-tuc/hon-2000-doanh-nghiep-tham-gia-hoi-nghi-ket-noi-cung-cau-giua-tp-ho-chi-minh-va-cac-tinh-thanh-nam-2024",
+      "https://mxpress.vn/tin-tuc/sym-viet-nam-ra-mat-phien-ban-priti-125-go-fashion-bat-phong-cach-tre",
+      "https://mxpress.vn/tin-tuc/bamboo-airways-giam-lo-dang-ke-khong-con-no-tien-thue-may-bay"
+    ],
+    "datePrecision": [
+      "day"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://mxpress.vn/",
+    "categories": [
+      "https://mxpress.vn/javascript;:",
+      "https://mxpress.vn/muc/thong-tin",
+      "https://mxpress.vn/muc/trong-nuoc",
+      "https://mxpress.vn/muc/quoc-te",
+      "https://mxpress.vn/muc/kinh-te-thi-truong",
+      "https://mxpress.vn/muc/thi-truong",
+      "https://mxpress.vn/muc/dau-tu",
+      "https://mxpress.vn/muc/chung-khoan",
+      "https://mxpress.vn/muc/ngan-hang",
+      "https://mxpress.vn/muc/bat-dong-san",
+      "https://mxpress.vn/muc/thong-tin-du-an",
+      "https://mxpress.vn/muc/kien-truc-noi-that",
+      "https://mxpress.vn/muc/thuong-hieu-doanh-nhan",
+      "https://mxpress.vn/muc/ceo-viet",
+      "https://mxpress.vn/muc/ceo-the-gioi",
+      "https://mxpress.vn/muc/y-tuong",
+      "https://mxpress.vn/muc/quan-tri",
+      "https://mxpress.vn/muc/quan-sat-pham-tich",
+      "https://mxpress.vn/muc/van-hoa-xa-hoi",
+      "https://mxpress.vn/muc/phap-luat",
+      "https://mxpress.vn/muc/giao-duc",
+      "https://mxpress.vn/muc/cong-nghe-giai-tri",
+      "https://mxpress.vn/muc/cong-nghe",
+      "https://mxpress.vn/muc/danh-lam-thang-canh",
+      "https://mxpress.vn/muc/am-thuc-vung-mien",
+      "https://mxpress.vn/muc/giai-tri",
+      "https://mxpress.vn/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.308Z",
+      "verifiedSeeds": [
+        "https://mxpress.vn/",
+        "https://mxpress.vn/javascript;:",
+        "https://mxpress.vn/muc/thong-tin",
+        "https://mxpress.vn/muc/trong-nuoc",
+        "https://mxpress.vn/muc/quoc-te",
+        "https://mxpress.vn/muc/kinh-te-thi-truong",
+        "https://mxpress.vn/muc/thi-truong",
+        "https://mxpress.vn/muc/dau-tu",
+        "https://mxpress.vn/muc/chung-khoan",
+        "https://mxpress.vn/muc/ngan-hang",
+        "https://mxpress.vn/muc/bat-dong-san"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "mxpress.vn",
+    "checkedAt": "2026-11-09T03:57:15.639Z",
+    "url": "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+    "finalUrl": "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7952,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "mxpress.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 30,
+    "checkedArticleUrls": 33,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 30,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 26,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 245,
+        "passed": 30,
+        "distinctHashes": 30
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+      "https://mxpress.vn/tin-tuc/-ai-thuc-chien-mua-2-techcombank-tiep-tuc-tai-tro-giai-thuong-dieu-ky-dieu-toi-1-trieu-usd-tien-si-ai-pham-hy-hieu-truc-tiep-lam-ban-giam-khao",
+      "https://mxpress.vn/tin-tuc/vietravel-airlines-mo-rong-duong-bay-noi-dia-va-quoc-te-trong-dip-he",
+      "https://mxpress.vn/tin-tuc/meraki-land-hop-tac-ihg-phat-trien-du-an-nghi-duong-cao-cap-o-viet-nam-",
+      "https://mxpress.vn/tin-tuc/viief-2026-mo-rong-ket-noi-giao-thuong-viet-nam-trung-quoc",
+      "https://mxpress.vn/tin-tuc/hon-2000-doanh-nghiep-tham-gia-hoi-nghi-ket-noi-cung-cau-giua-tp-ho-chi-minh-va-cac-tinh-thanh-nam-2024",
+      "https://mxpress.vn/tin-tuc/sym-viet-nam-ra-mat-phien-ban-priti-125-go-fashion-bat-phong-cach-tre",
+      "https://mxpress.vn/tin-tuc/bamboo-airways-giam-lo-dang-ke-khong-con-no-tien-thue-may-bay",
+      "https://mxpress.vn/tin-tuc/herbalife-viet-nam-tiep-tuc-khuyen-khich-loi-song-nang-dong-lanh-manh-voi-chuong-trinh-tai-tro-giai-chay-vnexpress-marathon-quy-nhon-2024",
+      "https://mxpress.vn/tin-tuc/do-ng-nai-da-y-nhanh-tie-n-do-phe-duyet-die-u-chi-nh-quy-hoa-ch-phan-khu-c4-aqua-city-cu-a-novaland-buo-c-va-o-giai-doa-n-mo-i",
+      "https://mxpress.vn/tin-tuc/trich-lap-du-phong-nghia-vu-thue-phat-sinh-khien-loi-nhuan-doanh-nghiep-sut-giam",
+      "https://mxpress.vn/tin-tuc/200-doanh-nghiep-hoi-tu-tai-trien-lam-vietbuild-thanh-pho-ho-chi-minh-2024",
+      "https://mxpress.vn/tin-tuc/gia-ban-bat-dong-san-nha-o-tai-ha-noi-va-thanh-pho-ho-chi-minh-ghi-nhan-nhung-dien-bien-trai-chieu",
+      "https://mxpress.vn/tin-tuc/thi-truong-bat-dong-san-tp-ho-chi-minh-va-vung-phu-can-ghi-nhan-nhieu-dien-bien-tich-cuc",
+      "https://mxpress.vn/tin-tuc/can-ho-cashhome-nang-tam-loi-nhuan-kep-cho-nha-dau-tu",
+      "https://mxpress.vn/tin-tuc/texfuture-viet-nam-thu-dong-2023-cung-nhau-tai-che-cung-nhau-tuan-hoan",
+      "https://mxpress.vn/tin-tuc/chuan-bi-dong-dien-2-du-an-trong-diem",
+      "https://mxpress.vn/tin-tuc/van-phong-trung-tam-dien-khi-quoc-gia",
+      "https://mxpress.vn/tin-tuc/dong-tho-du-an-trong-diem-dau-tien-tai-khu-kinh-te-thai-binh",
+      "https://mxpress.vn/tin-tuc/techcombank-duoc-global-finance-vinh-danh-ngan-hang-tot-nhat-viet-nam",
+      "https://mxpress.vn/tin-tuc/techcombank-priority-dang-cap-va-su-dong-hanh-cung-khach-hang",
+      "https://mxpress.vn/tin-tuc/techcombank-nhan-2-giai-thuong-ve-dich-vu-ngan-hang-so-hang-dau-the-gioi",
+      "https://mxpress.vn/tin-tuc/acb-cong-bo-kqkd-9-thang-duy-tri-tang-truong-on-dinh-kiem-soat-rui-ro-hieu-qua",
+      "https://mxpress.vn/tin-tuc/vissan-to-chuc-dai-hoi-dong-co-dong-thuong-nien-nam-2024",
+      "https://mxpress.vn/tin-tuc/ong-le-van-minh-tai-dac-cu-chu-tich-hoi-doanh-nghiep-quan-phu-nhuan",
+      "https://mxpress.vn/tin-tuc/mclaren-60-nam-hanh-trinh-vinh-hien-va-nguoi-ke-thua-hoan-hao-artura",
+      "https://mxpress.vn/tin-tuc/xac-lap-ky-luc-the-gioi-cho-bo-suu-tap-tam-tra-dieu-bao",
+      "https://mxpress.vn/tin-tuc/tra-su-ngo-thi-thanh-tam-nguoi-phu-nu-viet-nam-duy-nhat-duoc-vinh-danh-ky-luc-the-gioi",
+      "https://mxpress.vn/tin-tuc/binh-dien-to-chuc-thanh-cong-dai-hoi-dong-co-dong-nam-2023",
+      "https://mxpress.vn/tin-tuc/tong-lanh-su-quan-viet-nam-tai-perth-to-chuc-ky-niem-79-nam-quoc-khanh-nuoc-chxhcn-viet-nam",
+      "https://mxpress.vn/tin-tuc/lien-doan-bong-da-viet-nam-to-chuc-buoi-dao-tao-ve-dinh-duong-khoa-hoc-trong-the-thao",
+      "https://mxpress.vn/tin-tuc/hai-ky-luc-duoc-xac-lap-tai-hoi-trai-tuoi-tre-va-phat-giao-lan-thu-14",
+      "https://mxpress.vn/tin-tuc/generali-viet-nam-huong-ung-thu-thach-toan-cau-2024-voi-hanh-trinh-1831-km-xuyen-viet-gay-quy-cho-em",
+      "https://mxpress.vn/tin-tuc/tai-chinh-toi-uu-tren-ngan-hang-so-cho-doanh-nghiep-hang-dau-the-gioi",
+      "https://mxpress.vn/tin-tuc/chuyen-doi-so-lay-he-sinh-thai-lam-trong-tam",
+      "https://mxpress.vn/tin-tuc/chung-chi-tien-gui-bao-loc-giai-phap-toi-uu-tien-nhan-roi-voi-menh-gia-thap-va-tinh-thanh-khoan-cao",
+      "https://mxpress.vn/tin-tuc/asus-gioi-thieu-loat-laptop-2023-moi-mang-tinh-than-tuyet-dinh-tinh-hoa-kien-tao-ky-tich"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1,
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:16:07.588Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/mxpress.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+  "datePrecisionProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "mxpress.vn",
+    "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+  },
+  "publicationDatePolicy": "original_only",
+  "originalDayRepair": {
+    "checkedAt": "2026-11-17T09:26:31.967Z",
+    "proofs": [
+      {
+        "url": "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+        "publisherUrl": "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+        "contentHash": "6be675060805679d48c225d9f5d7ca259a9f986a45c783cb3564854b9993c043",
+        "description": "Năng lực logistics quyết định khả năng thu hút đầu tư",
+        "publishedDate": "2026-07-24",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://mxpress.vn/tin-tuc/ngay-24-7-bo-cong-thuong-to-chuc-dien-dan-logistics-ket-noi-cac-khu-vuc",
+          "publishedDate": "2026-07-24",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "mxpress.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://mxpress.vn/tin-tuc/-ai-thuc-chien-mua-2-techcombank-tiep-tuc-tai-tro-giai-thuong-dieu-ky-dieu-toi-1-trieu-usd-tien-si-ai-pham-hy-hieu-truc-tiep-lam-ban-giam-khao",
+        "publisherUrl": "https://mxpress.vn/tin-tuc/-ai-thuc-chien-mua-2-techcombank-tiep-tuc-tai-tro-giai-thuong-dieu-ky-dieu-toi-1-trieu-usd-tien-si-ai-pham-hy-hieu-truc-tiep-lam-ban-giam-khao",
+        "contentHash": "1f24e228b41de533bed229baa0de52c07c3e423de8882faab8ce7264bfd107e8",
+        "description": "Ngày 19/6 tại Hà Nội, Chương trình \"AI Thực Chiến” chính thức khởi động mùa thứ 2. Với vai trò nhà tài trợ độc quyền toàn bộ về tài chính cho chương trình, Techcombank cũng cam kết tiếp tục trao cho đội thắng cuộc mùa 2 giải thưởng “Điều kỳ diệu” - học bổng lên đến 1 triệu USD, cùng sự tham gia hỗ trợ của Giám đốc Khối chuyển đổi trí tuệ nhân tạo Phạm Hy Hiếu trong vai trò thành viên Ban Giám khảo.",
+        "publishedDate": "2026-06-20",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://mxpress.vn/tin-tuc/-ai-thuc-chien-mua-2-techcombank-tiep-tuc-tai-tro-giai-thuong-dieu-ky-dieu-toi-1-trieu-usd-tien-si-ai-pham-hy-hieu-truc-tiep-lam-ban-giam-khao",
+          "publishedDate": "2026-06-20",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "mxpress.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "https://mxpress.vn/tin-tuc/vietravel-airlines-mo-rong-duong-bay-noi-dia-va-quoc-te-trong-dip-he",
+        "publisherUrl": "https://mxpress.vn/tin-tuc/vietravel-airlines-mo-rong-duong-bay-noi-dia-va-quoc-te-trong-dip-he",
+        "contentHash": "3774f2922579186b11a2e398991bc3eef88d7f5d9c1dab7f93886998a16db855",
+        "description": "Cụ thể, chuyến bay mang số hiệu VU1213 thực hiện hành trình Hà Nội – Buôn Ma Thuột với 220 hành khách đã hạ cánh tại sân bay Buôn Ma Thuột vào lúc 14h20 ngày 15/6. Đây cũng là chuyến bay đầu tiên của Vietravel Airlines trên tuyến mới kết nối Thủ đô với thủ phủ của Tây Nguyên.",
+        "publishedDate": "2026-06-17",
+        "publishedDatePrecision": "day",
+        "publication": {
+          "ok": true,
+          "version": 2,
+          "policy": "strict_original_publication_day_v2",
+          "url": "https://mxpress.vn/tin-tuc/vietravel-airlines-mo-rong-duong-bay-noi-dia-va-quoc-te-trong-dip-he",
+          "publishedDate": "2026-06-17",
+          "precision": "day",
+          "source": "scoped_original_article_day",
+          "publicationDateKind": "original",
+          "publicationDatePolicy": "original_only",
+          "publicationPrecisionPolicy": "user_confirmed_original_day_precision",
+          "datePrecisionAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "mxpress.vn",
+            "confirmation": "original_date_only_without_defaulted_clock_2026-11-17"
+          }
+        }
+      }
+    ],
+    "liveHttpVerified": true,
+    "paidAiCalls": 0
+  },
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": ".post-detail p"
+  },
+  "publicationTimePolicy": "original_clock_required",
+  "publicationArticleScope": ".col-sm-12.col-md-9:has(> .b-article > .b-meta)"
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nguoilamnghe.com.vn",
+  "siteId": "nguoilamnghe.com.vn",
+  "registrableDomain": "nguoilamnghe.com.vn",
+  "homepage": "https://nguoilamnghe.com.vn/",
+  "allowedHosts": [
+    "nguoilamnghe.com.vn",
+    "www.nguoilamnghe.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://nguoilamnghe.com.vn/",
+    "categories": [
+      "https://nguoilamnghe.com.vn/thoi-su-301.html",
+      "https://nguoilamnghe.com.vn/thuong-mai-291.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep-331.html",
+      "https://nguoilamnghe.com.vn/hoi-nhap-341.html",
+      "https://nguoilamnghe.com.vn/thi-truong-351.html",
+      "https://nguoilamnghe.com.vn/tai-chinh-361.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep-371.html",
+      "https://nguoilamnghe.com.vn/phap-luat-311.html",
+      "https://nguoilamnghe.com.vn/cong-nghe-381.html",
+      "https://nguoilamnghe.com.vn/van-hoa--xa-hoi-391.html"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "VPBank và AIA giới thiệu Tinh Hoa Thịnh Vượng, sản phẩm bảo hiểm kết hợp bảo vệ và đầu tư dành cho khách hàng cao cấp",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": "#ContentPlaceHolder1_DataList2_Labelngaygui1_0",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".catItemIntroText",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:16:04.904Z",
+    "frozenAt": "2026-11-16T02:16:02.564Z",
+    "trainingUrl": "https://nguoilamnghe.com.vn/thi-truong/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-san-pham-bao-hiem-ket-hop-bao-ve-va-dau-tu-danh-cho-khach-hang-cao-cap-628572.html",
+    "independentHoldouts": [
+      "https://nguoilamnghe.com.vn/doanh-nghiep/cong-bo-chuoi-su-kien-ngay-thanh-toan-so-viet-nam-2026-626012.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep/thanh-toan-qr-xuyen-bien-gioi-tu-tien-ich-den-dong-luc-tang-truong-moi-614692.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://nguoilamnghe.com.vn/thi-truong/vpbank-va-aia-gioi-thieu-tinh-hoa-thinh-vuong-san-pham-bao-hiem-ket-hop-bao-ve-va-dau-tu-danh-cho-khach-hang-cao-cap-628572.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep/cong-bo-chuoi-su-kien-ngay-thanh-toan-so-viet-nam-2026-626012.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep/thanh-toan-qr-xuyen-bien-gioi-tu-tien-ich-den-dong-luc-tang-truong-moi-614692.html",
+      "https://nguoilamnghe.com.vn/van-hoa--xa-hoi/nguoi-giu-bi-quyet-nhay-lua-630042.html",
+      "https://nguoilamnghe.com.vn/van-hoa--xa-hoi/phu-tho-nang-tam-thuong-hieu-gao-ngon-phu-xuan-630032.html",
+      "https://nguoilamnghe.com.vn/van-hoa--xa-hoi/anh-kua--dua-dac-san-ca-mau-vuon-ra-the-gioi-630022.html",
+      "https://nguoilamnghe.com.vn/cong-nghe/co-hoi-nhan-doi-uu-dai-khi-dat-coc-o-to-dien-vinfast-tai-trung-tam-thuong-mai-vincom-629872.html",
+      "https://nguoilamnghe.com.vn/cong-nghe/phep-thu-lon-doi-voi-thi-truong-ai-va-chuoi-cung-ung-ban-dan-630012.html",
+      "https://nguoilamnghe.com.vn/phap-luat/de-xuat-lam-ro-chung-tu-thanh-toan-khi-doanh-nghiep-mua-hang-tu-ho-kinh-doanh-629982.html",
+      "https://nguoilamnghe.com.vn/thoi-su/thu-tuong-yeu-cau-ra-soat-viec-cap-phep-co-quan-bao-chi-thuoc-hoi-629942.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep/giai-thuong-tinh-hoa-viet-2026-danh-thuc-di-san-kien-tao-suc-manh-van-hoa-quoc-gia-629932.html",
+      "https://nguoilamnghe.com.vn/doanh-nghiep/chuyen-gia-noi-gi-ve-viec-tp-hcm-phat-hanh-trai-phieu-cong-trinh-bang-usd-629852.html",
+      "https://nguoilamnghe.com.vn/thi-truong/thi-truong-bac-doi-mat-nam-thieu-hut-nguon-cung-thu-sau-lien-tiep-629912.html",
+      "https://nguoilamnghe.com.vn/thuong-mai/rau-qua-viet-nam-thu-ve-8-29-ti-usd-mot-thi-truong-chiem-gan-23-629882.html",
+      "https://nguoilamnghe.com.vn/hoi-nhap/cuoc-gap-giua-lanh-dao-my-trung-quoc-va-nga-ky-vong-mo-ra-kenh-doi-thoai-giua-ba-cuong-quoc-630002.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep/phai-doan-xuc-tien-thuong-mai-cua-bo-nong-nghiep-hoa-ki-tham-quan-nha-may-sua-cua-vinamilk-629992.html",
+      "https://nguoilamnghe.com.vn/thuong-mai/xuat-khau-ho-tieu-va-gia-vi-viet-nam-huong-toi-moc-2-4-ty-usd-nam-2026-629972.html",
+      "https://nguoilamnghe.com.vn/tai-chinh/tin-dung-tang-manh-tai-nhom-ngan-hang-lon-va-cho-vay-du-an-ha-tang-trong-diem-duoc-mien-room-629962.html",
+      "https://nguoilamnghe.com.vn/thi-truong/vi-sao-dau-giam-tu-tren-100-usd-xuong-vung-90-usd-van-khong-cuu-my-khoi-lam-phat-629952.html",
+      "https://nguoilamnghe.com.vn/tai-chinh/nhnn-bat-dau-mua-usd-trang-thai-ngoai-te-cua-cac-ngan-hang-ra-sao-629862.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep/chuyen-gia-ngan-hang-it-dong-luc-cho-vay-doanh-nghiep-nho-vi-ngai-rui-ro-629842.html",
+      "https://nguoilamnghe.com.vn/thoi-su/le-ky-niem-950-nam-quoc-tu-giam--quoc-hoc-viet-nam-629802.html",
+      "https://nguoilamnghe.com.vn/thoi-su/tong-bi-thu-chu-tich-nuoc-to-lam-se-tham-du-tuan-le-cap-cao-apec-lan-thu-33-629682.html",
+      "https://nguoilamnghe.com.vn/thoi-su/hom-nay-quoc-hoi-thong-qua-hang-loat-luat-quan-trong-va-quyet-dinh-cong-tac-nhan-su-629652.html",
+      "https://nguoilamnghe.com.vn/thoi-su/festival-quoc-te-nganh-hang-lua-gao-viet-nam-dien-ra-tu-ngay-22-den-25-11-voi-nhieu-su-kien-quan-trong-629512.html",
+      "https://nguoilamnghe.com.vn/cong-nghe/motor-mai-anh-uy-tin-tao-nen-thuong-hieu-414112.html",
+      "https://nguoilamnghe.com.vn/hoi-nhap/cac-cuoc-bau-cu-then-chot-trong-nam-2025-414022.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep/tien-giang-doanh-nghiep-tang-toc-san-xuat-no-luc-giu-chan-nguoi-lao-dong-414102.html",
+      "https://nguoilamnghe.com.vn/thuong-mai/nhieu-co-hoi-cho-trai-sau-rieng-414092.html",
+      "https://nguoilamnghe.com.vn/thi-truong/trien-khai-cong-tac-bao-dam-an-toan-thuc-pham-tet-nguyen-dan-at-ty-va-mua-le-hoi-xuan-2025-414042.html",
+      "https://nguoilamnghe.com.vn/thuong-mai/eu--anh-xem-xet-hoan-thue-10-doi-voi-o-to-dien-629772.html",
+      "https://nguoilamnghe.com.vn/thuong-mai/gia-muc-ca-thu-tang-manh-thi-truong-tom-it-bien-dong-629642.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep/vefta-mo-rong-du-dia-uu-dai-thue-quan-cho-hang-viet-629752.html",
+      "https://nguoilamnghe.com.vn/cong-nghiep/du-bao-gdp-nam-2026-tang-khoang-9-5--9-7-dau-tu-tang-tot-nhung-tieu-dung-dang-cham-hon-ky-vong-629592.html",
+      "https://nguoilamnghe.com.vn/hoi-nhap/dua-quan-he-huu-nghi-truyen-thong-hop-tac-toan-dien-viet-nam--cuba-di-vao-chieu-sau-629832.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

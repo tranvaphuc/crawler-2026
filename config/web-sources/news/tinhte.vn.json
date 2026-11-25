@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tinhte.vn",
+  "siteId": "tinhte.vn",
+  "registrableDomain": "tinhte.vn",
+  "homepage": "https://tinhte.vn/",
+  "allowedHosts": [
+    "tinhte.vn",
+    "www.tinhte.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tinhte.vn/",
+    "categories": []
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "WSJ: Megaspeed thu xếp gần 12 tỷ USD chip Nvidia, hồ sơ chưa rõ đã giao bao nhiêu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T02:00:35.776Z",
+    "frozenAt": "2026-11-16T02:00:28.140Z",
+    "trainingUrl": "https://tinhte.vn/thread/wsj-megaspeed-thu-xep-gan-12-ty-usd-chip-nvidia-ho-so-chua-ro-da-giao-bao-nhieu.4192752/",
+    "independentHoldouts": [
+      "https://tinhte.vn/thread/surface-laptop-ultra-microsoft-xac-nhan-lich-cap-nhat-den-nam-2032.4188517",
+      "https://tinhte.vn/thread/lg-quet-sach-6-hang-muc-best-picks-2026-cua-consumer-reports.4189065"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tinhte.vn/thread/wsj-megaspeed-thu-xep-gan-12-ty-usd-chip-nvidia-ho-so-chua-ro-da-giao-bao-nhieu.4192752/",
+      "https://tinhte.vn/thread/surface-laptop-ultra-microsoft-xac-nhan-lich-cap-nhat-den-nam-2032.4188517",
+      "https://tinhte.vn/thread/lg-quet-sach-6-hang-muc-best-picks-2026-cua-consumer-reports.4189065",
+      "https://tinhte.vn/thread/infographic-20-nam-macbook-pro-qua-13-cot-moc-dang-nho.4189215",
+      "https://tinhte.vn/thread/tv-samsung-2026-ho-tro-bixby-tieng-viet-day-du-tich-hop-tro-ly-ai-de-tim-kiem-thong-tin.4189400/",
+      "https://tinhte.vn/thread/jensen-huang-tinh-quay-lai-lam-ceo-nvidia-bo-truong-tai-chinh-my-doi-tim-ceo-tu-ben-ngoai.4192754/",
+      "https://tinhte.vn/thread/tong-hop-nhan-xet-apple-homeview-loa-va-thiet-ke-duoc-khen-siri-van-la-diem-yeu.4192715/",
+      "https://tinhte.vn/thread/leica-cine-compact-1-hinh-anh-rat-net-va-mau-sac-dep.4191979/",
+      "https://tinhte.vn/thread/danh-gia-aorus-rtx-5070-ti-infinity-card-dep-nhat-minh-tung-dung-mat-giau-day.4191899/",
+      "https://tinhte.vn/thread/minh-xem-spacex-lan-dau-bat-duoc-tau-starship-bang-thap-phong-day-la-cot-moc-lon.4192646/",
+      "https://tinhte.vn/thread/100-nguoi-anh-huong-nhat-lich-su-05-khong-tu-tu-lop-hoc-nuoc-lo-toi-82-bia-tien-si-o-van-mieu.4192413/",
+      "https://tinhte.vn/thread/subaru-ra-mat-wrx-sti-sport-r-so-san-6-cap-ty85-gia-5-48-trieu-yen.4192625/",
+      "https://tinhte.vn/thread/samsung-galaxy-z-fold7-sau-9-thang-su-dung-chiec-dien-thoai-gap-chuan-muc.4121018/",
+      "https://tinhte.vn/thread/100-gio-voi-jbl-live-780nc-chat-am-tram-dac-trung-pin-cuc-lau-mau-cam-thoi-trang.4164394/",
+      "https://tinhte.vn/thread/tren-tay-chi-tiet-balo-osprey-arcane-large-day-7-nam-troi-moi-doi-balo-va-cam-thay-hai-long.4162039/",
+      "https://tinhte.vn/thread/blg-thang-gen-g-3-1-vo-dich-cktg-lmht-2026.4192639/",
+      "https://tinhte.vn/thread/galaxy-z-fold8-va-honor-magic-v5-40-trieu-hay-34-trieu-chon-may-gap-nao.4192619/",
+      "https://tinhte.vn/thread/huawei-watch-fit-4-pro-man-3-000-nit-lan-40-m-doi-cu-giam-gia-co-con-dang-mua.4192620/",
+      "https://tinhte.vn/thread/hat-blue-bottle-qua-dam-thay-barista-bao-xay-tho-hon-la-vua.4192624/",
+      "https://tinhte.vn/thread/tong-hop-kien-thuc-ve-xe-dap-cho-nguoi-moi-nhap-mon.3715908/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

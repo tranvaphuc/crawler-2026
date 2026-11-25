@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "siteName": "daibieunhandan.vn",
+  "siteId": "daibieunhandan.vn",
+  "registrableDomain": "daibieunhandan.vn",
+  "homepage": "https://daibieunhandan.vn/",
+  "allowedHosts": [
+    "daibieunhandan.vn",
+    "www.daibieunhandan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Từ Hiến pháp 1946 nghĩ về quyền chất vấn",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:41:43.740Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://daibieunhandan.vn/tu-hien-phap-1946-nghi-ve-quyen-chat-van-10442439.html",
+      "https://daibieunhandan.vn/bao-tang-atk-tan-trao-boi-dap-tri-thuc-va-truyen-cam-hung-long-tu-hao-dan-toc-10442428.html",
+      "https://daibieunhandan.vn/tan-trao-gin-giu-mach-nguon-cach-mang-tiep-noi-trach-nhiem-voi-lich-su-10442436.html",
+      "https://daibieunhandan.vn/quoc-hoi-viet-nam-tu-khoi-nguon-tan-trao-den-khat-vong-phat-trien-10442422.html",
+      "https://daibieunhandan.vn/kinh-nghiem-lap-hien-tu-hien-phap-nam-1946-hoan-thien-thiet-che-chu-tich-nuoc-trong-xay-dung-va-hoan-thien-nha-nuoc-phap-quyen-xa-hoi-chu-nghia-viet-nam-10442409.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://daibieunhandan.vn/",
+    "categories": [
+      "https://daibieunhandan.vn/bao-ve-nen-tang-tu-tuong-cua-dang",
+      "https://daibieunhandan.vn/tin-moi-nhat"
+    ],
+    "legacyArticlePattern": "^(http(s)?://)?(.*?\\.)?daibieunhandan.vn/.*?&NewsId=(\\d{5,})$",
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "daibieunhandan.vn",
+    "checkedAt": "2026-11-09T03:56:57.415Z",
+    "url": "https://daibieunhandan.vn/tu-hien-phap-1946-nghi-ve-quyen-chat-van-10442439.html",
+    "finalUrl": "https://daibieunhandan.vn/tu-hien-phap-1946-nghi-ve-quyen-chat-van-10442439.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 8810,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "daibieunhandan.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 56,
+    "checkedArticleUrls": 58,
+    "freshArticleChecks": 21,
+    "parserIssues": 2,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 56,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 2,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 1,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 58,
+        "passed": 56,
+        "distinctHashes": 56
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://daibieunhandan.vn/khai-thac-toi-da-gia-tri-van-hoa-hinh-thanh-cung-chieu-dai-lich-su-dan-toc-10442717.html",
+      "https://daibieunhandan.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-dong-chu-tich-dang-duy-tan-nhat-ban-fujita-fumitake-10442710.html",
+      "https://daibieunhandan.vn/hoan-thien-chinh-sach-tao-dong-luc-phat-trien-cac-linh-vuc-van-hoa-10442711.html",
+      "https://daibieunhandan.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-ban-chap-hanh-trung-uong-dang-cong-san-nhat-ban-shii-kazuo-10442696.html",
+      "https://daibieunhandan.vn/mo-rong-hop-tac-nghi-vien-tao-dong-luc-moi-cho-quan-he-viet-nam-vuong-quoc-anh-10442718.html",
+      "https://daibieunhandan.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-cac-nguyen-thu-tuong-nhat-ban-10442707.html",
+      "https://daibieunhandan.vn/pho-chu-tich-hoi-dong-dan-toc-quang-van-huong-gap-mat-dai-su-philippines-tai-viet-nam-10442719.html",
+      "https://daibieunhandan.vn/phat-bieu-cua-tong-bi-thu-chu-tich-nuoc-to-lam-tai-quoc-hoi-nhat-ban-thong-diep-ve-vi-the-viet-nam-trong-ky-nguyen-moi-10442620.html",
+      "https://daibieunhandan.vn/mot-dau-moi-quan-ly-nhung-trach-nhiem-phai-ro-den-cung-10442637.html",
+      "https://daibieunhandan.vn/ket-noi-nguon-luc-nhat-ban-voi-khat-vong-phat-trien-cua-viet-nam-10442638.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 2
+    },
+    "checkedAt": "2026-11-10T09:14:48.258Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/daibieunhandan.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "schemaVersion": 1,
+      "siteName": "daibieunhandan.vn",
+      "siteId": "daibieunhandan.vn",
+      "registrableDomain": "daibieunhandan.vn",
+      "homepage": "https://daibieunhandan.vn/",
+      "allowedHosts": [
+        "daibieunhandan.vn",
+        "www.daibieunhandan.vn"
+      ],
+      "timezone": "Asia/Ho_Chi_Minh",
+      "identityEncoding": "latin1",
+      "title": {
+        "value": "Từ Hiến pháp 1946 nghĩ về quyền chất vấn",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".c-news-detail .entry",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "authorStrategy": "jsonld_or_visible_or_site_fallback",
+      "stage": "learned_requires_independent_validation",
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-10T06:52:20.178Z",
+        "trainingUrls": [
+          "https://daibieunhandan.vn/dua-quan-he-viet-trung-ngay-cang-di-vao-chieu-sau-thuc-chat-va-ben-vung-10434040.html",
+          "https://daibieunhandan.vn/dau-an-viet-nam-tai-nghi-truong-nhat-ban-hop-tac-de-cung-but-pha-10442658.html"
+        ],
+        "holdoutUrls": [
+          "https://daibieunhandan.vn/nhung-tram-phat-song-cua-dang-noi-bien-cuong-bai-3-anh-sang-so-soi-duong-noi-coi-nguon-pac-bo-10440782.html",
+          "https://daibieunhandan.vn/doi-moi-phuong-thuc-lanh-dao-cua-dang-qua-thuc-tien-kho-bac-nha-nuoc-tu-tinh-gon-den-hieu-nang-hieu-luc-hieu-qua-10440734.html"
+        ]
+      }
+    }
+  ]
+}

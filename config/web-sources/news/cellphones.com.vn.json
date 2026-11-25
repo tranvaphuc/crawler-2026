@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cellphones.com.vn",
+  "siteId": "cellphones.com.vn",
+  "registrableDomain": "cellphones.com.vn",
+  "homepage": "https://cellphones.com.vn/",
+  "allowedHosts": [
+    "cellphones.com.vn",
+    "www.cellphones.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://cellphones.com.vn/sforum",
+    "categories": [
+      "https://cellphones.com.vn/sforum"
+    ],
+    "requiredArticlePattern": "^https?://(?:www\\.)?cellphones\\.com\\.vn/sforum/[^?#]+",
+    "verifiedAt": "2026-11-17T05:12:27.972Z"
+  },
+  "title": {
+    "value": "Trên tay LG UltraGear FHD NATIVE 1000Hz: Khung hình \"xé gió\", vũ khí tối thượng cho dân eSports, giá 25.99 triệu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".content-detail",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:32.446Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:25.320Z",
+    "independentHoldouts": [
+      "https://cellphones.com.vn/sforum/samsung-galaxy-tab-s12-series-co-gi-moi",
+      "https://cellphones.com.vn/sforum/so-sanh-asus-rog-strix-g16-vs-tuf-gaming-a14",
+      "https://cellphones.com.vn/sforum/apple-macbook-pro-proled-ra-mat"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://cellphones.com.vn/sforum/tren-tay-lg-ultragear-fhd-native-1000hz-25-inch",
+      "https://cellphones.com.vn/sforum/samsung-galaxy-tab-s12-series-co-gi-moi",
+      "https://cellphones.com.vn/sforum/so-sanh-asus-rog-strix-g16-vs-tuf-gaming-a14",
+      "https://cellphones.com.vn/sforum/apple-macbook-pro-proled-ra-mat"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

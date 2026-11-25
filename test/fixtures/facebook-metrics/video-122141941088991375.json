@@ -1,0 +1,205 @@
+{
+  "input": "61579741268314_122141941088991375",
+  "finalUrl": "https://www.facebook.com/61579741268314/videos/1579559363548547/",
+  "payloads": [
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "data": {
+          "video": {
+            "story": {
+              "attachments": [
+                {
+                  "media": {
+                    "__typename": "Video",
+                    "id": "1579559363548547",
+                    "permalink_url": "https://www.facebook.com/reel/1579559363548547/",
+                    "url": "https://www.facebook.com/reel/1579559363548547/"
+                  }
+                }
+              ],
+              "id": "UzpfSTYxNTc5NzQxMjY4MzE0OlZLOjE1Nzk1NTkzNjM1NDg1NDc="
+            },
+            "id": "1579559363548547"
+          }
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "1579559363548547"
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "1579559363548547",
+          "title": {},
+          "feedback": {
+            "id": "ZmVlZGJhY2s6cGZiaWQwMnFQYWk3dUczTmFjeU1iYXE2emlldk1kRHFlZTVuZmRyazhyaEtVQWZHQUpvSjJyVEMyNnhLUXdwQ1phTTlHekhs",
+            "comment_rendering_instance": {
+              "comments": {
+                "total_count": 0
+              }
+            },
+            "reaction_count": {
+              "count": 0,
+              "is_empty": true
+            },
+            "top_reactions": {
+              "edges": []
+            },
+            "total_comment_count": 0,
+            "video_view_count_renderer": {
+              "__typename": "UFI2ViewCountRenderer",
+              "feedback": {
+                "associated_video": {
+                  "id": "1579559363548547"
+                },
+                "video_view_count": 2,
+                "video_post_view_count": 2,
+                "play_count": 14,
+                "id": "ZmVlZGJhY2s6cGZiaWQwMnFQYWk3dUczTmFjeU1iYXE2emlldk1kRHFlZTVuZmRyazhyaEtVQWZHQUpvSjJyVEMyNnhLUXdwQ1phTTlHekhs"
+              }
+            }
+          },
+          "creation_story": {
+            "id": "UzpfSTYxNTc5NzQxMjY4MzE0OlZLOjE1Nzk1NTkzNjM1NDg1NDc="
+          }
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story"
+        ],
+        "data": {
+          "attachments": [
+            {
+              "media": {
+                "__typename": "Video",
+                "title": {},
+                "creation_story": {
+                  "attachments": [
+                    {}
+                  ],
+                  "comet_sections": {
+                    "title": {
+                      "__typename": "CometFeedStoryTitleWithActorStrategy",
+                      "story": {
+                        "id": "UzpfSTYxNTc5NzQxMjY4MzE0OlZLOjE1Nzk1NTkzNjM1NDg1NDc=",
+                        "post_id": "122141941088991375",
+                        "actors": [
+                          {
+                            "__typename": "User",
+                            "id": "61579741268314"
+                          }
+                        ],
+                        "title": null,
+                        "comet_sections": {}
+                      }
+                    }
+                  },
+                  "id": "UzpfSTYxNTc5NzQxMjY4MzE0OlZLOjE1Nzk1NTkzNjM1NDg1NDc="
+                },
+                "id": "1579559363548547"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story"
+        ],
+        "data": {}
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "id": "1579559363548547"
+        }
+      }
+    },
+    {
+      "query": "adp_CometVideoHomeNewPermalinkHeroUnitQueryRelayPreloader_regression",
+      "result": {
+        "path": [
+          "video",
+          "story",
+          "attachments",
+          0,
+          "media"
+        ],
+        "data": {
+          "feedback": {
+            "id": "ZmVlZGJhY2s6cGZiaWQwMnFQYWk3dUczTmFjeU1iYXE2emlldk1kRHFlZTVuZmRyazhyaEtVQWZHQUpvSjJyVEMyNnhLUXdwQ1phTTlHekhs",
+            "associated_video": {
+              "id": "1579559363548547"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "siteName": "htcc.vn",
+  "siteId": "htcc.vn",
+  "registrableDomain": "htcc.vn",
+  "homepage": "https://htcc.vn/",
+  "allowedHosts": [
+    "htcc.vn",
+    "www.htcc.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://htcc.vn/",
+    "categories": [
+      "https://htcc.vn/thanh-pho-24h",
+      "https://htcc.vn/nang-dong-phuong-nam",
+      "https://htcc.vn/tam-diem-247",
+      "https://htcc.vn/dao-tao",
+      "https://htcc.vn/truyen-thong-chinh-sach",
+      "https://htcc.vn/tin-nong-dia-phuong",
+      "https://htcc.vn/dich-vu",
+      "https://htcc.vn/canh-bao-phan-hoi",
+      "https://htcc.vn/thong-cao-bao-chi"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "htcc.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  },
+  "title": {
+    "value": "TP.HCM: Doanh nghiệp công nghệ, tài chính... tung chính sách 'khủng' cho đợt khuyến mãi, kích cầu",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".block-sc-publish-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:47.349Z",
+    "frozenAt": "2026-11-16T01:58:44.984Z",
+    "trainingUrl": "https://htcc.vn/tp-hcm-doanh-nghiep-cong-nghe-tai-chinh-tung-chinh-sach-khung-cho-dot-khuyen-mai-kich-cau-1023311.html",
+    "independentHoldouts": [
+      "https://htcc.vn/lai-phat-hien-thit-lon-bat-thuong-tai-truong-mam-non-phuong-liet-1022926.html",
+      "https://htcc.vn/nhieu-doanh-nghiep-cai-so-lui-loi-nhuan-1022780.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://htcc.vn/tp-hcm-doanh-nghiep-cong-nghe-tai-chinh-tung-chinh-sach-khung-cho-dot-khuyen-mai-kich-cau-1023311.html",
+      "https://htcc.vn/lai-phat-hien-thit-lon-bat-thuong-tai-truong-mam-non-phuong-liet-1022926.html",
+      "https://htcc.vn/nhieu-doanh-nghiep-cai-so-lui-loi-nhuan-1022780.html",
+      "https://htcc.vn/tang-uu-dai-tao-mai-luc-thi-truong-tieu-dung-cuoi-nam-1023585.html",
+      "https://htcc.vn/tin-tuc-sang-16-11-trung-tam-tai-chinh-quoc-te-tp-hcm-ra-mat-hoc-vien-dao-tao-nhan-luc-1023586.html",
+      "https://htcc.vn/tin-tuc-the-gioi-16-11-jensen-huang-tro-lai-lam-ceo-nvidia-ly-do-estonia-dong-bien-gioi-voi-nga-1023588.html",
+      "https://htcc.vn/nha-o-xa-hoi-du-kien-chi-duoc-ban-lai-sau-5-nam-cho-nguoi-du-dieu-kien-gia-ban-do-cac-ben-thoa-thuan-1023587.html",
+      "https://htcc.vn/gia-vang-lao-doc-chuyen-gia-noi-mua-luot-song-tiem-an-rui-ro-1023594.html",
+      "https://htcc.vn/dai-hoi-the-thao-toan-quoc-lan-thu-x-nam-2026-1023593.html",
+      "https://htcc.vn/tp-hcm-cuoi-the-ky-21-co-the-nong-them-gan-4-do-c-tang-3-thang-nang-nong-moi-nam-1023596.html",
+      "https://htcc.vn/hoc-sinh-tp-hcm-se-duoc-tim-hieu-hat-boi-cai-luong-1023595.html",
+      "https://htcc.vn/nhung-hang-cay-xanh-o-tphcm-bi-nep-bien-dang-1023592.html",
+      "https://htcc.vn/ngay-con-con-me-thong-tri-phong-ve-giua-luc-nhieu-phim-ha-nhiet-1023591.html",
+      "https://htcc.vn/tp-hcm-trung-bay-nhung-phat-hien-khao-co-ve-thanh-co-thuong-cang-co-1023589.html",
+      "https://htcc.vn/doc-dao-day-con-bat-ca-mua-nuoc-noi-o-can-tho-1023590.html",
+      "https://htcc.vn/vu-lua-dao-gan-1-000-ti-cuu-tong-giam-doc-sen-tai-thu-huong-loi-225-ti-mua-nha-xe-bmw-1023584.html",
+      "https://htcc.vn/cac-ong-ba-phan-vu-sua-nguyen-van-bam-tron-huynh-hello-trung-cu-truong-ap-o-can-tho-1023582.html",
+      "https://htcc.vn/khoi-to-3-chu-tiem-vang-vu-lam-gia-nhan-hieu-trang-suc-noi-tieng-1023583.html",
+      "https://htcc.vn/bo-chay-khi-csgt-ra-hieu-lenh-phong-xe-98km-h-tai-xe-bi-phat-96-5-trieu-dong-1023581.html",
+      "https://htcc.vn/them-7-truong-dai-hoc-duoc-uu-tien-dau-tu-phong-thi-nghiem-ban-dan-3-co-so-khong-con-gop-mat-1023578.html",
+      "https://htcc.vn/tp-hcm-nang-cap-hang-loat-tuyen-hem-truoc-tet-go-diem-nghen-ha-tang-1023571.html",
+      "https://htcc.vn/sao-giua-thang-11-roi-tp-hcm-van-con-mua-1023553.html",
+      "https://htcc.vn/bat-giam-nguoi-phu-nu-dung-dau-he-thong-da-cap-bitharvest-1023570.html",
+      "https://htcc.vn/luat-su-ha-hai-duoc-bau-lam-chu-nhiem-doan-luat-su-tp-hcm-nhiem-ky-2026-2031-1023565.html",
+      "https://htcc.vn/cong-an-tp-hcm-bat-chu-kenh-tiktok-a-ty-tiktok-vi-dang-huong-dan-su-dung-ma-tuy-1023539.html",
+      "https://htcc.vn/dau-tu-hon-4-300-ty-dong-chinh-trang-rach-ong-lon-1023579.html",
+      "https://htcc.vn/xe-ben-tong-hai-chi-em-thuong-vong-o-tphcm-1023580.html",
+      "https://htcc.vn/hon-600-trieu-dong-dong-gop-quy-vi-nguoi-ngheo-quy-vi-bien-dao-que-huong-1023568.html",
+      "https://htcc.vn/tphcm-ron-rang-ngay-hoi-dai-doan-ket-toan-dan-toc-o-khu-dan-cu-1023566.html",
+      "https://htcc.vn/xep-hang-check-in-nhan-qua-dip-cuoi-tuan-tai-tphcm-1023563.html",
+      "https://htcc.vn/tphcm-tuyen-duong-1-113-nha-giao-tre-tieu-bieu-1023558.html",
+      "https://htcc.vn/gia-ca-dau-ngay-nam-rom-cham-moc-110-000-dong-kg-luong-ca-ve-cho-tp-hcm-giam-do-bien-dong-1023552.html",
+      "https://htcc.vn/tphcm-mua-trang-troi-vao-sang-cuoi-tuan-1023545.html",
+      "https://htcc.vn/them-2-dem-sao-nhap-ngu-concert-lieu-8-guong-mat-hot-cua-mua-2026-co-hoi-ngo-1023540.html",
+      "https://htcc.vn/thu-tuong-phe-chuan-nhan-su-5-tinh-thanh-pho-1023541.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

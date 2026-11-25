@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "siteName": "xethitruong.vn",
+  "siteId": "xethitruong.vn",
+  "registrableDomain": "xethitruong.vn",
+  "homepage": "https://xethitruong.vn/",
+  "allowedHosts": [
+    "xethitruong.vn",
+    "www.xethitruong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Green SM đào tạo sơ cấp cứu cho hơn 300.000 tài xế trên cả nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".divTimes",
+    "attribute": null,
+    "index": 0,
+    "priority": 50
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Hơn 239.000 xe Volkswagen bị triệu hồi do lỗi hệ thống lái gây nguy hiểm",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "minute",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "strategy": "selector",
+        "selector": ".divTimes",
+        "attribute": null,
+        "index": 0,
+        "priority": 50
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "#contentNN",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:07:06.846Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://xethitruong.vn/Green-SM-dao-tao-so-cap-cuu-cho-hon-300000-tai-xe-tren-ca-nuoc_n35723.html",
+      "https://xethitruong.vn/Hon-239000-xe-Volkswagen-bi-trieu-hoi-do-loi-he-thong-lai-gay-nguy-hiem_n35731.html",
+      "https://xethitruong.vn/Xe-ban-tai-Toyota-Hilux-tang-truong-manh-trong-thang-102026_n35770.html",
+      "https://xethitruong.vn/Nguon-cung-o-to-vuot-cau-gan-300000-xe-cuoc-dua-giam-gia-cuoi-nam-nong-len_n35767.html",
+      "https://xethitruong.vn/Toyota-Viet-Nam-cong-bo-doanh-so-ban-hang-thang-92026-va-chuong-trinh-uu-dai-cho-khach-hang-mua-xe-thang-102026_n35687.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://xethitruong.vn/",
+    "categories": [
+      "https://xethitruong.vn/dien-dan/",
+      "https://xethitruong.vn/O-t0/",
+      "https://xethitruong.vn/Xe-may/",
+      "https://xethitruong.vn/gia-xe/",
+      "https://xethitruong.vn/Luat-xe/",
+      "https://xethitruong.vn/choi-xe/",
+      "https://xethitruong.vn/cho-xe/",
+      "https://xethitruong.vn/cong-nghe/",
+      "https://xethitruong.vn/video/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "xethitruong.vn",
+    "checkedAt": "2026-11-09T03:57:40.314Z",
+    "url": "https://xethitruong.vn/Green-SM-dao-tao-so-cap-cuu-cho-hon-300000-tai-xe-tren-ca-nuoc_n35723.html",
+    "finalUrl": "https://xethitruong.vn/Green-SM-dao-tao-so-cap-cuu-cho-hon-300000-tai-xe-tren-ca-nuoc_n35723.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3990,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "xethitruong.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 21,
+    "checkedArticleUrls": 24,
+    "freshArticleChecks": 10,
+    "parserIssues": 3,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 20,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 9,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 450,
+        "passed": 18,
+        "distinctHashes": 17
+      },
+      {
+        "name": "video",
+        "discovered": 25,
+        "passed": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://xethitruong.vn/Mercedes-Benz-trieu-hoi-toi-215000-xe-sang-S-Class-do-loi-ong-phanh-truoc_n35778.html",
+      "https://xethitruong.vn/Xe-ban-tai-Toyota-Hilux-tang-truong-manh-trong-thang-102026_n35770.html",
+      "https://xethitruong.vn/Nguon-cung-o-to-vuot-cau-gan-300000-xe-cuoc-dua-giam-gia-cuoi-nam-nong-len_n35767.html",
+      "https://xethitruong.vn/Hon-239000-xe-Volkswagen-bi-trieu-hoi-do-loi-he-thong-lai-gay-nguy-hiem_n35731.html",
+      "https://xethitruong.vn/Aprilia-Racing-xuat-sac-gianh-chien-thang-trong-ngay-dua-chinh-thuc-tai-Qatar_n35779.html",
+      "https://xethitruong.vn/O-to-dien-mini-Nano-S05-gia-tu-148-trieu-dong-san-sang-ban-giao-khach-hang_n35777.html",
+      "https://xethitruong.vn/Ford-Viet-Nam-tung-uu-dai-lon-cho-khach-mua-xe-thang-11-co-hoi-trung-vang-9999_n35776.html",
+      "https://xethitruong.vn/VinFast-Limo-Green-ap-dao-phan-khuc-MPV-ban-chay-hon-9-mau-xe-xang-va-hybrid-cong-lai_n35775.html",
+      "https://xethitruong.vn/Volvo-ra-mat-bo-doi-SUV-EX90-va-sedan-ES90-chay-dien-tai-Viet-Nam-gia-tu-26-ty-dong-co-gi-dang-tien_n35774.html",
+      "https://xethitruong.vn/BYD-khoi-dong-chuoi-su-kien-cong-nghe-va-lai-thu-quy-mo-toan-quoc_n35773.html",
+      "https://xethitruong.vn/Green-SM-giam-25-gia-cuoc-gan-4-thang-tai-xe-duoc-huong-100-doanh-thu_n35772.html",
+      "https://xethitruong.vn/Mercedes-Benz-Viet-Nam-trieu-hoi-loi-cum-khoa-cua-tren-hang-loat-xe-sang_n35771.html",
+      "https://xethitruong.vn/Hyundai-Tucson-Hybrid-2026-chot-gia-ban-tu-1089-ty-dong-tai-Viet-Nam_n35769.html",
+      "https://xethitruong.vn/Doanh-so-Honda-Viet-Nam-thang-10-O-to-giam-sau-xe-may-tang-55_n35768.html",
+      "https://xethitruong.vn/EICMA-2026-Nhung-buoc-tien-moi-cua-nganh-xe-hai-banh-qua-dau-an-Piaggio_n35766.html",
+      "https://xethitruong.vn/Toyota-ban-hon-6300-xe-trong-thang-10-Yaris-Cross-tiep-tuc-dan-dau_n35765.html",
+      "https://xethitruong.vn/Honda-tung-uu-dai-o-to-thang-11-Ho-tro-100-le-phi-truoc-ba-lai-suat-0_n35760.html",
+      "https://xethitruong.vn/TMT-Motors-dat-cuoc-vao-xe-dien-voi-tham-vong-mo-rong-thi-truong_n35757.html",
+      "https://xethitruong.vn/Can-canh-BYD-Sealion-5-DM-i-an-xang-nhu-ngui-gia-uu-dai-tu-659-trieu-dong_n35727.html",
+      "https://xethitruong.vn/Khoanh-khac-xe-tai-chuyen-lan-au-huc-Honda-City-tren-duong-o-Ha-Noi_n34512.html",
+      "https://xethitruong.vn/Camera-ghi-canh-Limo-Green-chieu-den-choi-mat-tai-xe-khong-giu-noi-binh-tinh_n34486.html",
+      "https://xethitruong.vn/Nguoi-phu-nu-lao-khoi-o-to-roi-bo-chay-trong-dem-nhung-van-bi-danh_n34447.html",
+      "https://xethitruong.vn/PVOIL-VOC-2026-chinh-thuc-be-mac-lo-dien-nhung-nha-vo-dich-moi_n35755.html",
+      "https://xethitruong.vn/Vespa-ky-niem-80-nam-tung-phien-ban-gioi-han-Edizione-Ottantesimo-gia-372-trieu-dong_n35745.html",
+      "https://xethitruong.vn/Mua-phuot-cuoi-nam-Can-chuan-bi-gi-cho-nhung-cung-duong-da-dia-hinh_n35742.html",
+      "https://xethitruong.vn/Nguoi-Viet-mua-gan-1-trieu-xe-may-dien-trong-9-thang-VinFast-tang-truong-152_n35759.html",
+      "https://xethitruong.vn/Yamaha-Motor-Viet-Nam-trao-tang-he-thong-loc-nuoc-sach-cho-nguoi-dan-Quang-Ngai_n35754.html",
+      "https://xethitruong.vn/Trieu-hoi-hang-loat-Suzuki-Satria-tai-Viet-Nam-vi-nguy-co-ro-ri-nhien-lieu-tu-binh-xang_n35753.html",
+      "https://xethitruong.vn/Khi-ha-tang-thay-doi-dau-la-cach-di-chuyen-toi-uu_n35749.html",
+      "https://xethitruong.vn/Volkswagen-trieu-hoi-207-xe-Tiguan-Allspace-tai-Viet-Nam-vi-nguy-co-mat-lai_n35758.html",
+      "https://xethitruong.vn/Trieu-hoi-hang-loat-xe-Jeep-Grand-Cherokee-do-loi-he-thong-treo_n35738.html",
+      "https://xethitruong.vn/NGUYEN-TACVA-QUY-DINH-CHUNG-CUA-XETHITRUONGVN_n22222.html",
+      "https://xethitruong.vn/CAC-PHUONG-THUC-THANH-TOAN_n22458.html",
+      "https://xethitruong.vn/Chinh-sach-bao-hanh-doi-tra-hang_n22461.html",
+      "https://xethitruong.vn/CHINH-SACH-GIAO-HANG-VAN-CHUYEN_n22460.html",
+      "https://xethitruong.vn/BAO-MAT-THONG-TIN_n22459.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 1,
+      "unresolved_extraction": 2
+    },
+    "checkedAt": "2026-11-10T09:18:33.164Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/xethitruong.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "xethitruong.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-16",
+    "userStatement": "giờ hiển thị là giờ việt nam"
+  }
+}

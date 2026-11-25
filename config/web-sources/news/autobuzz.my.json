@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autobuzz.my",
+  "siteId": "autobuzz.my",
+  "registrableDomain": "autobuzz.my",
+  "homepage": "https://autobuzz.my/",
+  "allowedHosts": [
+    "autobuzz.my",
+    "www.autobuzz.my"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://autobuzz.my/",
+    "categories": [
+      "https://autobuzz.my/category/news/",
+      "https://autobuzz.my/category/reviews/",
+      "https://autobuzz.my/category/car-launches/",
+      "https://autobuzz.my/category/features/",
+      "https://autobuzz.my/category/autobuzz-tv/",
+      "https://autobuzz.my/cn/"
+    ]
+  },
+  "title": {
+    "value": "Toyota Yaris facelift finally lands in Malaysia with new hammerhead face",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T23:16:55.870Z",
+    "paidAiCalls": 0,
+    "independentHoldouts": [
+      "https://autobuzz.my/2026/09/04/video-new-prancing-droptop-in-town-ferrari-amalfi-spider-launched-from-est-rm3-million/",
+      "https://autobuzz.my/2026/09/10/video-the-7-seater-volvo-ex90-is-even-faster-than-some-sports-cars/"
+    ],
+    "improvedUrls": [
+      "https://autobuzz.my/cn/2023/08/02/gallary_2022-mercedes-amg-a45s/",
+      "https://autobuzz.my/cn/2026/04/16/testdrivereport_2025_nissan_kicks/",
+      "https://autobuzz.my/cn/2026/10/20/review_mk8-5_volkswagen_golf_r/"
+    ],
+    "regressions": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://autobuzz.my/2026/11/13/toyota-yaris-facelift-finally-lands-in-malaysia-with-new-hammerhead-face/",
+      "https://autobuzz.my/2026/11/13/the-next-honda-cr-v-is-coming-in-2027-with-only-hybrid-powertrains-in-the-us/",
+      "https://autobuzz.my/2026/11/13/proton-s70-rs-previewed-as-new-top-variant-with-even-more-character/",
+      "https://autobuzz.my/2026/11/13/chery-emerges-among-biggest-winners-at-the-2026-asean-ncap-grand-prix-awards/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "value": "Toyota Yaris facelift finally lands in Malaysia with new hammerhead face",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "selector",
+        "selector": "meta[property=\"article:published_time\"]",
+        "attribute": "content",
+        "priority": 90
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".td-post-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "validation": {
+        "state": "frozen_independent_http_holdouts_passed",
+        "frozenAt": "2026-11-15T23:15:30.339Z",
+        "trainingUrls": [
+          "https://autobuzz.my/cn/2023/08/02/gallary_2022-mercedes-amg-a45s/",
+          "https://autobuzz.my/cn/2026/04/16/testdrivereport_2025_nissan_kicks/",
+          "https://autobuzz.my/cn/2026/10/20/review_mk8-5_volkswagen_golf_r/"
+        ],
+        "holdoutUrls": [
+          "https://autobuzz.my/2026/09/04/video-new-prancing-droptop-in-town-ferrari-amalfi-spider-launched-from-est-rm3-million/",
+          "https://autobuzz.my/2026/09/10/video-the-7-seater-volvo-ex90-is-even-faster-than-some-sports-cars/"
+        ]
+      }
+    }
+  ]
+}

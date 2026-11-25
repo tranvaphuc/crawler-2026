@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "siteName": "vattunongnghiep.com.vn",
+  "siteId": "vattunongnghiep.com.vn",
+  "registrableDomain": "vattunongnghiep.com.vn",
+  "homepage": "https://vattunongnghiep.com.vn/",
+  "allowedHosts": [
+    "vattunongnghiep.com.vn",
+    "www.vattunongnghiep.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Gia Lai khai trương triển lãm nông sản, tôn vinh cà phê đặc sản",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:52.187Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/gia-lai-khai-truong-trien-lam-nong-san-ton-vinh-ca-phe-dac-san.html",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/quang-tri-khanh-thanh-nha-may-bao-bi-cong-suat-700-trieu-san-pham-moi-nam.html",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/senegal-siet-chat-kiem-soat-nhap-khau-gao.html",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/hung-yen-mo-rong-khong-gian-phat-trien-cho-san-pham-ocop.html",
+      "https://vattunongnghiep.com.vn/tin-tuc/dinh-huong-phat-trien-do-thi-thong-minh-quoc-gia-giai-doan-2026-2030-tam-nhin-den-nam-2035.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://vattunongnghiep.com.vn/",
+    "categories": [
+      "https://vattunongnghiep.com.vn/tin-tuc?isFeatured=1",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau",
+      "https://vattunongnghiep.com.vn/khuyen-nong",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi?isFeatured=1",
+      "https://vattunongnghiep.com.vn/video",
+      "https://vattunongnghiep.com.vn/giai-tri",
+      "https://vattunongnghiep.com.vn/trai-dat-xanh",
+      "https://vattunongnghiep.com.vn/guong-san-xuat",
+      "https://vattunongnghiep.com.vn/vat-tu-nong-nghiep",
+      "https://vattunongnghiep.com.vn/khuyen-nong/video",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/thi-truong",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/doanh-nghiep",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/xa-hoi",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/ocop?isFeatured=1",
+      "https://vattunongnghiep.com.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "vattunongnghiep.com.vn",
+    "checkedAt": "2026-11-09T03:57:36.198Z",
+    "url": "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/gia-lai-khai-truong-trien-lam-nong-san-ton-vinh-ca-phe-dac-san.html",
+    "finalUrl": "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/gia-lai-khai-truong-trien-lam-nong-san-ton-vinh-ca-phe-dac-san.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4919,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "vattunongnghiep.com.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 14,
+    "checkedArticleUrls": 26,
+    "freshArticleChecks": 19,
+    "parserIssues": 12,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 11,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 15,
+    "categoriesFreshChecked": 1,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 1,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 120,
+        "passed": 14,
+        "distinctHashes": 11
+      },
+      {
+        "name": "video",
+        "discovered": 8,
+        "passed": 0,
+        "distinctHashes": 0
+      },
+      {
+        "name": "longform",
+        "discovered": 4,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html",
+      "https://vattunongnghiep.com.vn/tin-tuc/moi-nguoi-dan-moi-cong-dong-deu-co-the-la-chu-the-trong-cong-nghiep-van-hoa.html",
+      "https://vattunongnghiep.com.vn/khuyen-nong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu.html",
+      "https://vattunongnghiep.com.vn/giai-tri/chao-mung-ngay-van-hoa-viet-nam-loat-nha-hat-sang-den-phuc-vu-cong-chung.html",
+      "https://vattunongnghiep.com.vn/trai-dat-xanh/thanh-pho-hue-nhieu-ho-thuy-dien-tang-luu-luong-dieu-tiet-do-mua-lon.html",
+      "https://vattunongnghiep.com.vn/khuyen-nong/vietstock-2026-khang-dinh-vai-tro-ket-noi-nganh-chan-nuoi-viet-nam.html",
+      "https://vattunongnghiep.com.vn/tin-tuc/nganh-cong-thuong-giai-bai-toan-kho-ve-dien-ra-sao-bai-2-chu-dong-tu-som-de-bao-dam-dien-2027-2028.html",
+      "https://vattunongnghiep.com.vn/tin-tuc/moi-nguoi-dan-moi-cong-dong-deu-co-the-la-chu-the-trong-cong-nghiep-van-hoa.html?categoryId=1522234,1522235,1522238,1522239,1522252,5185127,5194507",
+      "https://vattunongnghiep.com.vn/tin-tuc/moi-nguoi-dan-moi-cong-dong-deu-co-the-la-chu-the-trong-cong-nghiep-van-hoa.html?categoryId=1522234",
+      "https://vattunongnghiep.com.vn/tin-tuc/nganh-cong-thuong-giai-bai-toan-kho-ve-dien-ra-sao-bai-2-chu-dong-tu-som-de-bao-dam-dien-2027-2028.html?categoryId=1522234",
+      "https://vattunongnghiep.com.vn/tin-tuc/ngay-10-11-2026-quoc-hoi-thao-luan-ve-du-an-luat-linh-vuc-van-hoa-bao-chi.html?categoryId=1522234",
+      "https://vattunongnghiep.com.vn/tin-tuc/quy-bao-hiem-xa-hoi-la-binh-oxy-cua-hang-chuc-trieu-lao-dong.html?categoryId=1522234",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/nang-cao-hieu-qua-phan-cap-cap-c-o-thuc-day-xuat-khau-ben-vung.html?categoryId=1522235",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/hoan-thien-quy-dinh-ve-danh-muc-va-chi-tieu-ky-thuat-khoang-san-xuat-khau.html?categoryId=1522235",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/xuat-khau-go-minh-bach-nguyen-lieu-de-dap-ung-quy-tac-xuat-xu.html?categoryId=1522235",
+      "https://vattunongnghiep.com.vn/xuat-nhap-khau/senegal-siet-chat-kiem-soat-nhap-khau-gao.html?categoryId=1522235",
+      "https://vattunongnghiep.com.vn/giai-tri/chao-mung-ngay-van-hoa-viet-nam-loat-nha-hat-sang-den-phuc-vu-cong-chung.html?categoryId=5185127",
+      "https://vattunongnghiep.com.vn/giai-tri/mytv-chinh-thuc-so-huu-ban-quyen-vck-fifa-u-17-world-cup-qatar-2026-.html?categoryId=5185127",
+      "https://vattunongnghiep.com.vn/giai-tri/ha-noi-them-sac-mau-tu-nhung-giai-dieu-cuoi-tuan.html?categoryId=5185127",
+      "https://vattunongnghiep.com.vn/giai-tri/ngu-cung-mang-hon-viet-vao-the-gioi-rock-tai-wefest-2026.html?categoryId=5185127",
+      "https://vattunongnghiep.com.vn/khuyen-nong/gia-lua-gao-hom-nay-ngay-10-11-2026-lua-tuoi-dong-loat-tang-manh.html?categoryId=1522238",
+      "https://vattunongnghiep.com.vn/khuyen-nong/vietstock-2026-khang-dinh-vai-tro-ket-noi-nganh-chan-nuoi-viet-nam.html?categoryId=1522238",
+      "https://vattunongnghiep.com.vn/khuyen-nong/gia-lua-gao-hom-nay-ngay-9-11-2026-gia-it-bien-dong.html?categoryId=1522238",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/tan-dung-uu-dai-fta-doanh-nghiep-can-lam-chu-quy-tac-xuat-xu.html?categoryId=1522239",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/gia-bac-hom-nay-10-11-2026-bat-tang-tro-lai.html?categoryId=1522239",
+      "https://vattunongnghiep.com.vn/kinh-te-xa-hoi/gia-vang-hom-nay-10-11-dao-chieu-tang-tro-lai.html?categoryId=1522239",
+      "https://vattunongnghiep.com.vn/nongnghiep360/gap-rut-hoan-thien-san-van-dong-pvf-60.000-cho-tai-hung-yen.html",
+      "https://vattunongnghiep.com.vn/nongnghiep360/vietnam-connect-forum-2026-dau-tu-vao-viet-nam-co-hoi-khong-chi-nam-o-dong-von.html",
+      "https://vattunongnghiep.com.vn/nongnghiep360/mua-hang-truc-tuyen-trach-nhiem-cua-san-thuong-mai-dien-tu-den-dau-.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "selector_or_layout_mismatch": 12
+    },
+    "checkedAt": "2026-11-10T09:17:45.479Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/vattunongnghiep.com.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

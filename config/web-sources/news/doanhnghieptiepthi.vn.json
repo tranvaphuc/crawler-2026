@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghieptiepthi.vn",
+  "siteId": "doanhnghieptiepthi.vn",
+  "registrableDomain": "doanhnghieptiepthi.vn",
+  "homepage": "https://doanhnghieptiepthi.vn/",
+  "allowedHosts": [
+    "doanhnghieptiepthi.vn",
+    "www.doanhnghieptiepthi.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Bắc Ninh lan tỏa giá trị văn hóa Kinh Bắc",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:35.609Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://doanhnghieptiepthi.vn/bac-ninh-lan-toa-gia-tri-van-hoa-kinh-bac-161261105213717001.htm",
+      "https://doanhnghieptiepthi.vn/vifta-dua-quan-he-kinh-te-thuong-mai-viet-nam-israel-tang-toc-161261106072111647.htm",
+      "https://doanhnghieptiepthi.vn/nguon-cung-o-to-ky-luc-tao-ap-luc-cho-thi-truong-cuoi-nam-161261104161000221.htm",
+      "https://doanhnghieptiepthi.vn/bi-thu-thanh-uy-ha-noi-tran-duc-thang-trao-huy-hieu-80-nam-tuoi-dang-tai-tp-can-tho-161261105164142838.htm",
+      "https://doanhnghieptiepthi.vn/ai-cong-nghiep-co-hoi-nang-tam-san-xuat-khang-dinh-vi-the-doanh-nghiep-viet-161261105202442663.htm"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://doanhnghieptiepthi.vn/",
+    "categories": [
+      "https://doanhnghieptiepthi.vn/tiep-thi.htm",
+      "https://doanhnghieptiepthi.vn/tiep-thi/tiep-thi-so.htm",
+      "https://doanhnghieptiepthi.vn/tiep-thi/dien-dan.htm",
+      "https://doanhnghieptiepthi.vn/tiep-thi/dia-phuong.htm",
+      "https://doanhnghieptiepthi.vn/tiep-thi/quoc-te.htm",
+      "https://doanhnghieptiepthi.vn/thi-truong.htm",
+      "https://doanhnghieptiepthi.vn/thi-truong/nhip-dap-thi-truong.htm",
+      "https://doanhnghieptiepthi.vn/thi-truong/thi-truong-tieu-dung.htm",
+      "https://doanhnghieptiepthi.vn/thi-truong/xuat-nhap-khau.htm",
+      "https://doanhnghieptiepthi.vn/dau-tu-va-tiep-thi.htm",
+      "https://doanhnghieptiepthi.vn/dau-tu-va-tiep-thi/kinh-doanh.htm",
+      "https://doanhnghieptiepthi.vn/dau-tu-va-tiep-thi/tai-chinh-dau-tu.htm",
+      "https://doanhnghieptiepthi.vn/dau-tu-va-tiep-thi/ngan-hang.htm",
+      "https://doanhnghieptiepthi.vn/dau-tu-va-tiep-thi/chung-khoan.htm",
+      "https://doanhnghieptiepthi.vn/bat-dong-san-va-tiep-thi.htm",
+      "https://doanhnghieptiepthi.vn/bat-dong-san-va-tiep-thi/nhip-cau-bds.htm",
+      "https://doanhnghieptiepthi.vn/bat-dong-san-va-tiep-thi/du-an.htm",
+      "https://doanhnghieptiepthi.vn/bat-dong-san-va-tiep-thi/tu-van.htm",
+      "https://doanhnghieptiepthi.vn/tieu-dung-va-tiep-thi.htm",
+      "https://doanhnghieptiepthi.vn/tieu-dung-va-tiep-thi/san-pham-dich-vu.htm",
+      "https://doanhnghieptiepthi.vn/tieu-dung-va-tiep-thi/bao-ve-nguoi-tieu-dung.htm",
+      "https://doanhnghieptiepthi.vn/tieu-dung-va-tiep-thi/tu-van-tieu-dung.htm",
+      "https://doanhnghieptiepthi.vn/doanh-nghiep-doanh-nhan.htm",
+      "https://doanhnghieptiepthi.vn/doanh-nghiep-doanh-nhan/doanh-nghiep.htm",
+      "https://doanhnghieptiepthi.vn/doanh-nghiep-doanh-nhan/doanh-nhan.htm",
+      "https://doanhnghieptiepthi.vn/doanh-nghiep-doanh-nhan/khoi-nghiep.htm",
+      "https://doanhnghieptiepthi.vn/video.htm",
+      "https://doanhnghieptiepthi.vn/video/cafe-cung-doanh-nhan.htm",
+      "https://doanhnghieptiepthi.vn/video/que-huong-trong-toi.htm",
+      "https://doanhnghieptiepthi.vn/video/ban-tin-thuong-hieu-viet.htm",
+      "https://doanhnghieptiepthi.vn/tap-chi-in.htm",
+      "https://doanhnghieptiepthi.vn/ky-nguyen-vuon-minh.htm",
+      "https://doanhnghieptiepthi.vn/anh.htm",
+      "https://doanhnghieptiepthi.vn/infographic.htm",
+      "https://doanhnghieptiepthi.vn/emagazine.htm"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "doanhnghieptiepthi.vn",
+    "checkedAt": "2026-11-09T03:57:00.666Z",
+    "url": "https://doanhnghieptiepthi.vn/bac-ninh-lan-toa-gia-tri-van-hoa-kinh-bac-161261105213717001.htm",
+    "finalUrl": "https://doanhnghieptiepthi.vn/bac-ninh-lan-toa-gia-tri-van-hoa-kinh-bac-161261105213717001.htm",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3866,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [
+    {
+      "title": {
+        "strategy": "jsonld",
+        "key": "headline"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "parserRepairValidation": {
+    "domain": "doanhnghieptiepthi.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 45,
+    "checkedArticleUrls": 68,
+    "freshArticleChecks": 28,
+    "parserIssues": 21,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 45,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 35,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 328,
+        "passed": 45,
+        "distinctHashes": 45
+      },
+      {
+        "name": "video",
+        "discovered": 20,
+        "passed": 0,
+        "distinctHashes": 0
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://doanhnghieptiepthi.vn/lao-cai-to-chuc-ngay-hoi-sac-mau-van-hoa-voi-nhieu-hoat-dong-dac-sac-161261109131710256.htm",
+      "https://doanhnghieptiepthi.vn/xuat-khau-dien-tu-dien-thoai-vuot-207-ty-usd-dong-gop-hon-41-kim-ngach-ca-nuoc-161261109153214645.htm",
+      "https://doanhnghieptiepthi.vn/muong-xia-noi-nhung-thanh-am-van-hoa-thai-ngan-vang-giua-dai-ngan-bien-gioi-161261109095109575.htm",
+      "https://doanhnghieptiepthi.vn/ha-noi-tiep-nhan-ho-so-mua-164-can-nha-o-xa-hoi-gia-tu-166-trieu-dong-m-161261109162552485.htm",
+      "https://doanhnghieptiepthi.vn/du-lich-thanh-hoa-giu-nhip-tang-truong-mo-rong-suc-hut-quanh-nam-161261109102506017.htm",
+      "https://doanhnghieptiepthi.vn/thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-161261108215627071.htm",
+      "https://doanhnghieptiepthi.vn/gan-20-nam-ke-mot-cau-chuyen-kien-tao-gia-tri-cho-thuong-hieu-du-lich-tphcm-161261109144646689.htm",
+      "https://doanhnghieptiepthi.vn/bac-ninh-lan-toa-gia-tri-van-hoa-kinh-bac-161261105213717001.htm",
+      "https://doanhnghieptiepthi.vn/vifta-dua-quan-he-kinh-te-thuong-mai-viet-nam-israel-tang-toc-161261106072111647.htm",
+      "https://doanhnghieptiepthi.vn/dang-uy-doanh-nghiep-phuong-ba-dinh-dau-an-xay-dung-dang-nam-2026-161261105211632899.htm",
+      "https://doanhnghieptiepthi.vn/bi-thu-thanh-uy-ha-noi-tran-duc-thang-trao-huy-hieu-80-nam-tuoi-dang-tai-tp-can-tho-161261105164142838.htm",
+      "https://doanhnghieptiepthi.vn/ngay-van-hoa-viet-nam-24-11-2026-duoc-to-chuc-lan-dau-tren-pham-vi-toan-quoc-161261105104046927.htm",
+      "https://doanhnghieptiepthi.vn/le-hoi-sen-da-fansipan-lan-dau-tien-trung-bay-nhieu-loai-sen-da-quy-hiem-161261105120454583.htm",
+      "https://doanhnghieptiepthi.vn/thanh-gia-re-dai-nao-1111-tai-dien-may-cho-lon-co-hoi-nang-cap-do-dien-may-cuoi-nam-161261110014855214.htm",
+      "https://doanhnghieptiepthi.vn/tri-tam-group-voi-he-sinh-thai-da-nganh-danh-dau-buoc-phat-trien-moi-sau-10-nam-hoat-dong-161261109124208142.htm",
+      "https://doanhnghieptiepthi.vn/hon-20-nam-kinh-nghiem-nen-tang-xay-dung-he-thong-an-ninh-chu-dong-bang-ai-161261109110447162.htm",
+      "https://doanhnghieptiepthi.vn/nhat-ban-viet-nam-tang-cuong-hop-tac-tren-moi-linh-vuc-161261109093817052.htm",
+      "https://doanhnghieptiepthi.vn/kinh-te-viet-nam-6-thang-dau-nam-2025-dat-nhieu-ket-qua-tich-cuc-161250706092241357.htm",
+      "https://doanhnghieptiepthi.vn/giao-thong-thuan-loi-giup-cat-ba-thanh-diem-den-hot-nhat-mien-bac-161250320155635245.htm",
+      "https://doanhnghieptiepthi.vn/kinh-te-xa-hoi-2-thang-dau-nam-2025-dat-nhieu-ket-qua-tich-cuc-16125030611061807.htm",
+      "https://doanhnghieptiepthi.vn/nhung-san-pham-ocop-cua-tinh-bac-giang-duoc-ua-chuong-dip-tet-nguyen-dan-2025-161250127165318398.htm",
+      "https://doanhnghieptiepthi.vn/8-diem-moi-cua-luat-cong-doan-sua-doi-161241205151545491.htm",
+      "https://doanhnghieptiepthi.vn/bac-giang-noi-luu-giu-huong-vi-am-thuc-truyen-thong-doc-dao-161241208094830788.htm",
+      "https://doanhnghieptiepthi.vn/vpdkdd-tp-can-tho-phan-cong-ky-giay-chung-nhan-quyen-su-dung-dat-quyen-so-huu-tai-san-gan-lien-voi-dat-161261109094520312.htm",
+      "https://doanhnghieptiepthi.vn/dai-ta-nguyen-thanh-trang-chung-vui-ngay-hoi-dai-doan-ket-cung-nhan-dan-xa-tan-long-161261108193718181.htm",
+      "https://doanhnghieptiepthi.vn/cao-bang-quyet-tam-but-pha-tro-thanh-trung-tam-kinh-te-thuong-mai-xuyen-bien-gioi-vung-dong-bac-16126110916145228.htm",
+      "https://doanhnghieptiepthi.vn/nha-xuat-ban-chinh-tri-quoc-gia-su-that-ky-ket-quy-che-phoi-hop-voi-truong-dai-hoc-an-giang-161261109110037422.htm",
+      "https://doanhnghieptiepthi.vn/pho-chu-tich-thuong-truc-hdnd-tp-can-tho-du-ngay-hoi-dai-doan-ket-toan-dan-toc-o-khu-dan-cu-xa-tan-hoa-161261108093616158.htm",
+      "https://doanhnghieptiepthi.vn/thanh-hoa-tang-toc-hoan-thien-vi-tri-viec-lam-9994-don-vi-da-xac-nhan-ho-so-16126110820232315.htm",
+      "https://doanhnghieptiepthi.vn/ctcp-thuong-mai-dich-vu-va-dau-tu-au-my-15-nam-vung-niem-tin-vuon-tam-moi-161261107153547881.htm",
+      "https://doanhnghieptiepthi.vn/ong-tran-phu-loc-thanh-duoc-bo-nhiem-lam-giam-doc-so-tai-chinh-tp-can-tho-161261107142301446.htm",
+      "https://doanhnghieptiepthi.vn/marketing-thoi-cong-nghe-so-doi-hoi-su-trung-thuc-va-ky-luat-phap-ly-hon-bao-gio-het-161251209085655208.htm",
+      "https://doanhnghieptiepthi.vn/tu-xo-dua-den-thi-truong-toan-cau-bai-toan-marketing-cua-vat-lieu-xanh-viet-nam-161251208102206475.htm",
+      "https://doanhnghieptiepthi.vn/trien-vong-2026-chuyen-doi-so-va-ai-dinh-hinh-lai-cac-nganh-kinh-te-o-khu-vuc-apj-161251206080828375.htm",
+      "https://doanhnghieptiepthi.vn/khi-di-san-tro-thanh-loi-the-canh-tranh-trong-chien-luoc-marketing-hien-dai-161251205085533942.htm",
+      "https://doanhnghieptiepthi.vn/ts-tran-dinh-ly-doanh-nghiep-no-luc-xay-dung-niem-tin-va-su-minh-bach-voi-cong-dong-161251203070027979.htm",
+      "https://doanhnghieptiepthi.vn/doanh-nghiep-tien-phong-nang-tam-nong-san-viet-voi-chien-luoc-chuan-quoc-te-va-marketing-hien-dai-161251204084547043.htm",
+      "https://doanhnghieptiepthi.vn/marketing-du-lieu-co-hoi-but-pha-cho-doanh-nghiep-vua-va-nho-161251204090348961.htm",
+      "https://doanhnghieptiepthi.vn/marketing-co-the-tao-cam-xuc-khac-biet-nhung-tuyet-doi-khong-duoc-sai-su-that-161251201091214661.htm",
+      "https://doanhnghieptiepthi.vn/ts-tran-dinh-ly-nong-san-viet-khong-can-quang-ba-them-can-nguoi-dam-dan-dat-nhu-cau-161251201082434883.htm",
+      "https://doanhnghieptiepthi.vn/ninh-binh-duoc-vinh-danh-tai-vietnam-marketing-awards-2025-tu-duy-moi-trong-tiep-thi-dia-phuong-161251220121743153.htm",
+      "https://doanhnghieptiepthi.vn/cac-van-phong-dai-dien-tadoap-chi-doanh-nghiep-va-tiep-thi-16122033114182764.htm"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 21
+    },
+    "checkedAt": "2026-11-10T09:15:07.337Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/doanhnghieptiepthi.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

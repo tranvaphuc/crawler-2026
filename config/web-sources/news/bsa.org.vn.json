@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "siteName": "bsa.org.vn",
+  "siteId": "bsa.org.vn",
+  "registrableDomain": "bsa.org.vn",
+  "homepage": "https://bsa.org.vn/",
+  "allowedHosts": [
+    "bsa.org.vn",
+    "www.bsa.org.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://bsa.org.vn/",
+    "categories": [
+      "https://bsa.org.vn/tin-tuc/",
+      "https://bsa.org.vn/tin-tuc/dien-dan-xanh/",
+      "https://bsa.org.vn/tin-tuc/gearsvietnam/",
+      "https://bsa.org.vn/tin-tuc/hoat-dong/",
+      "https://bsa.org.vn/tin-tuc/hvnclc/",
+      "https://bsa.org.vn/tin-tuc/iibf-2024/",
+      "https://bsa.org.vn/tin-tuc/lbc/",
+      "https://bsa.org.vn/tin-tuc/mekong-connect/",
+      "https://bsa.org.vn/tin-tuc/vong-tay-viet/",
+      "https://bsa.org.vn/thi-truong/"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "“Cái mà Trung Quốc cần mua, chưa chắc các nước có để bán”",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[itemprop=\"datePublished\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".td-post-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "description": {
+    "strategy": "selector",
+    "scope": "article",
+    "selector": ".td-post-content > p:first-of-type"
+  },
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:04.636Z",
+    "frozenAt": "2026-11-16T01:58:01.785Z",
+    "trainingUrl": "https://bsa.org.vn/cai-ma-trung-quoc-can-mua-chua-chac-cac-nuoc-co-de-ban/",
+    "independentHoldouts": [
+      "https://bsa.org.vn/mixue-mac-ket-trong-mo-hinh-kinh-doanh-ban-gia-re-voi-so-luong-lon/",
+      "https://bsa.org.vn/thi-truong-chuoi-cung-ung-lanh-viet-nam-bao-gio-nong/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://bsa.org.vn/cai-ma-trung-quoc-can-mua-chua-chac-cac-nuoc-co-de-ban/",
+      "https://bsa.org.vn/mixue-mac-ket-trong-mo-hinh-kinh-doanh-ban-gia-re-voi-so-luong-lon/",
+      "https://bsa.org.vn/thi-truong-chuoi-cung-ung-lanh-viet-nam-bao-gio-nong/",
+      "https://bsa.org.vn/temu-va-jd-com-bien-hinh-de-vuot-cac-rao-can-cua-chau-au/",
+      "https://bsa.org.vn/startup-nhat-mo-rong-cung-ung-lanh-tai-viet-nam-va-malaysia/",
+      "https://bsa.org.vn/mon-lap-cua-lao-se-duoc-unesco-cong-nhan-di-san-van-hoa-phi-vat-the/",
+      "https://bsa.org.vn/hang-buon-nhat-noi-trong-nguy-co-co-sau-khi-dan-chu-thang-bau-cu-giua-ky-o-my/",
+      "https://bsa.org.vn/dua-tre-nhat-chinh-phuc-nguoi-han-dua-tre-viet-bi-lep-ve/",
+      "https://bsa.org.vn/ung-vien-hvnclc-2027-cong-ty-tnhh-tm-dv-xnk-phat-tam-phat-tam-foods/",
+      "https://bsa.org.vn/khung-hoang-luong-thuc-toan-cau-co-the-keo-dai-den-nam-2027-gia-luong-thuc-tang-it-nhat-18/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

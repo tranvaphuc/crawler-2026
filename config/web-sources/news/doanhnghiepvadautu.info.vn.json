@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnghiepvadautu.info.vn",
+  "siteId": "doanhnghiepvadautu.info.vn",
+  "registrableDomain": "doanhnghiepvadautu.info.vn",
+  "homepage": "https://doanhnghiepvadautu.info.vn/",
+  "allowedHosts": [
+    "doanhnghiepvadautu.info.vn",
+    "www.doanhnghiepvadautu.info.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnghiepvadautu.info.vn/",
+    "categories": [
+      "https://doanhnghiepvadautu.info.vn/theo-dong-su-kien/",
+      "https://doanhnghiepvadautu.info.vn/trong-nuoc/",
+      "https://doanhnghiepvadautu.info.vn/ngoai-nuoc/",
+      "https://doanhnghiepvadautu.info.vn/ky-nguyen-vuon-minh-cua-dan-toc-viet-nam/",
+      "https://doanhnghiepvadautu.info.vn/doanh-nghiep/",
+      "https://doanhnghiepvadautu.info.vn/chuyen-dong-doanh-nghiep/"
+    ]
+  },
+  "title": {
+    "value": "Đấu giá 139.000 tấn hạn ngạch nhập khẩu đường năm 2026",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:22:28.082Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:22:22.693Z",
+    "independentHoldouts": [
+      "https://doanhnghiepvadautu.info.vn/ba-mai-kieu-lien-ba-nam-lien-tiep-duoc-fortune-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a-d56064.html",
+      "https://doanhnghiepvadautu.info.vn/ttc-land-chuyen-hon-2066-ty-dong-ton-kho-sang-tai-san-cho-thue-d56363.html",
+      "https://doanhnghiepvadautu.info.vn/trung-dau-gia-ttc-land-nang-ty-le-so-huu-tai-chu-dau-tu-dao-kim-quy-len-8763-d56216.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnghiepvadautu.info.vn/dau-gia-139000-tan-han-ngach-nhap-khau-duong-nam-2026-d56416.html",
+      "https://doanhnghiepvadautu.info.vn/ba-mai-kieu-lien-ba-nam-lien-tiep-duoc-fortune-vinh-danh-trong-top-100-phu-nu-quyen-luc-nhat-chau-a-d56064.html",
+      "https://doanhnghiepvadautu.info.vn/ttc-land-chuyen-hon-2066-ty-dong-ton-kho-sang-tai-san-cho-thue-d56363.html",
+      "https://doanhnghiepvadautu.info.vn/trung-dau-gia-ttc-land-nang-ty-le-so-huu-tai-chu-dau-tu-dao-kim-quy-len-8763-d56216.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

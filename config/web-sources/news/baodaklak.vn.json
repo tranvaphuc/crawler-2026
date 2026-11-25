@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "siteName": "baodaklak.vn",
+  "siteId": "baodaklak.vn",
+  "registrableDomain": "baodaklak.vn",
+  "homepage": "https://baodaklak.vn/",
+  "allowedHosts": [
+    "baodaklak.vn",
+    "www.baodaklak.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://baodaklak.vn/",
+    "categories": [
+      "https://baodaklak.vn/chinh-tri/",
+      "https://baodaklak.vn/chinh-tri/dua-nghi-quyet-cua-dang-vao-cuoc-song/",
+      "https://baodaklak.vn/chinh-tri/Bau-cu-DBQH-va-dai-bieu-HDND-cac-cap/",
+      "https://baodaklak.vn/chinh-tri/lich-su-truyen-thong/",
+      "https://baodaklak.vn/chinh-tri/dai-hoi-dang/",
+      "https://baodaklak.vn/chinh-tri/an-ninh-quoc-phong/",
+      "https://baodaklak.vn/chinh-tri/chinh-quyen-dia-phuong-hai-cap/",
+      "https://baodaklak.vn/kinh-te/",
+      "https://baodaklak.vn/kinh-te/cong-nghiep/"
+    ]
+  },
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "baodaklak.vn",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "title": {
+    "value": "(E-magazine) Nghị quyết số 72: \"Lá chắn\" y tế vững chắc cho nhân dân",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".date",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article_content.row15",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": ".content-title h1.title"
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".content-detail",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+      },
+      "publishedDate": {
+        "strategy": "selector",
+        "selector": ".group-time > time.time"
+      }
+    }
+  ],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:57:47.904Z",
+    "frozenAt": "2026-11-16T01:57:40.311Z",
+    "trainingUrl": "https://baodaklak.vn/chinh-tri/202610/ky-hop-thu-hai-quoc-hoi-khoa-xvi-de-xuat-siet-chat-kiem-soat-thuoc-la-va-quy-dinh-hien-ghep-mo-tang-fab56ce/",
+    "independentHoldouts": [
+      "https://baodaklak.vn/van-hoa-xa-hoi/chinh-sach-xa-hoi/202610/hon-12-ty-dong-ho-tro-sua-dau-nanh-cho-gan-4000-hoc-sinh-cf16961",
+      "https://baodaklak.vn/quoc-te/202610/tong-bi-thu-chu-tich-nuoc-to-lam-chung-kien-le-trao-cac-van-kien-hop-tac-viet-nam-dan-mach-a03752f"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "checkedAt": "2026-11-17T08:51:06.825Z",
+    "sampleUrls": [
+      "https://baodaklak.vn/chinh-tri/202611/bi-thu-tinh-uy-luong-nguyen-minh-triet-mat-tran-to-quoc-va-cac-doan-the-phai-gan-dan-sat-co-so-hanh-dong-hieu-qua-16a1dd7/",
+      "https://baodaklak.vn/kinh-te/202611/bao-dam-nguon-cung-vat-lieu-cho-cac-du-an-trong-diem-1a7650a/",
+      "https://baodaklak.vn/van-hoa-xa-hoi/phap-luat/202611/bi-thu-tinh-uy-luong-nguyen-minh-triet-tiep-cong-dan-dinh-ky-thang-11-623297a/",
+      "https://baodaklak.vn/kinh-te/dau-tu/202611/chu-tich-ubnd-tinh-dak-lak-do-huu-huy-kiem-tra-don-doc-cac-du-an-dau-tu-cong-6db7a80/",
+      "https://baodaklak.vn/kinh-te/dau-tu/202611/day-nhanh-tien-do-tai-dinh-cu-bao-dam-mat-bang-trien-khai-du-an-duong-sat-toc-do-cao-doan-qua-dia-ban-tinh-b05719f/"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationDatePolicy": "original_only",
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationArticleScope": ".section-wrapper-post-detail .col-xl-8.col-12"
+}

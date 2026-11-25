@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tudonghoangaynay.vn",
+  "siteId": "tudonghoangaynay.vn",
+  "registrableDomain": "tudonghoangaynay.vn",
+  "homepage": "https://tudonghoangaynay.vn/",
+  "allowedHosts": [
+    "tudonghoangaynay.vn",
+    "www.tudonghoangaynay.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://tudonghoangaynay.vn/",
+    "categories": [
+      "https://tudonghoangaynay.vn/video",
+      "https://tudonghoangaynay.vn/doc-bao-giay",
+      "https://tudonghoangaynay.vn/hoi-tu-dong-hoa",
+      "https://tudonghoangaynay.vn/hoi-tu-dong-hoa/tin-tuc-hoi",
+      "https://tudonghoangaynay.vn/hoi-tu-dong-hoa/vcca",
+      "https://tudonghoangaynay.vn/hoi-tu-dong-hoa/ca-phe-cong-nghe"
+    ]
+  },
+  "title": {
+    "value": "Hành trình phát triển bền vững tại Vinamilk: Từ những thay đổi nhỏ đến tác động lớn hơn cho cộng đồng",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".detail-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:26:15.182Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:08.469Z",
+    "independentHoldouts": [
+      "https://tudonghoangaynay.vn/han-quoc-dan-dau-the-gioi-ve-mat-do-robot-cong-nghiep-24603.html",
+      "https://tudonghoangaynay.vn/nang-luong-tai-tao-gia-re-chua-giup-giam-hoa-don-tien-dien-bai-hoc-tu-hy-lap-24521.html",
+      "https://tudonghoangaynay.vn/cam-bien-da-vong-mz1-don-gian-hoa-tich-hop-voi-dau-ra-analog-24483.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://tudonghoangaynay.vn/hanh-trinh-phat-trien-ben-vung-tai-vinamilk-tu-nhung-thay-doi-nho-den-tac-dong-lon-hon-cho-cong-dong-24221.html",
+      "https://tudonghoangaynay.vn/han-quoc-dan-dau-the-gioi-ve-mat-do-robot-cong-nghiep-24603.html",
+      "https://tudonghoangaynay.vn/nang-luong-tai-tao-gia-re-chua-giup-giam-hoa-don-tien-dien-bai-hoc-tu-hy-lap-24521.html",
+      "https://tudonghoangaynay.vn/cam-bien-da-vong-mz1-don-gian-hoa-tich-hop-voi-dau-ra-analog-24483.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

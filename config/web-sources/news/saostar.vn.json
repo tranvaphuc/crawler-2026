@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "siteName": "saostar.vn",
+  "siteId": "saostar.vn",
+  "registrableDomain": "saostar.vn",
+  "homepage": "https://www.saostar.vn/",
+  "allowedHosts": [
+    "www.saostar.vn",
+    "saostar.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Cô gái được ghép gan từ người đã khuất, nhiều năm sau xảy ra sự kiện cực bất ngờ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:10.371Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://www.saostar.vn/vong-quanh-the-gioi/co-gai-duoc-hien-tang-nhieu-nam-sau-xay-ra-su-kien-cuc-bat-ngo-202611090119495387.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/vung-trom-ben-ngoai-nguoi-dan-ong-bi-vo-bat-qua-tang-202611090117574656.html",
+      "https://www.saostar.vn/sao-sport/ronaldo-huyen-thoai-vi-dai-nhung-khong-biet-dung-dung-luc-202611081932074198.html",
+      "https://www.saostar.vn/nguoi-mau-hoa-hau/tan-hoa-hau-viet-nam-phan-ung-ve-binh-luan-trai-chieu-sau-dang-quang-202611081225224984.html",
+      "https://www.saostar.vn/am-nhac/vu-kien-13-ty-won-cua-fifty-fifty-sap-co-ket-qua-sau-gan-3-nam-202611081140048618.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://www.saostar.vn/",
+    "categories": [
+      "https://www.saostar.vn/tin-moi/",
+      "https://www.saostar.vn/tin-hot/",
+      "https://www.saostar.vn/giai-tri/",
+      "https://www.saostar.vn/nguoi-mau-hoa-hau/",
+      "https://www.saostar.vn/thoi-trang/",
+      "https://www.saostar.vn/sac-mau-cuoc-song/",
+      "https://www.saostar.vn/am-nhac/",
+      "https://www.saostar.vn/dien-anh/",
+      "https://www.saostar.vn/sao-sport/",
+      "https://www.saostar.vn/vong-quanh-the-gioi/",
+      "https://www.saostar.vn/song-khoe/",
+      "https://www.saostar.vn/sao-hoc-duong/",
+      "https://www.saostar.vn/guong-mat-thuong-hieu/",
+      "https://www.saostar.vn/cong-nghe/",
+      "https://www.saostar.vn/hoi-nguoi-mau-viet-nam/",
+      "https://www.saostar.vn/cai-chinh/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "saostar.vn",
+    "checkedAt": "2026-11-09T03:57:24.944Z",
+    "url": "https://www.saostar.vn/vong-quanh-the-gioi/co-gai-duoc-hien-tang-nhieu-nam-sau-xay-ra-su-kien-cuc-bat-ngo-202611090119495387.html",
+    "finalUrl": "https://www.saostar.vn/vong-quanh-the-gioi/co-gai-duoc-hien-tang-nhieu-nam-sau-xay-ra-su-kien-cuc-bat-ngo-202611090119495387.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2374,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "saostar.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "deep_samples_verified",
+    "parsedArticles": 32,
+    "checkedArticleUrls": 32,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 32,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 16,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 405,
+        "passed": 32,
+        "distinctHashes": 32
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://www.saostar.vn/sac-mau-cuoc-song/de-xuat-ngay-27-7-hang-nam-la-ngay-nghi-duoc-huong-nguyen-luong-202611101451443542.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/trump-tiet-lo-phan-ung-ceo-nvidia-truoc-cao-buoc-nguoi-tinh-gian-diep-202611101001390568.html",
+      "https://www.saostar.vn/am-nhac/ca-si-phuong-ly-huy-show-vi-phuong-my-chi-202611101213294708.html",
+      "https://www.saostar.vn/sao-sport/dai-chien-voi-u23-thai-lan-o-pho-nui-202611100947330827.html",
+      "https://www.saostar.vn/giai-tri/tinh-hinh-cua-han-da-gam-sau-khi-sinh-con-o-tuoi-46-202611100921462652.html",
+      "https://www.saostar.vn/giai-tri/loi-bay-to-cong-khai-cua-phuong-my-chi-voi-chu-re-hon-9-tuoi-202611101237332072.html",
+      "https://www.saostar.vn/dien-anh/trai-buon-nguoi-giam-nhiet-sau-chuoi-ngay-thong-tri-phong-ve-202611101047535844.html",
+      "https://www.saostar.vn/giai-tri/su-that-ve-moi-quan-he-giua-selena-gomez-va-demi-lovato-202611100914483347.html",
+      "https://www.saostar.vn/am-nhac/exo-cong-bo-nhom-nho-moi-cua-kai-va-sehun-an-dinh-ngay-ra-mat-202611100957407141.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/ceo-jensen-huang-mat-7-4-ty-usd-giua-be-boi-ngoai-tinh-202611101118238134.html",
+      "https://www.saostar.vn/dien-anh/tran-thanh-song-khong-noi-voi-ninh-duong-lan-ngoc-202611101051122927.html",
+      "https://www.saostar.vn/sac-mau-cuoc-song/gui-hon-11-ty-dong-nho-mua-nha-giup-nguoi-phu-nu-sau-do-bao-cong-an-202611101505579286.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/gian-chong-roi-bo-sang-nha-ban-luc-tro-ve-vo-bang-hoang-khi-mo-cua-202611101435485768.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/chong-thua-nhan-ngoai-tinh-vo-binh-tinh-dua-ra-mot-thoa-thuan-202611101226077126.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/chong-bao-bi-mac-ket-o-khach-san-voi-dong-nghiep-do-lu-lut-va-su-that-202611101053540311.html",
+      "https://www.saostar.vn/dien-anh/mac-van-khoa-tat-bat-di-bung-be-phuc-vu-202611101050596816.html",
+      "https://www.saostar.vn/dien-anh/moi-luong-duyen-dac-biet-cua-quang-tuan-va-dao-dien-tram-ty-202611101030094552.html",
+      "https://www.saostar.vn/giai-tri/con-gai-hong-dao-cham-soc-me-nhung-ngay-nam-tren-giuong-benh-202611101024117921.html",
+      "https://www.saostar.vn/dien-anh/tang-thanh-ha-xuat-hien-ben-luong-manh-hai-202611101030560163.html",
+      "https://www.saostar.vn/nguoi-mau-hoa-hau/hai-sieu-mau-victoria-s-secret-bat-hoa-sau-15-nam-tinh-ban-202611100829255535.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/nu-hon-cong-khai-cua-ceo-nvidia-jensen-huang-va-nguoi-tinh-202611101013486822.html",
+      "https://www.saostar.vn/giai-tri/s-trong-trong-hieu-huong-ve-coi-nguon-bang-am-nhac-202611100934466991.html",
+      "https://www.saostar.vn/dien-anh/le-duong-bao-lam-tiet-lo-chuyen-steven-nguyen-ngay-con-co-cuc-202611100959516252.html",
+      "https://www.saostar.vn/dien-anh/steven-nguyen-gap-kho-voi-chi-pu-202611100959385732.html",
+      "https://www.saostar.vn/vong-quanh-the-gioi/truoc-dam-cuoi-3-thang-cap-doi-gap-phai-tai-nan-kinh-hoang-202611100958591472.html",
+      "https://www.saostar.vn/am-nhac/mai-tai-phen-cong-khai-cho-doi-ngay-trong-dai-cung-my-tam-202611100950126631.html",
+      "https://www.saostar.vn/dien-anh/muc-niem-tu-thanh-cong-nhat-202611100936312072.html",
+      "https://www.saostar.vn/dien-anh/ky-duyen-lan-at-thien-an-202611100949362323.html",
+      "https://www.saostar.vn/am-nhac/phuong-my-chi-bao-co-tin-vui-sau-dam-cuoi-tai-ha-noi-202611100939064169.html",
+      "https://www.saostar.vn/dien-anh/dien-hi-vi-chiem-song-luu-luong-phim-co-trang-2026-202611100939480599.html",
+      "https://www.saostar.vn/dien-anh/chan-tu-dan-va-keanu-reeves-hai-phong-cach-can-chien-tren-man-anh-202611100923303265.html",
+      "https://www.saostar.vn/sao-sport/tuyen-thai-lan-se-vo-dich-khi-chinh-thuc-co-nguoi-thay-madam-pang-202611100933465886.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:16:42.860Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/saostar.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

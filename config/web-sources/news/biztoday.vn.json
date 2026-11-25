@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "siteName": "biztoday.vn",
+  "siteId": "biztoday.vn",
+  "registrableDomain": "biztoday.vn",
+  "homepage": "https://biztoday.vn/",
+  "allowedHosts": [
+    "biztoday.vn",
+    "www.biztoday.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Doanh nghiệp Việt Nam - Hàn Quốc mở rộng hợp tác công nghệ xanh",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Techcombank giành “cú đúp” giải thưởng quốc tế Stevie® Awards for Great Employers 2026",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".afcbc-body",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:04.509Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://biztoday.vn/techcombank-gianh-cu-dup-giai-thuong-quoc-te-stevie-awards-for-great-employers-2026-971558.html",
+      "https://biztoday.vn/techcombank-du-kien-chia-co-tuc-ty-le-50-tang-von-dieu-le-vuot-100-nghin-ty-cao-nhat-he-thong-ngan-hang-tu-nhan-971556.html",
+      "https://biztoday.vn/doanh-nghiep-viet-nam-han-quoc-mo-rong-hop-tac-cong-nghe-xanh-971562.html",
+      "https://biztoday.vn/loi-chuc-mung-ngay-phu-nu-viet-nam-2010-tu-hoi-doanh-nghiep-nho-va-vua-khu-vuc-phia-nam-971561.html",
+      "https://biztoday.vn/hiep-hoi-doanh-nghiep-nho-va-vua-khu-vuc-phia-nam-chuc-mung-ngay-doanh-nhan-viet-nam-1310-971560.html",
+      "https://biztoday.vn/bo-chinh-tri-giai-the-cac-hoi-kem-hieu-qua-khong-con-phu-hop-965151.html",
+      "https://biztoday.vn/dat-chua-boi-thuong-dan-yeu-cau-nam-long-dung-ban-du-an-izumi-city-873767.html",
+      "https://biztoday.vn/tac-dong-cua-du-an-du-lich-cap-treo-len-huyet-dao-thieng-nui-nua-858194.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://biztoday.vn/",
+    "categories": [
+      "https://biztoday.vn/c/kinh-te",
+      "https://biztoday.vn/c/chung-khoan",
+      "https://biztoday.vn/c/tai-chinh-ngan-hang",
+      "https://biztoday.vn/c/tin-dung-bao-hiem",
+      "https://biztoday.vn/c/bat-dong-san",
+      "https://biztoday.vn/c/du-an-dau-thau",
+      "https://biztoday.vn/c/doanh-nghiep-doanh-nhan",
+      "https://biztoday.vn/c/thuong-hieu",
+      "https://biztoday.vn/c/van-hoa-doanh-nhan",
+      "https://biztoday.vn/c/the-thao-doanh-nhan",
+      "https://biztoday.vn/c/tin-tuc",
+      "https://biztoday.vn/c/tin-tuc-moi",
+      "https://biztoday.vn/c/chinh-sach-phap-luat",
+      "https://biztoday.vn/c/doi-song",
+      "https://biztoday.vn/c/xa-hoi",
+      "https://biztoday.vn/c/du-lich",
+      "https://biztoday.vn/c/tieu-dung",
+      "https://biztoday.vn/c/suc-khoe",
+      "https://biztoday.vn/c/cong-nghe",
+      "https://biztoday.vn/c/moi-truong",
+      "https://biztoday.vn/c/xe",
+      "https://biztoday.vn/c/giao-duc",
+      "https://biztoday.vn/c/thoi-trang",
+      "https://biztoday.vn/c/the-gioi",
+      "https://biztoday.vn/video",
+      "https://biztoday.vn/photo",
+      "https://biztoday.vn/podcasts",
+      "https://biztoday.vn/infographic",
+      "https://biztoday.vn/emagazine"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "biztoday.vn",
+    "checkedAt": "2026-11-09T03:56:52.447Z",
+    "url": "https://biztoday.vn/techcombank-gianh-cu-dup-giai-thuong-quoc-te-stevie-awards-for-great-employers-2026-971558.html",
+    "finalUrl": "https://biztoday.vn/techcombank-gianh-cu-dup-giai-thuong-quoc-te-stevie-awards-for-great-employers-2026-971558.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 7174,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "biztoday.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 33,
+    "checkedArticleUrls": 34,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 33,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 29,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 424,
+        "passed": 32,
+        "distinctHashes": 32
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://biztoday.vn/doanh-nghiep-viet-nam-han-quoc-mo-rong-hop-tac-cong-nghe-xanh-971562.html",
+      "https://biztoday.vn/loi-chuc-mung-ngay-phu-nu-viet-nam-2010-tu-hoi-doanh-nghiep-nho-va-vua-khu-vuc-phia-nam-971561.html",
+      "https://biztoday.vn/hiep-hoi-doanh-nghiep-nho-va-vua-khu-vuc-phia-nam-chuc-mung-ngay-doanh-nhan-viet-nam-1310-971560.html",
+      "https://biztoday.vn/bo-chinh-tri-giai-the-cac-hoi-kem-hieu-qua-khong-con-phu-hop-965151.html",
+      "https://biztoday.vn/dat-chua-boi-thuong-dan-yeu-cau-nam-long-dung-ban-du-an-izumi-city-873767.html",
+      "https://biztoday.vn/tac-dong-cua-du-an-du-lich-cap-treo-len-huyet-dao-thieng-nui-nua-858194.html",
+      "https://biztoday.vn/moi-gioi-du-an-picity-sky-park-nhiet-tinh-chao-ban-can-ho-gac-lung-tai-phan-khu-skyzen-pi-group-phu-nhan-839768.html",
+      "https://biztoday.vn/can-trong-truoc-du-an-bat-dong-san-ban-lua-non-834357.html",
+      "https://biztoday.vn/saigon-coop-vua-gao-bi-cam-thau-3-nam-do-cung-cap-hang-hoa-khong-dam-bao-chat-luong-827290.html",
+      "https://biztoday.vn/rut-ngan-thoi-gian-dieu-hanh-gia-xang-co-kha-thi-413439.html",
+      "https://biztoday.vn/cuc-quan-ly-thi-truong-tphcm-khong-co-tinh-trang-gam-hang-xang-dau-407435.html",
+      "https://biztoday.vn/techcombank-gianh-cu-dup-giai-thuong-quoc-te-stevie-awards-for-great-employers-2026-971558.html",
+      "https://biztoday.vn/techcombank-du-kien-chia-co-tuc-ty-le-50-tang-von-dieu-le-vuot-100-nghin-ty-cao-nhat-he-thong-ngan-hang-tu-nhan-971556.html",
+      "https://biztoday.vn/benh-vien-bach-mai-va-techcombank-hop-tac-xay-dung-he-sinh-thai-tai-chinh-y-te-hien-dai-nang-cao-hieu-qua-van-hanh-va-trai-nghiem-nguoi-benh-971557.html",
+      "https://biztoday.vn/du-an-cua-bcons-khien-nha-tre-va-nhieu-ho-dan-bi-sut-lun-hu-hong-961563.html",
+      "https://biztoday.vn/nguoi-dan-bi-anh-huong-boi-du-an-cua-bcons-yeu-cau-som-duoc-chot-phuong-an-boi-thuong-961309.html",
+      "https://biztoday.vn/cac-chuoi-ban-le-lon-tai-my-dong-cua-hang-loat-ap-luc-tu-nen-tang-online-chi-la-mot-phan-515872.html",
+      "https://biztoday.vn/kinh-te-my-hut-hoi-nhung-lam-phat-cao-hon-du-bao-503973.html",
+      "https://biztoday.vn/nhung-con-so-gay-choang-ve-loat-dai-bang-my-vua-den-viet-nam-486865.html",
+      "https://biztoday.vn/nha-may-hat-nhan-o-my-thua-nhan-bi-ro-ri-phong-xa-481895.html",
+      "https://biztoday.vn/quay-lung-voi-my-va-anh-doanh-nghiep-trung-quoc-chon-thuy-sy-de-huy-dong-von-o-nuoc-ngoai-477628.html",
+      "https://biztoday.vn/meadow-fresh-mo-rong-danh-muc-san-pham-tu-sua-new-zealand-cho-nganh-banh-pha-che-va-am-thuc-chuyen-nghiep-1-942356.html",
+      "https://biztoday.vn/nhin-lai-hon-3-thap-ky-vuon-minh-lon-manh-cua-tap-doan-hoa-lam-840057.html",
+      "https://biztoday.vn/nestle-milo-len-tieng-ve-yeu-cau-go-bo-quang-cao-cua-vien-dinh-duong-811200.html",
+      "https://biztoday.vn/tong-bi-thu-to-lam-du-le-khanh-thanh-nha-may-sua-cong-suat-lon-cua-th-tai-lien-bang-nga-809648.html",
+      "https://biztoday.vn/nghi-van-ve-bac-si-hanh-nghe-tai-phong-kham-da-lieu-selena-khach-hang-phan-anh-den-so-y-te-tphcm-933953.html",
+      "https://biztoday.vn/kim-chu-quoc-dan-techcombank-chieu-gai-con-het-muc-xoa-diu-hoi-chung-hau-concert-924901.html",
+      "https://biztoday.vn/delay-gan-60-tieng-khien-hanh-khach-buc-xuc-vietravel-airlines-noi-gi-891047.html",
+      "https://biztoday.vn/thuc-khach-sai-gon-do-xo-di-an-nem-nuong-ut-huong-877576.html",
+      "https://biztoday.vn/giam-doc-benh-vien-giao-thong-van-tai-tp-ho-chi-minh-khong-co-ky-ket-nao-voi-benh-vien-jt-angel-869798.html",
+      "https://biztoday.vn/techcombank-ket-noi-van-hoa-cong-dong-va-di-san-tu-giai-chay-bieu-trung-cua-thu-do-971543.html",
+      "https://biztoday.vn/techcombank-va-he-sinh-thai-hanh-trinh-33-nam-kien-tao-va-chiem-ngam-tu-nghe-thuat-971542.html",
+      "https://biztoday.vn/techcombank-tiep-tuc-thu-hut-nhan-tai-quoc-te-tai-singapore-va-london-cho-giai-doan-phat-trien-moi-971544.html",
+      "https://biztoday.vn/lam-sach-ma-so-thue-thao-go-diem-nghen-trong-kinh-doanh-965160.html",
+      "https://biztoday.vn/thue-tphcm-canh-bao-tam-hoan-xuat-canh-doi-voi-tong-giam-doc-pdr-856009.html",
+      "https://biztoday.vn/uu-dai-thue-thu-nhap-doanh-nghiep-tao-cu-hich-cho-nghien-cuu-va-phat-trien-809647.html",
+      "https://biztoday.vn/nghi-quyet-68-doanh-nghiep-bot-noi-lo-bi-go-cua-kiem-tra-808680.html",
+      "https://biztoday.vn/vu-giao-dich-1018-trieu-co-phieu-smc-me-ban-con-mua-day-bi-an-nha-dau-tu-thiet-hai-nang-837695.html",
+      "https://biztoday.vn/vietbank-long-an-bi-diem-mat-hang-loat-sai-pham-trong-hoat-dong-cho-vay-836558.html",
+      "https://biztoday.vn/cong-ty-thanh-vien-cua-pi-group-no-thue-hon-347-ty-dong-835951.html",
+      "https://biztoday.vn/vi-sao-dong-tien-vao-chung-khoan-bien-mat-714639.html",
+      "https://biztoday.vn/thuan-loi-va-thach-thuc-khi-dau-tu-esg-tai-viet-nam-464470.html",
+      "https://biztoday.vn/san-sang-don-dong-fdi-chat-luong-cao-458255.html",
+      "https://biztoday.vn/60-doanh-nghiep-tien-phong-viet-nam-se-nhan-duoc-ho-tro-ky-thuat-tu-du-an-usaid-ipsc-402512.html",
+      "https://biztoday.vn/cong-nghiep-ho-tro-huong-loi-tu-lan-song-fdi-380140.html",
+      "https://biztoday.vn/ban-cac-giai-phap-thuc-day-cach-tan-cong-nghiep-tai-viet-nam-380142.html",
+      "https://biztoday.vn/thua-nhan-chuyen-doi-cong-nghe-trong-bai-toan-san-xuat-la-quan-trong-can-thiet-nhung-nhieu-doanh-nghiep-van-gap-kho-khong-du-tien-dau-tu-thieu-nhan-su-chua-ke-con-than-qua-vat-va-trong-chuyen-doi-so-380157.html",
+      "https://biztoday.vn/khoi-cong-tuyen-cho-moi-bac-kan-trong-nam-2023-som-pha-diem-nghen-ha-tang-giao-thong-mien-nui-378895.html",
+      "https://biztoday.vn/thi-diem-ho-tro-khuyen-khich-doanh-nghiep-tu-nguyen-tuan-thu-phap-luat-hai-quan-378440.html",
+      "https://biztoday.vn/gia-heo-hoi-hom-nay-179-giam-tu-1000-dongkg-den-2000-dongkg-377615.html",
+      "https://biztoday.vn/vinfast-vf8-2022-da-ve-dai-ly-gia-tu-1478-ty-dong-377632.html",
+      "https://biztoday.vn/video-giao-vien-the-duc-trung-quoc-dua-kiem-vao-giang-day-50259.html",
+      "https://biztoday.vn/quoc-hoi-chot-chua-dieu-chinh-muc-luong-co-so-nam-2021-11148.html",
+      "https://biztoday.vn/5-cach-ngu-ngon-de-giam-mo-tot-hon-11142.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "unresolved_extraction": 1
+    },
+    "checkedAt": "2026-11-10T09:14:33.032Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/biztoday.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

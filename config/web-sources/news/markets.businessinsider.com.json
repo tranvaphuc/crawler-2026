@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "siteName": "markets.businessinsider.com",
+  "siteId": "markets.businessinsider.com",
+  "registrableDomain": "businessinsider.com",
+  "homepage": "https://markets.businessinsider.com/",
+  "allowedHosts": [
+    "markets.businessinsider.com",
+    "www.markets.businessinsider.com"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Top economist Mark Zandi warns the record-high stock market is detached from economic reality",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#post-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "variants": [
+    {
+      "title": {
+        "value": "Porch Life Introduces Multi-Track Sliding Porch Door That Opens Entire Porch Walls Up to 32 Feet Wide",
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": ".news-content",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      }
+    }
+  ],
+  "validation": {
+    "checkedAt": "2026-11-09T02:16:34.310Z",
+    "sampleCount": 9,
+    "passedSamples": 9,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 5,
+    "sampleUrls": [
+      "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+      "https://markets.businessinsider.com/news/stocks/oil-price-outlook-iran-war-supply-shortage-hoarding-panic-buying-2026-4",
+      "https://markets.businessinsider.com/news/stocks/qualcomm-earnings-qcom-stock-chip-deal-hyperscaler-ai-datacenter-2026-4",
+      "https://markets.businessinsider.com/news/stocks/tech-ai-capex-gary-marcus-meta-msft-amzn-goog-stock-2026-4",
+      "https://markets.businessinsider.com/news/stocks/iran-war-economic-impact-oil-blockade-inflation-growth-2026-4",
+      "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+      "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+      "https://markets.businessinsider.com/news/stocks/porch-life-introduces-multi-track-sliding-porch-door-that-opens-entire-porch-walls-up-to-32-feet-wide-1036707268",
+      "https://markets.businessinsider.com/news/stocks/porch-life-introduces-multi-track-sliding-porch-door-that-opens-entire-porch-walls-up-to-32-feet-wide-1036707268"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://markets.businessinsider.com/",
+    "categories": [
+      "https://markets.businessinsider.com/guides/streaming",
+      "https://markets.businessinsider.com/guides/pets",
+      "https://markets.businessinsider.com/guides/tech",
+      "https://markets.businessinsider.com/guides/deals",
+      "https://markets.businessinsider.com/guides/gifts",
+      "https://markets.businessinsider.com/guides/tickets",
+      "https://markets.businessinsider.com/news"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "requiresPublicationContext": false,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "markets.businessinsider.com",
+    "checkedAt": "2026-11-09T03:57:14.283Z",
+    "url": "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+    "finalUrl": "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2121,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "markets.businessinsider.com",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 4,
+    "checkedArticleUrls": 21,
+    "freshArticleChecks": 21,
+    "parserIssues": 17,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 4,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 10,
+    "categoriesFreshChecked": 9,
+    "categoriesUnconfirmed": 9,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 23,
+        "passed": 4,
+        "distinctHashes": 4
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://markets.businessinsider.com/news/stocks/stock-market-record-economic-recession-mark-zandi-iran-war-oil-2026-4",
+      "https://markets.businessinsider.com/news/stocks/oil-price-outlook-iran-war-supply-shortage-hoarding-panic-buying-2026-4",
+      "https://markets.businessinsider.com/news/stocks/qualcomm-earnings-qcom-stock-chip-deal-hyperscaler-ai-datacenter-2026-4",
+      "https://markets.businessinsider.com/news/stocks/tech-ai-capex-gary-marcus-meta-msft-amzn-goog-stock-2026-4",
+      "https://markets.businessinsider.com/news/stocks/iran-war-economic-impact-oil-blockade-inflation-growth-2026-4",
+      "https://markets.businessinsider.com/news/stocks/big-tech-earnings-winners-losers-ai-capex-cloud-meta-goog-2026-4",
+      "https://markets.businessinsider.com/news/stocks/paul-tudor-jones-investing-opportunities-japan-yen-sanae-takaichi-2026-4",
+      "https://markets.businessinsider.com/news/stocks/price-shock-inflation-commodities-oil-iran-war-fuel-costs-economy-2026-4",
+      "https://markets.businessinsider.com/news/stocks/bill-ackman-ps-psus-pershing-square-usa-ipo-trading-investing-2026-4",
+      "https://markets.businessinsider.com/news/stocks/oil-prices-outlook-supply-hoarding-iran-war-energy-crisis-2026-04"
+    ],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "unresolved_extraction": 7,
+      "publisher_restricted": 10
+    },
+    "checkedAt": "2026-11-10T09:16:02.491Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/markets.businessinsider.com/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  }
+}

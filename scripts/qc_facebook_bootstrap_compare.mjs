@@ -1,0 +1,7 @@
+import assert from'node:assert/strict';import{performance}from'node:perf_hooks';import{createHash}from'node:crypto';
+const fingerprint=r=>createHash('sha256').update(JSON.stringify({dynamic:r.dynamic,referer:r.referer,actorAliases:[...r.actorAliases].sort(),commentAuthors:[...r.commentAuthors].sort()})).digest('hex');
+export function compareBootstrapContexts(snapshot,variants){
+ const runs=[];let expected;
+ for(const order of [[0,1],[1,0],[0,1],[1,0]])for(const i of order){const v=variants[i];v.flush('<html>owned cold-cache sentinel '+runs.length+'</html>');const cpu=process.cpuUsage(),start=performance.now();let value,error;try{value=v.context(snapshot);}catch(e){error={code:e.code||e.name,stage:e.stage||null};}const wallMs=performance.now()-start,used=process.cpuUsage(cpu),hash=value?fingerprint(value):JSON.stringify(error);expected??=hash;assert.equal(hash,expected,'native context identity/provenance changed');runs.push({variant:v.name,cpuMs:(used.user+used.system)/1000,wallMs,ok:!!value,error,actorAliases:value?.actorAliases.size||0,commentAuthors:value?.commentAuthors.size||0});}
+ return {bytes:Buffer.byteLength(snapshot.html||''),equivalent:true,cacheScopes:variants.map(v=>({variant:v.name,flushScope:v.flushScope||'DOM only; script-text may be warm'})),runs,meaning:'Same already-received HTML replayed cold in alternating order. No tokens, wire data or fingerprints are returned. CPU is parser component,not wholecrawler.'};
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "siteName": "nangluongsachvietnam.vn",
+  "siteId": "nangluongsachvietnam.vn",
+  "registrableDomain": "nangluongsachvietnam.vn",
+  "homepage": "https://nangluongsachvietnam.vn/",
+  "allowedHosts": [
+    "nangluongsachvietnam.vn",
+    "www.nangluongsachvietnam.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Thượng tôn hiến pháp và pháp luật - động lực kiến tạo phát triển đất nước",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".time",
+    "attribute": null,
+    "index": 0,
+    "priority": 65
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#contentdetails",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:05:46.852Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://nangluongsachvietnam.vn/d6/vi-VN/news/Thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-6-163-36997",
+      "https://nangluongsachvietnam.vn/d6/vi-VN/news/Phan-dau-hoan-thanh-o-muc-cao-nhat-cac-muc-tieu-chi-tieu-phat-trien-kinh-te-xa-hoi-6-163-36992",
+      "https://nangluongsachvietnam.vn/d6/vi-VN/news/Thu-tuong-ban-hanh-Ke-hoach-phong-chong-thien-tai-quoc-gia-giai-doan-2026-2030-6-163-36984",
+      "https://nangluongsachvietnam.vn/d6/vi-VN/news/Quoc-hoi-thong-qua-Nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-6-163-36980",
+      "https://nangluongsachvietnam.vn/d6/vi-VN/news/San-giao-dich-carbon-Khong-de-khoang-trong-phap-ly-trong-giai-doan-thi-diem-6-1954-36968"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://nangluongsachvietnam.vn/",
+    "categories": [
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Tin-tuc-6-12",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Trong-nuoc-6-163",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Quoc-te-6-14",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/thong-tin-hiep-hoi/Hoat-dong-hiep-hoi-6-1966",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nang-luong-sach-6-18",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nang-luong-gio-6-164",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nang-luong-mat-troi-6-165",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nang-luong-tai-tao-6-8",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nang-luong-phat-trien-6-13",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Dien-6-166",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Dau-khi-6-168",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Than-Khoang-san-6-167",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Cuoc-song-xanh-6-184",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Quy-hoach-xay-dung-6-185",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Bat-dong-san-6-186",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Do-thi-xanh-6-187",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Moi-truong-6-179",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nuoc-sach-6-1951",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Cuoc-song-va-phap-luat-6-1967",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Ket-noi-6-181",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Kinh-te-xanh-6-1954",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Suc-khoe-6-1955",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Van-hoa-du-lich-6-38",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Khoa-hoc-cong-nghe-6-17",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/San-pham-cong-nghe-6-1956",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nghien-cuu-Trao-doi-6-183",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-videos/Video-6-1957",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Chuyen-de-6-1958",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Tiet-kiem-dien-nang-6-1960",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/dien-mat-troi-mai-nha/Dien-mat-troi-mai-nha-6-1962",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Cong-trinh-xanh-6-1959",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Nong-nghiep-sach-6-1961",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Giao-thong-xanh-6-1968",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/O-to-6-1969",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Xe-may-6-1970",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/news-l/Cong-nghe-Giao-thong-6-1971",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/bao-chi-2/Van-ban-phap-quy-6-1963",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/bao-chi-1/Hoat-dong-dau-tu-6-1964",
+      "https://nangluongsachvietnam.vn/c3/vi-VN/bao-chi-1/Tu-van-Chi-dan-6-1965"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "nangluongsachvietnam.vn",
+    "checkedAt": "2026-11-09T03:57:15.659Z",
+    "url": "https://nangluongsachvietnam.vn/d6/vi-VN/news/Thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-6-163-36997",
+    "finalUrl": "https://nangluongsachvietnam.vn/d6/vi-VN/news/Thuong-ton-hien-phap-va-phap-luat-dong-luc-kien-tao-phat-trien-dat-nuoc-6-163-36997",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 12396,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "nangluongsachvietnam.vn",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 100,
+    "checkedArticleUrls": 113,
+    "freshArticleChecks": 108,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 100,
+    "listingResponsesAtArticleUrls": 12,
+    "categoriesPlanned": 39,
+    "categoriesFreshChecked": 39,
+    "categoriesUnconfirmed": 39,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 544,
+        "passed": 100,
+        "distinctHashes": 100
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [],
+    "homePrimaryHasParsedArticle": false,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:16:16.427Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/nangluongsachvietnam.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

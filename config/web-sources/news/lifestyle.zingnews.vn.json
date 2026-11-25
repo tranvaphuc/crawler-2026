@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "siteName": "lifestyle.zingnews.vn",
+  "siteId": "lifestyle.zingnews.vn",
+  "registrableDomain": "zingnews.vn",
+  "homepage": "https://lifestyle.zingnews.vn/",
+  "allowedHosts": [
+    "lifestyle.zingnews.vn",
+    "www.lifestyle.zingnews.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Nhà bán lẻ Hàn Quốc hưởng lợi nhờ cơn sốt T1, Pokémon",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".the-article-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:43:41.300Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "https://lifestyle.zingnews.vn/nha-ban-le-han-quoc-huong-loi-nho-con-sot-t1-pokemon-post1694856.html",
+      "https://lifestyle.zingnews.vn/chi-gan-1-ty-dong-de-to-chuc-dam-cuoi-post1694327.html",
+      "https://lifestyle.zingnews.vn/dong-thai-cua-anh-truoc-tinh-trang-1-trieu-thanh-nien-3-khong-post1694967.html",
+      "https://lifestyle.zingnews.vn/thoi-trang-khong-con-can-kanye-west-post1694585.html",
+      "https://lifestyle.zingnews.vn/bang-toc-gan-voi-beckham-modric-bat-ngo-hoi-sinh-post1694651.html",
+      "https://lifestyle.zingnews.vn/hacker-dang-tau-tan-6-3-ty-usd-tien-so-bi-danh-cap-tu-binance-ra-sao-post1694989.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://lifestyle.zingnews.vn/",
+    "categories": [
+      "https://lifestyle.zingnews.vn/the-gioi.html"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "lifestyle.zingnews.vn",
+    "checkedAt": "2026-11-09T03:57:13.739Z",
+    "url": "https://lifestyle.zingnews.vn/nha-ban-le-han-quoc-huong-loi-nho-con-sot-t1-pokemon-post1694856.html",
+    "finalUrl": "https://lifestyle.zingnews.vn/nha-ban-le-han-quoc-huong-loi-nho-con-sot-t1-pokemon-post1694856.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 5890,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "lifestyle.zingnews.vn",
+    "previousStatus": "coverage_unconfirmed",
+    "status": "coverage_unconfirmed",
+    "parsedArticles": 17,
+    "checkedArticleUrls": 17,
+    "freshArticleChecks": 7,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 17,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 1,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 122,
+        "passed": 16,
+        "distinctHashes": 16
+      },
+      {
+        "name": "video",
+        "discovered": 1,
+        "passed": 1,
+        "distinctHashes": 1
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://lifestyle.zingnews.vn/can-canh-co-may-gianh-giai-oscar-nganh-dong-ho-2026-post1695306.html",
+      "https://lifestyle.zingnews.vn/co-gi-o-le-cong-bo-11-dai-dien-viet-nam-du-tiktok-awards-dong-nam-a-post1695370.html",
+      "https://lifestyle.zingnews.vn/nguy-co-tra-gia-vi-quang-cao-vo-hon-nguoi-mau-3-tay-post1693788.html",
+      "https://lifestyle.zingnews.vn/hop-qua-giang-sinh-cua-kim-kardashian-gay-tranh-cai-post1694965.html",
+      "https://lifestyle.zingnews.vn/11-nha-sang-tao-dai-dien-viet-nam-du-tiktok-awards-dong-nam-a-2026-post1695369.html",
+      "https://lifestyle.zingnews.vn/tiem-nang-thuong-mai-cua-golden-boy-pau-cubarsi-post1695429.html",
+      "https://lifestyle.zingnews.vn/san-voucher-lac-sieu-xu-va-mua-sam-dip-1111-tren-shopee-post1695430.html",
+      "https://lifestyle.zingnews.vn/ve-ngoai-thay-doi-cua-ty-phu-lua-dao-elizabeth-holmes-post1693959.html",
+      "https://lifestyle.zingnews.vn/quang-cao-cua-dior-gay-tranh-cai-vi-ban-tay-6-ngon-post1694607.html",
+      "https://lifestyle.zingnews.vn/bang-toc-gan-voi-beckham-modric-bat-ngo-hoi-sinh-post1694651.html",
+      "https://lifestyle.zingnews.vn/met-gala-2027-doi-chu-de-sau-lan-song-chi-trich-post1694700.html",
+      "https://lifestyle.zingnews.vn/boc-gia-trang-suc-chopard-cua-quang-hung-masterd-tren-bia-tap-chi-post1695327.html",
+      "https://lifestyle.zingnews.vn/cau-thu-juventus-ac-milan-dien-suit-den-europa-league-post1694661.html",
+      "https://lifestyle.zingnews.vn/rac-ai-len-loi-vao-cong-so-my-post1694458.html",
+      "https://lifestyle.zingnews.vn/video-human-made-ai-gen-mo-cuoc-doi-thoai-giua-nguoi-va-ai-post1681688.html",
+      "https://lifestyle.zingnews.vn/dong-thai-cua-anh-truoc-tinh-trang-1-trieu-thanh-nien-3-khong-post1694967.html",
+      "https://lifestyle.zingnews.vn/thanh-nien-han-quoc-dan-mat-dong-luc-tim-viec-post1694447.html",
+      "https://lifestyle.zingnews.vn/kiem-hop-dong-300-trieu-dong-bien-loi-nhuan-50-tu-quang-cao-ai-post1692754.html",
+      "https://lifestyle.zingnews.vn/nguoi-mau-3-tay-mat-cung-do-khien-nguoi-tre-tphcm-ngai-chot-don-post1694838.html",
+      "https://lifestyle.zingnews.vn/nha-ban-le-han-quoc-huong-loi-nho-con-sot-t1-pokemon-post1694856.html",
+      "https://lifestyle.zingnews.vn/chi-gan-1-ty-dong-de-to-chuc-dam-cuoi-post1694327.html",
+      "https://lifestyle.zingnews.vn/6-ty-phu-giau-nhat-the-gioi-mat-hang-tram-ty-usd-post1694432.html",
+      "https://lifestyle.zingnews.vn/ai-tre-nhat-trong-top-100-nguoi-giau-nhat-trung-quoc-post1694348.html",
+      "https://lifestyle.zingnews.vn/massage-mat-co-thuc-su-hieu-qua-post1694445.html",
+      "https://lifestyle.zingnews.vn/elf-beauty-da-dung-khi-tra-1-ty-usd-cho-vo-justin-bieber-post1694415.html",
+      "https://lifestyle.zingnews.vn/con-gai-david-beckham-bi-cam-trang-diem-o-truong-post1691977.html",
+      "https://lifestyle.zingnews.vn/nguoi-dan-ong-dep-trai-nhat-the-gioi-lang-xe-ria-mep-post1691083.html",
+      "https://lifestyle.zingnews.vn/chi-40000-usd-de-so-huu-doi-mat-san-moi-post1690084.html",
+      "https://lifestyle.zingnews.vn/cho-dong-xuan-lan-dau-tro-thanh-khong-gian-dai-trien-lam-post1694701.html",
+      "https://lifestyle.zingnews.vn/tung-bi-ban-vi-het-cho-treo-kiet-tac-nga-co-the-dat-gia-80-trieu-usd-post1693928.html",
+      "https://lifestyle.zingnews.vn/buc-tranh-duy-nhat-nam-2011-cua-yoshitomo-nara-sap-dau-gia-post1694111.html",
+      "https://lifestyle.zingnews.vn/bo-hoa-thach-khung-long-47-trieu-usd-dat-nhi-lich-su-dau-gia-post1693096.html",
+      "https://lifestyle.zingnews.vn/vinh-khuat-khong-gioi-han-ban-than-trong-lua-chon-duy-nhat-post1695252.html",
+      "https://lifestyle.zingnews.vn/thu-choi-dong-giay-bong-da-khai-tu-cua-michael-olise-post1695003.html",
+      "https://lifestyle.zingnews.vn/nang-tho-bo-sua-bay-ghi-diem-voi-toc-ngan-uot-post1695018.html",
+      "https://lifestyle.zingnews.vn/nu-golfer-gianh-hcv-olympic-tim-su-binh-tinh-qua-trang-sach-post1693407.html",
+      "https://lifestyle.zingnews.vn/tiktok-awards-lan-dau-mo-rong-quy-mo-dong-nam-a-post1694983.html",
+      "https://lifestyle.zingnews.vn/thoi-trang-khong-con-can-kanye-west-post1694585.html",
+      "https://lifestyle.zingnews.vn/nguoi-tre-trung-quoc-ngay-cang-luoi-ket-hon-post1694705.html",
+      "https://lifestyle.zingnews.vn/human-made-ai-gen-dua-ai-len-vi-tri-host-podcast-post1678765.html",
+      "https://lifestyle.zingnews.vn/haaland-vuot-ronaldo-ve-gia-tri-thuong-mai-post1694641.html",
+      "https://lifestyle.zingnews.vn/hang-nghin-buoc-chay-uprace-2026-gop-co-hoi-hoc-tap-cho-tre-em-post1693118.html",
+      "https://lifestyle.zingnews.vn/de-che-golf-5-ty-usd-sup-do-post1694630.html",
+      "https://lifestyle.zingnews.vn/xu-huong-suu-tam-vang-24k-theo-nhan-vat-yeu-thich-cua-gioi-tre-post1694657.html",
+      "https://lifestyle.zingnews.vn/uprace-2026-tiep-suc-nguoi-khuyet-tat-tu-nhung-buoc-chay-post1693119.html",
+      "https://lifestyle.zingnews.vn/het-thoi-starbucks-mien-phi-cho-ngoi-o-trung-quoc-post1694410.html",
+      "https://lifestyle.zingnews.vn/hanoi-vibes-vpbank-moves-but-pha-sau-hang-chuc-nghin-buoc-chay-post1694412.html",
+      "https://lifestyle.zingnews.vn/jude-bellingham-dai-thang-sau-world-cup-post1694220.html"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {},
+    "checkedAt": "2026-11-10T09:15:58.153Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/lifestyle.zingnews.vn/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": [
+    {
+      "title": {
+        "strategy": "selector",
+        "selector": "h1"
+      },
+      "publishedDate": {
+        "precision": "second",
+        "timezone": "explicit_offset",
+        "strategy": "jsonld",
+        "key": "datePublished",
+        "priority": 100
+      },
+      "body": {
+        "strategy": "selector",
+        "selector": "video",
+        "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+      },
+      "additionalMediaStrategy": "jsonld"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "siteName": "taichinhtoandien.vn",
+  "siteId": "taichinhtoandien.vn",
+  "registrableDomain": "taichinhtoandien.vn",
+  "homepage": "https://taichinhtoandien.vn/",
+  "allowedHosts": [
+    "taichinhtoandien.vn",
+    "www.taichinhtoandien.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://taichinhtoandien.vn/",
+    "categories": [
+      "https://taichinhtoandien.vn/tin-tai-chinh?isFeatured=1",
+      "https://taichinhtoandien.vn/thi-truong?isFeatured=1",
+      "https://taichinhtoandien.vn/ngan-hang?isFeatured=1",
+      "https://taichinhtoandien.vn/dau-tu?isFeatured=1",
+      "https://taichinhtoandien.vn/doanh-nghiep?isFeatured=1",
+      "https://taichinhtoandien.vn/phap-luat"
+    ]
+  },
+  "title": {
+    "value": "SHB nhận Giải thưởng Chất lượng thanh toán quốc tế xuất sắc (STP Award) từ Citibank",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[property=\"article:published_time\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:02.578Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:26:30.447Z",
+    "independentHoldouts": [
+      "https://taichinhtoandien.vn/ngan-hang/shinhan-finance-uu-dai-den-30.000-dong-khi-thanh-toan-khoan-vay-qua-ishinhan.html",
+      "https://taichinhtoandien.vn/ngan-hang/bidv-duoc-vinh-danh-trong-top-50-thuong-hieu-dan-dau-viet-nam.html",
+      "https://taichinhtoandien.vn/phap-luat/quan-tri-vien-25-fanpage-bi-tam-giu-vi-cuong-doat-tai-san-o-hai-phong.html"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://taichinhtoandien.vn/ngan-hang/shb-nhan-giai-thuong-chat-luong-thanh-toan-quoc-te-xuat-sac-stp-award-tu-citibank.html",
+      "https://taichinhtoandien.vn/ngan-hang/shinhan-finance-uu-dai-den-30.000-dong-khi-thanh-toan-khoan-vay-qua-ishinhan.html",
+      "https://taichinhtoandien.vn/ngan-hang/bidv-duoc-vinh-danh-trong-top-50-thuong-hieu-dan-dau-viet-nam.html",
+      "https://taichinhtoandien.vn/phap-luat/quan-tri-vien-25-fanpage-bi-tam-giu-vi-cuong-doat-tai-san-o-hai-phong.html"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

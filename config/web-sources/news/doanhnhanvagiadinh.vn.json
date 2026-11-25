@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doanhnhanvagiadinh.vn",
+  "siteId": "doanhnhanvagiadinh.vn",
+  "registrableDomain": "doanhnhanvagiadinh.vn",
+  "homepage": "https://doanhnhanvagiadinh.vn/",
+  "allowedHosts": [
+    "doanhnhanvagiadinh.vn",
+    "www.doanhnhanvagiadinh.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://doanhnhanvagiadinh.vn/",
+    "categories": [
+      "https://doanhnhanvagiadinh.vn/c/thoi-su",
+      "https://doanhnhanvagiadinh.vn/c/tieu-dung",
+      "https://doanhnhanvagiadinh.vn/c/tai-chinh-ngan-hang",
+      "https://doanhnhanvagiadinh.vn/c/bat-dong-san",
+      "https://doanhnhanvagiadinh.vn/c/doanh-nhan-va-doanh-nghiep",
+      "https://doanhnhanvagiadinh.vn/c/doi-song-and-suc-khoe",
+      "https://doanhnhanvagiadinh.vn/c/giai-tri",
+      "https://doanhnhanvagiadinh.vn/c/xe-va-cong-nghe",
+      "https://doanhnhanvagiadinh.vn/video",
+      "https://doanhnhanvagiadinh.vn/photo"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "SHB ước đạt LNTT 14.300 tỷ đồng trong 9 tháng, hoàn thành 81% kế hoạch cả năm",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".afcbc-body",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:58:29.270Z",
+    "frozenAt": "2026-11-16T01:58:21.978Z",
+    "trainingUrl": "https://doanhnhanvagiadinh.vn/shb-uoc-dat-lntt-14300-ty-dong-trong-9-thang-hoan-thanh-81-ke-hoach-ca-nam-a136476.html",
+    "independentHoldouts": [
+      "https://doanhnhanvagiadinh.vn/chot-muc-luong-toi-thieu-vung-moi-tu-112027-cao-nhat-57-trieu-dongthang-a139705.html",
+      "https://doanhnhanvagiadinh.vn/gia-xe-vinfast-vf-3-moi-nhat-thang-112026-a139694.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://doanhnhanvagiadinh.vn/shb-uoc-dat-lntt-14300-ty-dong-trong-9-thang-hoan-thanh-81-ke-hoach-ca-nam-a136476.html",
+      "https://doanhnhanvagiadinh.vn/chot-muc-luong-toi-thieu-vung-moi-tu-112027-cao-nhat-57-trieu-dongthang-a139705.html",
+      "https://doanhnhanvagiadinh.vn/gia-xe-vinfast-vf-3-moi-nhat-thang-112026-a139694.html",
+      "https://doanhnhanvagiadinh.vn/30-tap-doan-viet-nam-nam-429-trieu-ty-dong-tai-san-tao-viec-lam-cho-560000-lao-dong-a139698.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

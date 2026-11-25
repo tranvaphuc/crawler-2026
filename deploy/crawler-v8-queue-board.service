@@ -1,0 +1,23 @@
+[Unit]
+Description=Crawler v8 BullMQ queue dashboard
+After=network-online.target redis-server.service
+Requires=redis-server.service
+
+[Service]
+Type=simple
+User=crawler-v8
+Group=crawler-api
+WorkingDirectory=/opt/crawler-v8/current
+EnvironmentFile=/etc/crawler-v8/runtime.env
+EnvironmentFile=/etc/crawler-v8/queue-board.env
+ExecStart=/opt/crawler-node/bin/node /opt/crawler-v8/current/scripts/crawler_v8_queue_board.mjs
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/lib/crawler-v8
+
+[Install]
+WantedBy=multi-user.target

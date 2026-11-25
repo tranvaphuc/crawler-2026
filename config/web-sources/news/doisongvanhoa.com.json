@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "siteName": "doisongvanhoa.com",
+  "siteId": "doisongvanhoa.com",
+  "registrableDomain": "doisongvanhoa.com",
+  "homepage": "http://doisongvanhoa.com/",
+  "allowedHosts": [
+    "doisongvanhoa.com",
+    "www.doisongvanhoa.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "timezoneProvenance": {
+    "authority": "explicit_user_confirmation",
+    "scope": "doisongvanhoa.com",
+    "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+  },
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Những bộ truyện tranh gắn liền với tuổi thơ thế hệ 8x, 9x",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "selector",
+    "selector": ".public-info-time",
+    "attribute": null,
+    "index": 0,
+    "priority": 110
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "#content-center .content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-09T05:15:30.552Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 3,
+    "sampleUrls": [
+      "http://doisongvanhoa.com/tin-tuc/nhung-bo-truyen-tranh-gan-lien-voi-tuoi-tho-the-he-8x-9x-16369.html",
+      "http://doisongvanhoa.com/tin-tuc/nhung-bo-phim-gan-lien-voi-tuoi-tho-the-he-8x-9x-16410.html",
+      "http://doisongvanhoa.com/tin-tuc/ha-noi-va-thanh-pho-ho-chi-minh-nam-trong-danh-sach-50-thanh-pho-tot-nhat-the-gioi-17288.html",
+      "http://doisongvanhoa.com/tin-tuc/metlife-foundation-tai-tro-hai-to-chuc-tai-viet-nam-giai-quyet-nhu-cau-cong-dong-17299.html",
+      "http://doisongvanhoa.com/tin-tuc/grab-ho-tro-tai-xe-xe-xang-va-xe-dien-giua-bien-dong-gia-nhien-lieu-17289.html",
+      "http://doisongvanhoa.com/tin-tuc/nhung-bo-truyen-tranh-gan-lien-voi-tuoi-tho-the-he-8x-9x-16369.html"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "evidenceDirectory": "/Users/phuctran/Workspace/crawler-2026/outputs/news-parser-rollout-2026-11-09/round6-http/sites/doisongvanhoa.com",
+    "contentScope": null,
+    "excludedDocumentEvidence": null
+  },
+  "discovery": {
+    "homepage": "http://doisongvanhoa.com/",
+    "categories": [
+      "http://doisongvanhoa.com/tin-tuc/tieu-diem-hom-nay.l",
+      "http://doisongvanhoa.com/tin-tuc/doi-song-da-chieu.l",
+      "http://doisongvanhoa.com/tin-tuc/van-hoa-giai-tri.l",
+      "http://doisongvanhoa.com/tin-tuc/the-gioi-dien-anh.l",
+      "http://doisongvanhoa.com/tin-tuc/nhip-song-kinh-te.l",
+      "http://doisongvanhoa.com/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": [],
+    "httpDiscoveryAudit": {
+      "checkedAt": "2026-11-17T04:28:58.276Z",
+      "verifiedSeeds": [
+        "http://doisongvanhoa.com/",
+        "http://doisongvanhoa.com/tin-tuc/van-hoa-giai-tri.l",
+        "http://doisongvanhoa.com/tin-tuc/the-gioi-dien-anh.l",
+        "http://doisongvanhoa.com/tin-tuc/nhip-song-kinh-te.l"
+      ],
+      "articleWriteGatesUnchanged": true,
+      "paidAiCalls": 0
+    }
+  },
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict"
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "httpValidation": {
+    "status": "independent_samples_passed_with_configured_timezone",
+    "checkedAt": "2026-11-09T05:19:03.170Z",
+    "sampleCount": 6,
+    "passedSamples": 6,
+    "independentSamples": 2,
+    "scope": "Fresh Axios samples and distinct holdouts; complete site cycle not verified",
+    "configuredTimezoneAssumption": true,
+    "newsOnlyScope": false
+  },
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "fullSiteCycleVerified": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:59:09.198Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/doisongvanhoa.com/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "doisongvanhoa.com",
+    "parsedArticles": 12,
+    "distinctHashes": 12,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 5,
+    "categoriesAttempted": 5,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 99,
+    "checkedArticleUrls": 12,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 96,
+        "attempted": 9,
+        "passed": 9,
+        "distinctContents": 9,
+        "distinctHashes": 9
+      },
+      {
+        "name": "video",
+        "discovered": 3,
+        "attempted": 3,
+        "passed": 3,
+        "distinctContents": 3,
+        "distinctHashes": 3
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": [],
+  "description": {
+    "strategy": "native_lead",
+    "scope": "body",
+    "selector": "#content-center .content p"
+  },
+  "originalSourceRepair": {
+    "checkedAt": "2026-11-17T07:31:26.559Z",
+    "method": "captured_original_http_html_revalidated_after_user_timezone_confirmation",
+    "liveHttpVerified": false,
+    "proofs": [
+      {
+        "url": "http://doisongvanhoa.com/tin-tuc/nhung-bo-truyen-tranh-gan-lien-voi-tuoi-tho-the-he-8x-9x-16369.html",
+        "htmlPath": "/opt/news-flow/releases/20261117-held-article-fixes-11/outputs/news-all-sites-health-20261117/http-audit-stage2/audit/doisongvanhoa.com/5.html.gz",
+        "htmlSha256": "6156c94b7d3e5217bd0d2e2b6c33509f36b1aa00eabbd167c7e21cf73b0951ee",
+        "contentHash": "e46ea4cf01c3b816c9748b23766b5ccd7c408a5e29a9536f11f359df54ceb208",
+        "description": "Doraemon – Chú mèo máy đến từ thế kỷ 22 cùng chiếc túi thần kỳ đã trở thành biểu tượng tuổi thơ. Không chỉ mang đến những bảo bối diệu kỳ giúp Nobita thoát khỏi rắc rối, Doraemon còn dạy chúng ta về tình bạn, lòng nhân ái và khát vọng vươn lên.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://doisongvanhoa.com/tin-tuc/nhung-bo-truyen-tranh-gan-lien-voi-tuoi-tho-the-he-8x-9x-16369.html",
+          "publishedDate": "2025-02-18T03:52:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "doisongvanhoa.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "http://doisongvanhoa.com/tin-tuc/ha-noi-va-thanh-pho-ho-chi-minh-nam-trong-danh-sach-50-thanh-pho-tot-nhat-the-gioi-17288.html",
+        "htmlPath": "/opt/news-flow/releases/20261117-held-article-fixes-11/outputs/news-all-sites-health-20261117/http-audit-stage2/audit/doisongvanhoa.com/6.html.gz",
+        "htmlSha256": "f8f96659c4651bc3ca61a620aa97931229d205c3d3548b7019d81fb303643c34",
+        "contentHash": "8684426144193da342d428fc984c46aaf61e4ffca1c8d8b7d3cbe705fcbf60e4",
+        "description": "Danh sách thường niên này lựa chọn 50 đô thị được đánh giá là hấp dẫn nhất để sinh sống, làm việc và khám phá, dựa trên khảo sát quy mô lớn với cư dân địa phương cùng ý kiến của các chuyên gia quốc tế.",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://doisongvanhoa.com/tin-tuc/ha-noi-va-thanh-pho-ho-chi-minh-nam-trong-danh-sach-50-thanh-pho-tot-nhat-the-gioi-17288.html",
+          "publishedDate": "2026-03-16T09:38:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "doisongvanhoa.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      },
+      {
+        "url": "http://doisongvanhoa.com/tin-tuc/doi-ngu-chuyen-gia-harvard-mo-ra-ky-nguyen-moi-cong-nghe-dieu-tri-mun-khong-can-thuoc-17280.html",
+        "htmlPath": "/opt/news-flow/releases/20261117-held-article-fixes-11/outputs/news-all-sites-health-20261117/http-audit-stage2/audit/doisongvanhoa.com/9.html.gz",
+        "htmlSha256": "59544b022f1d7a345d1e61c052eb23e425236755aed32cdddfecd9f07ac7f20f",
+        "contentHash": "087757567af2224014b19708cff35cc9416b1fead2f7705c5896030fef8a5b29",
+        "description": "Hành Trình Hơn 20 Năm Của Đội Ngũ Giáo Sư Đại học Harvard Tìm Lời Giải Mới Cho Điều Trị Mụn",
+        "publication": {
+          "ok": true,
+          "version": 1,
+          "policy": "strict_native_publication_v1",
+          "url": "http://doisongvanhoa.com/tin-tuc/doi-ngu-chuyen-gia-harvard-mo-ra-ky-nguyen-moi-cong-nghe-dieu-tri-mun-khong-can-thuoc-17280.html",
+          "publishedDate": "2025-12-16T11:17:00.000Z",
+          "precision": "minute",
+          "source": "scoped_original_article_clock",
+          "publicationTimePolicy": "user_confirmed_vietnam_article_clock",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "timezoneAuthority": {
+            "authority": "explicit_user_confirmation",
+            "scope": "doisongvanhoa.com",
+            "confirmation": "displayed_clock_is_vietnam_time_2026-11-17"
+          }
+        }
+      }
+    ],
+    "paidAiCalls": 0
+  },
+  "publicationArticleScope": "#content-center",
+  "publicationTimePolicy": "user_confirmed_vietnam_article_clock"
+}

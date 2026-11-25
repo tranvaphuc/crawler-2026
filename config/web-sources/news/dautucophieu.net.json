@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dautucophieu.net",
+  "siteId": "dautucophieu.net",
+  "registrableDomain": "dautucophieu.net",
+  "homepage": "https://dautucophieu.net/",
+  "allowedHosts": [
+    "dautucophieu.net",
+    "www.dautucophieu.net"
+  ],
+  "timezone": null,
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "MARGIN VIP – Giải Pháp Tăng Sức Mua Mạnh Mẽ Cho NĐT Chứng Khoán",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "selector",
+    "selector": "meta[itemprop=\"datePublished\"]",
+    "attribute": "content",
+    "priority": 90
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "[itemprop=\"articleBody\"]",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:28.270Z",
+    "sampleCount": 6,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dautucophieu.net/marginvip/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-06-11-2026-chiu-ap-luc-tu-thi-truong-the-gioi/",
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-06-11-2026-tien-mat-van-chiem-70/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-pow-q3-2026-loi-nhuan-cot-loi-vuot-ky-vong-nho-chi-phi-thap-hon-du-kien/",
+      "https://dautucophieu.net/co-phieu-ctg-dot-pha-tu-nen-tang-vung-chac-co-hoi-dau-tu-dai-han-trong-chu-ky-hoi-phuc-ngan-hang/"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dautucophieu.net/",
+    "categories": [
+      "https://dautucophieu.net/huong-dan-cach-dau-tu-chung-khoan-huong-dan-cach-choi-chung-khoan-cho-nguoi-moi-bat-dau/",
+      "https://dautucophieu.net/hsc-cong-ty-chung-khoan-cho-vay-margin-cao-nhat-thi-truong/",
+      "https://dautucophieu.net/chung-khoan/",
+      "https://dautucophieu.net/tong-quan-ve-thi-truong-chung-khoan/",
+      "https://dautucophieu.net/chung-khoan-phai-sinh/",
+      "https://dautucophieu.net/chung-khoan-phai-sinh/chung-quyen/",
+      "https://dautucophieu.net/tin-tuc/cap-nhat-kqkd/",
+      "https://dautucophieu.net/tin-tuc/doanh-nghiep/",
+      "https://dautucophieu.net/tin-tuc/the-gioi/",
+      "https://dautucophieu.net/tin-tuc/tai-chinh-ngan-hang/",
+      "https://dautucophieu.net/tin-tuc/hang-hoa/",
+      "https://dautucophieu.net/song/",
+      "https://dautucophieu.net/phan-tich-chung-khoan/",
+      "https://dautucophieu.net/phan-tich-chung-khoan/phan-tich-co-ban/",
+      "https://dautucophieu.net/phan-tich-chung-khoan/phan-tich-ky-thuat/",
+      "https://dautucophieu.net/phan-tich-chung-khoan/phan-tich-cap-nhat-nganh/",
+      "https://dautucophieu.net/nhan-dinh-thi-truong-chung-khoan/",
+      "https://dautucophieu.net/huong-dan-co-ban/",
+      "https://dautucophieu.net/cashflow-focus/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dautucophieu.net",
+    "checkedAt": "2026-11-09T03:56:58.180Z",
+    "url": "https://dautucophieu.net/marginvip/",
+    "finalUrl": "https://dautucophieu.net/marginvip/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 2652,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "domain": "dautucophieu.net",
+    "previousStatus": "parser_or_integrity_review",
+    "status": "parser_or_integrity_review",
+    "parsedArticles": 27,
+    "checkedArticleUrls": 28,
+    "freshArticleChecks": 8,
+    "parserIssues": 1,
+    "transportUnconfirmed": 0,
+    "distinctHashes": 27,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 19,
+    "categoriesFreshChecked": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "categoryUrlsRemoved": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "bodyUpgraded": false,
+    "adapterVerified": false,
+    "adapterNeedsProof": false,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 152,
+        "passed": 27,
+        "distinctHashes": 27
+      }
+    ],
+    "homeError": null,
+    "homeListingError": null,
+    "homePrimaryCandidates": [
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-10-11-2026-tien-mat-nang-len-80-sau-khi-dcm-bao-thoat/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-09-11-2026-vn-index-sat-1-700-dong-tien-tiep-tuc-rut-lui/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-pow-q3-2026-loi-nhuan-cot-loi-vuot-ky-vong-nho-chi-phi-thap-hon-du-kien/",
+      "https://dautucophieu.net/co-phieu-ctg-dot-pha-tu-nen-tang-vung-chac-co-hoi-dau-tu-dai-han-trong-chu-ky-hoi-phuc-ngan-hang/",
+      "https://dautucophieu.net/huong-dan-mo-tai-khoan-chung-khoan/",
+      "https://dautucophieu.net/cap-nhat-nhanh-kinh-te-vi-mo-vi-mo-dau-tuan-bau-cu-giua-ky-tai-my-so-lieu-thang-10-cua-viet-nam/",
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-09-11-2026-70-tien-mat-van-nguyen/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-06-11-2026-chiu-ap-luc-tu-thi-truong-the-gioi/",
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-06-11-2026-tien-mat-van-chiem-70/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-04-11-2026-van-tang-nhung-khong-con-dong-thuan/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-04-11-2026-lay-lai-diem-so-2-phien-giam-truoc-do/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-03-11-2026-lai-thung-1700/",
+      "https://dautucophieu.net/thi-truong-chung-khoan-ngay-02-11-2026-lao-doc-hoang-loan/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-stb-q3-2026-lntt-giam-52-so-voi-cung-ky-thap-hon-du-bao-do-chi-phi-du-phong-cao/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-vpb-q3-2026-tang-truong-tich-cuc-du-nim-thu-hep/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-fpt-q3-2026-loi-nhuan-thuan-sat-du-bao-nhung-mang-dich-vu-cntt-nuoc-ngoai-kem-tich-cuc/",
+      "https://dautucophieu.net/cap-nhat-co-phieu-ptb-kqkd-q3-2026-dung-nhu-ky-vong-muc-tieu-tham-vong-cho-q4/",
+      "https://dautucophieu.net/vn-index-dieu-chinh-ky-thuat-hay-tiep-tuc-giam-manh-gay-xu-huong/",
+      "https://dautucophieu.net/co-phieu-ctg-trien-vong-tich-cuc/",
+      "https://dautucophieu.net/co-phieu-msn-nhip-dieu-chinh-ky-thuat-hay-xu-huong-giam/",
+      "https://dautucophieu.net/co-phieu-hpg-co-hoi-vang-truoc-con-song-tang-moi/",
+      "https://dautucophieu.net/co-phieu-ree-dinh-gia-hap-dan-san-sang-xu-huong-tang-tiep/",
+      "https://dautucophieu.net/huong-dan-dau-tu-chung-khoan-cho-nguoi-moi-2026/",
+      "https://dautucophieu.net/huong-dan-mo-tai-khoan-chung-khoan-online/",
+      "https://dautucophieu.net/core-pce-price-index-la-gi-tai-sao-chi-so-nay-lai-la-thuoc-do-lam-phat-ua-thich-cua-fed/",
+      "https://dautucophieu.net/cap-nhat-nhanh-kinh-te-vi-mo-vi-mo-dau-tuan-quyet-dinh-cua-cac-nhtw-toan-cau-ttck-viet-nam-phuc-hoi/",
+      "https://dautucophieu.net/cap-nhat-nhanh-kinh-te-vi-mo-vi-mo-dau-tuan-gdp-trung-quoc-chi-so-pmi-toan-cau-va-so-lieu-thuong-mai-viet-nam/",
+      "https://dautucophieu.net/cap-nhat-nhanh-kinh-te-vi-mo-vi-mo-dau-tuan-so-lieu-viec-lam-my-cpi-khu-vuc-eurozone-gdp-q3-2026-cua-viet-nam/",
+      "https://dautucophieu.net/cap-nhat-nhanh-kinh-te-vi-mo-vi-mo-dau-tuan-phat-bieu-cua-cac-quan-chuc-fed-va-chi-so-pmi-tai-my-khu-vuc-eurozone/",
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-05-11-2026-van-chua-mo-mua-moi/",
+      "https://dautucophieu.net/nhip-dap-danh-muc-cashflow-ngay-04-11-2026-giu-3-ma-tien-mat-chiem-70-o-muc-phong-thu/"
+    ],
+    "homePrimaryHasParsedArticle": true,
+    "issueCounts": {
+      "original_publication_not_yet_confirmed": 1
+    },
+    "checkedAt": "2026-11-10T09:14:50.806Z",
+    "stage": "437_sources_http_parser_and_primary_category_followup",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-repair-437-2026-11-10/final/sites/dautucophieu.net/result.json",
+    "scope": "Fresh HTTP for prior failures, unconfirmed categories and new controls; primary-listing proof excludes auxiliary blocks. Saved successful responses replayed with final config. Not all discovered articles fetched.",
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

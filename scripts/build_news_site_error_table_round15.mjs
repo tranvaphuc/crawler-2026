@@ -1,0 +1,61 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const root=path.resolve('outputs/news-parser-round15-318-2026-11-10/final');
+const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));
+const sources=await read(path.join(root,'remaining-sites.json'));
+const summary=await read(path.join(root,'summary.json'));
+const labels={
+ missing_title:'Thiếu tiêu đề',missing_published_date:'Thiếu ngày đăng gốc',missing_body:'Thiếu nội dung bài',body_link_density:'Body lẫn nhiều link / mật độ link cao',
+ possible_listing_preview:'Nghi nhận nhầm trang danh sách hoặc đoạn xem trước',not_found:'Không tìm thấy tài nguyên',request_deadline_exceeded:'Request quá thời hạn',
+ publisher_restricted_content_unverified:'Nội dung bị giới hạn truy cập, chưa xác minh đủ',empty_page:'HTML trống hoặc quá ít nội dung',document_too_large:'HTML vượt giới hạn tải của phép thử',
+ access_blocked:'Nội dung trả về là trang chặn truy cập',public_wordpress_post_missing_or_protected:'Bài WordPress không tìm thấy hoặc không công khai',article_redirect_to_homepage:'Link bài chuyển về trang chủ',
+ missing_original_publisher_url:'Thiếu URL bài ở publisher gốc',publisher_configuration_missing:'Chưa có cấu hình parser cho publisher gốc',
+ joomla_original_publication_unconfirmed:'Chưa xác nhận ngày đăng gốc Joomla',site_test_budget_reached:'Hết hạn mức lấy mẫu của vòng kiểm tra',
+ ECONNREFUSED:'Kết nối bị từ chối',ENOTFOUND:'Không phân giải được tên miền',ECONNRESET:'Kết nối bị ngắt',ETIMEDOUT:'Kết nối quá thời hạn',
+ HPE_INVALID_CHUNK_SIZE:'Không giải mã được HTTP chunked',HPE_INVALID_HEADER_TOKEN:'Header HTTP không hợp lệ',
+ no_news_article_links:'Không tìm thấy link bài trong category đã thử',category_redirect_to_homepage:'Category chuyển về trang chủ',
+ category_url_rejected_by_policy:'URL category bị quy tắc phân loại loại bỏ',category_article_parse_unconfirmed:'Chưa xác nhận được bài parse đạt từ category',
+ category_not_checked:'Chưa có category được kiểm chứng',homepage_unconfirmed:'Chưa xác nhận homepage HTTP 200',
+ insufficient_passed_articles:'Chưa đủ 3 URL bài parse đạt',insufficient_distinct_content:'Chưa đủ 3 nội dung khác nhau',
+ origin_unstable_after_two_failures:'Dừng sau hai lỗi kết nối/thời hạn liên tiếp',origin_rate_limited:'Dừng do bị giới hạn tần suất',rate_limited:'Bị giới hạn tần suất',
+};
+const explain=code=>String(code).split(',').map(part=>labels[part]||(/^http_\d+$/.test(part)?'HTTP '+part.slice(5):part)).join('; ');
+const statusLabels={http_or_parser_failed:'Chưa có mẫu bài đạt',parser_partial:'Đạt một phần / thiếu xác nhận category',parser_improved_partial:'Có bài/category đạt; chưa đủ tiêu chí khác'};
+const rows=[];
+for(const source of sources){
+ const r=await read(path.join(root,'sites',source.domain,'result.json'));
+ const http=await read(path.join(r.httpEvidenceDirectory,'result.json'));
+ const issues=[],seen=new Set();
+ const add=(stage,code,url,evidence)=>{if(!code||code.startsWith('non_news_document:'))return;const key=[stage,code,url||''].join('|');if(seen.has(key))return;seen.add(key);issues.push({stage,code,label:explain(code),url:url||null,evidence:evidence||null});};
+ if(!r.homepageVerified)add('Homepage',http.home?.error||(http.home?.statusCode?'http_'+http.home.statusCode:'homepage_unconfirmed'),http.home?.url,r.httpEvidenceDirectory);
+ for(const c of r.categoryChecks||[])if(!c.valid)add('Category',c.error||'category_url_rejected_by_policy',c.url,r.httpEvidenceDirectory);
+ if(!r.categoryVerified)add('Kiểm chứng category',(r.categoryChecks||[]).length?'category_article_parse_unconfirmed':'category_not_checked',null,r.httpEvidenceDirectory);
+ for(const c of r.articleChecks||[])add('Bài HTTP mới',c.httpError||c.error,c.url,c.htmlPath||r.httpEvidenceDirectory);
+ for(const c of r.cachedChecks||[])if(!c.excluded)add('HTML lỗi đã lưu',c.error,c.url,c.evidence);
+ if(r.passedArticles<3)add('Số mẫu','insufficient_passed_articles',null,null);
+ if(r.distinctContentHashes<3)add('Số mẫu','insufficient_distinct_content',null,null);
+ if(r.haltReason)add('Dừng lấy mẫu',r.haltReason,null,r.httpEvidenceDirectory);
+ if(!issues.length)throw Error('Missing concrete reason for '+r.domain);
+ const grouped=new Map();for(const i of issues){const group=grouped.get(i.code)||{code:i.code,label:i.label,urls:new Set(),stages:new Set()};if(i.url)group.urls.add(i.url);group.stages.add(i.stage);grouped.set(i.code,group);}
+ rows.push({domain:r.domain,status:r.status,statusLabel:statusLabels[r.status],passedArticles:r.passedArticles,distinctContentHashes:r.distinctContentHashes,
+  homepageVerified:r.homepageVerified,homepage:http.home||null,categoryVerified:r.categoryVerified,categoryChecks:r.categoryChecks,
+  freshArticleFailures:r.freshArticleFailures,cachedParserFailures:r.cachedParserFailures,haltReason:r.haltReason,
+  errors:[...grouped.values()].map(g=>({...g,urls:[...g.urls],stages:[...g.stages]})),issues,checkedAt:r.checkedAt,evidenceDirectory:path.join(root,'sites',r.domain)});
+}
+rows.sort((a,b)=>a.domain.localeCompare(b.domain,'en'));
+if(rows.length!==305||new Set(rows.map(r=>r.domain)).size!==305)throw Error('Expected exactly 305 unique sites');
+const statistics={sites:rows.length,statuses:Object.fromEntries(Object.keys(statusLabels).map(k=>[k,rows.filter(r=>r.status===k).length])),homepageUnconfirmed:rows.filter(r=>!r.homepageVerified).length,categoryUnconfirmed:rows.filter(r=>!r.categoryVerified).length,sitesWithoutArticleErrors:rows.filter(r=>r.freshArticleFailures===0&&r.cachedParserFailures===0).length};
+const e=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const link=url=>{try{const u=new URL(url);return /^https?:$/.test(u.protocol)?'<a target="_blank" rel="noopener noreferrer" href="'+e(u.href)+'">'+e(url)+'</a>':e(url);}catch{return e(url);}};
+const htmlRows=rows.map((r,index)=>`<tr data-status="${e(r.status)}"><td>${index+1}</td><td><strong>${e(r.domain)}</strong><small>${e(r.statusLabel)}</small></td><td><ul>${r.errors.map(g=>'<li>'+e(g.label)+(g.urls.length?' <span class="muted">('+g.urls.length+' URL riêng biệt)</span>':'')+'</li>').join('')}</ul></td><td class="number">${r.passedArticles}<small>${r.distinctContentHashes} hash khác</small></td><td class="number">${r.freshArticleFailures} / ${r.cachedParserFailures}</td><td>${r.homepageVerified?'<span class="good">Đạt HTTP 200</span>':e(explain(r.homepage?.error||(r.homepage?.statusCode?'http_'+r.homepage.statusCode:'homepage_unconfirmed')))}<br><small>Category: ${r.categoryVerified?'đã có bài đạt':'chưa xác nhận bài đạt'}</small></td><td><details><summary>${r.issues.length} ghi nhận chi tiết</summary>${r.issues.map(i=>'<div class="issue"><b>'+e(i.stage)+'</b> — '+e(i.label)+'<br><code>'+e(i.code)+'</code>'+(i.url?'<br>'+link(i.url):'')+(i.evidence?'<small>Bằng chứng: '+e(i.evidence)+'</small>':'')+'</div>').join('')}<a href="sites/${encodeURIComponent(r.domain)}/result.json">Kết quả gốc của site</a></details></td></tr>`).join('\n');
+const snapshot=new Intl.DateTimeFormat('vi-VN',{dateStyle:'short',timeStyle:'short',timeZone:'Asia/Ho_Chi_Minh'}).format(new Date(summary.checkedAt));
+const html=`<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lỗi chi tiết 305 nguồn News — Round 15</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f9;color:#172538;font:14px/1.5 system-ui,Arial,sans-serif}header{padding:25px 28px 15px;background:#fff;border-bottom:1px solid #dce2eb}h1{margin:0 0 8px;font-size:25px}p{margin:8px 0}small{display:block;color:#64748b;font-size:12px;overflow-wrap:anywhere}a{color:#1457b8;overflow-wrap:anywhere}code{font-size:12px;color:#8a3b16;overflow-wrap:anywhere}.cards{display:flex;gap:12px;flex-wrap:wrap;margin:15px 0}.card{padding:10px 16px;background:#edf2f9;border-radius:7px}.card b{font-size:21px;margin-right:5px}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px 28px;background:#f4f6f9;position:sticky;top:0;z-index:3}input,select,button{font:inherit;padding:9px;border:1px solid #becbdc;border-radius:5px;background:white}input{width:420px;max-width:100%}button{cursor:pointer}.table-wrap{overflow:auto;padding:0 18px 28px}table{width:100%;min-width:1200px;border-collapse:collapse;background:#fff}th{background:#193556;color:white;text-align:left;padding:11px;position:sticky;top:0}td{vertical-align:top;padding:11px;border-bottom:1px solid #e1e7ee}tr:nth-child(even){background:#f9fbfe}td:nth-child(2){min-width:190px}td:nth-child(3){min-width:275px}td:nth-child(7){width:32%;min-width:300px}ul{padding-left:17px;margin:0}li+li{margin-top:5px}.number{white-space:nowrap;text-align:center}.muted{color:#64748b;font-size:12px}.good{color:#147548}summary{cursor:pointer;color:#1457b8;font-weight:600}.issue{padding:10px 0;border-bottom:1px dashed #d4dce7}.issue:last-of-type{margin-bottom:10px}[hidden]{display:none!important}@media print{.controls{display:none}details{display:block}.table-wrap{overflow:visible}table{min-width:0;font-size:10px}th{position:static}header{padding:0}}
+</style></head><body><header><h1>Bảng lỗi cụ thể từng site — 305 nguồn News</h1><p>Dữ liệu Round 15, chốt ${e(snapshot)} (giờ Việt Nam). Bảng này đọc kết quả đã lưu; không quét lại website.</p><div class="cards"><div class="card"><b>33</b>chưa có mẫu đạt</div><div class="card"><b>69</b>đạt một phần</div><div class="card"><b>203</b>có bài/category đạt, còn tiêu chí thiếu</div></div><p><b>Cách đọc:</b> “Lỗi mới / HTML lưu” là hai số riêng, có thể cùng URL nên không cộng lại. Số URL ở từng loại lỗi đã gộp trùng URL giữa các bước. Mở “ghi nhận chi tiết” để xem mã lỗi, bước kiểm tra và URL mẫu.</p><p>${statistics.sitesWithoutArticleErrors} site không ghi nhận lỗi bài trong các mẫu của vòng này, nhưng vẫn thiếu xác nhận homepage/category hoặc chưa đủ mẫu bài để kết luận. Ví dụ Bnews lỗi tải homepage, còn Biztek chưa xác nhận category có bài.</p></header><div class="controls"><input id="query" aria-label="Tìm site hoặc lỗi" placeholder="Tìm site, lỗi, mã lỗi hoặc URL…"><select id="status" aria-label="Lọc trạng thái"><option value="">Tất cả trạng thái</option>${Object.entries(statusLabels).map(([k,v])=>'<option value="'+k+'">'+e(v)+' ('+statistics.statuses[k]+')</option>').join('')}</select><button id="clear">Xóa bộ lọc</button><span id="count">305 / 305 site</span></div><div class="table-wrap"><table><thead><tr><th>STT</th><th>Site / trạng thái</th><th>Lỗi cụ thể và tiêu chí chưa đạt</th><th>Bài đạt</th><th>Lỗi mới / HTML lưu</th><th>Homepage / category</th><th>Chi tiết / URL mẫu</th></tr></thead><tbody>${htmlRows}</tbody></table></div><script>
+const all=[...document.querySelectorAll('tbody tr')],q=document.getElementById('query'),status=document.getElementById('status'),normalize=s=>s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/đ/g,'d');const texts=all.map(r=>normalize(r.textContent));function filter(){const needle=normalize(q.value.trim());let count=0;all.forEach((row,i)=>{const show=(!status.value||row.dataset.status===status.value)&&texts[i].includes(needle);row.hidden=!show;if(show)count++;});document.getElementById('count').textContent=count+' / '+all.length+' site';}q.addEventListener('input',filter);status.addEventListener('change',filter);document.getElementById('clear').addEventListener('click',()=>{q.value='';status.value='';filter();});
+</script></body></html>`;
+await fs.writeFile(path.join(root,'site-errors-table.html'),html);
+await fs.writeFile(path.join(root,'site-errors-table.json'),JSON.stringify({snapshotAt:summary.checkedAt,statistics,notes:['Snapshot of saved Round15 evidence; no network retest','Fresh and saved HTML failure counts may overlap by URL; never sum them'],rows},null,2));
+const previewDomains=['1thegioi.vn','bnews.vn','biztek.vn','suckhoedoisong.vn','antv.gov.vn','dantri.com.vn','autopro.com.vn','vietnamfdi.vn','vnexpress.net','asemconnectvietnam.gov.vn'];
+console.log(JSON.stringify({statistics,preview:previewDomains.map(d=>{const r=rows.find(r=>r.domain===d);return {domain:d,passed:r.passedArticles,fresh:r.freshArticleFailures,cached:r.cachedParserFailures,errors:r.errors.map(x=>({code:x.code,label:x.label}))};})},null,2));

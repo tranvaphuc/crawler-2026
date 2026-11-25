@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autorepublika.com",
+  "siteId": "autorepublika.com",
+  "registrableDomain": "autorepublika.com",
+  "homepage": "https://autorepublika.com/",
+  "allowedHosts": [
+    "autorepublika.com",
+    "www.autorepublika.com"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://autorepublika.com/",
+    "categories": [
+      "https://autorepublika.com/testovi/",
+      "https://autorepublika.com/vesti/",
+      "https://autorepublika.com/pollitika-kolacica-eu/",
+      "https://autorepublika.com/novo/"
+    ]
+  },
+  "title": {
+    "value": "Mitsubishijev novi Pajero će biti cela porodica modela",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".body-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": true,
+  "stage": "es5_inventory_independent_http_samples_verified",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T17:27:09.681Z",
+    "inventorySource": "crawler-v7-news-topic-2",
+    "frozenAt": "2026-11-15T17:27:03.867Z",
+    "independentHoldouts": [
+      "https://autorepublika.com/2026/11/13/pet-nedostataka-motociklistickih-motora-v2/",
+      "https://autorepublika.com/2026/11/14/ar-test-ds-n7-hybrid-145-la-premiere/",
+      "https://autorepublika.com/2026/11/14/peugeot-208-i-2008-imaju-novi-paket-opreme/"
+    ],
+    "paidAiCalls": 0,
+    "requiresExplicitPublicationTimezone": true
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://autorepublika.com/2026/08/07/mitsubishijev-novi-pajero-ce-biti-cela-porodica-modela",
+      "https://autorepublika.com/2026/11/13/pet-nedostataka-motociklistickih-motora-v2/",
+      "https://autorepublika.com/2026/11/14/ar-test-ds-n7-hybrid-145-la-premiere/",
+      "https://autorepublika.com/2026/11/14/peugeot-208-i-2008-imaju-novi-paket-opreme/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

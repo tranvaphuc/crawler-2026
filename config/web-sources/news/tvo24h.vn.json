@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "siteName": "tvo24h.vn",
+  "siteId": "tvo24h.vn",
+  "registrableDomain": "tvo24h.vn",
+  "homepage": "https://tvo24h.vn/",
+  "allowedHosts": [
+    "tvo24h.vn",
+    "www.tvo24h.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Xung đột tại Trung Đông: Đảo Qeshm của Iran tiếp tục bị tấn công",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "minute",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": "article",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:06:50.801Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://tvo24h.vn/xung-dot-tai-trung-dong-dao-qeshm-cua-iran-tiep-tuc-bi-tan-cong",
+      "https://tvo24h.vn/nhan-su-cap-cao-dau-tien-mat-chuc-sau-that-bai-bau-cu-cua-ong-trump",
+      "https://tvo24h.vn/pho-duc-nam-khai-ve-cao-buoc-anh-re-tuong-lai-rua-tien",
+      "https://tvo24h.vn/trinh-quoc-hoi-3-du-an-cao-toc-hon-162-000-ty-dong",
+      "https://tvo24h.vn/gia-dau-brent-tuan-qua-giam-manh-nhat-ke-tu-nam-2020"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://tvo24h.vn/",
+    "categories": [
+      "https://tvo24h.vn/thoi-su",
+      "https://tvo24h.vn/giao-duc",
+      "https://tvo24h.vn/cong-nghe3",
+      "https://tvo24h.vn/khoi-nghiep",
+      "https://tvo24h.vn/doanh-nhan",
+      "https://tvo24h.vn/the-thao",
+      "https://tvo24h.vn/giai-tri",
+      "https://tvo24h.vn/suc-khoe",
+      "https://tvo24h.vn/kinh-te-tai-chinh",
+      "https://tvo24h.vn/phap-luat",
+      "https://tvo24h.vn/bat-dong-san",
+      "https://tvo24h.vn/du-lich-am-thuc"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "tvo24h.vn",
+    "checkedAt": "2026-11-09T03:57:35.627Z",
+    "url": "https://tvo24h.vn/xung-dot-tai-trung-dong-dao-qeshm-cua-iran-tiep-tuc-bi-tan-cong",
+    "finalUrl": "https://tvo24h.vn/xung-dot-tai-trung-dong-dao-qeshm-cua-iran-tiep-tuc-bi-tan-cong",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 3369,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T07:00:35.137Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/tvo24h.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "tvo24h.vn",
+    "parsedArticles": 16,
+    "distinctHashes": 16,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 12,
+    "categoriesAttempted": 12,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 117,
+    "checkedArticleUrls": 16,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 117,
+        "attempted": 16,
+        "passed": 16,
+        "distinctContents": 16,
+        "distinctHashes": 16
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  }
+}

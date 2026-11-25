@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "siteName": "dautu.kinhtechungkhoan.vn",
+  "siteId": "dautu.kinhtechungkhoan.vn",
+  "registrableDomain": "kinhtechungkhoan.vn",
+  "homepage": "https://dautu.kinhtechungkhoan.vn/",
+  "allowedHosts": [
+    "dautu.kinhtechungkhoan.vn",
+    "www.dautu.kinhtechungkhoan.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "value": "Ngôi trường đặc biệt đào tạo hơn 230.000 học viên dầu khí cho Việt Nam, có nhân sự từng tham gia điều hành ‘đế chế’ 1,2 triệu tỷ",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".b-maincontent",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "parser_samples_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:28.104Z",
+    "sampleCount": 5,
+    "passedSamples": 5,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://dautu.kinhtechungkhoan.vn/ngoi-truong-dac-biet-dao-tao-hon-230-000-hoc-vien-dau-khi-cho-viet-nam-co-nhan-su-tung-tham-gia-dieu-hanh-de-che-1-2-trieu-ty-1474027.html",
+      "https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html",
+      "https://dautu.kinhtechungkhoan.vn/nganh-ban-le-dung-truoc-cuoc-chuyen-dich-lon-ve-thi-phan-msn-mwg-roi-ve-vung-dinh-gia-thap-nhieu-nam-co-hoi-dau-tu-dang-xuat-hien-1474028.html",
+      "https://dautu.kinhtechungkhoan.vn/ket-thuc-xet-xu-dai-an-van-thinh-phat-bo-cong-an-de-nghi-giai-quyet-dut-diem-2-bat-dong-san-cua-ba-truong-my-lan-1474026.html",
+      "https://dautu.kinhtechungkhoan.vn/kiem-tra-dot-xuat-mot-can-nha-phat-hien-14-nguoi-nuoc-ngoai-thu-giu-34-may-tinh-112-dien-thoai-di-dong-1474024.html"
+    ],
+    "datePrecision": [
+      "second"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://dautu.kinhtechungkhoan.vn/",
+    "categories": [
+      "https://dautu.kinhtechungkhoan.vn/tieu-diem",
+      "https://dautu.kinhtechungkhoan.vn/cau-chuyen-dau-tu",
+      "https://dautu.kinhtechungkhoan.vn/goc-chuyen-gia",
+      "https://dautu.kinhtechungkhoan.vn/tang-von-ma",
+      "https://dautu.kinhtechungkhoan.vn/xu-huong-dong-tien",
+      "https://dautu.kinhtechungkhoan.vn/khong-gian-khoi-nghiep"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "dautu.kinhtechungkhoan.vn",
+    "checkedAt": "2026-11-09T03:56:57.984Z",
+    "url": "https://dautu.kinhtechungkhoan.vn/ngoi-truong-dac-biet-dao-tao-hon-230-000-hoc-vien-dau-khi-cho-viet-nam-co-nhan-su-tung-tham-gia-dieu-hanh-de-che-1-2-trieu-ty-1474027.html",
+    "finalUrl": "https://dautu.kinhtechungkhoan.vn/ngoi-truong-dac-biet-dao-tao-hon-230-000-hoc-vien-dau-khi-cho-viet-nam-co-nhan-su-tung-tham-gia-dieu-hanh-de-che-1-2-trieu-ty-1474027.html",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4367,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:57.571Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/dautu.kinhtechungkhoan.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "dautu.kinhtechungkhoan.vn",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesAttempted": 6,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 70,
+    "checkedArticleUrls": 12,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 70,
+        "attempted": 12,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "variants": []
+}

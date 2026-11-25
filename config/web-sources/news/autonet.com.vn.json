@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "siteName": "autonet.com.vn",
+  "siteId": "autonet.com.vn",
+  "registrableDomain": "autonet.com.vn",
+  "homepage": "https://autonet.com.vn/",
+  "allowedHosts": [
+    "autonet.com.vn",
+    "www.autonet.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://autonet.com.vn/",
+    "categories": [
+      "https://autonet.com.vn/category/tin-tuc/",
+      "https://autonet.com.vn/category/tin-tuc/trong-nuoc-tin-tuc/",
+      "https://autonet.com.vn/category/tin-tuc/xe-xanh/",
+      "https://autonet.com.vn/category/the-gioi/"
+    ]
+  },
+  "title": {
+    "value": "Honda SH Special Limited Edition HRC 2026 giới hạn 500 xe tại Việt Nam",
+    "strategy": "jsonld",
+    "key": "headline"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".elementor-element.elementor-element-74f138a",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "learned_requires_independent_validation",
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-15T16:48:11.193Z",
+    "previousStatus": "chưa xác định",
+    "frozenAt": "2026-11-15T16:48:07.178Z",
+    "independentHoldouts": [
+      "https://autonet.com.vn/khach-hang-mua-honda-city-moi-trong-thang-11-duoc-uu-dai-len-den-75-trieu-dong/",
+      "https://autonet.com.vn/10-xe-ban-nhieu-nhat-thang-10-2026-vinfast-chiem-toi-7-xe/",
+      "https://autonet.com.vn/icaur-nhan-dat-coc-som-v23-va-v27-chi-tu-500-000-dong/"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://autonet.com.vn/honda-sh-special-limited-edition-hrc-2026-gioi-han-500-xe-tai-viet-nam/",
+      "https://autonet.com.vn/khach-hang-mua-honda-city-moi-trong-thang-11-duoc-uu-dai-len-den-75-trieu-dong/",
+      "https://autonet.com.vn/10-xe-ban-nhieu-nhat-thang-10-2026-vinfast-chiem-toi-7-xe/",
+      "https://autonet.com.vn/icaur-nhan-dat-coc-som-v23-va-v27-chi-tu-500-000-dong/"
+    ],
+    "fullSiteCycleVerified": false
+  }
+}

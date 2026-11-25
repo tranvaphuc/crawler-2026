@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "siteName": "cohoigiaothuong.vn",
+  "siteId": "cohoigiaothuong.vn",
+  "registrableDomain": "cohoigiaothuong.vn",
+  "homepage": "https://cohoigiaothuong.vn/",
+  "allowedHosts": [
+    "cohoigiaothuong.vn",
+    "www.cohoigiaothuong.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "identityEncoding": "latin1",
+  "title": {
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "timezone": "explicit_offset",
+    "precision": "second"
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content"
+  },
+  "authorStrategy": "jsonld_or_visible_or_site_fallback",
+  "enabled": false,
+  "stage": "runtime_http_holdouts_passed",
+  "validation": {
+    "checkedAt": "2026-11-08T22:04:17.183Z",
+    "sampleCount": 8,
+    "passedSamples": 8,
+    "independentSampleCount": 2,
+    "holdoutAttempted": 2,
+    "sampleUrls": [
+      "https://cohoigiaothuong.vn/da-nang-va-vietjet-ky-ket-thoa-thuan-hop-tac-toan-dien-giai-doan-2026-2030/",
+      "https://cohoigiaothuong.vn/tp-hcm-khai-mac-5-trien-lam-quoc-te-hon-800-doanh-nghiep-tham-gia/",
+      "https://cohoigiaothuong.vn/chu-tich-uy-ban-canh-tranh-quoc-gia-doi-moi-truyen-thong-de-phap-luat-bao-ve-nguoi-tieu-dung-di-vao-doi-song/",
+      "https://cohoigiaothuong.vn/doi-moi-can-ban-cong-tac-truyen-thong-chinh-sach-dap-ung-yeu-cau-phat-trien-dat-nuoc-trong-giai-doan-moi/",
+      "https://cohoigiaothuong.vn/vinfast-kyo-thiet-ke-hop-gu-lua-chon-pin-linh-hoat-cho-dan-van-phong/",
+      "https://cohoigiaothuong.vn/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027/",
+      "https://cohoigiaothuong.vn/bo-truong-le-manh-hung-phai-bao-dam-du-dien-cho-phat-trien-kinh-te-va-doi-song-nhan-dan-trong-moi-truong-hop/",
+      "https://cohoigiaothuong.vn/hon-245-ty-dong-cho-de-an-bao-ton-don-ca-tai-tu-ca-mau-giai-doan-2026-2030/"
+    ],
+    "datePrecision": [
+      "minute"
+    ],
+    "fullSiteCycleVerified": false,
+    "categoryVerified": true,
+    "reason": "Frozen per-site config passed training and two distinct holdout articles"
+  },
+  "discovery": {
+    "homepage": "https://cohoigiaothuong.vn/",
+    "categories": [
+      "https://cohoigiaothuong.vn/chuyen-muc/xuc-tien-thuong-mai/",
+      "https://cohoigiaothuong.vn/chuyen-muc/thong-tin-thuong-vu/",
+      "https://cohoigiaothuong.vn/chuyen-muc/doanh-nhan-doanh-nghiep/",
+      "https://cohoigiaothuong.vn/chuyen-muc/thi-truong/",
+      "https://cohoigiaothuong.vn/chuyen-muc/vietnam-window/",
+      "https://cohoigiaothuong.vn/chuyen-muc/co-che-chinh-sach/"
+    ],
+    "legacyArticlePattern": null,
+    "reclassifiedArticleUrls": []
+  },
+  "parserModule": "src/web/configurableNewsParser.mjs",
+  "identityReconciliationRequired": true,
+  "queueCreated": false,
+  "es5Written": false,
+  "requiresPublicationContext": false,
+  "transport": "HTTP/axios",
+  "http": {
+    "timeoutMs": 15000,
+    "maxSockets": 8,
+    "maxBytes": 4000000,
+    "browserFallback": false,
+    "tlsVerification": "strict",
+    "hostProfilesFile": "config/web-sources/news-http-profiles.json"
+  },
+  "historicalValidation": {
+    "status": "parser_samples_passed",
+    "browserMode": "headless-new"
+  },
+  "httpValidation": {
+    "domain": "cohoigiaothuong.vn",
+    "checkedAt": "2026-11-09T03:56:55.555Z",
+    "url": "https://cohoigiaothuong.vn/da-nang-va-vietjet-ky-ket-thoa-thuan-hop-tac-toan-dien-giai-doan-2026-2030/",
+    "finalUrl": "https://cohoigiaothuong.vn/da-nang-va-vietjet-ky-ket-thoa-thuan-hop-tac-toan-dien-giai-doan-2026-2030/",
+    "statusCode": 200,
+    "status": "http_sample_passed",
+    "error": null,
+    "bodyLength": 4427,
+    "scope": "one freshly fetched article; not a complete site crawl"
+  },
+  "fullSiteCycleVerified": false,
+  "httpTransportModule": "src/web/newsResearchTransport.mjs",
+  "requiresTimezoneReviewBeforeWrite": false,
+  "variants": [],
+  "parserRepairValidation": {
+    "checkedAt": "2026-11-10T06:58:52.234Z",
+    "stage": "all_544_deep_http_audit",
+    "status": "deep_samples_verified",
+    "resultFile": "/Users/phuctran/Workspace/crawler-2026/outputs/news-full-deep-audit-544-2026-11-10/final/sites/cohoigiaothuong.vn/result.json",
+    "scope": "Every configured category tracked; one article per discovered category, historical failures, URL-family representatives and independent repair holdouts. Not every discovered article was fetched.",
+    "domain": "cohoigiaothuong.vn",
+    "parsedArticles": 11,
+    "distinctHashes": 11,
+    "parserIssues": 0,
+    "transportUnconfirmed": 0,
+    "listingResponsesAtArticleUrls": 0,
+    "categoriesPlanned": 6,
+    "categoriesAttempted": 6,
+    "categoriesRemoved": 0,
+    "categoriesUnconfirmed": 0,
+    "categoriesWithoutParsedArticle": 0,
+    "approvedVariants": 0,
+    "unverifiedVariants": 0,
+    "discoveredArticles": 30,
+    "checkedArticleUrls": 11,
+    "families": [
+      {
+        "name": "ordinary",
+        "discovered": 30,
+        "attempted": 11,
+        "passed": 11,
+        "distinctContents": 11,
+        "distinctHashes": 11
+      }
+    ],
+    "homeError": null,
+    "issueCounts": {},
+    "complete": true,
+    "fullSiteCycleVerified": false
+  },
+  "httpAdapter": "declared_public_wordpress_post_required",
+  "runtimeValidation": {
+    "checkedAt": "2026-11-13T00:58:41.365Z",
+    "passedSamples": 3,
+    "independentUrls": [
+      "https://cohoigiaothuong.vn/bao-cao-giai-trinh-cua-thu-tuong-le-minh-hung-tai-phien-chat-van-va-tra-loi-chat-van-ky-hop-thu-2-quoc-hoi-khoa-xvi/",
+      "https://cohoigiaothuong.vn/bao-tang-gom-su-minh-long-mo-rong-trai-nghiem-lan-toa-gia-tri-di-san-gom-viet/",
+      "https://cohoigiaothuong.vn/tcvn-146872026-ve-vang-mieng/"
+    ],
+    "evidence": "proxy_http_and_native_fields",
+    "fullSiteCycleVerified": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "siteName": "taichinhplus.com.vn",
+  "siteId": "taichinhplus.com.vn",
+  "registrableDomain": "taichinhplus.com.vn",
+  "homepage": "https://taichinhplus.com.vn/",
+  "allowedHosts": [
+    "taichinhplus.com.vn",
+    "www.taichinhplus.com.vn"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "requiresTimezoneReviewBeforeWrite": true,
+  "identityEncoding": "latin1",
+  "discovery": {
+    "homepage": "https://taichinhplus.com.vn/",
+    "categories": [
+      "https://taichinhplus.com.vn/c/dau-tu",
+      "https://taichinhplus.com.vn/c/tai-chinh-ngan-hang",
+      "https://taichinhplus.com.vn/c/chung-khoan",
+      "https://taichinhplus.com.vn/c/bao-hiem",
+      "https://taichinhplus.com.vn/c/thuong-mai-dien-tu",
+      "https://taichinhplus.com.vn/c/kinh-doanh",
+      "https://taichinhplus.com.vn/c/hop-tac",
+      "https://taichinhplus.com.vn/c/tu-van-chien-luoc",
+      "https://taichinhplus.com.vn/c/khoi-nghiep-lam-giau",
+      "https://taichinhplus.com.vn/c/thi-truong"
+    ]
+  },
+  "publicationTimePolicy": "native_date_midnight_if_missing",
+  "timezoneProvenance": "user_approved_vietnam_local_clock_2026-11-16",
+  "title": {
+    "value": "Con gái tỷ phú Nguyễn Đăng Quang đăng ký bán 8,5 triệu cổ phiếu MSN",
+    "strategy": "selector",
+    "selector": "h1"
+  },
+  "publishedDate": {
+    "precision": "second",
+    "timezone": "explicit_offset",
+    "strategy": "jsonld",
+    "key": "datePublished",
+    "priority": 100
+  },
+  "body": {
+    "strategy": "selector",
+    "selector": ".article-content",
+    "remove": "[class*=cookie],[id*=cookie],[class*=Cookie],[class*=consent],.modal,.popup,.paywall-message,script,style,noscript,nav,footer,form,.ads,.advertisement,[class*=\"related\"],[class*=\"Related\"],[class*=\"recommend\"],[class*=\"comment\"],.social,.share,.sharing,.breadcrumb,.breadcrumbs,.tag-box,.box-tag,.box-embed,.box-link,.box-ads,.banner,.ad-container,amp-story-bookend,amp-story-social-share"
+  },
+  "variants": [],
+  "enabled": true,
+  "parserCurrentAudit": {
+    "checkedAt": "2026-11-16T01:59:31.407Z",
+    "frozenAt": "2026-11-16T01:59:22.589Z",
+    "trainingUrl": "https://taichinhplus.com.vn/con-gai-ty-phu-nguyen-dang-quang-dang-ky-ban-85-trieu-co-phieu-msn-a13522.html",
+    "independentHoldouts": [
+      "https://taichinhplus.com.vn/vib-bao-lai-9-thang-tang-77-ap-luc-nao-dang-bua-vay-chat-luong-tai-san-a13496.html",
+      "https://taichinhplus.com.vn/acb-loi-nhuan-quy-iii-tang-93-no-xau-vuot-9000-ty-dong-a13480.html"
+    ],
+    "paidAiCalls": 0
+  },
+  "validation": {
+    "sampleUrls": [
+      "https://taichinhplus.com.vn/con-gai-ty-phu-nguyen-dang-quang-dang-ky-ban-85-trieu-co-phieu-msn-a13522.html",
+      "https://taichinhplus.com.vn/vib-bao-lai-9-thang-tang-77-ap-luc-nao-dang-bua-vay-chat-luong-tai-san-a13496.html",
+      "https://taichinhplus.com.vn/acb-loi-nhuan-quy-iii-tang-93-no-xau-vuot-9000-ty-dong-a13480.html",
+      "https://taichinhplus.com.vn/dien-gia-lai-geg-loi-nhuan-9-thang-giam-hon-56-du-no-vay-tai-chinh-vuot-8500-ty-dong-a13502.html"
+    ],
+    "fullSiteCycleVerified": false
+  },
+  "publicationValidationPolicy": "strict_native_publication_v1",
+  "publicationDatePolicy": "native_updated_when_original_missing"
+}

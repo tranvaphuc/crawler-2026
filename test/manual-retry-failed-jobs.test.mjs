@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {manualRetryPayload} from '../scripts/manual_retry_failed_jobs.mjs';
+test('manual retry resets the budget, preserving checkpoint, parent, endpoint exclusion and prior payload',()=>{
+ const data={checkpoint:'cursor-base64',source:{_id:'s'},parent:{nativeId:'p'},proxyRetries:42,excludeProxyEndpoint:'endpoint',sourceRoundId:'round'};
+ const out=manualRetryPayload(data,{state:'failed',data:{checkpoint:'older'}},'op','2026-10-27T15:02:00Z','UPSTREAM_TIMEOUT');
+ assert.equal(out.proxyRetries,0);assert.equal(out.checkpoint,'cursor-base64');assert.deepEqual(out.parent,data.parent);assert.equal(out.excludeProxyEndpoint,'endpoint');assert.equal(out.sourceRoundId,'round');assert.equal(out.manualRetry.operationId,'op');assert.equal(data.proxyRetries,42);
+});
+test('stale queued/running Mongo checkpoint is merged the same way as the worker startup',()=>{
+ const out=manualRetryPayload({checkpoint:'old',proxyRetries:31},{state:'queued',data:{checkpoint:'new',proxyRetries:31,sourceRoundId:'round'}},'op','now','stalled');assert.equal(out.checkpoint,'new');assert.equal(out.proxyRetries,0);assert.equal(out.sourceRoundId,'round');
+});
+
+test('group manual retry starts a new ten-proxy budget and clears scheduling waits while retaining verified progress',()=>{const previous={groupProxyEndpoints:Array.from({length:10},(_,i)=>String(i).padStart(64,'0')),groupProxyAttemptLimit:10,proxyRetries:45,checkpoint:'native-cursor',sourceRoundId:'round',source:{_id:'source'},pendingItems:[{id:'post'}],excludedProxyEndpoints:{failed:123},proxyWaitUntil:999,sourceYieldUntil:888};const next=manualRetryPayload(previous,{state:'failed'},'group-retry','now','PROXY_CONNECT_EOF');assert.deepEqual(next.groupProxyEndpoints,[]);assert.equal(next.groupProxyAttemptLimit,10);assert.equal(next.proxyRetries,0);assert.equal(next.checkpoint,previous.checkpoint);assert.deepEqual(next.pendingItems,previous.pendingItems);assert.equal(next.sourceRoundId,previous.sourceRoundId);assert.deepEqual(next.source,previous.source);assert.deepEqual(next.excludedProxyEndpoints,previous.excludedProxyEndpoints);assert.equal(next.proxyWaitUntil,undefined);assert.equal(next.sourceYieldUntil,undefined);assert.equal(previous.groupProxyEndpoints.length,10);});
